@@ -103,6 +103,22 @@ def deduplicate(words: list[str]) -> list[str]:
     return out
 
 
+def drop_reordered(words: list[str]) -> list[str]:
+    """For 2-word entries with same tokens in different order, keep only the first.
+
+    Example: 'baggy jogginghose' and 'jogginghose baggy' → keep first only.
+    """
+    seen: set[frozenset[str]] = set()
+    out: list[str] = []
+    for w in words:
+        tokens = frozenset(w.split())
+        if len(tokens) == 2 and tokens in seen:
+            continue
+        seen.add(tokens)
+        out.append(w)
+    return out
+
+
 # ── pipeline ───────────────────────────────────────────────────────
 
 DEFAULT_PIPELINE: list[Callable[[list[str]], list[str]]] = [
@@ -112,6 +128,7 @@ DEFAULT_PIPELINE: list[Callable[[list[str]], list[str]]] = [
     normalize_case,
     drop_single_word,
     drop_brands,
+    drop_reordered,
     # drop_numeric_only,
     # drop_urls,
     # drop_excessive_special,

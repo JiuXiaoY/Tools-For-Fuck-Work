@@ -6,7 +6,10 @@ Baumwolle (棉), Leinen (亚麻), Modal (莫代尔), Mikrofaser (超细纤维), 
 Waffle (华夫格), Bambus (竹纤维), Polyester (涤纶), Cord (灯芯绒), Elastan (氨纶), Neopren (氯丁橡胶), Musselin (穆斯林布),
 Softshell (软壳), Leder (皮革), Thermo (保暖面料), Stretch (弹力面料), Fleece (抓绒), Wolle (羊毛), Lack (漆皮), Seide (丝),
 Viskose (粘胶), Jeans (牛仔), Strickstoff (针织), Eisenseide (冰丝), Glanzleder (亮皮), Reine Baumwolle (纯棉),
-Baumwolle/Leinen (棉麻), Glänzend (亮面), Pailletten (亮片), Plissee (褶皱), Gefüttert (加绒)
+Baumwolle/Leinen (棉麻), Glänzend (亮面), Pailletten (亮片), Plissee (褶皱), Gefüttert (加绒), Rüschen (荷叶边),Chiffon,
+Netzstoff, Satin, Seide, Denim, Washed Cotton, Waffelpiqué, Cord, PU-Leder (PU皮), Lackleder (亮面漆皮), Kunstleder (
+仿皮), Flanell (法兰绒), Flauschfleece (珊瑚绒), Sherpa (羊羔绒), Plüsch (毛绒), Spitze (蕾丝), Eisseide (冰丝),
+Glänzender Stoff (光泽面料)
 
 ## [版型]
 
@@ -17,7 +20,11 @@ Elastischer Bund (松紧腰), Mittlere Taille (中腰), High Waist (高腰), mit
 mit Bündchen (束脚), Schlaghose (喇叭裤), Tiefer Schritt (吊裆), Haremshose (哈伦), Vielseitig (百搭),
 Bootcut (微喇), Latzhose (背带裤), Rockhose (裙裤), Pumphose (灯笼裤), Overall (连体背带裤),
 Plisseerock (百褶裙), Überknielang (过膝), Extra Large (加大码), 3-teilig (3PC), Oversize,
-Kurze Hose (短裤), Lange Hose (长裤), mit Bündchen am Knöchel (束脚口), Knöchel Hose (踝带裤)
+Kurze Hose (短裤), Lange Hose (长裤), mit Bündchen am Knöchel (束脚口), Knöchel Hose (踝带裤), Straight Leg (直筒裤),
+Hohe Taille (高腰), Mittlere Taille (中腰), Niedrige Taille (低腰), Lockere Passform (宽松), Slim Fit (修身), Skinny
+Fit (紧身), Gerades Bein (直筒), A-Linie (A字), Bodenlang (拖地), Knöchellang (九分), 3/4-Länge (七分), Bermudashorts (
+五分裤), Shorts (短裤), Hot Pants (热裤), Haremshose (灯笼裤), Leichter Schlag (微喇裤), Bananenhose (弯刀裤),
+Jumpsuit (连体裤), Fallschirmhose (降落伞裤), Skihose (滑雪裤), Karottenhose (锥形裤)
 
 ## [颜色/图案]
 
@@ -30,7 +37,11 @@ Halloween (万圣节), Totenkopf (骷髅), Sternenhimmel (星空), Weltraum (宇
 Schottisch (苏格兰), Karneval (狂欢节), Independence Day (美国独立日),
 Nordische Mythologie (北欧神话), Leopardenmuster (豹纹), Pailletten (亮片), Goldfolie (烫金),
 Chinesischer Stil (中国风), Ethnisch (民族风), Karo (格纹), Hip Hop (嘻哈), ins,
-Streetwear (潮牌), Punk (朋克), Kendo Rock (剑道裙), Bedruckt (印花), Farbverlauf (渐变)
+Streetwear (潮牌), Punk (朋克), Kendo Rock (剑道裙), Bedruckt (印花), Farbverlauf (渐变), Chiffon (雪纺), Gestreift (
+条纹), Vertikale Streifen (竖条纹), Karo (格子), Kariert (格纹), Bedruckt (印花), Leopardenmuster (豹纹), Gepunktet (
+波点), Tarnmuster (迷彩), Verlauf (渐变), Batik (扎染), Marmormuster (大理石纹), Galaxy-Print (星空印花),
+Cartoon-Print (卡通图案), Blumendruck (花卉印花), Schleifenmuster (蝴蝶结印花), Herzmuster (心形图案), Sternenmuster (
+星星图案), Halloween-Motiv (万圣节主题), Color Blocking (撞色拼接), Jacquard (提花), Dezentes Muster (暗纹)
 
 ## [场景]
 
@@ -42,7 +53,9 @@ Festival, Enduro, Motocross, Rennrad (公路车), Fußball (足球), Torwart (�
 Triathlon (铁人三项), Gothic (哥特), Hippie (嬉皮), Business (商务), Hemd mit Shorts (衬衫套装),
 Party (派对), Ball (舞会), Hochzeit (婚礼), Club (夜店), Jazz Dance (爵士舞),
 Bergsteigen (登山), Zuhause (居家), Klimaanlage (空调), Außen (外穿), Autowerkstatt (汽修),
-Petrochemie (石油化工), Fallschirmjäger (伞兵)
+Petrochemie (石油化工), Fallschirmjäger (伞兵), Urlaub (度假), Büro (通勤), Streetstyle (街头), Loungewear (居家),
+Strand (沙滩), Party (派对), Nachtclub (夜店), Bühne (演出), Reisen (旅行), Schwimmen (游泳), Reha (康复),
+Umstandsmode (孕妇)
 
 ## [功能/部件]
 
@@ -52,7 +65,14 @@ Handytasche (手机袋), Ohne Bündchen (无束口), Reflektierend (反光), Kom
 UV-Schutz (防晒), Nahtlos (无痕), Po-Lifting (提臀), Bequem (舒适), 2 in 1 (二合一), Reisverschlusstaschen (拉链口袋),
 Schnürung (系带), Kordel (挂绳), Mehrere Taschen (多口袋), Knopfleiste (排扣), Voller Knopfverschluss (全开扣),
 Reißverschluss am Knöchel (裤脚拉链), Gefüttert (加绒), Gerade Taschen (直口袋), Knöchelband (踝带裤),
-Mehrlagig (复合), Strapazierfähig (耐磨), Funktional (机能), Kühlend (冰感/凉感)
+Mehrlagig (复合), Strapazierfähig (耐磨), Funktional (机能), Kühlend (冰感/凉感), Luftig (飘逸轻盈), Schlitz / mit
+Schlitz (开叉设计), Tasche (口袋), Seitentasche (侧边口袋), Aufgesetzte Tasche (大贴袋), Pattentasche (翻盖口袋),
+Schrägtasche (斜插袋), Gesäßtasche (后口袋), Knopf (纽扣), Paperbag-Bund (花苞腰), Knopfleiste (排扣门襟),
+Doppelreihig (双排扣), Rüschensaum (荷叶边), Spitzenbesatz (蕾丝拼接), Spitzeneinsatz (蕾丝镂空拼接), Seitenschlitz (
+侧开叉), Geschwungener Saum (弧形开叉), Aufrollbare Manschette (卷边), Bindeband (绑带), Vordere Falten (前褶设计),
+Sternniete (五角星装饰), Strass (满钻/烫钻), Stickerei (刺绣), Verstellbarer Träger (可调节肩带), Stützfunktion für
+Schwangere (托腹), Hoch elastisch (高弹), Verdickt (加厚), Wärmend (保暖), Winddicht (防风), Po-Lifting (提臀),
+Nahtlos (无缝), Leichtes An- und Ausziehen (易穿脱)
 
 ## [品类后缀]
 
@@ -73,7 +93,7 @@ Shapewear Hose, Boxershorts, Badeshorts, Boardshorts, Schwimmshorts, Cargoshorts
 Trainingsshorts, Jeansshorts, Chino Shorts, Bermudashorts, Fahrradshorts, Wandershorts, Arbeitsshorts,
 Sportshorts, Basketball Shorts, Tennisshorts, Golfshorts, Surfshorts, Joggingshorts, Biker Shorts,
 Schlafshorts, Freizeitshorts, Fitness Shorts, Gym Shorts, MTB Shorts, Kompressionsshorts, Hotpants,
-Sweatpants, Ledershorts, Partyshorts, Retroshorts, MMA Shorts, Bib Shorts, Happy Shorts, Dstroyed Shorts, American Shorts,
-Deutschland Shorts, Radshorts, Sommerhose, Leichte Sommerhose, Kurze Hose, 3/4 Hose, 7/8 Hose, Leggings,
+Sweatpants, Ledershorts, Partyshorts, Retroshorts, MMA Shorts, Bib Shorts, Happy Shorts, Dstroyed Shorts, American
+Shorts, Deutschland Shorts, Radshorts, Sommerhose, Leichte Sommerhose, Kurze Hose, 3/4 Hose, 7/8 Hose, Leggings,
 Sportleggings, Laufleggings, Wanderleggings, Thermo Leggings, Fitness Leggings, Yoga Leggings,
 Kompressionsleggings, Treggings, Shaping Leggings, Blickdichte Leggings
