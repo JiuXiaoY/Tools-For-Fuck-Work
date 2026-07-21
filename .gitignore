@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Secrets
+config.py
+
+# Generated output
+outputs/
+public/
+logs/
+
+# Tools ¡ª generated
+tools/needToCollect/result/
+tools/title_optimize/temp_photo/
+tools/title_optimize/browser_data/
+tools/title_optimize/deepseek_state.json
+tools/title_optimize/optimize_title
+tools/title_optimize/origin_link
+tools/title_optimize/origin_title
+tools/color_size_deal/check_.txt

@@ -1,0 +1,79 @@
+# 裤子通用词库
+
+## [材质]
+
+Baumwolle (棉), Leinen (亚麻), Modal (莫代尔), Mikrofaser (超细纤维), Merino (美利奴), Frottee (毛圈布), Mesh (网眼), Satin (缎面),
+Waffle (华夫格), Bambus (竹纤维), Polyester (涤纶), Cord (灯芯绒), Elastan (氨纶), Neopren (氯丁橡胶), Musselin (穆斯林布),
+Softshell (软壳), Leder (皮革), Thermo (保暖面料), Stretch (弹力面料), Fleece (抓绒), Wolle (羊毛), Lack (漆皮), Seide (丝),
+Viskose (粘胶), Jeans (牛仔), Strickstoff (针织), Eisenseide (冰丝), Glanzleder (亮皮), Reine Baumwolle (纯棉),
+Baumwolle/Leinen (棉麻), Glänzend (亮面), Pailletten (亮片), Plissee (褶皱), Gefüttert (加绒)
+
+## [版型]
+
+Weite (宽版), Locker (宽松), Baggy (蓬松), Stretch (弹力), Eng (紧身), Slim Fit, Regular Fit, Loose Fit,
+Langes Bein (长腿), Extra Lang (加长), Knielang (及膝), Kurz (短款), Lang (长款), Weites Bein (阔腿), Bundfalten (打褶),
+Dreiviertel (三分), Kurzgröße (矮个版), Große Größen (大码), Gerades Bein (直筒), Taillierter Bund (束腰),
+Elastischer Bund (松紧腰), Mittlere Taille (中腰), High Waist (高腰), mit Kordelzug (系带/抽绳), Leicht (轻质),
+mit Bündchen (束脚), Schlaghose (喇叭裤), Tiefer Schritt (吊裆), Haremshose (哈伦), Vielseitig (百搭),
+Bootcut (微喇), Latzhose (背带裤), Rockhose (裙裤), Pumphose (灯笼裤), Overall (连体背带裤),
+Plisseerock (百褶裙), Überknielang (过膝), Extra Large (加大码), 3-teilig (3PC), Oversize,
+Kurze Hose (短裤), Lange Hose (长裤), mit Bündchen am Knöchel (束脚口), Knöchel Hose (踝带裤)
+
+## [颜色/图案]
+
+Schwarz (黑), Weiß (白), Grau (灰), Bunt (彩色), Rot (红), Blau (蓝), Grün (绿), Beige (米色), Camouflage (迷彩),
+Khaki (卡其), Pink (粉色), Neon (荧光), Kariert (格子), Gestreift (条纹), Einfarbig (纯色), Deutschland (德国主题),
+Happy (快乐图案), American (美式), Dstroyed (破坏风), Wikinger (维京), Oktoberfest (德国啤酒节), Regenbogen (彩虹),
+Patchwork (拼接), Farbblock / Kontrast (撞色), Retro / Vintage (复古), High Street (高街), Y2K, Gothic (暗黑哥特),
+Business (商务), Used-Look (做旧), Digital Bedruckt (数码印花), Stickerei (绣花),
+Halloween (万圣节), Totenkopf (骷髅), Sternenhimmel (星空), Weltraum (宇宙), Galaxie (太空),
+Schottisch (苏格兰), Karneval (狂欢节), Independence Day (美国独立日),
+Nordische Mythologie (北欧神话), Leopardenmuster (豹纹), Pailletten (亮片), Goldfolie (烫金),
+Chinesischer Stil (中国风), Ethnisch (民族风), Karo (格纹), Hip Hop (嘻哈), ins,
+Streetwear (潮牌), Punk (朋克), Kendo Rock (剑道裙), Bedruckt (印花), Farbverlauf (渐变)
+
+## [场景]
+
+Sommer (夏季), Outdoor (户外), Sport (运动), Fitness (健身), Gym (健身房), Basketball (篮球), Tennis (网球), Golf (高尔夫),
+Wandern (徒步), Trekking, Fahrrad (骑行), MTB (山地车), Laufen (跑步), Arbeit (工作), Pyjama (睡衣), Schlaf (睡眠),
+Jogging (慢跑), Schwimmen (游泳), Surfen (冲浪), Strand (沙滩), Training (训练), Angeln (钓鱼), Jagd (打猎), Motorrad (摩托车),
+Reiten (马术), Ski (滑雪), Klettern (攀岩), Yoga (瑜伽), Bundeswehr (联邦国防军), Armee (军队), Taktisch (战术), Regen (防雨),
+Festival, Enduro, Motocross, Rennrad (公路车), Fußball (足球), Torwart (守门员), Reha (康复), Segeln (帆船),
+Triathlon (铁人三项), Gothic (哥特), Hippie (嬉皮), Business (商务), Hemd mit Shorts (衬衫套装),
+Party (派对), Ball (舞会), Hochzeit (婚礼), Club (夜店), Jazz Dance (爵士舞),
+Bergsteigen (登山), Zuhause (居家), Klimaanlage (空调), Außen (外穿), Autowerkstatt (汽修),
+Petrochemie (石油化工), Fallschirmjäger (伞兵)
+
+## [功能/部件]
+
+mit Taschen (带口袋), mit Reißverschluss (带拉链), Gummizug (松紧带), Kordelzug (抽绳), mit Innenhose (带内衬),
+Schnelltrocknend (快干), Wasserdicht (防水), Zip Off (拉链拆卸), Gepolstert (带衬垫), Seitlich zu Öffnen (侧开),
+Handytasche (手机袋), Ohne Bündchen (无束口), Reflektierend (反光), Kompression (压缩), Gürtel (腰带), Atmungsaktiv (透气),
+UV-Schutz (防晒), Nahtlos (无痕), Po-Lifting (提臀), Bequem (舒适), 2 in 1 (二合一), Reisverschlusstaschen (拉链口袋),
+Schnürung (系带), Kordel (挂绳), Mehrere Taschen (多口袋), Knopfleiste (排扣), Voller Knopfverschluss (全开扣),
+Reißverschluss am Knöchel (裤脚拉链), Gefüttert (加绒), Gerade Taschen (直口袋), Knöchelband (踝带裤),
+Mehrlagig (复合), Strapazierfähig (耐磨), Funktional (机能), Kühlend (冰感/凉感)
+
+## [品类后缀]
+
+Jogginghose, Sweathose, Sporthose, Trainingshose, Laufhose, Fahrradhose, Radlerhose, Badehose, Cargohose,
+Arbeitshose, Freizeithose, Haushose, Schlafhose, Pyjamahose, Latzhose, Anglerhose, Regenhose, Wathose,
+Neoprenhose, Thermohose, Softshellhose, Funktionshose, Outdoorhose, Trekkinghose, Wanderhose, Kletterhose,
+Motorradhose, Taktische Hose, Armeehose, Zunfthose, Kochhose, Bundfaltenhose, Anzughose, Chinohose, Leinenhose,
+Stoffhose, Cordhose, Jeanshose, Stretchhose, Yogahose, Kompressionshose, Unterhose, Unterziehhose, Reithose,
+Golfhose, Skihose, Boulderhose, Gurkha Hose, Fischerhose, Strandhose, Relaxhose, Schlaghose, Pumphose,
+Caprihose, Haremshose, Schlupfhose, Trachtenhose, Schnittschutzhose, Funktionsunterhose, Fahrradunterhose,
+Radunterhose, Turnhose, Rennradhose, Enduro Hose, Motocross Hose, Torwarthose, Segelhose, Triathlonhose,
+Reha Hose, Überziehhose, Fussballhose, Gothic Hose, Hippie Hose, Business Hose, Palazzohose, Marlenehose,
+Bootcut, Pluderhose, Trompetenhose, Glockenhose, Strumpfhose, Lackhose, Cordhose, Fallschirmhose, Saunahose,
+Breitbeinigehose, Jazzpants, Ballonhose, Culotte, Paperbag Hose, Wickelhose, Röhrenjeans, Schlupfjeans,
+Stretchjeans, Geradejeans, Denimhose, Flaredjeans, Baggy Jeans, Schlagjeans, Glitzerjeans, Radlerunterhose,
+Schlabberhose, Loungehose, 7/8 Jeans, 3/4 Caprihose, Segelhose, Miederhose, Nahtlose Unterhose, Bauchweg Hose,
+Shapewear Hose, Boxershorts, Badeshorts, Boardshorts, Schwimmshorts, Cargoshorts, Laufshorts, Sweatshorts,
+Trainingsshorts, Jeansshorts, Chino Shorts, Bermudashorts, Fahrradshorts, Wandershorts, Arbeitsshorts,
+Sportshorts, Basketball Shorts, Tennisshorts, Golfshorts, Surfshorts, Joggingshorts, Biker Shorts,
+Schlafshorts, Freizeitshorts, Fitness Shorts, Gym Shorts, MTB Shorts, Kompressionsshorts, Hotpants,
+Sweatpants, Ledershorts, Partyshorts, Retroshorts, MMA Shorts, Bib Shorts, Happy Shorts, Dstroyed Shorts, American Shorts,
+Deutschland Shorts, Radshorts, Sommerhose, Leichte Sommerhose, Kurze Hose, 3/4 Hose, 7/8 Hose, Leggings,
+Sportleggings, Laufleggings, Wanderleggings, Thermo Leggings, Fitness Leggings, Yoga Leggings,
+Kompressionsleggings, Treggings, Shaping Leggings, Blickdichte Leggings

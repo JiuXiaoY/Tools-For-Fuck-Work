@@ -1,0 +1,12 @@
+﻿[project]
+name = "dealexcel"
+version = "2.0.0"
+description = "Excel batch processing pipeline — configurable, extensible, no web dependency"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl>=3.1.0",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+dealexcel = "main:main"

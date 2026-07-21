@@ -1,0 +1,104 @@
+这是一份基于您提供的图片（`1.jpg`）为您量身定制的 **Beqirensn 品牌 A+ 页面策划案**。
+
+从图片来看，这款产品是一件**纯色长袖针织开衫，带有经典的圆领、纽扣设计以及下摆打结细节**。整体风格优雅、休闲且百搭。这套方案采用了亚马逊黄金 A+ 漏斗逻辑，旨在第一时间抓住眼球，随后拆解细节打消顾虑，最后提供穿搭指导以降低退货率。
+
+考虑到亚马逊 A+ 的普适性，内部视觉指导部分采用**中文**方便您和设计师沟通，实际向买家展示的文案和 SEO Alt Text 采用**英文**输出。
+
+---
+
+### 模块 1: Standard Image Header with Text (标准全宽图片带文字)
+
+* **模块目的:** 第一眼黄金 3 秒抓人，建立 Beqirensn 品牌的高级感与休闲优雅的基调。
+* **视觉设计建议 (给美工的指导):** 制作一张 970x600 像素的高清大图。由于原图是白底，建议合成一个带有温暖自然光的生活化场景（如阳光洒落的法式咖啡馆或明亮的现代公寓）。模特穿着该酒红色开衫，展现自信从容的姿态。画面色调偏暖，凸显针织面料的质感。
+* **图片文案 (Text on Image):**
+Effortless Elegance
+* **正文排版与文案 (Body Copy):**
+* **标题 (Headline):** Beqirensn Women's Tie-Front Knit Cardigan
+* **正文 (Text):** Upgrade your daily wardrobe with our classic long-sleeve cardigan. Designed for versatile styling and all-day comfort.
+
+
+* **SEO Alt Text (关键词):**
+womens burgundy knit cardigan tie front sweater casual daily wear
+
+---
+
+### 模块 2: Standard Single Image and Sidebar (单图加侧边栏文字)
+
+* **模块目的:** 放大展示该产品的核心差异化卖点——下摆打结设计，将款式特点转化为用户的“利益点”（显瘦、修饰身形）。
+* **视觉设计建议 (给美工的指导):** 左侧放置一张 300x400 像素的特写图，重点聚焦在模特腰部的**打结细节 (Tie-knot)** 和衣服下摆的自然褶皱。可以加一个带有微小阴影的箭头或圆圈引导视觉焦点。
+* **图片文案 (Text on Image):**
+Chic Tie-Knot Hem
+* **正文排版与文案 (Body Copy):**
+* **标题 (Headline):** Customize Your Silhouette
+* **正文 (Text):** The built-in front tie is more than just a stylish detail.
+* **Flattering Fit:** Cinch the waist to highlight your curves.
+* **Adjustable:** Tie it loose or tight based on your outfit.
+* **Modern Twist:** Elevates a basic sweater into a fashion statement.
+
+
+
+
+* **SEO Alt Text (关键词):**
+womens button down sweater adjustable tie front waist detail
+
+---
+
+### 模块 3: Standard Three Image & Text (三张图加文字)
+
+* **模块目的:** 拆解材质与细节，让消费者“看”得见质量，打消对版型和面料的网购顾虑。
+* **视觉设计建议 (给美工的指导):** 三张 300x300 像素的等比方图。
+* *图 1:* 面料微距放大图，展示柔软细腻的针织纹理，可以加一个羽毛图标暗示轻柔。
+* *图 2:* 颈部特写，展示服帖的圆领设计。
+* *图 3:* 门襟纽扣特写，展示与衣服同色的精致纽扣。
+
+
+* **图片文案 (Text on Image):** 无（保持画面干净）
+* **正文排版与文案 (Body Copy):**
+* **图 1 标题:** Soft & Breathable
+* **图 1 正文:** Premium knit fabric that feels gentle against the skin. Perfect for layering without overheating.
+* **图 2 标题:** Classic Crew Neck
+* **图 2 正文:** A timeless round neckline that flatters every face shape and pairs seamlessly with any inner wear.
+* **图 3 标题:** Color-Matched Buttons
+* **图 3 正文:** Durable, smoothly finished buttons dyed to match the cardigan for a sleek, cohesive look.
+
+
+* **SEO Alt Text (关键词):**
+soft breathable knit fabric classic round neck matched button placket
+
+---
+
+### 模块 4: Standard Single Left Image (左侧单图带右侧文字)
+
+* **模块目的:** 提供穿搭场景（Use Case），激发购买欲望。告知消费者这件衣服适合搭配什么，扩大适用场景，进而促进转化并降低退货率。
+* **视觉设计建议 (给美工的指导):** 300x400 像素的半身或全身图，放在左侧。图片中模特可展示将开衫敞开穿，里面搭配打底吊带，下半身如原图般搭配高腰阔腿裤，展现干练的通勤风或慵懒的周末风。
+* **图片文案 (Text on Image):**
+Versatile Styling
+* **正文排版与文案 (Body Copy):**
+* **标题 (Headline):** From Desk to Dinner
+* **正文 (Text):** One cardigan, endless possibilities.
+* **Office Ready:** Pair with high-waisted trousers for a professional look.
+* **Weekend Casual:** Layer over a simple tee and jeans.
+* **Date Night:** Wear it fully buttoned as an elegant standalone top.
+
+
+
+
+* **SEO Alt Text (关键词):**
+ladies long sleeve cardigan styled with high waisted dark pants for office
+
+---
+
+### 模块 5: Standard Comparison Chart (标准对比表)
+
+* **模块目的:** 建立品牌产品矩阵，把原本可能会跳出的流量锁在自己的店铺内，实现交叉销售 (Cross-selling)。
+* **视觉设计建议 (给美工的指导):** 选取店铺内其他 3-4 款 Beqirensn 的上衣（例如：V领针织衫、纯色套头毛衣、无袖打底针织衫）。将当前这款“圆领打结开衫”放在第一列作为主推基准。
+* **图表设置 (无需设计，仅供后台填表):**
+* **Compare Item 1:** Tie-Front Cardigan (当前款)
+* **Compare Item 2:** V-Neck Knit Sweater
+* **Compare Item 3:** Sleeveless Base Top
+* **Compare Item 4:** Oversized Pullover
+* *(对比维度建议)*：Neckline (领型), Sleeve Length (袖长), Fit Type (版型), Best For (适用场景).
+
+
+* **SEO Alt Text (关键词):**
+beqirensn womens sweaters cardigans knitwear tops comparison chart
