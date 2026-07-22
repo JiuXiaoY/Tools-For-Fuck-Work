@@ -26,3 +26,5 @@ tools/needToCollect/result/
 tools/title_optimize/temp_photo/
 tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json
+tools/title_auto_fill/gemini_state.json
+tools/title_auto_fill/gemini_browser/

@@ -5,7 +5,8 @@ Steps:
   2. Excel pipeline       (main.py: merge + 13-step pipeline)
   3. Color re-processing  (tools/color_size_deal/color_reprocess.py)
   4. Title optimization   (tools/title_optimize/title_rewrite.py)
-  5. Title auto fill      (tools/title_auto_fill/de_title_build.py)           [TODO]
+  5. Title auto fill      (tools/title_auto_fill/de_title_build.py)
+  6. Export SKU            (tools/export_sku/export_sku.py)
 
 Usage:
     python jenkins.py
@@ -28,6 +29,7 @@ STEPS = [
     ("Color re-processing",  BASE / "tools" / "color_size_deal" / "color_reprocess.py"),
     ("Title optimization",    BASE / "tools" / "title_optimize" / "title_rewrite.py"),
     ("de title build",      BASE / "tools" / "title_auto_fill" / "de_title_build.py"),
+    ("Export SKU",            BASE / "tools" / "export_sku" / "export_sku.py"),
 ]
 
 
