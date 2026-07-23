@@ -30,7 +30,7 @@ STEPS = [
     ("Excel pipeline",      BASE / "main.py"),
     ("Color re-processing",  BASE / "tools" / "color_size_deal" / "color_reprocess.py"),
     ("Title optimization",    BASE / "tools" / "title_optimize" / "title_rewrite.py"),
-    ("de title build",      BASE / "tools" / "title_auto_fill" / "de_title_build.py"),
+    # ("de title build",      BASE / "tools" / "title_auto_fill" / "de_title_build.py"),
     ("Export SKU",            BASE / "tools" / "export_sku" / "export_sku.py"),
 ]
 

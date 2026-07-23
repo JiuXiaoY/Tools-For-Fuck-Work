@@ -127,11 +127,7 @@ def main() -> None:
     wb = openpyxl.load_workbook(src)
     ws = wb.active
 
-    # Insert one column after G (col 7) → new column at position 8
-    ws.insert_cols(8)
-    _log.info("Inserted new column at position 8 (after G)")
-
-    # Write optimized titles to the new column H (8), matching original rows
+    # Write optimized titles to column H (8), overwriting original
     opt_idx = 0
     written = 0
     for r in range(1, ws.max_row + 1):
