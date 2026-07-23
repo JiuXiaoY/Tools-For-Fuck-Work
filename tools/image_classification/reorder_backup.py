@@ -1,0 +1,255 @@
+"""Reorder image links in Excel: mark non-conforming size chart positions red.
+
+Data source: O-W columns (15-23) of outputs/{date}v1.xlsx
+
+Multi-threaded: rows split across threads, each thread processes independently.
+Results merged, then applied to Excel in single thread.
+
+Usage:
+    python tools/image_classification/reorder.py
+"""
+
+from __future__ import annotations
+
+import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
+
+import requests
+from openpyxl.styles import PatternFill
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
+from config import Config
+from services.logger import get_logger
+
+BASE = Path(__file__).resolve().parent
+TEMP_DIR = BASE / "images_awaiting"
+_log = get_logger("image_reorder")
+
+COL_START = 15
+COL_END = 23
+WORKERS = 4
+
+_session: requests.Session | None = None
+
+
+def _get_session() -> requests.Session:
+    global _session
+    if _session is None:
+        _session = requests.Session()
+    return _session
+
+
+def _download(url: str) -> Path | None:
+    TEMP_DIR.mkdir(parents=True, exist_ok=True)
+    name = url.split("/")[-1].split("?")[0] or "img.jpg"
+    out = TEMP_DIR / name
+    if out.exists() and out.stat().st_size < 100:
+        out.unlink()
+    sess = _get_session()
+    for attempt in range(1, 4):
+        try:
+            resp = sess.get(url, timeout=30)
+            resp.raise_for_status()
+            out.write_bytes(resp.content)
+            return out
+        except Exception:
+            if attempt < 3:
+                time.sleep(1)
+    return None
+
+
+def _is_size_chart(img_path: Path, cfg: Config) -> bool:
+    from tools.image_classification.classify import _detect_ocr, _detect_opencv, _detect_heuristic
+    mode = cfg.img_classify_mode
+    scores: dict[str, float] = {}
+    if mode in ("heuristic", "all"):
+        scores["heuristic"] = _detect_heuristic(img_path)
+    if mode in ("ocr", "all"):
+        scores["ocr"] = _detect_ocr(img_path, cfg)
+    if mode in ("opencv", "all"):
+        scores["opencv"] = _detect_opencv(img_path, cfg)
+    if mode == "all":
+        valid = {k: v for k, v in scores.items() if v > 0.0}
+        if not valid:
+            return False
+        yes = sum(1 for v in valid.values() if v >= 0.5)
+        avg = sum(valid.values()) / len(valid)
+        return yes >= 2 or avg >= 0.6
+    return scores.get(mode, 0.0) >= 0.5
+
+
+# ── Per-row processing (called by threads) ──
+
+def _process_row(r: int, links_raw: list[str | None], cfg: Config) -> dict:
+    """
+    Process one row: classify all cells, determine red marks and copy target.
+    Returns: {"row": r, "red_cols": [...], "copy": (src_col, dst_col) | None, "all_red": bool}
+    """
+    links: list[tuple[int, str]] = []
+    for i, val in enumerate(links_raw):
+        if val is None:
+            break
+        links.append((COL_START + i, val))
+
+    if not links:
+        return {"row": r, "red_cols": [], "copy": None, "all_red": False}
+
+    num_cols = len(links)
+
+    # Classify all cells
+    is_chart: list[bool | None] = []
+    for col, url in links:
+        p = _download(url)
+        if p is None:
+            is_chart.append(None)
+            continue
+        try:
+            result = _is_size_chart(p, cfg)
+            is_chart.append(result)
+        except Exception:
+            is_chart.append(False)
+        finally:
+            try: p.unlink()
+            except OSError: pass
+
+    # Algorithm (startCol always = 1 per thread)
+    si = 0
+    found_col: int | None = None
+
+    if is_chart[si]:
+        found_col = si + 1
+    else:
+        for j in range(si + 1, num_cols):
+            if is_chart[j]:
+                found_col = j + 1
+                break
+        if found_col is None:
+            for j in range(0, si):
+                if is_chart[j]:
+                    found_col = j + 1
+                    break
+
+    if found_col is None:
+        return {"row": r, "red_cols": [COL_START + i for i in range(num_cols)], "copy": None, "all_red": True}
+
+    target_col = COL_START + found_col - 1
+    last_col = COL_START + num_cols - 1
+    dst_col = last_col + 1
+    if dst_col > COL_END:
+        dst_col = COL_END
+
+    return {"row": r, "red_cols": [target_col], "copy": (target_col, dst_col), "all_red": False}
+
+
+def main() -> None:
+    cfg = Config()
+    date_str = _resolve_date(cfg)
+    src = Path(__file__).resolve().parent.parent.parent / cfg.out_dir / f"{date_str}v1.xlsx"
+
+    if not src.exists():
+        _log.error("Source not found: %s", src)
+        return
+
+    import openpyxl
+    wb = openpyxl.load_workbook(src, data_only=True)
+    ws = wb.active
+    max_row = ws.max_row
+
+    _log.info("Source: %s  Rows: %d  Range: O(%d)-W(%d)  Mode: %s  Workers: %d",
+              src.name, max_row, COL_START, COL_END, cfg.img_classify_mode, WORKERS)
+
+    # ── Collect all row data (fast, read-only) ──
+    all_rows: dict[int, list[str | None]] = {}
+    for r in range(1, max_row + 1):
+        links: list[str | None] = []
+        for c in range(COL_START, COL_END + 1):
+            val = ws.cell(row=r, column=c).value
+            if val is None or str(val).strip() == "":
+                links.append(None)
+            else:
+                links.append(str(val).strip())
+        all_rows[r] = links
+    wb.close()
+
+    # ── Split rows across threads ──
+    row_nums = list(all_rows.keys())
+    chunk_size = max(1, len(row_nums) // WORKERS)
+    chunks = [row_nums[i:i + chunk_size] for i in range(0, len(row_nums), chunk_size)]
+
+    _log.info("Processing %d rows in %d chunks", len(row_nums), len(chunks))
+
+    results: list[dict] = []
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        fut_to_chunk = {}
+        for ci, chunk in enumerate(chunks):
+            fut = pool.submit(_process_chunk, chunk, all_rows, cfg, ci + 1)
+            fut_to_chunk[fut] = ci
+
+        for fut in as_completed(fut_to_chunk):
+            chunk_results = fut.result()
+            results.extend(chunk_results)
+
+    # Sort by row
+    results.sort(key=lambda x: x["row"])
+
+    # ── Apply to Excel ──
+    wb = openpyxl.load_workbook(src)
+    ws = wb.active
+
+    def _mark_red(ws, row: int, col: int) -> None:
+        cell = ws.cell(row=row, column=col)
+        cell.fill = PatternFill(start_color="FFCCCC", end_color="FFCCCC", fill_type="solid", patternType="solid")
+        from copy import copy
+        if not cell.has_style:
+            cell.font = copy(cell.font)
+
+    rows_red = 0
+    for res in results:
+        r = res["row"]
+        for col in res["red_cols"]:
+            _mark_red(ws, r, col)
+        if res["copy"]:
+            src_col, dst_col = res["copy"]
+            src_cell = ws.cell(row=r, column=src_col)
+            dst_cell = ws.cell(row=r, column=dst_col)
+            dst_cell.value = src_cell.value
+            dst_cell.hyperlink = src_cell.hyperlink
+        if res["all_red"] or res["red_cols"]:
+            rows_red += 1
+
+    wb.save(src)
+    wb.close()
+    _log.info("Done: %d rows processed, %d rows with red marks", len(results), rows_red)
+
+
+def _process_chunk(row_nums: list[int], all_rows: dict, cfg: Config, chunk_id: int) -> list[dict]:
+    """Process a chunk of rows in one thread."""
+    results = []
+    for i, r in enumerate(row_nums):
+        res = _process_row(r, all_rows[r], cfg)
+        results.append(res)
+        if (i + 1) % 100 == 0:
+            _log.info("  Chunk %d: %d/%d", chunk_id, i + 1, len(row_nums))
+    _log.info("  Chunk %d: done (%d rows)", chunk_id, len(row_nums))
+    return results
+
+
+def _resolve_date(cfg: Config) -> str:
+    raw = cfg.date_override.strip()
+    if raw and len(raw) == 6:
+        try:
+            month = int(raw[2:4])
+            day = int(raw[4:6])
+            return f"{month}.{day}"
+        except ValueError:
+            pass
+    from datetime import datetime
+    today = datetime.now()
+    return f"{today.month}.{today.day}"
+
+
+if __name__ == "__main__":
+    main()

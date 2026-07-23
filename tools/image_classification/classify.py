@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import shutil
 import sys
+import threading
 from pathlib import Path
 
 from PIL import Image, ImageFilter, ImageStat
@@ -82,10 +83,11 @@ def _detect_heuristic(img_path: Path) -> float:
 
 def _detect_ocr(img_path: Path, cfg: Config) -> float:
     """OCR-based detection. Returns confidence 0.0-1.0."""
+    thread_name = threading.current_thread().name
     try:
         import easyocr
     except ImportError:
-        _log.warning("    OCR skip: easyocr not installed (pip install easyocr)")
+        _log.warning("    [%s] OCR skip: easyocr not installed (pip install easyocr)", thread_name)
         return 0.0
 
     # Lazy init reader (cached globally)
@@ -114,14 +116,14 @@ def _detect_ocr(img_path: Path, cfg: Config) -> float:
         results = reader.readtext(np.array(img_small), detail=0)
         text = " ".join(results)
     except Exception as exc:
-        _log.warning("    OCR failed: %s", exc)
+        _log.warning("    [%s] OCR failed: %s", thread_name, exc)
         return 0.0
 
     # Count letters and digits
     alpha_num = sum(1 for c in text if c.isalpha() or c.isdigit())
 
-    _log.info("    OCR: %d chars, %d alpha/num, sample: %s",
-              len(text), alpha_num, text[:120].replace('\n', ' '))
+    _log.info("    [%s] OCR: %d chars, %d alpha/num, sample: %s",
+              thread_name, len(text), alpha_num, text[:120].replace('\n', ' '))
 
     # High text density → likely size chart (tables have lots of numbers/letters)
     # Product photos have very little recognizable text
@@ -136,11 +138,12 @@ def _detect_ocr(img_path: Path, cfg: Config) -> float:
 
 def _detect_opencv(img_path: Path, cfg: Config) -> float:
     """OpenCV-based table-line detection. Returns confidence 0.0-1.0."""
+    thread_name = threading.current_thread().name
     try:
         import cv2
         import numpy as np
     except ImportError:
-        _log.warning("    OpenCV skip: opencv-python not installed (pip install opencv-python)")
+        _log.warning("    [%s] OpenCV skip: opencv-python not installed (pip install opencv-python)", thread_name)
         return 0.0
 
     img = cv2.imread(str(img_path), cv2.IMREAD_GRAYSCALE)
