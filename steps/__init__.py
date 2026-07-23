@@ -1,6 +1,5 @@
-﻿"""Step registry — the ordered list of pipeline steps."""
+"""Step registry — the ordered list of pipeline steps."""
 
-from steps.remove_header      import RemoveHeaderStep
 from steps.merge_sheets       import MergeSheetsStep
 from steps.validate           import ValidateStep
 from steps.insert_columns     import InsertColumnsStep
@@ -19,7 +18,6 @@ from core import PipelineStep
 
 def get_steps() -> list[PipelineStep]:
     return [
-        RemoveHeaderStep(),
         MergeSheetsStep(),
         ValidateStep(),
         InsertColumnsStep(),

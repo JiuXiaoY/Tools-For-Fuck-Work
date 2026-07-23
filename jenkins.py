@@ -2,11 +2,12 @@
 
 Steps:
   1. xls → xlsx          (tools/xls2xlsx.py)
-  2. Excel pipeline       (main.py: merge + 13-step pipeline)
-  3. Color re-processing  (tools/color_size_deal/color_reprocess.py)
-  4. Title optimization   (tools/title_optimize/title_rewrite.py)
-  5. Title auto fill      (tools/title_auto_fill/de_title_build.py)
-  6. Export SKU            (tools/export_sku/export_sku.py)
+  2. Preprocess           (preprocess/run.py)
+  3. Excel pipeline       (main.py: merge + 13-step pipeline)
+  4. Color re-processing  (tools/color_size_deal/color_reprocess.py)
+  5. Title optimization   (tools/title_optimize/title_rewrite.py)
+  6. Title auto fill      (tools/title_auto_fill/de_title_build.py)
+  7. Export SKU            (tools/export_sku/export_sku.py)
 
 Usage:
     python jenkins.py
@@ -25,6 +26,7 @@ _log = get_logger("jenkins")
 
 STEPS = [
     ("xls → xlsx",          BASE / "tools" / "xls2xlsx.py"),
+    ("Preprocess",           BASE / "preprocess" / "run.py"),
     ("Excel pipeline",      BASE / "main.py"),
     ("Color re-processing",  BASE / "tools" / "color_size_deal" / "color_reprocess.py"),
     ("Title optimization",    BASE / "tools" / "title_optimize" / "title_rewrite.py"),

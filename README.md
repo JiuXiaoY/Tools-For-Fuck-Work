@@ -31,7 +31,10 @@ dealExcel_refactoring/
 ├── requirements.txt
 │
 ├── core/                       # 流水线核心（Pipeline / Step / Context）
-├── steps/                      # 13 个处理步骤（删除标题/合并/插入列/颜色映射/尺码/价格/格式化...）
+├── steps/                      # 12 个流水线步骤
+├── preprocess/                 # 预处理（在原始文件上，流水线之前）
+│   ├── run.py                  #   入口
+│   └── steps/                  #   预处理步骤（去表头 / SKU 去重）
 ├── services/                   # 工具函数（excel/images/logger/ai_client...）
 ├── rules/                      # 业务规则（价格提取）
 ├── data/                       # 映射表
@@ -87,11 +90,13 @@ python jenkins.py
 ```
 
 ```
-[1/5] xls → xlsx              转换源文件
-[2/5] Excel pipeline           合并 → 13 步流水线 → 输出 {date}v1.xlsx
-[3/5] Color re-processing      颜色尺码大组处理 → 回写第 10 列
-[4/5] Title optimization       提取标题 → DeepSeek 优化 → 回写第 8 列
-[5/5] Title auto fill [TODO]    生成德语标题 → 回写第 4 列（尚未实现）
+[1/7] xls → xlsx              转换源文件
+[2/7] Preprocess               去表头 + SKU 去重
+[3/7] Excel pipeline           合并 → 12 步流水线 → 输出
+[4/7] Color re-processing      颜色尺码大组处理 → 回写第 10 列
+[5/7] Title optimization       提取标题 → DeepSeek 优化 → 回写第 8 列
+[6/7] Title auto fill          生成德语标题 → 回写第 4 列
+[7/7] Export SKU               导出 SKU 表
 ```
 
 ---
@@ -184,6 +189,10 @@ python tools/color_size_deal/process.py
 
 - `retry_max_rounds_deepseek` — DeepSeek 网页端重试轮数（默认 `5`）
 - `retry_max_rounds_hotwords` — 热词采集重试轮数（默认 `5`）
+
+### Preprocess
+
+- `preprocess_dedup_max_gap` — SKU 去重：同 SKU 有色行最大间距，超此值视为新组（默认 `100`）
 
 ### 映射表
 
