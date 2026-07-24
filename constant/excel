@@ -1,0 +1,13 @@
+=LET(
+    n, COUNTA(A:A),
+    r, ROW(),
+    g, ROUNDUP(r/n, 0),
+    p, MOD(r-1, n)+1,
+    lab, INDEX(A:A, p),
+    prd, INDEX(C:C, r),
+    IF(MOD(g,2)=1, lab & " " & prd, prd & " " & lab)
+)
+
+=COUNTIF(yellow, $A7)>0
+
+Einheitsgröße
