@@ -258,7 +258,7 @@ def main() -> None:
             failed.append(kw)
             ok = False
         if ok:
-            total_kw = sum(len(fluc_words_list) + len(rank_words_list))  # approximate
+            _log.info("  → total %d words", len(fluc_words_list) + len(rank_words_list))
         time.sleep(REQUEST_INTERVAL)
 
     # ── Retry failed keywords ──

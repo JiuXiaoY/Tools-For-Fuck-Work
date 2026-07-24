@@ -34,7 +34,7 @@ _log = get_logger("image_reorder")
 COL_START = 15
 COL_END = 23
 # 将并发数提升至 16，充分利用网络和 CPU，如果被服务器拦截可适当调小
-WORKERS = 5
+WORKERS = 6
 
 # 使用 threading.local() 保证每个线程有独立的 Session 和连接池
 _thread_local = threading.local()
