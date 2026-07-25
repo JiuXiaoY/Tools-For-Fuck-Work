@@ -92,6 +92,11 @@ class Config:
     retry_max_rounds_deepseek: int = 5                     # DeepSeek 网页端重试轮数
     retry_max_rounds_hotwords: int = 5                     # 热词采集失败重试轮数
 
+    # ── image reorder ─────────────────────────────────────────────────
+    # "copy_single" — copy size chart to end, mark original red
+    # "move_dual"   — remove size chart, shift others forward, place 2 copies at tail
+    img_reorder_mode: str = "copy_single"
+
     @property
     def color_mapping_path(self) -> Path:
         return Path(__file__).resolve().parent / "data" / "color_mapping.json"
