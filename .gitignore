@@ -21,7 +21,7 @@ outputs/
 public/
 logs/
 
-# Tools ¡ª generated
+# Tools ï¿½ï¿½ generated
 tools/needToCollect/result/
 tools/title_optimize/temp_photo/
 tools/title_optimize/browser_data/
@@ -30,3 +30,12 @@ tools/title_auto_fill/gemini_state.json
 tools/title_auto_fill/gemini_browser/
 # Secret backups
 constant/dzq.bak
+
+# Generated intermediary files
+tools/color_size_deal/check_*.txt
+tools/title_optimize/origin_link
+tools/title_optimize/origin_title
+tools/title_optimize/optimize_title
+
+# Backup files
+*.bak

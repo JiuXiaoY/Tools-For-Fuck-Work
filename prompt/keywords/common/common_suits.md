@@ -23,7 +23,7 @@ Zweireihig (双排扣), Überkreuzt (交叉系带), Tailliert (收腰), Bootcut 
 Figurbetont (修身), Plus-Size (大码), Fliege (领结), Hosenträger (背带), Einstecktuch (口袋巾)
 
 ## [颜色/图案]
-Beige (米色), Blumenmuster / Floral (碎花/印花), Einfarbig / Uni (纯色), Farbverlauf (渐变), Gepunktet / Polka Dots (波点), Gestreift (条纹)
+Beige (米色), Blumenmuster / Floral (碎花/印花), Einfarbig (纯色), Farbverlauf (渐变), Gepunktet / Polka Dots (波点), Gestreift (条纹)
 Kariert (格子), Khaki (卡其色), Leopardenmuster / Leo-Print (豹纹), Schwarz (黑色), Weiß (白色), Weinrot (酒红色)
 Zebramuster (斑马纹), Colorblock (拼色), Kontrast (撞色), Farbverlauf (渐变撞色), Kontrastpaspel (撞色包边), Camouflage (迷彩拼接)
 Karo (格纹), Kleinkariert (小格子), Großkariert (大格纹), Blockstreifen (宽条纹), Längsstreifen (竖条纹), Querstreifen (横条纹)
