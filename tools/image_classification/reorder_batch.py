@@ -184,32 +184,22 @@ def main() -> None:
     wb.close()
 
     # ── 3. Process batches in parallel ──
-    # Flatten batches into per-row work items tagged with their batch's
-    # "leader" row (the first data row whose size-chart index we scan).
-    work_items: list[dict] = []
-    for batch_start, batch_end in batches:
-        leader = batch_start
-        for r in range(batch_start, batch_end + 1):
-            work_items.append({
-                "row": r,
-                "leader_row": leader,
-                "batch_start": batch_start,
-                "batch_end": batch_end,
-            })
+    # Each batch is an atomic unit: same leader row, same size-chart position.
+    # Assign full batches to workers (not individual rows) to avoid
+    # redundant leader scans when a batch spans chunk boundaries.
+    _log.info("Processing %d batches across %d workers", len(batches), WORKERS)
 
-    _log.info("Processing %d rows in %d work items across %d workers",
-              len(work_items), len(work_items), WORKERS)
-
-    chunk_size = max(1, len(work_items) // WORKERS)
-    chunks = [work_items[i:i + chunk_size] for i in range(0, len(work_items), chunk_size)]
+    batch_list = list(batches)  # (start, end) tuples
+    chunk_size = max(1, len(batch_list) // WORKERS)
+    chunks = [batch_list[i:i + chunk_size] for i in range(0, len(batch_list), chunk_size)]
 
     results: list[dict] = []
     with ThreadPoolExecutor(max_workers=WORKERS, thread_name_prefix="Batch") as pool:
-        fut_to_chunk = {}
-        for ci, chunk in enumerate(chunks):
-            fut = pool.submit(_process_chunk, chunk, all_rows, cfg, ci + 1)
-            fut_to_chunk[fut] = ci
-        for fut in as_completed(fut_to_chunk):
+        futs = []
+        for ci, chunk_batches in enumerate(chunks):
+            fut = pool.submit(_process_batches, chunk_batches, all_rows, cfg, ci + 1)
+            futs.append(fut)
+        for fut in as_completed(futs):
             chunk_results = fut.result()
             results.extend(chunk_results)
 
@@ -279,6 +269,40 @@ def main() -> None:
                     cell.value = None
                     cell.hyperlink = None
 
+            elif cfg.img_reorder_mode == "inline_dual":
+                # Read all cell values in this row
+                cells = []
+                for c in range(COL_START, COL_START + num_links):
+                    cell = ws.cell(row=r, column=c)
+                    cells.append({
+                        "value": cell.value,
+                        "hyperlink": cell.hyperlink,
+                    })
+
+                chart = cells[size_chart_idx]
+                # Insert a copy right after original, then append another at tail
+                ordered = list(cells)
+                ordered.insert(size_chart_idx + 1, chart)
+                ordered.append(chart)
+
+                # Truncate from end if exceeds column range
+                max_cols = COL_END - COL_START + 1
+                if len(ordered) > max_cols:
+                    ordered = ordered[:max_cols]
+
+                # Write back, no gaps
+                for i, cdata in enumerate(ordered):
+                    col = COL_START + i
+                    dst = ws.cell(row=r, column=col)
+                    dst.value = cdata["value"]
+                    dst.hyperlink = cdata.get("hyperlink")
+
+                # Clear remaining columns
+                for c in range(COL_START + len(ordered), COL_END + 1):
+                    cell = ws.cell(row=r, column=c)
+                    cell.value = None
+                    cell.hyperlink = None
+
             else:  # "copy_single" (default)
                 if actual_col == last_col:
                     continue
@@ -297,57 +321,49 @@ def main() -> None:
     _log.info("Done: %d rows processed, %d rows with red marks", len(results), rows_red)
 
 
-def _process_chunk(work_items: list[dict],
-                   all_rows: dict,
-                   cfg: Config,
-                   chunk_id: int) -> list[dict]:
-    """Process a chunk of work items — only SCAN the leader row of each batch."""
+def _process_batches(batches: list[tuple[int, int]],
+                     all_rows: dict,
+                     cfg: Config,
+                     chunk_id: int) -> list[dict]:
+    """Process a list of (start, end) batch tuples."""
     thread_name = threading.current_thread().name
-    _log.info("[%s] Chunk %d started (%d items)", thread_name, chunk_id, len(work_items))
-
-    # Cache: leader_row → size_chart_idx (scanned once per batch)
-    batch_cache: dict[int, int | None] = {}
+    _log.info("[%s] Chunk %d started (%d batches)", thread_name, chunk_id, len(batches))
 
     results = []
 
-    for i, item in enumerate(work_items):
-        r     = item["row"]
-        ldr   = item["leader_row"]
-        links: list[str] = []
-        for val in all_rows[r]:
-            if val is None:
-                break
-            links.append(val)
-        num_links = len(links)
+    for bi, (batch_start, batch_end) in enumerate(batches):
+        leader = batch_start
+        # Scan leader once per batch
+        idx = _scan_leader(leader, all_rows, cfg)
+        _log.info("  [%s] Batch leader row %d → size_chart_idx=%s",
+                  thread_name, leader, idx)
 
-        if num_links == 0:
-            results.append({"row": r, "num_links": 0, "all_red": False})
-            continue
+        for r in range(batch_start, batch_end + 1):
+            links: list[str] = []
+            for val in all_rows[r]:
+                if val is None:
+                    break
+                links.append(val)
+            num_links = len(links)
 
-        # ── Determine size_chart_idx for this row ──
-        if ldr not in batch_cache:
-            # SCAN the leader row
-            idx = _scan_leader(ldr, all_rows, cfg)
-            batch_cache[ldr] = idx
-            _log.info("  [%s] Batch leader row %d → size_chart_idx=%s",
-                      thread_name, ldr, idx)
+            if num_links == 0:
+                results.append({"row": r, "num_links": 0, "all_red": False})
+                continue
 
-        cached_idx = batch_cache[ldr]
+            if idx is None:
+                results.append({"row": r, "num_links": num_links, "all_red": True})
+            else:
+                results.append({
+                    "row": r,
+                    "num_links": num_links,
+                    "size_chart_idx": idx,
+                    "all_red": False,
+                })
 
-        if cached_idx is None:
-            results.append({"row": r, "num_links": num_links, "all_red": True})
-        else:
-            results.append({
-                "row": r,
-                "num_links": num_links,
-                "size_chart_idx": cached_idx,
-                "all_red": False,
-            })
+        if (bi + 1) % 20 == 0:
+            _log.info("  [%s] Chunk %d: %d/%d batches", thread_name, chunk_id, bi + 1, len(batches))
 
-        if (i + 1) % 50 == 0:
-            _log.info("  [%s] Chunk %d: %d/%d", thread_name, chunk_id, i + 1, len(work_items))
-
-    _log.info("[%s] Chunk %d completed", thread_name, chunk_id)
+    _log.info("[%s] Chunk %d completed (%d batches)", thread_name, chunk_id, len(batches))
     return results
 
 

@@ -64,7 +64,12 @@ dealExcel_refactoring/
 │   │   ├── de_collect.py       #   采集（空壳）
 │   │   ├── de_write_back.py    #   回写第 4 列
 │   │   └── final_de_title
-│   └── txt2md.py
+│   ├── txt2md.py
+│   ├── image_classification/    # 图片分类 & 重排（尺码表检测）
+│   │   ├── classify.py          #   三引擎分类器（heuristic / ocr / opencv）
+│   │   ├── reorder.py           #   逐行扫描重排
+│   │   ├── reorder_batch.py     #   批次重排（按A列有色行分组）
+│   │   └── reorder_backup.py    #   旧版备份
 │
 ├── prompt/                     # AI 提示词（8 个品类指令 + 关键词库）
 │   ├── instructions/
@@ -118,6 +123,10 @@ python tools/needToCollect/hotwords.py
 
 # 颜色尺码手动处理
 python tools/color_size_deal/process.py
+
+# 图片重排（尺码表移到行末）
+python tools/image_classification/reorder.py           # 默认逐行扫描
+python tools/image_classification/reorder_batch.py      # 批次模式
 ```
 
 ---
@@ -184,6 +193,16 @@ python tools/color_size_deal/process.py
 ### Pipeline
 
 - `delete_source_after_merge` — 合并后是否删除源文件（默认 `False`）
+
+### Image Classification
+
+- `img_classify_mode` — 分类引擎 `"ocr"` / `"opencv"` / `"heuristic"` / `"all"`（多引擎投票）
+- `img_classify_ocr_lang` — OCR 语言包 `"eng+deu"`
+- `img_classify_table_min_lines` — OpenCV 模式最少水平线数（默认 `10`，>此值判定为尺码图）
+- `img_reorder_mode` — 图片重排模式，三种：
+  - `"inline_dual"`（默认）— 原位保留尺码图，后插一份，末尾追加一份；超出列范围从末尾截断
+  - `"move_dual"` — 尺码图移除并前移填补，末尾放两份
+  - `"copy_single"` — 尺码图复制到行末，原位置标红
 
 ### Retry
 

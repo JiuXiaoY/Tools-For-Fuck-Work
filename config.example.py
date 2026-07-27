@@ -93,9 +93,11 @@ class Config:
     retry_max_rounds_hotwords: int = 5                     # 热词采集失败重试轮数
 
     # ── image reorder ─────────────────────────────────────────────────
+    # "inline_dual" — keep original, insert a copy right after it, append
+    #                 another at tail. Truncate from end if exceeds O-W.
     # "copy_single" — copy size chart to end, mark original red
     # "move_dual"   — remove size chart, shift others forward, place 2 copies at tail
-    img_reorder_mode: str = "copy_single"
+    img_reorder_mode: str = "inline_dual"
 
     @property
     def color_mapping_path(self) -> Path:
