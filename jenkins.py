@@ -59,6 +59,19 @@ def main() -> None:
     _log.info("=" * 50)
     _log.info("All %d steps completed successfully", len(STEPS))
 
+    # ── Clean up generated intermediary files ──
+    for f in [
+        BASE / "tools" / "title_optimize" / "optimize_title",
+        BASE / "tools" / "title_optimize" / "origin_link",
+        BASE / "tools" / "title_optimize" / "origin_title",
+        BASE / "tools" / "color_size_deal" / "check_.txt",
+    ]:
+        try:
+            f.write_text("", encoding="utf-8")
+            _log.info("Cleared: %s", f.relative_to(BASE))
+        except Exception as exc:
+            _log.warning("Failed to clear %s: %s", f.relative_to(BASE), exc)
+
 
 if __name__ == "__main__":
     main()

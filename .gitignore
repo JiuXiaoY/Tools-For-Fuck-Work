@@ -36,6 +36,8 @@ tools/color_size_deal/check_*.txt
 tools/title_optimize/origin_link
 tools/title_optimize/origin_title
 tools/title_optimize/optimize_title
+tools/title_auto_fill/final_de_title
+tools/title_auto_fill/final_de_title_s
 
 # Backup files
 *.bak

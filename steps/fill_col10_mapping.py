@@ -17,6 +17,8 @@ class FillCol10MappingStep(PipelineStep):
             ctx.log("color_mapping.json is empty, skipping column 10 fill")
             return ctx
 
+        # Build case-insensitive mapping (lowercase keys)
+        ci_mapping: dict[str, str] = {k.lower(): v for k, v in mapping.items()}
         filled = 0
         skipped = 0
         for r in range(1, ws.max_row + 1):
@@ -26,9 +28,9 @@ class FillCol10MappingStep(PipelineStep):
             val = ws.cell(row=r, column=cfg.col_i).value
             if is_blank(val):
                 continue
-            key = str(val).strip()
-            if key in mapping:
-                ws.cell(row=r, column=cfg.col_j).value = mapping[key]
+            key = str(val).strip().lower()
+            if key in ci_mapping:
+                ws.cell(row=r, column=cfg.col_j).value = ci_mapping[key]
                 filled += 1
         ctx.log(f"Column {cfg.col_j}: {filled} cells mapped, {skipped} rows skipped (col A has fill)")
         return ctx
