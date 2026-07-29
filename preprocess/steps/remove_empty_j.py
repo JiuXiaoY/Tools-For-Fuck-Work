@@ -5,6 +5,7 @@ from copy import copy
 from openpyxl.drawing.spreadsheet_drawing import OneCellAnchor, TwoCellAnchor
 from openpyxl.workbook.workbook import Workbook
 
+from services import cell_has_fill
 from services.logger import get_logger
 
 _log = get_logger("preprocess")
@@ -29,6 +30,9 @@ class RemoveEmptyJStep:
             # ── Determine which rows to delete ──
             to_delete: set[int] = set()
             for r in range(1, max_row + 1):
+                # Skip rows with fill in column A (marker rows, not data rows)
+                if cell_has_fill(ws.cell(row=r, column=1)):
+                    continue
                 val = ws.cell(row=r, column=10).value
                 if val is None or str(val).strip() == "":
                     to_delete.add(r)

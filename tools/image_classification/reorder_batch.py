@@ -239,6 +239,13 @@ def main() -> None:
             actual_col = COL_START + size_chart_idx
             last_col   = COL_START + num_links - 1
 
+            # If size_chart_idx exceeds current row's link count, mark red
+            if size_chart_idx >= num_links:
+                for c in range(COL_START, COL_START + num_links):
+                    _mark_red(ws, r, c)
+                rows_red += 1
+                continue
+
             if cfg.img_reorder_mode == "move_dual":
                 # Read all cell values + hyperlinks in this row
                 cells = []

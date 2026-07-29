@@ -1,11 +1,12 @@
 """Deduplicate filled rows by column C value with distance threshold.
 
-Rule 1: Two consecutive rows both with col-A fill → delete the first row entirely.
-Rule 2: Non-consecutive filled rows with same col-C value:
-    - If gap <= max_gap: delete the later row, keep comparing to the anchor.
-    - If gap > max_gap: the later row becomes the new anchor.
-    - Stop when col-C value changes.
-Rule 3: Do not cross different col-C values (skip gaps).
+Only considers rows where col-A has a fill ("filled rows").
+For each adjacent pair in the filled-row sequence:
+    - If the rows between two filled rows <= CLOSE_GAP (5): delete the anchor row
+      and all rows in between; the later row is kept and becomes the new anchor.
+    - Otherwise, if col-C values are equal AND the row gap <= max_gap:
+      delete the later row, keeping the anchor row.
+    - Otherwise: the later row becomes the new anchor.
 """
 
 from copy import copy
@@ -23,7 +24,7 @@ class DedupFilledRowsStep:
     """Preprocessing: deduplicate filled rows by col-C value."""
 
     name = "dedup_filled_rows"
-    description = "Remove duplicate filled rows where col-C matches, within N-row window"
+    description = "Remove close filled rows (<=5 between) + dedup by col-C with max_gap, anchor-based"
 
     def run(self, wb: Workbook, path: str) -> int:
         from config import Config
@@ -45,31 +46,27 @@ class DedupFilledRowsStep:
             _log.info("  [%s] Less than 2 filled rows, nothing to dedup", path)
             return 0
 
-        # ── Determine which rows to delete ──
+        # ── Determine which rows to delete (anchor-based) ──
         to_delete: set[int] = set()
-        i = 0
-        while i < len(filled) - 1:
+        CLOSE_GAP = 5  # 两有色行之间允许的最大行数
+        r_anchor, c_anchor = filled[0]
+
+        for i in range(1, len(filled)):
             r_curr, c_curr = filled[i]
-            r_next, c_next = filled[i + 1]
+            between = (r_curr - r_anchor) - 1  # 两有色行之间夹的行数
 
-            if r_next == r_curr + 1:
+            if between <= CLOSE_GAP:
+                # 间距很近(之间≤5行)：删除锚点行和之间的所有行，保留当前行作为新锚点
+                to_delete.add(r_anchor)
+                for mid_row in range(r_anchor + 1, r_curr):
+                    to_delete.add(mid_row)
+                r_anchor, c_anchor = r_curr, c_curr
+            elif _same_value(c_anchor, c_curr) and (r_curr - r_anchor) <= max_gap:
+                # C相同且间距在阈值内 → 删除后面的行，保持锚点不变
                 to_delete.add(r_curr)
-                i += 1
-                continue
-
-            if _same_value(c_curr, c_next):
-                if r_next - r_curr <= max_gap:
-                    to_delete.add(r_next)
-                    i += 1
-                else:
-                    i += 1
             else:
-                i += 1
-
-        # If the last filled row is the very last row of the sheet, delete it
-        last_filled = filled[-1]
-        if last_filled[0] == max_row:
-            to_delete.add(last_filled[0])
+                # C不同或间距超阈值 → 当前行成为新锚点
+                r_anchor, c_anchor = r_curr, c_curr
 
         if not to_delete:
             _log.info("  [%s] No duplicate filled rows to remove", path)
