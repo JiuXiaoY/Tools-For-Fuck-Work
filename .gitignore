@@ -41,3 +41,7 @@ tools/title_auto_fill/final_de_title_s
 
 # Backup files
 *.bak
+
+# Reasonix
+reasonix.toml
+.reasonix/
