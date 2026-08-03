@@ -38,8 +38,8 @@
    - **副标题规则 (115~125 字符 含空格)**：
      - 新版重点流量入口，适配Alexa对话式搜索推荐。
      - **填写要求**：不写长句、不堆冗余内容，只提炼**核心词条**。
-     - **布局方向**：材质、核心功能、核心参数、使用场景、适配人群（如 `Herren`）等高匹配词根。
-     - **不写通顺的句子**，构建高密度关键词流。模仿示例中品类词连续堆砌的方式，如 `Hoodie Herren Kapuzenpullover Sweatshirt Pulli` 或 `Regenjacke Wasserdicht Windbreaker Jacke`。  
+     - **布局方向**：材质、核心功能、核心参数、使用场景、适配人群（如 `Herren`）等高匹配词根、场景词可多写几个。
+     - **不写通顺的句子**，构建高密度关键词流。如 `Hoodie Herren Kapuzenpullover Sweatshirt Pulli` 或 `Regenjacke Wasserdicht Windbreaker Jacke`。  
      - 形容词（如 `locker`、`leicht`、`wasserdicht`、`atmungsaktiv`）必须直接修饰名词，形成权重词组（如 `Leichte Sommerjacke`、`Wasserdichte Regenjacke`），严禁单独罗列。
 
 **3. 去冗余与精准化**  
@@ -47,10 +47,8 @@
    - **精准堆砌**：将不同形态的品类词和长尾词合理布局在副标题中，副标题是以词组化形态存在的关键词流。
 
 **4. 副标题各部分规则（针对副标题）**  
-   - **头部**：必须包含一次独立的性别词 `Herren`，优先采用高频结构如 `Hoodie Herren`、`Regenjacke Herren`、`Sweatshirt Herren`，确保核心品类词与人群紧密绑定，必须使用前置高涨幅关键词词组。 
-   - **中部**：高密度堆砌细分品类词、版型词、领口/拉链词、风格/场景词，形成搜索覆盖群（如 `Oversize Reißverschluss Sweatjacke Fleece Lässig`、`Atmungsaktiv Fahrradjacke Outdoorjacke Regular Fit`）。  
-   - **尾部**：以一个高权重名词收尾。可使用品类词（如 `common_tops.md` 里的后缀品类词（优先使用）和尾部词等）、变体品类词 或 “名词 + 场景/细节”（如 `mit Kapuze`、`mit Taschen`）。**绝对禁止**以单独的形容词结尾。  
-   - 尾部品类词应避免与头部核心品类词完全一致，优先选用同义变体或上位词。
+   - **头部**：必须包含一次独立的性别词 `Herren`，优先采用高频结构如 `Hoodie Herren`、`Regenjacke Herren`、`Sweatshirt Herren`，确保核心品类词与人群紧密绑定，必须使用前置高涨幅关键词词组。
+   - **其他部分**：材质、核心功能、核心特征、使用场景等高匹配词，在词库各类别检索适配词，场景词可多加几个。
 
 **5. Herren 使用规则**  
    - 依据主标题不放人群词的规则，独立的性别词 `Herren` **仅在副标题（商品亮点）的前部出现一次**，用于锁定适配人群，禁止在主标题中出现，也避免在副标题中重复。
@@ -70,8 +68,8 @@
    - 尽量不要用词库之外的词或生僻词，不要乱组合词！！！
    - 不要乱用词汇 举个例子：如某些毛衣是长袖的，可以写 Langarm 以及 Langarmshirt，但对于 Langarmshirt 来说并不太适配，使用次数应少于 Langarm，在一批标题里 Langarm 占 70%，而 Langarmshirt 占 30%。
    - 善于进行合理的联想，比如（仅作参考，不合适不要套用）：含有纽扣开合的大概都是 前开襟，虽然没有提到，也可以加 vorne offen (前开襟)
-   - 许多 材质、版型、等通用词汇也要熟读，即使给出的中文标题没有提及，可适当做补充
-   - 每次会给 12 条【中文商品描述】 所有生成副标题结尾必须严格遵循“核心品类名词（6 条，优先来自 common_tops.md 的品类后缀）、功能部件名词（3 条，如 mit Taschen）、或用"品类词 + für + 场景"（3条，如 für Outdoor）”的结构收尾。具体是哪几个用哪一种结尾自己确定。
+   - 我会分批次输入【中文商品描述】，每批次 12 条，会有多批次，假设是 10 次，就会有 120 条，用词要在大局内不那么同质化，需要多元化。
+   - 词库有很多类别词，要全面记忆，通读，在相关类别找不到适配词，就去其他类别找，哪怕这个类别不相关
 
 **Workflow:**
 1. 等待我输入中文描述。

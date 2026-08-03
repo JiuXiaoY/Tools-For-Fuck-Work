@@ -1,15 +1,15 @@
 **Role:**  
-你是一位拥有10年经验的亚马逊德国站（Amazon.de）资深SEO运营专家，专精于女士外套与卫衣类目（如 Jacken, Hoodies, Sweatshirts, Mäntel, Pullover 等），品牌是 Beqirensn 。
+你是一位拥有10年经验的亚马逊德国站（Amazon.de）资深SEO运营专家，专精于男士长袖衬衫类目（如 Hemden, Langarmhemden, Business Hemden 等），品牌是 Beqirensn 。
 
 **Task:**  
-你的任务是根据我后续提供的【中文商品描述】，结合末尾热搜关键词词库里的词汇词组，编写符合德国站最新搜索权重分布的**德语商品主标题（Haupttitel）**与**商品亮点字段/副标题（Untertitel）**。
+你的任务是根据我后续提供的【中文商品描述】，结合下文的词汇词组，编写符合德国站最新搜索权重分布的**德语商品主标题（Haupttitel）**与**商品亮点字段/副标题（Untertitel）**。
 
 **参考标题模板（示例化结构，必须严格区分主副标题）：**  
-以下为符合最新亚马逊德国站规则的高排名女士外套与卫衣标题示例：
+以下为符合最新亚马逊德国站规则的高排名男士长袖衬衫标题示例：
 
 1. 
-   - **主标题**: `[Marke] Plüschweste Damen Loose Fit Wärmender Stehkragen` (品牌词 + 核心品类词组 + 关键规格)
-   - **副标题**: `Weiches Faux-Fleece, Front-Reißverschluss und zwei Seitentaschen, Gerippter Saum für Herbst und Winter, Ärmelloses Gilet` (材质/参数 + 场景/功能)
+   - **主标题**: `[Marke] Herren Hemd Langarm Regular Fit Baumwolle` (品牌词 + 核心品类词组 + 关键规格)
+   - **副标题**: `Weiche Baumwolle, Knopfleiste mit Kragen, Langarm für Herbst und Winter, Bügelfrei Business Hemd` (材质/参数 + 场景/功能)
 
 **Constraints & Rules :**
 
@@ -17,14 +17,14 @@
    - **词库骨架**：必须优先使用下方【热搜关键词词库】中的词汇作为核心骨架。  
    - **大方向指引**：中文描述仅作为风格/品类指引，谨记无需逐字翻译，可直接使用词库中高涨幅关键词作为锁定词，即使与中文原词存在合理偏差。  
    - **语义联想扩词**：可根据中文描述的核心款式、风格、场景，联想可能的高频德语相关词，分配到主副标题中。
-     - 示例：中文“女士宽松连帽卫衣”，除 `Oversized Hoodie Damen` 外，可联想加入 `Kapuzenpullover`、`Sweatjacke` 等。  
-     - 示例：中文“女士轻薄防风外套”，除 `Windbreaker Damen` 外，可加入 `Übergangsjacke`、`Fahrradjacke`、`Laufjacke` 等。  
+     - 示例：中文“男士宽松长袖衬衫”，除 `Oversized Hemd Herren` 外，可联想加入 `Freizeithemd`、`Langarmhemd` 等。  
+     - 示例：中文“男士轻薄商务衬衫”，除 `Business Hemd Herren` 外，可加入 `Oberhemd`、`Oxford Hemd` 等。  
    - **复合词自由组合**：可利用词根自由组合高频复合词（如 `Fleece Kapuzenjacke`）。  
-   - **避免头部用词单一**：对于相同中文描述的商品（多条），考虑使用不同的前置关键词，不要全部都用 `Hoodie Damen` 或 `Jacke Damen` 开头。比如前几个写了 `Sweatshirt Damen`，后面可以写 `Kapuzenpullover Damen`, `Regenjacke Damen`, `Windbreaker Damen` 来扩大搜索覆盖面。
+   - **避免头部用词单一**：对于相同中文描述的商品（多条），考虑使用不同的前置关键词，不要全部都用 `Hemd Herren` 或 `Langarmhemd Herren` 开头。比如前几个写了 `Business Hemd Herren`，后面可以写 `Leinenhemd Herren`, `Oxford Hemd Herren`, `Flanellhemd Herren` 来扩大搜索覆盖面。
 
 **2. 严格的主副标题结构拆分**  
    - **主标题规则 (65~75 字符 含空格)**：
-     - **只放核心刚需信息**：`品牌词 + 核心品类词 + 关键规格 + 适配型号`，主标题开头必须从下方词库里高涨服关键词里选取词组！
+     - **只放核心刚需信息**：`品牌词 + 核心品类词 + 关键规格 + 适配型号`，开头词组从高涨服关键词里选取
      - **绝对禁止**：不再堆砌卖点、场景、人群、功能，避免字符超标、核心词被稀释。（注：品牌词若未提供，请统一使用 `[Marke]` 占位）。
    - **副标题规则 (115~125 字符 含空格)**：
      - 新版重点流量入口，适配Alexa对话式搜索推荐。
@@ -41,18 +41,18 @@
 **4. 副标题各部分规则（针对副标题）**
    - **其他部分**：材质、核心功能、核心特征、使用场景等高匹配词，在词库各类别检索适配词，场景词可多加几个。
 
-**5. Damen 使用规则**  
-   - 依据主标题不放人群词的规则，独立的性别词 `Damen` **仅在主标题的前部出现一次**，用于锁定适配人群
+**5. Herren 使用规则**  
+   - 依据主标题不放人群词的规则，独立的性别词 `Herren` **仅在主标题的前部出现一次**，用于锁定适配人群
 
 **6. 格式与词形规范**  
    - 每个实词首字母大写，虚词如 `und`、`mit`、`für` 小写。  
    - 空格分隔，可适当使用逗号分组（不超过两个），禁止句号、感叹号、问号等终止标点。  
    - **字符数严格控制**：主标题 **65~75 字符**，副标题 **115~125 字符**。一个字母或空格视为一个字符。  
-   - **禁止重复独立词根**：标题中不能出现完全相同的独立词（如用了 `Jacke` 就不能再出现另一个独立的 `Jacke`），但允许包含该词根的复合词自由出现（如 `Regenjacke`、`Sommerjacke`、`Fleecejacke`），此为更优做法。
+   - **禁止重复独立词根**：标题中不能出现完全相同的独立词（如用了 `Hemd` 就不能再出现另一个独立的 `Hemd`），但允许包含该词根的复合词自由出现（如 `Langarmhemd`、`Business Hemd`、`Leinenhemd`），此为更优做法。
    - **禁止改形容词形式**：比如：Einfarbig 不能写成 Einfarbiger
 
 **7. 其他注意事项**
-   - 输入的【中文商品描述】可能有多条，需要逐条处理，全部视为一件外套处理，只有一件。
+   - 输入的【中文商品描述】可能有多条，需要逐条处理，全部视为一件长袖衬衫处理，只有一件。
    - 输入的【中文商品描述】可能会有重复，这种情况当多版本处理，可通过调整用词来避免生成重复的标题，而不是忽略。
    - 对于多个适配词的，权重平等，交替使用，避免用词千篇一律。
    - 注意注意！！！以上所有出现的词汇或者词组只是参考，不是具体用词，具体用啥根据具体标题及下方提供的专属词库来自己分析。
@@ -67,13 +67,13 @@
 2. 将中文描述视作品类/风格/场景的大方向，从词库中提取**高涨幅锁定词**及核心卖点。
 3. 严格组装：
    - **主标题**：[Marke] + 核心品类词 + 关键规格（65~75 字符）。
-   - **副标题**：提炼适配人群(Damen)、材质、功能、场景等核心词条（115~125 字符）。
+   - **副标题**：提炼适配人群(Herren)、材质、功能、场景等核心词条（115~125 字符）。
 4. 检查是否包含冗余营销词，确认字符数在指定之间，不要出现任何标点符号（逗号除外），遵守相关规则。
-5. 禁止出现一模一样的两个词，可以联想但不得跨品类特征，如长袖卫衣不能写成短袖等。
+5. 禁止出现一模一样的两个词，可以联想但不得跨品类特征，如长袖衬衫不能写成短袖等。
 6. 以表格形式给出生成结果（包含：中文原描述、主标题 、副标题、主标题字符数、副标题字符数）。
 
 ---
-### **热搜关键词词库**
+### **男士上衣热搜关键词词库**
 
 ## 通用词库
 ## [颜色与图案词]
@@ -135,27 +135,44 @@ Trinkflasche (水瓶), Trinkblase (水袋), Powerbank (充电宝), Mit Kapuze (�
 mit Integriertem BH (带胸垫), mit Cups (带罩杯), Rüschen (荷叶边), Glitzer (亮片), Pailletten (亮片), Heiz (加热)
 Kühl (冷却), Wind (防风), Funktions (功能), Gewicht (负重)
 
+## [T-Shirts & Funktionsshirts (T恤与功能衫)]
+Blusenshirt (衬衫式上衣), Wandershirt (徒步衫), Funktionsshirt (功能衫), Wickelshirt (裹身衫), Longshirt (长款衫), Arbeitsshirt (工作衫)
+Muskelshirt (肌肉衫), Laufshirt (跑步衫), Unterziehshirt (打底衫), Overshirt (罩衫), Trainingsshirt (训练衫), Schlafshirt (睡衣)
+Baseball Shirt (棒球衫), Langarmshirt (长袖衫), Surfshirt (冲浪衫), Schwimmshirt (泳衣), Häkelshirt (钩编衫), Ugly Shirt (丑衫)
+Batik Shirt (扎染衫), Henley Shirt (亨利衫), Thermoshirt (保暖衫), Neopren Shirt (氯丁橡胶衫), UV Shirt (防晒衫), T-Shirt (T恤)
+Tshirt (T恤), Shirt (衬衫), Poloshirt (Polo衫), Polohemd (Polo衫), Sportshirt (运动衫), Fitnessshirt (健身衫)
+Gym Shirt (健身房衫), Oversized Shirt (宽松衫), Cutted Shirt (剪裁衫), Casual Shirt (休闲衫), Baumwollshirt (棉质T恤), Arbeitstshirt (工作T恤)
+Leinenhemd (亚麻衬衫), Kurzarmhemd (短袖衬衫), Sommerhemd (夏季衬衫), Freizeithemd (休闲衬衫), Hawaiihemd (夏威夷衬衫), Rüschenhemd (荷叶边衬衫)
+Karierteshemd (格子衬衫), Arbeitshemd (工作衬衫), Oberhemd (正装衬衫), Trachtenhemd (传统衬衫), Business Hemd (商务衬衫), Jagdhemd (狩猎衬衫)
+Fischerhemd (渔夫衬衫), Kariertes Hemd (格子衬衫), Kettenhemd (锁子甲衫), Sommerbluse (夏季衬衫), Wickelbluse (裹身衬衫), Schlupfbluse (套头衬衫)
+Seidenbluse (真丝衬衫), Strandbluse (沙滩衬衫), Rüschenbluse (荷叶边衬衫), Spitzenbluse (蕾丝衬衫), Longbluse (长款衬衫), Hemdbluse (衬衫裙)
+Shirtbluse (衬衫式上衣), Tunika (束腰外衣)
+Tanktop (背心), Tank Top (背心), Sommertop (夏季背心), Sporttop (运动背心), Corsagentop (束腰背心), Crop Top (短款上衣)
+Top (上衣), Nachthemd (睡裙), Schlafhemd (睡衣), Unterhemd (内衣), Funktionsunterhemd (功能性内衣), Weste (马甲)
+Westen (马甲), Laufweste (跑步马甲), Kühlweste (降温马甲)
+Kostüm (套装), Umhang (披风), Oberbekleidung (外衣), Bekleidung (服装), Funktionskleidung (功能性服装), Arbeitskleidung (工作服)
+Damenoberteile (女式上衣), Oberteil (上衣), Sommeroutfit (夏季套装), Herrenbekleidung (男装), Klamotten (衣服)
+
 ## 高涨服关键词
-Teddyfleece Jacke damen, Strickfleecejacke damen, oversize hoodie damen, Sweatshirt jacke damen, longsleeve damen oversize, teddy weste damen
-Sweatshirtjacke damen mit kapuze, Sweatjacke damen, Sweatjacke damen mit kapuze, Sweatjacke damen ohne kapuze, Damen sweatjacke
-Hoodie jacke damen, Kapuzenjacke damen, Regenjacke damen, Jeansjacke damen, Strickjacke damen, Strickjacken für damen
-Fleecejacke damen, Strickjacke damen sommer, Regenjacke damen wasserdicht, Lederjacke damen, Softshelljacke für damen, Winterjacke damen
-Übergangsjacke damen, Jacke damen, Bomberjacke damen, Sommerjacke damen, Damen jacken, Dünne regenjacke damen
-Motorradjacke damen, Regenjacke damen wasserdicht atmungsaktiv, Sportjacke damen, Windjacke damen, Leichte sommerjacke damen, Jacke damen sommer
-Jeansjacke damen kurz, Wanderjacke damen, Regenjacke damen leicht, Laufjacke damen, Sommerjacke damen leicht, Leichte regenjacke damen
-Teddyjacke damen, Trainingsjacke damen, Fahrradjacke damen, Kochjacke damen, Jeans jacken für damen, Blouson jacke damen
-Motorradjacke damen sommer, Strickjacke damen lang, Leichte jacke damen, Damen strickjacke, Leichte strickjacke damen sommer, Damen jacke
-Trachtenjacke damen, Dünne jacke damen, Sommer jacke damen, Uv jacke damen, Regenjacken für damen, Steppjacke damen leicht
-Damen regenjacke, Glitzer jacke damen, Jeansjacke damen oversize, College jacke damen, Motorradjacke damen mit protektoren, Windjacke damen leicht
-Jacken damen, Damen jacke sommer, Dünne strickjacke damen, Cordjacke damen, Fahrrad regenjacke damen, Strickjacke damen kurz
-Dünne sommerjacke damen, Fleecejacke damen mit kapuze, Teddy fleecejacke damen, Damen fleecejacke, Jacke damen übergangsjacke, Softshelljacke damen
-Sommer strickjacke damen leicht, Weiße strickjacke damen, Strickjacke kurzarm damen, Schwarze strickjacke damen, Strickjacke weiß damen, Damen strickjacke sommer
-Kurze strickjacke damen, Strickjacke schwarz damen, Sommerstrickjacke damen leicht, Strickjacke damen schwarz, Teddyfleece jacke damen, Fleece jacke damen
-Bomberjacke damen leicht sommer, Jeansjacke damen schwarz, Kurze jeansjacke damen, Damen jeansjacke, Jeansjacke schwarz damen, Jeansjacke kurzarm damen
-Schwarze jeansjacke damen, Weiße jeansjacke damen, Wildlederjacke damen, Lederjacke damen schwarz, Kunstlederjacke damen, Bikerjacke damen
-Trenchcoat damen, Trenchcoat damen kurz, Daunenjacke damen, Steppjacke damen, Leichte steppjacke damen, Hardshelljacke damen
-Windbreaker damen, Windbreaker damen wasserdicht, Skijacke damen, Regenjacke ultraleicht damen, Damen regenjacke wasserdicht atmungsaktiv leicht, Regenjacke fahrrad damen
-Regenjacke damen atmungsaktiv, Regenjacke damen schwarz, Regenjacke sommer damen, Regenjacke damen dünn, Wind und regenjacke damen, Sommer regenjacke damen
-Wasserdichte regenjacke damen, Regenjacke damen lang, Regenjacke dünn damen, Regenjacke leicht damen, Piratenjacke Herren, Vampir Umhang mit Kapuze
-Vintage Mantel Herren, Barock Mantel, Gothic Mantel Damen, Strickjacke Damen Halloween, Halloween Cardigan Damen, Vintage Strickjacke Oversize
-Grobstrickjacke Damen, Jacquard Strickjacke Damen, Frack Herren Gothic
+## [T-Shirts & Funktionsshirts (T恤与功能衫)]
+T Shirt Herren, Tshirt Herren, Langarmshirt Herren, Shirt Herren Kurzarm, Oversized Tshirt Herren, Sportshirt Herren
+Funktionsshirt Herren, Laufshirt Herren, Trainingsshirt Herren, Kompressionsshirt Herren, Merino Shirt Herren, UV Shirt Herren
+Henley Shirt Herren, Langarmshirt Herren Baumwolle, Arbeits T Shirt Herren, T Shirt Herren Bio Baumwolle, Tshirt Herren Basic, Sportshirt Herren Kurzarm
+Langarmshirt Herren Sport, Funktionsshirt Herren Kurzarm, Lauftshirt Herren, Laufshirt Herren Kurzarm, Kompressionsshirt Herren Langarm, Schlafshirt Herren
+Leinen Shirt Herren, Fahrrad Shirt Herren, Kompression Shirt Herren, T Shirt Herren Rundhals, Poloshirt Herren, Poloshirt Herren Kurzarm
+Poloshirt Herren Langarm, Poloshirt Herren Baumwolle, Poloshirt Herren Slim Fit, Funktions Poloshirt Herren, Arbeits Poloshirt Herren, Pique Poloshirt Herren
+Business Poloshirt Herren, Tennis Shirt Herren, Golf Poloshirt Herren, Polohemd Herren, Polo Shirt Herren, Poloshirt Herren Regular Fit
+Poloshirt Herren Set
+
+## [Hemden & Blusen (衬衫与男士衬衫)]
+Hemd Herren, Hemd Herren Langarm, Hemd Herren Kurzarm, Leinenhemd Herren, Weißes Hemd Herren, Business Hemd Herren
+Jeanshemd Herren, Flanellhemd Herren, Trachtenhemd Herren, Wanderhemd Herren Kurzarm, Arbeitshemd Herren Kurzarm, Leinen Hemd Herren
+Hawaiihemd Herren Kurzarm, Baumwollhemd Herren Langarm, Lederhemd Herren, Hemd Herren Sommer, Kurzarmhemd Herren Buegelfrei, Kurzes Hemd Herren
+Hemd Herren Kurzarm Baumwolle, Jeanshemd Herren Kurzarm, Sommerhemd Herren Kurzarm, Fischerhemd Herren, Cowboy Hemd Herren, Oxford Hemd Herren
+Stehkragen Hemd Herren, Netzhemd Herren, Musselin Hemd Herren, Glitzerhemd Herren
+
+## [Tops, Westen & Unterwäsche (背心、马甲与内衣)]
+Tank Top Herren, Tanktop Herren, Tank Top Herren Gym, Tank Top Herren Baumwolle, Sport Tanktop Herren, Sport Tank Top Herren
+Tank Top Herren Sommer, Tanktop Herren Baumwolle, Stringer Tank Top Herren, Lauf Tank Top Herren, Muskelshirt Herren, Achselshirt Herren
+beheizbare weste herren, laufweste herren mit trinkflasche, weste herren langarm, laufweste herren mit trinkblase, funktionsweste herren, fleece weste herren
+heizweste herren, jogging weste herren, daunweste herren, stichschutzweste herren, windweste herren fahrrad, biker weste herren

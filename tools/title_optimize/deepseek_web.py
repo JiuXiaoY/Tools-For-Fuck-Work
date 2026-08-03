@@ -44,15 +44,71 @@ PROMPT_TEMPLATE = """**Role:**
    - 核心品类（如：连帽卫衣、开衫夹克、冲锋衣等）
    - 可视材质/触感（如：纯棉、抓绒、针织、防水面料等）
    - 版型与受众（如：男士、修身、宽松、常规）
-   - 关键细节设计（极度重要：领型、袖长、图案、拉链类型、纽扣位置、口袋样式、罗纹袖口、抽绳等）
-   - 风格与可视场景（如：运动、户外、休闲、工装）
+   - 关键细节设计（极度重要：领型、袖长、图案、拉链类型、纽扣位置、口袋样式、袖口、抽绳等）
+   - 风格与可视场景（如：运动、户外、休闲、工装、男友风等）
+   - 亮点、功能点等（一定要有）
+   - 原标题相关特征不得删除
 2. **客观与去营销化**：严禁使用主观营销词汇（如：爆款、时尚、气质、新款、2026等），只保留客观物理属性。
 3. **融合与重组**：将原始标题中的有效信息与图片中新发现的特征完美融合，去除原始标题中的废话或错误信息。
 4. **输出格式**：直接输出优化后的中文标题（建议采用“核心词 + 细节属性短语”的紧凑形式），**绝对不要输出任何分析过程、解释或多余的标点寒暄**。"""
 
 
+ASSISTANT_SEL = "div.ds-assistant-message-main-content"
+
+
 def load_lines(path: Path) -> list[str]:
     return [l.strip() for l in path.read_text(encoding="utf-8").strip().splitlines() if l.strip()]
+
+
+def last_assistant_text(page) -> str:
+    """返回页面上最后一条助手回复文本(发送前用于记录基线)。"""
+    locator = page.locator(ASSISTANT_SEL)
+    texts: list[str] = []
+    for m in locator.all():
+        try:
+            t = m.inner_text().strip()
+        except Exception:
+            continue
+        if t:
+            texts.append(t)
+    return texts[-1] if texts else ""
+
+
+def extract_last_response(page, previous_text: str = "", timeout: int = 180) -> str:
+    """等待生成结束并提取最后一条助手回复(排除思考过程)。
+
+    DeepSeek 页面中,最终回复渲染在 div.ds-assistant-message-main-content 内,
+    思考过程("正在思考/分析请求…")在独立容器中,不会进入该选择器。
+    previous_text 为发送前页面上已有的最后一条回复(基线):新结果必须不再是
+    这条旧消息,否则旧回复会被误当成本次结果(重复)。Stop 按钮选择器在部分
+    界面版本下可能失效,因此完成判定以"新文本连续 3 秒无变化"为主。
+    超时:有新文本且非基线则兜底返回;否则抛异常(走 FAILED/重试)。
+    """
+    locator = page.locator(ASSISTANT_SEL)
+    stop_btn = page.locator("button:has-text('Stop')")
+    deadline = time.monotonic() + timeout
+    last_text, stable = "", 0
+    while time.monotonic() < deadline:
+        texts: list[str] = []
+        for m in locator.all():
+            try:
+                t = m.inner_text().strip()
+            except Exception:
+                continue  # 元素被 DOM 更新替换,跳过
+            if t:
+                texts.append(t)
+        cur = texts[-1] if texts else ""
+        if cur and cur == last_text:
+            stable += 1
+            if stable >= 3 and cur != previous_text and not stop_btn.is_visible():
+                return cur
+        else:
+            stable = 0
+        last_text = cur
+        time.sleep(1)
+    if last_text and last_text != previous_text:
+        return last_text
+    raise RuntimeError("No new assistant response found")
 
 
 def main() -> None:
@@ -152,26 +208,16 @@ def main() -> None:
                 time.sleep(1)
 
                 # Send
+                prev_text = last_assistant_text(page)  # 基线:发送前页面上已有的最后一条消息
                 page.keyboard.press("Enter")
                 _log.info("  Prompt sent, waiting for response...")
                 time.sleep(15)  # initial wait for model to start responding
 
-                # Wait for response to finish (stop button disappears)
-                stop_btn = page.locator("button:has-text('Stop')")
-                if stop_btn.is_visible():
-                    _log.info("  Still generating, waiting...")
-                    stop_btn.wait_for(state="hidden", timeout=120000)
-                    time.sleep(2)
-
-                # Extract last assistant message
-                messages = page.locator("[class*='message'], [class*='assistant']").all()
-                if messages:
-                    response_text = messages[-1].inner_text()
-                    results.append(response_text.strip())
-                    _log.info("  Response: %s", response_text.strip()[:80])
-                    success += 1
-                else:
-                    raise RuntimeError("Could not find assistant response")
+                # Wait for response to finish and extract last assistant message
+                response_text = extract_last_response(page, previous_text=prev_text)
+                results.append(response_text)
+                _log.info("  Response: %s", response_text[:80])
+                success += 1
 
             except Exception as exc:
                 _log.error("  FAILED: %s", exc)
@@ -228,23 +274,15 @@ def main() -> None:
                     textarea = page.locator("textarea").first
                     textarea.fill(prompt)
                     time.sleep(1)
+                    prev_text = last_assistant_text(page)
                     page.keyboard.press("Enter")
                     _log.info("    Prompt sent, waiting...")
                     time.sleep(15)
 
-                    stop_btn = page.locator("button:has-text('Stop')")
-                    if stop_btn.is_visible():
-                        stop_btn.wait_for(state="hidden", timeout=120000)
-                        time.sleep(2)
-
-                    messages = page.locator("[class*='message'], [class*='assistant']").all()
-                    if messages:
-                        response_text = messages[-1].inner_text().strip()
-                        results[idx] = response_text
-                        errors -= 1
-                        _log.info("    OK: %s", response_text[:80])
-                    else:
-                        raise RuntimeError("No response")
+                    response_text = extract_last_response(page, previous_text=prev_text)
+                    results[idx] = response_text
+                    errors -= 1
+                    _log.info("    OK: %s", response_text[:80])
 
                 except Exception as exc:
                     _log.warning("    FAILED: %s", exc)
