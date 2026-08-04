@@ -92,6 +92,10 @@ class Config:
     retry_max_rounds_deepseek: int = 5                     # DeepSeek 网页端重试轮数
     retry_max_rounds_hotwords: int = 5                     # 热词采集失败重试轮数
 
+    # ── preprocess ────────────────────────────────────────────────────
+    preprocess_dedup_max_gap: int = 100                    # 去重：同 SKU 有色行最大间距，超此值视为新组
+    preprocess_dedup_close_gap: int = 5                    # 去重：两有色锚点行之间夹的行数 ≤ 此值时，删除锚点行及其间所有行
+
     # ── image reorder ─────────────────────────────────────────────────
     # "inline_dual" — keep original, insert a copy right after it, append
     #                 another at tail. Truncate from end if exceeds O-W.

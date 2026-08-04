@@ -2,8 +2,9 @@
 
 Only considers rows where col-A has a fill ("filled rows").
 For each adjacent pair in the filled-row sequence:
-    - If the rows between two filled rows <= CLOSE_GAP (5): delete the anchor row
-      and all rows in between; the later row is kept and becomes the new anchor.
+    - If the rows between two filled rows <= close_gap (default 5, config
+      preprocess_dedup_close_gap): delete the anchor row and all rows in
+      between; the later row is kept and becomes the new anchor.
     - Otherwise, if col-C values are equal AND the row gap <= max_gap:
       delete the later row, keeping the anchor row.
     - Otherwise: the later row becomes the new anchor.
@@ -30,6 +31,7 @@ class DedupFilledRowsStep:
         from config import Config
         cfg = Config()
         max_gap = cfg.preprocess_dedup_max_gap
+        close_gap = cfg.preprocess_dedup_close_gap
 
         ws = wb.active
         max_row = ws.max_row
@@ -48,14 +50,13 @@ class DedupFilledRowsStep:
 
         # ── Determine which rows to delete (anchor-based) ──
         to_delete: set[int] = set()
-        CLOSE_GAP = 5  # 两有色行之间允许的最大行数
         r_anchor, c_anchor = filled[0]
 
         for i in range(1, len(filled)):
             r_curr, c_curr = filled[i]
             between = (r_curr - r_anchor) - 1  # 两有色行之间夹的行数
 
-            if between <= CLOSE_GAP:
+            if between <= close_gap:
                 # 间距很近(之间≤5行)：删除锚点行和之间的所有行，保留当前行作为新锚点
                 to_delete.add(r_anchor)
                 for mid_row in range(r_anchor + 1, r_curr):
