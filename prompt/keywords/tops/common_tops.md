@@ -64,7 +64,7 @@ Trinkflasche (水瓶), Trinkblase (水袋), Powerbank (充电宝), Mit Kapuze (�
 mit Integriertem BH (带胸垫), mit Cups (带罩杯), Rüschen (荷叶边), Glitzer (亮片), Pailletten (亮片), Heiz (加热)
 Kühl (冷却), Wind (防风), Funktions (功能), Gewicht (负重)
 
-# 亚马逊德国站 (Amazon.de) 服装品类与尾部词库
+# 亚马逊德国站 (Amazon.de) 服装品类词
 
 ## [Jacken & Mäntel (外套与大衣)]
 Kapuzenjacke (连帽外套), Sweatjacke (卫衣外套), Strickjacke (针织外套), Cardigan (开衫), Jacke (外套), Softshelljacke (软壳夹克)
