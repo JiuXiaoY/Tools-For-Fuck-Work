@@ -1,0 +1,100 @@
+# 黑名单词根表 — 明确的非服装噪声,命中即丢弃(优先于品类/属性判断)
+# 每行一个词根,# 开头为注释;子串匹配
+# 注意:词根选择避开服装词,防止误杀(如用 schalter 而非 schal,用 figur 会导致 figurbetont 误杀故不收录)
+#
+# 电子产品 / 数码
+kopfhörer
+monitor
+laptop
+smartphone
+handy
+tablet
+konsole
+akku
+kabel
+ladegerät
+luftpumpe
+sauger
+staubsauger
+ventilator
+heizlüfter
+blutdruckmesser
+# 家居 / 家装
+lampe
+leuchte
+schalter
+steckdose
+kommode
+schrank
+regal
+teppich
+vorhang
+matratze
+kissen
+decke
+handtuch
+waschmittel
+geschirr
+tasse
+topf
+pfanne
+besteck
+messer
+werkzeug
+bohrer
+schraube
+# 美妆 / 洗护
+shampoo
+creme
+serum
+maske
+make-up
+mascara
+lippenstift
+zahnbürste
+zahnpasta
+rasierer
+seife
+duschgel
+# 食品 / 保健
+tee
+kaffee
+nahrungsergänzung
+vitamin
+protein
+pulver
+gewürz
+# 书籍 / 文具 / 玩具
+buch
+roman
+kalender
+stift
+papier
+puppe
+spielzeug
+puzzle
+# 车 / 家居园艺 / 宠物
+reifen
+fahrrad
+garten
+pflanze
+blume
+tier
+hund
+katze
+vogel
+# 音乐 / 影视 / 其他
+dvd
+album
+vinyl
+batterie
+# 明确非服装的杂项词(高频误报补录)
+beutel
+spitzer
+stopper
+camera
+buchse
+trockner
+schlafsack
+modezauber
+babyborn

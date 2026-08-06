@@ -23,6 +23,8 @@ logs/
 
 # Tools �� generated
 tools/needToCollect/result/
+tools/needToCollect/fashion_filter/raw/
+tools/needToCollect/fashion_filter/result/
 tools/title_optimize/temp_photo/
 tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json

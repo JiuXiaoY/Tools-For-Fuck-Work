@@ -47,7 +47,16 @@ dealExcel_refactoring/
 │   │   ├── hotwords.py         #   采集程序
 │   │   ├── cleaner.py          #   清洗管道
 │   │   ├── base_words/         #   基础词库
-│   │   └── result/             #   采集输出
+│   │   ├── result/             #   采集输出
+│   │   └── fashion_filter/     #   服装热词采集+清洗（一条龙）
+│   │       ├── hotwords_fashion.py    #   主程序：采集 → 留存原始 → 清洗 → 留存结果
+│   │       ├── clean_fashion.py       #   清洗逻辑：品类词根/强弱属性/黑名单/品牌移除
+│   │       ├── fashion_categories.txt #   服装品类词根（只保留穿在身上的衣服）
+│   │       ├── fashion_attributes.txt #   属性词根（! 前缀=强属性可独立保留，否则须搭品类词）
+│   │       ├── fashion_excludes.txt   #   黑名单（明确非服装噪声）
+│   │       ├── fashion_brands.txt     #   品牌表（token 级移除任意位置的品牌）
+│   │       ├── raw/                   #   清洗前原始数据（.gitignored）
+│   │       └── result/                #   清洗结果（.gitignored）
 │   ├── color_size_deal/        # 颜色尺码处理
 │   │   ├── color_reprocess.py  #   Excel → check_.txt → 处理 → 回写
 │   │   ├── process.py          #   手动处理 check_.txt
@@ -120,6 +129,12 @@ python tools/title_optimize/title_rewrite.py
 
 # 热词采集
 python tools/needToCollect/hotwords.py
+
+# 服装热词采集+清洗（一条龙：按涨幅降序采集 → 留存原始 raw/ → 清洗 → 留存结果 result/）
+#   只保留"穿在身上的衣服"：自动剔除品牌、鞋帽手套配件、颜色/人群等弱属性误报
+python tools/needToCollect/fashion_filter/hotwords_fashion.py
+#   可选参数：--pages N(拉取页数) --top N --no-clean(只采集) --no-attributes --no-excludes --plain
+#   单独清洗（读 raw/ 最新）：python tools/needToCollect/fashion_filter/clean_fashion.py
 
 # 颜色尺码手动处理
 python tools/color_size_deal/process.py
@@ -212,6 +227,7 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 ### Preprocess
 
 - `preprocess_dedup_max_gap` — SKU 去重：同 SKU 有色行最大间距，超此值视为新组（默认 `100`）
+- `preprocess_dedup_close_gap` — SKU 去重：两有色锚点行之间夹的行数 ≤ 此值时，删除锚点行及其间所有行（默认 `5`）
 
 ### 映射表
 

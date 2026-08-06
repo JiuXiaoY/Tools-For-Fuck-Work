@@ -1,0 +1,58 @@
+# 服装品类词根表 — 词命中任一(子串匹配)即保留为"服装相关词"
+# 每行一个词根,# 开头为注释;德语复合词靠子串命中(如 Steppjacke 命中 jacke)
+#
+# 上装
+jacke
+mantel
+bluse
+hemd
+shirt
+hoodie
+sweatshirt
+pullover
+longsleeve
+trikot
+cardigan
+weste
+tunika
+blazer
+sakko
+kimono
+poncho
+# 下装
+hose
+jeans
+leggings
+shorts
+chino
+cargo
+# 连衣裙 / 半身裙
+kleid
+dirndl
+rock
+# 套装 / 连体
+anzug
+outfit
+overall
+jumpsuit
+# 泳装 / 内衣 / 睡衣
+badeanzug
+bikini
+badehose
+unterwäsche
+dessous
+bh
+slip
+boxershorts
+unterhemd
+nachthemd
+pyjama
+schlafanzug
+# 运动装 / 通用
+trainingsanzug
+jogginghose
+jogginganzug
+sportbekleidung
+kleidung
+bekleidung
+mode

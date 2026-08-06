@@ -1,0 +1,137 @@
+# 服装属性词根表 — 可形容服装的词
+# 分级规则:
+#   ! 前缀 = 强属性:可独立保留(材质/防晒/功能性,单独出现也有价值,如 fleece、uv-schutz)
+#   无前缀 = 弱属性:必须与服装品类词同现才有效,单独出现丢弃
+#             (颜色/人群/场景/季节等单独命中极易误报,如 robinrot→rot、die weiße krähe→weiß)
+# 每行一个词根,# 开头为注释;子串匹配
+#
+# ── 强属性(可独立保留) ──
+# 防晒 / 防护
+!uv-schutz
+!uv schutz
+!sonnenschutz
+!atmungsaktiv
+# 材质(单独出现=面料词,有价值)
+!baumwolle
+!leinen
+!seide
+!viskose
+!polyester
+!polyamid
+!denim
+!cord
+!samt
+!satin
+!chiffon
+!fleece
+!kaschmir
+!modal
+!jersey
+!leder
+!kunstleder
+!sherpa
+!teddy
+!stretch
+!elastisch
+!elastan
+!spandex
+!bügelfrei
+# 版型 / 功能
+!oversized
+!oversize
+!langarm
+!thermo
+# ── 弱属性(必须与品类词同现) ──
+# 材质(单独出现易误报:毛线 sockenwolle/wolle)
+wolle
+wasserdicht
+wasserabweisend
+winddicht
+wärmend
+wärme
+kühlend
+gefüttert
+gepolstert
+reflektierend
+warm
+leicht
+# 版型 / 袖长 / 领型细节
+loose fit
+slim fit
+regular fit
+bauschig
+tailliert
+figurbetont
+hochgeschnitten
+weit
+eng
+kurzarm
+ärmellos
+rundhals
+v-ausschnitt
+ausschnitt
+stehkragen
+kragen
+kapuze
+kapuzen
+# 图案 / 颜色
+gestreift
+kariert
+gepunktet
+blumen
+blumig
+gemustert
+muster
+camo
+camouflage
+animal
+print
+bedruckt
+bestickt
+glitzer
+metallic
+schwarz
+weiß
+blau
+rot
+grün
+beige
+braun
+grau
+pink
+lila
+orange
+gelb
+farbig
+mehrfarbig
+bunt
+# 场景 / 季节 / 人群
+sommer
+winter
+herbst
+frühling
+übergangs
+übergang
+sport
+freizeit
+business
+abend
+hochzeit
+party
+strand
+urlaub
+wandern
+laufen
+yoga
+fitness
+ski
+trachten
+karneval
+halloween
+damen
+herren
+kinder
+mädchen
+jungen
+unisex
+baby
