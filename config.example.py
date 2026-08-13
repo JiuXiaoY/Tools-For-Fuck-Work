@@ -75,6 +75,7 @@ class Config:
     gemini_category: str = "女士上衣"                            # 女士上衣/男士上衣/女士裤子/男士裤子
 
     # ── hotwords ───────────────────────────────────────────────────────
+    hotwords_country: str = "de"                           # 目标站点国家码(如 de/us),CLI --country 默认值
     hotwords_dual_mode: bool = True                        # True=双请求(fluctuation+new_rank), False=单请求
     hotwords_single_mode: str = "new_rank"                 # 单请求时用哪个: "new_rank" / "fluctuation"
     # fluctuation 模式过滤
@@ -103,9 +104,13 @@ class Config:
     # "move_dual"   — remove size chart, shift others forward, place 2 copies at tail
     img_reorder_mode: str = "inline_dual"
 
+    # ── mapping (color/size) ───────────────────────────────────────────
+    # 映射表国家码：de / fr / us ...，对应 data/color_mapping_{code}.json 与 data/size_mapping_{code}.json
+    mapping_country: str = "de"
+
     @property
     def color_mapping_path(self) -> Path:
-        return Path(__file__).resolve().parent / "data" / "color_mapping.json"
+        return Path(__file__).resolve().parent / "data" / f"color_mapping_{self.mapping_country}.json"
 
     def load_color_mapping(self) -> dict[str, str]:
         if not self.color_mapping_path.exists():
@@ -115,7 +120,7 @@ class Config:
 
     @property
     def size_mapping_path(self) -> Path:
-        return Path(__file__).resolve().parent / "data" / "size_mapping.json"
+        return Path(__file__).resolve().parent / "data" / f"size_mapping_{self.mapping_country}.json"
 
     def load_size_mapping(self) -> dict[str, str]:
         if not self.size_mapping_path.exists():

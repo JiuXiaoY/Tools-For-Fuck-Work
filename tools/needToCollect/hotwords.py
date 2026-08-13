@@ -60,7 +60,7 @@ def load_keywords(path: Path) -> list[str]:
 
 def build_payload(
     keyword: str = "",
-    country: str = "de",
+    country: str = "",
     category: str = "",
     sort_mode: str = "new_rank",
     page_size: int = PAGE_SIZE,
@@ -68,12 +68,16 @@ def build_payload(
 ) -> dict:
     """Build the request payload matching the amz123 hotwords API contract.
 
+    country: 目标站点国家码;留空时回退到 Config.hotwords_country 配置值.
+
     sort_mode:
         "new_rank"    — sort by ranking (order=1), keep all results
         "fluctuation" — sort by fluctuation desc (order=-1), filter fluctuation < -90000
     """
     condition = "fluctuation" if sort_mode == "fluctuation" else "new_rank"
     order = -1 if sort_mode == "fluctuation" else 1
+    if not country:
+        country = Config().hotwords_country
     return {
         "word": keyword,
         "country": country,
@@ -168,6 +172,7 @@ def save_categorized(buckets: dict[str, list[str]], country: str, ts: str) -> Pa
 # ── main ────────────────────────────────────────────────────────────
 
 def main() -> None:
+    cfg = Config()
     parser = argparse.ArgumentParser(
         description="Collect hotwords from amz123 API, extract word field, save to tools/result/"
     )
@@ -175,14 +180,13 @@ def main() -> None:
                         help="Single-keyword mode (otherwise loops over needToCollect.md)")
     parser.add_argument("--keyword", default="",
                         help="Search keyword → payload.word (only in --single mode)")
-    parser.add_argument("--country", default="de",
-                        help="Target country → payload.country (default: de)")
+    parser.add_argument("--country", default=cfg.hotwords_country,
+                        help=f"Target country → payload.country (default: {cfg.hotwords_country})")
     parser.add_argument("--category", default="",
                         help="Top3 category filter → payload.top3_category")
 
     args = parser.parse_args()
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    cfg = Config()
 
     # ── Single mode ──
     if args.single:

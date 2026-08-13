@@ -16,7 +16,9 @@ from __future__ import annotations
 
 import sys
 import time
+from concurrent.futures import Future, ThreadPoolExecutor
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
@@ -58,6 +60,22 @@ ASSISTANT_SEL = "div.ds-assistant-message-main-content"
 
 def load_lines(path: Path) -> list[str]:
     return [l.strip() for l in path.read_text(encoding="utf-8").strip().splitlines() if l.strip()]
+
+
+def download_image(index: int, url: str) -> Path:
+    """Download the image for line `index` (1-based) to a unique temp file.
+
+    Returns the saved path; raises on HTTP/IO errors so the caller can retry.
+    """
+    import requests as req
+
+    name = Path(urlparse(url).path).name or "image.jpg"
+    out = BASE / "temp_photo" / f"{index:04d}_{name}"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    resp = req.get(url, timeout=30)
+    resp.raise_for_status()
+    out.write_bytes(resp.content)
+    return out
 
 
 def last_assistant_text(page) -> str:
@@ -169,18 +187,28 @@ def main() -> None:
         time.sleep(2)
         _log.info("DeepSeek chat ready")
 
+        # Image prefetch pipeline: download the next image in a background
+        # thread while the current item is being analyzed/sent, so download
+        # latency overlaps with AI processing time.
+        executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="img-dl")
+        prefetch: Future | None = None  # future for the CURRENT item, submitted last round
+
         for i, (url, title) in enumerate(zip(links, titles), 1):
             _log.info("[%d/%d] %s", i, len(links), title[:60])
 
             try:
-                # Download image first
-                import requests as req
-                img_path = BASE / "temp_photo" / url.split("/")[-1]
-                img_path.parent.mkdir(parents=True, exist_ok=True)
-                resp = req.get(url, timeout=30)
-                resp.raise_for_status()
-                img_path.write_bytes(resp.content)
+                # This item's image was already prefetched during the previous
+                # item's analysis (the first item downloads synchronously)
+                if prefetch is not None:
+                    img_path = prefetch.result()
+                else:
+                    img_path = download_image(i, url)
                 _log.info("  Downloaded: %s", img_path.name)
+
+                # Pre-download the NEXT image while this item is being processed
+                if i < len(links):
+                    prefetch = executor.submit(download_image, i + 1, links[i])
+                    _log.info("  Prefetching next image (%d/%d)", i + 1, len(links))
 
                 # New chat — click "New Chat" button
                 new_chat_btn = page.locator("text=New Chat").first
@@ -199,7 +227,7 @@ def main() -> None:
                 file_input = page.locator('input[type="file"]')
                 file_input.set_input_files(str(img_path.resolve()))
                 _log.info("  Image uploaded, waiting 3s for processing...")
-                time.sleep(15)  # ensure image is fully processed
+                time.sleep(10)  # ensure image is fully processed
 
                 # Type prompt
                 prompt = PROMPT_TEMPLATE.format(title=title)
@@ -224,6 +252,7 @@ def main() -> None:
                 results.append("[FAILED]")
                 failed_items.append((i - 1, url, title))
                 errors += 1
+                prefetch = None  # no prefetched image for next item — fall back to sync download
 
             finally:
                 # Clean up image
@@ -234,6 +263,8 @@ def main() -> None:
             # Brief pause between requests
             if i < len(links):
                 time.sleep(5)
+
+        executor.shutdown(wait=True)
 
         # ── Retry failed items ──
         max_retry_rounds = cfg.retry_max_rounds_deepseek
@@ -249,12 +280,7 @@ def main() -> None:
                 _log.info("  Retry [%d]: %s", idx + 1, title[:60])
                 img_path: Path | None = None
                 try:
-                    import requests as req
-                    img_path = BASE / "temp_photo" / url.split("/")[-1]
-                    img_path.parent.mkdir(parents=True, exist_ok=True)
-                    resp = req.get(url, timeout=30)
-                    resp.raise_for_status()
-                    img_path.write_bytes(resp.content)
+                    img_path = download_image(idx + 1, url)
 
                     new_chat_btn = page.locator("text=New Chat").first
                     if new_chat_btn.is_visible():

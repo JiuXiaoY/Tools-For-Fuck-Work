@@ -1,6 +1,7 @@
 # 亚马逊德国站 (Amazon.de) 前置高涨服关键词，涨幅越高排的越前（各类别独立）
 
 ## [Jacken & Mäntel (外套与大衣)]
+softshelljacke herren, regenjacke herren, sweatshirts für herren, herren jacke, steppweste herren
 sweatshirt jacke herren, sweatshirtjacke herren mit kapuze, sweatjacke herren mit kapuze, sweatjacke herrn ohne kapuze, hoodie jacke herren, regenjacken für herren
 regenjacke mädchen 152, dünne regenjacke kinder, ultraleichte regenjacke, windjacke herren leicht, motorrad regenjacke, glitzer jacke herren
 ultraleichte regenjacke herren, regenjacke kinder wasserdicht, dünne regenjacke herren, leichte jacke herren sommer, trachtenjacke herren, regenjacke fahrrad herren

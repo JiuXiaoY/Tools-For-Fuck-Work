@@ -14,6 +14,14 @@ Leopardenmuster (豹纹), Pailletten (亮片), Goldfolie (烫金), Karo (格纹)
 Vertikale Streifen (竖条纹), Gepunktet (波点), Tarnmuster (迷彩), Verlauf (渐变), Batik (扎染), Marmormuster (大理石纹)
 Galaxy-Print (星空印花), Cartoon-Print (卡通图案), Blumendruck (花卉印花), Schleifenmuster (蝴蝶结印花), Herzmuster (心形图案), Sternenmuster (星星图案)
 Halloween-Motiv (万圣节主题), Color Blocking (撞色拼接), Jacquard (提花), Dezentes Muster (暗纹)
+Hellblau (浅蓝色), Zweifarbig (双色), Lila (紫色), Kontrastlabel (撞色标签), Schwarz mit weißem Print (黑底白花), Weißer Grund (白底)
+Rippenstruktur (坑条), Textur (肌理质感), Fallender Stoff (垂坠感), Mittelnaht (中缝线), Allover-Print (满印印花), Blutspritzer-Print (血迹印花)
+Skelett-Print (骨骼印花), Kreuz (十字架), Vogel (飞鸟), Feder (羽毛), Buchstaben-Print (字母印花), Mandala-Print (曼陀罗印花)
+Ausgefranst (毛边), Applikation (贴布绣), Rippstrick (罗纹), Sonnenmotiv (太阳图案), Geist (幽灵), Kürbis (南瓜)
+Kürbislaterne (南瓜灯), Mond (月亮), Geometrisch (几何), Fledermaus (蝙蝠), Rauten (菱形), Rauch (烟雾)
+Schlangenmuster (蛇纹), Paisley (佩斯利), Feinstreifen (细条纹), Seitenstreifen (侧边条纹), Relief (浮雕), Verstärkungspatch (加固贴片)
+Patch (贴布), Horizontale Naht (横向拼接缝线), Vertikale Naht (纵向缝线), Doppelte Ziernaht (双压线装饰), Ziernaht (虚线装饰缝线), Bügelfalte (裤线)
+Kontrastnaht (撞色边线), Logo-Patch (小标装饰), Fake-Riss (仿撕裂), Ripped-Look (破洞)
 
 ## [版型与款式词]
 Weite (宽版), Locker (宽松), Baggy (蓬松/垮裤), Eng (紧身), Slim Fit (修身), Regular Fit (常规版)
@@ -24,6 +32,9 @@ Bootcut (微喇), Überknielang (过膝), 3-teilig (3PC), Oversize (超大版型
 Skinny Fit (紧身), A-Linie (A字), Bodenlang (拖地), Knöchellang (九分), 3/4-Länge (七分), Leichter Schlag (微喇裤)
 Plissee (褶皱), Rüschen (荷叶边), Schlitz / mit Schlitz (开叉设计), Rüschensaum (荷叶边), Seitenschlitz (侧开叉), Geschwungener Saum (弧形开叉)
 Vordere Falten (前褶设计), Aufrollbare Manschette (卷边)
+Gerader Saum (平口), Schmal geschnitten (小脚), Schwerer Stoff (重磅), Dünn (薄款), Doppellagig (双层), Fake-2-in-1 (假两件)
+Asymmetrisch (不对称), Einseitig (单侧), Symmetrisch (对称), Ohne Kordelzug (无抽绳), Doppelbund (双腰), Breiter Bund (宽腰头)
+Doppelfalten (双褶)
 
 ## [材质词]
 Baumwolle (棉), Leinen (亚麻), Modal (莫代尔), Mikrofaser (超细纤维), Merino (美利奴), Frottee (毛圈布)
@@ -34,12 +45,16 @@ Jeans (牛仔), Strickstoff (针织), Eisenseide (冰丝), Glanzleder (亮皮), 
 Glänzend (亮面), Chiffon (雪纺), Netzstoff (网眼布), Denim (牛仔), Washed Cotton (水洗棉), Waffelpiqué (华夫格)
 PU-Leder (PU皮), Lackleder (亮面漆皮), Kunstleder (仿皮), Flanell (法兰绒), Flauschfleece (珊瑚绒), Sherpa (羊羔绒)
 Plüsch (毛绒), Spitze (蕾丝), Eisseide (冰丝), Glänzender Stoff (光泽面料)
+Kurzflor (短绒), Feiner Flor (薄绒), Slub-Leinen (竹节麻), Granulat-Fleece (奥粒绒), Nylon (尼龙), Gewebt (梭织)
+Lyocell (莱赛尔), Tencel (天丝), Wollstoff (毛呢), Baumwolltwill (华棉), Metall (金属)
 
 ## [目标人群与性别词]
 Umstandsmode (孕妇)
+Herren (男士), Pärchen (情侣款)
 
 ## [季节与天气词]
 Sommer (夏季), Regen (防雨), Winddicht (防风), Wärmend (保暖), Kühlend (冰感/凉感)
+Winter (冬季), Frühling(春季), Herbst (秋季), Alle Jahreszeiten (四季)
 
 ## [场景与风格词]
 Outdoor (户外), Sport (运动), Fitness (健身), Gym (健身房), Basketball (篮球), Tennis (网球)
@@ -56,6 +71,9 @@ Bühne (演出), Reisen (旅行), Deutschland (德国主题), Happy (快乐图�
 Wikinger (维京), Oktoberfest (德国啤酒节), Retro / Vintage (复古), High Street (高街), Y2K (千禧风), Used-Look (做旧)
 Halloween (万圣节), Schottisch (苏格兰), Karneval (狂欢节), Independence Day (美国独立日), Nordische Mythologie (北欧神话), Chinesischer Stil (中国风)
 Ethnisch (民族风), Hip Hop (嘻哈), ins (ins风), Streetwear (潮牌), Punk (朋克), Kendo Rock (剑道裙)
+Freizeit (休闲), Urlaubsstil (度假风), Themenparty (主题派对), Disco (迪斯科), Hawaii (夏威夷风), Afrikanisch (非洲风)
+Mittelalter (中世纪), Renaissance (文艺复兴), Pirat (海盗风), Steampunk (蒸汽朋克), Biker (机车风), Cargo-Stil (工装风)
+Arbeitsschutz (劳保), Anzugstil (西装风), Uniform (制服), Alltag (日常), Basic (基础款), Trend (潮流)
 
 ## [尺寸与体型词]
 Große Größen (大码), Extra Large (加大码)
@@ -71,6 +89,11 @@ Pattentasche (翻盖口袋), Schrägtasche (斜插袋), Gesäßtasche (后口袋
 Spitzenbesatz (蕾丝拼接), Spitzeneinsatz (蕾丝镂空拼接), Bindeband (绑带), Sternniete (五角星装饰), Strass (满钻/烫钻), Verstellbarer Träger (可调节肩带)
 Stützfunktion für Schwangere (托腹), Hoch elastisch (高弹), Verdickt (加厚), Leichtes An- und Ausziehen (易穿脱), Vielseitig (百搭), Leicht (轻质)
 mit Bündchen (束脚), mit Bündchen am Knöchel (束脚口), Po-Lifting (提臀)
+Mehrfarbig erhältlich (多色可选), Gürtelschnalle (皮带扣), Gürtelbund (皮带腰头), Bund (腰头), Klettverschluss (魔术贴), Wasserabweisend (防泼水)
+Saumkordel (脚口帽绳), Metallschnalle (金属搭扣), Schnalle (搭扣), Fünf-Taschen-Design (五袋设计), Ripped-Knee (破洞膝盖), Geflochten (编织)
+Gurtband (织带), Schnappverschluss (卡扣), Steppung (绗缝), Gekreuzte Knöchelriemen (脚踝交叉系带), Drei-Knopf-Verschluss (三粒扣), Einzelknopf (单粒扣)
+Metallreißverschluss (金属拉链), Doppelriemen (双搭扣带), Gekreuzte Wadenriemen (小腿交叉绑带), 3D-Tasche (立体贴袋), Gürtelschlaufen (腰带环), Lange Kordel (长抽绳)
+Doppelter Kordelzug (双抽绳), Bunt geflochtene Kordel (彩色编织抽绳), Verstärkt (加固), Glatt (顺滑)
 
 
 # 品类后缀

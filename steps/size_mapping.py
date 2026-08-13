@@ -1,4 +1,4 @@
-"""Fill column K (11) from size_mapping.json — modify in-place."""
+"""Fill column K (11) from size mapping table — modify in-place."""
 
 from core import PipelineContext, PipelineStep
 from config import Config
@@ -7,7 +7,7 @@ from services import is_blank, cell_has_fill
 
 class SizeMappingStep(PipelineStep):
     name = "size_mapping"
-    description = "Column K: in-place size lookup from size_mapping.json"
+    description = "Column K: in-place size lookup from size mapping table"
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
         cfg = Config()

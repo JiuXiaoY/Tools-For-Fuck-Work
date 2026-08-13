@@ -1,4 +1,4 @@
-﻿"""Fill column J (10) from column I (9) via color_mapping.json."""
+﻿"""Fill column J (10) from column I (9) via color mapping table."""
 
 from core import PipelineContext, PipelineStep
 from config import Config
@@ -7,14 +7,14 @@ from services import is_blank, cell_has_fill
 
 class FillCol10MappingStep(PipelineStep):
     name = "fill_col10"
-    description = "Column J: lookup from color_mapping.json based on column I"
+    description = "Column J: lookup from color mapping table based on column I"
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
         cfg = Config()
         ws = ctx.worksheet
         mapping = cfg.load_color_mapping()
         if not mapping:
-            ctx.log("color_mapping.json is empty, skipping column 10 fill")
+            ctx.log(f"{cfg.color_mapping_path.name} is empty, skipping column 10 fill")
             return ctx
 
         # Build case-insensitive mapping (lowercase keys)

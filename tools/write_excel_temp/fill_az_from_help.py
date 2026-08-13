@@ -19,7 +19,7 @@ from openpyxl import load_workbook
 
 BASE = Path(__file__).resolve().parent.parent.parent
 DEFAULT_SRC = BASE / "outputs" / "7.23v1.xlsx"
-HELP = BASE / "prompt" / "finePoints" / "help"
+HELP = BASE / "prompt_de" / "finePoints" / "help"
 AZ_COL = 52  # AZ = 第 52 列
 
 

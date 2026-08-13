@@ -38,8 +38,8 @@ dealExcel_refactoring/
 ├── services/                   # 工具函数（excel/images/logger/ai_client...）
 ├── rules/                      # 业务规则（价格提取）
 ├── data/                       # 映射表
-│   ├── color_mapping.json      # 颜色英→德 (742条)
-│   └── size_mapping.json       # 尺码映射
+│   ├── color_mapping_de.json   # 颜色英→德 (742条, 国家码后缀可配)
+│   └── size_mapping_de.json    # 尺码映射 (国家码后缀可配)
 │
 ├── tools/
 │   ├── xls2xlsx.py             # .xls → .xlsx 转换
@@ -80,9 +80,13 @@ dealExcel_refactoring/
 │   │   ├── reorder_batch.py     #   批次重排（按A列有色行分组）
 │   │   └── reorder_backup.py    #   旧版备份
 │
-├── prompt/                     # AI 提示词（8 个品类指令 + 关键词库）
+├── prompt_de/                  # AI 提示词-德国站（8 个品类指令 + 关键词库）
 │   ├── instructions/
 │   └── keywords/
+├── prompt_fr/                  # AI 提示词-法国站（保持与 prompt_de 相同的相对结构）
+│   ├── final_init_template/FR/
+│   ├── instructions/new_ins/fr/
+│   └── keywords/tops/fr/
 │
 ├── deprecated/                 # 弃置代码（第 4 列 AI 填充）
 │   ├── tools/ai_fill.py
@@ -142,6 +146,11 @@ python tools/color_size_deal/process.py
 # 图片重排（尺码表移到行末）
 python tools/image_classification/reorder.py           # 默认逐行扫描
 python tools/image_classification/reorder_batch.py      # 批次模式
+
+# SKU 提取（按钮界面：浏览器打开目标页面后，点按钮自动滚动识别）
+python tools/sku_extract/web_ui.py   # 打开 http://127.0.0.1:8765 使用
+#   前置：用 chrome --remote-debugging-port=9222 启动浏览器并登录目标页面
+#   命令行备用：python tools/sku_extract/extract_skus.py --web
 ```
 
 ---
@@ -231,8 +240,9 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 
 ### 映射表
 
-- `color_mapping_path` → `load_color_mapping()` — 颜色英→德（`data/color_mapping.json`，742 条）
-- `size_mapping_path` → `load_size_mapping()` — 尺码映射（`data/size_mapping.json`）
+- `mapping_country` — 映射表国家码，如 `de` / `fr` / `us`，对应 `data/color_mapping_{code}.json`、`data/size_mapping_{code}.json`（默认 `de`）
+- `color_mapping_path` → `load_color_mapping()` — 颜色英→德（`data/color_mapping_{mapping_country}.json`，742 条）
+- `size_mapping_path` → `load_size_mapping()` — 尺码映射（`data/size_mapping_{mapping_country}.json`）
 
 ---
 
