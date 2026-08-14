@@ -138,16 +138,26 @@ DEFAULT_PIPELINE: list[Callable[[list[str]], list[str]]] = [
 
 # ── classification ─────────────────────────────────────────────────
 
-def classify(words: list[str]) -> dict[str, list[str]]:
-    """Split words into buckets: herren, damen, other."""
-    buckets: dict[str, list[str]] = {"herren": [], "damen": [], "other": []}
+# 性别分桶标签（按国家码选择）：de → herren/damen，fr → homme/femme
+GENDER_LABELS: dict[str, tuple[str, str, str]] = {
+    "de": ("herren", "damen", "other"),
+    "fr": ("homme", "femme", "other"),
+}
+
+
+def classify(words: list[str], country: str = "de") -> dict[str, list[str]]:
+    """Split words into gender buckets, labels selected by country:
+    de → herren/damen/other; fr → homme/femme/other."""
+    labels = GENDER_LABELS.get(country, GENDER_LABELS["de"])
+    man, woman, other = labels
+    buckets: dict[str, list[str]] = {man: [], woman: [], other: []}
     for w in words:
-        if "herren" in w:
-            buckets["herren"].append(w)
-        elif "damen" in w:
-            buckets["damen"].append(w)
+        if man in w:
+            buckets[man].append(w)
+        elif woman in w:
+            buckets[woman].append(w)
         else:
-            buckets["other"].append(w)
+            buckets[other].append(w)
     return buckets
 
 

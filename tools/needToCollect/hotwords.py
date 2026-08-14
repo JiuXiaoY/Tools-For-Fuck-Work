@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from services.logger import get_logger
 from config import Config
-from cleaner import clean_with_report, classify
+from cleaner import GENDER_LABELS, clean_with_report, classify
 
 # Fix Windows console encoding for German characters (ß, Ü, etc.)
 if sys.platform == "win32":
@@ -160,7 +160,8 @@ def save_categorized(buckets: dict[str, list[str]], country: str, ts: str) -> Pa
     out_path = RESULT_DIR / filename
 
     lines: list[str] = []
-    for label in ("herren", "damen", "other"):
+    labels = GENDER_LABELS.get(country, GENDER_LABELS["de"])
+    for label in labels:
         lines.append(f"【{label}】")
         lines.extend(buckets.get(label, []))
         lines.append("")
@@ -199,7 +200,7 @@ def main() -> None:
             _log.error("Request failed: %s", exc)
             sys.exit(1)
 
-        words = extract_words(raw)
+        words = extract_words(raw, sort_mode="new_rank", cfg=cfg)
         _log.info("Fetched %d words (total=%d  status=%s)",
                    len(words), raw.get("data", {}).get("total", 0), raw.get("status"))
 
@@ -211,10 +212,11 @@ def main() -> None:
         for line in report:
             _log.info(line)
 
-        buckets = classify(cleaned)
+        buckets = classify(cleaned, args.country)
         out_path = save_categorized(buckets, args.country, ts)
-        _log.info("herren=%-5d  damen=%-5d  other=%-5d",
-                  len(buckets["herren"]), len(buckets["damen"]), len(buckets["other"]))
+        labels = GENDER_LABELS.get(args.country, GENDER_LABELS["de"])
+        _log.info("  ".join(f"{lbl}=%-5d" for lbl in labels),
+                  *(len(buckets.get(lbl, [])) for lbl in labels))
         _log.info("Saved %d words (raw: %d) → %s", len(cleaned), len(words), out_path.name)
         return
 
@@ -314,10 +316,11 @@ def main() -> None:
         _log.info(line)
 
     # ── Classify & save ──
-    buckets = classify(cleaned)
+    buckets = classify(cleaned, args.country)
     out_path = save_categorized(buckets, args.country, ts)
-    _log.info("herren=%-5d  damen=%-5d  other=%-5d",
-              len(buckets["herren"]), len(buckets["damen"]), len(buckets["other"]))
+    labels = GENDER_LABELS.get(args.country, GENDER_LABELS["de"])
+    _log.info("  ".join(f"{lbl}=%-5d" for lbl in labels),
+              *(len(buckets.get(lbl, [])) for lbl in labels))
     _log.info("Saved %d words (raw: %d, errors: %d) → %s",
               len(cleaned), len(all_words), errors, out_path.name)
     _log.info("%s", "=" * 50)
