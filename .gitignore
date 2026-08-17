@@ -30,6 +30,8 @@ tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json
 tools/title_auto_fill/gemini_state.json
 tools/title_auto_fill/gemini_browser/
+# nineTools 随机 ID 输出
+nineTools/*.txt
 # Secret backups
 constant/dzq.bak
 constant/photo/

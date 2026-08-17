@@ -72,10 +72,10 @@ def build_payload(
 
     sort_mode:
         "new_rank"    — sort by ranking (order=1), keep all results
-        "fluctuation" — sort by fluctuation desc (order=-1), filter fluctuation < -90000
+        "fluctuation" — sort by fluctuation asc (order=1, 负值=涨幅最大在前), filter fluctuation < -90000
     """
     condition = "fluctuation" if sort_mode == "fluctuation" else "new_rank"
-    order = -1 if sort_mode == "fluctuation" else 1
+    order = 1
     if not country:
         country = Config().hotwords_country
     return {
@@ -134,7 +134,8 @@ def extract_words(data: dict, sort_mode: str, cfg: Config) -> list[str]:
                 continue
             # total < 40: no filter
 
-        words.append(str(word).strip())
+        word = str(word).strip()
+        words.append(f"{word} 【Hot】" if sort_mode == "fluctuation" else word)
     return words
 
 
