@@ -1,16 +1,16 @@
 ﻿"""Fill column C (3): if col A has fill → use col B, else use above cell."""
 
 from core import PipelineContext, PipelineStep
-from config import Config
 from services import cell_has_fill, is_blank
 
 
 class FillCol3Step(PipelineStep):
     name = "fill_col3"
     description = "Column C: cascade fill based on col A color"
+    requires = ("fill_id",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         filled = 0
         for r in range(1, ws.max_row + 1):

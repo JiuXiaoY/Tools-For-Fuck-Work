@@ -1,16 +1,16 @@
 ﻿"""Fill column AR (44) from column L (12)."""
 
 from core import PipelineContext, PipelineStep
-from config import Config
 from services import is_blank
 
 
 class FillCol44Step(PipelineStep):
     name = "fill_col44"
     description = "Column AR: copy from column L"
+    requires = ("insert_columns",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         filled = 0
         for r in range(1, ws.max_row + 1):

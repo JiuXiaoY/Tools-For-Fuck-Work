@@ -4,15 +4,13 @@ from openpyxl.styles import Alignment
 from openpyxl.utils import get_column_letter
 
 from core import PipelineContext, PipelineStep
-from config import Config
-
-
 class FormatCellsStep(PipelineStep):
     name = "format_cells"
     description = "Apply row height, alignment, column widths, formulas"
+    requires = ("calc_price",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
 
         # ── column widths ──

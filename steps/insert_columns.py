@@ -1,16 +1,16 @@
 ﻿"""Insert blank columns according to config."""
 
 from core import PipelineContext, PipelineStep
-from config import Config
 from services import snapshot_images, restore_images
 
 
 class InsertColumnsStep(PipelineStep):
     name = "insert_columns"
     description = "Insert blank columns to reach final column count"
+    requires = ("validate",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         snaps = snapshot_images(ws)
         if snaps:

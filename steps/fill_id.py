@@ -5,8 +5,6 @@ import string
 from datetime import date
 
 from core import PipelineContext, PipelineStep
-from config import Config
-
 _BASE62 = string.digits + string.ascii_uppercase + string.ascii_lowercase
 
 # digit → letter mapping: 0→z, 1→a, 2→b, ..., 9→i
@@ -29,18 +27,24 @@ def _random_id(middle: str) -> str:
     return f"{prefix}{middle}{suffix}"
 
 
+def default_id_factory(yymmdd: str | None = None) -> str:
+    """Build one ID using the legacy base62/date-code format."""
+    return _random_id(_date_code(yymmdd))
+
+
 class FillIdStep(PipelineStep):
     name = "fill_id"
     description = "Column B: fill with random IDs (middle = date code)"
+    requires = ("insert_columns",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         override = cfg.date_override.strip() or None
-        middle = _date_code(override)
+        factory = cfg.id_factory or default_id_factory
         count = 0
         for r in range(1, ws.max_row + 1):
-            ws.cell(row=r, column=cfg.col_b).value = _random_id(middle)
+            ws.cell(row=r, column=cfg.col_b).value = factory(override)
             count += 1
-        ctx.log(f"Column {cfg.col_b}: {count} random IDs (date: {middle})")
+        ctx.log(f"Column {cfg.col_b}: {count} IDs generated")
         return ctx

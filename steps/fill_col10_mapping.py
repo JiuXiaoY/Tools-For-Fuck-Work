@@ -1,16 +1,16 @@
 ﻿"""Fill column J (10) from column I (9) via color mapping table."""
 
 from core import PipelineContext, PipelineStep
-from config import Config
 from services import is_blank, cell_has_fill
 
 
 class FillCol10MappingStep(PipelineStep):
     name = "fill_col10"
     description = "Column J: lookup from color mapping table based on column I"
+    requires = ("insert_columns",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         mapping = cfg.load_color_mapping()
         if not mapping:

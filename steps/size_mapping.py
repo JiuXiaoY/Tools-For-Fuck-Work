@@ -1,16 +1,16 @@
 """Fill column K (11) from size mapping table — modify in-place."""
 
 from core import PipelineContext, PipelineStep
-from config import Config
 from services import is_blank, cell_has_fill
 
 
 class SizeMappingStep(PipelineStep):
     name = "size_mapping"
     description = "Column K: in-place size lookup from size mapping table"
+    requires = ("insert_columns",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
-        cfg = Config()
+        cfg = self.config
         ws = ctx.worksheet
         mapping = cfg.load_size_mapping()
         if not mapping:

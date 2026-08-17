@@ -14,20 +14,21 @@ from steps.format_cells       import FormatCellsStep
 from steps.finalize           import FinalizeStep
 
 from core import PipelineStep
+from config import Config
 
 
-def get_steps() -> list[PipelineStep]:
+def get_steps(config: Config | None = None) -> list[PipelineStep]:
     return [
-        MergeSheetsStep(),
-        ValidateStep(),
-        InsertColumnsStep(),
-        FillIdStep(),
-        FillCol3Step(),
-        FillCol10MappingStep(),
-        SizeMappingStep(),
-        CopyMirrorStep(),
-        FillCol44Step(),
-        CalcPriceStep(),
-        FormatCellsStep(),
-        FinalizeStep(),
+        MergeSheetsStep(config),
+        ValidateStep(config),
+        InsertColumnsStep(config),
+        FillIdStep(config),
+        FillCol3Step(config),
+        FillCol10MappingStep(config),
+        SizeMappingStep(config),
+        CopyMirrorStep(config),
+        FillCol44Step(config),
+        CalcPriceStep(config),
+        FormatCellsStep(config),
+        FinalizeStep(config),
     ]
