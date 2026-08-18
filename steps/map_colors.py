@@ -4,8 +4,8 @@ from core import PipelineContext, PipelineStep
 from services import is_blank, cell_has_fill
 
 
-class FillCol10MappingStep(PipelineStep):
-    name = "fill_col10"
+class MapColorsStep(PipelineStep):
+    name = "map_colors"
     description = "Column J: lookup from color mapping table based on column I"
     requires = ("insert_columns",)
 

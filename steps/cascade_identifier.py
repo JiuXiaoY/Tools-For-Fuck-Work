@@ -4,10 +4,10 @@ from core import PipelineContext, PipelineStep
 from services import cell_has_fill, is_blank
 
 
-class FillCol3Step(PipelineStep):
-    name = "fill_col3"
+class CascadeIdentifierStep(PipelineStep):
+    name = "cascade_identifier"
     description = "Column C: cascade fill based on col A color"
-    requires = ("fill_id",)
+    requires = ("assign_ids",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
         cfg = self.config

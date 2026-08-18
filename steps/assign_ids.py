@@ -32,8 +32,8 @@ def default_id_factory(yymmdd: str | None = None) -> str:
     return _random_id(_date_code(yymmdd))
 
 
-class FillIdStep(PipelineStep):
-    name = "fill_id"
+class AssignIdsStep(PipelineStep):
+    name = "assign_ids"
     description = "Column B: fill with random IDs (middle = date code)"
     requires = ("insert_columns",)
 

@@ -1,6 +1,6 @@
 """独立的随机 ID 生成小工具。
 
-规则与流水线 steps/fill_id.py 中生成的随机 ID 完全一致：
+规则与流水线 steps/assign_ids.py 中生成的随机 ID 完全一致：
     <前6位><中间6位日期码><后4位>  →  共 16 位
     - 前/后位字符集: 大小写字母 + 数字 (base62)
     - 中间 6 位日期码: YYMMDD 按 digit→letter 映射 (0→z,1→a,2→b,...,9→i)
@@ -56,7 +56,7 @@ def generate_one(s: dict) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="生成随机 ID（规则同流水线 fill_id）")
+    parser = argparse.ArgumentParser(description="生成随机 ID（规则同流水线 assign_ids）")
     parser.add_argument("--count", type=int, default=SETTINGS["count"],
                         help=f"生成数量 (默认 {SETTINGS['count']})")
     args = parser.parse_args()

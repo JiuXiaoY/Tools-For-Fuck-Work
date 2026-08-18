@@ -19,7 +19,7 @@ def _default_price_chain(base: Decimal, config) -> tuple[Decimal, Decimal, Decim
 class CalcPriceStep(PipelineStep):
     name = "calc_price"
     description = "Columns AS-AV: price calculation chain"
-    requires = ("fill_col44",)
+    requires = ("mirror_category",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
         cfg = self.config

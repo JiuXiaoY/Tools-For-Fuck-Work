@@ -4,8 +4,8 @@ from core import PipelineContext, PipelineStep
 from services import is_blank
 
 
-class FillCol44Step(PipelineStep):
-    name = "fill_col44"
+class MirrorCategoryStep(PipelineStep):
+    name = "mirror_category"
     description = "Column AR: copy from column L"
     requires = ("insert_columns",)
 
