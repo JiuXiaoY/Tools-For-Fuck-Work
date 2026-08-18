@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from io import BytesIO
+from copy import copy
 
 from openpyxl.drawing.image import Image
 from openpyxl.drawing.spreadsheet_drawing import OneCellAnchor, TwoCellAnchor
@@ -27,6 +28,30 @@ class ImageSnapshot:
     to_row_off: int | None = None
     ext_cx: int | None = None
     ext_cy: int | None = None
+
+
+def image_anchor_row(anchor) -> int | None:
+    """Return an image anchor's one-based starting row, if cell anchored."""
+    if isinstance(anchor, (OneCellAnchor, TwoCellAnchor)):
+        return anchor._from.row + 1
+    return None
+
+
+def shift_image_anchor(anchor, row_offset: int, *, minimum_row: int | None = None):
+    """Copy a cell anchor and shift both endpoints by ``row_offset``."""
+    if not isinstance(anchor, (OneCellAnchor, TwoCellAnchor)):
+        return anchor
+    shifted = copy(anchor)
+    shifted._from = copy(shifted._from)
+    shifted._from.row += row_offset
+    if minimum_row is not None:
+        shifted._from.row = max(minimum_row, shifted._from.row)
+    if isinstance(shifted, TwoCellAnchor) and shifted.to is not None:
+        shifted.to = copy(shifted.to)
+        shifted.to.row += row_offset
+        if minimum_row is not None:
+            shifted.to.row = max(minimum_row, shifted.to.row)
+    return shifted
 
 
 def _shift_col(col: int, insertions: list[tuple[int, int]]) -> int:
