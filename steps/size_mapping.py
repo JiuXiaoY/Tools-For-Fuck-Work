@@ -2,6 +2,7 @@
 
 from core import PipelineContext, PipelineStep
 from services import is_blank, cell_has_fill
+from services.unmapped import record_unmapped
 
 
 class SizeMappingStep(PipelineStep):
@@ -34,5 +35,6 @@ class SizeMappingStep(PipelineStep):
                 filled += 1
             else:
                 skipped += 1
-        ctx.log(f"Column {cfg.col_k}: {filled} mapped, {cleared} cleared (col A has fill), {skipped} no match")
+                record_unmapped("size", key, cfg.size_mapping_path, source="size_mapping")
+        ctx.log(f"Column {cfg.col_k}: {filled} mapped, {cleared} cleared (col A has fill), {skipped} no match (recorded)")
         return ctx

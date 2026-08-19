@@ -4,6 +4,8 @@ from openpyxl.styles import Alignment
 from openpyxl.utils import get_column_letter
 
 from core import PipelineContext, PipelineStep
+
+
 class FormatCellsStep(PipelineStep):
     name = "format_cells"
     description = "Apply row height, alignment, column widths, formulas"
@@ -14,23 +16,27 @@ class FormatCellsStep(PipelineStep):
         ws = ctx.worksheet
 
         # ── column widths ──
-        for c in (1, 2, 3):
-            ws.column_dimensions[get_column_letter(c)].width = cfg.col_width_1_3
+        letters_1_3 = (get_column_letter(1), get_column_letter(2), get_column_letter(3))
+        for l in letters_1_3:
+            ws.column_dimensions[l].width = cfg.col_width_1_3
         ws.column_dimensions[get_column_letter(4)].width = cfg.col_width_4
         ctx.log(f"Col 1-3 width={cfg.col_width_1_3}, col 4 width={cfg.col_width_4}")
 
-        # ── row height + alignment ──
+        # ── row height + alignment + formula ──
+        # Reuse a single Alignment object (openpyxl allows sharing style refs).
+        align = Alignment(horizontal=cfg.cell_h_align, vertical=cfg.cell_v_align)
+        max_col = ws.max_column
         col_d_letter = get_column_letter(4)
-        col_e_letter = get_column_letter(5)
         n = 0
-        for r in range(1, ws.max_row + 1):
+        for row in ws.iter_rows(min_row=1, max_row=ws.max_row, max_col=max_col):
+            r = row[0].row
             ws.row_dimensions[r].height = cfg.row_height
-            for c in range(1, ws.max_column + 1):
-                ws.cell(row=r, column=c).alignment = Alignment(
-                    horizontal=cfg.cell_h_align, vertical=cfg.cell_v_align)
-            # Formula: col 5 = LEN(col 4)
+            # Column 5 formula (col E = index 4 in the row tuple).
             if cfg.col_5_formula:
-                ws.cell(row=r, column=5).value = f"=LEN({col_d_letter}{r})"
+                row[4].value = f"=LEN({col_d_letter}{r})"
+            # Apply alignment to every cell in the row (same style object reused).
+            for cell in row:
+                cell.alignment = align
             n += 1
 
         ctx.log(f"Formatted {n} rows: h={cfg.row_height}, align={cfg.cell_h_align}/{cfg.cell_v_align}")

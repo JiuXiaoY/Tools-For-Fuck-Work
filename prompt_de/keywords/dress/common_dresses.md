@@ -1,9 +1,11 @@
 ## [核心产品词]
 Abaya (阿巴亚), Corsagen (束身衣), Korsett (紧身胸衣), Tanktop (背心), Tunika (长袍)
+Dienstmädchen-Kleid (女仆裙), Barockkleid (宫廷裙), Lolita-Kleid (洛丽塔裙), Ballkleid (舞会礼服), Schürze (围裙), Umhang (斗篷/披风)
 
 ## [颜色与图案词]
 Blau (蓝), Bordeaux (酒红), Gelb (黄), Gestreift (条纹), Grün (绿), Leo/Leoparden (豹纹)
 Lila (紫), Neon (荧光), Rosa (粉), Rot (红), Schwarz (黑), Weiß (白)
+Kariert (格纹), Tupfen (波点), Paisley (佩斯利花纹), Barockmuster (巴洛克花纹)
 
 ## [版型与款式词]
 3D-Blumen (立体花朵), 3D-Rosenverzierung (立体玫瑰装饰), A-Linie (A字型), Asymmetrisch (不对称), Ausgestellt (大摆), Ballonärmel (灯笼袖)
@@ -17,13 +19,15 @@ Raffung (抽褶), Rundhals (圆领), Rückenfrei (露背), Rückseitiger V-Aussc
 Schulterfrei (一字肩), Schärpe (飘带), Smokdetails (打揽), Spaghettiträger (细吊带), Spitzen-Patchwork (蕾丝拼接), Spitzenbesatz (蕾丝花边)
 Stehkragen (立领), Tailliert (收腰), Tiefer V-Ausschnitt (深V), Transparent (透视), Transparente Spitze (蕾丝透视), Trompetenärmel (喇叭袖)
 Träger (吊带), U-Ausschnitt (U领), Umlegekragen (翻领), Unregelmäßig (不规则), V-Ausschnitt (V领), Volantärmel (荷叶袖)
-Wickel (围裹), Ärmellos (无袖)
+Wickel (围裹), Ärmellos (无袖), Fischschwanz (鱼尾), Vorne-Kurz-Hinten-Lang (前短后长), Knöchellang (及踝), Gekreuzte Schnürung (交叉系带)
+Ösen (金属孔眼), Rüschen / Volants (荷叶边), Feston (木耳边), Flügelärmel (飞飞袖), Knopfleiste vorn (前排扣), Schlitz des Rückens (后背镂空)
 
 ## [材质词]
 Acetat (醋酸), Baumwoll-Leinen (棉麻), Baumwolle (棉), Chiffon (雪纺), Cord (灯芯绒), Denim (牛仔)
 Frottier (毛巾布), Glitzer (闪光), Jeans/Denim (牛仔), Jersey (平针织物), Kunstwildleder (仿麂皮), Leder (皮革)
 Leinen (亚麻), Mesh (网眼), Musselin (平纹细布), Pailletten (亮片), Satin (缎面), Seide (丝绸)
 Spitze (蕾丝), Strick (针织), Tüll (薄纱), Viskose (粘胶), Waffelstruktur (华夫格), Wildleder (麂皮)
+Jacquard (提花), Barock-Jacquard (巴洛克提花), Transparente Spitze (透视蕾丝)
 
 ## [目标人群与性别词]
 Muslimisch (穆斯林)
@@ -44,6 +48,7 @@ Rad (骑行), Renaissance (文艺复兴), Safari (狩猎旅行), Sauna (桑拿),
 Schwimm (游泳), Sexy (性感), Sport (运动), Steam Punk (蒸汽朋克), Strand (沙滩), Tanz (舞蹈)
 Tennis (网球), Trauer (丧服), Urlaub (度假), Viktorianisch (维多利亚), Vintage (复古), Wander (徒步)
 Western (西部), Wikinger (维京), Yoga (瑜伽), Zumba (尊巴)
+Hofstil (宫廷风), Piraten (海盗), Steampunk (蒸汽朋克), Katze/Catwoman (猫女)
 
 ## [尺寸与体型词]
 Curvy (丰满型), Große Größen (大码)
@@ -53,3 +58,4 @@ Atmungsaktiv (透气), Bequem (舒适), Blickdicht (防走光), Fließend (飘�
 Knöpfe (纽扣), Kühlend (凉感), Leicht (轻便), Luftiges (轻薄透气), Reißverschluss (拉链), Schlankmachend (显瘦)
 Stretch (弹力), UV (紫外线), UV-Schutz (防晒), Verstellbare Träger (可调节肩带), Waschung (水洗), Wasserdicht (防水)
 mit Hose (带短裤), mit Innenhose (带内衬短裤), mit Taschen (有口袋)
+Stickerei (刺绣), mit Saumverzierung (带下摆装饰)

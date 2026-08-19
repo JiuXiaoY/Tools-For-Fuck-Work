@@ -11,7 +11,7 @@ def get_preprocess_steps(config: Config | None = None) -> list[PipelineStep]:
     config = config or Config()
     steps: list[PipelineStep] = [
         RemoveHeaderPreStep(config),
-        # DedupFilledRowsStep(config),
+        DedupFilledRowsStep(config),
     ]
     if config.preprocess_remove_empty_j:
         steps.insert(1, RemoveEmptyJStep(config))

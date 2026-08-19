@@ -1,0 +1,29 @@
+{
+  "color": [
+    {
+      "target_file": "data\\color_mapping_fr.json",
+      "value": [
+        "Gray"
+      ]
+    }
+  ],
+  "size": [
+    {
+      "target_file": "data\\size_mapping_fr.json",
+      "value": [
+        "cn：M，us：xs",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "3XL",
+        "4XL",
+        "5XL",
+        "6XL"
+      ]
+    }
+  ]
+}

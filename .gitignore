@@ -33,14 +33,11 @@ tools/title_auto_fill/gemini_browser/
 # nineTools 随机 ID 输出
 nineTools/*.txt
 # prompt_fr 生成结果（由 AI 生成，不入库）
-prompt_fr/dress_feasibility_domain/Master
-prompt_fr/dress_feasibility_domain/Slave
-prompt_fr/dress_feasibility_domain/needToGenerate
-prompt_fr/dress_feasibility_domain/description&fivePoints
-prompt_fr/dress_feasibility_domain/closure
-prompt_fr/dress_feasibility_domain/col
-prompt_fr/dress_feasibility_domain/neck
-prompt_fr/dress_feasibility_domain/sleeve
+prompt_fr/dress_feasibility_domain/*
+!prompt_fr/dress_feasibility_domain/zzz.md
+# prompt_de 生成结果（由 AI 生成，不入库）
+prompt_de/feasibility_domain/*
+!prompt_de/feasibility_domain/**/zzz.md
 # Secret backups
 constant/dzq.bak
 constant/photo/
