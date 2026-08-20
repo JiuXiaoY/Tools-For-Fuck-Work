@@ -27,8 +27,13 @@ dealExcel_refactoring/
 │
 ├── jenkins.py                  # 一键启动全流程
 ├── main.py                     # Excel 流水线入口
-├── config.py                   # 所有配置
-├── requirements.txt
+├── config.py                   # 所有配置（config.example.py 是模板）
+├── requirements.txt / pyproject.toml
+├── REFACTOR_GUIDE.md           # 重构指南
+├── ISSUES.md                   # 问题与待办
+│
+├── constant/                   # 常量（含 photo 目录）
+├── zip_by_ec/                  # 按 ec 目录压缩打包
 │
 ├── core/                       # 流水线核心（Pipeline / Step / Context）
 ├── steps/                      # 12 个流水线步骤
@@ -38,8 +43,12 @@ dealExcel_refactoring/
 ├── services/                   # 工具函数（excel/images/logger/ai_client...）
 ├── rules/                      # 业务规则（价格提取）
 ├── data/                       # 映射表
-│   ├── color_mapping_de.json   # 颜色英→德 (742条, 国家码后缀可配)
-│   └── size_mapping_de.json    # 尺码映射 (国家码后缀可配)
+│   ├── color_mapping_de.json   # 颜色 英→德
+│   ├── color_mapping_fr.json   # 颜色 英→法
+│   ├── size_mapping_de.json    # 尺码映射 (德)
+│   ├── size_mapping_fr.json    # 尺码映射 (法)
+│   ├── dress_attributes_options_fr.json  # 法站属性可选项知识库（col/neck/...）
+│   └── to_be_completed.json    # 待完成项清单
 │
 ├── tools/
 │   ├── xls2xlsx.py             # .xls → .xlsx 转换
@@ -79,14 +88,31 @@ dealExcel_refactoring/
 │   │   ├── reorder.py           #   逐行扫描重排
 │   │   ├── reorder_batch.py     #   批次重排（按A列有色行分组）
 │   │   └── reorder_backup.py    #   旧版备份
+│   ├── export_sku/              # SKU 导出
+│   │   └── export_sku.py
+│   └── write_excel_temp/        # Excel 临时写表
+│       ├── write_excel.py
+│       └── fill_az_from_help.py
+│
+├── nineTools/                  # 独立小工具（不依赖主流水线）
+│   ├── analysisXlsm.py         #   只读解析 Amazon 模板(.xlsm)：表头 + 该列可选值 → JSON
+│   ├── fill_from_plan.py       #   按填充计划(plan)把数据写入模板副本（列范围/分组/循环规则）
+│   ├── fill_plan/              #   填充计划模板：example_fill_plan.json + README
+│   └── random_id.py            #   随机 16 位 ID 生成（规则与 steps/assign_ids 一致）
 │
 ├── prompt_de/                  # AI 提示词-德国站（8 个品类指令 + 关键词库）
 │   ├── instructions/
 │   └── keywords/
-├── prompt_fr/                  # AI 提示词-法国站（保持与 prompt_de 相同的相对结构）
-│   ├── final_init_template/FR/
-│   ├── instructions/new_ins/fr/
-│   └── keywords/tops/fr/
+├── prompt_fr/                  # AI 提示词-法国站
+│   ├── final_init_template/    # Amazon 模板(.xlsm)：coat/dress/pants/shirt 等
+│   ├── instructions/           # 品类指令
+│   ├── keywords/               # 关键词库
+│   ├── key_words_title/        # 生成的关键词标题（Adam_tops / Adam_pants / Eva_dress）
+│   ├── *_feasibility_domain/   # 可行域（dress/tops），Master + Slave + needToGenerate
+│   ├── A_Plus_Manager/          # 广告内容管理
+│   ├── email_template/          # 邮件模板
+│   ├── finePoints&description/  # 卖点与描述
+│   └── word_backup/             # 词库备份
 │
 ├── deprecated/                 # 弃置代码（第 4 列 AI 填充）
 │   ├── tools/ai_fill.py
@@ -146,11 +172,45 @@ python tools/color_size_deal/process.py
 # 图片重排（尺码表移到行末）
 python tools/image_classification/reorder.py           # 默认逐行扫描
 python tools/image_classification/reorder_batch.py      # 批次模式
+```
+> 注：此前的 `tools/sku_extract`（浏览器自动抓取 SKU）已不在本仓库，相关命令不再可用。
 
-# SKU 提取（按钮界面：浏览器打开目标页面后，点按钮自动滚动识别）
-python tools/sku_extract/web_ui.py   # 打开 http://127.0.0.1:8765 使用
-#   前置：用 chrome --remote-debugging-port=9222 启动浏览器并登录目标页面
-#   命令行备用：python tools/sku_extract/extract_skus.py --web
+---
+
+## nineTools 辅助工具
+
+独立小工具，不依赖主流水线，均只读源文件、写新副本。
+
+### 1) `analysisXlsm.py` — 模板表头 + 可选值 → JSON
+
+只读解析 Amazon 模板 `.xlsm`（如 `prompt_fr/final_init_template/coat_template_Eva.xlsm` 的 `Modèle` / `Valeurs valides`），把每个表头的「列号 / 表头名 / 属性键 / 可选值」输出为 JSON，每列还预留 `reserve_flag` / `reserve_mark` 两个标识位。
+
+```bash
+python nineTools/analysisXlsm.py                               # 默认解析 coat_template_Eva.xlsm
+python nineTools/analysisXlsm.py 你的模板.xlsm --output out.json   # 指定文件/输出
+python nineTools/analysisXlsm.py --max-values 5                # 每字段最多列 5 个可选值
+python nineTools/analysisXlsm.py --show-data                   # 附带每列示例数据
+```
+默认输出与输入同目录下的 `<模板名>_analysis.json`。
+
+### 2) `fill_from_plan.py` — 按填充计划(plan)把数据写入模板
+
+把你「数据 → 填哪些列、按什么顺序」写成一份 plan JSON，程序据此把数据写入**模板副本**（模板只读）。关键能力：
+- **列范围** `col_scope`：只在列出的列填；不在其中的列绝不写。
+- **分组** `groups`：`"group_1": "1 & 99"`，父体起始行 & 末子体行；`data_start_row` 统一偏移。
+- **每列填充规则**：数据条数=行数→顺序填；=行数-1→只填子体；=0→不填；<阈值→循环铺满；不匹配→`mismatch` 记入报告。
+
+```bash
+python nineTools/fill_from_plan.py nineTools/fill_plan/example_fill_plan.json --report reports.json
+```
+格式与规则详见 `nineTools/fill_plan/README.md`，可直接套用的示例见 `nineTools/fill_plan/example_fill_plan.json`。
+
+### 3) `random_id.py` — 随机 16 位 ID
+
+规则与流水线 `steps/assign_ids.py` 完全一致（16 位：前/后段 base62，中间 6 位日期码 digit→letter）。
+```bash
+python nineTools/random_id.py            # 生成 1 个
+python nineTools/random_id.py --count 20 # 生成 20 个
 ```
 
 ---
