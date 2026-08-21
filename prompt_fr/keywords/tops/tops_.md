@@ -4,6 +4,7 @@
 Chemise (衬衫), Tunique (长袍/罩袍), Abaya (穆斯林罩袍), Robe longue (及踝长袍), T-shirt (T恤), Polo (Polo衫)
 Veste (西装外套), Blouson (夹克), Cardigan (开衫外套), Chemise en jean (牛仔衬衫), Chemise-veste (衬衫外套), Haut de sport (运动上衣)
 Pull-over (套头衫), Haut de base (打底衫), Veste de costume (礼服上衣), Uniforme de travail (工作服), Blouse de chef (厨师服)
+Surchemise (罩衫), Haut (上衣)
 
 
 ## [颜色与图案词]
@@ -14,6 +15,10 @@ Chat noir (黑猫), Chaudron (大锅), Éclaboussure d'encre (泼墨), Fluoresce
 Broderie (刺绣), Rose (玫瑰), Note de musique (音符), Totem circulaire (圆形图腾), Drapeau américain (星条旗), Père Noël (圣诞老人)
 Paysage enneigé (雪景), Rayures (条纹), Rayures verticales (竖条纹), Damier (格纹), Imprimé 3D (3D印花), Imprimé vintage (复古印花)
 Motif tribal (部落图腾), Imprimé fantôme (幽灵图案), Imprimé citrouille (南瓜)
+Imprimé numérique (数码印花), Pop art (波普), Années 70 (70年代), Dense (密集), Silhouette (剪影), Bulle (气泡), Vague (波浪)
+Étoile (星星), Tête de cerf (鹿头), Feuillages (枝叶), Vigne (藤蔓), Corps entier (全身), Sanglant (血腥), Réaliste (逼真)
+Drapeau (旗帜), Canada (加拿大), Mythologie (神话), Flèche (箭头), Rectangle (矩形), Petite impression (小印花), Drôle (趣味)
+Rouge (红), Bleu (蓝), Orange (橙), Gris (灰), Couleurs multicolores (彩色), Perforé (镂空)
 
 
 ## [版型与款式词]
@@ -23,12 +28,14 @@ Ouverture complète (全开襟), Boutonnage (纽扣开襟), Fermeture éclair (�
 Ourlet irrégulier (不规则弧形下摆), Manches retroussées (卷袖), Manches relevées (挽袖), Manches raglan (插肩袖), Manches longues (长袖), Longueur cheville (及踝)
 Plissé soufflet (风琴褶), Plissé (打褶), Col pointu (尖领), Côtes (罗纹袖口/下摆), Fentes latérales (侧边开衩), Asymétrique (不对称)
 Assemblage (拼接), Fermeture oblique (斜襟), Petit col montant (小立领), Single boutonnage (单排扣), Manches contrastées (拼接袖)
+Sans boutons (无扣), Col à boutons (纽扣领), Col contrasté (领边), Souple (手感/质感), Léger et fin (轻薄)
+Patch (贴片), Empiècement (覆片)
 
 
 ## [材质词]
 Lin (亚麻), Coton (棉), Lin et coton (棉麻), Gaufré (华夫格), Tricoté (针织), Élastique (弹力)
 Denim (牛仔), Délavé et vieilli (水洗做旧), Brillant (亮面), Métallique (金属质感), Paillettes (亮片), Réfléchissant (反光)
-Élastique 4 directions (四面弹), Haute élasticité (高弹), Soie glacée (冰丝凉感), Respirant (透气)
+Élastique 4 directions (四面弹), Haute élasticité (高弹), Soie glacée (冰丝凉感), Respirant (透气), Tissu (面料/质感)
 
 
 ## [目标人群与性别词]
@@ -46,6 +53,9 @@ Médiéval (中世纪), Nordique (北欧), Street (街头), Sport (运动), Plei
 Scène (舞台), Disco (迪斯科), Rétro (复古), Ethnique (民族), Musulman (穆斯林), Bavarois (巴伐利亚)
 Tribal (部落), Chevalier (骑士), Cuisinier (厨师), Plage (沙滩), Quotidien (日常), Horreur (恐怖)
 Animateur (主持人), Chorale (合唱)
+Traditionnel (传统), Thème (主题), Spectacle (演出), Soirée de gala (晚会), Maison (家居), Moyen-Orient (中东)
+Métier de la restauration (餐饮职业), Hôtel (酒店), Restaurant (餐厅), Cuisine (厨房), Sécurité (安全), Chantier (交通作业)
+Running (跑步), Entraînement (训练), Fitness (健身)
 
 
 ## [尺寸与体型词]
@@ -58,6 +68,8 @@ Lacets (系带), Cordon de serrage (抽绳), Boutons (纽扣), Boutons pression 
 Bordure contrastée (对比色包边), Design contrasté (撞色设计), Assemblage (拼接), Paillettes (亮片), Bande réfléchissante (反光条), Ligne décorative (装饰线)
 Plissé (打褶), Plissé soufflet (风琴褶), Insigne (徽章), Impression de texte (文字印花), Fausse poche (假口袋), Porte-stylo au poignet (袖口插笔袋)
 Anneau métallique (金属环), Corde (穿绳), Nœud papillon (配领结)
+Détail (细节), Marquage (标识), Épaulettes (肩部), Horizontal (水平), Haute visibilité (高亮), Patch réfléchissant (反光片), Compression (压缩)
+Trait de couture (缝线), Couture décorative (明线), Liseré décoratif (饰边/包边)
 # 亚马逊法国站 (Amazon.fr) 高涨服关键词
 
 ## 热词 (Hot)

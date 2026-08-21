@@ -203,7 +203,9 @@ python nineTools/analysisXlsm.py --show-data                   # 附带每列示
 ```bash
 python nineTools/fill_from_plan.py nineTools/fill_plan/example_fill_plan.json --report reports.json
 ```
-格式与规则详见 `nineTools/fill_plan/README.md`，可直接套用的示例见 `nineTools/fill_plan/example_fill_plan.json`。
+格式与规则详见 `nineTools/fill_plan/README.md`，可直接套用的示例见：
+- `nineTools/fill_plan/example_fill_plan.json` — 通用骨架（演示四种规则）
+- `nineTools/fill_plan/example_from_givingtree.json` — 从已填好的数据源 `nineTools/TheGivingTree@.xlsm`(DRESS) 抽取前 2 组生成；演示 `cycle`(组内一致列) / `children_only`(父空、只填子体) / `sequential`(逐子变化列) 三种真实场景
 
 ### 3) `random_id.py` — 随机 16 位 ID
 
