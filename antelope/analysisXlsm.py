@@ -6,9 +6,9 @@
 供人工/程序填写时参考。
 
 数据来源（默认 coat_template_Eva.xlsm）：
-  - 工作表 'Modèle'           : 主模板。row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
+  - 工作表 'Modèle'            : 主模板。row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
                                 labelRow 是表头（人类可读列名），attributeRow 是属性键，dataRow 是数据起始行。
-  - 工作表 'Valeurs valides'  : 第 1 列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
+  - 工作表 'Valeurs valides'  : 第 1列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
                                 第 3 列起横向排列该字段的可选值。
 
 匹配方式：以 'Modèle' 的表头文本（归一化：统一 \xa0/空白、去首尾空白）去匹配
@@ -34,6 +34,15 @@ import sys
 
 import openpyxl
 
+# --------------------------------------------------------------------------- #
+# 全局路径配置（在此处直接配置你的文件路径）
+# --------------------------------------------------------------------------- #
+# 默认输入的 .xlsm 模板文件路径
+DEFAULT_INPUT_PATH = r"D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\shirt_template_Adam.xlsm"
+
+# 默认输出的 .json 文件路径（若设为 None，则自动在输入文件同目录下生成 <文件名>_analysis.json）
+DEFAULT_OUTPUT_PATH = r"D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\shirt_fr_blank.json"
+
 
 # --------------------------------------------------------------------------- #
 # 文本归一化：让不同来源的法文标签能可靠地相互匹配
@@ -46,7 +55,7 @@ def normalize(text: str) -> str:
     # 把所有不可见空白（普通空格、\xa0、全角空格等）统一为普通空格
     s = re.sub(r"[\s\u00a0\u2007\u202f]", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    s = s.casefold()          # 不区分大小写
+    s = s.casefold()  # 不区分大小写
     # 把全角/弯引号归一为 ASCII 引号，减少差异
     for a, b in (("\u2018", "'"), ("\u2019", "'"), ("\u201a", "'"),
                  ("\u201c", '"'), ("\u201d", '"'), ("\u201e", '"'),
@@ -79,8 +88,8 @@ def parse_valid_values(ws) -> tuple:
     for row in ws.iter_rows(values_only=True):
         if not row:
             continue
-        col1 = row[0] if len(row) > 0 else None     # 分组标题
-        col2 = row[1] if len(row) > 1 else None     # 字段名
+        col1 = row[0] if len(row) > 0 else None  # 分组标题
+        col2 = row[1] if len(row) > 1 else None  # 字段名
         if col1 is not None and str(col1).strip():
             group = str(col1).strip()
             if group not in seen:
@@ -120,14 +129,17 @@ def collect_column_data(ws, label_row, attr_row, data_row, max_samples=2):
     """
     读取 'Modèle' 并按列组织成列表：
       [ (列号, 表头, 属性键, 示例值列表[…]), … ]
-    只有表头非空的列才进入结果。
+    只有表头非空且数据行（dataRow及之后）有值的列才进入结果。
     """
     rows = {}
+    max_r = label_row
+    # 遍历自 label_row 起的所有行，以便检测整列是否有数据
     for r, row in enumerate(
-        ws.iter_rows(min_row=label_row, max_row=data_row + max_samples + 10, values_only=True),
-        start=label_row,
+            ws.iter_rows(min_row=label_row, values_only=True),
+            start=label_row,
     ):
         rows[r] = row
+        max_r = r
 
     label_row_vals = rows.get(label_row, ())
     attr_row_vals = rows.get(attr_row, ())
@@ -138,15 +150,22 @@ def collect_column_data(ws, label_row, attr_row, data_row, max_samples=2):
         if label is None or not str(label).strip():
             continue
         attr = attr_row_vals[c - 1] if c - 1 < len(attr_row_vals) else None
-        # 示例数据：dataRow 起，取前几个非空值
+
+        # 扫描 dataRow 起的所有行，检查是否有值并提取示例数据
         samples = []
+        has_data = False
         if data_row is not None:
-            for r in range(data_row, max(data_row, data_row + 4) + 1):
+            for r in range(data_row, max_r + 1):
                 rr = rows.get(r, ())
                 if c - 1 < len(rr) and rr[c - 1] is not None and str(rr[c - 1]).strip():
-                    samples.append(str(rr[c - 1]).strip())
-                if len(samples) >= max_samples:
-                    break
+                    has_data = True
+                    if len(samples) < max_samples:
+                        samples.append(str(rr[c - 1]).strip())
+
+        # 若数据行全为空，则不收集该列
+        if not has_data:
+            continue
+
         columns.append((c, str(label).strip(), str(attr).strip() if attr else "", samples))
     return columns
 
@@ -171,13 +190,13 @@ def main():
     parser.add_argument(
         "file",
         nargs="?",
-        default="D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\prompt_fr\\final_init_template\\coat_template_Eva.xlsm",
-        help="要解析的 .xlsm 文件路径（默认：coat_template_Eva.xlsm）",
+        default=DEFAULT_INPUT_PATH,
+        help="要解析的 .xlsm 文件路径（默认使用 DEFAULT_INPUT_PATH）",
     )
     parser.add_argument(
         "--output", "-o",
-        default=None,
-        help="JSON 输出文件路径（默认自命名：<输入文件名>_analysis.json）",
+        default=DEFAULT_OUTPUT_PATH,
+        help="JSON 输出文件路径（默认使用 DEFAULT_OUTPUT_PATH 或自命名）",
     )
     parser.add_argument(
         "--sheets",
