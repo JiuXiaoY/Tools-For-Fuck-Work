@@ -40,8 +40,10 @@ import openpyxl
 # 默认输入的 .xlsm 模板文件路径
 DEFAULT_INPUT_PATH = r"D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\shirt_template_Adam.xlsm"
 
-# 默认输出的 .json 文件路径（若设为 None，则自动在输入文件同目录下生成 <文件名>_analysis.json）
-DEFAULT_OUTPUT_PATH = r"D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\shirt_fr_blank.json"
+# 默认输出的 .json 文件路径（过程 json 输出到 antelope/intermediate/，自命名；若设为 None 则自动在输入文件同目录下生成 <文件名>_analysis.json）
+DEFAULT_OUTPUT_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "intermediate", "shirt_fr_blank.json"
+)
 
 
 # --------------------------------------------------------------------------- #

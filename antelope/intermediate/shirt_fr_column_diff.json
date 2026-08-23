@@ -1,0 +1,528 @@
+{
+  "compared_files": {
+    "completed": "G:\\jetbrains_projects\\pycharmProjects\\Tools-For-Fuck-Work\\antelope\\intermediate\\shirt_fr_completed.json",
+    "blank": "G:\\jetbrains_projects\\pycharmProjects\\Tools-For-Fuck-Work\\antelope\\intermediate\\shirt_fr_blank.json"
+  },
+  "summary": {
+    "completed_total": 76,
+    "blank_total": 34,
+    "only_in_completed": 42,
+    "only_in_blank": 0,
+    "duplicate_col_in_completed": [],
+    "duplicate_col_in_blank": []
+  },
+  "by_col": {
+    "only_in_completed": [
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 5,
+        "header": "SKU parent",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A13V1IB3VIYZZH]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 7,
+        "header": "Nom de l'article",
+        "attribute": "item_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 8,
+        "header": "Point fort de l’article",
+        "attribute": "title_differentiation[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 17,
+        "header": "Style de col",
+        "attribute": "collar_style[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 19,
+        "header": "Numéro du modèle",
+        "attribute": "model_number[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      },
+      {
+        "col": 20,
+        "header": "Nom du modèle",
+        "attribute": "model_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "URL de l’image principale",
+        "attribute": "main_product_image_locator[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 25,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_1[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_2[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_3[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_4[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_5[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_6[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_7[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 40,
+        "header": "Description du produit",
+        "attribute": "product_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 41,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 42,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#2.value",
+        "matched": false
+      },
+      {
+        "col": 43,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#3.value",
+        "matched": false
+      },
+      {
+        "col": 44,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#4.value",
+        "matched": false
+      },
+      {
+        "col": 45,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#5.value",
+        "matched": false
+      },
+      {
+        "col": 46,
+        "header": "Mots-clés de recherche",
+        "attribute": "generic_keyword[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 52,
+        "header": "Style de vie",
+        "attribute": "lifestyle[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 59,
+        "header": "Taille du vêtement",
+        "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.size",
+        "matched": true
+      },
+      {
+        "col": 73,
+        "header": "Nom du type d’article",
+        "attribute": "item_type_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 77,
+        "header": "Couleur dominante",
+        "attribute": "color[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 78,
+        "header": "Couleur",
+        "attribute": "color[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 81,
+        "header": "Thème",
+        "attribute": "theme[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 82,
+        "header": "Type de coupe",
+        "attribute": "fit_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 84,
+        "header": "Type de tissage",
+        "attribute": "weave_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 101,
+        "header": "Style de col",
+        "attribute": "neck[marketplace_id=A13V1IB3VIYZZH]#1.neck_style[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 113,
+        "header": "Type de forme de chemise",
+        "attribute": "shirt_form_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 114,
+        "header": "Style revers",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.cuff_style[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 115,
+        "header": "Style revers",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.cuff_style[language_tag=fr_FR]#2.value",
+        "matched": true
+      },
+      {
+        "col": 116,
+        "header": "Description de la longueur des manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.length_description#1.value",
+        "matched": true
+      },
+      {
+        "col": 117,
+        "header": "Type de manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 118,
+        "header": "Type de fermeture",
+        "attribute": "closure[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 137,
+        "header": "Poids de l'article",
+        "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      },
+      {
+        "col": 145,
+        "header": "État de l’article",
+        "attribute": "condition_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 147,
+        "header": "Prix catalogue TTC",
+        "attribute": "list_price[marketplace_id=A13V1IB3VIYZZH]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 177,
+        "header": "Votre prix EUR (Vendez sur Amazon, FR)",
+        "attribute": "purchasable_offer[marketplace_id=A13V1IB3VIYZZH][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 209,
+        "header": "Poids de l’emballage",
+        "attribute": "item_package_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      }
+    ],
+    "only_in_blank": []
+  },
+  "by_attribute": {
+    "only_in_completed": [
+      {
+        "col": 41,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 42,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#2.value",
+        "matched": false
+      },
+      {
+        "col": 43,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#3.value",
+        "matched": false
+      },
+      {
+        "col": 44,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#4.value",
+        "matched": false
+      },
+      {
+        "col": 45,
+        "header": "Puce",
+        "attribute": "bullet_point[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#5.value",
+        "matched": false
+      },
+      {
+        "col": 5,
+        "header": "SKU parent",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A13V1IB3VIYZZH]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 118,
+        "header": "Type de fermeture",
+        "attribute": "closure[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 17,
+        "header": "Style de col",
+        "attribute": "collar_style[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 77,
+        "header": "Couleur dominante",
+        "attribute": "color[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 78,
+        "header": "Couleur",
+        "attribute": "color[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 145,
+        "header": "État de l’article",
+        "attribute": "condition_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 82,
+        "header": "Type de coupe",
+        "attribute": "fit_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 46,
+        "header": "Mots-clés de recherche",
+        "attribute": "generic_keyword[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 7,
+        "header": "Nom de l'article",
+        "attribute": "item_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 209,
+        "header": "Poids de l’emballage",
+        "attribute": "item_package_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      },
+      {
+        "col": 73,
+        "header": "Nom du type d’article",
+        "attribute": "item_type_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 137,
+        "header": "Poids de l'article",
+        "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      },
+      {
+        "col": 52,
+        "header": "Style de vie",
+        "attribute": "lifestyle[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 147,
+        "header": "Prix catalogue TTC",
+        "attribute": "list_price[marketplace_id=A13V1IB3VIYZZH]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "URL de l’image principale",
+        "attribute": "main_product_image_locator[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 20,
+        "header": "Nom du modèle",
+        "attribute": "model_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 19,
+        "header": "Numéro du modèle",
+        "attribute": "model_number[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": false
+      },
+      {
+        "col": 101,
+        "header": "Style de col",
+        "attribute": "neck[marketplace_id=A13V1IB3VIYZZH]#1.neck_style[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 25,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_1[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_2[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_3[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_4[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_5[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_6[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_7[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 40,
+        "header": "Description du produit",
+        "attribute": "product_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 177,
+        "header": "Votre prix EUR (Vendez sur Amazon, FR)",
+        "attribute": "purchasable_offer[marketplace_id=A13V1IB3VIYZZH][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 113,
+        "header": "Type de forme de chemise",
+        "attribute": "shirt_form_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 59,
+        "header": "Taille du vêtement",
+        "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.size",
+        "matched": true
+      },
+      {
+        "col": 114,
+        "header": "Style revers",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.cuff_style[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 115,
+        "header": "Style revers",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.cuff_style[language_tag=fr_FR]#2.value",
+        "matched": true
+      },
+      {
+        "col": 116,
+        "header": "Description de la longueur des manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.length_description#1.value",
+        "matched": true
+      },
+      {
+        "col": 117,
+        "header": "Type de manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 81,
+        "header": "Thème",
+        "attribute": "theme[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 8,
+        "header": "Point fort de l’article",
+        "attribute": "title_differentiation[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": false
+      },
+      {
+        "col": 84,
+        "header": "Type de tissage",
+        "attribute": "weave_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      }
+    ],
+    "only_in_blank": []
+  }
+}
