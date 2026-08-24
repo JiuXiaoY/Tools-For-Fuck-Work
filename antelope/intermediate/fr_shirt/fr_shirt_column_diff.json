@@ -5,8 +5,8 @@
     "dataRow": 8
   },
   "compared_files": {
-    "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\shirt_fr_completed.json",
-    "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\shirt_fr_blank.json"
+    "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\fr_shirt\\fr_shirt_completed.json",
+    "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\fr_shirt\\fr_shirt_blank.json"
   },
   "summary": {
     "completed_total": 76,

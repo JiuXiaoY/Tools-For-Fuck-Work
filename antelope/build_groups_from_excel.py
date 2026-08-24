@@ -2,7 +2,7 @@
 """
 从「流水线最终产出」的 excel 生成 groups（填充计划所需的行范围）。
 
-约定（与 example_from_givingtree.json 一致）：
+约定（与 fr_shirt_fill_framework.json 一致）：
   - 读取 excel 第一列（A 列），有可见背景填充色的单元格所在行 = 父体锚点行；
   - 每个锚点行 = 一个组的起始行，组结束行 = 下一个锚点行 - 1；
   - 最后一个组的结束行 = excel 最大行（max_row）；
@@ -17,8 +17,8 @@
         [--data-start-row N] [--scan-from N] [--end-row N]
 默认:
     input          = outputs（目录则取其中最新的 .xlsx）
-    output         = intermediate/groups_from_excel.json（自命名）
-    data_start_row = 从 intermediate/shirt_fr_column_diff.json 的 settings.dataRow 读取（唯一真源）；读取失败回退 7
+    output         = intermediate/fr_shirt/fr_shirt_groups.json（自命名）
+    data_start_row = 从 intermediate/fr_shirt/fr_shirt_column_diff.json 的 settings.dataRow 读取（唯一真源）；读取失败回退 7
 """
 import argparse
 import importlib.util
@@ -47,8 +47,8 @@ BASE_DIR = Path(__file__).resolve().parent
 INTERMEDIATE_DIR = Path(zcfg.INTERMEDIATE_DIR)
 
 DEFAULT_INPUT_PATH = zcfg.OUTPUTS_DIR
-DEFAULT_OUTPUT_PATH = INTERMEDIATE_DIR / "groups_from_excel.json"
-DEFAULT_DIFF_PATH = INTERMEDIATE_DIR / "shirt_fr_column_diff.json"
+DEFAULT_OUTPUT_PATH = Path(zcfg.CFG_INTERMEDIATE["groups_json"])
+DEFAULT_DIFF_PATH = Path(zcfg.CFG_INTERMEDIATE["column_diff_json"])
 DEFAULT_DATA_START_ROW = zcfg.CFG_RUN["fallback_data_start_row"]
 
 # 与 services/utils.py 的 _TRANSPARENT 一致：这些 rgb 视为"无可见填充"
@@ -130,7 +130,7 @@ def build_groups(anchors: list[int], end_row: int, data_start_row: int) -> tuple
 def default_data_start_row_from_diff(path, fallback=DEFAULT_DATA_START_ROW):
     """从 column_diff.json 的模板标准 settings.dataRow 取默认数据起始行（唯一真源）。
 
-    以 shirt_fr_column_diff.json 为标准；读取失败时用 fallback。
+    以 fr_shirt_column_diff.json 为标准；读取失败时用 fallback。
     """
     try:
         with open(path, "r", encoding="utf-8") as f:

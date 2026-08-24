@@ -3,16 +3,16 @@
 从「数据源 excel」读取列数据，按列映射填充到 plan 的 data（按分组组织）。
 
 流程与 build_groups_from_excel.py 对称：
-  - groups 来源 json（默认 intermediate/groups_from_excel.json）提供分组行范围（相对行号）；
-  - 列映射来源 json（默认 intermediate/data_col_mapping.json）提供「源 excel 列 → plan 目标列」映射；
+  - groups 来源 json（默认 intermediate/fr_shirt/fr_shirt_groups.json）提供分组行范围（相对行号）；
+  - 列映射来源 json（默认 intermediate/fr_shirt/fr_shirt_col_mapping.json）提供「源 excel 列 → plan 目标列」映射；
   - 本程序读取数据源 excel：对每个分组、每个源列取「该组范围内该列的非空值」，
     写入目标列；一对多映射（如 K→BY,BZ）表示同一份数据复制到多个目标列；
     映射应用到全部分组；
-  - 生成 data 来源 JSON（默认 intermediate/data_from_excel.json）：
+  - 生成 data 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_data.json）：
         { "data": { <group>: { "<目标列号>": [ 值序列 ] } } }
     交给 build_fill_framework.py 读取后写入 plan 的 data 字段，再交给 fill_from_plan.py。
 
-取数约定（与 example_from_givingtree.json 一致）：
+取数约定（与 fr_shirt_fill_framework.json 一致）：
   - 组实际行范围 = 组相对行 + data_start_row - 1；
   - 每个源列在该组行范围内逐行读，跳过空单元格，只取非空值序列。
 
@@ -22,11 +22,11 @@
         [--source-excel data.xlsx] [--sheet 工作表名] [--diff diff.json]
 
 默认:
-    groups       = intermediate/groups_from_excel.json
-    col-mapping  = intermediate/data_col_mapping.json
+    groups       = intermediate/fr_shirt/fr_shirt_groups.json
+    col-mapping  = intermediate/fr_shirt/fr_shirt_col_mapping.json
     source-excel = intermediate/../xlsm/TheTimeMachine@Partof.xlsm（占位，不存在则提示）
-    diff         = intermediate/shirt_fr_column_diff.json（取 settings.dataRow 作为 data_start_row，唯一真源）
-    output       = intermediate/data_from_excel.json
+    diff         = intermediate/fr_shirt/fr_shirt_column_diff.json（取 settings.dataRow 作为 data_start_row，唯一真源）
+    output       = intermediate/fr_shirt/fr_shirt_data.json
 """
 import argparse
 import importlib.util
@@ -108,7 +108,7 @@ def parse_col_mapping(sources):
 def data_start_row_from_diff(path, fallback=8):
     """从 column_diff.json 的模板标准 settings.dataRow 取数据起始行；缺失时用 fallback。
 
-    data_start_row 唯一真源为 shirt_fr_column_diff.json（由模板分析得到），不读其他文件。
+    data_start_row 唯一真源为 fr_shirt_column_diff.json（由模板分析得到），不读其他文件。
     """
     try:
         settings = load_json(path).get("settings") or {}
@@ -184,7 +184,7 @@ def main():
     groups = load_groups(args.groups)
     sources = load_col_mapping(args.col_mapping)
     col_mapping = parse_col_mapping(sources)
-    # data_start_row 唯一真源：shirt_fr_column_diff.json 的模板标准 settings.dataRow
+    # data_start_row 唯一真源：fr_shirt_column_diff.json 的模板标准 settings.dataRow
     data_start_row = data_start_row_from_diff(args.diff, fallback=8)
 
     if not groups:

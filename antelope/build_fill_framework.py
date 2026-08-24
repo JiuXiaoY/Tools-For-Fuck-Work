@@ -7,15 +7,15 @@
   - description        : 生成说明
   - source_file        : 数据源（来自 completed 分析 JSON 的 source_file）
   - template_file      : 待填充模板（来自 blank 分析 JSON 的 source_file）
-  - output_file        : 输出占位（默认 outputs/shirt_fr_filled.xlsm）
+  - output_file        : 输出占位（默认 outputs/fr_shirt_filled.xlsm）
   - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json）
   - col_scope          : only_in_completed 的全部列号
   - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"1": "cycle"})，
                          填写后 fill_from_plan.py 会优先使用该模式、跳过自动判断
-  - groups             : 来自 groups 来源 JSON（默认 intermediate/groups_from_excel.json），
+  - groups             : 来自 groups 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_groups.json），
                          该 JSON 由 build_groups_from_excel.py 的「流水线产出」生成，
                          包含相对行号的分组行范围
-  - data               : 来自 data 来源 JSON（默认 intermediate/data_from_excel.json），
+  - data               : 来自 data 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_data.json），
                          由 build_data_from_excel.py 生成（每组每列具体值的序列）；
                          缺失时回退为每组每列的 [] 空占位
 
@@ -27,12 +27,12 @@ groups 来自分组来源 JSON；data 来自 data 来源 JSON（缺失则 [] 占
         [--completed completed.json] [--blank blank.json]
         [--groups groups.json] [--data data.json] [--output-file xxx]
 默认:
-    diff      = intermediate/shirt_fr_column_diff.json
-    completed = intermediate/shirt_fr_completed.json
-    blank     = intermediate/shirt_fr_blank.json
-    groups    = intermediate/groups_from_excel.json（若存在）
-    data      = intermediate/data_from_excel.json（若存在，否则 [] 占位）
-    output    = fill_plan/shirt_fr_fill_framework.json
+    diff      = intermediate/fr_shirt/fr_shirt_column_diff.json
+    completed = intermediate/fr_shirt_completed.json
+    blank     = intermediate/fr_shirt_blank.json
+    groups    = intermediate/fr_shirt/fr_shirt_groups.json（若存在）
+    data      = intermediate/fr_shirt/fr_shirt_data.json（若存在，否则 [] 占位）
+    output    = fill_plan/fr_shirt_fill_framework.json
 """
 import argparse
 import importlib.util
@@ -64,7 +64,7 @@ DEFAULT_BLANK = zcfg.CFG_INTERMEDIATE["blank_json"]
 DEFAULT_GROUPS = zcfg.CFG_INTERMEDIATE["groups_json"]
 DEFAULT_DATA = zcfg.CFG_INTERMEDIATE["data_json"]
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
-DEFAULT_PLAN_OUTPUT_FILE = os.path.join(zcfg.OUTPUTS_DIR, "shirt_fr_filled.xlsm")
+DEFAULT_PLAN_OUTPUT_FILE = os.path.join(zcfg.OUTPUTS_DIR, "fr_shirt_filled.xlsm")
 
 
 def load_json(path):

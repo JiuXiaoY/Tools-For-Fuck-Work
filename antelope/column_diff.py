@@ -8,14 +8,14 @@
 
 同时附上按 "attribute" 标识的差异，便于人工核对。
 并把「模板标准 settings」（含 labelRow / attributeRow / dataRow）一并写入输出，
-使本文件（shirt_fr_column_diff.json）成为 data_start_row 等模板参数的单一真源。
+使本文件（fr_shirt_column_diff.json）成为 data_start_row 等模板参数的单一真源。
 
 用法:
     python column_diff.py [completed.json] [blank.json] [-o output.json]
 默认:
-    completed = shirt_fr_completed.json
-    blank     = shirt_fr_blank.json
-    output    = shirt_fr_column_diff.json
+    completed = fr_shirt_completed.json
+    blank     = fr_shirt_blank.json
+    output    = fr_shirt_column_diff.json
 """
 import argparse
 import json
@@ -103,7 +103,7 @@ def main():
     blank_cols = load_columns(args.blank)
 
     # 模板标准 settings（dataRow 等）：以 completed（模板分析）为准，随结果一并写出，
-    # 使 shirt_fr_column_diff.json 成为 data_start_row 等模板参数的单一真源
+    # 使 fr_shirt_column_diff.json 成为 data_start_row 等模板参数的单一真源
     settings = load_settings(args.completed)
 
     # 以 col 为唯一标识
