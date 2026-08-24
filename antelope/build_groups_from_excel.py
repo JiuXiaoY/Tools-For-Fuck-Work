@@ -18,9 +18,10 @@
 默认:
     input          = outputs（目录则取其中最新的 .xlsx）
     output         = intermediate/groups_from_excel.json（自命名）
-    data_start_row = 7
+    data_start_row = 从 intermediate/shirt_fr_column_diff.json 的 settings.dataRow 读取（唯一真源）；读取失败回退 7
 """
 import argparse
+import importlib.util
 import json
 import os
 import sys
@@ -29,12 +30,26 @@ from pathlib import Path
 import openpyxl
 from openpyxl.cell.cell import Cell
 
-BASE_DIR = Path(__file__).resolve().parent
-INTERMEDIATE_DIR = BASE_DIR / "intermediate"
+# ─────────────────────────────────────────────────────────────────────────── #
+# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
+# ─────────────────────────────────────────────────────────────────────────── #
+def _load_zconfig():
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
+    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod
 
-DEFAULT_INPUT_PATH = "outputs"
+
+zcfg = _load_zconfig()
+
+BASE_DIR = Path(__file__).resolve().parent
+INTERMEDIATE_DIR = Path(zcfg.INTERMEDIATE_DIR)
+
+DEFAULT_INPUT_PATH = zcfg.OUTPUTS_DIR
 DEFAULT_OUTPUT_PATH = INTERMEDIATE_DIR / "groups_from_excel.json"
-DEFAULT_DATA_START_ROW = 7
+DEFAULT_DIFF_PATH = INTERMEDIATE_DIR / "shirt_fr_column_diff.json"
+DEFAULT_DATA_START_ROW = zcfg.CFG_RUN["fallback_data_start_row"]
 
 # 与 services/utils.py 的 _TRANSPARENT 一致：这些 rgb 视为"无可见填充"
 _TRANSPARENT = {"FFFFFF", "000000", "FFFFFFFF", "00000000", "00FFFFFF"}
@@ -112,19 +127,37 @@ def build_groups(anchors: list[int], end_row: int, data_start_row: int) -> tuple
     return groups, details
 
 
+def default_data_start_row_from_diff(path, fallback=DEFAULT_DATA_START_ROW):
+    """从 column_diff.json 的模板标准 settings.dataRow 取默认数据起始行（唯一真源）。
+
+    以 shirt_fr_column_diff.json 为标准；读取失败时用 fallback。
+    """
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            settings = json.load(f).get("settings") or {}
+        return int(settings.get("dataRow") or fallback)
+    except Exception:
+        return fallback
+
+
 def main():
     parser = argparse.ArgumentParser(description="从流水线产出 excel 的第一列有色单元格生成 groups")
     parser.add_argument("input", nargs="?", default=DEFAULT_INPUT_PATH,
                         help="流水线产出 excel 路径或目录（默认 outputs，取最新 .xlsx）")
     parser.add_argument("-o", "--output", default=str(DEFAULT_OUTPUT_PATH),
                         help="输出 JSON 文件路径")
-    parser.add_argument("--data-start-row", type=int, default=DEFAULT_DATA_START_ROW,
-                        help="数据起始行（用于相对行号换算，默认 7）")
+    parser.add_argument("--data-start-row", type=int, default=None,
+                        help="数据起始行（用于相对行号换算；缺省从 column_diff.json 的 settings.dataRow 读取）")
+    parser.add_argument("--diff", default=str(DEFAULT_DIFF_PATH),
+                        help="column_diff JSON 路径（缺省 data_start_row 的唯一真源）")
     parser.add_argument("--scan-from", type=int, default=1,
                         help="从第几行开始扫描第一列有色单元格（默认 1）")
     parser.add_argument("--end-row", type=int, default=0,
                         help="最后一个组的结束行（默认取 excel 的 max_row）")
     args = parser.parse_args()
+
+    data_start_row = args.data_start_row if args.data_start_row is not None \
+        else default_data_start_row_from_diff(args.diff)
 
     src = resolve_input(args.input)
     wb = openpyxl.load_workbook(src, read_only=True, data_only=True)
@@ -134,7 +167,7 @@ def main():
         anchors = find_anchor_rows(ws, args.scan_from)
         if not anchors:
             print(f"⚠️ 第一列未找到任何有色单元格（{src.name}）")
-        groups, details = build_groups(anchors, end_row, args.data_start_row)
+        groups, details = build_groups(anchors, end_row, data_start_row)
     finally:
         wb.close()
 

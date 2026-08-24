@@ -4,6 +4,7 @@ fill_from_plan —— 按「填充计划(plan)」把数据写入模板副本，�
 """
 
 import argparse
+import importlib.util
 import json
 import os
 import sys
@@ -11,13 +12,26 @@ from pathlib import Path
 
 import openpyxl
 
+# ─────────────────────────────────────────────────────────────────────────── #
+# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
+# ─────────────────────────────────────────────────────────────────────────── #
+def _load_zconfig():
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
+    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod
+
+
+zcfg = _load_zconfig()
+
 # ═══════════════════════════════════════════════════════════════════════════════
-# ⚙️ 默认运行配置（直接点 Run 时生效）
+# ⚙️ 默认运行配置（直接点 Run 时生效）—— 路径/配置项集中来自 zconfig.constant.py
 # ═══════════════════════════════════════════════════════════════════════════════
-DEFAULT_PLAN_FILE = "/antelope/fill_plan/example_from_givingtree.json"  # 1. 你的 plan.json 路径
-DEFAULT_OUTPUT_FILE = "/outputs"  # 2. 完整输出文件路径(.xlsm)
-DEFAULT_REPORT_FILE = None                                # 可选: "outputs/report.json"
-DEFAULT_STRICT_SCOPE = False                              # 可选: True / False
+DEFAULT_PLAN_FILE = zcfg.CFG_FILL_PLAN["default_plan_json"]   # 1. 你的 plan.json 路径
+DEFAULT_OUTPUT_FILE = zcfg.OUTPUTS_DIR                        # 2. 完整输出文件路径(.xlsm)
+DEFAULT_REPORT_FILE = zcfg.CFG_RUN["default_report_file"]     # 可选: "outputs/report.json"
+DEFAULT_STRICT_SCOPE = zcfg.CFG_RUN["strict_scope"]           # 可选: True / False
 # ═══════════════════════════════════════════════════════════════════════════════
 
 

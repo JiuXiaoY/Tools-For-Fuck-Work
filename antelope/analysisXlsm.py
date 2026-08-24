@@ -27,6 +27,7 @@
 """
 
 import argparse
+import importlib.util
 import json
 import os
 import re
@@ -34,16 +35,27 @@ import sys
 
 import openpyxl
 
-# --------------------------------------------------------------------------- #
-# 全局路径配置（在此处直接配置你的文件路径）
-# --------------------------------------------------------------------------- #
-# 默认输入的 .xlsm 模板文件路径
-DEFAULT_INPUT_PATH = r"D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\shirt_template_Adam.xlsm"
+# ─────────────────────────────────────────────────────────────────────────── #
+# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
+# ─────────────────────────────────────────────────────────────────────────── #
+def _load_zconfig():
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
+    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod
 
-# 默认输出的 .json 文件路径（过程 json 输出到 antelope/intermediate/，自命名；若设为 None 则自动在输入文件同目录下生成 <文件名>_analysis.json）
-DEFAULT_OUTPUT_PATH = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "intermediate", "shirt_fr_blank.json"
-)
+
+zcfg = _load_zconfig()
+
+# 默认输入模板文件（待填充模板 .xlsm）
+DEFAULT_INPUT_PATH = zcfg.DEFAULT_TEMPLATE_XLSM
+
+# 默认输出 JSON（模板分析结果）
+DEFAULT_OUTPUT_PATH = zcfg.CFG_INTERMEDIATE["blank_json"]
+
+# 默认参与解析的工作表
+DEFAULT_SHEETS = list(zcfg.CFG_RUN["default_sheets"])
 
 
 # --------------------------------------------------------------------------- #
@@ -203,7 +215,7 @@ def main():
     parser.add_argument(
         "--sheets",
         nargs="*",
-        default=["Valeurs valides", "Modèle"],
+        default=DEFAULT_SHEETS,
         help="参与解析的工作表名（默认使用 Valeurs valides 与 Modèle）",
     )
     parser.add_argument(

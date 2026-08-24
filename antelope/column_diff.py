@@ -7,6 +7,8 @@
   - only_in_blank     : 只存在于 blank 文件的列
 
 同时附上按 "attribute" 标识的差异，便于人工核对。
+并把「模板标准 settings」（含 labelRow / attributeRow / dataRow）一并写入输出，
+使本文件（shirt_fr_column_diff.json）成为 data_start_row 等模板参数的单一真源。
 
 用法:
     python column_diff.py [completed.json] [blank.json] [-o output.json]
@@ -20,13 +22,27 @@ import json
 import os
 import sys
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# 过程 json（模板分析、列差异）在 intermediate 子目录下
-INTERMEDIATE_DIR = os.path.join(BASE_DIR, "intermediate")
+import importlib.util
 
-DEFAULT_COMPLETED = os.path.join(INTERMEDIATE_DIR, "shirt_fr_completed.json")
-DEFAULT_BLANK = os.path.join(INTERMEDIATE_DIR, "shirt_fr_blank.json")
-DEFAULT_OUTPUT = os.path.join(INTERMEDIATE_DIR, "shirt_fr_column_diff.json")
+# ─────────────────────────────────────────────────────────────────────────── #
+# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
+# ─────────────────────────────────────────────────────────────────────────── #
+def _load_zconfig():
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
+    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    return _mod
+
+
+zcfg = _load_zconfig()
+
+# 过程 json（模板分析、列差异）在 intermediate 子目录下
+INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
+
+DEFAULT_COMPLETED = zcfg.CFG_INTERMEDIATE["completed_json"]
+DEFAULT_BLANK = zcfg.CFG_INTERMEDIATE["blank_json"]
+DEFAULT_OUTPUT = zcfg.CFG_INTERMEDIATE["column_diff_json"]
 
 
 def load_columns(path):
@@ -37,6 +53,13 @@ def load_columns(path):
     if not isinstance(columns, list):
         raise ValueError(f"{path} 中缺少 columns 数组")
     return columns
+
+
+def load_settings(path):
+    """读取 JSON 文件的 settings（模板标准，含 labelRow/attributeRow/dataRow 等）。"""
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("settings")
 
 
 def build_index(columns, key_func):
@@ -79,6 +102,10 @@ def main():
     completed_cols = load_columns(args.completed)
     blank_cols = load_columns(args.blank)
 
+    # 模板标准 settings（dataRow 等）：以 completed（模板分析）为准，随结果一并写出，
+    # 使 shirt_fr_column_diff.json 成为 data_start_row 等模板参数的单一真源
+    settings = load_settings(args.completed)
+
     # 以 col 为唯一标识
     completed_by_col, dup_completed = build_index(completed_cols, lambda c: c.get("col"))
     blank_by_col, dup_blank = build_index(blank_cols, lambda c: c.get("col"))
@@ -93,6 +120,7 @@ def main():
     attrs_only_in_blank = sorted(set(blank_by_attr) - set(completed_by_attr))
 
     result = {
+        "settings": settings,
         "compared_files": {
             "completed": args.completed,
             "blank": args.blank,
