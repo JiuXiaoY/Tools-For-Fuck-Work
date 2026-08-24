@@ -2,6 +2,7 @@
 
 import secrets
 import string
+from collections.abc import Callable
 from datetime import date
 
 from core import PipelineContext, PipelineStep
@@ -31,6 +32,25 @@ def default_id_factory(yymmdd: str | None = None) -> str:
     """Build one ID using the legacy base62/date-code format."""
     return _random_id(_date_code(yymmdd))
 
+def anch_id_factory(yymmdd: str | None = None) -> str:
+    # 生成原有的16位ID
+    base_id = default_id_factory(yymmdd)  # 调用默认工厂
+    return "Anch" + base_id  # 总长度20
+
+
+# 可用的 ID 工厂注册表：字符串配置名 -> 回调
+ID_FACTORIES: dict[str, Callable[[str | None], str]] = {
+    "default_id_factory": default_id_factory,
+    "anch_id_factory": anch_id_factory,
+}
+
+
+def resolve_id_factory(name: str | None) -> Callable[[str | None], str] | None:
+    """按字符串名解析出 ID 工厂回调（config.id_factory 存的是字符串）。"""
+    if not name:
+        return None
+    return ID_FACTORIES.get(name)
+
 
 class AssignIdsStep(PipelineStep):
     name = "assign_ids"
@@ -41,7 +61,7 @@ class AssignIdsStep(PipelineStep):
         cfg = self.config
         ws = ctx.worksheet
         override = cfg.date_override.strip() or None
-        factory = cfg.id_factory or default_id_factory
+        factory = resolve_id_factory(cfg.id_factory) or default_id_factory
         count = 0
         for r in range(1, ws.max_row + 1):
             ws.cell(row=r, column=cfg.col_b).value = factory(override)

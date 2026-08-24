@@ -23,8 +23,8 @@ from pathlib import Path
 #  配置区（所有配置在此完成）
 # ─────────────────────────────────────────────────────────────────────
 SETTINGS = {
-    "count": 1549,                  # 生成数量
-    "date_override": "260817",          # 固定日期码 (格式 YYMMDD，如 "260702")；留空则用今天
+    "count": 35,                  # 生成数量
+    "date_override": "260820",          # 固定日期码 (格式 YYMMDD，如 "260702")；留空则用今天
     "prefix_len": 6,              # 前段随机字符数
     "middle_len": 6,              # 中间日期码长度（通常 6，勿改）
     "suffix_len": 4,              # 后段随机字符数
@@ -69,7 +69,7 @@ def main() -> None:
     seen: set[str] = set()
     _guard = 0
     while len(ids) < s["count"] and _guard < s["count"] * 100:
-        rid = generate_one(s)
+        rid = "Anch" + generate_one(s)
         _guard += 1
         if rid in seen:
             continue          # 重复则重新生成
