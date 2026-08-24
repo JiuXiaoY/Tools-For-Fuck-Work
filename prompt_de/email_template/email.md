@@ -177,3 +177,14 @@ Vielen Dank für Ihre Antwort! Sofern Sie damit einverstanden sind, bieten wir I
 Mit freundlichen Grüßen!
 ```
 </details>
+
+<details>
+  <summary><b>退回包裹</b></summary>
+
+  ```text
+您好！
+我们没有拒绝签收退货，问下邮局反馈的退回包裹的原因，我们这边有设定周末没有人上班，所以是不是在周末投递，然后没有人签收？
+祝好！
+
+```
+</details>

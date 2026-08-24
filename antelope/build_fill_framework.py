@@ -10,6 +10,8 @@
   - output_file        : 输出占位（默认 outputs/shirt_fr_filled.xlsm）
   - data_start_row     : 数据起始行（来自 completed 分析 JSON 的 settings.dataRow）
   - col_scope          : only_in_completed 的全部列号
+  - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"1": "cycle"})，
+                         填写后 fill_from_plan.py 会优先使用该模式、跳过自动判断
   - cycle_threshold    : null
   - groups / data      : 留空占位 —— 组的行范围与列→组归属暂不确定，
                          由使用者后续手动补充后再交给 fill_from_plan.py
@@ -67,6 +69,7 @@ def build_plan(diff, completed, blank, plan_output_file):
         "output_file": plan_output_file,
         "data_start_row": data_start_row,
         "col_scope": col_scope,
+        "mode_customise": {},
         "groups": {},
         "cycle_threshold": None,
         "data": {},

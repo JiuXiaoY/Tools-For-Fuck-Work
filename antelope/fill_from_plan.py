@@ -28,6 +28,7 @@ def apply_column(
     column: int,
     values,
     cycle_threshold,
+    forced_mode=None,
 ):
     n = group_end_actual - group_start_actual + 1
     m = len(values)
@@ -37,17 +38,36 @@ def apply_column(
 
     if m == 0:
         return "none", 0, "数据为空, 不填"
-    if m == n:
-        target = list(range(group_start_actual, group_end_actual + 1))
-        mode = "sequential"
-    elif m == n - 1:
-        target = list(range(group_start_actual + 1, group_end_actual + 1))
-        mode = "children_only"
-    elif m < n and _cycle_allowed():
-        target = list(range(group_start_actual, group_end_actual + 1))
-        mode = "cycle"
+
+    # 手动指定模式时优先使用，跳过自动判断
+    if forced_mode:
+        if forced_mode == "cycle":
+            target = list(range(group_start_actual, group_end_actual + 1))
+            mode = "cycle"
+        elif forced_mode == "children_only":
+            target = list(range(group_start_actual + 1, group_end_actual + 1))
+            mode = "children_only"
+        elif forced_mode == "sequential":
+            target = list(range(group_start_actual, group_end_actual + 1))
+            mode = "sequential"
+        else:
+            return "mismatch", 0, f"无效的手动模式: {forced_mode!r}"
+
+        if mode == "sequential" and m < n:
+            # sequential 模式下值不足时按可填行数写
+            target = target[: min(m, n)]
     else:
-        return "mismatch", 0, f"数据条数({m})与组行数({n})不匹配"
+        if m == n:
+            target = list(range(group_start_actual, group_end_actual + 1))
+            mode = "sequential"
+        elif m == n - 1:
+            target = list(range(group_start_actual + 1, group_end_actual + 1))
+            mode = "children_only"
+        elif m < n and _cycle_allowed():
+            target = list(range(group_start_actual, group_end_actual + 1))
+            mode = "cycle"
+        else:
+            return "mismatch", 0, f"数据条数({m})与组行数({n})不匹配"
 
     filled = 0
     for i, row in enumerate(target):
@@ -127,6 +147,7 @@ def main():
     groups = plan.get("groups") or {}
     data = plan.get("data") or {}
     cycle_threshold = plan.get("cycle_threshold")
+    mode_customise = plan.get("mode_customise") or {}
 
     if not os.path.exists(template_file):
         print(f"模板文件不存在: {template_file}")
@@ -176,8 +197,15 @@ def main():
                     sys.exit(4)
                 print(f"[warn] 列 {col} 不在 col_scope 内(组 {gname}), 跳过不填。")
                 continue
+            forced_mode = mode_customise.get(col_str)
             mode, filled, note = apply_column(
-                ws, start_actual, end_actual, col, values, cycle_threshold
+                ws,
+                start_actual,
+                end_actual,
+                col,
+                values,
+                cycle_threshold,
+                forced_mode=forced_mode,
             )
             total_filled += filled
             report_entries.append(
