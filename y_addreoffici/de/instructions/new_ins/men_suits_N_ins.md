@@ -40,7 +40,7 @@
      - 多写细致得功能部件，如：elastischer Bund (松紧腰) 、mit 2 Taschen 、Kordelzug (抽绳) 等，一定要细化特征亮点，可加品类词，比如：连帽卫衣两件套、商务两件套 等等
      - 开头结尾中间三部分不要都是一样的特征或品类，多元化，多结构
      - **严禁所有副标题都使用逗号分隔**：必须强制混合——约半数副标题完全不使用逗号（纯空格分隔的关键词流），其余才使用逗号，且逗号数量与分隔位置要多样化（最多两个），禁止统一的三段式格式。
-     - **副标题开头禁用高涨服词组与核心品类词（新增）**：副标题**不得以高涨服关键词组开头**，也**不得以与主标题第 1 位相同的核心品类词组开头**。高涨服词组与核心品类词组（如 `Herrenanzug`、`Jogginganzug`、`Trainingsanzug`、`Schlafanzug`、`Zweiteiler` 等）只能放到副标题的**中间或末尾位置**；副标题开头应从材质、功能、参数、场景等其他类别词切入（如 `Samt`、`Baumwolle`、`Schwarz`、`Gefüttert`、`Kordelzug`、`Halloween` 等），实现与主标题的结构错位。
+     - **副标题开头禁用高涨服词组与核心品类词（新增）**：副标题**不得以高涨服关键词组开头**，也**不得以与主标题第 1 位相同的核心品类词组开头**。高涨服词组与核心品类词组（如 `Herrenanzug`、`Jogginganzug`、`Trainingsanzug`、`Schlafanzug`、`Zweiteiler` 等）只能放到副标题的**中间或末尾位置**；副标题开头应从功能、参数、场景等其他类别词切入（如 `Samt`、`Baumwolle`、`Schwarz`、`Gefüttert`、`Kordelzug`、`Halloween` 等），实现与主标题的结构错位。
 
 **3. 去冗余与精准化**  
    - **去除**：“新款”、“爆款”、“2026”、“气质”、“时尚”等无搜索价值的营销词。  
@@ -78,14 +78,14 @@
    - **词类穿插**：相邻位置不得连续堆砌同一类词超过 2 个（例如不得连续 3 个都是场景词），需在场景词、品类词、功能词等不同类别之间交错编排。
 
 **Workflow:**
-1. 查看 dealExcel_refactoring/prompt_de/feasibility_domain/tractsuit/Master，内化 dealExcel_refactoring/prompt_de/keywords/suits/mens_suits.md 和 dealExcel_refactoring/prompt_de/keywords/suits/common_suits.md
+1. 查看 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/tractsuit/Master，内化 dealExcel_refactoring/y_addreoffici/de/keywords/suits/mens_suits.md 和 dealExcel_refactoring/y_addreoffici/de/keywords/suits/common_suits.md
 2. 将中文描述视作品类/风格/场景的大方向，从词库中提取**高涨幅锁定词**及核心卖点。
 3. 严格组装：
    - **主标题**：[Marke]（第 0 位固定占位）+ 核心品类词（第 1 位，从高涨服词库选取）+ 关键规格（60~75 字符）。
    - **副标题**：提炼材质、功能、场景等核心词条（105~125 字符）。开头用材质/功能/参数/场景词，高涨服词组与品类词组放中间或末尾，不含任何性别词（`Herren`）。
 4. 检查是否包含冗余营销词，确认字符数在指定之间，不要出现任何标点符号（逗号除外），遵守相关规则。
 5. 禁止出现一模一样的两个词，可以联想但不得跨品类特征，如西装套装不能写成运动套装等。
-6. 生成的主标题按顺序全部写进 dealExcel_refactoring/prompt_de/feasibility_domain/tractsuit/Master，副标题写进 dealExcel_refactoring/prompt_de/feasibility_domain/tractsuit/Slave
+6. 生成的主标题按顺序全部写进 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/tractsuit/Master，副标题写进 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/tractsuit/Slave
 7. 写入时再次审核是否符合注意事项要求，不符合需要重新处理，不得用脚本生成
 
 ---

@@ -14,7 +14,7 @@ from openpyxl import load_workbook
 
 from config import Config
 
-_PROMPT_DIR = Path(__file__).resolve().parent.parent / "prompt_de"
+_PROMPT_DIR = Path(__file__).resolve().parent.parent / "y_addreoffici" / "de"
 _INCLUDE_RE = re.compile(r"\{@include\s+(.+?)\}")
 
 _CAT_KEY = {"女士上衣": "womens_tops", "男士上衣": "mens_tops",

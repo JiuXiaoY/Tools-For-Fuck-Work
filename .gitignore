@@ -32,14 +32,14 @@ tools/title_auto_fill/gemini_state.json
 tools/title_auto_fill/gemini_browser/
 # nineTools 随机 ID 输出
 nineTools/*.txt
-# prompt_fr 生成结果（由 AI 生成，不入库）
-prompt_fr/dress_feasibility_domain/*
-!prompt_fr/dress_feasibility_domain/zzz.md
-prompt_fr/tops_feasibility_domain/*
-!prompt_fr/tops_feasibility_domain/zzz.md
-# prompt_de 生成结果（由 AI 生成，不入库）
-prompt_de/feasibility_domain/*
-!prompt_de/feasibility_domain/**/zzz.md
+# y_yassikzu(fr) 生成结果（由 AI 生成，不入库）
+y_yassikzu/fr/dress_feasibility_domain/*
+!y_yassikzu/fr/dress_feasibility_domain/zzz.md
+y_yassikzu/fr/tops_feasibility_domain/*
+!y_yassikzu/fr/tops_feasibility_domain/zzz.md
+# y_addreoffici(de) 生成结果（由 AI 生成，不入库）
+y_addreoffici/de/feasibility_domain/*
+!y_addreoffici/de/feasibility_domain/**/zzz.md
 # Secret backups
 constant/dzq.bak
 constant/photo/

@@ -19,7 +19,7 @@
     python analysisXlsm.py [文件路径] [--output 输出.json] [--sheets 工作表1 工作表2]
                            [--max-values N] [--show-data]
 示例：
-    python analysisXlsm.py prompt_fr/final_init_template/coat_template_Eva.xlsm
+    python analysisXlsm.py y_yassikzu/fr/final_init_template/coat_template_Eva.xlsm
     python analysisXlsm.py                      # 使用默认路径，输出默认 JSON 文件名
 
 说明：JSON 中 columns 数组的每个元素（每列）预留了 reserve_flag / reserve_mark 两个标识位字段，

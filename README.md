@@ -100,19 +100,21 @@ dealExcel_refactoring/
 │   ├── fill_plan/              #   填充计划模板：example_fill_plan.json + README
 │   └── random_id.py            #   随机 16 位 ID 生成（规则与 steps/assign_ids 一致）
 │
-├── prompt_de/                  # AI 提示词-德国站（8 个品类指令 + 关键词库）
-│   ├── instructions/
-│   └── keywords/
-├── prompt_fr/                  # AI 提示词-法国站
-│   ├── final_init_template/    # Amazon 模板(.xlsm)：coat/dress/pants/shirt 等
-│   ├── instructions/           # 品类指令
-│   ├── keywords/               # 关键词库
-│   ├── key_words_title/        # 生成的关键词标题（Adam_tops / Adam_pants / Eva_dress）
-│   ├── *_feasibility_domain/   # 可行域（dress/tops），Master + Slave + needToGenerate
-│   ├── A_Plus_Manager/          # 广告内容管理
-│   ├── email_template/          # 邮件模板
-│   ├── finePoints&description/  # 卖点与描述
-│   └── word_backup/             # 词库备份
+├── y_addreoffici/             # 账号 addreoffici@163.com（按账号分区）
+│   └── de/                      #   └─ 德国站 AI 提示词（原 prompt_de：8 个品类指令 + 关键词库）
+│       ├── instructions/
+│       └── keywords/
+├── y_yassikzu/               # 账号 yassikzu@yeah.net（按账号分区）
+│   └── fr/                      #   └─ 法国站 AI 提示词（原 prompt_fr）
+│       ├── final_init_template/ # Amazon 模板(.xlsm)：coat/dress/pants/shirt 等
+│       ├── instructions/        # 品类指令
+│       ├── keywords/            # 关键词库
+│       ├── key_words_title/     # 生成的关键词标题（Adam_tops / Adam_pants / Eva_dress）
+│       ├── *_feasibility_domain/  # 可行域（dress/tops），Master + Slave + needToGenerate
+│       ├── A_Plus_Manager/      # 广告内容管理
+│       ├── email_template/      # 邮件模板
+│       ├── finePoints&description/  # 卖点与描述
+│       └── word_backup/         # 词库备份
 │
 ├── deprecated/                 # 弃置代码（第 4 列 AI 填充）
 │   ├── tools/ai_fill.py
@@ -183,7 +185,7 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 
 ### 1) `analysisXlsm.py` — 模板表头 + 可选值 → JSON
 
-只读解析 Amazon 模板 `.xlsm`（如 `prompt_fr/final_init_template/coat_template_Eva.xlsm` 的 `Modèle` / `Valeurs valides`），把每个表头的「列号 / 表头名 / 属性键 / 可选值」输出为 JSON，每列还预留 `reserve_flag` / `reserve_mark` 两个标识位。
+只读解析 Amazon 模板 `.xlsm`（如 `y_yassikzu/fr/final_init_template/coat_template_Eva.xlsm` 的 `Modèle` / `Valeurs valides`），把每个表头的「列号 / 表头名 / 属性键 / 可选值」输出为 JSON，每列还预留 `reserve_flag` / `reserve_mark` 两个标识位。
 
 ```bash
 python nineTools/analysisXlsm.py                               # 默认解析 coat_template_Eva.xlsm

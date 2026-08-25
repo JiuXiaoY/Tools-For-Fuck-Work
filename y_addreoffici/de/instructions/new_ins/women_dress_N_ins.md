@@ -77,14 +77,14 @@
    - **词类穿插**：相邻位置不得连续堆砌同一类词超过 2 个（例如不得连续 3 个都是场景词），需在场景词、品类词、功能词等不同类别之间交错编排。
 
 **Workflow:**
-1. 查看 dealExcel_refactoring/prompt_de/feasibility_domain/dress/needToGenerate，内化 dealExcel_refactoring/prompt_de/keywords/dress/womens_dresses.md 与 common_dresses.md
+1. 查看 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/dress/needToGenerate，内化 dealExcel_refactoring/y_addreoffici/de/keywords/dress/womens_dresses.md 与 common_dresses.md
 2. 将中文描述视作品类/风格/场景的大方向，从词库中提取**高涨幅锁定词**及核心卖点。
 3. 严格组装：
    - **主标题**：[Marke]（第 0 位固定占位）+ 核心品类词（第 1 位，从高涨服词库选取）+ 关键规格（65~75 字符）。
    - **副标题**：提炼材质、功能、场景等核心词条（115~125 字符）。开头用材质/功能/参数/场景词，高涨服词组与品类词组放中间或末尾，不含任何性别词（`Damen`）。
 4. 检查是否包含冗余营销词，确认字符数在指定之间，不要出现任何标点符号（逗号除外），遵守相关规则。
 5. 禁止出现一模一样的两个词，可以联想但不得跨品类特征，如长裙不能写成短裙等。
-6. 生成的主标题按顺序全部写进 dealExcel_refactoring/prompt_de/feasibility_domain/dress/Master，副标题写进 dealExcel_refactoring/prompt_de/feasibility_domain/dress/Slave
+6. 生成的主标题按顺序全部写进 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/dress/Master，副标题写进 dealExcel_refactoring/y_addreoffici/de/feasibility_domain/dress/Slave
 7. 写入时再次审核是否符合注意事项要求，不符合需要重新处理，不得用脚本生成
 
 ---
