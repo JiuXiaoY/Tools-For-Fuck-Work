@@ -80,7 +80,7 @@
 ### 热搜关键词词库
 
 ## 通用词库
-{@include keywords/common_dresses.md}
+{@include ../../y_addr&yass/de/keywords/common_dresses.md}
 
 ## 女士连衣裙热搜关键词
-{@include keywords/womens_dresses.md}
+{@include ../../y_addr&yass/de/keywords/womens_dresses.md}

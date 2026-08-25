@@ -82,7 +82,7 @@
 ### 热搜关键词词库
 
 ## 通用词库
-{@include keywords/common_pants.md}
+{@include ../../y_addr&yass/de/keywords/common_pants.md}
 
 ## 男士裤子热搜关键词
-{@include keywords/mens_pants.md}
+{@include ../../y_addr&yass/de/keywords/mens_pants.md}

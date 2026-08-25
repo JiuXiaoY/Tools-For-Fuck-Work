@@ -80,7 +80,7 @@
 ### 热搜关键词词库
 
 ## 通用词库
-{@include keywords/common_onesies.md}
+{@include ../../y_addr&yass/de/keywords/common_onesies.md}
 
 ## 女士连体衣热搜关键词
-{@include keywords/womens_onesies.md}
+{@include ../../y_addr&yass/de/keywords/womens_onesies.md}

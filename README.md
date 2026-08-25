@@ -102,19 +102,23 @@ dealExcel_refactoring/
 │
 ├── y_addreoffici/             # 账号 addreoffici@163.com（按账号分区）
 │   └── de/                      #   └─ 德国站 AI 提示词（原 prompt_de：8 个品类指令 + 关键词库）
-│       ├── instructions/
-│       └── keywords/
+│       └── instructions/
 ├── y_yassikzu/               # 账号 yassikzu@yeah.net（按账号分区）
 │   └── fr/                      #   └─ 法国站 AI 提示词（原 prompt_fr）
 │       ├── final_init_template/ # Amazon 模板(.xlsm)：coat/dress/pants/shirt 等
 │       ├── instructions/        # 品类指令
-│       ├── keywords/            # 关键词库
-│       ├── key_words_title/     # 生成的关键词标题（Adam_tops / Adam_pants / Eva_dress）
 │       ├── *_feasibility_domain/  # 可行域（dress/tops），Master + Slave + needToGenerate
 │       ├── A_Plus_Manager/      # 广告内容管理
 │       ├── email_template/      # 邮件模板
 │       ├── finePoints&description/  # 卖点与描述
 │       └── word_backup/         # 词库备份
+├── y_addr&yass/               # 多账号共用资源（按国家分区）
+│   ├── de/
+│   │   ├── keywords/            # 德国站关键词库
+│   │   └── key_words_title/     # 德国站生成的关键词标题
+│   └── fr/
+│       ├── keywords/            # 法国站关键词库
+│       └── key_words_title/     # 法国站生成的关键词标题（Adam_tops / Adam_pants / Eva_dress）
 │
 ├── deprecated/                 # 弃置代码（第 4 列 AI 填充）
 │   ├── tools/ai_fill.py

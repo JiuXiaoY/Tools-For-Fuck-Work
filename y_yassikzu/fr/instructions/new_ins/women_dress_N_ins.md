@@ -77,7 +77,7 @@
    - **词类穿插**：相邻位置不得连续堆砌同一类词超过 2 个（例如不得连续 3 个都是场景词），需在场景词、品类词、功能词等不同类别之间交错编排。
 
 **Workflow:**
-1. 查看 dealExcel_refactoring/y_yassikzu/fr/needToGenerate，内化 dealExcel_refactoring/y_yassikzu/fr/keywords/dress/dress_.md
+1. 查看 dealExcel_refactoring/y_yassikzu/fr/needToGenerate，内化 dealExcel_refactoring/y_addr&yass/fr/keywords/dress/dress_.md
 2. 将中文描述视作品类/风格/场景的大方向，从词库中提取**高涨幅锁定词**及核心卖点。
 3. 严格组装：
    - **主标题**：[Marque]（第 0 位固定占位）+ 核心品类词（第 1 位，从高涨服词库选取）+ 关键规格（60~75 字符）。

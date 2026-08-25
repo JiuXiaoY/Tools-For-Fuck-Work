@@ -80,7 +80,7 @@
 ### 热搜关键词词库
 
 ## 通用词库
-{@include keywords/common_suits.md}
+{@include ../../y_addr&yass/de/keywords/common_suits.md}
 
 ## 女士套装热搜关键词
-{@include keywords/womens_suits.md}
+{@include ../../y_addr&yass/de/keywords/womens_suits.md}

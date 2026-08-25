@@ -82,7 +82,7 @@
 ### 热搜关键词词库
 
 ## 通用词库
-{@include keywords/common_tops.md}
+{@include ../../y_addr&yass/de/keywords/common_tops.md}
 
 ## 女士上衣热搜关键词
-{@include keywords/womens_tops.md}
+{@include ../../y_addr&yass/de/keywords/womens_tops.md}

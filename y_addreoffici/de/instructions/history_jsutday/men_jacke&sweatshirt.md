@@ -82,7 +82,7 @@
 ### **男士上衣热搜关键词词库**
 
 ## 通用词库
-{@include keywords/common_tops.md}
+{@include ../../y_addr&yass/de/keywords/common_tops.md}
 
 ## 男士上衣热搜关键词
-{@include keywords/mens_tops.md}
+{@include ../../y_addr&yass/de/keywords/mens_tops.md}
