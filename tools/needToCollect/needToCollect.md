@@ -1,17 +1,79 @@
-Chemise
-Tunique
-Abaya
-Robe longue
-T-shirt 
-Polo
+Coupe-vent
+Doudoune
+Parka
 Veste
+Manteau
 Blouson
-Cardigan
-Chemise en jean
-Chemise veste
-Haut de sport
-Pull over
-Haut de base
-Veste de costume
-Uniforme de travail
-Blouse de chef
+Anorak
+Softshell
+Polaire
+Imperméable
+3 en 1
+2 en 1
+Veste de randonnée
+Veste de ski
+Veste de camping
+Veste de voyage
+Veste de sport
+Veste urbaine
+Veste technique
+Veste décontractée
+Veste classique
+Veste cintrée
+Veste légère
+Veste épaisse
+Veste doublée
+Veste non doublée
+Veste à capuche
+Veste col montant
+Manteau mi-long
+Manteau long
+Coupe-vent imperméable
+Trench (coupe-vent)
+Veste de trekking
+Veste de plein air
+Veste imperméable respirante
+K-way (imperméable)
+Veste polaire (doublure)
+Veste matelassée
+Veste softshell
+Veste 3 couches
+Veste coupe-vent déperlante
+Veste à capuche amovible
+Blouson coupe-vent
+Blouson léger
+Blouson matelassé
+Parka longue
+Parka mi-longue
+Doudoune légère
+Doudoune épaisse
+Doudoune à capuche
+Manteau d'hiver
+Manteau imperméable
+Manteau de pluie
+Surveste
+Veste multi-poches
+Veste cargo
+Veste utilitaire
+Veste oversize
+Veste oversize coupe-vent
+Veste ajustée
+Veste à taille élastique
+Veste à cordon de serrage
+Veste à manches longues
+Veste doublée polaire
+Veste anti-UV
+Veste respirante
+Veste déperlante
+Veste étanche
+Veste thermique
+Veste hivernale
+Veste de mi-saison
+Veste de transition
+Veste quotidienne
+Veste tout-terrain
+Veste de rando
+Veste d'alpinisme
+Veste outdoor
+Veste de running
+Veste de fitness
