@@ -35,23 +35,28 @@ dealExcel_refactoring/
 ├── constant/                   # 常量（含 photo 目录）
 ├── zip_by_ec/                  # 按 ec 目录压缩打包
 │
-├── core/                       # 流水线核心（Pipeline / Step / Context）
-├── steps/                      # 12 个流水线步骤
+├── core/                       # 流水线核心（Pipeline / Runner / Context）
+├── steps/                      # 13 个流水线步骤
 ├── preprocess/                 # 预处理（在原始文件上，流水线之前）
 │   ├── run.py                  #   入口
-│   └── steps/                  #   预处理步骤（去表头 / SKU 去重）
-├── services/                   # 工具函数（excel/images/logger/ai_client...）
+│   └── steps/                  #   预处理步骤
+│       ├── remove_header.py    #     去表头
+│       ├── remove_empty_j.py   #     移除空 J 列行
+│       ├── dedup_filled_rows.py#     SKU 去重
+│       └── rebuild.py          #     重建
+├── services/                   # 工具函数（excel/images/logger/ai_client/preserver/unmapped/utils）
 ├── rules/                      # 业务规则（价格提取）
 ├── data/                       # 映射表
-│   ├── color_mapping_de.json   # 颜色 英→德
-│   ├── color_mapping_fr.json   # 颜色 英→法
-│   ├── size_mapping_de.json    # 尺码映射 (德)
-│   ├── size_mapping_fr.json    # 尺码映射 (法)
+│   ├── color_mapping_de.json   #   颜色 英→德
+│   ├── color_mapping_fr.json   #   颜色 英→法
+│   ├── size_mapping_de.json    #   尺码映射 (德)
+│   ├── size_mapping_fr.json    #   尺码映射 (法)
 │   ├── dress_attributes_options_fr.json  # 法站属性可选项知识库（col/neck/...）
-│   └── to_be_completed.json    # 待完成项清单
+│   └── to_be_completed.json    #   待完成项清单
 │
 ├── tools/
 │   ├── xls2xlsx.py             # .xls → .xlsx 转换
+│   ├── txt2md.py               # 文本转 Markdown
 │   ├── needToCollect/          # 热词采集
 │   │   ├── hotwords.py         #   采集程序
 │   │   ├── cleaner.py          #   清洗管道
@@ -64,41 +69,53 @@ dealExcel_refactoring/
 │   │       ├── fashion_attributes.txt #   属性词根（! 前缀=强属性可独立保留，否则须搭品类词）
 │   │       ├── fashion_excludes.txt   #   黑名单（明确非服装噪声）
 │   │       ├── fashion_brands.txt     #   品牌表（token 级移除任意位置的品牌）
-│   │       ├── raw/                   #   清洗前原始数据（.gitignored）
-│   │       └── result/                #   清洗结果（.gitignored）
+│   │       ├── raw/                   #   清洗前原始数据
+│   │       └── result/                #   清洗结果
 │   ├── color_size_deal/        # 颜色尺码处理
 │   │   ├── color_reprocess.py  #   Excel → check_.txt → 处理 → 回写
 │   │   ├── process.py          #   手动处理 check_.txt
 │   │   └── check_.txt
-│   ├── title_optimize/         # 标题优化
+│   ├── title_optimize/         # 标题优化（DeepSeek 网页自动化）
 │   │   ├── title_rewrite.py    #   编排：提取 → 校验 → 优化 → 回写
 │   │   ├── deepseek_web.py     #   DeepSeek 网页自动化
-│   │   ├── run.py              #   API 模式（暂未使用）
 │   │   ├── download.py         #   图片下载
-│   │   ├── origin_link / origin_title / optimize_title
-│   │   └── temp_photo/
-│   ├── title_auto_fill/        # 标题自动填充（TODO）
+│   │   ├── run.py              #   API 模式（暂未使用）
+│   │   ├── origin_link / origin_title / optimize_title   # 中间产物
+│   │   └── temp_photo / browser_data                     # 临时图 / 浏览器数据
+│   ├── title_auto_fill/        # 标题自动填充
 │   │   ├── de_title_build.py   #   编排器
-│   │   ├── de_collect.py       #   采集（空壳）
+│   │   ├── de_collect.py       #   采集
 │   │   ├── de_write_back.py    #   回写第 4 列
-│   │   └── final_de_title
-│   ├── txt2md.py
+│   │   └── final_de_title / final_de_title_s
 │   ├── image_classification/    # 图片分类 & 重排（尺码表检测）
 │   │   ├── classify.py          #   三引擎分类器（heuristic / ocr / opencv）
 │   │   ├── reorder.py           #   逐行扫描重排
 │   │   ├── reorder_batch.py     #   批次重排（按A列有色行分组）
-│   │   └── reorder_backup.py    #   旧版备份
+│   │   ├── reorder_backup.py    #   旧版备份
+│   │   └── images_awaiting/     #   待处理图片
 │   ├── export_sku/              # SKU 导出
 │   │   └── export_sku.py
 │   └── write_excel_temp/        # Excel 临时写表
 │       ├── write_excel.py
 │       └── fill_az_from_help.py
 │
+├── antelope/                  # 填充计划生成工具（只读源、写新副本）
+│   ├── analysisXlsm.py         #   模板表头 + 可选值 → JSON
+│   ├── build_data_from_excel.py#   从 Excel 抽取数据
+│   ├── build_fill_framework.py #   生成填充框架
+│   ├── build_groups_from_excel.py# 按 Excel 分组
+│   ├── column_diff.py          #   列差异对比
+│   ├── fill_from_plan.py       #   按 plan 把数据写入模板副本
+│   ├── fill_plan/              #   填充计划
+│   ├── intermediate/           #   中间产物
+│   ├── xlsm/                   #   模板源
+│   └── zconfig.constant.py     #   常量配置
+│
 ├── nineTools/                  # 独立小工具（不依赖主流水线）
-│   ├── analysisXlsm.py         #   只读解析 Amazon 模板(.xlsm)：表头 + 该列可选值 → JSON
-│   ├── fill_from_plan.py       #   按填充计划(plan)把数据写入模板副本（列范围/分组/循环规则）
-│   ├── fill_plan/              #   填充计划模板：example_fill_plan.json + README
-│   └── random_id.py            #   随机 16 位 ID 生成（规则与 steps/assign_ids 一致）
+│   ├── id_sorting.py           #   ID 排序
+│   ├── id_sorting_data / id_sorting_result   # 排序输入 / 输出
+│   ├── random_id.py            #   随机 16 位 ID 生成
+│   └── random_ids_*.txt        #   生成结果
 │
 ├── y_addreoffici/             # 账号 addreoffici@163.com（按账号分区）
 │   └── de_init_template/        # 德国站 Amazon 模板(.xlsm)：coat/dress/pants 等
@@ -112,9 +129,10 @@ dealExcel_refactoring/
 │   ├── fr_feasibility_domain/   # 法国站可行域（coat/dress），Master + Slave + needToGenerate
 │   └── email.md                 # 邮件相关共用说明
 │
-├── deprecated/                 # 弃置代码（第 4 列 AI 填充）
+├── deprecated/                 # 弃置代码（第 4 列 AI 填充 等）
 │   ├── tools/ai_fill.py
 │   ├── services/ai_fill.py
+│   ├── prompt/                 #   旧版提示词
 │   └── test_ai.py
 │
 ├── logs/                       # 统一日志（同日复用）
@@ -122,6 +140,7 @@ dealExcel_refactoring/
 ├── outputs/                    # 输出（.gitignored）
 └── README.md
 ```
+
 
 ---
 
@@ -175,7 +194,7 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 
 ---
 
-## nineTools 辅助工具
+## antelope / nineTools 辅助工具
 
 独立小工具，不依赖主流水线，均只读源文件、写新副本。
 
@@ -184,10 +203,10 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 只读解析 Amazon 模板 `.xlsm`（如 `y_yassikzu/fr_init_template/coat_template_Eva.xlsm` 的 `Modèle` / `Valeurs valides`），把每个表头的「列号 / 表头名 / 属性键 / 可选值」输出为 JSON，每列还预留 `reserve_flag` / `reserve_mark` 两个标识位。
 
 ```bash
-python nineTools/analysisXlsm.py                               # 默认解析 coat_template_Eva.xlsm
-python nineTools/analysisXlsm.py 你的模板.xlsm --output out.json   # 指定文件/输出
-python nineTools/analysisXlsm.py --max-values 5                # 每字段最多列 5 个可选值
-python nineTools/analysisXlsm.py --show-data                   # 附带每列示例数据
+python antelope/analysisXlsm.py                               # 默认解析 coat_template_Eva.xlsm
+python antelope/analysisXlsm.py 你的模板.xlsm --output out.json   # 指定文件/输出
+python antelope/analysisXlsm.py --max-values 5                # 每字段最多列 5 个可选值
+python antelope/analysisXlsm.py --show-data                   # 附带每列示例数据
 ```
 默认输出与输入同目录下的 `<模板名>_analysis.json`。
 
@@ -199,11 +218,9 @@ python nineTools/analysisXlsm.py --show-data                   # 附带每列示
 - **每列填充规则**：数据条数=行数→顺序填；=行数-1→只填子体；=0→不填；<阈值→循环铺满；不匹配→`mismatch` 记入报告。
 
 ```bash
-python nineTools/fill_from_plan.py nineTools/fill_plan/example_fill_plan.json --report reports.json
+python antelope/fill_from_plan.py antelope/fill_plan/example_fill_plan.json --report reports.json
 ```
-格式与规则详见 `nineTools/fill_plan/README.md`，可直接套用的示例见：
-- `nineTools/fill_plan/example_fill_plan.json` — 通用骨架（演示四种规则）
-- `nineTools/fill_plan/example_from_givingtree.json` — 从已填好的数据源 `nineTools/TheGivingTree@.xlsm`(DRESS) 抽取前 2 组生成；演示 `cycle`(组内一致列) / `children_only`(父空、只填子体) / `sequential`(逐子变化列) 三种真实场景
+格式与规则详见 `antelope/zzz.md`（含完整流程与各脚本说明），可直接套用的 plan 骨架见 `antelope/fill_plan/fr_shirt_fill_framework.json`。
 
 ### 3) `random_id.py` — 随机 16 位 ID
 
