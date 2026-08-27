@@ -3,7 +3,20 @@
     {
       "target_file": "data\\color_mapping_fr.json",
       "value": [
-        "Gray"
+        "Gray",
+        "BK1",
+        "BK2",
+        "BK3",
+        "BK4"
+      ]
+    },
+    {
+      "target_file": "data\\color_mapping_de.json",
+      "value": [
+        "BK1",
+        "BK2",
+        "BK3",
+        "BK4"
       ]
     }
   ],
@@ -22,7 +35,16 @@
         "3XL",
         "4XL",
         "5XL",
-        "6XL"
+        "6XL",
+        "1164",
+        "A"
+      ]
+    },
+    {
+      "target_file": "data\\size_mapping_de.json",
+      "value": [
+        "1164",
+        "A"
       ]
     }
   ]
