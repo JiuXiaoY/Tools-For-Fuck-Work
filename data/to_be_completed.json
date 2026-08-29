@@ -16,7 +16,8 @@
         "BK1",
         "BK2",
         "BK3",
-        "BK4"
+        "BK4",
+        "Bule"
       ]
     }
   ],
@@ -44,7 +45,17 @@
       "target_file": "data\\size_mapping_de.json",
       "value": [
         "1164",
-        "A"
+        "A",
+        "XXL/42",
+        "60",
+        "68X84.5CM",
+        "10Y",
+        "14Y",
+        "6Y",
+        "L=3",
+        "XXL=5",
+        "M=2",
+        "XL=4"
       ]
     }
   ]
