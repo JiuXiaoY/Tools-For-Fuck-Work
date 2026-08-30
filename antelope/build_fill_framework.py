@@ -3,55 +3,53 @@
 读取 column_diff.py 生成的差异 JSON 中的 only_in_completed 内容，
 生成「基础填充框架」——即一个符合 fill_from_plan.py 约定的 plan 骨架。
 
+按 11409 需求的分工（A/B/C/M/D 角色见 zconfig.constant.py）：
+  - 待填列范围 col_scope = C(完整模板) − B(基础模板)，来自 column_diff.py；
+  - 数据来源 = A(经 col_mapping 取数，build_data_from_excel.py) + M(自定义数据来源 JSON)，
+    本脚本把两者合并进 plan 的 data 字段：
+      * M JSON 支持两种形态：
+          - 按组：{ "data": { "<group>": { "<目标列>": [值...] } } }
+          - 全局：{ "<目标列>": [值...] }（应用到全部分组）
+      * 合并规则：A 已有的列优先，M 只补「A 未映射到的」列（需求语义）；
+      * 值数组允许包含空串 ""（需求：m 包含空数据，空串也算一项，影响模式判断）。
+
 骨架中会自动填好：
   - description        : 生成说明
-  - source_file        : 数据源（来自 completed 分析 JSON 的 source_file）
-  - template_file      : 待填充模板（来自 blank 分析 JSON 的 source_file）
+  - source_file        : 数据源（来自 completed 分析 JSON 的 source_file，即完整模板 C）
+  - template_file      : 待填充模板（来自 blank 分析 JSON 的 source_file，即基础模板 B）
   - output_file        : 输出占位（默认 outputs/fr_shirt_filled.xlsm）
-  - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json）
+  - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json；
+                         不同模板可能不同；读不到则报错，不做兜底）
   - col_scope          : only_in_completed 的全部列号
   - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"1": "cycle"})，
                          填写后 fill_from_plan.py 会优先使用该模式、跳过自动判断
   - groups             : 来自 groups 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_groups.json），
-                         该 JSON 由 build_groups_from_excel.py 的「流水线产出」生成，
-                         包含相对行号的分组行范围
-  - data               : 来自 data 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_data.json），
-                         由 build_data_from_excel.py 生成（每组每列具体值的序列）；
-                         缺失时回退为每组每列的 [] 空占位
+                         该 JSON 由 build_groups_from_excel.py 对数据源 A 生成，
+                         包含实际行号的分组行范围（无偏移）
+  - data               : A 取数(data.json) 与 M 数据合并后的每组每列值序列；
+                         两者都缺失时回退为每组每列的 [] 空占位
 
 不含示例内容（无 choices / samples / 示例值）。
-groups 来自分组来源 JSON；data 来自 data 来源 JSON（缺失则 [] 占位），再交给 fill_from_plan.py。
 
 用法:
     python build_fill_framework.py [diff.json] [-o output.json]
         [--completed completed.json] [--blank blank.json]
-        [--groups groups.json] [--data data.json] [--output-file xxx]
+        [--groups groups.json] [--data data.json] [--m-data m.json] [--output-file xxx]
 默认:
     diff      = intermediate/fr_shirt/fr_shirt_column_diff.json
     completed = intermediate/fr_shirt_completed.json
     blank     = intermediate/fr_shirt_blank.json
     groups    = intermediate/fr_shirt/fr_shirt_groups.json（若存在）
     data      = intermediate/fr_shirt/fr_shirt_data.json（若存在，否则 [] 占位）
+    m-data    = xlsm/.xlsx_dataSource_m.json（若存在；否则不合并）
     output    = fill_plan/fr_shirt_fill_framework.json
 """
 import argparse
-import importlib.util
 import json
 import os
 import sys
 
-# ─────────────────────────────────────────────────────────────────────────── #
-# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
-# ─────────────────────────────────────────────────────────────────────────── #
-def _load_zconfig():
-    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
-    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
-    _mod = importlib.util.module_from_spec(_spec)
-    _spec.loader.exec_module(_mod)
-    return _mod
-
-
-zcfg = _load_zconfig()
+from common import load_groups, load_json, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # 过程 json（模板分析、列差异）在 intermediate 子目录下；最终 plan 输出到 fill_plan
@@ -63,24 +61,11 @@ DEFAULT_COMPLETED = zcfg.CFG_INTERMEDIATE["completed_json"]
 DEFAULT_BLANK = zcfg.CFG_INTERMEDIATE["blank_json"]
 DEFAULT_GROUPS = zcfg.CFG_INTERMEDIATE["groups_json"]
 DEFAULT_DATA = zcfg.CFG_INTERMEDIATE["data_json"]
+DEFAULT_M_DATA = zcfg.DATA_SOURCE_M       # M：自定义数据来源（JSON），补充 A 未映射列
+DEFAULT_TEMPLATE_OUTPUT = zcfg.TEMPLATE_OUTPUT   # 产出模板（fill_from_plan 复制其副本填充）
+DEFAULT_MODE_CUSTOMISE = zcfg.CFG_INTERMEDIATE["mode_customise_json"]  # 人工维护：列 → 强制填充模式
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
 DEFAULT_PLAN_OUTPUT_FILE = os.path.join(zcfg.OUTPUTS_DIR, "fr_shirt_filled.xlsm")
-
-
-def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def load_groups(path):
-    """读取分组来源 JSON 的 groups 字段；文件不存在时返回空 dict。"""
-    if not path or not os.path.exists(path):
-        return {}
-    try:
-        data = load_json(path)
-    except Exception:
-        return {}
-    return data.get("groups") or {}
 
 
 def load_data(path, col_scope, groups):
@@ -98,19 +83,126 @@ def load_data(path, col_scope, groups):
     return {gname: {str(col): [] for col in col_scope} for gname in (groups or {})}
 
 
-def build_plan(diff, completed, blank, plan_output_file, groups=None, data=None):
+_VALID_MODES = {"sequential", "children_only", "cycle"}
+
+
+def load_mode_customise(path):
+    """读取人工维护的 mode_customise 配置文件（{列号: "cycle"/"children_only"/"sequential"}）。
+
+    只保留值为合法模式的项；文件缺失/为空 → 返回 {}（全部走自动判断）。
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    try:
+        raw = load_json(path)
+        if not isinstance(raw, dict):
+            return {}
+        return {str(k): str(v) for k, v in raw.items() if str(v) in _VALID_MODES}
+    except Exception:
+        return {}
+
+
+def load_m_data(path, groups):
+    """读取 M（自定义数据来源 JSON）并归一化为 { group: { str(col): [值...] } }。
+
+    支持两种形态（需求：M 补充 A 未映射到的待填列数据，值数组可含空串 ""）：
+      1. 按组：{ "data": { "<group>": { "<目标列>": [值...] } } }
+      2. 全局：{ "<目标列>": [值...] }  —— 同一份数据应用到全部分组
+    文件缺失或解析失败返回空 dict。
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    try:
+        raw = load_json(path)
+    except Exception:
+        return {}
+
+    per_group = raw.get("data")
+    if isinstance(per_group, dict):
+        # 形态 1：按组
+        return {
+            str(gname): {str(col): list(vals) for col, vals in (cols or {}).items()}
+            for gname, cols in per_group.items()
+        }
+
+    # 形态 2：全局（顶层即 列号 → 值数组），应用到所有组
+    global_cols = {str(k): list(v) for k, v in raw.items()}
+    if not global_cols:
+        return {}
+    return {
+        str(gname): dict(global_cols)
+        for gname in (groups or {})
+    }
+
+
+def merge_data(a_data, m_data):
+    """合并 A 取数(data.json) 与 M 数据，返回合并结果。
+
+    合并规则（需求语义）：A 已有的列优先，M 只补「A 未映射到的」空缺列；
+    M 值数组中的空串 "" 原样保留（参与 fill_from_plan 的 m 计数与模式判断）。
+    """
+    merged = {}
+    for gname in set(a_data) | set(m_data):
+        a_cols = a_data.get(gname) or {}
+        m_cols = m_data.get(gname) or {}
+        cols = {str(c): list(v) for c, v in a_cols.items()}
+        added = 0
+        for col, vals in m_cols.items():
+            if str(col) not in cols:
+                cols[str(col)] = list(vals)
+                added += 1
+        merged[str(gname)] = cols
+        if added:
+            print(f"  [M 合并] {gname}: 补充 {added} 列")
+    return merged
+
+
+def fill_uncovered_with_temp(data, groups, col_scope, temp_value="dataTemp"):
+    """未覆盖的待填列统一填占位值（按顺序/sequential 写入）。
+
+    对 col_scope 中「每组每列都缺失」的列，填入 [temp_value] * 组行数；
+    这样 fill_from_plan 里 m == n → sequential 顺序写入（每个单元格都是占位值）。
+    默认占位值 dataTemp（与 build_m_data.py 一致，见 MISSING.md 解决方案）。
+    """
+    filled = 0
+    for gname, spec in (groups or {}).items():
+        spec = str(spec).strip()
+        if "&" not in spec:
+            continue
+        try:
+            start_w, end_w = map(int, spec.split("&"))
+        except ValueError:
+            continue
+        n = end_w - start_w + 1
+        gdata = data.setdefault(str(gname), {})
+        for col in col_scope:
+            if str(col) not in gdata:
+                gdata[str(col)] = [temp_value] * n
+                filled += 1
+    return filled
+
+
+def build_plan(diff, completed, blank, plan_output_file, template_output=None,
+               mode_customise=None, groups=None, data=None):
     """生成基础填充框架（plan 骨架）。
 
-    groups: 分组行范围 dict（相对行号），来自 groups 来源 JSON；缺省为空 {}。
+    template_output: 产出模板（fill_from_plan 复制其副本并填充）；缺省回退 blank.source_file。
+    mode_customise:  人工维护的 列 → 强制填充模式（来自 mode_customise 配置文件）。
+    groups: 分组行范围 dict（实际行号，来自 build_groups_from_excel.py）；缺省为空 {}。
     data:   每组每列具体数据 {group: {col_str: [...]}}；缺省为空 {}。
     """
     only_in_completed = diff.get("by_col", {}).get("only_in_completed", [])
     col_scope = sorted(c["col"] for c in only_in_completed if "col" in c)
 
-    # 数据起始行：以 column_diff.json 的模板标准 settings.dataRow 为唯一真源，
-    # 缺省回退 7（fill_from_plan 默认）
+    # 数据起始行：唯一真源 = column_diff.json 的模板标准 settings.dataRow；
+    # 不同模板可能不同；读不到说明流程有问题（缺 column_diff 或 settings），直接报错，不做兜底
     diff_settings = diff.get("settings") or {}
-    data_start_row = diff_settings.get("dataRow") or 7
+    data_row = diff_settings.get("dataRow")
+    if data_row is None:
+        raise ValueError(
+            "column_diff.json 缺少 settings.dataRow（数据起始行）：请先运行 analysisXlsm + column_diff 生成完整的 column_diff.json"
+        )
+    data_start_row = int(data_row)
 
     return {
         "description": (
@@ -119,11 +211,11 @@ def build_plan(diff, completed, blank, plan_output_file, groups=None, data=None)
             "data 来源占位或用 data 来源 JSON 填充，再交给 fill_from_plan.py。"
         ),
         "source_file": completed.get("source_file"),
-        "template_file": blank.get("source_file"),
+        "template_file": template_output or blank.get("source_file"),
         "output_file": plan_output_file,
         "data_start_row": data_start_row,
         "col_scope": col_scope,
-        "mode_customise": {},
+        "mode_customise": mode_customise if mode_customise is not None else {},
         "groups": groups if groups is not None else {},
         "cycle_threshold": None,
         "data": data if data is not None else {},
@@ -144,8 +236,14 @@ def main():
                         help="分组来源 JSON 路径（取 groups 字段作为分组行范围）；不存在则留空")
     parser.add_argument("--data", default=DEFAULT_DATA,
                         help="data 来源 JSON 路径（取 data 字段作为每组每列数据）；不存在则按 col_scope 填 [] 占位")
+    parser.add_argument("--m-data", default=DEFAULT_M_DATA,
+                        help="M 数据来源 JSON 路径（补充 A 未映射列；支持按组/全局两种形态）；不存在则不合并")
     parser.add_argument("--output-file", default=DEFAULT_PLAN_OUTPUT_FILE,
                         help="plan 中的 output_file 字段（占位）")
+    parser.add_argument("--template-output", default=DEFAULT_TEMPLATE_OUTPUT,
+                        help="产出模板路径（fill_from_plan 复制其副本并填充；默认 zconfig.TEMPLATE_OUTPUT）")
+    parser.add_argument("--mode-customise", default=DEFAULT_MODE_CUSTOMISE,
+                        help="mode_customise 配置文件（{列号: 模式}，人工维护；默认 intermediate/<类别>/<类别>_mode_customise.json）")
     args = parser.parse_args()
 
     diff = load_json(args.diff)
@@ -156,15 +254,38 @@ def main():
     col_scope = sorted(c["col"] for c in only_in_completed if "col" in c)
     data = load_data(args.data, col_scope, groups)
 
+    # ── M 数据合并（需求：剩余未映射列由 M 补充）──
+    m_data = load_m_data(args.m_data, groups)
+    if m_data:
+        print(f"M 数据来源: {args.m_data}（含 {len(m_data)} 个分组）")
+        data = merge_data(data, m_data)
+    else:
+        print(f"M 数据来源缺失或为空（{args.m_data}），跳过 M 合并")
+
+    # ── 未覆盖列兜底：统一填占位值 dataTemp（sequential 顺序写入）──
+    temp_filled = fill_uncovered_with_temp(data, groups, col_scope)
+    if temp_filled:
+        print(f"[占位兜底] col_scope 中 {temp_filled} 个「组×列」未覆盖，统一填 \"dataTemp\"（按顺序写入）")
+
+    # ── mode_customise：人工维护的 列 → 强制填充模式 ──
+    mode_customise = load_mode_customise(args.mode_customise)
+    if mode_customise:
+        print(f"mode_customise（来源 {args.mode_customise}）: {mode_customise}")
+
     plan = build_plan(diff, completed, blank, args.output_file,
+                      template_output=args.template_output,
+                      mode_customise=mode_customise,
                       groups=groups, data=data)
 
+    # 输出目录不存在则自动新建
+    os.makedirs(os.path.dirname(os.path.abspath(args.output)) or ".", exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(plan, f, ensure_ascii=False, indent=2)
 
     print(f"col_scope 共 {len(plan['col_scope'])} 列: {plan['col_scope']}")
+    print(f"template_file: {plan['template_file']}")
     print(f"groups 共 {len(plan['groups'])} 组: {plan['groups']}（来源 {args.groups}）")
-    print(f"data 已填充（来源 {args.data}，未提供则 col_scope 列填 [] 占位）")
+    print(f"data 已填充（A: {args.data} + M: {args.m_data}，均缺失则 col_scope 列填占位）")
     print(f"结果已写入: {args.output}")
 
 

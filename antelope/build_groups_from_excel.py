@@ -1,79 +1,43 @@
 # -*- coding: utf-8 -*-
 """
-从「流水线最终产出」的 excel 生成 groups（填充计划所需的行范围）。
+从「数据源 A(.xlsx)」生成 groups（填充计划所需的行范围）。
 
-约定（与 fr_shirt_fill_framework.json 一致）：
+按 11409 需求的分工（A/B/C/M/D 角色见 zconfig.constant.py）：
+  输入 = 数据源 A（.xlsx_dataSource），第一列（A 列）有可见背景填充色的单元格 = 父体锚点行。
+
+分组**没有偏移**：groups 里直接存 excel 的实际行号（锚点行原样，不做相对化换算）；
+偏移（data_start_row）只在「填充数据」时由 fill_from_plan.py 应用。
+
+约定：
   - 读取 excel 第一列（A 列），有可见背景填充色的单元格所在行 = 父体锚点行；
   - 每个锚点行 = 一个组的起始行，组结束行 = 下一个锚点行 - 1；
   - 最后一个组的结束行 = excel 最大行（max_row）；
-  - groups 中写入「相对行号」（相对 data_start_row，1-based），
-    实际行号 = 相对行号 + data_start_row - 1（与 fill_from_plan.py 的换算一致）。
+  - groups 形如 { "group_1": "1 & 19", "group_2": "20 & 26" }（实际行号，含起始行）。
 
-有色判断逻辑与 services/utils.py 的 cell_has_fill 一致
-（排除白色 / 黑色 / 透明等非可见填充）。
+有色判断复用 services/utils.py 的 cell_has_fill（排除白色/黑色/透明等非可见填充）。
 
 用法:
-    python build_groups_from_excel.py [excel 路径或目录] [-o output.json]
-        [--data-start-row N] [--scan-from N] [--end-row N]
+    python build_groups_from_excel.py [excel 路径] [-o output.json]
+        [--scan-from N] [--end-row N]
 默认:
-    input          = outputs（目录则取其中最新的 .xlsx）
-    output         = intermediate/fr_shirt/fr_shirt_groups.json（自命名）
-    data_start_row = 从 intermediate/fr_shirt/fr_shirt_column_diff.json 的 settings.dataRow 读取（唯一真源）；读取失败回退 7
+    input  = xlsm/.xlsx_dataSource（数据源 A）
+    output = intermediate/fr_shirt/fr_shirt_groups.json（自命名）
 """
 import argparse
-import importlib.util
 import json
 import os
 import sys
 from pathlib import Path
 
 import openpyxl
-from openpyxl.cell.cell import Cell
 
-# ─────────────────────────────────────────────────────────────────────────── #
-# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
-# ─────────────────────────────────────────────────────────────────────────── #
-def _load_zconfig():
-    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
-    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
-    _mod = importlib.util.module_from_spec(_spec)
-    _spec.loader.exec_module(_mod)
-    return _mod
-
-
-zcfg = _load_zconfig()
+from common import cell_has_fill, zcfg
 
 BASE_DIR = Path(__file__).resolve().parent
 INTERMEDIATE_DIR = Path(zcfg.INTERMEDIATE_DIR)
 
-DEFAULT_INPUT_PATH = zcfg.OUTPUTS_DIR
+DEFAULT_INPUT_PATH = zcfg.DATA_SOURCE_A   # 数据源 A（.xlsx_dataSource）
 DEFAULT_OUTPUT_PATH = Path(zcfg.CFG_INTERMEDIATE["groups_json"])
-DEFAULT_DIFF_PATH = Path(zcfg.CFG_INTERMEDIATE["column_diff_json"])
-DEFAULT_DATA_START_ROW = zcfg.CFG_RUN["fallback_data_start_row"]
-
-# 与 services/utils.py 的 _TRANSPARENT 一致：这些 rgb 视为"无可见填充"
-_TRANSPARENT = {"FFFFFF", "000000", "FFFFFFFF", "00000000", "00FFFFFF"}
-
-
-def cell_has_fill(cell: Cell) -> bool:
-    """第一列单元格是否有可见背景填充色（复制自 services/utils.py）。"""
-    fill = cell.fill
-    if fill is None or fill.fill_type is None:
-        return False
-    for color in (fill.fgColor, fill.bgColor):
-        if color is None:
-            continue
-        if color.type == "rgb" and color.rgb:
-            rgb = color.rgb.upper()
-            if len(rgb) == 8:
-                rgb = rgb[2:]
-            if rgb not in _TRANSPARENT:
-                return True
-        if color.type == "indexed" and color.indexed not in (None, 0, 64):
-            return True
-        if color.type == "theme" and color.theme not in (None, 0):
-            return True
-    return False
 
 
 def resolve_input(path: str) -> Path:
@@ -105,8 +69,11 @@ def find_anchor_rows(ws, scan_from: int) -> list[int]:
     return anchors
 
 
-def build_groups(anchors: list[int], end_row: int, data_start_row: int) -> tuple[dict, list[dict]]:
-    """由锚点行生成 groups（相对行号）及核对用的 details。"""
+def build_groups(anchors: list[int], end_row: int) -> tuple[dict, list[dict]]:
+    """由锚点行生成 groups（实际行号）及核对用的 details。
+
+    分组无偏移：起始/结束行直接用 excel 实际行号。
+    """
     groups = {}
     details = []
     for i, anchor in enumerate(anchors):
@@ -114,60 +81,38 @@ def build_groups(anchors: list[int], end_row: int, data_start_row: int) -> tuple
         group_end = (anchors[i + 1] - 1) if i + 1 < len(anchors) else end_row
         if group_end < anchor:
             group_end = anchor
-        start_w = anchor - data_start_row + 1
-        end_w = group_end - data_start_row + 1
-        groups[gname] = f"{start_w} & {end_w}"
+        groups[gname] = f"{anchor} & {group_end}"
         details.append({
             "group": gname,
             "anchor_row": anchor,
             "actual_rows": f"{anchor} & {group_end}",
-            "relative_rows": f"{start_w} & {end_w}",
             "row_count": group_end - anchor + 1,
         })
     return groups, details
 
 
-def default_data_start_row_from_diff(path, fallback=DEFAULT_DATA_START_ROW):
-    """从 column_diff.json 的模板标准 settings.dataRow 取默认数据起始行（唯一真源）。
-
-    以 fr_shirt_column_diff.json 为标准；读取失败时用 fallback。
-    """
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            settings = json.load(f).get("settings") or {}
-        return int(settings.get("dataRow") or fallback)
-    except Exception:
-        return fallback
-
-
 def main():
-    parser = argparse.ArgumentParser(description="从流水线产出 excel 的第一列有色单元格生成 groups")
+    parser = argparse.ArgumentParser(description="从数据源 A(.xlsx) 的第一列有色单元格生成 groups")
     parser.add_argument("input", nargs="?", default=DEFAULT_INPUT_PATH,
-                        help="流水线产出 excel 路径或目录（默认 outputs，取最新 .xlsx）")
+                        help="数据源 A(.xlsx) 路径（默认 xlsm/.xlsx_dataSource）")
     parser.add_argument("-o", "--output", default=str(DEFAULT_OUTPUT_PATH),
                         help="输出 JSON 文件路径")
-    parser.add_argument("--data-start-row", type=int, default=None,
-                        help="数据起始行（用于相对行号换算；缺省从 column_diff.json 的 settings.dataRow 读取）")
-    parser.add_argument("--diff", default=str(DEFAULT_DIFF_PATH),
-                        help="column_diff JSON 路径（缺省 data_start_row 的唯一真源）")
     parser.add_argument("--scan-from", type=int, default=1,
                         help="从第几行开始扫描第一列有色单元格（默认 1）")
     parser.add_argument("--end-row", type=int, default=0,
                         help="最后一个组的结束行（默认取 excel 的 max_row）")
     args = parser.parse_args()
 
-    data_start_row = args.data_start_row if args.data_start_row is not None \
-        else default_data_start_row_from_diff(args.diff)
-
     src = resolve_input(args.input)
     wb = openpyxl.load_workbook(src, read_only=True, data_only=True)
     try:
-        ws = wb.active
+        # 规则：.xlsx 数据源只读第一个工作表（Sheet0），其余忽略
+        ws = wb[wb.sheetnames[0]]
         end_row = args.end_row if args.end_row > 0 else ws.max_row
         anchors = find_anchor_rows(ws, args.scan_from)
         if not anchors:
             print(f"⚠️ 第一列未找到任何有色单元格（{src.name}）")
-        groups, details = build_groups(anchors, end_row, data_start_row)
+        groups, details = build_groups(anchors, end_row)
     finally:
         wb.close()
 
@@ -179,10 +124,9 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"共 {len(anchors)} 个有色锚点行 -> {len(groups)} 个组")
+    print(f"共 {len(anchors)} 个有色锚点行 -> {len(groups)} 个组（分组为实际行号，无偏移）")
     for d in details:
-        print(f"  {d['group']}: 锚点行 {d['anchor_row']} -> 实际 {d['actual_rows']} "
-              f"(相对 {d['relative_rows']}, {d['row_count']} 行)")
+        print(f"  {d['group']}: 锚点行 {d['anchor_row']} -> 行 {d['actual_rows']} ({d['row_count']} 行)")
     print(f"结果已写入: {out_path}")
 
 

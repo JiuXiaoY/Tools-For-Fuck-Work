@@ -24,8 +24,13 @@ build_fill_framework / column_diff / fill_from_plan）统一从这里 import
 import os
 
 # ─────────────────────────── 当前类别 ───────────────────────────
-# 国家_类别，如 "fr_shirt"；中间产物与 plan 命名以此为基础
-ACTIVE_CATEGORY = "fr_shirt"
+# 国家_类别，如 "fr_dress"；中间产物与 plan 命名以此为基础
+ACTIVE_CATEGORY = "fr_dress"
+
+# ⚠️ 中间文件写入目录名（如 "fr_dress"）：即 intermediate/ 下的子目录名
+#    目录存在则直接写入，不存在则自动新建（各脚本写入时均自动 mkdir）
+#    默认跟随 ACTIVE_CATEGORY，也可单独指定（如 "fr_dress" / "de_coat" …）
+INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
 # ─────────────────────────── 顶层目录 ───────────────────────────
 # 本仓库根目录（dealExcel_refactoring）
@@ -39,8 +44,8 @@ INTERMEDIATE_DIR = os.path.join(ANTELOPE_DIR, "intermediate")
 FILL_PLAN_DIR = os.path.join(ANTELOPE_DIR, "fill_plan")
 OUTPUTS_DIR = os.path.join(REPO_ROOT, "outputs")
 
-# 当前类别中间产物目录：intermediate/fr_shirt
-CATEGORY_INTERMEDIATE_DIR = os.path.join(INTERMEDIATE_DIR, ACTIVE_CATEGORY)
+# 当前类别中间产物目录：intermediate/<INTERMEDIATE_DIR_NAME>（不存在时由写入脚本自动创建）
+CATEGORY_INTERMEDIATE_DIR = os.path.join(INTERMEDIATE_DIR, INTERMEDIATE_DIR_NAME)
 
 
 # ─────────────────────── 辅助：按类别取文件名 ───────────────────────
@@ -49,13 +54,25 @@ def _cat(name):
     return f"{ACTIVE_CATEGORY}_{name}.json"
 
 
-# ─────────────────────── 过程数据源 excel ─────────────────────────
-# 数据源(模板分析源 / build_data 取数源) —— 默认指向旧数据源文件
-DEFAULT_SOURCE_XLSM = os.path.join(XLSM_DIR, "TheTimeMachine@Partof.xlsm")
-# 模板(待填充)文件
-DEFAULT_TEMPLATE_XLSM = os.path.join(XLSM_DIR, "shirt_template_Adam.xlsm")
+# ─────────────────────── 数据源文件（按 11409 需求统一角色命名）───────────────────────
+# ⚠️⚠️⚠️ 每次批次文件名不一致，以下 5 个路径需按本批次实际文件手动修改 ⚠️⚠️⚠️
+#   A —— .xlsx 数据文件：提供「分组锚点(第1列有色单元格) + 部分待填列数据(经 col_mapping 取数)」
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "8.14v1.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
+#   B —— .xlsm 基础模板：已填部分数据列（analysisXlsm 分析 → blank.json，即「已填列」）
+TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")                     # ← 本批次 B（角色名 .xlsm_template_base）
+#   C —— .xlsm 完整模板：完整列即产出参照（analysisXlsm 分析 → completed.json，即「完整列」）
+TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")                 # ← 本批次 C（角色名 .xlsm_template_complete）
+#   产出模板：fill_from_plan 复制此文件作副本并填充（填完自动删多余数据行）
+TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "dress_template_Eva.xlsm")  # ← 本批次产出模板
+#   M —— 自定义数据来源(JSON)：补充 A 映射未覆盖到的待填列数据
+#        由 build_m_data.py 生成到 中间产物目录 intermediate/<INTERMEDIATE_DIR_NAME>/ 下
+DATA_SOURCE_M = os.path.join(CATEGORY_INTERMEDIATE_DIR, ".xlsx_dataSource_m.json")  # M（JSON 格式）
 
-# ─────────────────── intermediate/fr_shirt 过程 json ───────────────────
+# 旧名兼容别名（新脚本请使用上面的角色名）
+DEFAULT_SOURCE_XLSM = DATA_SOURCE_A
+DEFAULT_TEMPLATE_XLSM = TEMPLATE_B
+
+# ─────────────────── intermediate/<类别> 过程 json ───────────────────
 CFG_INTERMEDIATE = {
     "completed_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("completed")),
     "blank_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("blank")),
@@ -63,6 +80,10 @@ CFG_INTERMEDIATE = {
     "groups_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("groups")),
     "data_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("data")),
     "col_mapping_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("col_mapping")),
+    # 人工维护：目标列 → 强制填充模式（如 {"17": "cycle"}），⑤ 生成 plan 时读入 mode_customise
+    "mode_customise_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("mode_customise")),
+    # ai_pick_attributes.py：AI 选值的提示词/结果文件目录
+    "ai_prompt_dir": os.path.join(CATEGORY_INTERMEDIATE_DIR, "ai_prompt"),
 }
 
 # ─────────────────────── fill_plan 输出 json ───────────────────────
@@ -75,10 +96,6 @@ CFG_FILL_PLAN = {
 
 # ─────────────────────── 可运行配置项 ───────────────────────
 CFG_RUN = {
-    # build_groups_from_excel.py：分组锚点检测失败时兜底 data_start_row
-    "fallback_data_start_row": 7,
-    # build_fill_framework.py / build_data_from_excel.py：兜底数据起始行
-    "fallback_data_row": 8,
     # analysisXlsm.py：参与解析的工作表
     "default_sheets": ["Valeurs valides", "Modèle"],
     # fill_from_plan.py：默认输出

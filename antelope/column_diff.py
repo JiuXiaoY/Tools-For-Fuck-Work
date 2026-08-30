@@ -2,6 +2,11 @@
 """
 对比两个 fill_plan JSON 文件中的列（columns）差异。
 
+按 11409 需求的分工（A/B/C/M/D 角色见 zconfig.constant.py）：
+  - completed = 对「完整模板 C」的分析（完整列，即产出参照）
+  - blank     = 对「基础模板 B」的分析（已填列，即基础）
+  - C − B = only_in_completed = 「未填但需要填的列」= 待填列范围（col_scope）
+
 以每列的 "col"（Excel 列号）为唯一标识，输出：
   - only_in_completed : 只存在于 completed 文件的列
   - only_in_blank     : 只存在于 blank 文件的列
@@ -22,20 +27,7 @@ import json
 import os
 import sys
 
-import importlib.util
-
-# ─────────────────────────────────────────────────────────────────────────── #
-# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
-# ─────────────────────────────────────────────────────────────────────────── #
-def _load_zconfig():
-    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
-    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
-    _mod = importlib.util.module_from_spec(_spec)
-    _spec.loader.exec_module(_mod)
-    return _mod
-
-
-zcfg = _load_zconfig()
+from common import zcfg
 
 # 过程 json（模板分析、列差异）在 intermediate 子目录下
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR

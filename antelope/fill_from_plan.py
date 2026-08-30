@@ -1,10 +1,23 @@
 # -*- coding: utf-8 -*-
 """
 fill_from_plan —— 按「填充计划(plan)」把数据写入模板副本，并自动清理多余空行。
+
+按 11409 需求：数据项数目 m 以 plan.data 数组长度为准，**包含空数据（"" 也算一项）**，
+例如 ["7aq...", "7aq...", "7aq...", "", "", "", "7aq..."] 视为 7 项。
+模式判断（组共 n 行）：
+    m == 0            → none（不填）
+    m == n            → sequential（顺序填满 父+子）
+    m == n - 1        → children_only（只填子体）
+    m < n 且低于阈值  → cycle（循环铺满；cycle_threshold 为 null 则无条件允许）
+    其他              → mismatch（不填，记入报告）
+
+行号语义：plan.groups 存的是**实际行号（无偏移）**；填充到模板时应用偏移
+    target 行 = 分组行 + (data_start_row − 1)
+其中 data_start_row 来自 column_diff.json 的 settings.dataRow（唯一真源，plan 里带出）；
+**读不到则报错退出，不做兜底**。
 """
 
 import argparse
-import importlib.util
 import json
 import os
 import sys
@@ -12,18 +25,7 @@ from pathlib import Path
 
 import openpyxl
 
-# ─────────────────────────────────────────────────────────────────────────── #
-# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
-# ─────────────────────────────────────────────────────────────────────────── #
-def _load_zconfig():
-    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
-    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
-    _mod = importlib.util.module_from_spec(_spec)
-    _spec.loader.exec_module(_mod)
-    return _mod
-
-
-zcfg = _load_zconfig()
+from common import setup_utf8, zcfg
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # ⚙️ 默认运行配置（直接点 Run 时生效）—— 路径/配置项集中来自 zconfig.constant.py
@@ -131,10 +133,7 @@ def main():
     )
     args = parser.parse_args()
 
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
+    setup_utf8()
 
     if not args.plan or not os.path.exists(args.plan):
         print(f"❌ 找不到 plan 文件: {args.plan}")
@@ -156,7 +155,16 @@ def main():
     if os.path.isdir(out_file) or out_file.endswith(("/", "\\")):
         out_file = os.path.join(out_file, "result_filled.xlsm")
 
-    data_start_row = int(plan.get("data_start_row") or 7)
+    data_start_row = plan.get("data_start_row")
+    if data_start_row is None:
+        print("❌ plan 缺少 data_start_row（数据起始行）")
+        print("💡 该值来自 column_diff.json 的 settings.dataRow（唯一真源），请先运行 analysisXlsm + column_diff + build_fill_framework 重新生成 plan。")
+        sys.exit(5)
+    try:
+        data_start_row = int(data_start_row)
+    except (TypeError, ValueError):
+        print(f"❌ plan 的 data_start_row 非法: {data_start_row!r}")
+        sys.exit(5)
     col_scope = set(plan.get("col_scope") or [])
     groups = plan.get("groups") or {}
     data = plan.get("data") or {}

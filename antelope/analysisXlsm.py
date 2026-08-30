@@ -5,7 +5,7 @@
 用途：解析模板文件中「表头」以及该表头（字段）单元格的可选值，以 JSON 格式给出，
 供人工/程序填写时参考。
 
-数据来源（默认 coat_template_Eva.xlsm）：
+数据来源（默认 .xlsm_template_base，即需求里的基础模板 B）：
   - 工作表 'Modèle'            : 主模板。row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
                                 labelRow 是表头（人类可读列名），attributeRow 是属性键，dataRow 是数据起始行。
   - 工作表 'Valeurs valides'  : 第 1列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
@@ -15,19 +15,24 @@
 'Valeurs valides' 中字段名（去掉 " - [ COAT ]" 后缀后同样归一化）；命中则列出其可选值，
 否则该列为自由文本/无预定义枚举。
 
+按 11409 需求的分工（A/B/C/M/D 角色见 zconfig.constant.py）：
+  - 对 基础模板 B 解析  → blank.json（「已填列」，column_diff 的减数）
+  - 对 完整模板 C 解析  → completed.json（「完整列」，column_diff 的被减数）
+  - 生成 completed 示例：
+      python analysisXlsm.py xlsm/.xlsm_template_complete -o intermediate/fr_shirt/fr_shirt_completed.json
+
 用法：
     python analysisXlsm.py [文件路径] [--output 输出.json] [--sheets 工作表1 工作表2]
                            [--max-values N] [--show-data]
 示例：
-    python analysisXlsm.py y_yassikzu/fr_init_template/coat_template_Eva.xlsm
-    python analysisXlsm.py                      # 使用默认路径，输出默认 JSON 文件名
+    python analysisXlsm.py                      # 默认解析基础模板 B，输出 blank.json
+    python analysisXlsm.py xlsm/.xlsm_template_complete -o intermediate/fr_shirt/fr_shirt_completed.json
 
 说明：JSON 中 columns 数组的每个元素（每列）预留了 reserve_flag / reserve_mark 两个标识位字段，
 当前恒为 null，仅供后续程序复用标记，不影响其余解析结果。
 """
 
 import argparse
-import importlib.util
 import json
 import os
 import re
@@ -35,21 +40,10 @@ import sys
 
 import openpyxl
 
-# ─────────────────────────────────────────────────────────────────────────── #
-# 集中配置加载（zconfig.constant.py 文件名含点，无法用普通 import，故用 spec 加载）
-# ─────────────────────────────────────────────────────────────────────────── #
-def _load_zconfig():
-    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "zconfig.constant.py")
-    _spec = importlib.util.spec_from_file_location("zconfig_constant", _p)
-    _mod = importlib.util.module_from_spec(_spec)
-    _spec.loader.exec_module(_mod)
-    return _mod
+from common import setup_utf8, zcfg
 
-
-zcfg = _load_zconfig()
-
-# 默认输入模板文件（待填充模板 .xlsm）
-DEFAULT_INPUT_PATH = zcfg.DEFAULT_TEMPLATE_XLSM
+# 默认输入模板文件（基础模板 B，解析得到 blank.json / 「已填列」）
+DEFAULT_INPUT_PATH = zcfg.TEMPLATE_B
 
 # 默认输出 JSON（模板分析结果）
 DEFAULT_OUTPUT_PATH = zcfg.CFG_INTERMEDIATE["blank_json"]
@@ -92,7 +86,9 @@ def parse_valid_values(ws) -> tuple:
     遍历 'Valeurs valides' 工作表。
 
     返回:
-        valid_values: {归一化后的字段名: (原始字段名, [可选值, ...])}
+        valid_values: {归一化后的字段名: [(原始字段名, [可选值, ...]), ...]}
+                      同一字段名可能出现多次（如两个 "Style de col"：
+                      22 值的 collar_style 与 31 值的 neck），按出现顺序保留全部；
         groups:       [分组标题, ...]（按出现顺序，去重）
     """
     valid_values = {}
@@ -114,7 +110,7 @@ def parse_valid_values(ws) -> tuple:
             key = field_key(field_raw)
             # 可选值：第 3 列起（索引 2）的所有非空值，横向排列
             choices = [str(v).strip() for v in row[2:] if v is not None and str(v).strip()]
-            valid_values[key] = (field_raw, choices)
+            valid_values.setdefault(key, []).append((field_raw, choices))
     return valid_values, groups
 
 
@@ -232,10 +228,7 @@ def main():
     args = parser.parse_args()
 
     # 保证控制台能以 UTF-8 输出法文（避免 Windows 默认 GBK 报错）
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
+    setup_utf8()
 
     try:
         wb = openpyxl.load_workbook(
@@ -280,9 +273,13 @@ def main():
     columns = collect_column_data(ws_model, label_row, attr_row, data_row)
     n_matched = 0
     columns_json = []
+    used_keys: dict[str, int] = {}   # 同名表头列的出现次数 → 按顺序取同名候选字段
     for (col, label, attr, samples) in columns:
         key = normalize(label)
-        hit = valid_values.get(key)
+        entries = valid_values.get(key) or []
+        k = used_keys.get(key, 0)          # 本列是同名表头中的第几个（0 起）
+        used_keys[key] = k + 1
+        hit = entries[k] if k < len(entries) else None
         # 每列预留两个标识位（自命名，不带数字），当前未使用，后续可填任意标记供程序复用
         reserve_flag = None
         reserve_mark = None

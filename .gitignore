@@ -53,6 +53,11 @@ tools/title_optimize/optimize_title
 tools/title_auto_fill/final_de_title
 tools/title_auto_fill/final_de_title_s
 
+# antelope AI 选值（浏览器数据 / 登录态 / AI 中间交换文件，不入库）
+antelope/web_data/
+antelope/.deepseek_state.json
+antelope/intermediate/*/ai_prompt/
+
 # Backup files
 *.bak
 
