@@ -22,7 +22,10 @@
 取数约定：
   - groups 里的行范围 = 数据源 A 的实际行号，直接按此读取，不做偏移；
   - 每个源列在该组行范围内**逐行读取，空单元格保留为 "" 占位**（m 含空数据）；
-    未使用到的 A 列（不在映射里）忽略不读；映射到但没数据的列也读，空就是空。
+    未使用到的 A 列（不在映射里）忽略不读；映射到但没数据的列也读，空就是空；
+  - 性能：只读模式先把所需行×列一次性顺序读入内存（snapshot_rows），再逐组取值，
+    避免逐格 ws.cell() 随机访问（openpyxl 只读模式下每次都会从头重新解析整个 XML，
+    行数一大（如 1500 行）会卡死数十分钟）。
 
 用法:
     python build_data_from_excel.py [-o output.json]
@@ -84,15 +87,35 @@ def parse_col_mapping(sources):
     return mapping
 
 
-def read_column_values(ws, group_start, group_end, src_col):
-    """读某组行范围内某列的值序列（**逐行读取，空单元格保留为 "" 占位**）。
+def snapshot_rows(ws, max_row: int, max_col: int) -> dict:
+    """一次性顺序读入所需行×列到内存，供后续取值（避免只读模式逐格随机访问的性能灾难）。
+
+    openpyxl 只读模式下每次 ws.cell(row, col) 都会**从头重新解析整个工作表 XML**
+    （见 ReadOnlyWorksheet._get_cell → _cells_by_row），行数一多（如 1570 行 × 18 个源列
+    ≈ 2.8 万次随机访问）耗时会暴涨到几十分钟；改为一次 iter_rows 顺序流式读取（约 0.2s），
+    之后全部走内存查找。
+
+    返回 { 行号: 值元组 }，行号从 1 起；行内缺失的列返回 None（与 ws.cell() 的空单元格语义一致）。
+    """
+    rows = {}
+    for r, row in enumerate(
+        ws.iter_rows(min_row=1, max_row=max_row, max_col=max_col, values_only=True),
+        start=1,
+    ):
+        rows[r] = row
+    return rows
+
+
+def read_column_values(rows, group_start: int, group_end: int, src_col: int) -> list:
+    """从内存行矩阵中读某组行范围内某列的值序列（**逐行读取，空单元格保留为 "" 占位**）。
 
     规则（MISSING.md 第 2 节）：映射到但没数据的列也要读取——空就是空，写入也是空。
     返回列表长度 = 组行数（m 含空数据，与 11409 需求一致）；空单元格记 ""。
     """
     values = []
-    for row in range(group_start, group_end + 1):
-        v = ws.cell(row=row, column=src_col).value
+    for r in range(group_start, group_end + 1):
+        rr = rows.get(r, ())
+        v = rr[src_col - 1] if 0 < src_col <= len(rr) else None
         if v is None:
             values.append("")
         elif isinstance(v, str) and not v.strip():
@@ -107,12 +130,29 @@ def extract_data(wb, groups, col_mapping, sheet=None):
 
     分组行范围 = 数据源 A 的实际行号，直接读取（无偏移）。
     返回: { group: { str(target_col): [值...] } }
+
+    性能：只读模式先 snapshot_rows 一次性把所需范围读入内存，再逐组逐列取值，
+    避免逐格 ws.cell() 随机访问（每次从头解析整个 XML，行数大时会卡死）。
     """
     if sheet and sheet in wb.sheetnames:
         ws = wb[sheet]
     else:
         # 规则：.xlsx 数据源只读第一个工作表（Sheet0），其余忽略
         ws = wb[wb.sheetnames[0]]
+
+    # 计算所需行/列范围，一次性顺序读入内存
+    max_row = 0
+    for spec in (groups or {}).values():
+        spec = str(spec).strip()
+        if "&" not in spec:
+            continue
+        try:
+            end = int(spec.split("&")[1])
+        except ValueError:
+            continue
+        max_row = max(max_row, end)
+    max_col = max(col_mapping) if col_mapping else 0
+    rows = snapshot_rows(ws, max_row, max_col) if max_row > 0 else {}
 
     data = {}
     for gname, spec in (groups or {}).items():
@@ -128,10 +168,11 @@ def extract_data(wb, groups, col_mapping, sheet=None):
 
         gdata = {}
         for src_col, target_cols in col_mapping.items():
-            values = read_column_values(ws, start_actual, end_actual, src_col)
+            values = read_column_values(rows, start_actual, end_actual, src_col)
             for target in target_cols:
                 gdata[str(target)] = list(values)  # 同一份数据复制到多个目标列
         data[gname] = gdata
+        print(f"  [取数] {gname}: 行 {start_actual}..{end_actual} -> {len(gdata)} 个目标列")
     return data
 
 

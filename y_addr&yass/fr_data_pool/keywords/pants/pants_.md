@@ -47,6 +47,22 @@ Cordon tressé coloré (彩色编织抽绳)
 
 # 亚马逊法国站 (Amazon.fr) 高涨服关键词
 
+## 热词 (Hot)
+
+## 女士 (Femme)
+pantalon fluide femme été, pantalon femme, pantalon lin femme, pantalon de travail femme, pantalon fluide femme, pantalon cargo femme
+pantalon randonnée femme, pantalon blanc femme, pantalon moto femme, pantalon en lin femme, pantalon lin femme été, pantalon large femme
+pantalon femme fluide, pantalon travail femme, pantalon ete femme, pantalon noir femme, pantalon jogging femme, pantalon femme ete
+pantalon equitation femme, pantalon large femme fluide, pantalon yoga femme, pantalon fluide femme été lin, pantalon sport femme, pantalon femme taille elastique
+pantalon grossesse femme, tailleur femme ensemble pantalon, pantalon fluide femme été grande taille, pantalon portefeuille femme a nouer, pantalon cuisine femme, pantalon de randonnée femme
+pantalon fluide femme été pas cher, pantalon pyjama femme, pantalon femme chic et elegant, pantalon été femme, pantalon gaze de coton femme, pantalon moto femme homologué
+pantalon 3/4 femme, pantalon corsaire femme, pantalon femme été, pantalon leger femme ete, pantalon lin blanc femme, pantalon dentelle femme
+ensemble femme pantalon et haut fluide, pantalon de cuisine femme, pantalon sarouel femme, pantalon leger femme, pantalon palazzo femme, pantalon femme grande taille
+pantalon femme lin, pantalon patte d'elephant femme, pantalon tailleur femme, pantalon yoga femme fluide, pantalon chino femme, pantalon large fluide femme été
+pantalon de sport femme, ensemble pantalon femme chic et elegant, pantalon cargo femme été, pantalon léger femme, pantalon taille haute femme, tailleurs-pantalons femme
+pantalon randonnée femme convertible short, pantalon jean femme, pantalon plage femme, pantalon randonnee femme, pantalon 7/8 femme été, pantalon baggy femme
+pantalon court femme, pantalon de grossesse femme, pantalon fluide femme été 7/8, pantalon femme ete leger, pantalon cuir femme
+
 ## 男士 (Homme)
 pantalon de travail homme, pantalon lin homme, pantalon homme, pantalon cargo homme, pantalon travail homme, pantalon moto homme
 pantalon en lin homme, pantalon homme ete, pantalon chino homme, pantalon randonnée homme, pantalon japonais homme, pantalon blanc homme
@@ -66,7 +82,3 @@ pantalon de travail, pantalon hello kitty, pantalon lin, pantalon fluide, pantal
 pantalon hello kitty pyjama, pantalon travail, pantalon en lin, pantalon drainage lymphatique, pantalon pyjama hello kitty, pantalon japonais
 pantalon yoga, pantalon blanc, pantalon blanc fluide, pantalon tactique, pantalon cuisine, pantalon de cuisine
 pantalon grossesse, pantalon jupe, pantalon pressothérapie, pantalon militaire, pantalons de sécurité
-
-## 热词 (Hot)
-
-## 女士 (Femme)

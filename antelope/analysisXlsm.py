@@ -6,13 +6,15 @@
 供人工/程序填写时参考。
 
 数据来源（默认 .xlsm_template_base，即需求里的基础模板 B）：
-  - 工作表 'Modèle'            : 主模板。row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
+  - 主模板工作表（fr=Modèle / de=Vorlage，按国家配置 SHEET_NAMES 取）：
+                                row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
                                 labelRow 是表头（人类可读列名），attributeRow 是属性键，dataRow 是数据起始行。
-  - 工作表 'Valeurs valides'  : 第 1列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
+  - 字段枚举表工作表（fr=Valeurs valides / de=Gültige Werte）：
+                                第 1列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
                                 第 3 列起横向排列该字段的可选值。
 
-匹配方式：以 'Modèle' 的表头文本（归一化：统一 \xa0/空白、去首尾空白）去匹配
-'Valeurs valides' 中字段名（去掉 " - [ COAT ]" 后缀后同样归一化）；命中则列出其可选值，
+匹配方式：以主模板的表头文本（归一化：统一 \xa0/空白、去首尾空白）去匹配
+字段枚举表中字段名（去掉 " - [ COAT ]" 后缀后同样归一化）；命中则列出其可选值，
 否则该列为自由文本/无预定义枚举。
 
 按 11409 需求的分工（A/B/C/M/D 角色见 zconfig.constant.py）：
@@ -73,17 +75,17 @@ def normalize(text: str) -> str:
 
 
 def field_key(field_name: str) -> str:
-    """把 'Valeurs valides' 的字段名去掉 ' - [XXXX]' 后缀后做归一化。"""
+    """把字段枚举表中字段名去掉 ' - [XXXX]' 后缀后做归一化。"""
     s = re.sub(r"\s*-\s*\[.*?\]\s*$", "", str(field_name))
     return normalize(s)
 
 
 # --------------------------------------------------------------------------- #
-# 解析 'Valeurs valides'：分组标题 + 字段 -> 可选值列表
+# 解析字段枚举表：分组标题 + 字段 -> 可选值列表
 # --------------------------------------------------------------------------- #
 def parse_valid_values(ws) -> tuple:
     """
-    遍历 'Valeurs valides' 工作表。
+    遍历字段枚举表工作表。
 
     返回:
         valid_values: {归一化后的字段名: [(原始字段名, [可选值, ...]), ...]}
@@ -115,7 +117,7 @@ def parse_valid_values(ws) -> tuple:
 
 
 # --------------------------------------------------------------------------- #
-# 解析 'Modèle' 的 settings 行（row1）取出 labelRow/attributeRow/dataRow
+# 解析主模板的 settings 行（row1）取出 labelRow/attributeRow/dataRow
 # --------------------------------------------------------------------------- #
 def parse_settings(settings_str: str) -> dict:
     params = {}
@@ -133,11 +135,11 @@ def parse_settings(settings_str: str) -> dict:
 
 
 # --------------------------------------------------------------------------- #
-# 解析 'Modèle'：按列收集 表头/属性键/示例数据
+# 解析主模板：按列收集 表头/属性键/示例数据
 # --------------------------------------------------------------------------- #
 def collect_column_data(ws, label_row, attr_row, data_row, max_samples=2):
     """
-    读取 'Modèle' 并按列组织成列表：
+    读取主模板并按列组织成列表：
       [ (列号, 表头, 属性键, 示例值列表[…]), … ]
     只有表头非空且数据行（dataRow及之后）有值的列才进入结果。
     """
@@ -212,7 +214,7 @@ def main():
         "--sheets",
         nargs="*",
         default=DEFAULT_SHEETS,
-        help="参与解析的工作表名（默认使用 Valeurs valides 与 Modèle）",
+        help="参与解析的工作表名（默认按国家配置：fr=Valeurs valides/Modèle，de=Gültige Werte/Vorlage）",
     )
     parser.add_argument(
         "--max-values",
@@ -238,19 +240,20 @@ def main():
         print(f"无法打开模板文件: {exc}")
         sys.exit(1)
 
-    # 角色固定：'Valeurs valides' 提供字段枚举，'Modèle' 提供表头，不依赖参数顺序
-    candidates = args.sheets or ["Valeurs valides", "Modèle"]
-    name_valid = next((s for s in candidates if s == "Valeurs valides"), None)
-    name_model = next((s for s in candidates if s == "Modèle"), None)
+    # 角色固定：字段枚举表(valid) 提供可选值，主模板(model) 提供表头，不依赖参数顺序
+    sheets = zcfg.SHEET_NAMES[zcfg.COUNTRY]
+    candidates = args.sheets or list(sheets.values())
+    name_valid = next((s for s in candidates if s == sheets["valid"]), None)
+    name_model = next((s for s in candidates if s == sheets["model"]), None)
     if name_valid is None or name_model is None:
-        print(f"未找到工作表，请确认存在 {['Valeurs valides', 'Modèle']}（允许通过 --sheets 指定名称）。")
+        print(f"未找到工作表，请确认存在 {list(sheets.values())}（允许通过 --sheets 指定名称）。")
         sys.exit(2)
 
-    # ---------- 1) Valeurs valides：字段 -> 可选值 ----------
+    # ---------- 1) 字段枚举表：字段 -> 可选值 ----------
     ws_valid = wb[name_valid]
     valid_values, groups = parse_valid_values(ws_valid)
 
-    # ---------- 2) Modèle：定位表头/属性/数据行 ----------
+    # ---------- 2) 主模板：定位表头/属性/数据行 ----------
     ws_model = wb[name_model]
     settings_row_vals = None
     for r, row in enumerate(ws_model.iter_rows(min_row=1, max_row=3, values_only=True), start=1):

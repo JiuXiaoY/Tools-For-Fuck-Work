@@ -175,7 +175,9 @@ def main():
         print(f"模板文件不存在: {template_file}")
         sys.exit(3)
     wb = openpyxl.load_workbook(template_file, keep_vba=True, data_only=False)
-    ws_name = "Modèle" if "Modèle" in wb.sheetnames else wb.sheetnames[0]
+    # 主工作表名随国家配置变化（fr=Modèle / de=Vorlage），找不到则退回第一个工作表
+    model_sheet = zcfg.SHEET_NAMES[zcfg.COUNTRY]["model"]
+    ws_name = model_sheet if model_sheet in wb.sheetnames else wb.sheetnames[0]
     ws = wb[ws_name]
 
     offset = data_start_row - 1

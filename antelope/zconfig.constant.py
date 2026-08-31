@@ -32,6 +32,19 @@ ACTIVE_CATEGORY = "fr_dress"
 #    默认跟随 ACTIVE_CATEGORY，也可单独指定（如 "fr_dress" / "de_coat" …）
 INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
+# ─────────────────────────── 国家配置 ───────────────────────────
+# 国家代码：fr / de（Amazon 站），按 ACTIVE_CATEGORY 的国家前缀自动推导
+# （"de_dress" -> "de"）；决定模板中「字段枚举表」与「主模板」的工作表名
+COUNTRY = ACTIVE_CATEGORY.split("_", 1)[0]
+
+# 各国家模板的工作表名：
+#   valid —— 字段枚举表（第1列分组标题、第2列字段名、第3列起可选值）
+#   model —— 主模板（row1 的 settings=... 定义 labelRow / attributeRow / dataRow）
+SHEET_NAMES = {
+    "fr": {"valid": "Valeurs valides", "model": "Modèle"},
+    "de": {"valid": "Gültige Werte", "model": "Vorlage"},
+}
+
 # ─────────────────────────── 顶层目录 ───────────────────────────
 # 本仓库根目录（dealExcel_refactoring）
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -57,7 +70,7 @@ def _cat(name):
 # ─────────────────────── 数据源文件（按 11409 需求统一角色命名）───────────────────────
 # ⚠️⚠️⚠️ 每次批次文件名不一致，以下 5 个路径需按本批次实际文件手动修改 ⚠️⚠️⚠️
 #   A —— .xlsx 数据文件：提供「分组锚点(第1列有色单元格) + 部分待填列数据(经 col_mapping 取数)」
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "8.14v1.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "8.26v1_fr.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
 #   B —— .xlsm 基础模板：已填部分数据列（analysisXlsm 分析 → blank.json，即「已填列」）
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")                     # ← 本批次 B（角色名 .xlsm_template_base）
 #   C —— .xlsm 完整模板：完整列即产出参照（analysisXlsm 分析 → completed.json，即「完整列」）
@@ -96,8 +109,8 @@ CFG_FILL_PLAN = {
 
 # ─────────────────────── 可运行配置项 ───────────────────────
 CFG_RUN = {
-    # analysisXlsm.py：参与解析的工作表
-    "default_sheets": ["Valeurs valides", "Modèle"],
+    # analysisXlsm.py：参与解析的工作表（随国家配置变化：fr=Modèle/Valeurs valides，de=Vorlage/Gültige Werte）
+    "default_sheets": list(SHEET_NAMES[COUNTRY].values()),
     # fill_from_plan.py：默认输出
     "plan_output_file": os.path.join(OUTPUTS_DIR, "result_filled.xlsm"),
     "default_report_file": None,

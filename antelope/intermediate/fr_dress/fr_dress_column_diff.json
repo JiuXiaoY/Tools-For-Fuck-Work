@@ -5,13 +5,13 @@
     "dataRow": 7
   },
   "compared_files": {
-    "completed": "G:\\jetbrains_projects\\pycharmProjects\\Tools-For-Fuck-Work\\antelope\\intermediate\\fr_dress\\fr_dress_completed.json",
-    "blank": "G:\\jetbrains_projects\\pycharmProjects\\Tools-For-Fuck-Work\\antelope\\intermediate\\fr_dress\\fr_dress_blank.json"
+    "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\fr_dress\\fr_dress_completed.json",
+    "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\fr_dress\\fr_dress_blank.json"
   },
   "summary": {
-    "completed_total": 75,
-    "blank_total": 47,
-    "only_in_completed": 28,
+    "completed_total": 81,
+    "blank_total": 39,
+    "only_in_completed": 42,
     "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
@@ -85,6 +85,36 @@
         "matched": false
       },
       {
+        "col": 28,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_4[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_5[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_6[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_7[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 32,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_8[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
         "col": 40,
         "header": "Description du produit",
         "attribute": "product_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
@@ -127,9 +157,33 @@
         "matched": false
       },
       {
+        "col": 52,
+        "header": "Style de vie",
+        "attribute": "lifestyle[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 53,
+        "header": "Style",
+        "attribute": "style[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 59,
         "header": "Taille du vêtement",
         "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.size",
+        "matched": true
+      },
+      {
+        "col": 69,
+        "header": "Nom du type d’article",
+        "attribute": "item_type_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 70,
+        "header": "Type de bretelles",
+        "attribute": "strap_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
         "matched": true
       },
       {
@@ -145,9 +199,39 @@
         "matched": false
       },
       {
+        "col": 77,
+        "header": "Description de la longueur de l’article",
+        "attribute": "item_length_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 78,
+        "header": "Occasion",
+        "attribute": "occasion_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 91,
+        "header": "Type de tissage",
+        "attribute": "weave_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 126,
         "header": "Style de col",
         "attribute": "neck[marketplace_id=A13V1IB3VIYZZH]#1.neck_style[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 139,
+        "header": "Silhouette du vêtement",
+        "attribute": "apparel_silhouette[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 140,
+        "header": "Description de la longueur des manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.length_description#1.value",
         "matched": true
       },
       {
@@ -191,6 +275,12 @@
   },
   "by_attribute": {
     "only_in_completed": [
+      {
+        "col": 139,
+        "header": "Silhouette du vêtement",
+        "attribute": "apparel_silhouette[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
       {
         "col": 59,
         "header": "Taille du vêtement",
@@ -270,6 +360,12 @@
         "matched": false
       },
       {
+        "col": 77,
+        "header": "Description de la longueur de l’article",
+        "attribute": "item_length_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 7,
         "header": "Nom de l'article",
         "attribute": "item_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
@@ -282,10 +378,22 @@
         "matched": false
       },
       {
+        "col": 69,
+        "header": "Nom du type d’article",
+        "attribute": "item_type_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 167,
         "header": "Poids de l'article",
         "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": false
+      },
+      {
+        "col": 52,
+        "header": "Style de vie",
+        "attribute": "lifestyle[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
       },
       {
         "col": 177,
@@ -318,6 +426,12 @@
         "matched": true
       },
       {
+        "col": 78,
+        "header": "Occasion",
+        "attribute": "occasion_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 25,
         "header": "Autre URL de l’image",
         "attribute": "other_product_image_locator_1[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
@@ -336,6 +450,36 @@
         "matched": false
       },
       {
+        "col": 28,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_4[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_5[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_6[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_7[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 32,
+        "header": "Autre URL de l’image",
+        "attribute": "other_product_image_locator_8[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+        "matched": false
+      },
+      {
         "col": 40,
         "header": "Description du produit",
         "attribute": "product_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
@@ -348,9 +492,27 @@
         "matched": true
       },
       {
+        "col": 140,
+        "header": "Description de la longueur des manches",
+        "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.length_description#1.value",
+        "matched": true
+      },
+      {
         "col": 141,
         "header": "Type de manches",
         "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 70,
+        "header": "Type de bretelles",
+        "attribute": "strap_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 53,
+        "header": "Style",
+        "attribute": "style[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
         "matched": true
       },
       {
@@ -358,6 +520,12 @@
         "header": "Point fort de l’article",
         "attribute": "title_differentiation[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
         "matched": false
+      },
+      {
+        "col": 91,
+        "header": "Type de tissage",
+        "attribute": "weave_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
       }
     ],
     "only_in_blank": []

@@ -1,5 +1,5 @@
 {
-  "source_file": "G:\\jetbrains_projects\\pycharmProjects\\Tools-For-Fuck-Work\\antelope\\xlsm\\complete.xlsm",
+  "source_file": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\xlsm\\complete.xlsm",
   "sheets": {
     "valid_values": "Valeurs valides",
     "model": "Modèle"
@@ -286,6 +286,61 @@
       "col": 27,
       "header": "Autre URL de l’image",
       "attribute": "other_product_image_locator_3[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 28,
+      "header": "Autre URL de l’image",
+      "attribute": "other_product_image_locator_4[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 29,
+      "header": "Autre URL de l’image",
+      "attribute": "other_product_image_locator_5[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 30,
+      "header": "Autre URL de l’image",
+      "attribute": "other_product_image_locator_6[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 31,
+      "header": "Autre URL de l’image",
+      "attribute": "other_product_image_locator_7[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 32,
+      "header": "Autre URL de l’image",
+      "attribute": "other_product_image_locator_8[marketplace_id=A13V1IB3VIYZZH]#1.media_location",
       "matched": false,
       "choices": [],
       "truncated": false,
@@ -1607,6 +1662,25 @@
       "reserve_mark": null
     },
     {
+      "col": 140,
+      "header": "Description de la longueur des manches",
+      "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.length_description#1.value",
+      "matched": true,
+      "field": "Description de la longueur des manches - [ DRESS ]",
+      "choices": [
+        "Sans manches",
+        "Manches courtes",
+        "Demi-manches",
+        "Manches 3/4",
+        "Manches longues",
+        "Manches bracelet"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
       "col": 141,
       "header": "Type de manches",
       "attribute": "sleeve[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
@@ -2193,7 +2267,7 @@
     }
   ],
   "stats": {
-    "total": 75,
-    "matched": 43
+    "total": 81,
+    "matched": 44
   }
 }
