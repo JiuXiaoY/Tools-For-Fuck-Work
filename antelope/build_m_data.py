@@ -96,11 +96,11 @@ def main():
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     total = sum(len(v) for v in m_data.values())
-    print(f"col_scope 共 {len(col_scope)} 列；A 已覆盖 {len(a_cols)} 列；M 补充 {total} 个「组×列」（占位 {args.placeholder}）")
+    print(f"✅ M 占位生成：{total} 个「组×列」（占位 {args.placeholder}；col_scope {len(col_scope)} 列，A 已覆盖 {len(a_cols)} 列）")
     if args.report:
         for gname, cols in m_data.items():
-            print(f"  {gname}: {sorted(cols, key=int)}")
-    print(f"结果已写入: {args.output}")
+            print(f"   {gname}: {sorted(cols, key=int)}")
+    print(f"📄 已写入: {args.output}")
 
 
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ from pathlib import Path
 
 import openpyxl
 
-from common import cell_has_fill, zcfg
+from common import cell_has_fill, setup_utf8, zcfg
 
 BASE_DIR = Path(__file__).resolve().parent
 INTERMEDIATE_DIR = Path(zcfg.INTERMEDIATE_DIR)
@@ -101,7 +101,11 @@ def main():
                         help="从第几行开始扫描第一列有色单元格（默认 1）")
     parser.add_argument("--end-row", type=int, default=0,
                         help="最后一个组的结束行（默认取 excel 的 max_row）")
+    parser.add_argument("--verbose", action="store_true",
+                        help="逐组打印分组行范围明细")
     args = parser.parse_args()
+
+    setup_utf8()
 
     src = resolve_input(args.input)
     wb = openpyxl.load_workbook(src, read_only=True, data_only=True)
@@ -124,10 +128,12 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"共 {len(anchors)} 个有色锚点行 -> {len(groups)} 个组（分组为实际行号，无偏移）")
-    for d in details:
-        print(f"  {d['group']}: 锚点行 {d['anchor_row']} -> 行 {d['actual_rows']} ({d['row_count']} 行)")
-    print(f"结果已写入: {out_path}")
+    total_rows = sum(d["row_count"] for d in details)
+    print(f"✅ 分组完成：{len(anchors)} 个锚点 -> {len(groups)} 组，共 {total_rows} 行（实际行号，无偏移）")
+    if args.verbose:
+        for d in details:
+            print(f"   {d['group']}: 行 {d['actual_rows']}（{d['row_count']} 行）")
+    print(f"📄 已写入: {out_path}")
 
 
 if __name__ == "__main__":

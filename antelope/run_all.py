@@ -10,7 +10,7 @@ run_all —— antelope 全流程一键运行（类似 jenkins.py）。
     ⑤ A 取数（col_mapping）→ data.json
     ⑥ M 占位生成（dataTemp）→ .xlsx_dataSource_m.json
     ⑦ AI 网页选值（有可选值的未覆盖列；会弹出浏览器，可 --skip-ai 跳过）
-    ⑧ 生成 plan + 填充模板副本 → outputs/fr_dress_filled.xlsm
+    ⑧ 生成 plan + 填充模板副本 → outputs/{ACTIVE_CATEGORY}_filled.xlsm（取配置）
 
 任一环节失败即中止（退出码非 0）。
 所有默认路径来自 zconfig.constant.py（ACTIVE_CATEGORY 决定批次）。
@@ -19,6 +19,7 @@ run_all —— antelope 全流程一键运行（类似 jenkins.py）。
     python antelope/run_all.py                  # 全流程（含 AI 选值，弹浏览器）
     python antelope/run_all.py --skip-ai        # 跳过 AI 选值（复用现有 M 数据）
     python antelope/run_all.py --output xxx.xlsx   # 指定最终输出文件
+    python antelope/run_all.py --report out/report.json  # 额外生成填充报告（默认不生成）
 """
 
 import argparse
@@ -67,8 +68,10 @@ def build_steps(skip_ai: bool) -> list[tuple[str, list[str]]]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="antelope 全流程一键运行")
     parser.add_argument("--skip-ai", action="store_true", help="跳过 AI 网页选值（复用现有 M 数据）")
-    parser.add_argument("--output", default=os.path.join(zcfg.OUTPUTS_DIR, "fr_dress_filled.xlsm"),
-                        help="最终输出文件路径")
+    parser.add_argument("--output", default=zcfg.CFG_RUN["plan_output_file"],
+                        help="最终输出文件路径（默认取配置：outputs/<类别>_filled.xlsm）")
+    parser.add_argument("--report", default=None,
+                        help="填充报告 JSON 输出路径（默认不生成；传入路径才写报告）")
     args = parser.parse_args()
 
     steps = build_steps(args.skip_ai)
@@ -91,15 +94,16 @@ def main() -> None:
             sys.exit(1)
         print(f"[{i}/{len(steps)}] {name} OK")
 
-    # 最后一步：按 plan 填充产出
+    # 最后一步：按 plan 填充产出（默认不生成报告，--report 指定路径时才写）
     print("")
     print(f"[填充] 按 plan 填充模板副本 → {args.output}")
     fill_cmd = [
         sys.executable, "fill_from_plan.py",
         zcfg.CFG_FILL_PLAN["default_plan_json"],
         "-o", args.output,
-        "--report", os.path.join(zcfg.OUTPUTS_DIR, "fr_dress_report.json"),
     ]
+    if args.report:
+        fill_cmd += ["--report", args.report]
     result = subprocess.run(fill_cmd, cwd=BASE)
     if result.returncode != 0:
         print("填充失败，流程中止。")

@@ -27,7 +27,7 @@ import json
 import os
 import sys
 
-from common import zcfg
+from common import setup_utf8, zcfg
 
 # 过程 json（模板分析、列差异）在 intermediate 子目录下
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
@@ -91,6 +91,8 @@ def main():
                         help="输出 JSON 文件路径")
     args = parser.parse_args()
 
+    setup_utf8()
+
     completed_cols = load_columns(args.completed)
     blank_cols = load_columns(args.blank)
 
@@ -138,10 +140,10 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"completed: {len(completed_cols)} 列, blank: {len(blank_cols)} 列")
-    print(f"仅存在于 completed: {len(cols_only_in_completed)} 列 -> {cols_only_in_completed}")
-    print(f"仅存在于 blank:     {len(cols_only_in_blank)} 列 -> {cols_only_in_blank}")
-    print(f"结果已写入: {args.output}")
+    print(f"✅ 列差异：C(completed) {len(completed_cols)} 列 vs B(blank) {len(blank_cols)} 列")
+    print(f"   C−B 待填列 {len(cols_only_in_completed)} 列: {cols_only_in_completed}")
+    print(f"   B−C 多余列 {len(cols_only_in_blank)} 列: {cols_only_in_blank}")
+    print(f"📄 已写入: {args.output}")
 
 
 if __name__ == "__main__":

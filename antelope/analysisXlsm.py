@@ -332,9 +332,8 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"已输出 JSON: {out_path}")
-    print(f"统计：表头列共 {len(columns_json)} 个，其中 {n_matched} 个在 {name_valid} 中找到可选值。")
-    print("解析完成（未对原文件做任何修改）。")
+    print(f"✅ 已输出: {out_path}")
+    print(f"📊 表头 {len(columns_json)} 列，其中 {n_matched} 列在 {name_valid} 中找到可选值（未修改原文件）")
 
 
 if __name__ == "__main__":

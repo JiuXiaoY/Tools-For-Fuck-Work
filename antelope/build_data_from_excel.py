@@ -46,7 +46,7 @@ import sys
 import openpyxl
 from openpyxl.utils import column_index_from_string
 
-from common import load_groups, load_json, zcfg
+from common import load_groups, load_json, setup_utf8, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
@@ -172,7 +172,6 @@ def extract_data(wb, groups, col_mapping, sheet=None):
             for target in target_cols:
                 gdata[str(target)] = list(values)  # 同一份数据复制到多个目标列
         data[gname] = gdata
-        print(f"  [取数] {gname}: 行 {start_actual}..{end_actual} -> {len(gdata)} 个目标列")
     return data
 
 
@@ -190,7 +189,11 @@ def main():
                         help="数据源 excel 路径（默认 xlsm/.xlsx_dataSource，即数据源 A）")
     parser.add_argument("--sheet", default=None,
                         help="工作表名（默认只读第一个工作表 Sheet0；其他工作表忽略）")
+    parser.add_argument("--verbose", action="store_true",
+                        help="逐组打印目标列数明细")
     args = parser.parse_args()
+
+    setup_utf8()
 
     groups = load_groups(args.groups)
     sources = load_col_mapping(args.col_mapping)
@@ -220,12 +223,12 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"数据源: {args.source_excel}")
-    print(f"groups 共 {len(groups)} 组，列映射源列 {len(col_mapping)} 个")
-    for gname in groups:
-        cols = data.get(gname, {})
-        print(f"  {gname}: {len(cols)} 个目标列")
-    print(f"结果已写入: {args.output}")
+    total_cols = sum(len(v) for v in data.values())
+    print(f"✅ 取数完成：{len(groups)} 组，共 {total_cols} 个「组×列」（源列 {len(col_mapping)} 个）")
+    if args.verbose:
+        for gname in groups:
+            print(f"   {gname}: {len(data.get(gname, {}))} 个目标列")
+    print(f"📄 已写入: {args.output}")
 
 
 if __name__ == "__main__":

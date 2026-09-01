@@ -17,7 +17,7 @@
   - description        : 生成说明
   - source_file        : 数据源（来自 completed 分析 JSON 的 source_file，即完整模板 C）
   - template_file      : 待填充模板（来自 blank 分析 JSON 的 source_file，即基础模板 B）
-  - output_file        : 输出占位（默认 outputs/fr_shirt_filled.xlsm）
+  - output_file        : 输出占位（默认 outputs/{ACTIVE_CATEGORY}_filled.xlsm，取配置）
   - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json；
                          不同模板可能不同；读不到则报错，不做兜底）
   - col_scope          : only_in_completed 的全部列号
@@ -49,7 +49,7 @@ import json
 import os
 import sys
 
-from common import load_groups, load_json, zcfg
+from common import load_groups, load_json, setup_utf8, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # 过程 json（模板分析、列差异）在 intermediate 子目录下；最终 plan 输出到 fill_plan
@@ -65,7 +65,7 @@ DEFAULT_M_DATA = zcfg.DATA_SOURCE_M       # M：自定义数据来源（JSON）�
 DEFAULT_TEMPLATE_OUTPUT = zcfg.TEMPLATE_OUTPUT   # 产出模板（fill_from_plan 复制其副本填充）
 DEFAULT_MODE_CUSTOMISE = zcfg.CFG_INTERMEDIATE["mode_customise_json"]  # 人工维护：列 → 强制填充模式
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
-DEFAULT_PLAN_OUTPUT_FILE = os.path.join(zcfg.OUTPUTS_DIR, "fr_shirt_filled.xlsm")
+DEFAULT_PLAN_OUTPUT_FILE = zcfg.CFG_RUN["plan_output_file"]
 
 
 def load_data(path, col_scope, groups):
@@ -136,12 +136,13 @@ def load_m_data(path, groups):
 
 
 def merge_data(a_data, m_data):
-    """合并 A 取数(data.json) 与 M 数据，返回合并结果。
+    """合并 A 取数(data.json) 与 M 数据，返回 (合并结果, M 补充的「组×列」数)。
 
     合并规则（需求语义）：A 已有的列优先，M 只补「A 未映射到的」空缺列；
     M 值数组中的空串 "" 原样保留（参与 fill_from_plan 的 m 计数与模式判断）。
     """
     merged = {}
+    added_total = 0
     for gname in set(a_data) | set(m_data):
         a_cols = a_data.get(gname) or {}
         m_cols = m_data.get(gname) or {}
@@ -152,9 +153,8 @@ def merge_data(a_data, m_data):
                 cols[str(col)] = list(vals)
                 added += 1
         merged[str(gname)] = cols
-        if added:
-            print(f"  [M 合并] {gname}: 补充 {added} 列")
-    return merged
+        added_total += added
+    return merged, added_total
 
 
 def fill_uncovered_with_temp(data, groups, col_scope, temp_value="dataTemp"):
@@ -246,6 +246,8 @@ def main():
                         help="mode_customise 配置文件（{列号: 模式}，人工维护；默认 intermediate/<类别>/<类别>_mode_customise.json）")
     args = parser.parse_args()
 
+    setup_utf8()
+
     diff = load_json(args.diff)
     completed = load_json(args.completed)
     blank = load_json(args.blank)
@@ -257,20 +259,16 @@ def main():
     # ── M 数据合并（需求：剩余未映射列由 M 补充）──
     m_data = load_m_data(args.m_data, groups)
     if m_data:
-        print(f"M 数据来源: {args.m_data}（含 {len(m_data)} 个分组）")
-        data = merge_data(data, m_data)
+        data, m_added = merge_data(data, m_data)
+        print(f"✅ M 数据合并：{m_added} 个「组×列」由 M 补充（来源 {args.m_data}）")
     else:
-        print(f"M 数据来源缺失或为空（{args.m_data}），跳过 M 合并")
+        print(f"⚠️ M 数据缺失或为空（{args.m_data}），跳过 M 合并")
 
     # ── 未覆盖列兜底：统一填占位值 dataTemp（sequential 顺序写入）──
     temp_filled = fill_uncovered_with_temp(data, groups, col_scope)
-    if temp_filled:
-        print(f"[占位兜底] col_scope 中 {temp_filled} 个「组×列」未覆盖，统一填 \"dataTemp\"（按顺序写入）")
 
     # ── mode_customise：人工维护的 列 → 强制填充模式 ──
     mode_customise = load_mode_customise(args.mode_customise)
-    if mode_customise:
-        print(f"mode_customise（来源 {args.mode_customise}）: {mode_customise}")
 
     plan = build_plan(diff, completed, blank, args.output_file,
                       template_output=args.template_output,
@@ -282,11 +280,14 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(plan, f, ensure_ascii=False, indent=2)
 
-    print(f"col_scope 共 {len(plan['col_scope'])} 列: {plan['col_scope']}")
-    print(f"template_file: {plan['template_file']}")
-    print(f"groups 共 {len(plan['groups'])} 组: {plan['groups']}（来源 {args.groups}）")
-    print(f"data 已填充（A: {args.data} + M: {args.m_data}，均缺失则 col_scope 列填占位）")
-    print(f"结果已写入: {args.output}")
+    print(f"✅ plan 已生成: {args.output}")
+    print(f"   col_scope {len(plan['col_scope'])} 列: {plan['col_scope']}")
+    print(f"   groups {len(plan['groups'])} 组（来源 {args.groups}）")
+    print(f"   template_file: {plan['template_file']}")
+    if temp_filled:
+        print(f"⚠️ 未覆盖 {temp_filled} 个「组×列」→ 占位 dataTemp")
+    if mode_customise:
+        print(f"   mode_customise: {mode_customise}")
 
 
 if __name__ == "__main__":

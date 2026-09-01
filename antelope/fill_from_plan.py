@@ -131,6 +131,11 @@ def main():
         default=DEFAULT_STRICT_SCOPE,
         help="开启后: data 中出现的列若不在 col_scope 内则报错退出",
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="逐组逐列打印填充明细（默认只输出汇总与警告）",
+    )
     args = parser.parse_args()
 
     setup_utf8()
@@ -243,9 +248,10 @@ def main():
                     "note": note,
                 }
             )
-            print(
-                f"  {gname:8} 列{col:<4} 模式={mode:<13} 填={filled:<3} 条数={len(values)}  {note}"
-            )
+            if args.verbose:
+                print(
+                    f"   {gname:8} 列{col:<4} 模式={mode:<13} 填={filled:<3} 条数={len(values)}  {note}"
+                )
 
     # ---- 整行删除：清理多余的模板历史行 ----
     if max_filled_row >= data_start_row:
@@ -274,13 +280,15 @@ def main():
         "out_of_scope_skipped": out_of_scope,
     }
     print(f"\n✅ 已写出副本: {out_file}")
-    print(f"共填写 {total_filled} 个单元格，保留至第 {max_filled_row} 行。")
+    print(f"📊 共填写 {total_filled} 个单元格，保留至第 {max_filled_row} 行")
+    if out_of_scope:
+        print(f"⚠️ {len(out_of_scope)} 个「组×列」不在 col_scope 内已跳过: {out_of_scope[:5]}{' ...' if len(out_of_scope) > 5 else ''}")
 
     if args.report:
         Path(args.report).write_text(
             json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
         )
-        print(f"已写出报告: {args.report}")
+        print(f"📄 报告: {args.report}")
 
 
 def _default_output(template_file: str) -> str:

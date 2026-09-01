@@ -1,26 +1,31 @@
 # -*- coding: utf-8 -*-
 """
-ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网页版** 一次询问 AI 选值，
+ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网页版** 分批询问 AI 选值，
 更新 M 数据源 JSON。
 
 按 MISSING.md 的解决方案（类似 tools/title_optimize/deepseek_web.py 的网页自动化方式）：
-  - 未覆盖列中，completed.json 有可选值(choices)的列（如 17/126 领型、141 袖型、143 闭合）
-    → **一次对话问完所有列**：提示词里含 产品列表 + 每列的可选值，AI 按列分块输出，
-    每个产品每列选出 1 个值；
+  - 未覆盖列中，completed.json 有可选值(choices)的列
+    → 提示词里含 产品列表 + 每列的可选值，AI 按列分块输出，每个产品每列选出 1 个值；
+    每列的块标签直接用**原始表头**（归一化后），不转换语言；
+  - **分批询问**：产品按每批 BATCH_SIZE 条（默认 10，--batch-size 可调，0 = 全部一批；
+    最后一批按实际剩余条数）拆分，每批一个独立提示词/回答文件——避免一次问完所有产品
+    导致回答超长、超时或截断；
   - 每列每组只存 1 个值 → fill_from_plan 以 cycle 模式循环铺满整组；
   - 无可选值的列保持 dataTemp 占位不变。
 
-产物文件（ai_prompt/ 下只有 2 个）：
-  - attributes_all.txt          一次合并的提示词
-  - attributes_all_result.txt   AI 回答（存在则复用，跳过网页）
+产物文件（ai_prompt/ 下，每批 2 个）：
+  - attributes_batch01.txt / attributes_batch02.txt ...          各批提示词
+  - attributes_batch01_result.txt / attributes_batch02_result.txt ...
+    AI 回答（该批文件存在则复用该批，跳过网页）
 
-只有网页版（无 API）：playwright 打开 DeepSeek 网页发送提示词，读取回答解析写回。
+只有网页版（无 API）：playwright 打开 DeepSeek 网页逐批发送提示词，读取回答解析写回。
 登录态保存在 antelope/web_data/ + .deepseek_state.json（首次弹浏览器手动登录一次）。
 
 用法:
     python antelope/ai_pick_attributes.py                          # 网页自动化 + 写回
+    python antelope/ai_pick_attributes.py --batch-size 10          # 每批 10 条（默认）
     python antelope/ai_pick_attributes.py --products-file products.txt   # 用指定产品列表
-    python antelope/ai_pick_attributes.py --generate-only          # 只生成提示词文件，不发网页
+    python antelope/ai_pick_attributes.py --generate-only          # 只生成各批提示词文件，不发网页
     python antelope/ai_pick_attributes.py --source-excel x --m-data y
 """
 
@@ -36,6 +41,7 @@ import openpyxl
 
 from common import (
     load_ai_columns,
+    load_data_cols,
     load_groups,
     load_json,
     setup_utf8,
@@ -62,24 +68,61 @@ WEB_DATA_DIR = BASE / "web_data"            # 浏览器数据（登录态持久�
 STATE_FILE = BASE / ".deepseek_state.json"  # 登录态快照（复用）
 ASSISTANT_SEL = "div.ds-assistant-message-main-content"
 
-# ai_prompt 下固定 2 个文件：合并提示词 + 合并结果
-PROMPT_ALL_NAME = "attributes_all.txt"
-RESULT_ALL_NAME = "attributes_all_result.txt"
+# ── 分批询问 ──
+# 每批产品条数（最后一批按实际剩余）；0 = 全部一批（旧行为）
+BATCH_SIZE = 10
 
-# 法文表头 → 中文短标签（提示词里不显示列号，程序内部维护 col ↔ 标签 映射）
-HEADER_LABELS = {
-    "Style de col": "领型",
-    "Type de manches": "袖型",
-    "Type de fermeture": "闭合",
-}
+
+def batch_file_names(idx: int) -> tuple[str, str]:
+    """第 idx 批（1 起）的 提示词文件名 / 回答文件名。
+
+    例: idx=1 -> ("attributes_batch01.txt", "attributes_batch01_result.txt")
+    """
+    tag = f"batch{idx:02d}"
+    return f"attributes_{tag}.txt", f"attributes_{tag}_result.txt"
+
+
+def build_batches(products, batch_size: int) -> list[tuple[int, list]]:
+    """把产品列表按每批 batch_size 条拆分为 [(起始序号(0 起), 本批产品列表), ...]。
+
+    最后一批按实际剩余条数；batch_size <= 0 时视为全部一批。
+    """
+    if batch_size is None or batch_size <= 0:
+        batch_size = max(len(products), 1)
+    return [
+        (start, products[start : start + batch_size])
+        for start in range(0, len(products), batch_size)
+    ]
+
+
+def normalize_label(text: str, fold_case: bool = False) -> str:
+    """归一化标签文本，用于块头匹配与提示词展示。
+
+    模板表头里常带 \\xa0（不换行空格）、\\u2007、\\u202f 以及弯引号/全角标点，
+    AI 照抄时容易转成普通空格/半角，导致精确匹配失败、整块串列（如
+    'Artikeltyp\\xa0– Name' vs 'Artikeltyp – Name'）。这里统一：
+      1. 所有不可见空白（普通空格、\\xa0、\\u2007、\\u202f）→ 普通空格，并压缩、去首尾空白；
+      2. 弯引号/零宽空格 → ASCII 引号/删除；
+      3. fold_case=True 时再 casefold（解析端匹配用，容忍 AI 大小写差异）；
+      4. 生成提示词时用 fold_case=False，保留原始大小写便于 AI 照抄。
+    """
+    s = str(text)
+    s = re.sub(r"[\s\u00a0\u2007\u202f]+", " ", s).strip()
+    for a, b in (("\u2018", "'"), ("\u2019", "'"), ("\u201a", "'"),
+                 ("\u201c", '"'), ("\u201d", '"'), ("\u201e", '"'),
+                 ("\u200b", "")):
+        s = s.replace(a, b)
+    if fold_case:
+        s = s.casefold()
+    return s.strip()
 
 
 def make_labels(ai_cols) -> dict[int, str]:
-    """给每列分配简短中文标签；同名表头自动加序号（如 领型 / 领型2）。"""
+    """给每列分配标签：直接用原始表头（归一化后的原文），不转换；同名表头自动加序号（如 Style / Style2）。"""
     used: dict[str, int] = {}
     labels: dict[int, str] = {}
     for col, header, _ in ai_cols:
-        base = HEADER_LABELS.get(header, header)
+        base = normalize_label(header)
         n = used.get(base, 0) + 1
         used[base] = n
         labels[col] = f"{base}{n}" if n > 1 else base
@@ -119,10 +162,10 @@ def load_products_from_file(path):
 def build_prompt_all(products, ai_cols, labels):
     """构造一次合并的提示词：产品列表 + 各组可选值（编号形式，AI 输出编号杜绝造词）。"""
     lines = [
-        "请为以下每个产品，从各组可选值中选出最合适的 1 个值。",
+        "请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。",
         "",
         "【规则】",
-        "1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个。",
+        "1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个",
         "2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。",
         "",
         "【产品列表】（每组一个产品，编号 1~N）：",
@@ -138,12 +181,12 @@ def build_prompt_all(products, ai_cols, labels):
         lines.append(f"{labels[col]}: {numbered}")
     lines += [
         "",
-        "【输出格式】按组名分块输出，每块内每行一个产品（产品编号+冒号+选项编号），不要任何解释：",
-        f"{labels[ai_cols[0][0]]}:",
-        "1: <选项编号>",
-        "2: <选项编号>",
-        "...",
+        "【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），",
+        "块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：",
     ]
+    for c, _, _ in ai_cols:
+        lines.append(f"{labels[c]}:")
+    lines += ["1: <选项编号>", "2: <选项编号>", "..."]
     return "\n".join(lines)
 
 
@@ -161,22 +204,33 @@ def parse_all(text, ai_cols, n_products, labels):
     choices_by_col = {col: [str(c) for c in choices] for col, _, choices in ai_cols}
     norm = {col: {str(c).strip().casefold(): str(c).strip() for c in choices}
             for col, _, choices in ai_cols}
-    label_to_col = {labels[col]: col for col, _, _ in ai_cols}
+    # 块头匹配：两侧都做归一化（\xa0/空白/引号/大小写），避免 AI 转写差异导致整块串列
+    label_to_col = {normalize_label(labels[col], fold_case=True): col for col, _, _ in ai_cols}
     result: dict[int, dict[int, str]] = {}
     rejected: list[tuple[int, str]] = []   # (col, 被拒值)
 
     cur_col = None
+    unknown_blocks: list[str] = []   # 回答中出现但未匹配任何列标签的块头（疑似改写/丢列）
     for raw in str(text or "").splitlines():
-        line = raw.strip().rstrip(":：").strip()
+        raw = raw.strip()
+        if not raw:
+            continue
+        line = raw.rstrip(":：").strip()
         if not line:
             continue
-        if line in label_to_col:          # 块头（短标签）
-            cur_col = label_to_col[line]
-            continue
-        if cur_col is None:
+        key = normalize_label(line, fold_case=True)
+        if key in label_to_col:          # 块头（标签，归一化后匹配）
+            cur_col = label_to_col[key]
             continue
         ml = _LINE_RE.match(line)
-        if not ml:
+        if ml is None:
+            # 非值行：若以冒号结尾且形似标签（含拉丁字母、短文本）→ 未识别块头，整块会丢，必须告警
+            if raw.endswith(":") or raw.endswith("："):
+                prefix = raw.rstrip(":：").strip()
+                if prefix and len(prefix) <= 50 and re.search(r"[A-Za-z\u00c0-\u024f]", prefix):
+                    unknown_blocks.append(raw)
+            continue
+        if cur_col is None:
             continue
         no = int(ml.group(1))
         val = ml.group(2).strip()
@@ -200,21 +254,29 @@ def parse_all(text, ai_cols, n_products, labels):
             continue
         result.setdefault(cur_col, {})[no] = matched
 
+    if unknown_blocks:
+        print(f"  ⚠️ 回答中出现 {len(unknown_blocks)} 个未识别块头（未匹配任何列，整块将丢失）: {unknown_blocks}")
     if rejected:
         print(f"  ⚠️ 拒绝 {len(rejected)} 个不在可选值内的值（保持占位）: {rejected}")
     return result
 
 
-def update_m_data(m_data, groups, col, parsed, placeholder):
+def update_m_data(m_data, groups, col, parsed, placeholder, covered=None):
     """把 AI 选值写入 M 数据（每组 1 个值 → cycle 铺满）。
 
-    该列该组没有合法值（缺失/被拒）→ **覆盖为占位**（不留旧值残留）。
+    covered: 本批覆盖的绝对组序号集合（1 起）。分批调用时**只处理这些组**，
+    其余组保持原值不动——否则后跑的批次会把前面批次已写入的真实值覆盖回占位。
+    covered 为 None 时（单批/旧行为）处理全部组。
+
+    本批覆盖但无合法值（AI 缺失/被拒）→ **覆盖为占位**（不留旧值残留）。
     """
     updated = 0
     kept = 0
     for i, (gname, spec) in enumerate((groups or {}).items(), 1):
         if str(spec).strip().count("&") != 1:
             continue
+        if covered is not None and i not in covered:
+            continue                       # 本批未覆盖的组：保持原值，不动
         gdata = m_data.setdefault(str(gname), {})
         val = parsed.get(i)
         if val:
@@ -272,8 +334,37 @@ def extract_last_response(page, previous_text: str = "", timeout: int = 300) -> 
     raise RuntimeError("No new assistant response found")
 
 
+def validate_no_placeholder(m_data, ai_cols, labels, placeholder):
+    """校验：有可选值的列不允许残留占位（dataTemp）。
+
+    任一 AI 列仍有组是占位（本批回答缺失/块头未识别等）→ 逐列列出残留组数，
+    便于补齐对应批次回答后重跑。
+    """
+    bad = {}
+    for col, header, _ in ai_cols:
+        n_ph = 0
+        for gdata in m_data.values():
+            v = (gdata or {}).get(str(col))
+            if v is None:
+                n_ph += 1
+            elif all(str(x) == placeholder for x in v):
+                n_ph += 1
+        if n_ph:
+            bad[col] = n_ph
+    if bad:
+        print("⚠️ 仍有可选值列残留占位（请补齐对应批次回答后重跑本程序）:")
+        for col, n in bad.items():
+            print(f"   列{col} ({labels.get(col, '')}): {n} 组仍为占位")
+    else:
+        print("✅ 校验通过：所有有可选值列均无占位")
+
+
 def web_ask_all(ai_cols, products, args, m_data, groups):
-    """用 DeepSeek 网页一次对话询问所有列，解析后更新 M JSON。"""
+    """用 DeepSeek 网页分批询问所有产品（每批 BATCH_SIZE 条），解析后更新 M JSON。
+
+    每批一个提示词/回答文件；该批回答文件已存在则直接复用，跳过网页。
+    需要网页询问的批次共用一次浏览器会话，逐批发送。
+    """
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -286,22 +377,43 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
     WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     labels = make_labels(ai_cols)
-    prompt = build_prompt_all(products, ai_cols, labels)
-    p_path = os.path.join(args.prompt_dir, PROMPT_ALL_NAME)
-    r_path = os.path.join(args.prompt_dir, RESULT_ALL_NAME)
-    Path(p_path).write_text(prompt, encoding="utf-8")
-    print(f"合并提示词已生成: {p_path}（标签: {labels}）")
+    batches = build_batches(products, args.batch_size)
+    print(f"产品共 {len(products)} 个，按每批 {args.batch_size if args.batch_size and args.batch_size > 0 else '全部'} 个"
+          f"分为 {len(batches)} 批（最后一批 {len(batches[-1][1])} 个）")
 
-    # 已有 result → 直接复用，跳过网页
-    if os.path.exists(r_path):
-        text = Path(r_path).read_text(encoding="utf-8")
-        parsed = parse_all(text, ai_cols, len(products), labels)
-        print(f"复用已有回答，解析到列: {sorted(parsed)}")
-        for col, _, _ in ai_cols:
-            updated, kept = update_m_data(m_data, groups, col, parsed.get(col, {}), args.placeholder)
-            print(f"  列{col}: 更新 {updated} 组，保留占位 {kept} 组")
+    # 先写出各批提示词并检查回答文件：已存在的批直接复用，其余记入 todo 待网页询问
+    todo = []
+    for b, (start, batch) in enumerate(batches, 1):
+        p_name, r_name = batch_file_names(b)
+        p_path = os.path.join(args.prompt_dir, p_name)
+        r_path = os.path.join(args.prompt_dir, r_name)
+        prompt = build_prompt_all(batch, ai_cols, labels)
+        Path(p_path).write_text(prompt, encoding="utf-8")
+        print(f"📄 提示词: {p_name}（产品 {start + 1}~{start + len(batch)}）")
+        covered = set(range(start + 1, start + len(batch) + 1))  # 本批覆盖的绝对组序号
+
+        if os.path.exists(r_path):
+            text = Path(r_path).read_text(encoding="utf-8")
+            parsed = parse_all(text, ai_cols, len(batch), labels)
+            total_u = total_k = 0
+            for col, _, _ in ai_cols:
+                abs_parsed = {start + j: v for j, v in parsed.get(col, {}).items()}
+                u, k = update_m_data(m_data, groups, col, abs_parsed, args.placeholder, covered=covered)
+                total_u += u
+                total_k += k
+            missing = [f"{c}({labels[c]})" for c, _, _ in ai_cols if not parsed.get(c)]
+            if missing:
+                print(f"  ⚠️ 本批列 {missing} 未解析到任何值，将保持占位（请检查对应块头）")
+            print(f"✅ 批次 {b}/{len(batches)}（复用 {r_name}）：写入 {total_u} 个「组×列」，占位 {total_k}")
+        else:
+            todo.append((b, start, batch, p_path, r_path, prompt))
+
+    if not todo:
+        print("所有批次均已有回答结果，无需打开网页。")
+        validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
         return
 
+    # 需要网页询问的批次：一次性打开浏览器，逐批发送
     with sync_playwright() as p:
         context = p.chromium.launch_persistent_context(
             user_data_dir=str(WEB_DATA_DIR),
@@ -333,35 +445,46 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
         else:
             print(f"复用登录态: {STATE_FILE.name}")
 
-        page.wait_for_selector("textarea, [contenteditable]", timeout=30000)
-        time.sleep(2)
-        print("DeepSeek 对话页就绪")
+        for b, start, batch, p_path, r_path, prompt in todo:
+            covered = set(range(start + 1, start + len(batch) + 1))  # 本批覆盖的绝对组序号
+            print(f"--- 批次 {b}/{len(batches)}：产品 {start + 1}~{start + len(batch)}（共 {len(batch)} 个）---")
+            page.wait_for_selector("textarea, [contenteditable]", timeout=30000)
+            time.sleep(2)
+            print("DeepSeek 对话页就绪")
 
-        new_chat_btn = page.locator("text=New Chat").first
-        if new_chat_btn.is_visible():
-            new_chat_btn.click()
+            new_chat_btn = page.locator("text=New Chat").first
+            if new_chat_btn.is_visible():
+                new_chat_btn.click()
+                time.sleep(1)
+
+            textarea = page.locator("textarea").first
+            textarea.fill(prompt)
             time.sleep(1)
 
-        textarea = page.locator("textarea").first
-        textarea.fill(prompt)
-        time.sleep(1)
+            prev_text = last_assistant_text(page)
+            page.keyboard.press("Enter")
+            print("已发送，等待 AI 回答...")
+            time.sleep(15)
 
-        prev_text = last_assistant_text(page)
-        page.keyboard.press("Enter")
-        print("已发送（一次询问所有列），等待 AI 回答...")
-        time.sleep(15)
+            answer = extract_last_response(page, previous_text=prev_text)
+            Path(r_path).write_text(answer, encoding="utf-8")
+            print(f"📄 回答已保存: {r_name}")
 
-        answer = extract_last_response(page, previous_text=prev_text)
-        Path(r_path).write_text(answer, encoding="utf-8")
-        print(f"回答已保存: {r_path}")
+            parsed = parse_all(answer, ai_cols, len(batch), labels)
+            total_u = total_k = 0
+            for col, _, _ in ai_cols:
+                abs_parsed = {start + j: v for j, v in parsed.get(col, {}).items()}
+                u, k = update_m_data(m_data, groups, col, abs_parsed, args.placeholder, covered=covered)
+                total_u += u
+                total_k += k
+            missing = [f"{c}({labels[c]})" for c, _, _ in ai_cols if not parsed.get(c)]
+            if missing:
+                print(f"  ⚠️ 本批列 {missing} 未解析到任何值，将保持占位（请检查对应块头）")
+            print(f"✅ 批次 {b}/{len(batches)}（网页询问）：写入 {total_u} 个「组×列」，占位 {total_k}")
 
         context.close()
 
-    parsed = parse_all(answer, ai_cols, len(products), labels)
-    print(f"解析到列: {sorted(parsed)}")
-    for col, _, _ in ai_cols:
-        updated, kept = update_m_data(m_data, groups, col, parsed.get(col, {}), args.placeholder)
-        print(f"  列{col}: 更新 {updated} 组，保留占位 {kept} 组")
+    validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
 
 
 def main():
@@ -375,10 +498,13 @@ def main():
     parser.add_argument("--source-excel", default=DEFAULT_SOURCE_EXCEL, help="数据源 A(.xlsx)，无 --products-file 时用它提取产品列表")
     parser.add_argument("--products-file", default=None, help="产品列表文件（每行一个产品）；缺省从数据源 A 提取")
     parser.add_argument("--m-data", default=DEFAULT_M_DATA, help="M JSON 路径（读占位/写结果）")
-    parser.add_argument("--prompt-dir", default=DEFAULT_PROMPT_DIR, help="提示词/结果文件目录（只放 2 个文件）")
+    parser.add_argument("--prompt-dir", default=DEFAULT_PROMPT_DIR,
+                        help="提示词/结果文件目录（每批 2 个文件：attributes_batchNN.txt + _result.txt）")
     parser.add_argument("--placeholder", default="dataTemp", help="占位值")
+    parser.add_argument("--batch-size", type=int, default=BATCH_SIZE,
+                        help="每批询问的产品条数（默认 10；0 = 全部一批；最后一批按实际剩余）")
     parser.add_argument("--generate-only", action="store_true",
-                        help="只生成合并提示词文件，不打开网页（手动喂 AI，回答存 result 文件后重跑写回）")
+                        help="只生成各批提示词文件，不打开网页（手动喂 AI，回答存对应 _result.txt 后重跑写回）")
     args = parser.parse_args()
 
     setup_utf8()
@@ -389,6 +515,20 @@ def main():
         sys.exit(1)
 
     ai_cols = load_ai_columns(args.completed, uncovered_cols(args.diff, args.data))
+
+    # 识别核对：completed 里有可选值、但被 A 覆盖（不进 AI，由 A 数据填充）的列，列出便于人工确认
+    try:
+        comp_cols = {c["col"]: c for c in load_json(args.completed).get("columns", [])}
+        a_cols = load_data_cols(args.data)
+        skipped = [
+            (c["col"], c.get("header"))
+            for c in comp_cols.values()
+            if (c.get("choices") or []) and str(c["col"]) in a_cols
+        ]
+        if skipped:
+            print(f"ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: {skipped}")
+    except Exception:
+        pass  # 诊断信息失败不影响主流程
 
     if not ai_cols:
         print("未覆盖列中没有找到有可选值(choices)的列，无需 AI 选值。")
@@ -402,7 +542,10 @@ def main():
         products = build_product_list_from_excel(args.source_excel, groups)
         print(f"产品列表（数据源 A Sheet0 提取）：{len(products)} 个")
 
-    print(f"AI 选值列：{[c[0] for c in ai_cols]}（一次对话合并询问）")
+    print("🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 "
+          f"{args.batch_size if args.batch_size and args.batch_size > 0 else '全部'} 条）:")
+    for col, header, choices in ai_cols:
+        print(f"   {col}: {header}（{len(choices)} 个可选值）")
 
     # 读现有 M JSON
     m_data = {}
@@ -411,10 +554,14 @@ def main():
 
     if args.generate_only:
         os.makedirs(args.prompt_dir, exist_ok=True)
-        p_path = os.path.join(args.prompt_dir, PROMPT_ALL_NAME)
         labels = make_labels(ai_cols)
-        Path(p_path).write_text(build_prompt_all(products, ai_cols, labels), encoding="utf-8")
-        print(f"合并提示词已生成: {p_path}（标签: {labels}）")
+        batches = build_batches(products, args.batch_size)
+        for b, (start, batch) in enumerate(batches, 1):
+            p_name, _ = batch_file_names(b)
+            p_path = os.path.join(args.prompt_dir, p_name)
+            Path(p_path).write_text(build_prompt_all(batch, ai_cols, labels), encoding="utf-8")
+            print(f"📄 提示词: {p_name}（产品 {start + 1}~{start + len(batch)}）")
+        print(f"✅ 共 {len(batches)} 批提示词已生成；把各批喂给 AI，回答存为对应 _result.txt 后重跑本程序写回。")
         return
 
     web_ask_all(ai_cols, products, args, m_data, groups)
