@@ -25,7 +25,7 @@ import os
 
 # ─────────────────────────── 当前类别 ───────────────────────────
 # 国家_类别，如 "fr_dress"；中间产物与 plan 命名以此为基础
-ACTIVE_CATEGORY = "fr_pants"
+ACTIVE_CATEGORY = "de_dress"
 
 # ⚠️ 中间文件写入目录名（如 "fr_dress"）：即 intermediate/ 下的子目录名
 #    目录存在则直接写入，不存在则自动新建（各脚本写入时均自动 mkdir）
@@ -70,13 +70,13 @@ def _cat(name):
 # ─────────────────────── 数据源文件（按 11409 需求统一角色命名）───────────────────────
 # ⚠️⚠️⚠️ 每次批次文件名不一致，以下 5 个路径需按本批次实际文件手动修改 ⚠️⚠️⚠️
 #   A —— .xlsx 数据文件：提供「分组锚点(第1列有色单元格) + 部分待填列数据(经 col_mapping 取数)」
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "8.27v1_fr.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "8.26v1_de.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
 #   B —— .xlsm 基础模板：已填部分数据列（analysisXlsm 分析 → blank.json，即「已填列」）
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")                     # ← 本批次 B（角色名 .xlsm_template_base）
 #   C —— .xlsm 完整模板：完整列即产出参照（analysisXlsm 分析 → completed.json，即「完整列」）
 TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")                 # ← 本批次 C（角色名 .xlsm_template_complete）
 #   产出模板：fill_from_plan 复制此文件作副本并填充（填完自动删多余数据行）
-TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "pants_template_Eva.xlsm")  # ← 本批次产出模板
+TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "dress_template_damen.xlsm")  # ← 本批次产出模板
 #   M —— 自定义数据来源(JSON)：补充 A 映射未覆盖到的待填列数据
 #        由 build_m_data.py 生成到 中间产物目录 intermediate/<INTERMEDIATE_DIR_NAME>/ 下
 DATA_SOURCE_M = os.path.join(CATEGORY_INTERMEDIATE_DIR, ".xlsx_dataSource_m.json")  # M（JSON 格式）

@@ -254,7 +254,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -275,10 +275,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "dataTemp"
+        "Jeans"
       ]
     },
     "group_2": {
@@ -427,10 +427,10 @@
         "Cargo"
       ],
       "70": [
-        "Pantalon"
+        "Pantalon d'utilité professionnelle"
       ],
       "78": [
-        "Fluide"
+        "Lâche"
       ],
       "82": [
         "Uni"
@@ -439,10 +439,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Cargo"
       ]
     },
     "group_3": {
@@ -819,10 +819,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Pantalon chino"
       ]
     },
     "group_4": {
@@ -947,7 +947,7 @@
         "Respirable"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
         "Jogging"
@@ -965,10 +965,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Pantalon de survêtement"
       ]
     },
     "group_5": {
@@ -1072,7 +1072,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -1093,10 +1093,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "dataTemp"
+        "Jeans"
       ]
     },
     "group_6": {
@@ -1560,7 +1560,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -1569,7 +1569,7 @@
         "Cargo"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Pantalon d'utilité professionnelle"
       ],
       "78": [
         "Lâche"
@@ -1581,10 +1581,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Cargo"
       ]
     },
     "group_7": {
@@ -2204,7 +2204,7 @@
         "Anti-boulochage"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
         "Jogging"
@@ -2222,10 +2222,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Pantalon de jogging"
       ]
     },
     "group_8": {
@@ -2311,7 +2311,7 @@
         "Cargo"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Pantalon d'utilité professionnelle"
       ],
       "78": [
         "Droite"
@@ -2323,10 +2323,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "dataTemp"
+        "Cargo"
       ]
     },
     "group_9": {
@@ -2415,13 +2415,13 @@
         "Anti-boulochage"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
-        "Classique"
+        "Rustique"
       ],
       "70": [
-        "Pantalon"
+        "Pantalon décontracté"
       ],
       "78": [
         "Droite"
@@ -2433,10 +2433,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "dataTemp"
+        "Pantalon de survêtement"
       ]
     },
     "group_10": {
@@ -3236,7 +3236,7 @@
         "Anti-boulochage"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
         "Jogging"
@@ -3254,10 +3254,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "dataTemp"
+        "Pantalon de survêtement"
       ]
     },
     "group_11": {
@@ -3343,7 +3343,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -3364,7 +3364,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de jogging"
@@ -3831,13 +3831,13 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant au plissement"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Classique"
+        "Palazzo"
       ],
       "70": [
         "Pantalon décontracté"
@@ -3852,7 +3852,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Mous"
@@ -4103,7 +4103,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -4124,7 +4124,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de jogging"
@@ -4429,13 +4429,13 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-décoloration"
+        "Respirable"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Rétro"
+        "Classique"
       ],
       "70": [
         "Pantalon décontracté"
@@ -4444,13 +4444,13 @@
         "Droite"
       ],
       "82": [
-        "Sergé"
+        "Uni"
       ],
       "87": [
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon chino"
@@ -4926,7 +4926,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -4947,10 +4947,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_16": {
@@ -5684,13 +5684,13 @@
         "dataTemp"
       ],
       "45": [
-        "Respirable"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Jogging"
+        "Palazzo"
       ],
       "70": [
         "Pantalon de survêtement"
@@ -5705,7 +5705,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de survêtement"
@@ -5848,7 +5848,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -5860,7 +5860,7 @@
         "Pantalon de randonnée"
       ],
       "78": [
-        "Surdimensionnée"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -5869,7 +5869,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Cargo"
@@ -6822,7 +6822,7 @@
         "dataTemp"
       ],
       "45": [
-        "Respirable"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
@@ -6843,7 +6843,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de jogging"
@@ -7526,10 +7526,10 @@
         "Uni"
       ],
       "87": [
-        "Taille haute"
+        "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Cargo"
@@ -7624,13 +7624,13 @@
         "Fluide"
       ],
       "82": [
-        "Satin"
+        "Uni"
       ],
       "87": [
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Mous"
@@ -8157,7 +8157,7 @@
         "Décontracté"
       ],
       "51": [
-        "Palazzo"
+        "Jogging"
       ],
       "70": [
         "Pantalon de survêtement"
@@ -8172,10 +8172,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_22": {
@@ -8651,7 +8651,7 @@
         "Pantalon de survêtement"
       ],
       "78": [
-        "Droite"
+        "Lâche"
       ],
       "82": [
         "Gaufré"
@@ -8660,10 +8660,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_23": {
@@ -8881,7 +8881,7 @@
         "Décontracté"
       ],
       "51": [
-        "Rétro"
+        "Jogging"
       ],
       "70": [
         "Pantalon de survêtement"
@@ -8896,10 +8896,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_24": {
@@ -8988,7 +8988,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -9239,7 +9239,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -9260,7 +9260,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -9451,7 +9451,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -9558,7 +9558,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -9579,7 +9579,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -9704,7 +9704,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -9725,7 +9725,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -9901,22 +9901,22 @@
         "Décontracté"
       ],
       "51": [
-        "Palazzo"
+        "Moderne"
       ],
       "70": [
         "Pantalon décontracté"
       ],
       "78": [
-        "Fluide"
+        "Lâche"
       ],
       "82": [
-        "Satin"
+        "Uni"
       ],
       "87": [
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Mous"
@@ -10065,22 +10065,22 @@
         "Décontracté"
       ],
       "51": [
-        "Palazzo"
+        "Classique"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Pantalon de costume"
       ],
       "78": [
-        "Fluide"
+        "Lâche"
       ],
       "82": [
-        "Satin"
+        "Uni"
       ],
       "87": [
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Mous"
@@ -10631,10 +10631,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Mous"
+        "Pantalon de jogging"
       ]
     },
     "group_32": {
@@ -10777,7 +10777,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -11406,7 +11406,7 @@
         "Jogging"
       ],
       "70": [
-        "Leggings"
+        "Pantalon de yoga"
       ],
       "78": [
         "Skinny"
@@ -11418,10 +11418,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Leggings"
+        "Pantalon de yoga"
       ]
     },
     "group_34": {
@@ -11597,7 +11597,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -11618,7 +11618,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -11809,10 +11809,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Mous"
+        "Pantalon de jogging"
       ]
     },
     "group_36": {
@@ -11952,7 +11952,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -11964,7 +11964,7 @@
         "Jeans"
       ],
       "78": [
-        "Slim"
+        "Régulière"
       ],
       "82": [
         "Sergé"
@@ -11973,7 +11973,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -12104,10 +12104,10 @@
         "Confort"
       ],
       "51": [
-        "Boyfriend"
+        "Jogging"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Pantalon de survêtement"
       ],
       "78": [
         "Droite"
@@ -12119,10 +12119,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de jogging"
+        "Pantalon de survêtement"
       ]
     },
     "group_38": {
@@ -12199,7 +12199,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -12220,7 +12220,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -12342,22 +12342,22 @@
         "Décontracté"
       ],
       "51": [
-        "Moderne"
+        "Palazzo"
       ],
       "70": [
         "Pantalon décontracté"
       ],
       "78": [
-        "Fluide"
+        "Surdimensionnée"
       ],
       "82": [
         "Uni"
       ],
       "87": [
-        "Taille haute"
+        "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Mous"
@@ -12440,7 +12440,7 @@
         "Pantalon d'utilité professionnelle"
       ],
       "78": [
-        "Surdimensionnée"
+        "Lâche"
       ],
       "82": [
         "Côtes"
@@ -12449,7 +12449,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Cargo"
@@ -12700,7 +12700,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant au plissement"
+        "Anti-statique"
       ],
       "50": [
         "Décontracté"
@@ -12715,16 +12715,16 @@
         "Droite"
       ],
       "82": [
-        "Uni"
+        "Satin"
       ],
       "87": [
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Pantalon chino"
+        "Mous"
       ]
     },
     "group_42": {
@@ -13188,7 +13188,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Résistant à l'abrasion"
       ],
       "50": [
         "Décontracté"
@@ -13200,7 +13200,7 @@
         "Pantalon de survêtement"
       ],
       "78": [
-        "Droite"
+        "Lâche"
       ],
       "82": [
         "Uni"
@@ -13209,7 +13209,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Cargo"
@@ -13694,7 +13694,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Résistant à l'abrasion"
       ],
       "50": [
         "Décontracté"
@@ -13715,7 +13715,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Cargo"
@@ -13816,7 +13816,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -14301,19 +14301,19 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Jogging"
+        "Moderne"
       ],
       "70": [
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -14322,10 +14322,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_46": {
@@ -14807,19 +14807,19 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Jogging"
+        "Moderne"
       ],
       "70": [
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -14828,10 +14828,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_47": {
@@ -15064,7 +15064,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -15285,13 +15285,13 @@
         "Décontracté"
       ],
       "51": [
-        "Moderne"
+        "Bohème"
       ],
       "70": [
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Surdimensionnée"
       ],
       "82": [
         "Uni"
@@ -15300,10 +15300,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_49": {
@@ -15656,25 +15656,25 @@
         "Décontracté"
       ],
       "51": [
-        "Palazzo"
+        "Moderne"
       ],
       "70": [
-        "Pantalon de survêtement"
+        "Pantalon décontracté"
       ],
       "78": [
-        "Lâche"
+        "Surdimensionnée"
       ],
       "82": [
         "Uni"
       ],
       "87": [
-        "Taille mi-haute"
+        "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_50": {
@@ -15841,19 +15841,19 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Extensible"
       ],
       "50": [
         "Décontracté"
       ],
       "51": [
-        "Jogging"
+        "Moderne"
       ],
       "70": [
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -15862,10 +15862,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_51": {
@@ -16143,10 +16143,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_52": {
@@ -16628,7 +16628,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Réglable"
       ],
       "50": [
         "Décontracté"
@@ -16640,7 +16640,7 @@
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -16649,10 +16649,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_53": {
@@ -17134,7 +17134,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Réglable"
       ],
       "50": [
         "Décontracté"
@@ -17155,10 +17155,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_54": {
@@ -17238,13 +17238,13 @@
         "Résistant au plissement"
       ],
       "50": [
-        "Décontracté"
+        "D'affaires décontractée"
       ],
       "51": [
         "Classique"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Pantalon d'affaires décontracté"
       ],
       "78": [
         "Slim"
@@ -17256,10 +17256,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Pantalon chino"
+        "Mous"
       ]
     },
     "group_55": {
@@ -17435,7 +17435,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Anti-décoloration"
       ],
       "50": [
         "Décontracté"
@@ -17447,7 +17447,7 @@
         "Jeans"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Sergé"
@@ -17456,7 +17456,7 @@
         "Taille basse"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -17878,7 +17878,7 @@
         "Rétro"
       ],
       "70": [
-        "Pantalon décontracté"
+        "Velours côtelés"
       ],
       "78": [
         "Lâche"
@@ -17890,10 +17890,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Mous"
+        "Pantalon chino"
       ]
     },
     "group_57": {
@@ -18333,7 +18333,7 @@
         "Résistant au plissement"
       ],
       "50": [
-        "Décontracté"
+        "D'affaires décontractée"
       ],
       "51": [
         "Classique"
@@ -18342,7 +18342,7 @@
         "Pantalon de costume"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -18351,10 +18351,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Mous"
+        "Pantalon chino"
       ]
     },
     "group_58": {
@@ -18461,16 +18461,16 @@
         "Jeans"
       ],
       "78": [
-        "Lâche"
+        "Surdimensionnée"
       ],
       "82": [
         "Sergé"
       ],
       "87": [
-        "Taille haute"
+        "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -18832,7 +18832,7 @@
         "Anti-boulochage"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
         "Jogging"
@@ -18850,10 +18850,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Pantalon de jogging"
       ]
     },
     "group_60": {
@@ -19257,7 +19257,7 @@
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Uni"
@@ -19266,10 +19266,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_61": {
@@ -19328,7 +19328,7 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Résistant au plissement"
       ],
       "50": [
         "Décontracté"
@@ -19349,7 +19349,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -19540,16 +19540,16 @@
         "Pantalon de survêtement"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
-        "Uni"
+        "Gaufré"
       ],
       "87": [
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de survêtement"
@@ -19620,7 +19620,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-boulochage"
+        "Anti-statique"
       ],
       "50": [
         "Décontracté"
@@ -19641,7 +19641,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Pantalon de survêtement"
@@ -19823,7 +19823,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -20311,10 +20311,10 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
-        "Pantalon chino"
+        "Mous"
       ]
     },
     "group_66": {
@@ -20562,19 +20562,19 @@
         "dataTemp"
       ],
       "45": [
-        "Résistant à l'abrasion"
+        "Résistant au plissement"
       ],
       "50": [
-        "Décontracté"
+        "D'affaires décontractée"
       ],
       "51": [
-        "Rétro"
+        "Palazzo"
       ],
       "70": [
         "Jeans"
       ],
       "78": [
-        "Lâche"
+        "Fluide"
       ],
       "82": [
         "Sergé"
@@ -20583,7 +20583,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Jeans"
@@ -21296,7 +21296,7 @@
         "Résistant au plissement"
       ],
       "50": [
-        "Décontracté"
+        "D'affaires décontractée"
       ],
       "51": [
         "Classique"
@@ -21305,7 +21305,7 @@
         "Pantalon de costume"
       ],
       "78": [
-        "Fluide"
+        "Droite"
       ],
       "82": [
         "Uni"
@@ -21314,7 +21314,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Bouton"
       ],
       "116": [
         "Pantalon chino"
@@ -21394,7 +21394,7 @@
         "dataTemp"
       ],
       "45": [
-        "Anti-décoloration"
+        "Résistant à la tache"
       ],
       "50": [
         "Décontracté"
@@ -21415,7 +21415,7 @@
         "Taille haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
         "Mous"
@@ -21633,13 +21633,13 @@
         "Anti-boulochage"
       ],
       "50": [
-        "Décontracté"
+        "Confort"
       ],
       "51": [
-        "Jogging"
+        "Palazzo"
       ],
       "70": [
-        "Pantalon de survêtement"
+        "Pantalon décontracté"
       ],
       "78": [
         "Fluide"
@@ -21651,10 +21651,10 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Fermeture élastique"
       ],
       "116": [
-        "Pantalon de survêtement"
+        "Mous"
       ]
     },
     "group_70": {
@@ -21833,7 +21833,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de survêtement"
@@ -22780,7 +22780,7 @@
         "Taille mi-haute"
       ],
       "114": [
-        "dataTemp"
+        "Cordon de serrage"
       ],
       "116": [
         "Pantalon de jogging"

@@ -91,20 +91,6 @@
       "reserve_mark": null
     },
     {
-      "col": 9,
-      "header": "Markenname",
-      "attribute": "brand[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-      "matched": true,
-      "field": "Markenname - [ DRESS ]",
-      "choices": [
-        "YAPAZULU"
-      ],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
       "col": 10,
       "header": "Art der Produkt-ID",
       "attribute": "amzn1.volt.ca.product_id_type",
@@ -130,21 +116,12 @@
       "matched": true,
       "field": "Empfohlene Stöbern-Kategorie - [ DRESS ]",
       "choices": [
-        "Fashion > Damen > Bekleidung > Kleider (1981721031)",
-        "Fashion > Damen > Bekleidung > Kleider > Cocktail (13633701031)",
-        "Fashion > Damen > Bekleidung > Kleider > Brautkleider (1981570031)",
-        "Fashion > Damen > Bekleidung > Kleider > Freizeit (13633700031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Mädchen > Dirndl & Dirndl-Sets (1981535031)",
-        "Fashion > Damen > Bekleidung > Kleider > Party (13633702031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten (1981533031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Damen > Dirndl (1981550031)",
-        "Fashion > Damen > Bekleidung > Kleider > Abendkleider (13633703031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Damen (1981547031)",
         "Drogerie & Körperpflege > Erotik > Leder & Latex > Frauen > Kleider (11633347031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung (1981520031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Indische Bekleidung > Damen (1981527031)",
+        "Fashion > Damen > Bekleidung > Kleider > Cocktail (13633701031)",
         "Fashion > Mädchen > Bekleidung > Kleider (1981246031)",
-        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Indische Bekleidung (1981521031)"
+        "Fashion > Damen > Bekleidung > Kleider > Freizeit (13633700031)",
+        "Fashion > Damen > Bekleidung > Kleider > Party (13633702031)",
+        "Fashion > Damen > Bekleidung > Kleider > Abendkleider (13633703031)"
       ],
       "truncated": false,
       "samples": [],
@@ -448,6 +425,23 @@
       "reserve_mark": null
     },
     {
+      "col": 70,
+      "header": "Trägerart",
+      "attribute": "strap_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Trägerart - [ DRESS ]",
+      "choices": [
+        "Schulterfrei",
+        "Spaghetti",
+        "Tank",
+        "Trägerlos"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
       "col": 73,
       "header": "Wasserfestigkeitsgrenze",
       "attribute": "water_resistance_level[marketplace_id=A1PA6795UKMFR9]#1.value",
@@ -493,6 +487,48 @@
         "Standard",
         "Übergröße",
         "Übergroße Mädels"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 78,
+      "header": "Gelegenheit & Anlass",
+      "attribute": "occasion_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Gelegenheit & Anlass - [ DRESS ]",
+      "choices": [
+        "Abschluss",
+        "Abschlussball Heimkehr",
+        "Babyparty",
+        "Beerdigung",
+        "Brautparty",
+        "Diwali",
+        "Einweihungszeremonie",
+        "Flitterwochen",
+        "Frauentag",
+        "Geburt",
+        "Geburtstag",
+        "Halloween",
+        "Hochzeit",
+        "Jahrestag",
+        "Junggesellenabschied",
+        "Junggesellinnenabschied",
+        "Kommunion",
+        "Muttertag",
+        "Neues Jahr",
+        "Ostern",
+        "Quinceanera",
+        "St. Patrick's Day",
+        "Taufe",
+        "Thanksgiving",
+        "Unabhängigkeitstag",
+        "Valentinstag",
+        "Vatertag",
+        "Verlobung",
+        "Weihnachten"
       ],
       "truncated": false,
       "samples": [],
@@ -668,11 +704,12 @@
       "matched": true,
       "field": "Versandvorlage (DE)",
       "choices": [
-        "10.98",
-        "11.98",
-        "12.98",
-        "3.98",
+        "2.98",
+        "5.98",
+        "6.98",
+        "6.98-2",
         "7.98",
+        "7.98-2",
         "8.98",
         "Standardvorlage Amazon"
       ],
@@ -1045,7 +1082,7 @@
     }
   ],
   "stats": {
-    "total": 40,
-    "matched": 29
+    "total": 41,
+    "matched": 30
   }
 }

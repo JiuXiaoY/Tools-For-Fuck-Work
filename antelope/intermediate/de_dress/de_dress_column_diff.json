@@ -9,9 +9,9 @@
     "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate\\de_dress\\de_dress_blank.json"
   },
   "summary": {
-    "completed_total": 80,
-    "blank_total": 40,
-    "only_in_completed": 40,
+    "completed_total": 83,
+    "blank_total": 41,
+    "only_in_completed": 42,
     "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
@@ -40,6 +40,12 @@
         "col": 8,
         "header": "Artikel-Highlight",
         "attribute": "title_differentiation[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 9,
+        "header": "Markenname",
+        "attribute": "brand[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
         "matched": false
       },
       {
@@ -175,9 +181,9 @@
         "matched": true
       },
       {
-        "col": 70,
-        "header": "Trägerart",
-        "attribute": "strap_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "col": 67,
+        "header": "Beschreibung des Futters",
+        "attribute": "lining_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
         "matched": true
       },
       {
@@ -199,21 +205,27 @@
         "matched": true
       },
       {
-        "col": 78,
-        "header": "Gelegenheit & Anlass",
-        "attribute": "occasion_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
         "col": 91,
         "header": "Webart",
         "attribute": "weave_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
         "matched": true
       },
       {
+        "col": 121,
+        "header": "Verzierungsmerkmal",
+        "attribute": "embellishment_feature[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
         "col": 126,
         "header": "Halsausschnitt",
         "attribute": "neck[marketplace_id=A1PA6795UKMFR9]#1.neck_style[language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 139,
+        "header": "Bekleidungs-Silhouette",
+        "attribute": "apparel_silhouette[marketplace_id=A1PA6795UKMFR9]#1.value",
         "matched": true
       },
       {
@@ -264,10 +276,22 @@
   "by_attribute": {
     "only_in_completed": [
       {
+        "col": 139,
+        "header": "Bekleidungs-Silhouette",
+        "attribute": "apparel_silhouette[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
         "col": 59,
         "header": "Bekleidungsgröße",
         "attribute": "apparel_size[marketplace_id=A1PA6795UKMFR9]#1.size",
         "matched": true
+      },
+      {
+        "col": 9,
+        "header": "Markenname",
+        "attribute": "brand[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
       },
       {
         "col": 41,
@@ -336,6 +360,12 @@
         "matched": false
       },
       {
+        "col": 121,
+        "header": "Verzierungsmerkmal",
+        "attribute": "embellishment_feature[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
         "col": 46,
         "header": "Suchbegriffe",
         "attribute": "generic_keyword[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
@@ -372,6 +402,12 @@
         "matched": true
       },
       {
+        "col": 67,
+        "header": "Beschreibung des Futters",
+        "attribute": "lining_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
         "col": 177,
         "header": "Listenpreis mit Steuern",
         "attribute": "list_price[marketplace_id=A1PA6795UKMFR9]#1.value_with_tax",
@@ -399,12 +435,6 @@
         "col": 126,
         "header": "Halsausschnitt",
         "attribute": "neck[marketplace_id=A1PA6795UKMFR9]#1.neck_style[language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
-        "col": 78,
-        "header": "Gelegenheit & Anlass",
-        "attribute": "occasion_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
         "matched": true
       },
       {
@@ -477,12 +507,6 @@
         "col": 141,
         "header": "Ärmelart",
         "attribute": "sleeve[marketplace_id=A1PA6795UKMFR9]#1.type[language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
-        "col": 70,
-        "header": "Trägerart",
-        "attribute": "strap_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
         "matched": true
       },
       {
