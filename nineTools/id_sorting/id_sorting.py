@@ -2,7 +2,7 @@
 """
 id_sorting —— 对 12 位 id 数据源按每位 ASCII 值排序，结果写回文件。
 
-数据源: nineTools/id_sorting_data
+数据源: nineTools/id_sorting/id_sorting_data
     每行一个 id，预期全部为 12 位 ASCII 可见字符。
 排序规则:
     - 12 位记录：按每一位字符的 ASCII 值（ord）升序比较：
@@ -10,13 +10,13 @@ id_sorting —— 对 12 位 id 数据源按每位 ASCII 值排序，结果写�
       也即把每条记录映射为「各位 ASCII 值」的序列后按序列升序排序。
     - 非 12 位记录：不参与主排序，追加到结果文件末尾，并在该行后面打上标签"异常"
       （格式 "<id>\t异常"）。
-输出:    nineTools/id_sorting_result（每行一条，保持原有行结尾风格 CRLF）
+输出:    nineTools/id_sorting/id_sorting_result（每行一条，保持原有行结尾风格 CRLF）
 
 用法:
     python id_sorting.py [数据源路径] [-o 输出路径]
 默认:
-    数据源 = nineTools/id_sorting_data
-    输出   = nineTools/id_sorting_result
+    数据源 = nineTools/id_sorting/id_sorting_data
+    输出   = nineTools/id_sorting/id_sorting_result
 """
 import argparse
 import os

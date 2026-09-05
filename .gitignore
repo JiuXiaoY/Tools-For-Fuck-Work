@@ -30,8 +30,8 @@ tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json
 tools/title_auto_fill/gemini_state.json
 tools/title_auto_fill/gemini_browser/
-# nineTools 随机 ID 输出
-nineTools/*.txt
+# nineTools 随机 ID 输出（含子目录）
+nineTools/**/*.txt
 # y_yassikzu(fr) 生成结果（由 AI 生成，不入库）
 y_yassikzu/fr/dress_feasibility_domain/*
 !y_addr&yass/fr_feasibility_domain/dress/zzz.md

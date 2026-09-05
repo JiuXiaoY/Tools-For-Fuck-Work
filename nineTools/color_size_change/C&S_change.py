@@ -16,7 +16,7 @@ dealExcel_refactoring/data/color_mapping_fr.json 映射的结果
        - 未命中时若形如 "数字 颜色词"（如 "08 Weiß"、"01 Schwarz"），数字前缀保留，
          剩余部分递归转换（"08 Weiß" -> "08 Blanc"）；
        - 其余（数字 / 全大写代码，如 "60"、"XXL/42"、"68X84.5CM"、"10Y"、"14Y"、"6Y"）保持原样。
-  4. 只覆盖 nineTools/color_change 与 nineTools/size_change 两个文件；
+  4. 只覆盖 nineTools/color_size_change/color_change 与 .../size_change 两个文件；
      保留空行与 CRLF 行尾（文件本身无末尾换行，写回时保持一致）。
 """
 
@@ -26,7 +26,9 @@ import re
 import sys
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE, "..", "data")
+# 脚本位于 nineTools/color_size_change/，上溯两级到仓库根，映射文件在仓库 data/ 下
+REPO_DIR = os.path.abspath(os.path.join(BASE, "..", ".."))
+DATA_DIR = os.path.join(REPO_DIR, "data")
 
 COLOR_DE = os.path.join(DATA_DIR, "color_mapping_de.json")
 COLOR_FR = os.path.join(DATA_DIR, "color_mapping_fr.json")

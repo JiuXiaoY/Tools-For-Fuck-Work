@@ -19,7 +19,21 @@ import time
 import zipfile
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.dirname(BASE)
+
+
+def _find_repo(start):
+    """从脚本所在目录向上找含 zip_by_ec 的仓库根（脚本可放仓库内任意子目录）。"""
+    d = os.path.abspath(start)
+    while True:
+        if os.path.isdir(os.path.join(d, "zip_by_ec")):
+            return d
+        parent = os.path.dirname(d)
+        if parent == d:
+            raise RuntimeError("未找到仓库根（缺少 zip_by_ec 目录）")
+        d = parent
+
+
+REPO = _find_repo(BASE)
 BESSKY = os.path.dirname(REPO)
 DEFAULT_SOURCE = os.path.join(BESSKY, "Means_of_production")
 DEFAULT_OUT_DIR = os.path.join(REPO, "zip_by_ec")

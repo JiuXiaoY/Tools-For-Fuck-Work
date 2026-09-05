@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-extract_sku —— 从抓取的卖家后台文本（如 nineTools/SKU3）中抽取「SKU」标识下的值。
+extract_sku —— 从抓取的卖家后台文本（如 nineTools/sku_extract/SKU3）中抽取「SKU」标识下的值。
 
 输入文本中每个商品块形如：
     ASIN
@@ -17,7 +17,7 @@ extract_sku —— 从抓取的卖家后台文本（如 nineTools/SKU3）中抽�
   4. 对结果去重（保留首次出现顺序）。
 
 用法:
-    python extract_sku.py                 # 默认处理 nineTools/SKU3，输出 nineTools/SKU3_sku.txt
+    python extract_sku.py                 # 默认处理 sku_extract/SKU3，输出 sku_extract/SKU3_sku.txt
     python extract_sku.py <输入文件> [-o 输出文件]
 """
 
