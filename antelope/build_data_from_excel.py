@@ -46,7 +46,7 @@ import sys
 import openpyxl
 from openpyxl.utils import column_index_from_string
 
-from common import load_groups, load_json, setup_utf8, zcfg
+from common import load_groups, load_json, setup_log, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
@@ -193,7 +193,7 @@ def main():
                         help="逐组打印目标列数明细")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     groups = load_groups(args.groups)
     sources = load_col_mapping(args.col_mapping)

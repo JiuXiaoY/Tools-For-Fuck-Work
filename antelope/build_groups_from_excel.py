@@ -31,7 +31,7 @@ from pathlib import Path
 
 import openpyxl
 
-from common import cell_has_fill, setup_utf8, zcfg
+from common import cell_has_fill, setup_log, zcfg
 
 BASE_DIR = Path(__file__).resolve().parent
 INTERMEDIATE_DIR = Path(zcfg.INTERMEDIATE_DIR)
@@ -105,7 +105,7 @@ def main():
                         help="逐组打印分组行范围明细")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     src = resolve_input(args.input)
     wb = openpyxl.load_workbook(src, read_only=True, data_only=True)

@@ -1,0 +1,88 @@
+
+============================================================
+[2026-09-05 11:23:26] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_fr_tops\addr_fr_tops_blank.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_fr_tops\addr_fr_tops_blank.json
+📊 表头 38 列，其中 28 列在 Valeurs valides 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-05 11:23:26] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_fr_tops\addr_fr_tops_completed.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_fr_tops\addr_fr_tops_completed.json
+📊 表头 76 列，其中 40 列在 Valeurs valides 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-05 11:23:27] column_diff.py
+============================================================
+✅ 列差异：C(completed) 76 列 vs B(blank) 38 列
+   C−B 待填列 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205, 242]
+   B−C 多余列 0 列: []
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_fr_tops\addr_fr_tops_column_diff.json
+
+============================================================
+[2026-09-05 11:23:27] build_groups_from_excel.py
+============================================================
+✅ 分组完成：70 个锚点 -> 70 组，共 1661 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_fr_tops\addr_fr_tops_groups.json
+
+============================================================
+[2026-09-05 11:23:28] build_data_from_excel.py
+============================================================
+⚠️ 列映射为空或缺失，请先提供列映射 json
+
+============================================================
+[2026-09-05 11:23:26] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: addr_fr_tops
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+✅ ① 模板解析 B → blank.json OK
+
+② 模板解析 C → completed.json
+----------------------------------------
+✅ ② 模板解析 C → completed.json OK
+
+③ 列差异（C − B）→ column_diff.json
+----------------------------------------
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+❌ ⑤ A 取数（col_mapping）→ data.json 失败（exit 2），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+
+============================================================
+[2026-09-05 11:25:12] build_data_from_excel.py
+============================================================
+✅ 取数完成：70 组，共 1400 个「组×列」（源列 18 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_fr_tops\addr_fr_tops_data.json
+
+============================================================
+[2026-09-05 11:25:13] build_m_data.py
+============================================================
+✅ M 占位生成：1260 个「组×列」（占位 dataTemp；col_scope 38 列，A 已覆盖 20 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_fr_tops\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-05 11:25:13] build_fill_framework.py
+============================================================
+✅ M 数据合并：1260 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_fr_tops\.xlsx_dataSource_m.json）
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_fr_tops_fill_framework.json
+   col_scope 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205, 242]
+   groups 70 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_fr_tops\addr_fr_tops_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-05 11:25:13] fill_from_plan.py fill_plan/addr_fr_tops_fill_framework.json -o ..\outputs\addr_fr_tops_filled.xlsm
+============================================================
+🧹 已删除模板多余行: 第 1668 行至第 3114 行 (共整行删除 1447 行)
+
+✅ 已写出副本: ..\outputs\addr_fr_tops_filled.xlsm
+📊 共填写 63118 个单元格，保留至第 1667 行

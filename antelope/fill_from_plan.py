@@ -25,7 +25,7 @@ from pathlib import Path
 
 import openpyxl
 
-from common import setup_utf8, zcfg
+from common import setup_log, zcfg
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # ⚙️ 默认运行配置（直接点 Run 时生效）—— 路径/配置项集中来自 zconfig.constant.py
@@ -138,7 +138,7 @@ def main():
     )
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     if not args.plan or not os.path.exists(args.plan):
         print(f"❌ 找不到 plan 文件: {args.plan}")

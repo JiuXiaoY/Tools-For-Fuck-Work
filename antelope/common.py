@@ -10,6 +10,8 @@ load_data_cols / load_col_scope 等小工具。这里统一收敛，行为不变
     from common import zcfg, load_json, load_groups, ...
 """
 
+import datetime
+import getpass
 import importlib.util
 import json
 import os
@@ -48,6 +50,68 @@ def setup_utf8():
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
+
+
+# ─────────────────────────────────────────────────────────────────────────── #
+# 统一日志：不再打印到控制台，全部写入 antelope/log/{当天日期}_atl_{操作用户}.log
+# ─────────────────────────────────────────────────────────────────────────── #
+def get_log_file() -> str:
+    """返回日志文件路径：antelope/log/{YYYY-MM-DD}_atl_{用户}.log（目录不存在自动创建）。"""
+    log_dir = os.path.join(_ANTELOPE_DIR, "log")
+    os.makedirs(log_dir, exist_ok=True)
+    date = datetime.date.today().strftime("%Y-%m-%d")
+    try:
+        user = getpass.getuser()
+    except Exception:
+        user = os.environ.get("USERNAME", "unknown")
+    return os.path.join(log_dir, f"{date}_atl_{user}.log")
+
+
+class _LogCleanWriter:
+    """日志写出口：把不换行空格（\\xa0 / \\u2007 / \\u202f）统一替换为普通空格。
+
+    模板表头常含 NBSP（如 "Piles nécessaires\\xa0?"），原样写入日志会显示异常，
+    这里在写入端统一清洗，保证日志干净可读。
+    """
+
+    _MAP = str.maketrans({"\u00a0": " ", "\u2007": " ", "\u202f": " "})
+
+    def __init__(self, fh):
+        self._fh = fh
+
+    def write(self, s):
+        self._fh.write(str(s).translate(self._MAP))
+
+    def flush(self):
+        self._fh.flush()
+
+    def __getattr__(self, name):
+        return getattr(self._fh, name)
+
+
+def setup_log() -> str:
+    """把 stdout/stderr 统一重定向到当天日志文件（追加），控制台不再打印。
+
+    所有 antelope 脚本在 main() 开头调用一次；同名同天多次运行/多个脚本
+    （含 run_all 的子进程）都会追加进同一个日志文件，开头带运行分隔头。
+    写入时自动清洗不换行空格（NBSP），日志中不会出现 \\xa0 等字符。
+    """
+    log_path = get_log_file()
+    try:
+        fh = open(log_path, "a", encoding="utf-8")
+    except Exception as exc:
+        # 打开日志失败时退回 UTF-8 控制台，避免流程不可见
+        setup_utf8()
+        print(f"⚠️ 无法写入日志文件 {log_path}: {exc}（退回控制台输出）")
+        return log_path
+    sys.stdout = _LogCleanWriter(fh)
+    sys.stderr = _LogCleanWriter(fh)
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    argv = " ".join(sys.argv[1:])
+    print(f"\n{'=' * 60}")
+    print(f"[{now}] {os.path.basename(sys.argv[0])} {argv}".rstrip())
+    print("=" * 60)
+    return log_path
 
 
 def load_json(path):

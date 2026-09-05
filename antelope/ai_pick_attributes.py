@@ -44,7 +44,7 @@ from common import (
     load_data_cols,
     load_groups,
     load_json,
-    setup_utf8,
+    setup_log,
     uncovered_cols,
     zcfg,
 )
@@ -507,7 +507,7 @@ def main():
                         help="只生成各批提示词文件，不打开网页（手动喂 AI，回答存对应 _result.txt 后重跑写回）")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     groups = load_groups(args.groups)
     if not groups:

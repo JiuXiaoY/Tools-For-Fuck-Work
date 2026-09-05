@@ -49,7 +49,7 @@ import json
 import os
 import sys
 
-from common import load_groups, load_json, setup_utf8, zcfg
+from common import load_groups, load_json, setup_log, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # 过程 json（模板分析、列差异）在 intermediate 子目录下；最终 plan 输出到 fill_plan
@@ -63,7 +63,7 @@ DEFAULT_GROUPS = zcfg.CFG_INTERMEDIATE["groups_json"]
 DEFAULT_DATA = zcfg.CFG_INTERMEDIATE["data_json"]
 DEFAULT_M_DATA = zcfg.DATA_SOURCE_M       # M：自定义数据来源（JSON），补充 A 未映射列
 DEFAULT_TEMPLATE_OUTPUT = zcfg.TEMPLATE_OUTPUT   # 产出模板（fill_from_plan 复制其副本填充）
-DEFAULT_MODE_CUSTOMISE = zcfg.CFG_INTERMEDIATE["mode_customise_json"]  # 人工维护：列 → 强制填充模式
+DEFAULT_MODE_CUSTOMISE = zcfg.MODE_CUSTOMISE_FILE   # 共享单文件，按 ACTIVE_CATEGORY 标签分段读取
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
 DEFAULT_PLAN_OUTPUT_FILE = zcfg.CFG_RUN["plan_output_file"]
 
@@ -87,9 +87,16 @@ _VALID_MODES = {"sequential", "children_only", "cycle"}
 
 
 def load_mode_customise(path):
-    """读取人工维护的 mode_customise 配置文件（{列号: "cycle"/"children_only"/"sequential"}）。
+    """读取人工维护的列填充模式配置，只取当前 ACTIVE_CATEGORY 标签下的部分。
 
-    只保留值为合法模式的项；文件缺失/为空 → 返回 {}（全部走自动判断）。
+    共享单文件结构（默认 intermediate_tpl/mode_customise.json）：
+        {
+          "addr_fr_tops": {"17": "cycle", "5": "children_only"},
+          "de_pants":     {"1": "sequential"}
+        }
+    只读取 raw[ACTIVE_CATEGORY] 分段，值为 {列号: "sequential"/"children_only"/"cycle"}；
+    兼容旧版扁平结构 {列号: 模式}（无标签分段时整体作为当前类别使用）。
+    文件缺失/空/找不到当前标签 → 返回 {}（全部走自动判断）。
     """
     if not path or not os.path.exists(path):
         return {}
@@ -97,6 +104,10 @@ def load_mode_customise(path):
         raw = load_json(path)
         if not isinstance(raw, dict):
             return {}
+        section = raw.get(zcfg.ACTIVE_CATEGORY)
+        if isinstance(section, dict):
+            raw = section                      # 新版：取当前标签分段
+        # 否则视为旧版扁平结构，raw 整体使用（其值若是 dict 会被过滤掉）
         return {str(k): str(v) for k, v in raw.items() if str(v) in _VALID_MODES}
     except Exception:
         return {}
@@ -243,10 +254,10 @@ def main():
     parser.add_argument("--template-output", default=DEFAULT_TEMPLATE_OUTPUT,
                         help="产出模板路径（fill_from_plan 复制其副本并填充；默认 zconfig.TEMPLATE_OUTPUT）")
     parser.add_argument("--mode-customise", default=DEFAULT_MODE_CUSTOMISE,
-                        help="mode_customise 配置文件（{列号: 模式}，人工维护；默认 intermediate/<类别>/<类别>_mode_customise.json）")
+                        help="列填充模式共享配置文件（按 ACTIVE_CATEGORY 标签分段；默认 intermediate_tpl/mode_customise.json）")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     diff = load_json(args.diff)
     completed = load_json(args.completed)

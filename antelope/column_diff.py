@@ -27,7 +27,7 @@ import json
 import os
 import sys
 
-from common import setup_utf8, zcfg
+from common import setup_log, zcfg
 
 # 过程 json（模板分析、列差异）在 intermediate 子目录下
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
@@ -91,7 +91,7 @@ def main():
                         help="输出 JSON 文件路径")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     completed_cols = load_columns(args.completed)
     blank_cols = load_columns(args.blank)
@@ -137,6 +137,7 @@ def main():
         },
     }
 
+    os.makedirs(os.path.dirname(os.path.abspath(args.output)) or ".", exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 

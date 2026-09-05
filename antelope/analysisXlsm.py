@@ -42,7 +42,7 @@ import sys
 
 import openpyxl
 
-from common import setup_utf8, zcfg
+from common import setup_log, zcfg
 
 # 默认输入模板文件（基础模板 B，解析得到 blank.json / 「已填列」）
 DEFAULT_INPUT_PATH = zcfg.TEMPLATE_B
@@ -229,8 +229,8 @@ def main():
     )
     args = parser.parse_args()
 
-    # 保证控制台能以 UTF-8 输出法文（避免 Windows 默认 GBK 报错）
-    setup_utf8()
+    # 日志统一写入 log/{当天日期}_atl_{用户}.log，不再打印控制台
+    setup_log()
 
     try:
         wb = openpyxl.load_workbook(
@@ -329,6 +329,7 @@ def main():
     }
 
     out_path = args.output or default_output_path(args.file)
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 

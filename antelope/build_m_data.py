@@ -28,7 +28,7 @@ import json
 import os
 import sys
 
-from common import load_col_scope, load_data_cols, load_groups, setup_utf8, zcfg
+from common import load_col_scope, load_data_cols, load_groups, setup_log, zcfg
 
 DEFAULT_OUTPUT = zcfg.DATA_SOURCE_M
 DEFAULT_DIFF = zcfg.CFG_INTERMEDIATE["column_diff_json"]
@@ -75,7 +75,7 @@ def main():
                         help="打印每个组的补充列清单")
     args = parser.parse_args()
 
-    setup_utf8()
+    setup_log()
 
     col_scope = load_col_scope(args.diff)
     groups = load_groups(args.groups)
