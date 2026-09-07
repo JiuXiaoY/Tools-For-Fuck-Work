@@ -95,6 +95,16 @@ def build_batches(products, batch_size: int) -> list[tuple[int, list]]:
     ]
 
 
+def _file_sha256(path) -> str | None:
+    """计算文件内容的 SHA-256 指纹（groups.json 很小，直接整读；失败返回 None）。"""
+    import hashlib
+    try:
+        with open(path, "rb") as f:
+            return hashlib.sha256(f.read()).hexdigest()
+    except Exception:
+        return None
+
+
 def normalize_label(text: str, fold_case: bool = False) -> str:
     """归一化标签文本，用于块头匹配与提示词展示。
 
@@ -362,7 +372,9 @@ def validate_no_placeholder(m_data, ai_cols, labels, placeholder):
 def web_ask_all(ai_cols, products, args, m_data, groups):
     """用 DeepSeek 网页分批询问所有产品（每批 BATCH_SIZE 条），解析后更新 M JSON。
 
-    每批一个提示词/回答文件；该批回答文件已存在则直接复用，跳过网页。
+    每批一个提示词/回答文件；该批回答文件已存在且 **groups.json 指纹未变** 才复用，跳过网页。
+    指纹（groups_fingerprint.txt，记录当时 groups.json 的 SHA-256）缺失或不一致 → 判定
+    旧回答属于不同分组/数据批次，不复用、重新网页询问，避免跨数据批次误用旧回答。
     需要网页询问的批次共用一次浏览器会话，逐批发送。
     """
     try:
@@ -381,7 +393,21 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
     print(f"产品共 {len(products)} 个，按每批 {args.batch_size if args.batch_size and args.batch_size > 0 else '全部'} 个"
           f"分为 {len(batches)} 批（最后一批 {len(batches[-1][1])} 个）")
 
-    # 先写出各批提示词并检查回答文件：已存在的批直接复用，其余记入 todo 待网页询问
+    # ── groups.json 指纹门禁（简化）：文件没变 → 全部批次可复用；变了/未记录 → 旧回答全部作废重问 ──
+    groups_hash = _file_sha256(args.groups)
+    meta_path = os.path.join(args.prompt_dir, "groups_fingerprint.txt")
+    last_hash = Path(meta_path).read_text(encoding="utf-8").strip() if os.path.exists(meta_path) else None
+    reusable = bool(groups_hash and last_hash and last_hash == groups_hash)
+    if reusable:
+        print("✅ groups.json 未变：已有回答全部复用（个别批次缺回答则再询问）")
+    else:
+        for _old in Path(args.prompt_dir).glob("attributes_batch*_result.txt"):
+            _old.unlink(missing_ok=True)          # 旧回答全部作废
+        if Path(meta_path).exists():
+            Path(meta_path).unlink()
+        print(f"⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问")
+
+    # 先写出各批提示词并检查回答文件：指纹一致且回答存在 → 复用；其余记入 todo 待网页询问
     todo = []
     for b, (start, batch) in enumerate(batches, 1):
         p_name, r_name = batch_file_names(b)
@@ -392,7 +418,7 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
         print(f"📄 提示词: {p_name}（产品 {start + 1}~{start + len(batch)}）")
         covered = set(range(start + 1, start + len(batch) + 1))  # 本批覆盖的绝对组序号
 
-        if os.path.exists(r_path):
+        if reusable and os.path.exists(r_path):
             text = Path(r_path).read_text(encoding="utf-8")
             parsed = parse_all(text, ai_cols, len(batch), labels)
             total_u = total_k = 0
@@ -410,6 +436,8 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
 
     if not todo:
         print("所有批次均已有回答结果，无需打开网页。")
+        if groups_hash:
+            Path(meta_path).write_text(groups_hash + "\n", encoding="utf-8")
         validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
         return
 
@@ -483,6 +511,10 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
             print(f"✅ 批次 {b}/{len(batches)}（网页询问）：写入 {total_u} 个「组×列」，占位 {total_k}")
 
         context.close()
+
+    # 记录本次 groups 指纹：下次同分组运行时自动复用回答（换数据则自动重新询问）
+    if groups_hash:
+        Path(meta_path).write_text(groups_hash + "\n", encoding="utf-8")
 
     validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
 

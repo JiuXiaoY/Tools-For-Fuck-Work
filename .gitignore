@@ -58,6 +58,9 @@ antelope/web_data/
 antelope/.deepseek_state.json
 antelope/intermediate/*/ai_prompt/
 
+# antelope 模板与数据源（base/complete/输出模板/数据 xlsx 换批次频繁、体积大，不入库）
+antelope/xlsm/
+
 # Backup files
 *.bak
 
