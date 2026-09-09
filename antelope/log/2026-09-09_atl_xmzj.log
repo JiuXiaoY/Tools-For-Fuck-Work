@@ -491,3 +491,122 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
 ✅ 全流程完成
    输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
 ============================================================
+
+============================================================
+[2026-09-09 11:07:11] build_groups_from_excel.py
+============================================================
+✅ 分组完成：89 个锚点 -> 89 组，共 3355 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\addr_de_pants_groups.json
+
+============================================================
+[2026-09-09 11:07:11] build_data_from_excel.py
+============================================================
+✅ 取数完成：89 组，共 1780 个「组×列」（源列 18 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\addr_de_pants_data.json
+
+============================================================
+[2026-09-09 11:07:12] build_m_data.py
+============================================================
+✅ M 占位生成：2047 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 20 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 11:07:13] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(57, 'Bekleidungsgröße'), (73, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+产品列表（数据源 A Sheet0 提取）：89 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   45: Besondere Eigenschaften（37 个可选值）
+   50: Lifestyle（6 个可选值）
+   51: Stil（24 个可选值）
+   70: Artikeltyp – Name（31 个可选值）
+   84: Thema（29 个可选值）
+   85: Passform（13 个可选值）
+   87: Hosenbeinart（11 个可选值）
+   89: Webart（11 个可选值）
+   90: Waschung（3 个可选值）
+   94: Sitz（3 个可选值）
+   112: Muster（26 个可选值）
+   121: Sportart（66 个可选值）
+   148: Verschlussart（12 个可选值）
+   150: Formtyp der Hose（15 个可选值）
+产品共 89 个，按每批 10 个分为 9 批（最后一批 9 个）
+✅ groups.json 未变：已有回答全部复用（个别批次缺回答则再询问）
+📄 提示词: attributes_batch01.txt（产品 1~10）
+✅ 批次 1/9（复用 attributes_batch01_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch02.txt（产品 11~20）
+✅ 批次 2/9（复用 attributes_batch02_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch03.txt（产品 21~30）
+✅ 批次 3/9（复用 attributes_batch03_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch04.txt（产品 31~40）
+✅ 批次 4/9（复用 attributes_batch04_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch05.txt（产品 41~50）
+✅ 批次 5/9（复用 attributes_batch05_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch06.txt（产品 51~60）
+✅ 批次 6/9（复用 attributes_batch06_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch07.txt（产品 61~70）
+✅ 批次 7/9（复用 attributes_batch07_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch08.txt（产品 71~80）
+✅ 批次 8/9（复用 attributes_batch08_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch09.txt（产品 81~89）
+✅ 批次 9/9（复用 attributes_batch09_result.txt）：写入 126 个「组×列」，占位 0
+所有批次均已有回答结果，无需打开网页。
+✅ 校验通过：所有有可选值列均无占位
+
+M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 11:07:28] build_fill_framework.py
+============================================================
+✅ M 数据合并：2047 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\.xlsx_dataSource_m.json）
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_pants_fill_framework.json
+   col_scope 43 列: [1, 5, 7, 8, 17, 18, 22, 23, 24, 25, 26, 27, 28, 29, 30, 38, 39, 40, 41, 42, 43, 44, 45, 50, 51, 57, 70, 73, 74, 84, 85, 87, 89, 90, 94, 112, 121, 148, 150, 168, 178, 208, 240]
+   groups 89 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_pants\addr_de_pants_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\pants_herren_temp_init.xlsm
+
+============================================================
+[2026-09-09 11:07:28] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_pants_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3362 行至第 5997 行 (共整行删除 2636 行)
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
+📊 共填写 144265 个单元格，保留至第 3361 行
+
+============================================================
+[2026-09-09 11:07:10] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: addr_de_pants
+============================================================
+✅ ① 模板解析 B → blank.json 跳过：addr_de_pants_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：addr_de_pants_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：addr_de_pants_column_diff.json 已是最新（模板未变，复用缓存）
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_pants_fill_framework.json
+----------------------------------------
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_pants_fill_framework.json OK
+
+⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
+----------------------------------------
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm OK
+
+============================================================
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
+============================================================
