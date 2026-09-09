@@ -29,11 +29,11 @@ def _resolve_date(cfg: Config) -> str:
     return f"{today.month}.{today.day}"
 
 
-def _resolve_output(out_dir: Path, date_str: str) -> Path:
+def _resolve_output(out_dir: Path, date_str: str, mapping_country: str) -> Path:
     """Find next available filename: {date_str}v1.xlsx, v2, v3..."""
     v = 1
     while True:
-        path = out_dir / f"{date_str}v{v}.xlsx"
+        path = out_dir / f"{date_str}v{v}_{mapping_country}.xlsx"
         if not path.exists():
             return path
         v += 1
@@ -57,7 +57,7 @@ def main() -> None:
         log.info("  %s", f.name)
 
     date_str = _resolve_date(cfg)
-    tmp = _resolve_output(out_dir, date_str)
+    tmp = _resolve_output(out_dir, date_str, cfg.mapping_country)
     log.info("Output: %s", tmp.name)
     log.info("=" * 50)
 

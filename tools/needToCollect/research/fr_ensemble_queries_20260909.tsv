@@ -1,0 +1,25 @@
+date	country	mode	query	raw_count	cleaned_count	status	output_file	note
+2026-09-09	fr	new_rank	ensemble femme	9	9	success	../result/20260909_101223_fr.txt	9/9 classified as femme
+2026-09-09	fr	new_rank	ensemble pantalon femme	2	2	success	../result/20260909_101316_fr.txt	high intent, narrow recall
+2026-09-09	fr	new_rank	tailleur femme	10	10	success	../result/20260909_101320_fr.txt	10/10 classified as femme
+2026-09-09	fr	new_rank	ensemble jupe femme	0	0	no_result		broader ensemble query later found ensemble jupe et haut femme
+2026-09-09	fr	new_rank	ensemble short femme	1	1	success	../result/20260909_101349_fr.txt	exact phrase retained
+2026-09-09	fr	new_rank	ensemble jogging femme	1	1	success	../result/20260909_101353_fr.txt	exact phrase retained
+2026-09-09	fr	new_rank	ensemble lin femme	1	1	success	../result/20260909_101400_fr.txt	exact phrase retained
+2026-09-09	fr	new_rank	ensemble femme mariage	0	0	no_result		wedding variants found through broad queries
+2026-09-09	fr	new_rank	ensemble femme grande taille	0	0	no_result		large-size wedding variant found under tailleur
+2026-09-09	fr	new_rank	ensemble 2 pieces femme			request_failed		connection reset; generic form later returned zero
+2026-09-09	fr	new_rank	survetement femme	4	4	success	../result/20260909_101443_fr.txt	all four are relevant sportswear phrases
+2026-09-09	fr	new_rank	costume femme	8	8	success	../result/20260909_101447_fr.txt	contains Halloween and historical-costume noise; manually filtered
+2026-09-09	fr	new_rank	ensemble	190	171	success	../result/20260909_101509_fr.txt	17 homme, 44 femme, 110 other after generic cleaning
+2026-09-09	fr	new_rank	tailleur	18	18	success	../result/20260909_101513_fr.txt	15 femme, 3 non-apparel/other
+2026-09-09	fr	new_rank	ensemble deux pieces femme	0	0	no_result		word-form variant returned no row
+2026-09-09	fr	new_rank	ensemble sport femme	2	2	success	../result/20260909_101520_fr.txt	includes general and musulmane variant
+2026-09-09	fr	new_rank	ensemble coordonne femme	0	0	no_result		retailer taxonomy supports it; keep as watchlist only
+2026-09-09	fr	new_rank	ensemble 3 pieces femme	0	0	no_result		three-piece intent appears only in a longer tailleur phrase
+2026-09-09	fr	new_rank	ensemble pantalon	3	3	success	../result/20260909_101912_fr.txt	all three are female-tailoring phrases
+2026-09-09	fr	new_rank	ensemble femme chic	3	3	success	../result/20260909_101919_fr.txt	general, chic and wedding variants
+2026-09-09	fr	new_rank	ensemble femme ete	1	1	success	../result/20260909_101953_fr.txt	ASCII spelling used to avoid terminal accent corruption
+2026-09-09	fr	new_rank	ensemble 2 pieces	0	0	no_result		generic numeric form returned no row
+2026-09-09	fr	fluctuation	ensemble	190	1	brand_only_no_keep		strict project threshold kept only ensemble adidas homme; excluded as brand intent
+2026-09-09	fr	fluctuation	tailleur	18	0	no_breakout		no row passed the configured -60000 threshold
