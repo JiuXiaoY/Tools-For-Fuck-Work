@@ -40,33 +40,36 @@ class Config:
 
     # ── column layout ─────────────────────────────────────────────────
     initial_columns: int = 32
-    final_columns: int = 48
+    final_columns: int = 49          # 49 = 32 + (6+1+10) 插入列；D 后多一列，其余整体右移一位
 
     col_a:  int = 1
     col_b:  int = 2
     col_c:  int = 3
-    col_i:  int = 9
-    col_j:  int = 10
-    col_k:  int = 11
-    col_l:  int = 12
-    col_m:  int = 13
-    col_ar: int = 44
-    col_as: int = 45
-    col_at: int = 46
-    col_au: int = 47
-    col_av: int = 48
+    col_i:  int = 10
+    col_j:  int = 11
+    col_k:  int = 12
+    col_l:  int = 13
+    col_m:  int = 14
+    col_ar: int = 45
+    col_as: int = 46
+    col_at: int = 47
+    col_au: int = 48
+    col_av: int = 49
+    col_len: int = 6                 # 长度公式列 F：=LEN(D{row})（D 为标题列，位置不变）
 
     # ── column insertions ─────────────────────────────────────────────
     # (insert-at-1based, count) executed in order
+    # 前导空列 6（B..G，D 之后多留一列 E）；后两个插入点随之顺延 +1，保证
+    # 所有原始列相对关系不变、统一右移一位
     column_insertions: list[tuple[int, int]] = field(default_factory=lambda: [
-        (2, 5), (10, 1), (14, 10),
+        (2, 6), (11, 1), (15, 10),
     ])
 
     # ── mirror column copy ────────────────────────────────────────────
     # {source_col: target_col}
     copy_targets: dict[int, int] = field(default_factory=lambda: {
-        15: 26, 16: 28, 17: 30, 18: 32,
-        19: 34, 20: 36, 21: 38, 22: 40, 23: 42,
+        16: 27, 17: 29, 18: 31, 19: 33,
+        20: 35, 21: 37, 22: 39, 23: 41, 24: 43,
     })
 
     # ── random ID ─────────────────────────────────────────────────────

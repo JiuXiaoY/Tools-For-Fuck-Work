@@ -1,7 +1,7 @@
 """Color-size mapping for Excel: extract → process → write-back.
 
 Workflow:
-  1. Read outputs/{date}v{n}_{country}.xlsx, col J(10) + K(11)
+  1. Read outputs/{date}v{n}_{country}.xlsx, col K(11) + L(12)
   2. Write to check_.txt (tab-separated, empty lines as group separators)
   3. Run process.py to handle duplicates + strip size
   4. Read processed check_.txt → write back to column J
@@ -42,7 +42,7 @@ def main() -> None:
         return
     _log.info("Source: %s", src.name)
 
-    # ── 2. Extract J + K → check_.txt ──
+    # ── 2. Extract K + L → check_.txt ──
     wb = openpyxl.load_workbook(src)
     ws = wb.active
 
@@ -51,8 +51,8 @@ def main() -> None:
     data_count = 0
 
     for r in range(1, ws.max_row + 1):
-        j_val = ws.cell(row=r, column=10).value
-        k_val = ws.cell(row=r, column=11).value
+        j_val = ws.cell(row=r, column=11).value
+        k_val = ws.cell(row=r, column=12).value
 
         j_str = str(j_val).strip() if j_val is not None else ""
         k_str = str(k_val).strip() if k_val is not None else ""
@@ -78,7 +78,7 @@ def main() -> None:
         _log.error("process.py failed with code %d", result.returncode)
         return
 
-    # ── 4. Read processed check_.txt → write back to col J ──
+    # ── 4. Read processed check_.txt → write back to col K ──
     processed_lines = CHECK_TXT.read_text(encoding="utf-8").split("\n")
     _log.info("Processing write-back: %d lines", len(processed_lines))
 
@@ -98,14 +98,14 @@ def main() -> None:
         proc_idx += 1
 
         # Get current value
-        old_val = ws.cell(row=r, column=10).value
+        old_val = ws.cell(row=r, column=11).value
         old_str = str(old_val).strip() if old_val is not None else ""
 
         if new_val == "":  # separator
-            ws.cell(row=r, column=10).value = None
+            ws.cell(row=r, column=11).value = None
             written += 1
         elif new_val != old_str:  # only write if changed
-            ws.cell(row=r, column=10).value = new_val
+            ws.cell(row=r, column=11).value = new_val
             written += 1
         else:
             skipped += 1

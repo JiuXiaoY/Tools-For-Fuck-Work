@@ -1,4 +1,4 @@
-﻿"""Format cells: row height, alignment, column widths, formulas."""
+"""Format cells: row height, alignment, column widths, formulas."""
 
 from openpyxl.styles import Alignment
 from openpyxl.utils import get_column_letter
@@ -31,9 +31,9 @@ class FormatCellsStep(PipelineStep):
         for row in ws.iter_rows(min_row=1, max_row=ws.max_row, max_col=max_col):
             r = row[0].row
             ws.row_dimensions[r].height = cfg.row_height
-            # Column 5 formula (col E = index 4 in the row tuple).
+            # 长度公式：内容始终 =LEN(D)，写在第 col_len 列（F）
             if cfg.col_5_formula:
-                row[4].value = f"=LEN({col_d_letter}{r})"
+                ws.cell(row=r, column=cfg.col_len).value = f"=LEN({col_d_letter}{r})"
             # Apply alignment to every cell in the row (same style object reused).
             for cell in row:
                 cell.alignment = align
@@ -41,5 +41,5 @@ class FormatCellsStep(PipelineStep):
 
         ctx.log(f"Formatted {n} rows: h={cfg.row_height}, align={cfg.cell_h_align}/{cfg.cell_v_align}")
         if cfg.col_5_formula:
-            ctx.log(f"Column 5: =LEN({col_d_letter}) formula applied")
+            ctx.log(f"Column {get_column_letter(cfg.col_len)}: =LEN({col_d_letter}) formula applied")
         return ctx

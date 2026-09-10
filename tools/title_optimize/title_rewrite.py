@@ -1,7 +1,7 @@
 """Title optimize workflow: extract → validate → optimize → write-back.
 
 Workflow:
-  1. Read outputs/{date}v{n}_{country}.xlsx, extract col H→origin_title, col O→origin_link
+  1. Read outputs/{date}v{n}_{country}.xlsx, extract col I(9)→origin_title, col P(16)→origin_link
   2. Validate all three files exist and line counts match
   3. Run optimize (deepseek_web.py or run.py)
   4. Insert column after G, write optimized titles back to Excel
@@ -54,14 +54,14 @@ def main() -> None:
     for r in range(1, ws.max_row + 1):
         if not cell_has_fill(ws.cell(row=r, column=1)):
             continue
-        h_val = ws.cell(row=r, column=8).value
-        o_val = ws.cell(row=r, column=15).value
+        h_val = ws.cell(row=r, column=9).value
+        o_val = ws.cell(row=r, column=16).value
         if h_val is None or str(h_val).strip() == "":
             _log.error("Row %d: col H is empty", r)
             wb.close()
             return
         if o_val is None or str(o_val).strip() == "":
-            _log.error("Row %d: col O is empty", r)
+            _log.error("Row %d: col P is empty", r)
             wb.close()
             return
         titles.append(str(h_val).strip())
@@ -133,7 +133,7 @@ def main() -> None:
     for r in range(1, ws.max_row + 1):
         if not cell_has_fill(ws.cell(row=r, column=1)):
             continue
-        ws.cell(row=r, column=8).value = opt_lines[opt_idx]
+        ws.cell(row=r, column=9).value = opt_lines[opt_idx]
         opt_idx += 1
         written += 1
 

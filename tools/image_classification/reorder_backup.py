@@ -1,6 +1,6 @@
 """Reorder image links in Excel: mark non-conforming size chart positions red.
 
-Data source: O-W columns (15-23) of outputs/{date}v{n}_{country}.xlsx
+Data source: P-X columns (16-24) of outputs/{date}v{n}_{country}.xlsx
 
 Multi-threaded: rows split across threads, each thread processes independently.
 Results merged, then applied to Excel in single thread.
@@ -28,8 +28,8 @@ BASE = Path(__file__).resolve().parent
 TEMP_DIR = BASE / "images_awaiting"
 _log = get_logger("image_reorder")
 
-COL_START = 15
-COL_END = 23
+COL_START = 16
+COL_END = 24
 WORKERS = 4
 
 _session: requests.Session | None = None
@@ -159,7 +159,7 @@ def main() -> None:
     ws = wb.active
     max_row = ws.max_row
 
-    _log.info("Source: %s  Rows: %d  Range: O(%d)-W(%d)  Mode: %s  Workers: %d",
+    _log.info("Source: %s  Rows: %d  Range: P(%d)-X(%d)  Mode: %s  Workers: %d",
               src.name, max_row, COL_START, COL_END, cfg.img_classify_mode, WORKERS)
 
     # ── Collect all row data (fast, read-only) ──

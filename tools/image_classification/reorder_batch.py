@@ -7,7 +7,7 @@ Difference from reorder.py:
   - All subsequent rows in the same batch REUSE the same column index.
   - This avoids repeatedly downloading + classifying identical layouts.
 
-Data source: O-W columns (15-23) of outputs/{date}v{n}_{country}.xlsx
+Data source: P-X columns (16-24) of outputs/{date}v{n}_{country}.xlsx
 Detection:   Reuses classify.py three engines (heuristic / ocr / opencv)
 
 Usage:
@@ -36,8 +36,8 @@ BASE = Path(__file__).resolve().parent
 TEMP_DIR = BASE / "images_awaiting"
 _log = get_logger("image_reorder_batch")
 
-COL_START = 15          # O
-COL_END   = 23          # W
+COL_START = 16          # P
+COL_END   = 24          # X
 COL_FIRST = 1           # A — used to detect coloured batch markers
 WORKERS   = 6
 
@@ -163,7 +163,7 @@ def main() -> None:
 
     # ── 1. Build batches by coloured A-column cells ──
     batches = _build_batches(ws, max_row)
-    _log.info("Source: %s  MaxRow: %d  Batches: %d  Range: O(%d)-W(%d)  Mode: %s",
+    _log.info("Source: %s  MaxRow: %d  Batches: %d  Range: P(%d)-X(%d)  Mode: %s",
               src.name, max_row, len(batches), COL_START, COL_END, cfg.img_classify_mode)
 
     if not batches:

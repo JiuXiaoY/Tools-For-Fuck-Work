@@ -1,6 +1,6 @@
 """Reorder image links in Excel: copy size charts to the end and mark non-conforming positions red.
 
-Data source: O-W columns (15-23) of outputs/{date}v{n}_{country}.xlsx
+Data source: P-X columns (16-24) of outputs/{date}v{n}_{country}.xlsx
 
 Multi-threaded: rows split across threads, each thread processes independently.
 Results merged, then applied to Excel in single thread.
@@ -31,8 +31,8 @@ BASE = Path(__file__).resolve().parent
 TEMP_DIR = BASE / "images_awaiting"
 _log = get_logger("image_reorder")
 
-COL_START = 15
-COL_END = 23
+COL_START = 16
+COL_END = 24
 # 将并发数提升至 16，充分利用网络和 CPU，如果被服务器拦截可适当调小
 WORKERS = 6
 
@@ -111,7 +111,7 @@ def main() -> None:
     ws = wb.active
     max_row = ws.max_row
 
-    _log.info("Source: %s  Rows: %d  Range: O(%d)-W(%d)  Mode: %s  Workers: %d",
+    _log.info("Source: %s  Rows: %d  Range: P(%d)-X(%d)  Mode: %s  Workers: %d",
               src.name, max_row, COL_START, COL_END, cfg.img_classify_mode, WORKERS)
 
     # ── Collect all row data (fast, read-only) ──
@@ -183,7 +183,7 @@ def main() -> None:
 
             # 不移动原图，直接在末尾追加（复制）一张尺码表
             dst_col = last_col + 1
-            # 越界保护：如果追加的列超过了 W 列(COL_END)，则只能强制覆盖在 W 列上
+            # 越界保护：如果追加的列超过了 X 列(COL_END)，则只能强制覆盖在 X 列上
             if dst_col > COL_END:
                 dst_col = COL_END
 
