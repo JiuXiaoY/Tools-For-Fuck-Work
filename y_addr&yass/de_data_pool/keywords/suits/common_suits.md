@@ -1,8 +1,6 @@
 # 亚马逊德国站 (Amazon.de) 套装通用词库
 
 ## [核心产品词]
-Cardigan (开衫), Shorts (短裤), Boxershorts (平角短裤), Umhang (披肩), Krawatte (领带), Fliege (领结)
-Hosenträger (背带), Einstecktuch (口袋巾)
 
 ## [颜色与图案词]
 Beige (米色), Blumenmuster / Floral (碎花/印花), Einfarbig (纯色), Farbverlauf (渐变), Gepunktet / Polka Dots (波点), Gestreift (条纹)

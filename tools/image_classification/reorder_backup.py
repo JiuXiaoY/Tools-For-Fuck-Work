@@ -1,6 +1,6 @@
 """Reorder image links in Excel: mark non-conforming size chart positions red.
 
-Data source: O-W columns (15-23) of outputs/{date}v1.xlsx
+Data source: O-W columns (15-23) of outputs/{date}v{n}_{country}.xlsx
 
 Multi-threaded: rows split across threads, each thread processes independently.
 Results merged, then applied to Excel in single thread.
@@ -21,7 +21,7 @@ from openpyxl.styles import PatternFill
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from config import Config
+from config import Config, resolve_output_xlsx
 from services.logger import get_logger
 
 BASE = Path(__file__).resolve().parent
@@ -147,7 +147,8 @@ def _process_row(r: int, links_raw: list[str | None], cfg: Config) -> dict:
 def main() -> None:
     cfg = Config()
     date_str = _resolve_date(cfg)
-    src = Path(__file__).resolve().parent.parent.parent / cfg.out_dir / f"{date_str}v1.xlsx"
+    src = resolve_output_xlsx(Path(__file__).resolve().parent.parent.parent / cfg.out_dir,
+                              date_str, cfg.mapping_country)
 
     if not src.exists():
         _log.error("Source not found: %s", src)

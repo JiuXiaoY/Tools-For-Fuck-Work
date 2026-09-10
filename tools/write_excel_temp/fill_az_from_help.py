@@ -18,9 +18,25 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 BASE = Path(__file__).resolve().parent.parent.parent
-DEFAULT_SRC = BASE / "outputs" / "7.23v1.xlsx"
+sys.path.insert(0, str(BASE))
+
+from config import Config, resolve_output_xlsx   # noqa: E402
+
 HELP = BASE / "y_addr&yass" / "de_data_pool" / "finePoints" / "help"
 AZ_COL = 52  # AZ = 第 52 列
+
+
+def _resolve_date(cfg: Config) -> str:
+    """与 main.py 一致：date_override(YYMMDD) → 'M.DD'，否则用今天。"""
+    raw = cfg.date_override.strip()
+    if raw and len(raw) == 6:
+        try:
+            return f"{int(raw[2:4])}.{int(raw[4:6])}"
+        except ValueError:
+            pass
+    from datetime import datetime
+    today = datetime.now()
+    return f"{today.month}.{today.day}"
 
 
 def is_colored(cell) -> bool:
@@ -39,11 +55,16 @@ def is_colored(cell) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="把 help 内容按 A 列有色单元格分区循环写入 AZ 列")
-    parser.add_argument("--src", default=str(DEFAULT_SRC), help="源 xlsx 路径(默认 outputs/7.21v1rewrite.xlsx)")
+    parser.add_argument("--src", default=None,
+                        help="源 xlsx 路径(默认自动取 outputs/{date}v{n}_{国家}.xlsx)")
     parser.add_argument("--no-backup", action="store_true", help="不生成 .bak 备份")
     args = parser.parse_args()
 
-    src = Path(args.src)
+    if args.src:
+        src = Path(args.src)
+    else:
+        cfg = Config()
+        src = resolve_output_xlsx(BASE / cfg.out_dir, _resolve_date(cfg), cfg.mapping_country)
     if not src.exists():
         print(f"错误:找不到源文件 {src}", file=sys.stderr)
         sys.exit(1)

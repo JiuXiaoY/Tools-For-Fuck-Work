@@ -13,7 +13,7 @@ import openpyxl
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from config import Config
+from config import Config, resolve_output_xlsx
 from services.logger import get_logger
 
 BASE = Path(__file__).resolve().parent
@@ -24,7 +24,8 @@ _log = get_logger("write_back")
 def main() -> None:
     cfg = Config()
     date_str = _resolve_date(cfg)
-    src = Path(__file__).resolve().parent.parent.parent / cfg.out_dir / f"{date_str}v1.xlsx"
+    src = resolve_output_xlsx(Path(__file__).resolve().parent.parent.parent / cfg.out_dir,
+                              date_str, cfg.mapping_country)
 
     if not src.exists():
         _log.error("Source not found: %s", src)

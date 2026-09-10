@@ -610,3 +610,429 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
 ✅ 全流程完成
    输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_pants_filled.xlsm
 ============================================================
+
+============================================================
+[2026-09-09 18:44:00] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_blank.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_blank.json
+📊 表头 38 列，其中 29 列在 Gültige Werte 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-09 18:44:00] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_completed.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_completed.json
+📊 表头 76 列，其中 42 列在 Gültige Werte 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-09 18:44:00] column_diff.py
+============================================================
+✅ 列差异：C(completed) 76 列 vs B(blank) 38 列
+   C−B 待填列 39 列: [1, 5, 7, 8, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 37, 38, 39, 40, 41, 42, 43, 44, 45, 51, 64, 65, 68, 69, 74, 86, 91, 92, 93, 99, 100, 102, 112, 143, 175]
+   B−C 多余列 1 列: [212]
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_column_diff.json
+
+============================================================
+[2026-09-09 18:44:01] build_groups_from_excel.py
+============================================================
+✅ 分组完成：75 个锚点 -> 75 组，共 4026 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\yass_de_tracksuit_groups.json
+
+============================================================
+[2026-09-09 18:44:02] build_data_from_excel.py
+============================================================
+✅ 取数完成：75 组，共 1500 个「组×列」（源列 18 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\yass_de_tracksuit_data.json
+
+============================================================
+[2026-09-09 18:44:03] build_m_data.py
+============================================================
+✅ M 占位生成：1425 个「组×列」（占位 dataTemp；col_scope 39 列，A 已覆盖 20 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 18:44:03] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(51, 'Bekleidungsgröße'), (64, 'Farbzuordnung'), (143, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+产品列表（数据源 A Sheet0 提取）：75 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   44: Lifestyle（5 个可选值）
+   45: Stil（8 个可选值）
+   68: Passform（13 个可选值）
+   69: Beschreibung der Tasche（9 个可选值）
+   74: Webart（9 个可选值）
+   86: Muster（17 个可选值）
+   91: Beschreibung der Ärmellänge（6 个可选值）
+   92: Ärmelart（18 个可选值）
+   93: Materialgewicht des Bekleidungsstoffs（3 个可选值）
+   99: Elastizität des Bekleidungsstoffs（4 个可选值）
+   100: Größeneinschätzung（5 个可选值）
+产品共 75 个，按每批 10 个分为 8 批（最后一批 5 个）
+⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+📄 提示词: attributes_batch01.txt（产品 1~10）
+📄 提示词: attributes_batch02.txt（产品 11~20）
+📄 提示词: attributes_batch03.txt（产品 21~30）
+📄 提示词: attributes_batch04.txt（产品 31~40）
+📄 提示词: attributes_batch05.txt（产品 41~50）
+📄 提示词: attributes_batch06.txt（产品 51~60）
+📄 提示词: attributes_batch07.txt（产品 61~70）
+📄 提示词: attributes_batch08.txt（产品 71~75）
+已打开 https://chat.deepseek.com/
+复用登录态: .deepseek_state.json
+--- 批次 1/8：产品 1~10（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 1/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 2/8：产品 11~20（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 2/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 3/8：产品 21~30（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 3/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 4/8：产品 31~40（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 4/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 5/8：产品 41~50（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 5/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 6/8：产品 51~60（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 6/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 7/8：产品 61~70（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 7/8（网页询问）：写入 110 个「组×列」，占位 0
+--- 批次 8/8：产品 71~75（共 5 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 8/8（网页询问）：写入 55 个「组×列」，占位 0
+✅ 校验通过：所有有可选值列均无占位
+
+M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 18:49:59] build_fill_framework.py
+============================================================
+✅ M 数据合并：1425 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\.xlsx_dataSource_m.json）
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_tracksuit_fill_framework.json
+   col_scope 39 列: [1, 5, 7, 8, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 37, 38, 39, 40, 41, 42, 43, 44, 45, 51, 64, 65, 68, 69, 74, 86, 91, 92, 93, 99, 100, 102, 112, 143, 175]
+   groups 75 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_tracksuit\yass_de_tracksuit_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\tracksuit_template_Adam.xlsm
+
+============================================================
+[2026-09-09 18:49:59] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_tracksuit_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_tracksuit_filled.xlsm
+============================================================
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_tracksuit_filled.xlsm
+📊 共填写 157014 个单元格，保留至第 4032 行
+
+============================================================
+[2026-09-09 18:43:59] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_tracksuit
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+✅ ① 模板解析 B → blank.json OK
+
+② 模板解析 C → completed.json
+----------------------------------------
+✅ ② 模板解析 C → completed.json OK
+
+③ 列差异（C − B）→ column_diff.json
+----------------------------------------
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_tracksuit_fill_framework.json
+----------------------------------------
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_tracksuit_fill_framework.json OK
+
+⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_tracksuit_filled.xlsm
+----------------------------------------
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_tracksuit_filled.xlsm OK
+
+============================================================
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_tracksuit_filled.xlsm
+============================================================
+
+============================================================
+[2026-09-09 19:51:30] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_blank.json
+============================================================
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 341, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 253, in main
+    ws_valid = wb[name_valid]
+               ~~^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet Gültige Werte does not exist.'
+
+============================================================
+[2026-09-09 19:51:30] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_tracksuit
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+❌ ① 模板解析 B → blank.json 失败（exit 1），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+
+============================================================
+[2026-09-09 19:53:25] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_blank.json
+============================================================
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 341, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 253, in main
+    ws_valid = wb[name_valid]
+               ~~^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet Gültige Werte does not exist.'
+
+============================================================
+[2026-09-09 19:53:24] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_tracksuit
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+❌ ① 模板解析 B → blank.json 失败（exit 1），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+
+============================================================
+[2026-09-09 19:53:45] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_tracksuit\yass_de_tracksuit_blank.json
+============================================================
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 341, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\analysisXlsm.py", line 253, in main
+    ws_valid = wb[name_valid]
+               ~~^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet Gültige Werte does not exist.'
+
+============================================================
+[2026-09-09 19:53:45] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_tracksuit
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+❌ ① 模板解析 B → blank.json 失败（exit 1），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+
+============================================================
+[2026-09-09 19:55:20] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_tracksuit\yass_fr_tracksuit_blank.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_tracksuit\yass_fr_tracksuit_blank.json
+📊 表头 36 列，其中 27 列在 Valeurs valides 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-09 19:55:20] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_tracksuit\yass_fr_tracksuit_completed.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_tracksuit\yass_fr_tracksuit_completed.json
+📊 表头 73 列，其中 39 列在 Valeurs valides 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-09 19:55:21] column_diff.py
+============================================================
+✅ 列差异：C(completed) 73 列 vs B(blank) 36 列
+   C−B 待填列 37 列: [1, 5, 7, 8, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 37, 38, 39, 40, 41, 42, 43, 44, 45, 51, 63, 64, 65, 68, 69, 74, 91, 92, 93, 102, 112, 142, 174]
+   B−C 多余列 0 列: []
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_tracksuit\yass_fr_tracksuit_column_diff.json
+
+============================================================
+[2026-09-09 19:55:21] build_groups_from_excel.py
+============================================================
+✅ 分组完成：75 个锚点 -> 75 组，共 4026 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\yass_fr_tracksuit_groups.json
+
+============================================================
+[2026-09-09 19:55:22] build_data_from_excel.py
+============================================================
+✅ 取数完成：75 组，共 1500 个「组×列」（源列 18 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\yass_fr_tracksuit_data.json
+
+============================================================
+[2026-09-09 19:55:23] build_m_data.py
+============================================================
+✅ M 占位生成：1275 个「组×列」（占位 dataTemp；col_scope 37 列，A 已覆盖 20 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 19:55:23] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(51, 'Taille du vêtement'), (64, 'Couleur dominante'), (142, 'Votre prix EUR (Vendez sur Amazon, FR)')]
+产品列表（数据源 A Sheet0 提取）：75 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   44: Style de vie（5 个可选值）
+   45: Style（8 个可选值）
+   63: Format spécial（21 个可选值）
+   68: Type de coupe（13 个可选值）
+   69: Description de la poche（9 个可选值）
+   74: Type de tissage（9 个可选值）
+   91: Description de la longueur des manches（6 个可选值）
+   92: Type de manches（18 个可选值）
+   93: Classe de poids du tissu d’habillement（3 个可选值）
+产品共 75 个，按每批 10 个分为 8 批（最后一批 5 个）
+⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+📄 提示词: attributes_batch01.txt（产品 1~10）
+📄 提示词: attributes_batch02.txt（产品 11~20）
+📄 提示词: attributes_batch03.txt（产品 21~30）
+📄 提示词: attributes_batch04.txt（产品 31~40）
+📄 提示词: attributes_batch05.txt（产品 41~50）
+📄 提示词: attributes_batch06.txt（产品 51~60）
+📄 提示词: attributes_batch07.txt（产品 61~70）
+📄 提示词: attributes_batch08.txt（产品 71~75）
+已打开 https://chat.deepseek.com/
+复用登录态: .deepseek_state.json
+--- 批次 1/8：产品 1~10（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 1/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 2/8：产品 11~20（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 2/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 3/8：产品 21~30（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 3/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 4/8：产品 31~40（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 4/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 5/8：产品 41~50（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 5/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 6/8：产品 51~60（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 6/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 7/8：产品 61~70（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 7/8（网页询问）：写入 90 个「组×列」，占位 0
+--- 批次 8/8：产品 71~75（共 5 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch08_result.txt
+✅ 批次 8/8（网页询问）：写入 45 个「组×列」，占位 0
+✅ 校验通过：所有有可选值列均无占位
+
+M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-09 20:01:52] build_fill_framework.py
+============================================================
+✅ M 数据合并：1275 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\.xlsx_dataSource_m.json）
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_tracksuit_fill_framework.json
+   col_scope 37 列: [1, 5, 7, 8, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 37, 38, 39, 40, 41, 42, 43, 44, 45, 51, 63, 64, 65, 68, 69, 74, 91, 92, 93, 102, 112, 142, 174]
+   groups 75 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_tracksuit\yass_fr_tracksuit_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\tracksuit_template_Adam.xlsm
+
+============================================================
+[2026-09-09 20:01:52] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_tracksuit_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_tracksuit_filled.xlsm
+============================================================
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_tracksuit_filled.xlsm
+📊 共填写 148962 个单元格，保留至第 4032 行
+
+============================================================
+[2026-09-09 19:55:20] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_fr_tracksuit
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+✅ ① 模板解析 B → blank.json OK
+
+② 模板解析 C → completed.json
+----------------------------------------
+✅ ② 模板解析 C → completed.json OK
+
+③ 列差异（C − B）→ column_diff.json
+----------------------------------------
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_tracksuit_fill_framework.json
+----------------------------------------
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_tracksuit_fill_framework.json OK
+
+⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_tracksuit_filled.xlsm
+----------------------------------------
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_tracksuit_filled.xlsm OK
+
+============================================================
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_tracksuit_filled.xlsm
+============================================================

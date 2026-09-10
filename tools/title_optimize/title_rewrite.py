@@ -1,7 +1,7 @@
 """Title optimize workflow: extract → validate → optimize → write-back.
 
 Workflow:
-  1. Read outputs/{date}v1.xlsx, extract col H→origin_title, col O→origin_link
+  1. Read outputs/{date}v{n}_{country}.xlsx, extract col H→origin_title, col O→origin_link
   2. Validate all three files exist and line counts match
   3. Run optimize (deepseek_web.py or run.py)
   4. Insert column after G, write optimized titles back to Excel
@@ -20,7 +20,7 @@ import openpyxl
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from config import Config
+from config import Config, resolve_output_xlsx
 from services.logger import get_logger
 
 BASE = Path(__file__).resolve().parent
@@ -37,7 +37,7 @@ def main() -> None:
     # ── 1. Find source Excel ──
     date_str = _resolve_date(cfg)
     out_dir = Path(__file__).resolve().parent.parent.parent / cfg.out_dir
-    src = out_dir / f"{date_str}v1.xlsx"
+    src = resolve_output_xlsx(out_dir, date_str, cfg.mapping_country)
     if not src.exists():
         _log.error("Source not found: %s", src)
         return

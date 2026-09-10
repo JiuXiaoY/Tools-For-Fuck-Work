@@ -1,7 +1,7 @@
 """Color-size mapping for Excel: extract → process → write-back.
 
 Workflow:
-  1. Read outputs/{date}v1.xlsx, col J(10) + K(11)
+  1. Read outputs/{date}v{n}_{country}.xlsx, col J(10) + K(11)
   2. Write to check_.txt (tab-separated, empty lines as group separators)
   3. Run process.py to handle duplicates + strip size
   4. Read processed check_.txt → write back to column J
@@ -20,7 +20,7 @@ import openpyxl
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from config import Config
+from config import Config, resolve_output_xlsx
 from services.logger import get_logger
 
 BASE = Path(__file__).resolve().parent
@@ -36,7 +36,7 @@ def main() -> None:
     # ── 1. Find source Excel ──
     date_str = _resolve_date(cfg)
     out_dir = Path(__file__).resolve().parent.parent.parent / cfg.out_dir
-    src = out_dir / f"{date_str}v1.xlsx"
+    src = resolve_output_xlsx(out_dir, date_str, cfg.mapping_country)
     if not src.exists():
         _log.error("Source not found: %s", src)
         return

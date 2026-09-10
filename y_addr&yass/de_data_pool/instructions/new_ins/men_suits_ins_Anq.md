@@ -20,6 +20,8 @@
    - **主标题**: `[Marke] Jogginganzug Herren Sommer Baumwolle Leicht Sweatshirt Hose` (高涨服关键词 + 狠核心卖点/差异点 + 关键规格)
    - **副标题**: `Weicher Sweatstoff, Kapuzenjacke mit Kordelzug und 2 Taschen, elastischer Bund für Jogginghose und Freizeit, Trainingsanzug`
 
+**参考示例文件：dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/tracksuit**
+
 **Constraints & Rules:**
 **1. 高涨服关键词、属性词优先 + 中文方向锁定 + 语义联想扩词原则（核心）**  
    - **词库骨架**：必须优先使用下方【热搜关键词词库】中的词汇作为核心骨架。  

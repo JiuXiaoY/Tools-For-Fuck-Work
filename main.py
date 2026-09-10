@@ -30,7 +30,7 @@ def _resolve_date(cfg: Config) -> str:
 
 
 def _resolve_output(out_dir: Path, date_str: str, mapping_country: str) -> Path:
-    """Find next available filename: {date_str}v1.xlsx, v2, v3..."""
+    """Find next available filename: {date_str}v1_{mapping_country}.xlsx, v2, v3..."""
     v = 1
     while True:
         path = out_dir / f"{date_str}v{v}_{mapping_country}.xlsx"
