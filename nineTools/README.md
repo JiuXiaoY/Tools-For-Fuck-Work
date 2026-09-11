@@ -8,6 +8,7 @@
 | `id_sorting/` | `id_sorting.py` | 对 12 位 id 按每位 ASCII 值升序排序（数据 `id_sorting_data` → 结果 `id_sorting_result`） |
 | `random_id/` | `random_id.py` | 生成随机 ID（规则同流水线 assign_ids；>100 条自动落盘 `random_ids_*.txt`，不入库） |
 | `sku_extract/` | `extract_sku.py` | 从抓取文本（`SKU3`）抽取「SKU」标记后的值，去重输出每行一个 |
+| `sp_fivepoints/` | `sp_fivepoints.py` | 德法双语五点描述 Markdown → 纯内容 xlsx（无表头：德语整块，空两行，法语整块） |
 | `zip/` | `zip_dir.py` | 压缩目录（默认 besskyproject/Means_of_production）到 `zip_by_ec/{当天日期}_{操作用户}.zip` |
 
 ## 运行
@@ -18,6 +19,7 @@ python color_size_change/C&S_change.py
 python id_sorting/id_sorting.py
 python random_id/random_id.py
 python sku_extract/extract_sku.py
+python sp_fivepoints/sp_fivepoints.py
 python zip/zip_dir.py
 ```
 
