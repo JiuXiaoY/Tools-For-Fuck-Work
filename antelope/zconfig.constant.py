@@ -96,8 +96,9 @@ COLUMN_DEFAULTS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "column_defaults.
 COLUMN_VALUES_DIR = os.path.join(ANTELOPE_DIR, "values", INTERMEDIATE_DIR_NAME)
 
 # 父体行（每组起始行）额外动作配置（共享单文件，按 ACTIVE_CATEGORY 标签分段；键 = 列字母）
-#   {"yass_fr_coat": {"row_fill": {"color": "FFF2CC", "columns": null},
-#                     "clear_values": {"columns": ["S", "T"]}}}
+#   {"yass_fr_coat": {"set_values": {"D": "Parent"},
+#                     "row_fill": {"color": "FFFF00", "columns": null},
+#                     "clear_values": {"columns": []}}}
 #   空配置 = 不动作；由 ⑨ fill_from_plan 在保存产出前应用（见 parent_actions.py）
 PARENT_ACTIONS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "parent_actions.json")
 

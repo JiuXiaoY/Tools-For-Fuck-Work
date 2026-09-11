@@ -6,13 +6,18 @@ parent_actions —— ⑨ 填充产出后，对「父体行」（每组起始行
 实际 Excel 行 = 起始行 + (data_start_row − 1)；它不会被 ⑨ 的「多余行删除」波及，
 所以在本模块里直接按实际行号操作即可。
 
-目前支持两种动作，全部由 intermediate_tpl/parent_actions.json 按 ACTIVE_CATEGORY
+目前支持三种动作，全部由 intermediate_tpl/parent_actions.json 按 ACTIVE_CATEGORY
 分段配置；**不配置 = 完全不动**（产物与不接本 hook 时逐格一致）：
 
   1. row_fill     整行加**静态背景色**：真正的单元格填充（openpyxl PatternFill solid），
                   不是「选中/阅读模式」那种点一下才有、点走就消失的高亮效果。
                   columns 为空 → 铺满整行（到模板最后一列，当前 323 列 LK）。
-  2. clear_values 清除该行**指定列的值**（只清 value，不动字体/底色等格式）。
+  2. set_values   把父体行**指定列改成固定值**（如 {"D": "Parent"}）；列可多个，值可为
+                  文本/数字/布尔。注意：以 "=" 开头的值会被 openpyxl 当成公式写入。
+  3. clear_values 清除该行**指定列的值**（只清 value，不动字体/底色等格式）。
+
+执行顺序：clear_values → set_values → row_fill；同一列同时出现在 clear 与 set 里时，
+set 生效（会打印告警提示二选一）。
 
 调用点：fill_from_plan.py 在「填充循环 + 多余行删除」之后、wb.save() 之前调用一次——
 因此只多一次函数调用，不会对 .xlsm 做第二次加载/保存（避免 round-trip 丢图片/图表）。
@@ -21,7 +26,8 @@ parent_actions —— ⑨ 填充产出后，对「父体行」（每组起始行
     {
       "_comment": ["…"],
       "yass_fr_coat": {
-        "row_fill":     { "color": "FFF2CC", "columns": null },
+        "row_fill":     { "color": "FFFF00", "columns": null },
+        "set_values":   { "D": "Parent" },
         "clear_values": { "columns": ["S", "T"] }
       }
     }
@@ -32,7 +38,7 @@ import re
 
 from openpyxl.styles import PatternFill
 
-from common import load_json, parse_column_key, zcfg
+from common import column_letter, load_json, parse_column_key, zcfg
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_CONFIG = zcfg.PARENT_ACTIONS_FILE
@@ -92,12 +98,16 @@ def parse_column_spec(spec, max_column, what="columns"):
 def load_parent_actions(path=DEFAULT_CONFIG):
     """读取父体行动作配置，只取当前 ACTIVE_CATEGORY 标签下的部分。
 
-    返回 {"row_fill": {"color": str|None(已归一化), "columns": 原始列范围写法},
+    返回 {"row_fill": {"color": str|None, "columns": 原始列范围写法},
+          "set_values": {"items": [(列键, 值), ...]},
           "clear_values": {"columns": 原始列范围写法}}；
-    无配置/文件缺失/无当前标签分段 → {"row_fill": {"color": None}, "clear_values": {"columns": []}}
-    （即不动作）。语法错误在 apply_parent_actions 里报错（这里只做结构归一化）。
+    无配置/文件缺失/无当前标签分段 → {"row_fill": {"color": None}, "set_values": {"items": []},
+    "clear_values": {"columns": []}}（即不动作）。语法错误在 apply_parent_actions 里报错
+    （这里只做结构归一化，不校验列名/颜色）。
     """
-    empty = {"row_fill": {"color": None, "columns": None}, "clear_values": {"columns": []}}
+    empty = {"row_fill": {"color": None, "columns": None},
+             "set_values": {"items": []},
+             "clear_values": {"columns": []}}
     if not path or not os.path.exists(path):
         return empty
     try:
@@ -112,24 +122,29 @@ def load_parent_actions(path=DEFAULT_CONFIG):
 
     rf = section.get("row_fill") if isinstance(section.get("row_fill"), dict) else {}
     cv = section.get("clear_values") if isinstance(section.get("clear_values"), dict) else {}
+    sv = section.get("set_values") if isinstance(section.get("set_values"), dict) else {}
+    items = [(k, v) for k, v in sv.items() if not str(k).startswith("_")]
     return {
         "row_fill": {"color": rf.get("color"), "columns": rf.get("columns")},
+        "set_values": {"items": items},
         "clear_values": {"columns": cv.get("columns") or []},
     }
 
 
 def apply_parent_actions(ws, parent_rows, actions, log=print):
-    """对父体行执行配置的动作（整行静态底色 / 清除指定列的值）。
+    """对父体行执行配置的动作（改固定值 / 清指定列的值 / 整行静态底色）。
 
     ws          : openpyxl 工作表（产出副本）
     parent_rows : 父体行**实际行号**列表（⑨ 里由各组起始行 + 偏移得到）
     actions     : load_parent_actions() 的结果
     返回报告 dict（写入 ⑨ 的 --report，便于审计）。
     颜色/列写法非法 → 抛 ValueError（调用方报错退出，不写产出）。
+    执行顺序：clear_values → set_values → row_fill（同列冲突时 set 生效）。
     """
     report = {
         "parent_rows": list(parent_rows),
         "row_count": len(parent_rows),
+        "set_values": None,
         "fill": None,
         "clear": None,
     }
@@ -140,15 +155,31 @@ def apply_parent_actions(ws, parent_rows, actions, log=print):
     max_col = ws.max_column or 1
     fill_cfg = (actions or {}).get("row_fill") or {}
     clear_cfg = (actions or {}).get("clear_values") or {}
+    set_cfg = (actions or {}).get("set_values") or {}
 
     color = normalize_color(fill_cfg.get("color"))
     fill_cols = parse_column_spec(fill_cfg.get("columns"), max_col, "row_fill.columns") if color else []
     clear_cols = parse_column_spec(clear_cfg.get("columns"), max_col, "clear_values.columns") \
         if clear_cfg.get("columns") else []
 
-    if not color and not clear_cols:
+    set_items = []                        # [(列号, 值), ...]
+    for key, val in set_cfg.get("items") or []:
+        col = parse_column_key(key)
+        if col is None:
+            raise ValueError(f"set_values 无法识别的列: {key!r}（应写列字母如 \"D\"，或列号如 \"4\"）")
+        if col < 1 or col > max_col:
+            raise ValueError(f"set_values 列 {column_letter(col)}({col}) 超出模板列范围（1..{max_col}）")
+        set_items.append((col, val))
+    set_cols = [c for c, _ in set_items]
+
+    if not color and not clear_cols and not set_items:
         log("ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过")
         return report
+
+    conflict = sorted(set(set_cols) & set(clear_cols))
+    if conflict:
+        log(f"⚠️ 父体行动作：列 {[column_letter(c) for c in conflict]} 同时出现在 set_values 与 "
+            f"clear_values → 先清后设，以 set_values 的值为准，请确认是否要二选一")
 
     # ① 清除指定列的值（只动 value，不动格式）
     if clear_cols:
@@ -161,11 +192,32 @@ def apply_parent_actions(ws, parent_rows, actions, log=print):
                     cell.value = None
                     cleared += 1
                 touched += 1
-        report["clear"] = {"columns": clear_cols, "cells": touched, "cleared_with_value": cleared}
+        report["clear"] = {"columns": [column_letter(c) for c in clear_cols], "cells": touched,
+                           "cleared_with_value": cleared}
         log(f"🧹 父体行清值：{len(parent_rows)} 行 × {len(clear_cols)} 列（{touched} 格，"
             f"其中原本有值的 {cleared} 格已清空）")
 
-    # ② 整行静态底色（真正的单元格填充）
+    # ② 指定列改成固定值（后于清值 → 同列时 set 生效）
+    if set_items:
+        cells = 0
+        overwritten = 0
+        for r in parent_rows:
+            for c, val in set_items:
+                cell = ws.cell(row=r, column=c)
+                if cell.value is not None:
+                    overwritten += 1
+                cell.value = val
+                cells += 1
+        report["set_values"] = {
+            "columns": [f"{column_letter(c)}" for c, _ in set_items],
+            "items": [{"column": column_letter(c), "value": v} for c, v in set_items],
+            "cells": cells, "overwritten": overwritten,
+        }
+        desc = ", ".join(f"{column_letter(c)}={v!r}" for c, v in set_items)
+        log(f"✏️ 父体行改值：{len(parent_rows)} 行 × {len(set_items)} 列（{cells} 格；"
+            f"其中原本有值的 {overwritten} 格被覆盖）→ {desc}")
+
+    # ③ 整行静态底色（真正的单元格填充）
     if color:
         fill = PatternFill(start_color=color, end_color=color, fill_type="solid")
         for r in parent_rows:

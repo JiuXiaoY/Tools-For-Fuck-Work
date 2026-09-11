@@ -202,14 +202,17 @@
 
   ```json
   { "yass_fr_coat": {
-      "row_fill":     { "color": "FFF2CC", "columns": null },
-      "clear_values": { "columns": ["S", "T"] } } }
+      "set_values":   { "D": "Parent" },
+      "row_fill":     { "color": "FFFF00", "columns": null },
+      "clear_values": { "columns": [] } } }
   ```
 
   - 父体行 = 每组**起始行**（实际行号 = 起始行 + `data_start_row − 1`），不会被删行波及；
+  - `set_values`：把父体行**指定列改成固定值**（可多列；值可为文本/数字/布尔；以 `=` 开头会被当公式）；
   - `row_fill`：整行加**静态背景色**（真正的单元格填充，不是选中/阅读模式那种点击即消失的高亮）；
     `columns` 为 `null`/`"all"` → 整行（到模板最后一列），也可写 `"A:AW"` 或 `["A","B"]`；
   - `clear_values`：清除该行**指定列的值**（只清 value，不动格式）；
+  - 执行顺序 `clear_values → set_values → row_fill`，同列既清又设时以 `set_values` 为准并告警；
   - 颜色/列写法非法 → 报错 `exit 2` 且**不写出产出**；执行明细写入 `--report`。
 - 输出：默认 `outputs/result_filled.xlsm`（`-o` 传目录时自动补文件名）；`--report out.json` 可导出逐组逐列报告。
 

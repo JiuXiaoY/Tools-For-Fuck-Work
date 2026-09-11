@@ -635,3 +635,41 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
 
 ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm
 📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 13:53:49] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_off.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\off.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_off.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 13:53:59] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm --report D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\report.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 55 格被覆盖）→ D='Parent'
+🎨 父体行底色（静态填充）：55 行 × 323 列（17765 格，色值 FFFFFF00）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+📄 报告: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\report.json
+
+============================================================
+[2026-09-11 13:54:29] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_never.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\bad.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+❌ 父体行动作执行失败: set_values 无法识别的列: '1A'（应写列字母如 "D"，或列号如 "4"）
+💡 检查 intermediate_tpl/parent_actions.json（color 应为 6/8 位十六进制；columns 写列字母如 "AT" 或区间 "A:AW"）。未写出产出文件。
+
+============================================================
+[2026-09-11 13:54:33] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\conf.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+⚠️ 父体行动作：列 ['D'] 同时出现在 set_values 与 clear_values → 先清后设，以 set_values 的值为准，请确认是否要二选一
+🧹 父体行清值：55 行 × 1 列（55 格，其中原本有值的 55 格已清空）
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 0 格被覆盖）→ D='Parent'
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
