@@ -222,22 +222,25 @@ def make_sequence(seed, count):
 
 
 def normalize_sequence_flag(flag):
-    """sequence 配置归一化：None/"auto" → None（自动判断）；true/false（含字符串）→ bool。
+    """sequence 配置归一化 → False（非序列，默认）/ True（强制序列）/ None（auto 自动判断）。
 
-    无法识别的写法 → None（按自动判断处理）。
+    - 缺省、null、""、false/"false" → **False：整列同值（默认行为，不序列化）**；
+    - true/"true" → True：强制序列（值必须以数字结尾，否则报错）；
+    - "auto"/"default" → None：按值自动判断（值以数字结尾才序列化）；
+    - 无法识别的写法 → False（安全默认：不序列化）。
     """
     if flag is None:
-        return None
+        return False
     if isinstance(flag, bool):
         return flag
     s = str(flag).strip().lower()
-    if s in ("", "auto", "default"):
-        return None
-    if s in ("true", "yes", "1", "on", "seq", "sequence"):
-        return True
-    if s in ("false", "no", "0", "off", "none", "fixed", "same"):
+    if s in ("", "false", "no", "0", "off", "none", "fixed", "same", "n"):
         return False
-    return None
+    if s in ("true", "yes", "1", "on", "seq", "sequence", "y"):
+        return True
+    if s in ("auto", "default"):
+        return None
+    return False
 
 
 def uncovered_cols(diff_path, data_path):
@@ -301,10 +304,14 @@ def load_column_defaults(path):
         }
 
     键支持列字母（"S"/"AN"）与列号（"19"/"40"，旧写法兼容）；以 "_" 开头的键忽略。
-    每项还可用 "sequence" 控制「指定值是否按序列递增」：
-        true = 强制序列（值必须以数字结尾，否则报错）；false = 整列同值；缺省/"auto" = 自动判断。
-    归一化为 {列号(str): {"value": str|None, "file": str|None, "sequence": bool|None}}（保留空项，
-    便于区分「配置了但没值」与「未配置」两种警告）。
+    每项三个字段（推荐都写全，缺省按下面的默认值处理）：
+        "value"    : 指定值；"" = 未配置（不写值）
+        "file"     : 多行值文件；"" = 未配置（不写文件）
+        "sequence" : 是否序列填充；**缺省 = false（非序列，整列同值）**，
+                     true = 强制序列（值必须以数字结尾），"auto" = 值以数字结尾才序列化
+    归一化为 {列号(str): {"value": str|None, "file": str|None, "sequence": bool|None}}：
+    value/file 的空串与 null 一律归一为 None（表示未配置）；保留空项，
+    便于区分「配置了但没值」与「未配置」两种警告。
     文件缺失/解析失败/找不到当前标签 → 返回 {}（全部列按未配置处理）。
     """
     if not path or not os.path.exists(path):
@@ -320,19 +327,24 @@ def load_column_defaults(path):
         raw = section                      # 新版：取当前标签分段
     # 否则视为旧版扁平结构，raw 整体使用（值不是 dict/str 的项会被下面的归一化过滤）
 
+    def _blank_to_none(v):
+        """空串/null → None（=未配置）；其余转字符串。"""
+        if v is None:
+            return None
+        s = str(v)
+        return s if s.strip() else None
+
     result = {}
     for key, val in raw.items():
         col = parse_column_key(key)
         if col is None:
             continue                       # "_comment" 等非列键忽略
         if isinstance(val, str):
-            result[str(col)] = {"value": val, "file": None, "sequence": None}
+            result[str(col)] = {"value": _blank_to_none(val), "file": None, "sequence": False}
         elif isinstance(val, dict):
-            value = val.get("value")
-            file_ = val.get("file")
             result[str(col)] = {
-                "value": None if value is None else str(value),
-                "file": None if file_ is None else str(file_),
+                "value": _blank_to_none(val.get("value")),
+                "file": _blank_to_none(val.get("file")),
                 "sequence": normalize_sequence_flag(val.get("sequence")),
             }
     return result

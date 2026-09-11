@@ -279,12 +279,12 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
     实现：利用「切片长度恰等于组行数 → fill_from_plan 判定 m==n → sequential」这一点，
     把循环序列**按组旋转切片**写进 plan.data；fill_from_plan.py 无需改动。
 
-    配置来源 intermediate_tpl/column_defaults.json 当前类别分段：
-        {"S": {"value": "Coat-001"}, "AT": {"file": "keywords.txt"}, "AN": "…"}
-    file 优先，文件缺失/为空退回 value；两者都不行 → 该列保留占位（警告）。
-    指定值若以数字结尾 → **序列填充**（"S-0001" → S-0001, S-0002, … 整列连续递增，
-    宽度按种子补零）；不想要序列就写 "sequence": false；写 true 则值必须以数字结尾，否则报错。
-    值文件出现空行 → 报错退出（约定值文件不允许空值）。
+    配置来源 intermediate_tpl/column_defaults.json 当前类别分段（三项字段，"" = 未配置）：
+        {"S": {"value": "Coat-001", "file": "",       "sequence": false},
+         "AT": {"value": "",        "file": "kw.txt", "sequence": false}}
+    file 优先，文件缺失/为空退回 value；两者都空 → 该列保留占位（警告）。
+    sequence 默认 false（整列同值）；true → 值必须数字结尾并整列递增（"S-0001" → S-0001, S-0002, …）；
+    "auto" → 值以数字结尾才递增。值文件出现空行 → 报错退出（约定值文件不允许空值）。
 
     返回 (report, stats)：report 为逐列明细；stats 为计数汇总。
     """
@@ -322,7 +322,8 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
     for col in sorted(target_set):
         tag = f"{column_letter(col)}({col})"          # 日志与配置统一用列字母，如 AN(40)
         entry = defaults.get(str(col))
-        if entry is None:
+        # "" / null 归一为 None → 视为「未配置」；三项都缺也与未配置同一处理
+        if entry is None or (not entry.get("value") and not entry.get("file")):
             stats["unconfigured"] += 1
             print(f"⚠️ 列{tag} ({_header(headers, col)}) 未配置 → 保留占位 {placeholder}"
                   f"（{total_rows} 格将写入产出）")
@@ -350,8 +351,8 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
                   f"（会跳过每组首行、与整列循环错位）→ 跳过并保留占位；请二选一")
             continue
 
-        # ── 指定值的「序列填充」判断（S-0001 → S-0001, S-0002, … 整列连续递增）──
-        seq_flag = (entry or {}).get("sequence")           # None=自动 / True=强制 / False=同值
+        # ── 序列填充判断（默认关闭；S-0001 → S-0001, S-0002, … 需 sequence 开启）──
+        seq_flag = (entry or {}).get("sequence")           # False=非序列(默认) / True=强制 / None=auto
         seq_values = None
         if source == "value":
             seed = values[0]
@@ -359,14 +360,19 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
                 print("")
                 print("=" * 60)
                 print(f"❌ 列{tag} 配置 sequence: true，但指定值 {seed!r} 不以数字结尾，无法递增。")
-                print("💡 改成如 \"S-0001\" / \"0001\"，或把 sequence 设为 false （整列同值）。")
+                print("💡 改成如 \"S-0001\" / \"0001\"，或把 sequence 设为 false（整列同值）。")
                 print("=" * 60)
                 sys.exit(2)
-            use_seq = bool(seq_flag) if seq_flag is not None else (seq_seed(seed) is not None)
+            if seq_flag is True:
+                use_seq = True                             # 强制序列
+            elif seq_flag is None:
+                use_seq = seq_seed(seed) is not None       # auto：值以数字结尾才序列化
+            else:
+                use_seq = False                            # 默认：整列同值
             if use_seq:
                 seq_values = make_sequence(seed, total_rows)
-        elif seq_flag is not None:
-            print(f"⚠️ 列{tag} 配置了 sequence，但该列用的是值文件 → 按文件行循环，sequence 不生效")
+        elif seq_flag is True:
+            print(f"⚠️ 列{tag} 配置了 sequence: true，但该列用的是值文件 → 按文件行循环，sequence 不生效")
 
         m = len(values)
         if seq_values is not None:

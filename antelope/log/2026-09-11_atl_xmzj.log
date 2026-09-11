@@ -729,3 +729,77 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
    col_scope 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 71, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205]
    groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\yass_fr_coat_groups.json）
    template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 14:03:36] build_fill_framework.py -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan_empty.json
+============================================================
+✅ M 数据合并：715 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\.xlsx_dataSource_m.json）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+⚠️ 列S(19) (Numéro du modèle) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列T(20) (Nom du modèle) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列AN(40) (Description du produit) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列AT(46) (Mots-clés de recherche) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+📌 目标列 4 个：已配置 0 / 未配置 4 / 跳过 0（数据 3027 行、55 组，组区间连续）
+✅ 有可选值列校验通过（9 列无占位残留）: [17, 52, 53, 71, 77, 78, 86, 113, 115]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan_empty.json
+   col_scope 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 71, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\yass_fr_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 14:03:36] build_fill_framework.py -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan2.json --column-defaults D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd2.json --columns-report D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\rep2.json
+============================================================
+✅ M 数据合并：715 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\.xlsx_dataSource_m.json）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd2.json）
+⚠️ 配置中的列 Q(17) 不在目标集合：有可选值（由 ⑦ AI 负责） → 跳过，不覆盖真实数据
+✅ 列S(19) (Numéro du modèle) ← 指定值(序列) 'S-0001'→'S-3027' 填 3027 行 [首=S-0001 末=S-3027]
+✅ 列T(20) (Nom du modèle) ← 指定值 'S-0001' 填 3027 行 [首=S-0001 末=S-0001]
+✅ 列AN(40) (Description du produit) ← 指定值(序列) 'S-0001'→'S-3027' 填 3027 行 [首=S-0001 末=S-3027]
+✅ 列AT(46) (Mots-clés de recherche) ← 指定值 'Parent' 填 3027 行 [首=Parent 末=Parent]
+📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 1（数据 3027 行、55 组，组区间连续）
+📄 目标列取值明细: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\rep2.json
+✅ 有可选值列校验通过（9 列无占位残留）: [17, 52, 53, 71, 77, 78, 86, 113, 115]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan2.json
+   col_scope 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 71, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\yass_fr_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 14:03:37] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan2.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_seq2.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 55 格被覆盖）→ D='Parent'
+🎨 父体行底色（静态填充）：55 行 × 323 列（17765 格，色值 FFFFFF00）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_seq2.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 14:03:54] build_fill_framework.py -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan3.json --column-defaults D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd3.json --columns-report D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\rep2.json
+============================================================
+✅ M 数据合并：715 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\.xlsx_dataSource_m.json）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd3.json）
+⚠️ 列S(19) (Numéro du modèle) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+      ↳ ⚠️ 值文件不存在，退回指定值: no_such.txt（已找: ['D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\values\\yass_fr_coat\\no_such.txt', 'D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\no_such.txt', 'no_such.txt']）
+✅ 列T(20) (Nom du modèle) ← 指定值(序列) 'MOD-0001'→'MOD-3027' 填 3027 行 [首=MOD-0001 末=MOD-3027]
+⚠️ 列AN(40) (Description du produit) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列AT(46) (Mots-clés de recherche) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+📌 目标列 4 个：已配置 1 / 未配置 3 / 跳过 0（数据 3027 行、55 组，组区间连续）
+📄 目标列取值明细: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\rep2.json
+✅ 有可选值列校验通过（9 列无占位残留）: [17, 52, 53, 71, 77, 78, 86, 113, 115]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\plan3.json
+   col_scope 38 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 71, 73, 74, 77, 78, 86, 113, 115, 133, 143, 173, 205]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\yass_fr_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 14:03:55] build_fill_framework.py -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\never.json --column-defaults D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd4.json
+============================================================
+✅ M 数据合并：715 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\.xlsx_dataSource_m.json）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\cd4.json）
+⚠️ 列S(19) (Numéro du modèle) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+
+============================================================
+❌ 列T(20) 配置 sequence: true，但指定值 'Parent' 不以数字结尾，无法递增。
+💡 改成如 "S-0001" / "0001"，或把 sequence 设为 false（整列同值）。
+============================================================
