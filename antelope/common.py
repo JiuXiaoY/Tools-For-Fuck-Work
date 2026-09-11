@@ -389,35 +389,52 @@ def read_value_lines(path):
 def resolve_column_values(entry, values_dir, log=print):
     """把一条配置解析为 (values, source, path)：file 优先，找不到退回 value。
 
-    - file 可写绝对路径 / 相对仓库根 / 纯文件名（后者到 values_dir 下找）；
-    - 文件不存在、读失败、为空（0 行）→ 退回 value（打印原因）；
+    - file 可写绝对路径，或相对下列任一位置：`antelope/values/<类别>/`（默认目录）、
+      `antelope/values/`（直接放在这一层也认）、仓库根、当前工作目录；
+    - 文件不存在、读失败、为空（0 行）→ 退回 value（打印原因；没配 value 就保留占位）；
     - 空行等数据错误（ValueFileError）原样抛出，由调用方报错退出（不兜底）；
     - 都不行 → ([], None, None)。
     """
     value = (entry or {}).get("value")
     file_spec = (entry or {}).get("file")
 
+    def _fallback_note():
+        """退回说明：有指定值 → 改用指定值；没指定值 → 该列会保留占位。"""
+        return "改用指定值" if value else "未配置指定值 → 该列保留占位"
+
     if file_spec:
-        candidates = [file_spec] if os.path.isabs(file_spec) else [
-            os.path.join(values_dir or "", file_spec),
-            os.path.join(_ROOT, file_spec),
-            file_spec,
-        ]
-        path = next((p for p in candidates if path_exists(p)), None)
+        if os.path.isabs(file_spec):
+            candidates = [file_spec]
+        else:
+            candidates = [
+                os.path.join(values_dir or "", file_spec),           # antelope/values/<类别>/
+                os.path.join(_ANTELOPE_DIR, "values", file_spec),    # antelope/values/
+                os.path.join(_ROOT, file_spec),                      # 相对仓库根
+                file_spec,                                           # 相对当前工作目录
+            ]
+        searched = []
+        for c in candidates:                                          # 去重保序
+            if c and c not in searched:
+                searched.append(c)
+        path = next((p for p in searched if path_exists(p)), None)
         if path is None:
-            log(f"      ↳ ⚠️ 值文件不存在，退回指定值: {file_spec}（已找: {candidates}）")
+            log(f"      ↳ ⚠️ 值文件不存在: {file_spec}")
+            log(f"         已找: {searched}")
+            hint = "" if value else (f"（把文件放到 {values_dir} 或 "
+                                     f"{os.path.join(_ANTELOPE_DIR, 'values')} 下，或写相对仓库根的路径）")
+            log(f"         → {_fallback_note()}{hint}")
         else:
             try:
                 lines = read_value_lines(path)
             except ValueFileError:
                 raise                          # 空行 = 数据错误，直接报错
             except Exception as exc:
-                log(f"      ↳ ⚠️ 值文件读取失败（{type(exc).__name__}: {exc}），退回指定值: {path}")
+                log(f"      ↳ ⚠️ 值文件读取失败（{type(exc).__name__}: {exc}）: {path}"
+                    f" → {_fallback_note()}")
                 lines = []
             if lines:
                 return lines, "file", path
-            if path is not None:
-                log(f"      ↳ ⚠️ 值文件为空（0 行），退回指定值: {path}")
+            log(f"      ↳ ⚠️ 值文件为空（0 行）: {path} → {_fallback_note()}")
 
     if value:
         return [value], "value", None

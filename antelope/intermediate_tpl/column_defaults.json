@@ -14,10 +14,10 @@
     "值文件：每行一个值，utf-8(sig) 或 gbk；不允许空行（出现空行会直接报错并给出行号）；文件模式按行循环，不受 sequence 影响。",
     "配置按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键一律忽略。"
   ],
-  "yass_fr_coat": {
-    "S":  { "value": "", "file": "", "sequence": false },
-    "T":  { "value": "", "file": "", "sequence": false },
-    "AN": { "value": "", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "", "sequence": false }
+  "yass_de_coat": {
+    "S":  { "value": "S-0001", "file": "", "sequence": true },
+    "T":  { "value": "Herrenhemdjacke", "file": "", "sequence": false },
+    "AN": { "value": "Das Herrenoberteil ergänzt jede Garderobe mit einer ausgewogenen Form und einer vielseitigen Optik. Zu Jeans, Chino oder Stoffhose lässt es sich lässig oder gepflegt kombinieren und passt zu vielen Gelegenheiten im Alltag, Büro oder in der Freizeit.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
   }
 }

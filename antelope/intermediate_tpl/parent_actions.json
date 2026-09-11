@@ -13,9 +13,9 @@
     "按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键忽略。",
     "示例：{\"yass_fr_coat\": {\"row_fill\": {\"color\": \"FFFF00\", \"columns\": null}, \"set_values\": {\"D\": \"Parent\"}, \"clear_values\": {\"columns\": []}}}"
   ],
-  "yass_fr_coat": {
+  "yass_de_coat": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": [] }
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FR"] }
   }
 }

@@ -803,3 +803,461 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
 ❌ 列T(20) 配置 sequence: true，但指定值 'Parent' 不以数字结尾，无法递增。
 💡 改成如 "S-0001" / "0001"，或把 sequence 设为 false（整列同值）。
 ============================================================
+
+============================================================
+[2026-09-11 15:18:33] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_coat\yass_de_coat_blank.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_coat\yass_de_coat_blank.json
+📊 表头 41 列，其中 29 列在 Gültige Werte 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-11 15:18:33] analysisXlsm.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_coat\yass_de_coat_completed.json
+============================================================
+✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_coat\yass_de_coat_completed.json
+📊 表头 84 列，其中 46 列在 Gültige Werte 中找到可选值（未修改原文件）
+
+============================================================
+[2026-09-11 15:18:34] column_diff.py
+============================================================
+✅ 列差异：C(completed) 84 列 vs B(blank) 41 列
+   C−B 待填列 43 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 67, 73, 74, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117, 133, 143, 174, 206]
+   B−C 多余列 0 列: []
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_coat\yass_de_coat_column_diff.json
+
+============================================================
+[2026-09-11 15:18:34] build_groups_from_excel.py
+============================================================
+✅ 分组完成：55 个锚点 -> 55 组，共 3027 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json
+
+============================================================
+[2026-09-11 15:18:35] build_data_from_excel.py
+============================================================
+✅ 取数完成：55 组，共 1375 个「组×列」（源列 23 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_data.json
+
+============================================================
+[2026-09-11 15:18:36] build_m_data.py
+============================================================
+✅ M 占位生成：990 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 25 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-11 15:18:36] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (73, 'Farbzuordnung'), (174, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+产品列表（数据源 A Sheet0 提取）：55 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   17: Kragenform（22 个可选值）
+   52: Lifestyle（6 个可选值）
+   53: Stil（20 个可选值）
+   67: Beschreibung des Futters（22 个可选值）
+   75: Beschreibung der Artikellänge（5 个可选值）
+   78: Passform（11 个可选值）
+   81: Beschreibung der Tasche（8 个可选值）
+   86: Webart（9 个可选值）
+   88: Muster（17 个可选值）
+   92: Sportart（53 个可选值）
+   113: Beschreibung der Ärmellänge（6 个可选值）
+   114: Ärmelart（20 个可选值）
+   115: Verschlussart（13 个可选值）
+   117: Art der Mantel-Silhouette（10 个可选值）
+产品共 55 个，按每批 10 个分为 6 批（最后一批 5 个）
+⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+📄 提示词: attributes_batch01.txt（产品 1~10）
+📄 提示词: attributes_batch02.txt（产品 11~20）
+📄 提示词: attributes_batch03.txt（产品 21~30）
+📄 提示词: attributes_batch04.txt（产品 31~40）
+📄 提示词: attributes_batch05.txt（产品 41~50）
+📄 提示词: attributes_batch06.txt（产品 51~55）
+已打开 https://chat.deepseek.com/
+复用登录态: .deepseek_state.json
+--- 批次 1/6：产品 1~10（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 1/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 2/6：产品 11~20（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\ai_pick_attributes.py", line 632, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\ai_pick_attributes.py", line 617, in main
+    web_ask_all(ai_cols, products, args, m_data, groups)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\ai_pick_attributes.py", line 513, in web_ask_all
+    time.sleep(15)
+    ~~~~~~~~~~^^^^
+KeyboardInterrupt
+
+============================================================
+[2026-09-11 15:18:33] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_coat
+============================================================
+
+① 模板解析 B → blank.json
+----------------------------------------
+✅ ① 模板解析 B → blank.json OK
+
+② 模板解析 C → completed.json
+----------------------------------------
+✅ ② 模板解析 C → completed.json OK
+
+③ 列差异（C − B）→ column_diff.json
+----------------------------------------
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 145, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 120, in main
+    run_step("⑦ AI 网页选值（有可选值列，弹浏览器）", [py, "ai_pick_attributes.py"])       # 不需要可注释本行（见上）
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 50, in run_step
+    result = subprocess.run(cmd, cwd=BASE)
+  File "D:\FW20260325\python\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1214, in communicate
+    self.wait()
+    ~~~~~~~~~^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1606, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+KeyboardInterrupt
+
+============================================================
+[2026-09-11 15:21:08] build_groups_from_excel.py
+============================================================
+✅ 分组完成：55 个锚点 -> 55 组，共 3027 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json
+
+============================================================
+[2026-09-11 15:21:08] build_data_from_excel.py
+============================================================
+✅ 取数完成：55 组，共 1375 个「组×列」（源列 23 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_data.json
+
+============================================================
+[2026-09-11 15:21:09] build_m_data.py
+============================================================
+✅ M 占位生成：990 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 25 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-11 15:21:09] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (73, 'Farbzuordnung'), (174, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+产品列表（数据源 A Sheet0 提取）：55 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   17: Kragenform（22 个可选值）
+   52: Lifestyle（6 个可选值）
+   53: Stil（20 个可选值）
+   67: Beschreibung des Futters（22 个可选值）
+   75: Beschreibung der Artikellänge（5 个可选值）
+   78: Passform（11 个可选值）
+   81: Beschreibung der Tasche（8 个可选值）
+   86: Webart（9 个可选值）
+   88: Muster（17 个可选值）
+   92: Sportart（53 个可选值）
+   113: Beschreibung der Ärmellänge（6 个可选值）
+   114: Ärmelart（20 个可选值）
+   115: Verschlussart（13 个可选值）
+   117: Art der Mantel-Silhouette（10 个可选值）
+产品共 55 个，按每批 10 个分为 6 批（最后一批 5 个）
+⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+📄 提示词: attributes_batch01.txt（产品 1~10）
+📄 提示词: attributes_batch02.txt（产品 11~20）
+📄 提示词: attributes_batch03.txt（产品 21~30）
+📄 提示词: attributes_batch04.txt（产品 31~40）
+📄 提示词: attributes_batch05.txt（产品 41~50）
+📄 提示词: attributes_batch06.txt（产品 51~55）
+已打开 https://chat.deepseek.com/
+复用登录态: .deepseek_state.json
+--- 批次 1/6：产品 1~10（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 1/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 2/6：产品 11~20（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 2/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 3/6：产品 21~30（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 3/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 4/6：产品 31~40（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 4/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 5/6：产品 41~50（共 10 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 5/6（网页询问）：写入 140 个「组×列」，占位 0
+--- 批次 6/6：产品 51~55（共 5 个）---
+DeepSeek 对话页就绪
+已发送，等待 AI 回答...
+📄 回答已保存: attributes_batch06_result.txt
+✅ 批次 6/6（网页询问）：写入 70 个「组×列」，占位 0
+
+M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json
+✅ 校验通过：14 个有可选值列均无占位残留
+
+============================================================
+[2026-09-11 15:26:48] build_fill_framework.py
+============================================================
+✅ M 数据合并：990 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json）
+⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+⚠️ 列S(19) (Modellnummer) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列T(20) (Modellname) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列AN(40) (Beschreibung des Produkts) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+⚠️ 列AT(46) (Suchbegriffe) 未配置 → 保留占位 dataTemp（3027 格将写入产出）
+📌 目标列 4 个：已配置 0 / 未配置 4 / 跳过 0（数据 3027 行、55 组，组区间连续）
+✅ 有可选值列校验通过（14 列无占位残留）: [17, 52, 53, 67, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json
+   col_scope 43 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 67, 73, 74, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117, 133, 143, 174, 206]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 15:26:48] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 4104 行 (共整行删除 1071 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+📊 共填写 130161 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 15:21:07] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_coat
+============================================================
+✅ ① 模板解析 B → blank.json 跳过：yass_de_coat_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_de_coat_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_de_coat_column_diff.json 已是最新（模板未变，复用缓存）
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json
+----------------------------------------
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json OK
+
+⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+----------------------------------------
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm OK
+
+============================================================
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+============================================================
+
+============================================================
+[2026-09-11 15:35:14] build_groups_from_excel.py
+============================================================
+✅ 分组完成：55 个锚点 -> 55 组，共 3027 行（实际行号，无偏移）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json
+
+============================================================
+[2026-09-11 15:35:15] build_data_from_excel.py
+============================================================
+✅ 取数完成：55 组，共 1375 个「组×列」（源列 23 个）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_data.json
+
+============================================================
+[2026-09-11 15:35:16] build_m_data.py
+============================================================
+✅ M 占位生成：990 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 25 列）
+📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json
+
+============================================================
+[2026-09-11 15:35:16] ai_pick_attributes.py
+============================================================
+ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (73, 'Farbzuordnung'), (174, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+产品列表（数据源 A Sheet0 提取）：55 个
+🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+   17: Kragenform（22 个可选值）
+   52: Lifestyle（6 个可选值）
+   53: Stil（20 个可选值）
+   67: Beschreibung des Futters（22 个可选值）
+   75: Beschreibung der Artikellänge（5 个可选值）
+   78: Passform（11 个可选值）
+   81: Beschreibung der Tasche（8 个可选值）
+   86: Webart（9 个可选值）
+   88: Muster（17 个可选值）
+   92: Sportart（53 个可选值）
+   113: Beschreibung der Ärmellänge（6 个可选值）
+   114: Ärmelart（20 个可选值）
+   115: Verschlussart（13 个可选值）
+   117: Art der Mantel-Silhouette（10 个可选值）
+产品共 55 个，按每批 10 个分为 6 批（最后一批 5 个）
+✅ groups.json 未变：已有回答全部复用（个别批次缺回答则再询问）
+📄 提示词: attributes_batch01.txt（产品 1~10）
+✅ 批次 1/6（复用 attributes_batch01_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch02.txt（产品 11~20）
+✅ 批次 2/6（复用 attributes_batch02_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch03.txt（产品 21~30）
+✅ 批次 3/6（复用 attributes_batch03_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch04.txt（产品 31~40）
+✅ 批次 4/6（复用 attributes_batch04_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch05.txt（产品 41~50）
+✅ 批次 5/6（复用 attributes_batch05_result.txt）：写入 140 个「组×列」，占位 0
+📄 提示词: attributes_batch06.txt（产品 51~55）
+✅ 批次 6/6（复用 attributes_batch06_result.txt）：写入 70 个「组×列」，占位 0
+所有批次均已有回答结果，无需打开网页。
+
+M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json
+✅ 校验通过：14 个有可选值列均无占位残留
+
+============================================================
+[2026-09-11 15:35:25] build_fill_framework.py
+============================================================
+✅ M 数据合并：990 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json）
+⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+✅ 列S(19) (Modellnummer) ← 指定值(序列) 'S-0001'→'S-3027' 填 3027 行 [首=S-0001 末=S-3027]
+✅ 列T(20) (Modellname) ← 指定值 'Herrenhemdjacke' 填 3027 行 [首=Herrenhemdjacke 末=Herrenhemdjacke]
+✅ 列AN(40) (Beschreibung des Produkts) ← 指定值 'Das Herrenoberteil ergänzt jede Garderobe mit einer ausgewogenen Form und einer vielseitigen Optik. Zu Jeans, Chino oder Stoffhose lässt es sich lässig oder gepflegt kombinieren und passt zu vielen Gelegenheiten im Alltag, Büro oder in der Freizeit.' 填 3027 行 [首=Das Herrenoberteil ergänzt j… 末=Das Herrenoberteil ergänzt j…]
+      ↳ ⚠️ 值文件不存在，退回指定值: yass_de_coat.txt（已找: ['D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\values\\yass_de_coat\\yass_de_coat.txt', 'D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\yass_de_coat.txt', 'yass_de_coat.txt']）
+⚠️ 列AT(46) (Suchbegriffe) 配置了但没有可用值（value/file 都为空或无法解析）→ 保留占位 dataTemp
+📌 目标列 4 个：已配置 3 / 未配置 1 / 跳过 0（数据 3027 行、55 组，组区间连续）
+✅ 有可选值列校验通过（14 列无占位残留）: [17, 52, 53, 67, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json
+   col_scope 43 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 67, 73, 74, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117, 133, 143, 174, 206]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 15:35:25] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 4104 行 (共整行删除 1071 行)
+🧹 父体行清值：55 行 × 15 列（825 格，其中原本有值的 825 格已清空）
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 55 格被覆盖）→ D='Parent'
+🎨 父体行底色（静态填充）：55 行 × 322 列（17710 格，色值 FFFFFF00）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+📊 共填写 130161 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 15:35:14] run_all.py
+============================================================
+============================================================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_coat
+============================================================
+✅ ① 模板解析 B → blank.json 跳过：yass_de_coat_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_de_coat_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_de_coat_column_diff.json 已是最新（模板未变，复用缓存）
+
+④ 分组（数据源 A 锚点）→ groups.json
+----------------------------------------
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+⑤ A 取数（col_mapping）→ data.json
+----------------------------------------
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+⑥ M 占位生成 → .xlsx_dataSource_m.json
+----------------------------------------
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+⑦ AI 网页选值（有可选值列，弹浏览器）
+----------------------------------------
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json
+----------------------------------------
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json OK
+
+⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+----------------------------------------
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm OK
+
+============================================================
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_coat_filled.xlsm
+============================================================
+
+============================================================
+[2026-09-11 15:39:50] build_fill_framework.py
+============================================================
+✅ M 数据合并：990 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\.xlsx_dataSource_m.json）
+⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+✅ 列S(19) (Modellnummer) ← 指定值(序列) 'S-0001'→'S-3027' 填 3027 行 [首=S-0001 末=S-3027]
+✅ 列T(20) (Modellname) ← 指定值 'Herrenhemdjacke' 填 3027 行 [首=Herrenhemdjacke 末=Herrenhemdjacke]
+✅ 列AN(40) (Beschreibung des Produkts) ← 指定值 'Das Herrenoberteil ergänzt jede Garderobe mit einer ausgewogenen Form und einer vielseitigen Optik. Zu Jeans, Chino oder Stoffhose lässt es sich lässig oder gepflegt kombinieren und passt zu vielen Gelegenheiten im Alltag, Büro oder in der Freizeit.' 填 3027 行 [首=Das Herrenoberteil ergänzt j… 末=Das Herrenoberteil ergänzt j…]
+✅ 列AT(46) (Suchbegriffe) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_de_coat.txt（141 行） 填 3027 行 [首=einreihiger blazer slim fit … 末=übergangsjacke herren leicht…]
+📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 3027 行、55 组，组区间连续）
+✅ 有可选值列校验通过（14 列无占位残留）: [17, 52, 53, 67, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117]
+✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json
+   col_scope 43 列: [1, 5, 7, 8, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 59, 67, 73, 74, 75, 78, 81, 86, 88, 92, 113, 114, 115, 117, 133, 143, 174, 206]
+   groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_coat\yass_de_coat_groups.json）
+   template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
+
+============================================================
+[2026-09-11 15:39:51] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_de.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 4104 行 (共整行删除 1071 行)
+🧹 父体行清值：55 行 × 15 列（825 格，其中原本有值的 825 格已清空）
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 55 格被覆盖）→ D='Parent'
+🎨 父体行底色（静态填充）：55 行 × 322 列（17710 格，色值 FFFFFF00）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_de.xlsm
+📊 共填写 130161 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 15:41:12] fill_from_plan.py antelope\fill_plan\yass_de_coat_fill_framework.json -o outputs\yass_de_coat_filled.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 4104 行 (共整行删除 1071 行)
+🧹 父体行清值：55 行 × 15 列（825 格，其中原本有值的 825 格已清空）
+✏️ 父体行改值：55 行 × 1 列（55 格；其中原本有值的 55 格被覆盖）→ D='Parent'
+🎨 父体行底色（静态填充）：55 行 × 322 列（17710 格，色值 FFFFFF00）
+
+✅ 已写出副本: outputs\yass_de_coat_filled.xlsm
+📊 共填写 130161 个单元格，保留至第 3033 行
