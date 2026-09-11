@@ -189,6 +189,57 @@ def column_letter(col):
         return str(col)
 
 
+# ─────────────────────────────────────────────────────────────────────────── #
+# 指定值的「序列种子」：S-0001 → S-0001, S-0002, …（整列连续递增，见 column_defaults.json）
+# ─────────────────────────────────────────────────────────────────────────── #
+def seq_seed(value):
+    """判断指定值是否为可递增的序列种子 → (前缀, 起始数字, 数字位数)，否则 None。
+
+    规则：值必须以数字结尾；前缀原样保留，数字位数用于决定左侧补零宽度。
+        "S-0001" → ("S-", 1, 4)      "0001" → ("", 1, 4)      "A-1" → ("A-", 1, 1)
+        "Coat-2024" → ("Coat-", 2024, 4)（同样是种子，不想要序列就写 sequence: false）
+    """
+    s = str(value)
+    m = re.search(r"(\d+)$", s)
+    if not m:
+        return None
+    digits = m.group(1)
+    return s[: m.start(1)], int(digits), len(digits)
+
+
+def make_sequence(seed, count):
+    """按序列种子生成 count 个连续值；不是种子返回 None。
+
+    数字递增、宽度不小于种子位数（左侧补零）；超出宽度时自然变长，不截断：
+        ("S-0001", 3) → ["S-0001", "S-0002", "S-0003"]
+        ("X-99", 3)   → ["X-99", "X-100", "X-101"]
+    """
+    info = seq_seed(seed)
+    if info is None:
+        return None
+    prefix, start, width = info
+    return [f"{prefix}{start + i:0{width}d}" for i in range(count)]
+
+
+def normalize_sequence_flag(flag):
+    """sequence 配置归一化：None/"auto" → None（自动判断）；true/false（含字符串）→ bool。
+
+    无法识别的写法 → None（按自动判断处理）。
+    """
+    if flag is None:
+        return None
+    if isinstance(flag, bool):
+        return flag
+    s = str(flag).strip().lower()
+    if s in ("", "auto", "default"):
+        return None
+    if s in ("true", "yes", "1", "on", "seq", "sequence"):
+        return True
+    if s in ("false", "no", "0", "off", "none", "fixed", "same"):
+        return False
+    return None
+
+
 def uncovered_cols(diff_path, data_path):
     """A 未覆盖的待填列：col_scope − A 已覆盖列。"""
     scope = load_col_scope(diff_path)
@@ -250,7 +301,9 @@ def load_column_defaults(path):
         }
 
     键支持列字母（"S"/"AN"）与列号（"19"/"40"，旧写法兼容）；以 "_" 开头的键忽略。
-    归一化为 {列号(str): {"value": str|None, "file": str|None}}（保留空项，
+    每项还可用 "sequence" 控制「指定值是否按序列递增」：
+        true = 强制序列（值必须以数字结尾，否则报错）；false = 整列同值；缺省/"auto" = 自动判断。
+    归一化为 {列号(str): {"value": str|None, "file": str|None, "sequence": bool|None}}（保留空项，
     便于区分「配置了但没值」与「未配置」两种警告）。
     文件缺失/解析失败/找不到当前标签 → 返回 {}（全部列按未配置处理）。
     """
@@ -273,13 +326,14 @@ def load_column_defaults(path):
         if col is None:
             continue                       # "_comment" 等非列键忽略
         if isinstance(val, str):
-            result[str(col)] = {"value": val, "file": None}
+            result[str(col)] = {"value": val, "file": None, "sequence": None}
         elif isinstance(val, dict):
             value = val.get("value")
             file_ = val.get("file")
             result[str(col)] = {
                 "value": None if value is None else str(value),
                 "file": None if file_ is None else str(file_),
+                "sequence": normalize_sequence_flag(val.get("sequence")),
             }
     return result
 

@@ -62,8 +62,10 @@ from common import (
     load_data_cols,
     load_groups,
     load_json,
+    make_sequence,
     parse_column_key,
     resolve_column_values,
+    seq_seed,
     setup_log,
     uncovered_cols,
     value_cycle_cols,
@@ -278,8 +280,10 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
     把循环序列**按组旋转切片**写进 plan.data；fill_from_plan.py 无需改动。
 
     配置来源 intermediate_tpl/column_defaults.json 当前类别分段：
-        {"19": {"value": "Coat-001"}, "46": {"file": "keywords.txt"}, "40": "…"}
+        {"S": {"value": "Coat-001"}, "AT": {"file": "keywords.txt"}, "AN": "…"}
     file 优先，文件缺失/为空退回 value；两者都不行 → 该列保留占位（警告）。
+    指定值若以数字结尾 → **序列填充**（"S-0001" → S-0001, S-0002, … 整列连续递增，
+    宽度按种子补零）；不想要序列就写 "sequence": false；写 true 则值必须以数字结尾，否则报错。
     值文件出现空行 → 报错退出（约定值文件不允许空值）。
 
     返回 (report, stats)：report 为逐列明细；stats 为计数汇总。
@@ -346,23 +350,53 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
                   f"（会跳过每组首行、与整列循环错位）→ 跳过并保留占位；请二选一")
             continue
 
+        # ── 指定值的「序列填充」判断（S-0001 → S-0001, S-0002, … 整列连续递增）──
+        seq_flag = (entry or {}).get("sequence")           # None=自动 / True=强制 / False=同值
+        seq_values = None
+        if source == "value":
+            seed = values[0]
+            if seq_flag is True and seq_seed(seed) is None:
+                print("")
+                print("=" * 60)
+                print(f"❌ 列{tag} 配置 sequence: true，但指定值 {seed!r} 不以数字结尾，无法递增。")
+                print("💡 改成如 \"S-0001\" / \"0001\"，或把 sequence 设为 false （整列同值）。")
+                print("=" * 60)
+                sys.exit(2)
+            use_seq = bool(seq_flag) if seq_flag is not None else (seq_seed(seed) is not None)
+            if use_seq:
+                seq_values = make_sequence(seed, total_rows)
+        elif seq_flag is not None:
+            print(f"⚠️ 列{tag} 配置了 sequence，但该列用的是值文件 → 按文件行循环，sequence 不生效")
+
         m = len(values)
-        for gname, start, end, n in rows:
-            pos = start - first_start                     # 该组首行在整列中的全局位置
-            data.setdefault(gname, {})[str(col)] = [values[(pos + i) % m] for i in range(n)]
+        if seq_values is not None:
+            # 序列模式：整列连续递增值（行 k → 种子 + (k-1)），按组切片即可
+            for gname, start, end, n in rows:
+                pos = start - first_start
+                data.setdefault(gname, {})[str(col)] = seq_values[pos:pos + n]
+            first_v, last_v = seq_values[0], seq_values[-1]
+        else:
+            for gname, start, end, n in rows:
+                pos = start - first_start                 # 该组首行在整列中的全局位置
+                data.setdefault(gname, {})[str(col)] = [values[(pos + i) % m] for i in range(n)]
+            first_v, last_v = values[0], values[(total_rows - 1) % m]
 
         stats["configured"] += 1
         stats["rows"] += total_rows
         report.append({
             "column": col, "column_letter": column_letter(col),
             "header": _header(headers, col), "source": source,
-            "file": path, "cycle_len": m, "rows": total_rows,
-            "first": values[0], "last": values[(total_rows - 1) % m],
+            "file": path, "cycle_len": m, "sequence": seq_values is not None,
+            "rows": total_rows, "first": first_v, "last": last_v,
         })
-        src_desc = (f"指定值 {values[0]!r}" if source == "value"
-                    else f"文件 {path}（{m} 行）")
-        print(f"✅ 列{tag} ({_header(headers, col)}) ← {src_desc} 循环 {total_rows} 行 "
-              f"[首={_short(values[0])} 末={_short(values[(total_rows - 1) % m])}]")
+        if seq_values is not None:
+            src_desc = f"指定值(序列) {first_v!r}→{last_v!r}"
+        elif source == "value":
+            src_desc = f"指定值 {values[0]!r}"
+        else:
+            src_desc = f"文件 {path}（{m} 行）"
+        print(f"✅ 列{tag} ({_header(headers, col)}) ← {src_desc} 填 {total_rows} 行 "
+              f"[首={_short(first_v)} 末={_short(last_v)}]")
 
     print(f"📌 目标列 {stats['target']} 个：已配置 {stats['configured']} / 未配置 {stats['unconfigured']}"
           f" / 跳过 {stats['skipped']}（数据 {total_rows} 行、{len(rows)} 组"
