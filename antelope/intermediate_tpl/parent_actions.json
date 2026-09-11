@@ -1,0 +1,17 @@
+{
+  "_comment": [
+    "父体行（每组起始行 = 数据源 A 里 A 列有背景填充色的锚点行）的额外动作。",
+    "执行时机：⑨ fill_from_plan 填充完成、多余行删除之后，保存产出之前；空配置 = 完全不动。",
+    "row_fill：整行加**静态背景色**（真正的单元格填充，不是选中/阅读模式那种点击就消失的高亮）。",
+    "  color   = 6 位或 8 位十六进制（可带 #），如 \"FFF2CC\"；为空 = 不填充。",
+    "  columns = 填充到哪些列：null/\"all\" = 整行（到模板最后一列，当前 323 列 LK）；也可写 \"A:AW\" 或 [\"A\",\"B\"]。",
+    "clear_values：清除该行指定列的值（只清值，不动字体/底色）；columns 空 = 不清。",
+    "列一律写 Excel 列字母（大小写不敏感），与 column_defaults.json / mode_customise.json 同一套写法。",
+    "按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键忽略。",
+    "示例：{\"yass_fr_coat\": {\"row_fill\": {\"color\": \"FFF2CC\", \"columns\": null}, \"clear_values\": {\"columns\": [\"S\", \"T\"]}}}"
+  ],
+  "yass_fr_coat": {
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": [] }
+  }
+}

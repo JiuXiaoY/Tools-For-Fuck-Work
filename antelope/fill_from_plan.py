@@ -26,6 +26,7 @@ from pathlib import Path
 import openpyxl
 
 from common import setup_log, zcfg
+from parent_actions import apply_parent_actions, load_parent_actions
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # ⚙️ 默认运行配置（直接点 Run 时生效）—— 路径/配置项集中来自 zconfig.constant.py
@@ -34,6 +35,7 @@ DEFAULT_PLAN_FILE = zcfg.CFG_FILL_PLAN["default_plan_json"]   # 1. 你的 plan.j
 DEFAULT_OUTPUT_FILE = zcfg.OUTPUTS_DIR                        # 2. 完整输出文件路径(.xlsm)
 DEFAULT_REPORT_FILE = zcfg.CFG_RUN["default_report_file"]     # 可选: "outputs/report.json"
 DEFAULT_STRICT_SCOPE = zcfg.CFG_RUN["strict_scope"]           # 可选: True / False
+DEFAULT_PARENT_ACTIONS = zcfg.PARENT_ACTIONS_FILE             # 父体行额外动作（空配置 = 不动作）
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
@@ -132,6 +134,12 @@ def main():
         help="开启后: data 中出现的列若不在 col_scope 内则报错退出",
     )
     parser.add_argument(
+        "--parent-actions",
+        default=DEFAULT_PARENT_ACTIONS,
+        help="父体行（每组起始行）额外动作配置（按 ACTIVE_CATEGORY 分段；"
+             "默认 intermediate_tpl/parent_actions.json，空配置 = 不动）",
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="逐组逐列打印填充明细（默认只输出汇总与警告）",
@@ -175,6 +183,7 @@ def main():
     data = plan.get("data") or {}
     cycle_threshold = plan.get("cycle_threshold")
     mode_customise = plan.get("mode_customise") or {}
+    parent_actions = load_parent_actions(args.parent_actions)
 
     if not os.path.exists(template_file):
         print(f"模板文件不存在: {template_file}")
@@ -190,6 +199,7 @@ def main():
     total_filled = 0
     out_of_scope = []
     max_filled_row = 0  # 记录所有分组覆盖到的最大实际行号
+    parent_rows = []    # 各组起始行（父体行）实际行号，供 parent_actions 使用
 
     # ---- 遍历每组每列 ----
     for gname, spec in groups.items():
@@ -211,6 +221,7 @@ def main():
         # 更新最大已填行
         if end_actual > max_filled_row:
             max_filled_row = end_actual
+        parent_rows.append(start_actual)          # 父体行 = 组起始行
 
         col_data = data.get(gname) or {}
         for col_str, values in col_data.items():
@@ -261,6 +272,17 @@ def main():
             ws.delete_rows(max_filled_row + 1, rows_to_delete)
             print(f"🧹 已删除模板多余行: 第 {max_filled_row + 1} 行至第 {current_max_row} 行 (共整行删除 {rows_to_delete} 行)")
 
+    # ---- 父体行额外动作（整行静态底色 / 清指定列的值；未配置则不动）----
+    # 放在删行之后、保存之前：行号已定型，且不对 .xlsm 做第二次加载/保存
+    parent_report = None
+    try:
+        parent_report = apply_parent_actions(ws, parent_rows, parent_actions)
+    except Exception as exc:
+        print(f"❌ 父体行动作执行失败: {exc}")
+        print("💡 检查 intermediate_tpl/parent_actions.json（color 应为 6/8 位十六进制；"
+              "columns 写列字母如 \"AT\" 或区间 \"A:AW\"）。未写出产出文件。")
+        sys.exit(2)
+
     # ---- 保存副本 ----
     out_dir = os.path.dirname(os.path.abspath(out_file))
     os.makedirs(out_dir, exist_ok=True)
@@ -278,6 +300,7 @@ def main():
         "max_data_row": max_filled_row,
         "entries": report_entries,
         "out_of_scope_skipped": out_of_scope,
+        "parent_actions": parent_report,
     }
     print(f"\n✅ 已写出副本: {out_file}")
     print(f"📊 共填写 {total_filled} 个单元格，保留至第 {max_filled_row} 行")

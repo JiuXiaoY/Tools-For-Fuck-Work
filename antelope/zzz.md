@@ -197,6 +197,20 @@
   > **键 = 列字母**，大小写不敏感，如 `{"yass_fr_coat": {"Q": "cycle"}}`；与 `column_defaults.json` 同一套写法）。
 - **col_scope 守门**：data 里出现的列若不在 col_scope 内 → 默认跳过并 warn；`--strict-scope` 则报错退出。
 - 填充完成后**清理模板多余历史行**：删除 `max_filled_row+1` 及之后的所有行。
+- **父体行额外动作**（`parent_actions.py`，在删行之后、保存之前执行一次）：
+  `intermediate_tpl/parent_actions.json` 按当前类别分段配置，**空配置 = 完全不动**：
+
+  ```json
+  { "yass_fr_coat": {
+      "row_fill":     { "color": "FFF2CC", "columns": null },
+      "clear_values": { "columns": ["S", "T"] } } }
+  ```
+
+  - 父体行 = 每组**起始行**（实际行号 = 起始行 + `data_start_row − 1`），不会被删行波及；
+  - `row_fill`：整行加**静态背景色**（真正的单元格填充，不是选中/阅读模式那种点击即消失的高亮）；
+    `columns` 为 `null`/`"all"` → 整行（到模板最后一列），也可写 `"A:AW"` 或 `["A","B"]`；
+  - `clear_values`：清除该行**指定列的值**（只清 value，不动格式）；
+  - 颜色/列写法非法 → 报错 `exit 2` 且**不写出产出**；执行明细写入 `--report`。
 - 输出：默认 `outputs/result_filled.xlsm`（`-o` 传目录时自动补文件名）；`--report out.json` 可导出逐组逐列报告。
 
 ---

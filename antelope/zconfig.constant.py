@@ -23,6 +23,7 @@ build_fill_framework / column_diff / fill_from_plan）统一从这里 import
   - intermediate_tpl/mode_customise.json     列填充模式手动配置（共享单文件，键 = 列字母，按 ACTIVE_CATEGORY 标签分段）
   - intermediate_tpl/column_defaults.json    目标列取值配置（A 未覆盖且无可选值的列：指定值/多行值文件，
                                              共享单文件，按 ACTIVE_CATEGORY 标签分段）
+  - intermediate_tpl/parent_actions.json     父体行（每组起始行）额外动作：整行静态底色 / 清指定列的值
   - values/<ACTIVE_CATEGORY>/                目标列的多行值文件目录（配置里只写文件名时来此找）
 
 清理提示：清中间产物时删 intermediate/ 与 intermediate_tpl/ 需谨慎——
@@ -93,6 +94,12 @@ COLUMN_DEFAULTS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "column_defaults.
 
 # 目标列多行值文件目录：配置里只写文件名时，到 antelope/values/<ACTIVE_CATEGORY>/ 下找
 COLUMN_VALUES_DIR = os.path.join(ANTELOPE_DIR, "values", INTERMEDIATE_DIR_NAME)
+
+# 父体行（每组起始行）额外动作配置（共享单文件，按 ACTIVE_CATEGORY 标签分段；键 = 列字母）
+#   {"yass_fr_coat": {"row_fill": {"color": "FFF2CC", "columns": null},
+#                     "clear_values": {"columns": ["S", "T"]}}}
+#   空配置 = 不动作；由 ⑨ fill_from_plan 在保存产出前应用（见 parent_actions.py）
+PARENT_ACTIONS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "parent_actions.json")
 
 # 数据层目录（每次数据批次重跑）：intermediate/<ACTIVE_CATEGORY>/
 INTERMEDIATE_DIR = os.path.join(ANTELOPE_DIR, "intermediate")

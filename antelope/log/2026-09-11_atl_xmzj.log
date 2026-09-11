@@ -552,3 +552,86 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
    groups 55 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_coat\yass_fr_coat_groups.json）
    template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\coat_template_Adam.xlsm
    mode_customise: {'46': 'children_only'}
+
+============================================================
+[2026-09-11 11:59:35] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_noop.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_none.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_noop.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 11:59:45] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_empty.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 12:00:08] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_act.json --report D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\fill_report.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+🧹 父体行清值：55 行 × 2 列（110 格，其中原本有值的 110 格已清空）
+🎨 父体行底色（静态填充）：55 行 × 323 列（17765 格，色值 FFFFF2CC）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+📄 报告: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\fill_report.json
+
+============================================================
+[2026-09-11 12:00:34] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_noop.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_none.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_noop.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 12:00:44] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_empty.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 12:01:07] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_act.json --report D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\fill_report.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+🧹 父体行清值：55 行 × 2 列（110 格，其中原本有值的 110 格已清空）
+🎨 父体行底色（静态填充）：55 行 × 323 列（17765 格，色值 FFFFF2CC）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_action.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+📄 报告: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\fill_report.json
+
+============================================================
+[2026-09-11 12:01:25] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_never.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_bad.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+❌ 父体行动作执行失败: 颜色写法非法 'FF00'（应为 6 位或 8 位十六进制，如 "FFF2CC" 或 "FFFFF2CC"）
+💡 检查 intermediate_tpl/parent_actions.json（color 应为 6/8 位十六进制；columns 写列字母如 "AT" 或区间 "A:AW"）。未写出产出文件。
+
+============================================================
+[2026-09-11 12:24:27] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_off.xlsm --parent-actions D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_assets\pa_off.json
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+ℹ️ 父体行动作：未配置（parent_actions.json 当前类别分段为空），跳过
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_off.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行
+
+============================================================
+[2026-09-11 12:24:37] fill_from_plan.py D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_coat_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm
+============================================================
+🧹 已删除模板多余行: 第 3034 行至第 3114 行 (共整行删除 81 行)
+🎨 父体行底色（静态填充）：55 行 × 323 列（17765 格，色值 FFFFFF00）
+
+✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\_tmp_on.xlsm
+📊 共填写 115026 个单元格，保留至第 3033 行

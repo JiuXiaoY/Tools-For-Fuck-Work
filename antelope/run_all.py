@@ -24,6 +24,7 @@ run_all —— antelope 全流程一键运行（模板层缓存 + 数据层重�
     ⑧ 生成 plan                  → fill_plan/<类别>_fill_framework.json
                                     （含目标列取值配置 column_defaults.json 的循环填充）
     ⑨ 填充模板副本（fill_from_plan）→ outputs/<类别>_filled.xlsm（取配置）
+                                    （含父体行额外动作：parent_actions.json）
 
 用法：直接运行本文件（python run_all.py），无需任何命令行参数。
 """
@@ -125,6 +126,8 @@ def main() -> None:
              [py, "build_fill_framework.py"])                                              # 已完成可注释本行
 
     # ⑨ 填充模板副本（→ outputs/<类别>_filled.xlsm）
+    #    填充后会对「父体行」（每组起始行）执行额外动作：整行静态底色 / 清指定列的值，
+    #    配置见 intermediate_tpl/parent_actions.json（空配置 = 不动作）。
     fill_cmd = [py, "fill_from_plan.py", zcfg.CFG_FILL_PLAN["default_plan_json"],
                 "-o", zcfg.CFG_RUN["plan_output_file"]]
     if REPORT_FILE:
