@@ -144,10 +144,39 @@
   | `output_file` | 输出占位（默认 `outputs/fr_shirt_filled.xlsm`） |
   | `data_start_row` | column_diff.json 的 `settings.dataRow` |
   | `col_scope` | column_diff 的 only_in_completed 全部列号（升序） |
-  | `mode_customise` | 空 `{}`，人工指定某列强制模式（如 `{"1": "cycle"}`） |
+  | `mode_customise` | 空 `{}`，人工指定某列强制模式（**键 = 列字母**，如 `{"Q": "cycle"}`） |
   | `groups` | groups.json 的分组行范围 |
   | `cycle_threshold` | `null`（循环填充阈值） |
   | `data` | A 取数 + M 数据合并结果；均缺失则按 col_scope 填 `[]` 占位 |
+
+**未覆盖列的两种收口（本脚本内的两个不变量）**：
+
+1. **有可选值列必须由 AI 选满**（`⑦ ai_pick_attributes.py` 负责）：
+   `col_scope` 中 A 未映射、且 completed 里有 `choices` 的列，只要还有「组×列」是占位
+   （AI 没跑 / 只跑一半 / ⑥ 在 ⑦ 之后重跑把 M 里的 AI 结果覆盖回占位 / 回答值不在可选值内被拒），
+   **打印明细并 exit 2、且不写 plan**，避免占位流进产出 Excel（⑦ 里也有同一道硬校验）。
+
+2. **「A 未覆盖 且 无可选值」的目标列 → 指定值 / 多行值文件，整列连续循环**：
+   目标列 = `uncovered_cols(diff, data)` − 有 `choices` 的列（`common.value_cycle_cols()`）。
+   取值配置：`intermediate_tpl/column_defaults.json` 的当前类别分段（**键 = 列字母**，
+   Excel 列名，大小写不敏感；兼容直接写列号）
+
+   ```json
+   { "yass_fr_coat": {
+       "S":  { "value": "Coat-001" },
+       "AT": { "file": "keywords_coat.txt" },
+       "AN": { "value": "默认描述", "file": "colAN.txt" } } }
+   ```
+
+   - **`file` 优先于 `value`**；`file` 可写绝对路径 / 相对仓库根 / 纯文件名（到
+     `antelope/values/<ACTIVE_CATEGORY>/` 下找）；文件不存在、读失败、为空 → 退回 `value`；
+     两者都不行 → 该列**保留 `dataTemp` 占位**并在日志里列出（配置了但没值 vs 未配置分开提示）。
+   - 值文件：每行一个值，`utf-8(sig)` / `gbk` 均可；**不允许空行**（出现空行 → exit 2 并给行号）。
+   - **填充语义：不考虑分组**——数据区第 k 行取 `values[(k−1) % m]`，跨组不重置。
+     实现是「按组旋转切片」写进 `plan.data`（切片长度恰等于组行数 → ⑥ 判定 `m == n` →
+     sequential 顺序写入），因此 **`fill_from_plan.py` 无需任何改动**。
+   - 配置了但不在目标集合的列（有 A 映射 / 有可选值 / 不在 col_scope）→ 跳过并说明原因，**不覆盖真实数据**；
+     被 `mode_customise` 指定为 `children_only` 的目标列会与循环错位 → 跳过并提示二选一。
 
 ### ⑥ `fill_from_plan.py` — 按 plan 填充模板副本（最终产出 D）
 
@@ -164,7 +193,8 @@
   | `m < n` 且未超 cycle_threshold | cycle | 循环铺满（含空串占位） |
   | 其他 | mismatch | 不填，记入报告 |
 
-  > `mode_customise` 可强制 `"sequential"` / `"children_only"` / `"cycle"`。
+  > `mode_customise` 可强制 `"sequential"` / `"children_only"` / `"cycle"`（配置文件 `intermediate_tpl/mode_customise.json`，
+  > **键 = 列字母**，大小写不敏感，如 `{"yass_fr_coat": {"Q": "cycle"}}`；与 `column_defaults.json` 同一套写法）。
 - **col_scope 守门**：data 里出现的列若不在 col_scope 内 → 默认跳过并 warn；`--strict-scope` 则报错退出。
 - 填充完成后**清理模板多余历史行**：删除 `max_filled_row+1` 及之后的所有行。
 - 输出：默认 `outputs/result_filled.xlsm`（`-o` 传目录时自动补文件名）；`--report out.json` 可导出逐组逐列报告。
@@ -182,6 +212,7 @@
 | `intermediate/fr_shirt/fr_shirt_col_mapping.json` | 人工维护 | A 源列→目标列映射（B→A、C→E、K→BY,BZ…） |
 | `intermediate/fr_shirt/fr_shirt_data.json` | ④ build_data_from_excel（对 **A**） | A 部分：每组每列非空值序列 |
 | `xlsm/.xlsx_dataSource_m.json` | 人工维护（**M**） | M 部分：补充列数据（可含空串） |
+| `intermediate_tpl/column_defaults.json` | 人工维护 | 目标列（A 未覆盖且无可选值）取值：`value` / `file`（多行值文件，见 `values/<类别>/`） |
 | `fill_plan/fr_shirt_fill_framework.json` | ⑤ build_fill_framework | 完整填充计划（col_scope + groups + A∪M 数据） |
 | `outputs/fr_shirt_filled.xlsm` | ⑥ fill_from_plan | 🎯 **最终产出物 D**（模板 B 副本 + 数据） |
 
@@ -197,3 +228,4 @@
 6. **data_start_row 唯一真源** = `column_diff.json` 的 `settings.dataRow`（由模板解析得到，不同模板可能不同）；由 ⑤ 写入 plan、⑥ 填充时应用。**读不到说明流程有问题（缺 column_diff 或 settings），直接报错，不做兜底**。
 7. **行号语义**：plan/groups 中存**实际行号（无偏移）**；偏移只在填充数据时应用：`target 行 = 分组行 + (data_start_row − 1)`。
 8. **新增类别/国家**：改 `zconfig.constant.py` 顶部的 `ACTIVE_CATEGORY`（如 `"fr_shirt"` → `"de_coat"`），所有默认路径自动切换，代码零改动。
+9. **未覆盖列的归属只有三种，且各有硬约束**：① A 映射取数；② 有可选值列 → ⑦ AI 选值（**不允许残留占位，⑦⑧ 都会报错退出**）；③ 其余（A 未覆盖且无可选值）= **目标列** → `intermediate_tpl/column_defaults.json` 指定值/多行文件，整列连续循环；未配置的目标列才会在产出里留下 `dataTemp`（⑧ 日志会逐列列出）。

@@ -20,8 +20,9 @@ run_all —— antelope 全流程一键运行（模板层缓存 + 数据层重�
     ④ 分组（数据源 A 有色锚点）    → intermediate/<类别>/<类别>_groups.json（数据层）
     ⑤ A 取数（col_mapping）       → intermediate/<类别>/<类别>_data.json（数据层）
     ⑥ M 占位生成（dataTemp）      → intermediate/<类别>/.xlsx_dataSource_m.json（数据层）
-    ⑦ AI 网页选值（有可选值列）    → 更新 M（数据层，弹浏览器）
+    ⑦ AI 网页选值（有可选值列）    → 更新 M（数据层，弹浏览器）★必须选满，否则 ⑧ 报错中止
     ⑧ 生成 plan                  → fill_plan/<类别>_fill_framework.json
+                                    （含目标列取值配置 column_defaults.json 的循环填充）
     ⑨ 填充模板副本（fill_from_plan）→ outputs/<类别>_filled.xlsm（取配置）
 
 用法：直接运行本文件（python run_all.py），无需任何命令行参数。
@@ -113,9 +114,13 @@ def main() -> None:
     run_step("⑥ M 占位生成 → .xlsx_dataSource_m.json", [py, "build_m_data.py"])            # 数据层，每次重跑
 
     # ⑦ AI 网页选值（数据层；有可选值列；弹浏览器，更新 M）
-    run_step("⑦ AI 网页选值（有可选值列，弹浏览器）", [py, "ai_pick_attributes.py"])       # 不需要可注释本行
+    #    注意：有可选值的列必须在这里选满，否则 ⑧ 会报错中止（不允许占位流进产出）。
+    #    本类别确认「有可选值列」已全部有真实值时，才可注释本行。
+    run_step("⑦ AI 网页选值（有可选值列，弹浏览器）", [py, "ai_pick_attributes.py"])       # 不需要可注释本行（见上）
 
     # ⑧ 生成 plan（→ fill_plan/<类别>_fill_framework.json）
+    #    目标列（A 未覆盖且无可选值，如 19/20/40/46）取值见 intermediate_tpl/column_defaults.json：
+    #    配 value 或 values/<类别>/ 下的多行值文件，按整列连续循环填入；未配置则保留 dataTemp 占位。
     run_step("⑧ 生成 plan → " + zcfg.CFG_FILL_PLAN["framework_json"],
              [py, "build_fill_framework.py"])                                              # 已完成可注释本行
 

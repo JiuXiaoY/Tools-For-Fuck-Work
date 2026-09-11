@@ -11,7 +11,11 @@ ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网
     最后一批按实际剩余条数）拆分，每批一个独立提示词/回答文件——避免一次问完所有产品
     导致回答超长、超时或截断；
   - 每列每组只存 1 个值 → fill_from_plan 以 cycle 模式循环铺满整组；
-  - 无可选值的列保持 dataTemp 占位不变。
+  - 无可选值的列保持 dataTemp 占位不变（由人工配置/后续机制处理）；
+  - **硬性不变量**：有可选值的列**不允许残留占位**。写回 M 之后逐列校验，
+    只要还有任何一组是占位（回答缺失/块头未识别/值不在可选值内被拒）→ 打印明细并
+    **exit 2**（流程中止），不再像以前那样只打印警告就继续（否则占位会流进产出 Excel）。
+    同一不变量在 build_fill_framework.py（⑧）也守一道，防止「注释掉 ⑦」绕过。
 
 产物文件（ai_prompt/ 下，每批 2 个）：
   - attributes_batch01.txt / attributes_batch02.txt ...          各批提示词
@@ -40,6 +44,8 @@ from pathlib import Path
 import openpyxl
 
 from common import (
+    column_letter,
+    find_residual_placeholders,
     load_ai_columns,
     load_data_cols,
     load_groups,
@@ -344,29 +350,42 @@ def extract_last_response(page, previous_text: str = "", timeout: int = 300) -> 
     raise RuntimeError("No new assistant response found")
 
 
-def validate_no_placeholder(m_data, ai_cols, labels, placeholder):
-    """校验：有可选值的列不允许残留占位（dataTemp）。
+def _batch_of_group(index: int, batch_size: int, total_groups: int) -> int:
+    """组序号（1 起）→ 所属批次号（1 起）；batch_size <= 0 表示全部一批。"""
+    bs = batch_size if batch_size and batch_size > 0 else max(total_groups, 1)
+    return (index - 1) // bs + 1
 
-    任一 AI 列仍有组是占位（本批回答缺失/块头未识别等）→ 逐列列出残留组数，
-    便于补齐对应批次回答后重跑。
+
+def enforce_no_placeholder(m_data, groups, ai_cols, labels, placeholder, batch_size):
+    """硬校验：有可选值的列不允许残留占位；有残留 → 打印明细并 exit 2（流程必须停）。
+
+    残留判定（任一即算，口径见 common.find_residual_placeholders）：
+    该「组×列」缺失 / 值为空数组 / 值全是占位值。
+    明细会定位到「哪一批的回答需要补」，便于直接补齐 _result.txt 后重跑（已有回答会被复用）。
     """
-    bad = {}
-    for col, header, _ in ai_cols:
-        n_ph = 0
-        for gdata in m_data.values():
-            v = (gdata or {}).get(str(col))
-            if v is None:
-                n_ph += 1
-            elif all(str(x) == placeholder for x in v):
-                n_ph += 1
-        if n_ph:
-            bad[col] = n_ph
-    if bad:
-        print("⚠️ 仍有可选值列残留占位（请补齐对应批次回答后重跑本程序）:")
-        for col, n in bad.items():
-            print(f"   列{col} ({labels.get(col, '')}): {n} 组仍为占位")
-    else:
-        print("✅ 校验通过：所有有可选值列均无占位")
+    bad = find_residual_placeholders(m_data, groups, [c for c, _, _ in ai_cols], placeholder)
+    if not bad:
+        print(f"✅ 校验通过：{len(ai_cols)} 个有可选值列均无占位残留")
+        return
+
+    total = sum(e["count"] for e in bad.values())
+    print("")
+    print("=" * 60)
+    print(f"❌ 有可选值列仍残留占位：{len(bad)} 列 / 共 {total} 个「组×列」——不允许产出，流程中止。")
+    print("=" * 60)
+    for col in sorted(bad):
+        entry = bad[col]
+        batches = sorted({_batch_of_group(i, batch_size, len(groups)) for i in entry["indexes"]})
+        idx_show = entry["indexes"][:20]
+        more = "..." if len(entry["indexes"]) > 20 else ""
+        print(f"   列{column_letter(col)}({col}) ({labels.get(col, '')}): {entry['count']} 组仍占位")
+        print(f"      组序号 {idx_show}{more}   → 需补批次: "
+              f"{['attributes_batch%02d_result.txt' % b for b in batches]}")
+    print("")
+    print("💡 修复：补齐上面列出的回答文件后重跑本程序（已存在的回答会被复用，不会重复问）；")
+    print("   或删掉对应 _result.txt，让程序对该批重新发起网页询问。")
+    print("⚠️ 在占位清零之前不要继续 ⑧（build_fill_framework.py 同样会报错中止）。")
+    sys.exit(2)
 
 
 def web_ask_all(ai_cols, products, args, m_data, groups):
@@ -438,7 +457,6 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
         print("所有批次均已有回答结果，无需打开网页。")
         if groups_hash:
             Path(meta_path).write_text(groups_hash + "\n", encoding="utf-8")
-        validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
         return
 
     # 需要网页询问的批次：一次性打开浏览器，逐批发送
@@ -516,8 +534,6 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
     if groups_hash:
         Path(meta_path).write_text(groups_hash + "\n", encoding="utf-8")
 
-    validate_no_placeholder(m_data, ai_cols, labels, args.placeholder)
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -594,14 +610,21 @@ def main():
             Path(p_path).write_text(build_prompt_all(batch, ai_cols, labels), encoding="utf-8")
             print(f"📄 提示词: {p_name}（产品 {start + 1}~{start + len(batch)}）")
         print(f"✅ 共 {len(batches)} 批提示词已生成；把各批喂给 AI，回答存为对应 _result.txt 后重跑本程序写回。")
+        print("⚠️ 此时有可选值列仍是占位：完成回答并重跑本程序（校验通过）之前，"
+              "不要继续 ⑧ build_fill_framework.py（会报错中止）。")
         return
 
     web_ask_all(ai_cols, products, args, m_data, groups)
 
-    # 写回 M JSON
+    # 写回 M JSON（先落盘保留已完成的部分，再校验；校验失败仍 exit 2 中止流程）
     with open(args.m_data, "w", encoding="utf-8") as f:
         json.dump({"data": m_data, "placeholder": args.placeholder}, f, ensure_ascii=False, indent=2)
     print(f"\nM 数据源已更新: {args.m_data}")
+
+    # 硬性不变量：有可选值的列不允许残留占位（违规 → exit 2）
+    enforce_no_placeholder(
+        m_data, groups, ai_cols, make_labels(ai_cols), args.placeholder, args.batch_size
+    )
 
 
 if __name__ == "__main__":

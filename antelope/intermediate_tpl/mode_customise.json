@@ -1,3 +1,13 @@
 {
-  "addr_fr_tops": {}
+  "_comment": [
+    "列填充模式手动配置：覆盖 ⑧ 对某列的自动模式判断（不填则自动判断，通常不用改这里）。",
+    "键 = 列字母（Excel 列名，大小写不敏感，如 Q / AT）；兼容旧写法（直接写列号 17/46）。",
+    "值只能是 sequential / children_only / cycle 之一。",
+    "示例：{\"yass_fr_coat\": {\"Q\": \"cycle\", \"AT\": \"sequential\"}}",
+    "注意：目标列（column_defaults.json 里配了 value/file 的列）若在此被指定为 children_only，",
+    "      会与「整列连续循环」错位 → ⑧ 会跳过该列并保留占位，提示二选一。",
+    "按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键一律忽略。"
+  ],
+  "addr_fr_tops": {},
+  "yass_fr_coat": {}
 }

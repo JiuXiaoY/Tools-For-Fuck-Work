@@ -21,8 +21,12 @@
   - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json；
                          不同模板可能不同；读不到则报错，不做兜底）
   - col_scope          : only_in_completed 的全部列号
-  - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"1": "cycle"})，
+  - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"Q": "cycle"}，键 = 列字母)，
                          填写后 fill_from_plan.py 会优先使用该模式、跳过自动判断
+  - data 中的目标列    : 「col_scope 中 A 未映射、completed 也无可选值」的列由
+                         column_defaults.json 配置「指定值 / 多行值文件」，按整列连续
+                         循环预展开进 data（按组旋转切片 → sequential 等价），
+                         fill_from_plan.py 无需改动；未配置则保留占位 dataTemp
   - groups             : 来自 groups 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_groups.json），
                          该 JSON 由 build_groups_from_excel.py 对数据源 A 生成，
                          包含实际行号的分组行范围（无偏移）
@@ -49,12 +53,30 @@ import json
 import os
 import sys
 
-from common import load_groups, load_json, setup_log, zcfg
+from common import (
+    ValueFileError,
+    column_letter,
+    find_residual_placeholders,
+    load_ai_columns,
+    load_column_defaults,
+    load_data_cols,
+    load_groups,
+    load_json,
+    parse_column_key,
+    resolve_column_values,
+    setup_log,
+    uncovered_cols,
+    value_cycle_cols,
+    zcfg,
+)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # 过程 json（模板分析、列差异）在 intermediate 子目录下；最终 plan 输出到 fill_plan
 INTERMEDIATE_DIR = zcfg.INTERMEDIATE_DIR
 FILL_PLAN_DIR = zcfg.FILL_PLAN_DIR
+
+# 未覆盖列兜底占位值（与 build_m_data.py 一致）
+PLACEHOLDER = "dataTemp"
 
 DEFAULT_DIFF = zcfg.CFG_INTERMEDIATE["column_diff_json"]
 DEFAULT_COMPLETED = zcfg.CFG_INTERMEDIATE["completed_json"]
@@ -64,6 +86,7 @@ DEFAULT_DATA = zcfg.CFG_INTERMEDIATE["data_json"]
 DEFAULT_M_DATA = zcfg.DATA_SOURCE_M       # M：自定义数据来源（JSON），补充 A 未映射列
 DEFAULT_TEMPLATE_OUTPUT = zcfg.TEMPLATE_OUTPUT   # 产出模板（fill_from_plan 复制其副本填充）
 DEFAULT_MODE_CUSTOMISE = zcfg.MODE_CUSTOMISE_FILE   # 共享单文件，按 ACTIVE_CATEGORY 标签分段读取
+DEFAULT_COLUMN_DEFAULTS = zcfg.COLUMN_DEFAULTS_FILE  # 目标列（A 未覆盖且无可选值）取值配置
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
 DEFAULT_PLAN_OUTPUT_FILE = zcfg.CFG_RUN["plan_output_file"]
 
@@ -89,13 +112,17 @@ _VALID_MODES = {"sequential", "children_only", "cycle"}
 def load_mode_customise(path):
     """读取人工维护的列填充模式配置，只取当前 ACTIVE_CATEGORY 标签下的部分。
 
-    共享单文件结构（默认 intermediate_tpl/mode_customise.json）：
+    共享单文件结构（默认 intermediate_tpl/mode_customise.json）——**键 = 列字母**
+    （Excel 列名，大小写不敏感；兼容直接写列号），与 column_defaults.json 写法统一：
         {
-          "addr_fr_tops": {"17": "cycle", "5": "children_only"},
-          "de_pants":     {"1": "sequential"}
+          "_comment":     ["…说明，_ 开头的键忽略…"],
+          "yass_fr_coat": {"Q": "cycle", "AT": "sequential"},
+          "addr_fr_tops": {"E": "children_only"}
         }
-    只读取 raw[ACTIVE_CATEGORY] 分段，值为 {列号: "sequential"/"children_only"/"cycle"}；
-    兼容旧版扁平结构 {列号: 模式}（无标签分段时整体作为当前类别使用）。
+    值只能是 sequential / children_only / cycle 之一。
+    只读 raw[ACTIVE_CATEGORY] 分段；兼容旧版扁平结构（无标签分段时整体作为当前类别使用）。
+    归一化为 {列号(str): 模式}（内部与 plan/fill_from_plan 一致用列号），
+    无法识别的键、非法模式 → 打印警告并忽略。
     文件缺失/空/找不到当前标签 → 返回 {}（全部走自动判断）。
     """
     if not path or not os.path.exists(path):
@@ -108,7 +135,22 @@ def load_mode_customise(path):
         if isinstance(section, dict):
             raw = section                      # 新版：取当前标签分段
         # 否则视为旧版扁平结构，raw 整体使用（其值若是 dict 会被过滤掉）
-        return {str(k): str(v) for k, v in raw.items() if str(v) in _VALID_MODES}
+
+        result = {}
+        for key, val in raw.items():
+            if str(key).startswith("_"):
+                continue                       # 说明键
+            mode = str(val)
+            col = parse_column_key(key)
+            if col is None:
+                print(f"⚠️ mode_customise 忽略无法识别的键 {key!r}（请写列字母如 \"AT\"，或列号如 \"46\"）")
+                continue
+            if mode not in _VALID_MODES:
+                print(f"⚠️ mode_customise 忽略列 {column_letter(col)}({col}) 的非法模式 {mode!r}"
+                      f"（只能是 {'/'.join(sorted(_VALID_MODES))}）")
+                continue
+            result[str(col)] = mode
+        return result
     except Exception:
         return {}
 
@@ -193,6 +235,174 @@ def fill_uncovered_with_temp(data, groups, col_scope, temp_value="dataTemp"):
     return filled
 
 
+def _sorted_groups(groups):
+    """把 groups（{组名: "start & end"}）解析为按起始行排序的 [(组名, start, end, n), ...]。
+
+    非法 spec（不是 "a & b"）跳过。
+    """
+    parsed = []
+    for gname, spec in (groups or {}).items():
+        s = str(spec).strip()
+        if s.count("&") != 1:
+            continue
+        try:
+            start, end = map(int, [x.strip() for x in s.split("&")])
+        except ValueError:
+            continue
+        if end < start:
+            continue
+        parsed.append((str(gname), start, end, end - start + 1))
+    parsed.sort(key=lambda t: t[1])
+    return parsed
+
+
+def _short(text, limit=28):
+    """日志里显示值的前缀（过长截断）。"""
+    s = str(text)
+    return s if len(s) <= limit else s[: limit] + "…"
+
+
+def _header(headers, col):
+    """列号 → 表头（仅用于日志；取不到返回空串）。"""
+    return str((headers or {}).get(int(col)) or "")
+
+
+def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values_dir,
+                          headers=None, a_cols=None, mode_customise=None,
+                          placeholder=PLACEHOLDER):
+    """目标列（A 未覆盖 且 无可选值）→ 指定值/多行文件的**整列连续循环**填充。
+
+    语义（按需求）：不考虑分组，从数据区第一行起连续循环整列所有数据行：
+        第 k 行取值 values[(k-1) % m]      （m = 该列循环序列长度，跨组不重置）
+    实现：利用「切片长度恰等于组行数 → fill_from_plan 判定 m==n → sequential」这一点，
+    把循环序列**按组旋转切片**写进 plan.data；fill_from_plan.py 无需改动。
+
+    配置来源 intermediate_tpl/column_defaults.json 当前类别分段：
+        {"19": {"value": "Coat-001"}, "46": {"file": "keywords.txt"}, "40": "…"}
+    file 优先，文件缺失/为空退回 value；两者都不行 → 该列保留占位（警告）。
+    值文件出现空行 → 报错退出（约定值文件不允许空值）。
+
+    返回 (report, stats)：report 为逐列明细；stats 为计数汇总。
+    """
+    report = []
+    stats = {"target": len(target_cols), "configured": 0, "unconfigured": 0,
+             "skipped": 0, "rows": 0}
+    rows = _sorted_groups(groups)
+    if not rows:
+        print("⚠️ groups 为空，目标列取值配置无法应用")
+        return report, stats
+
+    first_start = rows[0][1]
+    gaps = [(rows[i][0], rows[i][2], rows[i + 1][0], rows[i + 1][1])
+            for i in range(len(rows) - 1) if rows[i][2] + 1 != rows[i + 1][1]]
+    total_rows = rows[-1][2] - first_start + 1
+    if gaps:
+        print(f"⚠️ 组区间不连续（{len(gaps)} 处，如 {gaps[0]}）：目标列仍按「组顺序连续计数」循环"
+              f"（与产出行的对应关系可能不连续），请确认分组是否正确")
+
+    target_set = {int(c) for c in target_cols}
+    scope_set = {int(c) for c in (col_scope or [])}
+    a_set = {int(x) for x in (a_cols or [])}
+    # 配置了但不在目标集合的列：跳过并说明原因（绝不覆盖 A 取数/AI 选值的真实数据）
+    extra = [int(c) for c in defaults if int(c) not in target_set]
+    for col in sorted(extra):
+        if col not in scope_set:
+            reason = "不在 col_scope（待填列范围）内"
+        elif col in a_set:
+            reason = "有 A 映射取数"
+        else:
+            reason = "有可选值（由 ⑦ AI 负责）"
+        print(f"⚠️ 配置中的列 {column_letter(col)}({col}) 不在目标集合：{reason} → 跳过，不覆盖真实数据")
+        stats["skipped"] += 1
+
+    for col in sorted(target_set):
+        tag = f"{column_letter(col)}({col})"          # 日志与配置统一用列字母，如 AN(40)
+        entry = defaults.get(str(col))
+        if entry is None:
+            stats["unconfigured"] += 1
+            print(f"⚠️ 列{tag} ({_header(headers, col)}) 未配置 → 保留占位 {placeholder}"
+                  f"（{total_rows} 格将写入产出）")
+            continue
+
+        try:
+            values, source, path = resolve_column_values(entry, values_dir)
+        except ValueFileError as exc:
+            print("")
+            print("=" * 60)
+            print(f"❌ {exc}")
+            print("=" * 60)
+            sys.exit(2)
+
+        if not values:
+            stats["unconfigured"] += 1
+            print(f"⚠️ 列{tag} ({_header(headers, col)}) 配置了但没有可用值"
+                  f"（value/file 都为空或无法解析）→ 保留占位 {placeholder}")
+            continue
+
+        forced = (mode_customise or {}).get(str(col))
+        if forced == "children_only":
+            stats["skipped"] += 1
+            print(f"⚠️ 列{tag} ({_header(headers, col)}) 被 mode_customise 指定为 children_only"
+                  f"（会跳过每组首行、与整列循环错位）→ 跳过并保留占位；请二选一")
+            continue
+
+        m = len(values)
+        for gname, start, end, n in rows:
+            pos = start - first_start                     # 该组首行在整列中的全局位置
+            data.setdefault(gname, {})[str(col)] = [values[(pos + i) % m] for i in range(n)]
+
+        stats["configured"] += 1
+        stats["rows"] += total_rows
+        report.append({
+            "column": col, "column_letter": column_letter(col),
+            "header": _header(headers, col), "source": source,
+            "file": path, "cycle_len": m, "rows": total_rows,
+            "first": values[0], "last": values[(total_rows - 1) % m],
+        })
+        src_desc = (f"指定值 {values[0]!r}" if source == "value"
+                    else f"文件 {path}（{m} 行）")
+        print(f"✅ 列{tag} ({_header(headers, col)}) ← {src_desc} 循环 {total_rows} 行 "
+              f"[首={_short(values[0])} 末={_short(values[(total_rows - 1) % m])}]")
+
+    print(f"📌 目标列 {stats['target']} 个：已配置 {stats['configured']} / 未配置 {stats['unconfigured']}"
+          f" / 跳过 {stats['skipped']}（数据 {total_rows} 行、{len(rows)} 组"
+          f"{'，组区间连续' if not gaps else '，组区间不连续'}）")
+    return report, stats
+
+
+def assert_no_placeholder_for_choice_columns(data, groups, ai_cols, placeholder=PLACEHOLDER):
+    """守门：有可选值(choices)的「A 未覆盖列」不允许残留占位。
+
+    与 ai_pick_attributes.py（⑦）的硬校验是同一条不变量：这些列的值**只能**由 AI 选值提供。
+    只要还有「组×列」是占位（AI 没跑 / 只跑了一半 / ⑥ 在 ⑦ 之后重跑把 M 里的 AI 结果覆盖回
+    占位 / 回答值不在可选值内被拒），就打印明细并 exit 2，**且不写 plan**，
+    避免占位值流进产出 Excel。
+    """
+    if not ai_cols:
+        return
+    cols = [c for c, _, _ in ai_cols]
+    bad = find_residual_placeholders(data, groups, cols, placeholder)
+    if not bad:
+        print(f"✅ 有可选值列校验通过（{len(cols)} 列无占位残留）: {cols}")
+        return
+
+    total = sum(e["count"] for e in bad.values())
+    print("")
+    print("=" * 60)
+    print(f"❌ 有可选值列仍残留占位：{len(bad)} 列 / 共 {total} 个「组×列」——不写 plan，流程中止。")
+    print("=" * 60)
+    for col in sorted(bad):
+        entry = bad[col]
+        header = next((h for c, h, _ in ai_cols if c == col), "")
+        idx_show = entry["indexes"][:20]
+        more = "..." if len(entry["indexes"]) > 20 else ""
+        print(f"   列{column_letter(col)}({col}) ({header}): {entry['count']} 组仍占位   组序号 {idx_show}{more}")
+    print("")
+    print("💡 先跑 ⑦ 让 AI 把这些列选满：python ai_pick_attributes.py")
+    print("   （若 ⑦ 之后又跑过 ⑥ build_m_data.py，M JSON 里的 AI 结果会被占位覆盖 → 需再跑一次 ⑦）")
+    sys.exit(2)
+
+
 def build_plan(diff, completed, blank, plan_output_file, template_output=None,
                mode_customise=None, groups=None, data=None):
     """生成基础填充框架（plan 骨架）。
@@ -254,7 +464,13 @@ def main():
     parser.add_argument("--template-output", default=DEFAULT_TEMPLATE_OUTPUT,
                         help="产出模板路径（fill_from_plan 复制其副本并填充；默认 zconfig.TEMPLATE_OUTPUT）")
     parser.add_argument("--mode-customise", default=DEFAULT_MODE_CUSTOMISE,
-                        help="列填充模式共享配置文件（按 ACTIVE_CATEGORY 标签分段；默认 intermediate_tpl/mode_customise.json）")
+                        help="列填充模式共享配置文件（键 = 列字母，按 ACTIVE_CATEGORY 标签分段；"
+                             "默认 intermediate_tpl/mode_customise.json）")
+    parser.add_argument("--column-defaults", default=DEFAULT_COLUMN_DEFAULTS,
+                        help="目标列（A 未覆盖且无可选值）取值配置（按 ACTIVE_CATEGORY 标签分段；"
+                             "默认 intermediate_tpl/column_defaults.json）")
+    parser.add_argument("--columns-report", default=None,
+                        help="目标列取值明细 JSON 输出路径（可选，用于审计）")
     args = parser.parse_args()
 
     setup_log()
@@ -278,8 +494,34 @@ def main():
     # ── 未覆盖列兜底：统一填占位值 dataTemp（sequential 顺序写入）──
     temp_filled = fill_uncovered_with_temp(data, groups, col_scope)
 
-    # ── mode_customise：人工维护的 列 → 强制填充模式 ──
+    # ── mode_customise：人工维护的 列 → 强制填充模式（提前读，供目标列冲突检测用）──
     mode_customise = load_mode_customise(args.mode_customise)
+
+    # ── 目标列（A 未覆盖 且 无可选值）：指定值 / 多行值文件 → 整列连续循环 ──
+    target_cols = value_cycle_cols(args.diff, args.data, args.completed)
+    a_cols = load_data_cols(args.data)
+    headers = {c["col"]: c.get("header") for c in (completed.get("columns") or []) if "col" in c}
+    column_defaults = load_column_defaults(args.column_defaults)
+    if target_cols:
+        print(f"🎯 目标列（A 未覆盖 且 无可选值）{len(target_cols)} 个: {target_cols}"
+              f"（配置 {args.column_defaults}）")
+        report, _stats = apply_column_defaults(
+            data, groups, col_scope, target_cols, column_defaults,
+            zcfg.COLUMN_VALUES_DIR, headers=headers, a_cols=a_cols,
+            mode_customise=mode_customise,
+        )
+        if args.columns_report:
+            os.makedirs(os.path.dirname(os.path.abspath(args.columns_report)) or ".", exist_ok=True)
+            with open(args.columns_report, "w", encoding="utf-8") as f:
+                json.dump({"columns": report, "stats": _stats,
+                           "values_dir": zcfg.COLUMN_VALUES_DIR}, f, ensure_ascii=False, indent=2)
+            print(f"📄 目标列取值明细: {args.columns_report}")
+    else:
+        print("ℹ️ 无目标列（A 未覆盖列全部有可选值），跳过取值配置")
+
+    # ── 守门：有可选值的未覆盖列必须已由 AI 填出真实值（不允许残留占位）──
+    ai_cols = load_ai_columns(args.completed, uncovered_cols(args.diff, args.data))
+    assert_no_placeholder_for_choice_columns(data, groups, ai_cols)
 
     plan = build_plan(diff, completed, blank, args.output_file,
                       template_output=args.template_output,

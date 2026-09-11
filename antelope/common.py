@@ -15,7 +15,10 @@ import getpass
 import importlib.util
 import json
 import os
+import re
 import sys
+
+from openpyxl.utils import column_index_from_string, get_column_letter
 
 # ─────────────────────────────────────────────────────────────────────────── #
 # 路径与 sys.path：antelope 与项目根都加入，便于 import zconfig / services
@@ -160,6 +163,32 @@ def path_exists(path):
     return bool(path) and os.path.exists(path)
 
 
+def parse_column_key(key):
+    """配置键 → 列号 int：支持列字母（"AN"、"s"，大小写不敏感）与列号字符串（"40"）。
+
+    识别不了（如 "_comment"、空串、乱写）返回 None，由调用方忽略该键。
+    """
+    s = str(key).strip().upper()
+    if not s:
+        return None
+    if s.isdigit():
+        return int(s)                      # 兼容旧写法：直接写列号
+    if s.isalpha():
+        try:
+            return column_index_from_string(s)
+        except Exception:
+            return None
+    return None
+
+
+def column_letter(col):
+    """列号 → 列字母（日志/报告里与配置文件保持同一写法，如 40 → "AN"）。"""
+    try:
+        return get_column_letter(int(col))
+    except Exception:
+        return str(col)
+
+
 def uncovered_cols(diff_path, data_path):
     """A 未覆盖的待填列：col_scope − A 已覆盖列。"""
     scope = load_col_scope(diff_path)
@@ -182,6 +211,206 @@ def load_ai_columns(completed_path, uncovered):
         choices = c.get("choices") or []
         if choices:
             result.append((col, str(c.get("header", "")), [str(x) for x in choices]))
+    return result
+
+
+# ─────────────────────────────────────────────────────────────────────────── #
+# 目标列（A 未覆盖 且 无可选值）取值：配置读取 / 值文件读取 / file>value 解析
+#
+# 概念：col_scope(C−B) 里 A 没映射、completed 也没有可选值(choices)的列，既没有取数
+# 来源也没有 AI 选值依据 → 由 intermediate_tpl/column_defaults.json 人工指定
+# 「一个值」或「一个多行值文件」，按整列连续循环填满（见 build_fill_framework.py）。
+# ─────────────────────────────────────────────────────────────────────────── #
+class ValueFileError(Exception):
+    """值文件的数据错误（如空行）——属于必须人工修正的错误，不做兜底、直接报错退出。"""
+
+
+def value_cycle_cols(diff_path, data_path, completed_path):
+    """目标列 = 「A 未覆盖列」− 「有可选值(choices)的列」（本机制处理的对象）。
+
+    A 未覆盖列见 uncovered_cols；有可选值的列由 ⑦ ai_pick_attributes.py 负责
+    （且 ⑧ 已守门：不允许残留占位），故这里排除。
+    """
+    uncovered = uncovered_cols(diff_path, data_path)
+    ai = {c for c, _, _ in load_ai_columns(completed_path, uncovered)}
+    return [c for c in uncovered if c not in ai]
+
+
+def load_column_defaults(path):
+    """读取目标列取值配置，只取当前 ACTIVE_CATEGORY 标签下的部分。
+
+    共享单文件结构（默认 intermediate_tpl/column_defaults.json）：
+        {
+          "_comment": ["…说明，键名以 _ 开头的一律忽略…"],
+          "yass_fr_coat": {
+            "S":  {"value": "Coat-001"},          ← 键 = **列字母**（Excel 列名，大小写不敏感）
+            "AT": {"file": "keywords_coat.txt"},
+            "AN": "Voir la description"           ← 字符串简写 = 只给 value
+          }
+        }
+
+    键支持列字母（"S"/"AN"）与列号（"19"/"40"，旧写法兼容）；以 "_" 开头的键忽略。
+    归一化为 {列号(str): {"value": str|None, "file": str|None}}（保留空项，
+    便于区分「配置了但没值」与「未配置」两种警告）。
+    文件缺失/解析失败/找不到当前标签 → 返回 {}（全部列按未配置处理）。
+    """
+    if not path or not os.path.exists(path):
+        return {}
+    try:
+        raw = load_json(path)
+    except Exception:
+        return {}
+    if not isinstance(raw, dict):
+        return {}
+    section = raw.get(zcfg.ACTIVE_CATEGORY)
+    if isinstance(section, dict):
+        raw = section                      # 新版：取当前标签分段
+    # 否则视为旧版扁平结构，raw 整体使用（值不是 dict/str 的项会被下面的归一化过滤）
+
+    result = {}
+    for key, val in raw.items():
+        col = parse_column_key(key)
+        if col is None:
+            continue                       # "_comment" 等非列键忽略
+        if isinstance(val, str):
+            result[str(col)] = {"value": val, "file": None}
+        elif isinstance(val, dict):
+            value = val.get("value")
+            file_ = val.get("file")
+            result[str(col)] = {
+                "value": None if value is None else str(value),
+                "file": None if file_ is None else str(file_),
+            }
+    return result
+
+
+def read_value_lines(path):
+    """读取多行值文件 → [值...]（每行一个值，顺序即循环顺序）。
+
+    - 编码 utf-8-sig 优先，失败退回 gbk（Windows 记事本另存 ANSI 的常见情况）；
+    - 先把 CRLF / CR / 混用换行统一为 \\n 再切分 → 末尾换行不会多出一个值，
+      也不会因残留 \\r 把一行拆成两行而误报空行；
+    - **空行视为数据错误 → 抛 ValueFileError（带行号）**，不静默跳过（按需求：值文件不会有空值）；
+    - 空文件（0 行）返回 []，由调用方决定是否退回 value；
+    - 文件不存在 / 无法解码 → 原样抛出（FileNotFoundError / UnicodeDecodeError）。
+    """
+    data = None
+    last_exc = None
+    for enc in ("utf-8-sig", "gbk"):
+        try:
+            with open(path, "r", encoding=enc, newline="") as fh:
+                data = fh.read()
+            break
+        except UnicodeDecodeError as exc:
+            last_exc = exc
+            continue
+    if data is None:
+        raise last_exc if last_exc else UnicodeDecodeError("unknown", b"", 0, 1, "decode failed")
+
+    text = re.sub(r"\r+\n", "\n", data).replace("\r", "\n")   # CRLF/CRCRLF/单独CR 统一为 LF
+    lines = text.split("\n")
+    if lines and lines[-1] == "":
+        lines.pop()                        # 文件末尾的换行不算一个值
+    blanks = [i for i, ln in enumerate(lines, 1) if not ln.strip()]
+    if blanks:
+        raise ValueFileError(
+            f"值文件存在空行（第 {blanks[:10]} 行{'...' if len(blanks) > 10 else ''}）: {path}"
+            "—— 按约定值文件不允许空值，请删除空行后重跑。"
+        )
+    return lines
+
+
+def resolve_column_values(entry, values_dir, log=print):
+    """把一条配置解析为 (values, source, path)：file 优先，找不到退回 value。
+
+    - file 可写绝对路径 / 相对仓库根 / 纯文件名（后者到 values_dir 下找）；
+    - 文件不存在、读失败、为空（0 行）→ 退回 value（打印原因）；
+    - 空行等数据错误（ValueFileError）原样抛出，由调用方报错退出（不兜底）；
+    - 都不行 → ([], None, None)。
+    """
+    value = (entry or {}).get("value")
+    file_spec = (entry or {}).get("file")
+
+    if file_spec:
+        candidates = [file_spec] if os.path.isabs(file_spec) else [
+            os.path.join(values_dir or "", file_spec),
+            os.path.join(_ROOT, file_spec),
+            file_spec,
+        ]
+        path = next((p for p in candidates if path_exists(p)), None)
+        if path is None:
+            log(f"      ↳ ⚠️ 值文件不存在，退回指定值: {file_spec}（已找: {candidates}）")
+        else:
+            try:
+                lines = read_value_lines(path)
+            except ValueFileError:
+                raise                          # 空行 = 数据错误，直接报错
+            except Exception as exc:
+                log(f"      ↳ ⚠️ 值文件读取失败（{type(exc).__name__}: {exc}），退回指定值: {path}")
+                lines = []
+            if lines:
+                return lines, "file", path
+            if path is not None:
+                log(f"      ↳ ⚠️ 值文件为空（0 行），退回指定值: {path}")
+
+    if value:
+        return [value], "value", None
+    return [], None, None
+
+
+# ─────────────────────────────────────────────────────────────────────────── #
+# 占位值（placeholder）工具
+#
+# 「有可选值(choices)的未覆盖列不允许残留占位」是同一条不变量，由两处共同守：
+#   - ai_pick_attributes.py（⑦）：AI 选值写回 M 之后校验，残留 → exit 2；
+#   - build_fill_framework.py（⑧）：生成 plan 之前守门，残留 → exit 2 且不写 plan。
+# 判定实现集中在这里，避免两处口径不一致（曾出现 dataTemp / datatemp 混用）。
+# ─────────────────────────────────────────────────────────────────────────── #
+PLACEHOLDER_ALIASES = {"datatemp"}   # 历史遗留的小写拼写（大小写不敏感比较）
+
+
+def is_placeholder(value, placeholder="dataTemp") -> bool:
+    """判断单个值是否为占位值（大小写不敏感；兼容历史 dataTemp / datatemp 两种拼写）。"""
+    s = str(value).strip().lower()
+    return s == str(placeholder).strip().lower() or s in PLACEHOLDER_ALIASES
+
+
+def is_placeholder_group(values, placeholder="dataTemp") -> bool:
+    """判断某「组×列」是否为占位状态：缺失 / 空数组 / 全部为占位值。"""
+    if values is None:
+        return True
+    if isinstance(values, str):
+        return is_placeholder(values, placeholder)
+    try:
+        items = list(values)
+    except TypeError:
+        return is_placeholder(values, placeholder)
+    if not items:
+        return True
+    return all(is_placeholder(v, placeholder) for v in items)
+
+
+def find_residual_placeholders(m_data, groups, cols, placeholder="dataTemp"):
+    """找出 cols 中仍残留占位的「组×列」（缺失 / 空数组 / 全占位 均算残留）。
+
+    返回 {列号(int): {"groups": [组名...], "indexes": [组序号(1起)...], "count": n}}；
+    无 cols 或全部干净 → {}。组 spec 非法的组按 update_m_data 的口径跳过。
+    """
+    result = {}
+    want = sorted({int(c) for c in (cols or [])})
+    if not want:
+        return result
+    for idx, (gname, spec) in enumerate((groups or {}).items(), 1):
+        if str(spec).strip().count("&") != 1:
+            continue
+        gdata = (m_data or {}).get(str(gname)) or {}
+        for col in want:
+            values = gdata.get(str(col), gdata.get(col))
+            if is_placeholder_group(values, placeholder):
+                entry = result.setdefault(col, {"groups": [], "indexes": [], "count": 0})
+                entry["groups"].append(str(gname))
+                entry["indexes"].append(idx)
+                entry["count"] += 1
     return result
 
 
