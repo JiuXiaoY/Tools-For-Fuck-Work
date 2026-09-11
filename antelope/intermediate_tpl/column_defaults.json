@@ -10,14 +10,55 @@
     "填法：整列连续填充，跨组不重置——数据区第 1 行取第 1 个值，第 2 行取第 2 个……到底后回到开头。",
     "序列填充示例：value = \"S-0001\" 且 sequence = true → S-0001, S-0002, …（位数按种子左侧补零；\"0001\"/\"A-1\" 同样支持）。",
     "键 = 列字母（Excel 列名，大小写不敏感），如 S / T / AN / AT；兼容旧写法（直接写列号 19/40）。",
-    "file 可写绝对路径 / 相对仓库根路径 / 纯文件名（纯文件名到 antelope/values/<类别>/ 下找）。",
+    "file 可写绝对路径 / 相对仓库根路径 / 纯文件名（纯文件名到 antelope/values/<类别>/ 或 antelope/values/ 下找）。",
     "值文件：每行一个值，utf-8(sig) 或 gbk；不允许空行（出现空行会直接报错并给出行号）；文件模式按行循环，不受 sequence 影响。",
-    "配置按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键一律忽略。"
+    "配置按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键一律忽略。",
+    "各现有类别的目标列已按「A 未覆盖 且 无可选值」列出（不含 5 个卖点列——它们已由 col_mapping 的 AY..BC 映射覆盖）；取值无法事先确定的留空。"
   ],
+  "addr_de_pants": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "R":  { "value": "", "file": "", "sequence": false },
+    "AL": { "value": "", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "", "sequence": false }
+  },
+  "addr_fr_tops": {
+    "S":  { "value": "", "file": "", "sequence": false },
+    "T":  { "value": "", "file": "", "sequence": false },
+    "AN": { "value": "", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "", "sequence": false }
+  },
   "yass_de_coat": {
     "S":  { "value": "S-0001", "file": "", "sequence": true },
     "T":  { "value": "Herrenhemdjacke", "file": "", "sequence": false },
     "AN": { "value": "Das Herrenoberteil ergänzt jede Garderobe mit einer ausgewogenen Form und einer vielseitigen Optik. Zu Jeans, Chino oder Stoffhose lässt es sich lässig oder gepflegt kombinieren und passt zu vielen Gelegenheiten im Alltag, Büro oder in der Freizeit.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
+  },
+  "yass_de_pants": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "R":  { "value": "", "file": "", "sequence": false },
+    "AL": { "value": "", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "", "sequence": false }
+  },
+  "yass_de_tracksuit": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "AK": { "value": "", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "", "sequence": false }
+  },
+  "yass_fr_coat": {
+    "S":  { "value": "", "file": "", "sequence": false },
+    "T":  { "value": "", "file": "", "sequence": false },
+    "AN": { "value": "", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "", "sequence": false }
+  },
+  "yass_fr_pants": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "R":  { "value": "", "file": "", "sequence": false },
+    "AL": { "value": "", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "", "sequence": false }
+  },
+  "yass_fr_tracksuit": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "AK": { "value": "", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "", "sequence": false }
   }
 }

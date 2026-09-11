@@ -3,19 +3,54 @@
     "父体行（每组起始行 = 数据源 A 里 A 列有背景填充色的锚点行）的额外动作。",
     "执行时机：⑨ fill_from_plan 填充完成、多余行删除之后，保存产出之前；空配置 = 完全不动。",
     "set_values：把父体行指定列改成固定值，如 {\"D\": \"Parent\"}（可多列；值可为文本/数字/布尔）。",
-    "  注意：以 = 开头的值会被 openpyxl 当成公式写入。",
+    "  注意：以 = 开头的值会被 openpyxl 当成公式写入。父/子标记列各模板都在 D（de=Abstammungsgrad[Eltern/Kind]，fr=Niveau de relation[Parent/Enfant]）。",
     "row_fill：整行加**静态背景色**（真正的单元格填充，不是选中/阅读模式那种点击就消失的高亮）。",
     "  color   = 6 位或 8 位十六进制（可带 #），如 \"FFFF00\"；为空 = 不填充。",
-    "  columns = 填充到哪些列：null/\"all\" = 整行（到模板最后一列，当前 323 列 LK）；也可写 \"A:AW\" 或 [\"A\",\"B\"]。",
+    "  columns = 填充到哪些列：null/\"all\" = 整行（到模板最后一列）；也可写 \"A:AW\" 或 [\"A\",\"B\"]。",
     "clear_values：清除该行指定列的值（只清值，不动字体/底色）；columns 空 = 不清。",
+    "  各模板清的都是同一批语义列：E 父 SKU、主图+其他图 URL（9 列）、尺码四件套（de：Größensystem des Artikels/Größenklassifizierung/Figurtyp/Größentyp；fr 无 Figurtyp 故 3 列）、自己的售价列（AV 映射的目标列）。",
     "执行顺序：clear_values → set_values → row_fill；同一列既清又设时以 set_values 为准（会告警）。",
     "列一律写 Excel 列字母（大小写不敏感），与 column_defaults.json / mode_customise.json 同一套写法。",
-    "按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键忽略。",
-    "示例：{\"yass_fr_coat\": {\"row_fill\": {\"color\": \"FFFF00\", \"columns\": null}, \"set_values\": {\"D\": \"Parent\"}, \"clear_values\": {\"columns\": []}}}"
+    "按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键忽略。"
   ],
-  "yass_de_coat": {
+  "addr_de_pants": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","GZ"] }
+  },
+  "addr_fr_tops": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BJ","FQ"] }
+  },
+  "yass_de_coat": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FR"] }
+  },
+  "yass_de_pants": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","FR"] }
+  },
+  "yass_de_tracksuit": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EM"] }
+  },
+  "yass_fr_coat": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BJ","FQ"] }
+  },
+  "yass_fr_pants": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BJ","FQ"] }
+  },
+  "yass_fr_tracksuit": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BB","EL"] }
   }
 }
