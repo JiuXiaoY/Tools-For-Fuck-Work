@@ -23,6 +23,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BJ","FQ"] }
   },
+    "addr_de_tracksuit": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BN","BO","AZ","FC","AX","AY","BB","BC"] }
+  },
   "yass_de_coat": {
     "set_values":   { "D": "Eltern" },
     "row_fill":     { "color": "FFFF00", "columns": null },

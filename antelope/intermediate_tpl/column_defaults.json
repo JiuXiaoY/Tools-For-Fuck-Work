@@ -27,6 +27,12 @@
     "AN": { "value": "", "file": "", "sequence": false },
     "AT": { "value": "", "file": "", "sequence": false }
   },
+    "addr_de_tracksuit": {
+    "Q":  { "value": "R-0001", "file": "", "sequence": true },
+    "R":  { "value": "Herrenanzüge", "file": "", "sequence": false },
+    "AL": { "value": "Dieses aufeinander abgestimmte Bekleidungsset verbindet eine harmonische Optik mit flexiblen Kombinationsmöglichkeiten. Die enthaltenen Teile lassen sich gemeinsam tragen oder je nach Modell und persönlichem Stil mit weiterer Garderobe ergänzen.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "addr_de_tracksuit.txt", "sequence": false }
+  },
   "yass_de_coat": {
     "S":  { "value": "S-0001", "file": "", "sequence": true },
     "T":  { "value": "Herrenhemdjacke", "file": "", "sequence": false },
