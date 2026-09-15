@@ -20,6 +20,7 @@
    - **主标题**: `[Marke] Kapuzenpullover Herren Sommer Baumwolle Leicht Sweatshirt` (高涨服关键词 + 狠核心卖点/差异点 + 关键规格)
    - **副标题**: `Weicher Sweatstoff, Kordelzug mit 2 Taschen, elastischer Saum mit geradem Schnitt für Freizeit und Büro, Hoodie` 
 
+**更多参考示例请查看文件：dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/sweatshirt**
 
 **Constraints & Rules:**
 **1. 高涨服关键词、属性词优先 + 中文方向锁定 + 语义联想扩词原则（核心）**  

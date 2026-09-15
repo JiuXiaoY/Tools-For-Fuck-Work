@@ -10,6 +10,7 @@ load_data_cols / load_col_scope 等小工具。这里统一收敛，行为不变
     from common import zcfg, load_json, load_groups, ...
 """
 
+import atexit
 import datetime
 import getpass
 import importlib.util
@@ -17,6 +18,7 @@ import json
 import os
 import re
 import sys
+import time
 
 from openpyxl.utils import column_index_from_string, get_column_letter
 
@@ -58,6 +60,11 @@ def setup_utf8():
 # ─────────────────────────────────────────────────────────────────────────── #
 # 统一日志：不再打印到控制台，全部写入 antelope/log/{当天日期}_atl_{操作用户}.log
 # ─────────────────────────────────────────────────────────────────────────── #
+_LOG_DEPTH_ENV = "ANTELOPE_LOG_DEPTH"
+_LOG_BANNER_WIDTH = 88
+_active_log_path = None
+
+
 def get_log_file() -> str:
     """返回日志文件路径：antelope/log/{YYYY-MM-DD}_atl_{用户}.log（目录不存在自动创建）。"""
     log_dir = os.path.join(_ANTELOPE_DIR, "log")
@@ -71,19 +78,43 @@ def get_log_file() -> str:
 
 
 class _LogCleanWriter:
-    """日志写出口：把不换行空格（\\xa0 / \\u2007 / \\u202f）统一替换为普通空格。
+    """日志写出口：清洗异常空格，并给子程序日志加层级缩进。
 
     模板表头常含 NBSP（如 "Piles nécessaires\\xa0?"），原样写入日志会显示异常，
     这里在写入端统一清洗，保证日志干净可读。
+
+    每次 write 后立即 flush，避免 run_all 的缓冲内容在子进程退出后
+    才落盘，导致父/子程序日志顺序颠倒。
     """
 
     _MAP = str.maketrans({"\u00a0": " ", "\u2007": " ", "\u202f": " "})
 
-    def __init__(self, fh):
+    def __init__(self, fh, line_prefix=""):
         self._fh = fh
+        self._line_prefix = line_prefix
+        self._at_line_start = True
 
     def write(self, s):
-        self._fh.write(str(s).translate(self._MAP))
+        text = str(s).translate(self._MAP)
+        if not text:
+            return 0
+
+        if self._line_prefix:
+            chunks = []
+            for chunk in text.splitlines(keepends=True):
+                # 空行不加“│”，保留原日志的紧凑感。
+                if self._at_line_start and chunk not in ("\n", "\r", "\r\n"):
+                    chunks.append(self._line_prefix)
+                chunks.append(chunk)
+                self._at_line_start = chunk.endswith(("\n", "\r"))
+            text_to_write = "".join(chunks)
+        else:
+            text_to_write = text
+            self._at_line_start = text.endswith(("\n", "\r"))
+
+        self._fh.write(text_to_write)
+        self._fh.flush()
+        return len(text)
 
     def flush(self):
         self._fh.flush()
@@ -92,28 +123,94 @@ class _LogCleanWriter:
         return getattr(self._fh, name)
 
 
+def _log_depth() -> int:
+    """读取当前程序的日志嵌套层级；非法环境变量按顶层程序处理。"""
+    try:
+        return max(0, int(os.environ.get(_LOG_DEPTH_ENV, "0")))
+    except (TypeError, ValueError):
+        return 0
+
+
+def _format_duration(seconds: float) -> str:
+    """把耗时格式化为紧凑、可扫读的文本。"""
+    milliseconds = max(0, round(seconds * 1000))
+    hours, remainder = divmod(milliseconds, 3_600_000)
+    minutes, remainder = divmod(remainder, 60_000)
+    secs, millis = divmod(remainder, 1000)
+    if hours:
+        return f"{hours:d}:{minutes:02d}:{secs:02d}.{millis:03d}"
+    if minutes:
+        return f"{minutes:d}:{secs:02d}.{millis:03d}"
+    return f"{secs}.{millis:03d} 秒"
+
+
+def _log_marker(script: str, action: str, timestamp: str, depth: int,
+                elapsed: float = None) -> str:
+    """生成顶层大分隔或子程序紧凑分隔。"""
+    duration = f" 【总用时 {_format_duration(elapsed)}】" if elapsed is not None else ""
+    detail = f"{script} {action} 【{timestamp}】{duration}"
+    if depth == 0:
+        return f" {detail} ".center(_LOG_BANNER_WIDTH, "=")
+    branch = "┌─" if action == "START" else "└─"
+    return f"{branch} 子程序 {detail}"
+
+
 def setup_log() -> str:
     """把 stdout/stderr 统一重定向到当天日志文件（追加），控制台不再打印。
 
     所有 antelope 脚本在 main() 开头调用一次；同名同天多次运行/多个脚本
-    （含 run_all 的子进程）都会追加进同一个日志文件，开头带运行分隔头。
-    写入时自动清洗不换行空格（NBSP），日志中不会出现 \\xa0 等字符。
+    （含 run_all 的子进程）都会追加进同一个日志文件。
+
+    顶层程序使用大分隔 START/END；子程序通过环境变量自动继承层级，
+    使用紧凑的“┌─/└─ 子程序”分隔并缩进内容。所有写入立即刷盘，保证
+    子程序日志始终落在父程序的 START/END 之间。程序退出时
+    自动写入 END、结束时间和总用时。
     """
+    global _active_log_path
+    if _active_log_path is not None:
+        return _active_log_path
+
     log_path = get_log_file()
     try:
-        fh = open(log_path, "a", encoding="utf-8")
+        # 行缓冲 + writer 主动 flush：跨进程追加时仍保持时序。
+        fh = open(log_path, "a", encoding="utf-8", buffering=1)
     except Exception as exc:
         # 打开日志失败时退回 UTF-8 控制台，避免流程不可见
         setup_utf8()
         print(f"⚠️ 无法写入日志文件 {log_path}: {exc}（退回控制台输出）")
         return log_path
-    sys.stdout = _LogCleanWriter(fh)
-    sys.stderr = _LogCleanWriter(fh)
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    depth = _log_depth()
+    # subprocess 会继承环境变量，因而自动成为下一层日志。
+    os.environ[_LOG_DEPTH_ENV] = str(depth + 1)
+    writer = _LogCleanWriter(fh, "│   " * depth)
+    sys.stdout = writer
+    sys.stderr = writer
+    _active_log_path = log_path
+
+    script = os.path.basename(sys.argv[0]) or "<python>"
+    started_at = datetime.datetime.now()
+    started_clock = time.perf_counter()
+    now = started_at.strftime("%Y-%m-%d %H:%M:%S")
     argv = " ".join(sys.argv[1:])
-    print(f"\n{'=' * 60}")
-    print(f"[{now}] {os.path.basename(sys.argv[0])} {argv}".rstrip())
-    print("=" * 60)
+    print("")
+    print(_log_marker(script, "START", now, depth))
+    if argv:
+        print(f"参数: {argv}")
+
+    def _finish_log():
+        ended_at = datetime.datetime.now()
+        elapsed = time.perf_counter() - started_clock
+        writer.write(_log_marker(
+            script,
+            "END",
+            ended_at.strftime("%Y-%m-%d %H:%M:%S"),
+            depth,
+            elapsed,
+        ) + "\n")
+        writer.write("\n")
+
+    atexit.register(_finish_log)
     return log_path
 
 

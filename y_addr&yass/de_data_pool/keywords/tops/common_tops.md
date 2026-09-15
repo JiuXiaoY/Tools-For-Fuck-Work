@@ -1,5 +1,13 @@
 # 亚马逊德国站 (Amazon.de) 服装类目核心词库
 
+## [Hot]
+pullover mit katzentasche, katzenpullover mit beutel, longpullover, pullover kinder, pullover mädchen 134, angel wings hoodie
+hoodie jungen 152, partner hoodies 2er set für paare, waterproof jacket, weiße jeansjacke, regenjacke mädchen 146, reitjacke mädchen
+regenjacke 158 jungen, winterjacke jungen 152, fußball regenjacke kinder, dirndljacke, regenjacke 176 jungen wasserdicht, jacke herbst
+jacke jungen 164, wasserdichte regenjacke, herbstjacke jungen, winterjacke mädchen 164, winterjacke mädchen 152, regenjacke sport kinder
+felljacke, regenjacke 164 mädchen, jacke jungen, langarmshirt jungen 152, langarmshirt mädchen 134, langarmshirt kinder
+kugelsichere weste, fahrrad weste, regenponcho kinder fahrrad, regenponcho fahrrad mit kapuze, regenponcho mit ärmel
+
 ## [核心产品词]
 Spitzenbluse (蕾丝衬衫), Trägertop (吊带背心), Tube (抹胸), Bandeau (抹胸), Bustier (紧身胸衣), Longtop (长款背心)
 Camisole (吊带), Wickelshirt (裹身衫), Schlupfbluse (套头衬衫), Wickelbluse (裹身衬衫), Geburtshemd (分娩上衣), Korsett (胸衣)
@@ -74,33 +82,72 @@ Arbeitsjacke (工作夹克), Daunenjacke (羽绒服), Steppjacke (绗缝夹克),
 Hardshelljacke (硬壳夹克), Kochjacke (厨师夹克), Windbreaker (防风外套), Winterjacke (冬季外套), Übergangsjacke (过渡夹克), Sportjacke (运动夹克)
 Teddyjacke (泰迪绒夹克), Trachtenjacke (传统夹克), Cordjacke (灯芯绒夹克), Wildlederjacke (绒面革夹克), Kunstlederjacke (人造革夹克), Bikerjacke (机车夹克)
 Trenchcoat (风衣), Skijacke (滑雪夹克), Teddyfleecejacke (泰迪抓绒夹克), Glitzerjacke (亮片夹克), uv jacke (防晒夹克), Jacken (外套)
-Strickmantel (针织大衣), Mantel (大衣), Gehrock (长西装大衣), Frack (燕尾服)
+Strickmantel (针织大衣), Mantel (大衣), Gehrock (长西装大衣), Frack (燕尾服), sweatjacke jungen, sweatjacke mädchen
+kaputzensweatjacke männer, sweatjacke kinder, sweatjacke jungen 164, kapuzenjacke kinder, regenjacke kinder, softshelljacke kinder
+reflektierende jacke, fleecejacke kinder, softshelljacke mädchen, regenjacke mädchen, winterjacke jungen, winterjacke mädchen
+regenjacke jungen, softshelljacke jungen, reflektierende jacke kinder, winter jacket men, strickjacke mädchen, übergangsjacke jungen
+übergangsjacke mädchen, regenjacke kinder wasserdicht, winter jacket women, tragejacke für mama und baby, dirndl jacke, fleecejacke mädchen
+teddy fleecejacke kinder, übergangsjacke kinder, übergangsjacke jungen 164, übergangsjacke teenager mädchen, übergangsjacke mädchen 152, übergangsjacke kinder jungen
+übergangsjacke mädchen 164, softshelljacke jungen 164, softshelljacke mädchen 164, softshelljacke mädchen 152, softshelljacke mädchen 140, strickjacke braun
+strickjacke lang, strickjacke schwarz, weiße strickjacke, strickjacke kurz, strickjacke beige, braune strickjacke
+mohair strickjacke, teddyfleece jacke kinder, fleece jacke, jeansjacke mädchen, trenchcoat kurz, leichte steppjacke
+steppjacke mädchen, windbreaker kinder, skijacke kinder, skijacke mädchen, skijacke jungen, gefütterte regenjacke kinder
+regenjacke kinder fussball, regenjacke mädchen 152, regenjacke jungen 164 wasserdicht, regenjacke mädchen 134/140, regenjacke gefüttert kinder, regenjacke 164 jungen
+regenjacke jungen 152, regenjacke junge, regenjacke mädchen 164, regenjacke fussball kinder, fahrrad regenjacke, regenjacke kinder 152
+regenjacke kinder gefüttert, regenjacke 10000mm wassersäule, regenjacke kinder 164, regenjacke 164, regenjacke wasserdicht, regenjacke 152 jungen
+regenjacke 140, regenjacke faltbar, regenjacke 152, ultraleichte regenjacke, motorrad regenjacke, leichte regenjacke
+regenjacke teenager mädchen, regenjacke jungen 164, regenjacke 134, regenjacke reflektierend, fahrrad regenjacke atmungsaktiv, regenjacke mädchen 128
+regenjacke mädchen 140, regenjacke kinder 140, regenjacke und hose kinder, regenjacke 158, regenjacke wasserdicht atmungsaktiv, regenjacke schwarz
+regenjacke jungen 134, regenjacke jungen 140, regenjacke kinder 134, wasserdichte regenjacke kinder, regenjacke 152 mädchen, regenjacke 146
+regenjacke 140 mädchen, regenjacke 134 jungen, kinder regenjacke jungen, regenjacke kleines packmaß, regenponcho festival, regenponcho kinder
+regenponcho fahrrad, regenponcho einweg, regenponcho wandern, regenponcho kinder schulranzen, einweg regenponcho erwachsene, regenponcho fahrrad kinder
+regenponcho mit ärmeln, einmal regenponcho mit kapuze, regenponcho leoprint, regenponcho durchsichtig, regenponcho lang, regenponcho kinder 10 jahre
+regenponcho mädchen, regenponcho einweg erwachsene, regenponcho kinder 12 jahre, regenponcho bunt, regenponcho xxl große größen, regenponcho wandern outdoor
+regenponcho große größen, regenponcho xxl, regenponcho rollstuhl, regenponcho wassersäule 20000, regenponcho wiederverwendbar, regenponcho mit reißverschluss
+regenponcho schwarz, regenponcho festival einweg, regenponcho für fahrrad, regenponcho lang wasserdicht, regenponcho wasserdicht, regenponcho mit tasche
+regenponcho transparent, einmal regenponcho
 
 ## [Pullover & Hoodies (毛衣与卫衣)]
 Sweatshirt (卫衣), Kapuzenpullover (连帽卫衣), Pullover (毛衣), Pulli (毛衣), Hoodie (连帽卫衣), Jumper (套头衫)
 Strickpullover (针织衫), Fleecepullover (抓绒套头衫), Häkelpullover (钩编毛衣), Rollkragenpullover (高领毛衣), Kaschmirpullover (羊绒衫), Norwegerpullover (挪威毛衣)
-Weihnachtspullover (圣诞毛衣), Zipper Hoodie (拉链卫衣), Zip Hoodie (拉链卫衣), Oversized Hoodie (宽松卫衣), Sun Hoodie (防晒卫衣)
+Weihnachtspullover (圣诞毛衣), Zipper Hoodie (拉链卫衣), Zip Hoodie (拉链卫衣), Oversized Hoodie (宽松卫衣), Sun Hoodie (防晒卫衣), sweatshirt jungen
+sweatshirt mädchen, kapuzenpullover jungen, pullover jungen, pullover mädchen, pullover mit hundetasche, pullover teenager mädchen
+off shoulder pullover, halloween pullover, pullover jungen 164, pullover mit babytrage, partner pullover, lustige weihnachtspullover
+weihnachtspullover familie set, herbst pullover, pullover jungen 152, baby pullover, weihnachtspullover kinder, big sister pullover
+bundeswehr pullover, pullover hunde, pullover jungen 140, männer pullover, pullover mädchen 146, beheizbarer pullover
+hoodie jungen, du bist genug hoodie, hoodies für männer, hoodie mädchen, motorrad hoodie, motorrad hoodie mit protektoren
+hoodie mit hundetasche, for the culture hoodie, hoodie teenager mädchen, hoodie jungen 164, paw hoodie, y2k hoodie
+zip up hoodie, couple hoodie, pet pouch hoodie, hoodie mit katzentasche, oversize hoodie, anime hoodie
+schwarzer hoodie, cat hoodie, halloween hoodie, hoodie schwarz, strick pullover dame
 
 ## [T-Shirts & Funktionsshirts (T恤与功能衫)]
-Blusenshirt (衬衫式上衣), Wandershirt (徒步衫), Funktionsshirt (功能衫), Wickelshirt (裹身衫), Longshirt (长款衫), Arbeitsshirt (工作衫)
-Muskelshirt (肌肉衫), Laufshirt (跑步衫), Unterziehshirt (打底衫), Overshirt (罩衫), Trainingsshirt (训练衫), Schlafshirt (睡衣)
-Baseball Shirt (棒球衫), Langarmshirt (长袖衫), Surfshirt (冲浪衫), Schwimmshirt (泳衣), Häkelshirt (钩编衫), Ugly Shirt (丑衫)
-Batik Shirt (扎染衫), Henley Shirt (亨利衫), Thermoshirt (保暖衫), Neopren Shirt (氯丁橡胶衫), UV Shirt (防晒衫), T-Shirt (T恤)
-Tshirt (T恤), Shirt (衬衫), Poloshirt (Polo衫), Polohemd (Polo衫), Sportshirt (运动衫), Fitnessshirt (健身衫)
-Gym Shirt (健身房衫), Oversized Shirt (宽松衫), Cutted Shirt (剪裁衫), Casual Shirt (休闲衫), Baumwollshirt (棉质T恤), Arbeitstshirt (工作T恤)
+Blusenshirt (衬衫式上衣), Wandershirt (徒步衫), Funktionsshirt (功能衫), Longshirt (长款衫), Arbeitsshirt (工作衫), Muskelshirt (肌肉衫)
+Laufshirt (跑步衫), Unterziehshirt (打底衫), Overshirt (罩衫), Trainingsshirt (训练衫), Schlafshirt (睡衣), Baseball Shirt (棒球衫)
+Langarmshirt (长袖衫), Surfshirt (冲浪衫), Schwimmshirt (泳衣), Häkelshirt (钩编衫), Ugly Shirt (丑衫), Batik Shirt (扎染衫)
+Henley Shirt (亨利衫), Thermoshirt (保暖衫), Neopren Shirt (氯丁橡胶衫), UV Shirt (防晒衫), T-Shirt (T恤), Tshirt (T恤)
+Shirt (衬衫), Poloshirt (Polo衫), Polohemd (Polo衫), Sportshirt (运动衫), Fitnessshirt (健身衫), Gym Shirt (健身房衫)
+Oversized Shirt (宽松衫), Cutted Shirt (剪裁衫), Casual Shirt (休闲衫), Baumwollshirt (棉质T恤), Arbeitstshirt (工作T恤), langarmshirt jungen
+langarmshirt mädchen, langarmshirt jungen 134, langarmshirt jungen 164, langarmshirt mädchen 140, langarmshirt jungen 140, langarmshirt mädchen 146
+große schwester shirt, poloshirt jungen, poloshirt kinder jungen
 
 ## [Hemden & Blusen (衬衫与女士衬衫)]
 Leinenhemd (亚麻衬衫), Kurzarmhemd (短袖衬衫), Sommerhemd (夏季衬衫), Freizeithemd (休闲衬衫), Hawaiihemd (夏威夷衬衫), Rüschenhemd (荷叶边衬衫)
 Karierteshemd (格子衬衫), Arbeitshemd (工作衬衫), Oberhemd (正装衬衫), Trachtenhemd (传统衬衫), Business Hemd (商务衬衫), Jagdhemd (狩猎衬衫)
-Fischerhemd (渔夫衬衫), Kariertes Hemd (格子衬衫), Kettenhemd (锁子甲衫), Sommerbluse (夏季衬衫), Wickelbluse (裹身衬衫), Schlupfbluse (套头衬衫)
-Seidenbluse (真丝衬衫), Strandbluse (沙滩衬衫), Rüschenbluse (荷叶边衬衫), Spitzenbluse (蕾丝衬衫), Longbluse (长款衬衫), Hemdbluse (衬衫裙)
-Shirtbluse (衬衫式上衣), Tunika (束腰外衣)
+Fischerhemd (渔夫衬衫), Kariertes Hemd (格子衬衫), Kettenhemd (锁子甲衫), Sommerbluse (夏季衬衫), Seidenbluse (真丝衬衫), Strandbluse (沙滩衬衫)
+Longbluse (长款衬衫), Hemdbluse (衬衫裙), Shirtbluse (衬衫式上衣), Tunika (束腰外衣)
 
 ## [Tops, Westen & Unterwäsche (背心、马甲与内衣)]
 Tanktop (背心), Tank Top (背心), Sommertop (夏季背心), Sporttop (运动背心), Corsagentop (束腰背心), Crop Top (短款上衣)
 Top (上衣), Nachthemd (睡裙), Schlafhemd (睡衣), Unterhemd (内衣), Funktionsunterhemd (功能性内衣), Weste (马甲)
-Westen (马甲), Laufweste (跑步马甲), Kühlweste (降温马甲)
+Westen (马甲), Laufweste (跑步马甲), Kühlweste (降温马甲), teddy fleece weste kinder, fleeceweste kinder, warnwesten auto
+schwimmweste kinder 3-6 jahre, schwimmweste erwachsene, schwimmweste kinder, warnweste kinder, schwimmweste kinder 2 jahre, teddy weste kinder
+warnweste fahrrad, teddy weste, schwimmweste kinder 7-10 jahre, warnweste auto, rettungsweste erwachsene, taktische weste
+trachten weste männer, laufweste mit trinkflasche, beheizbare weste, security weste, rettungsweste kinder, schwimmweste baby ab 1 jahr
+teddyweste kind, laufweste mit trinkblase, schusssichere weste, schwimmweste 1 jahr, airsoft weste, weste kinder
+gewichtsweste 30kg, trachten weste, warnweste motorrad, trinkweste laufen, warnweste orange, gewichtsweste 20kg
+warnweste pink, weste mädchen, schwimmweste baby, warnwesten auto 5er, reitweste kinder mädchen, schwimmweste kinder 1- 2 jahre
+lauf weste, reflektierende weste, gewichtsweste kinder, protektorenweste motorrad, jogging weste, airbag weste motorrad
 
 ## [Allgemeine Bekleidung (综合服装)]
 Kostüm (套装), Umhang (披风), Oberbekleidung (外衣), Bekleidung (服装), Funktionskleidung (功能性服装), Arbeitskleidung (工作服)
-Damenoberteile (女式上衣), Oberteil (上衣), Sommeroutfit (夏季套装), Herrenbekleidung (男装), Klamotten (衣服)
+Damenoberteile (女式上衣), Oberteil (上衣), Sommeroutfit (夏季套装), Herrenbekleidung (男装), Klamotten (衣服), krankenschwester kostüm

@@ -44,9 +44,7 @@ REPORT_FILE = None
 
 def run_step(label: str, cmd: list[str]) -> None:
     """执行一步；失败即中止并提示如何断点续跑。"""
-    print("")
-    print(label)
-    print("-" * 40)
+    print(f"\n▶ {label}")
     result = subprocess.run(cmd, cwd=BASE)
     if result.returncode != 0:
         print(f"❌ {label} 失败（exit {result.returncode}），流程中止。")
@@ -81,9 +79,7 @@ def main() -> None:
 
     py = sys.executable
 
-    print("=" * 60)
     print(f"antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: {zcfg.ACTIVE_CATEGORY}")
-    print("=" * 60)
 
     # ══════════════════════════════════════════════════════════════════
     # 每行一步。某步失败后：注释掉“已完成”的前面步骤行，再点运行即可从剩余第一行连续跑完。
@@ -134,11 +130,8 @@ def main() -> None:
         fill_cmd += ["--report", REPORT_FILE]
     run_step("⑨ 填充模板副本 → " + zcfg.CFG_RUN["plan_output_file"], fill_cmd)            # 已完成可注释本行
 
-    print("")
-    print("=" * 60)
-    print("✅ 全流程完成")
+    print("\n✅ 全流程完成")
     print(f"   输出: {zcfg.CFG_RUN['plan_output_file']}")
-    print("=" * 60)
 
 
 if __name__ == "__main__":

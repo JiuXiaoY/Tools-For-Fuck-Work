@@ -36,8 +36,8 @@ from openpyxl import Workbook
 BASE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_INPUT = os.path.abspath(
     os.path.join(
-        BASE, "..", "..", "y_addr&yass", "de_feasibility_domain", "coat",
-        "coat_bullet_points_de_fr.md",
+        BASE, "..", "..", "y_addr&yass", "de_feasibility_domain", "top",
+        "top_bullet_points_de_fr.md",
     )
 )
 

@@ -324,7 +324,7 @@ python tools/image_classification/reorder_batch.py      # 批次模式
 
 ### 日志
 
-所有 antelope 脚本的输出统一写入 **`antelope/log/{当天日期}_atl_{操作用户}.log`**（追加、UTF-8、自动清洗 NBSP），**控制台不再打印**；`run_all` 与其子进程写同一文件，每次运行有分隔头。
+所有 antelope 脚本的输出统一写入 **`antelope/log/{当天日期}_atl_{操作用户}.log`**（追加、UTF-8、自动清洗 NBSP），**控制台不再打印**。每个顶层程序都有带时间的 `START/END` 大分隔，`END` 同时记录总用时；`run_all` 调用的子程序使用缩进的紧凑分隔，子程序产生的日志保持在父程序的 `START/END` 区间内。所有日志逐行即时刷盘，避免多进程缓冲导致顺序颠倒。
 
 > `antelope/xlsm/`（模板与数据源）、`antelope/intermediate/*/ai_prompt/`、`antelope/web_data/`、`.deepseek_state.json` 均已加入 `.gitignore`，不入库。
 

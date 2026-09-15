@@ -43,6 +43,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EM"] }
   },
+  "yass_de_sweatshirt": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","AX","AY","BB","BC","EV"] }
+  },
   "yass_fr_coat": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
@@ -57,5 +62,10 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BB","EL"] }
+  },
+  "yass_fr_sweatshirt": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","AX","AY","BB","BC","EU"] }
   }
 }

@@ -39,10 +39,31 @@ col_mapping 是人工维护的固定文件（放 intermediate_tpl/<类别>/ 下�
 """
 import os
 
-# ─────────────────────────── 当前批次（模板集 + 数据）───────────────────────────
-# 三段式 {限定词}_{国家}_{类型}，如 "addr_fr_tops"；中间产物与 plan 命名以此为基础。
-# 限定词、国家、类型 任一部分不同 → 三件套(模板)不同 → 模板层需重新生成。
-ACTIVE_CATEGORY = "addr_de_tracksuit"
+# ────────────── 固定路径锚点（程序自动计算，不要修改）──────────────
+ANTELOPE_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(ANTELOPE_DIR)
+XLSM_DIR = os.path.join(ANTELOPE_DIR, "xlsm")
+
+# ════════════════ 手动填写区：每批只需检查/修改这里 ════════════════
+# 三段式 {限定词}_{国家}_{类型}，如 "addr_fr_tops"。
+# 限定词、国家、类型任一部分不同 → 模板三件套不同 → 模板层需重新生成。
+ACTIVE_CATEGORY = "yass_fr_sweatshirt"
+
+# 中间文件的子目录名。通常保持跟随 ACTIVE_CATEGORY 即可。
+INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
+
+# 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
+# A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.8v1_fr.xlsx")
+# B：.xlsm 基础模板（analysisXlsm 分析后生成 blank.json）
+TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
+# C：.xlsm 完整模板（analysisXlsm 分析后生成 completed.json）
+TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")
+# 产出模板：fill_from_plan 复制它并填充，填完自动删除多余数据行。
+TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "sweatshirt_templete_Adam.xlsm")
+
+
+# ════════════════ 自动派生区：以下通常不需要手动修改 ════════════════
 
 # 解析三段：限定词 / 国家 / 类型（兼容旧的 {国家}_{类型} 两段写法）
 _AC_PARTS = ACTIVE_CATEGORY.split("_")
@@ -55,10 +76,6 @@ else:  # 兼容旧式 {国家}_{类型}
     COUNTRY = _AC_PARTS[0]
     TYPE = "_".join(_AC_PARTS[1:])
 
-# ⚠️ 中间文件写入目录名（如 "addr_fr_tops"）：intermediate/ 与 intermediate_tpl/ 下的子目录名
-#    默认跟随 ACTIVE_CATEGORY，也可单独指定
-INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
-
 # ─────────────────────────── 国家配置 ───────────────────────────
 # 国家代码：fr / de（Amazon 站），来自 ACTIVE_CATEGORY 的第二段（"addr_fr_tops" -> "fr"）；
 # 决定模板中「字段枚举表」与「主模板」的工作表名
@@ -68,13 +85,7 @@ SHEET_NAMES = {
 }
 
 # ─────────────────────────── 顶层目录 ───────────────────────────
-# 本仓库根目录（dealExcel_refactoring）
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# antelope 目录本身
-ANTELOPE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 # 各子目录
-XLSM_DIR = os.path.join(ANTELOPE_DIR, "xlsm")
 FILL_PLAN_DIR = os.path.join(ANTELOPE_DIR, "fill_plan")
 OUTPUTS_DIR = os.path.join(REPO_ROOT, "outputs")
 
@@ -114,17 +125,8 @@ def _cat(name):
 
 
 # ─────────────────────── 数据源文件（按 11409 需求统一角色命名）───────────────────────
-# ⚠️⚠️⚠️ 每次批次文件名不一致，以下 5 个路径需按本批次实际文件手动修改 ⚠️⚠️⚠️
-#   A —— .xlsx 数据文件：提供「分组锚点(第1列有色单元格) + 部分待填列数据(经 col_mapping 取数)」
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.7v1_de.xlsx")                # ← 本批次 A（角色名 .xlsx_dataSource）
-#   B —— .xlsm 基础模板：已填部分数据列（analysisXlsm 分析 → blank.json，即「已填列」）
-TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")                     # ← 本批次 B（角色名 .xlsm_template_base）
-#   C —— .xlsm 完整模板：完整列即产出参照（analysisXlsm 分析 → completed.json，即「完整列」）
-TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")                 # ← 本批次 C（角色名 .xlsm_template_complete）
-#   产出模板：fill_from_plan 复制此文件作副本并填充（填完自动删多余数据行）
-TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "tracksuit_template_herren.xlsm")  # ← 本批次产出模板
-#   M —— 自定义数据来源(JSON)：补充 A 映射未覆盖到的待填列数据
-#        由 build_m_data.py 生成到 中间产物目录 intermediate/<INTERMEDIATE_DIR_NAME>/ 下
+# M —— 自定义数据来源（JSON）：路径由中间目录自动派生，无需手动填写。
+#      build_m_data.py 会用它补充 A 映射未覆盖到的待填列数据。
 DATA_SOURCE_M = os.path.join(CATEGORY_INTERMEDIATE_DIR, ".xlsx_dataSource_m.json")  # M（JSON 格式）
 
 # 旧名兼容别名（新脚本请使用上面的角色名）

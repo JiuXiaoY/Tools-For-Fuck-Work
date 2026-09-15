@@ -50,6 +50,12 @@
     "AK": { "value": "", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "", "sequence": false }
   },
+  "yass_de_sweatshirt": {
+    "Q":  { "value": "P-0001", "file": "", "sequence": true },
+    "R":  { "value": "Herren-Sweatshirts", "file": "", "sequence": false },
+    "AL": { "value": "Dieses Sweatshirt für Herren verbindet eine lässige Optik mit vielseitigen Kombinationsmöglichkeiten und eignet sich je nach Ausführung für unterschiedliche Alltagssituationen, während die abgestimmte Gestaltung ein unkompliziertes Styling mit Hosen, Jacken und weiterer Freizeitkleidung unterstützt.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
+  },
   "yass_fr_coat": {
     "S":  { "value": "", "file": "", "sequence": false },
     "T":  { "value": "", "file": "", "sequence": false },
@@ -66,5 +72,11 @@
     "Q":  { "value": "", "file": "", "sequence": false },
     "AK": { "value": "", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "", "sequence": false }
+  },
+  "yass_fr_sweatshirt": {
+    "Q":  { "value": "P-0001", "file": "", "sequence": true },
+    "R":  { "value": "Sweat-shirt pour homme", "file": "", "sequence": false },
+    "AL": { "value": "Ce sweat pour homme associe une allure décontractée à un style facile à combiner et peut, selon le modèle, accompagner différents moments du quotidien, tandis que sa conception équilibrée facilite les associations avec un jean, un pantalon de loisirs, une veste ou d’autres pièces de la garde-robe.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_fr_sweatshirt.txt", "sequence": false }
   }
 }

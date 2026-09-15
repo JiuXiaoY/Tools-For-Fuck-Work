@@ -20,6 +20,7 @@
    - **主标题**: `[Marque] Pull de Noël Homme Festif Rouge Manches Longues` (高涨服关键词 + 狠核心卖点/差异点 + 关键规格)
    - **副标题**: `Motif festif de Noël, col rond avec manches longues, tissu chaud et doux pour les fêtes, pull d'hiver` 
 
+**更多参考示例请查看文件：dealExcel_refactoring/y_addr&yass/fr_data_pool/bestseller/sweatshirt**
 
 **Constraints & Rules:**
 **1. 高涨服关键词、属性词优先 + 中文方向锁定 + 语义联想扩词原则（核心）**  
