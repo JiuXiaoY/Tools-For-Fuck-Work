@@ -54,7 +54,7 @@ INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
 # A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.8v1_fr.xlsx")
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.9v1_fr.xlsx")
 # B：.xlsm 基础模板（analysisXlsm 分析后生成 blank.json）
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
 # C：.xlsm 完整模板（analysisXlsm 分析后生成 completed.json）

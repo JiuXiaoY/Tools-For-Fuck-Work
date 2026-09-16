@@ -51,9 +51,9 @@
     "AQ": { "value": "", "file": "", "sequence": false }
   },
   "yass_de_sweatshirt": {
-    "Q":  { "value": "P-0001", "file": "", "sequence": true },
-    "R":  { "value": "Herren-Sweatshirts", "file": "", "sequence": false },
-    "AL": { "value": "Dieses Sweatshirt für Herren verbindet eine lässige Optik mit vielseitigen Kombinationsmöglichkeiten und eignet sich je nach Ausführung für unterschiedliche Alltagssituationen, während die abgestimmte Gestaltung ein unkompliziertes Styling mit Hosen, Jacken und weiterer Freizeitkleidung unterstützt.", "file": "", "sequence": false },
+    "Q":  { "value": "A-0001", "file": "", "sequence": true },
+    "R":  { "value": "Hoodie für Herren", "file": "", "sequence": false },
+    "AL": { "value": "Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
   },
   "yass_fr_coat": {
@@ -74,9 +74,9 @@
     "AQ": { "value": "", "file": "", "sequence": false }
   },
   "yass_fr_sweatshirt": {
-    "Q":  { "value": "P-0001", "file": "", "sequence": true },
-    "R":  { "value": "Sweat-shirt pour homme", "file": "", "sequence": false },
-    "AL": { "value": "Ce sweat pour homme associe une allure décontractée à un style facile à combiner et peut, selon le modèle, accompagner différents moments du quotidien, tandis que sa conception équilibrée facilite les associations avec un jean, un pantalon de loisirs, une veste ou d’autres pièces de la garde-robe.", "file": "", "sequence": false },
+    "Q":  { "value": "A-0001", "file": "", "sequence": true },
+    "R":  { "value": "Sweat à capuche pour homme", "file": "", "sequence": false },
+    "AL": { "value": "Ce haut associe une allure décontractée à des détails qui varient selon le modèle et se combine, pour le quotidien ou les loisirs, avec un jean, un chino ou un autre pantalon; des chaussures et accessoires choisis peuvent compléter la tenue selon la coupe et le style recherchés.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_fr_sweatshirt.txt", "sequence": false }
   }
 }

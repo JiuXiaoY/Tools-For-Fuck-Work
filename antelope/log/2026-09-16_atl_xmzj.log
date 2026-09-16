@@ -1,0 +1,297 @@
+
+======================== run_all.py START 【2026-09-16 19:33:43】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_sweatshirt
+✅ ① 模板解析 B → blank.json 跳过：yass_de_sweatshirt_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_de_sweatshirt_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_de_sweatshirt_column_diff.json 已是最新（模板未变，复用缓存）
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-09-16 19:33:43】
+│   ✅ 分组完成：74 个锚点 -> 74 组，共 5220 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\yass_de_sweatshirt_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-09-16 19:33:44】 【总用时 0.967 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-09-16 19:33:44】
+│   ✅ 取数完成：74 组，共 1850 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\yass_de_sweatshirt_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-09-16 19:33:45】 【总用时 1.044 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-09-16 19:33:46】
+│   ✅ M 占位生成：1036 个「组×列」（占位 dataTemp；col_scope 39 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-09-16 19:33:46】 【总用时 0.089 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-09-16 19:33:46】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(52, 'Bekleidungsgröße'), (65, 'Farbzuordnung'), (152, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：74 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      45: Lifestyle（5 个可选值）
+│      46: Stil（13 个可选值）
+│      62: Artikeltyp – Name（10 个可选值）
+│      67: Beschreibung der Artikellänge（5 个可选值）
+│      69: Thema（39 个可选值）
+│      70: Passform（13 个可选值）
+│      76: Webart（11 个可选值）
+│      79: Muster（17 个可选值）
+│      91: Halsausschnitt（24 个可选值）
+│      96: Beschreibung der Ärmellänge（6 个可选值）
+│   产品共 74 个，按每批 10 个分为 8 批（最后一批 4 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~74）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/8：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 1/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 2/8：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 2/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 3/8：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 3/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 4/8：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 4/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 5/8：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 5/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 6/8：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 6/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 7/8：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 7/8（网页询问）：写入 100 个「组×列」，占位 0
+│   --- 批次 8/8：产品 71~74（共 4 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 8/8（网页询问）：写入 40 个「组×列」，占位 0
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\.xlsx_dataSource_m.json
+│   ✅ 校验通过：10 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-09-16 19:39:54】 【总用时 6:08.139】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_sweatshirt_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-09-16 19:39:55】
+│   ✅ M 数据合并：1036 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [17, 18, 38, 44]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列Q(17) (Modellnummer) ← 指定值(序列) 'A-0001'→'A-5220' 填 5220 行 [首=A-0001 末=A-5220]
+│   ✅ 列R(18) (Modellname) ← 指定值 'Hoodie für Herren' 填 5220 行 [首=Hoodie für Herren 末=Hoodie für Herren]
+│   ✅ 列AL(38) (Beschreibung des Produkts) ← 指定值 'Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.' 填 5220 行 [首=Dieses Oberteil verbindet ei… 末=Dieses Oberteil verbindet ei…]
+│   ✅ 列AR(44) (Suchbegriffe) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_de_sweatshirt.txt（290 行） 填 5220 行 [首=kapuzenpullover herren einfa… 末=ugly christmas sweatshirt un…]
+│   📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 5220 行、74 组，组区间连续）
+│   ✅ 有可选值列校验通过（10 列无占位残留）: [45, 46, 62, 67, 69, 70, 76, 79, 91, 96]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_sweatshirt_fill_framework.json
+│      col_scope 39 列: [1, 5, 7, 8, 17, 18, 22, 23, 24, 25, 26, 27, 28, 29, 30, 38, 39, 40, 41, 42, 43, 44, 45, 46, 52, 62, 65, 66, 67, 69, 70, 76, 79, 91, 96, 111, 121, 152, 184]
+│      groups 74 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_sweatshirt\yass_de_sweatshirt_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\sweatshirt_templete_Adam.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-09-16 19:39:55】 【总用时 0.287 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_sweatshirt_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_sweatshirt_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-09-16 19:39:55】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_sweatshirt_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_sweatshirt_filled.xlsm
+│   🧹 已删除模板多余行: 第 5227 行至第 7994 行 (共整行删除 2768 行)
+│   🧹 父体行清值：74 行 × 15 列（1110 格，其中原本有值的 1110 格已清空）
+│   ✏️ 父体行改值：74 行 × 1 列（74 格；其中原本有值的 74 格被覆盖）→ D='Eltern'
+│   🎨 父体行底色（静态填充）：74 行 × 231 列（17094 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_sweatshirt_filled.xlsm
+│   📊 共填写 203580 个单元格，保留至第 5226 行
+│   └─ 子程序 fill_from_plan.py END 【2026-09-16 19:40:02】 【总用时 6.428 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_sweatshirt_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_sweatshirt_filled.xlsm
+================= run_all.py END 【2026-09-16 19:40:02】 【总用时 6:19.162】 ==================
+
+
+======================== run_all.py START 【2026-09-16 20:05:23】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_fr_sweatshirt
+✅ ① 模板解析 B → blank.json 跳过：yass_fr_sweatshirt_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_fr_sweatshirt_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_fr_sweatshirt_column_diff.json 已是最新（模板未变，复用缓存）
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-09-16 20:05:23】
+│   ✅ 分组完成：74 个锚点 -> 74 组，共 5220 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\yass_fr_sweatshirt_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-09-16 20:05:24】 【总用时 1.055 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-09-16 20:05:25】
+│   ✅ 取数完成：74 组，共 1850 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\yass_fr_sweatshirt_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-09-16 20:05:26】 【总用时 1.157 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-09-16 20:05:26】
+│   ✅ M 占位生成：962 个「组×列」（占位 dataTemp；col_scope 38 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-09-16 20:05:26】 【总用时 0.076 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-09-16 20:05:26】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(52, 'Taille du vêtement'), (65, 'Couleur dominante'), (151, 'Votre prix EUR (Vendez sur Amazon, FR)')]
+│   产品列表（数据源 A Sheet0 提取）：74 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      45: Style de vie（5 个可选值）
+│      46: Style（13 个可选值）
+│      62: Nom du type d’article（10 个可选值）
+│      67: Description de la longueur de l’article（5 个可选值）
+│      69: Thème（39 个可选值）
+│      70: Type de coupe（13 个可选值）
+│      76: Type de tissage（11 个可选值）
+│      91: Style de col（24 个可选值）
+│      96: Description de la longueur des manches（6 个可选值）
+│   产品共 74 个，按每批 10 个分为 8 批（最后一批 4 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~74）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/8：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 1/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 2/8：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 2/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 3/8：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 3/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 4/8：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 4/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 5/8：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 5/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 6/8：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 6/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 7/8：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 7/8（网页询问）：写入 90 个「组×列」，占位 0
+│   --- 批次 8/8：产品 71~74（共 4 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch08_result.txt
+│   ✅ 批次 8/8（网页询问）：写入 36 个「组×列」，占位 0
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\.xlsx_dataSource_m.json
+│   ✅ 校验通过：9 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-09-16 20:11:08】 【总用时 5:41.964】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_sweatshirt_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-09-16 20:11:09】
+│   ✅ M 数据合并：962 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [17, 18, 38, 44]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列Q(17) (Numéro du modèle) ← 指定值(序列) 'A-0001'→'A-5220' 填 5220 行 [首=A-0001 末=A-5220]
+│   ✅ 列R(18) (Nom du modèle) ← 指定值 'Sweat à capuche pour homme' 填 5220 行 [首=Sweat à capuche pour homme 末=Sweat à capuche pour homme]
+│   ✅ 列AL(38) (Description du produit) ← 指定值 'Ce haut associe une allure décontractée à des détails qui varient selon le modèle et se combine, pour le quotidien ou les loisirs, avec un jean, un chino ou un autre pantalon; des chaussures et accessoires choisis peuvent compléter la tenue selon la coupe et le style recherchés.' 填 5220 行 [首=Ce haut associe une allure d… 末=Ce haut associe une allure d…]
+│   ✅ 列AR(44) (Mots-clés de recherche) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_fr_sweatshirt.txt（290 行） 填 5220 行 [首=sweat homme col rond polaire… 末=sweat moche de noël homme im…]
+│   📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 5220 行、74 组，组区间连续）
+│   ✅ 有可选值列校验通过（9 列无占位残留）: [45, 46, 62, 67, 69, 70, 76, 91, 96]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_sweatshirt_fill_framework.json
+│      col_scope 38 列: [1, 5, 7, 8, 17, 18, 22, 23, 24, 25, 26, 27, 28, 29, 30, 38, 39, 40, 41, 42, 43, 44, 45, 46, 52, 62, 65, 66, 67, 69, 70, 76, 91, 96, 111, 121, 151, 183]
+│      groups 74 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_sweatshirt\yass_fr_sweatshirt_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\sweatshirt_templete_Adam.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-09-16 20:11:10】 【总用时 0.455 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_sweatshirt_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_sweatshirt_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-09-16 20:11:10】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_sweatshirt_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_sweatshirt_filled.xlsm
+│   🧹 已删除模板多余行: 第 5227 行至第 7994 行 (共整行删除 2768 行)
+│   🧹 父体行清值：74 行 × 15 列（1110 格，其中原本有值的 1110 格已清空）
+│   ✏️ 父体行改值：74 行 × 1 列（74 格；其中原本有值的 74 格被覆盖）→ D='Parent'
+│   🎨 父体行底色（静态填充）：74 行 × 233 列（17242 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_sweatshirt_filled.xlsm
+│   📊 共填写 198360 个单元格，保留至第 5226 行
+│   └─ 子程序 fill_from_plan.py END 【2026-09-16 20:11:18】 【总用时 7.769 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_sweatshirt_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_sweatshirt_filled.xlsm
+================= run_all.py END 【2026-09-16 20:11:18】 【总用时 5:55.392】 ==================
+
