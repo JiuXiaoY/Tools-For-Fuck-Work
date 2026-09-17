@@ -98,12 +98,10 @@ dealExcel_refactoring/
 │   │   └── fashion_filter/     #   服装热词采集+清洗（一条龙）
 │   │       ├── hotwords_fashion.py    #   主程序：采集 → 留存原始 raw/ → 清洗 → 留存结果 result/
 │   │       ├── clean_fashion.py       #   清洗逻辑：品类词根/强弱属性/黑名单/品牌移除
-│   │       ├── fashion_categories.txt #   服装品类词根（只保留穿在身上的衣服）
-│   │       ├── fashion_attributes.txt #   属性词根（! 前缀=强属性可独立保留，否则须搭品类词）
-│   │       ├── fashion_excludes.txt   #   黑名单（明确非服装噪声）
-│   │       ├── fashion_brands.txt     #   品牌表（token 级移除任意位置的品牌）
-│   │       ├── raw/                   #   清洗前原始数据（gitignored）
-│   │       └── result/                #   清洗结果（gitignored）
+│   │       ├── site_config.py        #   de/fr 词根表及输出目录配置
+│   │       ├── de/、fr/              #   各站点品类/属性/黑名单/品牌词根表
+│   │       ├── raw/de/、raw/fr/      #   清洗前原始数据（gitignored）
+│   │       └── result/de/、result/fr/ #  清洗结果（gitignored）
 │   ├── color_size_deal/        # 颜色尺码处理（列位已随 49 列布局更新）
 │   │   ├── color_reprocess.py  #   Excel → check_.txt → process.py 处理 → 回写 K 列(11)
 │   │   ├── process.py          #   手动处理 check_.txt（组内重复前缀编号 + 去尺码列）
@@ -269,6 +267,11 @@ python tools/needToCollect/hotwords.py
 
 # 服装热词采集+清洗（一条龙：按涨幅降序采集 → 留存原始 raw/ → 清洗 → 留存结果 result/）
 python tools/needToCollect/fashion_filter/hotwords_fashion.py
+# 直接点 main 运行时，只需改 fashion_filter/site_config.py 中的 DEFAULT_COUNTRY（de/fr）
+# 法国站临时覆盖：法语词根，数据写入 raw/fr/ 和 result/fr/
+python tools/needToCollect/fashion_filter/hotwords_fashion.py --country fr
+# 对已采集的法国站 raw 数据单独重新清洗
+python tools/needToCollect/fashion_filter/clean_fashion.py --country fr
 #   可选参数：--pages N(拉取页数) --top N --no-clean(只采集) --no-attributes --no-excludes --plain
 #   单独清洗（读 raw/ 最新）：python tools/needToCollect/fashion_filter/clean_fashion.py
 

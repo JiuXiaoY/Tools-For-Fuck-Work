@@ -154,7 +154,7 @@
 - **影响**:自动化步骤不完整
 
 ### 24. 热词采集 fashion_brands.txt 首行追加丢失 bug(已修复但原因不明) **[已修复]**
-- **文件**:`tools/needToCollect/fashion_filter/fashion_brands.txt`
+- **文件**:`tools/needToCollect/fashion_filter/de/fashion_brands.txt`（原路径已按站点整理）
 - **问题**:bash heredoc 追加时 `geox` 首行丢失,原因未知(可能 Windows 换行符问题)
 - **已修复**:通过 Python 工具 edit_file 补回
 - **影响**:说明基于 bash heredoc 的文件追加在 Windows 下不可靠

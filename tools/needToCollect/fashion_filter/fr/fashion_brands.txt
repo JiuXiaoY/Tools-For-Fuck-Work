@@ -1,0 +1,19 @@
+# 法国站常见品牌；仅完整 token / 完整短语匹配并移除，不按子串删除。
+adidas
+nike
+puma
+reebok
+decathlon
+kiabi
+celio
+uniqlo
+zara
+shein
+carhartt
+columbia
+lacoste
+levi's
+tommy hilfiger
+calvin klein
+the north face
+jack and jones

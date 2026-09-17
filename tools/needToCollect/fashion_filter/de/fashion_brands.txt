@@ -1,4 +1,5 @@
 6pm
+# 德国站品牌词表；按独立词 token 移除
 adidas
 aelfric eden
 al faras

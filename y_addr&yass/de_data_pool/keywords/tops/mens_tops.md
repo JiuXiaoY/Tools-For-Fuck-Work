@@ -1,7 +1,7 @@
 # 亚马逊德国站 (Amazon.de) 前置高涨服关键词，涨幅越高排的越前（各类别独立）
 
 ## [Hot]
-winterpullover herren, polo pullover herren, hoodie schwarz herren, cord jacke herren, softshelljacke für herren wasserdicht, regenjacke herren lang
+waterproof jacket herren, regenjacke herren, winterpullover herren, polo pullover herren, hoodie schwarz herren, cord jacke herren, softshelljacke für herren wasserdicht, regenjacke herren lang
 3in1 jacke herren, herren übergangsjacke herbst, baseball jacke herren, regenjacke und hose herren, regenjacke herren dünn, übergangsjacke herren wasserdicht
 strickjacke herren reißverschluss, regenjacke motorrad herren, regenjacke fussball herren, herren winterjacken reduziert, arbeits regenjacke herren, herren herbstjacke
 trachtenweste herren schwarz, oktoberfest herren weste, weste oktoberfest herren, tracht weste herren, weste mit kapuze herren, trachtenweste herren rot

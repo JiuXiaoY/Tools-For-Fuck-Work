@@ -2,17 +2,18 @@
 
 流程(一次运行,无需再跑第二个程序):
     1. 采集  :不带搜索词,按涨幅降序拉取前 N 页热词(默认 5 页 × 200 条)
-    2. 留存原始: raw/hotwords_{日期}.txt                词<TAB>涨幅(涨幅降序)
+    2. 留存原始: raw/<站点>/hotwords_{日期}.txt          词<TAB>涨幅(涨幅降序)
     3. 清洗  :只保留服装相关词 + 可形容服装的属性词,每条打备注(原因)
-    4. 留存结果: result/hotwords_fashion_{日期}.txt    词<TAB>涨幅<TAB>备注
+    4. 留存结果: result/<站点>/hotwords_fashion_{日期}.txt 词<TAB>涨幅<TAB>备注
 
-所有数据文件只保存在本目录下(raw/ 原始数据、result/ 清洗结果),不写到别处。
-清洗词根表也在本目录:fashion_categories.txt / fashion_attributes.txt / fashion_excludes.txt。
+所有数据文件只保存在本目录下(raw/、result/ 按站点隔离),不写到别处。
+清洗词根表按站点放在 de/ 和 fr/；历史 raw/、result/ 根目录文件保留不迁移。
 清洗逻辑复用 clean_fashion.py(本目录)。
 
 用法:
     python tools/needToCollect/fashion_filter/hotwords_fashion.py              # 默认全流程
     python tools/needToCollect/fashion_filter/hotwords_fashion.py --pages 3    # 只拉前 3 页
+    python tools/needToCollect/fashion_filter/hotwords_fashion.py --country fr # 法国站采集+清洗
     python tools/needToCollect/fashion_filter/hotwords_fashion.py --top 200    # 清洗后只留涨幅前 200
     python tools/needToCollect/fashion_filter/hotwords_fashion.py --no-clean   # 只采集留 raw,不清洗
     python tools/needToCollect/fashion_filter/hotwords_fashion.py --no-attributes  # 清洗时不保留纯属性词
@@ -35,9 +36,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
 
 # 复用同目录 clean_fashion.py 的清洗逻辑
 from clean_fashion import (
-    BRAND_FILE, CAT_FILE, ATTR_FILE, EXCL_FILE,
     clean_pairs, load_attr_roots, load_roots, save_result,
 )
+from site_config import DEFAULT_COUNTRY, SUPPORTED_COUNTRIES, SiteConfig, available_path, site_config
 
 from services.logger import get_logger
 
@@ -46,10 +47,6 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 API_URL = "https://api.amz123.com/search/v1/hotwords/search"
-BASE_DIR = Path(__file__).resolve().parent      # tools/needToCollect/fashion_filter
-RAW_DIR = BASE_DIR / "raw"                      # 采集原始数据(清洗前)留档
-RESULT_DIR = BASE_DIR / "result"                # 清洗结果(清洗后)留档
-
 PAGE_SIZE = 200
 REQUEST_INTERVAL = 2.0      # seconds between page requests
 REQUEST_TIMEOUT = 30
@@ -115,16 +112,20 @@ def _int_or_zero(val: object) -> int:
         return 0
 
 
-def save_raw(pairs: list[tuple[str, int]], date_str: str) -> Path:
-    """留存采集原始数据(清洗前):raw/hotwords_{日期}.txt,词<TAB>涨幅。
+def deduplicate_pairs(pairs: list[tuple[str, int]]) -> list[tuple[str, int]]:
+    """同一词保留最大涨幅，输出 (原词, -fluctuation) 并按涨幅降序。"""
+    fluc_map: dict[str, tuple[str, int]] = {}
+    for word, fluctuation in pairs:
+        key = word.casefold()
+        if key not in fluc_map or fluctuation < fluc_map[key][1]:
+            fluc_map[key] = (word, fluctuation)
+    return sorted(((word, -fluc) for word, fluc in fluc_map.values()),
+                  key=lambda pair: pair[1], reverse=True)
 
-    同一天重复运行时若文件已存在,自动追加时分秒后缀,避免覆盖历史数据。
-    """
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = RAW_DIR / f"hotwords_{date_str}.txt"
-    if out_path.exists():
-        stamp = datetime.now().strftime("%H%M%S")
-        out_path = RAW_DIR / f"hotwords_{date_str}_{stamp}.txt"
+
+def save_raw(pairs: list[tuple[str, int]], date_str: str, site: SiteConfig) -> Path:
+    """留存采集原始数据；同日重复运行不覆盖历史文件。"""
+    out_path = available_path(site.raw_dir, "hotwords", date_str)
     out_path.write_text("\n".join(f"{w}\t{f}" for w, f in pairs), encoding="utf-8")
     return out_path
 
@@ -136,7 +137,8 @@ def main() -> None:
         description="热词采集+服装词清洗一条龙(数据只存本目录 raw/ 与 result/)"
     )
     # 采集参数
-    parser.add_argument("--country", default="de", help="目标站点(默认 de)")
+    parser.add_argument("--country", choices=SUPPORTED_COUNTRIES, default=DEFAULT_COUNTRY,
+                        help=f"目标站点及对应词根表(默认取 site_config.py: {DEFAULT_COUNTRY})")
     parser.add_argument("--category", default="", help="top3 品类过滤(可选)")
     parser.add_argument("--pages", type=int, default=DEFAULT_PAGES,
                         help=f"拉取前 N 页(默认 {DEFAULT_PAGES},每页 {PAGE_SIZE} 条)")
@@ -161,6 +163,9 @@ def main() -> None:
                         help="清洗输出只写词,不带涨幅和备注")
     args = parser.parse_args()
 
+    if args.pages < 1:
+        parser.error("--pages 必须大于 0")
+    site = site_config(args.country)
     date_str = datetime.now().strftime("%Y%m%d")
     _log.info("=== 1/2 采集: country=%s category=%s pages=%d (不带搜索词,按涨幅降序) ===",
               args.country, args.category or "(all)", args.pages)
@@ -183,16 +188,11 @@ def main() -> None:
         _log.info("未获取到任何数据。")
         return
 
-    # ── 去重(同一词保留最高涨幅)并按涨幅降序,统一为"涨幅"正数视角(涨幅=-fluctuation) ──
-    fluc_map: dict[str, int] = {}
-    for w, f in pairs_all:
-        key = w.lower()
-        fluc_map[key] = max(fluc_map.get(key, f), f)
-    pairs = sorted(((w, -f) for w, f in fluc_map.items()), key=lambda p: p[1], reverse=True)
+    pairs = deduplicate_pairs(pairs_all)
 
     # ── 留存原始(清洗前) ──
-    raw_path = save_raw(pairs, date_str)
-    _log.info("原始数据已留存(清洗前): %s (%d 条)", raw_path.name, len(pairs))
+    raw_path = save_raw(pairs, date_str, site)
+    _log.info("原始数据已留存(清洗前): %s (%d 条)", raw_path, len(pairs))
 
     if not args.clean:
         _log.info("--no-clean 指定,跳过清洗。")
@@ -200,10 +200,10 @@ def main() -> None:
 
     # ── 清洗 ──
     _log.info("=== 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===")
-    cat_roots = load_roots(CAT_FILE)
-    strong_attrs, weak_attrs = load_attr_roots(ATTR_FILE)
-    excl_roots = load_roots(EXCL_FILE)
-    brand_roots = load_roots(BRAND_FILE)
+    cat_roots = load_roots(site.categories)
+    strong_attrs, weak_attrs = load_attr_roots(site.attributes)
+    excl_roots = load_roots(site.excludes)
+    brand_roots = load_roots(site.brands)
     _log.info("词根表: 品类 %d / 强属性 %d / 弱属性 %d / 黑名单 %d / 品牌 %d",
               len(cat_roots), len(strong_attrs), len(weak_attrs), len(excl_roots), len(brand_roots))
 
@@ -219,22 +219,19 @@ def main() -> None:
         kept = kept[: args.top]
 
     # ── 留存清洗结果(同日重复运行自动加时间戳后缀,防覆盖) ──
-    out_path = RESULT_DIR / f"hotwords_fashion_{date_str}.txt"
-    if out_path.exists():
-        stamp = datetime.now().strftime("%H%M%S")
-        out_path = RESULT_DIR / f"hotwords_fashion_{date_str}_{stamp}.txt"
+    out_path = available_path(site.result_dir, "hotwords_fashion", date_str)
     save_result(kept, out_path, args.plain)
 
     # ── 报告 ──
     total = len(pairs)
     _log.info("")
     _log.info("=== 报告 ===")
-    _log.info("采集原始: %d 条 → raw/%s", total, raw_path.name)
+    _log.info("采集原始: %d 条 → %s", total, raw_path)
     _log.info("清洗命中: 品类 %d / 属性 %d(过滤前)", stats["cat"], stats["attr"])
     _log.info("清洗丢弃: %d 条(黑名单 %d / 无关 %d)",
               stats["excluded"] + stats["irrelevant"], stats["excluded"], stats["irrelevant"])
     _log.info("最终保留: %d 条(经 --top/--min-fluc/--keep-drop 过滤)", len(kept))
-    _log.info("结果文件: result/%s", out_path.name)
+    _log.info("结果文件: %s", out_path)
     if kept:
         _log.info("保留示例(Top10):")
         for w, f, n in kept[:10]:

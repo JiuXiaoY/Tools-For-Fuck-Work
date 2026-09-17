@@ -1,8 +1,8 @@
-"""热词清洗:只保留服装相关词 + 可形容服装的属性词(独立程序,不影响采集程序)。
+"""热词清洗：按德国/法国站点的独立词根表筛选服装词。
 
 思路
 ----
-- 三个词根表(UTF-8,每行一个,# 开头为注释),与脚本同目录:
+- 每站点一套词根表(UTF-8,每行一个,# 开头为注释)，位于 de/ 或 fr/:
     fashion_categories.txt   服装品类词根   → 命中必保留,备注 [品类]
     fashion_attributes.txt   服装属性词根   → 命中保留,备注 [属性](防晒/功能/版型/材质/场景等)
     fashion_excludes.txt     黑名单词根     → 命中丢弃(明确的非服装噪声)
@@ -10,13 +10,14 @@
 - 优先级:黑名单 > 品类 > 属性。
 - 策略:先尽量保留(子串匹配 + 属性词默认也保留),每条打备注说明命中原因,
   便于人工核对、把误报词补进黑名单或从词根表剔除。
-- 输出:本目录 result/hotwords_fashion_{日期}.txt,每行 词<TAB>涨幅<TAB>备注,
+- 输出:本目录 result/<站点>/hotwords_fashion_{日期}.txt,每行 词<TAB>涨幅<TAB>备注,
   仍按涨幅降序。
 
 用法
 ----
     python tools/needToCollect/fashion_filter/clean_fashion.py              # 清洗最新采集文件
     python tools/needToCollect/fashion_filter/clean_fashion.py --input 某文件 --out 某文件
+    python tools/needToCollect/fashion_filter/clean_fashion.py --country fr
     python tools/needToCollect/fashion_filter/clean_fashion.py --no-attributes  # 不保留纯属性词(只留品类词)
     python tools/needToCollect/fashion_filter/clean_fashion.py --no-excludes    # 不启用黑名单(全量保留+备注)
     python tools/needToCollect/fashion_filter/clean_fashion.py --plain          # 只输出词,不带涨幅和备注
@@ -33,19 +34,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
 
 from services.logger import get_logger
+from site_config import DEFAULT_COUNTRY, SUPPORTED_COUNTRIES, available_path, site_config
 
 # Fix Windows console encoding for German characters (ß, Ü, etc.)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
-BASE_DIR = Path(__file__).resolve().parent          # tools/needToCollect/fashion_filter
-SRC_DIR = BASE_DIR / "raw"                          # 采集原始数据目录(主程序 hotwords_fashion.py 的产物)
-OUT_DIR = BASE_DIR / "result"                       # 本清洗工具的独立输出目录
-
-CAT_FILE = BASE_DIR / "fashion_categories.txt"
-ATTR_FILE = BASE_DIR / "fashion_attributes.txt"
-EXCL_FILE = BASE_DIR / "fashion_excludes.txt"
-BRAND_FILE = BASE_DIR / "fashion_brands.txt"   # 品牌/商标表(token 级移除)
 
 _log = get_logger("clean_fashion")
 
@@ -128,16 +121,19 @@ def strip_brands(word: str, brand_roots: list[str]) -> tuple[str, list[str]]:
     return stripped, removed_uniq
 
 
-def latest_input() -> Path:
-    """默认输入:上一级 result_fluct/ 下最新的 hotwords_*.txt(排除清洗产物 hotwords_fashion_*)。"""
-    files = sorted(
-        (p for p in SRC_DIR.glob("hotwords_*.txt") if "fashion" not in p.name),
-        key=lambda p: p.stat().st_mtime,
-    )
+def latest_input(country: str = DEFAULT_COUNTRY) -> Path:
+    """选本站点最新原始文件；德国站兼容旧版 raw/ 根目录历史文件。"""
+    site = site_config(country)
+    files = [p for p in site.raw_dir.glob("hotwords_*.txt")
+             if not p.name.startswith("hotwords_fashion_")]
+    if country == "de":
+        files.extend(p for p in site.raw_dir.parent.glob("hotwords_*.txt")
+                     if not p.name.startswith("hotwords_fashion_"))
     if not files:
-        _log.error("%s/ 下没有 hotwords_*.txt,请先运行 hotwords_fluct_desc.py 采集", SRC_DIR)
+        _log.error("%s/ 下没有原始文件，请先运行 hotwords_fashion.py --country %s 采集",
+                   site.raw_dir, country)
         sys.exit(1)
-    return files[-1]
+    return max(files, key=lambda p: p.stat().st_mtime)
 
 
 def read_pairs(path: Path) -> list[tuple[str, int]]:
@@ -242,8 +238,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="热词清洗:只保留服装相关词 + 可形容服装的属性词,保留项打备注"
     )
-    parser.add_argument("--input", default="", help="采集结果文件(默认 result_fluct/ 最新 hotwords_*.txt)")
-    parser.add_argument("--out", default="", help="输出文件(默认 result_fluct/hotwords_fashion_{日期}.txt)")
+    parser.add_argument("--country", choices=SUPPORTED_COUNTRIES, default=DEFAULT_COUNTRY,
+                        help=f"站点及对应词根表(默认取 site_config.py: {DEFAULT_COUNTRY})")
+    parser.add_argument("--input", default="", help="采集结果文件(默认 raw/<站点>/ 最新文件)")
+    parser.add_argument("--out", default="", help="输出文件(默认 result/<站点>/ 下的新文件)")
     parser.add_argument("--keep-attributes", dest="keep_attributes", action="store_true",
                         default=True, help="保留纯属性词(默认开)")
     parser.add_argument("--no-attributes", dest="keep_attributes", action="store_false",
@@ -256,17 +254,21 @@ def main() -> None:
     args = parser.parse_args()
 
     # 词根表
-    cat_roots = load_roots(CAT_FILE)
-    strong_attrs, weak_attrs = load_attr_roots(ATTR_FILE)
-    excl_roots = load_roots(EXCL_FILE)
-    brand_roots = load_roots(BRAND_FILE)
+    site = site_config(args.country)
+    cat_roots = load_roots(site.categories)
+    strong_attrs, weak_attrs = load_attr_roots(site.attributes)
+    excl_roots = load_roots(site.excludes)
+    brand_roots = load_roots(site.brands)
+    _log.info("站点: %s；词根目录: %s", args.country, site.categories.parent)
     _log.info("词根表: 品类 %d / 强属性 %d / 弱属性 %d / 黑名单 %d / 品牌 %d",
               len(cat_roots), len(strong_attrs), len(weak_attrs), len(excl_roots), len(brand_roots))
 
     # 输入输出
-    in_path = Path(args.input) if args.input else latest_input()
+    in_path = Path(args.input) if args.input else latest_input(args.country)
     date_str = datetime.now().strftime("%Y%m%d")
-    out_path = Path(args.out) if args.out else OUT_DIR / f"hotwords_fashion_{date_str}.txt"
+    out_path = Path(args.out) if args.out else available_path(
+        site.result_dir, "hotwords_fashion", date_str
+    )
 
     pairs = read_pairs(in_path)
     _log.info("输入: %s (%d 条)", in_path.name, len(pairs))
