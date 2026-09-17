@@ -27,16 +27,18 @@
     "AN": { "value": "", "file": "", "sequence": false },
     "AT": { "value": "", "file": "", "sequence": false }
   },
-    "addr_de_tracksuit": {
+  "addr_de_tracksuit": {
     "Q":  { "value": "R-0001", "file": "", "sequence": true },
     "R":  { "value": "Herrenanzüge", "file": "", "sequence": false },
     "AL": { "value": "Dieses aufeinander abgestimmte Bekleidungsset verbindet eine harmonische Optik mit flexiblen Kombinationsmöglichkeiten. Die enthaltenen Teile lassen sich gemeinsam tragen oder je nach Modell und persönlichem Stil mit weiterer Garderobe ergänzen.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "addr_de_tracksuit.txt", "sequence": false }
   },
+
+
   "yass_de_coat": {
-    "S":  { "value": "S-0001", "file": "", "sequence": true },
-    "T":  { "value": "Herrenhemdjacke", "file": "", "sequence": false },
-    "AN": { "value": "Das Herrenoberteil ergänzt jede Garderobe mit einer ausgewogenen Form und einer vielseitigen Optik. Zu Jeans, Chino oder Stoffhose lässt es sich lässig oder gepflegt kombinieren und passt zu vielen Gelegenheiten im Alltag, Büro oder in der Freizeit.", "file": "", "sequence": false },
+    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
+    "T":  { "value": "Wind- und wasserdichte Kapuzenjacke für Herren", "file": "", "sequence": false },
+    "AN": { "value": "Diese Herren-Kapuzenjacke ist nicht nur wind- und wasserdicht, sondern auch modisch und verleiht jeder Garderobe einen Hauch von Farbe. Ob zu Jeans, Khakis oder Anzughosen – sie sorgt für einen lässigen oder eleganten Look und eignet sich für zahlreiche Anlässe wie den Alltag, das Büro, Ausflüge, Camping, Bergwandern, Freizeitaktivitäten und Ausflüge in die Natur.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
   },
   "yass_de_pants": {
@@ -56,11 +58,13 @@
     "AL": { "value": "Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
   },
+
+
   "yass_fr_coat": {
-    "S":  { "value": "", "file": "", "sequence": false },
-    "T":  { "value": "", "file": "", "sequence": false },
-    "AN": { "value": "", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "", "sequence": false }
+    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
+    "T":  { "value": "Veste à capuche coupe-vent et imperméable pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce haut allie un style décontracté à des détails propres à chaque modèle et peut être porté au quotidien ou pendant les loisirs avec un jean, un chino ou tout autre pantalon ; des chaussures et des accessoires assortis viennent compléter le look, tandis que la coupe et le design varient selon le modèle.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
   },
   "yass_fr_pants": {
     "Q":  { "value": "", "file": "", "sequence": false },
@@ -78,5 +82,11 @@
     "R":  { "value": "Sweat à capuche pour homme", "file": "", "sequence": false },
     "AL": { "value": "Ce haut associe une allure décontractée à des détails qui varient selon le modèle et se combine, pour le quotidien ou les loisirs, avec un jean, un chino ou un autre pantalon; des chaussures et accessoires choisis peuvent compléter la tenue selon la coupe et le style recherchés.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_fr_sweatshirt.txt", "sequence": false }
+  },
+  "yass_fr_top": {
+    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
+    "T":  { "value": "Blouse blanche, blouse de laboratoire", "file": "", "sequence": false },
+    "AN": { "value": "Cette blouse de chimie pour lycée couvre les vêtements pendant les manipulations scolaires et, selon le modèle, offre des poches pour garder de petits accessoires à portée de main; elle convient aux salles de travaux pratiques, aux laboratoires pédagogiques et aux activités de cosplay.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_shirt.txt", "sequence": false }
   }
 }

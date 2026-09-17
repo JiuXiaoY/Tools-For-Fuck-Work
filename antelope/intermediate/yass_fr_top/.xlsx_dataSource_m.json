@@ -1,0 +1,2993 @@
+{
+  "data": {
+    "group_1": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Coupe surdimensionnée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Scratch"
+      ]
+    },
+    "group_2": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_3": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_4": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_5": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "À rayure"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches courtes"
+      ],
+      "117": [
+        "Mancheron"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_6": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_7": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Veste"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_8": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Coupe surdimensionnée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_9": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur courte"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "À col haut"
+      ],
+      "106": [
+        "Asymétrique"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches courtes"
+      ],
+      "117": [
+        "Mancheron"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_10": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "À col haut"
+      ],
+      "106": [
+        "Asymétrique"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches courtes"
+      ],
+      "117": [
+        "Mancheron"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_11": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Chemise longue à bouton d'utilité professionnelle"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Décontractée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_12": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Chemise longue à bouton d'utilité professionnelle"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Décontractée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton-pression"
+      ]
+    },
+    "group_13": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Chemise longue à bouton d'utilité professionnelle"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_14": {
+      "17": [
+        "Col tailleur"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Chemise longue à bouton d'utilité professionnelle"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_15": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Chemise longue à bouton d'utilité professionnelle"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_16": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "À rayure"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_17": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Décontractée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_18": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Blouse"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Avec col"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches longues"
+      ],
+      "117": [
+        "Manchette"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_19": {
+      "17": [
+        "Sans col"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "T-shirt de service médical"
+      ],
+      "79": [
+        "Longueur courte"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Décontractée"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Col V"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches courtes"
+      ],
+      "117": [
+        "Mancheron"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    },
+    "group_20": {
+      "17": [
+        "Col à revers"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "52": [
+        "Utilité professionnelle"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "T-shirt de service médical"
+      ],
+      "79": [
+        "Longueur standard"
+      ],
+      "81": [
+        "Médical et santé"
+      ],
+      "82": [
+        "Régulier"
+      ],
+      "84": [
+        "Plaine"
+      ],
+      "87": [
+        "Uni"
+      ],
+      "91": [
+        "Exercice et remise en forme"
+      ],
+      "101": [
+        "Col V"
+      ],
+      "106": [
+        "Blouson"
+      ],
+      "113": [
+        "Blouse"
+      ],
+      "116": [
+        "Manches courtes"
+      ],
+      "117": [
+        "Mancheron"
+      ],
+      "118": [
+        "Bouton"
+      ]
+    }
+  },
+  "placeholder": "dataTemp"
+}

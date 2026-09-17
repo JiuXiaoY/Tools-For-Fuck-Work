@@ -7,7 +7,7 @@
   "settings": {
     "labelRow": 4,
     "attributeRow": 5,
-    "dataRow": 7
+    "dataRow": 8
   },
   "groups": [
     "Identité du listing",
@@ -27,7 +27,7 @@
       "matched": true,
       "field": "Type de produit - [  ]",
       "choices": [
-        "COAT"
+        "SHIRT"
       ],
       "truncated": false,
       "samples": [],
@@ -55,7 +55,7 @@
       "header": "Niveau de relation",
       "attribute": "parentage_level[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Niveau de relation - [ COAT ]",
+      "field": "Niveau de relation - [ SHIRT ]",
       "choices": [
         "Parent",
         "Enfant"
@@ -70,13 +70,13 @@
       "header": "Nom de thème de variation",
       "attribute": "variation_theme#1.name",
       "matched": true,
-      "field": "Nom de thème de variation - [ COAT ]",
+      "field": "Nom de thème de variation - [ SHIRT ]",
       "choices": [
         "COLLECTION_ITEM",
+        "COLOR/SIZE/NECK_NECK_STYLE",
+        "COLOR/SIZE/SLEEVE_TYPE",
         "COULEUR",
         "COULEUR/NOMBRE_ARTICLES",
-        "NOM_EQUIPE",
-        "NOM_ÉQUIPE/COULEUR",
         "NOM_ÉQUIPE/TAILLE",
         "NOM_ÉQUIPE/TAILLE/COULEUR",
         "NOMBRE_D_OBJETS",
@@ -85,6 +85,7 @@
         "TAILLE/COULEUR",
         "TAILLE/COULEUR/NOMBRE_ARTICLES",
         "TAILLE/NOMBRE_D’ARTICLES",
+        "TEAM_NAME/ATHLETE/SIZE",
         "TEAM_NAME/ATHLETE/SIZE/COLOR"
       ],
       "truncated": false,
@@ -97,7 +98,7 @@
       "header": "Marque",
       "attribute": "brand[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Marque - [ COAT ]",
+      "field": "Marque - [ SHIRT ]",
       "choices": [
         "YAPAZULU"
       ],
@@ -111,7 +112,7 @@
       "header": "Type d'identifiant de produit",
       "attribute": "amzn1.volt.ca.product_id_type",
       "matched": true,
-      "field": "Type d'identifiant de produit - [ COAT ]",
+      "field": "Type d'identifiant de produit - [ SHIRT ]",
       "choices": [
         "EAN",
         "GTIN",
@@ -129,15 +130,16 @@
       "header": "Nœuds d’arborescence recommandés",
       "attribute": "recommended_browse_nodes[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Nœuds d’arborescence recommandés - [ COAT ]",
+      "field": "Nœuds d’arborescence recommandés - [ SHIRT ]",
       "choices": [
-        "Mode > Homme > Vêtements > Manteaux et blousons > Blousons (522399031)",
-        "Mode > Femme > Vêtements > Manteaux et blousons > Blousons (464675031)",
-        "Mode > Femme > Vêtements > Manteaux et blousons > Manteaux (464683031)",
-        "Mode > Femme > Vêtements > Manteaux et blousons > Manteaux imperméables (464687031)",
-        "Sports et Loisirs > Activités de plein air > Vêtements de randonnée > Femme > Vestes > Vestes anti-pluie (3055174031)",
-        "Mode > Homme > Vêtements > Manteaux et blousons > Manteaux (464850031)",
-        "Sports et Loisirs > Activités de plein air > Vêtements de randonnée > Homme > Vestes (3055143031)"
+        "Mode > Homme > Vêtements > Sportswear > T-shirts et tops de sport > Chemises boutonnées (26984276031)",
+        "Mode > Homme > Vêtements > T-shirts, polos et chemises > T-shirts à manches courtes (464806031)",
+        "Mode > Femme > Vêtements > Sportswear > T-shirts et tops de sport > T-shirts (16041340031)",
+        "Mode > Homme > Vêtements > Sportswear > T-shirts et tops de sport > T-shirts (16041343031)",
+        "Mode > Homme > Vêtements > Sportswear > T-shirts et tops de sport > Polos (16041342031)",
+        "Mode > Homme > Vêtements > T-shirts, polos et chemises > Chemises boutonnées (94998776031)",
+        "Mode > Femme > Vêtements > T-shirts, tops et chemisiers > Chemisiers et blouses (464645031)",
+        "Mode > Femme > Vêtements > T-shirts, tops et chemisiers > T-shirts à manches courtes (464642031)"
       ],
       "truncated": false,
       "samples": [],
@@ -171,7 +173,7 @@
       "header": "Nom de la boutique",
       "attribute": "department[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Nom de la boutique - [ COAT ]",
+      "field": "Nom de la boutique - [ SHIRT ]",
       "choices": [
         "Bébé fille",
         "Bébé garçon",
@@ -193,7 +195,7 @@
       "header": "Sexe ciblé",
       "attribute": "target_gender[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Sexe ciblé - [ COAT ]",
+      "field": "Sexe ciblé - [ SHIRT ]",
       "choices": [
         "Femme",
         "Homme",
@@ -209,7 +211,7 @@
       "header": "Description de la tranche d’âge",
       "attribute": "age_range_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Description de la tranche d’âge - [ COAT ]",
+      "field": "Description de la tranche d’âge - [ SHIRT ]",
       "choices": [
         "Adulte",
         "Enfant",
@@ -224,9 +226,9 @@
     {
       "col": 57,
       "header": "Système de taille",
-      "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.size_system",
+      "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.size_system",
       "matched": true,
-      "field": "Système de taille - [ COAT ]",
+      "field": "Système de taille - [ SHIRT ]",
       "choices": [
         "FR/ES"
       ],
@@ -238,16 +240,18 @@
     {
       "col": 58,
       "header": "Classification des tailles",
-      "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.size_class",
+      "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.size_class",
       "matched": true,
-      "field": "Classification des tailles - [ COAT ]",
+      "field": "Classification des tailles - [ SHIRT ]",
       "choices": [
         "Âge",
         "Alpha/lettres",
         "Numérique",
         "Hauteur numérique",
         "Alpha JASPO",
-        "Grandeur numérique"
+        "Grandeur numérique",
+        "Taille de col",
+        "Tour de cou"
       ],
       "truncated": false,
       "samples": [],
@@ -255,38 +259,25 @@
       "reserve_mark": null
     },
     {
-      "col": 61,
+      "col": 65,
       "header": "Type de morphologie",
-      "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.body_type",
+      "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.body_type",
       "matched": true,
-      "field": "Type de morphologie - [ COAT ]",
+      "field": "Type de morphologie - [ SHIRT ]",
       "choices": [
         "A",
         "AB",
         "B",
         "BB",
         "BE",
-        "C",
-        "CB",
         "E",
-        "EE",
-        "F",
-        "Grand",
         "Grande taille",
-        "H",
         "Husky",
         "J",
-        "JJ",
         "JY",
-        "K",
-        "Ko",
-        "LL",
-        "M",
         "Mince",
-        "S",
         "Taille forte",
         "Taille normale",
-        "Taille Petite",
         "Y",
         "YA"
       ],
@@ -296,11 +287,11 @@
       "reserve_mark": null
     },
     {
-      "col": 62,
+      "col": 66,
       "header": "Type de taille",
-      "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.height_type",
+      "attribute": "shirt_size[marketplace_id=A13V1IB3VIYZZH]#1.height_type",
       "matched": true,
-      "field": "Type de taille - [ COAT ]",
+      "field": "Type de taille - [ SHIRT ]",
       "choices": [
         "2",
         "3",
@@ -332,11 +323,11 @@
       "reserve_mark": null
     },
     {
-      "col": 63,
+      "col": 67,
       "header": "Matériau",
       "attribute": "material[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Matériau - [ COAT ]",
+      "field": "Matériau - [ SHIRT ]",
       "choices": [
         "Acrylique",
         "Cachemire",
@@ -344,15 +335,13 @@
         "Coton",
         "Cuir",
         "Élasthanne",
-        "Éthylène-acétate de vinyle (EVA)",
         "Fausse fourrure",
-        "Fausse laine",
-        "Faux suède",
-        "Fourrure",
         "Jute",
         "Laine",
         "Latex",
         "Lin",
+        "Mélange d'acrylique",
+        "Mélange d'élasthanne",
         "Mélange de coton",
         "Mélange de laine",
         "Mélange de lin",
@@ -368,17 +357,13 @@
         "Polycoton",
         "Polyester",
         "Polyester recyclé",
-        "Polyéthylène (PE)",
         "Polypropylène (PP)",
-        "Polytétrafluoroéthylène expansé (ePTFE)",
         "Polyuréthane (PU)",
-        "Polyuréthane thermoplastique (TPU)",
         "Simili cuir",
         "Soie",
         "Soie artificielle",
         "Soie brute",
         "Suède",
-        "Vinyle",
         "Viscose"
       ],
       "truncated": false,
@@ -387,7 +372,7 @@
       "reserve_mark": null
     },
     {
-      "col": 64,
+      "col": 68,
       "header": "Matériau",
       "attribute": "material[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#2.value",
       "matched": false,
@@ -398,7 +383,18 @@
       "reserve_mark": null
     },
     {
-      "col": 66,
+      "col": 69,
+      "header": "Matériau",
+      "attribute": "material[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#3.value",
+      "matched": false,
+      "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 70,
       "header": "Type de tissu",
       "attribute": "fabric_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": false,
@@ -409,22 +405,11 @@
       "reserve_mark": null
     },
     {
-      "col": 70,
-      "header": "Nom du type du produit",
-      "attribute": "item_type_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
-      "matched": false,
-      "choices": [],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
-      "col": 71,
+      "col": 74,
       "header": "Niveau de résistance à l’eau",
       "attribute": "water_resistance_level[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Niveau de résistance à l’eau - [ COAT ]",
+      "field": "Niveau de résistance à l’eau - [ SHIRT ]",
       "choices": [
         "Étanche",
         "Hydrofuge",
@@ -438,11 +423,11 @@
       "reserve_mark": null
     },
     {
-      "col": 72,
+      "col": 76,
       "header": "Format spécial",
       "attribute": "special_size_type[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Format spécial - [ COAT ]",
+      "field": "Format spécial - [ SHIRT ]",
       "choices": [
         "Bébé",
         "Bébé – fille",
@@ -472,11 +457,11 @@
       "reserve_mark": null
     },
     {
-      "col": 87,
+      "col": 85,
       "header": "Conseils d'Entretien",
       "attribute": "care_instructions[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Conseils d'Entretien - [ COAT ]",
+      "field": "Conseils d'Entretien - [ SHIRT ]",
       "choices": [
         "Lavage à la main seulement",
         "Lavage en machine",
@@ -488,51 +473,11 @@
       "reserve_mark": null
     },
     {
-      "col": 107,
-      "header": "Saisons",
-      "attribute": "seasons[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
-      "matched": true,
-      "field": "Saisons - [ COAT ]",
-      "choices": [
-        "Automne",
-        "Été",
-        "Hiver",
-        "Printemps",
-        "Tous"
-      ],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
-      "col": 108,
-      "header": "Saisons",
-      "attribute": "seasons[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#2.value",
-      "matched": false,
-      "choices": [],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
-      "col": 109,
-      "header": "Saisons",
-      "attribute": "seasons[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#3.value",
-      "matched": false,
-      "choices": [],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
-      "col": 134,
+      "col": 138,
       "header": "Unité de poids de l’article",
       "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.unit",
       "matched": true,
-      "field": "Unité de poids de l’article - [ COAT ]",
+      "field": "Unité de poids de l’article - [ SHIRT ]",
       "choices": [
         "Kilogrammes",
         "Milligrammes",
@@ -546,11 +491,11 @@
       "reserve_mark": null
     },
     {
-      "col": 135,
+      "col": 139,
       "header": "Matériau extérieur",
       "attribute": "outer[marketplace_id=A13V1IB3VIYZZH]#1.material[language_tag=fr_FR]#1.value",
       "matched": true,
-      "field": "Matériau extérieur - [ COAT ]",
+      "field": "Matériau extérieur - [ SHIRT ]",
       "choices": [
         "Alpaga",
         "Cachemire",
@@ -580,11 +525,11 @@
       "reserve_mark": null
     },
     {
-      "col": 141,
+      "col": 145,
       "header": "État de l’article",
       "attribute": "condition_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "État de l’article - [ COAT ]",
+      "field": "État de l’article - [ SHIRT ]",
       "choices": [
         "Nouveau",
         "D'occasion - Comme Neuf",
@@ -598,7 +543,7 @@
       "reserve_mark": null
     },
     {
-      "col": 168,
+      "col": 172,
       "header": "Code de canal d’expédition (FR)",
       "attribute": "fulfillment_availability#1.fulfillment_channel_code",
       "matched": true,
@@ -613,7 +558,7 @@
       "reserve_mark": null
     },
     {
-      "col": 169,
+      "col": 173,
       "header": "Quantité (FR)",
       "attribute": "fulfillment_availability#1.quantity",
       "matched": false,
@@ -624,7 +569,7 @@
       "reserve_mark": null
     },
     {
-      "col": 198,
+      "col": 202,
       "header": "Modèle d'expédition (FR)",
       "attribute": "merchant_shipping_group[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
@@ -650,17 +595,16 @@
       "reserve_mark": null
     },
     {
-      "col": 206,
+      "col": 210,
       "header": "Unité de poids de l’emballage",
       "attribute": "item_package_weight[marketplace_id=A13V1IB3VIYZZH]#1.unit",
       "matched": true,
-      "field": "Unité de poids de l’emballage - [ COAT ]",
+      "field": "Unité de poids de l’emballage - [ SHIRT ]",
       "choices": [
         "Kilogrammes",
-        "Milligrammes",
         "Grammes",
-        "Onces",
-        "Livres"
+        "Livres",
+        "Onces"
       ],
       "truncated": false,
       "samples": [],
@@ -668,11 +612,11 @@
       "reserve_mark": null
     },
     {
-      "col": 241,
-      "header": "Pays d’origine",
+      "col": 245,
+      "header": "Pays d'origine",
       "attribute": "country_of_origin[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Pays d’origine - [ COAT ]",
+      "field": "Pays d'origine - [ SHIRT ]",
       "choices": [
         "France",
         "Afghanistan",
@@ -686,7 +630,6 @@
         "Anguilla",
         "Antarctique",
         "Antigua-et-Barbuda",
-        "Antilles néerlandaises",
         "Arabie saoudite",
         "Argentine",
         "Arménie",
@@ -770,11 +713,9 @@
         "Hongrie",
         "Île Bouvet",
         "Île Christmas",
-        "Île de l'Ascension",
         "Île de Man",
         "Île Norfolk",
         "Îles Caïmans",
-        "Îles Canaries",
         "Îles Cocos (Keeling)",
         "Îles Cook",
         "Îles Féroé",
@@ -869,7 +810,6 @@
         "Réunion",
         "Roumanie",
         "Grande-Bretagne",
-        "Royaume-Uni",
         "Rwanda",
         "Sahara occidental",
         "Saint-Barthélemy",
@@ -886,7 +826,6 @@
         "Sao Tomé-et-Principe",
         "Sénégal",
         "Serbie",
-        "Serbie-et-Monténégro",
         "Seychelles",
         "Sierra Leone",
         "Singapour",
@@ -910,13 +849,11 @@
         "Territoire britannique de l’océan Indien",
         "Territoires palestiniens",
         "Thaïlande",
-        "Timor oriental",
         "Timor-Leste",
         "Togo",
         "Tokelau",
         "Tonga",
         "Trinité-et-Tobago",
-        "Tristan da Cunha",
         "Tunisie",
         "Turkménistan",
         "Turquie",
@@ -928,20 +865,9 @@
         "Viêt Nam",
         "Wallis-et-Futuna",
         "Yémen",
-        "Yougoslavie",
-        "Zaïre",
         "Zambie",
         "Zimbabwe",
-        "Terre inconnue",
-        "WD",
-        "Eswatini",
-        "Abou Dabi",
-        "XC",
-        "XE",
-        "XK",
-        "XM",
-        "Amérique du Nord",
-        "XY"
+        "Terre inconnue"
       ],
       "truncated": false,
       "samples": [],
@@ -949,27 +875,7 @@
       "reserve_mark": null
     },
     {
-      "col": 258,
-      "header": "Réglementation en matière de marchandises dangereuses",
-      "attribute": "supplier_declared_dg_hz_regulation[marketplace_id=A13V1IB3VIYZZH]#1.value",
-      "matched": true,
-      "field": "Réglementation en matière de marchandises dangereuses - [ COAT ]",
-      "choices": [
-        "Mise au rebut",
-        "SGH",
-        "Stockage",
-        "Transport",
-        "Autre",
-        "Non applicable",
-        "Inconnu"
-      ],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
-      "col": 273,
+      "col": 247,
       "header": "Adresse électronique ou e-mail de la personne responsable",
       "attribute": "dsa_responsible_party_address[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": false,
@@ -980,11 +886,11 @@
       "reserve_mark": null
     },
     {
-      "col": 298,
+      "col": 273,
       "header": "Attestation de sécurité GPSR",
       "attribute": "gpsr_safety_attestation[marketplace_id=A13V1IB3VIYZZH]#1.value",
       "matched": true,
-      "field": "Attestation de sécurité GPSR - [ COAT ]",
+      "field": "Attestation de sécurité GPSR - [ SHIRT ]",
       "choices": [
         "Oui",
         "Non"
@@ -995,7 +901,7 @@
       "reserve_mark": null
     },
     {
-      "col": 299,
+      "col": 274,
       "header": "Adresse e-mail ou électronique",
       "attribute": "gpsr_manufacturer_reference[marketplace_id=A13V1IB3VIYZZH]#1.gpsr_manufacturer_email_address",
       "matched": false,
@@ -1007,7 +913,7 @@
     }
   ],
   "stats": {
-    "total": 38,
-    "matched": 28
+    "total": 34,
+    "matched": 26
   }
 }
