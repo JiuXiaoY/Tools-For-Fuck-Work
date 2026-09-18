@@ -36,9 +36,9 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
-    "T":  { "value": "Wind- und wasserdichte Kapuzenjacke für Herren", "file": "", "sequence": false },
-    "AN": { "value": "Diese Herren-Kapuzenjacke ist nicht nur wind- und wasserdicht, sondern auch modisch und verleiht jeder Garderobe einen Hauch von Farbe. Ob zu Jeans, Khakis oder Anzughosen – sie sorgt für einen lässigen oder eleganten Look und eignet sich für zahlreiche Anlässe wie den Alltag, das Büro, Ausflüge, Camping, Bergwandern, Freizeitaktivitäten und Ausflüge in die Natur.", "file": "", "sequence": false },
+    "S":  { "value": "Bf-0001", "file": "", "sequence": true },
+    "T":  { "value": "Herren-Cordjacke", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
   },
   "yass_de_pants": {
@@ -58,7 +58,12 @@
     "AL": { "value": "Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
   },
-
+  "yass_de_sweater": {
+    "Q":  { "value": "Bf-0001", "file": "", "sequence": true },
+    "R":  { "value": "Herrenpullover", "file": "", "sequence": false },
+    "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
+  },
 
   "yass_fr_coat": {
     "S":  { "value": "Sa-0001", "file": "", "sequence": true },
