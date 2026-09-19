@@ -47,14 +47,14 @@ XLSM_DIR = os.path.join(ANTELOPE_DIR, "xlsm")
 # ════════════════ 手动填写区：每批只需检查/修改这里 ════════════════
 # 三段式 {限定词}_{国家}_{类型}，如 "addr_fr_tops"。
 # 限定词、国家、类型任一部分不同 → 模板三件套不同 → 模板层需重新生成。
-ACTIVE_CATEGORY = "yass_de_sweater"
+ACTIVE_CATEGORY = "yass_fr_sweater"
 
 # 中间文件的子目录名。通常保持跟随 ACTIVE_CATEGORY 即可。
 INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
 # A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.11v1_de.xlsx")
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "9.11v1_fr.xlsx")
 # B：.xlsm 基础模板（analysisXlsm 分析后生成 blank.json）
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
 # C：.xlsm 完整模板（analysisXlsm 分析后生成 completed.json）

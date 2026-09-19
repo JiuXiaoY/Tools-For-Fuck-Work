@@ -93,5 +93,10 @@
     "T":  { "value": "Blouse blanche, blouse de laboratoire", "file": "", "sequence": false },
     "AN": { "value": "Cette blouse de chimie pour lycée couvre les vêtements pendant les manipulations scolaires et, selon le modèle, offre des poches pour garder de petits accessoires à portée de main; elle convient aux salles de travaux pratiques, aux laboratoires pédagogiques et aux activités de cosplay.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_fr_shirt.txt", "sequence": false }
+  },
+   "yass_fr_sweater": {
+    "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
+    "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_sweater.txt", "sequence": false }
   }
 }

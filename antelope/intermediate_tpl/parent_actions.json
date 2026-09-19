@@ -80,5 +80,10 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FU"] }
+  },
+  "yass_fr_sweater": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EL"] }
   }
 }
