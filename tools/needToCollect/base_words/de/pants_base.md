@@ -1,3 +1,4 @@
+## hose
 Jogginghose
 Sweathose
 Sporthose
@@ -34,7 +35,6 @@ Chinohose
 Leinenhose
 Stoffhose
 Cordhose
-Jeanshose
 Stretchhose
 Yogahose
 Kompressionshose
@@ -67,7 +67,6 @@ Triathlonhose
 Fussballhose
 Palazzohose
 Marlenehose
-Bootcut
 Pluderhose
 Trompetenhose
 Glockenhose
@@ -80,20 +79,11 @@ Jazzpants
 Ballonhose
 Culotte
 Wickelhose
-Röhrenjeans
-Schlupfjeans
-Stretchjeans
-Geradejeans
-Denimhose
-Flaredjeans
-Schlagjeans
-Glitzerjeans
 Radlerunterhose
 Schlabberhose
 Loungehose
 Miederhose
 Sweatpants
-jeans
 hose
 Lange Hose
 Karottenhose
@@ -102,3 +92,53 @@ Baumwollhose
 Wattierte Hose
 Bodenlange Hose
 Piratenhose
+
+## jeans
+Jeanshose
+Bootcut
+Röhrenjeans
+Schlupfjeans
+Stretchjeans
+Geradejeans
+Denimhose
+Flaredjeans
+Schlagjeans
+Glitzerjeans
+jeans
+
+## shorts
+Boxershorts
+Badeshorts
+Boardshorts
+Schwimmshorts
+Cargoshorts
+Laufshorts
+Sweatshorts
+Trainingsshorts
+Jeansshorts
+Bermudashorts
+Fahrradshorts
+Wandershorts
+Arbeitsshorts
+Sportshorts
+Tennisshorts
+Golfshorts
+Surfshorts
+Joggingshorts
+Schlafshorts
+Freizeitshorts
+Kompressionsshorts
+Hotpants
+Ledershorts
+Partyshorts
+Retroshorts
+Radshorts
+shorts
+
+## leggings
+Leggings
+Sportleggings
+Laufleggings
+Wanderleggings
+Kompressionsleggings
+Treggings

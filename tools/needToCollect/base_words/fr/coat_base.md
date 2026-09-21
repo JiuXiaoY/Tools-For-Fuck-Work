@@ -1,15 +1,5 @@
-Coupe-vent
-Doudoune
-Parka
+## veste
 Veste
-Manteau
-Blouson
-Anorak
-Softshell
-Polaire
-Imperméable
-3 en 1
-2 en 1
 Veste de randonnée
 Veste de ski
 Veste de camping
@@ -26,32 +16,15 @@ Veste doublée
 Veste non doublée
 Veste à capuche
 Veste col montant
-Manteau mi-long
-Manteau long
-Coupe-vent imperméable
-Trench (coupe-vent)
 Veste de trekking
 Veste de plein air
 Veste imperméable respirante
-K-way (imperméable)
 Veste polaire (doublure)
 Veste matelassée
 Veste softshell
 Veste 3 couches
 Veste coupe-vent déperlante
 Veste à capuche amovible
-Blouson coupe-vent
-Blouson léger
-Blouson matelassé
-Parka longue
-Parka mi-longue
-Doudoune légère
-Doudoune épaisse
-Doudoune à capuche
-Manteau d'hiver
-Manteau imperméable
-Manteau de pluie
-Surveste
 Veste multi-poches
 Veste cargo
 Veste utilitaire
@@ -78,3 +51,45 @@ Veste outdoor
 Veste de running
 Veste de fitness
 Veste de costume
+
+## manteau
+Manteau
+Manteau mi-long
+Manteau long
+Manteau d'hiver
+Manteau imperméable
+Manteau de pluie
+
+## blouson
+Blouson
+Blouson coupe-vent
+Blouson léger
+Blouson matelassé
+
+## parka
+Parka
+Parka longue
+Parka mi-longue
+
+## doudoune
+Doudoune
+Doudoune légère
+Doudoune épaisse
+Doudoune à capuche
+
+## coupe-vent
+Coupe-vent
+Coupe-vent imperméable
+Trench (coupe-vent)
+K-way (imperméable)
+Imperméable
+
+## base
+Anorak
+Softshell
+Polaire
+Surveste
+
+## lot
+3 en 1
+2 en 1

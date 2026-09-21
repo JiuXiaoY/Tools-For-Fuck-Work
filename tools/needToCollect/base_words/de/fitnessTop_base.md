@@ -1,3 +1,4 @@
+## korsett
 Korsett
 Korsetts
 Corset
@@ -6,6 +7,8 @@ Corsage
 Corsagen
 Korsage
 Korsagen
+
+## korsett-form
 Unterbrustkorsett
 Unterbrust Korsett
 Überbrustkorsett
@@ -17,6 +20,8 @@ Vollbrust
 Halbbrust
 Überbrust
 Overbust
+
+## korsett-oberteil
 Korsett-Top
 Korsett Top
 Corset Top
@@ -24,11 +29,15 @@ Korsett-Oberteil
 Bustier
 Bustiers
 Bustie
+
+## korsett-kleid
 Korsettkleid
 Korsett Kleid
 Korsagenkleid
 Corsagenkleid
 Corset Dress
+
+## taillenformer
 Korsettgürtel
 Korsett-Taillenformer
 Taillenformer
@@ -39,8 +48,12 @@ Waist Trainer
 Waist Cincher
 Cincher
 Schlankheitsgürtel
+
+## shapewear
 Body Shaper
 Shapewear
+
+## link
 BH
 Dessous
 Lingerie

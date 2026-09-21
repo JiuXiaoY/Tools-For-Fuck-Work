@@ -1,3 +1,4 @@
+## ensemble
 ensemble
 ensemble femme
 ensemble femme chic
@@ -7,13 +8,6 @@ ensemble pantalon femme
 ensemble pantalon femme chic et elegant
 ensemble femme pantalon et haut
 ensemble femme pantalon et haut fluide
-tailleur femme
-tailleur pantalon femme
-ensemble tailleur femme
-tailleur femme ensemble pantalon
-ensemble tailleur femme mariage
-tailleur femme mariage
-tailleur femme pour mariage
 ensemble femme mariage
 ensemble jupe et haut femme
 ensemble short femme
@@ -30,10 +24,22 @@ ensemble running femme
 ensemble coordonne femme
 ensemble 2 pieces femme
 ensemble 3 pieces femme
-costume femme chic tailleur 3 pieces
 ensemble homme
 ensemble homme ete
 ensemble jogging homme
 ensemble sport homme
 ensemble survetement homme
 ensemble lin homme
+
+## tailleur
+tailleur femme
+tailleur pantalon femme
+ensemble tailleur femme
+tailleur femme ensemble pantalon
+ensemble tailleur femme mariage
+tailleur femme mariage
+tailleur femme pour mariage
+costume femme chic tailleur 3 pieces
+
+## travail
+Uniforme de travail

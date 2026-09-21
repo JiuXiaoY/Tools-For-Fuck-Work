@@ -64,6 +64,11 @@
     "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
   },
+  "yass_de_fitnesstop": {
+    "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
+    "AM": { "value": "Dieses Damenkorsett verbindet eine körpernahe Corsagenform mit dekorativen Details wie strukturierten Nähten, Schnürungen oder Metallverschlüssen und lässt sich je nach Ausführung zu Röcken, Hosen sowie Kostüm-, Party-, Gothic- oder festlichen Looks kombinieren.", "file": "", "sequence": false },
+    "AS": { "value": "", "file": "yass_de_fitnesstop.txt", "sequence": false }
+  },
 
   "yass_fr_coat": {
     "S":  { "value": "Sa-0001", "file": "", "sequence": true },
@@ -98,5 +103,10 @@
     "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
     "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_fr_sweater.txt", "sequence": false }
+  },
+  "yass_fr_fitnesstop": {
+    "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
+    "AK": { "value": "Ce corset pour femme associe une coupe près du corps à des détails décoratifs tels que des coutures structurées, des laçages ou des fermetures métalliques et se combine, selon le modèle, avec une jupe ou un pantalon pour une fête, un costume, un style gothique ou une cérémonie.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_fitnesstop.txt", "sequence": false }
   }
 }

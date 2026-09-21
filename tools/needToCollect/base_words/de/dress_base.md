@@ -1,3 +1,4 @@
+## kleid
 Sommerkleid
 Kleid
 Chiffonkleid
@@ -23,3 +24,23 @@ Bandeaukleid
 Spitzenkleid
 Westernkleid
 Abendkleider
+
+## rock
+Jeansrock
+Rock
+Maxirock
+Hosenrock
+Tennisrock
+Minirock
+Trachtenrock
+Tüllrock
+Skaterrock
+Midirock
+
+## jumpsuit
+Einteiler
+Jumpsuits
+Playsuits
+Rompers
+Overalls
+Latzhosen
