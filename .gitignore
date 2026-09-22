@@ -34,6 +34,8 @@ tools/title_auto_fill/gemini_browser/
 nineTools/**/*.txt
 # nineTools 生成的 xlsx（仅本地使用，不入库）
 nineTools/**/*.xlsx
+# nineTools A+ 图片与生成内容（仅本地使用，不入库）
+/nineTools/A_Plus/
 # y_yassikzu(fr) 生成结果（由 AI 生成，不入库）
 y_yassikzu/fr/dress_feasibility_domain/*
 !y_addr&yass/fr_feasibility_domain/dress/zzz.md
