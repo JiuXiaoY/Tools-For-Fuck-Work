@@ -33,6 +33,11 @@
     "AL": { "value": "Dieses aufeinander abgestimmte Bekleidungsset verbindet eine harmonische Optik mit flexiblen Kombinationsmöglichkeiten. Die enthaltenen Teile lassen sich gemeinsam tragen oder je nach Modell und persönlichem Stil mit weiterer Garderobe ergänzen.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "addr_de_tracksuit.txt", "sequence": false }
   },
+  "addr_de_sweater": {
+    "R":  { "value": "Strickpullover und Strickjacken für Herren", "file": "", "sequence": false },
+    "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
+  },
 
 
   "yass_de_coat": {
@@ -59,7 +64,7 @@
     "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
   },
   "yass_de_sweater": {
-    "Q":  { "value": "Bf-0001", "file": "", "sequence": true },
+    "Q":  { "value": "Atm-0001", "file": "", "sequence": true },
     "R":  { "value": "Herrenpullover", "file": "", "sequence": false },
     "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }

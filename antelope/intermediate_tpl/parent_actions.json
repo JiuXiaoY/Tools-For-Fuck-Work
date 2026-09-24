@@ -28,6 +28,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BN","BO","AZ","FC","AX","AY","BB","BC"] }
   },
+  "addr_de_sweater": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EM"] }
+  },
 
 
   "yass_de_coat": {
