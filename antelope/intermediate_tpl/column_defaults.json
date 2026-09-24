@@ -36,10 +36,10 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Bf-0001", "file": "", "sequence": true },
-    "T":  { "value": "Herren-Cordjacke", "file": "", "sequence": false },
-    "AN": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
+    "S":  { "value": "Pst-0001", "file": "", "sequence": true },
+    "T":  { "value": "Halloween-Kostüm für Herren", "file": "", "sequence": false },
+    "AN": { "value": "Dieses ausdrucksvolle Herrenmodell verbindet morbiden Halloween-Charme mit facettenreichen Retro- und Cosplay-Elementen. Konzipiert für Themenpartys und markante Bühnenauftritte sorgt die detailstarke Verarbeitung für einen stilsicheren Look mit angenehmem Tragegefühl.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_halloween_coat.txt", "sequence": false }
   },
   "yass_de_pants": {
     "Q":  { "value": "", "file": "", "sequence": false },
@@ -71,9 +71,9 @@
   },
 
   "yass_fr_coat": {
-    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
-    "T":  { "value": "Veste à capuche coupe-vent et imperméable pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce haut allie un style décontracté à des détails propres à chaque modèle et peut être porté au quotidien ou pendant les loisirs avec un jean, un chino ou tout autre pantalon ; des chaussures et des accessoires assortis viennent compléter le look, tandis que la coupe et le design varient selon le modèle.", "file": "", "sequence": false },
+    "S":  { "value": "Agpt-0001", "file": "", "sequence": true },
+    "T":  { "value": "Veste en maille pour femme", "file": "", "sequence": false },
+    "AN": { "value": "Cette veste femme à l’allure de blazer associe une coupe décontractée à des empiècements contrastants et des détails variables selon le modèle, comme une texture en grosse maille, un effet denim ou une fermeture boutonnée, pour accompagner les tenues de ville, de bureau et de loisirs.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
   },
   "yass_fr_pants": {
