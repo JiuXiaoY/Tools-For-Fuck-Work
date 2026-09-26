@@ -1,4 +1,4 @@
-## veste
+## veste(外套)
 Veste
 Veste de randonnée
 Veste de ski
@@ -52,7 +52,7 @@ Veste de running
 Veste de fitness
 Veste de costume
 
-## manteau
+## manteau(大衣)
 Manteau
 Manteau mi-long
 Manteau long
@@ -60,36 +60,36 @@ Manteau d'hiver
 Manteau imperméable
 Manteau de pluie
 
-## blouson
+## blouson(夹克)
 Blouson
 Blouson coupe-vent
 Blouson léger
 Blouson matelassé
 
-## parka
+## parka(派克大衣)
 Parka
 Parka longue
 Parka mi-longue
 
-## doudoune
+## doudoune(羽绒服)
 Doudoune
 Doudoune légère
 Doudoune épaisse
 Doudoune à capuche
 
-## coupe-vent
+## coupe-vent(防风衣)
 Coupe-vent
 Coupe-vent imperméable
 Trench (coupe-vent)
 K-way (imperméable)
 Imperméable
 
-## base
+## base(基础款)
 Anorak
 Softshell
 Polaire
 Surveste
 
-## lot
+## lot(组合装)
 3 en 1
 2 en 1

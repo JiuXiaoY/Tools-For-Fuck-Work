@@ -1,4 +1,4 @@
-## sportanzug
+## sportanzug(运动套装)
 Yogaanzug
 Laufanzug
 Jogginganzug
@@ -11,7 +11,7 @@ Gymnastikanzug
 Turnanzug
 Radsportanzug
 
-## anzug
+## anzug(西装)
 Freizeitanzug
 Relaxanzug
 Kuschelanzug
@@ -38,16 +38,16 @@ Jeansanzug
 Frotteeanzug
 anzug
 
-## zweiteiler
+## zweiteiler(两件套)
 2 teiler
 zweiteiler
 Cargo-Set
 
-## pyjama
+## pyjama(睡衣)
 Schlafanzug
 Pyjama
 
-## funktionsanzug
+## funktionsanzug(功能套装)
 UV-Anzug
 UV-Schutzanzug
 Sonnenschutzanzug

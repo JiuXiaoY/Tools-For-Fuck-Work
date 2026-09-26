@@ -1,4 +1,4 @@
-## shirt
+## shirt(衬衫)
 Angelshirt
 Trainingsshirt
 Langarmshirt
@@ -6,18 +6,18 @@ Poloshirt
 Kompressionsshirt
 Fahrradtrikot
 
-## sweatshirt
+## sweatshirt(卫衣)
 Sweatshirt
 Kapuzenpullover
 Pullover
 Hoodie
 Strickpullover
 
-## weste
+## weste(背心)
 Weste
 Angelweste
 
-## details
+## details(款式细节)
 Halbreißverschluss
 Viertelreißverschluss
 Kapuzen

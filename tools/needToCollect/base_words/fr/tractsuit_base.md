@@ -1,4 +1,4 @@
-## ensemble
+## ensemble(套装)
 ensemble
 ensemble femme
 ensemble femme chic
@@ -31,7 +31,7 @@ ensemble sport homme
 ensemble survetement homme
 ensemble lin homme
 
-## tailleur
+## tailleur(女式套装)
 tailleur femme
 tailleur pantalon femme
 ensemble tailleur femme
@@ -41,5 +41,5 @@ tailleur femme mariage
 tailleur femme pour mariage
 costume femme chic tailleur 3 pieces
 
-## travail
+## travail(工装)
 Uniforme de travail

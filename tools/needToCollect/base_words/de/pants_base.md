@@ -1,4 +1,4 @@
-## hose
+## hose(裤子)
 Jogginghose
 Sweathose
 Sporthose
@@ -93,7 +93,7 @@ Wattierte Hose
 Bodenlange Hose
 Piratenhose
 
-## jeans
+## jeans(牛仔裤)
 Jeanshose
 Bootcut
 Röhrenjeans
@@ -106,7 +106,7 @@ Schlagjeans
 Glitzerjeans
 jeans
 
-## shorts
+## shorts(短裤)
 Boxershorts
 Badeshorts
 Boardshorts
@@ -135,7 +135,7 @@ Retroshorts
 Radshorts
 shorts
 
-## leggings
+## leggings(紧身裤)
 Leggings
 Sportleggings
 Laufleggings

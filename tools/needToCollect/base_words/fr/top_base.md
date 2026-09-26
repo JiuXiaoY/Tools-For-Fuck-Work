@@ -1,20 +1,20 @@
-## maille
+## maille(针织)
 Cardigan
 Pull over
 
-## chemise
+## chemise(衬衫)
 Chemise
 Tunique
 Chemise en jean
 Chemise veste
 
-## t-shirt
+## t-shirt(T恤)
 T-shirt
 Polo
 
-## haut
+## haut(上衣)
 Haut de sport
 Haut de base
 
-## travail
+## travail(工装)
 Blouse de chef

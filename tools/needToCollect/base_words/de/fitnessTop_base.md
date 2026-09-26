@@ -1,4 +1,4 @@
-## korsett
+## korsett(紧身胸衣)
 Korsett
 Korsetts
 Corset
@@ -8,7 +8,7 @@ Corsagen
 Korsage
 Korsagen
 
-## korsett-form
+## korsett-form(紧身胸衣版型)
 Unterbrustkorsett
 Unterbrust Korsett
 Überbrustkorsett
@@ -21,7 +21,7 @@ Halbbrust
 Überbrust
 Overbust
 
-## korsett-oberteil
+## korsett-oberteil(紧身胸衣上衣)
 Korsett-Top
 Korsett Top
 Corset Top
@@ -30,14 +30,14 @@ Bustier
 Bustiers
 Bustie
 
-## korsett-kleid
+## korsett-kleid(紧身胸衣连衣裙)
 Korsettkleid
 Korsett Kleid
 Korsagenkleid
 Corsagenkleid
 Corset Dress
 
-## taillenformer
+## taillenformer(塑腰衣)
 Korsettgürtel
 Korsett-Taillenformer
 Taillenformer
@@ -49,11 +49,11 @@ Waist Cincher
 Cincher
 Schlankheitsgürtel
 
-## shapewear
+## shapewear(塑身衣)
 Body Shaper
 Shapewear
 
-## link
+## link(关联品类)
 BH
 Dessous
 Lingerie

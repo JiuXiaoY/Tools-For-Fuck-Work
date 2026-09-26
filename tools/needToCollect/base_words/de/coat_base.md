@@ -1,4 +1,4 @@
-## jacke
+## jacke(夹克外套)
 Sweatjacke
 Jacke
 Freizeitjacke
@@ -25,9 +25,9 @@ Windbreaker
 Skijacke
 Regenjacke
 
-## mantel
+## mantel(大衣)
 Trenchcoat
 
-## poncho
+## poncho(斗篷)
 Regenponcho
 Sweatponcho

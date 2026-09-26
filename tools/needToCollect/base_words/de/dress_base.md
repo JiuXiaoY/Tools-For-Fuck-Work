@@ -1,4 +1,4 @@
-## kleid
+## kleid(连衣裙)
 Sommerkleid
 Kleid
 Chiffonkleid
@@ -25,7 +25,7 @@ Spitzenkleid
 Westernkleid
 Abendkleider
 
-## rock
+## rock(半身裙)
 Jeansrock
 Rock
 Maxirock
@@ -37,7 +37,7 @@ Tüllrock
 Skaterrock
 Midirock
 
-## jumpsuit
+## jumpsuit(连体裤)
 Einteiler
 Jumpsuits
 Playsuits
