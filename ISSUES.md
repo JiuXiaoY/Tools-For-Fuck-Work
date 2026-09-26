@@ -58,11 +58,11 @@
 
 ## P2：可维护性
 
-### 9. 列变量的名称与真实 Excel 列已经错位
+### 9. 列变量的名称与真实 Excel 列已经错位（已修复）
 
-配置中的 `col_ar=45` 实际对应 AS 列。`col_i`、`col_j` 等旧名称会持续制造理解错误。
+增加列后遗留的 `col_i`、`col_j`、`col_ar` 等旧名称已改为业务名称；列号和 49 列布局保持不变。
 
-建议改用业务名，例如 `source_color_col`、`mapped_color_col`、`price_source_col`。
+当前使用 `source_color_col`、`mapped_color_col`、`size_col`、`price_source_col` 和价格链业务名称。
 
 ### 10. `copy_targets` 注释与实现方向相反
 

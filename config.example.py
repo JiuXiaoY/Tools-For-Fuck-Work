@@ -45,16 +45,15 @@ class Config:
     col_a:  int = 1
     col_b:  int = 2
     col_c:  int = 3
-    col_i:  int = 10
-    col_j:  int = 11
-    col_k:  int = 12
-    col_l:  int = 13
-    col_m:  int = 14
-    col_ar: int = 45
-    col_as: int = 46
-    col_at: int = 47
-    col_au: int = 48
-    col_av: int = 49
+    source_color_col:     int = 10  # J
+    mapped_color_col:     int = 11  # K
+    size_col:             int = 12  # L
+    price_text_col:       int = 13  # M：复制到价格解析来源列
+    price_source_col:     int = 45  # AS：从文本中提取 JPY 前价格
+    base_price_col:       int = 46  # AT
+    multiplied_price_col: int = 47  # AU
+    subtracted_price_col: int = 48  # AV
+    final_price_col:      int = 49  # AW
     col_len: int = 6                 # 长度公式列 F：=LEN(D{row})（D 为标题列，位置不变）
 
     # ── column insertions ─────────────────────────────────────────────
