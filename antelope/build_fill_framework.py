@@ -217,7 +217,7 @@ def fill_uncovered_with_temp(data, groups, col_scope, temp_value="dataTemp"):
 
     对 col_scope 中「每组每列都缺失」的列，填入 [temp_value] * 组行数；
     这样 fill_from_plan 里 m == n → sequential 顺序写入（每个单元格都是占位值）。
-    默认占位值 dataTemp（与 build_m_data.py 一致，见 MISSING.md 解决方案）。
+    默认占位值 dataTemp（与 build_m_data.py 一致，见 zzz.md 的未覆盖列处理规则）。
     """
     filled = 0
     for gname, spec in (groups or {}).items():

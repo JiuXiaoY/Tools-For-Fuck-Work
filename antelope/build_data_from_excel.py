@@ -109,7 +109,7 @@ def snapshot_rows(ws, max_row: int, max_col: int) -> dict:
 def read_column_values(rows, group_start: int, group_end: int, src_col: int) -> list:
     """从内存行矩阵中读某组行范围内某列的值序列（**逐行读取，空单元格保留为 "" 占位**）。
 
-    规则（MISSING.md 第 2 节）：映射到但没数据的列也要读取——空就是空，写入也是空。
+    规则（见 zzz.md）：映射到但没数据的列也要读取——空就是空，写入也是空。
     返回列表长度 = 组行数（m 含空数据，与 11409 需求一致）；空单元格记 ""。
     """
     values = []

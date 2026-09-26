@@ -3,7 +3,7 @@
 ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网页版** 分批询问 AI 选值，
 更新 M 数据源 JSON。
 
-按 MISSING.md 的解决方案（类似 tools/title_optimize/deepseek_web.py 的网页自动化方式）：
+按 zzz.md 的未覆盖列处理规则（类似 tools/title_optimize/deepseek_web.py 的网页自动化方式）：
   - 未覆盖列中，completed.json 有可选值(choices)的列
     → 提示词里含 产品列表 + 每列的可选值，AI 按列分块输出，每个产品每列选出 1 个值；
     每列的块标签直接用**原始表头**（归一化后），不转换语言；

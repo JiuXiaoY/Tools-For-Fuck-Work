@@ -2,7 +2,7 @@
 """
 build_m_data —— 生成 M 数据源 JSON（补充 A 映射未覆盖的待填列数据）。
 
-按 MISSING.md 的解决方案（流程待定，先跑通）：
+按 zzz.md 的未覆盖列处理规则生成 M 数据：
   - 当前为**占位实现**：所缺数据统一用 "dataTemp" 替代，按顺序填充模式
     （每列 = 组行数 个 "dataTemp"），生成与 A 取数同构的 M JSON。
   - 未来替换为真实取数逻辑后，输出格式保持不变，build_fill_framework.py

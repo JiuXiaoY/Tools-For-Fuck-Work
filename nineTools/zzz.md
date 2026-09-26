@@ -1,4 +1,4 @@
-# nineTools —— 独立小工具集
+# nineTools 独立工具说明
 
 各工具按用途分目录存放，脚本与其配套输入/输出文件在同一目录内。
 
@@ -26,4 +26,4 @@ python zip/zip_dir.py
 ## 说明
 
 - `random_ids_*.txt`（随机 ID 输出）与 SKU 抓取/结果文本不入库（见 `.gitignore` `nineTools/**/*.txt`）；
-- `zip/` 的 zip 输出在仓库 `zip_by_ec/` 下，大文件不入库。
+- `zip/` 会递归打包指定目录，当前没有敏感文件排除规则。不要用它直接打包本仓库、`config.py`、`.git/` 或浏览器用户目录。

@@ -1,223 +1,95 @@
-# dealExcel_refactoring 问题清单
+# 当前问题与技术债
 
-> 按优先级排序:P0=安全/致命, P1=架构/严重影响维护, P2=可维护性改善, P3=优化建议。
-> 每个问题标注文件:行号,先不改动,仅记录。
+本文件只记录当前代码中仍存在的问题。已经修复的历史问题不继续保留，避免状态与代码脱节。
 
----
+## P0：安全与数据完整性
 
-## 🔴 P0 — 安全/致命
+### 1. 仓库中存在疑似真实凭据
 
-### 1. [未修复]API 密钥硬编码在仓库中
-- **文件**:`config.py:70`
-- **内容**:`ai_api_key: str = "sk-39b17cf2e6a542508090bb1c8d07570d"` — 真实的 DeepSeek API 密钥
-- **影响**:密钥已提交到版本控制,通过 git history 可被任何人获取。需立即轮换密钥并迁移到环境变量
-- **对比**:`config.example.py:70` 正确使用了空字符串
+- `config.example.py` 包含看起来像真实 API Key 的默认值。
+- 历史问题文档曾直接记录完整密钥；本文件不再保留其值。
+- 已跟踪的 `zip_by_ec/Tools_refactoring_completed.zip` 内含 `config.py` 和 `.git/config`。
 
----
+建议：立即轮换相关凭据，清理当前版本和 Git 历史，并给打包流程增加白名单。
 
-## 🟠 P1 — 架构/严重影响维护
+### 2. `.xls` 转换脚本只改扩展名
 
-### 2. [未修复]Config 注入形同虚设 — 11 处重复 `Config()`
-- **涉及文件**:所有 `steps/*.py`(除 `finalize.py` 外 11 个步骤文件)
-- **问题**:`core/runner.py:19` 接受 `Config` 参数传给 pipeline,但每个 `PipelineStep.run()` 内部都自己调 `Config()` 重新实例化,外部传入的配置**被完全忽略**
-- **影响**:
-  - 无法测试(无法注入 mock 配置)
-  - 无法在单进程用不同配置处理不同文件
-  - 步骤的依赖不透明(看代码不知道配置从哪来)
-- **根因**:`PipelineStep` 没有 `__init__` 接收 Config
+`tools/xls2xlsx.py` 使用 `Path.rename()` 把 `.xls` 改成 `.xlsx`，没有转换文件格式。真实 BIFF `.xls` 不能因此被 `openpyxl` 读取。
 
-### 3. [未修复]两套步骤接口并存,互不兼容
-- **核心 Pipeline**:`PipelineStep.run(ctx: PipelineContext) → PipelineContext`(`core/pipeline.py:15`)
-- **预处理步骤**:`self.run(wb: Workbook, path: str) → int`(`preprocess/steps/dedup_filled_rows.py:30`)
-- **问题**:同样的"步骤"概念,签名完全不同。预处理步骤不是 `PipelineStep` 子类,无法被核心 pipeline 调度,也无法共享日志/上下文机制
-- **影响**:增加认知负担,两套注册表要分别维护
+建议：先识别文件签名；真实 `.xls` 使用 Excel COM、LibreOffice 或专用转换方案，成功后再移动原文件。
 
-### 4. [未修复]openpyxl 工作簿泄露 — `wb.close()` 缺失
-- **`core/runner.py:21-32`**:`process_file()` → `load_workbook()` → 只 `save()` 不 `close()`
-- **`services/excel.py:47`**:`merge_workbooks()` 打开源文件后不关闭
-- **`services/excel.py:21-23`**:`save()` 不对 workbook 调用 `close()`
-- **`main.py:69-70`**:`merge_workbooks()` + `save()` 后的 workbook 未关闭
-- **正面例子**:`preprocess/run.py:40-44` 正确调用了 `save()` → `close()`
-- **影响**:42MB 的 xlsx 文件不关闭,长期运行会累积内存/文件句柄
+### 3. 主流程可能同时丢失输入和输出
 
-### 5. [未修复]三个 `except Exception: pass` 静默吞异常
-- **`services/excel.py:75-76`**:合并单元格失败 → `pass`,不输出任何警告
-- **`steps/merge_sheets.py:85-86`**:同上
-- **`services/utils.py:47-48`**:`to_decimal()` 捕获所有异常返回 `None` — 其中包括 `KeyboardInterrupt` 和 `SystemExit`
-- **`rules/price.py:21-22`**:`extract_price_before_jpy()` 同样问题
-- **影响**:数据静默丢失不可追踪;`KeyboardInterrupt` 可能被吞掉导致进程无法退出
+`main.py` 在 `process_file()` 成功前删除源文件，异常分支又会删除临时输出。
 
-### 6. [未修复]"重建 sheet"逻辑重复 × 3 — 代码量最大
-- **文件**:`preprocess/steps/remove_header.py:56-104`、`dedup_filled_rows.py:77-166`、`remove_empty_j.py:44-131`
-- **问题**:三段代码的模板完全一致:创建临时 sheet → 复制行(值+样式+图片+合并单元格+列宽) → 替换旧 sheet。唯一差异是"哪些行要删"的判定规则
-- **影响**:约 200 行重复代码;修改复制逻辑(如增加一列样式属性)需要改三个地方
-- **建议抽象**:`rebuild_sheet(ws, keep_predicate: Callable[[int], bool]) → Worksheet`
+建议：处理到临时文件，完成强校验并原子发布后，再把输入移动到可恢复的归档目录。
 
-### 7. [未修复]`jenkins.py` 用 `subprocess.run` 串步骤 — 多余进程边界
-- **文件**:`jenkins.py:43-56`
-- **问题**:每步都是一个独立 Python 子进程,通信全靠文件系统;当前 7 步中 5 步注释掉
-- **影响**:
-  - 步骤失败时只能看到"子进程返回非零",无堆栈
-  - 每次子进程启动都要重新 import 全部模块
-  - 无法在内存中传递中间状态
-- **这些步骤完全可以改成进程内函数调用**
+## P1：正确性与流程边界
 
----
+### 4. 输入和输出校验只写日志
 
-## 🟡 P2 — 可维护性
+`steps/validate.py` 与 `steps/finalize.py` 不会在列数或关键结构错误时失败，错误数据仍可能被发布。
 
-### 8. [未修复]`config.example.py` 与 `config.py` 不同步
-- **缺失字段**:`img_classify_mode`、`img_classify_ocr_lang`、`img_classify_table_min_lines`
-- **默认值不一致**(5 处):`date_override`("260708" vs "260731")、`price_add`("6.00" vs "1.50")、`delete_source_after_merge`(True vs False)、`preprocess_dedup_close_gap`(10 vs 5)、`ai_api_key`(真实密钥 vs "")
-- **节标题不同**:`image classification` vs `image reorder`
-- **影响**:新用户按 example 模板创建 config 后,缺少 3 个配置字段会导致 AttributeError
+建议：为关键列数、必要表头、目标工作表、图片数量和输出格式定义硬校验。
 
-### 9. `constant/` 目录 — 未使用的杂项数据,疑似敏感信息 **[已修复]**
-- **文件**:`constant/dzq` 包含邮箱、品牌名、验证码等数据
-- **状态**:无任何 Python 代码 import `constant/` 目录
-- **`constant/photo/`**:4 个参考 PNG 图片,无代码引用
-- **修复**:`constant/photo/`、`constant/dzq` 已加入 `.gitignore` 并从 git 跟踪移除
+### 5. `continue_on_error` 不处理依赖失败
 
-### 10. [未修复]ID 生成逻辑硬编码 — 无扩展性
-- **文件**:`steps/fill_id.py:10-29`
-- **硬编码内容**:
-  - 编码表:base62(`string.digits + ascii_uppercase + ascii_lowercase`)
-  - 分段格式:`6 位前缀 + 6 位日期码 + 4 位后缀`(固定 16 字符)
-  - 日期编码:`0→z, 1→a, ..., 9→i`
-- **影响**:不同平台需要不同 ID 格式时,只能复制整个函数重写
-- **建议**:做成可注入的 `Callable` 参数,当前不需要完整类层次
+前置步骤失败后，`core/runner.py` 仍可能执行依赖该步骤的后续步骤，导致数据写入错误列位。
 
-### 11. [未修复]价格计算公式硬编码
-- **文件**:`steps/calc_price.py:27-30`
-- **硬编码**:四步链 `AS=base, AT=base×1.2, AU=AT-7.98, AV=AU+1.50` — 乘数/减数/加数虽来自 config,但**步骤数量和顺序**写死在代码里
-- **影响**:不同市场(含 VAT / 不含 VAT)需要不同计算链时无法配置
-- **建议**:与 ID 生成同理,做成可注入的函数或公式字符串
+建议：记录失败步骤并跳过所有依赖它的步骤；生产模式默认保持 fail-fast。
 
-### 12. [未修复]29 处 `time.sleep()` 硬编码
-- **涉及文件**:`tools/title_optimize/run.py`(3 处模块常量)、`deepseek_web.py`(14 处硬编码)、`hotwords.py`(`REQUEST_INTERVAL=2.0`+ 2 处 0.5/3)、`hotwords_fashion.py`(`REQUEST_INTERVAL=2.0`+ 硬编码 3)、`image_classification/reorder*.py`(3 处 1s)
-- **影响**:API 限流策略调整(如 amz123 改成 1s/次)需要改代码
-- **config.py 现状**:有 `retry_max_rounds_*`,但无 `delay_*` 或 `interval_*`
+### 6. 运行数据和源码混在同一目录
 
-### 13. [未修复]`RemoveEmptyJStep` — 完整实现但注释掉
-- **文件**:`preprocess/steps/remove_empty_j.py:1-147`(147 行完整实现)
-- **注册**:`preprocess/steps/__init__.py:4,11` 两处注释掉
-- **状态**:无其他引用,可能是死代码,也可能是未完工的功能
-- **影响**:147 行代码占位但未使用
+浏览器状态、批次 JSON、日志、模板、输出和压缩快照占据大量空间。仅 `antelope/fill_plan` 与 `antelope/intermediate` 中被跟踪的生成数据就接近 180 MB。
 
-### 14. [未修复]图片 anchor 行号操作重复 × 2(以上)
-- **核心流程**`merge_sheets.py` 和**预处理 3 个步骤**各自手写:
-  ```python
-  if isinstance(anchor, OneCellAnchor):
-      old_row = anchor._from.row + 1
-  elif isinstance(anchor, TwoCellAnchor):
-      old_row = anchor._from.row + 1
-  ```
-- **`services/images.py`** 有 `snapshot_images` / `restore_images`,但没有封装"提取行号/平移 anchor"的通用函数
-- **影响**:每次用到 anchor 都要重复判断;`services/excel.py:75`(merge_workbooks 内)也有一份
+建议：运行态数据集中到一个整体忽略的目录；Git 只保存源码、少量标准配置和无法重建的资源。
 
-### 15. [未修复]`services/excel.py` 使用 `logging.getLogger` 绕过项目日志系统
-- **文件**:`services/excel.py:14`
-- **问题**:项目统一用 `services/logger.py:get_logger()`,但 excel.py 直接用 stdlib `logging.getLogger(__name__)`,多个 handler/格式不一致
+### 7. 打包工具没有排除规则
 
-### 16. [未修复]无步骤级容错 — 部分失败即全部丢失
-- **文件**:`core/runner.py:46-56`
-- **问题**:Pipeline 12 步串行,没有任何 try/except 包裹单步;如果第 11 步失败,前 10 步的更改无法保存(workbook 只在所有步骤跑完后 save)
-- **影响**:调试困难(无法查看失败时的中间状态);无法只重跑失败步骤
+`nineTools/zip/zip_dir.py` 会递归打包所有文件，可能包含 `.git`、`config.py`、浏览器 Cookie 和缓存。
 
-### 17. [未修复]无中间检查点
-- 关联 #16:如果 Pipeline 支持"每完成 N 步存一个中间文件"或"保存 Context 到临时路径",长流程调试效率会高得多
+建议：改成明确白名单，或使用 `git archive` 只导出已跟踪且允许发布的文件。
 
-### 18. [未修复]多层数据传递全靠文件系统
-- **链路**:preprocess 写回源文件 → main 读源文件合并 → tools 读输出文件再加工再写回
-- **问题**:每次 read/write openpyxl 都重新解析 42MB 的 xlsx;1000 行不明显,10 万行时是显著瓶颈
-- **中间零内存传递**
+### 8. 缺少 Excel 回归测试
 
-### 19. [未修复]`tools/image_classification/reorder_backup.py` — `reorder.py` 的 ~90% 重复副本
-- **文件**:`reorder.py` 和 `reorder_backup.py` 高度相似
-- **影响**:改一处不同步另一处,逐渐分化
+当前没有有效的自动化测试。图片、合并单元格和宏依赖 openpyxl 的实现细节，修改后只能人工确认。
 
-### 20. [未修复]`MergeSheetsStep` 未使用 `services/images.py` 的图片辅助
-- **文件**:`steps/merge_sheets.py:54-84` 内联了图片复制的全部逻辑
-- **问题**:`services/images.py` 有 `clone_image`,但 merge_sheets 自己的图片循环没用到,自己写了一份
+建议建立小型黄金文件，覆盖单工作表、多工作表、合并单元格、图片锚点、32→49 列和异常回滚。
 
-### 21. [未修复]`services/images.py:58` — `restore_images` 依赖整个 Config 对象
-- **文件**:`services/images.py:58`
-- **问题**:`restore_images` 只需要 `column_insertions: list[tuple[int,int]]`,却接收整个 `Config`,耦合了不必要的数据结构
+## P2：可维护性
 
-### 22. [未修复]配置加载无缓存 — `load_color_mapping` / `load_size_mapping` 每次读磁盘
-- **文件**:`config.py:106-120`
-- **问题**:`FillCol10MappingStep` 和 `SizeMappingStep` 各自调用时都会重新 open+parse JSON
-- **影响**:742 条 color_mapping_de.json + size_mapping_de.json 每次管道运行读 2 次磁盘
+### 9. 列变量的名称与真实 Excel 列已经错位
 
-### 23. [未修复]`tools/title_auto_fill/de_title_build.py:4` — TODO 标记未闭环
-- **内容**:`# de_collect.py — populate final_de_title (TODO)`
-- **影响**:自动化步骤不完整
+配置中的 `col_ar=45` 实际对应 AS 列。`col_i`、`col_j` 等旧名称会持续制造理解错误。
 
-### 24. 热词采集 fashion_brands.txt 首行追加丢失 bug(已修复但原因不明) **[已修复]**
-- **文件**:`tools/needToCollect/fashion_filter/de/fashion_brands.txt`（原路径已按站点整理）
-- **问题**:bash heredoc 追加时 `geox` 首行丢失,原因未知(可能 Windows 换行符问题)
-- **已修复**:通过 Python 工具 edit_file 补回
-- **影响**:说明基于 bash heredoc 的文件追加在 Windows 下不可靠
+建议改用业务名，例如 `source_color_col`、`mapped_color_col`、`price_source_col`。
 
----
+### 10. `copy_targets` 注释与实现方向相反
 
-## 🟢 P3 — 小改进
+`config.example.py` 写成 `{source_col: target_col}`，`steps/copy_mirror.py` 实际按 `{target_col: source_col}` 使用。
 
-### 25. [未修复]`deepseek_web.py` 的选择器硬编码
-- **问题**:`button:has-text('Stop')`、`"div.ds-assistant-message-main-content"` 等 CSS 选择器与 DeepSeek UI 版本绑定
-- **影响**:DeepSeek 页面改版后需手动同步选择器;无版本兼容机制
+### 11. `id_factory` 类型与实现不一致
 
-### 26. [未修复]项目日志系统仅一处不一致
-- **文件**:`services/excel.py:14` 用 `logging.getLogger(__name__)` 而非 `get_logger("excel")`
-- **影响**:细微不一致,Excel 模块日志可能丢失项目级的格式/级别配置
+配置声明为 Callable，`steps/assign_ids.py` 却把它当字符串注册名解析。注入 Callable 时会退回默认工厂。
 
-### 27. [未修复]`services/logger.py:26-27` — 模块级全局状态
-- **内容**:`_log_file: Path | None = None`, `_initialized: bool = False`
-- **影响**:正式单线程使用无问题,但多人协作或多线程时会成为隐式竞争
+### 12. 依赖声明不完整
 
-### 28. [未修复]`core/pipeline.py` — Pipeline 无步骤排序/依赖验证
-- **问题**:12 步的注册靠 `get_steps()` 里的硬编码列表顺序,每步间有隐式数据依赖(如 InsertColumns 必须先于列引用)但未声明
-- **影响**:加新步骤时容易放错位置
+`pyproject.toml`、`requirements.txt` 和真实工具依赖不一致。Playwright、AI SDK、NumPy、OpenCV 等没有清晰的可选依赖分组。
 
-### 29. [未修复]缺少统一的 CLI 入口
-- **现状**:`main.py` 无参数、`preprocess/run.py` 无参数、`jenkins.py` 硬编码步骤、各 tools 各有一套 argparse
-- **影响**:用户需记住多个入口点,无法 `dealexcel pipeline --steps 1-5`
+建议增加 `ai`、`browser`、`vision`、`dev` 等 optional dependency groups。
 
-### 30. [未修复]缺少测试
-- **状态**:整个项目无任何 test_*.py 文件
-- **影响**:重构和修改配置逻辑时无安全网;商业化接客户前需手工回归
+### 13. 大量使用 openpyxl 私有接口
 
-### 31. [未修复]缺少类型检查 CI
-- **现状**:有 `from __future__ import annotations` + 类型注解,但无 `mypy`/`pyright` 配置和 CI 检查
-- **影响**:类型注解失去约束力,实际运行时可能类型不匹配
+图片逻辑依赖 `_images`、`_from`、`_data()` 等私有成员，升级 openpyxl 时可能破坏兼容性。
 
-### 32. [未修复]`main.py` 异常处理把临时文件删除和重新抛混在一起
-- **文件**:`main.py:83-86`
-- **问题**:`except Exception as exc: tmp.unlink(missing_ok=True); raise` — `KeyboardInterrupt` 等非 Exception 异常不会被此 except 捕获(try/except Exception),但 `SystemExit` 会?不会。逻辑正确性没问题,但意图不明确(是只处理预期错误还是兜底?)
+建议锁定版本，并通过集中适配层和黄金文件测试隔离风险。
 
-### 33. `.gitignore` 缺 `constant/photo/` 和 `constant/dzq` **[已修复]**
-- **修复**:`constant/photo/`、`constant/dzq` 已加入 `.gitignore`,`constant/photo/` 下 4 个 PNG 和 `constant/dzq` 已从 git 跟踪移除(`git rm --cached`)
+### 14. 部分工作簿生命周期不清晰
 
-### 34. `fashion_filter` 的弱属性 `wolle` 有历史重复(强属性段 `!wolle` 残留) **[已修复]**
-- **已修复**:`fashion_attributes.txt:17` 的 `!wolle` 已删除
-- **教训**:同一词在强/弱两段各出现一次,copy-paste error 的典型案例
+`services/excel.merge_workbooks()` 打开的源工作簿没有逐个关闭；`process_file()` 返回的 Context 又引用已经关闭的 Workbook。
 
-### 35. [未修复]三个预处理步骤的输出目录不同
-- `remove_header` 输出 `_rm_header_tmp` 临时 sheet
-- `dedup_filled_rows` 输出 `_dedup_tmp`
-- `remove_empty_j` 输出 `_rm_empty_j_tmp`
-- **问题**:命名不统一,如果多个临时 sheet 同时存在时会冲突(实际先 remove 再 create,不冲突,但可读性差)
+### 15. 主流程、antelope 与独立工具缺少统一入口
 
----
+目前需要记忆多个脚本路径，部分编排仍依赖注释代码来控制步骤。
 
-## 统计
-
-| 优先级 | 数量 | 未修复 |
-|---|---|---|
-| 🔴 P0 | 1 | 1 |
-| 🟠 P1 | 6 | 6 |
-| 🟡 P2 | 17 | 14 |
-| 🟢 P3 | 11 | 10 |
-| **合计** | **35** | **31** |
-
-> 已修复 4 项:#9(constant/ 加入 .gitignore)、#24(fashion_brands 补充 geox)、#33(.gitignore 补 constant 条目)、#34(fashion_attributes 删重复 !wolle)
+建议逐步提供统一 CLI，例如 `dealexcel pipeline`、`dealexcel antelope`、`dealexcel hotwords`，同时保留底层脚本入口。

@@ -1,4 +1,4 @@
-# 服装热词采集与清洗
+# 服装热词采集与清洗说明
 
 运行 `hotwords_fashion.py` 会先向热词 API 采集，再按站点词根筛选；`clean_fashion.py` 只重跑本地清洗，不请求 API。**直接点 `main` 运行时，只需修改 [`site_config.py`](site_config.py) 顶部的 `DEFAULT_COUNTRY`**：`"de"` 为德国站，`"fr"` 为法国站。两个程序都会使用这同一个默认值。
 

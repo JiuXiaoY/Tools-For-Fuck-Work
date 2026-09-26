@@ -1,4 +1,4 @@
-# base_words 基础词库
+# base_words 基础词库说明
 
 词库先按语言分目录（`de/`、`fr/`），**文件名 = `y_addr&yass/de_feasibility_domain` 下的 domain 目录名 + `_base.md`**：
 
