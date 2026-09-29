@@ -65,6 +65,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","W","X","Y","Z","AA","AB","AC","AD","AE","FC"] }
   },
+  "yass_de_top": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FV"] }
+  },
 
   "yass_fr_coat": {
     "set_values":   { "D": "Parent" },

@@ -40,46 +40,11 @@
   },
 
 
-  "yass_de_coat": {
-    "S":  { "value": "Pst-0001", "file": "", "sequence": true },
-    "T":  { "value": "Halloween-Kostüm für Herren", "file": "", "sequence": false },
-    "AN": { "value": "Dieses ausdrucksvolle Herrenmodell verbindet morbiden Halloween-Charme mit facettenreichen Retro- und Cosplay-Elementen. Konzipiert für Themenpartys und markante Bühnenauftritte sorgt die detailstarke Verarbeitung für einen stilsicheren Look mit angenehmem Tragegefühl.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_halloween_coat.txt", "sequence": false }
-  },
   "yass_de_pants": {
     "Q":  { "value": "", "file": "", "sequence": false },
     "R":  { "value": "", "file": "", "sequence": false },
     "AL": { "value": "", "file": "", "sequence": false },
     "AR": { "value": "", "file": "", "sequence": false }
-  },
-  "yass_de_tracksuit": {
-    "Q":  { "value": "", "file": "", "sequence": false },
-    "AK": { "value": "", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "", "sequence": false }
-  },
-  "yass_de_sweatshirt": {
-    "Q":  { "value": "A-0001", "file": "", "sequence": true },
-    "R":  { "value": "Hoodie für Herren", "file": "", "sequence": false },
-    "AL": { "value": "Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
-  },
-  "yass_de_sweater": {
-    "Q":  { "value": "Atm-0001", "file": "", "sequence": true },
-    "R":  { "value": "Herrenpullover", "file": "", "sequence": false },
-    "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
-  },
-  "yass_de_fitnesstop": {
-    "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
-    "AM": { "value": "Dieses Damenkorsett verbindet eine körpernahe Corsagenform mit dekorativen Details wie strukturierten Nähten, Schnürungen oder Metallverschlüssen und lässt sich je nach Ausführung zu Röcken, Hosen sowie Kostüm-, Party-, Gothic- oder festlichen Looks kombinieren.", "file": "", "sequence": false },
-    "AS": { "value": "", "file": "yass_de_fitnesstop.txt", "sequence": false }
-  },
-
-  "yass_fr_coat": {
-    "S":  { "value": "Agpt-0001", "file": "", "sequence": true },
-    "T":  { "value": "Veste en maille pour femme", "file": "", "sequence": false },
-    "AN": { "value": "Cette veste femme à l’allure de blazer associe une coupe décontractée à des empiècements contrastants et des détails variables selon le modèle, comme une texture en grosse maille, un effet denim ou une fermeture boutonnée, pour accompagner les tenues de ville, de bureau et de loisirs.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
   },
   "yass_fr_pants": {
     "Q":  { "value": "", "file": "", "sequence": false },
@@ -87,10 +52,25 @@
     "AL": { "value": "", "file": "", "sequence": false },
     "AR": { "value": "", "file": "", "sequence": false }
   },
+
+
+  "yass_de_tracksuit": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "AK": { "value": "", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "", "sequence": false }
+  },
   "yass_fr_tracksuit": {
     "Q":  { "value": "", "file": "", "sequence": false },
     "AK": { "value": "", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "", "sequence": false }
+  },
+
+
+  "yass_de_sweatshirt": {
+    "Q":  { "value": "A-0001", "file": "", "sequence": true },
+    "R":  { "value": "Hoodie für Herren", "file": "", "sequence": false },
+    "AL": { "value": "Dieses Oberteil verbindet eine lässige Optik mit modellabhängigen Details und lässt sich für Alltag und Freizeit mit Jeans, Chinos oder anderen Hosen kombinieren; passende Schuhe und Accessoires können den Look ergänzen, während Schnitt und Gestaltung je nach Ausführung variieren.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
   },
   "yass_fr_sweatshirt": {
     "Q":  { "value": "A-0001", "file": "", "sequence": true },
@@ -98,16 +78,53 @@
     "AL": { "value": "Ce haut associe une allure décontractée à des détails qui varient selon le modèle et se combine, pour le quotidien ou les loisirs, avec un jean, un chino ou un autre pantalon; des chaussures et accessoires choisis peuvent compléter la tenue selon la coupe et le style recherchés.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_fr_sweatshirt.txt", "sequence": false }
   },
-  "yass_fr_top": {
-    "S":  { "value": "Sa-0001", "file": "", "sequence": true },
-    "T":  { "value": "Blouse blanche, blouse de laboratoire", "file": "", "sequence": false },
-    "AN": { "value": "Cette blouse de chimie pour lycée couvre les vêtements pendant les manipulations scolaires et, selon le modèle, offre des poches pour garder de petits accessoires à portée de main; elle convient aux salles de travaux pratiques, aux laboratoires pédagogiques et aux activités de cosplay.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_shirt.txt", "sequence": false }
+
+
+  "yass_de_sweater": {
+    "Q":  { "value": "Atm-0001", "file": "", "sequence": true },
+    "R":  { "value": "Herrenpullover", "file": "", "sequence": false },
+    "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
   },
-   "yass_fr_sweater": {
+  "yass_fr_sweater": {
     "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
     "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_fr_sweater.txt", "sequence": false }
+  },
+
+
+  "yass_de_top": {
+    "S":  { "value": "Chd-0001", "file": "", "sequence": true },
+    "T":  { "value": "Trachtenhemd Herren", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Herrenoberteil verbindet eine klare Silhouette mit langen Ärmeln, Kragen- und Verschlussdetails sowie je nach Ausführung eine unifarbene, strukturierte oder bedruckte Gestaltung und eignet sich als Herrenhemd oder Freizeitoberteil für Alltag, Büro, Reisen und saisonale Anlässe.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_shirt.txt", "sequence": false }
+  },
+  "yass_fr_top": {
+    "S":  { "value": "Chd-0001", "file": "", "sequence": true },
+    "T":  { "value": "Chemise à manches longues pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce haut pour homme associe une silhouette structurée, des manches longues, des détails de col et de fermeture ainsi que, selon le modèle, un style uni, texturé ou imprimé, et se porte comme chemise homme ou haut décontracté au quotidien, au bureau, en voyage ou lors d’occasions saisonnières.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_shirt.txt", "sequence": false }
+  },
+
+
+  "yass_de_coat": {
+    "S":  { "value": "Pst-0001", "file": "", "sequence": true },
+    "T":  { "value": "Halloween-Kostüm für Herren", "file": "", "sequence": false },
+    "AN": { "value": "Dieses ausdrucksvolle Herrenmodell verbindet morbiden Halloween-Charme mit facettenreichen Retro- und Cosplay-Elementen. Konzipiert für Themenpartys und markante Bühnenauftritte sorgt die detailstarke Verarbeitung für einen stilsicheren Look mit angenehmem Tragegefühl.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_halloween_coat.txt", "sequence": false }
+  },
+  "yass_fr_coat": {
+    "S":  { "value": "Agpt-0001", "file": "", "sequence": true },
+    "T":  { "value": "Veste en maille pour femme", "file": "", "sequence": false },
+    "AN": { "value": "Cette veste femme à l’allure de blazer associe une coupe décontractée à des empiècements contrastants et des détails variables selon le modèle, comme une texture en grosse maille, un effet denim ou une fermeture boutonnée, pour accompagner les tenues de ville, de bureau et de loisirs.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
+  },
+
+
+  "yass_de_fitnesstop": {
+    "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
+    "AM": { "value": "Dieses Damenkorsett verbindet eine körpernahe Corsagenform mit dekorativen Details wie strukturierten Nähten, Schnürungen oder Metallverschlüssen und lässt sich je nach Ausführung zu Röcken, Hosen sowie Kostüm-, Party-, Gothic- oder festlichen Looks kombinieren.", "file": "", "sequence": false },
+    "AS": { "value": "", "file": "yass_de_fitnesstop.txt", "sequence": false }
   },
   "yass_fr_fitnesstop": {
     "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
