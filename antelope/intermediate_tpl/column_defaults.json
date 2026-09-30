@@ -108,16 +108,16 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Pst-0001", "file": "", "sequence": true },
-    "T":  { "value": "Halloween-Kostüm für Herren", "file": "", "sequence": false },
-    "AN": { "value": "Dieses ausdrucksvolle Herrenmodell verbindet morbiden Halloween-Charme mit facettenreichen Retro- und Cosplay-Elementen. Konzipiert für Themenpartys und markante Bühnenauftritte sorgt die detailstarke Verarbeitung für einen stilsicheren Look mit angenehmem Tragegefühl.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_halloween_coat.txt", "sequence": false }
+    "S":  { "value": "Drb-0001", "file": "", "sequence": true },
+    "T":  { "value": "Trachten Herren Weste", "file": "", "sequence": false },
+    "AN": { "value": "Diese Herrenweste ergänzt unterschiedliche Garderoben mit einer vielseitig kombinierbaren, ärmellosen Gestaltung und eignet sich je nach Modell für Alltag, Freizeit, Beruf, Veranstaltungen oder saisonale Anlässe, wobei sie mit verschiedenen Oberteilen und Hosen getragen werden kann.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_vest.txt", "sequence": false }
   },
   "yass_fr_coat": {
-    "S":  { "value": "Agpt-0001", "file": "", "sequence": true },
-    "T":  { "value": "Veste en maille pour femme", "file": "", "sequence": false },
-    "AN": { "value": "Cette veste femme à l’allure de blazer associe une coupe décontractée à des empiècements contrastants et des détails variables selon le modèle, comme une texture en grosse maille, un effet denim ou une fermeture boutonnée, pour accompagner les tenues de ville, de bureau et de loisirs.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
+    "S":  { "value": "Drb-0001", "file": "", "sequence": true },
+    "T":  { "value": "Costume d'Halloween pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce modèle pour homme très expressif allie le charme morbide d'Halloween à des éléments rétro et de cosplay aux multiples facettes. Conçu pour les soirées à thème et les apparitions scéniques marquantes, sa finition soignée dans les moindres détails garantit un look élégant et un confort optimal.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_halloween_coat.txt", "sequence": false }
   },
 
 
