@@ -84,7 +84,7 @@
   "yass_fr_tracksuit": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BB","EL"] }
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EL"] }
   },
   "yass_fr_sweatshirt": {
     "set_values":   { "D": "Parent" },

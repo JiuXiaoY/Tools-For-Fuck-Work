@@ -55,14 +55,14 @@
 
 
   "yass_de_tracksuit": {
-    "Q":  { "value": "", "file": "", "sequence": false },
-    "AK": { "value": "", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "", "sequence": false }
+    "Q":  { "value": "Sportliche Outfits für Herren", "file": "", "sequence": false },
+    "AK": { "value": "Dieses Herren-Set verbindet ein abgestimmtes Oberteil mit einer passenden Hose zu einem vielseitigen Gesamtlook, der sich je nach Ausführung für Alltag, Freizeit, Reisen, sportliche Aktivitäten, Feiern oder weitere saisonale Anlässe kombinieren lässt.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_tracksuit.txt", "sequence": false }
   },
   "yass_fr_tracksuit": {
-    "Q":  { "value": "", "file": "", "sequence": false },
-    "AK": { "value": "", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "", "sequence": false }
+    "Q":  { "value": "Ensemble de sport tendance pour homme", "file": "", "sequence": false },
+    "AK": { "value": "Cet ensemble pour homme associe un haut coordonné à un pantalon assorti pour créer une tenue polyvalente qui, selon le modèle, peut accompagner le quotidien, les loisirs, les voyages, les activités sportives, les fêtes ou diverses occasions saisonnières.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_tracksuit.txt", "sequence": false }
   },
 
 

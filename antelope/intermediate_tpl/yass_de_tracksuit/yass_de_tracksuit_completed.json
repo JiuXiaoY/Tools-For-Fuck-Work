@@ -2267,6 +2267,21 @@
       "reserve_mark": null
     },
     {
+      "col": 212,
+      "header": "Sind Batterien erforderlich?",
+      "attribute": "batteries_required[marketplace_id=A1PA6795UKMFR9]#1.value",
+      "matched": true,
+      "field": "Sind Batterien erforderlich? - [ TRACK_SUIT ]",
+      "choices": [
+        "Ja",
+        "Nein"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
       "col": 227,
       "header": "Gefahrgutvorschriften",
       "attribute": "supplier_declared_dg_hz_regulation[marketplace_id=A1PA6795UKMFR9]#1.value",
@@ -2325,7 +2340,7 @@
     }
   ],
   "stats": {
-    "total": 76,
-    "matched": 42
+    "total": 77,
+    "matched": 43
   }
 }

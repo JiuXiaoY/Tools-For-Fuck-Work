@@ -12,7 +12,7 @@ from PIL import Image
 CONTENT = "contains-synthetic-performer"
 PROJECT_DIR = Path(__file__).resolve().parents[2]
 # 只需修改这一行；相对于 dealExcel_refactoring 项目根目录。
-TARGET_DIR = PROJECT_DIR / "nineTools/A_Plus/mirusen_de_20260928/output_v2_editorial"
+TARGET_DIR = PROJECT_DIR / "nineTools/A_Plus/qbyczda_de_20260930/v2_editorial/mobile_600x450"
 XP_COMMENT = 0x9C9C
 XP_KEYWORDS = 0x9C9E
 

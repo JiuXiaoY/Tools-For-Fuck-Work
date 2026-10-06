@@ -9,10 +9,10 @@
     "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\yass_de_tracksuit\\yass_de_tracksuit_blank.json"
   },
   "summary": {
-    "completed_total": 76,
+    "completed_total": 77,
     "blank_total": 38,
     "only_in_completed": 39,
-    "only_in_blank": 1,
+    "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
   },
@@ -253,14 +253,7 @@
         "matched": false
       }
     ],
-    "only_in_blank": [
-      {
-        "col": 212,
-        "header": "Sind Batterien erforderlich?",
-        "attribute": "batteries_required[marketplace_id=A1PA6795UKMFR9]#1.value",
-        "matched": true
-      }
-    ]
+    "only_in_blank": []
   },
   "by_attribute": {
     "only_in_completed": [
@@ -499,13 +492,6 @@
         "matched": true
       }
     ],
-    "only_in_blank": [
-      {
-        "col": 212,
-        "header": "Sind Batterien erforderlich?",
-        "attribute": "batteries_required[marketplace_id=A1PA6795UKMFR9]#1.value",
-        "matched": true
-      }
-    ]
+    "only_in_blank": []
   }
 }
