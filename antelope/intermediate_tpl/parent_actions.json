@@ -18,11 +18,6 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","GZ"] }
   },
-  "addr_fr_tops": {
-    "set_values":   { "D": "Parent" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BJ","FQ"] }
-  },
   "addr_de_tracksuit": {
     "set_values":   { "D": "Eltern" },
     "row_fill":     { "color": "FFFF00", "columns": null },
@@ -40,70 +35,81 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FR"] }
   },
-  "yass_de_pants": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","FR"] }
-  },
-  "yass_de_tracksuit": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EM"] }
-  },
-  "yass_de_sweatshirt": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","AX","AY","BB","BC","EV"] }
-  },
-  "yass_de_sweater": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EM"] }
-  },
-  "yass_de_fitnesstop": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","W","X","Y","Z","AA","AB","AC","AD","AE","FC"] }
-  },
-  "yass_de_top": {
-    "set_values":   { "D": "Eltern" },
-    "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FV"] }
-  },
-
   "yass_fr_coat": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FQ"] }
   },
+
+
+  "yass_de_pants": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","FR"] }
+  },
   "yass_fr_pants": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BJ","FQ"] }
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","FQ"] }
+  },
+
+
+  "yass_de_tracksuit": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EM"] }
   },
   "yass_fr_tracksuit": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EL"] }
   },
+
+
+  "yass_de_sweatshirt": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","AX","AY","BB","BC","EV"] }
+  },
   "yass_fr_sweatshirt": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","AX","AY","BB","BC","EU"] }
   },
-  "yass_fr_top": {
-    "set_values":   { "D": "Parent" },
+
+
+  "yass_de_sweater": {
+    "set_values":   { "D": "Eltern" },
     "row_fill":     { "color": "FFFF00", "columns": null },
-    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FU"] }
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EM"] }
   },
   "yass_fr_sweater": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EL"] }
   },
+
+
+  "yass_de_fitnesstop": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","W","X","Y","Z","AA","AB","AC","AD","AE","FC"] }
+  },
   "yass_fr_fitnesstop": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","EJ"] }
+  },
+
+
+  "yass_de_top": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FV"] }
+  },
+  "yass_fr_top": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FU"] }
   }
 }

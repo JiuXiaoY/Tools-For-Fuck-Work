@@ -14,6 +14,7 @@ Usage:
 
 from __future__ import annotations
 
+import argparse
 import sys
 import time
 from concurrent.futures import Future, ThreadPoolExecutor
@@ -250,6 +251,14 @@ def extract_last_response(page, previous_text: str = "", timeout: int = 180) -> 
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="DeepSeek title optimization")
+    parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Keep successful lines in optimize_title and process only [FAILED] lines",
+    )
+    args = parser.parse_args()
+
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -264,9 +273,32 @@ def main() -> None:
         _log.error("Mismatch: %d links vs %d titles", len(links), len(titles))
         return
 
-    results: list[str] = []
-    success = 0
-    errors = 0
+    if args.retry_failed:
+        results = load_lines(OPTIMIZE_TITLE)
+        if len(results) != len(links):
+            _log.error(
+                "Cannot resume: %s has %d lines, expected %d",
+                OPTIMIZE_TITLE.name,
+                len(results),
+                len(links),
+            )
+            return
+        retry_indices = [i for i, value in enumerate(results) if value == "[FAILED]"]
+        if not retry_indices:
+            _log.info("No [FAILED] lines found; nothing to retry")
+            return
+        work_items = [(i, links[i], titles[i]) for i in retry_indices]
+        errors = len(retry_indices)
+        _log.info(
+            "Resume mode: preserving %d successful lines; retrying %d failed lines",
+            len(links) - errors,
+            errors,
+        )
+    else:
+        results = [""] * len(links)
+        work_items = [(i, url, title) for i, (url, title) in enumerate(zip(links, titles))]
+        errors = 0
+
     failed_items: list[tuple[int, str, str]] = []  # (index, url, title)
 
     _log.info("Opening DeepSeek web (%d titles)...", len(links))
@@ -313,8 +345,9 @@ def main() -> None:
         executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="img-dl")
         prefetch: Future | None = None  # future for the CURRENT item, submitted last round
 
-        for i, (url, title) in enumerate(zip(links, titles), 1):
-            _log.info("[%d/%d] %s", i, len(links), title[:60])
+        for work_pos, (idx, url, title) in enumerate(work_items):
+            item_number = idx + 1
+            _log.info("[%d/%d] %s", item_number, len(links), title[:60])
 
             try:
                 # This item's image was already prefetched during the previous
@@ -322,13 +355,20 @@ def main() -> None:
                 if prefetch is not None:
                     img_path = prefetch.result()
                 else:
-                    img_path = download_image(i, url)
+                    img_path = download_image(item_number, url)
                 _log.info("  Downloaded: %s", img_path.name)
 
                 # Pre-download the NEXT image while this item is being processed
-                if i < len(links):
-                    prefetch = executor.submit(download_image, i + 1, links[i])
-                    _log.info("  Prefetching next image (%d/%d)", i + 1, len(links))
+                if work_pos + 1 < len(work_items):
+                    next_idx, next_url, _ = work_items[work_pos + 1]
+                    prefetch = executor.submit(download_image, next_idx + 1, next_url)
+                    _log.info(
+                        "  Prefetching next image (%d/%d)",
+                        next_idx + 1,
+                        len(links),
+                    )
+                else:
+                    prefetch = None
 
                 # New chat — click "New Chat" button
                 new_chat_btn = page.locator("text=New Chat").first
@@ -363,15 +403,20 @@ def main() -> None:
 
                 # Wait for response to finish and extract last assistant message
                 response_text = extract_last_response(page, previous_text=prev_text)
-                results.append(response_text)
+                was_failed = results[idx] == "[FAILED]"
+                results[idx] = response_text
+                if was_failed:
+                    errors -= 1
+                if args.retry_failed:
+                    OPTIMIZE_TITLE.write_text("\n".join(results), encoding="utf-8")
                 _log.info("  Response: %s", response_text[:80])
-                success += 1
 
             except Exception as exc:
                 _log.error("  FAILED: %s", exc)
-                results.append("[FAILED]")
-                failed_items.append((i - 1, url, title))
-                errors += 1
+                if results[idx] != "[FAILED]":
+                    errors += 1
+                results[idx] = "[FAILED]"
+                failed_items.append((idx, url, title))
                 prefetch = None  # no prefetched image for next item — fall back to sync download
 
             finally:
@@ -381,7 +426,7 @@ def main() -> None:
                     _log.info("  Deleted: %s", img_path.name)
 
             # Brief pause between requests
-            if i < len(links):
+            if work_pos + 1 < len(work_items):
                 time.sleep(5)
 
         executor.shutdown(wait=True)
@@ -428,6 +473,8 @@ def main() -> None:
                     response_text = extract_last_response(page, previous_text=prev_text)
                     results[idx] = response_text
                     errors -= 1
+                    if args.retry_failed:
+                        OPTIMIZE_TITLE.write_text("\n".join(results), encoding="utf-8")
                     _log.info("    OK: %s", response_text[:80])
 
                 except Exception as exc:

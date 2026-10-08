@@ -450,22 +450,6 @@
       "reserve_mark": null
     },
     {
-      "col": 87,
-      "header": "Style de taille",
-      "attribute": "rise[marketplace_id=A13V1IB3VIYZZH]#1.style[language_tag=fr_FR]#1.value",
-      "matched": true,
-      "field": "Style de taille - [ PANTS ]",
-      "choices": [
-        "Taille basse",
-        "Taille mi-haute",
-        "Taille haute"
-      ],
-      "truncated": false,
-      "samples": [],
-      "reserve_flag": null,
-      "reserve_mark": null
-    },
-    {
       "col": 134,
       "header": "Unité de poids de l’article",
       "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.unit",
@@ -925,7 +909,7 @@
     }
   ],
   "stats": {
-    "total": 35,
-    "matched": 27
+    "total": 34,
+    "matched": 26
   }
 }

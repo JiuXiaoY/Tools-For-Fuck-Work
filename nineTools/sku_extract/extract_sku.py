@@ -26,8 +26,8 @@ import os
 import sys
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_INPUT = os.path.join(BASE, "../../../Means_of_production/Product_delete/9.3/SKU2")
-DEFAULT_OUTPUT = os.path.join(BASE, "result1.txt")
+DEFAULT_INPUT = os.path.join(BASE, "../../../Means_of_production/Product_delete/10.2/SKU2")
+DEFAULT_OUTPUT = os.path.join(BASE, "result.txt")
 
 
 def extract_skus(text):
