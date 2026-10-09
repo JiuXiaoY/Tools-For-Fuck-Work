@@ -148,3 +148,1475 @@ Traceback (most recent call last):
 KeyboardInterrupt
 ================= run_all.py END 【2026-10-09 10:10:30】 【总用时 1:11.391】 ==================
 
+
+======================== run_all.py START 【2026-10-09 15:28:39】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_dress
+
+▶ ① 模板解析 B → blank.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 15:28:39】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_blank.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_blank.json
+│   📊 表头 36 列，其中 25 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 15:28:39】 【总用时 0.224 秒】
+
+✅ ① 模板解析 B → blank.json OK
+
+▶ ② 模板解析 C → completed.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 15:28:40】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_completed.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_completed.json
+│   📊 表头 79 列，其中 43 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 15:28:40】 【总用时 0.230 秒】
+
+✅ ② 模板解析 C → completed.json OK
+
+▶ ③ 列差异（C − B）→ column_diff.json
+
+│   ┌─ 子程序 column_diff.py START 【2026-10-09 15:28:40】
+│   ✅ 列差异：C(completed) 79 列 vs B(blank) 36 列
+│      C−B 待填列 43 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 69, 70, 75, 76, 77, 91, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      B−C 多余列 0 列: []
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_column_diff.json
+│   └─ 子程序 column_diff.py END 【2026-10-09 15:28:40】 【总用时 0.005 秒】
+
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 15:28:41】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 15:28:41】 【总用时 0.664 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 15:28:41】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 15:28:42】 【总用时 0.789 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 15:28:43】
+│   ✅ M 占位生成：1938 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 15:28:43】 【总用时 0.072 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 15:28:43】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (75, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Kragenform（22 个可选值）
+│      52: Lifestyle（12 个可选值）
+│      53: Stil（35 个可选值）
+│      54: Abteilungsname（9 个可选值）
+│      55: Geschlecht（3 个可选值）
+│      56: Altersgruppe (Beschreibung)（4 个可选值）
+│      69: Artikeltyp – Name（16 个可选值）
+│      70: Trägerart（4 个可选值）
+│      77: Beschreibung der Artikellänge（13 个可选值）
+│      91: Webart（9 个可选值）
+│      126: Halsausschnitt（31 个可选值）
+│      139: Bekleidungs-Silhouette（12 个可选值）
+│      140: Beschreibung der Ärmellänge（6 个可选值）
+│      141: Ärmelart（22 个可选值）
+│      143: Verschlussart（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/11：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 1/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 2/11：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 2/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 3/11：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 3/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 4/11：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 4/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 5/11：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 5/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 6/11：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 6/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 7/11：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 7/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 8/11：产品 71~80（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 8/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 9/11：产品 81~90（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 9/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 10/11：产品 91~100（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 10/11（网页询问）：写入 150 个「组×列」，占位 0
+│   --- 批次 11/11：产品 101~102（共 2 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 11/11（网页询问）：写入 30 个「组×列」，占位 0
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+│   ✅ 校验通过：15 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 15:38:33】 【总用时 9:50.108】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-10-09 15:38:34】
+│   ✅ M 数据合并：1938 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列S(19) (Modellnummer) ← 指定值(序列) 'Tzn-0001'→'Tzn-3118' 填 3118 行 [首=Tzn-0001 末=Tzn-3118]
+│   ✅ 列T(20) (Modellname) ← 指定值 'Halloween-Kleid' 填 3118 行 [首=Halloween-Kleid 末=Halloween-Kleid]
+│   ⚠️ 列AN(40) (Beschreibung des Produkts) 未配置 → 保留占位 dataTemp（3118 格将写入产出）
+│   ✅ 列AT(46) (Suchbegriffe) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_de_hall_dress.txt（50 行） 填 3118 行 [首=halloween hexenkleid damen i… 末=killer clown kostüm damen mi…]
+│   📌 目标列 4 个：已配置 3 / 未配置 1 / 跳过 0（数据 3118 行、102 组，组区间连续）
+│   ✅ 有可选值列校验通过（15 列无占位残留）: [17, 52, 53, 54, 55, 56, 69, 70, 77, 91, 126, 139, 140, 141, 143]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json
+│      col_scope 43 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 69, 70, 75, 76, 77, 91, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      groups 102 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\dress_template_Eva.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-10-09 15:38:34】 【总用时 0.262 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-10-09 15:38:35】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+│   [warn] 列 8 不在 col_scope 内(组 group_1), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_2), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_3), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_4), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_5), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_6), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_7), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_8), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_9), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_10), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_11), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_12), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_13), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_14), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_15), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_16), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_17), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_18), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_19), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_20), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_21), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_22), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_23), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_24), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_25), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_26), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_27), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_28), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_29), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_30), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_31), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_32), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_33), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_34), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_35), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_36), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_37), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_38), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_39), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_40), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_41), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_42), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_43), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_44), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_45), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_46), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_47), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_48), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_49), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_50), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_51), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_52), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_53), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_54), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_55), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_56), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_57), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_58), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_59), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_60), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_61), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_62), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_63), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_64), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_65), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_66), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_67), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_68), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_69), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_70), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_71), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_72), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_73), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_74), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_75), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_76), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_77), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_78), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_79), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_80), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_81), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_82), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_83), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_84), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_85), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_86), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_87), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_88), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_89), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_90), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_91), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_92), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_93), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_94), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_95), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_96), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_97), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_98), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_99), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_100), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_101), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_102), 跳过不填。
+│   🧹 已删除模板多余行: 第 3125 行至第 4000 行 (共整行删除 876 行)
+│   🧹 父体行清值：102 行 × 15 列（1530 格，其中原本有值的 1530 格已清空）
+│   ✏️ 父体行改值：102 行 × 1 列（102 格；其中原本有值的 102 格被覆盖）→ D='Eltern'
+│   🎨 父体行底色（静态填充）：102 行 × 354 列（36108 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+│   📊 共填写 134044 个单元格，保留至第 3124 行
+│   ⚠️ 102 个「组×列」不在 col_scope 内已跳过: [('group_1', 8), ('group_2', 8), ('group_3', 8), ('group_4', 8), ('group_5', 8)] ...
+│   └─ 子程序 fill_from_plan.py END 【2026-10-09 15:38:39】 【总用时 4.875 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+================= run_all.py END 【2026-10-09 15:38:40】 【总用时 10:00.988】 =================
+
+
+======================== run_all.py START 【2026-10-09 15:43:18】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_dress
+✅ ① 模板解析 B → blank.json 跳过：yass_de_dress_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_de_dress_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_de_dress_column_diff.json 已是最新（模板未变，复用缓存）
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 15:43:18】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 15:43:19】 【总用时 0.634 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 15:43:19】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 15:43:19】 【总用时 0.658 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 15:43:20】
+│   ✅ M 占位生成：1938 个「组×列」（占位 dataTemp；col_scope 43 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 15:43:20】 【总用时 0.058 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 15:43:20】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (75, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Kragenform（22 个可选值）
+│      52: Lifestyle（12 个可选值）
+│      53: Stil（35 个可选值）
+│      54: Abteilungsname（9 个可选值）
+│      55: Geschlecht（3 个可选值）
+│      56: Altersgruppe (Beschreibung)（4 个可选值）
+│      69: Artikeltyp – Name（16 个可选值）
+│      70: Trägerart（4 个可选值）
+│      77: Beschreibung der Artikellänge（13 个可选值）
+│      91: Webart（9 个可选值）
+│      126: Halsausschnitt（31 个可选值）
+│      139: Bekleidungs-Silhouette（12 个可选值）
+│      140: Beschreibung der Ärmellänge（6 个可选值）
+│      141: Ärmelart（22 个可选值）
+│      143: Verschlussart（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ✅ groups.json 未变：已有回答全部复用（个别批次缺回答则再询问）
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   ✅ 批次 1/11（复用 attributes_batch01_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   ✅ 批次 2/11（复用 attributes_batch02_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   ✅ 批次 3/11（复用 attributes_batch03_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   ✅ 批次 4/11（复用 attributes_batch04_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   ✅ 批次 5/11（复用 attributes_batch05_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   ✅ 批次 6/11（复用 attributes_batch06_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   ✅ 批次 7/11（复用 attributes_batch07_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│   ✅ 批次 8/11（复用 attributes_batch08_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│   ✅ 批次 9/11（复用 attributes_batch09_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│   ✅ 批次 10/11（复用 attributes_batch10_result.txt）：写入 150 个「组×列」，占位 0
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│   ✅ 批次 11/11（复用 attributes_batch11_result.txt）：写入 30 个「组×列」，占位 0
+│   所有批次均已有回答结果，无需打开网页。
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+│   ✅ 校验通过：15 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 15:43:47】 【总用时 26.902 秒】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-10-09 15:43:47】
+│   ✅ M 数据合并：1938 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列S(19) (Modellnummer) ← 指定值(序列) 'Tzn-0001'→'Tzn-3118' 填 3118 行 [首=Tzn-0001 末=Tzn-3118]
+│   ✅ 列T(20) (Modellname) ← 指定值 'Halloween-Kleid' 填 3118 行 [首=Halloween-Kleid 末=Halloween-Kleid]
+│   ✅ 列AN(40) (Beschreibung des Produkts) ← 指定值 'Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.' 填 3118 行 [首=Dieses Kostüm eignet sich fü… 末=Dieses Kostüm eignet sich fü…]
+│   ✅ 列AT(46) (Suchbegriffe) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_de_hall_dress.txt（50 行） 填 3118 行 [首=halloween hexenkleid damen i… 末=killer clown kostüm damen mi…]
+│   📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 3118 行、102 组，组区间连续）
+│   ✅ 有可选值列校验通过（15 列无占位残留）: [17, 52, 53, 54, 55, 56, 69, 70, 77, 91, 126, 139, 140, 141, 143]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json
+│      col_scope 43 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 69, 70, 75, 76, 77, 91, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      groups 102 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\dress_template_Eva.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-10-09 15:43:48】 【总用时 0.259 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-10-09 15:43:48】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_de_dress_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+│   [warn] 列 8 不在 col_scope 内(组 group_1), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_2), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_3), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_4), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_5), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_6), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_7), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_8), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_9), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_10), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_11), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_12), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_13), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_14), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_15), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_16), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_17), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_18), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_19), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_20), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_21), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_22), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_23), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_24), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_25), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_26), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_27), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_28), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_29), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_30), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_31), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_32), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_33), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_34), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_35), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_36), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_37), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_38), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_39), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_40), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_41), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_42), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_43), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_44), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_45), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_46), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_47), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_48), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_49), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_50), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_51), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_52), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_53), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_54), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_55), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_56), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_57), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_58), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_59), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_60), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_61), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_62), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_63), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_64), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_65), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_66), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_67), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_68), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_69), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_70), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_71), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_72), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_73), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_74), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_75), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_76), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_77), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_78), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_79), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_80), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_81), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_82), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_83), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_84), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_85), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_86), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_87), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_88), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_89), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_90), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_91), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_92), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_93), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_94), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_95), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_96), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_97), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_98), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_99), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_100), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_101), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_102), 跳过不填。
+│   🧹 已删除模板多余行: 第 3125 行至第 4000 行 (共整行删除 876 行)
+│   🧹 父体行清值：102 行 × 15 列（1530 格，其中原本有值的 1530 格已清空）
+│   ✏️ 父体行改值：102 行 × 1 列（102 格；其中原本有值的 102 格被覆盖）→ D='Eltern'
+│   🎨 父体行底色（静态填充）：102 行 × 354 列（36108 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+│   📊 共填写 134044 个单元格，保留至第 3124 行
+│   ⚠️ 102 个「组×列」不在 col_scope 内已跳过: [('group_1', 8), ('group_2', 8), ('group_3', 8), ('group_4', 8), ('group_5', 8)] ...
+│   └─ 子程序 fill_from_plan.py END 【2026-10-09 15:43:54】 【总用时 5.675 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_de_dress_filled.xlsm
+================= run_all.py END 【2026-10-09 15:43:54】 【总用时 36.280 秒】 ==================
+
+
+======================== run_all.py START 【2026-10-09 15:56:39】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_de_dress
+
+▶ ① 模板解析 B → blank.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 15:56:40】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_blank.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_blank.json
+│   📊 表头 36 列，其中 24 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 15:56:40】 【总用时 0.185 秒】
+
+✅ ① 模板解析 B → blank.json OK
+
+▶ ② 模板解析 C → completed.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 15:56:40】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_completed.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_completed.json
+│   📊 表头 82 列，其中 45 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 15:56:41】 【总用时 0.194 秒】
+
+✅ ② 模板解析 C → completed.json OK
+
+▶ ③ 列差异（C − B）→ column_diff.json
+
+│   ┌─ 子程序 column_diff.py START 【2026-10-09 15:56:41】
+│   ✅ 列差异：C(completed) 82 列 vs B(blank) 36 列
+│      C−B 待填列 46 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 67, 69, 70, 75, 76, 77, 78, 91, 121, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      B−C 多余列 0 列: []
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_de_dress\yass_de_dress_column_diff.json
+│   └─ 子程序 column_diff.py END 【2026-10-09 15:56:41】 【总用时 0.003 秒】
+
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 15:56:41】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 15:56:42】 【总用时 0.629 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 15:56:42】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\yass_de_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 15:56:43】 【总用时 0.796 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 15:56:43】
+│   ✅ M 占位生成：2244 个「组×列」（占位 dataTemp；col_scope 46 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 15:56:43】 【总用时 0.072 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 15:56:44】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (75, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Kragenform（22 个可选值）
+│      52: Lifestyle（12 个可选值）
+│      53: Stil（35 个可选值）
+│      54: Abteilungsname（9 个可选值）
+│      55: Geschlecht（3 个可选值）
+│      56: Altersgruppe (Beschreibung)（4 个可选值）
+│      67: Beschreibung des Futters（12 个可选值）
+│      69: Artikeltyp – Name（16 个可选值）
+│      70: Trägerart（4 个可选值）
+│      77: Beschreibung der Artikellänge（13 个可选值）
+│      78: Gelegenheit & Anlass（29 个可选值）
+│      91: Webart（9 个可选值）
+│      121: Verzierungsmerkmal（16 个可选值）
+│      126: Halsausschnitt（31 个可选值）
+│      139: Bekleidungs-Silhouette（12 个可选值）
+│      140: Beschreibung der Ärmellänge（6 个可选值）
+│      141: Ärmelart（22 个可选值）
+│      143: Verschlussart（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ✅ groups.json 未变：已有回答全部复用（个别批次缺回答则再询问）
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 1/11（复用 attributes_batch01_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 2/11（复用 attributes_batch02_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 3/11（复用 attributes_batch03_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 4/11（复用 attributes_batch04_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 5/11（复用 attributes_batch05_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 6/11（复用 attributes_batch06_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 7/11（复用 attributes_batch07_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 8/11（复用 attributes_batch08_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 9/11（复用 attributes_batch09_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 10/11（复用 attributes_batch10_result.txt）：写入 150 个「组×列」，占位 30
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│     ⚠️ 本批列 ['67(Beschreibung des Futters)', '78(Gelegenheit & Anlass)', '121(Verzierungsmerkmal)'] 未解析到任何值，将保持占位（请检查对应块头）
+│   ✅ 批次 11/11（复用 attributes_batch11_result.txt）：写入 30 个「组×列」，占位 6
+│   所有批次均已有回答结果，无需打开网页。
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_de_dress\.xlsx_dataSource_m.json
+
+│   ============================================================
+│   ❌ 有可选值列仍残留占位：3 列 / 共 306 个「组×列」——不允许产出，流程中止。
+│   ============================================================
+│      列BO(67) (Beschreibung des Futters): 102 组仍占位
+│         组序号 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]...   → 需补批次: ['attributes_batch01_result.txt', 'attributes_batch02_result.txt', 'attributes_batch03_result.txt', 'attributes_batch04_result.txt', 'attributes_batch05_result.txt', 'attributes_batch06_result.txt', 'attributes_batch07_result.txt', 'attributes_batch08_result.txt', 'attributes_batch09_result.txt', 'attributes_batch10_result.txt', 'attributes_batch11_result.txt']
+│      列BZ(78) (Gelegenheit & Anlass): 102 组仍占位
+│         组序号 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]...   → 需补批次: ['attributes_batch01_result.txt', 'attributes_batch02_result.txt', 'attributes_batch03_result.txt', 'attributes_batch04_result.txt', 'attributes_batch05_result.txt', 'attributes_batch06_result.txt', 'attributes_batch07_result.txt', 'attributes_batch08_result.txt', 'attributes_batch09_result.txt', 'attributes_batch10_result.txt', 'attributes_batch11_result.txt']
+│      列DQ(121) (Verzierungsmerkmal): 102 组仍占位
+│         组序号 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]...   → 需补批次: ['attributes_batch01_result.txt', 'attributes_batch02_result.txt', 'attributes_batch03_result.txt', 'attributes_batch04_result.txt', 'attributes_batch05_result.txt', 'attributes_batch06_result.txt', 'attributes_batch07_result.txt', 'attributes_batch08_result.txt', 'attributes_batch09_result.txt', 'attributes_batch10_result.txt', 'attributes_batch11_result.txt']
+
+│   💡 修复：补齐上面列出的回答文件后重跑本程序（已存在的回答会被复用，不会重复问）；
+│      或删掉对应 _result.txt，让程序对该批重新发起网页询问。
+│   ⚠️ 在占位清零之前不要继续 ⑧（build_fill_framework.py 同样会报错中止）。
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 15:57:14】 【总用时 30.073 秒】
+
+❌ ⑦ AI 网页选值（有可选值列，弹浏览器） 失败（exit 2），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+================= run_all.py END 【2026-10-09 15:57:14】 【总用时 34.207 秒】 ==================
+
+
+======================== run_all.py START 【2026-10-09 16:01:29】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: addr_de_dress
+
+▶ ① 模板解析 B → blank.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 16:01:30】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_de_dress\addr_de_dress_blank.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_de_dress\addr_de_dress_blank.json
+│   📊 表头 36 列，其中 24 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 16:01:30】 【总用时 0.193 秒】
+
+✅ ① 模板解析 B → blank.json OK
+
+▶ ② 模板解析 C → completed.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 16:01:30】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_de_dress\addr_de_dress_completed.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_de_dress\addr_de_dress_completed.json
+│   📊 表头 82 列，其中 45 列在 Gültige Werte 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 16:01:30】 【总用时 0.226 秒】
+
+✅ ② 模板解析 C → completed.json OK
+
+▶ ③ 列差异（C − B）→ column_diff.json
+
+│   ┌─ 子程序 column_diff.py START 【2026-10-09 16:01:31】
+│   ✅ 列差异：C(completed) 82 列 vs B(blank) 36 列
+│      C−B 待填列 46 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 67, 69, 70, 75, 76, 77, 78, 91, 121, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      B−C 多余列 0 列: []
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\addr_de_dress\addr_de_dress_column_diff.json
+│   └─ 子程序 column_diff.py END 【2026-10-09 16:01:31】 【总用时 0.003 秒】
+
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 16:01:31】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\addr_de_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 16:01:32】 【总用时 0.670 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 16:01:32】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\addr_de_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 16:01:33】 【总用时 0.699 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 16:01:33】
+│   ✅ M 占位生成：2244 个「组×列」（占位 dataTemp；col_scope 46 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 16:01:33】 【总用时 0.065 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 16:01:33】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (75, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Kragenform（22 个可选值）
+│      52: Lifestyle（12 个可选值）
+│      53: Stil（35 个可选值）
+│      54: Abteilungsname（9 个可选值）
+│      55: Geschlecht（3 个可选值）
+│      56: Altersgruppe (Beschreibung)（4 个可选值）
+│      67: Beschreibung des Futters（12 个可选值）
+│      69: Artikeltyp – Name（16 个可选值）
+│      70: Trägerart（4 个可选值）
+│      77: Beschreibung der Artikellänge（13 个可选值）
+│      78: Gelegenheit & Anlass（29 个可选值）
+│      91: Webart（9 个可选值）
+│      121: Verzierungsmerkmal（16 个可选值）
+│      126: Halsausschnitt（31 个可选值）
+│      139: Bekleidungs-Silhouette（12 个可选值）
+│      140: Beschreibung der Ärmellänge（6 个可选值）
+│      141: Ärmelart（22 个可选值）
+│      143: Verschlussart（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/11：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 1/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 2/11：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 2/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 3/11：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 3/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 4/11：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 4/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 5/11：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 5/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 6/11：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 6/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 7/11：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 7/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 8/11：产品 71~80（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   错误: No new assistant response found
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 16:14:16】 【总用时 12:42.506】
+
+❌ ⑦ AI 网页选值（有可选值列，弹浏览器） 失败（exit 1），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+================= run_all.py END 【2026-10-09 16:14:16】 【总用时 12:46.540】 =================
+
+
+======================== run_all.py START 【2026-10-09 16:43:20】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: addr_de_dress
+✅ ① 模板解析 B → blank.json 跳过：addr_de_dress_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：addr_de_dress_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：addr_de_dress_column_diff.json 已是最新（模板未变，复用缓存）
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 16:43:20】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\addr_de_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 16:43:21】 【总用时 0.659 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 16:43:21】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\addr_de_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 16:43:22】 【总用时 0.680 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 16:43:22】
+│   ✅ M 占位生成：2244 个「组×列」（占位 dataTemp；col_scope 46 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 16:43:22】 【总用时 0.064 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 16:43:22】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Bekleidungsgröße'), (75, 'Farbzuordnung'), (208, 'Ihr Preis EUR (Bei Amazon verkaufen, DE)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Kragenform（22 个可选值）
+│      52: Lifestyle（12 个可选值）
+│      53: Stil（35 个可选值）
+│      54: Abteilungsname（9 个可选值）
+│      55: Geschlecht（3 个可选值）
+│      56: Altersgruppe (Beschreibung)（4 个可选值）
+│      67: Beschreibung des Futters（12 个可选值）
+│      69: Artikeltyp – Name（16 个可选值）
+│      70: Trägerart（4 个可选值）
+│      77: Beschreibung der Artikellänge（13 个可选值）
+│      78: Gelegenheit & Anlass（29 个可选值）
+│      91: Webart（9 个可选值）
+│      121: Verzierungsmerkmal（16 个可选值）
+│      126: Halsausschnitt（31 个可选值）
+│      139: Bekleidungs-Silhouette（12 个可选值）
+│      140: Beschreibung der Ärmellänge（6 个可选值）
+│      141: Ärmelart（22 个可选值）
+│      143: Verschlussart（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/11：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 1/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 2/11：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 2/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 3/11：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 3/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 4/11：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 4/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 5/11：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 5/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 6/11：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 6/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 7/11：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 7/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 8/11：产品 71~80（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 8/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 9/11：产品 81~90（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 9/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 10/11：产品 91~100（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 10/11（网页询问）：写入 180 个「组×列」，占位 0
+│   --- 批次 11/11：产品 101~102（共 2 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 11/11（网页询问）：写入 36 个「组×列」，占位 0
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\.xlsx_dataSource_m.json
+│   ✅ 校验通过：18 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 16:53:22】 【总用时 9:59.142】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_dress_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-10-09 16:53:22】
+│   ✅ M 数据合并：2244 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列S(19) (Modellnummer) ← 指定值(序列) 'Tzn-0001'→'Tzn-3118' 填 3118 行 [首=Tzn-0001 末=Tzn-3118]
+│   ✅ 列T(20) (Modellname) ← 指定值 'Halloween-Kleid' 填 3118 行 [首=Halloween-Kleid 末=Halloween-Kleid]
+│   ✅ 列AN(40) (Beschreibung des Produkts) ← 指定值 'Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.' 填 3118 行 [首=Dieses Kostüm eignet sich fü… 末=Dieses Kostüm eignet sich fü…]
+│   ✅ 列AT(46) (Suchbegriffe) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_de_hall_dress.txt（50 行） 填 3118 行 [首=halloween hexenkleid damen i… 末=killer clown kostüm damen mi…]
+│   📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 3118 行、102 组，组区间连续）
+│   ✅ 有可选值列校验通过（18 列无占位残留）: [17, 52, 53, 54, 55, 56, 67, 69, 70, 77, 78, 91, 121, 126, 139, 140, 141, 143]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_dress_fill_framework.json
+│      col_scope 46 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 67, 69, 70, 75, 76, 77, 78, 91, 121, 126, 139, 140, 141, 143, 167, 177, 208, 246]
+│      groups 102 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\addr_de_dress\addr_de_dress_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\dress_template_damen.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-10-09 16:53:22】 【总用时 0.252 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_dress_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_dress_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-10-09 16:53:23】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\addr_de_dress_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_dress_filled.xlsm
+│   [warn] 列 8 不在 col_scope 内(组 group_1), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_2), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_3), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_4), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_5), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_6), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_7), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_8), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_9), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_10), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_11), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_12), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_13), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_14), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_15), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_16), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_17), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_18), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_19), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_20), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_21), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_22), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_23), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_24), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_25), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_26), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_27), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_28), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_29), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_30), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_31), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_32), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_33), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_34), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_35), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_36), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_37), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_38), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_39), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_40), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_41), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_42), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_43), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_44), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_45), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_46), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_47), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_48), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_49), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_50), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_51), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_52), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_53), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_54), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_55), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_56), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_57), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_58), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_59), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_60), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_61), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_62), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_63), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_64), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_65), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_66), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_67), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_68), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_69), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_70), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_71), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_72), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_73), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_74), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_75), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_76), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_77), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_78), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_79), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_80), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_81), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_82), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_83), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_84), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_85), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_86), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_87), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_88), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_89), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_90), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_91), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_92), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_93), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_94), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_95), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_96), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_97), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_98), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_99), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_100), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_101), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_102), 跳过不填。
+│   🧹 已删除模板多余行: 第 3125 行至第 4008 行 (共整行删除 884 行)
+│   🧹 父体行清值：102 行 × 15 列（1530 格，其中原本有值的 1530 格已清空）
+│   ✏️ 父体行改值：102 行 × 1 列（102 格；其中原本有值的 102 格被覆盖）→ D='Eltern'
+│   🎨 父体行底色（静态填充）：102 行 × 354 列（36108 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_dress_filled.xlsm
+│   📊 共填写 143392 个单元格，保留至第 3124 行
+│   ⚠️ 102 个「组×列」不在 col_scope 内已跳过: [('group_1', 8), ('group_2', 8), ('group_3', 8), ('group_4', 8), ('group_5', 8)] ...
+│   └─ 子程序 fill_from_plan.py END 【2026-10-09 16:53:28】 【总用时 5.281 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_dress_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\addr_de_dress_filled.xlsm
+================= run_all.py END 【2026-10-09 16:53:28】 【总用时 10:08.347】 =================
+
+
+======================== run_all.py START 【2026-10-09 18:30:57】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_fr_dress
+
+▶ ① 模板解析 B → blank.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 18:30:57】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_dress\yass_fr_dress_blank.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_dress\yass_fr_dress_blank.json
+│   📊 表头 36 列，其中 25 列在 Valeurs valides 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 18:30:57】 【总用时 0.364 秒】
+
+✅ ① 模板解析 B → blank.json OK
+
+▶ ② 模板解析 C → completed.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-09 18:30:58】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\complete.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_dress\yass_fr_dress_completed.json
+│   ✅ 已输出: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_dress\yass_fr_dress_completed.json
+│   📊 表头 80 列，其中 44 列在 Valeurs valides 中找到可选值（未修改原文件）
+│   └─ 子程序 analysisXlsm.py END 【2026-10-09 18:30:58】 【总用时 0.231 秒】
+
+✅ ② 模板解析 C → completed.json OK
+
+▶ ③ 列差异（C − B）→ column_diff.json
+
+│   ┌─ 子程序 column_diff.py START 【2026-10-09 18:30:58】
+│   ✅ 列差异：C(completed) 80 列 vs B(blank) 36 列
+│      C−B 待填列 44 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 69, 70, 75, 76, 77, 78, 91, 126, 139, 140, 141, 143, 167, 177, 207, 245]
+│      B−C 多余列 0 列: []
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_dress\yass_fr_dress_column_diff.json
+│   └─ 子程序 column_diff.py END 【2026-10-09 18:30:58】 【总用时 0.009 秒】
+
+✅ ③ 列差异（C − B）→ column_diff.json OK
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 18:30:59】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\yass_fr_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 18:30:59】 【总用时 0.670 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 18:31:00】
+│   Traceback (most recent call last):
+│     File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\build_data_from_excel.py", line 236, in <module>
+│       main()
+│       ~~~~^^
+│     File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\build_data_from_excel.py", line 224, in main
+│       json.dump(result, f, ensure_ascii=False, indent=2)
+│       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+│     File "D:\FW20260325\python\Lib\json\__init__.py", line 181, in dump
+│       for chunk in iterable:
+│                    ^^^^^^^^
+│     File "D:\FW20260325\python\Lib\json\encoder.py", line 435, in _iterencode
+│       yield from _iterencode_dict(o, _current_indent_level)
+│     File "D:\FW20260325\python\Lib\json\encoder.py", line 409, in _iterencode_dict
+│       yield from chunks
+│     File "D:\FW20260325\python\Lib\json\encoder.py", line 409, in _iterencode_dict
+│       yield from chunks
+│     File "D:\FW20260325\python\Lib\json\encoder.py", line 409, in _iterencode_dict
+│       yield from chunks
+│     File "D:\FW20260325\python\Lib\json\encoder.py", line 305, in _iterencode_list
+│       yield buf + _encoder(value)
+│                   ~~~~~~~~^^^^^^^
+│   KeyboardInterrupt
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 18:31:01】 【总用时 0.752 秒】
+
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 138, in <module>
+    main()
+    ~~~~^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 108, in main
+    run_step("⑤ A 取数（col_mapping）→ data.json", [py, "build_data_from_excel.py"])       # 数据层，每次重跑
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\run_all.py", line 48, in run_step
+    result = subprocess.run(cmd, cwd=BASE)
+  File "D:\FW20260325\python\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1214, in communicate
+    self.wait()
+    ~~~~~~~~~^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\FW20260325\python\Lib\subprocess.py", line 1606, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+KeyboardInterrupt
+================== run_all.py END 【2026-10-09 18:31:01】 【总用时 4.017 秒】 ==================
+
+
+======================== run_all.py START 【2026-10-09 18:31:06】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_fr_dress
+✅ ① 模板解析 B → blank.json 跳过：yass_fr_dress_blank.json 已是最新（模板未变，复用缓存）
+✅ ② 模板解析 C → completed.json 跳过：yass_fr_dress_completed.json 已是最新（模板未变，复用缓存）
+✅ ③ 列差异（C − B）→ column_diff.json 跳过：yass_fr_dress_column_diff.json 已是最新（模板未变，复用缓存）
+
+▶ ④ 分组（数据源 A 锚点）→ groups.json
+
+│   ┌─ 子程序 build_groups_from_excel.py START 【2026-10-09 18:31:06】
+│   ✅ 分组完成：102 个锚点 -> 102 组，共 3118 行（实际行号，无偏移）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\yass_fr_dress_groups.json
+│   └─ 子程序 build_groups_from_excel.py END 【2026-10-09 18:31:07】 【总用时 0.644 秒】
+
+✅ ④ 分组（数据源 A 锚点）→ groups.json OK
+
+▶ ⑤ A 取数（col_mapping）→ data.json
+
+│   ┌─ 子程序 build_data_from_excel.py START 【2026-10-09 18:31:07】
+│   ✅ 取数完成：102 组，共 2550 个「组×列」（源列 23 个）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\yass_fr_dress_data.json
+│   └─ 子程序 build_data_from_excel.py END 【2026-10-09 18:31:08】 【总用时 0.718 秒】
+
+✅ ⑤ A 取数（col_mapping）→ data.json OK
+
+▶ ⑥ M 占位生成 → .xlsx_dataSource_m.json
+
+│   ┌─ 子程序 build_m_data.py START 【2026-10-09 18:31:08】
+│   ✅ M 占位生成：2040 个「组×列」（占位 dataTemp；col_scope 44 列，A 已覆盖 25 列）
+│   📄 已写入: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\.xlsx_dataSource_m.json
+│   └─ 子程序 build_m_data.py END 【2026-10-09 18:31:08】 【总用时 0.066 秒】
+
+✅ ⑥ M 占位生成 → .xlsx_dataSource_m.json OK
+
+▶ ⑦ AI 网页选值（有可选值列，弹浏览器）
+
+│   ┌─ 子程序 ai_pick_attributes.py START 【2026-10-09 18:31:08】
+│   ℹ️ 有可选值但由 A 覆盖、不进 AI 的列（由 A 数据填充）: [(59, 'Taille du vêtement'), (75, 'Couleur dominante'), (207, 'Votre prix EUR (Vendez sur Amazon, FR)')]
+│   产品列表（数据源 A Sheet0 提取）：102 个
+│   🤖 AI 选值列（有可选值的未覆盖列，按批询问，每批 10 条）:
+│      17: Style de col（22 个可选值）
+│      52: Style de vie（12 个可选值）
+│      53: Style（35 个可选值）
+│      54: Nom de la boutique（9 个可选值）
+│      55: Sexe ciblé（3 个可选值）
+│      56: Description de la tranche d’âge（4 个可选值）
+│      69: Nom du type d’article（16 个可选值）
+│      70: Type de bretelles（4 个可选值）
+│      77: Description de la longueur de l’article（13 个可选值）
+│      78: Occasion（29 个可选值）
+│      91: Type de tissage（9 个可选值）
+│      126: Style de col（31 个可选值）
+│      139: Silhouette du vêtement（12 个可选值）
+│      140: Description de la longueur des manches（6 个可选值）
+│      141: Type de manches（22 个可选值）
+│      143: Type de fermeture（11 个可选值）
+│   产品共 102 个，按每批 10 个分为 11 批（最后一批 2 个）
+│   ⚠️ groups.json 已变或未记录指纹：旧回答全部作废，所有批次重新询问
+│   📄 提示词: attributes_batch01.txt（产品 1~10）
+│   📄 提示词: attributes_batch02.txt（产品 11~20）
+│   📄 提示词: attributes_batch03.txt（产品 21~30）
+│   📄 提示词: attributes_batch04.txt（产品 31~40）
+│   📄 提示词: attributes_batch05.txt（产品 41~50）
+│   📄 提示词: attributes_batch06.txt（产品 51~60）
+│   📄 提示词: attributes_batch07.txt（产品 61~70）
+│   📄 提示词: attributes_batch08.txt（产品 71~80）
+│   📄 提示词: attributes_batch09.txt（产品 81~90）
+│   📄 提示词: attributes_batch10.txt（产品 91~100）
+│   📄 提示词: attributes_batch11.txt（产品 101~102）
+│   已打开 https://chat.deepseek.com/
+│   复用登录态: .deepseek_state.json
+│   --- 批次 1/11：产品 1~10（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 1/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 2/11：产品 11~20（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 2/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 3/11：产品 21~30（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 3/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 4/11：产品 31~40（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 4/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 5/11：产品 41~50（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 5/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 6/11：产品 51~60（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 6/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 7/11：产品 61~70（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 7/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 8/11：产品 71~80（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 8/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 9/11：产品 81~90（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 9/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 10/11：产品 91~100（共 10 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 10/11（网页询问）：写入 160 个「组×列」，占位 0
+│   --- 批次 11/11：产品 101~102（共 2 个）---
+│   DeepSeek 对话页就绪
+│   已发送，等待 AI 回答...
+│   📄 回答已保存: attributes_batch11_result.txt
+│   ✅ 批次 11/11（网页询问）：写入 32 个「组×列」，占位 0
+
+│   M 数据源已更新: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\.xlsx_dataSource_m.json
+│   ✅ 校验通过：16 个有可选值列均无占位残留
+│   └─ 子程序 ai_pick_attributes.py END 【2026-10-09 18:41:01】 【总用时 9:53.006】
+
+✅ ⑦ AI 网页选值（有可选值列，弹浏览器） OK
+
+▶ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_dress_fill_framework.json
+
+│   ┌─ 子程序 build_fill_framework.py START 【2026-10-09 18:41:02】
+│   ✅ M 数据合并：2040 个「组×列」由 M 补充（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\.xlsx_dataSource_m.json）
+│   ⚠️ mode_customise 忽略无法识别的键 'addr_fr_tops'（请写列字母如 "AT"，或列号如 "46"）
+│   ⚠️ mode_customise 忽略无法识别的键 'yass_fr_coat'（请写列字母如 "AT"，或列号如 "46"）
+│   🎯 目标列（A 未覆盖 且 无可选值）4 个: [19, 20, 40, 46]（配置 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\column_defaults.json）
+│   ✅ 列S(19) (Numéro du modèle) ← 指定值(序列) 'Tzn-0001'→'Tzn-3118' 填 3118 行 [首=Tzn-0001 末=Tzn-3118]
+│   ✅ 列T(20) (Nom du modèle) ← 指定值 "Robe d'Halloween" 填 3118 行 [首=Robe d'Halloween 末=Robe d'Halloween]
+│   ✅ 列AN(40) (Description du produit) ← 指定值 'Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.' 填 3118 行 [首=Ce costume convient à Hallow… 末=Ce costume convient à Hallow…]
+│   ✅ 列AT(46) (Mots-clés de recherche) ← 文件 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\values\yass_fr_hall_dress.txt（50 行） 填 3118 行 [首=robe de sorcière femme en st… 末=costume clown tueur femme av…]
+│   📌 目标列 4 个：已配置 4 / 未配置 0 / 跳过 0（数据 3118 行、102 组，组区间连续）
+│   ✅ 有可选值列校验通过（16 列无占位残留）: [17, 52, 53, 54, 55, 56, 69, 70, 77, 78, 91, 126, 139, 140, 141, 143]
+│   ✅ plan 已生成: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_dress_fill_framework.json
+│      col_scope 44 列: [1, 5, 7, 17, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 32, 40, 41, 42, 43, 44, 45, 46, 52, 53, 54, 55, 56, 59, 69, 70, 75, 76, 77, 78, 91, 126, 139, 140, 141, 143, 167, 177, 207, 245]
+│      groups 102 组（来源 D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate\yass_fr_dress\yass_fr_dress_groups.json）
+│      template_file: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\dress_template_Eva.xlsm
+│   └─ 子程序 build_fill_framework.py END 【2026-10-09 18:41:02】 【总用时 0.474 秒】
+
+✅ ⑧ 生成 plan → D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_dress_fill_framework.json OK
+
+▶ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_dress_filled.xlsm
+
+│   ┌─ 子程序 fill_from_plan.py START 【2026-10-09 18:41:03】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\fill_plan\yass_fr_dress_fill_framework.json -o D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_dress_filled.xlsm
+│   [warn] 列 8 不在 col_scope 内(组 group_1), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_2), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_3), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_4), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_5), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_6), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_7), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_8), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_9), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_10), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_11), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_12), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_13), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_14), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_15), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_16), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_17), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_18), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_19), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_20), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_21), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_22), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_23), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_24), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_25), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_26), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_27), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_28), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_29), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_30), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_31), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_32), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_33), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_34), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_35), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_36), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_37), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_38), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_39), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_40), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_41), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_42), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_43), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_44), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_45), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_46), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_47), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_48), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_49), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_50), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_51), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_52), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_53), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_54), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_55), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_56), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_57), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_58), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_59), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_60), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_61), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_62), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_63), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_64), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_65), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_66), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_67), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_68), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_69), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_70), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_71), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_72), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_73), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_74), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_75), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_76), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_77), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_78), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_79), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_80), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_81), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_82), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_83), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_84), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_85), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_86), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_87), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_88), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_89), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_90), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_91), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_92), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_93), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_94), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_95), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_96), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_97), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_98), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_99), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_100), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_101), 跳过不填。
+│   [warn] 列 8 不在 col_scope 内(组 group_102), 跳过不填。
+│   🧹 已删除模板多余行: 第 3125 行至第 4007 行 (共整行删除 883 行)
+│   🧹 父体行清值：102 行 × 15 列（1530 格，其中原本有值的 1530 格已清空）
+│   ✏️ 父体行改值：102 行 × 1 列（102 格；其中原本有值的 102 格被覆盖）→ D='Parent'
+│   🎨 父体行底色（静态填充）：102 行 × 350 列（35700 格，色值 FFFFFF00）
+
+│   ✅ 已写出副本: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_dress_filled.xlsm
+│   📊 共填写 137160 个单元格，保留至第 3124 行
+│   ⚠️ 102 个「组×列」不在 col_scope 内已跳过: [('group_1', 8), ('group_2', 8), ('group_3', 8), ('group_4', 8), ('group_5', 8)] ...
+│   └─ 子程序 fill_from_plan.py END 【2026-10-09 18:41:10】 【总用时 6.787 秒】
+
+✅ ⑨ 填充模板副本 → D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_dress_filled.xlsm OK
+
+✅ 全流程完成
+   输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\yass_fr_dress_filled.xlsm
+================= run_all.py END 【2026-10-09 18:41:10】 【总用时 10:04.347】 =================
+

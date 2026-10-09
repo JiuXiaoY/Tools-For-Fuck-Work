@@ -21,11 +21,11 @@
     "AL": { "value": "Diese vielseitige Herrenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_de_pants.txt", "sequence": false }
   },
-  "addr_fr_tops": {
-    "S":  { "value": "", "file": "", "sequence": false },
-    "T":  { "value": "", "file": "", "sequence": false },
-    "AN": { "value": "", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "", "sequence": false }
+  "addr_de_dress": {
+    "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
+    "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
   },
   "addr_de_tracksuit": {
     "Q":  { "value": "R-0001", "file": "", "sequence": true },
@@ -130,5 +130,19 @@
     "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
     "AK": { "value": "Ce corset pour femme associe une coupe près du corps à des détails décoratifs tels que des coutures structurées, des laçages ou des fermetures métalliques et se combine, selon le modèle, avec une jupe ou un pantalon pour une fête, un costume, un style gothique ou une cérémonie.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_fr_fitnesstop.txt", "sequence": false }
+  },
+
+
+  "yass_de_dress": {
+    "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
+    "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
+  },
+  "yass_fr_dress": {
+    "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
+    "T":  { "value": "Robe d'Halloween", "file": "", "sequence": false },
+    "AN": { "value": "Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_hall_dress.txt", "sequence": false }
   }
 }

@@ -8,11 +8,11 @@ OUTPUT_DIR_NAME = "split_output"
 OVERWRITE_OUTPUT = True
 
 # 每个输出文件最多包含多少个完整分组。
-MAX_GROUPS_PER_FILE = 1
+MAX_GROUPS_PER_FILE = 20
 
 # 每个输出文件最多包含多少条数据行（不计算黄色起始行之前的表头）。
 # 单个分组本身超过此行数时，该分组仍会单独生成一个文件。
-MAX_DATA_ROWS_PER_FILE = 200
+MAX_DATA_ROWS_PER_FILE = 1000
 
 # Excel 中纯黄色 #FFFF00 对应的颜色值。
 YELLOW_COLOR = 65535

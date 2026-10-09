@@ -28,6 +28,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EM"] }
   },
+  "addr_de_dress": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GZ"] }
+  },
 
 
   "yass_de_coat": {
@@ -111,5 +116,17 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FU"] }
+  },
+
+
+  "yass_de_dress": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GZ"] }
+  },
+  "yass_fr_dress": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GY"] }
   }
 }
