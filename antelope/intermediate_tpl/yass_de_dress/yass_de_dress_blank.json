@@ -94,8 +94,11 @@
       "col": 9,
       "header": "Markenname",
       "attribute": "brand[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-      "matched": false,
-      "choices": [],
+      "matched": true,
+      "field": "Markenname - [ DRESS ]",
+      "choices": [
+        "YAPAZULU"
+      ],
       "truncated": false,
       "samples": [],
       "reserve_flag": null,
@@ -127,12 +130,21 @@
       "matched": true,
       "field": "Empfohlene Stöbern-Kategorie - [ DRESS ]",
       "choices": [
-        "Drogerie & Körperpflege > Erotik > Leder & Latex > Frauen > Kleider (11633347031)",
+        "Fashion > Damen > Bekleidung > Kleider (1981721031)",
         "Fashion > Damen > Bekleidung > Kleider > Cocktail (13633701031)",
-        "Fashion > Mädchen > Bekleidung > Kleider (1981246031)",
+        "Fashion > Damen > Bekleidung > Kleider > Brautkleider (1981570031)",
         "Fashion > Damen > Bekleidung > Kleider > Freizeit (13633700031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Mädchen > Dirndl & Dirndl-Sets (1981535031)",
         "Fashion > Damen > Bekleidung > Kleider > Party (13633702031)",
-        "Fashion > Damen > Bekleidung > Kleider > Abendkleider (13633703031)"
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten (1981533031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Damen > Dirndl (1981550031)",
+        "Fashion > Damen > Bekleidung > Kleider > Abendkleider (13633703031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Trachten > Damen (1981547031)",
+        "Drogerie & Körperpflege > Erotik > Leder & Latex > Frauen > Kleider (11633347031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung (1981520031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Indische Bekleidung > Damen (1981527031)",
+        "Fashion > Mädchen > Bekleidung > Kleider (1981246031)",
+        "Fashion > Kleidung für spezielle Anlässe > Traditionelle Bekleidung > Indische Bekleidung (1981521031)"
       ],
       "truncated": false,
       "samples": [],
@@ -156,6 +168,61 @@
       "attribute": "image_locator_ps01[marketplace_id=A1PA6795UKMFR9]#1.media_location",
       "matched": false,
       "choices": [],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 54,
+      "header": "Abteilungsname",
+      "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Abteilungsname - [ DRESS ]",
+      "choices": [
+        "Baby - Jungen",
+        "Baby - Mädchen",
+        "Damen",
+        "Herren",
+        "Jungen",
+        "Mädchen",
+        "Unisex",
+        "Unisex Baby",
+        "Unisex Kinder"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 55,
+      "header": "Geschlecht",
+      "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
+      "matched": true,
+      "field": "Geschlecht - [ DRESS ]",
+      "choices": [
+        "Weiblich",
+        "Männlich",
+        "Unisex"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 56,
+      "header": "Altersgruppe (Beschreibung)",
+      "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Altersgruppe (Beschreibung) - [ DRESS ]",
+      "choices": [
+        "Baby",
+        "Erwachsener",
+        "Kind",
+        "Kleinkind"
+      ],
       "truncated": false,
       "samples": [],
       "reserve_flag": null,
@@ -572,12 +639,11 @@
       "matched": true,
       "field": "Versandvorlage (DE)",
       "choices": [
-        "2.98",
-        "5.98",
-        "6.98",
-        "6.98-2",
+        "10.98",
+        "11.98",
+        "12.98",
+        "3.98",
         "7.98",
-        "7.98-2",
         "8.98",
         "Standardvorlage Amazon"
       ],
@@ -950,7 +1016,7 @@
     }
   ],
   "stats": {
-    "total": 36,
-    "matched": 24
+    "total": 39,
+    "matched": 28
   }
 }

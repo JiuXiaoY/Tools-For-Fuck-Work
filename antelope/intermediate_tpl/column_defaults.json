@@ -55,14 +55,14 @@
 
 
   "yass_de_tracksuit": {
-    "Q":  { "value": "Sportliche Outfits für Herren", "file": "", "sequence": false },
-    "AK": { "value": "Dieses Herren-Set verbindet ein abgestimmtes Oberteil mit einer passenden Hose zu einem vielseitigen Gesamtlook, der sich je nach Ausführung für Alltag, Freizeit, Reisen, sportliche Aktivitäten, Feiern oder weitere saisonale Anlässe kombinieren lässt.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_tracksuit.txt", "sequence": false }
+    "Q":  { "value": "Halloween Horror Kostüm", "file": "", "sequence": false },
+    "AK": { "value": "Dieses Einteiler-Modell eignet sich je nach Ausführung für entspannte Stunden zu Hause, gemeinsame Freizeit, Kostümfeiern, Rollenspiele und Bühnenauftritte; es kann passend zum Anlass mit Schuhen, Masken oder weiteren Accessoires ergänzt werden und unterstützt einen unkomplizierten Themenlook.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_Hal_OnePiece.txt", "sequence": false }
   },
   "yass_fr_tracksuit": {
-    "Q":  { "value": "Ensemble de sport tendance pour homme", "file": "", "sequence": false },
-    "AK": { "value": "Cet ensemble pour homme associe un haut coordonné à un pantalon assorti pour créer une tenue polyvalente qui, selon le modèle, peut accompagner le quotidien, les loisirs, les voyages, les activités sportives, les fêtes ou diverses occasions saisonnières.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_tracksuit.txt", "sequence": false }
+    "Q":  { "value": "Costume d'horreur pour Halloween", "file": "", "sequence": false },
+    "AK": { "value": "Ce modèle une-pièce accompagne, selon la version, les moments détendus à la maison, les loisirs partagés, les fêtes costumées, les jeux de rôle et la scène; il se complète selon l’occasion avec chaussures, masques ou autres accessoires et compose un look thématique facile à porter.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_Hal_OnePiece.txt", "sequence": false }
   },
 
 
@@ -134,13 +134,13 @@
 
 
   "yass_de_dress": {
-    "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
+    "S":  { "value": "Sst-0001", "file": "", "sequence": true },
     "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
     "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
   },
   "yass_fr_dress": {
-    "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
+    "S":  { "value": "Sst-0001", "file": "", "sequence": true },
     "T":  { "value": "Robe d'Halloween", "file": "", "sequence": false },
     "AN": { "value": "Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_fr_hall_dress.txt", "sequence": false }

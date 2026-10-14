@@ -6,7 +6,7 @@ from pathlib import Path
 
 # 直接点 hotwords_fashion.py / clean_fashion.py 的 main 时，只需修改这里。
 # 可选值："de"（德国站）、"fr"（法国站）。命令行 --country 可临时覆盖。
-DEFAULT_COUNTRY = "fr"
+DEFAULT_COUNTRY = "de"
 
 BASE_DIR = Path(__file__).resolve().parent
 SUPPORTED_COUNTRIES = ("de", "fr")
