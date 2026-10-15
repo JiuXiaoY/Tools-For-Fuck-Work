@@ -128,5 +128,17 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GY"] }
+  },
+
+
+  "yass_de_mask": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","AB","AC","AD","AE","AF","AG","AH","AI","AJ","DR"] }
+  },
+  "yass_fr_mask": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","AB","AC","AD","AE","AF","AG","AH","AI","AJ","DQ"] }
   }
 }

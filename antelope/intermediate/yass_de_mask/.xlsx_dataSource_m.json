@@ -1,0 +1,853 @@
+{
+  "data": {
+    "group_1": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Fantasie"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_2": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Horror"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_3": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Fantasie"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_4": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Feiertage"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_5": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Tiere"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_6": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Fantasie"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_7": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Tiere"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_8": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Fantasie"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_9": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Feiertage"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_10": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Fantasie"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    },
+    "group_11": {
+      "17": [
+        "Einheit"
+      ],
+      "24": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "44": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "50": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "59": [
+        "Standard"
+      ],
+      "63": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "64": [
+        "Tiere"
+      ],
+      "196": [
+        "Deutsch"
+      ],
+      "201": [
+        "Kein Warnhinweis zutreffend"
+      ],
+      "202": [
+        "Kein Warnhinweis zutreffend"
+      ]
+    }
+  },
+  "placeholder": "dataTemp"
+}

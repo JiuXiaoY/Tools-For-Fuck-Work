@@ -144,5 +144,19 @@
     "T":  { "value": "Robe d'Halloween", "file": "", "sequence": false },
     "AN": { "value": "Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_fr_hall_dress.txt", "sequence": false }
+  },
+
+
+  "yass_de_mask": {
+    "BK": { "value": "Blst-0001", "file": "", "sequence": true },
+    "X":  { "value": "halloween kostüm maske", "file": "", "sequence": false },
+    "AR": { "value": "Diese Kopfmaske begleitet je nach Ausführung winterliche Aktivitäten im Freien, Kostümfeiern und Themenabende; ihre auffällige Gestaltung lässt sich mit schlichter Kleidung oder einem passenden Kostüm kombinieren und gibt dem Auftritt eine humorvolle oder fantasievolle Note.", "file": "", "sequence": false },
+    "AX": { "value": "", "file": "yass_de_Hal_funny_ski_mask.txt", "sequence": false }
+  },
+  "yass_fr_mask": {
+    "BK": { "value": "Blst-0001", "file": "", "sequence": true },
+    "X":  { "value": "Masque Cagoule Visage Realiste", "file": "", "sequence": false },
+    "AR": { "value": "Cette cagoule fantaisie accompagne, selon le modèle, les activités hivernales en plein air, les fêtes costumées et les soirées à thème; son allure expressive se combine avec une tenue simple ou un costume adapté et apporte une touche humoristique ou théâtrale à l’ensemble.", "file": "", "sequence": false },
+    "AX": { "value": "", "file": "yass_fr_Hal_funny_ski_mask.txt", "sequence": false }
   }
 }

@@ -11,7 +11,9 @@
         "BK5",
         "Dark Gray",
         "Wine Red",
-        "Dark Grey"
+        "Dark Grey",
+        "BW1",
+        "BW2"
       ]
     },
     {
@@ -27,7 +29,9 @@
         "Wine Red",
         "Dark Grey",
         "Gray",
-        "Orange1_834103218_1"
+        "Orange1_834103218_1",
+        "BW1",
+        "BW2"
       ]
     }
   ],
@@ -174,7 +178,10 @@
         "XL/XXL",
         "XXLXXXL",
         "B",
-        "C"
+        "C",
+        "7XL",
+        "8XL",
+        "9XL"
       ]
     },
     {
@@ -326,7 +333,10 @@
         "XL/XXL",
         "XXLXXXL",
         "B",
-        "C"
+        "C",
+        "7XL",
+        "8XL",
+        "9XL"
       ]
     }
   ]
