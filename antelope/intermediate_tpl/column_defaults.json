@@ -38,19 +38,25 @@
     "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
   },
+  "addr_de_coat": {
+    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
+    "T":  { "value": "Warme Jacken für Herren", "file": "", "sequence": false },
+    "AN": { "value": "Diese warme Jacke lässt sich gut mit schlichten T-Shirts, Hemden und langen Hosen kombinieren und eignet sich für gemütliche Spaziergänge, Besorgungen und Treffen mit Freunden; sie schützt im Winter vor Kälte und sorgt für ein angenehmes, warmes Tragegefühl; dank ihres schlichten Designs ist sie ein bequemes und vielseitiges Kleidungsstück, das sich in jeden persönlichen Kleidungsstil integrieren lässt.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
+  },
 
 
   "yass_de_pants": {
-    "Q":  { "value": "Hltr-0001", "file": "", "sequence": true },
-    "R":  { "value": "thermo jogginghose herren", "file": "", "sequence": false },
-    "AL": { "value": "Diese vielseitige Herrenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_pants.txt", "sequence": false }
+    "Q":  { "value": "Alx-0001", "file": "", "sequence": true },
+    "R":  { "value": "thermo jogginghose damen", "file": "", "sequence": false },
+    "AL": { "value": "Diese vielseitige Damenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_de_pants_Eva.txt", "sequence": false }
   },
   "yass_fr_pants": {
-    "Q":  { "value": "Hltr-0001", "file": "", "sequence": true },
-    "R":  { "value": "Pantalons de sport pour homme", "file": "", "sequence": false },
-    "AL": { "value": "Ce pantalon polyvalent pour homme associe une silhouette équilibrée à des détails pratiques et peut, selon le modèle, accompagner les loisirs, le sport, le travail, les voyages ou les activités en plein air, tandis que la coupe, la taille et les accents visibles définissent son allure.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_fr_pants.txt", "sequence": false }
+    "Q":  { "value": "Alx-0001", "file": "", "sequence": true },
+    "R":  { "value": "pantalon de jogging thermique pour femme", "file": "", "sequence": false },
+    "AL": { "value": "Ce pantalon polyvalent pour femmes associe une silhouette équilibrée à des détails pratiques et peut, selon le modèle, accompagner les loisirs, le sport, le travail, les voyages ou les activités en plein air, tandis que la coupe, la taille et les accents visibles définissent son allure.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_fr_pants_Eva.txt", "sequence": false }
   },
 
 
@@ -108,16 +114,16 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Drb-0001", "file": "", "sequence": true },
-    "T":  { "value": "Trachten Herren Weste", "file": "", "sequence": false },
-    "AN": { "value": "Diese Herrenweste ergänzt unterschiedliche Garderoben mit einer vielseitig kombinierbaren, ärmellosen Gestaltung und eignet sich je nach Modell für Alltag, Freizeit, Beruf, Veranstaltungen oder saisonale Anlässe, wobei sie mit verschiedenen Oberteilen und Hosen getragen werden kann.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_vest.txt", "sequence": false }
+    "S":  { "value": "Lbdr-0001", "file": "", "sequence": true },
+    "T":  { "value": "Warme Jacken für Herren", "file": "", "sequence": false },
+    "AN": { "value": "Diese warme Jacke lässt sich gut mit schlichten T-Shirts, Hemden und langen Hosen kombinieren und eignet sich für gemütliche Spaziergänge, Besorgungen und Treffen mit Freunden; sie schützt im Winter vor Kälte und sorgt für ein angenehmes, warmes Tragegefühl; dank ihres schlichten Designs ist sie ein bequemes und vielseitiges Kleidungsstück, das sich in jeden persönlichen Kleidungsstil integrieren lässt.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
   },
   "yass_fr_coat": {
-    "S":  { "value": "Drb-0001", "file": "", "sequence": true },
-    "T":  { "value": "Costume d'Halloween pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce modèle pour homme très expressif allie le charme morbide d'Halloween à des éléments rétro et de cosplay aux multiples facettes. Conçu pour les soirées à thème et les apparitions scéniques marquantes, sa finition soignée dans les moindres détails garantit un look élégant et un confort optimal.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_halloween_coat.txt", "sequence": false }
+    "S":  { "value": "Lbdr-0001", "file": "", "sequence": true },
+    "T":  { "value": "Vestes chaudes pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Cette veste chaude peut être associée à un t-shirt, une chemise et un pantalon sobres ; elle est idéale pour les promenades décontractées, les courses quotidiennes et les sorties entre amis. Elle protège du froid en hiver tout en garantissant un confort et une chaleur optimaux ; son design épuré en fait une pièce confortable et polyvalente qui s'adapte à toutes les tenues.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
   },
 
 
@@ -134,13 +140,13 @@
 
 
   "yass_de_dress": {
-    "S":  { "value": "Sst-0001", "file": "", "sequence": true },
+    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
     "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
     "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
   },
   "yass_fr_dress": {
-    "S":  { "value": "Sst-0001", "file": "", "sequence": true },
+    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
     "T":  { "value": "Robe d'Halloween", "file": "", "sequence": false },
     "AN": { "value": "Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.", "file": "", "sequence": false },
     "AT": { "value": "", "file": "yass_fr_hall_dress.txt", "sequence": false }
@@ -148,13 +154,13 @@
 
 
   "yass_de_mask": {
-    "BK": { "value": "Blst-0001", "file": "", "sequence": true },
+    "BK": { "value": "Chp-0001", "file": "", "sequence": true },
     "X":  { "value": "halloween kostüm maske", "file": "", "sequence": false },
     "AR": { "value": "Diese Kopfmaske begleitet je nach Ausführung winterliche Aktivitäten im Freien, Kostümfeiern und Themenabende; ihre auffällige Gestaltung lässt sich mit schlichter Kleidung oder einem passenden Kostüm kombinieren und gibt dem Auftritt eine humorvolle oder fantasievolle Note.", "file": "", "sequence": false },
     "AX": { "value": "", "file": "yass_de_Hal_funny_ski_mask.txt", "sequence": false }
   },
   "yass_fr_mask": {
-    "BK": { "value": "Blst-0001", "file": "", "sequence": true },
+    "BK": { "value": "Chp-0001", "file": "", "sequence": true },
     "X":  { "value": "Masque Cagoule Visage Realiste", "file": "", "sequence": false },
     "AR": { "value": "Cette cagoule fantaisie accompagne, selon le modèle, les activités hivernales en plein air, les fêtes costumées et les soirées à thème; son allure expressive se combine avec une tenue simple ou un costume adapté et apporte une touche humoristique ou théâtrale à l’ensemble.", "file": "", "sequence": false },
     "AX": { "value": "", "file": "yass_fr_Hal_funny_ski_mask.txt", "sequence": false }

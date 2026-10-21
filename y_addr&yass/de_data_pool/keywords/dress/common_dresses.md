@@ -1,14 +1,13 @@
 ## [核心产品词]
 Abaya (阿巴亚), Corsagen (束身衣), Korsett (紧身胸衣), Tanktop (背心), Tunika (长袍)
-Dienstmädchen-Kleid (女仆裙), Barockkleid (宫廷裙), Lolita-Kleid (洛丽塔裙), Ballkleid (舞会礼服), Schürze (围裙), Umhang (斗篷/披风)
+Dienstmädchen (女仆裙), Lolita Kleid (洛丽塔裙), Ballkleid (舞会礼服), Schürze (围裙), Umhang (斗篷/披风)
 
 ## [颜色与图案词]
-Blau (蓝), Bordeaux (酒红), Gelb (黄), Gestreift (条纹), Grün (绿), Leo/Leoparden (豹纹)
-Lila (紫), Neon (荧光), Rosa (粉), Rot (红), Schwarz (黑), Weiß (白)
-Kariert (格纹), Tupfen (波点), Paisley (佩斯利花纹), Barockmuster (巴洛克花纹)
+Gestreift (条纹), Leo/Leoparden (豹纹), Neon (荧光), Rosa (粉), Rot (红), Schwarz (黑)
+Weiß (白), Kariert (格纹), Paisley (佩斯利花纹)
 
 ## [版型与款式词]
-3D-Blumen (立体花朵), 3D-Rosenverzierung (立体玫瑰装饰), A-Linie (A字型), Asymmetrisch (不对称), Ausgestellt (大摆), Ballonärmel (灯笼袖)
+Blumen (花朵), A-Linie (A字型), asymmetrischer (不对称)
 Bandeau (抹胸), Bateau-Ausschnitt (一字领), Bleistift (包臀/铅笔裙), Bodenlang (及地), Cut-out (镂空), Dreiviertelarm (七分袖)
 Eckiger Ausschnitt (方领), Einseitiger Schulterausschnitt (斜肩), Eng (紧身), Falten (褶皱), Federn (羽毛), Figurbetont (修身)
 Fransen (流苏), Gerade (直筒), Hemdkragen (衬衫领), Hochtailliert (高腰), Hohe Taille (高腰), Knielang (及膝)

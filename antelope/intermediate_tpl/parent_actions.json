@@ -33,6 +33,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GZ"] }
   },
+  "addr_de_coat": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FS"] }
+  },
 
 
   "yass_de_coat": {

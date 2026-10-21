@@ -2,16 +2,16 @@
   "settings": {
     "labelRow": 4,
     "attributeRow": 5,
-    "dataRow": 8
+    "dataRow": 7
   },
   "compared_files": {
     "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\yass_fr_pants\\yass_fr_pants_completed.json",
     "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\yass_fr_pants\\yass_fr_pants_blank.json"
   },
   "summary": {
-    "completed_total": 76,
+    "completed_total": 75,
     "blank_total": 34,
-    "only_in_completed": 42,
+    "only_in_completed": 41,
     "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
@@ -34,12 +34,6 @@
         "col": 7,
         "header": "Nom de l'article",
         "attribute": "item_name[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
-        "matched": false
-      },
-      {
-        "col": 8,
-        "header": "Point fort de l’article",
-        "attribute": "title_differentiation[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
         "matched": false
       },
       {
@@ -235,37 +229,37 @@
         "matched": true
       },
       {
-        "col": 114,
+        "col": 115,
         "header": "Type de fermeture",
         "attribute": "closure[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
         "matched": true
       },
       {
-        "col": 116,
+        "col": 117,
         "header": "Type de forme de pantalon",
         "attribute": "pants_form_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": true
       },
       {
-        "col": 133,
+        "col": 134,
         "header": "Poids de l'article",
         "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": false
       },
       {
-        "col": 143,
+        "col": 144,
         "header": "Prix catalogue TTC",
         "attribute": "list_price[marketplace_id=A13V1IB3VIYZZH]#1.value_with_tax",
         "matched": false
       },
       {
-        "col": 173,
+        "col": 174,
         "header": "Votre prix EUR (Vendez sur Amazon, FR)",
         "attribute": "purchasable_offer[marketplace_id=A13V1IB3VIYZZH][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
         "matched": true
       },
       {
-        "col": 205,
+        "col": 206,
         "header": "Poids de l’emballage",
         "attribute": "item_package_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": false
@@ -318,7 +312,7 @@
         "matched": false
       },
       {
-        "col": 114,
+        "col": 115,
         "header": "Type de fermeture",
         "attribute": "closure[marketplace_id=A13V1IB3VIYZZH]#1.type[language_tag=fr_FR]#1.value",
         "matched": true
@@ -366,7 +360,7 @@
         "matched": false
       },
       {
-        "col": 205,
+        "col": 206,
         "header": "Poids de l’emballage",
         "attribute": "item_package_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": false
@@ -378,7 +372,7 @@
         "matched": true
       },
       {
-        "col": 133,
+        "col": 134,
         "header": "Poids de l'article",
         "attribute": "item_weight[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": false
@@ -396,7 +390,7 @@
         "matched": true
       },
       {
-        "col": 143,
+        "col": 144,
         "header": "Prix catalogue TTC",
         "attribute": "list_price[marketplace_id=A13V1IB3VIYZZH]#1.value_with_tax",
         "matched": false
@@ -468,7 +462,7 @@
         "matched": false
       },
       {
-        "col": 116,
+        "col": 117,
         "header": "Type de forme de pantalon",
         "attribute": "pants_form_type[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": true
@@ -480,7 +474,7 @@
         "matched": false
       },
       {
-        "col": 173,
+        "col": 174,
         "header": "Votre prix EUR (Vendez sur Amazon, FR)",
         "attribute": "purchasable_offer[marketplace_id=A13V1IB3VIYZZH][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
         "matched": true
@@ -514,12 +508,6 @@
         "header": "Thème",
         "attribute": "theme[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
         "matched": true
-      },
-      {
-        "col": 8,
-        "header": "Point fort de l’article",
-        "attribute": "title_differentiation[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
-        "matched": false
       },
       {
         "col": 82,
