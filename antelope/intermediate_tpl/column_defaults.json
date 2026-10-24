@@ -62,13 +62,13 @@
 
   "yass_de_tracksuit": {
     "Q":  { "value": "Halloween Horror Kostüm", "file": "", "sequence": false },
-    "AK": { "value": "Dieses Einteiler-Modell eignet sich je nach Ausführung für entspannte Stunden zu Hause, gemeinsame Freizeit, Kostümfeiern, Rollenspiele und Bühnenauftritte; es kann passend zum Anlass mit Schuhen, Masken oder weiteren Accessoires ergänzt werden und unterstützt einen unkomplizierten Themenlook.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_Hal_OnePiece.txt", "sequence": false }
+    "AK": { "value": "Dieses Herren-Set verbindet ein angenehmes Tragegefühl mit einer markant gestalteten Optik und begleitet entspannte Stunden zu Hause ebenso wie Treffen mit Freunden; der aufeinander abgestimmte Look eignet sich auch für Feiern und festliche Anlässe und lässt sich mit eigenen Accessoires ergänzen.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_de_Christmas_sets.txt", "sequence": false }
   },
   "yass_fr_tracksuit": {
     "Q":  { "value": "Costume d'horreur pour Halloween", "file": "", "sequence": false },
-    "AK": { "value": "Ce modèle une-pièce accompagne, selon la version, les moments détendus à la maison, les loisirs partagés, les fêtes costumées, les jeux de rôle et la scène; il se complète selon l’occasion avec chaussures, masques ou autres accessoires et compose un look thématique facile à porter.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_Hal_OnePiece.txt", "sequence": false }
+    "AK": { "value": "Cet ensemble pour homme associe un porté agréable à une allure soignée et pleine de caractère; il accompagne les moments de détente à la maison comme les rencontres entre proches, les fêtes et les occasions festives, et peut se compléter avec vos propres accessoires.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_Christmas_sets.txt", "sequence": false }
   },
 
 
