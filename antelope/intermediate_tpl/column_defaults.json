@@ -47,7 +47,7 @@
 
 
   "yass_de_pants": {
-    "Q":  { "value": "Alx-0001", "file": "", "sequence": true },
+    "Q":  { "value": "Hmt-0001", "file": "", "sequence": true },
     "R":  { "value": "thermo jogginghose damen", "file": "", "sequence": false },
     "AL": { "value": "Diese vielseitige Damenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
     "AR": { "value": "", "file": "yass_de_pants_Eva.txt", "sequence": false }
