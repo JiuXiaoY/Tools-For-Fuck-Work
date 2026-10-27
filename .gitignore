@@ -38,9 +38,7 @@ nineTools/**/*.xlsx
 /nineTools/A_Plus/
 # y_yassikzu(fr) 生成结果（由 AI 生成，不入库）
 y_yassikzu/fr/dress_feasibility_domain/*
-!y_addr&yass/fr_feasibility_domain/dress/zzz.md
 y_yassikzu/fr/tops_feasibility_domain/*
-!y_addr&yass/fr_feasibility_domain/coat/zzz.md
 # y_addreoffici(de) 生成结果（由 AI 生成，不入库）
 y_addreoffici/de/feasibility_domain/*
 !y_addreoffici/de/feasibility_domain/**/zzz.md
@@ -61,6 +59,15 @@ tools/title_auto_fill/final_de_title_s
 antelope/web_data/
 antelope/.deepseek_state.json
 antelope/intermediate/*/ai_prompt/
+
+# Keep only the placeholder in generated intermediate data
+/antelope/intermediate/*
+!/antelope/intermediate/zzz.md
+
+# Generated feasibility data and fill plans
+/y_addr&yass/fr_feasibility_domain/
+/y_addr&yass/de_feasibility_domain/
+/antelope/fill_plan/
 
 # antelope 模板与数据源（base/complete/输出模板/数据 xlsx 换批次频繁、体积大，不入库）
 antelope/xlsm/
