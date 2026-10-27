@@ -114,16 +114,16 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Lbdr-0001", "file": "", "sequence": true },
-    "T":  { "value": "Warme Jacken für Herren", "file": "", "sequence": false },
-    "AN": { "value": "Diese warme Jacke lässt sich gut mit schlichten T-Shirts, Hemden und langen Hosen kombinieren und eignet sich für gemütliche Spaziergänge, Besorgungen und Treffen mit Freunden; sie schützt im Winter vor Kälte und sorgt für ein angenehmes, warmes Tragegefühl; dank ihres schlichten Designs ist sie ein bequemes und vielseitiges Kleidungsstück, das sich in jeden persönlichen Kleidungsstil integrieren lässt.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
+    "S":  { "value": "Flr-0001", "file": "", "sequence": true },
+    "T":  { "value": "weihnachts pullover mann", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Modell verbindet ein angenehmes Tragegefühl mit einer detailbewussten, ausdrucksstarken Gestaltung und lässt sich vielseitig kombinieren, ob im Alltag, bei Treffen mit Freunden, bei Feiern oder zu festlichen Anlässen, sodass ein stimmiger Look mit eigener Note entsteht.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_Christmas_coat.txt", "sequence": false }
   },
   "yass_fr_coat": {
-    "S":  { "value": "Lbdr-0001", "file": "", "sequence": true },
-    "T":  { "value": "Vestes chaudes pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Cette veste chaude peut être associée à un t-shirt, une chemise et un pantalon sobres ; elle est idéale pour les promenades décontractées, les courses quotidiennes et les sorties entre amis. Elle protège du froid en hiver tout en garantissant un confort et une chaleur optimaux ; son design épuré en fait une pièce confortable et polyvalente qui s'adapte à toutes les tenues.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat.txt", "sequence": false }
+    "S":  { "value": "Flr-0001", "file": "", "sequence": true },
+    "T":  { "value": "pull de Noël pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style travaillé et riche en détails, et se combine de différentes façons selon les envies, au quotidien, lors de retrouvailles entre amis, pour une fête ou une occasion plus habillée, afin de composer une tenue harmonieuse et personnelle.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_Christmas_coat.txt", "sequence": false }
   },
 
 
@@ -140,16 +140,16 @@
 
 
   "yass_de_dress": {
-    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
-    "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
-    "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
+    "S":  { "value": "Cysc-0001", "file": "", "sequence": true },
+    "T":  { "value": "weihnachtskleider damen", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Modell verbindet eine angenehm zu tragende Passform mit einer ausdrucksstarken, detailbewussten Gestaltung und lässt sich je nach persönlichem Stil für den Alltag, Treffen mit Freunden, Feiern oder festliche Anlässe kombinieren, sodass ein stimmiger Look mit eigener Note entsteht.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_Christmas_dress.txt", "sequence": false }
   },
   "yass_fr_dress": {
-    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
-    "T":  { "value": "Robe d'Halloween", "file": "", "sequence": false },
-    "AN": { "value": "Ce costume convient à Halloween, aux fêtes à thème, aux jeux de rôle, au carnaval et aux prestations scéniques, et s’associe facilement à des accessoires adaptés selon l’occasion; sa conception favorise une sensation agréable lors des fêtes, représentations et activités partagées.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_hall_dress.txt", "sequence": false }
+    "S":  { "value": "Cysc-0001", "file": "", "sequence": true },
+    "T":  { "value": "robes de Noël pour femmes", "file": "", "sequence": false },
+    "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style soigné et riche en détails, et se prête à différentes associations selon les envies, pour le quotidien, les retrouvailles entre amis, les fêtes ou les occasions festives, avec une allure personnelle et harmonieuse.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_Christmas_dress.txt", "sequence": false }
   },
 
 

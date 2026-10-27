@@ -10,8 +10,8 @@
   },
   "summary": {
     "completed_total": 76,
-    "blank_total": 38,
-    "only_in_completed": 38,
+    "blank_total": 35,
+    "only_in_completed": 41,
     "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
@@ -169,6 +169,24 @@
         "matched": true
       },
       {
+        "col": 54,
+        "header": "Nom de la boutique",
+        "attribute": "department[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 55,
+        "header": "Sexe ciblé",
+        "attribute": "target_gender[marketplace_id=A13V1IB3VIYZZH]#1.value",
+        "matched": true
+      },
+      {
+        "col": 56,
+        "header": "Description de la tranche d’âge",
+        "attribute": "age_range_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 59,
         "header": "Taille du vêtement",
         "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.size",
@@ -252,6 +270,12 @@
   "by_attribute": {
     "only_in_completed": [
       {
+        "col": 56,
+        "header": "Description de la tranche d’âge",
+        "attribute": "age_range_description[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
         "col": 59,
         "header": "Taille du vêtement",
         "attribute": "apparel_size[marketplace_id=A13V1IB3VIYZZH]#1.size",
@@ -322,6 +346,12 @@
         "header": "SKU",
         "attribute": "contribution_sku#1.value",
         "matched": false
+      },
+      {
+        "col": 54,
+        "header": "Nom de la boutique",
+        "attribute": "department[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
       },
       {
         "col": 78,
@@ -453,6 +483,12 @@
         "col": 53,
         "header": "Style",
         "attribute": "style[marketplace_id=A13V1IB3VIYZZH][language_tag=fr_FR]#1.value",
+        "matched": true
+      },
+      {
+        "col": 55,
+        "header": "Sexe ciblé",
+        "attribute": "target_gender[marketplace_id=A13V1IB3VIYZZH]#1.value",
         "matched": true
       },
       {

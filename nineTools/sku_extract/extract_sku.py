@@ -26,7 +26,7 @@ import os
 import sys
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_INPUT = os.path.join(BASE, "../../../Means_of_production/Product_delete/10.2/SKU2")
+DEFAULT_INPUT = os.path.join(BASE, "../../../Means_of_production/Product_delete/10.23/SKU")
 DEFAULT_OUTPUT = os.path.join(BASE, "result.txt")
 
 
