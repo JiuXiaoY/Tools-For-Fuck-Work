@@ -145,5 +145,16 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","AB","AC","AD","AE","AF","AG","AH","AI","AJ","DQ"] }
+  },
+
+  "yass_de_glove": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","FU"] }
+  },
+  "yass_fr_glove": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","ET"] }
   }
 }

@@ -61,7 +61,7 @@
 
 
   "yass_de_tracksuit": {
-    "Q":  { "value": "Halloween Horror Kostüm", "file": "", "sequence": false },
+    "Q":  { "value": "Weihnachts Pyjama Familie Set", "file": "", "sequence": false },
     "AK": { "value": "Dieses Herren-Set verbindet ein angenehmes Tragegefühl mit einer markant gestalteten Optik und begleitet entspannte Stunden zu Hause ebenso wie Treffen mit Freunden; der aufeinander abgestimmte Look eignet sich auch für Feiern und festliche Anlässe und lässt sich mit eigenen Accessoires ergänzen.", "file": "", "sequence": false },
     "AQ": { "value": "", "file": "yass_de_Christmas_sets.txt", "sequence": false }
   },
@@ -164,5 +164,19 @@
     "X":  { "value": "Masque Cagoule Visage Realiste", "file": "", "sequence": false },
     "AR": { "value": "Cette cagoule fantaisie accompagne, selon le modèle, les activités hivernales en plein air, les fêtes costumées et les soirées à thème; son allure expressive se combine avec une tenue simple ou un costume adapté et apporte une touche humoristique ou théâtrale à l’ensemble.", "file": "", "sequence": false },
     "AX": { "value": "", "file": "yass_fr_Hal_funny_ski_mask.txt", "sequence": false }
+  },
+
+
+  "yass_de_glove": {
+    "Q":  { "value": "wärmehandschuhe", "file": "", "sequence": false },
+    "AO": { "value": "Diese warmen Handschuhe sitzen nicht nur bequem und sind ideal für den Winter und kaltes Wetter, sondern zeichnen sich auch durch ein durchdachtes Design und vielseitige Verwendungsmöglichkeiten aus. Ob zur Alltagskleidung, beim Spazierengehen, auf dem Weg zur Arbeit oder bei Outdoor-Aktivitäten – sie fügen sich perfekt in jeden Look ein und verleihen Ihrem Outfit bei kühlerem Wetter einen farbenfrohen Akzent.", "file": "", "sequence": false },
+    "AU": { "value": "", "file": "yass_de_gloves_Uni.txt", "sequence": false },
+    "BQ": { "value": "Mlh-0001", "file": "", "sequence": true }
+  },
+  "yass_fr_glove": {
+    "U":  { "value": "gants hiver", "file": "", "sequence": false },
+    "T":  { "value": "Mlh-0001", "file": "", "sequence": false },
+    "AO": { "value": "Ces gants chauds sont non seulement confortables et parfaits pour l'hiver et le froid, mais ils se distinguent également par leur conception bien pensée et leur polyvalence. Que ce soit au quotidien, lors d'une promenade, sur le chemin du travail ou pour des activités de plein air, ils s'intègrent parfaitement à tous les looks et apportent une touche colorée à votre tenue lorsque les températures baissent.", "file": "", "sequence": false },
+    "AU": { "value": "", "file": "yass_fr_gloves.txt", "sequence": false }
   }
 }

@@ -85,10 +85,10 @@
   "16y": "16 Jahre",
   "17y": "17 Jahre",
   "18y": "18 Jahre",
-  "12M": "1 Jahr",
-  "18M": "1 Jahr",
-  "24M": "2 Jahre",
-  "12m": "1 Jahr",
-  "18m": "1 Jahr",
-  "24m": "2 Jahre"
+  "12M_Ig": "1 Jahr",
+  "18M_Ig": "1 Jahr",
+  "24M_Ig": "2 Jahre",
+  "12m_Ig": "1 Jahr",
+  "18m_Ig": "1 Jahr",
+  "24m_Ig": "2 Jahre"
 }
