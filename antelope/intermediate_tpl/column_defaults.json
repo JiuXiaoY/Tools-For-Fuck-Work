@@ -114,16 +114,16 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Flr-0001", "file": "", "sequence": true },
-    "T":  { "value": "weihnachts pullover mann", "file": "", "sequence": false },
-    "AN": { "value": "Dieses Modell verbindet ein angenehmes Tragegefühl mit einer detailbewussten, ausdrucksstarken Gestaltung und lässt sich vielseitig kombinieren, ob im Alltag, bei Treffen mit Freunden, bei Feiern oder zu festlichen Anlässen, sodass ein stimmiger Look mit eigener Note entsteht.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_Christmas_coat.txt", "sequence": false }
+    "S":  { "value": "Smsn-0001", "file": "", "sequence": true },
+    "T":  { "value": "winterjacke damen parka", "file": "", "sequence": false },
+    "AN": { "value": "Diese Winterjacke vereint Wärme, Komfort und stilvolles Design – sie ist schlicht und vielseitig kombinierbar, dabei aber durch und durch stilvoll. Sie eignet sich perfekt für den Alltag, Spaziergänge, Freizeitaktivitäten und Treffen mit Freunden und fügt sich auch bei festlichen Anlässen ganz natürlich in die Atmosphäre ein. Da sie sich leicht mit anderen Kleidungsstücken kombinieren lässt, lässt sich damit mühelos ein warmer, stilvoller und dennoch nicht auftragender Winterlook kreieren.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat_Eva.txt", "sequence": false }
   },
   "yass_fr_coat": {
-    "S":  { "value": "Flr-0001", "file": "", "sequence": true },
-    "T":  { "value": "pull de Noël pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style travaillé et riche en détails, et se combine de différentes façons selon les envies, au quotidien, lors de retrouvailles entre amis, pour une fête ou une occasion plus habillée, afin de composer une tenue harmonieuse et personnelle.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_Christmas_coat.txt", "sequence": false }
+    "S":  { "value": "Smsn-0001", "file": "", "sequence": true },
+    "T":  { "value": "veste chauffante femme", "file": "", "sequence": false },
+    "AN": { "value": "Cette veste d'hiver allie chaleur, confort et style. Sobre et polyvalente, elle ne manque pourtant pas de cachet. Elle s'adapte aussi bien aux trajets quotidiens qu'aux balades décontractées ou aux sorties entre amis, et s'intègre naturellement à l'ambiance des fêtes de fin d'année. Facile à associer à d'autres vêtements, elle permet de créer sans effort des tenues d'hiver chaudes et élégantes, sans effet volumineux.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat_Eva.txt", "sequence": false }
   },
 
 

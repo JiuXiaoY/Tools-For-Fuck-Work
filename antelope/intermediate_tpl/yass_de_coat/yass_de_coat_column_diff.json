@@ -10,8 +10,8 @@
   },
   "summary": {
     "completed_total": 84,
-    "blank_total": 38,
-    "only_in_completed": 46,
+    "blank_total": 41,
+    "only_in_completed": 43,
     "only_in_blank": 0,
     "duplicate_col_in_completed": [],
     "duplicate_col_in_blank": []
@@ -169,24 +169,6 @@
         "matched": true
       },
       {
-        "col": 54,
-        "header": "Abteilungsname",
-        "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
-        "col": 55,
-        "header": "Geschlecht",
-        "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
-        "matched": true
-      },
-      {
-        "col": 56,
-        "header": "Altersgruppe (Beschreibung)",
-        "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
         "col": 59,
         "header": "Bekleidungsgröße",
         "attribute": "apparel_size[marketplace_id=A1PA6795UKMFR9]#1.size",
@@ -300,12 +282,6 @@
   "by_attribute": {
     "only_in_completed": [
       {
-        "col": 56,
-        "header": "Altersgruppe (Beschreibung)",
-        "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
         "col": 59,
         "header": "Bekleidungsgröße",
         "attribute": "apparel_size[marketplace_id=A1PA6795UKMFR9]#1.size",
@@ -382,12 +358,6 @@
         "header": "SKU",
         "attribute": "contribution_sku#1.value",
         "matched": false
-      },
-      {
-        "col": 54,
-        "header": "Abteilungsname",
-        "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
       },
       {
         "col": 78,
@@ -555,12 +525,6 @@
         "col": 53,
         "header": "Stil",
         "attribute": "style[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
-        "matched": true
-      },
-      {
-        "col": 55,
-        "header": "Geschlecht",
-        "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
         "matched": true
       },
       {

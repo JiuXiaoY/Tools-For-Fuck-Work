@@ -32,7 +32,8 @@ from parent_actions import apply_parent_actions, load_parent_actions
 # ⚙️ 默认运行配置（直接点 Run 时生效）—— 路径/配置项集中来自 zconfig.constant.py
 # ═══════════════════════════════════════════════════════════════════════════════
 DEFAULT_PLAN_FILE = zcfg.CFG_FILL_PLAN["default_plan_json"]   # 1. 你的 plan.json 路径
-DEFAULT_OUTPUT_FILE = zcfg.OUTPUTS_DIR                        # 2. 完整输出文件路径(.xlsm)
+DEFAULT_OUTPUT_FILE = (zcfg.CFG_RUN["plan_output_file"] if zcfg.CUSTOM_FILE_NAME
+                       else zcfg.OUTPUTS_DIR)                 # 2. 完整输出文件路径(.xlsm)
 DEFAULT_REPORT_FILE = zcfg.CFG_RUN["default_report_file"]     # 可选: "outputs/report.json"
 DEFAULT_STRICT_SCOPE = zcfg.CFG_RUN["strict_scope"]           # 可选: True / False
 DEFAULT_PARENT_ACTIONS = zcfg.PARENT_ACTIONS_FILE             # 父体行额外动作（空配置 = 不动作）

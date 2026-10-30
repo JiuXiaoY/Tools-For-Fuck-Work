@@ -277,6 +277,61 @@
       "reserve_mark": null
     },
     {
+      "col": 54,
+      "header": "Abteilungsname",
+      "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Abteilungsname - [ COAT ]",
+      "choices": [
+        "Baby - Jungen",
+        "Baby - Mädchen",
+        "Damen",
+        "Herren",
+        "Jungen",
+        "Mädchen",
+        "Unisex",
+        "Unisex Baby",
+        "Unisex Kinder"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 55,
+      "header": "Geschlecht",
+      "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
+      "matched": true,
+      "field": "Geschlecht - [ COAT ]",
+      "choices": [
+        "Weiblich",
+        "Männlich",
+        "Unisex"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
+      "col": 56,
+      "header": "Altersgruppe (Beschreibung)",
+      "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+      "matched": true,
+      "field": "Altersgruppe (Beschreibung) - [ COAT ]",
+      "choices": [
+        "Baby",
+        "Erwachsener",
+        "Kind",
+        "Kleinkind"
+      ],
+      "truncated": false,
+      "samples": [],
+      "reserve_flag": null,
+      "reserve_mark": null
+    },
+    {
       "col": 57,
       "header": "Größensystem des Artikels",
       "attribute": "apparel_size[marketplace_id=A1PA6795UKMFR9]#1.size_system",
@@ -1093,7 +1148,7 @@
     }
   ],
   "stats": {
-    "total": 38,
-    "matched": 26
+    "total": 41,
+    "matched": 29
   }
 }

@@ -47,20 +47,23 @@ XLSM_DIR = os.path.join(ANTELOPE_DIR, "xlsm")
 # ════════════════ 手动填写区：每批只需检查/修改这里 ════════════════
 # 三段式 {限定词}_{国家}_{类型}，如 "addr_fr_tops"。
 # 限定词、国家、类型任一部分不同 → 模板三件套不同 → 模板层需重新生成。
-ACTIVE_CATEGORY = "yass_fr_glove"
+ACTIVE_CATEGORY = "yass_fr_coat"
 
 # 中间文件的子目录名。通常保持跟随 ACTIVE_CATEGORY 即可。
 INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
+# 生成文件名：法国在末尾加 @，德国加 &；留空时使用原来的默认文件名。
+CUSTOM_FILE_NAME = "Smithsonite"
+
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
 # A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
-DATA_SOURCE_A = os.path.join(XLSM_DIR, "10.24v1_fr.xlsx")
+DATA_SOURCE_A = os.path.join(XLSM_DIR, "10.26v1_fr.xlsx")
 # B：.xlsm 基础模板（analysisXlsm 分析后生成 blank.json）
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
 # C：.xlsm 完整模板（analysisXlsm 分析后生成 completed.json）
 TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")
 # 产出模板：fill_from_plan 复制它并填充，填完自动删除多余数据行。
-TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "glove_template_Uni.xlsm")
+TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "coat_template_Adam.xlsm")
 
 
 # ════════════════ 自动派生区：以下通常不需要手动修改 ════════════════
@@ -83,6 +86,12 @@ SHEET_NAMES = {
     "fr": {"valid": "Valeurs valides", "model": "Modèle"},
     "de": {"valid": "Gültige Werte", "model": "Vorlage"},
 }
+
+_COUNTRY_FILE_SUFFIX = {"fr": "@", "de": "&"}
+OUTPUT_FILE_NAME = (
+    f"{CUSTOM_FILE_NAME}{_COUNTRY_FILE_SUFFIX[COUNTRY]}.xlsm"
+    if CUSTOM_FILE_NAME else f"{ACTIVE_CATEGORY}_filled.xlsm"
+)
 
 # ─────────────────────────── 顶层目录 ───────────────────────────
 # 各子目录
@@ -161,8 +170,8 @@ CFG_FILL_PLAN = {
 CFG_RUN = {
     # analysisXlsm.py：参与解析的工作表（随国家配置变化：fr=Modèle/Valeurs valides，de=Vorlage/Gültige Werte）
     "default_sheets": list(SHEET_NAMES[COUNTRY].values()),
-    # 最终填充产出（fill_from_plan 写出；run_all 默认输出）：outputs/{ACTIVE_CATEGORY}_filled.xlsm
-    "plan_output_file": os.path.join(OUTPUTS_DIR, f"{ACTIVE_CATEGORY}_filled.xlsm"),
+    # 最终填充产出：自定义名称 + 国家标记；留空时为 outputs/{ACTIVE_CATEGORY}_filled.xlsm
+    "plan_output_file": os.path.join(OUTPUTS_DIR, OUTPUT_FILE_NAME),
     "default_report_file": None,
     "strict_scope": False,
 }
