@@ -1,7 +1,7 @@
 """独立的随机 ID 生成小工具。
 
 规则与流水线 steps/assign_ids.py 中生成的随机 ID 完全一致：
-    <前6位><中间6位日期码><后4位>  →  共 16 位
+    Anch<前6位><中间6位日期码><后4位>  →  共 20 位（含 Anch 前缀）
     - 前/后位字符集: 大小写字母 + 数字 (base62)
     - 中间 6 位日期码: YYMMDD 按 digit→letter 映射 (0→z,1→a,2→b,...,9→i)
 
@@ -23,8 +23,8 @@ from pathlib import Path
 #  配置区（所有配置在此完成）
 # ─────────────────────────────────────────────────────────────────────
 SETTINGS = {
-    "count": 2120,                  # 生成数量
-    "date_override": "261023",          # 固定日期码 (格式 YYMMDD，如 "260702")；留空则用今天
+    "count": 5097,                  # 生成数量
+    "date_override": "261027",          # 固定日期码 (格式 YYMMDD，如 "260702")；留空则用今天
     "prefix_len": 6,              # 前段随机字符数
     "middle_len": 6,              # 中间日期码长度（通常 6，勿改）
     "suffix_len": 4,              # 后段随机字符数
@@ -35,6 +35,7 @@ SETTINGS = {
 
 # digit → letter 映射：0→z, 1→a, ..., 9→i（与流水线一致）
 _DIGIT_MAP = dict(zip("0123456789", "zabcdefghi"))
+_FIXED_PREFIX = "Anch"
 
 
 def _date_code(yymmdd: str = "") -> str:
@@ -69,13 +70,13 @@ def main() -> None:
     seen: set[str] = set()
     _guard = 0
     while len(ids) < s["count"] and _guard < s["count"] * 100:
-        rid = "Anch" + generate_one(s)
+        rid = _FIXED_PREFIX + generate_one(s)
         _guard += 1
         if rid in seen:
             continue          # 重复则重新生成
         seen.add(rid)
         ids.append(rid)
-    expected_len = s["prefix_len"] + s["middle_len"] + s["suffix_len"]
+    expected_len = len(_FIXED_PREFIX) + s["prefix_len"] + s["middle_len"] + s["suffix_len"]
 
     # 输出目标：条数 >100 → 自动落盘；否则按配置（控制台/文件）
     if s["count"] > 100:
@@ -103,8 +104,14 @@ def main() -> None:
 
     # 校验并提示
     if ids:
-        ok = all(len(x) == expected_len for x in ids)
-        print(f"[校验] 每条 {expected_len} 位，共 {len(ids)} 条 → {'通过' if ok else '异常'}", file=sys.stderr)
+        invalid_count = sum(len(rid) != expected_len for rid in ids)
+        valid_count = len(ids) - invalid_count
+        status = "通过" if invalid_count == 0 else "异常"
+        print(
+            f"[校验{status}] 总数 {len(ids)} 条，正常 {valid_count} 条，异常 {invalid_count} 条"
+            f"（预期长度 {expected_len} 位，含 {_FIXED_PREFIX} 前缀）",
+            file=sys.stderr,
+        )
 
 
 def _datetime_now() -> str:

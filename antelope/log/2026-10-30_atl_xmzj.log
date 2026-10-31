@@ -828,3 +828,18 @@ antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑
    输出: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\Smithsonite@.xlsm
 ================= run_all.py END 【2026-10-30 14:28:50】 【总用时 6:25.980】 ==================
 
+
+======================== run_all.py START 【2026-10-30 17:02:55】 ========================
+antelope 全流程（模板层 ①②③ 自动跳过 + 数据层 ④~⑨ 重跑）  类别: yass_fr_coat
+
+▶ ① 模板解析 B → blank.json
+
+│   ┌─ 子程序 analysisXlsm.py START 【2026-10-30 17:02:56】
+│   参数: D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\xlsm\base.xlsm -o D:\FW20260325\besskyproject\dealExcel_refactoring\antelope\intermediate_tpl\yass_fr_coat\yass_fr_coat_blank.json
+│   无法打开模板文件: [Errno 2] No such file or directory: 'D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\xlsm\\base.xlsm'
+│   └─ 子程序 analysisXlsm.py END 【2026-10-30 17:02:56】 【总用时 0.000 秒】
+
+❌ ① 模板解析 B → blank.json 失败（exit 1），流程中止。
+💡 修复后：把上面【已完成】的步骤行注释掉，再点运行，会从本步继续连续跑到结束（前面产物已保留，不会重复）。
+================== run_all.py END 【2026-10-30 17:02:56】 【总用时 0.503 秒】 ==================
+
