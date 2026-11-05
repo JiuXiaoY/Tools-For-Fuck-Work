@@ -3,7 +3,8 @@
 id_sorting —— 对 12 位 id 数据源按每位 ASCII 值排序，结果写回文件。
 
 数据源: nineTools/id_sorting/id_sorting_data
-    每行一个 id，预期全部为 12 位 ASCII 可见字符。
+    支持每行一个 id，或每行用英文逗号分隔多个 id，也可混合使用。
+    忽略分隔符周围的空白和空项，预期 id 全部为 12 位 ASCII 可见字符。
 排序规则:
     - 12 位记录：按每一位字符的 ASCII 值（ord）升序比较：
       先比第 1 位，相同再比第 2 位，依次类推；
@@ -39,9 +40,15 @@ def sort_ids(records):
 
 
 def read_records(path):
-    """读取每行一条 id；去掉末尾换行符(\n / \r\n)，忽略空白行。"""
-    with open(path, "r", encoding="utf-8", newline="") as f:
-        return [line.rstrip("\r\n") for line in f if line.strip("\r\n")]
+    """按英文逗号和换行拆分 id，忽略两侧空白、空项及 UTF-8 BOM。"""
+    records = []
+    with open(path, "r", encoding="utf-8-sig", newline="") as f:
+        for line in f:
+            for item in line.split(","):
+                record = item.strip()
+                if record:
+                    records.append(record)
+    return records
 
 
 def write_records(path, records):

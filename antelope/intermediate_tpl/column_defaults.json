@@ -61,28 +61,28 @@
 
 
   "yass_de_tracksuit": {
-    "Q":  { "value": "Weihnachts Pyjama Familie Set", "file": "", "sequence": false },
+    "Q":  { "value": "Weihnachts Set Herren", "file": "", "sequence": false },
     "AK": { "value": "Dieses Herren-Set verbindet ein angenehmes Tragegefühl mit einer markant gestalteten Optik und begleitet entspannte Stunden zu Hause ebenso wie Treffen mit Freunden; der aufeinander abgestimmte Look eignet sich auch für Feiern und festliche Anlässe und lässt sich mit eigenen Accessoires ergänzen.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_Christmas_sets.txt", "sequence": false }
+    "AQ": { "value": "", "file": "yass_de_Christmas_sets_Adam.txt", "sequence": false }
   },
   "yass_fr_tracksuit": {
-    "Q":  { "value": "Costume d'horreur pour Halloween", "file": "", "sequence": false },
-    "AK": { "value": "Cet ensemble pour homme associe un porté agréable à une allure soignée et pleine de caractère; il accompagne les moments de détente à la maison comme les rencontres entre proches, les fêtes et les occasions festives, et peut se compléter avec vos propres accessoires.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_Christmas_sets.txt", "sequence": false }
+    "Q":  { "value": "Coffret de Noël pour homme", "file": "", "sequence": false },
+    "AK": { "value": "Cet ensemble pour homme allie un confort optimal à un style affirmé. Il vous accompagnera aussi bien lors de moments de détente à la maison que lors de sorties entre amis ; ce look coordonné convient également aux fêtes et aux occasions spéciales, et peut être complété par vos propres accessoires.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_Christmas_sets_Adam.txt", "sequence": false }
   },
 
 
   "yass_de_sweatshirt": {
-    "Q":  { "value": "Hlth-0001", "file": "", "sequence": true },
-    "R":  { "value": "kapuzenpullover herren", "file": "", "sequence": false },
-    "AL": { "value": "Dieses vielseitige Oberteil verbindet eine lässige Silhouette mit modellabhängigen Farben, Strukturen oder Prints und eignet sich je nach Ausführung für Alltag, Freizeit, Reisen oder saisonale Anlässe, wobei es sich mit verschiedenen Hosen und Schuhen kombinieren lässt.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_sweatshirt.txt", "sequence": false }
+    "Q":  { "value": "Spl-0001", "file": "", "sequence": true },
+    "R":  { "value": "weihnachts sweatshirt damen", "file": "", "sequence": false },
+    "AL": { "value": "Dieses Weihnachts-Sweatshirt besticht sowohl durch seinen bequemen, lockeren Schnitt als auch durch seine Vielseitigkeit und sein raffiniertes Design. Es lässt sich hervorragend mit Jeans, Freizeithosen oder im Lagenlook kombinieren und eignet sich gleichermaßen für entspannte Momente zu Hause, Spaziergänge, den Alltag sowie festliche Anlässe und Feiern.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_de_sweatshirt_Eva.txt", "sequence": false }
   },
   "yass_fr_sweatshirt": {
-    "Q":  { "value": "Hlth-0001", "file": "", "sequence": true },
-    "R":  { "value": "Sweat à capuche pour homme", "file": "", "sequence": false },
-    "AL": { "value": "Ce haut polyvalent associe une silhouette décontractée à des couleurs, textures ou imprimés variables selon le modèle et peut accompagner le quotidien, les loisirs, les voyages ou les occasions saisonnières, tout en se combinant avec différents pantalons et chaussures.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_fr_sweatshirt.txt", "sequence": false }
+    "Q":  { "value": "Spl-0001", "file": "", "sequence": true },
+    "R":  { "value": "sweat-shirt de Noël pour femme", "file": "", "sequence": false },
+    "AL": { "value": "Ce sweat de Noël allie une coupe ample et confortable à une grande polyvalence et un design raffiné. Il se marie à merveille avec un jean, un pantalon décontracté ou dans le cadre d'une tenue superposée, et s'adapte aussi bien à un moment de détente à la maison, à une promenade ou à une tenue de tous les jours qu'à une fête ou une soirée de fin d'année.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_fr_sweatshirt_Eva.txt", "sequence": false }
   },
 
 
@@ -100,16 +100,16 @@
 
 
   "yass_de_top": {
-    "S":  { "value": "Chd-0001", "file": "", "sequence": true },
-    "T":  { "value": "Trachtenhemd Herren", "file": "", "sequence": false },
-    "AN": { "value": "Dieses Herrenoberteil verbindet eine klare Silhouette mit langen Ärmeln, Kragen- und Verschlussdetails sowie je nach Ausführung eine unifarbene, strukturierte oder bedruckte Gestaltung und eignet sich als Herrenhemd oder Freizeitoberteil für Alltag, Büro, Reisen und saisonale Anlässe.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_shirt.txt", "sequence": false }
+    "S":  { "value": "Csb-0001", "file": "", "sequence": true },
+    "T":  { "value": "weihnachtsshirt herren", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Weihnachtsoberteil für Herren ist nicht nur bequem, sondern besticht auch durch sein einzigartiges festliches Design und lässt sich vielseitig mit verschiedenen Unterteilen kombinieren. Daher eignet es sich perfekt für Freizeit, Partys, Feiern oder besondere Anlässe und ist die ideale Wahl, da es sich nicht auf einen einzigen Stil beschränken lässt.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_christmas_shirt.txt", "sequence": false }
   },
   "yass_fr_top": {
-    "S":  { "value": "Chd-0001", "file": "", "sequence": true },
-    "T":  { "value": "Chemise à manches longues pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce haut pour homme associe une silhouette structurée, des manches longues, des détails de col et de fermeture ainsi que, selon le modèle, un style uni, texturé ou imprimé, et se porte comme chemise homme ou haut décontracté au quotidien, au bureau, en voyage ou lors d’occasions saisonnières.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_shirt.txt", "sequence": false }
+    "S":  { "value": "Csb-0001", "file": "", "sequence": true },
+    "T":  { "value": "T-shirt de Noël pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce haut de Noël pour homme est à la fois confortable et doté d'un motif festif original ; il se marie facilement avec divers bas. Il est donc idéal pour toutes les occasions, qu'il s'agisse de moments de détente, de soirées, de fêtes ou d'événements spéciaux, sans se limiter à un seul style.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_christmas_shirt.txt", "sequence": false }
   },
 
 
