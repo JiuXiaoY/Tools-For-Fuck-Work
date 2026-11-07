@@ -114,16 +114,16 @@
 
 
   "yass_de_coat": {
-    "S":  { "value": "Smsn-0001", "file": "", "sequence": true },
-    "T":  { "value": "winterjacke damen parka", "file": "", "sequence": false },
-    "AN": { "value": "Diese Winterjacke vereint Wärme, Komfort und stilvolles Design – sie ist schlicht und vielseitig kombinierbar, dabei aber durch und durch stilvoll. Sie eignet sich perfekt für den Alltag, Spaziergänge, Freizeitaktivitäten und Treffen mit Freunden und fügt sich auch bei festlichen Anlässen ganz natürlich in die Atmosphäre ein. Da sie sich leicht mit anderen Kleidungsstücken kombinieren lässt, lässt sich damit mühelos ein warmer, stilvoller und dennoch nicht auftragender Winterlook kreieren.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat_Eva.txt", "sequence": false }
+    "S":  { "value": "Gsl-0001", "file": "", "sequence": true },
+    "T":  { "value": "lustige weihnachtspullover herren motive", "file": "", "sequence": false },
+    "AN": { "value": "Dieses weihnachtliche Oberteil vereint Komfort mit einem einzigartigen Design und kann je nach Modell sowohl solo als auch im Lagenlook getragen werden. Es eignet sich sowohl für den Alltag als auch für Treffen mit Freunden oder festliche Anlässe. In Kombination mit schlichten Hosen und raffinierten Accessoires lassen sich damit mühelos vielfältige Weihnachtsoutfits kreieren.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat_Adam.txt", "sequence": false }
   },
   "yass_fr_coat": {
-    "S":  { "value": "Smsn-0001", "file": "", "sequence": true },
-    "T":  { "value": "veste chauffante femme", "file": "", "sequence": false },
-    "AN": { "value": "Cette veste d'hiver allie chaleur, confort et style. Sobre et polyvalente, elle ne manque pourtant pas de cachet. Elle s'adapte aussi bien aux trajets quotidiens qu'aux balades décontractées ou aux sorties entre amis, et s'intègre naturellement à l'ambiance des fêtes de fin d'année. Facile à associer à d'autres vêtements, elle permet de créer sans effort des tenues d'hiver chaudes et élégantes, sans effet volumineux.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat_Eva.txt", "sequence": false }
+    "S":  { "value": "Gsl-0001", "file": "", "sequence": true },
+    "T":  { "value": "pull de noël drôle homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce haut de Noël allie confort et design original. Selon le modèle, il peut se porter seul ou en superposition ; il convient aussi bien à un look décontracté au quotidien qu'à une sortie entre amis ou à une fête de fin d'année. Associé à un pantalon sobre et à des accessoires raffinés, il permet de créer facilement une multitude de looks de Noël.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat_Adam.txt", "sequence": false }
   },
 
 

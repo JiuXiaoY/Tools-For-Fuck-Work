@@ -11,6 +11,7 @@ import runpy
 import string
 import sys
 import time
+from contextlib import nullcontext
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -37,6 +38,7 @@ class Settings:
     timeout: float = 15
     retries: int = 2
     cache_hours: float = 24
+    save_process_files: bool = False
 
 
 @dataclass
@@ -114,6 +116,8 @@ def validate_settings(settings: Settings) -> None:
         raise ValueError("timeout 必须大于 0")
     if type(settings.retries) is not int or not 0 <= settings.retries <= 5:
         raise ValueError("retries 必须在 0 到 5 之间")
+    if type(settings.save_process_files) is not bool:
+        raise ValueError("save_process_files 必须为 True 或 False")
 
 
 def read_keywords(path: Path) -> list[str]:
@@ -327,7 +331,8 @@ def read_cache(path: Path, query: Query, settings: Settings) -> Result | None:
 
 
 def export_results(directory: Path, queries: list[Query], results: dict[tuple[str, str], Result],
-                   errors: dict[tuple[str, str], str], markets: tuple[str, ...], category: str) -> dict:
+                   errors: dict[tuple[str, str], str], markets: tuple[str, ...], category: str,
+                   *, save_process_files: bool = False) -> dict:
     summary = {}
     for market in markets:
         market_queries = [q for q in queries if q.market == market]
@@ -359,14 +364,17 @@ def export_results(directory: Path, queries: list[Query], results: dict[tuple[st
                             "collected_at":result.collected_at,"source":result.source,"url":result.url,
                             "suggestion_count":len(result.suggestions),"suggestions":positions})
         write_words(directory/f"{market}_suggestions.txt",words)
-        write_words(directory/f"{market}_unfinished.txt",unfinished)
-        write_json(directory/f"{market}_details.json",{
-            "market":market,"category":category,"word_file":f"{market}_suggestions.txt","queries":details})
-        write_json(directory/f"{market}_failures.json",failures)
+        if save_process_files:
+            write_words(directory/f"{market}_unfinished.txt",unfinished)
+            write_json(directory/f"{market}_details.json",{
+                "market":market,"category":category,"word_file":f"{market}_suggestions.txt","queries":details})
+            write_json(directory/f"{market}_failures.json",failures)
         summary[market] = {"planned": len(market_queries), "successful": successful,
                            "empty": empty, "failed": sum((market,q.prefix) in errors for q in market_queries),
                            "pending": len(market_queries)-successful,
                            "words": len(words)}
+    if not save_process_files:
+        return summary
     lines = ["# 采集汇总", "", "生成时间: " + now_text(), "", "搜索类别: " + category, "",
              "建议词来自亚马逊实际响应；出现顺序不是搜索量，也不能用于判断买家所在地。", ""]
     for market, counts in summary.items():
@@ -384,7 +392,7 @@ def run_collection(settings: Settings, queries: list[Query], output: Path, cache
     errors = {}
     cached = 0
     for query in queries:
-        result = None if refresh else read_cache(cache_path(cache,query,settings.category),query,settings)
+        result = None if refresh or not settings.save_process_files else read_cache(cache_path(cache,query,settings.category),query,settings)
         if result is not None:
             results[(query.market,query.prefix)] = result
             cached += 1
@@ -404,7 +412,8 @@ def run_collection(settings: Settings, queries: list[Query], output: Path, cache
             log(f"[采集 {requested}] {query.market.upper()} 前缀 {query.prefix!r}")
             try:
                 result = fetcher.fetch(query)
-                save_cache(cache_path(cache,query,settings.category),result)
+                if settings.save_process_files:
+                    save_cache(cache_path(cache,query,settings.category),result)
                 results[key] = result
                 log(f"[成功] {len(result.suggestions)} 条建议，来源 {result.source}")
             except SuggestionError as exc:
@@ -415,9 +424,10 @@ def run_collection(settings: Settings, queries: list[Query], output: Path, cache
                     log(f"[暂停站点] {query.market.upper()} 受到频率限制，剩余前缀留待下次运行")
     except KeyboardInterrupt:
         interrupted = True
-        log("[已中断] 正在导出已完成的结果；再次运行相同命令可继续")
+        log("[已中断] 正在导出已完成的结果")
     finally:
-        summary = export_results(output,queries,results,errors,settings.markets,settings.category)
+        summary = export_results(output,queries,results,errors,settings.markets,settings.category,
+                                 save_process_files=settings.save_process_files)
         for market, counts in summary.items():
             log(f"[结果 {market.upper()}] 去重词 {counts['words']} 条，成功查询 {counts['successful']} 个，待完成 {counts['pending']} 个")
         log("[输出目录] " + str(output.resolve()))
@@ -464,10 +474,12 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         output = BASE/"outputs"/datetime.now(LOCAL_TIME).strftime("%Y%m%d_%H%M%S_%f")
         output.mkdir(parents=True)
-        with (output/"run.log").open("a",encoding="utf-8",buffering=1) as log_file:
+        log_context = (output/"run.log").open("a",encoding="utf-8",buffering=1) if settings.save_process_files else nullcontext(None)
+        with log_context as log_file:
             def log(message):
                 print(message,flush=True)
-                log_file.write(now_text()+" "+message+"\n")
+                if log_file is not None:
+                    log_file.write(now_text()+" "+message+"\n")
             return run_collection(settings,queries,output,BASE/"cache",log,
                                   refresh=args.refresh,max_queries=args.max_queries)
     except (OSError, ValueError) as exc:
