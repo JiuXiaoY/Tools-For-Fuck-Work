@@ -16,10 +16,10 @@
     "各现有类别的目标列已按「A 未覆盖 且 无可选值」列出（不含 5 个卖点列——它们已由 col_mapping 的 AY..BC 映射覆盖）；取值无法事先确定的留空。"
   ],
   "addr_de_pants": {
-    "Q":  { "value": "Hltr-0001", "file": "", "sequence": true },
-    "R":  { "value": "thermo jogginghose herren", "file": "", "sequence": false },
-    "AL": { "value": "Diese vielseitige Herrenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_pants.txt", "sequence": false }
+    "Q":  { "value": "Tyy-0001", "file": "", "sequence": true },
+    "R":  { "value": "thermoarbeitshosen herren", "file": "", "sequence": false },
+    "AL": { "value": "Diese vielseitige, warme Herrenhose vereint eine ausgewogene Silhouette mit praktischen Details und eignet sich sowohl für Freizeit, Sport, Arbeit und Reisen als auch für Outdoor-Aktivitäten. Der Schnitt, das Design des Bunds sowie die auffälligen Details sorgen gemeinsam für einen unverwechselbaren Stil. In Kombination mit verschiedenen Oberteilen wirkt sie stets stilvoll und elegant.", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "yass_de_pants_Adam.txt", "sequence": false }
   },
   "addr_de_dress": {
     "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
@@ -39,10 +39,16 @@
     "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
   },
   "addr_de_coat": {
-    "S":  { "value": "Rdl-0001", "file": "", "sequence": true },
-    "T":  { "value": "Warme Jacken für Herren", "file": "", "sequence": false },
-    "AN": { "value": "Diese warme Jacke lässt sich gut mit schlichten T-Shirts, Hemden und langen Hosen kombinieren und eignet sich für gemütliche Spaziergänge, Besorgungen und Treffen mit Freunden; sie schützt im Winter vor Kälte und sorgt für ein angenehmes, warmes Tragegefühl; dank ihres schlichten Designs ist sie ein bequemes und vielseitiges Kleidungsstück, das sich in jeden persönlichen Kleidungsstil integrieren lässt.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat.txt", "sequence": false }
+    "S":  { "value": "Imp-0001", "file": "", "sequence": true },
+    "T":  { "value": "Warme Jacken für Damen", "file": "", "sequence": false },
+    "AN": { "value": "Dieses Oberteil vereint Komfort mit einem einzigartigen Design und kann je nach Modell sowohl solo als auch im Lagenlook getragen werden. Es eignet sich sowohl für den Alltag als auch für Treffen mit Freunden oder festliche Anlässe. In Kombination mit schlichten Hosen und raffinierten Accessoires lassen sich damit mühelos vielfältige kreieren.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_de_coat_Eva.txt", "sequence": false }
+  },
+  "addr_de_top": {
+    "T":  { "value": "Jcl-0001", "file": "", "sequence": true },
+    "U":  { "value": "weihnachtsshirt herren lustig", "file": "", "sequence": false },
+    "AO": { "value": "Dieses Weihnachtsoberteil für Herren ist nicht nur bequem, sondern besticht auch durch sein einzigartiges festliches Design und lässt sich vielseitig mit verschiedenen Unterteilen kombinieren. Daher eignet es sich perfekt für Freizeit, Partys, Feiern oder besondere Anlässe und ist die ideale Wahl, da es sich nicht auf einen einzigen Stil beschränken lässt.", "file": "", "sequence": false },
+    "AU": { "value": "", "file": "yass_de_christmas_shirt.txt", "sequence": false }
   },
 
 
@@ -106,10 +112,10 @@
     "AT": { "value": "", "file": "yass_de_christmas_shirt.txt", "sequence": false }
   },
   "yass_fr_top": {
-    "S":  { "value": "Csb-0001", "file": "", "sequence": true },
-    "T":  { "value": "T-shirt de Noël pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce haut de Noël pour homme est à la fois confortable et doté d'un motif festif original ; il se marie facilement avec divers bas. Il est donc idéal pour toutes les occasions, qu'il s'agisse de moments de détente, de soirées, de fêtes ou d'événements spéciaux, sans se limiter à un seul style.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_christmas_shirt.txt", "sequence": false }
+    "S":  { "value": "Zsdl-0001", "file": "", "sequence": true },
+    "T":  { "value": "haut thermique homme", "file": "", "sequence": false },
+    "AN": { "value": "Ces hauts associent un port confortable à un style facile à coordonner pour le quotidien, les loisirs, les rendez-vous et diverses activités ; selon l’occasion, ils s’intègrent à une tenue simple ou plus soignée et complètent de nombreuses garde-robes avec une note moderne.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_shirt_Adam.txt", "sequence": false }
   },
 
 
@@ -178,5 +184,53 @@
     "T":  { "value": "Mlh-0001", "file": "", "sequence": false },
     "AO": { "value": "Ces gants chauds sont non seulement confortables et parfaits pour l'hiver et le froid, mais ils se distinguent également par leur conception bien pensée et leur polyvalence. Que ce soit au quotidien, lors d'une promenade, sur le chemin du travail ou pour des activités de plein air, ils s'intègrent parfaitement à tous les looks et apportent une touche colorée à votre tenue lorsque les températures baissent.", "file": "", "sequence": false },
     "AU": { "value": "", "file": "yass_fr_gloves.txt", "sequence": false }
+  },
+
+
+  "lfda_fr_coat": {
+    "S":  { "value": "Imph-0001", "file": "", "sequence": true },
+    "T":  { "value": "Vestes chaudes pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce haut allie confort et design unique ; selon le modèle, il peut se porter aussi bien seul qu'en superposition. Il convient aussi bien au quotidien qu'aux sorties entre amis ou aux occasions festives. Associé à un pantalon sobre et à des accessoires raffinés, il permet de créer sans effort une multitude de looks.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_coat_Adam.txt", "sequence": false }
+  },
+  "lfda_fr_dress": {
+    "S":  { "value": "Cxxx-0001", "file": "", "sequence": true },
+    "T":  { "value": "robes de Noël pour femmes", "file": "", "sequence": false },
+    "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style soigné et riche en détails, et se prête à différentes associations selon les envies, pour le quotidien, les retrouvailles entre amis, les fêtes ou les occasions festives, avec une allure personnelle et harmonieuse.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_Christmas_dress_Eva.txt", "sequence": false }
+  },
+  "lfda_fr_glove": {
+    "U":  { "value": "gants hiver", "file": "", "sequence": false },
+    "T":  { "value": "Mlh-0001", "file": "", "sequence": false },
+    "AO": { "value": "Ces gants chauds sont non seulement confortables et parfaits pour l'hiver et le froid, mais ils se distinguent également par leur conception bien pensée et leur polyvalence. Que ce soit au quotidien, lors d'une promenade, sur le chemin du travail ou pour des activités de plein air, ils s'intègrent parfaitement à tous les looks et apportent une touche colorée à votre tenue lorsque les températures baissent.", "file": "", "sequence": false },
+    "AU": { "value": "", "file": "yass_fr_gloves_Uni.txt", "sequence": false }
+  },
+  "lfda_fr_top": {
+    "S":  { "value": "Zsdl-0001", "file": "", "sequence": true },
+    "T":  { "value": "haut thermique homme", "file": "", "sequence": false },
+    "AN": { "value": "Ces hauts associent un port confortable à un style facile à coordonner pour le quotidien, les loisirs, les rendez-vous et diverses activités ; selon l’occasion, ils s’intègrent à une tenue simple ou plus soignée et complètent de nombreuses garde-robes avec une note moderne.", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "yass_fr_shirt_Adam.txt", "sequence": false }
+  },
+  "lfda_fr_tracksuit": {
+    "Q":  { "value": "Coffret de Noël pour homme", "file": "", "sequence": false },
+    "AK": { "value": "Cet ensemble pour homme allie un confort optimal à un style affirmé. Il vous accompagnera aussi bien lors de moments de détente à la maison que lors de sorties entre amis ; ce look coordonné convient également aux fêtes et aux occasions spéciales, et peut être complété par vos propres accessoires.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_Christmas_sets_Adam.txt", "sequence": false }
+  },
+  "lfda_fr_cos": {
+    "AC": { "value": "Clin-0001", "file": "", "sequence": true },
+    "CA": { "value": "Clin-0001", "file": "", "sequence": true },
+    "AD": { "value": "Panoplies de costume", "file": "", "sequence": false },
+    "AX": { "value": "Ce produit allie à la perfection un confort optimal et un style affirmé. Que ce soit pour vous détendre chez vous ou pour sortir entre amis, il constitue le choix idéal ; cette tenue convient également aux soirées et aux occasions spéciales, et vous pouvez l'accessoiriser selon vos goûts personnels.", "file": "", "sequence": false },
+    "BD": { "value": "", "file": "yass_fr_Christmas_dress_Eva.txt", "sequence": false }
+  },
+  "lfda_fr_sweater": {
+    "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
+    "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
+    "AQ": { "value": "", "file": "yass_fr_sweater_Adam.txt", "sequence": false }
+  },
+  "lfda_fr_underpants": {
+    "Q":  { "value": "", "file": "", "sequence": false },
+    "AM": { "value": "", "file": "", "sequence": false },
+    "AS": { "value": "", "file": "yass_fr_sweater_Adam.txt", "sequence": false }
   }
 }

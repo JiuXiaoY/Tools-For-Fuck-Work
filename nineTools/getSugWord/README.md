@@ -23,7 +23,7 @@
 
 ## 运行
 
-统一使用 `get_sug_word.py` 运行。当前配置读取 `keywords_de.txt` 中的德国站原词，不添加字母或数字扩展。`keywords_de_expand.txt` 保留供检查，程序不自动读取该文件。
+统一使用 `get_sug_word.py` 运行。当前配置读取 `keywords_de.txt` 中本批裙装相关的德国站原词，不添加字母或数字扩展。
 
 在项目根目录执行：
 

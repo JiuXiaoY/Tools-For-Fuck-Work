@@ -48,7 +48,14 @@ def read_records(path):
                 record = item.strip()
                 if record:
                     records.append(record)
-    return records
+    # 去重并保持原有顺序
+    seen = set()
+    unique_records = []
+    for r in records:
+        if r not in seen:
+            seen.add(r)
+            unique_records.append(r)
+    return unique_records
 
 
 def write_records(path, records):

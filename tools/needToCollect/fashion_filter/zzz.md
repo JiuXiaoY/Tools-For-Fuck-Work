@@ -13,8 +13,4 @@ python tools/needToCollect/fashion_filter/clean_fashion.py --country fr --input 
 
 新数据分别写到 `raw/de/`、`raw/fr/` 和 `result/de/`、`result/fr/`。同日重复运行会生成新文件，不覆盖已有结果。旧版 `raw/`、`result/` 根目录下的德国站历史文件保留原位；独立清洗德国站时仍能自动读取旧版 `raw/` 文件。若指定 `--input`，请同时指定文件对应的 `--country`，避免用错误站点的规则清洗。
 
-不联网验证：
-
-```bash
-python -m unittest discover -s tools/needToCollect/fashion_filter -p "test_*.py"
-```
+采集时先读取 AMZ123 公开网页的请求配置，再为每页生成 `T`（秒级时间戳）、`S`（请求体校验值）及站点要求的应用请求头。配置和签名不写入文件。接口必须返回业务状态 `status=0` 且 `data.rows` 结构有效，才按成功处理；如返回 `status=107`，会显示“签名验证失败”并进入失败重试，不再误报“成功 0 条”。

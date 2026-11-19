@@ -24,6 +24,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
+import re
 import sys
 import time
 from datetime import datetime
@@ -57,6 +60,63 @@ _log = get_logger("hotwords_fashion")
 
 # ── 采集 ───────────────────────────────────────────────────────────
 
+def load_request_config(session: requests.Session, page_url: str) -> dict:
+    """从公开网页读取与前端一致的请求配置，不保存签名参数。"""
+    response = session.get(page_url, timeout=REQUEST_TIMEOUT)
+    response.raise_for_status()
+    config = {}
+    for key in ("projectId", "appId", "secretKey"):
+        pattern = (r'(?<![A-Za-z0-9_])(?:"' + key + r'"|' + key
+                   + r')\s*:\s*("(?:\\.|[^"\\])*"|\d+)')
+        matches = re.findall(pattern, response.text)
+        if not matches:
+            raise RuntimeError(f"AMZ123 网页请求配置缺少 {key}，请检查网站是否更新")
+        config[key] = json.loads(matches[-1])
+    if (not isinstance(config["projectId"], str) or not config["projectId"]
+            or not isinstance(config["secretKey"], str) or not config["secretKey"]):
+        raise RuntimeError("AMZ123 网页请求配置格式异常")
+    return config
+
+
+def request_rows(session: requests.Session, payload: dict, config: dict, page_url: str) -> list[dict]:
+    """按网页规则签名，并同时检查 HTTP 状态、业务状态和数据结构。"""
+    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    timestamp = str(int(time.time()))
+    # 与前端 JSON.stringify(payload) + '_' + T + '_' + secretKey 保持一致。
+    signature = hashlib.md5(
+        f"{body}_{timestamp}_{config['secretKey']}".encode("utf-8")
+    ).hexdigest()
+    headers = {
+        "Content-Type": "application/json",
+        "PROJECT-ID": config["projectId"],
+        "APP-ID": str(config["appId"]),
+        "T": timestamp,
+        "S": signature,
+        "Authorization": "",
+        "Origin": "https://www.amz123.com",
+        "Referer": page_url,
+    }
+    response = session.post(
+        API_URL, data=body.encode("utf-8"), headers=headers, timeout=REQUEST_TIMEOUT
+    )
+    response.raise_for_status()
+    try:
+        result = response.json()
+    except ValueError as exc:
+        raise RuntimeError("AMZ123 热词接口未返回有效 JSON") from exc
+    if not isinstance(result, dict):
+        raise RuntimeError("AMZ123 热词接口响应格式异常：顶层不是对象")
+    status = result.get("status")
+    if type(status) is not int or status != 0:
+        info = result.get("info") or "缺少业务状态或错误提示"
+        raise RuntimeError(f"AMZ123 热词接口请求失败：status={status!r}，info={info}")
+    data = result.get("data")
+    rows = data.get("rows") if isinstance(data, dict) else None
+    if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
+        raise RuntimeError("AMZ123 热词接口响应格式异常：data.rows 应为对象列表")
+    return rows
+
+
 def build_payload(country: str, category: str, page_num: int = 1) -> dict:
     """按涨幅降序请求热词 API(condition=fluctuation, order=1 升序),不带搜索词。
 
@@ -85,23 +145,22 @@ def build_payload(country: str, category: str, page_num: int = 1) -> dict:
 def fetch_pairs(country: str, category: str, pages: int = DEFAULT_PAGES) -> list[tuple[str, int]]:
     """循环请求前 pages 页,返回 [(word, fluctuation), ...](未排序、未过滤)。"""
     pairs: list[tuple[str, int]] = []
-    for num in range(1, pages + 1):
-        resp = requests.post(
-            API_URL, json=build_payload(country, category, page_num=num), timeout=REQUEST_TIMEOUT
-        )
-        resp.raise_for_status()
-        rows = resp.json().get("data", {}).get("rows", [])
-        _log.info("  第 %d/%d 页: %d 条", num, pages, len(rows))
-        for row in rows:
-            word = row.get("word")
-            if not word or not str(word).strip():
-                continue
-            pairs.append((str(word).strip(), _int_or_zero(row.get("fluctuation"))))
-        if len(rows) < PAGE_SIZE:
-            _log.info("  已到最后一页(不足 %d 条),提前结束", PAGE_SIZE)
-            break
-        if num < pages:
-            time.sleep(REQUEST_INTERVAL)
+    page_url = f"https://www.amz123.com/{country}topkeywords"
+    with requests.Session() as session:
+        config = load_request_config(session, page_url)
+        for num in range(1, pages + 1):
+            rows = request_rows(session, build_payload(country, category, page_num=num), config, page_url)
+            _log.info("  第 %d/%d 页: %d 条", num, pages, len(rows))
+            for row in rows:
+                word = row.get("word")
+                if not word or not str(word).strip():
+                    continue
+                pairs.append((str(word).strip(), _int_or_zero(row.get("fluctuation"))))
+            if len(rows) < PAGE_SIZE:
+                _log.info("  已到最后一页(不足 %d 条),提前结束", PAGE_SIZE)
+                break
+            if num < pages:
+                time.sleep(REQUEST_INTERVAL)
     return pairs
 
 

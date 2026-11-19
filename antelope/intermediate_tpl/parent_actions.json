@@ -38,6 +38,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FS"] }
   },
+  "addr_de_top": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","BF","BG","BN","BO","IW"] }
+  },
 
 
   "yass_de_coat": {
@@ -156,5 +161,46 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","ET"] }
+  },
+
+  "lfda_fr_coat": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FQ"] }
+  },
+  "lfda_fr_dress": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","GX"] }
+  },
+  "lfda_fr_glove": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","ES"] }
+  },
+  "lfda_fr_top": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BM","BN","FY"] }
+  },
+  "lfda_fr_tracksuit": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","AW","AX","BA","BB","EK"] }
+  },
+  "lfda_fr_cos": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["AH","AI","AJ","AK","AL","AM","AN","AO","AP"] }
+  },
+  "lfda_fr_sweater": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","U","V","W","X","Y","Z","AA","AB","AC","BF","BG","BB","BC","EM"] }
+  },
+  "lfda_fr_underpants": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","W","X","Y","Z","AA","AB","AC","AD","AE","BD","BE","BH","BI","EO"] }
   }
 }
