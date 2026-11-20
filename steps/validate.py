@@ -4,7 +4,7 @@ from core import PipelineContext, PipelineStep
 class ValidateStep(PipelineStep):
     name = "validate"
     description = "Report sheet row and column counts"
-    requires = ("merge_sheets",)
+    requires = ("select_first_sheet",)
 
     def run(self, ctx: PipelineContext) -> PipelineContext:
         ws = ctx.worksheet

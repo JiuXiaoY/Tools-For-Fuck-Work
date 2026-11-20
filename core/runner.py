@@ -20,7 +20,7 @@ def process_file(xlsx_path: Path, config: Config | None = None) -> PipelineConte
 
     wb = load_workbook(xlsx_path)
     try:
-        ws = wb.active
+        ws = wb.worksheets[0]
         context = PipelineContext(
             workbook=wb,
             worksheet=ws,

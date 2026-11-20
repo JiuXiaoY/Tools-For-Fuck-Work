@@ -21,7 +21,11 @@ def extract_price_before_jpy(text: str, *, country: str = "fr") -> Decimal | Non
     if country in ("de", "fr"):
         price = matches[jpy_at - 1]
     elif country == "uk":
-        price = next((match for match in matches[:jpy_at] if match.group(2).upper() == "GBP"), None)
+        # Search backwards from JPY to find the closest preceding GBP price.
+        price = next(
+            (match for match in reversed(matches[:jpy_at]) if match.group(2).upper() == "GBP"),
+            None,
+        )
     else:
         return None
 

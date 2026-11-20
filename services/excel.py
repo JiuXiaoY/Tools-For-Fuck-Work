@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import logging
+from contextlib import closing
 from copy import copy as copy_style
 from pathlib import Path
 
 from openpyxl import load_workbook
 from openpyxl.workbook.workbook import Workbook
+from openpyxl.worksheet.worksheet import Worksheet
 
 from services.images import clone_image
 
@@ -30,59 +32,58 @@ def _copy_style(src, dst) -> None:
         setattr(dst, attr, copy_style(getattr(src, attr)))
 
 
+def keep_first_worksheet(workbook: Workbook) -> Worksheet:
+    """Keep the first worksheet in tab order in an output workbook."""
+    first = workbook.worksheets[0]
+    for name in workbook.sheetnames:
+        if name != first.title:
+            del workbook[name]
+    first.sheet_state = "visible"
+    workbook.active = 0
+    return first
+
+
 def merge_workbooks(paths: list[Path]) -> dict:
-    """Merge first sheet of each workbook into one, returning {workbook, files, images}."""
+    """Append the first worksheet of each input workbook to a single worksheet."""
     if not paths:
         raise ValueError("empty path list")
 
     target = load(paths[0])
-    for name in list(target.sheetnames):
-        if name != target.active.title:
-            del target[name]
-
-    total = len(target.active._images)
+    target_ws = keep_first_worksheet(target)
+    total = len(target_ws._images)
     print(f"  [merge] {paths[0].name}: {total}/{total} images kept")
 
     for fp in paths[1:]:
-        src = load(fp)
-        src_ws = src.active
-        new_name = src_ws.title
-        if new_name in target.sheetnames:
-            base, n = new_name, 2
-            while f"{base}_{n}" in target.sheetnames:
-                n += 1
-            new_name = f"{base}_{n}"
+        with closing(load(fp)) as source:
+            src_ws = source.worksheets[0]
+            offset = target_ws.max_row
 
-        tws = target.create_sheet(title=new_name)
+            for row_number, row in enumerate(src_ws.iter_rows(), start=1):
+                target_row = row_number + offset
+                height = src_ws.row_dimensions[row_number].height
+                if height is not None:
+                    target_ws.row_dimensions[target_row].height = height
+                for cell in row:
+                    target_cell = target_ws.cell(row=target_row, column=cell.column)
+                    target_cell.value = cell.value
+                    _copy_style(cell, target_cell)
 
-        for col_letter, cd in src_ws.column_dimensions.items():
-            if cd.width:
-                tws.column_dimensions[col_letter].width = cd.width
+            for merged in src_ws.merged_cells.ranges:
+                target_ws.merge_cells(
+                    start_row=merged.min_row + offset,
+                    start_column=merged.min_col,
+                    end_row=merged.max_row + offset,
+                    end_column=merged.max_col,
+                )
 
-        for row in src_ws.iter_rows():
-            rn = row[0].row
-            rd = src_ws.row_dimensions[rn]
-            if rd.height:
-                tws.row_dimensions[rn].height = rd.height
-            for cell in row:
-                tc = tws.cell(row=cell.row, column=cell.column)
-                tc.value = cell.value
-                _copy_style(cell, tc)
-
-        for mr in src_ws.merged_cells.ranges:
-            try:
-                tws.merge_cells(str(mr))
-            except Exception:
-                pass
-
-        img_count = 0
-        for img in src_ws._images:
-            try:
-                if clone_image(img, tws):
-                    img_count += 1
-            except Exception as exc:
-                logger.warning("Image clone failed in %s: %s", fp.name, exc)
-        total += img_count
-        print(f"  [merge] {fp.name}: {img_count}/{len(src_ws._images)} images copied")
+            img_count = 0
+            for img in src_ws._images:
+                try:
+                    if clone_image(img, target_ws, row_offset=offset):
+                        img_count += 1
+                except Exception as exc:
+                    logger.warning("Image clone failed in %s: %s", fp.name, exc)
+            total += img_count
+            print(f"  [merge] {fp.name}: {img_count}/{len(src_ws._images)} images copied")
 
     return {"workbook": target, "images": total}

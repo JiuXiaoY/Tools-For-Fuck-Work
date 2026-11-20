@@ -58,10 +58,10 @@ def rebuild_sheet(
     for merged in worksheet.merged_cells.ranges:
         if merged.min_row in row_map and merged.max_row in row_map:
             rebuilt.merge_cells(
-                min_row=row_map[merged.min_row],
-                min_col=merged.min_col,
-                max_row=row_map[merged.max_row],
-                max_col=merged.max_col,
+                start_row=row_map[merged.min_row],
+                start_column=merged.min_col,
+                end_row=row_map[merged.max_row],
+                end_column=merged.max_col,
             )
 
     for column_letter, dimension in worksheet.column_dimensions.items():

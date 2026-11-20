@@ -44,7 +44,7 @@ def main() -> None:
 
     # ── 2. Extract K + L → check_.txt ──
     wb = openpyxl.load_workbook(src)
-    ws = wb.active
+    ws = wb.worksheets[0]
 
     lines: list[str] = []
     empty_count = 0
@@ -83,7 +83,7 @@ def main() -> None:
     _log.info("Processing write-back: %d lines", len(processed_lines))
 
     wb = openpyxl.load_workbook(src)
-    ws = wb.active
+    ws = wb.worksheets[0]
 
     # First pass: count data rows to validate
     proc_idx = 0

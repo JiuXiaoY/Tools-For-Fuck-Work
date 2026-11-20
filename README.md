@@ -51,13 +51,12 @@ public/xls_xlsx/
 python jenkins.py
 ```
 
-`jenkins.py` 当前启用五个步骤：
+`jenkins.py` 当前启用四个步骤：
 
 1. `tools/xls2xlsx.py`
 2. `preprocess/run.py`
 3. `main.py`
 4. `tools/color_size_deal/color_reprocess.py`
-5. `tools/title_optimize/title_rewrite.py`，通过 DeepSeek 网页端优化标题
 
 如果输入本来就是 `.xlsx`，应跳过第一步，直接运行：
 
@@ -65,7 +64,6 @@ python jenkins.py
 python preprocess/run.py
 python main.py
 python tools/color_size_deal/color_reprocess.py
-python tools/title_optimize/title_rewrite.py
 ```
 
 最终文件写入：
@@ -80,7 +78,7 @@ outputs/{月}.{日}v{版本}_{国家}.xlsx
 
 | 顺序 | 步骤 | 作用 |
 |---:|---|---|
-| 1 | `merge_sheets` | 合并工作簿内的多个工作表 |
+| 1 | `select_first_sheet` | 按标签顺序选最左边的第一张工作表，跳过其他表 |
 | 2 | `validate` | 记录处理前行列数；目前不会阻止异常输入 |
 | 3 | `insert_columns` | 根据配置插入列并调整图片锚点 |
 | 4 | `assign_ids` | 写入随机 ID |

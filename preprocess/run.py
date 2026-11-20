@@ -29,8 +29,9 @@ def preprocess_context(
     context: PipelineContext,
     config: Config | None = None,
 ) -> PipelineContext:
-    """Apply preprocessing to an existing in-memory workbook context."""
+    """Apply preprocessing to the first worksheet in tab order."""
     config = config or Config()
+    context.worksheet = context.workbook.worksheets[0]
     return Pipeline(
         get_preprocess_steps(config),
         continue_on_error=config.pipeline_continue_on_error,
@@ -58,7 +59,7 @@ def main() -> None:
         try:
             context = PipelineContext(
                 workbook=wb,
-                worksheet=wb.active,
+                worksheet=wb.worksheets[0],
                 source_path=f,
                 source_filename=f.name,
             )

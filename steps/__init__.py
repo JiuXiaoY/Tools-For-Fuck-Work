@@ -1,6 +1,6 @@
 """Step registry — the ordered list of pipeline steps."""
 
-from steps.merge_sheets       import MergeSheetsStep
+from steps.select_first_sheet import SelectFirstSheetStep
 from steps.validate           import ValidateStep
 from steps.insert_columns     import InsertColumnsStep
 from steps.assign_ids       import AssignIdsStep
@@ -19,7 +19,7 @@ from config import Config
 
 def get_steps(config: Config | None = None) -> list[PipelineStep]:
     return [
-        MergeSheetsStep(config),
+        SelectFirstSheetStep(config),
         ValidateStep(config),
         InsertColumnsStep(config),
         AssignIdsStep(config),
