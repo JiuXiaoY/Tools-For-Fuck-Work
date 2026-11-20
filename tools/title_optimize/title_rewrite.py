@@ -3,11 +3,11 @@
 Workflow:
   1. Read outputs/{date}v{n}_{country}.xlsx, extract col I(9)→origin_title, col P(16)→origin_link
   2. Validate all three files exist and line counts match
-  3. Run optimize (deepseek_web.py or run.py)
-  4. Insert column after G, write optimized titles back to Excel
+  3. Optimize titles with DeepSeek in the browser
+  4. Write optimized titles back to column I
 
 Usage:
-    python tools/title_optimize/workflow.py
+    python tools/title_optimize/title_rewrite.py
 """
 
 from __future__ import annotations
@@ -93,12 +93,8 @@ def main() -> None:
     else:
         # Need to run optimization
         _log.info("optimize_title empty or outdated, running optimization...")
-        # Seed with origin titles so run.py has input
-        OPTIMIZE_TITLE.write_text("")  # clear for fresh run
+        OPTIMIZE_TITLE.write_text("")
 
-        # if mode == "api":
-        #     script = BASE / "run.py"
-        # else:
         script = BASE / "deepseek_web.py"
 
         _log.info("Running: %s", script.name)

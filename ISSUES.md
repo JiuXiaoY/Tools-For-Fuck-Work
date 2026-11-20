@@ -6,7 +6,7 @@
 
 ### 1. 仓库中存在疑似真实凭据
 
-- `config.example.py` 包含看起来像真实 API Key 的默认值。
+- 历史版 `config.example.py` 曾包含疑似真实的 API Key。
 - 历史问题文档曾直接记录完整密钥；本文件不再保留其值。
 - 已跟踪的 `zip_by_ec/Tools_refactoring_completed.zip` 内含 `config.py` 和 `.git/config`。
 
@@ -74,7 +74,7 @@
 
 ### 12. 依赖声明不完整
 
-`pyproject.toml`、`requirements.txt` 和真实工具依赖不一致。Playwright、AI SDK、NumPy、OpenCV 等没有清晰的可选依赖分组。
+`pyproject.toml`、`requirements.txt` 和真实工具依赖不一致。Playwright、NumPy、OpenCV 等没有清晰的可选依赖分组。
 
 建议增加 `ai`、`browser`、`vision`、`dev` 等 optional dependency groups。
 

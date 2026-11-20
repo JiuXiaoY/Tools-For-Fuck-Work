@@ -21,7 +21,7 @@ Excel 批处理与 Amazon 模板填充工具集。仓库包含两条主要流程
 - Python 3.10+
 - Windows 为主要运行环境
 - 核心依赖：`openpyxl`、`Pillow`、`requests`
-- 部分 AI、浏览器和图像工具还需要 Playwright、Google GenAI、OpenAI、NumPy、OpenCV 等可选依赖
+- 网页端 AI 和图像工具还需要 Playwright、NumPy、OpenCV 等可选依赖
 
 安装基础依赖：
 
@@ -51,12 +51,13 @@ public/xls_xlsx/
 python jenkins.py
 ```
 
-`jenkins.py` 当前启用四个步骤：
+`jenkins.py` 当前启用五个步骤：
 
 1. `tools/xls2xlsx.py`
 2. `preprocess/run.py`
 3. `main.py`
 4. `tools/color_size_deal/color_reprocess.py`
+5. `tools/title_optimize/title_rewrite.py`，通过 DeepSeek 网页端优化标题
 
 如果输入本来就是 `.xlsx`，应跳过第一步，直接运行：
 
@@ -64,6 +65,7 @@ python jenkins.py
 python preprocess/run.py
 python main.py
 python tools/color_size_deal/color_reprocess.py
+python tools/title_optimize/title_rewrite.py
 ```
 
 最终文件写入：

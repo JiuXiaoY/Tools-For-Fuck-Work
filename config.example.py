@@ -99,15 +99,6 @@ class Config:
     # 映射表国家码：de / fr / us ...，对应 data/color_mapping_{code}.json 与 data/size_mapping_{code}.json
     mapping_country: str = "fr"
 
-    # ── AI ─────────────────────────────────────────────────────────────
-    ai_provider: str = "deepseek"                              # deepseek / gemini
-    ai_api_key: str = "sk-39b17cf2e6a542508090bb1c8d07570d"    # API key for title_optimize etc.
-    ai_model: str = "deepseek-v4-pro"                          # model name
-    # legacy (used by tools/ai_fill.py)
-    gemini_api_key: str = ""                                   # Google Gemini API key
-    gemini_model: str = "gemini-2.5-flash"                     # model name
-    gemini_category: str = "女士上衣"                            # 女士上衣/男士上衣/女士裤子/男士裤子
-
     # ── hotwords ───────────────────────────────────────────────────────
     hotwords_country: str = "de"                           # 目标站点国家码(如 de/us),CLI --country 默认值
     hotwords_dual_mode: bool = True                        # True=双请求(fluctuation+new_rank), False=单请求
