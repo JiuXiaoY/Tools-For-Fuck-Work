@@ -1,16 +1,15 @@
 {
   "_comment": [
-    "目标列取值配置：只作用于「col_scope(C−B) 中 A 没有映射、completed 也没有可选值(choices)」的列。",
-    "这两类列（有 A 映射的、有可选值的）由 A 取数 / ⑦ AI 选值负责，本文件配置了也会被跳过，不会覆盖真实数据。",
-    "字段（三件套，缺省按默认值处理）：",
+    "目标列取值配置，只给待填列中 A 未映射且无 choices 的列提供值。",
+    "字段均可省略：",
     "  value    : 指定值；\"\" 表示未配置指定值。",
     "  file     : 多行值文件；\"\" 表示未配置文件路径。",
     "  sequence : 是否序列填充；默认 false（非序列，整列同值）；true 强制序列（值必须以数字结尾，否则报错）；\"auto\" 值以数字结尾才序列化。",
     "取值优先级：file（多行值文件）> value（指定值）> 两者都空则保留 dataTemp 占位。",
-    "填法：整列连续填充，跨组不重置——数据区第 1 行取第 1 个值，第 2 行取第 2 个……到底后回到开头。",
+    "默认值按行展开，值文件循环和编号递增跨组连续。若需清空父体的指定列，使用 parent_actions.json 的 clear_values。",
     "序列填充示例：value = \"S-0001\" 且 sequence = true → S-0001, S-0002, …（位数按种子左侧补零；\"0001\"/\"A-1\" 同样支持）。",
     "键 = 列字母（Excel 列名，大小写不敏感），如 S / T / AN / AT；兼容旧写法（直接写列号 19/40）。",
-    "file 可写绝对路径 / 相对仓库根路径 / 纯文件名（纯文件名到 antelope/values/<类别>/ 或 antelope/values/ 下找）。",
+    "file 优先写相对 antelope/values/ 的路径，如 fr_Adam/fr_coat_Adam.txt。也可写绝对路径或相对仓库根的路径。",
     "值文件：每行一个值，utf-8(sig) 或 gbk；不允许空行（出现空行会直接报错并给出行号）；文件模式按行循环，不受 sequence 影响。",
     "配置按 ACTIVE_CATEGORY 分段（见 zconfig.constant.py）；以 _ 开头的键一律忽略。",
     "各现有类别的目标列已按「A 未覆盖 且 无可选值」列出（不含 5 个卖点列——它们已由 col_mapping 的 AY..BC 映射覆盖）；取值无法事先确定的留空。"
@@ -19,36 +18,36 @@
     "Q":  { "value": "Tyy-0001", "file": "", "sequence": true },
     "R":  { "value": "thermoarbeitshosen herren", "file": "", "sequence": false },
     "AL": { "value": "Diese vielseitige, warme Herrenhose vereint eine ausgewogene Silhouette mit praktischen Details und eignet sich sowohl für Freizeit, Sport, Arbeit und Reisen als auch für Outdoor-Aktivitäten. Der Schnitt, das Design des Bunds sowie die auffälligen Details sorgen gemeinsam für einen unverwechselbaren Stil. In Kombination mit verschiedenen Oberteilen wirkt sie stets stilvoll und elegant.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_pants_Adam.txt", "sequence": false }
+    "AR": { "value": "", "file": "de_Adam/de_pants_Adam.txt", "sequence": false }
   },
   "addr_de_dress": {
     "S":  { "value": "Tzn-0001", "file": "", "sequence": true },
     "T":  { "value": "Halloween-Kleid", "file": "", "sequence": false },
     "AN": { "value": "Dieses Kostüm eignet sich für Halloween, Mottofeiern, Rollenspiele, Karneval und Bühnenauftritte und lässt sich je nach Anlass mit passenden Accessoires kombinieren; die durchdachte Ausführung unterstützt ein angenehmes Tragegefühl bei Feiern, Auftritten und gemeinsamen Aktivitäten.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_hall_dress.txt", "sequence": false }
+    "AT": { "value": "", "file": "de_Eva/de_hall_dress_Eva.txt", "sequence": false }
   },
   "addr_de_tracksuit": {
     "Q":  { "value": "R-0001", "file": "", "sequence": true },
     "R":  { "value": "Herrenanzüge", "file": "", "sequence": false },
     "AL": { "value": "Dieses aufeinander abgestimmte Bekleidungsset verbindet eine harmonische Optik mit flexiblen Kombinationsmöglichkeiten. Die enthaltenen Teile lassen sich gemeinsam tragen oder je nach Modell und persönlichem Stil mit weiterer Garderobe ergänzen.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "addr_de_tracksuit.txt", "sequence": false }
+    "AR": { "value": "", "file": "de_Adam/de_tracksuit_Adam.txt", "sequence": false }
   },
   "addr_de_sweater": {
     "R":  { "value": "Strickpullover und Strickjacken für Herren", "file": "", "sequence": false },
     "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
+    "AQ": { "value": "", "file": "de_Adam/de_sweater_Adam.txt", "sequence": false }
   },
   "addr_de_coat": {
     "S":  { "value": "Imp-0001", "file": "", "sequence": true },
     "T":  { "value": "Warme Jacken für Damen", "file": "", "sequence": false },
     "AN": { "value": "Dieses Oberteil vereint Komfort mit einem einzigartigen Design und kann je nach Modell sowohl solo als auch im Lagenlook getragen werden. Es eignet sich sowohl für den Alltag als auch für Treffen mit Freunden oder festliche Anlässe. In Kombination mit schlichten Hosen und raffinierten Accessoires lassen sich damit mühelos vielfältige kreieren.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat_Eva.txt", "sequence": false }
+    "AT": { "value": "", "file": "de_Eva/de_coat_Eva.txt", "sequence": false }
   },
   "addr_de_top": {
     "T":  { "value": "Jcl-0001", "file": "", "sequence": true },
     "U":  { "value": "weihnachtsshirt herren lustig", "file": "", "sequence": false },
     "AO": { "value": "Dieses Weihnachtsoberteil für Herren ist nicht nur bequem, sondern besticht auch durch sein einzigartiges festliches Design und lässt sich vielseitig mit verschiedenen Unterteilen kombinieren. Daher eignet es sich perfekt für Freizeit, Partys, Feiern oder besondere Anlässe und ist die ideale Wahl, da es sich nicht auf einen einzigen Stil beschränken lässt.", "file": "", "sequence": false },
-    "AU": { "value": "", "file": "yass_de_christmas_shirt.txt", "sequence": false }
+    "AU": { "value": "", "file": "de_unknown/de_christmas_shirt.txt", "sequence": false }
   },
 
 
@@ -56,25 +55,25 @@
     "Q":  { "value": "Hmt-0001", "file": "", "sequence": true },
     "R":  { "value": "thermo jogginghose damen", "file": "", "sequence": false },
     "AL": { "value": "Diese vielseitige Damenhose verbindet eine ausgewogene Silhouette mit praktischen Details und lässt sich je nach Modell für Freizeit, Sport, Beruf, Reisen oder Aktivitäten im Freien kombinieren, während Schnitt, Bundgestaltung und sichtbare Akzente den jeweiligen Stil prägen.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_pants_Eva.txt", "sequence": false }
+    "AR": { "value": "", "file": "de_Eva/de_pants_Eva.txt", "sequence": false }
   },
   "yass_fr_pants": {
     "Q":  { "value": "Alx-0001", "file": "", "sequence": true },
     "R":  { "value": "pantalon de jogging thermique pour femme", "file": "", "sequence": false },
     "AL": { "value": "Ce pantalon polyvalent pour femmes associe une silhouette équilibrée à des détails pratiques et peut, selon le modèle, accompagner les loisirs, le sport, le travail, les voyages ou les activités en plein air, tandis que la coupe, la taille et les accents visibles définissent son allure.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_fr_pants_Eva.txt", "sequence": false }
+    "AR": { "value": "", "file": "fr_Eva/fr_pants_Eva.txt", "sequence": false }
   },
 
 
   "yass_de_tracksuit": {
     "Q":  { "value": "Weihnachts Set Herren", "file": "", "sequence": false },
     "AK": { "value": "Dieses Herren-Set verbindet ein angenehmes Tragegefühl mit einer markant gestalteten Optik und begleitet entspannte Stunden zu Hause ebenso wie Treffen mit Freunden; der aufeinander abgestimmte Look eignet sich auch für Feiern und festliche Anlässe und lässt sich mit eigenen Accessoires ergänzen.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_Christmas_sets_Adam.txt", "sequence": false }
+    "AQ": { "value": "", "file": "de_Adam/de_Christmas_sets_Adam.txt", "sequence": false }
   },
   "yass_fr_tracksuit": {
     "Q":  { "value": "Coffret de Noël pour homme", "file": "", "sequence": false },
     "AK": { "value": "Cet ensemble pour homme allie un confort optimal à un style affirmé. Il vous accompagnera aussi bien lors de moments de détente à la maison que lors de sorties entre amis ; ce look coordonné convient également aux fêtes et aux occasions spéciales, et peut être complété par vos propres accessoires.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_Christmas_sets_Adam.txt", "sequence": false }
+    "AQ": { "value": "", "file": "fr_Adam/fr_Christmas_sets_Adam.txt", "sequence": false }
   },
 
 
@@ -82,13 +81,13 @@
     "Q":  { "value": "Spl-0001", "file": "", "sequence": true },
     "R":  { "value": "weihnachts sweatshirt damen", "file": "", "sequence": false },
     "AL": { "value": "Dieses Weihnachts-Sweatshirt besticht sowohl durch seinen bequemen, lockeren Schnitt als auch durch seine Vielseitigkeit und sein raffiniertes Design. Es lässt sich hervorragend mit Jeans, Freizeithosen oder im Lagenlook kombinieren und eignet sich gleichermaßen für entspannte Momente zu Hause, Spaziergänge, den Alltag sowie festliche Anlässe und Feiern.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_de_sweatshirt_Eva.txt", "sequence": false }
+    "AR": { "value": "", "file": "de_Eva/de_sweatshirt_Eva.txt", "sequence": false }
   },
   "yass_fr_sweatshirt": {
     "Q":  { "value": "Spl-0001", "file": "", "sequence": true },
     "R":  { "value": "sweat-shirt de Noël pour femme", "file": "", "sequence": false },
     "AL": { "value": "Ce sweat de Noël allie une coupe ample et confortable à une grande polyvalence et un design raffiné. Il se marie à merveille avec un jean, un pantalon décontracté ou dans le cadre d'une tenue superposée, et s'adapte aussi bien à un moment de détente à la maison, à une promenade ou à une tenue de tous les jours qu'à une fête ou une soirée de fin d'année.", "file": "", "sequence": false },
-    "AR": { "value": "", "file": "yass_fr_sweatshirt_Eva.txt", "sequence": false }
+    "AR": { "value": "", "file": "fr_Eva/fr_sweatshirt_Eva.txt", "sequence": false }
   },
 
 
@@ -96,12 +95,12 @@
     "Q":  { "value": "Atm-0001", "file": "", "sequence": true },
     "R":  { "value": "Herrenpullover", "file": "", "sequence": false },
     "AK": { "value": "Dieses Strickoberteil verbindet eine strukturierte Maschenoptik mit einem legeren Stil für Alltag und Freizeit. Je nach Modell variieren Ausschnitt, Muster und Details; zu Jeans oder Chinos getragen, lässt es sich in unterschiedliche Outfits einfügen. Bitte Maße und Pflegehinweise beachten.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_de_sweater.txt", "sequence": false }
+    "AQ": { "value": "", "file": "de_Adam/de_sweater_Adam.txt", "sequence": false }
   },
   "yass_fr_sweater": {
     "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
     "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_sweater.txt", "sequence": false }
+    "AQ": { "value": "", "file": "fr_Adam/fr_sweater_Adam.txt", "sequence": false }
   },
 
 
@@ -109,13 +108,13 @@
     "S":  { "value": "Csb-0001", "file": "", "sequence": true },
     "T":  { "value": "weihnachtsshirt herren", "file": "", "sequence": false },
     "AN": { "value": "Dieses Weihnachtsoberteil für Herren ist nicht nur bequem, sondern besticht auch durch sein einzigartiges festliches Design und lässt sich vielseitig mit verschiedenen Unterteilen kombinieren. Daher eignet es sich perfekt für Freizeit, Partys, Feiern oder besondere Anlässe und ist die ideale Wahl, da es sich nicht auf einen einzigen Stil beschränken lässt.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_christmas_shirt.txt", "sequence": false }
+    "AT": { "value": "", "file": "de_unknown/de_christmas_shirt.txt", "sequence": false }
   },
   "yass_fr_top": {
     "S":  { "value": "Zsdl-0001", "file": "", "sequence": true },
     "T":  { "value": "haut thermique homme", "file": "", "sequence": false },
     "AN": { "value": "Ces hauts associent un port confortable à un style facile à coordonner pour le quotidien, les loisirs, les rendez-vous et diverses activités ; selon l’occasion, ils s’intègrent à une tenue simple ou plus soignée et complètent de nombreuses garde-robes avec une note moderne.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_shirt_Adam.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Adam/fr_shirt_Adam.txt", "sequence": false }
   },
 
 
@@ -123,25 +122,25 @@
     "S":  { "value": "Gsl-0001", "file": "", "sequence": true },
     "T":  { "value": "lustige weihnachtspullover herren motive", "file": "", "sequence": false },
     "AN": { "value": "Dieses weihnachtliche Oberteil vereint Komfort mit einem einzigartigen Design und kann je nach Modell sowohl solo als auch im Lagenlook getragen werden. Es eignet sich sowohl für den Alltag als auch für Treffen mit Freunden oder festliche Anlässe. In Kombination mit schlichten Hosen und raffinierten Accessoires lassen sich damit mühelos vielfältige Weihnachtsoutfits kreieren.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_coat_Adam.txt", "sequence": false }
+    "AT": { "value": "", "file": "de_Adam/de_coat_Adam.txt", "sequence": false }
   },
   "yass_fr_coat": {
     "S":  { "value": "Gsl-0001", "file": "", "sequence": true },
     "T":  { "value": "pull de noël drôle homme", "file": "", "sequence": false },
     "AN": { "value": "Ce haut de Noël allie confort et design original. Selon le modèle, il peut se porter seul ou en superposition ; il convient aussi bien à un look décontracté au quotidien qu'à une sortie entre amis ou à une fête de fin d'année. Associé à un pantalon sobre et à des accessoires raffinés, il permet de créer facilement une multitude de looks de Noël.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat_Adam.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Adam/fr_coat_Adam.txt", "sequence": false }
   },
 
 
   "yass_de_fitnesstop": {
     "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
     "AM": { "value": "Dieses Damenkorsett verbindet eine körpernahe Corsagenform mit dekorativen Details wie strukturierten Nähten, Schnürungen oder Metallverschlüssen und lässt sich je nach Ausführung zu Röcken, Hosen sowie Kostüm-, Party-, Gothic- oder festlichen Looks kombinieren.", "file": "", "sequence": false },
-    "AS": { "value": "", "file": "yass_de_fitnesstop.txt", "sequence": false }
+    "AS": { "value": "", "file": "de_Eva/de_fitnesstop_Eva.txt", "sequence": false }
   },
   "yass_fr_fitnesstop": {
     "Q":  { "value": "Damen-Korsett", "file": "", "sequence": false },
     "AK": { "value": "Ce corset pour femme associe une coupe près du corps à des détails décoratifs tels que des coutures structurées, des laçages ou des fermetures métalliques et se combine, selon le modèle, avec une jupe ou un pantalon pour une fête, un costume, un style gothique ou une cérémonie.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_fitnesstop.txt", "sequence": false }
+    "AQ": { "value": "", "file": "fr_Eva/fr_fitnesstop_Eva.txt", "sequence": false }
   },
 
 
@@ -149,13 +148,13 @@
     "S":  { "value": "Cysc-0001", "file": "", "sequence": true },
     "T":  { "value": "weihnachtskleider damen", "file": "", "sequence": false },
     "AN": { "value": "Dieses Modell verbindet eine angenehm zu tragende Passform mit einer ausdrucksstarken, detailbewussten Gestaltung und lässt sich je nach persönlichem Stil für den Alltag, Treffen mit Freunden, Feiern oder festliche Anlässe kombinieren, sodass ein stimmiger Look mit eigener Note entsteht.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_de_Christmas_dress.txt", "sequence": false }
+    "AT": { "value": "", "file": "de_Eva/de_Christmas_dress_Eva.txt", "sequence": false }
   },
   "yass_fr_dress": {
     "S":  { "value": "Cysc-0001", "file": "", "sequence": true },
     "T":  { "value": "robes de Noël pour femmes", "file": "", "sequence": false },
     "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style soigné et riche en détails, et se prête à différentes associations selon les envies, pour le quotidien, les retrouvailles entre amis, les fêtes ou les occasions festives, avec une allure personnelle et harmonieuse.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_Christmas_dress.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Eva/fr_Christmas_dress_Eva.txt", "sequence": false }
   },
 
 
@@ -163,27 +162,27 @@
     "BK": { "value": "Chp-0001", "file": "", "sequence": true },
     "X":  { "value": "halloween kostüm maske", "file": "", "sequence": false },
     "AR": { "value": "Diese Kopfmaske begleitet je nach Ausführung winterliche Aktivitäten im Freien, Kostümfeiern und Themenabende; ihre auffällige Gestaltung lässt sich mit schlichter Kleidung oder einem passenden Kostüm kombinieren und gibt dem Auftritt eine humorvolle oder fantasievolle Note.", "file": "", "sequence": false },
-    "AX": { "value": "", "file": "yass_de_Hal_funny_ski_mask.txt", "sequence": false }
+    "AX": { "value": "", "file": "de_Uni/de_Hal_funny_ski_mask_Uni.txt", "sequence": false }
   },
   "yass_fr_mask": {
     "BK": { "value": "Chp-0001", "file": "", "sequence": true },
     "X":  { "value": "Masque Cagoule Visage Realiste", "file": "", "sequence": false },
     "AR": { "value": "Cette cagoule fantaisie accompagne, selon le modèle, les activités hivernales en plein air, les fêtes costumées et les soirées à thème; son allure expressive se combine avec une tenue simple ou un costume adapté et apporte une touche humoristique ou théâtrale à l’ensemble.", "file": "", "sequence": false },
-    "AX": { "value": "", "file": "yass_fr_Hal_funny_ski_mask.txt", "sequence": false }
+    "AX": { "value": "", "file": "fr_Uni/fr_Hal_funny_ski_mask_Uni.txt", "sequence": false }
   },
 
 
   "yass_de_glove": {
     "Q":  { "value": "wärmehandschuhe", "file": "", "sequence": false },
     "AO": { "value": "Diese warmen Handschuhe sitzen nicht nur bequem und sind ideal für den Winter und kaltes Wetter, sondern zeichnen sich auch durch ein durchdachtes Design und vielseitige Verwendungsmöglichkeiten aus. Ob zur Alltagskleidung, beim Spazierengehen, auf dem Weg zur Arbeit oder bei Outdoor-Aktivitäten – sie fügen sich perfekt in jeden Look ein und verleihen Ihrem Outfit bei kühlerem Wetter einen farbenfrohen Akzent.", "file": "", "sequence": false },
-    "AU": { "value": "", "file": "yass_de_gloves_Uni.txt", "sequence": false },
+    "AU": { "value": "", "file": "de_Uni/de_gloves_Uni.txt", "sequence": false },
     "BQ": { "value": "Mlh-0001", "file": "", "sequence": true }
   },
   "yass_fr_glove": {
     "U":  { "value": "gants hiver", "file": "", "sequence": false },
     "T":  { "value": "Mlh-0001", "file": "", "sequence": false },
     "AO": { "value": "Ces gants chauds sont non seulement confortables et parfaits pour l'hiver et le froid, mais ils se distinguent également par leur conception bien pensée et leur polyvalence. Que ce soit au quotidien, lors d'une promenade, sur le chemin du travail ou pour des activités de plein air, ils s'intègrent parfaitement à tous les looks et apportent une touche colorée à votre tenue lorsque les températures baissent.", "file": "", "sequence": false },
-    "AU": { "value": "", "file": "yass_fr_gloves.txt", "sequence": false }
+    "AU": { "value": "", "file": "fr_Uni/fr_gloves_Uni.txt", "sequence": false }
   },
 
 
@@ -191,46 +190,46 @@
     "S":  { "value": "Imph-0001", "file": "", "sequence": true },
     "T":  { "value": "Vestes chaudes pour homme", "file": "", "sequence": false },
     "AN": { "value": "Ce haut allie confort et design unique ; selon le modèle, il peut se porter aussi bien seul qu'en superposition. Il convient aussi bien au quotidien qu'aux sorties entre amis ou aux occasions festives. Associé à un pantalon sobre et à des accessoires raffinés, il permet de créer sans effort une multitude de looks.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_coat_Adam.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Adam/fr_coat_Adam.txt", "sequence": false }
   },
   "lfda_fr_dress": {
     "S":  { "value": "Cxxx-0001", "file": "", "sequence": true },
     "T":  { "value": "robes de Noël pour femmes", "file": "", "sequence": false },
     "AN": { "value": "Ce modèle associe une coupe agréable à porter à un style soigné et riche en détails, et se prête à différentes associations selon les envies, pour le quotidien, les retrouvailles entre amis, les fêtes ou les occasions festives, avec une allure personnelle et harmonieuse.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_Christmas_dress_Eva.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Eva/fr_Christmas_dress_Eva.txt", "sequence": false }
   },
   "lfda_fr_glove": {
     "U":  { "value": "gants hiver", "file": "", "sequence": false },
     "T":  { "value": "Mlh-0001", "file": "", "sequence": false },
     "AO": { "value": "Ces gants chauds sont non seulement confortables et parfaits pour l'hiver et le froid, mais ils se distinguent également par leur conception bien pensée et leur polyvalence. Que ce soit au quotidien, lors d'une promenade, sur le chemin du travail ou pour des activités de plein air, ils s'intègrent parfaitement à tous les looks et apportent une touche colorée à votre tenue lorsque les températures baissent.", "file": "", "sequence": false },
-    "AU": { "value": "", "file": "yass_fr_gloves_Uni.txt", "sequence": false }
+    "AU": { "value": "", "file": "fr_Uni/fr_gloves_Uni.txt", "sequence": false }
   },
   "lfda_fr_top": {
     "S":  { "value": "Zsdl-0001", "file": "", "sequence": true },
     "T":  { "value": "haut thermique homme", "file": "", "sequence": false },
     "AN": { "value": "Ces hauts associent un port confortable à un style facile à coordonner pour le quotidien, les loisirs, les rendez-vous et diverses activités ; selon l’occasion, ils s’intègrent à une tenue simple ou plus soignée et complètent de nombreuses garde-robes avec une note moderne.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "yass_fr_shirt_Adam.txt", "sequence": false }
+    "AT": { "value": "", "file": "fr_Adam/fr_shirt_Adam.txt", "sequence": false }
   },
   "lfda_fr_tracksuit": {
     "Q":  { "value": "Coffret de Noël pour homme", "file": "", "sequence": false },
     "AK": { "value": "Cet ensemble pour homme allie un confort optimal à un style affirmé. Il vous accompagnera aussi bien lors de moments de détente à la maison que lors de sorties entre amis ; ce look coordonné convient également aux fêtes et aux occasions spéciales, et peut être complété par vos propres accessoires.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_Christmas_sets_Adam.txt", "sequence": false }
+    "AQ": { "value": "", "file": "fr_Adam/fr_Christmas_sets_Adam.txt", "sequence": false }
   },
   "lfda_fr_cos": {
     "AC": { "value": "Clin-0001", "file": "", "sequence": true },
     "CA": { "value": "Clin-0001", "file": "", "sequence": true },
     "AD": { "value": "Panoplies de costume", "file": "", "sequence": false },
     "AX": { "value": "Ce produit allie à la perfection un confort optimal et un style affirmé. Que ce soit pour vous détendre chez vous ou pour sortir entre amis, il constitue le choix idéal ; cette tenue convient également aux soirées et aux occasions spéciales, et vous pouvez l'accessoiriser selon vos goûts personnels.", "file": "", "sequence": false },
-    "BD": { "value": "", "file": "yass_fr_Christmas_dress_Eva.txt", "sequence": false }
+    "BD": { "value": "", "file": "fr_Eva/fr_Christmas_dress_Eva.txt", "sequence": false }
   },
   "lfda_fr_sweater": {
     "Q":  { "value": "Pull pour homme", "file": "", "sequence": false },
     "AK": { "value": "Ce haut en maille allie un aspect texturé à un style décontracté, idéal pour le quotidien et les loisirs. L'encolure, les motifs et les détails varient selon les modèles ; porté avec un jean ou un chino, il s'intègre facilement à différentes tenues. Veuillez consulter les dimensions et les conseils d'entretien.", "file": "", "sequence": false },
-    "AQ": { "value": "", "file": "yass_fr_sweater_Adam.txt", "sequence": false }
+    "AQ": { "value": "", "file": "fr_Adam/fr_sweater_Adam.txt", "sequence": false }
   },
   "lfda_fr_underpants": {
     "Q":  { "value": "", "file": "", "sequence": false },
     "AM": { "value": "", "file": "", "sequence": false },
-    "AS": { "value": "", "file": "yass_fr_sweater_Adam.txt", "sequence": false }
+    "AS": { "value": "", "file": "fr_Adam/fr_sweater_Adam.txt", "sequence": false }
   }
 }

@@ -10,7 +10,7 @@ ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网
   - **分批询问**：产品按每批 BATCH_SIZE 条（默认 10，--batch-size 可调，0 = 全部一批；
     最后一批按实际剩余条数）拆分，每批一个独立提示词/回答文件——避免一次问完所有产品
     导致回答超长、超时或截断；
-  - 每列每组只存 1 个值 → fill_from_plan 以 cycle 模式循环铺满整组；
+  - 每列每组只存 1 个值，fill_from_plan 写入整组各行；
   - 无可选值的列保持 dataTemp 占位不变（由人工配置/后续机制处理）；
   - **硬性不变量**：有可选值的列**不允许残留占位**。写回 M 之后逐列校验，
     只要还有任何一组是占位（回答缺失/块头未识别/值不在可选值内被拒）→ 打印明细并
@@ -278,7 +278,7 @@ def parse_all(text, ai_cols, n_products, labels):
 
 
 def update_m_data(m_data, groups, col, parsed, placeholder, covered=None):
-    """把 AI 选值写入 M 数据（每组 1 个值 → cycle 铺满）。
+    """把 AI 选值写入 M 数据，供填充时将每组的单值写入各行。
 
     covered: 本批覆盖的绝对组序号集合（1 起）。分批调用时**只处理这些组**，
     其余组保持原值不动——否则后跑的批次会把前面批次已写入的真实值覆盖回占位。
@@ -296,7 +296,7 @@ def update_m_data(m_data, groups, col, parsed, placeholder, covered=None):
         gdata = m_data.setdefault(str(gname), {})
         val = parsed.get(i)
         if val:
-            gdata[str(col)] = [val]          # 单元素 → fill_from_plan cycle 铺满
+            gdata[str(col)] = [val]
             updated += 1
         else:
             gdata[str(col)] = [placeholder]  # 覆盖为占位，防止旧值残留

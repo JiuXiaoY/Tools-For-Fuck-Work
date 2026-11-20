@@ -58,7 +58,7 @@ def setup_utf8():
 
 
 # ─────────────────────────────────────────────────────────────────────────── #
-# 统一日志：不再打印到控制台，全部写入 antelope/log/{当天日期}_atl_{操作用户}.log
+# 统一日志：按月归档，每天每位用户一个日志文件。
 # ─────────────────────────────────────────────────────────────────────────── #
 _LOG_DEPTH_ENV = "ANTELOPE_LOG_DEPTH"
 _LOG_BANNER_WIDTH = 88
@@ -66,15 +66,15 @@ _active_log_path = None
 
 
 def get_log_file() -> str:
-    """返回日志文件路径：antelope/log/{YYYY-MM-DD}_atl_{用户}.log（目录不存在自动创建）。"""
-    log_dir = os.path.join(_ANTELOPE_DIR, "log")
+    """返回 log/YY.MM.log/YYYY-MM-DD_atl_<用户>.log，自动创建月份目录。"""
+    today = datetime.date.today()
+    log_dir = os.path.join(_ANTELOPE_DIR, "log", f"{today:%y.%m}.log")
     os.makedirs(log_dir, exist_ok=True)
-    date = datetime.date.today().strftime("%Y-%m-%d")
     try:
         user = getpass.getuser()
     except Exception:
         user = os.environ.get("USERNAME", "unknown")
-    return os.path.join(log_dir, f"{date}_atl_{user}.log")
+    return os.path.join(log_dir, f"{today:%Y-%m-%d}_atl_{user}.log")
 
 
 class _LogCleanWriter:
@@ -401,7 +401,7 @@ def load_column_defaults(path):
         }
 
     键支持列字母（"S"/"AN"）与列号（"19"/"40"，旧写法兼容）；以 "_" 开头的键忽略。
-    每项三个字段（推荐都写全，缺省按下面的默认值处理）：
+    每项字段均可省略：
         "value"    : 指定值；"" = 未配置（不写值）
         "file"     : 多行值文件；"" = 未配置（不写文件）
         "sequence" : 是否序列填充；**缺省 = false（非序列，整列同值）**，
@@ -486,14 +486,15 @@ def read_value_lines(path):
 def resolve_column_values(entry, values_dir, log=print):
     """把一条配置解析为 (values, source, path)：file 优先，找不到退回 value。
 
-    - file 可写绝对路径，或相对下列任一位置：`antelope/values/<类别>/`（默认目录）、
-      `antelope/values/`（直接放在这一层也认）、仓库根、当前工作目录；
+    - file 优先相对值文件根目录，例如 fr_Adam/fr_coat_Adam.txt。
+      也可写绝对路径、相对仓库根或当前工作目录的路径。
     - 文件不存在、读失败、为空（0 行）→ 退回 value（打印原因；没配 value 就保留占位）；
     - 空行等数据错误（ValueFileError）原样抛出，由调用方报错退出（不兜底）；
     - 都不行 → ([], None, None)。
     """
     value = (entry or {}).get("value")
     file_spec = (entry or {}).get("file")
+    values_dir = values_dir or zcfg.COLUMN_VALUES_DIR
 
     def _fallback_note():
         """退回说明：有指定值 → 改用指定值；没指定值 → 该列会保留占位。"""
@@ -504,8 +505,7 @@ def resolve_column_values(entry, values_dir, log=print):
             candidates = [file_spec]
         else:
             candidates = [
-                os.path.join(values_dir or "", file_spec),           # antelope/values/<类别>/
-                os.path.join(_ANTELOPE_DIR, "values", file_spec),    # antelope/values/
+                os.path.join(values_dir, file_spec),                 # antelope/values/
                 os.path.join(_ROOT, file_spec),                      # 相对仓库根
                 file_spec,                                           # 相对当前工作目录
             ]
@@ -513,12 +513,11 @@ def resolve_column_values(entry, values_dir, log=print):
         for c in candidates:                                          # 去重保序
             if c and c not in searched:
                 searched.append(c)
-        path = next((p for p in searched if path_exists(p)), None)
+        path = next((p for p in searched if os.path.isfile(p)), None)
         if path is None:
             log(f"      ↳ ⚠️ 值文件不存在: {file_spec}")
             log(f"         已找: {searched}")
-            hint = "" if value else (f"（把文件放到 {values_dir} 或 "
-                                     f"{os.path.join(_ANTELOPE_DIR, 'values')} 下，或写相对仓库根的路径）")
+            hint = "" if value else f"（检查 {values_dir} 下的 <国家>_<性别>/<文件名>）"
             log(f"         → {_fallback_note()}{hint}")
         else:
             try:

@@ -14,28 +14,27 @@ build_fill_framework / column_diff / fill_from_plan）统一从这里 import
   - 用途：blank / completed / column_diff / groups / data / col_mapping / fill_framework …
 
 中间产物分层：
-  - intermediate_tpl/<ACTIVE_CATEGORY>/      模板层（只需跑一次）：blank / completed / column_diff
+  - intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/  模板层（只需跑一次）：blank / completed / column_diff
     + 人工维护固定文件 col_mapping（随模板集固定）
     —— 只依赖 base.xlsm / complete.xlsm；三件套不变则复用，不随数据文件重跑
-  - intermediate/<ACTIVE_CATEGORY>/          数据层（每次数据批次都要重跑）：
+  - intermediate/<前缀>/<ACTIVE_CATEGORY>/      数据层（每次数据批次都要重跑）：
     groups / data / ai_prompt / .xlsx_dataSource_m.json
     —— 依赖数据源 A，数据文件一换就要重新生成
-  - intermediate_tpl/mode_customise.json     列填充模式手动配置（共享单文件，键 = 列字母，按 ACTIVE_CATEGORY 标签分段）
-  - intermediate_tpl/column_defaults.json    目标列取值配置（A 未覆盖且无可选值的列：指定值/多行值文件，
-                                             共享单文件，按 ACTIVE_CATEGORY 标签分段）
+  - fill_plan/<前缀>/                         填充计划（<ACTIVE_CATEGORY>_fill_framework.json）
+  - intermediate_tpl/column_defaults.json      目标列取值配置（按 ACTIVE_CATEGORY 标签分段）
   - intermediate_tpl/parent_actions.json     父体行（每组起始行）额外动作：整行静态底色 / 清指定列的值
-  - values/<ACTIVE_CATEGORY>/                目标列的多行值文件目录（配置里只写文件名时来此找）
+  - values/<国家>_<性别>/                    目标列的多行值文件目录
 
 清理提示：清中间产物时删 intermediate/ 与 intermediate_tpl/ 需谨慎——
-col_mapping 是人工维护的固定文件（放 intermediate_tpl/<类别>/ 下），删前先确认有备份或已提交 git。
+col_mapping 是人工维护的固定文件（放 intermediate_tpl/<前缀>/<类别>/ 下），删前先确认有备份或已提交 git。
 
 顶层目录结构：
     antelope/
       xlsm/              模板与数据源 excel
-      intermediate_tpl/<category>/   模板层「只需跑一次」的过程 json
-      intermediate/<category>/   数据层「每次重跑」的过程 json
-      fill_plan/         最终填充计划 plan 骨架（{category}_fill_framework.json）
-      outputs/           填充产出（fill_from_plan 写出）
+      intermediate_tpl/<前缀>/<类别>/   模板层「只需跑一次」的过程 json
+      intermediate/<前缀>/<类别>/       数据层「每次重跑」的过程 json
+      fill_plan/<前缀>/                 填充计划
+    outputs/                            填充产出（fill_from_plan 写出）
 """
 import os
 
@@ -98,22 +97,18 @@ OUTPUT_FILE_NAME = (
 FILL_PLAN_DIR = os.path.join(ANTELOPE_DIR, "fill_plan")
 OUTPUTS_DIR = os.path.join(REPO_ROOT, "outputs")
 
-# 模板层目录（只需跑一次）：intermediate_tpl/<ACTIVE_CATEGORY>/ —— blank/completed/column_diff
+# 模板层目录：intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/
 TEMPLATE_INTERMEDIATE_DIR = os.path.join(ANTELOPE_DIR, "intermediate_tpl")
-TEMPLATE_CATEGORY_INTERMEDIATE_DIR = os.path.join(TEMPLATE_INTERMEDIATE_DIR, INTERMEDIATE_DIR_NAME)
+TEMPLATE_CATEGORY_INTERMEDIATE_DIR = os.path.join(TEMPLATE_INTERMEDIATE_DIR, QUALIFIER, INTERMEDIATE_DIR_NAME)
 
-# 列填充模式手动配置（共享单文件，按 ACTIVE_CATEGORY 标签分段；**键 = 列字母**）
-#   {"addr_fr_tops": {"Q": "cycle"}, "yass_fr_coat": {"AT": "sequential"}}
-MODE_CUSTOMISE_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "mode_customise.json")
-
-# 目标列（A 未覆盖 且 无可选值）取值配置（共享单文件，按 ACTIVE_CATEGORY 标签分段）
+# 目标列取值配置（按 ACTIVE_CATEGORY 标签分段）
 #   键 = 列字母（Excel 列名，大小写不敏感；老写法直接写列号也可）
-#   {"yass_fr_coat": {"S": {"value": "Coat-001"}, "AT": {"file": "keywords.txt"},
+#   {"yass_fr_coat": {"S": {"value": "Coat-001"}, "AT": {"file": "fr_Adam/fr_coat_Adam.txt"},
 #                     "AN": {"value": "…", "file": "colAN.txt"}}}   ← file 优先，找不到退回 value
 COLUMN_DEFAULTS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "column_defaults.json")
 
-# 目标列多行值文件目录：配置里只写文件名时，到 antelope/values/<ACTIVE_CATEGORY>/ 下找
-COLUMN_VALUES_DIR = os.path.join(ANTELOPE_DIR, "values", INTERMEDIATE_DIR_NAME)
+# 目标列多行值文件根目录，file 配置示例：fr_Adam/fr_coat_Adam.txt
+COLUMN_VALUES_DIR = os.path.join(ANTELOPE_DIR, "values")
 
 # 父体行（每组起始行）额外动作配置（共享单文件，按 ACTIVE_CATEGORY 标签分段；键 = 列字母）
 #   {"yass_fr_coat": {"set_values": {"D": "Parent"},
@@ -122,9 +117,9 @@ COLUMN_VALUES_DIR = os.path.join(ANTELOPE_DIR, "values", INTERMEDIATE_DIR_NAME)
 #   空配置 = 不动作；由 ⑨ fill_from_plan 在保存产出前应用（见 parent_actions.py）
 PARENT_ACTIONS_FILE = os.path.join(TEMPLATE_INTERMEDIATE_DIR, "parent_actions.json")
 
-# 数据层目录（每次数据批次重跑）：intermediate/<ACTIVE_CATEGORY>/
+# 数据层目录：intermediate/<前缀>/<ACTIVE_CATEGORY>/
 INTERMEDIATE_DIR = os.path.join(ANTELOPE_DIR, "intermediate")
-CATEGORY_INTERMEDIATE_DIR = os.path.join(INTERMEDIATE_DIR, INTERMEDIATE_DIR_NAME)
+CATEGORY_INTERMEDIATE_DIR = os.path.join(INTERMEDIATE_DIR, QUALIFIER, INTERMEDIATE_DIR_NAME)
 
 
 # ─────────────────────── 辅助：按类别取文件名 ───────────────────────
@@ -144,14 +139,14 @@ DEFAULT_TEMPLATE_XLSM = TEMPLATE_B
 
 # ─────────────────── 中间产物 json（模板层 + 数据层）───────────────────
 CFG_INTERMEDIATE = {
-    # —— 模板层（只需跑一次，放 intermediate_tpl/<类别>/）——
+    # —— 模板层（只需跑一次）——
     #   只依赖 base.xlsm / complete.xlsm，与数据文件无关；
     #   另含人工维护的 col_mapping（源 excel 列 → 目标模板列映射，随模板集固定）
     "completed_json": os.path.join(TEMPLATE_CATEGORY_INTERMEDIATE_DIR, _cat("completed")),
     "blank_json": os.path.join(TEMPLATE_CATEGORY_INTERMEDIATE_DIR, _cat("blank")),
     "column_diff_json": os.path.join(TEMPLATE_CATEGORY_INTERMEDIATE_DIR, _cat("column_diff")),
     "col_mapping_json": os.path.join(TEMPLATE_CATEGORY_INTERMEDIATE_DIR, _cat("col_mapping")),
-    # —— 数据层（每次数据批次都要重跑，放 intermediate/<类别>/）——
+    # —— 数据层（每次数据批次都要重跑）——
     "groups_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("groups")),
     "data_json": os.path.join(CATEGORY_INTERMEDIATE_DIR, _cat("data")),
     # ai_pick_attributes.py：AI 选值的提示词/结果文件目录
@@ -159,11 +154,10 @@ CFG_INTERMEDIATE = {
 }
 
 # ─────────────────────── fill_plan 输出 json ───────────────────────
+_FILL_PLAN_FILE = os.path.join(FILL_PLAN_DIR, QUALIFIER, _cat("fill_framework"))
 CFG_FILL_PLAN = {
-    # 最终填充计划骨架：fill_plan/fr_shirt_fill_framework.json
-    "framework_json": os.path.join(FILL_PLAN_DIR, _cat("fill_framework")),
-    # 默认填充计划（fill_from_plan 读取）
-    "default_plan_json": os.path.join(FILL_PLAN_DIR, _cat("fill_framework")),
+    "framework_json": _FILL_PLAN_FILE,
+    "default_plan_json": _FILL_PLAN_FILE,
 }
 
 # ─────────────────────── 可运行配置项 ───────────────────────

@@ -27,8 +27,10 @@ dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/【文件名】
 dealExcel_refactoring/y_addr&yass/fr_data_pool/bestseller/【文件名】
 
 输出文件：
-dealExcel_refactoring/antelope/values/yass_de_【文件名】.txt
-dealExcel_refactoring/antelope/values/yass_fr_【文件名】.txt
+dealExcel_refactoring/antelope/values/de_【性别】/de_【文件名】.txt
+dealExcel_refactoring/antelope/values/fr_【性别】/fr_【文件名】.txt
+
+【性别】用 Adam（男款）、Eva（女款）、Uni（通用），未标明则用 unknown。
 
 处理要求：
 1. 原始文件保持不变，只读取和参考。

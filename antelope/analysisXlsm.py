@@ -21,14 +21,13 @@
   - 对 基础模板 B 解析  → blank.json（「已填列」，column_diff 的减数）
   - 对 完整模板 C 解析  → completed.json（「完整列」，column_diff 的被减数）
   - 生成 completed 示例：
-      python analysisXlsm.py xlsm/.xlsm_template_complete -o intermediate/fr_shirt/fr_shirt_completed.json
+      python analysisXlsm.py xlsm/complete.xlsm -o intermediate_tpl/lfda/lfda_fr_sweater/lfda_fr_sweater_completed.json
 
 用法：
     python analysisXlsm.py [文件路径] [--output 输出.json] [--sheets 工作表1 工作表2]
                            [--max-values N] [--show-data]
 示例：
     python analysisXlsm.py                      # 默认解析基础模板 B，输出 blank.json
-    python analysisXlsm.py xlsm/.xlsm_template_complete -o intermediate/fr_shirt/fr_shirt_completed.json
 
 说明：JSON 中 columns 数组的每个元素（每列）预留了 reserve_flag / reserve_mark 两个标识位字段，
 当前恒为 null，仅供后续程序复用标记，不影响其余解析结果。
@@ -229,7 +228,7 @@ def main():
     )
     args = parser.parse_args()
 
-    # 日志统一写入 log/{当天日期}_atl_{用户}.log，不再打印控制台
+    # 日志按月归档，输出追加到当天的用户日志。
     setup_log()
 
     try:

@@ -46,14 +46,14 @@ B 的输出模板副本 + 待填数据 = D
 
 | 步骤 | 脚本 | 产物 |
 |---:|---|---|
-| 1 | `analysisXlsm.py` 分析 B | `intermediate_tpl/<类别>/<类别>_blank.json` |
-| 2 | `analysisXlsm.py` 分析 C | `intermediate_tpl/<类别>/<类别>_completed.json` |
+| 1 | `analysisXlsm.py` 分析 B | `intermediate_tpl/<前缀>/<类别>/<类别>_blank.json` |
+| 2 | `analysisXlsm.py` 分析 C | `intermediate_tpl/<前缀>/<类别>/<类别>_completed.json` |
 | 3 | `column_diff.py` | `<类别>_column_diff.json` |
-| 4 | `build_groups_from_excel.py` | `intermediate/<类别>/<类别>_groups.json` |
-| 5 | `build_data_from_excel.py` | `intermediate/<类别>/<类别>_data.json` |
-| 6 | `build_m_data.py` | `intermediate/<类别>/.xlsx_dataSource_m.json` |
+| 4 | `build_groups_from_excel.py` | `intermediate/<前缀>/<类别>/<类别>_groups.json` |
+| 5 | `build_data_from_excel.py` | `intermediate/<前缀>/<类别>/<类别>_data.json` |
+| 6 | `build_m_data.py` | `intermediate/<前缀>/<类别>/.xlsx_dataSource_m.json` |
 | 7 | `ai_pick_attributes.py` | 更新 M 中具有可选值的列 |
-| 8 | `build_fill_framework.py` | `fill_plan/<类别>_fill_framework.json` |
+| 8 | `build_fill_framework.py` | `fill_plan/<前缀>/<类别>_fill_framework.json` |
 | 9 | `fill_from_plan.py` | `outputs/<类别>_filled.xlsm` |
 
 步骤 1～3 属于模板层。输出文件存在且比模板新时，`run_all.py` 会自动跳过。步骤 4～9 属于数据层，每个数据批次都应重新执行。
@@ -62,17 +62,18 @@ B 的输出模板副本 + 待填数据 = D
 
 ## 目录与文件性质
 
+前缀取自 `ACTIVE_CATEGORY` 的第一段。例如 `lfda_fr_sweater` 的前缀为 `lfda`，两个中间目录都使用 `lfda/lfda_fr_sweater/`，填充计划放在 `fill_plan/lfda/`。共享的列取值和父体行配置放在 `intermediate_tpl/` 根目录，仍按完整类别名分段。
+
 | 路径 | 性质 | 是否可以整目录清理 |
 |---|---|---|
 | `xlsm/` | 本地模板和数据源 | 否；目录已被 Git 忽略 |
-| `intermediate/<类别>/` | 数据层中间产物 | 换批次后可重新生成，但先确认没有人工结果 |
-| `intermediate_tpl/<类别>/` | 模板层分析结果和人工 `col_mapping` | 不可直接整目录删除 |
-| `intermediate_tpl/mode_customise.json` | 分类别的填充模式配置 | 不可随意删除 |
-| `intermediate_tpl/column_defaults.json` | 无 choices 目标列的默认值配置 | 不可随意删除 |
+| `intermediate/<前缀>/<类别>/` | 数据层中间产物 | 换批次后可重新生成，但先确认没有人工结果 |
+| `intermediate_tpl/<前缀>/<类别>/` | 模板层分析结果和人工 `col_mapping` | 不可直接整目录删除 |
+| `intermediate_tpl/column_defaults.json` | 分类别的目标列取值配置 | 不可随意删除 |
 | `intermediate_tpl/parent_actions.json` | 父体行附加动作 | 不可随意删除 |
-| `values/<类别>/` | 人工维护的多行值文件 | 不可随意删除；格式见 [values/zzz.md](values/zzz.md) |
-| `fill_plan/` | 生成的填充计划 | 可以重建，但文件通常较大 |
-| `log/` | antelope 运行日志 | 可按保留周期清理 |
+| `values/<国家>_<性别>/` | 人工维护的多行值文件 | 不可随意删除；格式见 [values/zzz.md](values/zzz.md) |
+| `fill_plan/<前缀>/` | 生成的填充计划 | 可以重建，但文件通常较大 |
+| `log/YY.MM.log/` | antelope 运行日志，文件名为 `YYYY-MM-DD_atl_<用户>.log` | 可按保留周期清理 |
 
 ## 关键配置
 
@@ -81,32 +82,29 @@ B 的输出模板副本 + 待填数据 = D
 位于：
 
 ```text
-intermediate_tpl/<ACTIVE_CATEGORY>/<ACTIVE_CATEGORY>_col_mapping.json
+intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/<ACTIVE_CATEGORY>_col_mapping.json
 ```
 
 它定义数据源 A 的列如何映射到目标模板列，属于人工维护文件，不应和普通中间产物一起删除。
 
 ### `column_defaults.json`
 
-用于处理 A 未覆盖且没有 choices 的目标列。按 `ACTIVE_CATEGORY` 分段，列名使用 Excel 字母：
+按 `ACTIVE_CATEGORY` 分段，使用 Excel 列字母配置目标列取值：
 
 ```json
 {
   "addr_de_sweater": {
-    "S": {"value": "固定值", "file": "", "sequence": false},
-    "AT": {"value": "", "file": "keywords.txt", "sequence": false}
+    "S": {"value": "S-0001", "sequence": true},
+    "AQ": {"file": "de_Adam/de_sweater_Adam.txt"}
   }
 }
 ```
 
-- `file` 优先于 `value`。
-- 值文件按数据区连续循环，跨分组不重置。
+- `value`、`file` 和 `sequence` 只给 A 未覆盖且无 choices 的目标列提供默认值。`file` 优先于 `value`。`sequence: true` 让固定值的数字后缀逐行递增。
+- 默认值按整列连续填充，跨分组不重置。
 - 文件规则和查找顺序见 [values/zzz.md](values/zzz.md)。
-- 两项都没有配置时，该列会保留 `dataTemp` 占位。
-
-### `mode_customise.json`
-
-用于强制某列采用 `sequential`、`children_only` 或 `cycle`。没有特殊需要时保持空配置。
+- 目标列的 `file` 和 `value` 都没有配置时，该列会保留 `dataTemp` 占位。
+- 修改后重新生成填充计划，步骤 9 会读取新计划。
 
 ### `parent_actions.json`
 
@@ -124,21 +122,22 @@ intermediate_tpl/<ACTIVE_CATEGORY>/<ACTIVE_CATEGORY>_col_mapping.json
 
 1. A 通过 `col_mapping` 提供数据。
 2. 模板中具有 choices 的列由步骤 7 选择合法值；这些列不允许把占位值带入步骤 8。
-3. 没有 choices 的目标列由 `column_defaults.json` 或 `values/<类别>/` 提供；未配置时才保留占位。
+3. 没有 choices 的目标列由 `column_defaults.json` 提供固定值，或引用 `values/<国家>_<性别>/` 下的多行值文件。未配置时保留占位。
 
 未覆盖列规则统一维护在本节，不再另建重复的待确认文档。
 
-## 填充模式
+## 模板写入规则
 
 对每个分组，设该列数据数量为 `m`，组行数为 `n`：
 
-| 条件 | 模式 | 行为 |
-|---|---|---|
-| `m == 0` | `none` | 不填 |
-| `m == n` | `sequential` | 顺序填满父体和子体 |
-| `m == n - 1` | `children_only` | 跳过父体，只填子体 |
-| `m < n` | `cycle` | 在允许范围内循环填充 |
-| 其他 | `mismatch` | 不填并写入报告或日志 |
+| 条件 | 行为 |
+|---|---|
+| `m == n` | 保留每项的行位置，空值也占一行 |
+| `m == 1` 且 `n > 1` | 把同一个值写入组内每行，例如 AI 每组选择的值 |
+| `m == 0` | 跳过 |
+| 其他长度 | 告警并跳过 |
+
+父体某列需要留空时，可以在逐行数据中保留父体的空值，或用 `parent_actions.json` 的 `clear_values` 清空该列的父体单元格。
 
 `plan.groups` 保存数据源 A 的实际行号。写入模板时才应用 `data_start_row - 1` 偏移。
 

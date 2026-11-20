@@ -20,8 +20,8 @@
     python build_groups_from_excel.py [excel 路径] [-o output.json]
         [--scan-from N] [--end-row N]
 默认:
-    input  = xlsm/.xlsx_dataSource（数据源 A）
-    output = intermediate/fr_shirt/fr_shirt_groups.json（自命名）
+    input  = zconfig.constant.py 中的 DATA_SOURCE_A
+    output = intermediate/<前缀>/<类别>/<类别>_groups.json
 """
 import argparse
 import json

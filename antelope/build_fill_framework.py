@@ -11,7 +11,7 @@
           - 按组：{ "data": { "<group>": { "<目标列>": [值...] } } }
           - 全局：{ "<目标列>": [值...] }（应用到全部分组）
       * 合并规则：A 已有的列优先，M 只补「A 未映射到的」列（需求语义）；
-      * 值数组允许包含空串 ""（需求：m 包含空数据，空串也算一项，影响模式判断）。
+      * 每组每列按行提供值（空串也占一行），或只提供一个供整组使用的值。
 
 骨架中会自动填好：
   - description        : 生成说明
@@ -21,13 +21,10 @@
   - data_start_row     : 数据起始行（模板标准 settings.dataRow，来自 column_diff.json；
                          不同模板可能不同；读不到则报错，不做兜底）
   - col_scope          : only_in_completed 的全部列号
-  - mode_customise     : 空占位 {} —— 手动指定某列的填充模式(如 {"Q": "cycle"}，键 = 列字母)，
-                         填写后 fill_from_plan.py 会优先使用该模式、跳过自动判断
   - data 中的目标列    : 「col_scope 中 A 未映射、completed 也无可选值」的列由
-                         column_defaults.json 配置「指定值 / 多行值文件」，按整列连续
-                         循环预展开进 data（按组旋转切片 → sequential 等价），
-                         fill_from_plan.py 无需改动；未配置则保留占位 dataTemp
-  - groups             : 来自 groups 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_groups.json），
+                         column_defaults.json 配置「指定值 / 多行值文件」，跨组连续预展开进 data；
+                         未配置取值则保留占位 dataTemp
+  - groups             : 来自 intermediate/<前缀>/<类别>/<类别>_groups.json，
                          该 JSON 由 build_groups_from_excel.py 对数据源 A 生成，
                          包含实际行号的分组行范围（无偏移）
   - data               : A 取数(data.json) 与 M 数据合并后的每组每列值序列；
@@ -40,13 +37,13 @@
         [--completed completed.json] [--blank blank.json]
         [--groups groups.json] [--data data.json] [--m-data m.json] [--output-file xxx]
 默认:
-    diff      = intermediate/fr_shirt/fr_shirt_column_diff.json
-    completed = intermediate/fr_shirt_completed.json
-    blank     = intermediate/fr_shirt_blank.json
-    groups    = intermediate/fr_shirt/fr_shirt_groups.json（若存在）
-    data      = intermediate/fr_shirt/fr_shirt_data.json（若存在，否则 [] 占位）
-    m-data    = xlsm/.xlsx_dataSource_m.json（若存在；否则不合并）
-    output    = fill_plan/fr_shirt_fill_framework.json
+    diff      = intermediate_tpl/<前缀>/<类别>/<类别>_column_diff.json
+    completed = intermediate_tpl/<前缀>/<类别>/<类别>_completed.json
+    blank     = intermediate_tpl/<前缀>/<类别>/<类别>_blank.json
+    groups    = intermediate/<前缀>/<类别>/<类别>_groups.json（若存在）
+    data      = intermediate/<前缀>/<类别>/<类别>_data.json（若存在，否则 [] 占位）
+    m-data    = intermediate/<前缀>/<类别>/.xlsx_dataSource_m.json（若存在；否则不合并）
+    output    = fill_plan/<前缀>/<类别>_fill_framework.json
 """
 import argparse
 import json
@@ -63,7 +60,6 @@ from common import (
     load_groups,
     load_json,
     make_sequence,
-    parse_column_key,
     resolve_column_values,
     seq_seed,
     setup_log,
@@ -87,8 +83,7 @@ DEFAULT_GROUPS = zcfg.CFG_INTERMEDIATE["groups_json"]
 DEFAULT_DATA = zcfg.CFG_INTERMEDIATE["data_json"]
 DEFAULT_M_DATA = zcfg.DATA_SOURCE_M       # M：自定义数据来源（JSON），补充 A 未映射列
 DEFAULT_TEMPLATE_OUTPUT = zcfg.TEMPLATE_OUTPUT   # 产出模板（fill_from_plan 复制其副本填充）
-DEFAULT_MODE_CUSTOMISE = zcfg.MODE_CUSTOMISE_FILE   # 共享单文件，按 ACTIVE_CATEGORY 标签分段读取
-DEFAULT_COLUMN_DEFAULTS = zcfg.COLUMN_DEFAULTS_FILE  # 目标列（A 未覆盖且无可选值）取值配置
+DEFAULT_COLUMN_DEFAULTS = zcfg.COLUMN_DEFAULTS_FILE  # 目标列取值配置
 DEFAULT_OUTPUT = zcfg.CFG_FILL_PLAN["framework_json"]
 DEFAULT_PLAN_OUTPUT_FILE = zcfg.CFG_RUN["plan_output_file"]
 
@@ -106,55 +101,6 @@ def load_data(path, col_scope, groups):
         if data:
             return data
     return {gname: {str(col): [] for col in col_scope} for gname in (groups or {})}
-
-
-_VALID_MODES = {"sequential", "children_only", "cycle"}
-
-
-def load_mode_customise(path):
-    """读取人工维护的列填充模式配置，只取当前 ACTIVE_CATEGORY 标签下的部分。
-
-    共享单文件结构（默认 intermediate_tpl/mode_customise.json）——**键 = 列字母**
-    （Excel 列名，大小写不敏感；兼容直接写列号），与 column_defaults.json 写法统一：
-        {
-          "_comment":     ["…说明，_ 开头的键忽略…"],
-          "yass_fr_coat": {"Q": "cycle", "AT": "sequential"},
-          "addr_fr_tops": {"E": "children_only"}
-        }
-    值只能是 sequential / children_only / cycle 之一。
-    只读 raw[ACTIVE_CATEGORY] 分段；兼容旧版扁平结构（无标签分段时整体作为当前类别使用）。
-    归一化为 {列号(str): 模式}（内部与 plan/fill_from_plan 一致用列号），
-    无法识别的键、非法模式 → 打印警告并忽略。
-    文件缺失/空/找不到当前标签 → 返回 {}（全部走自动判断）。
-    """
-    if not path or not os.path.exists(path):
-        return {}
-    try:
-        raw = load_json(path)
-        if not isinstance(raw, dict):
-            return {}
-        section = raw.get(zcfg.ACTIVE_CATEGORY)
-        if isinstance(section, dict):
-            raw = section                      # 新版：取当前标签分段
-        # 否则视为旧版扁平结构，raw 整体使用（其值若是 dict 会被过滤掉）
-
-        result = {}
-        for key, val in raw.items():
-            if str(key).startswith("_"):
-                continue                       # 说明键
-            mode = str(val)
-            col = parse_column_key(key)
-            if col is None:
-                print(f"⚠️ mode_customise 忽略无法识别的键 {key!r}（请写列字母如 \"AT\"，或列号如 \"46\"）")
-                continue
-            if mode not in _VALID_MODES:
-                print(f"⚠️ mode_customise 忽略列 {column_letter(col)}({col}) 的非法模式 {mode!r}"
-                      f"（只能是 {'/'.join(sorted(_VALID_MODES))}）")
-                continue
-            result[str(col)] = mode
-        return result
-    except Exception:
-        return {}
 
 
 def load_m_data(path, groups):
@@ -213,10 +159,10 @@ def merge_data(a_data, m_data):
 
 
 def fill_uncovered_with_temp(data, groups, col_scope, temp_value="dataTemp"):
-    """未覆盖的待填列统一填占位值（按顺序/sequential 写入）。
+    """未覆盖的待填列统一按行准备占位值。
 
     对 col_scope 中「每组每列都缺失」的列，填入 [temp_value] * 组行数；
-    这样 fill_from_plan 里 m == n → sequential 顺序写入（每个单元格都是占位值）。
+    fill_from_plan 按原行顺序写入，每个单元格都是占位值。
     默认占位值 dataTemp（与 build_m_data.py 一致，见 zzz.md 的未覆盖列处理规则）。
     """
     filled = 0
@@ -270,18 +216,14 @@ def _header(headers, col):
 
 
 def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values_dir,
-                          headers=None, a_cols=None, mode_customise=None,
-                          placeholder=PLACEHOLDER):
-    """目标列（A 未覆盖 且 无可选值）→ 指定值/多行文件的**整列连续循环**填充。
+                          headers=None, a_cols=None, placeholder=PLACEHOLDER):
+    """为 A 未覆盖且无可选值的列准备跨组连续的默认值。
 
-    语义（按需求）：不考虑分组，从数据区第一行起连续循环整列所有数据行：
-        第 k 行取值 values[(k-1) % m]      （m = 该列循环序列长度，跨组不重置）
-    实现：利用「切片长度恰等于组行数 → fill_from_plan 判定 m==n → sequential」这一点，
-    把循环序列**按组旋转切片**写进 plan.data；fill_from_plan.py 无需改动。
+    每组为每行准备一个值，循环或递增不会在分组边界重置。
 
-    配置来源 intermediate_tpl/column_defaults.json 当前类别分段（三项字段，"" = 未配置）：
-        {"S": {"value": "Coat-001", "file": "",       "sequence": false},
-         "AT": {"value": "",        "file": "kw.txt", "sequence": false}}
+    配置来自 intermediate_tpl/column_defaults.json 的当前类别分段：
+        {"S": {"value": "Coat-001", "sequence": true},
+         "AT": {"file": "kw.txt"}}
     file 优先，文件缺失/为空退回 value；两者都空 → 该列保留占位（警告）。
     sequence 默认 false（整列同值）；true → 值必须数字结尾并整列递增（"S-0001" → S-0001, S-0002, …）；
     "auto" → 值以数字结尾才递增。值文件出现空行 → 报错退出（约定值文件不允许空值）。
@@ -304,11 +246,14 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
         print(f"⚠️ 组区间不连续（{len(gaps)} 处，如 {gaps[0]}）：目标列仍按「组顺序连续计数」循环"
               f"（与产出行的对应关系可能不连续），请确认分组是否正确")
 
+    fill_rows = [(gname, start - first_start, n) for gname, start, _, n in rows]
+
     target_set = {int(c) for c in target_cols}
     scope_set = {int(c) for c in (col_scope or [])}
     a_set = {int(x) for x in (a_cols or [])}
     # 配置了但不在目标集合的列：跳过并说明原因（绝不覆盖 A 取数/AI 选值的真实数据）
-    extra = [int(c) for c in defaults if int(c) not in target_set]
+    extra = [int(c) for c, entry in defaults.items()
+             if int(c) not in target_set and (entry.get("value") or entry.get("file"))]
     for col in sorted(extra):
         if col not in scope_set:
             reason = "不在 col_scope（待填列范围）内"
@@ -344,15 +289,8 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
                   f"（value/file 都为空或无法解析）→ 保留占位 {placeholder}")
             continue
 
-        forced = (mode_customise or {}).get(str(col))
-        if forced == "children_only":
-            stats["skipped"] += 1
-            print(f"⚠️ 列{tag} ({_header(headers, col)}) 被 mode_customise 指定为 children_only"
-                  f"（会跳过每组首行、与整列循环错位）→ 跳过并保留占位；请二选一")
-            continue
-
         # ── 序列填充判断（默认关闭；S-0001 → S-0001, S-0002, … 需 sequence 开启）──
-        seq_flag = (entry or {}).get("sequence")           # False=非序列(默认) / True=强制 / None=auto
+        seq_flag = entry.get("sequence")           # False=非序列(默认) / True=强制 / None=auto
         seq_values = None
         if source == "value":
             seed = values[0]
@@ -377,13 +315,11 @@ def apply_column_defaults(data, groups, col_scope, target_cols, defaults, values
         m = len(values)
         if seq_values is not None:
             # 序列模式：整列连续递增值（行 k → 种子 + (k-1)），按组切片即可
-            for gname, start, end, n in rows:
-                pos = start - first_start
+            for gname, pos, n in fill_rows:
                 data.setdefault(gname, {})[str(col)] = seq_values[pos:pos + n]
             first_v, last_v = seq_values[0], seq_values[-1]
         else:
-            for gname, start, end, n in rows:
-                pos = start - first_start                 # 该组首行在整列中的全局位置
+            for gname, pos, n in fill_rows:
                 data.setdefault(gname, {})[str(col)] = [values[(pos + i) % m] for i in range(n)]
             first_v, last_v = values[0], values[(total_rows - 1) % m]
 
@@ -444,11 +380,10 @@ def assert_no_placeholder_for_choice_columns(data, groups, ai_cols, placeholder=
 
 
 def build_plan(diff, completed, blank, plan_output_file, template_output=None,
-               mode_customise=None, groups=None, data=None):
+               groups=None, data=None):
     """生成基础填充框架（plan 骨架）。
 
     template_output: 产出模板（fill_from_plan 复制其副本并填充）；缺省回退 blank.source_file。
-    mode_customise:  人工维护的 列 → 强制填充模式（来自 mode_customise 配置文件）。
     groups: 分组行范围 dict（实际行号，来自 build_groups_from_excel.py）；缺省为空 {}。
     data:   每组每列具体数据 {group: {col_str: [...]}}；缺省为空 {}。
     """
@@ -476,9 +411,7 @@ def build_plan(diff, completed, blank, plan_output_file, template_output=None,
         "output_file": plan_output_file,
         "data_start_row": data_start_row,
         "col_scope": col_scope,
-        "mode_customise": mode_customise if mode_customise is not None else {},
         "groups": groups if groups is not None else {},
-        "cycle_threshold": None,
         "data": data if data is not None else {},
     }
 
@@ -503,11 +436,8 @@ def main():
                         help="plan 中的 output_file 字段（占位）")
     parser.add_argument("--template-output", default=DEFAULT_TEMPLATE_OUTPUT,
                         help="产出模板路径（fill_from_plan 复制其副本并填充；默认 zconfig.TEMPLATE_OUTPUT）")
-    parser.add_argument("--mode-customise", default=DEFAULT_MODE_CUSTOMISE,
-                        help="列填充模式共享配置文件（键 = 列字母，按 ACTIVE_CATEGORY 标签分段；"
-                             "默认 intermediate_tpl/mode_customise.json）")
     parser.add_argument("--column-defaults", default=DEFAULT_COLUMN_DEFAULTS,
-                        help="目标列（A 未覆盖且无可选值）取值配置（按 ACTIVE_CATEGORY 标签分段；"
+                        help="目标列取值配置（按 ACTIVE_CATEGORY 标签分段；"
                              "默认 intermediate_tpl/column_defaults.json）")
     parser.add_argument("--columns-report", default=None,
                         help="目标列取值明细 JSON 输出路径（可选，用于审计）")
@@ -531,11 +461,8 @@ def main():
     else:
         print(f"⚠️ M 数据缺失或为空（{args.m_data}），跳过 M 合并")
 
-    # ── 未覆盖列兜底：统一填占位值 dataTemp（sequential 顺序写入）──
+    # ── 未覆盖列兜底：统一按行准备占位值 dataTemp ──
     temp_filled = fill_uncovered_with_temp(data, groups, col_scope)
-
-    # ── mode_customise：人工维护的 列 → 强制填充模式（提前读，供目标列冲突检测用）──
-    mode_customise = load_mode_customise(args.mode_customise)
 
     # ── 目标列（A 未覆盖 且 无可选值）：指定值 / 多行值文件 → 整列连续循环 ──
     target_cols = value_cycle_cols(args.diff, args.data, args.completed)
@@ -548,7 +475,6 @@ def main():
         report, _stats = apply_column_defaults(
             data, groups, col_scope, target_cols, column_defaults,
             zcfg.COLUMN_VALUES_DIR, headers=headers, a_cols=a_cols,
-            mode_customise=mode_customise,
         )
         if args.columns_report:
             os.makedirs(os.path.dirname(os.path.abspath(args.columns_report)) or ".", exist_ok=True)
@@ -565,7 +491,6 @@ def main():
 
     plan = build_plan(diff, completed, blank, args.output_file,
                       template_output=args.template_output,
-                      mode_customise=mode_customise,
                       groups=groups, data=data)
 
     # 输出目录不存在则自动新建
@@ -579,8 +504,6 @@ def main():
     print(f"   template_file: {plan['template_file']}")
     if temp_filled:
         print(f"⚠️ 未覆盖 {temp_filled} 个「组×列」→ 占位 dataTemp")
-    if mode_customise:
-        print(f"   mode_customise: {mode_customise}")
 
 
 if __name__ == "__main__":

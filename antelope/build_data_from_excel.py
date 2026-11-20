@@ -9,12 +9,12 @@
   - 分组行范围来自 groups.json（build_groups_from_excel.py 对 A 生成）。
 
 流程与 build_groups_from_excel.py 对称：
-  - groups 来源 json（默认 intermediate/fr_shirt/fr_shirt_groups.json）提供分组行范围（**实际行号，无偏移**）；
-  - 列映射来源 json（默认 intermediate/fr_shirt/fr_shirt_col_mapping.json）提供「源 excel 列 → plan 目标列」映射；
-  - 本程序读取数据源 excel：对每个分组、每个源列取「该组行范围内该列的非空值」，
+  - groups.json 提供分组行范围（实际行号，无偏移）；
+  - col_mapping.json 提供源 Excel 列到计划目标列的映射；
+  - 本程序读取数据源 Excel：对每个分组的源列逐行取值，
     写入目标列；一对多映射（如 K→BY,BZ）表示同一份数据复制到多个目标列；
     映射应用到全部分组；
-  - 生成 data 来源 JSON（默认 intermediate/fr_shirt/fr_shirt_data.json）：
+  - 生成 data 来源 JSON：
         { "data": { <group>: { "<目标列号>": [ 值序列 ] } } }
     交给 build_fill_framework.py 读取（与 M 数据合并）后写入 plan 的 data 字段，
     再交给 fill_from_plan.py。
@@ -33,10 +33,10 @@
         [--source-excel data.xlsx] [--sheet 工作表名]
 
 默认:
-    groups       = intermediate/fr_shirt/fr_shirt_groups.json
-    col-mapping  = intermediate/fr_shirt/fr_shirt_col_mapping.json
-    source-excel = xlsm/.xlsx_dataSource（数据源 A）
-    output       = intermediate/fr_shirt/fr_shirt_data.json
+    groups       = intermediate/<前缀>/<类别>/<类别>_groups.json
+    col-mapping  = intermediate_tpl/<前缀>/<类别>/<类别>_col_mapping.json
+    source-excel = zconfig.constant.py 中的 DATA_SOURCE_A
+    output       = intermediate/<前缀>/<类别>/<类别>_data.json
 """
 import argparse
 import json

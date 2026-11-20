@@ -22,7 +22,7 @@ set 生效（会打印告警提示二选一）。
 调用点：fill_from_plan.py 在「填充循环 + 多余行删除」之后、wb.save() 之前调用一次——
 因此只多一次函数调用，不会对 .xlsm 做第二次加载/保存（避免 round-trip 丢图片/图表）。
 
-配置示例（键 = 列字母，与 column_defaults.json / mode_customise.json 同一套写法）：
+配置示例（键 = 列字母，与 column_defaults.json 同一套写法）：
     {
       "_comment": ["…"],
       "yass_fr_coat": {
