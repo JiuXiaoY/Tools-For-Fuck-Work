@@ -5,6 +5,8 @@ id_sorting —— 对 12 位 id 数据源按每位 ASCII 值排序，结果写�
 数据源: nineTools/id_sorting/id_sorting_data
     支持每行一个 id，或每行用英文逗号分隔多个 id，也可混合使用。
     忽略分隔符周围的空白和空项，预期 id 全部为 12 位 ASCII 可见字符。
+去重规则:
+    相同 id 只保留首次出现。日志汇总读入、保留和移除的条数，最多列出 10 个重复 id 的明细。
 排序规则:
     - 12 位记录：按每一位字符的 ASCII 值（ord）升序比较：
       先比第 1 位，相同再比第 2 位，依次类推；
@@ -22,6 +24,7 @@ id_sorting —— 对 12 位 id 数据源按每位 ASCII 值排序，结果写�
 import argparse
 import os
 import sys
+from collections import Counter
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -39,23 +42,27 @@ def sort_ids(records):
     return sorted(records, key=ascii_key)
 
 
-def read_records(path):
-    """按英文逗号和换行拆分 id，忽略两侧空白、空项及 UTF-8 BOM。"""
-    records = []
+def read_records(path, log=None):
+    """读取非空 id，按首次出现顺序去重，可输出去重统计。"""
+    counts = Counter()
     with open(path, "r", encoding="utf-8-sig", newline="") as f:
         for line in f:
             for item in line.split(","):
                 record = item.strip()
                 if record:
-                    records.append(record)
-    # 去重并保持原有顺序
-    seen = set()
-    unique_records = []
-    for r in records:
-        if r not in seen:
-            seen.add(r)
-            unique_records.append(r)
-    return unique_records
+                    counts[record] += 1
+
+    if log is not None:
+        total = sum(counts.values())
+        duplicates = [(record, count) for record, count in counts.items() if count > 1]
+        log(f"去重统计：读入 {total} 条非空记录，保留 {len(counts)} 条，"
+            f"移除 {total - len(counts)} 条重复记录（涉及 {len(duplicates)} 个 ID）")
+        for record, count in duplicates[:10]:
+            log(f"  {record!r}：出现 {count} 次，保留首次，移除 {count - 1} 条")
+        if len(duplicates) > 10:
+            log(f"  另有 {len(duplicates) - 10} 个重复 ID 未展开")
+
+    return list(counts)
 
 
 def write_records(path, records):
@@ -90,7 +97,7 @@ def main():
         print(f"❌ 找不到数据源: {args.src}")
         sys.exit(1)
 
-    records = read_records(args.src)
+    records = read_records(args.src, log=print)
     if not records:
         print(f"⚠️ 数据源为空，未写出")
         sys.exit(2)

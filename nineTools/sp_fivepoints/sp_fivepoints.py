@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """把本目录中的五点描述 Markdown 转为无表头的 xlsx。
 
-直接运行 main() 即可处理本目录下所有 .md 文件。根据 Markdown 表头识别：
-- 德语：每个产品一行，A~E 为德语第 1~5 点；输出 de_YYYYMMDD.xlsx。
-- 法语：每个产品一行，A~E 为法语第 1~5 点；输出 fr_YYYYMMDD.xlsx。
-- 德法双语：德语整块、空两行、法语整块；输出 de&fr_YYYYMMDD.xlsx。
+直接运行 main() 即可逐个处理本目录下所有 .md 文件，输出同名 .xlsx。
+根据 Markdown 表头识别语言：
+- 德语或法语：每个产品一行，A~E 为对应语言第 1~5 点。
+- 德法双语：德语整块、空两行、法语整块。
 
-同一天若有多份相同语言模式的 Markdown，会先报错，不覆盖其中一份的结果。
+单个文件处理失败时，报告错误并继续处理其他文件。
 """
 
 import argparse
@@ -14,9 +14,10 @@ import io
 import os
 import re
 import sys
-from datetime import datetime
+from tempfile import TemporaryDirectory
 
 from openpyxl import Workbook
+from openpyxl.utils.exceptions import IllegalCharacterError
 
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -155,7 +156,10 @@ def write_xlsx(products, out_path):
             for col, point in enumerate(fr, start=1):
                 ws.cell(row=fr_start + offset, column=col).value = point
 
-    wb.save(out_path)
+    with TemporaryDirectory(dir=os.path.dirname(os.path.abspath(out_path))) as staging_dir:
+        staged_path = os.path.join(staging_dir, "fivepoints.xlsx")
+        wb.save(staged_path)
+        os.replace(staged_path, out_path)
     return n, fr_start
 
 
@@ -175,7 +179,7 @@ def main(argv=None):
         pass
 
     parser = argparse.ArgumentParser(
-        description="自动处理本目录的五点 Markdown，识别德语/法语/德法双语"
+        description="批量处理本目录的五点 Markdown，逐份输出同名的 xlsx"
     )
     parser.parse_args(argv)
 
@@ -184,25 +188,25 @@ def main(argv=None):
         print("[ERROR] %s 中没有 .md 文件" % BASE)
         return 1
 
-    today = datetime.now().strftime("%Y%m%d")
-    jobs = []
-    seen_modes = {}
+    failed = False
+    written_outputs = set()
     for path in inputs:
+        out_path = os.path.splitext(path)[0] + ".xlsx"
+        out_key = os.path.normcase(out_path)
+        if out_key in written_outputs:
+            print("[ERROR] %s: 产出文件名 %s 与本批已生成的文件重名" % (path, out_path))
+            failed = True
+            continue
         try:
             products = parse_markdown(path)
             mode = detect_mode(products)
-        except (OSError, UnicodeError, ValueError) as exc:
+            n, fr_start = write_xlsx(products, out_path)
+        except (OSError, ValueError, IllegalCharacterError) as exc:
             print("[ERROR] %s: %s" % (path, exc))
-            return 1
-        if mode in seen_modes:
-            print("[ERROR] %s 与 %s 都是 %s 模式，当天输出文件会重名；请一次只放一份该模式的 Markdown"
-                  % (seen_modes[mode], path, mode))
-            return 1
-        seen_modes[mode] = path
-        jobs.append((path, products, mode, os.path.join(BASE, "%s_%s.xlsx" % (mode, today))))
+            failed = True
+            continue
 
-    for path, products, mode, out_path in jobs:
-        n, fr_start = write_xlsx(products, out_path)
+        written_outputs.add(out_key)
         print("输入: %s" % path)
         print("输出: %s" % out_path)
         print("模式: %s | 产品数: %d" % (mode, n))
@@ -210,7 +214,7 @@ def main(argv=None):
             print("布局: 德语第 1~%d 行；空两行；法语第 %d~%d 行" % (n, fr_start, fr_start + n - 1))
         else:
             print("布局: %s 第 1~%d 行（每行 5 列，无表头）" % (mode, n))
-    return 0
+    return int(failed)
 
 
 if __name__ == "__main__":
