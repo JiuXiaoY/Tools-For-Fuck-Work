@@ -23,7 +23,7 @@ ai_pick_attributes —— 对「有可选值的未覆盖列」用 **DeepSeek 网
     AI 回答（该批文件存在则复用该批，跳过网页）
 
 只有网页版（无 API）：playwright 打开 DeepSeek 网页逐批发送提示词，读取回答解析写回。
-登录态保存在 antelope/web_data/ + .deepseek_state.json（首次弹浏览器手动登录一次）。
+登录态保存在 antelope/web_data/。DEEPSEEK_FORCE_RELOGIN 可用新的浏览器配置重新登录。
 
 用法:
     python antelope/ai_pick_attributes.py                          # 网页自动化 + 写回
@@ -38,7 +38,9 @@ import json
 import os
 import re
 import sys
+import tempfile
 import time
+from contextlib import closing
 from pathlib import Path
 
 import openpyxl
@@ -71,7 +73,7 @@ PRODUCT_DESC_COLS = (9,)
 # ── DeepSeek 网页自动化 ──
 DEEPSEEK_URL = "https://chat.deepseek.com/"
 WEB_DATA_DIR = BASE / "web_data"            # 浏览器数据（登录态持久化）
-STATE_FILE = BASE / ".deepseek_state.json"  # 登录态快照（复用）
+PROFILE_PREFIX = "deepseek-profile-"
 ASSISTANT_SEL = "div.ds-assistant-message-main-content"
 
 # ── 分批询问 ──
@@ -388,6 +390,34 @@ def enforce_no_placeholder(m_data, groups, ai_cols, labels, placeholder, batch_s
     sys.exit(2)
 
 
+def deepseek_profile_dir(force_relogin: bool) -> Path:
+    """选择上次可用的浏览器配置，或创建全新的配置目录。"""
+    WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    if force_relogin:
+        return Path(tempfile.mkdtemp(prefix=PROFILE_PREFIX, dir=WEB_DATA_DIR))
+
+    active_file = WEB_DATA_DIR / ".active_profile"
+    try:
+        name = active_file.read_text(encoding="utf-8").strip()
+    except FileNotFoundError:
+        return WEB_DATA_DIR
+    if name.startswith(PROFILE_PREFIX) and Path(name).name == name:
+        profile = WEB_DATA_DIR / name
+        if profile.is_dir():
+            return profile
+
+    print(f"⚠️ 已选浏览器配置不存在或无效，使用原浏览器配置：{WEB_DATA_DIR}")
+    return WEB_DATA_DIR
+
+
+def save_deepseek_profile(profile: Path) -> None:
+    """登录成功后，原子更新下次应该复用的浏览器配置。"""
+    active_file = WEB_DATA_DIR / ".active_profile"
+    pending_file = profile / active_file.name
+    pending_file.write_text(profile.name + "\n", encoding="utf-8")
+    pending_file.replace(active_file)
+
+
 def web_ask_all(ai_cols, products, args, m_data, groups):
     """用 DeepSeek 网页分批询问所有产品（每批 BATCH_SIZE 条），解析后更新 M JSON。
 
@@ -397,6 +427,7 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
     需要网页询问的批次共用一次浏览器会话，逐批发送。
     """
     try:
+        from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
         from playwright.sync_api import sync_playwright
     except ImportError:
         print("❌ playwright 未安装。请先执行：")
@@ -405,7 +436,7 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
         sys.exit(3)
 
     os.makedirs(args.prompt_dir, exist_ok=True)
-    WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    force_relogin = zcfg.DEEPSEEK_FORCE_RELOGIN
 
     labels = make_labels(ai_cols)
     batches = build_batches(products, args.batch_size)
@@ -453,48 +484,47 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
         else:
             todo.append((b, start, batch, p_path, r_path, prompt))
 
-    if not todo:
+    if not todo and not force_relogin:
         print("所有批次均已有回答结果，无需打开网页。")
         if groups_hash:
             Path(meta_path).write_text(groups_hash + "\n", encoding="utf-8")
         return
 
-    # 需要网页询问的批次：一次性打开浏览器，逐批发送
-    with sync_playwright() as p:
-        context = p.chromium.launch_persistent_context(
-            user_data_dir=str(WEB_DATA_DIR),
-            headless=False,
-        )
+    profile = deepseek_profile_dir(force_relogin)
+    if force_relogin:
+        print(f"DeepSeek 已开启重新登录，使用新浏览器配置：{profile}")
+        if not todo:
+            print("所有批次已有回答，本次仅重新登录。")
+    else:
+        print(f"DeepSeek 尝试复用浏览器配置：{profile}")
+
+    # 网页询问共用一个浏览器，出错时也会关闭浏览器并写入配置。
+    with sync_playwright() as p, closing(
+        p.chromium.launch_persistent_context(user_data_dir=str(profile), headless=False)
+    ) as context:
         page = context.new_page()
         page.goto(DEEPSEEK_URL, wait_until="domcontentloaded")
         print(f"已打开 {DEEPSEEK_URL}")
 
-        if not STATE_FILE.exists():
-            print("=" * 60)
-            print("首次运行：请在弹出的浏览器中登录 DeepSeek")
-            print("登录完成后程序会自动继续（最多等待 10 分钟）...")
-            print("=" * 60)
-            logged_in = False
-            for _ in range(600):
-                try:
-                    if page.locator("textarea, [contenteditable]").count() > 0:
-                        logged_in = True
-                        break
-                except Exception:
-                    pass
-                time.sleep(1)
-            if not logged_in:
-                raise RuntimeError("等待登录超时（10 分钟），请确认浏览器中已登录 DeepSeek")
-            time.sleep(2)
-            context.storage_state(path=str(STATE_FILE))
-            print(f"登录态已保存: {STATE_FILE.name}")
+        composer = page.locator("textarea:visible:enabled:not([readonly])").first
+        if force_relogin:
+            print("请在弹出的浏览器中重新登录 DeepSeek，最多等待 10 分钟。")
+        elif not composer.is_visible():
+            print("正在等待 DeepSeek 对话页。若网页要求登录，请手动完成，最多等待 10 分钟。")
+        try:
+            composer.wait_for(state="visible", timeout=600_000)
+        except PlaywrightTimeoutError as exc:
+            raise RuntimeError("等待 DeepSeek 对话页超时（10 分钟），请确认已在浏览器中登录") from exc
+        if force_relogin:
+            save_deepseek_profile(profile)
+            print("DeepSeek 新登录配置已启用。下次关闭 DEEPSEEK_FORCE_RELOGIN 即可复用。")
         else:
-            print(f"复用登录态: {STATE_FILE.name}")
+            print("DeepSeek 对话页就绪，将使用当前浏览器会话。")
 
         for b, start, batch, p_path, r_path, prompt in todo:
             covered = set(range(start + 1, start + len(batch) + 1))  # 本批覆盖的绝对组序号
             print(f"--- 批次 {b}/{len(batches)}：产品 {start + 1}~{start + len(batch)}（共 {len(batch)} 个）---")
-            page.wait_for_selector("textarea, [contenteditable]", timeout=30000)
+            composer.wait_for(state="visible", timeout=30_000)
             time.sleep(2)
             print("DeepSeek 对话页就绪")
 
@@ -503,8 +533,7 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
                 new_chat_btn.click()
                 time.sleep(1)
 
-            textarea = page.locator("textarea").first
-            textarea.fill(prompt)
+            composer.fill(prompt)
             time.sleep(1)
 
             prev_text = last_assistant_text(page)
@@ -527,8 +556,6 @@ def web_ask_all(ai_cols, products, args, m_data, groups):
             if missing:
                 print(f"  ⚠️ 本批列 {missing} 未解析到任何值，将保持占位（请检查对应块头）")
             print(f"✅ 批次 {b}/{len(batches)}（网页询问）：写入 {total_u} 个「组×列」，占位 {total_k}")
-
-        context.close()
 
     # 记录本次 groups 指纹：下次同分组运行时自动复用回答（换数据则自动重新询问）
     if groups_hash:

@@ -3,7 +3,7 @@
     "父体行（每组起始行 = 数据源 A 里 A 列有背景填充色的锚点行）的额外动作。",
     "执行时机：⑨ fill_from_plan 填充完成、多余行删除之后，保存产出之前；空配置 = 完全不动。",
     "set_values：把父体行指定列改成固定值，如 {\"D\": \"Parent\"}（可多列；值可为文本/数字/布尔）。",
-    "  注意：以 = 开头的值会被 openpyxl 当成公式写入。父/子标记列各模板都在 D（de=Abstammungsgrad[Eltern/Kind]，fr=Niveau de relation[Parent/Enfant]）。",
+    "  以 = 开头的值会被 openpyxl 当成公式写入。现有德法模板的父子标记列在 D（de=Abstammungsgrad[Eltern/Kind]，fr=Niveau de relation[Parent/Enfant]）。新增类别按实际模板确认列位置和可选值。",
     "row_fill：整行加**静态背景色**（真正的单元格填充，不是选中/阅读模式那种点击就消失的高亮）。",
     "  color   = 6 位或 8 位十六进制（可带 #），如 \"FFFF00\"；为空 = 不填充。",
     "  columns = 填充到哪些列：null/\"all\" = 整行（到模板最后一列）；也可写 \"A:AW\" 或 [\"A\",\"B\"]。",

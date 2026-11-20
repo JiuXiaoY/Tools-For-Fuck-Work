@@ -19,8 +19,21 @@ python antelope/run_all.py
 | `TEMPLATE_B` | 基础模板 B |
 | `TEMPLATE_C` | 完整参照模板 C |
 | `TEMPLATE_OUTPUT` | 用于生成最终文件的输出模板 |
+| `DEEPSEEK_FORCE_RELOGIN` | 步骤 7 的 DeepSeek 网页登录开关 |
 
 当前默认值属于本地批次配置，切换账号、国家、类别或模板时必须重新核对。
+
+## 站点与工作表
+
+从 `ACTIVE_CATEGORY` 读取站点代码，例如 `lfda_uk_sweater` 使用英国站工作表配置。
+
+| 站点 | 主模板表 | 可选值表 | 自定义输出名后缀 |
+|---|---|---|---|
+| 法国 `fr` | `Modèle` | `Valeurs valides` | `@` |
+| 德国 `de` | `Vorlage` | `Gültige Werte` | `&` |
+| 英国 `uk` | `Template` | `Valid Values` | `%` |
+
+未配置 `CUSTOM_FILE_NAME` 时，输出文件名为 `<类别>_filled.xlsm`。
 
 ## 数据角色
 
@@ -64,7 +77,10 @@ TEMPLATE_OUTPUT 的副本 + 待填数据 = D
 
 用同一套模板跑新批次时，保留两份分析 JSON，准备本批数据源 A 和 `TEMPLATE_OUTPUT`，再从原入口启动。需要更新模板分析时，把新的 B 和 C 放到配置指向的位置。
 
-步骤 7 会打开浏览器。只有确认当前类别不需要 AI 选值，或者 M 中所有具有 choices 的列都已有合法值时，才可以注释该步骤。
+步骤 7 需要询问 DeepSeek 时会打开浏览器。只有确认当前类别不需要 AI 选值，或者 M 中所有具有 choices 的列都已有合法值时，才可以注释该步骤。
+
+- `DEEPSEEK_FORCE_RELOGIN = False`（默认）复用 `antelope/web_data/` 内上次选用的浏览器配置。网页要求登录时，手动登录即可继续。
+- 设为 `True` 时，步骤 7 进入网页版流程会使用全新的浏览器配置，等待手动登录。已有回答照常复用。对话页就绪后，新配置才用于后续运行。登录完成后把开关改回 `False`，以便复用新会话。
 
 ## 目录与文件性质
 

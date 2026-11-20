@@ -51,7 +51,7 @@ ACTIVE_CATEGORY = "lfda_fr_sweater"
 # 中间文件的子目录名。通常保持跟随 ACTIVE_CATEGORY 即可。
 INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
-# 生成文件名：法国在末尾加 @，德国加 &；留空时使用原来的默认文件名。
+# 自定义文件名后缀：法国 @、德国 &、英国 %。留空时使用类别生成文件名。
 CUSTOM_FILE_NAME = "FuTiandiZJ"
 
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
@@ -63,6 +63,9 @@ TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
 TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")
 # 产出模板：fill_from_plan 复制它并填充，填完自动删除多余数据行。
 TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "sweater_template_Adam.xlsm")
+
+# DeepSeek 网页登录：False 复用已保存的登录，True 使用新的浏览器配置并等待手动登录。
+DEEPSEEK_FORCE_RELOGIN = False
 
 
 # ════════════════ 自动派生区：以下通常不需要手动修改 ════════════════
@@ -79,14 +82,15 @@ else:  # 兼容旧式 {国家}_{类型}
     TYPE = "_".join(_AC_PARTS[1:])
 
 # ─────────────────────────── 国家配置 ───────────────────────────
-# 国家代码：fr / de（Amazon 站），来自 ACTIVE_CATEGORY 的第二段（"addr_fr_tops" -> "fr"）；
+# 国家代码：fr / de / uk（Amazon 站），来自 ACTIVE_CATEGORY 的第二段；
 # 决定模板中「字段枚举表」与「主模板」的工作表名
 SHEET_NAMES = {
     "fr": {"valid": "Valeurs valides", "model": "Modèle"},
     "de": {"valid": "Gültige Werte", "model": "Vorlage"},
+    "uk": {"valid": "Valid Values", "model": "Template"},
 }
 
-_COUNTRY_FILE_SUFFIX = {"fr": "@", "de": "&"}
+_COUNTRY_FILE_SUFFIX = {"fr": "@", "de": "&", "uk": "%"}
 OUTPUT_FILE_NAME = (
     f"{CUSTOM_FILE_NAME}{_COUNTRY_FILE_SUFFIX[COUNTRY]}.xlsm"
     if CUSTOM_FILE_NAME else f"{ACTIVE_CATEGORY}_filled.xlsm"
@@ -162,7 +166,7 @@ CFG_FILL_PLAN = {
 
 # ─────────────────────── 可运行配置项 ───────────────────────
 CFG_RUN = {
-    # analysisXlsm.py：参与解析的工作表（随国家配置变化：fr=Modèle/Valeurs valides，de=Vorlage/Gültige Werte）
+    # analysisXlsm.py：按站点配置选择主模板表和可选值表
     "default_sheets": list(SHEET_NAMES[COUNTRY].values()),
     # 最终填充产出：自定义名称 + 国家标记；留空时为 outputs/{ACTIVE_CATEGORY}_filled.xlsm
     "plan_output_file": os.path.join(OUTPUTS_DIR, OUTPUT_FILE_NAME),

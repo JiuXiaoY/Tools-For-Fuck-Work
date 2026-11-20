@@ -6,10 +6,10 @@
 供人工/程序填写时参考。
 
 数据来源（默认 .xlsm_template_base，即需求里的基础模板 B）：
-  - 主模板工作表（fr=Modèle / de=Vorlage，按国家配置 SHEET_NAMES 取）：
+  - 主模板工作表（按站点配置 SHEET_NAMES 取）：
                                 row1 的 settings=... 串里带有 labelRow / attributeRow / dataRow 参数；
                                 labelRow 是表头（人类可读列名），attributeRow 是属性键，dataRow 是数据起始行。
-  - 字段枚举表工作表（fr=Valeurs valides / de=Gültige Werte）：
+  - 字段枚举表工作表（按站点配置 SHEET_NAMES 取）：
                                 第 1列为分组标题；第 2 列为字段名（形如 "字段名 - [ COAT ]"）；
                                 第 3 列起横向排列该字段的可选值。
 
@@ -54,7 +54,7 @@ DEFAULT_SHEETS = list(zcfg.CFG_RUN["default_sheets"])
 
 
 # --------------------------------------------------------------------------- #
-# 文本归一化：让不同来源的法文标签能可靠地相互匹配
+# 文本归一化：让不同工作表的字段标签能相互匹配
 # --------------------------------------------------------------------------- #
 def normalize(text: str) -> str:
     """统一空白类字符、大小写与标点半角化，用于表头与字段名的匹配。"""
@@ -213,7 +213,7 @@ def main():
         "--sheets",
         nargs="*",
         default=DEFAULT_SHEETS,
-        help="参与解析的工作表名（默认按国家配置：fr=Valeurs valides/Modèle，de=Gültige Werte/Vorlage）",
+        help="参与解析的工作表名（默认使用当前站点配置的主模板表和可选值表）",
     )
     parser.add_argument(
         "--max-values",
