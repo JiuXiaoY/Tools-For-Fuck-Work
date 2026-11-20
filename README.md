@@ -122,7 +122,7 @@ python antelope/run_all.py
 | `core/` | PipelineContext、PipelineStep 和调度器 |
 | `steps/` | 根目录主流水线步骤 |
 | `preprocess/` | 主流水线前的源文件预处理 |
-| `services/` | Excel、图片、日志、映射记录和 AI 客户端 |
+| `services/` | Excel、图片、日志和 AI 客户端 |
 | `rules/` | 业务规则 |
 | `data/` | 颜色、尺码等固定映射数据 |
 | `tools/` | 与主流程相关的辅助工具 |

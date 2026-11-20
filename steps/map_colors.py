@@ -4,7 +4,6 @@ from openpyxl.utils import get_column_letter
 
 from core import PipelineContext, PipelineStep
 from services import is_blank, cell_has_fill
-from services.unmapped import record_unmapped
 
 
 class MapColorsStep(PipelineStep):
@@ -38,9 +37,8 @@ class MapColorsStep(PipelineStep):
                 filled += 1
             else:
                 unmapped += 1
-                record_unmapped("color", str(val).strip(), cfg.color_mapping_path, source="map_colors")
         source = get_column_letter(cfg.source_color_col)
         target = get_column_letter(cfg.mapped_color_col)
         ctx.log(f"Colors {source} -> {target}: {filled} cells mapped, {skipped} rows skipped "
-                f"(col A has fill), {unmapped} no match (recorded)")
+                f"(col A has fill), {unmapped} no match")
         return ctx

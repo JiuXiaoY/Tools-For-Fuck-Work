@@ -4,7 +4,6 @@ from openpyxl.utils import get_column_letter
 
 from core import PipelineContext, PipelineStep
 from services import is_blank, cell_has_fill
-from services.unmapped import record_unmapped
 
 
 class SizeMappingStep(PipelineStep):
@@ -38,8 +37,7 @@ class SizeMappingStep(PipelineStep):
                 filled += 1
             else:
                 skipped += 1
-                record_unmapped("size", key, cfg.size_mapping_path, source="size_mapping")
         size_col = get_column_letter(cfg.size_col)
         ctx.log(f"Size column {size_col}: {filled} mapped, {cleared} cleared "
-                f"(col A has fill), {skipped} no match (recorded)")
+                f"(col A has fill), {skipped} no match")
         return ctx
