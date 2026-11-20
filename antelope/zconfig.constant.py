@@ -14,9 +14,9 @@ build_fill_framework / column_diff / fill_from_plan）统一从这里 import
   - 用途：blank / completed / column_diff / groups / data / col_mapping / fill_framework …
 
 中间产物分层：
-  - intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/  模板层（只需跑一次）：blank / completed / column_diff
+  - intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/  模板层：blank / completed / column_diff
     + 人工维护固定文件 col_mapping（随模板集固定）
-    —— 只依赖 base.xlsm / complete.xlsm；三件套不变则复用，不随数据文件重跑
+    —— 放入 base.xlsm / complete.xlsm 时分别重解析，原模板缺席时复用分析 JSON
   - intermediate/<前缀>/<ACTIVE_CATEGORY>/      数据层（每次数据批次都要重跑）：
     groups / data / ai_prompt / .xlsx_dataSource_m.json
     —— 依赖数据源 A，数据文件一换就要重新生成
@@ -31,7 +31,7 @@ col_mapping 是人工维护的固定文件（放 intermediate_tpl/<前缀>/<类�
 顶层目录结构：
     antelope/
       xlsm/              模板与数据源 excel
-      intermediate_tpl/<前缀>/<类别>/   模板层「只需跑一次」的过程 json
+      intermediate_tpl/<前缀>/<类别>/   模板层分析 JSON
       intermediate/<前缀>/<类别>/       数据层「每次重跑」的过程 json
       fill_plan/<前缀>/                 填充计划
     outputs/                            填充产出（fill_from_plan 写出）
@@ -57,9 +57,9 @@ CUSTOM_FILE_NAME = "FuTiandiZJ"
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
 # A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
 DATA_SOURCE_A = os.path.join(XLSM_DIR, "11.18v1_fr.xlsx")
-# B：.xlsm 基础模板（analysisXlsm 分析后生成 blank.json）
+# B：提供时重新解析，缺席时复用当前类别的 blank.json
 TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
-# C：.xlsm 完整模板（analysisXlsm 分析后生成 completed.json）
+# C：提供时重新解析，缺席时复用当前类别的 completed.json
 TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")
 # 产出模板：fill_from_plan 复制它并填充，填完自动删除多余数据行。
 TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "sweater_template_Adam.xlsm")
@@ -139,7 +139,7 @@ DEFAULT_TEMPLATE_XLSM = TEMPLATE_B
 
 # ─────────────────── 中间产物 json（模板层 + 数据层）───────────────────
 CFG_INTERMEDIATE = {
-    # —— 模板层（只需跑一次）——
+    # —— 模板层 ——
     #   只依赖 base.xlsm / complete.xlsm，与数据文件无关；
     #   另含人工维护的 col_mapping（源 excel 列 → 目标模板列映射，随模板集固定）
     "completed_json": os.path.join(TEMPLATE_CATEGORY_INTERMEDIATE_DIR, _cat("completed")),

@@ -27,7 +27,7 @@ python antelope/run_all.py
 | 角色 | 内容 | 用途 |
 |---|---|---|
 | A | `.xlsx` 数据源 | 根据 A 列填充色分组，并按 `col_mapping` 读取数据 |
-| B | 基础 `.xlsm` 模板 | 分析已有列，也是最终填充所使用的模板基础 |
+| B | 基础 `.xlsm` 模板 | 分析已有列，生成 `blank.json` |
 | C | 完整 `.xlsm` 模板 | 与 B 对比，确定待填列范围 |
 | M | `.xlsx_dataSource_m.json` | 补充 A 未覆盖的目标列 |
 | D | `outputs/{ACTIVE_CATEGORY}_filled.xlsm` | 最终模板副本 |
@@ -37,7 +37,7 @@ python antelope/run_all.py
 ```text
 C - B = 待填列范围
 A + M = 待填数据
-B 的输出模板副本 + 待填数据 = D
+TEMPLATE_OUTPUT 的副本 + 待填数据 = D
 ```
 
 ## 九步流程
@@ -56,7 +56,13 @@ B 的输出模板副本 + 待填数据 = D
 | 8 | `build_fill_framework.py` | `fill_plan/<前缀>/<类别>_fill_framework.json` |
 | 9 | `fill_from_plan.py` | `outputs/<类别>_filled.xlsm` |
 
-步骤 1～3 属于模板层。输出文件存在且比模板新时，`run_all.py` 会自动跳过。步骤 4～9 属于数据层，每个数据批次都应重新执行。
+步骤 1、2 分别检查 B 和 C。放入对应原模板就重新解析。原模板缺席时，复用当前类别对应的分析 JSON。原模板和分析 JSON 都缺时，流程会报错并列出两个路径。
+
+步骤 3 在任意一份原模板重解析后重新计算列差异。两份分析 JSON 都复用时，只在列差异文件缺失或已过期时重算。
+
+运行日志会列出步骤 1、2 的原模板和分析 JSON 路径，说明是重解析、复用还是缺文件中止。步骤 3 会记录重算原因或复用的文件路径。
+
+用同一套模板跑新批次时，保留两份分析 JSON，准备本批数据源 A 和 `TEMPLATE_OUTPUT`，再从原入口启动。需要更新模板分析时，把新的 B 和 C 放到配置指向的位置。
 
 步骤 7 会打开浏览器。只有确认当前类别不需要 AI 选值，或者 M 中所有具有 choices 的列都已有合法值时，才可以注释该步骤。
 
@@ -144,7 +150,6 @@ intermediate_tpl/<前缀>/<ACTIVE_CATEGORY>/<ACTIVE_CATEGORY>_col_mapping.json
 ## 失败与续跑
 
 - 任一步骤返回非零退出码时，`run_all.py` 立即停止。
-- 步骤 1～3 会根据文件修改时间自动复用缓存。
 - 步骤 4～9 没有自动断点状态；需要续跑时，应确认前置产物有效，再临时注释已经完成的连续前缀步骤。
 - 不要为了跳过错误而执行非连续的后缀步骤，步骤之间通过 JSON 文件存在真实依赖。
 
