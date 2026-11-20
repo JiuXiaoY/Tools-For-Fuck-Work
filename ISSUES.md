@@ -68,9 +68,9 @@
 
 `config.example.py` 写成 `{source_col: target_col}`，`steps/copy_mirror.py` 实际按 `{target_col: source_col}` 使用。
 
-### 11. `id_factory` 类型与实现不一致
+### 11. `id_factory` 类型与实现不一致（已修复）
 
-配置声明为 Callable，`steps/assign_ids.py` 却把它当字符串注册名解析。注入 Callable 时会退回默认工厂。
+已移除 `id_factory` 配置，`steps/assign_ids.py` 根据 `mapping_country` 选择对应的 ID 格式。
 
 ### 12. 依赖声明不完整
 

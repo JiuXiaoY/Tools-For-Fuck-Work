@@ -76,7 +76,6 @@ class Config:
     # Set date_override to a specific date string (e.g. "260702") to fix the code;
     # leave empty to auto-use today''s date.
     date_override: str = "260814"
-    id_factory: Callable[[str | None], str] | None = None
 
     # ── price calculation ─────────────────────────────────────────────
     price_multiplier: str = "1.2"

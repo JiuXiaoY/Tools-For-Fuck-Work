@@ -1,12 +1,13 @@
-﻿"""Fill column B (2) with random 16-char IDs. Middle 6 digits encode date."""
+﻿"""Generate product IDs for the configured marketplace."""
 
 import secrets
 import string
-from collections.abc import Callable
 from datetime import date
 
 from core import PipelineContext, PipelineStep
-_BASE62 = string.digits + string.ascii_uppercase + string.ascii_lowercase
+
+_UPPER_ALNUM = string.digits + string.ascii_uppercase
+_BASE62 = _UPPER_ALNUM + string.ascii_lowercase
 
 # digit → letter mapping: 0→z, 1→a, 2→b, ..., 9→i
 _DIGIT_MAP = dict(zip("0123456789", "zabcdefghi"))
@@ -22,34 +23,34 @@ def _date_code(yymmdd: str | None = None) -> str:
     return "".join(_DIGIT_MAP[d] for d in raw)
 
 
-def _random_id(middle: str) -> str:
-    prefix = "".join(secrets.choice(_BASE62) for _ in range(6))
-    suffix = "".join(secrets.choice(_BASE62) for _ in range(4))
-    return f"{prefix}{middle}{suffix}"
-
-
-def default_id_factory(yymmdd: str | None = None) -> str:
-    """Build one ID using the legacy base62/date-code format."""
-    return _random_id(_date_code(yymmdd))
-
 def anch_id_factory(yymmdd: str | None = None) -> str:
-    # 生成原有的16位ID
-    base_id = default_id_factory(yymmdd)  # 调用默认工厂
-    return "Anch" + base_id  # 总长度20
+    """Build an ID in the shared Anch format."""
+    prefix = "".join(secrets.choice(_BASE62) for _ in range(6))
+    middle = _date_code(yymmdd)
+    suffix = "".join(secrets.choice(_BASE62) for _ in range(4))
+    return f"Anch{prefix}{middle}{suffix}"
 
 
-# 可用的 ID 工厂注册表：字符串配置名 -> 回调
-ID_FACTORIES: dict[str, Callable[[str | None], str]] = {
-    "default_id_factory": default_id_factory,
-    "anch_id_factory": anch_id_factory,
+def de_id_factory(yymmdd: str | None = None) -> str:
+    return anch_id_factory(yymmdd)
+
+
+def fr_id_factory(yymmdd: str | None = None) -> str:
+    return anch_id_factory(yymmdd)
+
+def uk_id_factory(yymmdd: str | None = None) -> str:
+    """Build a hyphenated Anch ID with uppercase date and random segments."""
+    prefix = "".join(secrets.choice(_UPPER_ALNUM) for _ in range(4))
+    middle = _date_code(yymmdd).upper()
+    suffix = "".join(secrets.choice(_UPPER_ALNUM) for _ in range(3))
+    return f"Anch-{prefix}-{middle}-{suffix}"
+
+
+_SITE_ID_FACTORIES = {
+    "de": de_id_factory,
+    "fr": fr_id_factory,
+    "uk": uk_id_factory,
 }
-
-
-def resolve_id_factory(name: str | None) -> Callable[[str | None], str] | None:
-    """按字符串名解析出 ID 工厂回调（config.id_factory 存的是字符串）。"""
-    if not name:
-        return None
-    return ID_FACTORIES.get(name)
 
 
 class AssignIdsStep(PipelineStep):
@@ -61,7 +62,7 @@ class AssignIdsStep(PipelineStep):
         cfg = self.config
         ws = ctx.worksheet
         override = cfg.date_override.strip() or None
-        factory = resolve_id_factory(cfg.id_factory) or default_id_factory
+        factory = _SITE_ID_FACTORIES.get(cfg.mapping_country.lower(), anch_id_factory)
         count = 0
         for r in range(1, ws.max_row + 1):
             ws.cell(row=r, column=cfg.col_b).value = factory(override)

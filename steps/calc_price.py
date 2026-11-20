@@ -32,7 +32,7 @@ class CalcPriceStep(PipelineStep):
             text = ws.cell(row=r, column=cfg.price_source_col).value
             if is_blank(text):
                 continue
-            base = extract_price_before_jpy(str(text))
+            base = extract_price_before_jpy(str(text), country=cfg.mapping_country)
             if base is None:
                 continue
 
@@ -51,5 +51,5 @@ class CalcPriceStep(PipelineStep):
             last = get_column_letter(cfg.final_price_col)
             ctx.log(f"Price columns {first}-{last}: {filled} rows calculated")
         else:
-            ctx.log("No JPY-anchored prices found, price columns skipped")
+            ctx.log(f"No matching prices before JPY for {cfg.mapping_country}, price columns skipped")
         return ctx
