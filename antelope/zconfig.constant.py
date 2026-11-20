@@ -46,13 +46,13 @@ XLSM_DIR = os.path.join(ANTELOPE_DIR, "xlsm")
 # ════════════════ 手动填写区：每批只需检查/修改这里 ════════════════
 # 三段式 {限定词}_{国家}_{类型}，如 "addr_fr_tops"。
 # 限定词、国家、类型任一部分不同 → 模板三件套不同 → 模板层需重新生成。
-ACTIVE_CATEGORY = "lfda_fr_sweater"
+ACTIVE_CATEGORY = "lfda_fr_underpants"
 
 # 中间文件的子目录名。通常保持跟随 ACTIVE_CATEGORY 即可。
 INTERMEDIATE_DIR_NAME = ACTIVE_CATEGORY
 
 # 自定义文件名后缀：法国 @、德国 &、英国 %。留空时使用类别生成文件名。
-CUSTOM_FILE_NAME = "FuTiandiZJ"
+CUSTOM_FILE_NAME = "GuyuanwuCS"
 
 # 本批次的 A/B/C 与产出模板，文件统一放在 antelope/xlsm/ 下。
 # A：.xlsx 数据文件（分组锚点 + 经 col_mapping 取数的部分待填列）
@@ -62,7 +62,7 @@ TEMPLATE_B = os.path.join(XLSM_DIR, "base.xlsm")
 # C：提供时重新解析，缺席时复用当前类别的 completed.json
 TEMPLATE_C = os.path.join(XLSM_DIR, "complete.xlsm")
 # 产出模板：fill_from_plan 复制它并填充，填完自动删除多余数据行。
-TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "sweater_template_Adam.xlsm")
+TEMPLATE_OUTPUT = os.path.join(XLSM_DIR, "underpants_template_Adam.xlsm")
 
 # DeepSeek 网页登录：False 复用已保存的登录，True 使用新的浏览器配置并等待手动登录。
 DEEPSEEK_FORCE_RELOGIN = False

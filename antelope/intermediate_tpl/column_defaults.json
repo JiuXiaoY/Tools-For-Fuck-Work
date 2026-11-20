@@ -228,8 +228,8 @@
     "AQ": { "value": "", "file": "fr_Adam/fr_sweater_Adam.txt", "sequence": false }
   },
   "lfda_fr_underpants": {
-    "Q":  { "value": "", "file": "", "sequence": false },
-    "AM": { "value": "", "file": "", "sequence": false },
-    "AS": { "value": "", "file": "fr_Adam/fr_sweater_Adam.txt", "sequence": false }
+    "Q":  { "value": "lingerie homme sexy hot", "file": "", "sequence": false },
+    "AM": { "value": "Cette lingerie masculine associe une allure travaillée à un port agréable pour accompagner les moments de détente, les soirées à thème et diverses occasions privées ; facile à intégrer à des tenues variées, elle ajoute une note personnelle et expressive au vestiaire masculin", "file": "", "sequence": false },
+    "AS": { "value": "", "file": "fr_Adam/fr_underpants_Adam.txt", "sequence": false }
   }
 }

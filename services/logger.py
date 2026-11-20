@@ -1,4 +1,4 @@
-"""Shared logging — all modules write to logs/{date}_{8chars}.log
+"""Shared logging in monthly directories under logs/.
 
 Usage:
     from services.logger import get_logger
@@ -8,7 +8,7 @@ Usage:
     log.warning("issue")
     log.error("failure")
 
-Naming:  logs/20250714_a1b2c3d4.log
+Naming:  logs/25.07.log/20250714_a1b2c3d4.log
     - Same date → reuses existing file
     - New date → generates new random suffix
 """
@@ -28,18 +28,20 @@ _initialized: bool = False
 
 
 def _resolve_log_path() -> Path:
-    """Find today's log file or create a new one."""
-    today = datetime.now().strftime("%Y%m%d")
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    """Find today's log file in its monthly directory or pick a new path."""
+    now = datetime.now()
+    today = f"{now:%Y%m%d}"
+    month_dir = LOG_DIR / f"{now:%y.%m}.log"
+    month_dir.mkdir(parents=True, exist_ok=True)
 
     # Try to reuse an existing file from today
-    existing = sorted(LOG_DIR.glob(f"{today}_????????.log"))
+    existing = sorted(path for path in month_dir.glob(f"{today}_????????.log") if path.is_file())
     if existing:
         return existing[0]
 
     # Create new
     suffix = secrets.token_hex(4)  # 8 hex chars
-    return LOG_DIR / f"{today}_{suffix}.log"
+    return month_dir / f"{today}_{suffix}.log"
 
 
 def _init_root_logger() -> Path:

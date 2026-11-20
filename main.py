@@ -45,7 +45,7 @@ def main() -> None:
     out_dir = BASE / cfg.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    log.info("Log file: %s", log_path().name)
+    log.info("Log file: %s", log_path())
 
     files = sorted(src.glob("*.xlsx"))
     if not files:

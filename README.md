@@ -133,7 +133,7 @@ python antelope/run_all.py
 | `deprecated/` | 已弃用代码与历史提示词，仅供追溯 |
 | `public/` | 本地输入目录，不进入 Git |
 | `outputs/` | 本地输出目录，不进入 Git |
-| `logs/` | 运行日志，不进入 Git |
+| `logs/YY.MM.log/` | 主流程运行日志，文件名为 `YYYYMMDD_<8位标识>.log`，不进入 Git |
 
 ## 相关子目录说明
 
