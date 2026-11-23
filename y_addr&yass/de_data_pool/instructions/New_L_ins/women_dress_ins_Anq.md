@@ -87,4 +87,4 @@ dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/Hal_dress
 
 ## 高涨服关键词
 {请查看 dealExcel_refactoring/y_addr&yass/de_data_pool/keywords/dress/womens_dresses.md 文件}
-{dealExcel_refactoring/tools/needToCollect/result/20261013_170200_de.txt 【Hot】}
+{dealExcel_refactoring/huTools/collectTool/output/de/keywords/20261013_170200_de.md 【Hot】}

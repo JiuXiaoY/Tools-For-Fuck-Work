@@ -99,18 +99,6 @@ class Config:
     # 映射表国家码：de / fr / us ...，对应 data/color_mapping_{code}.json 与 data/size_mapping_{code}.json
     mapping_country: str = "fr"
 
-    # ── hotwords ───────────────────────────────────────────────────────
-    hotwords_country: str = "de"                           # 目标站点国家码(如 de/us),CLI --country 默认值
-    hotwords_dual_mode: bool = True                        # True=双请求(fluctuation+new_rank), False=单请求
-    hotwords_single_mode: str = "new_rank"                 # 单请求时用哪个: "new_rank" / "fluctuation"
-    # fluctuation 模式过滤
-    hotwords_fluc_enabled: bool = True                     # 是否启用 fluctuation 过滤
-    hotwords_fluc_threshold: int = -60000                  # 保留 fluctuation < 此值的词
-    # new_rank 模式过滤（按返回数量分档）
-    hotwords_rank_enabled: bool = True                     # 是否启用 new_rank 过滤
-    hotwords_rank_threshold_high: int = 200000              # 返回 160-200 条时，保留 new_rank < 此值
-    hotwords_rank_threshold_mid: int = 200000              # 返回 40-160 条时，保留 new_rank < 此值
-
     # ── pipeline ──────────────────────────────────────────────────────
     delete_source_after_merge: bool = True                # 合并后是否删除 public/xls_xlsx 源文件
     pipeline_continue_on_error: bool = False              # 单步骤失败后是否继续执行后续步骤
@@ -118,7 +106,6 @@ class Config:
 
     # ── retry ─────────────────────────────────────────────────────────
     retry_max_rounds_deepseek: int = 5                     # DeepSeek 网页端重试轮数
-    retry_max_rounds_hotwords: int = 5                     # 热词采集失败重试轮数
     delays: DelayConfig = field(default_factory=DelayConfig)
     deepseek_selectors: DeepSeekSelectors = field(default_factory=DeepSeekSelectors)
 

@@ -5,7 +5,7 @@ Excel 批处理与 Amazon 模板填充工具集。仓库包含两条主要流程
 - 根目录流水线：整理普通 `.xlsx` 数据，执行合并、列转换、映射、价格计算和格式化。
 - `antelope/`：将数据源写入 Amazon `.xlsm` 模板副本。
 
-独立工具集中在 `tools/` 和 `nineTools/`。提示词、关键词、映射表和模板属于业务资源，不是程序说明文档。
+独立工具集中在 `tools/`、`nineTools/` 和 `huTools/`。提示词、关键词、映射表和模板属于业务资源，不是程序说明文档。
 
 ## 使用前注意
 
@@ -128,6 +128,7 @@ python antelope/run_all.py
 | `tools/` | 与主流程相关的辅助工具 |
 | `antelope/` | Amazon 模板填充流程 |
 | `nineTools/` | 相互独立的小工具，说明见 [nineTools/zzz.md](nineTools/zzz.md) |
+| `huTools/collectTool/` | 热词采集和服装词清洗 |
 | `y_addr&yass/` | 多账号共用业务素材和提示词 |
 | `y_addreoffici/`、`y_yassikzu/` | 账号模板资源 |
 | `deprecated/` | 已弃用代码与历史提示词，仅供追溯 |
@@ -140,8 +141,7 @@ python antelope/run_all.py
 - [antelope/zzz.md](antelope/zzz.md)：Amazon 模板填充流程
 - [antelope/values/zzz.md](antelope/values/zzz.md)：多行值文件规则
 - [nineTools/zzz.md](nineTools/zzz.md)：独立工具索引
-- [tools/needToCollect/base_words/zzz.md](tools/needToCollect/base_words/zzz.md)：基础词库规则
-- [tools/needToCollect/fashion_filter/zzz.md](tools/needToCollect/fashion_filter/zzz.md)：服装热词采集与清洗
+- 热词采集与清洗使用 [collectTool/collect.py](huTools/collectTool/collect.py) 和工具目录的 [config.py](huTools/collectTool/config.py)。
 
 ## Markdown 命名约定
 

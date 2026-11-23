@@ -15,16 +15,18 @@ build/
 
 # Secrets
 config.py
+!/huTools/collectTool/config.py
 
 # Generated output
 outputs/
 public/
 logs/
+/huTools/collectTool/output/
 
 # Tools �� generated
-tools/needToCollect/result/
-tools/needToCollect/fashion_filter/raw/
-tools/needToCollect/fashion_filter/result/
+/deprecated/needToCollect/result/
+/deprecated/needToCollect/fashion_filter/raw/
+/deprecated/needToCollect/fashion_filter/result/
 tools/title_optimize/temp_photo/
 tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json
