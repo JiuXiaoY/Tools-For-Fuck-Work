@@ -74,9 +74,9 @@
 
 ### 12. 依赖声明不完整
 
-`pyproject.toml`、`requirements.txt` 和真实工具依赖不一致。Playwright、NumPy、OpenCV 等没有清晰的可选依赖分组。
+`pyproject.toml`、`requirements.txt` 和真实工具依赖不一致。网页端 AI 工具使用的 Playwright 尚未声明为可选依赖。
 
-建议增加 `ai`、`browser`、`vision`、`dev` 等 optional dependency groups。
+建议增加 `browser` 和 `dev` 可选依赖分组。
 
 ### 13. 大量使用 openpyxl 私有接口
 

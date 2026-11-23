@@ -30,8 +30,8 @@ logs/
 tools/title_optimize/temp_photo/
 tools/title_optimize/browser_data/
 tools/title_optimize/deepseek_state.json
-tools/title_auto_fill/gemini_state.json
-tools/title_auto_fill/gemini_browser/
+/deprecated/title_auto_fill/gemini_state.json
+/deprecated/title_auto_fill/gemini_browser/
 # nineTools 随机 ID 输出（含子目录）
 nineTools/**/*.txt
 # nineTools 生成的 xlsx（仅本地使用，不入库）
@@ -54,8 +54,8 @@ tools/color_size_deal/check_*.txt
 tools/title_optimize/origin_link
 tools/title_optimize/origin_title
 tools/title_optimize/optimize_title
-tools/title_auto_fill/final_de_title
-tools/title_auto_fill/final_de_title_s
+/deprecated/title_auto_fill/final_de_title
+/deprecated/title_auto_fill/final_de_title_s
 
 # antelope AI 选值（浏览器数据和登录态，不入库）
 antelope/web_data/

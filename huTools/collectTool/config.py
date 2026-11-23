@@ -2,11 +2,13 @@
 
 SETTINGS = {
     # 任务类型：keywords 单查或批采，fashion 采集后清洗，clean 清洗自己指定的文件。
-    "task": "fashion",
+    "task": "keywords",
     "country": "fr",              # de、fr、uk 等两位站点代码
 
     # 文件路径相对于本目录，也支持绝对路径。基础词库在 base_words/。
-    # 两种清洗共用 rules/brands.md。common 适用所有站点，de、fr 等小节为站点补充。
+    # 英国服装采集设 task="fashion"、country="uk"，input 和 keyword 留空。
+    # 英国关键词批采可将 input 设为 "base_words/uk/fashion_base.md"。
+    # 两种清洗共用 rules/brands.md。common 适用所有站点，de、fr、uk 小节为站点补充。
     # 服装词根在 rules/<国家>/。
     "input": "",                  # 批采默认 keywords.md；离线清洗必须指定文件
     "out": "",                    # .md 文件，默认写入 output/<国家>/keywords/ 或 output/<国家>/fashion/

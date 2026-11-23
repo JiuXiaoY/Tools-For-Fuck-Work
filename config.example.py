@@ -114,11 +114,6 @@ class Config:
     preprocess_dedup_close_gap: int = 10                    # 去重：两有色锚点行之间夹的行数 ≤ 此值时，删除锚点行及其间所有行
     preprocess_remove_empty_j: bool = False                 # 是否删除 J 列为空的普通数据行
 
-    # ── image classification ──────────────────────────────────────────
-    img_classify_mode: str = "ocr"                         # "ocr" / "opencv" / "heuristic" / "all"
-    img_classify_ocr_lang: str = "eng+deu"                 # OCR 语言包
-    img_classify_table_min_lines: int = 10                  # OpenCV 模式最少水平线数（>此值判定为尺码图）
-    img_reorder_mode: str = "inline_dual"                  # "inline_dual" / "copy_single" / "move_dual"
     _color_mapping_cache: dict[str, str] | None = field(default=None, init=False, repr=False)
     _size_mapping_cache: dict[str, str] | None = field(default=None, init=False, repr=False)
 

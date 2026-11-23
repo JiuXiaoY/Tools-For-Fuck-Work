@@ -23,7 +23,11 @@ API_URL = "https://api.amz123.com/search/v1/hotwords/search"
 TASKS = ("keywords", "fashion", "clean")
 SORTS = ("new_rank", "fluctuation", "both")
 FASHION_SITES = ("de", "fr", "uk")
-GENDER_LABELS = {"de": ("herren", "damen", "other"), "fr": ("homme", "femme", "other")}
+GENDER_LABELS = {
+    "de": ("herren", "damen", "other"),
+    "fr": ("homme", "femme", "other"),
+    "uk": ("men", "women", "other"),
+}
 log = logging.getLogger(__name__)
 
 
@@ -126,6 +130,10 @@ class RequestError(RuntimeError):
     """The service rejected the request or returned an invalid response."""
 
 
+class SignatureError(RequestError):
+    """The service rejected the request signature."""
+
+
 REQUEST_FAILURES = (requests.RequestException, RequestError)
 
 
@@ -164,6 +172,8 @@ def response_rows(response: requests.Response) -> list[dict]:
     if not isinstance(result, dict):
         raise RequestError("AMZ123 返回的顶层数据不是对象")
     status = result.get("status")
+    if status == 107:
+        raise SignatureError("AMZ123 签名验证失败（107）")
     if type(status) is not int or status != 0:
         raise RequestError(f"AMZ123 请求失败，业务状态 {status!r}")
     data = result.get("data")
@@ -171,11 +181,6 @@ def response_rows(response: requests.Response) -> list[dict]:
     if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
         raise RequestError("AMZ123 返回的 data.rows 不是对象列表")
     return rows
-
-
-def fetch_keywords(session: requests.Session, cfg: Settings, sort: str, keyword: str) -> list[dict]:
-    query = payload(cfg, sort, keyword=keyword)
-    return response_rows(session.post(API_URL, json=query, timeout=cfg.timeout))
 
 
 def load_request_config(session: requests.Session, page_url: str, timeout: float) -> dict:
@@ -195,12 +200,18 @@ def load_request_config(session: requests.Session, page_url: str, timeout: float
     return config
 
 
-def fetch_fashion(session: requests.Session, cfg: Settings) -> list[tuple[str, int]]:
-    page_url = f"https://www.amz123.com/{cfg.country}topkeywords"
-    config = load_request_config(session, page_url, cfg.timeout)
-    gains: dict[str, tuple[str, int]] = {}
-    for page in range(1, cfg.pages + 1):
-        query = payload(cfg, "fluctuation", page)
+class HotwordClient:
+    def __init__(self, session: requests.Session, cfg: Settings):
+        self.session = session
+        self.cfg = cfg
+        self.page_url = f"https://www.amz123.com/{cfg.country}topkeywords"
+        self.request_config: dict | None = None
+
+    def fetch(self, sort: str, page: int = 1, *, keyword: str | None = None) -> list[dict]:
+        if self.request_config is None:
+            self.request_config = load_request_config(self.session, self.page_url, self.cfg.timeout)
+        config = self.request_config
+        query = payload(self.cfg, sort, page, keyword)
         body = json.dumps(query, ensure_ascii=False, separators=(",", ":"))
         timestamp = str(int(time.time()))
         signature = hashlib.md5(f"{body}_{timestamp}_{config['secretKey']}".encode("utf-8")).hexdigest()
@@ -212,10 +223,21 @@ def fetch_fashion(session: requests.Session, cfg: Settings) -> list[tuple[str, i
             "S": signature,
             "Authorization": "",
             "Origin": "https://www.amz123.com",
-            "Referer": page_url,
+            "Referer": self.page_url,
         }
-        response = session.post(API_URL, data=body.encode("utf-8"), headers=headers, timeout=cfg.timeout)
-        rows = response_rows(response)
+        response = self.session.post(API_URL, data=body.encode("utf-8"), headers=headers, timeout=self.cfg.timeout)
+        try:
+            return response_rows(response)
+        except SignatureError:
+            self.request_config = None
+            raise
+
+
+def fetch_fashion(session: requests.Session, cfg: Settings) -> list[tuple[str, int]]:
+    client = HotwordClient(session, cfg)
+    gains: dict[str, tuple[str, int]] = {}
+    for page in range(1, cfg.pages + 1):
+        rows = client.fetch("fluctuation", page)
         log.info("第 %d/%d 页，收到 %d 条", page, cfg.pages, len(rows))
         for row in rows:
             word = str(row.get("word") or "").strip()
@@ -283,9 +305,12 @@ def clean_with_report(words: list[str], country: str) -> tuple[list[str], list[s
 def classify(words: list[str], country: str) -> dict[str, list[str]]:
     male, female, other = GENDER_LABELS.get(country, GENDER_LABELS["de"])
     buckets: dict[str, list[str]] = {male: [], female: [], other: []}
+    patterns = (re.escape(male), re.escape(female))
+    if country == "uk":
+        patterns = (r"\bmens?\b", r"\b(?:womens?|ladies)\b")
     for word in words:
-        for label in (male, female):
-            if label in word:
+        for label, pattern in zip((male, female), patterns):
+            if re.search(pattern, word):
                 buckets[label].append(word)
                 break
         else:
@@ -341,6 +366,8 @@ def clean_pairs(
     brand_roots: list[str],
     keep_attributes: bool,
     use_excludes: bool,
+    *,
+    whole_words: bool = False,
 ) -> tuple[list[tuple[str, int, str]], dict[str, int]]:
     """逐词判定,返回 (保留项[词,涨幅,备注], 统计)。
 
@@ -350,25 +377,37 @@ def clean_pairs(
     """
     kept: list[tuple[str, int, str]] = []
     stats = {"cat": 0, "attr": 0, "excluded": 0, "irrelevant": 0}
+    patterns = {}
+    if whole_words:
+        patterns = {
+            root: re.compile(rf"\b{re.escape(root)}\b")
+            for root in (*cat_roots, *strong_attrs, *weak_attrs, *excl_roots)
+        }
+
+    def matches(root: str, text: str) -> bool:
+        return bool(patterns[root].search(text)) if whole_words else root in text
 
     for word, fluc in pairs:
         w = word.lower()
 
         # 1) 黑名单(明确非服装噪声)→ 丢弃
-        if use_excludes and any(root in w for root in excl_roots):
+        if use_excludes and any(matches(root, w) for root in excl_roots):
             stats["excluded"] += 1
             continue
 
         # 2) 品牌移除:品牌可能在词的开头/中间/结尾,可能是多个单词
         stripped, brands = strip_brands(word, brand_roots)
         s = stripped.lower()
+        if whole_words:
+            s = s.replace("’", "'")
         brand_note = f"去品牌:{','.join(brands)}" if brands else ""
 
         # 3) 品类词根 → 必保留(强/弱属性作为备注补充)
-        cats = [r for r in cat_roots if r in s]
+        cats = [r for r in cat_roots if matches(r, s)]
+        sattrs = [r for r in strong_attrs if matches(r, s)]
         if cats:
             note = "品类:" + ",".join(cats)
-            attrs = [r for r in strong_attrs if r in s] + [r for r in weak_attrs if r in s]
+            attrs = sattrs + [r for r in weak_attrs if matches(r, s)]
             if attrs:
                 note += ";属性:" + ",".join(attrs)
             if brand_note:
@@ -378,15 +417,13 @@ def clean_pairs(
             continue
 
         # 4) 强属性 → 可独立保留(开关控制);弱属性单独出现 → 丢弃(防误报)
-        if keep_attributes:
-            sattrs = [r for r in strong_attrs if r in s]
-            if sattrs:
-                note = "属性:" + ",".join(sattrs)
-                if brand_note:
-                    note += ";" + brand_note
-                kept.append((stripped, fluc, note))
-                stats["attr"] += 1
-                continue
+        if keep_attributes and sattrs:
+            note = "属性:" + ",".join(sattrs)
+            if brand_note:
+                note += ";" + brand_note
+            kept.append((stripped, fluc, note))
+            stats["attr"] += 1
+            continue
 
         # 5) 未命中任何规则 → 丢弃
         stats["irrelevant"] += 1
@@ -460,10 +497,11 @@ def collect_keywords(cfg: Settings, site_dir: Path) -> int:
     by_sort: dict[str, list[str]] = {sort: [] for sort in cfg.sort_modes}
     failed = 0
     with requests.Session() as session:
+        client = HotwordClient(session, cfg)
         for index, (keyword, sort) in enumerate(queries, 1):
             log.info("[%d/%d] %s (%s)", index, len(queries), keyword or "全部热词", sort)
             try:
-                rows = retry(lambda: fetch_keywords(session, cfg, sort, keyword), cfg)
+                rows = retry(lambda: client.fetch(sort, keyword=keyword), cfg)
                 by_sort[sort].extend(filtered_words(rows, sort, cfg))
             except REQUEST_FAILURES as exc:
                 failed += 1
@@ -523,7 +561,13 @@ def run_fashion(cfg: Settings, site_dir: Path) -> None:
     if not pairs:
         log.info("没有待处理的热词")
         return
-    kept, stats = clean_pairs(pairs, *rules, keep_attributes=cfg.keep_attributes, use_excludes=cfg.use_excludes)
+    kept, stats = clean_pairs(
+        pairs,
+        *rules,
+        keep_attributes=cfg.keep_attributes,
+        use_excludes=cfg.use_excludes,
+        whole_words=cfg.country == "uk",
+    )
     kept.sort(key=lambda item: item[1], reverse=True)
     if cfg.min_gain is not None:
         kept = [item for item in kept if item[1] >= cfg.min_gain]

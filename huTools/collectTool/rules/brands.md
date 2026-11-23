@@ -212,3 +212,28 @@
 - zara
 - shein
 - levi's
+
+## uk
+- asos
+- barbour
+- boohoo
+- craghoppers
+- fatface
+- gymshark
+- h&m
+- joules
+- levi's
+- m&s
+- marks & spencer
+- marks and spencer
+- mountain warehouse
+- new look
+- primark
+- reebok
+- river island
+- seasalt
+- seasalt cornwall
+- shein
+- uniqlo
+- white stuff
+- zara

@@ -21,7 +21,7 @@ Excel 批处理与 Amazon 模板填充工具集。仓库包含两条主要流程
 - Python 3.10+
 - Windows 为主要运行环境
 - 核心依赖：`openpyxl`、`Pillow`、`requests`
-- 网页端 AI 和图像工具还需要 Playwright、NumPy、OpenCV 等可选依赖
+- 网页端 AI 工具还需要 Playwright
 
 安装基础依赖：
 
