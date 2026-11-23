@@ -10,9 +10,9 @@
 3. 只保留与目标品类直接相关的商品，排除串类商品、配件和不相关套装。
 4. 删除完全重复和高度重复的标题。
 5. 德国站写入：
-   dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/【文件名】
+   dealExcel_refactoring/y_acData/de_data_pool/bestseller/【文件名】
 6. 法国站写入：
-   dealExcel_refactoring/y_addr&yass/fr_data_pool/bestseller/【文件名】
+   dealExcel_refactoring/y_acData/fr_data_pool/bestseller/【文件名】
 7. 如果目标文件不存在就新建；如果要求追加，则保留原内容并去重后追加。
 8. 采集文件保存原始商品标题，不要在该文件中做关键词清洗。
 9. 先简要总结识别到的细分类目，然后直接开始处理，不需要再次询问。
@@ -21,10 +21,10 @@
 请根据以下两个原始采集文件生成德国和法国的关键词矩阵：
 
 德国源文件：
-dealExcel_refactoring/y_addr&yass/de_data_pool/bestseller/【文件名】
+dealExcel_refactoring/y_acData/de_data_pool/bestseller/【文件名】
 
 法国源文件：
-dealExcel_refactoring/y_addr&yass/fr_data_pool/bestseller/【文件名】
+dealExcel_refactoring/y_acData/fr_data_pool/bestseller/【文件名】
 
 输出文件：
 dealExcel_refactoring/antelope/values/de_【性别】/de_【文件名】.txt
@@ -73,7 +73,7 @@ dealExcel_refactoring/antelope/values/fr_【性别】/fr_【文件名】.txt
 ## 分析 needToGenerate 后采集
 查看以下目录中的产品：
 
-dealExcel_refactoring/y_addr&yass/de_feasibility_domain/【类目】/needToGenerate
+dealExcel_refactoring/y_acData/de_feasibility_domain/【类目】/needToGenerate
 
 先根据文件内容总结包含哪些产品类别和细分类目，再分别采集德国站和法国站的同类热销商品标题。
 

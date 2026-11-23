@@ -66,8 +66,8 @@ antelope/.deepseek_state.json
 !/antelope/intermediate/zzz.md
 
 # Generated feasibility data and fill plans
-/y_addr&yass/fr_feasibility_domain/
-/y_addr&yass/de_feasibility_domain/
+/y_acData/fr_feasibility_domain/
+/y_acData/de_feasibility_domain/
 /antelope/fill_plan/
 
 # antelope 模板与数据源（base/complete/输出模板/数据 xlsx 换批次频繁、体积大，不入库）

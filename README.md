@@ -129,7 +129,7 @@ python antelope/run_all.py
 | `antelope/` | Amazon 模板填充流程 |
 | `nineTools/` | 相互独立的小工具，说明见 [nineTools/zzz.md](nineTools/zzz.md) |
 | `huTools/collectTool/` | 热词采集和服装词清洗 |
-| `y_addr&yass/` | 多账号共用业务素材和提示词 |
+| `y_acData/` | 多账号共用业务素材和提示词 |
 | `y_addreoffici/`、`y_yassikzu/` | 账号模板资源 |
 | `deprecated/` | 已弃用代码与历史提示词，仅供追溯 |
 | `public/` | 本地输入目录，不进入 Git |
