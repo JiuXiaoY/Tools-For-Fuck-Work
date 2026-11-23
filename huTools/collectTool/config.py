@@ -2,8 +2,8 @@
 
 SETTINGS = {
     # 任务类型：keywords 单查或批采，fashion 采集后清洗，clean 清洗自己指定的文件。
-    "task": "keywords",
-    "country": "fr",              # de、fr、uk 等两位站点代码
+    "task": "fashion",
+    "country": "uk",              # de、fr、uk 等两位站点代码
 
     # 文件路径相对于本目录，也支持绝对路径。基础词库在 base_words/。
     # 英国服装采集设 task="fashion"、country="uk"，input 和 keyword 留空。

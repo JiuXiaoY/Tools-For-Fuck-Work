@@ -1,4 +1,4 @@
-"""Collect Amazon DE/FR API suggestions; vocabulary files contain one phrase per line."""
+"""Collect Amazon search suggestions; vocabulary files contain one phrase per line."""
 
 from __future__ import annotations
 
@@ -26,6 +26,7 @@ LOCAL_TIME = timezone(timedelta(hours=8))
 MARKETS = {
     "de": {"completion": "completion.amazon.de", "mid": "A1PA6795UKMFR9", "locale": "de-DE"},
     "fr": {"completion": "completion.amazon.fr", "mid": "A13V1IB3VIYZZH", "locale": "fr-FR"},
+    "uk": {"completion": "completion.amazon.co.uk", "mid": "A1F83G8C2ARO7P", "locale": "en-GB"},
 }
 
 
@@ -93,7 +94,7 @@ def read_config(path: Path) -> Settings:
         raise ValueError("未知配置项：" + ", ".join(sorted(map(str,unknown))))
     settings = Settings(**values)
     if not isinstance(settings.markets, (list,tuple)) or not all(isinstance(m,str) for m in settings.markets):
-        raise ValueError('markets 需要为站点列表，例如 ["de", "fr"]')
+        raise ValueError('markets 需要为站点列表，例如 ["uk"]')
     settings.markets = tuple(dict.fromkeys(m.strip().lower() for m in settings.markets))
     validate_settings(settings)
     return settings
@@ -101,7 +102,7 @@ def read_config(path: Path) -> Settings:
 
 def validate_settings(settings: Settings) -> None:
     if not settings.markets or any(m not in MARKETS for m in settings.markets):
-        raise ValueError("markets 只能填写 de、fr，例如 de,fr")
+        raise ValueError(f"markets 支持 {'、'.join(MARKETS)}，例如 [\"uk\"]")
     if not isinstance(settings.expand,str) or settings.expand not in {"none", "letters", "letters-digits"}:
         raise ValueError("expand 只能填写 none、letters、letters-digits")
     if not isinstance(settings.category,str) or not settings.category or any(c.isspace() for c in settings.category):
@@ -440,9 +441,9 @@ def main(argv: list[str] | None = None) -> int:
         sys.stderr.reconfigure(encoding="utf-8")
     except (AttributeError, OSError):
         pass
-    parser = argparse.ArgumentParser(description="通过 API 抓取亚马逊德法站搜索建议，词表使用 .txt")
+    parser = argparse.ArgumentParser(description="通过 API 采集亚马逊搜索建议，词表使用 .txt")
     parser.add_argument("--config", type=Path, default=BASE/"config.py", help="Python 配置文件")
-    parser.add_argument("--market", nargs="+", choices=sorted(MARKETS), help="选择站点，例如 --market de fr")
+    parser.add_argument("--market", nargs="+", choices=sorted(MARKETS), help="选择站点，例如 --market uk")
     parser.add_argument("--input", type=Path, help="自定义关键词 .txt（须只选择一个站点）")
     parser.add_argument("--expand", choices=["none","letters","letters-digits"], help="扩展查询方式")
     parser.add_argument("--max-queries", type=int, default=0, help="本次最多请求多少个未缓存前缀，0=不限制")

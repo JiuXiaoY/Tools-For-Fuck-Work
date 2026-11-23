@@ -1,18 +1,21 @@
-# 亚马逊德法站搜索建议采集
+# 亚马逊德国、法国和英国站搜索建议采集
 
-通过亚马逊公开建议接口采集德法站搜索建议，只依赖 Python 3.10 及以上版本的标准库。
+通过亚马逊建议接口采集德国、法国和英国站搜索建议，只依赖 Python 3.10 及以上版本的标准库。
 
 ## 输入和配置
 
 - `keywords_de.txt`：德国关键词，每行一个词或词组。
 - `keywords_fr.txt`：法国关键词，每行一个词或词组。
+- `keywords_uk.txt`：英国关键词，每行一个词或词组。
 - `config.py`：所有默认配置，修改其中的 `SETTINGS` 字典即可。
+
+首次检出仓库时，在本目录创建本地配置和对应站点的词表。例如只采集英国站，可在 `config.py` 写入 `SETTINGS = {"markets": ["uk"]}`，其余配置使用程序默认值。
 
 词表保存为 UTF-8，支持 BOM。空行忽略，重复输入自动合并。输入词只用于查询，结果词表保留亚马逊实际返回的原文。
 
 | 配置 | 默认值 | 含义 |
 | --- | --- | --- |
-| `markets` | `["de"]` | 采集站点，可选择 `de`、`fr` |
+| `markets` | `["de", "fr"]` | 采集站点，可选择 `de`、`fr`、`uk` |
 | `category` | `"aps"` | 搜索类别，`aps` 为全部类别 |
 | `expand` | `"none"` | `none` 原词；`letters` 字母扩展；`letters-digits` 字母及数字扩展 |
 | `interval` | `1.2` | 请求间隔秒数，不得小于 0.5 |
@@ -23,7 +26,7 @@
 
 ## 运行
 
-统一使用 `get_sug_word.py` 运行。当前配置读取 `keywords_de.txt` 中本批裙装相关的德国站原词，不添加字母或数字扩展。
+统一使用 `get_sug_word.py` 运行。程序按所选站点读取 `keywords_<站点>.txt`。
 
 在项目根目录执行：
 
@@ -31,12 +34,13 @@
 python nineTools/getSugWord/get_sug_word.py
 ```
 
-当前配置只采集德国站。全部接口原文去重后保存在 `de_suggestions.txt`，不做性别词过滤，不改写词组。进度和统计只显示在终端，不保存过程文件。首次运行前填写相应站点的词表；词表为空时程序提示并停止。
+首次运行前填写相应站点的词表，词表为空时程序会提示并停止。默认将接口返回的词去重后写入对应站点的结果文件，进度和统计显示在终端。
 
 ```powershell
-# 只采集德国或法国
+# 单独采集一个站点
 python nineTools/getSugWord/get_sug_word.py --market de
 python nineTools/getSugWord/get_sug_word.py --market fr
+python nineTools/getSugWord/get_sug_word.py --market uk
 
 # 本次最多请求 5 个原词
 python nineTools/getSugWord/get_sug_word.py --max-queries 5
@@ -58,7 +62,7 @@ python nineTools/getSugWord/get_sug_word.py --dry-run
 
 | 文件 | 内容 |
 | --- | --- |
-| `de_suggestions.txt` / `fr_suggestions.txt` | 去重建议词，每行一条原文 |
+| `de_suggestions.txt` / `fr_suggestions.txt` / `uk_suggestions.txt` | 去重建议词，每行一条原文 |
 
 只选择一个站点时，只导出该站点的文件。`.txt` 只存词或词组，不包含说明、编号、日志或统计。
 
@@ -80,6 +84,7 @@ HTTP 429 按服务端要求有限重试，仍失败则暂停该站点。失败�
 
 - 德国：`https://completion.amazon.de/api/2017/suggestions`
 - 法国：`https://completion.amazon.fr/api/2017/suggestions`
+- 英国：`https://completion.amazon.co.uk/api/2017/suggestions`
 
 这些地址通过实际 HTTP 请求验证可用。它们属于网站使用的搜索建议服务，未找到对应的官方开发者接口文档；不应将其视为有正式开发者支持承诺的开放 API。
 
