@@ -1,0 +1,545 @@
+2026-07-17 10:56:43 [ERROR] [deepseek_web] playwright not installed. Run: pip install playwright && playwright install chromium
+2026-07-17 10:58:50 [INFO ] [deepseek_web] Opening DeepSeek web (7 titles)...
+2026-07-17 10:58:50 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 10:58:50 [INFO ] [deepseek_web] No saved state — please log in manually in the browser window
+2026-07-17 10:59:03 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 10:59:03 [INFO ] [deepseek_web] ========================================
+2026-07-17 10:59:03 [INFO ] [deepseek_web] ACTION: Log in to DeepSeek in the browser
+2026-07-17 10:59:03 [INFO ] [deepseek_web] Once logged in, press Enter here to continue...
+2026-07-17 10:59:03 [INFO ] [deepseek_web] ========================================
+2026-07-17 11:01:09 [INFO ] [deepseek_web] Opening DeepSeek web (7 titles)...
+2026-07-17 11:01:09 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:01:09 [INFO ] [deepseek_web] No saved state — please log in manually in the browser window
+2026-07-17 11:01:10 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:01:10 [INFO ] [deepseek_web] ========================================
+2026-07-17 11:01:10 [INFO ] [deepseek_web] ACTION: Log in to DeepSeek in the browser
+2026-07-17 11:01:10 [INFO ] [deepseek_web] Once logged in, press Enter here to continue...
+2026-07-17 11:01:10 [INFO ] [deepseek_web] ========================================
+2026-07-17 11:01:49 [INFO ] [deepseek_web] Login state saved to deepseek_state.json
+2026-07-17 11:01:51 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:01:51 [INFO ] [deepseek_web] [1/7] 休闲时尚外套
+2026-07-17 11:01:53 [INFO ] [deepseek_web]   Downloaded: 2560419266841863525776.jpg
+2026-07-17 11:01:53 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:01:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:02:11 [INFO ] [deepseek_web]   Response: 男士双排扣翻领纯色夹克休闲时尚外套
+2026-07-17 11:02:11 [INFO ] [deepseek_web]   Deleted: 2560419266841863525776.jpg
+2026-07-17 11:02:16 [INFO ] [deepseek_web] [2/7] 男士休闲拼色防晒衣外套
+2026-07-17 11:02:20 [INFO ] [deepseek_web]   Downloaded: 9681110046543102876912.jpg
+2026-07-17 11:02:20 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:02:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:02:38 [INFO ] [deepseek_web]   Response: 连帽抽绳轻便透气运动风男士休闲拼色防晒衣外套
+2026-07-17 11:02:38 [INFO ] [deepseek_web]   Deleted: 9681110046543102876912.jpg
+2026-07-17 11:02:43 [INFO ] [deepseek_web] [3/7] 男士休闲防晒衣外套
+2026-07-17 11:02:45 [INFO ] [deepseek_web]   Downloaded: 9731105101971112878021.jpg
+2026-07-17 11:02:45 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:02:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:03:03 [INFO ] [deepseek_web]   Response: 连帽抽绳轻便透气运动风男士休闲拼色防晒衣外套
+2026-07-17 11:03:03 [INFO ] [deepseek_web]   Deleted: 9731105101971112878021.jpg
+2026-07-17 11:03:08 [INFO ] [deepseek_web] [4/7] 男士纯色休闲防晒衣外套
+2026-07-17 11:03:10 [INFO ] [deepseek_web]   Downloaded: 6981108550521115617316.jpg
+2026-07-17 11:03:10 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:03:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:03:29 [INFO ] [deepseek_web]   Response: 连帽抽绳轻薄透气运动风男士纯色休闲防晒衣外套
+2026-07-17 11:03:29 [INFO ] [deepseek_web]   Deleted: 6981108550521115617316.jpg
+2026-07-17 11:03:34 [INFO ] [deepseek_web] [5/7] 男士休闲外套宽松加厚双层上衣
+2026-07-17 11:03:35 [INFO ] [deepseek_web]   Downloaded: 9220613500353313577017.jpg
+2026-07-17 11:03:35 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:03:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:03:54 [INFO ] [deepseek_web]   Response: 翻领拉链按扣菱形格纹夹棉保暖冬季男士休闲外套宽松加厚双层上衣
+2026-07-17 11:03:54 [INFO ] [deepseek_web]   Deleted: 9220613500353313577017.jpg
+2026-07-17 11:03:59 [INFO ] [deepseek_web] [6/7] 男士立领夹克男外套工装外套男休闲户外外套
+2026-07-17 11:04:00 [INFO ] [deepseek_web]   Downloaded: 9290626493283399500052.jpg
+2026-07-17 11:04:00 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:04:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:04:19 [INFO ] [deepseek_web]   Response: 黑白撞色明线拼接运动风男士立领夹克男外套工装外套男休闲户外外套
+2026-07-17 11:04:19 [INFO ] [deepseek_web]   Deleted: 9290626493283399500052.jpg
+2026-07-17 11:04:24 [INFO ] [deepseek_web] [7/7] 男士立领夹克外套美式夹克外穿
+2026-07-17 11:04:26 [INFO ] [deepseek_web]   Downloaded: 0390639222283216287849.jpg
+2026-07-17 11:04:26 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:04:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:04:45 [INFO ] [deepseek_web]   Response: 纯色简约运动休闲风男士立领夹克外套美式夹克外穿
+2026-07-17 11:04:45 [INFO ] [deepseek_web]   Deleted: 0390639222283216287849.jpg
+2026-07-17 11:04:45 [INFO ] [deepseek_web] ==================================================
+2026-07-17 11:04:45 [INFO ] [deepseek_web] Done: 7 success, 0 errors → optimize_title
+2026-07-17 11:07:21 [ERROR] [deepseek_web] Mismatch: 2 links vs 7 titles
+2026-07-17 11:07:37 [INFO ] [deepseek_web] Opening DeepSeek web (2 titles)...
+2026-07-17 11:07:37 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:07:39 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:07:41 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:07:41 [INFO ] [deepseek_web] [1/2] 休闲时尚外套
+2026-07-17 11:07:43 [INFO ] [deepseek_web]   Downloaded: 2560419266841863525776.jpg
+2026-07-17 11:07:43 [INFO ] [deepseek_web]   Image uploaded
+2026-07-17 11:07:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:07:57 [INFO ] [deepseek_web]   Deleted: 2560419266841863525776.jpg
+2026-07-17 11:19:11 [INFO ] [deepseek_web] Opening DeepSeek web (2 titles)...
+2026-07-17 11:19:11 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:19:13 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:19:15 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:19:15 [INFO ] [deepseek_web] [1/2] 休闲时尚外套
+2026-07-17 11:19:18 [INFO ] [deepseek_web]   Downloaded: 2560419266841863525776.jpg
+2026-07-17 11:19:18 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:19:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:19:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:19:38 [INFO ] [deepseek_web]   Response: 男士双排扣翻领纯色夹克 休闲时尚外套
+2026-07-17 11:19:38 [INFO ] [deepseek_web]   Deleted: 2560419266841863525776.jpg
+2026-07-17 11:19:43 [INFO ] [deepseek_web] [2/2] 男士休闲拼色防晒衣外套
+2026-07-17 11:19:45 [INFO ] [deepseek_web]   Downloaded: 9681110046543102876912.jpg
+2026-07-17 11:19:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:19:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:20:02 [INFO ] [deepseek_web]   Deleted: 9681110046543102876912.jpg
+2026-07-17 11:44:37 [INFO ] [deepseek_web] Opening DeepSeek web (2 titles)...
+2026-07-17 11:44:37 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:44:41 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:44:44 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:44:44 [INFO ] [deepseek_web] [1/2] 休闲时尚外套
+2026-07-17 11:44:48 [INFO ] [deepseek_web]   Downloaded: 2560419266841863525776.jpg
+2026-07-17 11:44:48 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:44:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:44:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:45:11 [INFO ] [deepseek_web]   Response: 休闲时尚外套 男士双排扣翻领纯色仿麂皮短款夹克 春秋季百搭机车风通勤上衣
+2026-07-17 11:45:11 [INFO ] [deepseek_web]   Deleted: 2560419266841863525776.jpg
+2026-07-17 11:45:16 [INFO ] [deepseek_web] [2/2] 男士休闲拼色防晒衣外套
+2026-07-17 11:45:22 [INFO ] [deepseek_web]   Downloaded: 9681110046543102876912.jpg
+2026-07-17 11:45:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:45:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:45:44 [INFO ] [deepseek_web]   Response: 男士休闲拼色防晒衣外套 夏季薄款连帽抽绳宽松透气运动风皮肤衣 户外防紫外线抗UV男女同款上衣
+2026-07-17 11:45:44 [INFO ] [deepseek_web]   Deleted: 9681110046543102876912.jpg
+2026-07-17 11:45:44 [INFO ] [deepseek_web] ==================================================
+2026-07-17 11:45:44 [INFO ] [deepseek_web] Done: 2 success, 0 errors → optimize_title
+2026-07-17 11:46:38 [INFO ] [deepseek_web] Opening DeepSeek web (3 titles)...
+2026-07-17 11:46:38 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:46:48 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:46:50 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:46:50 [INFO ] [deepseek_web] [1/3] 长裤套装2
+2026-07-17 11:46:55 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-07-17 11:47:00 [INFO ] [deepseek_web] [2/3] 长裤套装2
+2026-07-17 11:47:02 [INFO ] [deepseek_web]   Downloaded: 3911030337101196645403.jpg
+2026-07-17 11:47:02 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:47:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:47:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:47:15 [INFO ] [deepseek_web]   Deleted: 3911030337101196645403.jpg
+2026-07-17 11:47:21 [INFO ] [deepseek_web] Opening DeepSeek web (3 titles)...
+2026-07-17 11:47:21 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:47:23 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:47:25 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:47:25 [INFO ] [deepseek_web] [1/3] 长裤套装2
+2026-07-17 11:47:27 [INFO ] [deepseek_web]   Downloaded: 2840450071758140224750.jpg
+2026-07-17 11:47:27 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:47:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:47:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:47:50 [INFO ] [deepseek_web]   Response: 女士休闲套装运动套装 秋冬纯色连帽卫衣和宽松阔腿长裤 两件套 居家外出套装长裤套装2
+2026-07-17 11:47:50 [INFO ] [deepseek_web]   Deleted: 2840450071758140224750.jpg
+2026-07-17 11:47:55 [INFO ] [deepseek_web] [2/3] 长裤套装2
+2026-07-17 11:47:57 [INFO ] [deepseek_web]   Downloaded: 3911030337101196645403.jpg
+2026-07-17 11:47:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:48:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:48:18 [INFO ] [deepseek_web]   Response: 女士休闲套装运动套装 秋冬纯色连帽卫衣和宽松阔腿长裤 两件套 居家外出套装多色可选长裤套装2
+2026-07-17 11:48:18 [INFO ] [deepseek_web]   Deleted: 3911030337101196645403.jpg
+2026-07-17 11:48:23 [INFO ] [deepseek_web] [3/3] 2026新款时尚休闲套装宽松加绒卫衣口袋长裤卫裤
+2026-07-17 11:48:26 [INFO ] [deepseek_web]   Downloaded: 4850947199374213691314.jpg
+2026-07-17 11:48:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:48:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:48:47 [INFO ] [deepseek_web]   Response: 女士休闲套装运动套装 2026新款时尚休闲套装宽松加绒卫衣口袋长裤卫裤 两件套 秋冬纯色连帽卫衣和宽松工装直筒长裤 多色可选居家外出套装2026新款时尚休闲套装
+2026-07-17 11:48:47 [INFO ] [deepseek_web]   Deleted: 4850947199374213691314.jpg
+2026-07-17 11:48:47 [INFO ] [deepseek_web] ==================================================
+2026-07-17 11:48:47 [INFO ] [deepseek_web] Done: 3 success, 0 errors → optimize_title
+2026-07-17 11:50:33 [INFO ] [deepseek_web] Opening DeepSeek web (1 titles)...
+2026-07-17 11:50:33 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:50:36 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:50:38 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:50:38 [INFO ] [deepseek_web] [1/1] 不规则上衣印花+阔腿裤时尚百搭休闲2件套
+2026-07-17 11:50:40 [INFO ] [deepseek_web]   Downloaded: 3630425462548226904331.jpg
+2026-07-17 11:50:40 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:50:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:50:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:51:03 [INFO ] [deepseek_web]   Response: 酒红色不规则下摆上衣 印花阔腿裤两件套 棉麻质感宽松显瘦 文艺休闲度假套装 女装
+2026-07-17 11:51:03 [INFO ] [deepseek_web]   Deleted: 3630425462548226904331.jpg
+2026-07-17 11:51:03 [INFO ] [deepseek_web] ==================================================
+2026-07-17 11:51:03 [INFO ] [deepseek_web] Done: 1 success, 0 errors → optimize_title
+2026-07-17 11:52:10 [INFO ] [deepseek_web] Opening DeepSeek web (1 titles)...
+2026-07-17 11:52:10 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:52:12 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:52:14 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:52:14 [INFO ] [deepseek_web] [1/1] 长裤套装2
+2026-07-17 11:52:16 [INFO ] [deepseek_web]   Downloaded: 2840450071758140224750.jpg
+2026-07-17 11:52:16 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:52:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:52:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:52:38 [INFO ] [deepseek_web]   Response: 女士秋季休闲运动套装 纯黑连帽卫衣搭配宽松阔腿长裤 慵懒风两件套 舒适居家户外穿搭
+2026-07-17 11:52:38 [INFO ] [deepseek_web]   Deleted: 2840450071758140224750.jpg
+2026-07-17 11:52:38 [INFO ] [deepseek_web] ==================================================
+2026-07-17 11:52:38 [INFO ] [deepseek_web] Done: 1 success, 0 errors → optimize_title
+2026-07-17 11:57:18 [ERROR] [deepseek_web] Mismatch: 9 links vs 8 titles
+2026-07-17 11:57:43 [INFO ] [deepseek_web] Opening DeepSeek web (8 titles)...
+2026-07-17 11:57:43 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-17 11:57:45 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-17 11:57:47 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-17 11:57:47 [INFO ] [deepseek_web] [1/8] 长裤套装2
+2026-07-17 11:57:49 [INFO ] [deepseek_web]   Downloaded: 3911030337101196645403.jpg
+2026-07-17 11:57:49 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-17 11:57:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:57:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:58:12 [INFO ] [deepseek_web]   Response: 女士休闲运动套装 秋冬纯色连帽卫衣加绒阔腿长裤两件套 慵懒风居家外出百搭套装
+2026-07-17 11:58:12 [INFO ] [deepseek_web]   Deleted: 3911030337101196645403.jpg
+2026-07-17 11:58:17 [INFO ] [deepseek_web] [2/8] 女士休闲卫衣卫裤套装
+2026-07-17 11:58:19 [INFO ] [deepseek_web]   Downloaded: 3080948390684710761236.jpg
+2026-07-17 11:58:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:58:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:58:41 [INFO ] [deepseek_web]   Response: 女士休闲运动套装 秋冬酒红色连帽抽绳卫衣宽松直筒长裤两件套 纯色慵懒风百搭居家外出套装
+2026-07-17 11:58:41 [INFO ] [deepseek_web]   Deleted: 3080948390684710761236.jpg
+2026-07-17 11:58:46 [INFO ] [deepseek_web] [3/8] 气质休闲一字领阔腿裤两件套套装
+2026-07-17 11:58:47 [INFO ] [deepseek_web]   Downloaded: 4201115596361016604493.jpg
+2026-07-17 11:58:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:58:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:59:09 [INFO ] [deepseek_web]   Response: 女士夏季气质套装 纯色一字肩露肩灯笼袖短款上衣高腰阔腿长裤两件套 棉麻质感慵懒风度假休闲套装
+2026-07-17 11:59:09 [INFO ] [deepseek_web]   Deleted: 4201115596361016604493.jpg
+2026-07-17 11:59:14 [INFO ] [deepseek_web] [4/8] 女士V领短袖高腰阔腿裤套装
+2026-07-17 11:59:16 [INFO ] [deepseek_web]   Downloaded: 7130502296484071225878.jpg
+2026-07-17 11:59:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:59:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 11:59:38 [INFO ] [deepseek_web]   Response: 女士夏季休闲套装 纯色V领翻领中袖上衣高腰宽松阔腿长裤两件套 棉麻质感慵懒风度假通勤百搭套装
+2026-07-17 11:59:38 [INFO ] [deepseek_web]   Deleted: 7130502296484071225878.jpg
+2026-07-17 11:59:43 [INFO ] [deepseek_web] [5/8] 套装
+2026-07-17 11:59:45 [INFO ] [deepseek_web]   Downloaded: 6870400441212553911335.jpg
+2026-07-17 11:59:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 11:59:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 12:00:07 [INFO ] [deepseek_web]   Response: 女士夏季度假风套装 纯色波点印花V领七分袖上衣高腰阔腿长裤两件套 宽松休闲慵懒风沙滩旅行穿搭
+2026-07-17 12:00:07 [INFO ] [deepseek_web]   Deleted: 6870400441212553911335.jpg
+2026-07-17 12:00:12 [INFO ] [deepseek_web] [6/8] 男士抓绒运动内衣套装
+2026-07-17 12:00:14 [INFO ] [deepseek_web]   Downloaded: 7190804039015172077579.jpg
+2026-07-17 12:00:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 12:00:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 12:00:35 [INFO ] [deepseek_web]   Response: 男士秋冬保暖内衣套装 纯色圆领紧身长袖上衣加绒运动打底裤两件套 户外滑雪骑行速干保暖防寒套装
+2026-07-17 12:00:35 [INFO ] [deepseek_web]   Deleted: 7190804039015172077579.jpg
+2026-07-17 12:00:40 [INFO ] [deepseek_web] [7/8] 长裤套装
+2026-07-17 12:00:43 [INFO ] [deepseek_web]   Downloaded: 9950944285374663927655.jpg
+2026-07-17 12:00:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 12:00:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 12:01:05 [INFO ] [deepseek_web]   Response: 女士休闲运动套装 秋冬纯色半拉链连帽卫衣宽松喇叭裤双层荷叶边两件套 慵懒风加厚保暖街头百搭套装
+2026-07-17 12:01:05 [INFO ] [deepseek_web]   Deleted: 9950944285374663927655.jpg
+2026-07-17 12:01:10 [INFO ] [deepseek_web] [8/8] 女生印花背心长裤套装两件套
+2026-07-17 12:01:12 [INFO ] [deepseek_web]   Downloaded: 2441041104089451977836.jpg
+2026-07-17 12:01:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-17 12:01:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-17 12:01:34 [INFO ] [deepseek_web]   Response: 女士夏季度假风套装 纯色V领无袖不规则下摆背心绿叶印花高腰阔腿长裤两件套 棉麻质感慵懒休闲沙滩穿搭
+2026-07-17 12:01:34 [INFO ] [deepseek_web]   Deleted: 2441041104089451977836.jpg
+2026-07-17 12:01:34 [INFO ] [deepseek_web] ==================================================
+2026-07-17 12:01:34 [INFO ] [deepseek_web] Done: 8 success, 0 errors → optimize_title
+2026-07-17 14:30:38 [ERROR] [hotwords] Keywords file not found: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\needToCollect.md
+2026-07-17 14:32:46 [INFO ] [hotwords] Loop mode: 49 keywords  country=de  category=(all)
+2026-07-17 14:32:46 [INFO ] [hotwords] 
+2026-07-17 14:32:47 [WARNING] [hotwords] [  1/49] Yogaanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:32:48 [WARNING] [hotwords] [  2/49] Laufanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:32:50 [WARNING] [hotwords] [  3/49] Jogginganzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:32:52 [WARNING] [hotwords] [  4/49] Fitnessanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:32:58 [WARNING] [hotwords] [  5/49] Trainingsanzug  FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-07-17 14:32:59 [WARNING] [hotwords] [  6/49] Sportanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:33:01 [WARNING] [hotwords] [  7/49] Gymnastikanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-17 14:33:41 [INFO ] [hotwords] Loop mode: 49 keywords  country=de  category=(all)
+2026-07-17 14:33:41 [INFO ] [hotwords] 
+2026-07-17 14:33:42 [INFO ] [hotwords] [  1/49] kw=Yogaanzug                  status=0  total=0       extracted=0
+2026-07-17 14:33:42 [INFO ] [hotwords] [  1/49] Yogaanzug  →  0 words
+2026-07-17 14:33:43 [INFO ] [hotwords] [  2/49] kw=Laufanzug                  status=0  total=0       extracted=0
+2026-07-17 14:33:43 [INFO ] [hotwords] [  2/49] Laufanzug  →  0 words
+2026-07-17 14:33:44 [INFO ] [hotwords] [  3/49] kw=Jogginganzug               status=0  total=18      extracted=18
+2026-07-17 14:33:44 [INFO ] [hotwords] [  3/49] Jogginganzug  →  18 words
+2026-07-17 14:33:46 [INFO ] [hotwords] [  4/49] kw=Fitnessanzug               status=0  total=0       extracted=0
+2026-07-17 14:33:46 [INFO ] [hotwords] [  4/49] Fitnessanzug  →  0 words
+2026-07-17 14:33:47 [INFO ] [hotwords] [  5/49] kw=Trainingsanzug             status=0  total=20      extracted=20
+2026-07-17 14:33:47 [INFO ] [hotwords] [  5/49] Trainingsanzug  →  20 words
+2026-07-17 14:33:49 [INFO ] [hotwords] [  6/49] kw=Sportanzug                 status=0  total=6       extracted=6
+2026-07-17 14:33:49 [INFO ] [hotwords] [  6/49] Sportanzug  →  6 words
+2026-07-17 14:33:50 [INFO ] [hotwords] [  7/49] kw=Gymnastikanzug             status=0  total=1       extracted=1
+2026-07-17 14:33:50 [INFO ] [hotwords] [  7/49] Gymnastikanzug  →  1 words
+2026-07-17 14:33:51 [INFO ] [hotwords] [  8/49] kw=Turnanzug                  status=0  total=7       extracted=7
+2026-07-17 14:33:51 [INFO ] [hotwords] [  8/49] Turnanzug  →  7 words
+2026-07-17 14:33:53 [INFO ] [hotwords] [  9/49] kw=UV-Anzug                   status=0  total=0       extracted=0
+2026-07-17 14:33:53 [INFO ] [hotwords] [  9/49] UV-Anzug  →  0 words
+2026-07-17 14:33:54 [INFO ] [hotwords] [ 10/49] kw=UV-Schutzanzug             status=0  total=0       extracted=0
+2026-07-17 14:33:54 [INFO ] [hotwords] [ 10/49] UV-Schutzanzug  →  0 words
+2026-07-17 14:33:56 [INFO ] [hotwords] [ 11/49] kw=Sonnenschutzanzug          status=0  total=0       extracted=0
+2026-07-17 14:33:56 [INFO ] [hotwords] [ 11/49] Sonnenschutzanzug  →  0 words
+2026-07-17 14:33:57 [INFO ] [hotwords] [ 12/49] kw=Regenanzug                 status=0  total=6       extracted=6
+2026-07-17 14:33:57 [INFO ] [hotwords] [ 12/49] Regenanzug  →  6 words
+2026-07-17 14:33:58 [INFO ] [hotwords] [ 13/49] kw=Wetteranzug                status=0  total=0       extracted=0
+2026-07-17 14:33:58 [INFO ] [hotwords] [ 13/49] Wetteranzug  →  0 words
+2026-07-17 14:34:00 [INFO ] [hotwords] [ 14/49] kw=Radsportanzug              status=0  total=0       extracted=0
+2026-07-17 14:34:00 [INFO ] [hotwords] [ 14/49] Radsportanzug  →  0 words
+2026-07-17 14:34:01 [INFO ] [hotwords] [ 15/49] kw=Skianzug                   status=0  total=0       extracted=0
+2026-07-17 14:34:01 [INFO ] [hotwords] [ 15/49] Skianzug  →  0 words
+2026-07-17 14:34:03 [INFO ] [hotwords] [ 16/49] kw=Schneeanzug                status=0  total=2       extracted=2
+2026-07-17 14:34:03 [INFO ] [hotwords] [ 16/49] Schneeanzug  →  2 words
+2026-07-17 14:34:04 [INFO ] [hotwords] [ 17/49] kw=Thermoanzug                status=0  total=0       extracted=0
+2026-07-17 14:34:04 [INFO ] [hotwords] [ 17/49] Thermoanzug  →  0 words
+2026-07-17 14:34:06 [INFO ] [hotwords] [ 18/49] kw=Schutzanzug                status=0  total=9       extracted=9
+2026-07-17 14:34:06 [INFO ] [hotwords] [ 18/49] Schutzanzug  →  9 words
+2026-07-17 14:34:07 [INFO ] [hotwords] [ 19/49] kw=Badeanzug                  status=0  total=362     extracted=200
+2026-07-17 14:34:07 [INFO ] [hotwords] [ 19/49] Badeanzug  →  200 words
+2026-07-17 14:34:09 [INFO ] [hotwords] [ 20/49] kw=Taucheranzug               status=0  total=0       extracted=0
+2026-07-17 14:34:09 [INFO ] [hotwords] [ 20/49] Taucheranzug  →  0 words
+2026-07-17 14:34:10 [INFO ] [hotwords] [ 21/49] kw=Surfanzug                  status=0  total=1       extracted=1
+2026-07-17 14:34:10 [INFO ] [hotwords] [ 21/49] Surfanzug  →  1 words
+2026-07-17 14:34:12 [INFO ] [hotwords] [ 22/49] kw=Freizeitanzug              status=0  total=2       extracted=2
+2026-07-17 14:34:12 [INFO ] [hotwords] [ 22/49] Freizeitanzug  →  2 words
+2026-07-17 14:34:13 [INFO ] [hotwords] [ 23/49] kw=Relaxanzug                 status=0  total=0       extracted=0
+2026-07-17 14:34:13 [INFO ] [hotwords] [ 23/49] Relaxanzug  →  0 words
+2026-07-17 14:34:15 [INFO ] [hotwords] [ 24/49] kw=Kuschelanzug               status=0  total=2       extracted=2
+2026-07-17 14:34:15 [INFO ] [hotwords] [ 24/49] Kuschelanzug  →  2 words
+2026-07-17 14:34:16 [INFO ] [hotwords] [ 25/49] kw=Hausanzug                  status=0  total=4       extracted=4
+2026-07-17 14:34:16 [INFO ] [hotwords] [ 25/49] Hausanzug  →  4 words
+2026-07-17 14:34:18 [INFO ] [hotwords] [ 26/49] kw=Wohnanzug                  status=0  total=0       extracted=0
+2026-07-17 14:34:18 [INFO ] [hotwords] [ 26/49] Wohnanzug  →  0 words
+2026-07-17 14:34:19 [INFO ] [hotwords] [ 27/49] kw=Schlafanzug                status=0  total=112     extracted=112
+2026-07-17 14:34:19 [INFO ] [hotwords] [ 27/49] Schlafanzug  →  112 words
+2026-07-17 14:34:20 [INFO ] [hotwords] [ 28/49] kw=Unteranzug                 status=0  total=0       extracted=0
+2026-07-17 14:34:20 [INFO ] [hotwords] [ 28/49] Unteranzug  →  0 words
+2026-07-17 14:34:22 [INFO ] [hotwords] [ 29/49] kw=Hosenanzug                 status=0  total=16      extracted=16
+2026-07-17 14:34:22 [INFO ] [hotwords] [ 29/49] Hosenanzug  →  16 words
+2026-07-17 14:34:23 [INFO ] [hotwords] [ 30/49] kw=Kurzanzug                  status=0  total=0       extracted=0
+2026-07-17 14:34:23 [INFO ] [hotwords] [ 30/49] Kurzanzug  →  0 words
+2026-07-17 14:34:25 [INFO ] [hotwords] [ 31/49] kw=Sommeranzug                status=0  total=2       extracted=2
+2026-07-17 14:34:25 [INFO ] [hotwords] [ 31/49] Sommeranzug  →  2 words
+2026-07-17 14:34:27 [INFO ] [hotwords] [ 32/49] kw=Strandanzug                status=0  total=0       extracted=0
+2026-07-17 14:34:27 [INFO ] [hotwords] [ 32/49] Strandanzug  →  0 words
+2026-07-17 14:34:49 [WARNING] [hotwords] [ 33/49] Urlaubsanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x21f89158a50>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-17 14:34:50 [INFO ] [hotwords] [ 34/49] kw=Blusenanzug                status=0  total=0       extracted=0
+2026-07-17 14:34:50 [INFO ] [hotwords] [ 34/49] Blusenanzug  →  0 words
+2026-07-17 14:34:51 [INFO ] [hotwords] [ 35/49] kw=Businessanzug              status=0  total=0       extracted=0
+2026-07-17 14:34:51 [INFO ] [hotwords] [ 35/49] Businessanzug  →  0 words
+2026-07-17 14:34:53 [INFO ] [hotwords] [ 36/49] kw=Damenanzug                 status=0  total=0       extracted=0
+2026-07-17 14:34:53 [INFO ] [hotwords] [ 36/49] Damenanzug  →  0 words
+2026-07-17 14:34:54 [INFO ] [hotwords] [ 37/49] kw=Herrenanzug                status=0  total=3       extracted=3
+2026-07-17 14:34:54 [INFO ] [hotwords] [ 37/49] Herrenanzug  →  3 words
+2026-07-17 14:34:56 [INFO ] [hotwords] [ 38/49] kw=Leinenanzug                status=0  total=5       extracted=5
+2026-07-17 14:34:56 [INFO ] [hotwords] [ 38/49] Leinenanzug  →  5 words
+2026-07-17 14:34:57 [INFO ] [hotwords] [ 39/49] kw=Strickanzug                status=0  total=0       extracted=0
+2026-07-17 14:34:57 [INFO ] [hotwords] [ 39/49] Strickanzug  →  0 words
+2026-07-17 14:34:58 [INFO ] [hotwords] [ 40/49] kw=Samtanzug                  status=0  total=0       extracted=0
+2026-07-17 14:34:58 [INFO ] [hotwords] [ 40/49] Samtanzug  →  0 words
+2026-07-17 14:35:00 [INFO ] [hotwords] [ 41/49] kw=Nickianzug                 status=0  total=0       extracted=0
+2026-07-17 14:35:00 [INFO ] [hotwords] [ 41/49] Nickianzug  →  0 words
+2026-07-17 14:35:01 [INFO ] [hotwords] [ 42/49] kw=Flanellanzug               status=0  total=0       extracted=0
+2026-07-17 14:35:01 [INFO ] [hotwords] [ 42/49] Flanellanzug  →  0 words
+2026-07-17 14:35:02 [INFO ] [hotwords] [ 43/49] kw=Seidenanzug                status=0  total=0       extracted=0
+2026-07-17 14:35:02 [INFO ] [hotwords] [ 43/49] Seidenanzug  →  0 words
+2026-07-17 14:35:04 [INFO ] [hotwords] [ 44/49] kw=Satinanzug                 status=0  total=0       extracted=0
+2026-07-17 14:35:04 [INFO ] [hotwords] [ 44/49] Satinanzug  →  0 words
+2026-07-17 14:35:05 [INFO ] [hotwords] [ 45/49] kw=Baumwollanzug              status=0  total=0       extracted=0
+2026-07-17 14:35:05 [INFO ] [hotwords] [ 45/49] Baumwollanzug  →  0 words
+2026-07-17 14:35:07 [INFO ] [hotwords] [ 46/49] kw=Jeansanzug                 status=0  total=0       extracted=0
+2026-07-17 14:35:07 [INFO ] [hotwords] [ 46/49] Jeansanzug  →  0 words
+2026-07-17 14:35:08 [INFO ] [hotwords] [ 47/49] kw=Frotteeanzug               status=0  total=0       extracted=0
+2026-07-17 14:35:08 [INFO ] [hotwords] [ 47/49] Frotteeanzug  →  0 words
+2026-07-17 14:35:09 [INFO ] [hotwords] [ 48/49] kw=Sweatanzug                 status=0  total=0       extracted=0
+2026-07-17 14:35:09 [INFO ] [hotwords] [ 48/49] Sweatanzug  →  0 words
+2026-07-17 14:35:11 [INFO ] [hotwords] [ 49/49] kw=Kapuzenanzug               status=0  total=0       extracted=0
+2026-07-17 14:35:11 [INFO ] [hotwords] [ 49/49] Kapuzenanzug  →  0 words
+2026-07-17 14:35:12 [INFO ] [hotwords] 
+2026-07-17 14:35:12 [INFO ] [hotwords] Cleaning...
+2026-07-17 14:35:12 [INFO ] [hotwords]   strip_whitespace: 416 → 416 (0 removed)
+2026-07-17 14:35:12 [INFO ] [hotwords]   normalize_case: 416 → 416 (0 removed)
+2026-07-17 14:35:12 [INFO ] [hotwords]   drop_single_word: 416 → 398 (18 removed)
+2026-07-17 14:35:12 [INFO ] [hotwords]   drop_brands: 398 → 365 (33 removed)
+2026-07-17 14:35:12 [INFO ] [hotwords]   deduplicate: 365 → 365 (0 removed)
+2026-07-17 14:35:12 [INFO ] [hotwords] herren=46     damen=141    other=178  
+2026-07-17 14:35:12 [INFO ] [hotwords] Saved 365 words (raw: 416, errors: 1) → 20260717_143341_de.txt
+2026-07-17 14:35:12 [INFO ] [hotwords] ==================================================
+2026-07-17 14:35:12 [INFO ] [hotwords] Done.
+2026-07-17 14:39:30 [INFO ] [hotwords] Loop mode: 52 keywords  country=de  category=(all)
+2026-07-17 14:39:30 [INFO ] [hotwords] 
+2026-07-17 14:39:31 [INFO ] [hotwords] [  1/52] kw=Yogaanzug                  status=0  total=0       extracted=0
+2026-07-17 14:39:31 [INFO ] [hotwords] [  1/52] Yogaanzug  →  0 words
+2026-07-17 14:39:32 [INFO ] [hotwords] [  2/52] kw=Laufanzug                  status=0  total=0       extracted=0
+2026-07-17 14:39:32 [INFO ] [hotwords] [  2/52] Laufanzug  →  0 words
+2026-07-17 14:39:33 [INFO ] [hotwords] [  3/52] kw=Jogginganzug               status=0  total=18      extracted=18
+2026-07-17 14:39:33 [INFO ] [hotwords] [  3/52] Jogginganzug  →  18 words
+2026-07-17 14:39:35 [INFO ] [hotwords] [  4/52] kw=Fitnessanzug               status=0  total=0       extracted=0
+2026-07-17 14:39:35 [INFO ] [hotwords] [  4/52] Fitnessanzug  →  0 words
+2026-07-17 14:39:36 [INFO ] [hotwords] [  5/52] kw=Trainingsanzug             status=0  total=20      extracted=20
+2026-07-17 14:39:36 [INFO ] [hotwords] [  5/52] Trainingsanzug  →  20 words
+2026-07-17 14:39:37 [INFO ] [hotwords] [  6/52] kw=Sportanzug                 status=0  total=6       extracted=6
+2026-07-17 14:39:37 [INFO ] [hotwords] [  6/52] Sportanzug  →  6 words
+2026-07-17 14:39:39 [INFO ] [hotwords] [  7/52] kw=Gymnastikanzug             status=0  total=1       extracted=1
+2026-07-17 14:39:39 [INFO ] [hotwords] [  7/52] Gymnastikanzug  →  1 words
+2026-07-17 14:39:40 [INFO ] [hotwords] [  8/52] kw=Turnanzug                  status=0  total=7       extracted=7
+2026-07-17 14:39:40 [INFO ] [hotwords] [  8/52] Turnanzug  →  7 words
+2026-07-17 14:39:42 [INFO ] [hotwords] [  9/52] kw=UV-Anzug                   status=0  total=0       extracted=0
+2026-07-17 14:39:42 [INFO ] [hotwords] [  9/52] UV-Anzug  →  0 words
+2026-07-17 14:39:43 [INFO ] [hotwords] [ 10/52] kw=UV-Schutzanzug             status=0  total=0       extracted=0
+2026-07-17 14:39:43 [INFO ] [hotwords] [ 10/52] UV-Schutzanzug  →  0 words
+2026-07-17 14:39:44 [INFO ] [hotwords] [ 11/52] kw=Sonnenschutzanzug          status=0  total=0       extracted=0
+2026-07-17 14:39:44 [INFO ] [hotwords] [ 11/52] Sonnenschutzanzug  →  0 words
+2026-07-17 14:39:46 [INFO ] [hotwords] [ 12/52] kw=Regenanzug                 status=0  total=6       extracted=6
+2026-07-17 14:39:46 [INFO ] [hotwords] [ 12/52] Regenanzug  →  6 words
+2026-07-17 14:40:08 [WARNING] [hotwords] [ 13/52] Wetteranzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x204d3f19950>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-17 14:40:09 [INFO ] [hotwords] [ 14/52] kw=Radsportanzug              status=0  total=0       extracted=0
+2026-07-17 14:40:09 [INFO ] [hotwords] [ 14/52] Radsportanzug  →  0 words
+2026-07-17 14:40:10 [INFO ] [hotwords] [ 15/52] kw=Skianzug                   status=0  total=0       extracted=0
+2026-07-17 14:40:10 [INFO ] [hotwords] [ 15/52] Skianzug  →  0 words
+2026-07-17 14:40:12 [INFO ] [hotwords] [ 16/52] kw=Schneeanzug                status=0  total=2       extracted=2
+2026-07-17 14:40:12 [INFO ] [hotwords] [ 16/52] Schneeanzug  →  2 words
+2026-07-17 14:40:13 [INFO ] [hotwords] [ 17/52] kw=Thermoanzug                status=0  total=0       extracted=0
+2026-07-17 14:40:13 [INFO ] [hotwords] [ 17/52] Thermoanzug  →  0 words
+2026-07-17 14:40:15 [INFO ] [hotwords] [ 18/52] kw=Schutzanzug                status=0  total=9       extracted=9
+2026-07-17 14:40:15 [INFO ] [hotwords] [ 18/52] Schutzanzug  →  9 words
+2026-07-17 14:40:16 [INFO ] [hotwords] [ 19/52] kw=Badeanzug                  status=0  total=362     extracted=200
+2026-07-17 14:40:16 [INFO ] [hotwords] [ 19/52] Badeanzug  →  200 words
+2026-07-17 14:40:18 [INFO ] [hotwords] [ 20/52] kw=Taucheranzug               status=0  total=0       extracted=0
+2026-07-17 14:40:18 [INFO ] [hotwords] [ 20/52] Taucheranzug  →  0 words
+2026-07-17 14:40:19 [INFO ] [hotwords] [ 21/52] kw=Surfanzug                  status=0  total=1       extracted=1
+2026-07-17 14:40:19 [INFO ] [hotwords] [ 21/52] Surfanzug  →  1 words
+2026-07-17 14:40:20 [INFO ] [hotwords] [ 22/52] kw=Freizeitanzug              status=0  total=2       extracted=2
+2026-07-17 14:40:20 [INFO ] [hotwords] [ 22/52] Freizeitanzug  →  2 words
+2026-07-17 14:40:21 [INFO ] [hotwords] Loop mode: 52 keywords  country=de  category=(all)
+2026-07-17 14:40:21 [INFO ] [hotwords] 
+2026-07-17 14:40:21 [INFO ] [hotwords] [  1/52] kw=Yogaanzug                  status=0  total=0       extracted=0
+2026-07-17 14:40:21 [INFO ] [hotwords] [  1/52] Yogaanzug  →  0 words
+2026-07-17 14:40:23 [INFO ] [hotwords] [  2/52] kw=Laufanzug                  status=0  total=0       extracted=0
+2026-07-17 14:40:23 [INFO ] [hotwords] [  2/52] Laufanzug  →  0 words
+2026-07-17 14:40:24 [INFO ] [hotwords] [  3/52] kw=Jogginganzug               status=0  total=18      extracted=18
+2026-07-17 14:40:24 [INFO ] [hotwords] [  3/52] Jogginganzug  →  18 words
+2026-07-17 14:40:25 [INFO ] [hotwords] [  4/52] kw=Fitnessanzug               status=0  total=0       extracted=0
+2026-07-17 14:40:25 [INFO ] [hotwords] [  4/52] Fitnessanzug  →  0 words
+2026-07-17 14:40:27 [INFO ] [hotwords] [  5/52] kw=Trainingsanzug             status=0  total=20      extracted=20
+2026-07-17 14:40:27 [INFO ] [hotwords] [  5/52] Trainingsanzug  →  20 words
+2026-07-17 14:40:28 [INFO ] [hotwords] [  6/52] kw=Sportanzug                 status=0  total=6       extracted=6
+2026-07-17 14:40:28 [INFO ] [hotwords] [  6/52] Sportanzug  →  6 words
+2026-07-17 14:40:45 [INFO ] [hotwords] Loop mode: 52 keywords  country=de  category=(all)
+2026-07-17 14:40:45 [INFO ] [hotwords] 
+2026-07-17 14:40:45 [INFO ] [hotwords] [  1/52] kw=Yogaanzug                  status=0  total=0       extracted=0
+2026-07-17 14:40:45 [INFO ] [hotwords] [  1/52] Yogaanzug  →  0 words
+2026-07-17 14:40:47 [INFO ] [hotwords] [  2/52] kw=Laufanzug                  status=0  total=0       extracted=0
+2026-07-17 14:40:47 [INFO ] [hotwords] [  2/52] Laufanzug  →  0 words
+2026-07-17 14:40:48 [INFO ] [hotwords] [  3/52] kw=Jogginganzug               status=0  total=18      extracted=18
+2026-07-17 14:40:48 [INFO ] [hotwords] [  3/52] Jogginganzug  →  18 words
+2026-07-17 14:40:49 [INFO ] [hotwords] [  4/52] kw=Fitnessanzug               status=0  total=0       extracted=0
+2026-07-17 14:40:49 [INFO ] [hotwords] [  4/52] Fitnessanzug  →  0 words
+2026-07-17 14:40:50 [INFO ] [hotwords] [  5/52] kw=Trainingsanzug             status=0  total=20      extracted=20
+2026-07-17 14:40:50 [INFO ] [hotwords] [  5/52] Trainingsanzug  →  20 words
+2026-07-17 14:41:12 [WARNING] [hotwords] [  6/52] Sportanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1f865398b90>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-17 14:41:14 [INFO ] [hotwords] [  7/52] kw=Gymnastikanzug             status=0  total=1       extracted=1
+2026-07-17 14:41:14 [INFO ] [hotwords] [  7/52] Gymnastikanzug  →  1 words
+2026-07-17 14:41:15 [INFO ] [hotwords] [  8/52] kw=Turnanzug                  status=0  total=7       extracted=7
+2026-07-17 14:41:15 [INFO ] [hotwords] [  8/52] Turnanzug  →  7 words
+2026-07-17 14:41:17 [INFO ] [hotwords] [  9/52] kw=UV-Anzug                   status=0  total=0       extracted=0
+2026-07-17 14:41:17 [INFO ] [hotwords] [  9/52] UV-Anzug  →  0 words
+2026-07-17 14:41:18 [INFO ] [hotwords] [ 10/52] kw=UV-Schutzanzug             status=0  total=0       extracted=0
+2026-07-17 14:41:18 [INFO ] [hotwords] [ 10/52] UV-Schutzanzug  →  0 words
+2026-07-17 14:41:41 [INFO ] [hotwords] Loop mode: 52 keywords  country=de  category=(all)
+2026-07-17 14:41:41 [INFO ] [hotwords] 
+2026-07-17 14:41:41 [INFO ] [hotwords] [  1/52] kw=Yogaanzug                  status=0  total=0       extracted=0
+2026-07-17 14:41:41 [INFO ] [hotwords] [  1/52] Yogaanzug  →  0 words
+2026-07-17 14:41:44 [INFO ] [hotwords] [  2/52] kw=Laufanzug                  status=0  total=0       extracted=0
+2026-07-17 14:41:44 [INFO ] [hotwords] [  2/52] Laufanzug  →  0 words
+2026-07-17 14:41:46 [INFO ] [hotwords] [  3/52] kw=Jogginganzug               status=0  total=18      extracted=18
+2026-07-17 14:41:46 [INFO ] [hotwords] [  3/52] Jogginganzug  →  18 words
+2026-07-17 14:41:48 [INFO ] [hotwords] [  4/52] kw=Fitnessanzug               status=0  total=0       extracted=0
+2026-07-17 14:41:48 [INFO ] [hotwords] [  4/52] Fitnessanzug  →  0 words
+2026-07-17 14:41:51 [INFO ] [hotwords] [  5/52] kw=Trainingsanzug             status=0  total=20      extracted=20
+2026-07-17 14:41:51 [INFO ] [hotwords] [  5/52] Trainingsanzug  →  20 words
+2026-07-17 14:41:53 [INFO ] [hotwords] [  6/52] kw=Sportanzug                 status=0  total=6       extracted=6
+2026-07-17 14:41:53 [INFO ] [hotwords] [  6/52] Sportanzug  →  6 words
+2026-07-17 14:41:55 [INFO ] [hotwords] [  7/52] kw=Gymnastikanzug             status=0  total=1       extracted=1
+2026-07-17 14:41:55 [INFO ] [hotwords] [  7/52] Gymnastikanzug  →  1 words
+2026-07-17 14:41:58 [INFO ] [hotwords] [  8/52] kw=Turnanzug                  status=0  total=7       extracted=7
+2026-07-17 14:41:58 [INFO ] [hotwords] [  8/52] Turnanzug  →  7 words
+2026-07-17 14:42:00 [INFO ] [hotwords] [  9/52] kw=UV-Anzug                   status=0  total=0       extracted=0
+2026-07-17 14:42:00 [INFO ] [hotwords] [  9/52] UV-Anzug  →  0 words
+2026-07-17 14:42:02 [INFO ] [hotwords] [ 10/52] kw=UV-Schutzanzug             status=0  total=0       extracted=0
+2026-07-17 14:42:02 [INFO ] [hotwords] [ 10/52] UV-Schutzanzug  →  0 words
+2026-07-17 14:42:05 [INFO ] [hotwords] [ 11/52] kw=Sonnenschutzanzug          status=0  total=0       extracted=0
+2026-07-17 14:42:05 [INFO ] [hotwords] [ 11/52] Sonnenschutzanzug  →  0 words
+2026-07-17 14:42:07 [INFO ] [hotwords] [ 12/52] kw=Regenanzug                 status=0  total=6       extracted=6
+2026-07-17 14:42:07 [INFO ] [hotwords] [ 12/52] Regenanzug  →  6 words
+2026-07-17 14:42:09 [INFO ] [hotwords] [ 13/52] kw=Wetteranzug                status=0  total=0       extracted=0
+2026-07-17 14:42:09 [INFO ] [hotwords] [ 13/52] Wetteranzug  →  0 words
+2026-07-17 14:42:12 [INFO ] [hotwords] [ 14/52] kw=Radsportanzug              status=0  total=0       extracted=0
+2026-07-17 14:42:12 [INFO ] [hotwords] [ 14/52] Radsportanzug  →  0 words
+2026-07-17 14:42:14 [INFO ] [hotwords] [ 15/52] kw=Skianzug                   status=0  total=0       extracted=0
+2026-07-17 14:42:14 [INFO ] [hotwords] [ 15/52] Skianzug  →  0 words
+2026-07-17 14:42:17 [INFO ] [hotwords] [ 16/52] kw=Schneeanzug                status=0  total=2       extracted=2
+2026-07-17 14:42:17 [INFO ] [hotwords] [ 16/52] Schneeanzug  →  2 words
+2026-07-17 14:42:19 [INFO ] [hotwords] [ 17/52] kw=Thermoanzug                status=0  total=0       extracted=0
+2026-07-17 14:42:19 [INFO ] [hotwords] [ 17/52] Thermoanzug  →  0 words
+2026-07-17 14:42:21 [INFO ] [hotwords] [ 18/52] kw=Schutzanzug                status=0  total=9       extracted=9
+2026-07-17 14:42:21 [INFO ] [hotwords] [ 18/52] Schutzanzug  →  9 words
+2026-07-17 14:42:24 [INFO ] [hotwords] [ 19/52] kw=Badeanzug                  status=0  total=362     extracted=200
+2026-07-17 14:42:24 [INFO ] [hotwords] [ 19/52] Badeanzug  →  200 words
+2026-07-17 14:42:26 [INFO ] [hotwords] [ 20/52] kw=Taucheranzug               status=0  total=0       extracted=0
+2026-07-17 14:42:26 [INFO ] [hotwords] [ 20/52] Taucheranzug  →  0 words
+2026-07-17 14:42:28 [INFO ] [hotwords] [ 21/52] kw=Surfanzug                  status=0  total=1       extracted=1
+2026-07-17 14:42:28 [INFO ] [hotwords] [ 21/52] Surfanzug  →  1 words
+2026-07-17 14:42:31 [INFO ] [hotwords] [ 22/52] kw=Freizeitanzug              status=0  total=2       extracted=2
+2026-07-17 14:42:31 [INFO ] [hotwords] [ 22/52] Freizeitanzug  →  2 words
+2026-07-17 14:42:33 [INFO ] [hotwords] [ 23/52] kw=Relaxanzug                 status=0  total=0       extracted=0
+2026-07-17 14:42:33 [INFO ] [hotwords] [ 23/52] Relaxanzug  →  0 words
+2026-07-17 14:42:56 [WARNING] [hotwords] [ 24/52] Kuschelanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x15a483e8cd0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-17 14:42:59 [INFO ] [hotwords] [ 25/52] kw=Hausanzug                  status=0  total=4       extracted=4
+2026-07-17 14:42:59 [INFO ] [hotwords] [ 25/52] Hausanzug  →  4 words
+2026-07-17 14:43:01 [INFO ] [hotwords] [ 26/52] kw=Wohnanzug                  status=0  total=0       extracted=0
+2026-07-17 14:43:01 [INFO ] [hotwords] [ 26/52] Wohnanzug  →  0 words
+2026-07-17 14:43:03 [INFO ] [hotwords] [ 27/52] kw=Schlafanzug                status=0  total=112     extracted=112
+2026-07-17 14:43:03 [INFO ] [hotwords] [ 27/52] Schlafanzug  →  112 words
+2026-07-17 14:43:06 [INFO ] [hotwords] [ 28/52] kw=Unteranzug                 status=0  total=0       extracted=0
+2026-07-17 14:43:06 [INFO ] [hotwords] [ 28/52] Unteranzug  →  0 words
+2026-07-17 14:43:08 [INFO ] [hotwords] [ 29/52] kw=Hosenanzug                 status=0  total=16      extracted=16
+2026-07-17 14:43:08 [INFO ] [hotwords] [ 29/52] Hosenanzug  →  16 words
+2026-07-17 14:43:11 [INFO ] [hotwords] [ 30/52] kw=Kurzanzug                  status=0  total=0       extracted=0
+2026-07-17 14:43:11 [INFO ] [hotwords] [ 30/52] Kurzanzug  →  0 words
+2026-07-17 14:43:13 [INFO ] [hotwords] [ 31/52] kw=Sommeranzug                status=0  total=2       extracted=2
+2026-07-17 14:43:13 [INFO ] [hotwords] [ 31/52] Sommeranzug  →  2 words
+2026-07-17 14:43:15 [INFO ] [hotwords] [ 32/52] kw=Strandanzug                status=0  total=0       extracted=0
+2026-07-17 14:43:15 [INFO ] [hotwords] [ 32/52] Strandanzug  →  0 words
+2026-07-17 14:43:38 [WARNING] [hotwords] [ 33/52] Urlaubsanzug  FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x15a483e9bd0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-17 14:43:41 [INFO ] [hotwords] [ 34/52] kw=Blusenanzug                status=0  total=0       extracted=0
+2026-07-17 14:43:41 [INFO ] [hotwords] [ 34/52] Blusenanzug  →  0 words
+2026-07-17 14:43:43 [INFO ] [hotwords] [ 35/52] kw=Businessanzug              status=0  total=0       extracted=0
+2026-07-17 14:43:43 [INFO ] [hotwords] [ 35/52] Businessanzug  →  0 words
+2026-07-17 14:43:46 [INFO ] [hotwords] [ 36/52] kw=Damenanzug                 status=0  total=0       extracted=0
+2026-07-17 14:43:46 [INFO ] [hotwords] [ 36/52] Damenanzug  →  0 words
+2026-07-17 14:43:48 [INFO ] [hotwords] [ 37/52] kw=Herrenanzug                status=0  total=3       extracted=3
+2026-07-17 14:43:48 [INFO ] [hotwords] [ 37/52] Herrenanzug  →  3 words
+2026-07-17 14:43:50 [INFO ] [hotwords] [ 38/52] kw=Leinenanzug                status=0  total=5       extracted=5
+2026-07-17 14:43:50 [INFO ] [hotwords] [ 38/52] Leinenanzug  →  5 words
+2026-07-17 14:43:53 [INFO ] [hotwords] [ 39/52] kw=Strickanzug                status=0  total=0       extracted=0
+2026-07-17 14:43:53 [INFO ] [hotwords] [ 39/52] Strickanzug  →  0 words
+2026-07-17 14:43:55 [INFO ] [hotwords] [ 40/52] kw=Samtanzug                  status=0  total=0       extracted=0
+2026-07-17 14:43:55 [INFO ] [hotwords] [ 40/52] Samtanzug  →  0 words
+2026-07-17 14:43:57 [INFO ] [hotwords] [ 41/52] kw=Nickianzug                 status=0  total=0       extracted=0
+2026-07-17 14:43:57 [INFO ] [hotwords] [ 41/52] Nickianzug  →  0 words
+2026-07-17 14:44:00 [INFO ] [hotwords] [ 42/52] kw=Flanellanzug               status=0  total=0       extracted=0
+2026-07-17 14:44:00 [INFO ] [hotwords] [ 42/52] Flanellanzug  →  0 words
+2026-07-17 14:44:02 [INFO ] [hotwords] [ 43/52] kw=Seidenanzug                status=0  total=0       extracted=0
+2026-07-17 14:44:02 [INFO ] [hotwords] [ 43/52] Seidenanzug  →  0 words
+2026-07-17 14:44:05 [INFO ] [hotwords] [ 44/52] kw=Satinanzug                 status=0  total=0       extracted=0
+2026-07-17 14:44:05 [INFO ] [hotwords] [ 44/52] Satinanzug  →  0 words
+2026-07-17 14:44:07 [INFO ] [hotwords] [ 45/52] kw=Baumwollanzug              status=0  total=0       extracted=0
+2026-07-17 14:44:07 [INFO ] [hotwords] [ 45/52] Baumwollanzug  →  0 words
+2026-07-17 14:44:09 [INFO ] [hotwords] [ 46/52] kw=Jeansanzug                 status=0  total=0       extracted=0
+2026-07-17 14:44:09 [INFO ] [hotwords] [ 46/52] Jeansanzug  →  0 words
+2026-07-17 14:44:12 [INFO ] [hotwords] [ 47/52] kw=Frotteeanzug               status=0  total=0       extracted=0
+2026-07-17 14:44:12 [INFO ] [hotwords] [ 47/52] Frotteeanzug  →  0 words
+2026-07-17 14:44:14 [INFO ] [hotwords] [ 48/52] kw=Sweatanzug                 status=0  total=0       extracted=0
+2026-07-17 14:44:14 [INFO ] [hotwords] [ 48/52] Sweatanzug  →  0 words
+2026-07-17 14:44:17 [INFO ] [hotwords] [ 49/52] kw=Kapuzenanzug               status=0  total=0       extracted=0
+2026-07-17 14:44:17 [INFO ] [hotwords] [ 49/52] Kapuzenanzug  →  0 words
+2026-07-17 14:44:19 [INFO ] [hotwords] [ 50/52] kw=anzug                      status=0  total=763     extracted=200
+2026-07-17 14:44:19 [INFO ] [hotwords] [ 50/52] anzug  →  200 words
+2026-07-17 14:44:21 [INFO ] [hotwords] [ 51/52] kw=2 teiler                   status=0  total=26      extracted=26
+2026-07-17 14:44:21 [INFO ] [hotwords] [ 51/52] 2 teiler  →  26 words
+2026-07-17 14:44:24 [INFO ] [hotwords] [ 52/52] kw=zweiteiler                 status=0  total=46      extracted=46
+2026-07-17 14:44:24 [INFO ] [hotwords] [ 52/52] zweiteiler  →  46 words
+2026-07-17 14:44:26 [INFO ] [hotwords] 
+2026-07-17 14:44:26 [INFO ] [hotwords] Cleaning...
+2026-07-17 14:44:26 [INFO ] [hotwords]   strip_whitespace: 686 → 686 (0 removed)
+2026-07-17 14:44:26 [INFO ] [hotwords]   normalize_case: 686 → 686 (0 removed)
+2026-07-17 14:44:26 [INFO ] [hotwords]   drop_single_word: 686 → 654 (32 removed)
+2026-07-17 14:44:26 [INFO ] [hotwords]   drop_brands: 654 → 613 (41 removed)
+2026-07-17 14:44:26 [INFO ] [hotwords]   deduplicate: 613 → 468 (145 removed)
+2026-07-17 14:44:26 [INFO ] [hotwords] herren=78     damen=194    other=196  
+2026-07-17 14:44:26 [INFO ] [hotwords] Saved 468 words (raw: 686, errors: 2) → 20260717_144141_de.txt
+2026-07-17 14:44:26 [INFO ] [hotwords] ==================================================
+2026-07-17 14:44:26 [INFO ] [hotwords] Done.
+2026-07-17 19:31:55 [INFO ] [color_size_deal] Groups: 93, lines: 2622 (file: 2714)
+2026-07-17 19:31:55 [INFO ] [color_size_deal] Prefixes: {'01': 11, '02': 6, '03': 5, '04': 4, '05': 4, '06': 4}
+2026-07-17 19:31:55 [INFO ] [color_size_deal] Done.

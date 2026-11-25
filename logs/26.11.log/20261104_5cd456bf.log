@@ -1,0 +1,924 @@
+2026-11-04 09:32:39 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-04 09:32:39 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-11-04 09:32:42 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-11-04 09:32:44 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-11-04 09:32:47 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-11-04 09:32:49 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-11-04 09:32:49 [INFO ] [hotwords_fashion] 第 1 次请求成功: 1000 条
+2026-11-04 09:32:49 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261104.txt (1000 条)
+2026-11-04 09:32:49 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-11-04 09:32:49 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] === 报告 ===
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261104.txt
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 清洗命中: 品类 76 / 属性 9(过滤前)
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 清洗丢弃: 915 条(黑名单 119 / 无关 796)
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 最终保留: 85 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\de\hotwords_fashion_20261104.txt
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   brauner rock kurz	170092	品类:rock;属性:braun
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   boucle jacke damen im chanel stil	161374	品类:jacke;属性:damen
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   harlekin strumpfhose	159190	品类:hose
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   leoparden hose kurz	158673	品类:hose
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   superman t-shirt	157141	品类:shirt
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   boucle jacke	157132	品类:jacke
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   modern warfare	151228	品类:mode
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   rocky 5	148394	品类:rock
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   ältere damen pullover	144655	品类:pullover;属性:damen
+2026-11-04 09:32:50 [INFO ] [hotwords_fashion]   modern warfare 4 switch 2	143976	品类:mode
+2026-11-04 19:52:06 [INFO ] [jenkins] ==================================================
+2026-11-04 19:52:06 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-04 19:52:06 [INFO ] [jenkins] ==================================================
+2026-11-04 19:52:06 [INFO ] [jenkins] 
+2026-11-04 19:52:06 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-04 19:52:06 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:52:06 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-04 19:52:06 [INFO ] [jenkins] 
+2026-11-04 19:52:06 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-04 19:52:06 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:52:07 [INFO ] [preprocess] Preprocessing 9 file(s) with 1 step(s)
+2026-11-04 19:52:07 [INFO ] [preprocess] [product_20261104055738339.xlsx]
+2026-11-04 19:52:07 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:07 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:10 [INFO ] [preprocess]   [product_20261104055738339.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:10 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:11 [INFO ] [preprocess] [product_20261104055748933.xlsx]
+2026-11-04 19:52:11 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:11 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:13 [INFO ] [preprocess]   [product_20261104055748933.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:13 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:13 [INFO ] [preprocess] [product_20261104055749734.xlsx]
+2026-11-04 19:52:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:13 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:15 [INFO ] [preprocess]   [product_20261104055749734.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:15 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:15 [INFO ] [preprocess] [product_20261104060113404.xlsx]
+2026-11-04 19:52:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:15 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:17 [INFO ] [preprocess]   [product_20261104060113404.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:17 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:18 [INFO ] [preprocess] [product_20261104060400039.xlsx]
+2026-11-04 19:52:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:18 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:20 [INFO ] [preprocess]   [product_20261104060400039.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:20 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:21 [INFO ] [preprocess] [product_20261104060804275.xlsx]
+2026-11-04 19:52:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:21 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:24 [INFO ] [preprocess]   [product_20261104060804275.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:24 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:24 [INFO ] [preprocess] [product_20261104061520522.xlsx]
+2026-11-04 19:52:24 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:24 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:25 [INFO ] [preprocess]   [product_20261104061520522.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:25 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:26 [INFO ] [preprocess] [product_20261104061736548.xlsx]
+2026-11-04 19:52:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:26 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:28 [INFO ] [preprocess]   [product_20261104061736548.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:28 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:28 [INFO ] [preprocess] [product_20261104061820420.xlsx]
+2026-11-04 19:52:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:52:29 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:52:30 [INFO ] [preprocess]   [product_20261104061820420.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:52:30 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:52:31 [INFO ] [preprocess] Preprocessing complete
+2026-11-04 19:52:31 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-04 19:52:31 [INFO ] [jenkins] 
+2026-11-04 19:52:31 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-04 19:52:31 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:52:32 [INFO ] [main] Log file: 20261104_5cd456bf.log
+2026-11-04 19:52:32 [INFO ] [main] Found 9 file(s):
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104055738339.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104055748933.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104055749734.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104060113404.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104060400039.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104060804275.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104061520522.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104061736548.xlsx
+2026-11-04 19:52:32 [INFO ] [main]   product_20261104061820420.xlsx
+2026-11-04 19:52:32 [INFO ] [main] Output: 10.29v1_de.xlsx
+2026-11-04 19:52:32 [INFO ] [main] ==================================================
+2026-11-04 19:52:52 [INFO ] [main] Merged 9 files, 8109 images total
+2026-11-04 19:52:52 [INFO ] [main] Deleted 9 source file(s)
+2026-11-04 19:52:54 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-04 19:52:54 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_2]: 566 rows, 538 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_3]: 300 rows, 471 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_4]: 610 rows, 986 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_5]: 595 rows, 1071 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_6]: 662 rows, 1205 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_7]: 311 rows, 542 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_8]: 475 rows, 993 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Sheet [Sheet0_9]: 481 rows, 987 images
+2026-11-04 19:53:10 [INFO ] [pipeline]   Merged 9 sheets -> 1, 4000 data rows, 6793 images
+2026-11-04 19:53:10 [INFO ] [pipeline] [2/12] validate
+2026-11-04 19:53:11 [INFO ] [pipeline]   Validated: 4762 rows, 27 cols (expect ~32)
+2026-11-04 19:53:11 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-04 19:53:12 [INFO ] [pipeline]   Backed up 8109 images
+2026-11-04 19:53:12 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-04 19:53:12 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-04 19:53:12 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-04 19:53:12 [INFO ] [pipeline]   Restored 8109 images with adjusted anchors
+2026-11-04 19:53:12 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-04 19:53:12 [INFO ] [pipeline]   Column 2: 4762 IDs generated
+2026-11-04 19:53:12 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-04 19:53:12 [INFO ] [pipeline]   Column 3: 4762 cells filled
+2026-11-04 19:53:12 [INFO ] [pipeline] [6/12] map_colors
+2026-11-04 19:53:12 [INFO ] [pipeline]   Colors J -> K: 4704 cells mapped, 58 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-04 19:53:12 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-04 19:53:12 [INFO ] [pipeline]   Size column L: 4680 mapped, 58 cleared (col A has fill), 24 no match (recorded)
+2026-11-04 19:53:12 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-04 19:53:12 [INFO ] [pipeline]   Mirror copy: 26692 cells written
+2026-11-04 19:53:12 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-04 19:53:12 [INFO ] [pipeline]   Price source M -> AS: 4762 cells copied
+2026-11-04 19:53:12 [INFO ] [pipeline] [10/12] calc_price
+2026-11-04 19:53:12 [INFO ] [pipeline]   Price columns AT-AW: 4762 rows calculated
+2026-11-04 19:53:12 [INFO ] [pipeline] [11/12] format_cells
+2026-11-04 19:53:13 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-04 19:53:13 [INFO ] [pipeline]   Formatted 4762 rows: h=50, align=left/center
+2026-11-04 19:53:13 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-04 19:53:13 [INFO ] [pipeline] [12/12] finalize
+2026-11-04 19:53:13 [INFO ] [pipeline]   Done: 4762 rows x 49 cols (target: 49)
+2026-11-04 19:53:13 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:53:18 [INFO ] [main] Size: 4762 rows x 49 cols
+2026-11-04 19:53:18 [INFO ] [main] ==================================================
+2026-11-04 19:53:18 [INFO ] [main] Done: 10.29v1_de.xlsx
+2026-11-04 19:53:18 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-04 19:53:18 [INFO ] [jenkins] 
+2026-11-04 19:53:18 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-04 19:53:18 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:53:19 [INFO ] [color_size_main] Source: 10.29v1_de.xlsx
+2026-11-04 19:53:23 [INFO ] [color_size_main] Extracted: 4704 data lines + 58 separators → check_.txt
+2026-11-04 19:53:23 [INFO ] [color_size_main] Running: process.py
+2026-11-04 19:53:24 [INFO ] [color_size_deal] Groups: 58, lines: 4704 (file: 4762)
+2026-11-04 19:53:24 [INFO ] [color_size_deal] Prefixes: {'01': 1087, '02': 503, '03': 270, '04': 142, '05': 62, '06': 45, '07': 23, '08': 23, '09': 8, '10': 8, '11': 8}
+2026-11-04 19:53:24 [INFO ] [color_size_deal] Done.
+2026-11-04 19:53:24 [INFO ] [color_size_main] Processing write-back: 4762 lines
+2026-11-04 19:53:33 [INFO ] [color_size_main] Write-back: 2237 written, 2525 unchanged → 10.29v1_de.xlsx
+2026-11-04 19:53:33 [INFO ] [color_size_main] Done.
+2026-11-04 19:53:34 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-04 19:53:34 [INFO ] [jenkins] 
+2026-11-04 19:53:34 [INFO ] [jenkins] ==================================================
+2026-11-04 19:53:34 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-04 19:53:34 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 19:53:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 19:53:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 19:53:34 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-04 19:53:50 [INFO ] [jenkins] ==================================================
+2026-11-04 19:53:50 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-04 19:53:50 [INFO ] [jenkins] ==================================================
+2026-11-04 19:53:50 [INFO ] [jenkins] 
+2026-11-04 19:53:50 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-04 19:53:50 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:53:50 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-04 19:53:50 [INFO ] [jenkins] 
+2026-11-04 19:53:50 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-04 19:53:50 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:53:51 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-11-04 19:53:51 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-04 19:53:51 [INFO ] [jenkins] 
+2026-11-04 19:53:51 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-04 19:53:51 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:53:51 [INFO ] [main] Log file: 20261104_5cd456bf.log
+2026-11-04 19:53:51 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-11-04 19:53:51 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-04 19:53:51 [INFO ] [jenkins] 
+2026-11-04 19:53:51 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-04 19:53:51 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:53:52 [INFO ] [color_size_main] Source: 10.29v1_de.xlsx
+2026-11-04 19:53:56 [INFO ] [color_size_main] Extracted: 4704 data lines + 58 separators → check_.txt
+2026-11-04 19:53:56 [INFO ] [color_size_main] Running: process.py
+2026-11-04 19:53:57 [INFO ] [color_size_deal] Groups: 58, lines: 4704 (file: 4762)
+2026-11-04 19:53:57 [INFO ] [color_size_deal] Prefixes: {'01': 1087, '02': 503, '03': 270, '04': 142, '05': 62, '06': 45, '07': 23, '08': 23, '09': 8, '10': 8, '11': 8}
+2026-11-04 19:53:57 [INFO ] [color_size_deal] Done.
+2026-11-04 19:53:57 [INFO ] [color_size_main] Processing write-back: 4762 lines
+2026-11-04 19:54:14 [INFO ] [color_size_main] Write-back: 58 written, 4704 unchanged → 10.29v1_de.xlsx
+2026-11-04 19:54:14 [INFO ] [color_size_main] Done.
+2026-11-04 19:54:14 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-04 19:54:14 [INFO ] [jenkins] 
+2026-11-04 19:54:14 [INFO ] [jenkins] ==================================================
+2026-11-04 19:54:14 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-04 19:54:14 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 19:54:14 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 19:54:14 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 19:54:14 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-04 19:55:46 [INFO ] [jenkins] ==================================================
+2026-11-04 19:55:46 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-04 19:55:46 [INFO ] [jenkins] ==================================================
+2026-11-04 19:55:46 [INFO ] [jenkins] 
+2026-11-04 19:55:46 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-04 19:55:46 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:55:46 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-04 19:55:46 [INFO ] [jenkins] 
+2026-11-04 19:55:46 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-04 19:55:46 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:55:47 [INFO ] [preprocess] Preprocessing 9 file(s) with 1 step(s)
+2026-11-04 19:55:47 [INFO ] [preprocess] [product_20261104055738339.xlsx]
+2026-11-04 19:55:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:55:47 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:55:50 [INFO ] [preprocess]   [product_20261104055738339.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:55:50 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:55:51 [INFO ] [preprocess] [product_20261104055748933.xlsx]
+2026-11-04 19:55:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:55:51 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:55:53 [INFO ] [preprocess]   [product_20261104055748933.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:55:53 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:55:53 [INFO ] [preprocess] [product_20261104055749734.xlsx]
+2026-11-04 19:55:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:55:53 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:55:54 [INFO ] [preprocess]   [product_20261104055749734.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:55:54 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:55:55 [INFO ] [preprocess] [product_20261104060113404.xlsx]
+2026-11-04 19:55:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:55:55 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:55:57 [INFO ] [preprocess]   [product_20261104060113404.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:55:57 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:55:58 [INFO ] [preprocess] [product_20261104060400039.xlsx]
+2026-11-04 19:55:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:55:58 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:56:00 [INFO ] [preprocess]   [product_20261104060400039.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:56:00 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:01 [INFO ] [preprocess] [product_20261104060804275.xlsx]
+2026-11-04 19:56:01 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:56:01 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:56:04 [INFO ] [preprocess]   [product_20261104060804275.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:56:04 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:04 [INFO ] [preprocess] [product_20261104061520522.xlsx]
+2026-11-04 19:56:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:56:04 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:56:05 [INFO ] [preprocess]   [product_20261104061520522.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:56:05 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:06 [INFO ] [preprocess] [product_20261104061736548.xlsx]
+2026-11-04 19:56:06 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:56:06 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:56:08 [INFO ] [preprocess]   [product_20261104061736548.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:56:08 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:08 [INFO ] [preprocess] [product_20261104061820420.xlsx]
+2026-11-04 19:56:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:56:08 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:56:10 [INFO ] [preprocess]   [product_20261104061820420.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:56:10 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:10 [INFO ] [preprocess] Preprocessing complete
+2026-11-04 19:56:11 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-04 19:56:11 [INFO ] [jenkins] 
+2026-11-04 19:56:11 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-04 19:56:11 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:56:11 [INFO ] [main] Log file: 20261104_5cd456bf.log
+2026-11-04 19:56:11 [INFO ] [main] Found 9 file(s):
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104055738339.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104055748933.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104055749734.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104060113404.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104060400039.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104060804275.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104061520522.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104061736548.xlsx
+2026-11-04 19:56:11 [INFO ] [main]   product_20261104061820420.xlsx
+2026-11-04 19:56:11 [INFO ] [main] Output: 10.29v1_fr.xlsx
+2026-11-04 19:56:11 [INFO ] [main] ==================================================
+2026-11-04 19:56:31 [INFO ] [main] Merged 9 files, 8109 images total
+2026-11-04 19:56:31 [INFO ] [main] Deleted 9 source file(s)
+2026-11-04 19:56:34 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-04 19:56:34 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_2]: 566 rows, 538 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_3]: 300 rows, 471 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_4]: 610 rows, 986 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_5]: 595 rows, 1071 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_6]: 662 rows, 1205 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_7]: 311 rows, 542 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_8]: 475 rows, 993 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Sheet [Sheet0_9]: 481 rows, 987 images
+2026-11-04 19:56:50 [INFO ] [pipeline]   Merged 9 sheets -> 1, 4000 data rows, 6793 images
+2026-11-04 19:56:50 [INFO ] [pipeline] [2/12] validate
+2026-11-04 19:56:50 [INFO ] [pipeline]   Validated: 4762 rows, 27 cols (expect ~32)
+2026-11-04 19:56:50 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-04 19:56:51 [INFO ] [pipeline]   Backed up 8109 images
+2026-11-04 19:56:51 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-04 19:56:51 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-04 19:56:51 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-04 19:56:51 [INFO ] [pipeline]   Restored 8109 images with adjusted anchors
+2026-11-04 19:56:51 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-04 19:56:51 [INFO ] [pipeline]   Column 2: 4762 IDs generated
+2026-11-04 19:56:51 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-04 19:56:51 [INFO ] [pipeline]   Column 3: 4762 cells filled
+2026-11-04 19:56:51 [INFO ] [pipeline] [6/12] map_colors
+2026-11-04 19:56:51 [INFO ] [pipeline]   Colors J -> K: 4704 cells mapped, 58 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-04 19:56:51 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-04 19:56:51 [INFO ] [pipeline]   Size column L: 4704 mapped, 58 cleared (col A has fill), 0 no match (recorded)
+2026-11-04 19:56:51 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-04 19:56:52 [INFO ] [pipeline]   Mirror copy: 26692 cells written
+2026-11-04 19:56:52 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-04 19:56:52 [INFO ] [pipeline]   Price source M -> AS: 4762 cells copied
+2026-11-04 19:56:52 [INFO ] [pipeline] [10/12] calc_price
+2026-11-04 19:56:52 [INFO ] [pipeline]   Price columns AT-AW: 4762 rows calculated
+2026-11-04 19:56:52 [INFO ] [pipeline] [11/12] format_cells
+2026-11-04 19:56:53 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-04 19:56:53 [INFO ] [pipeline]   Formatted 4762 rows: h=50, align=left/center
+2026-11-04 19:56:53 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-04 19:56:53 [INFO ] [pipeline] [12/12] finalize
+2026-11-04 19:56:53 [INFO ] [pipeline]   Done: 4762 rows x 49 cols (target: 49)
+2026-11-04 19:56:53 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:56:58 [INFO ] [main] Size: 4762 rows x 49 cols
+2026-11-04 19:56:58 [INFO ] [main] ==================================================
+2026-11-04 19:56:58 [INFO ] [main] Done: 10.29v1_fr.xlsx
+2026-11-04 19:56:59 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-04 19:56:59 [INFO ] [jenkins] 
+2026-11-04 19:56:59 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-04 19:56:59 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:57:00 [INFO ] [color_size_main] Source: 10.29v1_fr.xlsx
+2026-11-04 19:57:04 [INFO ] [color_size_main] Extracted: 4704 data lines + 58 separators → check_.txt
+2026-11-04 19:57:04 [INFO ] [color_size_main] Running: process.py
+2026-11-04 19:57:04 [INFO ] [color_size_deal] Groups: 58, lines: 4704 (file: 4762)
+2026-11-04 19:57:04 [INFO ] [color_size_deal] Prefixes: {'01': 1087, '02': 503, '03': 270, '04': 142, '05': 62, '06': 45, '07': 23, '08': 23, '09': 8, '10': 8, '11': 8}
+2026-11-04 19:57:04 [INFO ] [color_size_deal] Done.
+2026-11-04 19:57:04 [INFO ] [color_size_main] Processing write-back: 4762 lines
+2026-11-04 19:57:14 [INFO ] [color_size_main] Write-back: 2237 written, 2525 unchanged → 10.29v1_fr.xlsx
+2026-11-04 19:57:14 [INFO ] [color_size_main] Done.
+2026-11-04 19:57:15 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-04 19:57:15 [INFO ] [jenkins] 
+2026-11-04 19:57:15 [INFO ] [jenkins] ==================================================
+2026-11-04 19:57:15 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-04 19:57:15 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 19:57:15 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 19:57:15 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 19:57:15 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-04 19:57:24 [INFO ] [jenkins] ==================================================
+2026-11-04 19:57:24 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-04 19:57:24 [INFO ] [jenkins] ==================================================
+2026-11-04 19:57:24 [INFO ] [jenkins] 
+2026-11-04 19:57:24 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-04 19:57:24 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:57:24 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-04 19:57:24 [INFO ] [jenkins] 
+2026-11-04 19:57:24 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-04 19:57:24 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:57:25 [INFO ] [preprocess] Preprocessing 9 file(s) with 1 step(s)
+2026-11-04 19:57:25 [INFO ] [preprocess] [product_20261104055738339.xlsx]
+2026-11-04 19:57:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:26 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:29 [INFO ] [preprocess]   [product_20261104055738339.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:29 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:30 [INFO ] [preprocess] [product_20261104055748933.xlsx]
+2026-11-04 19:57:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:30 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:32 [INFO ] [preprocess]   [product_20261104055748933.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:32 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:33 [INFO ] [preprocess] [product_20261104055749734.xlsx]
+2026-11-04 19:57:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:33 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:34 [INFO ] [preprocess]   [product_20261104055749734.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:34 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:34 [INFO ] [preprocess] [product_20261104060113404.xlsx]
+2026-11-04 19:57:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:34 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:37 [INFO ] [preprocess]   [product_20261104060113404.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:37 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:37 [INFO ] [preprocess] [product_20261104060400039.xlsx]
+2026-11-04 19:57:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:38 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:40 [INFO ] [preprocess]   [product_20261104060400039.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:40 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:40 [INFO ] [preprocess] [product_20261104060804275.xlsx]
+2026-11-04 19:57:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:41 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:43 [INFO ] [preprocess]   [product_20261104060804275.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:43 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:43 [INFO ] [preprocess] [product_20261104061520522.xlsx]
+2026-11-04 19:57:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:44 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:45 [INFO ] [preprocess]   [product_20261104061520522.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:45 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:45 [INFO ] [preprocess] [product_20261104061736548.xlsx]
+2026-11-04 19:57:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:45 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:47 [INFO ] [preprocess]   [product_20261104061736548.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:47 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:48 [INFO ] [preprocess] [product_20261104061820420.xlsx]
+2026-11-04 19:57:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-04 19:57:48 [INFO ] [pipeline] [1/1] remove_header
+2026-11-04 19:57:50 [INFO ] [preprocess]   [product_20261104061820420.xlsx] Sheet [Sheet0]: header row removed
+2026-11-04 19:57:50 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:57:50 [INFO ] [preprocess] Preprocessing complete
+2026-11-04 19:57:50 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-04 19:57:50 [INFO ] [jenkins] 
+2026-11-04 19:57:50 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-04 19:57:50 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:57:51 [INFO ] [main] Log file: 20261104_5cd456bf.log
+2026-11-04 19:57:51 [INFO ] [main] Found 9 file(s):
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104055738339.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104055748933.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104055749734.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104060113404.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104060400039.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104060804275.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104061520522.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104061736548.xlsx
+2026-11-04 19:57:51 [INFO ] [main]   product_20261104061820420.xlsx
+2026-11-04 19:57:51 [INFO ] [main] Output: 10.29v1_de.xlsx
+2026-11-04 19:57:51 [INFO ] [main] ==================================================
+2026-11-04 19:58:11 [INFO ] [main] Merged 9 files, 8109 images total
+2026-11-04 19:58:11 [INFO ] [main] Deleted 9 source file(s)
+2026-11-04 19:58:14 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-04 19:58:14 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_2]: 566 rows, 538 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_3]: 300 rows, 471 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_4]: 610 rows, 986 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_5]: 595 rows, 1071 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_6]: 662 rows, 1205 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_7]: 311 rows, 542 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_8]: 475 rows, 993 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Sheet [Sheet0_9]: 481 rows, 987 images
+2026-11-04 19:58:31 [INFO ] [pipeline]   Merged 9 sheets -> 1, 4000 data rows, 6793 images
+2026-11-04 19:58:31 [INFO ] [pipeline] [2/12] validate
+2026-11-04 19:58:31 [INFO ] [pipeline]   Validated: 4762 rows, 27 cols (expect ~32)
+2026-11-04 19:58:31 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-04 19:58:32 [INFO ] [pipeline]   Backed up 8109 images
+2026-11-04 19:58:32 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-04 19:58:32 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-04 19:58:32 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-04 19:58:32 [INFO ] [pipeline]   Restored 8109 images with adjusted anchors
+2026-11-04 19:58:32 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-04 19:58:32 [INFO ] [pipeline]   Column 2: 4762 IDs generated
+2026-11-04 19:58:32 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-04 19:58:32 [INFO ] [pipeline]   Column 3: 4762 cells filled
+2026-11-04 19:58:32 [INFO ] [pipeline] [6/12] map_colors
+2026-11-04 19:58:32 [INFO ] [pipeline]   Colors J -> K: 4704 cells mapped, 58 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-04 19:58:32 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-04 19:58:32 [INFO ] [pipeline]   Size column L: 4680 mapped, 58 cleared (col A has fill), 24 no match (recorded)
+2026-11-04 19:58:32 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-04 19:58:32 [INFO ] [pipeline]   Mirror copy: 26692 cells written
+2026-11-04 19:58:32 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-04 19:58:32 [INFO ] [pipeline]   Price source M -> AS: 4762 cells copied
+2026-11-04 19:58:32 [INFO ] [pipeline] [10/12] calc_price
+2026-11-04 19:58:33 [INFO ] [pipeline]   Price columns AT-AW: 4762 rows calculated
+2026-11-04 19:58:33 [INFO ] [pipeline] [11/12] format_cells
+2026-11-04 19:58:33 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-04 19:58:33 [INFO ] [pipeline]   Formatted 4762 rows: h=50, align=left/center
+2026-11-04 19:58:33 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-04 19:58:33 [INFO ] [pipeline] [12/12] finalize
+2026-11-04 19:58:33 [INFO ] [pipeline]   Done: 4762 rows x 49 cols (target: 49)
+2026-11-04 19:58:33 [INFO ] [pipeline] Pipeline complete
+2026-11-04 19:58:38 [INFO ] [main] Size: 4762 rows x 49 cols
+2026-11-04 19:58:38 [INFO ] [main] ==================================================
+2026-11-04 19:58:38 [INFO ] [main] Done: 10.29v1_de.xlsx
+2026-11-04 19:58:39 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-04 19:58:39 [INFO ] [jenkins] 
+2026-11-04 19:58:39 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-04 19:58:39 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:58:40 [INFO ] [color_size_main] Source: 10.29v1_de.xlsx
+2026-11-04 19:58:44 [INFO ] [color_size_main] Extracted: 4704 data lines + 58 separators → check_.txt
+2026-11-04 19:58:44 [INFO ] [color_size_main] Running: process.py
+2026-11-04 19:58:44 [INFO ] [color_size_deal] Groups: 58, lines: 4704 (file: 4762)
+2026-11-04 19:58:44 [INFO ] [color_size_deal] Prefixes: {'01': 1087, '02': 503, '03': 270, '04': 142, '05': 62, '06': 45, '07': 23, '08': 23, '09': 8, '10': 8, '11': 8}
+2026-11-04 19:58:44 [INFO ] [color_size_deal] Done.
+2026-11-04 19:58:44 [INFO ] [color_size_main] Processing write-back: 4762 lines
+2026-11-04 19:58:54 [INFO ] [color_size_main] Write-back: 2237 written, 2525 unchanged → 10.29v1_de.xlsx
+2026-11-04 19:58:54 [INFO ] [color_size_main] Done.
+2026-11-04 19:58:54 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-04 19:58:54 [INFO ] [jenkins] 
+2026-11-04 19:58:54 [INFO ] [jenkins] ==================================================
+2026-11-04 19:58:54 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-04 19:58:54 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 19:58:54 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 19:58:54 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 19:58:54 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-04 19:59:54 [INFO ] [jenkins] ==================================================
+2026-11-04 19:59:54 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-04 19:59:54 [INFO ] [jenkins] ==================================================
+2026-11-04 19:59:54 [INFO ] [jenkins] 
+2026-11-04 19:59:54 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-04 19:59:54 [INFO ] [jenkins] ------------------------------
+2026-11-04 19:59:54 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\10.29v1_de.xlsx
+2026-11-04 19:59:54 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-11-04 19:59:54 [INFO ] [jenkins] 
+2026-11-04 19:59:54 [INFO ] [jenkins] ==================================================
+2026-11-04 19:59:54 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-04 19:59:54 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 19:59:54 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 19:59:54 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 19:59:54 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-04 20:00:14 [INFO ] [jenkins] ==================================================
+2026-11-04 20:00:14 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-04 20:00:14 [INFO ] [jenkins] ==================================================
+2026-11-04 20:00:14 [INFO ] [jenkins] 
+2026-11-04 20:00:14 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-04 20:00:14 [INFO ] [jenkins] ------------------------------
+2026-11-04 20:00:14 [INFO ] [title_workflow] Source: 10.29v1.xlsx
+2026-11-04 20:00:18 [INFO ] [title_workflow] Extracted 58 titles + 58 links
+2026-11-04 20:00:18 [INFO ] [title_workflow] Written: origin_title (58) + origin_link (58)
+2026-11-04 20:00:18 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-04 20:00:18 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-04 20:00:20 [INFO ] [deepseek_web] Opening DeepSeek web (58 titles)...
+2026-11-04 20:00:20 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-04 20:00:31 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-04 20:00:34 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-04 20:00:34 [INFO ] [deepseek_web] [1/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:00:40 [INFO ] [deepseek_web]   Downloaded: 0001_4281136574301711876041.jpg
+2026-11-04 20:00:40 [INFO ] [deepseek_web]   Prefetching next image (2/58)
+2026-11-04 20:00:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:00:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:01:10 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 纽扣开襟长袖衬衫 秋冬节日派对衬衫 圣诞蝴蝶结松枝图案印花衬衫 男士休闲印花衬衫 男士圣诞主题衬衫 男士节日长袖上衣
+2026-11-04 20:01:10 [INFO ] [deepseek_web]   Deleted: 0001_4281136574301711876041.jpg
+2026-11-04 20:01:15 [INFO ] [deepseek_web] [2/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:01:15 [INFO ] [deepseek_web]   Downloaded: 0002_1480145067261786208074.jpg
+2026-11-04 20:01:15 [INFO ] [deepseek_web]   Prefetching next image (3/58)
+2026-11-04 20:01:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:01:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:01:44 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型纽扣衬衫 翻领长袖衬衣 秋冬节日派对衬衫 圣诞树彩灯雪花图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:01:44 [INFO ] [deepseek_web]   Deleted: 0002_1480145067261786208074.jpg
+2026-11-04 20:01:49 [INFO ] [deepseek_web] [3/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:01:49 [INFO ] [deepseek_web]   Downloaded: 0003_3440147471301812222393.jpg
+2026-11-04 20:01:49 [INFO ] [deepseek_web]   Prefetching next image (4/58)
+2026-11-04 20:01:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:02:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:02:18 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型假两件衬衫 翻领纽扣衬衫 秋冬节日派对衬衫 雪花铃铛圣诞树图案衬衫 男士休闲印花上衣 男士节日长袖衬衣 男士主题印花衬衫
+2026-11-04 20:02:18 [INFO ] [deepseek_web]   Deleted: 0003_3440147471301812222393.jpg
+2026-11-04 20:02:23 [INFO ] [deepseek_web] [4/58] 男士圣诞节长袖衬衫
+2026-11-04 20:02:23 [INFO ] [deepseek_web]   Downloaded: 0004_7150859358422220517751.jpg
+2026-11-04 20:02:23 [INFO ] [deepseek_web]   Prefetching next image (5/58)
+2026-11-04 20:02:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:02:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:02:52 [INFO ] [deepseek_web]   Response: 男士长袖衬衫 男士常规版型休闲衬衫 V领立领套头衬衫 秋冬节日派对长袖衬衫 格纹拼接袖口男士衬衫 纯色拼接格纹衬衫 男士圣诞主题长袖上衣 男士套头衬衣 男士休闲
+2026-11-04 20:02:52 [INFO ] [deepseek_web]   Deleted: 0004_7150859358422220517751.jpg
+2026-11-04 20:02:57 [INFO ] [deepseek_web] [5/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:02:58 [INFO ] [deepseek_web]   Downloaded: 0005_7551141093771713838535.jpg
+2026-11-04 20:02:58 [INFO ] [deepseek_web]   Prefetching next image (6/58)
+2026-11-04 20:02:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:03:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:03:27 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 秋冬节日派对长袖衬衣 假两件3D肌肉印花衬衫 圣诞彩灯图案纽扣衬衫 男士休闲节日主题上衣 男士搞怪印花长袖衬衣
+2026-11-04 20:03:27 [INFO ] [deepseek_web]   Deleted: 0005_7551141093771713838535.jpg
+2026-11-04 20:03:32 [INFO ] [deepseek_web] [6/58] 男士圣诞长袖衬衫
+2026-11-04 20:04:19 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='8u1d8l6vj7ve9phm.imgsapp.com', port=443): Read timed out.
+2026-11-04 20:04:24 [INFO ] [deepseek_web] [7/58] 男士圣诞立领长袖衬衫
+2026-11-04 20:04:30 [INFO ] [deepseek_web]   Downloaded: 0007_8590239249144111467257.jpg
+2026-11-04 20:04:30 [INFO ] [deepseek_web]   Prefetching next image (8/58)
+2026-11-04 20:04:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:04:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:04:59 [INFO ] [deepseek_web]   Response: 男士圣诞立领长袖衬衫 男士常规版型休闲衬衫 立领纽扣开襟长袖衬衫 秋冬节日派对衬衫 星星彩灯印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士立领图案衬衫
+2026-11-04 20:04:59 [INFO ] [deepseek_web]   Deleted: 0007_8590239249144111467257.jpg
+2026-11-04 20:05:04 [INFO ] [deepseek_web] [8/58] 男士圣诞长袖衬衫
+2026-11-04 20:05:04 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-04 20:05:09 [INFO ] [deepseek_web] [9/58] 男士趣味长袖T恤上衣
+2026-11-04 20:05:14 [INFO ] [deepseek_web]   Downloaded: 0009_1960453561733944940546.jpg
+2026-11-04 20:05:14 [INFO ] [deepseek_web]   Prefetching next image (10/58)
+2026-11-04 20:05:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:05:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:05:43 [INFO ] [deepseek_web]   Response: 男士趣味长袖T恤上衣 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 3D肌肉印花T恤 圣诞雪花松枝图案上衣 男士休闲长袖上衣 男士搞怪印花长袖衫 男士节日
+2026-11-04 20:05:43 [INFO ] [deepseek_web]   Deleted: 0009_1960453561733944940546.jpg
+2026-11-04 20:05:48 [INFO ] [deepseek_web] [10/58] 男士印花长袖衬衫
+2026-11-04 20:05:48 [INFO ] [deepseek_web]   Downloaded: 0010_8221059130516683443130.jpg
+2026-11-04 20:05:48 [INFO ] [deepseek_web]   Prefetching next image (11/58)
+2026-11-04 20:05:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:05:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:06:17 [INFO ] [deepseek_web]   Response: 男士印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞雪花麋鹿图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对衬衫
+2026-11-04 20:06:17 [INFO ] [deepseek_web]   Deleted: 0010_8221059130516683443130.jpg
+2026-11-04 20:06:22 [INFO ] [deepseek_web] [11/58] 男士趣味长袖T恤上衣
+2026-11-04 20:06:22 [INFO ] [deepseek_web]   Downloaded: 0011_3721110465191416212789.jpg
+2026-11-04 20:06:22 [INFO ] [deepseek_web]   Prefetching next image (12/58)
+2026-11-04 20:06:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:06:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:06:51 [INFO ] [deepseek_web]   Response: 男士趣味长袖T恤上衣 男士常规版型圆领套头衫 男士长袖T恤 秋冬节日派对上衣 3D肌肉印花T恤 圣诞夏威夷图案长袖衫 男士休闲印花T恤 男士搞怪主题上衣 男士节
+2026-11-04 20:06:51 [INFO ] [deepseek_web]   Deleted: 0011_3721110465191416212789.jpg
+2026-11-04 20:06:56 [INFO ] [deepseek_web] [12/58] 男士印花长袖衬衫
+2026-11-04 20:06:56 [INFO ] [deepseek_web]   Downloaded: 0012_5720445003483573254132.jpg
+2026-11-04 20:06:56 [INFO ] [deepseek_web]   Prefetching next image (13/58)
+2026-11-04 20:06:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:07:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:07:25 [INFO ] [deepseek_web]   Response: 男士印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 冬季节日派对衬衫 雪花满印图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士休闲长袖衬衫
+2026-11-04 20:07:25 [INFO ] [deepseek_web]   Deleted: 0012_5720445003483573254132.jpg
+2026-11-04 20:07:30 [INFO ] [deepseek_web] [13/58] 圣诞节男士印花款衬衫
+2026-11-04 20:07:30 [INFO ] [deepseek_web]   Downloaded: 0013_2511010191664526453679.jpg
+2026-11-04 20:07:30 [INFO ] [deepseek_web]   Prefetching next image (14/58)
+2026-11-04 20:07:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:07:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:07:59 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞老人图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士搞怪趣味长袖衫
+2026-11-04 20:07:59 [INFO ] [deepseek_web]   Deleted: 0013_2511010191664526453679.jpg
+2026-11-04 20:08:04 [INFO ] [deepseek_web] [14/58] 圣诞节男士印花款上衣
+2026-11-04 20:08:04 [INFO ] [deepseek_web]   Downloaded: 0014_7480448149343321189281.jpg
+2026-11-04 20:08:04 [INFO ] [deepseek_web]   Prefetching next image (15/58)
+2026-11-04 20:08:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:08:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:08:34 [INFO ] [deepseek_web]   Response: 男士圣诞节印花长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 圣诞老人滑雪印花上衣 男士休闲印花长袖衫 男士趣味套头T恤 男士圣诞主题长袖上衣
+2026-11-04 20:08:34 [INFO ] [deepseek_web]   Deleted: 0014_7480448149343321189281.jpg
+2026-11-04 20:08:39 [INFO ] [deepseek_web] [15/58] 男士上衣长袖T恤
+2026-11-04 20:08:39 [INFO ] [deepseek_web]   Downloaded: 0015_7801032476829311775873.jpg
+2026-11-04 20:08:39 [INFO ] [deepseek_web]   Prefetching next image (16/58)
+2026-11-04 20:08:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:08:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:09:08 [INFO ] [deepseek_web]   Response: 男士长袖T恤 男士常规版型套头衫 圆领长袖上衣 秋冬节日派对T恤 3D立体圣诞老人印花长袖衫 男士趣味图案套头衫 男士休闲印花上衣 男士搞怪圣诞T恤
+2026-11-04 20:09:08 [INFO ] [deepseek_web]   Deleted: 0015_7801032476829311775873.jpg
+2026-11-04 20:09:13 [INFO ] [deepseek_web] [16/58] 男士上衣长袖T恤
+2026-11-04 20:09:13 [INFO ] [deepseek_web]   Downloaded: 0016_1421121365841620536323.jpg
+2026-11-04 20:09:13 [INFO ] [deepseek_web]   Prefetching next image (17/58)
+2026-11-04 20:09:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:09:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:09:42 [INFO ] [deepseek_web]   Response: 男士长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 秋冬休闲打底衫 秋冬节日派对上衣 圣诞松鼠雪花印花T恤 卡通动物图案长袖衫 男士休闲长袖上衣 男士趣味套头T
+2026-11-04 20:09:42 [INFO ] [deepseek_web]   Deleted: 0016_1421121365841620536323.jpg
+2026-11-04 20:09:47 [INFO ] [deepseek_web] [17/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:09:47 [INFO ] [deepseek_web]   Downloaded: 0017_0181043334649935084663.jpg
+2026-11-04 20:09:47 [INFO ] [deepseek_web]   Prefetching next image (18/58)
+2026-11-04 20:09:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:09:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:10:16 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 雪花麋鹿图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士休闲节日上衣
+2026-11-04 20:10:16 [INFO ] [deepseek_web]   Deleted: 0017_0181043334649935084663.jpg
+2026-11-04 20:10:21 [INFO ] [deepseek_web] [18/58] 男士圣诞印花长袖T恤
+2026-11-04 20:10:21 [INFO ] [deepseek_web]   Downloaded: 0018_2140749257871013944074.jpg
+2026-11-04 20:10:21 [INFO ] [deepseek_web]   Prefetching next image (19/58)
+2026-11-04 20:10:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:10:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:10:50 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 带纽扣长袖T恤 秋冬节日派对上衣 3D圣诞老人雪花印花上衣 男士休闲长袖衫 男士趣味套头T恤 男士圣诞主题长袖上衣
+2026-11-04 20:10:50 [INFO ] [deepseek_web]   Deleted: 0018_2140749257871013944074.jpg
+2026-11-04 20:10:55 [INFO ] [deepseek_web] [19/58] 男士圣诞印花长袖T恤
+2026-11-04 20:10:55 [INFO ] [deepseek_web]   Downloaded: 0019_4030851593543941834007.jpg
+2026-11-04 20:10:55 [INFO ] [deepseek_web]   Prefetching next image (20/58)
+2026-11-04 20:10:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:11:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:11:24 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型套头衫 带纽扣亨利领长袖上衣 秋冬节日派对长袖T恤 圣诞老人墨镜字母印花衫 男士休闲长袖套头衫 男士趣味印花打底衫 男士半开襟
+2026-11-04 20:11:24 [INFO ] [deepseek_web]   Deleted: 0019_4030851593543941834007.jpg
+2026-11-04 20:11:29 [INFO ] [deepseek_web] [20/58] 男士圣诞印花长袖T恤
+2026-11-04 20:11:29 [INFO ] [deepseek_web]   Downloaded: 0020_3250842477401918140499.jpg
+2026-11-04 20:11:29 [INFO ] [deepseek_web]   Prefetching next image (21/58)
+2026-11-04 20:11:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:11:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:11:58 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 趣味圣诞老人图案印花长袖衫 男士休闲长袖上衣 男士搞怪套头T恤 男士节日主题长袖衫
+2026-11-04 20:11:58 [INFO ] [deepseek_web]   Deleted: 0020_3250842477401918140499.jpg
+2026-11-04 20:12:03 [INFO ] [deepseek_web] [21/58] 男士圣诞印花长袖衬衫
+2026-11-04 20:12:19 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='swhe90vje77jpc55.imgsapp.com', port=443): Read timed out.
+2026-11-04 20:12:24 [INFO ] [deepseek_web] [22/58] 男士圣诞印花长袖T恤
+2026-11-04 20:12:30 [INFO ] [deepseek_web]   Downloaded: 0022_4660836026691468306638.jpg
+2026-11-04 20:12:30 [INFO ] [deepseek_web]   Prefetching next image (23/58)
+2026-11-04 20:12:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:12:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:13:00 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 男士长袖T恤 秋冬节日派对上衣 圣诞老人雪景动物印花长袖衫 男士休闲印花上衣 男士趣味套头T恤 男士圣诞主题长袖衫
+2026-11-04 20:13:00 [INFO ] [deepseek_web]   Deleted: 0022_4660836026691468306638.jpg
+2026-11-04 20:13:05 [INFO ] [deepseek_web] [23/58] 男士圣诞长袖衬衫
+2026-11-04 20:13:12 [INFO ] [deepseek_web]   Downloaded: 0023_2580754065371126548409.jpg
+2026-11-04 20:13:12 [INFO ] [deepseek_web]   Prefetching next image (24/58)
+2026-11-04 20:13:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:13:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:13:42 [INFO ] [deepseek_web]   Response: 男士圣诞长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞雪景印花衬衫 圣诞老人雪花图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:13:42 [INFO ] [deepseek_web]   Deleted: 0023_2580754065371126548409.jpg
+2026-11-04 20:13:47 [INFO ] [deepseek_web] [24/58] 男士圣诞长POLO衫
+2026-11-04 20:13:47 [INFO ] [deepseek_web]   Downloaded: 0024_8240344472582411781451.jpg
+2026-11-04 20:13:47 [INFO ] [deepseek_web]   Prefetching next image (25/58)
+2026-11-04 20:13:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:13:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:14:16 [INFO ] [deepseek_web]   Response: 男士圣诞长袖POLO衫 男士常规版型翻领POLO衫 带纽扣长袖POLO衫 秋冬节日派对上衣 圣诞老人风笛印花POLO衫 格纹拼接长袖衫 男士休闲长袖上衣 男士节
+2026-11-04 20:14:16 [INFO ] [deepseek_web]   Deleted: 0024_8240344472582411781451.jpg
+2026-11-04 20:14:21 [INFO ] [deepseek_web] [25/58] 男士圣诞节印花衬衫
+2026-11-04 20:14:21 [INFO ] [deepseek_web]   Downloaded: 0025_7031057311585870540271.jpg
+2026-11-04 20:14:21 [INFO ] [deepseek_web]   Prefetching next image (26/58)
+2026-11-04 20:14:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:14:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:14:50 [INFO ] [deepseek_web]   Response: 男士圣诞节印花衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞老人雪橇图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:14:50 [INFO ] [deepseek_web]   Deleted: 0025_7031057311585870540271.jpg
+2026-11-04 20:14:55 [INFO ] [deepseek_web] [26/58] 男士圣诞印花长袖T恤
+2026-11-04 20:14:55 [INFO ] [deepseek_web]   Downloaded: 0026_7821113277971223374527.jpg
+2026-11-04 20:14:55 [INFO ] [deepseek_web]   Prefetching next image (27/58)
+2026-11-04 20:14:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:15:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:15:24 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 男士长袖T恤 秋冬节日派对上衣 3D立体西部牛仔圣诞老人印花长袖衫 男士休闲印花上衣 男士趣味套头T恤 男士圣诞主
+2026-11-04 20:15:24 [INFO ] [deepseek_web]   Deleted: 0026_7821113277971223374527.jpg
+2026-11-04 20:15:29 [INFO ] [deepseek_web] [27/58] 男士圣诞节印花衬衫
+2026-11-04 20:15:29 [INFO ] [deepseek_web]   Downloaded: 0027_8001050556972545785686.jpg
+2026-11-04 20:15:29 [INFO ] [deepseek_web]   Prefetching next image (28/58)
+2026-11-04 20:15:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:15:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:15:59 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 缎面质感雪花圣诞球图案衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:15:59 [INFO ] [deepseek_web]   Deleted: 0027_8001050556972545785686.jpg
+2026-11-04 20:16:04 [INFO ] [deepseek_web] [28/58] 男士圣诞节印花衬衫
+2026-11-04 20:16:04 [INFO ] [deepseek_web]   Downloaded: 0028_4040414493882893818779.jpg
+2026-11-04 20:16:04 [INFO ] [deepseek_web]   Prefetching next image (29/58)
+2026-11-04 20:16:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:16:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:16:33 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞乐器松枝图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日印花衬衫
+2026-11-04 20:16:33 [INFO ] [deepseek_web]   Deleted: 0028_4040414493882893818779.jpg
+2026-11-04 20:16:38 [INFO ] [deepseek_web] [29/58] 男士圣诞搞怪麋鹿衬衫
+2026-11-04 20:16:38 [INFO ] [deepseek_web]   Downloaded: 0029_6710304253182019258709.jpg
+2026-11-04 20:16:38 [INFO ] [deepseek_web]   Prefetching next image (30/58)
+2026-11-04 20:16:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:16:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:17:07 [INFO ] [deepseek_web]   Response: 男士圣诞搞怪麋鹿衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 趣味麋鹿雪花印花衬衫 男士休闲印花上衣 男士搞怪长袖衬衫 男士节日主题长袖衬衣
+2026-11-04 20:17:07 [INFO ] [deepseek_web]   Deleted: 0029_6710304253182019258709.jpg
+2026-11-04 20:17:12 [INFO ] [deepseek_web] [30/58] 男士圣诞节主题印花长袖翻领衬衫男士3D印花衬衫
+2026-11-04 20:17:12 [INFO ] [deepseek_web]   Downloaded: 0030_4730944212893320978742.jpg
+2026-11-04 20:17:12 [INFO ] [deepseek_web]   Prefetching next image (31/58)
+2026-11-04 20:17:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:17:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:17:41 [INFO ] [deepseek_web]   Response: 男士圣诞主题3D印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 趣味圣诞老人驯鹿图案印花衬衫 男士休闲长袖上衣 男士搞怪3D印花衬衣 男士
+2026-11-04 20:17:41 [INFO ] [deepseek_web]   Deleted: 0030_4730944212893320978742.jpg
+2026-11-04 20:17:46 [INFO ] [deepseek_web] [31/58] 圣诞节男士印花衬衫
+2026-11-04 20:17:46 [INFO ] [deepseek_web]   Downloaded: 0031_5920727506724238260626.jpg
+2026-11-04 20:17:46 [INFO ] [deepseek_web]   Prefetching next image (32/58)
+2026-11-04 20:17:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:17:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:18:15 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞树雪花图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:18:15 [INFO ] [deepseek_web]   Deleted: 0031_5920727506724238260626.jpg
+2026-11-04 20:18:20 [INFO ] [deepseek_web] [32/58] 男士圣诞节印花衬衫
+2026-11-04 20:18:20 [INFO ] [deepseek_web]   Downloaded: 0032_4871016143768275442208.jpg
+2026-11-04 20:18:20 [INFO ] [deepseek_web]   Prefetching next image (33/58)
+2026-11-04 20:18:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:18:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:18:50 [INFO ] [deepseek_web]   Response: 男士圣诞节印花衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 趣味圣诞老人肌肉图案印花衬衫 男士休闲3D印花上衣 男士圣诞主题长袖衬衣 男士搞怪节
+2026-11-04 20:18:50 [INFO ] [deepseek_web]   Deleted: 0032_4871016143768275442208.jpg
+2026-11-04 20:18:55 [INFO ] [deepseek_web] [33/58] 男士圣诞长袖POLO
+2026-11-04 20:18:55 [INFO ] [deepseek_web]   Downloaded: 0033_2340827302072910018350.jpg
+2026-11-04 20:18:55 [INFO ] [deepseek_web]   Prefetching next image (34/58)
+2026-11-04 20:18:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:19:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:19:24 [INFO ] [deepseek_web]   Response: 男士圣诞长袖POLO衫 男士常规版型翻领POLO衫 带纽扣长袖POLO衫 秋冬节日派对上衣 圣诞老人雪景图案印花POLO衫 男士休闲长袖上衣 男士节日主题POL
+2026-11-04 20:19:24 [INFO ] [deepseek_web]   Deleted: 0033_2340827302072910018350.jpg
+2026-11-04 20:19:29 [INFO ] [deepseek_web] [34/58] 男士圣诞长袖POLO
+2026-11-04 20:19:29 [INFO ] [deepseek_web]   Downloaded: 0034_1960833416722910880087.jpg
+2026-11-04 20:19:29 [INFO ] [deepseek_web]   Prefetching next image (35/58)
+2026-11-04 20:19:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:19:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:19:58 [INFO ] [deepseek_web]   Response: 男士圣诞长袖POLO衫 男士常规版型翻领POLO衫 带纽扣长袖POLO衫 秋冬节日派对上衣 圣诞老人雪景印花POLO衫 男士休闲长袖上衣 男士节日主题POLO衫
+2026-11-04 20:19:58 [INFO ] [deepseek_web]   Deleted: 0034_1960833416722910880087.jpg
+2026-11-04 20:20:03 [INFO ] [deepseek_web] [35/58] 圣诞男士印花衬衫
+2026-11-04 20:20:03 [INFO ] [deepseek_web]   Downloaded: 0035_4080304172477824860714.jpg
+2026-11-04 20:20:03 [INFO ] [deepseek_web]   Prefetching next image (36/58)
+2026-11-04 20:20:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:20:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:20:32 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 发光圣诞树雪花图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日长袖上
+2026-11-04 20:20:32 [INFO ] [deepseek_web]   Deleted: 0035_4080304172477824860714.jpg
+2026-11-04 20:20:37 [INFO ] [deepseek_web] [36/58] 圣诞节男士印花POLO衫
+2026-11-04 20:20:37 [INFO ] [deepseek_web]   Downloaded: 0036_7350847484173514676905.jpg
+2026-11-04 20:20:37 [INFO ] [deepseek_web]   Prefetching next image (37/58)
+2026-11-04 20:20:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:20:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:21:06 [INFO ] [deepseek_web]   Response: 男士圣诞印花短袖POLO衫 男士常规版型翻领POLO衫 带纽扣短袖上衣 夏季节日派对POLO衫 圣诞球雪花拼接印花POLO衫 男士休闲短袖上衣 男士圣诞主题翻领
+2026-11-04 20:21:06 [INFO ] [deepseek_web]   Deleted: 0036_7350847484173514676905.jpg
+2026-11-04 20:21:11 [INFO ] [deepseek_web] [37/58] 男士圣诞短袖T恤上衣
+2026-11-04 20:21:11 [INFO ] [deepseek_web]   Downloaded: 0037_3440446510303620516538.jpg
+2026-11-04 20:21:11 [INFO ] [deepseek_web]   Prefetching next image (38/58)
+2026-11-04 20:21:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:21:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:21:40 [INFO ] [deepseek_web]   Response: 男士圣诞短袖T恤 男士常规版型圆领套头衫 男士假两件短袖上衣 领结图案短袖衫 冬季节日派对T恤 雪花冰霜印花上衣 男士休闲短袖衫 男士圣诞主题短袖 男士节日印花
+2026-11-04 20:21:40 [INFO ] [deepseek_web]   Deleted: 0037_3440446510303620516538.jpg
+2026-11-04 20:21:45 [INFO ] [deepseek_web] [38/58] 男士圣诞节长袖衬衫
+2026-11-04 20:21:45 [INFO ] [deepseek_web]   Downloaded: 0038_2950421591442614951928.jpg
+2026-11-04 20:21:45 [INFO ] [deepseek_web]   Prefetching next image (39/58)
+2026-11-04 20:21:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:21:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:22:14 [INFO ] [deepseek_web]   Response: 男士圣诞节长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞树彩灯图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对印花衬衫
+2026-11-04 20:22:14 [INFO ] [deepseek_web]   Deleted: 0038_2950421591442614951928.jpg
+2026-11-04 20:22:19 [INFO ] [deepseek_web] [39/58] 男士圣诞节长袖T恤
+2026-11-04 20:22:19 [INFO ] [deepseek_web]   Downloaded: 0039_4610759189641312881463.jpg
+2026-11-04 20:22:19 [INFO ] [deepseek_web]   Prefetching next image (40/58)
+2026-11-04 20:22:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:22:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:22:48 [INFO ] [deepseek_web]   Response: 男士圣诞节长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 秋冬节日派对上衣 圣诞树线稿图案印花长袖衫 男士休闲打底衫 男士长袖T恤 男士节日主题上衣 男士休闲套
+2026-11-04 20:22:48 [INFO ] [deepseek_web]   Deleted: 0039_4610759189641312881463.jpg
+2026-11-04 20:22:53 [INFO ] [deepseek_web] [40/58] 男士圣诞节长袖T恤
+2026-11-04 20:22:53 [INFO ] [deepseek_web]   Downloaded: 0040_3751107568131283237251.jpg
+2026-11-04 20:22:53 [INFO ] [deepseek_web]   Prefetching next image (41/58)
+2026-11-04 20:22:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:23:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:23:23 [INFO ] [deepseek_web]   Response: 男士圣诞节长袖T恤 男士常规版型圆领套头衫 假两件印花长袖上衣 秋冬节日派对T恤 3D肌肉格子毛绒印花长袖衫 男士休闲套头T恤 男士趣味长袖打底衫 男士节日主题
+2026-11-04 20:23:23 [INFO ] [deepseek_web]   Deleted: 0040_3751107568131283237251.jpg
+2026-11-04 20:23:28 [INFO ] [deepseek_web] [41/58] 男士圣诞节长袖T恤
+2026-11-04 20:23:28 [INFO ] [deepseek_web]   Downloaded: 0041_6360841260411666845138.jpg
+2026-11-04 20:23:28 [INFO ] [deepseek_web]   Prefetching next image (42/58)
+2026-11-04 20:23:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:23:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:23:57 [INFO ] [deepseek_web]   Response: 男士圣诞节长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 秋冬节日派对上衣 宗教文字十字架印花长袖衫 雪花星星图案长袖T恤 男士休闲打底衫 男士节日主题长袖上衣
+2026-11-04 20:23:57 [INFO ] [deepseek_web]   Deleted: 0041_6360841260411666845138.jpg
+2026-11-04 20:24:02 [INFO ] [deepseek_web] [42/58] 男士圣诞圆领长袖T恤
+2026-11-04 20:24:02 [INFO ] [deepseek_web]   Downloaded: 0042_9910349556182690150012.jpg
+2026-11-04 20:24:02 [INFO ] [deepseek_web]   Prefetching next image (43/58)
+2026-11-04 20:24:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:24:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:24:31 [INFO ] [deepseek_web]   Response: 男士圣诞圆领长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 十字架文字印花长袖衫 男士休闲打底衫 男士宗教主题长袖T恤 男士华夫格长袖上衣
+2026-11-04 20:24:31 [INFO ] [deepseek_web]   Deleted: 0042_9910349556182690150012.jpg
+2026-11-04 20:24:36 [INFO ] [deepseek_web] [43/58] 男士圣诞节长袖衬衫
+2026-11-04 20:24:36 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-04 20:24:41 [INFO ] [deepseek_web] [44/58] 男士圣诞圆领长袖T恤
+2026-11-04 20:24:47 [INFO ] [deepseek_web]   Downloaded: 0044_9984091747201369382249.jpg
+2026-11-04 20:24:47 [INFO ] [deepseek_web]   Prefetching next image (45/58)
+2026-11-04 20:24:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:24:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:25:16 [INFO ] [deepseek_web]   Response: 男士圣诞圆领长袖T恤 男士常规版型套头衫 圆领长袖上衣 秋冬节日派对打底衫 圣诞老人窗景图案印花长袖衫 男士华夫格长袖T恤 男士休闲套头T恤 男士节日主题长袖上
+2026-11-04 20:25:16 [INFO ] [deepseek_web]   Deleted: 0044_9984091747201369382249.jpg
+2026-11-04 20:25:21 [INFO ] [deepseek_web] [45/58] 男士圣诞节长袖衬衫
+2026-11-04 20:25:21 [INFO ] [deepseek_web]   Downloaded: 0045_4690937089765746945335.jpg
+2026-11-04 20:25:21 [INFO ] [deepseek_web]   Prefetching next image (46/58)
+2026-11-04 20:25:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:25:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:25:50 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞音符铃铛图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对印花
+2026-11-04 20:25:50 [INFO ] [deepseek_web]   Deleted: 0045_4690937089765746945335.jpg
+2026-11-04 20:25:55 [INFO ] [deepseek_web] [46/58] 男士亮片短袖衬衫
+2026-11-04 20:25:55 [INFO ] [deepseek_web]   Downloaded: 0046_0611051271591121458262.jpg
+2026-11-04 20:25:55 [INFO ] [deepseek_web]   Prefetching next image (47/58)
+2026-11-04 20:25:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:26:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:26:24 [INFO ] [deepseek_web]   Response: 男士亮片短袖衬衫 男士常规版型翻领衬衫 带纽扣短袖衬衣 夏季派对演出衬衫 亮片纯色衬衫 男士派对亮片上衣 男士舞台表演衬衫 男士短袖翻领衬衫
+2026-11-04 20:26:24 [INFO ] [deepseek_web]   Deleted: 0046_0611051271591121458262.jpg
+2026-11-04 20:26:29 [INFO ] [deepseek_web] [47/58] 男士复古年代翻领衬衫
+2026-11-04 20:26:29 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-04 20:26:34 [INFO ] [deepseek_web] [48/58] 男士插肩袖条纹上衣
+2026-11-04 20:26:38 [INFO ] [deepseek_web]   Downloaded: 0048_0351009125395525314990.jpg
+2026-11-04 20:26:38 [INFO ] [deepseek_web]   Prefetching next image (49/58)
+2026-11-04 20:26:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:26:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:27:07 [INFO ] [deepseek_web]   Response: 男士插肩袖条纹上衣 男士常规版型圆领套头衫 男士长袖T恤 春秋季休闲打底衫 插肩袖长袖上衣 横条纹图案套头衫 男士休闲长袖T恤 男士条纹打底衫 男士日常套头衫
+2026-11-04 20:27:07 [INFO ] [deepseek_web]   Deleted: 0048_0351009125395525314990.jpg
+2026-11-04 20:27:12 [INFO ] [deepseek_web] [49/58] 男士狂欢节长袖t恤
+2026-11-04 20:27:12 [INFO ] [deepseek_web]   Downloaded: 0049_2141201341705016368933.jpg
+2026-11-04 20:27:12 [INFO ] [deepseek_web]   Prefetching next image (50/58)
+2026-11-04 20:27:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:27:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:27:41 [INFO ] [deepseek_web]   Response: 男士狂欢节长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 华夫格长袖衫 狂欢节小丑啤酒印花上衣 字母印花长袖套头衫 男士休闲打底衫 男士节日主题长
+2026-11-04 20:27:41 [INFO ] [deepseek_web]   Deleted: 0049_2141201341705016368933.jpg
+2026-11-04 20:27:46 [INFO ] [deepseek_web] [50/58] 男士条纹休闲印花上衣圆领长袖T恤2
+2026-11-04 20:27:46 [INFO ] [deepseek_web]   Downloaded: 0050_2910837243612196124583.jpg
+2026-11-04 20:27:46 [INFO ] [deepseek_web]   Prefetching next image (51/58)
+2026-11-04 20:27:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:27:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:28:15 [INFO ] [deepseek_web]   Response: 男士条纹休闲长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 春秋季休闲打底衫 横条纹图案长袖衫 男士休闲长袖上衣 男士条纹打底T恤 男士套头长袖衫
+2026-11-04 20:28:15 [INFO ] [deepseek_web]   Deleted: 0050_2910837243612196124583.jpg
+2026-11-04 20:28:20 [INFO ] [deepseek_web] [51/58] 男士短袖亮片衬衫
+2026-11-04 20:28:20 [INFO ] [deepseek_web]   Downloaded: 0051_1310549158304014433663.jpg
+2026-11-04 20:28:20 [INFO ] [deepseek_web]   Prefetching next image (52/58)
+2026-11-04 20:28:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:28:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:28:49 [INFO ] [deepseek_web]   Response: 男士短袖亮片衬衫 男士常规版型翻领衬衫 带纽扣短袖衬衣 夏季派对演出衬衫 拼接亮片短袖上衣 男士舞台表演衬衫 男士夜店短袖衬衫 男士纯色亮片拼接上衣 男士休闲派
+2026-11-04 20:28:49 [INFO ] [deepseek_web]   Deleted: 0051_1310549158304014433663.jpg
+2026-11-04 20:28:54 [INFO ] [deepseek_web] [52/58] 狂欢节仿真丝亮面衬衫
+2026-11-04 20:28:54 [INFO ] [deepseek_web]   Downloaded: 0052_7911044103402318949094.jpg
+2026-11-04 20:28:54 [INFO ] [deepseek_web]   Prefetching next image (53/58)
+2026-11-04 20:28:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:29:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:29:23 [INFO ] [deepseek_web]   Response: 男士仿真丝亮面长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 春秋季派对演出衬衫 男士亮面缎面衬衫 男士舞台表演长袖上衣 男士休闲派对长袖衬衣 男士夜店节日上衣
+2026-11-04 20:29:23 [INFO ] [deepseek_web]   Deleted: 0052_7911044103402318949094.jpg
+2026-11-04 20:29:28 [INFO ] [deepseek_web] [53/58] 男士狂欢节长袖T恤
+2026-11-04 20:29:28 [INFO ] [deepseek_web]   Downloaded: 0053_4520356254012518146957.jpg
+2026-11-04 20:29:28 [INFO ] [deepseek_web]   Prefetching next image (54/58)
+2026-11-04 20:29:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:29:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:29:58 [INFO ] [deepseek_web]   Response: 男士狂欢节长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 华夫格长袖打底衫 狂欢节小丑啤酒字母印花上衣 男士休闲长袖上衣 男士节日主题套头衫
+2026-11-04 20:29:58 [INFO ] [deepseek_web]   Deleted: 0053_4520356254012518146957.jpg
+2026-11-04 20:30:03 [INFO ] [deepseek_web] [54/58] 男士条纹长袖上衣
+2026-11-04 20:30:03 [INFO ] [deepseek_web]   Downloaded: 0054_1501038380808063411970.jpg
+2026-11-04 20:30:03 [INFO ] [deepseek_web]   Prefetching next image (55/58)
+2026-11-04 20:30:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:30:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:30:32 [INFO ] [deepseek_web]   Response: 男士条纹长袖上衣 男士常规版型半拉链套头衫 男士翻领长袖T恤 春秋季休闲打底衫 横条纹图案长袖衫 男士半开襟长袖上衣 男士运动休闲长袖套头衫 男士户外派对长袖衫
+2026-11-04 20:30:32 [INFO ] [deepseek_web]   Deleted: 0054_1501038380808063411970.jpg
+2026-11-04 20:30:37 [INFO ] [deepseek_web] [55/58] 男士亮片派对衬衫
+2026-11-04 20:30:37 [INFO ] [deepseek_web]   Downloaded: 0055_6570500412003811710127.jpg
+2026-11-04 20:30:37 [INFO ] [deepseek_web]   Prefetching next image (56/58)
+2026-11-04 20:30:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:30:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:31:06 [INFO ] [deepseek_web]   Response: 男士亮片派对长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 春秋季派对演出上衣 拼接亮片金属光感衬衫 男士舞台表演衬衫 男士夜店派对上衣 男士亮面长袖衬衣
+2026-11-04 20:31:06 [INFO ] [deepseek_web]   Deleted: 0055_6570500412003811710127.jpg
+2026-11-04 20:31:11 [INFO ] [deepseek_web] [56/58] 狂欢节男士亮片衬衫
+2026-11-04 20:31:11 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-04 20:31:16 [INFO ] [deepseek_web] [57/58] 男士狂欢节Polo衫
+2026-11-04 20:31:21 [INFO ] [deepseek_web]   Downloaded: 0057_2870439297933214609373.jpg
+2026-11-04 20:31:21 [INFO ] [deepseek_web]   Prefetching next image (58/58)
+2026-11-04 20:31:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:31:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:31:50 [INFO ] [deepseek_web]   Response: 男士狂欢节Polo衫 男士常规版型翻领上衣 男士长袖Polo衫 带纽扣翻领长袖衫 春秋季派对长袖上衣 面具鸢尾花印花Polo衫 男士休闲节日长袖T恤 男士满印图
+2026-11-04 20:31:50 [INFO ] [deepseek_web]   Deleted: 0057_2870439297933214609373.jpg
+2026-11-04 20:31:55 [INFO ] [deepseek_web] [58/58] 男士亮片t恤
+2026-11-04 20:31:55 [INFO ] [deepseek_web]   Downloaded: 0058_5380324001792510206493.jpg
+2026-11-04 20:31:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-04 20:32:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-04 20:32:24 [INFO ] [deepseek_web]   Response: 男士亮片短袖T恤 男士常规版型套头衫 V领短袖上衣 镂空网状衫 夏季节日派对演出服 金属亮片装饰透视衫 男士夜店狂欢节上衣 男士亮片打底衫 男士舞台表演T恤
+2026-11-04 20:32:24 [INFO ] [deepseek_web]   Deleted: 0058_5380324001792510206493.jpg
+2026-11-04 20:32:24 [INFO ] [deepseek_web] 
+2026-11-04 20:32:24 [INFO ] [deepseek_web] Retry round 1: 6 failed item(s)
+2026-11-04 20:32:29 [INFO ] [deepseek_web]   Retry [6]: 男士圣诞长袖衬衫
+2026-11-04 20:32:52 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:33:10 [INFO ] [deepseek_web]     OK: 男士圣诞长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对上衣 圣诞灯泡图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日印花衬衫
+2026-11-04 20:33:13 [INFO ] [deepseek_web]   Retry [8]: 男士圣诞长袖衬衫
+2026-11-04 20:33:35 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:33:53 [INFO ] [deepseek_web]     OK: 男士圣诞长袖衬衫 男士常规版型假两件衬衫 带纽扣长袖衬衣 秋冬节日派对上衣 圣诞拐杖糖爱心图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣
+2026-11-04 20:33:56 [INFO ] [deepseek_web]   Retry [21]: 男士圣诞印花长袖衬衫
+2026-11-04 20:34:17 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:34:35 [INFO ] [deepseek_web]     OK: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 发光雪花铃铛图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日长袖上衣
+2026-11-04 20:34:38 [INFO ] [deepseek_web]   Retry [43]: 男士圣诞节长袖衬衫
+2026-11-04 20:35:01 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:35:19 [INFO ] [deepseek_web]     OK: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 雪人雪花图案缎面质感衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对衬衫
+2026-11-04 20:35:22 [INFO ] [deepseek_web]   Retry [47]: 男士复古年代翻领衬衫
+2026-11-04 20:35:47 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:36:05 [INFO ] [deepseek_web]     OK: 男士复古翻领长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 春秋季派对演出衬衫 复古几何胶囊印花上衣 男士休闲长袖衬衫 男士波普风印花衬衣 男士迪斯科派对上衣
+2026-11-04 20:36:08 [INFO ] [deepseek_web]   Retry [56]: 狂欢节男士亮片衬衫
+2026-11-04 20:36:26 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-04 20:36:44 [INFO ] [deepseek_web]     OK: 男士亮片长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 春秋季派对演出衬衫 拼接亮片装饰衬衫 男士狂欢节舞台表演上衣 男士休闲派对长袖衬衣 男士夜店亮片上衣
+2026-11-04 20:36:48 [INFO ] [deepseek_web] ==================================================
+2026-11-04 20:36:48 [INFO ] [deepseek_web] Done: 58 success, 0 failed → optimize_title
+2026-11-04 20:36:49 [INFO ] [title_workflow] Optimization complete: 58 titles
+2026-11-04 20:37:00 [INFO ] [title_workflow] Written 58 optimized titles to column H (8)
+2026-11-04 20:37:00 [INFO ] [title_workflow] Done: 10.29v1.xlsx
+2026-11-04 20:37:00 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-11-04 20:37:00 [INFO ] [jenkins] 
+2026-11-04 20:37:00 [INFO ] [jenkins] ==================================================
+2026-11-04 20:37:00 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-04 20:37:00 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-04 20:37:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-04 20:37:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-04 20:37:00 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

@@ -1,0 +1,480 @@
+2026-11-18 14:34:43 [INFO ] [jenkins] ==================================================
+2026-11-18 14:34:43 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-18 14:34:43 [INFO ] [jenkins] ==================================================
+2026-11-18 14:34:43 [INFO ] [jenkins] 
+2026-11-18 14:34:43 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-18 14:34:43 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:34:43 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-18 14:34:43 [INFO ] [jenkins] 
+2026-11-18 14:34:43 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-18 14:34:43 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:34:43 [INFO ] [preprocess] Preprocessing 2 file(s) with 1 step(s)
+2026-11-18 14:34:43 [INFO ] [preprocess] [product_20261118015924193.xlsx]
+2026-11-18 14:34:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-18 14:34:43 [INFO ] [pipeline] [1/1] remove_header
+2026-11-18 14:34:43 [INFO ] [preprocess]   [product_20261118015924193.xlsx] Sheet [Sheet0]: header row removed
+2026-11-18 14:34:43 [INFO ] [pipeline] Pipeline complete
+2026-11-18 14:34:43 [INFO ] [preprocess] [product_20261118022709932.xlsx]
+2026-11-18 14:34:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-18 14:34:44 [INFO ] [pipeline] [1/1] remove_header
+2026-11-18 14:34:46 [INFO ] [preprocess]   [product_20261118022709932.xlsx] Sheet [Sheet0]: header row removed
+2026-11-18 14:34:46 [INFO ] [pipeline] Pipeline complete
+2026-11-18 14:34:47 [INFO ] [preprocess] Preprocessing complete
+2026-11-18 14:34:47 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-18 14:34:47 [INFO ] [jenkins] 
+2026-11-18 14:34:47 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-18 14:34:47 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:34:47 [INFO ] [main] Log file: 20261118_832eec5b.log
+2026-11-18 14:34:47 [INFO ] [main] Found 2 file(s):
+2026-11-18 14:34:47 [INFO ] [main]   product_20261118015924193.xlsx
+2026-11-18 14:34:47 [INFO ] [main]   product_20261118022709932.xlsx
+2026-11-18 14:34:47 [INFO ] [main] Output: 11.17v1_fr.xlsx
+2026-11-18 14:34:47 [INFO ] [main] ==================================================
+2026-11-18 14:34:50 [INFO ] [main] Merged 2 files, 1766 images total
+2026-11-18 14:34:50 [INFO ] [main] Deleted 2 source file(s)
+2026-11-18 14:34:51 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-18 14:34:51 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-18 14:34:53 [INFO ] [pipeline]   Sheet [Sheet0_2]: 570 rows, 1719 images
+2026-11-18 14:34:53 [INFO ] [pipeline]   Merged 2 sheets -> 1, 570 data rows, 1719 images
+2026-11-18 14:34:53 [INFO ] [pipeline] [2/12] validate
+2026-11-18 14:34:53 [INFO ] [pipeline]   Validated: 581 rows, 27 cols (expect ~32)
+2026-11-18 14:34:53 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-18 14:34:53 [INFO ] [pipeline]   Backed up 1766 images
+2026-11-18 14:34:53 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-18 14:34:53 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-18 14:34:53 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-18 14:34:53 [INFO ] [pipeline]   Restored 1766 images with adjusted anchors
+2026-11-18 14:34:53 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-18 14:34:53 [INFO ] [pipeline]   Column 2: 581 IDs generated
+2026-11-18 14:34:53 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-18 14:34:53 [INFO ] [pipeline]   Column 3: 581 cells filled
+2026-11-18 14:34:53 [INFO ] [pipeline] [6/12] map_colors
+2026-11-18 14:34:53 [INFO ] [pipeline]   Colors J -> K: 559 cells mapped, 22 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-18 14:34:53 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-18 14:34:53 [INFO ] [pipeline]   Size column L: 559 mapped, 22 cleared (col A has fill), 0 no match (recorded)
+2026-11-18 14:34:53 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-18 14:34:53 [INFO ] [pipeline]   Mirror copy: 4233 cells written
+2026-11-18 14:34:53 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-18 14:34:53 [INFO ] [pipeline]   Price source M -> AS: 581 cells copied
+2026-11-18 14:34:53 [INFO ] [pipeline] [10/12] calc_price
+2026-11-18 14:34:54 [INFO ] [pipeline]   Price columns AT-AW: 581 rows calculated
+2026-11-18 14:34:54 [INFO ] [pipeline] [11/12] format_cells
+2026-11-18 14:34:54 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-18 14:34:54 [INFO ] [pipeline]   Formatted 581 rows: h=50, align=left/center
+2026-11-18 14:34:54 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-18 14:34:54 [INFO ] [pipeline] [12/12] finalize
+2026-11-18 14:34:54 [INFO ] [pipeline]   Done: 581 rows x 49 cols (target: 49)
+2026-11-18 14:34:54 [INFO ] [pipeline] Pipeline complete
+2026-11-18 14:34:54 [INFO ] [main] Size: 581 rows x 49 cols
+2026-11-18 14:34:54 [INFO ] [main] ==================================================
+2026-11-18 14:34:54 [INFO ] [main] Done: 11.17v1_fr.xlsx
+2026-11-18 14:34:55 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-18 14:34:55 [INFO ] [jenkins] 
+2026-11-18 14:34:55 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-18 14:34:55 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:34:55 [INFO ] [color_size_main] Source: 11.17v1_fr.xlsx
+2026-11-18 14:34:56 [INFO ] [color_size_main] Extracted: 559 data lines + 22 separators → check_.txt
+2026-11-18 14:34:56 [INFO ] [color_size_main] Running: process.py
+2026-11-18 14:34:56 [INFO ] [color_size_deal] Groups: 22, lines: 559 (file: 581)
+2026-11-18 14:34:56 [INFO ] [color_size_deal] Prefixes: {'01': 147, '02': 59, '03': 10, '04': 10}
+2026-11-18 14:34:56 [INFO ] [color_size_deal] Done.
+2026-11-18 14:34:56 [INFO ] [color_size_main] Processing write-back: 581 lines
+2026-11-18 14:34:58 [INFO ] [color_size_main] Write-back: 248 written, 333 unchanged → 11.17v1_fr.xlsx
+2026-11-18 14:34:58 [INFO ] [color_size_main] Done.
+2026-11-18 14:34:58 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-18 14:34:58 [INFO ] [jenkins] 
+2026-11-18 14:34:58 [INFO ] [jenkins] ==================================================
+2026-11-18 14:34:58 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-18 14:34:58 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-18 14:34:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-18 14:34:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-18 14:34:58 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-18 14:40:01 [INFO ] [jenkins] ==================================================
+2026-11-18 14:40:01 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 14:40:01 [INFO ] [jenkins] ==================================================
+2026-11-18 14:40:01 [INFO ] [jenkins] 
+2026-11-18 14:40:01 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 14:40:01 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:40:01 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 14:40:02 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 14:40:02 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 14:40:02 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 14:40:02 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 14:40:03 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 14:40:03 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 14:40:06 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 14:40:09 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 14:40:09 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣
+2026-11-18 14:40:16 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 14:40:16 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 14:40:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:40:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:40:46 [INFO ] [deepseek_web]   Response: 儿童节日连体衣 角色扮演服装 男女童通用长袖连体裤 宽松版型 连帽尖顶帽 带纽扣毛绒拼接 条纹拼色 秋冬季保暖演出服 圣诞派对装扮 舞台表演服装 毛绒边连体衣 
+2026-11-18 14:40:46 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 14:40:51 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装
+2026-11-18 14:40:51 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 14:40:51 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 14:40:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:41:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:41:20 [INFO ] [deepseek_web]   Response: 圣诞节成人cos套装 女士角色扮演连体衣 节日派对演出服 成人女款宽松灯笼裤连体衣 毛绒拼接领口长袖连体裤 带纽扣连体衣 秋冬季保暖表演服装 丝绒拼色条纹圣诞精
+2026-11-18 14:41:20 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 14:41:23 [INFO ] [jenkins] ==================================================
+2026-11-18 14:41:23 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 14:41:23 [INFO ] [jenkins] ==================================================
+2026-11-18 14:41:23 [INFO ] [jenkins] 
+2026-11-18 14:41:23 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 14:41:23 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:41:24 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 14:41:25 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 14:41:25 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 14:41:25 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 14:41:25 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 14:41:25 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 14:41:25 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 14:41:27 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 14:41:29 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 14:41:29 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 14:41:35 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 14:41:35 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 14:41:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:41:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:42:09 [INFO ] [deepseek_web]   Response: 儿童圣诞精灵Cosplay连体服 节日主题连体衣 男女童宽松带帽连体衣 秋冬季保暖派对表演服 长袖毛绒镶边连体裤 胸前纽扣丝绒条纹装扮服 儿童化装舞会角色扮演服
+2026-11-18 14:42:09 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 14:42:14 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 14:42:14 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 14:42:14 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 14:42:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:42:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:42:43 [INFO ] [deepseek_web]   Response: 圣诞节成人Cosplay连体衣 女士长袖节日派对演出服 丝绒拼接条纹连体裤 带尖顶帽角色扮演套装 毛绒翻领毛球纽扣连体装 秋冬季圣诞精灵化装舞会服装 宽松灯笼裤
+2026-11-18 14:42:43 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 14:42:48 [INFO ] [deepseek_web] [3/22] 圣诞节儿童裙子|1pc 宫廷风服装
+2026-11-18 14:42:48 [INFO ] [deepseek_web]   Downloaded: 0003_6201033194077061692173.jpg
+2026-11-18 14:42:48 [INFO ] [deepseek_web]   Prefetching next image (4/22)
+2026-11-18 14:42:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:42:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:43:17 [INFO ] [deepseek_web]   Response: 圣诞节儿童连衣裙 女童宫廷风公主裙 丝绒长袖蓬蓬裙 收腰蝴蝶结儿童礼服 毛绒拼接领口派对裙 秋冬季保暖演出服 加厚天鹅绒儿童裙 纯色公主裙 女童节日化装舞会裙 
+2026-11-18 14:43:17 [INFO ] [deepseek_web]   Deleted: 0003_6201033194077061692173.jpg
+2026-11-18 14:43:22 [INFO ] [deepseek_web] [4/22] 圣诞节女士连帽cos服|1pc 宫廷风服装
+2026-11-18 14:43:22 [INFO ] [deepseek_web]   Downloaded: 0004_3611056117478795613599.jpg
+2026-11-18 14:43:22 [INFO ] [deepseek_web]   Prefetching next image (5/22)
+2026-11-18 14:43:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:43:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:43:54 [INFO ] [deepseek_web]   Response: 圣诞节女士连帽连衣裙 宫廷风派对连衣短裙 丝绒毛绒镶边连帽裙 成人收腰A字演出服 秋冬保暖Cosplay角色扮演服装 节日化装舞会圣诞礼服裙 天鹅绒纯色中袖派对
+2026-11-18 14:43:54 [INFO ] [deepseek_web]   Deleted: 0004_3611056117478795613599.jpg
+2026-11-18 14:43:59 [INFO ] [deepseek_web] [5/22] 成人翻领裙子|1pc 宫廷风服装
+2026-11-18 14:43:59 [INFO ] [deepseek_web]   Downloaded: 0005_4231157059291250992889.jpg
+2026-11-18 14:43:59 [INFO ] [deepseek_web]   Prefetching next image (6/22)
+2026-11-18 14:43:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:44:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:44:28 [INFO ] [deepseek_web]   Response: 成人女士翻领连衣裙 女装收腰A字长裙 长袖前拉链连衣裙 翻领拉链连身裙 秋冬节日派对打底裙 纯色中长款大摆裙 复古宫廷风连衣裙 秋季日常通勤裙 女士长袖打底裙 
+2026-11-18 14:44:28 [INFO ] [deepseek_web]   Deleted: 0005_4231157059291250992889.jpg
+2026-11-18 14:44:33 [INFO ] [deepseek_web] [6/22] 成人圣诞麋鹿披肩|1pc 宫廷风服装
+2026-11-18 14:44:33 [INFO ] [deepseek_web]   Downloaded: 0006_5530311478687614096280.jpg
+2026-11-18 14:44:33 [INFO ] [deepseek_web]   Prefetching next image (7/22)
+2026-11-18 14:44:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:44:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:45:02 [INFO ] [deepseek_web]   Response: 成人圣诞麋鹿披肩 女士短款毛绒翻领斗篷 丝绒麋鹿印花披风 秋冬季保暖节日派对服装 丝绒吊带连身裙两件套 宫廷风化装舞会演出服 女士圣诞主题披肩外套 复古披风连身
+2026-11-18 14:45:02 [INFO ] [deepseek_web]   Deleted: 0006_5530311478687614096280.jpg
+2026-11-18 14:45:07 [INFO ] [deepseek_web] [7/22] 牧羊人儿童Cos服|1pc 上衣+1pc 马甲+1pc 头巾+1pc 腰带+1pc 头巾绑带
+2026-11-18 14:45:07 [INFO ] [deepseek_web]   Downloaded: 0007_5560319294307620927799.jpg
+2026-11-18 14:45:07 [INFO ] [deepseek_web]   Prefetching next image (8/22)
+2026-11-18 14:45:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:45:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:45:35 [ERROR] [deepseek_web]   FAILED: Locator.all: Target page, context or browser has been closed
+2026-11-18 14:45:35 [INFO ] [deepseek_web]   Deleted: 0007_5560319294307620927799.jpg
+2026-11-18 14:48:46 [INFO ] [jenkins] ==================================================
+2026-11-18 14:48:46 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 14:48:46 [INFO ] [jenkins] ==================================================
+2026-11-18 14:48:46 [INFO ] [jenkins] 
+2026-11-18 14:48:46 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 14:48:46 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:48:46 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 14:48:47 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 14:48:47 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 14:48:47 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 14:48:47 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 14:48:47 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 14:48:47 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 14:48:49 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 14:48:52 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 14:48:52 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 14:48:59 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 14:48:59 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 14:48:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:49:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:49:29 [INFO ] [deepseek_web]   Response: 儿童节日连体衣 圣诞精灵连体裤 男女童cosplay服装 带帽子连体服 包含帽子套装 秋冬保暖毛绒连体衣 条纹图案节日装扮服 圣诞派对演出服 儿童冬季连体外套 
+2026-11-18 14:49:29 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 14:49:34 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 14:49:34 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 14:49:34 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 14:49:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:49:34 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 14:51:19 [INFO ] [jenkins] ==================================================
+2026-11-18 14:51:19 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 14:51:19 [INFO ] [jenkins] ==================================================
+2026-11-18 14:51:19 [INFO ] [jenkins] 
+2026-11-18 14:51:19 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 14:51:19 [INFO ] [jenkins] ------------------------------
+2026-11-18 14:51:20 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 14:51:21 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 14:51:21 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 14:51:21 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 14:51:21 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 14:51:21 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 14:51:21 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 14:51:23 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 14:51:26 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 14:51:26 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 14:51:29 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 14:51:29 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 14:51:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:51:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:52:06 [INFO ] [deepseek_web]   Response: 儿童节日连体衣 圣诞演出服 男女童中性款连体裤 带独立帽子 长袖带纽扣连体衣 毛绒拼接领口袖口 秋冬季派对装扮 圣诞精灵Cosplay服 拼色条纹图案 小丑角色
+2026-11-18 14:52:06 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 14:52:11 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 14:52:11 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 14:52:11 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 14:52:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 14:52:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 14:52:28 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 15:21:07 [INFO ] [jenkins] ==================================================
+2026-11-18 15:21:07 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 15:21:07 [INFO ] [jenkins] ==================================================
+2026-11-18 15:21:07 [INFO ] [jenkins] 
+2026-11-18 15:21:07 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 15:21:07 [INFO ] [jenkins] ------------------------------
+2026-11-18 15:21:08 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 15:21:09 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 15:21:09 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 15:21:09 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 15:21:09 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 15:21:11 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 15:21:11 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 15:21:14 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 15:21:17 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 15:21:17 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 15:21:35 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 15:21:35 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 15:21:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:21:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:22:04 [INFO ] [deepseek_web]   Response: 儿童cos节日连体衣带帽子 圣诞精灵角色扮演服 小丑演出服 秋冬毛领条纹连体衣 派对装扮服 儿童节日演出服装
+2026-11-18 15:22:04 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 15:22:09 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 15:22:09 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 15:22:09 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 15:22:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:22:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:22:44 [INFO ] [deepseek_web]   Response: 圣诞节成人连体衣包含帽子 圣诞精灵角色扮演服 丝绒毛领条纹连体裤 秋冬派对演出套装 小丑毛球装扮连体衣
+2026-11-18 15:22:44 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 15:22:49 [INFO ] [deepseek_web] [3/22] 圣诞节儿童裙子|1pc 宫廷风服装
+2026-11-18 15:22:58 [INFO ] [deepseek_web]   Downloaded: 0003_6201033194077061692173.jpg
+2026-11-18 15:22:58 [INFO ] [deepseek_web]   Prefetching next image (4/22)
+2026-11-18 15:22:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:23:38 [ERROR] [deepseek_web]   FAILED: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("textarea").first
+
+2026-11-18 15:23:38 [INFO ] [deepseek_web]   Deleted: 0003_6201033194077061692173.jpg
+2026-11-18 15:23:43 [INFO ] [deepseek_web] [4/22] 圣诞节女士连帽cos服|1pc 宫廷风服装
+2026-11-18 15:24:12 [INFO ] [jenkins] ==================================================
+2026-11-18 15:24:12 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 15:24:12 [INFO ] [jenkins] ==================================================
+2026-11-18 15:24:12 [INFO ] [jenkins] 
+2026-11-18 15:24:12 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 15:24:12 [INFO ] [jenkins] ------------------------------
+2026-11-18 15:24:13 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 15:24:14 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 15:24:14 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 15:24:14 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 15:24:14 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 15:24:14 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 15:24:14 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 15:24:17 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 15:24:20 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 15:24:20 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 15:24:44 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 15:24:44 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 15:24:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:24:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:25:13 [INFO ] [deepseek_web]   Response: 儿童节日cos连体衣 圣诞精灵角色扮演服 连体衣含帽子 儿童圣诞装扮套装 条纹连体衣 节日派对演出服 舞台表演服装 儿童节日服装
+2026-11-18 15:25:13 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 15:25:18 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 15:25:18 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:25:23 [INFO ] [deepseek_web] [3/22] 圣诞节儿童裙子|1pc 宫廷风服装
+2026-11-18 15:25:28 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:25:33 [INFO ] [deepseek_web] [4/22] 圣诞节女士连帽cos服|1pc 宫廷风服装
+2026-11-18 15:25:49 [INFO ] [jenkins] ==================================================
+2026-11-18 15:25:49 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-18 15:25:49 [INFO ] [jenkins] ==================================================
+2026-11-18 15:25:49 [INFO ] [jenkins] 
+2026-11-18 15:25:49 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-18 15:25:49 [INFO ] [jenkins] ------------------------------
+2026-11-18 15:25:50 [INFO ] [title_workflow] Source: 11.17v1_fr.xlsx
+2026-11-18 15:25:50 [INFO ] [title_workflow] Extracted 22 titles + 22 links
+2026-11-18 15:25:50 [INFO ] [title_workflow] Written: origin_title (22) + origin_link (22)
+2026-11-18 15:25:50 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-18 15:25:50 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-18 15:25:51 [INFO ] [deepseek_web] Opening DeepSeek web (22 titles)...
+2026-11-18 15:25:51 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-18 15:25:54 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-18 15:25:59 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-18 15:25:59 [INFO ] [deepseek_web] [1/22] 儿童cos节日连体衣|1pc连体衣＋帽子
+2026-11-18 15:26:23 [INFO ] [deepseek_web]   Downloaded: 0001_2220431313093315031423.jpg
+2026-11-18 15:26:23 [INFO ] [deepseek_web]   Prefetching next image (2/22)
+2026-11-18 15:26:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:26:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:27:03 [INFO ] [deepseek_web]   Response: 儿童节日连体衣 圣诞精灵cosplay演出服 包含帽子 条纹小丑连体装 秋冬季男女童丝绒派对表演服
+2026-11-18 15:27:03 [INFO ] [deepseek_web]   Deleted: 0001_2220431313093315031423.jpg
+2026-11-18 15:27:08 [INFO ] [deepseek_web] [2/22] 圣诞节成人cos套装|1pc连体衣+帽子
+2026-11-18 15:27:08 [INFO ] [deepseek_web]   Downloaded: 0002_8230447354123724377540.jpg
+2026-11-18 15:27:08 [INFO ] [deepseek_web]   Prefetching next image (3/22)
+2026-11-18 15:27:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:27:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:27:37 [INFO ] [deepseek_web]   Response: 圣诞节成人女性连体衣 包含帽子 圣诞精灵cosplay套装 小丑马戏团演出服 秋冬季毛领丝绒条纹连体装 节日派对角色扮演舞台服
+2026-11-18 15:27:37 [INFO ] [deepseek_web]   Deleted: 0002_8230447354123724377540.jpg
+2026-11-18 15:27:42 [INFO ] [deepseek_web] [3/22] 圣诞节儿童裙子|1pc 宫廷风服装
+2026-11-18 15:27:42 [INFO ] [deepseek_web]   Downloaded: 0003_6201033194077061692173.jpg
+2026-11-18 15:27:42 [INFO ] [deepseek_web]   Prefetching next image (4/22)
+2026-11-18 15:27:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:27:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:28:16 [INFO ] [deepseek_web]   Response: 圣诞节女童宫廷风连衣裙 儿童丝绒收腰公主裙 长袖毛绒拼接蝴蝶结演出服 秋冬季保暖派对礼服裙 节日圣诞裙
+2026-11-18 15:28:16 [INFO ] [deepseek_web]   Deleted: 0003_6201033194077061692173.jpg
+2026-11-18 15:28:21 [INFO ] [deepseek_web] [4/22] 圣诞节女士连帽cos服|1pc 宫廷风服装
+2026-11-18 15:28:21 [INFO ] [deepseek_web]   Downloaded: 0004_3611056117478795613599.jpg
+2026-11-18 15:28:21 [INFO ] [deepseek_web]   Prefetching next image (5/22)
+2026-11-18 15:28:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:28:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:28:51 [INFO ] [deepseek_web]   Response: 圣诞节女士连帽连衣裙 宫廷风成人连体衣 秋冬丝绒收腰演出服 圣诞cosplay短裙 毛绒派对服
+2026-11-18 15:28:51 [INFO ] [deepseek_web]   Deleted: 0004_3611056117478795613599.jpg
+2026-11-18 15:28:56 [INFO ] [deepseek_web] [5/22] 成人翻领裙子|1pc 宫廷风服装
+2026-11-18 15:28:56 [INFO ] [deepseek_web]   Downloaded: 0005_4231157059291250992889.jpg
+2026-11-18 15:28:56 [INFO ] [deepseek_web]   Prefetching next image (6/22)
+2026-11-18 15:28:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:29:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:29:31 [INFO ] [deepseek_web]   Response: 成人宫廷风连衣裙 女士翻领前拉链长裙 收腰大摆长袖裙 纯色复古派对礼服裙 秋冬节日连体衣
+2026-11-18 15:29:31 [INFO ] [deepseek_web]   Deleted: 0005_4231157059291250992889.jpg
+2026-11-18 15:29:36 [INFO ] [deepseek_web] [6/22] 成人圣诞麋鹿披肩|1pc 宫廷风服装
+2026-11-18 15:29:36 [INFO ] [deepseek_web]   Downloaded: 0006_5530311478687614096280.jpg
+2026-11-18 15:29:36 [INFO ] [deepseek_web]   Prefetching next image (7/22)
+2026-11-18 15:29:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:29:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:30:15 [INFO ] [deepseek_web]   Response: 成人圣诞麋鹿星星披肩斗篷 女士宫廷风丝绒毛领短披风 蝴蝶结毛球冬季保暖披肩 节日派对角色扮演复古外搭
+2026-11-18 15:30:15 [INFO ] [deepseek_web]   Deleted: 0006_5530311478687614096280.jpg
+2026-11-18 15:30:20 [INFO ] [deepseek_web] [7/22] 牧羊人儿童Cos服|1pc 上衣+1pc 马甲+1pc 头巾+1pc 腰带+1pc 头巾绑带
+2026-11-18 15:30:20 [INFO ] [deepseek_web]   Downloaded: 0007_5560319294307620927799.jpg
+2026-11-18 15:30:20 [INFO ] [deepseek_web]   Prefetching next image (8/22)
+2026-11-18 15:30:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:30:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:30:50 [INFO ] [deepseek_web]   Response: 儿童牧羊人Cos服 包含上衣马甲头巾腰带绑带 圣经角色扮演长袍 圣诞舞台演出服 几何图案节日派对装 秋冬男童万圣节服饰
+2026-11-18 15:30:50 [INFO ] [deepseek_web]   Deleted: 0007_5560319294307620927799.jpg
+2026-11-18 15:30:55 [INFO ] [deepseek_web] [8/22] 男女款圣诞老人套装|1pc 上衣+1pc 裤子+1pc 帽子
+2026-11-18 15:30:55 [INFO ] [deepseek_web]   Downloaded: 0008_1571008424257017331360.jpg
+2026-11-18 15:30:55 [INFO ] [deepseek_web]   Prefetching next image (9/22)
+2026-11-18 15:30:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:31:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:31:27 [INFO ] [deepseek_web]   Response: 男女款圣诞老人套装 包含帽子长袍裤子 秋冬季保暖丝绒刺绣圣诞服 长款毛领腰带节日外套 派对cos演出服
+2026-11-18 15:31:27 [INFO ] [deepseek_web]   Deleted: 0008_1571008424257017331360.jpg
+2026-11-18 15:31:32 [INFO ] [deepseek_web] [9/22] 女士圣诞cos服装|1pc 宫廷风服装
+2026-11-18 15:31:32 [INFO ] [deepseek_web]   Downloaded: 0009_7621028260451082023211.jpg
+2026-11-18 15:31:32 [INFO ] [deepseek_web]   Prefetching next image (10/22)
+2026-11-18 15:31:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:31:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:32:15 [INFO ] [deepseek_web]   Response: 女士圣诞宫廷风连体裙 包含帽子 成人披肩收腰短裙 蝴蝶结毛边秋冬季派对演出服 丝绒纯色大摆礼服裙 圣诞cosplay连体衣
+2026-11-18 15:32:15 [INFO ] [deepseek_web]   Deleted: 0009_7621028260451082023211.jpg
+2026-11-18 15:32:20 [INFO ] [deepseek_web] [10/22] 男士圣诞斗篷|1pc 宫廷风服装
+2026-11-18 15:32:20 [INFO ] [deepseek_web]   Downloaded: 0010_4400309010078112046535.jpg
+2026-11-18 15:32:20 [INFO ] [deepseek_web]   Prefetching next image (11/22)
+2026-11-18 15:32:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:32:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:33:00 [INFO ] [deepseek_web]   Response: 男士圣诞斗篷 连帽长款披风 宫廷风加厚斗篷 冬季保暖披风 刺绣图案斗篷 复古角色扮演长袍 圣诞派对演出服 成人奇幻披风
+2026-11-18 15:33:00 [INFO ] [deepseek_web]   Deleted: 0010_4400309010078112046535.jpg
+2026-11-18 15:33:05 [INFO ] [deepseek_web] [11/22] 儿童圣诞节cos服饰|1pc 宫廷风服装
+2026-11-18 15:33:05 [INFO ] [deepseek_web]   Downloaded: 0011_6990317175821978885866.jpg
+2026-11-18 15:33:05 [INFO ] [deepseek_web]   Prefetching next image (12/22)
+2026-11-18 15:33:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:33:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:33:47 [INFO ] [deepseek_web]   Response: 女童圣诞宫廷风连衣裙 包含帽子披肩 儿童收腰大摆连体裙 前短后长燕尾裙摆 秋冬保暖毛边 丝绒派对演出服 节日角色扮演公主裙
+2026-11-18 15:33:47 [INFO ] [deepseek_web]   Deleted: 0011_6990317175821978885866.jpg
+2026-11-18 15:33:52 [INFO ] [deepseek_web] [12/22] 成人圣诞节cos服饰|1pc裙子+1PC帽子+1PC披肩
+2026-11-18 15:33:52 [INFO ] [deepseek_web]   Downloaded: 0012_2601112459731010938788.jpg
+2026-11-18 15:33:52 [INFO ] [deepseek_web]   Prefetching next image (13/22)
+2026-11-18 15:33:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:34:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:34:34 [INFO ] [deepseek_web]   Response: 成人圣诞节连体裙 包含帽子披肩 女士丝绒收腰大摆演出服 前短后长燕尾裙 秋冬保暖毛绒拼接派对服 蝴蝶结毛球角色扮演cos服
+2026-11-18 15:34:34 [INFO ] [deepseek_web]   Deleted: 0012_2601112459731010938788.jpg
+2026-11-18 15:34:39 [INFO ] [deepseek_web] [13/22] 狂欢老奶奶游戏裤子|1pc 裤子+1pc背带
+2026-11-18 15:34:39 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:34:44 [INFO ] [deepseek_web] [14/22] 女士圣诞cos套装|1pc裙子+1pc帽子+1pc皮带+1双鞋套+1双袜子
+2026-11-18 15:35:19 [INFO ] [deepseek_web]   Downloaded: 0014_8731036381795413804460.jpg
+2026-11-18 15:35:19 [INFO ] [deepseek_web]   Prefetching next image (15/22)
+2026-11-18 15:35:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:35:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:35:56 [INFO ] [deepseek_web]   Response: 女士圣诞精灵cos套装 包含帽子皮带鞋套袜子 成人收腰大摆连衣裙 长袖短裙 娃娃领尖顶帽条纹袜 秋冬季派对演出服 节日角色扮演连体衣
+2026-11-18 15:35:56 [INFO ] [deepseek_web]   Deleted: 0014_8731036381795413804460.jpg
+2026-11-18 15:36:01 [INFO ] [deepseek_web] [15/22] 女士圣诞cos套装|1pc 帽子+1pc手套+1pc袜子+1pc裙子
+2026-11-18 15:36:01 [INFO ] [deepseek_web]   Downloaded: 0015_1650958486674821288850.jpg
+2026-11-18 15:36:01 [INFO ] [deepseek_web]   Prefetching next image (16/22)
+2026-11-18 15:36:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:36:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:36:39 [INFO ] [deepseek_web]   Response: 女士圣诞cos套装 包含帽子手套袜子裙子 圣诞派对连体裙 收腰蓬蓬纱裙 长袖娃娃领 秋冬季演出服 条纹长袜 节日角色扮演服
+2026-11-18 15:36:39 [INFO ] [deepseek_web]   Deleted: 0015_1650958486674821288850.jpg
+2026-11-18 15:36:44 [INFO ] [deepseek_web] [16/22] 节日女童cos雪人服|1pc连体衣+1pc裙子+1pc发饰+1pc围巾+1对袜子
+2026-11-18 15:36:44 [INFO ] [deepseek_web]   Downloaded: 0016_4381057594741321230999.jpg
+2026-11-18 15:36:44 [INFO ] [deepseek_web]   Prefetching next image (17/22)
+2026-11-18 15:36:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:36:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:37:20 [INFO ] [deepseek_web]   Response: 儿童雪人cos连体衣 包含纱裙发饰围巾袜子 女童长袖蓬蓬裙演出服 秋冬季节日保暖派对套装 公主网纱裙角色扮演服 条纹长袜圣诞装
+2026-11-18 15:37:20 [INFO ] [deepseek_web]   Deleted: 0016_4381057594741321230999.jpg
+2026-11-18 15:37:25 [INFO ] [deepseek_web] [17/22] 圣诞女童cos套裙|1pc 裙子+1pc 帽子+1对袜子
+2026-11-18 15:37:25 [INFO ] [deepseek_web]   Downloaded: 0017_2801117165451614764716.jpg
+2026-11-18 15:37:25 [INFO ] [deepseek_web]   Prefetching next image (18/22)
+2026-11-18 15:37:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:37:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:37:58 [INFO ] [deepseek_web]   Response: 圣诞女童cos套裙 包含帽子袜子 吊带亮片蓬蓬纱裙 儿童节日派对连衣裙 秋冬季舞台演出服 公主角色扮演网纱裙 女童圣诞裙 儿童表演服
+2026-11-18 15:37:58 [INFO ] [deepseek_web]   Deleted: 0017_2801117165451614764716.jpg
+2026-11-18 15:38:03 [INFO ] [deepseek_web] [18/22] 成人圣诞节长裙|1pc 宫廷风服装
+2026-11-18 15:38:03 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:38:08 [INFO ] [deepseek_web] [19/22] 狂欢节成人cos服|1pc 宫廷风服装
+2026-11-18 15:38:13 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:38:18 [INFO ] [deepseek_web] [20/22] 儿童牧羊人cos套装|1pc 上衣+1pc 马甲+1pc 头巾+1pc 腰带+1pc 头巾绑带
+2026-11-18 15:38:32 [INFO ] [deepseek_web]   Downloaded: 0020_9050331532207712768788.jpg
+2026-11-18 15:38:32 [INFO ] [deepseek_web]   Prefetching next image (21/22)
+2026-11-18 15:38:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:38:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:39:02 [INFO ] [deepseek_web]   Response: 儿童牧羊人cos套装 包含上衣马甲头巾腰带绑带 男童长袖长袍角色扮演服 几何图案马甲 圣诞节舞台演出服 秋冬万圣节复古演出服
+2026-11-18 15:39:02 [INFO ] [deepseek_web]   Deleted: 0020_9050331532207712768788.jpg
+2026-11-18 15:39:07 [INFO ] [deepseek_web] [21/22] 波西米亚流苏腰封|1pc腰封
+2026-11-18 15:39:07 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-18 15:39:12 [INFO ] [deepseek_web] [22/22] 文艺复兴儿童表演套装|1pc 马甲+1pc上衣+1pc裤子
+2026-11-18 15:39:29 [INFO ] [deepseek_web]   Downloaded: 0022_9080409168802912382035.jpg
+2026-11-18 15:39:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-18 15:39:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-18 15:39:59 [INFO ] [deepseek_web]   Response: 儿童文艺复兴表演套装 包含马甲衬衫长裤 女童复古学院风三件套 翻领长袖衬衫 收腰无袖马甲 阔腿长裤套装 秋季舞台演出服 角色扮演服
+2026-11-18 15:39:59 [INFO ] [deepseek_web]   Deleted: 0022_9080409168802912382035.jpg
+2026-11-18 15:39:59 [INFO ] [deepseek_web] 
+2026-11-18 15:39:59 [INFO ] [deepseek_web] Retry round 1: 4 failed item(s)
+2026-11-18 15:40:04 [INFO ] [deepseek_web]   Retry [13]: 狂欢老奶奶游戏裤子|1pc 裤子+1pc背带
+2026-11-18 15:40:24 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-18 15:40:42 [INFO ] [deepseek_web]     OK: 成人狂欢游戏裤 包含背带 大嘴接球裤 宽松条纹长裤 夸张大口袋 派对互动演出服 小丑搞怪裤子 舞台角色扮演装
+2026-11-18 15:40:45 [INFO ] [deepseek_web]   Retry [18]: 成人圣诞节长裙|1pc 宫廷风服装
+2026-11-18 15:41:09 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-18 15:41:27 [INFO ] [deepseek_web]     OK: 成人圣诞节长裙 女士宫廷风连衣裙 露肩丝绒收腰大摆裙 秋冬保暖毛边喇叭袖演出服 蝴蝶结复古派对礼服裙 cos角色扮演服
+2026-11-18 15:41:30 [INFO ] [deepseek_web]   Retry [19]: 狂欢节成人cos服|1pc 宫廷风服装
+2026-11-18 15:42:07 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-18 15:42:27 [INFO ] [deepseek_web]     OK: 狂欢节成人cos披风 女士宫廷风丝绒斗篷 羽毛装饰立领长款披风 秋冬派对演出服 包含披肩 角色扮演斗篷外套 节日舞台装
+2026-11-18 15:42:30 [INFO ] [deepseek_web]   Retry [21]: 波西米亚流苏腰封|1pc腰封
+2026-11-18 15:43:16 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-18 15:43:35 [INFO ] [deepseek_web]     OK: 波西米亚流苏腰封 女士镂空编织腰带 沙滩度假长流苏腰饰 夏季海滩比基尼外搭 肚皮舞腰链 复古配饰
+2026-11-18 15:43:39 [INFO ] [deepseek_web] ==================================================
+2026-11-18 15:43:39 [INFO ] [deepseek_web] Done: 22 success, 0 failed → optimize_title
+2026-11-18 15:43:40 [INFO ] [title_workflow] Optimization complete: 22 titles
+2026-11-18 15:43:42 [INFO ] [title_workflow] Written 22 optimized titles to column H (8)
+2026-11-18 15:43:42 [INFO ] [title_workflow] Done: 11.17v1_fr.xlsx
+2026-11-18 15:43:42 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-11-18 15:43:42 [INFO ] [jenkins] 
+2026-11-18 15:43:42 [INFO ] [jenkins] ==================================================
+2026-11-18 15:43:42 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-18 15:43:42 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-18 15:43:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-18 15:43:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-18 15:43:42 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

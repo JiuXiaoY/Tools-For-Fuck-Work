@@ -1,0 +1,28 @@
+2026-10-12 14:11:42 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-10-12 14:11:43 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-10-12 14:11:45 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-10-12 14:11:48 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-10-12 14:11:50 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 第 1 次请求成功: 1000 条
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261012.txt (1000 条)
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] === 报告 ===
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261012.txt
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 清洗命中: 品类 30 / 属性 7(过滤前)
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 清洗丢弃: 963 条(黑名单 151 / 无关 812)
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 最终保留: 37 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\de\hotwords_fashion_20261012.txt
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   icon hose herren	165178	品类:hose;属性:herren
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   die sieben schwestern band 1	153031	品类:weste
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   teddy chocolate	150556	属性:teddy;去品牌:reisenthel
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   jelly bh ohne bügel push up	146504	品类:bh
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   brevika herren jacke	146189	品类:jacke;属性:herren
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   fledermaus strumpfhose damen	144523	品类:hose;属性:leder,damen
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   rock of ages	140949	品类:rock
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   thermomix vorwerk	139167	属性:thermo
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   kindle fire hd 11 neuestes modell	136864	品类:mode
+2026-10-12 14:11:52 [INFO ] [hotwords_fashion]   mona ameziane christine westermann	136396	品类:weste

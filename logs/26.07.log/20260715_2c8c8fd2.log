@@ -1,0 +1,104 @@
+2026-07-15 15:46:21 [INFO ] [main] Log file: 20260715_2c8c8fd2.log
+2026-07-15 15:46:21 [INFO ] [main] Found 3 file(s):
+2026-07-15 15:46:21 [INFO ] [main]   product_20260714021252817.xlsx
+2026-07-15 15:46:21 [INFO ] [main]   product_20260714021900066.xlsx
+2026-07-15 15:46:21 [INFO ] [main]   product_20260714022049351.xlsx
+2026-07-15 15:46:21 [INFO ] [main] Processing...
+2026-07-15 15:46:21 [INFO ] [main] ==================================================
+2026-07-15 15:46:26 [INFO ] [main] Merged 3 files, 4133 images total
+2026-07-15 15:46:27 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-15 15:46:27 [INFO ] [pipeline] [1/13] delete_header
+2026-07-15 15:46:27 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-15 15:46:27 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-15 15:46:27 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-15 15:46:27 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-15 15:46:31 [INFO ] [pipeline]   Sheet [Sheet0_2]: 632 rows, 1612 images
+2026-07-15 15:46:31 [INFO ] [pipeline]   Sheet [Sheet0_3]: 357 rows, 1124 images
+2026-07-15 15:46:31 [INFO ] [pipeline]   Merged 3 sheets -> 1, 989 data rows, 2736 images
+2026-07-15 15:46:31 [INFO ] [pipeline] [3/13] validate
+2026-07-15 15:46:31 [INFO ] [pipeline]   Validated: 1532 rows, 27 cols (expect ~32)
+2026-07-15 15:46:31 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-15 15:46:31 [INFO ] [pipeline]   Backed up 4133 images
+2026-07-15 15:46:31 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-15 15:46:31 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-15 15:46:31 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-15 15:46:31 [INFO ] [pipeline]   Restored 4133 images with adjusted anchors
+2026-07-15 15:46:31 [INFO ] [pipeline] [5/13] fill_id
+2026-07-15 15:46:31 [INFO ] [pipeline]   Column 2: 1532 random IDs (date: bfzgzi)
+2026-07-15 15:46:31 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-15 15:46:31 [INFO ] [pipeline]   Column 3: 1532 cells filled
+2026-07-15 15:46:31 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-15 15:46:31 [INFO ] [pipeline]   Column 10: 1434 cells mapped, 98 rows skipped (col A has fill)
+2026-07-15 15:46:31 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-15 15:46:31 [INFO ] [pipeline]   Column 11: 1413 mapped, 98 cleared (col A has fill), 21 no match
+2026-07-15 15:46:31 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-15 15:46:31 [INFO ] [pipeline]   Mirror copy: 8466 cells written
+2026-07-15 15:46:31 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-15 15:46:31 [INFO ] [pipeline]   Column 44: 1532 cells copied from col 12
+2026-07-15 15:46:31 [INFO ] [pipeline] [11/13] calc_price
+2026-07-15 15:46:32 [INFO ] [pipeline]   Columns 45-48: 1532 rows calculated
+2026-07-15 15:46:32 [INFO ] [pipeline] [12/13] format_cells
+2026-07-15 15:46:36 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-15 15:46:36 [INFO ] [pipeline]   Formatted 1532 rows: h=50, align=left/center
+2026-07-15 15:46:36 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-15 15:46:36 [INFO ] [pipeline] [13/13] finalize
+2026-07-15 15:46:36 [INFO ] [pipeline]   Done: 1532 rows x 48 cols (target: 48)
+2026-07-15 15:46:36 [INFO ] [pipeline] Pipeline complete
+2026-07-15 15:46:37 [INFO ] [main] Output: 3252baddcd2b4548956067ea164c2ee3.xlsx
+2026-07-15 15:46:37 [INFO ] [main] Size: 1532 rows x 48 cols
+2026-07-15 15:46:37 [INFO ] [main] ==================================================
+2026-07-15 15:46:37 [INFO ] [main] Done. Output: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs
+2026-07-15 15:49:17 [INFO ] [main] Log file: 20260715_2c8c8fd2.log
+2026-07-15 15:49:17 [INFO ] [main] Found 3 file(s):
+2026-07-15 15:49:17 [INFO ] [main]   product_20260714021252817.xlsx
+2026-07-15 15:49:17 [INFO ] [main]   product_20260714021900066.xlsx
+2026-07-15 15:49:17 [INFO ] [main]   product_20260714022049351.xlsx
+2026-07-15 15:49:17 [INFO ] [main] Processing...
+2026-07-15 15:49:17 [INFO ] [main] ==================================================
+2026-07-15 15:49:22 [INFO ] [main] Merged 3 files, 4133 images total
+2026-07-15 15:49:24 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-15 15:49:24 [INFO ] [pipeline] [1/13] delete_header
+2026-07-15 15:49:24 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-15 15:49:24 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-15 15:49:24 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-15 15:49:24 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-15 15:49:28 [INFO ] [pipeline]   Sheet [Sheet0_2]: 632 rows, 1612 images
+2026-07-15 15:49:28 [INFO ] [pipeline]   Sheet [Sheet0_3]: 357 rows, 1124 images
+2026-07-15 15:49:28 [INFO ] [pipeline]   Merged 3 sheets -> 1, 989 data rows, 2736 images
+2026-07-15 15:49:28 [INFO ] [pipeline] [3/13] validate
+2026-07-15 15:49:28 [INFO ] [pipeline]   Validated: 1532 rows, 27 cols (expect ~32)
+2026-07-15 15:49:28 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-15 15:49:28 [INFO ] [pipeline]   Backed up 4133 images
+2026-07-15 15:49:28 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-15 15:49:28 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-15 15:49:28 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-15 15:49:28 [INFO ] [pipeline]   Restored 4133 images with adjusted anchors
+2026-07-15 15:49:28 [INFO ] [pipeline] [5/13] fill_id
+2026-07-15 15:49:28 [INFO ] [pipeline]   Column 2: 1532 random IDs (date: bfzgaz)
+2026-07-15 15:49:28 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-15 15:49:28 [INFO ] [pipeline]   Column 3: 1532 cells filled
+2026-07-15 15:49:28 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-15 15:49:28 [INFO ] [pipeline]   Column 10: 1434 cells mapped, 98 rows skipped (col A has fill)
+2026-07-15 15:49:28 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-15 15:49:28 [INFO ] [pipeline]   Column 11: 1413 mapped, 98 cleared (col A has fill), 21 no match
+2026-07-15 15:49:28 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-15 15:49:28 [INFO ] [pipeline]   Mirror copy: 8466 cells written
+2026-07-15 15:49:28 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-15 15:49:28 [INFO ] [pipeline]   Column 44: 1532 cells copied from col 12
+2026-07-15 15:49:28 [INFO ] [pipeline] [11/13] calc_price
+2026-07-15 15:49:28 [INFO ] [pipeline]   Columns 45-48: 1532 rows calculated
+2026-07-15 15:49:28 [INFO ] [pipeline] [12/13] format_cells
+2026-07-15 15:49:33 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-15 15:49:33 [INFO ] [pipeline]   Formatted 1532 rows: h=50, align=left/center
+2026-07-15 15:49:33 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-15 15:49:33 [INFO ] [pipeline] [13/13] finalize
+2026-07-15 15:49:33 [INFO ] [pipeline]   Done: 1532 rows x 48 cols (target: 48)
+2026-07-15 15:49:33 [INFO ] [pipeline] Pipeline complete
+2026-07-15 15:49:35 [INFO ] [main] Output: 704012a2f88b470993c8c458eaca37e3.xlsx
+2026-07-15 15:49:35 [INFO ] [main] Size: 1532 rows x 48 cols
+2026-07-15 15:49:35 [INFO ] [main] ==================================================
+2026-07-15 15:49:35 [INFO ] [main] Done. Output: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs
+2026-07-15 19:30:40 [INFO ] [color_size_deal] Loaded 97 groups, 1434 lines
+2026-07-15 19:30:40 [INFO ] [color_size_deal] Written 1434 lines
+2026-07-15 19:30:40 [INFO ] [color_size_deal] Prefixes: {'01': 1}
+2026-07-15 19:30:40 [INFO ] [color_size_deal] Done.

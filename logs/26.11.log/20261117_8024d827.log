@@ -1,0 +1,521 @@
+2026-11-17 10:10:47 [INFO ] [jenkins] ==================================================
+2026-11-17 10:10:47 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-17 10:10:47 [INFO ] [jenkins] ==================================================
+2026-11-17 10:10:47 [INFO ] [jenkins] 
+2026-11-17 10:10:47 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-17 10:10:47 [INFO ] [jenkins] ------------------------------
+2026-11-17 10:10:47 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-17 10:10:47 [INFO ] [jenkins] 
+2026-11-17 10:10:47 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-17 10:10:47 [INFO ] [jenkins] ------------------------------
+2026-11-17 10:10:47 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-17 10:10:47 [INFO ] [preprocess] [product_20261117095839687.xlsx]
+2026-11-17 10:10:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-17 10:10:48 [INFO ] [pipeline] [1/1] remove_header
+2026-11-17 10:10:49 [INFO ] [preprocess]   [product_20261117095839687.xlsx] Sheet [Sheet0]: header row removed
+2026-11-17 10:10:49 [INFO ] [pipeline] Pipeline complete
+2026-11-17 10:10:49 [INFO ] [preprocess] Preprocessing complete
+2026-11-17 10:10:49 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-17 10:10:49 [INFO ] [jenkins] 
+2026-11-17 10:10:49 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-17 10:10:49 [INFO ] [jenkins] ------------------------------
+2026-11-17 10:10:50 [INFO ] [main] Log file: 20261117_8024d827.log
+2026-11-17 10:10:50 [INFO ] [main] Found 1 file(s):
+2026-11-17 10:10:50 [INFO ] [main]   product_20261117095839687.xlsx
+2026-11-17 10:10:50 [INFO ] [main] Output: 11.17v1_de.xlsx
+2026-11-17 10:10:50 [INFO ] [main] ==================================================
+2026-11-17 10:10:50 [INFO ] [main] Single file, copied
+2026-11-17 10:10:50 [INFO ] [main] Deleted 1 source file(s)
+2026-11-17 10:10:50 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-17 10:10:50 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-17 10:10:50 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-11-17 10:10:50 [INFO ] [pipeline] [2/12] validate
+2026-11-17 10:10:50 [INFO ] [pipeline]   Validated: 366 rows, 27 cols (expect ~32)
+2026-11-17 10:10:50 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-17 10:10:50 [INFO ] [pipeline]   Backed up 691 images
+2026-11-17 10:10:50 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-17 10:10:50 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-17 10:10:50 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-17 10:10:50 [INFO ] [pipeline]   Restored 691 images with adjusted anchors
+2026-11-17 10:10:50 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-17 10:10:50 [INFO ] [pipeline]   Column 2: 366 IDs generated
+2026-11-17 10:10:50 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-17 10:10:50 [INFO ] [pipeline]   Column 3: 366 cells filled
+2026-11-17 10:10:50 [INFO ] [pipeline] [6/12] map_colors
+2026-11-17 10:10:50 [INFO ] [pipeline]   Colors J -> K: 358 cells mapped, 8 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-17 10:10:50 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-17 10:10:50 [INFO ] [pipeline]   Size column L: 329 mapped, 8 cleared (col A has fill), 29 no match (recorded)
+2026-11-17 10:10:50 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-17 10:10:50 [INFO ] [pipeline]   Mirror copy: 2178 cells written
+2026-11-17 10:10:50 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-17 10:10:50 [INFO ] [pipeline]   Price source M -> AS: 366 cells copied
+2026-11-17 10:10:50 [INFO ] [pipeline] [10/12] calc_price
+2026-11-17 10:10:50 [INFO ] [pipeline]   Price columns AT-AW: 366 rows calculated
+2026-11-17 10:10:50 [INFO ] [pipeline] [11/12] format_cells
+2026-11-17 10:10:50 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-17 10:10:50 [INFO ] [pipeline]   Formatted 366 rows: h=50, align=left/center
+2026-11-17 10:10:50 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-17 10:10:50 [INFO ] [pipeline] [12/12] finalize
+2026-11-17 10:10:50 [INFO ] [pipeline]   Done: 366 rows x 49 cols (target: 49)
+2026-11-17 10:10:50 [INFO ] [pipeline] Pipeline complete
+2026-11-17 10:10:51 [INFO ] [main] Size: 366 rows x 49 cols
+2026-11-17 10:10:51 [INFO ] [main] ==================================================
+2026-11-17 10:10:51 [INFO ] [main] Done: 11.17v1_de.xlsx
+2026-11-17 10:10:51 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-17 10:10:51 [INFO ] [jenkins] 
+2026-11-17 10:10:51 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-17 10:10:51 [INFO ] [jenkins] ------------------------------
+2026-11-17 10:10:51 [INFO ] [color_size_main] Source: 11.17v1_de.xlsx
+2026-11-17 10:10:51 [INFO ] [color_size_main] Extracted: 358 data lines + 8 separators → check_.txt
+2026-11-17 10:10:51 [INFO ] [color_size_main] Running: process.py
+2026-11-17 10:10:52 [INFO ] [color_size_deal] Groups: 8, lines: 358 (file: 366)
+2026-11-17 10:10:52 [INFO ] [color_size_deal] Prefixes: {'01': 36, '02': 9}
+2026-11-17 10:10:52 [INFO ] [color_size_deal] Done.
+2026-11-17 10:10:52 [INFO ] [color_size_main] Processing write-back: 366 lines
+2026-11-17 10:10:53 [INFO ] [color_size_main] Write-back: 53 written, 313 unchanged → 11.17v1_de.xlsx
+2026-11-17 10:10:53 [INFO ] [color_size_main] Done.
+2026-11-17 10:10:53 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-17 10:10:53 [INFO ] [jenkins] 
+2026-11-17 10:10:53 [INFO ] [jenkins] ==================================================
+2026-11-17 10:10:53 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-17 10:10:53 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-17 10:10:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-17 10:10:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-17 10:10:53 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-17 10:21:18 [INFO ] [jenkins] ==================================================
+2026-11-17 10:21:18 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-17 10:21:18 [INFO ] [jenkins] ==================================================
+2026-11-17 10:21:18 [INFO ] [jenkins] 
+2026-11-17 10:21:18 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-17 10:21:18 [INFO ] [jenkins] ------------------------------
+2026-11-17 10:21:19 [INFO ] [title_workflow] Source: 11.17v1_de.xlsx
+2026-11-17 10:21:19 [INFO ] [title_workflow] Extracted 14 titles + 14 links
+2026-11-17 10:21:19 [INFO ] [title_workflow] Written: origin_title (14) + origin_link (14)
+2026-11-17 10:21:19 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-17 10:21:19 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-17 10:21:19 [INFO ] [deepseek_web] Opening DeepSeek web (14 titles)...
+2026-11-17 10:21:19 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-17 10:21:22 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-17 10:21:24 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-17 10:21:24 [INFO ] [deepseek_web] [1/14] 男士印花短袖翻领衬衫
+2026-11-17 10:21:36 [INFO ] [deepseek_web]   Downloaded: 0001_3010622070783538451981.jpg
+2026-11-17 10:21:36 [INFO ] [deepseek_web]   Prefetching next image (2/14)
+2026-11-17 10:21:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:21:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:22:05 [INFO ] [deepseek_web]   Response: 男士印花短袖衬衫 翻领纽扣衬衫 宽松休闲度假衬衫 夏季节日派对衬衫 圣诞恐龙图案短袖衬衣 夏威夷风印花衬衫 男士趣味印花上衣 夏季短袖衬衫
+2026-11-17 10:22:05 [INFO ] [deepseek_web]   Deleted: 0001_3010622070783538451981.jpg
+2026-11-17 10:22:10 [INFO ] [deepseek_web] [2/14] 男士圣诞节印花衬衫
+2026-11-17 10:22:10 [INFO ] [deepseek_web]   Downloaded: 0002_4040414493882893818779.jpg
+2026-11-17 10:22:10 [INFO ] [deepseek_web]   Prefetching next image (3/14)
+2026-11-17 10:22:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:22:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:22:39 [INFO ] [deepseek_web]   Response: 男士圣诞节印花衬衫 男士长袖翻领衬衫 纽扣开襟休闲衬衣 秋冬节日派对衬衫 圣诞主题复古印花衬衣 吉他花卉图案上衣 男士宽松长袖衬衫 假日风纽扣衬衣
+2026-11-17 10:22:39 [INFO ] [deepseek_web]   Deleted: 0002_4040414493882893818779.jpg
+2026-11-17 10:22:44 [INFO ] [deepseek_web] [3/14] 男士圣诞节印花衬衫
+2026-11-17 10:22:44 [INFO ] [deepseek_web]   Downloaded: 0003_8121044027201021229992.jpg
+2026-11-17 10:22:44 [INFO ] [deepseek_web]   Prefetching next image (4/14)
+2026-11-17 10:22:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:22:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:23:13 [INFO ] [deepseek_web]   Response: 男士圣诞节印花衬衫 长袖翻领纽扣衬衣 男士宽松休闲衬衫 秋冬节日派对衬衫 圣诞老人图案印花上衣 假日风圣诞主题衬衣 缎面质感长袖衬衫 男士纽扣开襟衬衣 圣诞节印
+2026-11-17 10:23:13 [INFO ] [deepseek_web]   Deleted: 0003_8121044027201021229992.jpg
+2026-11-17 10:23:18 [INFO ] [deepseek_web] [4/14] 男士印花上衣
+2026-11-17 10:23:18 [INFO ] [deepseek_web]   Downloaded: 0004_7290346419122216107055.jpg
+2026-11-17 10:23:18 [INFO ] [deepseek_web]   Prefetching next image (5/14)
+2026-11-17 10:23:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:23:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:23:47 [INFO ] [deepseek_web]   Response: 男士印花短袖T恤 宽松休闲圆领上衣 套头短袖T恤衫 圣诞节派对打底衫 夏季节日主题短袖 趣味精灵图案印花上衣 圣诞拐杖糖印花T恤 男士假日派对T恤 圣诞装扮短袖
+2026-11-17 10:23:47 [INFO ] [deepseek_web]   Deleted: 0004_7290346419122216107055.jpg
+2026-11-17 10:23:52 [INFO ] [deepseek_web] [5/14] 男士圣诞搞怪麋鹿衬衫
+2026-11-17 10:23:52 [INFO ] [deepseek_web]   Downloaded: 0005_1770424506412919646483.jpg
+2026-11-17 10:23:52 [INFO ] [deepseek_web]   Prefetching next image (6/14)
+2026-11-17 10:23:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:24:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:24:22 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士宽松休闲衬衣 翻领纽扣开襟衬衫 秋冬节日派对上衣 搞怪麋鹿雪花图案印花衬衣 男士假日风长袖衬衫 圣诞主题搞怪上衣 男士休闲印花衬衣
+2026-11-17 10:24:22 [INFO ] [deepseek_web]   Deleted: 0005_1770424506412919646483.jpg
+2026-11-17 10:24:27 [INFO ] [deepseek_web] [6/14] 男士圣诞衬衫
+2026-11-17 10:24:27 [INFO ] [deepseek_web]   Downloaded: 0006_3280822387691118891090.jpg
+2026-11-17 10:24:27 [INFO ] [deepseek_web]   Prefetching next image (7/14)
+2026-11-17 10:24:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:24:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:24:56 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士宽松休闲衬衣 翻领纽扣开襟衬衫 秋冬节日派对上衣 卡通圣诞老人麋鹿印花衬衣 男士假日风长袖衬衫 趣味圣诞图案休闲衬衣
+2026-11-17 10:24:56 [INFO ] [deepseek_web]   Deleted: 0006_3280822387691118891090.jpg
+2026-11-17 10:25:01 [INFO ] [deepseek_web] [7/14] 男士圣诞节长袖衬衫
+2026-11-17 10:25:01 [INFO ] [deepseek_web]   Downloaded: 0007_2330227438751970467880.jpg
+2026-11-17 10:25:01 [INFO ] [deepseek_web]   Prefetching next image (8/14)
+2026-11-17 10:25:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:25:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:25:30 [INFO ] [deepseek_web]   Response: 男士圣诞节长袖衬衫 男士宽松休闲衬衣 翻领纽扣开襟衬衫 秋冬节日派对上衣 麋鹿印花长袖衬衣 格纹拼接领口衬衫 圣诞主题休闲上衣 假日风长袖衬衫
+2026-11-17 10:25:30 [INFO ] [deepseek_web]   Deleted: 0007_2330227438751970467880.jpg
+2026-11-17 10:25:35 [INFO ] [deepseek_web] [8/14] 男士圣诞印花长袖T恤
+2026-11-17 10:25:35 [INFO ] [deepseek_web]   Downloaded: 0008_9340212418601410918265.jpg
+2026-11-17 10:25:35 [INFO ] [deepseek_web]   Prefetching next image (9/14)
+2026-11-17 10:25:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:25:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:26:04 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士宽松休闲上衣 假两件圆领打底衫 秋冬节日派对T恤 趣味糖果条纹印花长袖衫 圣诞搞怪图案套头衫 男士假日风休闲长袖衫 男士印花打底T恤
+2026-11-17 10:26:04 [INFO ] [deepseek_web]   Deleted: 0008_9340212418601410918265.jpg
+2026-11-17 10:26:09 [INFO ] [deepseek_web] [9/14] 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 秋冬节日派对长袖衬衣 假两件3D肌肉印花衬衫 圣诞彩灯图案纽扣衬衫 男士休闲
+2026-11-17 10:26:09 [INFO ] [deepseek_web]   Downloaded: 0009_7551141093771713838535.jpg
+2026-11-17 10:26:09 [INFO ] [deepseek_web]   Prefetching next image (10/14)
+2026-11-17 10:26:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:26:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:26:38 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 纽扣开襟长袖衬衣 秋冬节日派对衬衫 假两件3D肌肉印花衬衫 圣诞彩灯图案纽扣衬衫 男士搞怪印花长袖衬衣 男士休闲节日
+2026-11-17 10:26:38 [INFO ] [deepseek_web]   Deleted: 0009_7551141093771713838535.jpg
+2026-11-17 10:26:43 [INFO ] [deepseek_web] [10/14] 男士圣诞长袖衬衫 男士常规版型假两件衬衫 带纽扣长袖衬衣 秋冬节日派对上衣 圣诞拐杖糖爱心图案印花衬衫 男士休闲印花上衣
+2026-11-17 10:26:43 [INFO ] [deepseek_web]   Downloaded: 0010_7780448001223750686236.jpg
+2026-11-17 10:26:43 [INFO ] [deepseek_web]   Prefetching next image (11/14)
+2026-11-17 10:26:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:26:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:27:12 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖衬衫 男士常规版型假两件衬衫 翻领纽扣开襟长袖衬衣 秋冬节日派对休闲上衣 圣诞拐杖糖爱心雪花图案印花衬衫 男士针织提花风假两件上衣 男士圣诞主题
+2026-11-17 10:27:12 [INFO ] [deepseek_web]   Deleted: 0010_7780448001223750686236.jpg
+2026-11-17 10:27:17 [INFO ] [deepseek_web] [11/14] 男士趣味长袖T恤上衣 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 3D肌肉印花T恤 圣诞雪花松枝图案上衣 男士休
+2026-11-17 10:27:17 [INFO ] [deepseek_web]   Downloaded: 0011_1960453561733944940546.jpg
+2026-11-17 10:27:17 [INFO ] [deepseek_web]   Prefetching next image (12/14)
+2026-11-17 10:27:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:27:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:27:46 [INFO ] [deepseek_web]   Response: 男士长袖T恤 男士圆领套头衫 男士常规版型上衣 圆领套头长袖衫 秋冬节日派对上衣 男士休闲打底衫 3D肌肉印花T恤 圣诞雪花松枝图案长袖衫 搞怪假两件印花上衣 
+2026-11-17 10:27:46 [INFO ] [deepseek_web]   Deleted: 0011_1960453561733944940546.jpg
+2026-11-17 10:27:51 [INFO ] [deepseek_web] [12/14] 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 带纽扣长袖T恤 秋冬节日派对上衣 3D圣诞老人雪花印花上衣 男士休闲长袖衫
+2026-11-17 10:27:51 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='vra8gbhmvp024wfd.imgsapp.com', port=443): Max retries exceeded with url: /afsd/9011/2140749257871013944074.jpg (Caused by NameResolutionError("HTTPSConnection(host='vra8gbhmvp024wfd.imgsapp.com', port=443): Failed to resolve 'vra8gbhmvp024wfd.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-11-17 10:27:56 [INFO ] [deepseek_web] [13/14] 男士圣诞印花长袖T恤 男士常规版型套头衫 带纽扣亨利领长袖上衣 秋冬节日派对长袖T恤 圣诞老人墨镜字母印花衫 男士休闲长
+2026-11-17 10:28:01 [INFO ] [deepseek_web]   Downloaded: 0013_4030851593543941834007.jpg
+2026-11-17 10:28:01 [INFO ] [deepseek_web]   Prefetching next image (14/14)
+2026-11-17 10:28:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:28:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:28:30 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型套头衫 带纽扣亨利领长袖上衣 半开襟套头长袖衫 秋冬节日派对长袖T恤 男士休闲打底衫 圣诞老人墨镜字母印花衫 男士趣味印花长袖
+2026-11-17 10:28:30 [INFO ] [deepseek_web]   Deleted: 0013_4030851593543941834007.jpg
+2026-11-17 10:28:35 [INFO ] [deepseek_web] [14/14] 男士圣诞印花长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 趣味圣诞老人图案印花长袖衫 男士休闲长袖上衣 
+2026-11-17 10:28:35 [INFO ] [deepseek_web]   Downloaded: 0014_3250842477401918140499.jpg
+2026-11-17 10:28:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 10:28:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 10:29:05 [INFO ] [deepseek_web]   Response: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 长袖套头打底衫 秋冬节日派对上衣 趣味3D圣诞老人印花长袖衫 男士休闲搞怪套头T恤 圣诞雪花图案长袖上衣 男士节日
+2026-11-17 10:29:05 [INFO ] [deepseek_web]   Deleted: 0014_3250842477401918140499.jpg
+2026-11-17 10:29:05 [INFO ] [deepseek_web] 
+2026-11-17 10:29:05 [INFO ] [deepseek_web] Retry round 1: 1 failed item(s)
+2026-11-17 10:29:10 [INFO ] [deepseek_web]   Retry [12]: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 带纽扣长袖T恤 秋冬节日派对上衣 3D圣诞老人雪花印花上衣 男士休闲长袖衫
+2026-11-17 10:29:29 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-17 10:29:47 [INFO ] [deepseek_web]     OK: 男士圣诞印花长袖T恤 男士常规版型圆领套头衫 带纽扣长袖T恤 秋冬节日派对上衣 3D圣诞老人雪花印花上衣 男士休闲长袖套头衫 男士趣味印花套头T恤 男士圣诞主题
+2026-11-17 10:29:50 [INFO ] [deepseek_web] ==================================================
+2026-11-17 10:29:50 [INFO ] [deepseek_web] Done: 14 success, 0 failed → optimize_title
+2026-11-17 10:29:50 [INFO ] [title_workflow] Optimization complete: 14 titles
+2026-11-17 10:29:52 [INFO ] [title_workflow] Written 14 optimized titles to column H (8)
+2026-11-17 10:29:52 [INFO ] [title_workflow] Done: 11.17v1_de.xlsx
+2026-11-17 10:29:52 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-11-17 10:29:52 [INFO ] [jenkins] 
+2026-11-17 10:29:52 [INFO ] [jenkins] ==================================================
+2026-11-17 10:29:52 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-17 10:29:52 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-17 10:29:52 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-17 10:29:52 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-17 10:29:52 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-17 15:58:18 [INFO ] [jenkins] ==================================================
+2026-11-17 15:58:18 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-11-17 15:58:18 [INFO ] [jenkins] ==================================================
+2026-11-17 15:58:18 [INFO ] [jenkins] 
+2026-11-17 15:58:18 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-11-17 15:58:18 [INFO ] [jenkins] ------------------------------
+2026-11-17 15:58:18 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-11-17 15:58:18 [INFO ] [jenkins] 
+2026-11-17 15:58:18 [INFO ] [jenkins] [2/5] Preprocess
+2026-11-17 15:58:18 [INFO ] [jenkins] ------------------------------
+2026-11-17 15:58:18 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-17 15:58:18 [INFO ] [preprocess] [保暖T恤.xlsx]
+2026-11-17 15:58:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-17 15:58:18 [INFO ] [pipeline] [1/1] remove_header
+2026-11-17 15:58:21 [INFO ] [preprocess]   [保暖T恤.xlsx] Sheet [Sheet0]: header row removed
+2026-11-17 15:58:21 [INFO ] [pipeline] Pipeline complete
+2026-11-17 15:58:21 [INFO ] [preprocess] Preprocessing complete
+2026-11-17 15:58:22 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-11-17 15:58:22 [INFO ] [jenkins] 
+2026-11-17 15:58:22 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-11-17 15:58:22 [INFO ] [jenkins] ------------------------------
+2026-11-17 15:58:22 [INFO ] [main] Log file: 20261117_8024d827.log
+2026-11-17 15:58:22 [INFO ] [main] Found 1 file(s):
+2026-11-17 15:58:22 [INFO ] [main]   保暖T恤.xlsx
+2026-11-17 15:58:22 [INFO ] [main] Output: 11.16v1_fr.xlsx
+2026-11-17 15:58:22 [INFO ] [main] ==================================================
+2026-11-17 15:58:22 [INFO ] [main] Single file, copied
+2026-11-17 15:58:22 [INFO ] [main] Deleted 1 source file(s)
+2026-11-17 15:58:23 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-17 15:58:23 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-17 15:58:23 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-11-17 15:58:23 [INFO ] [pipeline] [2/12] validate
+2026-11-17 15:58:23 [INFO ] [pipeline]   Validated: 609 rows, 27 cols (expect ~32)
+2026-11-17 15:58:23 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-17 15:58:23 [INFO ] [pipeline]   Backed up 1312 images
+2026-11-17 15:58:23 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-17 15:58:23 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-17 15:58:23 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-17 15:58:23 [INFO ] [pipeline]   Restored 1312 images with adjusted anchors
+2026-11-17 15:58:23 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-17 15:58:23 [INFO ] [pipeline]   Column 2: 609 IDs generated
+2026-11-17 15:58:23 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-17 15:58:23 [INFO ] [pipeline]   Column 3: 609 cells filled
+2026-11-17 15:58:23 [INFO ] [pipeline] [6/12] map_colors
+2026-11-17 15:58:23 [INFO ] [pipeline]   Colors J -> K: 586 cells mapped, 23 rows skipped (col A has fill), 0 no match (recorded)
+2026-11-17 15:58:23 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-17 15:58:23 [INFO ] [pipeline]   Size column L: 586 mapped, 23 cleared (col A has fill), 0 no match (recorded)
+2026-11-17 15:58:23 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-17 15:58:23 [INFO ] [pipeline]   Mirror copy: 3260 cells written
+2026-11-17 15:58:23 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-17 15:58:23 [INFO ] [pipeline]   Price source M -> AS: 609 cells copied
+2026-11-17 15:58:23 [INFO ] [pipeline] [10/12] calc_price
+2026-11-17 15:58:23 [INFO ] [pipeline]   Price columns AT-AW: 609 rows calculated
+2026-11-17 15:58:23 [INFO ] [pipeline] [11/12] format_cells
+2026-11-17 15:58:23 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-17 15:58:23 [INFO ] [pipeline]   Formatted 609 rows: h=50, align=left/center
+2026-11-17 15:58:23 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-17 15:58:23 [INFO ] [pipeline] [12/12] finalize
+2026-11-17 15:58:23 [INFO ] [pipeline]   Done: 609 rows x 49 cols (target: 49)
+2026-11-17 15:58:23 [INFO ] [pipeline] Pipeline complete
+2026-11-17 15:58:24 [INFO ] [main] Size: 609 rows x 49 cols
+2026-11-17 15:58:24 [INFO ] [main] ==================================================
+2026-11-17 15:58:24 [INFO ] [main] Done: 11.16v1_fr.xlsx
+2026-11-17 15:58:24 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-11-17 15:58:24 [INFO ] [jenkins] 
+2026-11-17 15:58:24 [INFO ] [jenkins] [4/5] Color re-processing
+2026-11-17 15:58:24 [INFO ] [jenkins] ------------------------------
+2026-11-17 15:58:24 [INFO ] [color_size_main] Source: 11.16v1_fr.xlsx
+2026-11-17 15:58:25 [INFO ] [color_size_main] Extracted: 586 data lines + 23 separators → check_.txt
+2026-11-17 15:58:25 [INFO ] [color_size_main] Running: process.py
+2026-11-17 15:58:26 [INFO ] [color_size_deal] Groups: 23, lines: 586 (file: 609)
+2026-11-17 15:58:26 [INFO ] [color_size_deal] Prefixes: {'01': 5}
+2026-11-17 15:58:26 [INFO ] [color_size_deal] Done.
+2026-11-17 15:58:26 [INFO ] [color_size_main] Processing write-back: 609 lines
+2026-11-17 15:58:27 [INFO ] [color_size_main] Write-back: 28 written, 581 unchanged → 11.16v1_fr.xlsx
+2026-11-17 15:58:27 [INFO ] [color_size_main] Done.
+2026-11-17 15:58:27 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-11-17 15:58:27 [INFO ] [jenkins] 
+2026-11-17 15:58:27 [INFO ] [jenkins] [5/5] Title optimization
+2026-11-17 15:58:27 [INFO ] [jenkins] ------------------------------
+2026-11-17 15:58:27 [INFO ] [title_workflow] Source: 11.16v1_fr.xlsx
+2026-11-17 15:58:28 [INFO ] [title_workflow] Extracted 23 titles + 23 links
+2026-11-17 15:58:28 [INFO ] [title_workflow] Written: origin_title (23) + origin_link (23)
+2026-11-17 15:58:28 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-17 15:58:28 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-17 15:58:29 [INFO ] [deepseek_web] Opening DeepSeek web (23 titles)...
+2026-11-17 15:58:29 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-17 15:58:32 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-17 15:58:35 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-17 15:58:35 [INFO ] [deepseek_web] [1/23] 男士秋冬半开衫休闲运动大码保暖T恤纯色长袖打底衫
+2026-11-17 15:58:43 [INFO ] [deepseek_web]   Downloaded: 0001_4780306203596318835641.jpg
+2026-11-17 15:58:43 [INFO ] [deepseek_web]   Prefetching next image (2/23)
+2026-11-17 15:58:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 15:58:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:00:28 [ERROR] [deepseek_web]   FAILED: Locator.all: Target page, context or browser has been closed
+2026-11-17 16:00:28 [INFO ] [deepseek_web]   Deleted: 0001_4780306203596318835641.jpg
+2026-11-17 16:26:56 [INFO ] [jenkins] ==================================================
+2026-11-17 16:26:56 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-11-17 16:26:56 [INFO ] [jenkins] ==================================================
+2026-11-17 16:26:56 [INFO ] [jenkins] 
+2026-11-17 16:26:56 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-11-17 16:26:56 [INFO ] [jenkins] ------------------------------
+2026-11-17 16:26:56 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-11-17 16:26:56 [INFO ] [jenkins] 
+2026-11-17 16:26:56 [INFO ] [jenkins] [2/5] Preprocess
+2026-11-17 16:26:56 [INFO ] [jenkins] ------------------------------
+2026-11-17 16:26:57 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-11-17 16:26:57 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-11-17 16:26:57 [INFO ] [jenkins] 
+2026-11-17 16:26:57 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-11-17 16:26:57 [INFO ] [jenkins] ------------------------------
+2026-11-17 16:26:58 [INFO ] [main] Log file: 20261117_8024d827.log
+2026-11-17 16:26:58 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-11-17 16:26:58 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-11-17 16:26:58 [INFO ] [jenkins] 
+2026-11-17 16:26:58 [INFO ] [jenkins] [4/5] Color re-processing
+2026-11-17 16:26:58 [INFO ] [jenkins] ------------------------------
+2026-11-17 16:26:58 [INFO ] [color_size_main] Source: 11.16v1_fr.xlsx
+2026-11-17 16:26:59 [INFO ] [color_size_main] Extracted: 586 data lines + 23 separators → check_.txt
+2026-11-17 16:26:59 [INFO ] [color_size_main] Running: process.py
+2026-11-17 16:26:59 [INFO ] [color_size_deal] Groups: 23, lines: 586 (file: 609)
+2026-11-17 16:26:59 [INFO ] [color_size_deal] Prefixes: {'01': 5}
+2026-11-17 16:26:59 [INFO ] [color_size_deal] Done.
+2026-11-17 16:26:59 [INFO ] [color_size_main] Processing write-back: 609 lines
+2026-11-17 16:27:01 [INFO ] [color_size_main] Write-back: 23 written, 586 unchanged → 11.16v1_fr.xlsx
+2026-11-17 16:27:01 [INFO ] [color_size_main] Done.
+2026-11-17 16:27:01 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-11-17 16:27:01 [INFO ] [jenkins] 
+2026-11-17 16:27:01 [INFO ] [jenkins] [5/5] Title optimization
+2026-11-17 16:27:01 [INFO ] [jenkins] ------------------------------
+2026-11-17 16:27:01 [INFO ] [title_workflow] Source: 11.16v1_fr.xlsx
+2026-11-17 16:27:02 [INFO ] [title_workflow] Extracted 23 titles + 23 links
+2026-11-17 16:27:02 [INFO ] [title_workflow] Written: origin_title (23) + origin_link (23)
+2026-11-17 16:27:02 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-17 16:27:02 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-17 16:27:03 [INFO ] [deepseek_web] Opening DeepSeek web (23 titles)...
+2026-11-17 16:27:03 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-17 16:27:08 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-17 16:27:12 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-17 16:27:12 [INFO ] [deepseek_web] [1/23] 男士秋冬半开衫休闲运动大码保暖T恤纯色长袖打底衫
+2026-11-17 16:27:17 [INFO ] [deepseek_web]   Downloaded: 0001_4780306203596318835641.jpg
+2026-11-17 16:27:17 [INFO ] [deepseek_web]   Prefetching next image (2/23)
+2026-11-17 16:27:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:27:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:28:09 [INFO ] [deepseek_web]   Response: 男士长袖T恤半开襟打底衫 大码休闲运动上衣 立领纽扣套头衫 秋冬保暖长袖T恤 纯色打底衫 亨利衫 男士翻领长袖上衣 秋季运动保暖打底衫
+2026-11-17 16:28:09 [INFO ] [deepseek_web]   Deleted: 0001_4780306203596318835641.jpg
+2026-11-17 16:28:14 [INFO ] [deepseek_web] [2/23] 2025秋冬男士德绒T恤打底休闲长袖T恤
+2026-11-17 16:28:14 [INFO ] [deepseek_web]   Downloaded: 0002_5261046351956821161803.jpg
+2026-11-17 16:28:14 [INFO ] [deepseek_web]   Prefetching next image (3/23)
+2026-11-17 16:28:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:28:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:28:43 [INFO ] [deepseek_web]   Response: 男士德绒T恤长袖打底衫 休闲长袖上衣 半开襟纽扣套头衫 亨利衫 秋冬保暖打底T恤 德绒纯色长袖衫 男士圆领长袖上衣 秋冬保暖打底衫 保暖长袖T恤 套头打底上衣
+2026-11-17 16:28:43 [INFO ] [deepseek_web]   Deleted: 0002_5261046351956821161803.jpg
+2026-11-17 16:28:48 [INFO ] [deepseek_web] [3/23] 25秋冬男士休闲重磅长袖加绒保暖T恤打底衫
+2026-11-17 16:28:48 [INFO ] [deepseek_web]   Downloaded: 0003_4202105157422736524550.jpg
+2026-11-17 16:28:48 [INFO ] [deepseek_web]   Prefetching next image (4/23)
+2026-11-17 16:28:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:28:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:29:17 [INFO ] [deepseek_web]   Response: 男士重磅长袖T恤打底衫 休闲加绒保暖长袖上衣 半开襟纽扣套头衫 亨利衫 秋冬保暖打底T恤 纯色重磅圆领套头衫 男士休闲保暖打底衫
+2026-11-17 16:29:17 [INFO ] [deepseek_web]   Deleted: 0003_4202105157422736524550.jpg
+2026-11-17 16:29:22 [INFO ] [deepseek_web] [4/23] 2025男装秋冬户外休闲纯色抓绒圆领拉链长袖套头亨利衫
+2026-11-17 16:29:22 [INFO ] [deepseek_web]   Downloaded: 0004_8851118453121920775479.jpg
+2026-11-17 16:29:22 [INFO ] [deepseek_web]   Prefetching next image (5/23)
+2026-11-17 16:29:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:29:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:29:51 [INFO ] [deepseek_web]   Response: 男士半拉链套头针织衫 秋冬户外休闲保暖长袖T恤 立领拉链打底衫 纯色罗纹针织毛衣 男士套头亨利衫 抓绒保暖长袖上衣 半拉链立领卫衣 休闲套头打底衫 男士针织套头
+2026-11-17 16:29:51 [INFO ] [deepseek_web]   Deleted: 0004_8851118453121920775479.jpg
+2026-11-17 16:29:56 [INFO ] [deepseek_web] [5/23] 2026男士大码灯芯绒休闲时尚四分之一拉链宽松长袖T恤
+2026-11-17 16:29:56 [INFO ] [deepseek_web]   Downloaded: 0005_8220350457691997766574.jpg
+2026-11-17 16:29:56 [INFO ] [deepseek_web]   Prefetching next image (6/23)
+2026-11-17 16:29:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:30:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:30:25 [INFO ] [deepseek_web]   Response: 男士灯芯绒长袖T恤 大码宽松半拉链套头衫 四分之一拉链休闲打底衫 秋冬保暖长袖上衣 纯色灯芯绒套头卫衣 男士半拉链打底衫 宽松休闲长袖T恤
+2026-11-17 16:30:25 [INFO ] [deepseek_web]   Deleted: 0005_8220350457691997766574.jpg
+2026-11-17 16:30:30 [INFO ] [deepseek_web] [6/23] 跨境欧美男装新款纯色灯芯绒三扣男士长袖上衣T恤polo衬衫
+2026-11-17 16:30:30 [INFO ] [deepseek_web]   Downloaded: 0006_1640434392696435772158.jpg
+2026-11-17 16:30:30 [INFO ] [deepseek_web]   Prefetching next image (7/23)
+2026-11-17 16:30:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:30:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:30:59 [INFO ] [deepseek_web]   Response: 男士灯芯绒长袖T恤 宽松休闲长袖上衣 三粒扣亨利领套头衫 带口袋纯色打底衫 秋冬保暖长袖Polo衫 灯芯绒亨利衫 男士条绒休闲上衣 男士长袖套头打底衫 纯色灯芯
+2026-11-17 16:30:59 [INFO ] [deepseek_web]   Deleted: 0006_1640434392696435772158.jpg
+2026-11-17 16:31:04 [INFO ] [deepseek_web] [7/23] 男士健身户外运动高弹训练保暖紧身加绒高领长袖
+2026-11-17 16:31:04 [INFO ] [deepseek_web]   Downloaded: 0007_4571058279303110797418.jpg
+2026-11-17 16:31:04 [INFO ] [deepseek_web]   Prefetching next image (8/23)
+2026-11-17 16:31:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:31:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:31:33 [INFO ] [deepseek_web]   Response: 男士紧身长袖T恤 高弹修身运动上衣 高领套头打底衫 秋冬加绒保暖紧身衣 户外训练保暖长袖 拼接缝线运动打底衫 纯色高弹力健身服 男士运动紧身衣 训练长袖打底上衣
+2026-11-17 16:31:33 [INFO ] [deepseek_web]   Deleted: 0007_4571058279303110797418.jpg
+2026-11-17 16:31:38 [INFO ] [deepseek_web] [8/23] 男士圆领羊绒醋酯打底衫可外穿圆领恒温加厚磨毛保暖内衣
+2026-11-17 16:31:38 [INFO ] [deepseek_web]   Downloaded: 0008_9051024553887816560780.jpg
+2026-11-17 16:31:38 [INFO ] [deepseek_web]   Prefetching next image (9/23)
+2026-11-17 16:31:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:31:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:32:08 [INFO ] [deepseek_web]   Response: 男士圆领长袖T恤打底衫 纯色套头休闲卫衣 秋冬加厚保暖打底衫 恒温磨毛保暖上衣 圆领套头长袖衫 羊绒感保暖打底T恤 醋酯混纺长袖上衣 男士休闲套头卫衣 可外穿保
+2026-11-17 16:32:08 [INFO ] [deepseek_web]   Deleted: 0008_9051024553887816560780.jpg
+2026-11-17 16:32:13 [INFO ] [deepseek_web] [9/23] 男士中领秋衣打底内穿薄款双面磨毛保暖内衣
+2026-11-17 16:32:13 [INFO ] [deepseek_web]   Downloaded: 0009_7090204516991712536161.jpg
+2026-11-17 16:32:13 [INFO ] [deepseek_web]   Prefetching next image (10/23)
+2026-11-17 16:32:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:32:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:32:42 [INFO ] [deepseek_web]   Response: 男士中领保暖内衣 双面磨毛打底衫 修身内穿长袖上衣 半高领纯色秋衣 秋冬恒温保暖内衣套装 双面磨毛保暖打底上衣 男士长袖T恤打底衫 基础款内搭长袖 秋衣秋裤保暖
+2026-11-17 16:32:42 [INFO ] [deepseek_web]   Deleted: 0009_7090204516991712536161.jpg
+2026-11-17 16:32:47 [INFO ] [deepseek_web] [10/23] 男士灯芯绒休闲修身纯色长袖T恤
+2026-11-17 16:32:47 [INFO ] [deepseek_web]   Downloaded: 0010_6040418517075819116006.jpg
+2026-11-17 16:32:47 [INFO ] [deepseek_web]   Prefetching next image (11/23)
+2026-11-17 16:32:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:32:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:33:16 [INFO ] [deepseek_web]   Response: 男士灯芯绒长袖T恤 修身休闲打底衫 立领纽扣亨利衫 半开领套头长袖上衣 秋季纯色打底T恤 男士灯芯绒休闲长袖衫 修身套头打底衫 纯色长袖T恤
+2026-11-17 16:33:16 [INFO ] [deepseek_web]   Deleted: 0010_6040418517075819116006.jpg
+2026-11-17 16:33:21 [INFO ] [deepseek_web] [11/23] 男士健身服紧身衣加绒打底衫
+2026-11-17 16:33:21 [INFO ] [deepseek_web]   Downloaded: 0011_5630325263132719617265.jpg
+2026-11-17 16:33:21 [INFO ] [deepseek_web]   Prefetching next image (12/23)
+2026-11-17 16:33:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:33:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:33:50 [INFO ] [deepseek_web]   Response: 男士紧身长袖T恤 高弹运动打底衫 修身插肩袖紧身衣 秋冬加绒保暖长袖上衣 圆领纯色健身服 男士高弹训练服 加绒打底衫 冬季运动紧身衣 插肩袖长袖套头衫
+2026-11-17 16:33:50 [INFO ] [deepseek_web]   Deleted: 0011_5630325263132719617265.jpg
+2026-11-17 16:33:55 [INFO ] [deepseek_web] [12/23] 男士健身服紧身衣加绒打底衫
+2026-11-17 16:33:55 [INFO ] [deepseek_web]   Downloaded: 0012_3300358068633111117502.jpg
+2026-11-17 16:33:55 [INFO ] [deepseek_web]   Prefetching next image (13/23)
+2026-11-17 16:33:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:34:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:34:24 [INFO ] [deepseek_web]   Response: 男士紧身长袖T恤 运动打底衫 高弹修身健身服 插肩袖圆领套头衫 秋冬加绒保暖打底衫 冬季保暖运动长袖 纯色高弹训练服 男士加绒紧身衣 运动保暖长袖上衣 修身健身
+2026-11-17 16:34:24 [INFO ] [deepseek_web]   Deleted: 0012_3300358068633111117502.jpg
+2026-11-17 16:34:29 [INFO ] [deepseek_web] [13/23] 男士金丝绒卫衣潮流帅气打底衫男装青年休闲上衣V领长袖T恤
+2026-11-17 16:34:29 [INFO ] [deepseek_web]   Downloaded: 0013_1050334296656171535377.jpg
+2026-11-17 16:34:29 [INFO ] [deepseek_web]   Prefetching next image (14/23)
+2026-11-17 16:34:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:34:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:34:58 [INFO ] [deepseek_web]   Response: 男士金丝绒长袖T恤 休闲修身打底衫 V领带纽扣套头衫 秋季保暖长袖上衣 纯色丝绒打底T恤 男士V领长袖T恤 男装休闲打底衫 丝绒亨利衫 长袖套头上衣
+2026-11-17 16:34:58 [INFO ] [deepseek_web]   Deleted: 0013_1050334296656171535377.jpg
+2026-11-17 16:35:03 [INFO ] [deepseek_web] [14/23] 男士春秋打底T恤长袖暖内衣外穿男士上衣睡衣薄绒款秋衣
+2026-11-17 16:35:03 [INFO ] [deepseek_web]   Downloaded: 0014_5360543204591778006231.jpg
+2026-11-17 16:35:03 [INFO ] [deepseek_web]   Prefetching next image (15/23)
+2026-11-17 16:35:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:35:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:35:32 [INFO ] [deepseek_web]   Response: 男士半高领长袖T恤 修身打底衫 纯色套头立领上衣 春秋保暖打底衫 秋冬薄绒保暖内衣 磨毛长袖秋衣 男士可外穿内搭T恤 半高领修身保暖上衣 套头内穿秋衣
+2026-11-17 16:35:32 [INFO ] [deepseek_web]   Deleted: 0014_5360543204591778006231.jpg
+2026-11-17 16:35:37 [INFO ] [deepseek_web] [15/23] 男士春秋中高领打底上衣男雪花绒加绒无痕保暖秋衣
+2026-11-17 16:35:37 [INFO ] [deepseek_web]   Downloaded: 0015_2490535400921613271325.jpg
+2026-11-17 16:35:37 [INFO ] [deepseek_web]   Prefetching next image (16/23)
+2026-11-17 16:35:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:35:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:36:06 [INFO ] [deepseek_web]   Response: 男士半高领打底衫 修身长袖T恤 中领套头衫 无痕内搭秋衣 秋冬加绒保暖打底衫 雪花绒纯色长袖上衣 男士保暖内衣 春秋薄绒秋衣 中高领套头上衣 男士休闲打底长袖
+2026-11-17 16:36:06 [INFO ] [deepseek_web]   Deleted: 0015_2490535400921613271325.jpg
+2026-11-17 16:36:11 [INFO ] [deepseek_web] [16/23] 冬季男士假两件针织时尚衬衫领外套毛衣内搭休闲加绒打底衫
+2026-11-17 16:36:11 [INFO ] [deepseek_web]   Downloaded: 0016_3900905291902121136581.jpg
+2026-11-17 16:36:11 [INFO ] [deepseek_web]   Prefetching next image (17/23)
+2026-11-17 16:36:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:36:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:36:40 [INFO ] [deepseek_web]   Response: 男士假两件针织衫毛衣 假两件衬衫领套头衫 修身休闲长袖打底衫 罗纹针织套头毛衣 冬季加绒保暖内搭 秋冬保暖针织衫 纯色拼接衬衫领上衣 男士加绒打底毛衣 假两件长
+2026-11-17 16:36:40 [INFO ] [deepseek_web]   Deleted: 0016_3900905291902121136581.jpg
+2026-11-17 16:36:45 [INFO ] [deepseek_web] [17/23] 男士新款时尚长袖打底衫纽扣灯芯绒上衣
+2026-11-17 16:36:45 [INFO ] [deepseek_web]   Downloaded: 0017_5420438391332515401499.jpg
+2026-11-17 16:36:45 [INFO ] [deepseek_web]   Prefetching next image (18/23)
+2026-11-17 16:36:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:36:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:37:15 [INFO ] [deepseek_web]   Response: 男士灯芯绒长袖T恤 休闲修身打底衫 半开襟纽扣套头衫 亨利衫 纯色条绒上衣 拼接领口打底T恤 秋冬保暖长袖上衣 男士休闲套头衫 灯芯绒打底长袖 男士长袖上衣 秋
+2026-11-17 16:37:15 [INFO ] [deepseek_web]   Deleted: 0017_5420438391332515401499.jpg
+2026-11-17 16:37:20 [INFO ] [deepseek_web] [18/23] 男女同款秋季德绒双拼圆领打底衫长袖T恤
+2026-11-17 16:37:20 [INFO ] [deepseek_web]   Downloaded: 0018_1451114067391015113998.jpg
+2026-11-17 16:37:20 [INFO ] [deepseek_web]   Prefetching next image (19/23)
+2026-11-17 16:37:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:37:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:37:49 [INFO ] [deepseek_web]   Response: 男女同款长袖T恤 德绒打底衫 圆领套头衫 插肩袖拼接上衣 秋季保暖打底长袖 秋冬德绒保暖内衣 双色拼接长袖T恤 男女休闲打底衫 套头长袖秋衣 插肩袖打底上衣 德
+2026-11-17 16:37:49 [INFO ] [deepseek_web]   Deleted: 0018_1451114067391015113998.jpg
+2026-11-17 16:37:54 [INFO ] [deepseek_web] [19/23] 男士长袖加绒打底衫T恤
+2026-11-17 16:37:54 [INFO ] [deepseek_web]   Downloaded: 0019_4920352067422324492341.jpg
+2026-11-17 16:37:54 [INFO ] [deepseek_web]   Prefetching next image (20/23)
+2026-11-17 16:37:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:38:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:38:23 [INFO ] [deepseek_web]   Response: 男士长袖T恤 加绒打底衫 圆领套头卫衣 宽松休闲长袖上衣 拼接缝线套头衫 秋冬加绒保暖打底衫 纯色加绒长袖T恤 无帽套头卫衣 冬季保暖内搭上衣 男士宽松打底长袖
+2026-11-17 16:38:23 [INFO ] [deepseek_web]   Deleted: 0019_4920352067422324492341.jpg
+2026-11-17 16:38:28 [INFO ] [deepseek_web] [20/23] 男士长袖加绒打底衫T恤
+2026-11-17 16:38:28 [INFO ] [deepseek_web]   Downloaded: 0020_2300410185992589902632.jpg
+2026-11-17 16:38:28 [INFO ] [deepseek_web]   Prefetching next image (21/23)
+2026-11-17 16:38:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:38:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:38:57 [INFO ] [deepseek_web]   Response: 男士长袖T恤打底衫 立领半开襟套头衫 亨利领带纽扣休闲长袖上衣 肌理感混纺针织套头衫 秋冬加绒保暖打底衫 男士花纱纯色长袖上衣 休闲套头打底衫 男装保暖长袖秋衣
+2026-11-17 16:38:57 [INFO ] [deepseek_web]   Deleted: 0020_2300410185992589902632.jpg
+2026-11-17 16:39:02 [INFO ] [deepseek_web] [21/23] 冬季新款男士圆领纯色宽松加绒长袖T恤
+2026-11-17 16:39:02 [INFO ] [deepseek_web]   Downloaded: 0021_5431112481938115065954.jpg
+2026-11-17 16:39:02 [INFO ] [deepseek_web]   Prefetching next image (22/23)
+2026-11-17 16:39:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:39:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:39:31 [INFO ] [deepseek_web]   Response: 男士加绒长袖T恤 宽松休闲打底衫 圆领套头卫衣 拼接缝线长袖上衣 冬季保暖加绒T恤 纯色加绒保暖打底衫 男士无帽卫衣 内搭保暖秋衣 套头打底长袖 秋冬加厚长袖T
+2026-11-17 16:39:31 [INFO ] [deepseek_web]   Deleted: 0021_5431112481938115065954.jpg
+2026-11-17 16:39:36 [INFO ] [deepseek_web] [22/23] 男士高领长袖打底衫秋冬纯色修身堆堆领保暖T恤男款
+2026-11-17 16:39:36 [INFO ] [deepseek_web]   Downloaded: 0022_4550831035212375869793.jpg
+2026-11-17 16:39:36 [INFO ] [deepseek_web]   Prefetching next image (23/23)
+2026-11-17 16:39:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:39:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:40:05 [INFO ] [deepseek_web]   Response: 男士高领长袖T恤 修身打底衫 堆堆领套头衫 秋冬保暖长袖上衣 纯色高领T恤 男士堆堆领打底长袖 冬季保暖内搭秋衣 修身套头长袖衫 纯色基础款上衣
+2026-11-17 16:40:05 [INFO ] [deepseek_web]   Deleted: 0022_4550831035212375869793.jpg
+2026-11-17 16:40:10 [INFO ] [deepseek_web] [23/23] 男士保暖T恤打底衫老钱风时尚宽松休闲长袖T恤衫
+2026-11-17 16:40:10 [INFO ] [deepseek_web]   Downloaded: 0023_1131247500807113982728.jpg
+2026-11-17 16:40:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-17 16:40:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-17 16:40:39 [INFO ] [deepseek_web]   Response: 男士长袖T恤打底衫 宽松休闲针织上衣 亨利领半开襟套头衫 立领带纽扣长袖衫 秋冬保暖打底衫 罗纹纯色长袖T恤 竖条纹肌理套头衫 男士长袖亨利衫 休闲套头针织衫
+2026-11-17 16:40:39 [INFO ] [deepseek_web]   Deleted: 0023_1131247500807113982728.jpg
+2026-11-17 16:40:40 [INFO ] [deepseek_web] ==================================================
+2026-11-17 16:40:40 [INFO ] [deepseek_web] Done: 23 success, 0 failed → optimize_title
+2026-11-17 16:40:40 [INFO ] [title_workflow] Optimization complete: 23 titles
+2026-11-17 16:40:41 [INFO ] [title_workflow] Written 23 optimized titles to column H (8)
+2026-11-17 16:40:41 [INFO ] [title_workflow] Done: 11.16v1_fr.xlsx
+2026-11-17 16:40:42 [INFO ] [jenkins] [5/5] Title optimization OK
+2026-11-17 16:40:42 [INFO ] [jenkins] 
+2026-11-17 16:40:42 [INFO ] [jenkins] ==================================================
+2026-11-17 16:40:42 [INFO ] [jenkins] All 5 steps completed successfully
+2026-11-17 16:40:42 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-17 16:40:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-17 16:40:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-17 16:40:42 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

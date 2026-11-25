@@ -1,0 +1,851 @@
+2026-08-24 16:04:57 [INFO ] [jenkins] ==================================================
+2026-08-24 16:04:57 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-24 16:04:57 [INFO ] [jenkins] ==================================================
+2026-08-24 16:04:57 [INFO ] [jenkins] 
+2026-08-24 16:04:57 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-24 16:04:57 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:04:57 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-24 16:04:57 [INFO ] [jenkins] 
+2026-08-24 16:04:57 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-24 16:04:57 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:04:57 [INFO ] [preprocess] Preprocessing 10 file(s) with 2 step(s)
+2026-08-24 16:04:57 [INFO ] [preprocess] [套装1.xlsx]
+2026-08-24 16:04:58 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:04:58 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:04:58 [INFO ] [preprocess]   [套装1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:04:58 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:04:58 [INFO ] [preprocess]   [套装1.xlsx] Dedup: 7 filled rows, 4 deleted
+2026-08-24 16:04:58 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:04:59 [INFO ] [preprocess] [套装10.xlsx]
+2026-08-24 16:04:59 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:04:59 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:00 [INFO ] [preprocess]   [套装10.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:00 [INFO ] [preprocess]   [套装10.xlsx] Dedup: 15 filled rows, 10 deleted
+2026-08-24 16:05:00 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:00 [INFO ] [preprocess] [套装2.xlsx]
+2026-08-24 16:05:01 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:01 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:01 [INFO ] [preprocess]   [套装2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:01 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:01 [INFO ] [preprocess]   [套装2.xlsx] Dedup: 39 filled rows, 10 deleted
+2026-08-24 16:05:01 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:02 [INFO ] [preprocess] [套装3.xlsx]
+2026-08-24 16:05:02 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:02 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:02 [INFO ] [preprocess]   [套装3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:02 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:02 [INFO ] [preprocess]   [套装3.xlsx] Dedup: 12 filled rows, 4 deleted
+2026-08-24 16:05:02 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:03 [INFO ] [preprocess] [套装4.xlsx]
+2026-08-24 16:05:03 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:03 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:04 [INFO ] [preprocess]   [套装4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:04 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:04 [INFO ] [preprocess]   [套装4.xlsx] Dedup: 12 filled rows, 5 deleted
+2026-08-24 16:05:04 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:05 [INFO ] [preprocess] [套装5.xlsx]
+2026-08-24 16:05:05 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:05 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:06 [INFO ] [preprocess]   [套装5.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:06 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:06 [INFO ] [preprocess]   [套装5.xlsx] Dedup: 21 filled rows, 12 deleted
+2026-08-24 16:05:06 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:07 [INFO ] [preprocess] [套装6.xlsx]
+2026-08-24 16:05:08 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:08 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:08 [INFO ] [preprocess]   [套装6.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:08 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:08 [INFO ] [preprocess]   [套装6.xlsx] Dedup: 16 filled rows, 11 deleted
+2026-08-24 16:05:08 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:08 [INFO ] [preprocess] [套装7.xlsx]
+2026-08-24 16:05:09 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:09 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:09 [INFO ] [preprocess]   [套装7.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:09 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:10 [INFO ] [preprocess]   [套装7.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-24 16:05:10 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:11 [INFO ] [preprocess] [套装8.xlsx]
+2026-08-24 16:05:11 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:11 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:11 [INFO ] [preprocess]   [套装8.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:11 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:12 [INFO ] [preprocess]   [套装8.xlsx] Dedup: 11 filled rows, 8 deleted
+2026-08-24 16:05:12 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:12 [INFO ] [preprocess] [套装9.xlsx]
+2026-08-24 16:05:13 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:05:13 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:05:13 [INFO ] [preprocess]   [套装9.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:05:13 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:05:14 [INFO ] [preprocess]   [套装9.xlsx] Dedup: 21 filled rows, 10 deleted
+2026-08-24 16:05:14 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:05:14 [INFO ] [preprocess] Preprocessing complete
+2026-08-24 16:05:14 [ERROR] [jenkins] [2/4] Preprocess FAILED (code 120)
+2026-08-24 16:05:14 [ERROR] [jenkins] Pipeline aborted.
+2026-08-24 16:37:07 [INFO ] [jenkins] ==================================================
+2026-08-24 16:37:07 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-24 16:37:07 [INFO ] [jenkins] ==================================================
+2026-08-24 16:37:07 [INFO ] [jenkins] 
+2026-08-24 16:37:07 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-24 16:37:07 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:37:07 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-24 16:37:07 [INFO ] [jenkins] 
+2026-08-24 16:37:07 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-24 16:37:07 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:37:07 [INFO ] [preprocess] Preprocessing 10 file(s) with 2 step(s)
+2026-08-24 16:37:07 [INFO ] [preprocess] [套装1.xlsx]
+2026-08-24 16:37:07 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:07 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:07 [INFO ] [preprocess]   [套装1.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:07 [INFO ] [preprocess]   [套装1.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:07 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:07 [INFO ] [preprocess]   [套装1.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:07 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:08 [INFO ] [preprocess] [套装10.xlsx]
+2026-08-24 16:37:08 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:08 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:08 [INFO ] [preprocess]   [套装10.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:08 [INFO ] [preprocess]   [套装10.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:08 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:08 [INFO ] [preprocess]   [套装10.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:08 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:08 [INFO ] [preprocess] [套装2.xlsx]
+2026-08-24 16:37:09 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:09 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装2.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装2.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:09 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装2.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:09 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:09 [INFO ] [preprocess] [套装3.xlsx]
+2026-08-24 16:37:09 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:09 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装3.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装3.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:09 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:09 [INFO ] [preprocess]   [套装3.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:09 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:10 [INFO ] [preprocess] [套装4.xlsx]
+2026-08-24 16:37:10 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:10 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:10 [INFO ] [preprocess]   [套装4.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:10 [INFO ] [preprocess]   [套装4.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:10 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:10 [INFO ] [preprocess]   [套装4.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:10 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:11 [INFO ] [preprocess] [套装5.xlsx]
+2026-08-24 16:37:11 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:11 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:11 [INFO ] [preprocess]   [套装5.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:11 [INFO ] [preprocess]   [套装5.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:11 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:11 [INFO ] [preprocess]   [套装5.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:11 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:12 [INFO ] [preprocess] [套装6.xlsx]
+2026-08-24 16:37:12 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:12 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:12 [INFO ] [preprocess]   [套装6.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:12 [INFO ] [preprocess]   [套装6.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:12 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:12 [INFO ] [preprocess]   [套装6.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:12 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:12 [INFO ] [preprocess] [套装7.xlsx]
+2026-08-24 16:37:13 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:13 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:13 [INFO ] [preprocess]   [套装7.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:13 [INFO ] [preprocess]   [套装7.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:13 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:13 [INFO ] [preprocess]   [套装7.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:13 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:13 [INFO ] [preprocess] [套装8.xlsx]
+2026-08-24 16:37:14 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:14 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:14 [INFO ] [preprocess]   [套装8.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:14 [INFO ] [preprocess]   [套装8.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:14 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:14 [INFO ] [preprocess]   [套装8.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:14 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:14 [INFO ] [preprocess] [套装9.xlsx]
+2026-08-24 16:37:15 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:37:15 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:37:15 [INFO ] [preprocess]   [套装9.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-24 16:37:15 [INFO ] [preprocess]   [套装9.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-24 16:37:15 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:37:15 [INFO ] [preprocess]   [套装9.xlsx] No duplicate filled rows to remove
+2026-08-24 16:37:15 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:15 [INFO ] [preprocess] Preprocessing complete
+2026-08-24 16:37:15 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-24 16:37:15 [INFO ] [jenkins] 
+2026-08-24 16:37:15 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-24 16:37:15 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:37:16 [INFO ] [main] Log file: 20260824_8c3926ed.log
+2026-08-24 16:37:16 [INFO ] [main] Found 10 file(s):
+2026-08-24 16:37:16 [INFO ] [main]   套装1.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装10.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装2.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装3.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装4.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装5.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装6.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装7.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装8.xlsx
+2026-08-24 16:37:16 [INFO ] [main]   套装9.xlsx
+2026-08-24 16:37:16 [INFO ] [main] Output: 8.20v1.xlsx
+2026-08-24 16:37:16 [INFO ] [main] ==================================================
+2026-08-24 16:37:25 [INFO ] [main] Merged 10 files, 13056 images total
+2026-08-24 16:37:25 [INFO ] [main] Deleted 10 source file(s)
+2026-08-24 16:37:29 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-24 16:37:29 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_2]: 535 rows, 1030 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_3]: 710 rows, 1466 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_4]: 293 rows, 643 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_5]: 826 rows, 1872 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_6]: 885 rows, 1660 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_7]: 391 rows, 754 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_8]: 820 rows, 1649 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_9]: 761 rows, 1427 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Sheet [Sheet0_10]: 744 rows, 1367 images
+2026-08-24 16:37:35 [INFO ] [pipeline]   Merged 10 sheets -> 1, 5965 data rows, 11868 images
+2026-08-24 16:37:35 [INFO ] [pipeline] [2/12] validate
+2026-08-24 16:37:35 [INFO ] [pipeline]   Validated: 6588 rows, 27 cols (expect ~32)
+2026-08-24 16:37:35 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-24 16:37:36 [INFO ] [pipeline]   Backed up 13056 images
+2026-08-24 16:37:36 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-24 16:37:36 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-24 16:37:36 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-24 16:37:36 [INFO ] [pipeline]   Restored 13056 images with adjusted anchors
+2026-08-24 16:37:36 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-24 16:37:36 [INFO ] [pipeline]   Column 2: 6588 IDs generated
+2026-08-24 16:37:36 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-24 16:37:36 [INFO ] [pipeline]   Column 3: 6588 cells filled
+2026-08-24 16:37:36 [INFO ] [pipeline] [6/12] map_colors
+2026-08-24 16:37:36 [INFO ] [pipeline]   Column 10: 6494 cells mapped, 94 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-24 16:37:36 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-24 16:37:36 [INFO ] [pipeline]   Column 11: 6494 mapped, 94 cleared (col A has fill), 0 no match (recorded)
+2026-08-24 16:37:36 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-24 16:37:36 [INFO ] [pipeline]   Mirror copy: 36030 cells written
+2026-08-24 16:37:36 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-24 16:37:36 [INFO ] [pipeline]   Column 44: 6588 cells copied from col 12
+2026-08-24 16:37:36 [INFO ] [pipeline] [10/12] calc_price
+2026-08-24 16:37:37 [INFO ] [pipeline]   Columns 45-48: 6583 rows calculated
+2026-08-24 16:37:37 [INFO ] [pipeline] [11/12] format_cells
+2026-08-24 16:37:38 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-24 16:37:38 [INFO ] [pipeline]   Formatted 6588 rows: h=50, align=left/center
+2026-08-24 16:37:38 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-24 16:37:38 [INFO ] [pipeline] [12/12] finalize
+2026-08-24 16:37:38 [INFO ] [pipeline]   Done: 6588 rows x 48 cols (target: 48)
+2026-08-24 16:37:38 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:37:45 [INFO ] [main] Size: 6588 rows x 48 cols
+2026-08-24 16:37:45 [INFO ] [main] ==================================================
+2026-08-24 16:37:45 [INFO ] [main] Done: 8.20v1.xlsx
+2026-08-24 16:37:45 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-24 16:37:45 [INFO ] [jenkins] 
+2026-08-24 16:37:45 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-24 16:37:45 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:37:46 [INFO ] [color_size_main] Source: 8.20v1.xlsx
+2026-08-24 16:37:52 [INFO ] [color_size_main] Extracted: 6494 data lines + 94 separators → check_.txt
+2026-08-24 16:37:52 [INFO ] [color_size_main] Running: process.py
+2026-08-24 16:37:52 [INFO ] [color_size_deal] Groups: 94, lines: 6494 (file: 6588)
+2026-08-24 16:37:52 [INFO ] [color_size_deal] Prefixes: {'01': 1111, '02': 352, '03': 286, '04': 274, '05': 14, '06': 14, '07': 14, '08': 14, '09': 14}
+2026-08-24 16:37:52 [INFO ] [color_size_deal] Done.
+2026-08-24 16:37:52 [INFO ] [color_size_main] Processing write-back: 6588 lines
+2026-08-24 16:38:05 [INFO ] [color_size_main] Write-back: 2187 written, 4401 unchanged → 8.20v1.xlsx
+2026-08-24 16:38:05 [INFO ] [color_size_main] Done.
+2026-08-24 16:38:06 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-24 16:38:06 [INFO ] [jenkins] 
+2026-08-24 16:38:06 [INFO ] [jenkins] ==================================================
+2026-08-24 16:38:06 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-24 16:38:06 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-24 16:38:06 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-24 16:38:06 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-24 16:38:06 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-24 16:41:26 [INFO ] [jenkins] ==================================================
+2026-08-24 16:41:26 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-24 16:41:26 [INFO ] [jenkins] ==================================================
+2026-08-24 16:41:26 [INFO ] [jenkins] 
+2026-08-24 16:41:26 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-24 16:41:26 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:41:26 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-24 16:41:26 [INFO ] [jenkins] 
+2026-08-24 16:41:26 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-24 16:41:26 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:41:27 [INFO ] [preprocess] Preprocessing 10 file(s) with 2 step(s)
+2026-08-24 16:41:27 [INFO ] [preprocess] [套装1.xlsx]
+2026-08-24 16:41:27 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:27 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:27 [INFO ] [preprocess]   [套装1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:27 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:28 [INFO ] [preprocess]   [套装1.xlsx] Dedup: 7 filled rows, 4 deleted
+2026-08-24 16:41:28 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:28 [INFO ] [preprocess] [套装10.xlsx]
+2026-08-24 16:41:29 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:29 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:29 [INFO ] [preprocess]   [套装10.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:29 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:29 [INFO ] [preprocess]   [套装10.xlsx] Dedup: 15 filled rows, 10 deleted
+2026-08-24 16:41:29 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:29 [INFO ] [preprocess] [套装2.xlsx]
+2026-08-24 16:41:30 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:30 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:30 [INFO ] [preprocess]   [套装2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:30 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:31 [INFO ] [preprocess]   [套装2.xlsx] Dedup: 39 filled rows, 10 deleted
+2026-08-24 16:41:31 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:31 [INFO ] [preprocess] [套装3.xlsx]
+2026-08-24 16:41:31 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:31 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:31 [INFO ] [preprocess]   [套装3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:31 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:31 [INFO ] [preprocess]   [套装3.xlsx] Dedup: 12 filled rows, 4 deleted
+2026-08-24 16:41:31 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:32 [INFO ] [preprocess] [套装4.xlsx]
+2026-08-24 16:41:32 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:32 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:33 [INFO ] [preprocess]   [套装4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:33 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:33 [INFO ] [preprocess]   [套装4.xlsx] Dedup: 12 filled rows, 5 deleted
+2026-08-24 16:41:33 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:34 [INFO ] [preprocess] [套装5.xlsx]
+2026-08-24 16:41:34 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:34 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:35 [INFO ] [preprocess]   [套装5.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:35 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:35 [INFO ] [preprocess]   [套装5.xlsx] Dedup: 21 filled rows, 12 deleted
+2026-08-24 16:41:35 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:36 [INFO ] [preprocess] [套装6.xlsx]
+2026-08-24 16:41:36 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:36 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:36 [INFO ] [preprocess]   [套装6.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:36 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:36 [INFO ] [preprocess]   [套装6.xlsx] Dedup: 16 filled rows, 11 deleted
+2026-08-24 16:41:36 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:37 [INFO ] [preprocess] [套装7.xlsx]
+2026-08-24 16:41:37 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:37 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:38 [INFO ] [preprocess]   [套装7.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:38 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:38 [INFO ] [preprocess]   [套装7.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-24 16:41:38 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:39 [INFO ] [preprocess] [套装8.xlsx]
+2026-08-24 16:41:39 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:39 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:40 [INFO ] [preprocess]   [套装8.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:40 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:40 [INFO ] [preprocess]   [套装8.xlsx] Dedup: 11 filled rows, 8 deleted
+2026-08-24 16:41:40 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:40 [INFO ] [preprocess] [套装9.xlsx]
+2026-08-24 16:41:41 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-24 16:41:41 [INFO ] [pipeline] [1/2] remove_header
+2026-08-24 16:41:41 [INFO ] [preprocess]   [套装9.xlsx] Sheet [Sheet0]: header row removed
+2026-08-24 16:41:41 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-24 16:41:42 [INFO ] [preprocess]   [套装9.xlsx] Dedup: 21 filled rows, 10 deleted
+2026-08-24 16:41:42 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:41:42 [INFO ] [preprocess] Preprocessing complete
+2026-08-24 16:41:42 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-24 16:41:42 [INFO ] [jenkins] 
+2026-08-24 16:41:42 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-24 16:41:42 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:41:43 [INFO ] [main] Log file: 20260824_8c3926ed.log
+2026-08-24 16:41:43 [INFO ] [main] Found 10 file(s):
+2026-08-24 16:41:43 [INFO ] [main]   套装1.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装10.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装2.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装3.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装4.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装5.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装6.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装7.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装8.xlsx
+2026-08-24 16:41:43 [INFO ] [main]   套装9.xlsx
+2026-08-24 16:41:43 [INFO ] [main] Output: 8.20v1.xlsx
+2026-08-24 16:41:43 [INFO ] [main] ==================================================
+2026-08-24 16:41:53 [INFO ] [main] Merged 10 files, 13056 images total
+2026-08-24 16:41:53 [INFO ] [main] Deleted 10 source file(s)
+2026-08-24 16:41:58 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-24 16:41:58 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_2]: 535 rows, 1030 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_3]: 710 rows, 1466 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_4]: 293 rows, 643 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_5]: 826 rows, 1872 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_6]: 885 rows, 1660 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_7]: 391 rows, 754 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_8]: 820 rows, 1649 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_9]: 761 rows, 1427 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Sheet [Sheet0_10]: 744 rows, 1367 images
+2026-08-24 16:42:04 [INFO ] [pipeline]   Merged 10 sheets -> 1, 5965 data rows, 11868 images
+2026-08-24 16:42:04 [INFO ] [pipeline] [2/12] validate
+2026-08-24 16:42:04 [INFO ] [pipeline]   Validated: 6588 rows, 27 cols (expect ~32)
+2026-08-24 16:42:04 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-24 16:42:05 [INFO ] [pipeline]   Backed up 13056 images
+2026-08-24 16:42:05 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-24 16:42:05 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-24 16:42:05 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-24 16:42:05 [INFO ] [pipeline]   Restored 13056 images with adjusted anchors
+2026-08-24 16:42:05 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-24 16:42:05 [INFO ] [pipeline]   Column 2: 6588 IDs generated
+2026-08-24 16:42:05 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-24 16:42:05 [INFO ] [pipeline]   Column 3: 6588 cells filled
+2026-08-24 16:42:05 [INFO ] [pipeline] [6/12] map_colors
+2026-08-24 16:42:05 [INFO ] [pipeline]   Column 10: 6494 cells mapped, 94 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-24 16:42:05 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-24 16:42:05 [INFO ] [pipeline]   Column 11: 6494 mapped, 94 cleared (col A has fill), 0 no match (recorded)
+2026-08-24 16:42:05 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-24 16:42:05 [INFO ] [pipeline]   Mirror copy: 36030 cells written
+2026-08-24 16:42:05 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-24 16:42:05 [INFO ] [pipeline]   Column 44: 6588 cells copied from col 12
+2026-08-24 16:42:05 [INFO ] [pipeline] [10/12] calc_price
+2026-08-24 16:42:06 [INFO ] [pipeline]   Columns 45-48: 6583 rows calculated
+2026-08-24 16:42:06 [INFO ] [pipeline] [11/12] format_cells
+2026-08-24 16:42:07 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-24 16:42:07 [INFO ] [pipeline]   Formatted 6588 rows: h=50, align=left/center
+2026-08-24 16:42:07 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-24 16:42:07 [INFO ] [pipeline] [12/12] finalize
+2026-08-24 16:42:07 [INFO ] [pipeline]   Done: 6588 rows x 48 cols (target: 48)
+2026-08-24 16:42:07 [INFO ] [pipeline] Pipeline complete
+2026-08-24 16:42:15 [INFO ] [main] Size: 6588 rows x 48 cols
+2026-08-24 16:42:15 [INFO ] [main] ==================================================
+2026-08-24 16:42:15 [INFO ] [main] Done: 8.20v1.xlsx
+2026-08-24 16:42:15 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-24 16:42:15 [INFO ] [jenkins] 
+2026-08-24 16:42:15 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-24 16:42:15 [INFO ] [jenkins] ------------------------------
+2026-08-24 16:42:16 [INFO ] [color_size_main] Source: 8.20v1.xlsx
+2026-08-24 16:42:22 [INFO ] [color_size_main] Extracted: 6494 data lines + 94 separators → check_.txt
+2026-08-24 16:42:22 [INFO ] [color_size_main] Running: process.py
+2026-08-24 16:42:23 [INFO ] [color_size_deal] Groups: 94, lines: 6494 (file: 6588)
+2026-08-24 16:42:23 [INFO ] [color_size_deal] Prefixes: {'01': 1111, '02': 352, '03': 286, '04': 274, '05': 14, '06': 14, '07': 14, '08': 14, '09': 14}
+2026-08-24 16:42:23 [INFO ] [color_size_deal] Done.
+2026-08-24 16:42:23 [INFO ] [color_size_main] Processing write-back: 6588 lines
+2026-08-24 16:42:36 [INFO ] [color_size_main] Write-back: 2187 written, 4401 unchanged → 8.20v1.xlsx
+2026-08-24 16:42:36 [INFO ] [color_size_main] Done.
+2026-08-24 16:42:37 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-24 16:42:37 [INFO ] [jenkins] 
+2026-08-24 16:42:37 [INFO ] [jenkins] ==================================================
+2026-08-24 16:42:37 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-24 16:42:37 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-24 16:42:37 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-24 16:42:37 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-24 16:42:37 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-24 18:20:55 [INFO ] [jenkins] ==================================================
+2026-08-24 18:20:55 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-24 18:20:55 [INFO ] [jenkins] ==================================================
+2026-08-24 18:20:55 [INFO ] [jenkins] 
+2026-08-24 18:20:55 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-24 18:20:55 [INFO ] [jenkins] ------------------------------
+2026-08-24 18:20:55 [INFO ] [title_workflow] Source: 8.20v1.xlsx
+2026-08-24 18:20:58 [INFO ] [title_workflow] Extracted 56 titles + 56 links
+2026-08-24 18:20:58 [INFO ] [title_workflow] Written: origin_title (56) + origin_link (56)
+2026-08-24 18:20:58 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-24 18:20:58 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-24 18:20:59 [INFO ] [deepseek_web] Opening DeepSeek web (56 titles)...
+2026-08-24 18:20:59 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-24 18:21:06 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-24 18:21:09 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-24 18:21:09 [INFO ] [deepseek_web] [1/56] 穆斯林休闲时尚男装非洲男士套装烫金上衣长裤2件套
+2026-08-24 18:21:14 [INFO ] [deepseek_web]   Downloaded: 0001_4510445140343416575280.jpg
+2026-08-24 18:21:14 [INFO ] [deepseek_web]   Prefetching next image (2/56)
+2026-08-24 18:21:14 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-24 18:21:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:21:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:21:44 [INFO ] [deepseek_web]   Response: 男士穆斯林非洲套装2件套小立领金色烫金印花长袖纽扣上衣搭配宽松抽绳松紧腰长裤
+2026-08-24 18:21:44 [INFO ] [deepseek_web]   Deleted: 0001_4510445140343416575280.jpg
+2026-08-24 18:21:49 [INFO ] [deepseek_web] [2/56] 男士纯色休闲连帽卫衣套装2
+2026-08-24 18:21:49 [INFO ] [deepseek_web]   Downloaded: 0002_5860511207468638076139.jpg
+2026-08-24 18:21:49 [INFO ] [deepseek_web]   Prefetching next image (3/56)
+2026-08-24 18:21:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:22:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:22:18 [INFO ] [deepseek_web]   Response: 男士纯色休闲连帽卫衣套装针织面料开襟拉链长袖连帽抽绳罗纹袖口下摆双侧插袋上衣搭配直筒宽松侧边多口袋工装长裤
+2026-08-24 18:22:18 [INFO ] [deepseek_web]   Deleted: 0002_5860511207468638076139.jpg
+2026-08-24 18:22:23 [INFO ] [deepseek_web] [3/56] 男士万圣节血腥印花华夫格连帽卫衣套装
+2026-08-24 18:22:23 [INFO ] [deepseek_web]   Downloaded: 0003_0931039393268212695314.jpg
+2026-08-24 18:22:23 [INFO ] [deepseek_web]   Prefetching next image (4/56)
+2026-08-24 18:22:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:22:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:22:53 [INFO ] [deepseek_web]   Response: 男士宽松版型万圣节血腥印花华夫格连帽卫衣套装套头长袖抽绳连帽前胸黑色字母红色血迹泼溅图案两侧口袋罗纹收口袖口下摆配套同款束脚长裤街头派对角色扮演服饰。
+2026-08-24 18:22:53 [INFO ] [deepseek_web]   Deleted: 0003_0931039393268212695314.jpg
+2026-08-24 18:22:58 [INFO ] [deepseek_web] [4/56] 男士西装马甲西裤两件套装商务正装伴郎职业装免烫马甲裤新款
+2026-08-24 18:22:58 [INFO ] [deepseek_web]   Downloaded: 0004_6870323112742216125840.jpg
+2026-08-24 18:22:58 [INFO ] [deepseek_web]   Prefetching next image (5/56)
+2026-08-24 18:22:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:23:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:23:27 [INFO ] [deepseek_web]   Response: 男士西装马甲西裤两件套免烫面料V领单排纽扣马甲配胸前袋巾口袋及两侧插袋直筒正装长裤商务正装伴郎职业装
+2026-08-24 18:23:27 [INFO ] [deepseek_web]   Deleted: 0004_6870323112742216125840.jpg
+2026-08-24 18:23:32 [INFO ] [deepseek_web] [5/56] 男士城市字母印花卫衣套装
+2026-08-24 18:23:32 [INFO ] [deepseek_web]   Downloaded: 0005_7970924574984798683026.jpg
+2026-08-24 18:23:32 [INFO ] [deepseek_web]   Prefetching next image (6/56)
+2026-08-24 18:23:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:23:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:24:01 [INFO ] [deepseek_web]   Response: 男士针织面料城市字母印花连帽卫衣套装连帽长袖抽绳前胸DALLAS TEXAS字母印花大袋鼠口袋搭配同款字母印花松紧抽绳束脚长裤宽松街头休闲运动两件套多色可选。
+2026-08-24 18:24:01 [INFO ] [deepseek_web]   Deleted: 0005_7970924574984798683026.jpg
+2026-08-24 18:24:06 [INFO ] [deepseek_web] [6/56] 男士字母压花长袖长裤肌理提花休闲运动套装
+2026-08-24 18:24:06 [INFO ] [deepseek_web]   Downloaded: 0006_8271213367116111641260.jpg
+2026-08-24 18:24:06 [INFO ] [deepseek_web]   Prefetching next image (7/56)
+2026-08-24 18:24:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:24:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:24:35 [INFO ] [deepseek_web]   Response: 男士满身字母压花肌理提花针织面料休闲运动套装长袖圆领上衣搭配松紧抽绳长裤胸前腿部橙色方形贴标罗纹袖口下摆侧缝插袋常规版型
+2026-08-24 18:24:35 [INFO ] [deepseek_web]   Deleted: 0006_8271213367116111641260.jpg
+2026-08-24 18:24:40 [INFO ] [deepseek_web] [7/56] 男士套装
+2026-08-24 18:24:40 [INFO ] [deepseek_web]   Downloaded: 0007_5560357437172883272089.jpg
+2026-08-24 18:24:40 [INFO ] [deepseek_web]   Prefetching next image (8/56)
+2026-08-24 18:24:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:24:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:25:09 [INFO ] [deepseek_web]   Response: 男士休闲运动套装纯色半拉链连帽长袖卫衣搭配松紧抽绳直筒长裤针织面料宽松版型罗纹袖口下摆两侧插袋多色可选
+2026-08-24 18:25:09 [INFO ] [deepseek_web]   Deleted: 0007_5560357437172883272089.jpg
+2026-08-24 18:25:14 [INFO ] [deepseek_web] [8/56] 男士爆款城市印花套头连帽卫衣套装
+2026-08-24 18:25:14 [INFO ] [deepseek_web]   Downloaded: 0008_5150434240602843985216.jpg
+2026-08-24 18:25:14 [INFO ] [deepseek_web]   Prefetching next image (9/56)
+2026-08-24 18:25:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:25:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:25:43 [INFO ] [deepseek_web]   Response: 男士宽松针织面料套头连帽长袖卫衣套装连帽抽绳胸前BROOKLYN 1988字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳侧边工装口袋束脚长裤街头休闲运动两件套
+2026-08-24 18:25:43 [INFO ] [deepseek_web]   Deleted: 0008_5150434240602843985216.jpg
+2026-08-24 18:25:48 [INFO ] [deepseek_web] [9/56] 男士亮片烫金西装迪斯科cos派对舞台夜店闪亮炫酷演出西服套装
+2026-08-24 18:25:48 [INFO ] [deepseek_web]   Downloaded: 0009_3940510143213114145623.jpg
+2026-08-24 18:25:48 [INFO ] [deepseek_web]   Prefetching next image (10/56)
+2026-08-24 18:25:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:25:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:26:17 [INFO ] [deepseek_web]   Response: 男士亮片烫金平驳领单排两粒扣两侧口袋直筒长裤舞台派对夜店Cosplay迪斯科演出西装套装多色可选
+2026-08-24 18:26:17 [INFO ] [deepseek_web]   Deleted: 0009_3940510143213114145623.jpg
+2026-08-24 18:26:22 [INFO ] [deepseek_web] [10/56] 男士两件套宽松运动套装拉链款连帽衫与慢跑裤休闲套装
+2026-08-24 18:26:22 [INFO ] [deepseek_web]   Downloaded: 0010_8921131423551510426659.jpg
+2026-08-24 18:26:22 [INFO ] [deepseek_web]   Prefetching next image (11/56)
+2026-08-24 18:26:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:26:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:26:52 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型两件套运动套装连帽长袖前开襟拉链卫衣搭配抽绳束脚慢跑裤两侧插袋罗纹袖口下摆休闲套装
+2026-08-24 18:26:52 [INFO ] [deepseek_web]   Deleted: 0010_8921131423551510426659.jpg
+2026-08-24 18:26:57 [INFO ] [deepseek_web] [11/56] 男士两件套宽松运动套装连帽衫与慢跑休闲裤套装
+2026-08-24 18:26:57 [INFO ] [deepseek_web]   Downloaded: 0011_0281250531486929068580.jpg
+2026-08-24 18:26:57 [INFO ] [deepseek_web]   Prefetching next image (12/56)
+2026-08-24 18:26:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:27:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:27:26 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型两件套连帽运动套装长袖抽绳套头卫衣袋鼠口袋搭配松紧抽绳腰两侧口袋束脚慢跑裤纯色多色可选休闲场景
+2026-08-24 18:27:26 [INFO ] [deepseek_web]   Deleted: 0011_0281250531486929068580.jpg
+2026-08-24 18:27:31 [INFO ] [deepseek_web] [12/56] 男士新款经典时尚休闲户外运动修身拉链款卫衣卫裤套装
+2026-08-24 18:27:31 [INFO ] [deepseek_web]   Downloaded: 0012_8400830278801147146970.jpg
+2026-08-24 18:27:31 [INFO ] [deepseek_web]   Prefetching next image (13/56)
+2026-08-24 18:27:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:27:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:28:00 [INFO ] [deepseek_web]   Response: 男士纯色针织宽松版型连帽拉链卫衣长裤两件套前开襟全拉链连帽抽绳罗纹袖口下摆两侧插袋搭配松紧抽绳腰侧边口袋直筒长裤休闲户外运动套装多色可选
+2026-08-24 18:28:00 [INFO ] [deepseek_web]   Deleted: 0012_8400830278801147146970.jpg
+2026-08-24 18:28:05 [INFO ] [deepseek_web] [13/56] 男士长袖POLO衫+直筒休闲裤套装
+2026-08-24 18:28:05 [INFO ] [deepseek_web]   Downloaded: 0013_8150312575392499034374.jpg
+2026-08-24 18:28:05 [INFO ] [deepseek_web]   Prefetching next image (14/56)
+2026-08-24 18:28:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:28:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:28:34 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型长袖翻领Polo衫搭配松紧腰抽绳直筒休闲裤套装罗纹袖口白色下摆叠穿设计两侧插袋多色可选
+2026-08-24 18:28:34 [INFO ] [deepseek_web]   Deleted: 0013_8150312575392499034374.jpg
+2026-08-24 18:28:39 [INFO ] [deepseek_web] [14/56] 男士印花套装
+2026-08-24 18:28:39 [INFO ] [deepseek_web]   Downloaded: 0014_6230425246513771830411.jpg
+2026-08-24 18:28:39 [INFO ] [deepseek_web]   Prefetching next image (15/56)
+2026-08-24 18:28:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:28:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:29:08 [INFO ] [deepseek_web]   Response: 男士万圣节血腥泼溅血手印字母印花套装针织面料连帽卫衣长裤两件套连帽抽绳袋鼠口袋罗纹袖口下摆松紧腰抽绳束脚长裤宽松街头派对风
+2026-08-24 18:29:08 [INFO ] [deepseek_web]   Deleted: 0014_6230425246513771830411.jpg
+2026-08-24 18:29:13 [INFO ] [deepseek_web] [15/56] 男士半拉链卫衣套装
+2026-08-24 18:29:13 [INFO ] [deepseek_web]   Downloaded: 0015_5170946418115311342950.jpg
+2026-08-24 18:29:13 [INFO ] [deepseek_web]   Prefetching next image (16/56)
+2026-08-24 18:29:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:29:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:29:42 [INFO ] [deepseek_web]   Response: 男士半拉链连帽卫衣套装针织面料抽绳连帽长袖半开襟拉链罗纹袖口下摆搭配松紧抽绳束脚长裤侧口袋休闲运动常规版型两件套
+2026-08-24 18:29:42 [INFO ] [deepseek_web]   Deleted: 0015_5170946418115311342950.jpg
+2026-08-24 18:29:47 [INFO ] [deepseek_web] [16/56] 亚麻秋季新款男士宽松休闲透气V领亨利衫长袖长裤套装
+2026-08-24 18:29:47 [INFO ] [deepseek_web]   Downloaded: 0016_0911052284006780895992.jpg
+2026-08-24 18:29:47 [INFO ] [deepseek_web]   Prefetching next image (17/56)
+2026-08-24 18:29:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:29:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:30:17 [INFO ] [deepseek_web]   Response: 男士宽松亚麻透气面料V领纽扣亨利衫长袖卷边长裤搭配松紧腰两侧口袋直筒长裤休闲两件套
+2026-08-24 18:30:17 [INFO ] [deepseek_web]   Deleted: 0016_0911052284006780895992.jpg
+2026-08-24 18:30:22 [INFO ] [deepseek_web] [17/56] 男士飞行夹克秋冬潮流百搭高级感透气休闲夹克套装
+2026-08-24 18:30:22 [INFO ] [deepseek_web]   Downloaded: 0017_7460319095462115195331.jpg
+2026-08-24 18:30:22 [INFO ] [deepseek_web]   Prefetching next image (18/56)
+2026-08-24 18:30:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:30:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:30:51 [INFO ] [deepseek_web]   Response: 男士细格纹肌理透气面料宽松版型飞行夹克长裤套装翻领单排按扣胸前橙色贴标口袋两侧插袋搭配松紧抽绳腰直筒长裤
+2026-08-24 18:30:51 [INFO ] [deepseek_web]   Deleted: 0017_7460319095462115195331.jpg
+2026-08-24 18:30:56 [INFO ] [deepseek_web] [18/56] 男士纯色日本卫衣竖直口袋无帽卫衣套装带抽绳
+2026-08-24 18:30:56 [INFO ] [deepseek_web]   Downloaded: 0018_8441044337891020927166.jpg
+2026-08-24 18:30:56 [INFO ] [deepseek_web]   Prefetching next image (19/56)
+2026-08-24 18:30:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:31:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:31:25 [INFO ] [deepseek_web]   Response: 男士纯色针织面料宽松圆领无帽卫衣套装长袖罗纹袖口下摆带抽绳直筒竖直口袋长裤休闲运动套装
+2026-08-24 18:31:25 [INFO ] [deepseek_web]   Deleted: 0018_8441044337891020927166.jpg
+2026-08-24 18:31:30 [INFO ] [deepseek_web] [19/56] 男士黑人历史月长袖长裤非洲民族风套装2件套
+2026-08-24 18:31:30 [INFO ] [deepseek_web]   Downloaded: 0019_1300934134027698111926.jpg
+2026-08-24 18:31:30 [INFO ] [deepseek_web]   Prefetching next image (20/56)
+2026-08-24 18:31:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:31:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:31:59 [INFO ] [deepseek_web]   Response: 男士黑人历史月非洲民族风套装2件套长袖小立领单排扣长袍搭配直筒长裤左胸口袋贴片袖口纽扣细节
+2026-08-24 18:31:59 [INFO ] [deepseek_web]   Deleted: 0019_1300934134027698111926.jpg
+2026-08-24 18:32:04 [INFO ] [deepseek_web] [20/56] 男士休闲宽松日常和服和服套装男士日本多色印花宽松开衫夏季3/4袖和服短袖时髦彩色国家印花日本浴袍沙滩衬衫T恤套装
+2026-08-24 18:32:04 [INFO ] [deepseek_web]   Downloaded: 0020_3190903250824711382584.jpg
+2026-08-24 18:32:04 [INFO ] [deepseek_web]   Prefetching next image (21/56)
+2026-08-24 18:32:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:32:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:32:33 [INFO ] [deepseek_web]   Response: 男士日式和服套装宽松版型轻薄面料无扣开衫交领七分袖仙鹤红日梅花燕子书法印花搭配黑色印花宽松束脚长裤夏季沙滩日常休闲风格
+2026-08-24 18:32:33 [INFO ] [deepseek_web]   Deleted: 0020_3190903250824711382584.jpg
+2026-08-24 18:32:38 [INFO ] [deepseek_web] [21/56] 男士美国独立日西装印花套装
+2026-08-24 18:32:38 [INFO ] [deepseek_web]   Downloaded: 0021_2220709497271548528228.jpg
+2026-08-24 18:32:38 [INFO ] [deepseek_web]   Prefetching next image (22/56)
+2026-08-24 18:32:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:32:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:33:07 [INFO ] [deepseek_web]   Response: 男士美国独立日星条旗泼墨印花西装套装平驳领单排扣外套搭配直筒长裤两侧口袋节日派对庆典演出服饰
+2026-08-24 18:33:07 [INFO ] [deepseek_web]   Deleted: 0021_2220709497271548528228.jpg
+2026-08-24 18:33:12 [INFO ] [deepseek_web] [22/56] 男士长袖口袋连帽卫衣系带长裤带口袋套装两件套
+2026-08-24 18:33:12 [INFO ] [deepseek_web]   Downloaded: 0022_5841115088113995564450.jpg
+2026-08-24 18:33:12 [INFO ] [deepseek_web]   Prefetching next image (23/56)
+2026-08-24 18:33:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:33:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:33:41 [INFO ] [deepseek_web]   Response: 男士纯色针织休闲运动两件套套头抽绳连帽长袖卫衣袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰侧边工装口袋束脚长裤
+2026-08-24 18:33:41 [INFO ] [deepseek_web]   Deleted: 0022_5841115088113995564450.jpg
+2026-08-24 18:33:46 [INFO ] [deepseek_web] [23/56] 男士时尚休闲纯色卫衣卫裤运动套装
+2026-08-24 18:33:46 [INFO ] [deepseek_web]   Downloaded: 0023_2131118187701717347662.jpg
+2026-08-24 18:33:46 [INFO ] [deepseek_web]   Prefetching next image (24/56)
+2026-08-24 18:33:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:33:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:34:16 [INFO ] [deepseek_web]   Response: 男士针织面料纯色休闲运动套装套头连帽长袖卫衣袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤多色可选
+2026-08-24 18:34:16 [INFO ] [deepseek_web]   Deleted: 0023_2131118187701717347662.jpg
+2026-08-24 18:34:21 [INFO ] [deepseek_web] [24/56] 009男女秋冬时尚休闲纯色卫衣卫裤运动套装
+2026-08-24 18:34:21 [INFO ] [deepseek_web]   Downloaded: 0024_7800841179617218406349.jpg
+2026-08-24 18:34:21 [INFO ] [deepseek_web]   Prefetching next image (25/56)
+2026-08-24 18:34:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:34:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:34:50 [INFO ] [deepseek_web]   Response: 男女同款针织面料纯色休闲运动套装宽松版型套头连帽长袖卫衣袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰直筒长裤多色可选
+2026-08-24 18:34:50 [INFO ] [deepseek_web]   Deleted: 0024_7800841179617218406349.jpg
+2026-08-24 18:34:55 [INFO ] [deepseek_web] [25/56] 男士西装裤子套装刺绣圆领长袖纯色两件套社交非洲民族男装民族风风格
+2026-08-24 18:34:55 [INFO ] [deepseek_web]   Downloaded: 0025_1910219187119510357717.jpg
+2026-08-24 18:34:55 [INFO ] [deepseek_web]   Prefetching next image (26/56)
+2026-08-24 18:34:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:35:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:35:24 [INFO ] [deepseek_web]   Response: 男士非洲民族风两件套小立领长袖纽扣开襟纯色刺绣长袍上衣搭配直筒长裤社交正装
+2026-08-24 18:35:24 [INFO ] [deepseek_web]   Deleted: 0025_1910219187119510357717.jpg
+2026-08-24 18:35:29 [INFO ] [deepseek_web] [26/56] 男士休闲纯色套装两件套
+2026-08-24 18:35:29 [INFO ] [deepseek_web]   Downloaded: 0026_7710302453121812668097.jpg
+2026-08-24 18:35:29 [INFO ] [deepseek_web]   Prefetching next image (27/56)
+2026-08-24 18:35:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:35:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:35:58 [INFO ] [deepseek_web]   Response: 男士休闲纯色套装两件套针织面料宽松版型长袖半开襟拉链立领上衣罗纹袖口下摆搭配松紧腰双侧翻盖工装口袋直筒长裤
+2026-08-24 18:35:58 [INFO ] [deepseek_web]   Deleted: 0026_7710302453121812668097.jpg
+2026-08-24 18:36:03 [INFO ] [deepseek_web] [27/56] 男士卫衣卫裤秋季冬季运动套装
+2026-08-24 18:36:03 [INFO ] [deepseek_web]   Downloaded: 0027_5690401353603323803294.jpg
+2026-08-24 18:36:03 [INFO ] [deepseek_web]   Prefetching next image (28/56)
+2026-08-24 18:36:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:36:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:36:34 [INFO ] [deepseek_web]   Response: 男士秋季冬季针织面料宽松版型连帽卫衣卫裤运动套装，连帽抽绳长袖套头袋鼠口袋罗纹袖口下摆，搭配松紧腰两侧口袋后贴袋直筒休闲长裤，纯色多色可选
+2026-08-24 18:36:34 [INFO ] [deepseek_web]   Deleted: 0027_5690401353603323803294.jpg
+2026-08-24 18:36:39 [INFO ] [deepseek_web] [28/56] 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服套装
+2026-08-24 18:36:39 [INFO ] [deepseek_web]   Downloaded: 0028_9140300249419568558159.jpg
+2026-08-24 18:36:39 [INFO ] [deepseek_web]   Prefetching next image (29/56)
+2026-08-24 18:36:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:36:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:37:08 [INFO ] [deepseek_web]   Response: 男士修身平驳领单排扣商务正装西服套装两件套左胸装饰袋巾口袋两侧翻盖口袋配腰带环修身直筒长裤婚礼派对职业伴郎礼服
+2026-08-24 18:37:08 [INFO ] [deepseek_web]   Deleted: 0028_9140300249419568558159.jpg
+2026-08-24 18:37:13 [INFO ] [deepseek_web] [29/56] 男士万圣节印花卫衣套装
+2026-08-24 18:37:13 [INFO ] [deepseek_web]   Downloaded: 0029_8070236336582232752111.jpg
+2026-08-24 18:37:13 [INFO ] [deepseek_web]   Prefetching next image (30/56)
+2026-08-24 18:37:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:37:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:37:43 [INFO ] [deepseek_web]   Response: 男士万圣节满印印花连帽卫衣套装宽松针织面料长袖抽绳连帽袋鼠口袋罗纹收口搭配抽绳腰侧边工装口袋束脚长裤街头派对风两件套
+2026-08-24 18:37:43 [INFO ] [deepseek_web]   Deleted: 0029_8070236336582232752111.jpg
+2026-08-24 18:37:48 [INFO ] [deepseek_web] [30/56] 男士潮流街头卫衣套装
+2026-08-24 18:37:48 [INFO ] [deepseek_web]   Downloaded: 0030_1820846046822515182827.jpg
+2026-08-24 18:37:48 [INFO ] [deepseek_web]   Prefetching next image (31/56)
+2026-08-24 18:37:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:37:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:38:17 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型街头休闲连帽卫衣长裤两件套连帽抽绳长袖袋鼠口袋罗纹袖口下摆胸前Paris字母印花搭配松紧抽绳腰束脚长裤侧边口袋同款印花多色可选
+2026-08-24 18:38:17 [INFO ] [deepseek_web]   Deleted: 0030_1820846046822515182827.jpg
+2026-08-24 18:38:22 [INFO ] [deepseek_web] [31/56] 秋冬季运动拼接外套长袖长裤连帽休闲运动男式套装
+2026-08-24 18:38:22 [INFO ] [deepseek_web]   Downloaded: 0031_3870801224114710634564.jpg
+2026-08-24 18:38:22 [INFO ] [deepseek_web]   Prefetching next image (32/56)
+2026-08-24 18:38:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:38:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:38:51 [INFO ] [deepseek_web]   Response: 男士秋冬休闲运动套装拼接色块针织面料长袖全拉链连帽抽绳上衣两侧口袋搭配抽绳松紧腰侧边口袋拼接束脚长裤
+2026-08-24 18:38:51 [INFO ] [deepseek_web]   Deleted: 0031_3870801224114710634564.jpg
+2026-08-24 18:38:56 [INFO ] [deepseek_web] [32/56] 套头运动卫衣卫裤时尚男士连帽衫外套男女套装
+2026-08-24 18:38:56 [INFO ] [deepseek_web]   Downloaded: 0032_4931108101251116820283.jpg
+2026-08-24 18:38:56 [INFO ] [deepseek_web]   Prefetching next image (33/56)
+2026-08-24 18:38:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:39:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:39:25 [INFO ] [deepseek_web]   Response: 男女同款针织面料休闲运动套装套头连帽长袖卫衣搭配松紧抽绳腰两侧口袋束脚长裤纯色多色可选
+2026-08-24 18:39:25 [INFO ] [deepseek_web]   Deleted: 0032_4931108101251116820283.jpg
+2026-08-24 18:39:30 [INFO ] [deepseek_web] [33/56] 男士冬季卫衣套装
+2026-08-24 18:39:30 [INFO ] [deepseek_web]   Downloaded: 0033_7291105273899243406055.jpg
+2026-08-24 18:39:30 [INFO ] [deepseek_web]   Prefetching next image (34/56)
+2026-08-24 18:39:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:39:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:39:59 [INFO ] [deepseek_web]   Response: 男士冬季厚实针织抓绒面料宽松版型连帽卫衣长裤两件套，连帽抽绳长袖前胸横向拉链口袋左臂拉链袖袋罗纹袖口下摆搭配松紧抽绳腰大腿侧翻盖工装口袋束脚长裤多口袋休闲运动工
+2026-08-24 18:39:59 [INFO ] [deepseek_web]   Deleted: 0033_7291105273899243406055.jpg
+2026-08-24 18:40:04 [INFO ] [deepseek_web] [34/56] 男士长袖亚麻套装（不要成分标）
+2026-08-24 18:40:04 [INFO ] [deepseek_web]   Downloaded: 0034_9100715366662610537407.jpg
+2026-08-24 18:40:04 [INFO ] [deepseek_web]   Prefetching next image (35/56)
+2026-08-24 18:40:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:40:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:40:33 [INFO ] [deepseek_web]   Response: 男士宽松亚麻面料长袖连帽半开襟纽扣抽绳上衣搭配松紧腰两侧口袋直筒长裤纯色沙滩度假休闲两件套
+2026-08-24 18:40:33 [INFO ] [deepseek_web]   Deleted: 0034_9100715366662610537407.jpg
+2026-08-24 18:40:38 [INFO ] [deepseek_web] [35/56] 男士万圣节骨骼印花套装
+2026-08-24 18:40:38 [INFO ] [deepseek_web]   Downloaded: 0035_1920438385092611524386.jpg
+2026-08-24 18:40:38 [INFO ] [deepseek_web]   Prefetching next image (36/56)
+2026-08-24 18:40:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:40:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:41:07 [INFO ] [deepseek_web]   Response: 男士万圣节骨骼印花套装针织面料宽松版型套头连帽抽绳长袖上衣袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤节日派对街头休闲风
+2026-08-24 18:41:07 [INFO ] [deepseek_web]   Deleted: 0035_1920438385092611524386.jpg
+2026-08-24 18:41:12 [INFO ] [deepseek_web] [36/56] 男士y2k纯色运动连帽卫衣套装
+2026-08-24 18:41:12 [INFO ] [deepseek_web]   Downloaded: 0036_1910438037053033516703.jpg
+2026-08-24 18:41:12 [INFO ] [deepseek_web]   Prefetching next image (37/56)
+2026-08-24 18:41:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:41:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:41:42 [INFO ] [deepseek_web]   Response: 男士宽松版型纯色Y2K风格针织面料连帽卫衣长裤两件套套头连帽抽绳长袖袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤运动休闲套装
+2026-08-24 18:41:42 [INFO ] [deepseek_web]   Deleted: 0036_1910438037053033516703.jpg
+2026-08-24 18:41:47 [INFO ] [deepseek_web] [37/56] 男士半拉拉链连帽卫衣有裤绳斜口袋后无口袋卫裤套装
+2026-08-24 18:41:47 [INFO ] [deepseek_web]   Downloaded: 0037_5100451429548599812427.jpg
+2026-08-24 18:41:47 [INFO ] [deepseek_web]   Prefetching next image (38/56)
+2026-08-24 18:41:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:41:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:42:16 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型休闲运动套装半拉链连帽长袖卫衣带抽绳袋鼠口袋罗纹袖口下摆搭配抽绳腰斜侧口袋直筒长裤后无口袋设计
+2026-08-24 18:42:16 [INFO ] [deepseek_web]   Deleted: 0037_5100451429548599812427.jpg
+2026-08-24 18:42:21 [INFO ] [deepseek_web] [38/56] 男士雨衣分体户外骑行分体式雨衣雨裤套装
+2026-08-24 18:42:21 [INFO ] [deepseek_web]   Downloaded: 0038_3100849418879217015582.jpg
+2026-08-24 18:42:21 [INFO ] [deepseek_web]   Prefetching next image (39/56)
+2026-08-24 18:42:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:42:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:42:50 [INFO ] [deepseek_web]   Response: 男士户外骑行分体式雨衣雨裤套装防水面料连帽抽绳立领前襟拉链加按扣前胸反光条两侧翻盖口袋松紧腰直筒长裤安全警示反光设计
+2026-08-24 18:42:50 [INFO ] [deepseek_web]   Deleted: 0038_3100849418879217015582.jpg
+2026-08-24 18:42:55 [INFO ] [deepseek_web] [39/56] 男士非洲套装烫金上衣和长裤2件套
+2026-08-24 18:42:55 [INFO ] [deepseek_web]   Downloaded: 0039_5710439147711920747861.jpg
+2026-08-24 18:42:55 [INFO ] [deepseek_web]   Prefetching next image (40/56)
+2026-08-24 18:42:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:43:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:43:24 [INFO ] [deepseek_web]   Response: 男士非洲民族风烫金印花2件套化纤面料小立领长袖单排纽扣上衣前胸领口袖口金色卷草纹图案下摆开衩搭配松紧抽绳腰两侧口袋直筒长裤
+2026-08-24 18:43:24 [INFO ] [deepseek_web]   Deleted: 0039_5710439147711920747861.jpg
+2026-08-24 18:43:29 [INFO ] [deepseek_web] [40/56] 男士字母印花卫衣套装
+2026-08-24 18:43:29 [INFO ] [deepseek_web]   Downloaded: 0040_1340400484131613048052.jpg
+2026-08-24 18:43:29 [INFO ] [deepseek_web]   Prefetching next image (41/56)
+2026-08-24 18:43:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:43:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:43:58 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型字母印花连帽卫衣长裤两件套套头长袖连帽抽绳胸前及裤腿侧面JESUS字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤多色可选
+2026-08-24 18:43:58 [INFO ] [deepseek_web]   Deleted: 0040_1340400484131613048052.jpg
+2026-08-24 18:44:03 [INFO ] [deepseek_web] [41/56] 户外冲锋衣男冬季防水加绒加厚冲锋裤套装棉服外套款
+2026-08-24 18:44:03 [INFO ] [deepseek_web]   Downloaded: 0041_1320246126251332594781.jpg
+2026-08-24 18:44:03 [INFO ] [deepseek_web]   Prefetching next image (42/56)
+2026-08-24 18:44:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:44:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:44:32 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣套装防水防风面料加绒加厚保暖宽松版型连帽抽绳高领前门襟拉链左胸拉链口袋两侧插袋魔术贴袖口搭配松紧抽绳腰大腿侧拉链口袋膝盖耐磨拼接直筒长裤徒步登山钓
+2026-08-24 18:44:32 [INFO ] [deepseek_web]   Deleted: 0041_1320246126251332594781.jpg
+2026-08-24 18:44:37 [INFO ] [deepseek_web] [42/56] 男士半拉链运动衫和运动裤服套装套装
+2026-08-24 18:44:37 [INFO ] [deepseek_web]   Downloaded: 0042_5630340163212156009088.jpg
+2026-08-24 18:44:37 [INFO ] [deepseek_web]   Prefetching next image (43/56)
+2026-08-24 18:44:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:44:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:45:07 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型半拉链连帽卫衣长裤套装连帽抽绳长袖罗纹袖口下摆搭配松紧抽绳腰侧边口袋直筒长裤休闲运动多色可选
+2026-08-24 18:45:07 [INFO ] [deepseek_web]   Deleted: 0042_5630340163212156009088.jpg
+2026-08-24 18:45:12 [INFO ] [deepseek_web] [43/56] 男女秋冬时尚休闲纯色卫衣卫裤运动套装
+2026-08-24 18:45:12 [INFO ] [deepseek_web]   Downloaded: 0043_6160406013992713208328.jpg
+2026-08-24 18:45:12 [INFO ] [deepseek_web]   Prefetching next image (44/56)
+2026-08-24 18:45:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:45:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:45:41 [INFO ] [deepseek_web]   Response: 男女同款针织面料宽松版型纯色连帽卫衣长裤套装套头长袖袋鼠口袋罗纹袖口下摆搭配松紧腰两侧口袋束脚长裤多色可选
+2026-08-24 18:45:41 [INFO ] [deepseek_web]   Deleted: 0043_6160406013992713208328.jpg
+2026-08-24 18:45:46 [INFO ] [deepseek_web] [44/56] 男士无帽绳加绒长袖长裤连帽卫衣套装
+2026-08-24 18:45:46 [INFO ] [deepseek_web]   Downloaded: 0044_8830302430162117572011.jpg
+2026-08-24 18:45:46 [INFO ] [deepseek_web]   Prefetching next image (45/56)
+2026-08-24 18:45:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:45:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:46:15 [INFO ] [deepseek_web]   Response: 男士加绒纯色宽松版型连帽卫衣长裤两件套无帽绳设计长袖袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋直筒长裤多色可选休闲运动套装
+2026-08-24 18:46:15 [INFO ] [deepseek_web]   Deleted: 0044_8830302430162117572011.jpg
+2026-08-24 18:46:20 [INFO ] [deepseek_web] [45/56] 男式运动运动服运动套装时尚卫衣2件套休闲裤套装
+2026-08-24 18:46:20 [INFO ] [deepseek_web]   Downloaded: 0045_4880423072233118433128.jpg
+2026-08-24 18:46:20 [INFO ] [deepseek_web]   Prefetching next image (46/56)
+2026-08-24 18:46:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:46:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:46:49 [INFO ] [deepseek_web]   Response: 男士宽松版型针织加绒面料连帽卫衣长裤两件套，连帽抽绳套头长袖上衣袋鼠口袋罗纹袖口下摆，搭配松紧抽绳腰两侧插袋直筒长裤，纯色多色可选休闲运动套装。
+2026-08-24 18:46:49 [INFO ] [deepseek_web]   Deleted: 0045_4880423072233118433128.jpg
+2026-08-24 18:46:54 [INFO ] [deepseek_web] [46/56] 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-08-24 18:46:54 [INFO ] [deepseek_web]   Downloaded: 0046_7090833423501118549357.jpg
+2026-08-24 18:46:54 [INFO ] [deepseek_web]   Prefetching next image (47/56)
+2026-08-24 18:46:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:47:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:47:23 [INFO ] [deepseek_web]   Response: 男士加绒针织面料宽松版型连帽卫衣长裤两件套无帽绳设计套头长袖胸前及裤腿城市字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋直筒长裤街头休闲运动套装
+2026-08-24 18:47:23 [INFO ] [deepseek_web]   Deleted: 0046_7090833423501118549357.jpg
+2026-08-24 18:47:28 [INFO ] [deepseek_web] [47/56] 跨境新款热卖男女街头潮流加绒连帽印花卫衣连帽衫套装爆款
+2026-08-24 18:47:28 [INFO ] [deepseek_web]   Downloaded: 0047_5541117502231040285405.jpg
+2026-08-24 18:47:28 [INFO ] [deepseek_web]   Prefetching next image (48/56)
+2026-08-24 18:47:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:47:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:47:57 [INFO ] [deepseek_web]   Response: 男女同款加绒针织面料宽松版型街头休闲连帽卫衣长裤套装连帽抽绳长袖胸前及裤腿NEW YORK U.S.A字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤
+2026-08-24 18:47:57 [INFO ] [deepseek_web]   Deleted: 0047_5541117502231040285405.jpg
+2026-08-24 18:48:02 [INFO ] [deepseek_web] [48/56] 男士潮流字母印花街头卫衣套装
+2026-08-24 18:48:02 [INFO ] [deepseek_web]   Downloaded: 0048_4711159193921320502434.jpg
+2026-08-24 18:48:02 [INFO ] [deepseek_web]   Prefetching next image (49/56)
+2026-08-24 18:48:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:48:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:48:31 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型街头休闲连帽卫衣长裤套装，连帽抽绳长袖胸前及裤腿哥特字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤多色可选
+2026-08-24 18:48:31 [INFO ] [deepseek_web]   Deleted: 0048_4711159193921320502434.jpg
+2026-08-24 18:48:36 [INFO ] [deepseek_web] [49/56] 时尚趋势潮流长袖长裤套装亚马逊欧美卫衣卫裤套装
+2026-08-24 18:48:36 [INFO ] [deepseek_web]   Downloaded: 0049_4571029297815159222817.jpg
+2026-08-24 18:48:36 [INFO ] [deepseek_web]   Prefetching next image (50/56)
+2026-08-24 18:48:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:48:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:49:06 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型休闲运动两件套圆领长袖前胸及裤腿PARIS字母红条印花上衣搭配松紧抽绳腰两侧口袋束脚长裤
+2026-08-24 18:49:06 [INFO ] [deepseek_web]   Deleted: 0049_4571029297815159222817.jpg
+2026-08-24 18:49:11 [INFO ] [deepseek_web] [50/56] 万圣节男士西装套装印花西装三件套
+2026-08-24 18:49:11 [INFO ] [deepseek_web]   Downloaded: 0050_9561157363711617853011.jpg
+2026-08-24 18:49:11 [INFO ] [deepseek_web]   Prefetching next image (51/56)
+2026-08-24 18:49:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:49:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:49:43 [INFO ] [deepseek_web]   Response: 男士万圣节满身印花西装三件套平驳领单排扣长袖外套搭配直筒长裤及领带化纤面料复古南瓜幽灵蜘蛛网图案左胸口袋及两侧口袋节日派对Cosplay舞台演出服
+2026-08-24 18:49:43 [INFO ] [deepseek_web]   Deleted: 0050_9561157363711617853011.jpg
+2026-08-24 18:49:48 [INFO ] [deepseek_web] [51/56] 男士汉服古装中国风牛仔套装潮流帅气秋冬宽松版长袖唐装
+2026-08-24 18:49:48 [INFO ] [deepseek_web]   Downloaded: 0051_7810815036211019490055.jpg
+2026-08-24 18:49:48 [INFO ] [deepseek_web]   Prefetching next image (52/56)
+2026-08-24 18:49:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:49:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:50:17 [INFO ] [deepseek_web]   Response: 男士水洗牛仔面料中国风唐装两件套，宽松版型，长袖小立领，前门襟中式盘扣，两侧大贴袋，搭配松紧束脚牛仔长裤，休闲街头风格。
+2026-08-24 18:50:17 [INFO ] [deepseek_web]   Deleted: 0051_7810815036211019490055.jpg
+2026-08-24 18:50:22 [INFO ] [deepseek_web] [52/56] 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-08-24 18:50:22 [INFO ] [deepseek_web]   Downloaded: 0052_3590401220907411562702.jpg
+2026-08-24 18:50:22 [INFO ] [deepseek_web]   Prefetching next image (53/56)
+2026-08-24 18:50:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:50:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:50:51 [INFO ] [deepseek_web]   Response: 男士修身商务正装西服套装三件套化纤混纺面料平驳领单排扣长袖外套左胸装饰袋巾口袋两侧翻盖口袋搭配V领单排扣马甲及带腰袢直筒长裤婚礼派对职业伴郎礼服多色可选
+2026-08-24 18:50:51 [INFO ] [deepseek_web]   Deleted: 0052_3590401220907411562702.jpg
+2026-08-24 18:50:56 [INFO ] [deepseek_web] [53/56] 爆款印花卫衣套装
+2026-08-24 18:50:56 [INFO ] [deepseek_web]   Downloaded: 0053_2840230471348614178939.jpg
+2026-08-24 18:50:56 [INFO ] [deepseek_web]   Prefetching next image (54/56)
+2026-08-24 18:50:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:51:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:51:25 [INFO ] [deepseek_web]   Response: 男士宽松针织面料街头休闲连帽卫衣长裤套装彩色涂鸦字母印花套头连帽抽绳长袖袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰束脚长裤侧边口袋多色可选
+2026-08-24 18:51:25 [INFO ] [deepseek_web]   Deleted: 0053_2840230471348614178939.jpg
+2026-08-24 18:51:30 [INFO ] [deepseek_web] [54/56] 爆款城市字母印花男士拉链卫衣套装
+2026-08-24 18:51:30 [INFO ] [deepseek_web]   Downloaded: 0054_0310731479753023175722.jpg
+2026-08-24 18:51:30 [INFO ] [deepseek_web]   Prefetching next image (55/56)
+2026-08-24 18:51:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:51:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:51:59 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型城市字母印花拉链连帽卫衣长裤套装连帽抽绳长袖全开襟拉链胸前California字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰侧边工装口袋束脚长裤
+2026-08-24 18:51:59 [INFO ] [deepseek_web]   Deleted: 0054_0310731479753023175722.jpg
+2026-08-24 18:52:04 [INFO ] [deepseek_web] [55/56] 男士西服套装欧美休闲西服西裤两件套
+2026-08-24 18:52:04 [INFO ] [deepseek_web]   Downloaded: 0055_0590555243382419909273.jpg
+2026-08-24 18:52:04 [INFO ] [deepseek_web]   Prefetching next image (56/56)
+2026-08-24 18:52:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:52:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:52:34 [INFO ] [deepseek_web]   Response: 男士修身版型平驳领单排两粒扣西服西裤两件套纯色梭织面料长袖外套带左胸装饰袋巾两侧翻盖口袋搭配腰带环直筒长裤商务婚礼派对伴郎职业装
+2026-08-24 18:52:34 [INFO ] [deepseek_web]   Deleted: 0055_0590555243382419909273.jpg
+2026-08-24 18:52:39 [INFO ] [deepseek_web] [56/56] 男士印花套装
+2026-08-24 18:52:39 [INFO ] [deepseek_web]   Downloaded: 0056_6500819591402113170379.jpg
+2026-08-24 18:52:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-24 18:52:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-24 18:53:08 [INFO ] [deepseek_web]   Response: 男士针织面料宽松版型连帽抽绳长袖套头卫衣套装胸前十字架Jesus字母印花袋鼠口袋罗纹袖口下摆搭配松紧抽绳腰两侧口袋束脚长裤同款印花街头休闲运动两件套
+2026-08-24 18:53:08 [INFO ] [deepseek_web]   Deleted: 0056_6500819591402113170379.jpg
+2026-08-24 18:53:08 [INFO ] [deepseek_web] ==================================================
+2026-08-24 18:53:08 [INFO ] [deepseek_web] Done: 56 success, 0 failed → optimize_title
+2026-08-24 18:53:08 [INFO ] [title_workflow] Optimization complete: 56 titles
+2026-08-24 18:53:15 [INFO ] [title_workflow] Written 56 optimized titles to column H (8)
+2026-08-24 18:53:15 [INFO ] [title_workflow] Done: 8.20v1.xlsx
+2026-08-24 18:53:16 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-24 18:53:16 [INFO ] [jenkins] 
+2026-08-24 18:53:16 [INFO ] [jenkins] ==================================================
+2026-08-24 18:53:16 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-24 18:53:16 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-24 18:53:16 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-24 18:53:16 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-24 18:53:16 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-24 20:49:45 [INFO ] [color_size_deal] Groups: 56, lines: 3722 (file: 3779)
+2026-08-24 20:49:45 [INFO ] [color_size_deal] Prefixes: {'01': 423, '02': 24, '03': 18, '04': 6, '05': 6, '06': 6, '07': 6, '08': 6, '09': 6, '10': 6, '11': 6, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6, '22': 6}
+2026-08-24 20:49:45 [INFO ] [color_size_deal] Done.

@@ -1,0 +1,1407 @@
+2026-09-07 14:58:48 [INFO ] [jenkins] ==================================================
+2026-09-07 14:58:48 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-07 14:58:48 [INFO ] [jenkins] ==================================================
+2026-09-07 14:58:48 [INFO ] [jenkins] 
+2026-09-07 14:58:48 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-07 14:58:48 [INFO ] [jenkins] ------------------------------
+2026-09-07 14:58:48 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-07 14:58:48 [INFO ] [jenkins] 
+2026-09-07 14:58:48 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-07 14:58:48 [INFO ] [jenkins] ------------------------------
+2026-09-07 14:58:48 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-09-07 14:58:48 [INFO ] [preprocess] [hose1.xlsx]
+2026-09-07 14:58:48 [INFO ] [preprocess] [hose1.xlsx]
+2026-09-07 14:58:48 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:58:48 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:58:48 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:58:48 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:58:50 [INFO ] [preprocess]   [hose1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 14:58:50 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 14:58:50 [INFO ] [preprocess]   [hose1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 14:58:50 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 14:58:52 [INFO ] [preprocess]   [hose1.xlsx] Dedup: 17 filled rows, 2 deleted
+2026-09-07 14:58:52 [INFO ] [pipeline] Pipeline complete
+2026-09-07 14:58:52 [INFO ] [preprocess]   [hose1.xlsx] Dedup: 17 filled rows, 2 deleted
+2026-09-07 14:58:52 [INFO ] [pipeline] Pipeline complete
+2026-09-07 14:58:53 [INFO ] [preprocess] [hose2.xlsx]
+2026-09-07 14:58:53 [INFO ] [preprocess] [hose2.xlsx]
+2026-09-07 14:58:53 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:58:53 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:58:53 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:58:53 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:59:22 [INFO ] [jenkins] ==================================================
+2026-09-07 14:59:22 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-09-07 14:59:22 [INFO ] [jenkins] ==================================================
+2026-09-07 14:59:22 [INFO ] [jenkins] 
+2026-09-07 14:59:22 [INFO ] [jenkins] ==================================================
+2026-09-07 14:59:22 [INFO ] [jenkins] All 0 steps completed successfully
+2026-09-07 14:59:22 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-07 14:59:22 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-07 14:59:22 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-07 14:59:22 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-07 14:59:44 [INFO ] [jenkins] ==================================================
+2026-09-07 14:59:44 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-07 14:59:44 [INFO ] [jenkins] ==================================================
+2026-09-07 14:59:44 [INFO ] [jenkins] 
+2026-09-07 14:59:44 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-07 14:59:44 [INFO ] [jenkins] ------------------------------
+2026-09-07 14:59:44 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-07 14:59:44 [INFO ] [jenkins] 
+2026-09-07 14:59:44 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-07 14:59:44 [INFO ] [jenkins] ------------------------------
+2026-09-07 14:59:44 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-09-07 14:59:44 [INFO ] [preprocess] [hose1.xlsx]
+2026-09-07 14:59:45 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:59:45 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:59:46 [INFO ] [preprocess]   [hose1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 14:59:46 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 14:59:48 [INFO ] [preprocess]   [hose1.xlsx] Dedup: 17 filled rows, 2 deleted
+2026-09-07 14:59:48 [INFO ] [pipeline] Pipeline complete
+2026-09-07 14:59:48 [INFO ] [preprocess] [hose2.xlsx]
+2026-09-07 14:59:49 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:59:49 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:59:53 [INFO ] [preprocess]   [hose2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 14:59:53 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 14:59:53 [INFO ] [preprocess]   [hose2.xlsx] No duplicate filled rows to remove
+2026-09-07 14:59:53 [INFO ] [pipeline] Pipeline complete
+2026-09-07 14:59:53 [INFO ] [preprocess] [hose3.xlsx]
+2026-09-07 14:59:54 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 14:59:54 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 14:59:59 [INFO ] [preprocess]   [hose3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 14:59:59 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 14:59:59 [INFO ] [preprocess]   [hose3.xlsx] No duplicate filled rows to remove
+2026-09-07 14:59:59 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:00:00 [INFO ] [preprocess] Preprocessing complete
+2026-09-07 15:00:00 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-07 15:00:00 [INFO ] [jenkins] 
+2026-09-07 15:00:00 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-07 15:00:00 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:00:00 [INFO ] [main] Log file: 20260907_4d9671a2.log
+2026-09-07 15:00:00 [INFO ] [main] Found 3 file(s):
+2026-09-07 15:00:00 [INFO ] [main]   hose1.xlsx
+2026-09-07 15:00:00 [INFO ] [main]   hose2.xlsx
+2026-09-07 15:00:00 [INFO ] [main]   hose3.xlsx
+2026-09-07 15:00:00 [INFO ] [main] Output: 9.1v1.xlsx
+2026-09-07 15:00:00 [INFO ] [main] ==================================================
+2026-09-07 15:00:12 [INFO ] [main] Merged 3 files, 4735 images total
+2026-09-07 15:00:12 [INFO ] [main] Deleted 3 source file(s)
+2026-09-07 15:00:13 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-07 15:00:13 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-07 15:00:26 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1239 rows, 1701 images
+2026-09-07 15:00:26 [INFO ] [pipeline]   Sheet [Sheet0_3]: 1569 rows, 2289 images
+2026-09-07 15:00:26 [INFO ] [pipeline]   Merged 3 sheets -> 1, 2808 data rows, 3990 images
+2026-09-07 15:00:26 [INFO ] [pipeline] [2/12] validate
+2026-09-07 15:00:26 [INFO ] [pipeline]   Validated: 3355 rows, 27 cols (expect ~32)
+2026-09-07 15:00:26 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-07 15:00:27 [INFO ] [pipeline]   Backed up 4735 images
+2026-09-07 15:00:27 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-07 15:00:27 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-07 15:00:27 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-07 15:00:27 [INFO ] [pipeline]   Restored 4735 images with adjusted anchors
+2026-09-07 15:00:27 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-07 15:00:27 [INFO ] [pipeline]   Column 2: 3355 IDs generated
+2026-09-07 15:00:27 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-07 15:00:27 [INFO ] [pipeline]   Column 3: 3355 cells filled
+2026-09-07 15:00:27 [INFO ] [pipeline] [6/12] map_colors
+2026-09-07 15:00:27 [INFO ] [pipeline]   Column 10: 3266 cells mapped, 89 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-07 15:00:27 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-07 15:00:27 [INFO ] [pipeline]   Column 11: 3238 mapped, 89 cleared (col A has fill), 28 no match (recorded)
+2026-09-07 15:00:27 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-07 15:00:27 [INFO ] [pipeline]   Mirror copy: 22364 cells written
+2026-09-07 15:00:27 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-07 15:00:27 [INFO ] [pipeline]   Column 44: 3355 cells copied from col 12
+2026-09-07 15:00:27 [INFO ] [pipeline] [10/12] calc_price
+2026-09-07 15:00:27 [INFO ] [pipeline]   Columns 45-48: 3355 rows calculated
+2026-09-07 15:00:27 [INFO ] [pipeline] [11/12] format_cells
+2026-09-07 15:00:28 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-07 15:00:28 [INFO ] [pipeline]   Formatted 3355 rows: h=50, align=left/center
+2026-09-07 15:00:28 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-07 15:00:28 [INFO ] [pipeline] [12/12] finalize
+2026-09-07 15:00:28 [INFO ] [pipeline]   Done: 3355 rows x 48 cols (target: 48)
+2026-09-07 15:00:28 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:00:30 [INFO ] [main] Size: 3355 rows x 48 cols
+2026-09-07 15:00:30 [INFO ] [main] ==================================================
+2026-09-07 15:00:30 [INFO ] [main] Done: 9.1v1.xlsx
+2026-09-07 15:00:30 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-07 15:00:30 [INFO ] [jenkins] 
+2026-09-07 15:00:30 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-07 15:00:30 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:00:31 [INFO ] [color_size_main] Source: 9.1v1.xlsx
+2026-09-07 15:00:33 [INFO ] [color_size_main] Extracted: 3266 data lines + 89 separators → check_.txt
+2026-09-07 15:00:33 [INFO ] [color_size_main] Running: process.py
+2026-09-07 15:00:33 [INFO ] [color_size_deal] Groups: 89, lines: 3266 (file: 3355)
+2026-09-07 15:00:33 [INFO ] [color_size_deal] Prefixes: {'01': 130, '02': 34, '03': 18, '04': 6, '05': 6, '06': 6, '07': 6, '08': 6}
+2026-09-07 15:00:33 [INFO ] [color_size_deal] Done.
+2026-09-07 15:00:33 [INFO ] [color_size_main] Processing write-back: 3355 lines
+2026-09-07 15:00:38 [INFO ] [color_size_main] Write-back: 301 written, 3054 unchanged → 9.1v1.xlsx
+2026-09-07 15:00:38 [INFO ] [color_size_main] Done.
+2026-09-07 15:00:38 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-07 15:00:38 [INFO ] [jenkins] 
+2026-09-07 15:00:38 [INFO ] [jenkins] ==================================================
+2026-09-07 15:00:38 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-07 15:00:38 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-07 15:00:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-07 15:00:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-07 15:00:38 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-07 15:01:56 [INFO ] [jenkins] ==================================================
+2026-09-07 15:01:56 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-07 15:01:56 [INFO ] [jenkins] ==================================================
+2026-09-07 15:01:56 [INFO ] [jenkins] 
+2026-09-07 15:01:56 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-07 15:01:56 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:01:56 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-07 15:01:56 [INFO ] [jenkins] 
+2026-09-07 15:01:56 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-07 15:01:56 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:01:56 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-09-07 15:01:56 [INFO ] [preprocess] [hose1.xlsx]
+2026-09-07 15:01:57 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 15:01:57 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 15:01:58 [INFO ] [preprocess]   [hose1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 15:01:58 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 15:02:00 [INFO ] [preprocess]   [hose1.xlsx] Dedup: 17 filled rows, 2 deleted
+2026-09-07 15:02:00 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:02:00 [INFO ] [preprocess] [hose2.xlsx]
+2026-09-07 15:02:01 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 15:02:01 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 15:02:05 [INFO ] [preprocess]   [hose2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 15:02:05 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 15:02:05 [INFO ] [preprocess]   [hose2.xlsx] No duplicate filled rows to remove
+2026-09-07 15:02:05 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:02:05 [INFO ] [preprocess] [hose3.xlsx]
+2026-09-07 15:02:06 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-07 15:02:06 [INFO ] [pipeline] [1/2] remove_header
+2026-09-07 15:02:11 [INFO ] [preprocess]   [hose3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-07 15:02:11 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-07 15:02:11 [INFO ] [preprocess]   [hose3.xlsx] No duplicate filled rows to remove
+2026-09-07 15:02:11 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:02:12 [INFO ] [preprocess] Preprocessing complete
+2026-09-07 15:02:12 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-07 15:02:12 [INFO ] [jenkins] 
+2026-09-07 15:02:12 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-07 15:02:12 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:02:12 [INFO ] [main] Log file: 20260907_4d9671a2.log
+2026-09-07 15:02:12 [INFO ] [main] Found 3 file(s):
+2026-09-07 15:02:12 [INFO ] [main]   hose1.xlsx
+2026-09-07 15:02:12 [INFO ] [main]   hose2.xlsx
+2026-09-07 15:02:12 [INFO ] [main]   hose3.xlsx
+2026-09-07 15:02:12 [INFO ] [main] Output: 9.1v1.xlsx
+2026-09-07 15:02:12 [INFO ] [main] ==================================================
+2026-09-07 15:02:24 [INFO ] [main] Merged 3 files, 4735 images total
+2026-09-07 15:02:24 [INFO ] [main] Deleted 3 source file(s)
+2026-09-07 15:02:25 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-07 15:02:25 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-07 15:02:37 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1239 rows, 1701 images
+2026-09-07 15:02:37 [INFO ] [pipeline]   Sheet [Sheet0_3]: 1569 rows, 2289 images
+2026-09-07 15:02:37 [INFO ] [pipeline]   Merged 3 sheets -> 1, 2808 data rows, 3990 images
+2026-09-07 15:02:37 [INFO ] [pipeline] [2/12] validate
+2026-09-07 15:02:37 [INFO ] [pipeline]   Validated: 3355 rows, 27 cols (expect ~32)
+2026-09-07 15:02:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-07 15:02:37 [INFO ] [pipeline]   Backed up 4735 images
+2026-09-07 15:02:37 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-07 15:02:37 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-07 15:02:37 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-07 15:02:37 [INFO ] [pipeline]   Restored 4735 images with adjusted anchors
+2026-09-07 15:02:37 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-07 15:02:37 [INFO ] [pipeline]   Column 2: 3355 IDs generated
+2026-09-07 15:02:37 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-07 15:02:37 [INFO ] [pipeline]   Column 3: 3355 cells filled
+2026-09-07 15:02:37 [INFO ] [pipeline] [6/12] map_colors
+2026-09-07 15:02:38 [INFO ] [pipeline]   Column 10: 3266 cells mapped, 89 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-07 15:02:38 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-07 15:02:38 [INFO ] [pipeline]   Column 11: 3238 mapped, 89 cleared (col A has fill), 28 no match (recorded)
+2026-09-07 15:02:38 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-07 15:02:38 [INFO ] [pipeline]   Mirror copy: 22364 cells written
+2026-09-07 15:02:38 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-07 15:02:38 [INFO ] [pipeline]   Column 44: 3355 cells copied from col 12
+2026-09-07 15:02:38 [INFO ] [pipeline] [10/12] calc_price
+2026-09-07 15:02:38 [INFO ] [pipeline]   Columns 45-48: 3355 rows calculated
+2026-09-07 15:02:38 [INFO ] [pipeline] [11/12] format_cells
+2026-09-07 15:02:38 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-07 15:02:38 [INFO ] [pipeline]   Formatted 3355 rows: h=50, align=left/center
+2026-09-07 15:02:38 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-07 15:02:38 [INFO ] [pipeline] [12/12] finalize
+2026-09-07 15:02:38 [INFO ] [pipeline]   Done: 3355 rows x 48 cols (target: 48)
+2026-09-07 15:02:38 [INFO ] [pipeline] Pipeline complete
+2026-09-07 15:02:41 [INFO ] [main] Size: 3355 rows x 48 cols
+2026-09-07 15:02:41 [INFO ] [main] ==================================================
+2026-09-07 15:02:41 [INFO ] [main] Done: 9.1v1.xlsx
+2026-09-07 15:02:41 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-07 15:02:41 [INFO ] [jenkins] 
+2026-09-07 15:02:41 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-07 15:02:41 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:02:42 [INFO ] [color_size_main] Source: 9.1v1.xlsx
+2026-09-07 15:02:44 [INFO ] [color_size_main] Extracted: 3266 data lines + 89 separators → check_.txt
+2026-09-07 15:02:44 [INFO ] [color_size_main] Running: process.py
+2026-09-07 15:02:44 [INFO ] [color_size_deal] Groups: 89, lines: 3266 (file: 3355)
+2026-09-07 15:02:44 [INFO ] [color_size_deal] Prefixes: {'01': 130, '02': 34, '03': 18, '04': 6, '05': 6, '06': 6, '07': 6, '08': 6}
+2026-09-07 15:02:44 [INFO ] [color_size_deal] Done.
+2026-09-07 15:02:44 [INFO ] [color_size_main] Processing write-back: 3355 lines
+2026-09-07 15:02:48 [INFO ] [color_size_main] Write-back: 301 written, 3054 unchanged → 9.1v1.xlsx
+2026-09-07 15:02:48 [INFO ] [color_size_main] Done.
+2026-09-07 15:02:49 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-07 15:02:49 [INFO ] [jenkins] 
+2026-09-07 15:02:49 [INFO ] [jenkins] ==================================================
+2026-09-07 15:02:49 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-07 15:02:49 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-07 15:02:49 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-07 15:02:49 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-07 15:02:49 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-07 15:11:19 [INFO ] [jenkins] ==================================================
+2026-09-07 15:11:19 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-07 15:11:19 [INFO ] [jenkins] ==================================================
+2026-09-07 15:11:19 [INFO ] [jenkins] 
+2026-09-07 15:11:19 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-07 15:11:19 [INFO ] [jenkins] ------------------------------
+2026-09-07 15:11:19 [INFO ] [title_workflow] Source: 9.1v1.xlsx
+2026-09-07 15:11:22 [INFO ] [title_workflow] Extracted 89 titles + 89 links
+2026-09-07 15:11:22 [INFO ] [title_workflow] Written: origin_title (89) + origin_link (89)
+2026-09-07 15:11:22 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-07 15:11:22 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-07 15:11:22 [INFO ] [deepseek_web] Opening DeepSeek web (89 titles)...
+2026-09-07 15:11:22 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-07 15:11:31 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-07 15:11:33 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-07 15:11:33 [INFO ] [deepseek_web] [1/89] 2025男士休闲弯刀卫裤港风潮牌时尚直筒长裤宽松运动裤
+2026-09-07 15:11:36 [INFO ] [deepseek_web]   Downloaded: 0001_2120302329561818945369.jpg
+2026-09-07 15:11:36 [INFO ] [deepseek_web]   Prefetching next image (2/89)
+2026-09-07 15:11:36 [INFO ] [deepseek_web]   Switched to vision mode
+2026-09-07 15:11:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:11:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:12:21 [INFO ] [deepseek_web]   Response: 弧线弯刀剪裁 正面立体拼接缝线 长款垂感抽绳 男士宽松直筒卫裤 休闲运动长裤 松紧腰侧缝袋 纯色
+2026-09-07 15:12:21 [INFO ] [deepseek_web]   Deleted: 0001_2120302329561818945369.jpg
+2026-09-07 15:12:26 [INFO ] [deepseek_web] [2/89] 2025男士新款时尚3D印花挂绳松紧腰运动休闲长裤卫裤
+2026-09-07 15:12:26 [INFO ] [deepseek_web]   Downloaded: 0002_8641032228831284983873.jpg
+2026-09-07 15:12:26 [INFO ] [deepseek_web]   Prefetching next image (3/89)
+2026-09-07 15:12:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:12:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:13:00 [INFO ] [deepseek_web]   Response: 十字架祈祷手势印花 飞鸟羽毛融合印花 两侧长垂抽绳 男士宽松休闲卫裤 松紧腰 束脚 侧缝口袋 透气
+2026-09-07 15:13:00 [INFO ] [deepseek_web]   Deleted: 0002_8641032228831284983873.jpg
+2026-09-07 15:13:05 [INFO ] [deepseek_web] [3/89] 男士腰部抽绳直筒阔腿宽松长裤运动裤带口袋休闲裤
+2026-09-07 15:13:05 [INFO ] [deepseek_web]   Downloaded: 0003_9071012430666617408628.jpg
+2026-09-07 15:13:05 [INFO ] [deepseek_web]   Prefetching next image (4/89)
+2026-09-07 15:13:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:13:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:13:40 [INFO ] [deepseek_web]   Response: 直筒阔腿剪裁 腰部垂坠长抽绳 侧缝斜插口袋 男士宽松休闲运动长裤 松紧腰带 透气舒适 纯色
+2026-09-07 15:13:40 [INFO ] [deepseek_web]   Deleted: 0003_9071012430666617408628.jpg
+2026-09-07 15:13:45 [INFO ] [deepseek_web] [4/89] 男士复古修身运动男装宽松裤脚拉链抽绳休闲户外长裤
+2026-09-07 15:13:45 [INFO ] [deepseek_web]   Downloaded: 0004_6851048308094980437102.jpg
+2026-09-07 15:13:45 [INFO ] [deepseek_web]   Prefetching next image (5/89)
+2026-09-07 15:13:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:13:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:14:18 [INFO ] [deepseek_web]   Response: 裤脚侧拉链 侧边拉链口袋 金属头抽绳 男士修身束脚运动休闲长裤 松紧腰带 纯色 透气 轻量
+2026-09-07 15:14:18 [INFO ] [deepseek_web]   Deleted: 0004_6851048308094980437102.jpg
+2026-09-07 15:14:23 [INFO ] [deepseek_web] [5/89] 2025秋冬男士迷彩松紧腰抽绳休闲裤休闲宽松直筒长裤
+2026-09-07 15:14:23 [INFO ] [deepseek_web]   Downloaded: 0005_9270456267953336753592.jpg
+2026-09-07 15:14:23 [INFO ] [deepseek_web]   Prefetching next image (6/89)
+2026-09-07 15:14:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:14:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:14:58 [INFO ] [deepseek_web]   Response: 迷彩印花 长垂抽绳 侧缝口袋 男士宽松直筒休闲长裤 松紧腰 透气 轻量
+2026-09-07 15:14:58 [INFO ] [deepseek_web]   Deleted: 0005_9270456267953336753592.jpg
+2026-09-07 15:15:03 [INFO ] [deepseek_web] [6/89] 2026男士重磅垂感阔腿春秋长裤直筒宽松休闲卫裤
+2026-09-07 15:15:03 [INFO ] [deepseek_web]   Downloaded: 0006_4300455346477765899745.jpg
+2026-09-07 15:15:03 [INFO ] [deepseek_web]   Prefetching next image (7/89)
+2026-09-07 15:15:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:15:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:15:40 [INFO ] [deepseek_web]   Response: 侧缝点缀式明线拼接 双色编织抽绳 阔腿垂坠直筒剪裁 男士宽松休闲卫裤 松紧腰 侧缝口袋 纯色 透气
+2026-09-07 15:15:40 [INFO ] [deepseek_web]   Deleted: 0006_4300455346477765899745.jpg
+2026-09-07 15:15:45 [INFO ] [deepseek_web] [7/89] 男士春秋运动休闲直筒宽松平口长裤卫裤
+2026-09-07 15:15:45 [INFO ] [deepseek_web]   Downloaded: 0007_7531102486581116044580.jpg
+2026-09-07 15:15:45 [INFO ] [deepseek_web]   Prefetching next image (8/89)
+2026-09-07 15:15:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:15:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:16:15 [INFO ] [deepseek_web]   Response: 垂直褶皱肌理 金属头标识抽绳 垂坠宽松平口裤脚 男士直筒休闲卫裤 长裤 松紧腰侧口袋 纯色 透气
+2026-09-07 15:16:15 [INFO ] [deepseek_web]   Deleted: 0007_7531102486581116044580.jpg
+2026-09-07 15:16:20 [INFO ] [deepseek_web] [8/89] 男士秋季户外工装宽松直筒休闲运动长裤
+2026-09-07 15:16:20 [INFO ] [deepseek_web]   Downloaded: 0008_7650809129104894473179.jpg
+2026-09-07 15:16:20 [INFO ] [deepseek_web]   Prefetching next image (9/89)
+2026-09-07 15:16:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:16:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:16:52 [INFO ] [deepseek_web]   Response: 侧边撞色条纹拼接 侧缝立体拉链口袋 长垂金属头抽绳 男士宽松直筒休闲运动长裤 松紧腰 平口裤脚 纯色 透气 耐磨
+2026-09-07 15:16:52 [INFO ] [deepseek_web]   Deleted: 0008_7650809129104894473179.jpg
+2026-09-07 15:16:57 [INFO ] [deepseek_web] [9/89] 2026秋季男士休闲直筒松弛织带装饰宽松针织长裤
+2026-09-07 15:16:57 [INFO ] [deepseek_web]   Downloaded: 0009_9870815095364843036066.jpg
+2026-09-07 15:16:57 [INFO ] [deepseek_web]   Prefetching next image (10/89)
+2026-09-07 15:16:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:17:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:17:26 [INFO ] [deepseek_web]   Response: 长垂织带抽绳 垂直坑条纹理 阔腿垂坠平口 男士宽松直筒休闲长裤 松紧腰带 透气 纯色
+2026-09-07 15:17:26 [INFO ] [deepseek_web]   Deleted: 0009_9870815095364843036066.jpg
+2026-09-07 15:17:31 [INFO ] [deepseek_web] [10/89] 男士多口袋耐磨工装裤户外登山旅游休闲裤战术长裤
+2026-09-07 15:17:31 [INFO ] [deepseek_web]   Downloaded: 0010_0650353488779910826244.jpg
+2026-09-07 15:17:31 [INFO ] [deepseek_web]   Prefetching next image (11/89)
+2026-09-07 15:17:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:17:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:18:17 [INFO ] [deepseek_web]   Response: 上下拼接裤腿 大腿翻盖工装贴袋 侧缝斜插口袋 男士宽松工装长裤 多口袋设计 耐磨透气 纽扣拉链门襟
+2026-09-07 15:18:17 [INFO ] [deepseek_web]   Deleted: 0010_0650353488779910826244.jpg
+2026-09-07 15:18:22 [INFO ] [deepseek_web] [11/89] 男士时尚休闲裤万圣节血迹印花西裤长裤
+2026-09-07 15:18:22 [INFO ] [deepseek_web]   Downloaded: 0011_4890428088621972805844.jpg
+2026-09-07 15:18:22 [INFO ] [deepseek_web]   Prefetching next image (12/89)
+2026-09-07 15:18:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:18:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:18:56 [INFO ] [deepseek_web]   Response: 满印幽灵图案 蜡烛点缀印花 带腰带袢设计 男士直筒休闲长裤 常规版型 透气 纽扣拉链门襟 平口裤脚
+2026-09-07 15:18:56 [INFO ] [deepseek_web]   Deleted: 0011_4890428088621972805844.jpg
+2026-09-07 15:19:01 [INFO ] [deepseek_web] [12/89] 男士户外工装多口袋长裤休闲拼色拼接工装长裤
+2026-09-07 15:19:01 [INFO ] [deepseek_web]   Downloaded: 0012_4740508455354424157526.jpg
+2026-09-07 15:19:01 [INFO ] [deepseek_web]   Prefetching next image (13/89)
+2026-09-07 15:19:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:19:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:19:37 [INFO ] [deepseek_web]   Response: 大腿及膝部拼色拼接 侧边翻盖贴袋 金属扣环腰带 男士宽松直筒户外工装长裤 多口袋设计 耐磨透气 纽扣门襟
+2026-09-07 15:19:37 [INFO ] [deepseek_web]   Deleted: 0012_4740508455354424157526.jpg
+2026-09-07 15:19:42 [INFO ] [deepseek_web] [13/89] 男士纯色松紧腰阔腿褶皱休闲裤商务休闲直筒长裤
+2026-09-07 15:19:42 [INFO ] [deepseek_web]   Downloaded: 0013_1030845161504940396054.jpg
+2026-09-07 15:19:42 [INFO ] [deepseek_web]   Prefetching next image (14/89)
+2026-09-07 15:19:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:19:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:20:14 [INFO ] [deepseek_web]   Response: 前侧打褶 松紧腰 侧缝口袋 男士直筒阔腿休闲长裤 透气 纽扣门襟 纯色
+2026-09-07 15:20:14 [INFO ] [deepseek_web]   Deleted: 0013_1030845161504940396054.jpg
+2026-09-07 15:20:19 [INFO ] [deepseek_web] [14/89] 男士搞怪印花松紧带口袋直筒长裤
+2026-09-07 15:20:19 [INFO ] [deepseek_web]   Downloaded: 0014_8991025080643173618356.jpg
+2026-09-07 15:20:19 [INFO ] [deepseek_web]   Prefetching next image (15/89)
+2026-09-07 15:20:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:20:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:20:50 [INFO ] [deepseek_web]   Response: 满印植物纹理 长垂抽绳 侧缝插袋 男士宽松直筒长裤 松紧腰带 透气
+2026-09-07 15:20:50 [INFO ] [deepseek_web]   Deleted: 0014_8991025080643173618356.jpg
+2026-09-07 15:20:55 [INFO ] [deepseek_web] [15/89] 男士冬季加绒休闲灯芯绒直筒百搭外穿保暖长裤
+2026-09-07 15:20:55 [INFO ] [deepseek_web]   Downloaded: 0015_6510254460422196186132.jpg
+2026-09-07 15:20:55 [INFO ] [deepseek_web]   Prefetching next image (16/89)
+2026-09-07 15:20:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:21:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:21:25 [INFO ] [deepseek_web]   Response: 侧缝微型装饰标签 垂直细条纹肌理 长垂硬挺抽绳头 男士宽松直筒休闲长裤 松紧腰 侧边口袋 保暖 防风 纯色
+2026-09-07 15:21:25 [INFO ] [deepseek_web]   Deleted: 0015_6510254460422196186132.jpg
+2026-09-07 15:21:30 [INFO ] [deepseek_web] [16/89] 男修身春秋弹力工装裤宽松软壳冲锋裤耐磨户外（添加魔术贴）
+2026-09-07 15:21:30 [INFO ] [deepseek_web]   Downloaded: 0016_9770344454056313218714.jpg
+2026-09-07 15:21:30 [INFO ] [deepseek_web]   Prefetching next image (17/89)
+2026-09-07 15:21:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:21:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:22:06 [INFO ] [deepseek_web]   Response: 侧翻盖魔术贴口袋 膝部立体拼接剪裁 金属扣环腰带 男士修身工装长裤 耐磨 防风 弹力 透气 多口袋 纽扣门襟 纯色
+2026-09-07 15:22:06 [INFO ] [deepseek_web]   Deleted: 0016_9770344454056313218714.jpg
+2026-09-07 15:22:11 [INFO ] [deepseek_web] [17/89] 成人男女同款家庭派对居家屁屁睡裤休闲长裤
+2026-09-07 15:22:11 [INFO ] [deepseek_web]   Downloaded: 0017_6011036202914712712556.jpg
+2026-09-07 15:22:11 [INFO ] [deepseek_web]   Prefetching next image (18/89)
+2026-09-07 15:22:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:22:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:22:40 [INFO ] [deepseek_web]   Response: 3D立体错觉印花 背部开臀错觉印花 渐变图案 中性宽松直筒睡裤 休闲长裤 松紧腰 透气
+2026-09-07 15:22:40 [INFO ] [deepseek_web]   Deleted: 0017_6011036202914712712556.jpg
+2026-09-07 15:22:45 [INFO ] [deepseek_web] [18/89] 男士棉质舒肤睡裤2022春秋家居休闲长裤宽松运动瑜伽休闲裤
+2026-09-07 15:22:45 [INFO ] [deepseek_web]   Downloaded: 0018_7821141461393618733565.jpg
+2026-09-07 15:22:45 [INFO ] [deepseek_web]   Prefetching next image (19/89)
+2026-09-07 15:22:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:22:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:23:16 [INFO ] [deepseek_web]   Response: 双色编织抽绳 宽边松紧腰带 垂坠平口裤脚 男士宽松直筒睡裤 家居休闲长裤 侧缝口袋 透气 纯色
+2026-09-07 15:23:16 [INFO ] [deepseek_web]   Deleted: 0018_7821141461393618733565.jpg
+2026-09-07 15:23:21 [INFO ] [deepseek_web] [19/89] 男士工装裤欧美独立站外贸抽绳拉链袋休闲长裤
+2026-09-07 15:23:21 [INFO ] [deepseek_web]   Downloaded: 0019_7121025228353012815695.jpg
+2026-09-07 15:23:21 [INFO ] [deepseek_web]   Prefetching next image (20/89)
+2026-09-07 15:23:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:23:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:23:54 [INFO ] [deepseek_web]   Response: 拉链翻盖侧袋 膝部立体拼接 垂坠抽绳腰头 男士宽松工装长裤 松紧腰 平口裤脚 透气 纯色
+2026-09-07 15:23:54 [INFO ] [deepseek_web]   Deleted: 0019_7121025228353012815695.jpg
+2026-09-07 15:23:59 [INFO ] [deepseek_web] [20/89] 男士时尚休闲宽松复古脚踝绑带系带束脚裤长裤
+2026-09-07 15:23:59 [INFO ] [deepseek_web]   Downloaded: 0020_8460755272062879875650.jpg
+2026-09-07 15:23:59 [INFO ] [deepseek_web]   Prefetching next image (21/89)
+2026-09-07 15:23:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:24:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:24:33 [INFO ] [deepseek_web]   Response: 脚踝绑带系带 宽松垂坠裤腿 侧缝斜插袋 男士休闲束脚长裤 松紧腰带 透气 纯色
+2026-09-07 15:24:33 [INFO ] [deepseek_web]   Deleted: 0020_8460755272062879875650.jpg
+2026-09-07 15:24:38 [INFO ] [deepseek_web] [21/89] 男士春季战术迷彩作训户外弹力宽松软壳冲锋工装裤IX7
+2026-09-07 15:24:38 [INFO ] [deepseek_web]   Downloaded: 0021_7050949304204230009356.jpg
+2026-09-07 15:24:38 [INFO ] [deepseek_web]   Prefetching next image (22/89)
+2026-09-07 15:24:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:24:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:25:09 [INFO ] [deepseek_web]   Response: 金属D型环扣 膝部立体拼接 翻盖工装口袋 男士修身战术工装长裤 IX7 耐磨 防风 透气 纯色 多口袋 纽扣门襟
+2026-09-07 15:25:09 [INFO ] [deepseek_web]   Deleted: 0021_7050949304204230009356.jpg
+2026-09-07 15:25:14 [INFO ] [deepseek_web] [22/89] 男士松紧腰带抽绳宽松阔腿短绒卫裤休闲裤长裤
+2026-09-07 15:25:14 [INFO ] [deepseek_web]   Downloaded: 0022_4710534325282497445581.jpg
+2026-09-07 15:25:14 [INFO ] [deepseek_web]   Prefetching next image (23/89)
+2026-09-07 15:25:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:25:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:25:43 [INFO ] [deepseek_web]   Response: 前侧方形大贴袋 长垂抽绳 阔腿垂坠剪裁 男士宽松卫裤 松紧腰 侧缝插袋 透气 纯色
+2026-09-07 15:25:43 [INFO ] [deepseek_web]   Deleted: 0022_4710534325282497445581.jpg
+2026-09-07 15:25:48 [INFO ] [deepseek_web] [23/89] 男士运动户外重磅微弹训练四季通勤多口袋直筒抽绳工装长裤批
+2026-09-07 15:25:48 [INFO ] [deepseek_web]   Downloaded: 0023_3980956320835913509113.jpg
+2026-09-07 15:25:48 [INFO ] [deepseek_web]   Prefetching next image (24/89)
+2026-09-07 15:25:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:25:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:26:17 [INFO ] [deepseek_web]   Response: 大腿翻盖口袋 侧缝斜插口袋 长垂抽绳 男士宽松直筒工装长裤 松紧腰带 平口裤脚 多口袋 透气 微弹 纯色
+2026-09-07 15:26:17 [INFO ] [deepseek_web]   Deleted: 0023_3980956320835913509113.jpg
+2026-09-07 15:26:22 [INFO ] [deepseek_web] [24/89] 男士个性纯色休闲运动多口袋工装裤抽绳休闲长裤
+2026-09-07 15:26:22 [INFO ] [deepseek_web]   Downloaded: 0024_5661034216265388632879.jpg
+2026-09-07 15:26:22 [INFO ] [deepseek_web]   Prefetching next image (25/89)
+2026-09-07 15:26:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:26:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:26:52 [INFO ] [deepseek_web]   Response: 大腿侧带标签拉链翻盖口袋 长垂抽绳 侧缝斜插口袋 男士宽松直筒工装长裤 松紧腰 纯色 透气
+2026-09-07 15:26:52 [INFO ] [deepseek_web]   Deleted: 0024_5661034216265388632879.jpg
+2026-09-07 15:26:57 [INFO ] [deepseek_web] [25/89] 男士时尚潮流百搭宽松可束脚秋冬工装长裤
+2026-09-07 15:26:57 [INFO ] [deepseek_web]   Downloaded: 0025_7521113046905719076520.jpg
+2026-09-07 15:26:57 [INFO ] [deepseek_web]   Prefetching next image (26/89)
+2026-09-07 15:26:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:27:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:27:26 [INFO ] [deepseek_web]   Response: 大腿翻盖口袋 裤脚可调节束口 膝部立体拼接 男士宽松工装长裤 松紧腰 防风耐磨透气 纯色
+2026-09-07 15:27:26 [INFO ] [deepseek_web]   Deleted: 0025_7521113046905719076520.jpg
+2026-09-07 15:27:31 [INFO ] [deepseek_web] [26/89] 男士抽绳松紧腰纯色口袋长裤宽松运动长裤 （加绒）
+2026-09-07 15:27:31 [INFO ] [deepseek_web]   Downloaded: 0026_6950946489501514909874.jpg
+2026-09-07 15:27:31 [INFO ] [deepseek_web]   Prefetching next image (27/89)
+2026-09-07 15:27:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:27:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:28:04 [INFO ] [deepseek_web]   Response: 带方形标签扣件 交叉缝线翻盖口袋 侧缝斜插口袋 男士宽松直筒运动长裤 松紧腰带 长垂抽绳 透气 保暖 纯色
+2026-09-07 15:28:04 [INFO ] [deepseek_web]   Deleted: 0026_6950946489501514909874.jpg
+2026-09-07 15:28:09 [INFO ] [deepseek_web] [27/89] 男士工装裤长裤
+2026-09-07 15:28:09 [INFO ] [deepseek_web]   Downloaded: 0027_5211205276536791232439.jpg
+2026-09-07 15:28:09 [INFO ] [deepseek_web]   Prefetching next image (28/89)
+2026-09-07 15:28:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:28:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:28:39 [INFO ] [deepseek_web]   Response: 白标贴布翻盖口袋 膝部立体拼接 长垂抽绳 男士宽松工装长裤 松紧腰带 侧缝口袋 透气 耐磨 纯色
+2026-09-07 15:28:39 [INFO ] [deepseek_web]   Deleted: 0027_5211205276536791232439.jpg
+2026-09-07 15:28:44 [INFO ] [deepseek_web] [28/89] 男士四季街头休闲运动多口袋脚口帽绳腰间系带纯色梭织工装长裤
+2026-09-07 15:28:44 [INFO ] [deepseek_web]   Downloaded: 0028_9040504339603059186646.jpg
+2026-09-07 15:28:44 [INFO ] [deepseek_web]   Prefetching next image (29/89)
+2026-09-07 15:28:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:28:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:29:13 [INFO ] [deepseek_web]   Response: 脚口帽绳抽绳 大腿翻盖工装口袋 腰间长系带 男士宽松纯色工装长裤 松紧腰 侧缝口袋 防风 透气
+2026-09-07 15:29:13 [INFO ] [deepseek_web]   Deleted: 0028_9040504339603059186646.jpg
+2026-09-07 15:29:18 [INFO ] [deepseek_web] [29/89] 男士休闲时尚大码宽松潮牛仔裤街头阔腿长裤
+2026-09-07 15:29:18 [INFO ] [deepseek_web]   Downloaded: 0029_1220208136731051700434.jpg
+2026-09-07 15:29:18 [INFO ] [deepseek_web]   Prefetching next image (30/89)
+2026-09-07 15:29:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:29:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:29:59 [INFO ] [deepseek_web]   Response: 宽松阔腿剪裁 纽扣门襟 平口裤脚堆叠 侧缝斜插袋 腰头袢 男士宽松牛仔裤 长裤 透气 耐磨 纯色
+2026-09-07 15:29:59 [INFO ] [deepseek_web]   Deleted: 0029_1220208136731051700434.jpg
+2026-09-07 15:30:04 [INFO ] [deepseek_web] [30/89] 男士休闲纯色直筒长裤系扣腰口袋休闲裤
+2026-09-07 15:30:04 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='vltp5wv0yb70u1eg.imgsapp.com', port=443): Max retries exceeded with url: /afsd/9325/3530535435194317169133.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-07 15:30:09 [INFO ] [deepseek_web] [31/89] 男士工装裤男春秋季新款直筒休闲裤男士大码多口袋工装运动长裤
+2026-09-07 15:30:10 [INFO ] [deepseek_web]   Downloaded: 0031_1220921216593814307257.jpg
+2026-09-07 15:30:10 [INFO ] [deepseek_web]   Prefetching next image (32/89)
+2026-09-07 15:30:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:30:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:30:39 [INFO ] [deepseek_web]   Response: 双侧翻盖口袋 长垂抽绳 直筒平口裤腿 男士宽松直筒工装长裤 松紧腰 侧缝口袋 透气耐磨 纯色
+2026-09-07 15:30:39 [INFO ] [deepseek_web]   Deleted: 0031_1220921216593814307257.jpg
+2026-09-07 15:30:44 [INFO ] [deepseek_web] [32/89] 男士户外冲锋裤男女秋冬防泼水伞兵裤美式工装休闲运动长裤
+2026-09-07 15:30:44 [INFO ] [deepseek_web]   Downloaded: 0032_6610904209703611633195.jpg
+2026-09-07 15:30:44 [INFO ] [deepseek_web]   Prefetching next image (33/89)
+2026-09-07 15:30:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:30:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:31:14 [INFO ] [deepseek_web]   Response: 侧边弧形撞色明线 大腿斜向拉链口袋 裤脚调节扣抽绳束脚 中性宽松直筒户外冲锋裤 防风防泼水透气轻量 松紧腰长抽绳纯色
+2026-09-07 15:31:14 [INFO ] [deepseek_web]   Deleted: 0032_6610904209703611633195.jpg
+2026-09-07 15:31:19 [INFO ] [deepseek_web] [33/89] 男式灯芯绒工装裤宽松复古休闲长裤多口袋直筒裤
+2026-09-07 15:31:19 [INFO ] [deepseek_web]   Downloaded: 0033_2180750226537559506518.jpg
+2026-09-07 15:31:19 [INFO ] [deepseek_web]   Prefetching next image (34/89)
+2026-09-07 15:31:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:31:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:31:54 [INFO ] [deepseek_web]   Response: 垂直细条纹肌理 背部矩形贴布标签 后侧双大贴袋 男士宽松直筒工装长裤 平口裤脚 透气 纯色
+2026-09-07 15:31:54 [INFO ] [deepseek_web]   Deleted: 0033_2180750226537559506518.jpg
+2026-09-07 15:31:59 [INFO ] [deepseek_web] [34/89] 男士新款裤子男春夏直筒拼色休闲百搭裤宽松大码长裤休闲裤2
+2026-09-07 15:31:59 [INFO ] [deepseek_web]   Downloaded: 0034_8880937035645117215051.jpg
+2026-09-07 15:31:59 [INFO ] [deepseek_web]   Prefetching next image (35/89)
+2026-09-07 15:31:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:32:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:32:33 [INFO ] [deepseek_web]   Response: 不规则斜向撞色拼接 长垂对比色抽绳 侧缝斜插口袋 男士宽松直筒休闲长裤 松紧腰带 透气 平口裤脚 拼色
+2026-09-07 15:32:33 [INFO ] [deepseek_web]   Deleted: 0034_8880937035645117215051.jpg
+2026-09-07 15:32:38 [INFO ] [deepseek_web] [35/89] 男士美式多口袋工装裤休闲裤男阔腿裤骑兵斜纹户外男长裤工装裤2
+2026-09-07 15:32:38 [INFO ] [deepseek_web]   Downloaded: 0035_5400837546054185010744.jpg
+2026-09-07 15:32:38 [INFO ] [deepseek_web]   Prefetching next image (36/89)
+2026-09-07 15:32:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:32:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:33:10 [INFO ] [deepseek_web]   Response: 大腿侧双层立体翻盖口袋 侧缝大容量贴袋 阔腿直筒垂坠剪裁 男士宽松工装长裤 松紧腰 平口裤脚 透气耐磨 纯色
+2026-09-07 15:33:10 [INFO ] [deepseek_web]   Deleted: 0035_5400837546054185010744.jpg
+2026-09-07 15:33:15 [INFO ] [deepseek_web] [36/89] 男士新款休闲裤欧美灯芯绒多口袋纯色工装裤复古抽绳男式直筒长裤休闲裤2
+2026-09-07 15:33:15 [INFO ] [deepseek_web]   Downloaded: 0036_2641023377566627910650.jpg
+2026-09-07 15:33:15 [INFO ] [deepseek_web]   Prefetching next image (37/89)
+2026-09-07 15:33:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:33:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:33:54 [INFO ] [deepseek_web]   Response: 垂直细条纹肌理 对比色长垂抽绳 大腿侧翻盖工装口袋 男士宽松直筒工装休闲长裤 松紧腰带 侧缝口袋 透气保暖 纯色
+2026-09-07 15:33:54 [INFO ] [deepseek_web]   Deleted: 0036_2641023377566627910650.jpg
+2026-09-07 15:33:59 [INFO ] [deepseek_web] [37/89] 男士时尚休闲裤万圣节骷髅印花西裤长裤
+2026-09-07 15:33:59 [INFO ] [deepseek_web]   Downloaded: 0037_8160936420854115884051.jpg
+2026-09-07 15:33:59 [INFO ] [deepseek_web]   Prefetching next image (38/89)
+2026-09-07 15:33:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:34:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:34:36 [INFO ] [deepseek_web]   Response: 带尖刺骷髅头印花 玫瑰花满印组合 满印图案覆盖 男士常规直筒休闲长裤 透气 纽扣拉链门襟 腰带袢 侧缝口袋
+2026-09-07 15:34:36 [INFO ] [deepseek_web]   Deleted: 0037_8160936420854115884051.jpg
+2026-09-07 15:34:41 [INFO ] [deepseek_web] [38/89] 男士秋季时尚休闲万圣节趣味印花睡裤长裤
+2026-09-07 15:34:41 [INFO ] [deepseek_web]   Downloaded: 0038_5931039086621113314804.jpg
+2026-09-07 15:34:41 [INFO ] [deepseek_web]   Prefetching next image (39/89)
+2026-09-07 15:34:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:34:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:35:14 [INFO ] [deepseek_web]   Response: 3D开臀错觉印花 正面格纹拼接 满印幽灵图案 男士宽松直筒睡裤 松紧腰带 长裤 透气
+2026-09-07 15:35:14 [INFO ] [deepseek_web]   Deleted: 0038_5931039086621113314804.jpg
+2026-09-07 15:35:19 [INFO ] [deepseek_web] [39/89] 男士网纱透气健身训练紧身长裤高弹骑行运动裤
+2026-09-07 15:35:19 [INFO ] [deepseek_web]   Downloaded: 0039_3060413057261713098454.jpg
+2026-09-07 15:35:19 [INFO ] [deepseek_web]   Prefetching next image (40/89)
+2026-09-07 15:35:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:35:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:36:00 [INFO ] [deepseek_web]   Response: 金属环扣腰头 透视侧拼 长垂金属头抽绳 男士紧身运动长裤 松紧腰 透气
+2026-09-07 15:36:00 [INFO ] [deepseek_web]   Deleted: 0039_3060413057261713098454.jpg
+2026-09-07 15:36:05 [INFO ] [deepseek_web] [40/89] 夏季新款男士工装裤抽绳多口袋休闲长裤
+2026-09-07 15:36:05 [INFO ] [deepseek_web]   Downloaded: 0040_9580727007758125480536.jpg
+2026-09-07 15:36:05 [INFO ] [deepseek_web]   Prefetching next image (41/89)
+2026-09-07 15:36:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:36:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:36:38 [INFO ] [deepseek_web]   Response: 长垂金属头抽绳 大腿翻盖贴袋 侧缝斜插口袋 男士宽松直筒工装长裤 松紧腰 平口裤脚 透气 纯色
+2026-09-07 15:36:38 [INFO ] [deepseek_web]   Deleted: 0040_9580727007758125480536.jpg
+2026-09-07 15:36:43 [INFO ] [deepseek_web] [41/89] 男士休闲运动长裤
+2026-09-07 15:36:43 [INFO ] [deepseek_web]   Downloaded: 0041_6480147081201623651631.jpg
+2026-09-07 15:36:43 [INFO ] [deepseek_web]   Prefetching next image (42/89)
+2026-09-07 15:36:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:36:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:37:14 [INFO ] [deepseek_web]   Response: 侧缝长拉链口袋 长垂金属头抽绳 平口直筒裤脚 男士宽松直筒运动休闲长裤 松紧腰 透气 轻量 纯色
+2026-09-07 15:37:14 [INFO ] [deepseek_web]   Deleted: 0041_6480147081201623651631.jpg
+2026-09-07 15:37:19 [INFO ] [deepseek_web] [42/89] 男士秋冬款百搭宽松休闲灯芯绒伞兵长裤
+2026-09-07 15:37:19 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='yvkeowbl9nzhzacn.imgsapp.com', port=443): Max retries exceeded with url: /afsd/8712/6800414085223017541859.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-07 15:37:24 [INFO ] [deepseek_web] [43/89] 男士亚麻宽松透气简约休闲竖条纹设计直筒西装长裤
+2026-09-07 15:37:26 [INFO ] [deepseek_web]   Downloaded: 0043_1240331031796990645793.jpg
+2026-09-07 15:37:26 [INFO ] [deepseek_web]   Prefetching next image (44/89)
+2026-09-07 15:37:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:37:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:37:56 [INFO ] [deepseek_web]   Response: 竖条纹设计 腰头袢 纽扣门襟 男士宽松直筒休闲长裤 侧缝口袋 平口裤脚 透气 轻量
+2026-09-07 15:37:56 [INFO ] [deepseek_web]   Deleted: 0043_1240331031796990645793.jpg
+2026-09-07 15:38:01 [INFO ] [deepseek_web] [44/89] 001男士反光多口袋训练运动长裤
+2026-09-07 15:38:01 [INFO ] [deepseek_web]   Downloaded: 0044_1650955093878110860524.jpg
+2026-09-07 15:38:01 [INFO ] [deepseek_web]   Prefetching next image (45/89)
+2026-09-07 15:38:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:38:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:38:39 [INFO ] [deepseek_web]   Response: 横向反光条拼接 大腿翻盖多口袋 裤脚松紧束口 男士宽松训练运动长裤 松紧腰带 长垂抽绳 耐磨 防风 透气 撞色拼接
+2026-09-07 15:38:39 [INFO ] [deepseek_web]   Deleted: 0044_1650955093878110860524.jpg
+2026-09-07 15:38:44 [INFO ] [deepseek_web] [45/89] 男士卫裤宽松阔脚休闲运动裤复古爵士舞长裤oversize直筒裤子
+2026-09-07 15:38:44 [INFO ] [deepseek_web]   Downloaded: 0045_8760941405411713300103.jpg
+2026-09-07 15:38:44 [INFO ] [deepseek_web]   Prefetching next image (46/89)
+2026-09-07 15:38:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:38:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:39:16 [INFO ] [deepseek_web]   Response: 侧边撞色拼接 侧边双条纹 宽松阔腿垂坠剪裁 男士宽松直筒休闲运动卫裤 松紧腰 长垂抽绳 侧缝口袋 透气
+2026-09-07 15:39:16 [INFO ] [deepseek_web]   Deleted: 0045_8760941405411713300103.jpg
+2026-09-07 15:39:21 [INFO ] [deepseek_web] [46/89] 男士冲锋裤机能防水伞兵裤情侣潮牌户外长裤工装裤
+2026-09-07 15:39:21 [INFO ] [deepseek_web]   Downloaded: 0046_1080556591133399449955.jpg
+2026-09-07 15:39:21 [INFO ] [deepseek_web]   Prefetching next image (47/89)
+2026-09-07 15:39:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:39:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:39:53 [INFO ] [deepseek_web]   Response: 膝部立体拼接缝线 长垂抽绳 大腿翻盖贴袋 男士宽松直筒冲锋裤 户外工装长裤 松紧腰 侧缝口袋 防水防风透气耐磨 纯色
+2026-09-07 15:39:53 [INFO ] [deepseek_web]   Deleted: 0046_1080556591133399449955.jpg
+2026-09-07 15:39:58 [INFO ] [deepseek_web] [47/89] 男士四季街头休闲运动多口袋脚口帽绳腰间系带纯色梭织工装长裤
+2026-09-07 15:39:58 [INFO ] [deepseek_web]   Downloaded: 0047_0920306590407718476968.jpg
+2026-09-07 15:39:58 [INFO ] [deepseek_web]   Prefetching next image (48/89)
+2026-09-07 15:39:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:40:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:40:30 [INFO ] [deepseek_web]   Response: 脚口帽绳 侧缝拉链口袋 大腿翻盖口袋 男士宽松直筒工装长裤 松紧腰 腰间系带 纯色 透气 耐磨
+2026-09-07 15:40:30 [INFO ] [deepseek_web]   Deleted: 0047_0920306590407718476968.jpg
+2026-09-07 15:40:35 [INFO ] [deepseek_web] [48/89] 男士时尚休闲宽松复古脚踝绑带系带束脚裤长裤
+2026-09-07 15:40:35 [INFO ] [deepseek_web]   Downloaded: 0048_4320622087671119882069.jpg
+2026-09-07 15:40:35 [INFO ] [deepseek_web]   Prefetching next image (49/89)
+2026-09-07 15:40:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:40:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:41:07 [INFO ] [deepseek_web]   Response: 脚踝多孔眼系带设计 侧缝斜插口袋 长垂抽绳 男士宽松束脚休闲长裤 透气 松紧腰
+2026-09-07 15:41:07 [INFO ] [deepseek_web]   Deleted: 0048_4320622087671119882069.jpg
+2026-09-07 15:41:12 [INFO ] [deepseek_web] [49/89] 男士松紧腰带抽绳宽松阔腿短绒卫裤休闲裤长裤
+2026-09-07 15:41:12 [INFO ] [deepseek_web]   Downloaded: 0049_0171041469061312913430.jpg
+2026-09-07 15:41:12 [INFO ] [deepseek_web]   Prefetching next image (50/89)
+2026-09-07 15:41:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:41:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:41:44 [INFO ] [deepseek_web]   Response: 平口阔腿裤脚 长垂抽绳 侧缝斜插口袋 男士宽松直筒卫裤 松紧腰带 透气 纯色
+2026-09-07 15:41:44 [INFO ] [deepseek_web]   Deleted: 0049_0171041469061312913430.jpg
+2026-09-07 15:41:49 [INFO ] [deepseek_web] [50/89] 秋冬新款男士奥粒绒休闲纯色宽松口袋休闲长裤
+2026-09-07 15:41:49 [INFO ] [deepseek_web]   Downloaded: 0050_9040455020782598157385.jpg
+2026-09-07 15:41:49 [INFO ] [deepseek_web]   Prefetching next image (51/89)
+2026-09-07 15:41:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:42:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:42:19 [INFO ] [deepseek_web]   Response: 长垂抽绳 侧缝大容量斜插口袋 宽松垂坠直筒剪裁 男士宽松休闲长裤 保暖透气 松紧腰 纯色
+2026-09-07 15:42:19 [INFO ] [deepseek_web]   Deleted: 0050_9040455020782598157385.jpg
+2026-09-07 15:42:24 [INFO ] [deepseek_web] [51/89] 水洗做旧破洞牛仔裤男复古街头设计感宽松直筒休闲长裤潮
+2026-09-07 15:42:24 [INFO ] [deepseek_web]   Downloaded: 0051_6161057100461010754323.jpg
+2026-09-07 15:42:24 [INFO ] [deepseek_web]   Prefetching next image (52/89)
+2026-09-07 15:42:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:42:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:43:01 [INFO ] [deepseek_web]   Response: 大腿局部破洞 膝盖横向磨损 水洗做旧纹理 男士宽松直筒牛仔裤 长裤 透气 纽扣门襟 腰袢
+2026-09-07 15:43:01 [INFO ] [deepseek_web]   Deleted: 0051_6161057100461010754323.jpg
+2026-09-07 15:43:06 [INFO ] [deepseek_web] [52/89] 跨境专供亚马逊速卖通男士秋冬加厚华夫格运动休闲长裤
+2026-09-07 15:43:06 [INFO ] [deepseek_web]   Downloaded: 0052_0831032300764516369572.jpg
+2026-09-07 15:43:06 [INFO ] [deepseek_web]   Prefetching next image (53/89)
+2026-09-07 15:43:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:43:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:43:40 [INFO ] [deepseek_web]   Response: 垂直立体条纹肌理 长垂抽绳 裤脚松紧束口 男士宽松束脚运动休闲长裤 松紧腰 侧缝口袋 透气 纯色
+2026-09-07 15:43:40 [INFO ] [deepseek_web]   Deleted: 0052_0831032300764516369572.jpg
+2026-09-07 15:43:45 [INFO ] [deepseek_web] [53/89] 男士纯色休闲时尚带口袋工装休闲长裤
+2026-09-07 15:43:45 [INFO ] [deepseek_web]   Downloaded: 0053_9460504541642698392779.jpg
+2026-09-07 15:43:45 [INFO ] [deepseek_web]   Prefetching next image (54/89)
+2026-09-07 15:43:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:43:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:44:14 [INFO ] [deepseek_web]   Response: 翻盖工装贴袋 腰部皮带袢 纽扣门襟 男士常规直筒工装长裤 侧缝斜插口袋 透气耐磨 纯色
+2026-09-07 15:44:14 [INFO ] [deepseek_web]   Deleted: 0053_9460504541642698392779.jpg
+2026-09-07 15:44:19 [INFO ] [deepseek_web] [54/89] 男士秋冬加厚华夫格运动休闲长裤
+2026-09-07 15:44:19 [INFO ] [deepseek_web]   Downloaded: 0054_2560903188814540961484.jpg
+2026-09-07 15:44:19 [INFO ] [deepseek_web]   Prefetching next image (55/89)
+2026-09-07 15:44:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:44:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:44:55 [INFO ] [deepseek_web]   Response: 表面条纹凹凸肌理 裤脚松紧束口 长垂抽绳 男士宽松运动休闲长裤 松紧腰 透气保暖 纯色
+2026-09-07 15:44:55 [INFO ] [deepseek_web]   Deleted: 0054_2560903188814540961484.jpg
+2026-09-07 15:45:00 [INFO ] [deepseek_web] [55/89] 男士拉链工装裤子复古休闲束脚裤长裤男
+2026-09-07 15:45:00 [INFO ] [deepseek_web]   Downloaded: 0055_2971114460781363227814.jpg
+2026-09-07 15:45:00 [INFO ] [deepseek_web]   Prefetching next image (56/89)
+2026-09-07 15:45:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:45:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:45:30 [INFO ] [deepseek_web]   Response: 斜向拉链口袋 长垂金属头抽绳 裤脚松紧束口 男士宽松工装长裤 松紧腰 侧缝口袋 透气耐磨 纯色
+2026-09-07 15:45:30 [INFO ] [deepseek_web]   Deleted: 0055_2971114460781363227814.jpg
+2026-09-07 15:45:35 [INFO ] [deepseek_web] [56/89] 男士休闲运动重磅加绒长裤工装卫裤
+2026-09-07 15:45:35 [INFO ] [deepseek_web]   Downloaded: 0056_1891007143305027030753.jpg
+2026-09-07 15:45:35 [INFO ] [deepseek_web]   Prefetching next image (57/89)
+2026-09-07 15:45:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:45:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:46:04 [INFO ] [deepseek_web]   Response: 带按扣翻盖大腿口袋 裤脚松紧束口 长垂抽绳 男士宽松休闲工装卫裤 松紧腰带 侧缝口袋 透气保暖 纯色
+2026-09-07 15:46:04 [INFO ] [deepseek_web]   Deleted: 0056_1891007143305027030753.jpg
+2026-09-07 15:46:09 [INFO ] [deepseek_web] [57/89] 彩色明线休闲卫裤男士运动长裤高街百搭宽松裤子
+2026-09-07 15:46:09 [INFO ] [deepseek_web]   Downloaded: 0057_0871128290261520949778.jpg
+2026-09-07 15:46:09 [INFO ] [deepseek_web]   Prefetching next image (58/89)
+2026-09-07 15:46:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:46:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:46:38 [INFO ] [deepseek_web]   Response: 撞色弧形明线拼接 长垂金属头抽绳 侧缝斜插口袋 男士宽松直筒休闲运动卫裤 松紧腰 平口裤脚 透气 纯色
+2026-09-07 15:46:38 [INFO ] [deepseek_web]   Deleted: 0057_0871128290261520949778.jpg
+2026-09-07 15:46:43 [INFO ] [deepseek_web] [58/89] 秋冬款男士3口袋外加背面特殊设计休闲长裤
+2026-09-07 15:46:43 [INFO ] [deepseek_web]   Downloaded: 0058_5971147446401888131963.jpg
+2026-09-07 15:46:43 [INFO ] [deepseek_web]   Prefetching next image (59/89)
+2026-09-07 15:46:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:46:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:47:19 [INFO ] [deepseek_web]   Response: 背腰毛巾挂环 长垂抽绳 裤脚松紧束口 男士宽松休闲长裤 透气 纯色 松紧腰 侧缝口袋
+2026-09-07 15:47:19 [INFO ] [deepseek_web]   Deleted: 0058_5971147446401888131963.jpg
+2026-09-07 15:47:24 [INFO ] [deepseek_web] [59/89] 男士纯色复古宽松灯芯绒卫裤韩版大码时尚休闲运动长裤子
+2026-09-07 15:47:24 [INFO ] [deepseek_web]   Downloaded: 0059_8980638244558157912943.jpg
+2026-09-07 15:47:24 [INFO ] [deepseek_web]   Prefetching next image (60/89)
+2026-09-07 15:47:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:47:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:47:59 [INFO ] [deepseek_web]   Response: 垂直条纹肌理 长垂抽绳 平口阔腿裤脚 男士宽松休闲长裤 松紧腰 侧缝口袋 透气 纯色
+2026-09-07 15:47:59 [INFO ] [deepseek_web]   Deleted: 0059_8980638244558157912943.jpg
+2026-09-07 15:48:04 [INFO ] [deepseek_web] [60/89] 男士直筒户外休闲迷彩长裤多口袋宽松工作裤
+2026-09-07 15:48:04 [INFO ] [deepseek_web]   Downloaded: 0060_3581206245459721311191.jpg
+2026-09-07 15:48:04 [INFO ] [deepseek_web]   Prefetching next image (61/89)
+2026-09-07 15:48:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:48:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:48:40 [INFO ] [deepseek_web]   Response: 迷彩印花 大腿翻盖口袋 腰间金属扣环 男士宽松直筒工装长裤 透气耐磨 纽扣门襟 侧缝口袋
+2026-09-07 15:48:40 [INFO ] [deepseek_web]   Deleted: 0060_3581206245459721311191.jpg
+2026-09-07 15:48:45 [INFO ] [deepseek_web] [61/89] 中世纪文艺复兴海盗纯色紧身裤男士哥特风长裤
+2026-09-07 15:48:45 [INFO ] [deepseek_web]   Downloaded: 0061_4111051479001030082806.jpg
+2026-09-07 15:48:45 [INFO ] [deepseek_web]   Prefetching next image (62/89)
+2026-09-07 15:48:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:48:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:49:20 [INFO ] [deepseek_web]   Response: 前部抽褶设计 腰腿多排金属按扣 裤脚收紧束口 男士宽松长裤 松紧腰 透气 纯色
+2026-09-07 15:49:20 [INFO ] [deepseek_web]   Deleted: 0061_4111051479001030082806.jpg
+2026-09-07 15:49:25 [INFO ] [deepseek_web] [62/89] 男士狂欢节亮片休闲派对喇叭长裤
+2026-09-07 15:49:25 [INFO ] [deepseek_web]   Downloaded: 0062_3410258593461716182189.jpg
+2026-09-07 15:49:25 [INFO ] [deepseek_web]   Prefetching next image (63/89)
+2026-09-07 15:49:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:49:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:49:56 [INFO ] [deepseek_web]   Response: 满身亮片 喇叭裤脚 宽边腰带 男士宽松派对长裤 松紧腰 侧缝口袋 拉链门襟 透气
+2026-09-07 15:49:56 [INFO ] [deepseek_web]   Deleted: 0062_3410258593461716182189.jpg
+2026-09-07 15:50:01 [INFO ] [deepseek_web] [63/89] 男士四季街头休闲运动多口袋脚口帽绳腰间系带纯色梭织工装长裤
+2026-09-07 15:50:01 [INFO ] [deepseek_web]   Downloaded: 0063_4010414051781517220976.jpg
+2026-09-07 15:50:01 [INFO ] [deepseek_web]   Prefetching next image (64/89)
+2026-09-07 15:50:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:50:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:50:40 [INFO ] [deepseek_web]   Response: 左侧翻盖口袋 右侧斜向拉链口袋 脚口调节抽绳 男士宽松工装长裤 长垂系带 松紧腰 侧缝口袋 透气耐磨 纯色
+2026-09-07 15:50:40 [INFO ] [deepseek_web]   Deleted: 0063_4010414051781517220976.jpg
+2026-09-07 15:50:45 [INFO ] [deepseek_web] [64/89] 男士格子印花家居裤休闲长裤
+2026-09-07 15:50:45 [INFO ] [deepseek_web]   Downloaded: 0064_9370429575351616156457.jpg
+2026-09-07 15:50:45 [INFO ] [deepseek_web]   Prefetching next image (65/89)
+2026-09-07 15:50:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:50:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:51:16 [INFO ] [deepseek_web]   Response: 格纹印花 长垂抽绳 宽松平口裤脚 男士直筒家居长裤 侧缝口袋 松紧腰 透气
+2026-09-07 15:51:16 [INFO ] [deepseek_web]   Deleted: 0064_9370429575351616156457.jpg
+2026-09-07 15:51:21 [INFO ] [deepseek_web] [65/89] 男士四季街头休闲运动多口袋脚口帽绳腰间系带纯色梭织工装长裤
+2026-09-07 15:51:21 [INFO ] [deepseek_web]   Downloaded: 0065_0420658535225111219921.jpg
+2026-09-07 15:51:21 [INFO ] [deepseek_web]   Prefetching next image (66/89)
+2026-09-07 15:51:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:51:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:51:51 [INFO ] [deepseek_web]   Response: 脚口帽绳 大腿翻盖口袋 长垂腰间系带 男士宽松工装长裤 松紧腰 侧缝口袋 透气 耐磨 纯色
+2026-09-07 15:51:51 [INFO ] [deepseek_web]   Deleted: 0065_0420658535225111219921.jpg
+2026-09-07 15:51:56 [INFO ] [deepseek_web] [66/89] 男士秋冬印花休闲宽松小脚吊裆长裤哈伦裤
+2026-09-07 15:51:56 [INFO ] [deepseek_web]   Downloaded: 0066_3490840587252342826914.jpg
+2026-09-07 15:51:56 [INFO ] [deepseek_web]   Prefetching next image (67/89)
+2026-09-07 15:51:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:52:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:52:27 [INFO ] [deepseek_web]   Response: 侧边圆形图腾印花 腰部金属调节扣 大腿翻盖立体贴袋 男士宽松吊裆束脚哈伦裤 休闲长裤 透气 松紧腰
+2026-09-07 15:52:27 [INFO ] [deepseek_web]   Deleted: 0066_3490840587252342826914.jpg
+2026-09-07 15:52:32 [INFO ] [deepseek_web] [67/89] 男士牛仔裤直筒宽松版松紧腰男士阔腿长裤
+2026-09-07 15:52:32 [INFO ] [deepseek_web]   Downloaded: 0067_5050152041202521258032.jpg
+2026-09-07 15:52:32 [INFO ] [deepseek_web]   Prefetching next image (68/89)
+2026-09-07 15:52:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:52:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:53:02 [INFO ] [deepseek_web]   Response: 长垂抽绳 侧缝大容量斜插口袋 直筒阔腿剪裁 男士宽松直筒牛仔裤 长裤 松紧腰 平口裤脚 透气 纯色
+2026-09-07 15:53:02 [INFO ] [deepseek_web]   Deleted: 0067_5050152041202521258032.jpg
+2026-09-07 15:53:07 [INFO ] [deepseek_web] [68/89] 男士夏季多口袋工装裤户外休闲运动裤直筒宽松裤子
+2026-09-07 15:53:07 [INFO ] [deepseek_web]   Downloaded: 0068_2371100227297414946234.jpg
+2026-09-07 15:53:07 [INFO ] [deepseek_web]   Prefetching next image (69/89)
+2026-09-07 15:53:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:53:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:53:39 [INFO ] [deepseek_web]   Response: 大腿斜向拉链口袋 膝部立体拼接剪裁 腰头皮带袢 男士宽松直筒工装长裤 纯色 透气轻量 纽扣门襟 侧缝口袋
+2026-09-07 15:53:39 [INFO ] [deepseek_web]   Deleted: 0068_2371100227297414946234.jpg
+2026-09-07 15:53:44 [INFO ] [deepseek_web] [69/89] 男士机能工装裤防水魔术贴多口袋户外运动直筒休闲长裤工装裤
+2026-09-07 15:53:44 [INFO ] [deepseek_web]   Downloaded: 0069_6460935073332297791200.jpg
+2026-09-07 15:53:44 [INFO ] [deepseek_web]   Prefetching next image (70/89)
+2026-09-07 15:53:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:53:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:54:19 [INFO ] [deepseek_web]   Response: 大腿翻盖魔术贴口袋 腰部两侧松紧设计 膝部立体拼接设计 男士宽松直筒工装长裤 透气轻量耐磨 纽扣门襟 侧缝口袋 纯色
+2026-09-07 15:54:19 [INFO ] [deepseek_web]   Deleted: 0069_6460935073332297791200.jpg
+2026-09-07 15:54:24 [INFO ] [deepseek_web] [70/89] 男士工装裤
+2026-09-07 15:54:24 [INFO ] [deepseek_web]   Downloaded: 0070_7351052083171598420870.jpg
+2026-09-07 15:54:24 [INFO ] [deepseek_web]   Prefetching next image (71/89)
+2026-09-07 15:54:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:54:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:54:58 [INFO ] [deepseek_web]   Response: 金属D型环腰带 膝部立体拼接剪裁 大腿翻盖贴袋 男士直筒工装长裤 纽扣门襟 侧缝口袋 纯色 透气耐磨
+2026-09-07 15:54:58 [INFO ] [deepseek_web]   Deleted: 0070_7351052083171598420870.jpg
+2026-09-07 15:55:03 [INFO ] [deepseek_web] [71/89] 男士灯芯绒休闲长裤（下单时备注抽绳在内侧）
+2026-09-07 15:55:03 [INFO ] [deepseek_web]   Downloaded: 0071_0760352469787398067780.jpg
+2026-09-07 15:55:03 [INFO ] [deepseek_web]   Prefetching next image (72/89)
+2026-09-07 15:55:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:55:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:55:33 [INFO ] [deepseek_web]   Response: 侧缝矩形贴标 长垂对比色抽绳 垂直条纹肌理 男士宽松直筒休闲长裤 透气 松紧腰 侧缝口袋 纯色
+2026-09-07 15:55:33 [INFO ] [deepseek_web]   Deleted: 0071_0760352469787398067780.jpg
+2026-09-07 15:55:38 [INFO ] [deepseek_web] [72/89] 男长裤特种兵军迷裤春秋户外弹力作训裤登山裤耐磨裤
+2026-09-07 15:55:38 [INFO ] [deepseek_web]   Downloaded: 0072_9741115034821268853481.jpg
+2026-09-07 15:55:38 [INFO ] [deepseek_web]   Prefetching next image (73/89)
+2026-09-07 15:55:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:55:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:56:07 [INFO ] [deepseek_web]   Response: 膝部立体拼接 大腿翻盖贴袋 腰间金属挂环 男士直筒工装长裤 耐磨弹力透气 纽扣门襟 纯色
+2026-09-07 15:56:07 [INFO ] [deepseek_web]   Deleted: 0072_9741115034821268853481.jpg
+2026-09-07 15:56:12 [INFO ] [deepseek_web] [73/89] 男士IX7多口袋作战可拆卸裤腿作战裤
+2026-09-07 15:56:12 [INFO ] [deepseek_web]   Downloaded: 0073_9290457406418792400183.jpg
+2026-09-07 15:56:12 [INFO ] [deepseek_web]   Prefetching next image (74/89)
+2026-09-07 15:56:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:56:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:56:42 [INFO ] [deepseek_web]   Response: 膝部可拆卸剪裁 腰部金属挂环 大腿翻盖口袋 男士直筒作战裤 透气耐磨 纽扣门襟 纯色
+2026-09-07 15:56:42 [INFO ] [deepseek_web]   Deleted: 0073_9290457406418792400183.jpg
+2026-09-07 15:56:47 [INFO ] [deepseek_web] [74/89] 男士拼色作战裤弹力工装裤宽松软壳冲锋裤
+2026-09-07 15:56:47 [INFO ] [deepseek_web]   Downloaded: 0074_2930251077421913666294.jpg
+2026-09-07 15:56:47 [INFO ] [deepseek_web]   Prefetching next image (75/89)
+2026-09-07 15:56:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:56:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:57:23 [INFO ] [deepseek_web]   Response: 拼色拼接 大腿翻盖口袋 腰间金属挂环 男士宽松直筒冲锋裤 工装长裤 透气耐磨弹力 纽扣门襟 平口裤脚
+2026-09-07 15:57:23 [INFO ] [deepseek_web]   Deleted: 0074_2930251077421913666294.jpg
+2026-09-07 15:57:28 [INFO ] [deepseek_web] [75/89] 港风五角星牛仔裤男款潮牌宽松直筒阔腿休闲韩版牛仔长裤厂家直销
+2026-09-07 15:57:28 [INFO ] [deepseek_web]   Downloaded: 0075_7260157347819629221289.jpg
+2026-09-07 15:57:28 [INFO ] [deepseek_web]   Prefetching next image (76/89)
+2026-09-07 15:57:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:57:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:58:00 [INFO ] [deepseek_web]   Response: 五角星贴布绣花 贴布边缘流苏须边 水洗做旧效果 男士宽松直筒阔腿牛仔裤 长裤 纽扣门襟 侧缝口袋 透气
+2026-09-07 15:58:00 [INFO ] [deepseek_web]   Deleted: 0075_7260157347819629221289.jpg
+2026-09-07 15:58:05 [INFO ] [deepseek_web] [76/89] 男士迪斯科聚会派对表演服长裤
+2026-09-07 15:58:05 [INFO ] [deepseek_web]   Downloaded: 0076_1740310108119819765419.jpg
+2026-09-07 15:58:05 [INFO ] [deepseek_web]   Prefetching next image (77/89)
+2026-09-07 15:58:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:58:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:58:37 [INFO ] [deepseek_web]   Response: 金属光泽质感 表面褶皱肌理 裤脚弹性收口 男士宽松长裤 透气轻量 松紧腰抽绳 侧缝口袋
+2026-09-07 15:58:37 [INFO ] [deepseek_web]   Deleted: 0076_1740310108119819765419.jpg
+2026-09-07 15:58:42 [INFO ] [deepseek_web] [77/89] 男士纯色休闲直筒3PC长裤
+2026-09-07 15:58:42 [INFO ] [deepseek_web]   Downloaded: 0077_2431101273889763580932.jpg
+2026-09-07 15:58:42 [INFO ] [deepseek_web]   Prefetching next image (78/89)
+2026-09-07 15:58:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:58:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:59:11 [INFO ] [deepseek_web]   Response: 宽松直筒剪裁 平口裤脚 纯色 男士休闲长裤 松紧腰 侧缝口袋 透气
+2026-09-07 15:59:11 [INFO ] [deepseek_web]   Deleted: 0077_2431101273889763580932.jpg
+2026-09-07 15:59:16 [INFO ] [deepseek_web] [78/89] 男士纯色休闲直筒2PC长裤
+2026-09-07 15:59:16 [INFO ] [deepseek_web]   Downloaded: 0078_4671118115711120020393.jpg
+2026-09-07 15:59:16 [INFO ] [deepseek_web]   Prefetching next image (79/89)
+2026-09-07 15:59:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 15:59:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 15:59:50 [INFO ] [deepseek_web]   Response: 长垂侧缝斜插口袋 宽边松紧腰头 平口直筒裤脚 男士宽松休闲长裤 透气 纯色
+2026-09-07 15:59:50 [INFO ] [deepseek_web]   Deleted: 0078_4671118115711120020393.jpg
+2026-09-07 15:59:55 [INFO ] [deepseek_web] [79/89] 男士战术裤微弹男春夏迷彩裤工装裤秋复合休闲耐磨工装裤作训
+2026-09-07 15:59:55 [INFO ] [deepseek_web]   Downloaded: 0079_2100344172182167331537.jpg
+2026-09-07 15:59:55 [INFO ] [deepseek_web]   Prefetching next image (80/89)
+2026-09-07 15:59:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:00:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:00:29 [INFO ] [deepseek_web]   Response: 膝部立体拼接 大腿斜切翻盖口袋 表面竖条纹肌理 男士直筒战术工装长裤 纽扣门襟 腰带袢 侧缝口袋 耐磨微弹 透气 纯色
+2026-09-07 16:00:29 [INFO ] [deepseek_web]   Deleted: 0079_2100344172182167331537.jpg
+2026-09-07 16:00:34 [INFO ] [deepseek_web] [80/89] 男士腰部抽绳直筒阔腿宽松长裤运动裤带口袋休闲裤
+2026-09-07 16:00:34 [INFO ] [deepseek_web]   Downloaded: 0080_5801122447554319872723.jpg
+2026-09-07 16:00:34 [INFO ] [deepseek_web]   Prefetching next image (81/89)
+2026-09-07 16:00:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:00:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:01:04 [INFO ] [deepseek_web]   Response: 长垂抽绳 阔腿平口裤脚 纯色 男士宽松直筒休闲运动长裤 松紧腰 侧缝口袋 透气
+2026-09-07 16:01:04 [INFO ] [deepseek_web]   Deleted: 0080_5801122447554319872723.jpg
+2026-09-07 16:01:09 [INFO ] [deepseek_web] [81/89] 男士加绒长裤秋冬款直筒宽松运动休闲百搭纯色卫裤
+2026-09-07 16:01:09 [INFO ] [deepseek_web]   Downloaded: 0081_9061003168554212296128.jpg
+2026-09-07 16:01:09 [INFO ] [deepseek_web]   Prefetching next image (82/89)
+2026-09-07 16:01:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:01:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:01:49 [INFO ] [deepseek_web]   Response: 侧缝长拉链口袋 长垂抽绳 宽松直筒剪裁 男士休闲运动长裤 松紧腰 透气保暖 纯色
+2026-09-07 16:01:49 [INFO ] [deepseek_web]   Deleted: 0081_9061003168554212296128.jpg
+2026-09-07 16:01:54 [INFO ] [deepseek_web] [82/89] 男士休闲卫裤抽绳口袋长裤
+2026-09-07 16:01:54 [INFO ] [deepseek_web]   Downloaded: 0082_7150353475122921321069.jpg
+2026-09-07 16:01:54 [INFO ] [deepseek_web]   Prefetching next image (83/89)
+2026-09-07 16:01:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:02:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:02:30 [INFO ] [deepseek_web]   Response: 正面立体中缝线 长垂抽绳 侧缝斜插口袋 男士宽松直筒休闲卫裤 松紧腰 平口裤脚 透气 纯色
+2026-09-07 16:02:30 [INFO ] [deepseek_web]   Deleted: 0082_7150353475122921321069.jpg
+2026-09-07 16:02:35 [INFO ] [deepseek_web] [83/89] 男士喇叭裤舞会聚会婚礼休闲通用休闲裤长裤
+2026-09-07 16:02:35 [INFO ] [deepseek_web]   Downloaded: 0083_6521111009791643162227.jpg
+2026-09-07 16:02:35 [INFO ] [deepseek_web]   Prefetching next image (84/89)
+2026-09-07 16:02:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:02:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:03:06 [INFO ] [deepseek_web]   Response: 正面中缝压线 腰头皮带袢 喇叭裤脚 男士修身喇叭休闲长裤 纽扣门襟 侧缝口袋 透气轻量 纯色
+2026-09-07 16:03:06 [INFO ] [deepseek_web]   Deleted: 0083_6521111009791643162227.jpg
+2026-09-07 16:03:11 [INFO ] [deepseek_web] [84/89] 男士小众设计感休闲裤宽松直筒百搭长裤
+2026-09-07 16:03:11 [INFO ] [deepseek_web]   Downloaded: 0084_7111031355026211085497.jpg
+2026-09-07 16:03:11 [INFO ] [deepseek_web]   Prefetching next image (85/89)
+2026-09-07 16:03:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:03:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:03:40 [INFO ] [deepseek_web]   Response: 立体对称刺绣图案 长垂抽绳 平口裤脚 男士宽松直筒休闲长裤 松紧腰 侧缝口袋 透气 纯色
+2026-09-07 16:03:40 [INFO ] [deepseek_web]   Deleted: 0084_7111031355026211085497.jpg
+2026-09-07 16:03:45 [INFO ] [deepseek_web] [85/89] 男士腰部抽绳直筒阔腿宽松长裤运动裤带口袋休闲裤
+2026-09-07 16:03:45 [INFO ] [deepseek_web]   Downloaded: 0085_9060437533093015706743.jpg
+2026-09-07 16:03:45 [INFO ] [deepseek_web]   Prefetching next image (86/89)
+2026-09-07 16:03:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:03:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:04:17 [INFO ] [deepseek_web]   Response: 正面立体中缝压线 长垂抽绳 宽松阔腿垂坠剪裁 男士宽松休闲长裤 纯色 松紧腰 侧缝口袋 平口裤脚 透气
+2026-09-07 16:04:17 [INFO ] [deepseek_web]   Deleted: 0085_9060437533093015706743.jpg
+2026-09-07 16:04:22 [INFO ] [deepseek_web] [86/89] 男士纯色多口袋长裤工装裤
+2026-09-07 16:04:22 [INFO ] [deepseek_web]   Downloaded: 0086_5101042139995765748619.jpg
+2026-09-07 16:04:22 [INFO ] [deepseek_web]   Prefetching next image (87/89)
+2026-09-07 16:04:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:04:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:04:51 [INFO ] [deepseek_web]   Response: 不对称多口袋设计 膝部立体拼接缝线 长垂抽绳 男士宽松直筒工装长裤 松紧腰 侧缝口袋 透气耐磨 纯色
+2026-09-07 16:04:51 [INFO ] [deepseek_web]   Deleted: 0086_5101042139995765748619.jpg
+2026-09-07 16:04:56 [INFO ] [deepseek_web] [87/89] 男士秋季时尚休闲万圣节趣味印花睡裤长裤
+2026-09-07 16:04:56 [INFO ] [deepseek_web]   Downloaded: 0087_7171124052471997296661.jpg
+2026-09-07 16:04:56 [INFO ] [deepseek_web]   Prefetching next image (88/89)
+2026-09-07 16:04:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:05:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:05:26 [INFO ] [deepseek_web]   Response: 3D露肉错觉印花 格纹拼接印花 骷髅花朵满印 男士宽松直筒睡裤 松紧腰 长垂抽绳 透气
+2026-09-07 16:05:26 [INFO ] [deepseek_web]   Deleted: 0087_7171124052471997296661.jpg
+2026-09-07 16:05:31 [INFO ] [deepseek_web] [88/89] 男士秋冬高街时尚休闲宽松运动跑步纯色系带长裤卫裤裤子 （加绒）
+2026-09-07 16:05:31 [INFO ] [deepseek_web]   Downloaded: 0088_5431004365101516378400.jpg
+2026-09-07 16:05:31 [INFO ] [deepseek_web]   Prefetching next image (89/89)
+2026-09-07 16:05:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:05:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:06:04 [INFO ] [deepseek_web]   Response: 长垂金属头抽绳 裤脚松紧束口 纯色 男士宽松卫裤 松紧腰 侧缝斜插口袋 透气保暖
+2026-09-07 16:06:04 [INFO ] [deepseek_web]   Deleted: 0088_5431004365101516378400.jpg
+2026-09-07 16:06:09 [INFO ] [deepseek_web] [89/89] 男士多口袋长裤休闲裤卫裤
+2026-09-07 16:06:09 [INFO ] [deepseek_web]   Downloaded: 0089_5431036524555811857075.jpg
+2026-09-07 16:06:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-07 16:06:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-07 16:06:38 [INFO ] [deepseek_web]   Response: 大腿侧翻盖口袋 正面中央立体压线 长垂金属头抽绳 男士宽松直筒休闲长裤 松紧腰 侧缝口袋 平口裤脚 透气 纯色
+2026-09-07 16:06:38 [INFO ] [deepseek_web]   Deleted: 0089_5431036524555811857075.jpg
+2026-09-07 16:06:38 [INFO ] [deepseek_web] 
+2026-09-07 16:06:38 [INFO ] [deepseek_web] Retry round 1: 2 failed item(s)
+2026-09-07 16:06:43 [INFO ] [deepseek_web]   Retry [30]: 男士休闲纯色直筒长裤系扣腰口袋休闲裤
+2026-09-07 16:07:01 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:10:17 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:10:20 [INFO ] [deepseek_web]   Retry [42]: 男士秋冬款百搭宽松休闲灯芯绒伞兵长裤
+2026-09-07 16:10:38 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:13:53 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:13:56 [INFO ] [deepseek_web] 
+2026-09-07 16:13:56 [INFO ] [deepseek_web] Retry round 2: 2 failed item(s)
+2026-09-07 16:14:01 [INFO ] [deepseek_web]   Retry [30]: 男士休闲纯色直筒长裤系扣腰口袋休闲裤
+2026-09-07 16:14:22 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:17:37 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:17:40 [INFO ] [deepseek_web]   Retry [42]: 男士秋冬款百搭宽松休闲灯芯绒伞兵长裤
+2026-09-07 16:18:00 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:21:16 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:21:19 [INFO ] [deepseek_web] 
+2026-09-07 16:21:19 [INFO ] [deepseek_web] Retry round 3: 2 failed item(s)
+2026-09-07 16:21:24 [INFO ] [deepseek_web]   Retry [30]: 男士休闲纯色直筒长裤系扣腰口袋休闲裤
+2026-09-07 16:21:42 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:24:58 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:25:01 [INFO ] [deepseek_web]   Retry [42]: 男士秋冬款百搭宽松休闲灯芯绒伞兵长裤
+2026-09-07 16:25:40 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:28:55 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-09-07 16:28:58 [INFO ] [deepseek_web] 
+2026-09-07 16:28:58 [INFO ] [deepseek_web] Retry round 4: 2 failed item(s)
+2026-09-07 16:29:03 [INFO ] [deepseek_web]   Retry [30]: 男士休闲纯色直筒长裤系扣腰口袋休闲裤
+2026-09-07 16:29:21 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:29:39 [INFO ] [deepseek_web]     OK: 腰头皮带袢 正面纵向压线 纽扣门襟 男士常规直筒休闲长裤 侧缝口袋 透气 纯色
+2026-09-07 16:29:42 [INFO ] [deepseek_web]   Retry [42]: 男士秋冬款百搭宽松休闲灯芯绒伞兵长裤
+2026-09-07 16:29:59 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-07 16:30:20 [INFO ] [deepseek_web]     OK: 斜向立体剪裁 长垂抽绳 垂直条纹肌理 男士宽松伞兵长裤 松紧腰 侧缝口袋 透气 纯色
+2026-09-07 16:30:24 [INFO ] [deepseek_web] ==================================================
+2026-09-07 16:30:24 [INFO ] [deepseek_web] Done: 89 success, 0 failed → optimize_title
+2026-09-07 16:30:24 [INFO ] [title_workflow] Optimization complete: 89 titles
+2026-09-07 16:30:29 [INFO ] [title_workflow] Written 89 optimized titles to column H (8)
+2026-09-07 16:30:29 [INFO ] [title_workflow] Done: 9.1v1.xlsx
+2026-09-07 16:30:30 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-07 16:30:30 [INFO ] [jenkins] 
+2026-09-07 16:30:30 [INFO ] [jenkins] ==================================================
+2026-09-07 16:30:30 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-07 16:30:30 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-07 16:30:30 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-07 16:30:30 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-07 16:30:30 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-07 18:49:54 [INFO ] [hotwords] Loop mode: 111 keywords  country=de  category=(all)  mode=dual
+2026-09-07 18:49:54 [INFO ] [hotwords] 
+2026-09-07 18:49:54 [INFO ] [hotwords] [  1/111] Jogginghose
+2026-09-07 18:49:55 [INFO ] [hotwords]   fluctuation: 9 words
+2026-09-07 18:49:56 [INFO ] [hotwords]   new_rank: 111 words
+2026-09-07 18:49:56 [INFO ] [hotwords]   → total 120 words
+2026-09-07 18:49:58 [INFO ] [hotwords] [  2/111] Sweathose
+2026-09-07 18:49:58 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:49:59 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:49:59 [INFO ] [hotwords]   → total 124 words
+2026-09-07 18:50:01 [INFO ] [hotwords] [  3/111] Sporthose
+2026-09-07 18:50:01 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:50:02 [INFO ] [hotwords]   new_rank: 74 words
+2026-09-07 18:50:02 [INFO ] [hotwords]   → total 200 words
+2026-09-07 18:50:04 [INFO ] [hotwords] [  4/111] Trainingshose
+2026-09-07 18:50:05 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:50:05 [INFO ] [hotwords]   new_rank: 30 words
+2026-09-07 18:50:05 [INFO ] [hotwords]   → total 232 words
+2026-09-07 18:50:07 [INFO ] [hotwords] [  5/111] Laufhose
+2026-09-07 18:50:08 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:09 [INFO ] [hotwords]   new_rank: 16 words
+2026-09-07 18:50:09 [INFO ] [hotwords]   → total 248 words
+2026-09-07 18:50:11 [INFO ] [hotwords] [  6/111] Fahrradhose
+2026-09-07 18:50:11 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:50:12 [INFO ] [hotwords]   new_rank: 24 words
+2026-09-07 18:50:12 [INFO ] [hotwords]   → total 273 words
+2026-09-07 18:50:14 [INFO ] [hotwords] [  7/111] Radlerhose
+2026-09-07 18:50:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:15 [INFO ] [hotwords]   new_rank: 23 words
+2026-09-07 18:50:15 [INFO ] [hotwords]   → total 296 words
+2026-09-07 18:50:17 [INFO ] [hotwords] [  8/111] Badehose
+2026-09-07 18:50:17 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:50:18 [INFO ] [hotwords]   new_rank: 89 words
+2026-09-07 18:50:18 [INFO ] [hotwords]   → total 386 words
+2026-09-07 18:50:20 [INFO ] [hotwords] [  9/111] Cargohose
+2026-09-07 18:50:20 [INFO ] [hotwords]   fluctuation: 3 words
+2026-09-07 18:50:21 [INFO ] [hotwords]   new_rank: 26 words
+2026-09-07 18:50:21 [INFO ] [hotwords]   → total 415 words
+2026-09-07 18:50:23 [INFO ] [hotwords] [ 10/111] Arbeitshose
+2026-09-07 18:50:24 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:50:25 [INFO ] [hotwords]   new_rank: 55 words
+2026-09-07 18:50:25 [INFO ] [hotwords]   → total 472 words
+2026-09-07 18:50:27 [INFO ] [hotwords] [ 11/111] Freizeithose
+2026-09-07 18:50:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:28 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-07 18:50:28 [INFO ] [hotwords]   → total 480 words
+2026-09-07 18:50:30 [INFO ] [hotwords] [ 12/111] Haushose
+2026-09-07 18:50:30 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:50:31 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:50:31 [INFO ] [hotwords]   → total 484 words
+2026-09-07 18:50:33 [INFO ] [hotwords] [ 13/111] Schlafhose
+2026-09-07 18:50:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:34 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-07 18:50:34 [INFO ] [hotwords]   → total 491 words
+2026-09-07 18:50:36 [INFO ] [hotwords] [ 14/111] Pyjamahose
+2026-09-07 18:50:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:37 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:50:37 [INFO ] [hotwords]   → total 497 words
+2026-09-07 18:50:39 [INFO ] [hotwords] [ 15/111] Latzhose
+2026-09-07 18:50:40 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:50:40 [INFO ] [hotwords]   new_rank: 26 words
+2026-09-07 18:50:40 [INFO ] [hotwords]   → total 524 words
+2026-09-07 18:50:42 [INFO ] [hotwords] [ 16/111] Anglerhose
+2026-09-07 18:50:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:44 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:50:44 [INFO ] [hotwords]   → total 526 words
+2026-09-07 18:50:46 [INFO ] [hotwords] [ 17/111] Regenhose
+2026-09-07 18:50:46 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:50:47 [INFO ] [hotwords]   new_rank: 42 words
+2026-09-07 18:50:47 [INFO ] [hotwords]   → total 570 words
+2026-09-07 18:50:49 [INFO ] [hotwords] [ 18/111] Wathose
+2026-09-07 18:50:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:50 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:50:50 [INFO ] [hotwords]   → total 576 words
+2026-09-07 18:50:52 [INFO ] [hotwords] [ 19/111] Neoprenhose
+2026-09-07 18:50:52 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:53 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:50:53 [INFO ] [hotwords]   → total 578 words
+2026-09-07 18:50:55 [INFO ] [hotwords] [ 20/111] Thermohose
+2026-09-07 18:50:55 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:56 [INFO ] [hotwords]   new_rank: 5 words
+2026-09-07 18:50:56 [INFO ] [hotwords]   → total 583 words
+2026-09-07 18:50:58 [INFO ] [hotwords] [ 21/111] Softshellhose
+2026-09-07 18:50:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:50:59 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:50:59 [INFO ] [hotwords]   → total 586 words
+2026-09-07 18:51:01 [INFO ] [hotwords] [ 22/111] Funktionshose
+2026-09-07 18:51:02 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:03 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:51:03 [INFO ] [hotwords]   → total 588 words
+2026-09-07 18:51:05 [INFO ] [hotwords] [ 23/111] Outdoorhose
+2026-09-07 18:51:05 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:06 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:51:06 [INFO ] [hotwords]   → total 594 words
+2026-09-07 18:51:08 [INFO ] [hotwords] [ 24/111] Trekkinghose
+2026-09-07 18:51:08 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:09 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-07 18:51:09 [INFO ] [hotwords]   → total 601 words
+2026-09-07 18:51:11 [INFO ] [hotwords] [ 25/111] Wanderhose
+2026-09-07 18:51:11 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:12 [INFO ] [hotwords]   new_rank: 39 words
+2026-09-07 18:51:12 [INFO ] [hotwords]   → total 640 words
+2026-09-07 18:51:14 [INFO ] [hotwords] [ 26/111] Kletterhose
+2026-09-07 18:51:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:15 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:51:15 [INFO ] [hotwords]   → total 642 words
+2026-09-07 18:51:17 [INFO ] [hotwords] [ 27/111] Motorradhose
+2026-09-07 18:51:18 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:18 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:51:18 [INFO ] [hotwords]   → total 648 words
+2026-09-07 18:51:20 [INFO ] [hotwords] [ 28/111] Armeehose
+2026-09-07 18:51:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:22 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:51:22 [INFO ] [hotwords]   → total 648 words
+2026-09-07 18:51:24 [INFO ] [hotwords] [ 29/111] Zunfthose
+2026-09-07 18:51:24 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:25 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:51:25 [INFO ] [hotwords]   → total 650 words
+2026-09-07 18:51:27 [INFO ] [hotwords] [ 30/111] Kochhose
+2026-09-07 18:51:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:28 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-07 18:51:28 [INFO ] [hotwords]   → total 654 words
+2026-09-07 18:51:30 [INFO ] [hotwords] [ 31/111] Bundfaltenhose
+2026-09-07 18:51:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:31 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-07 18:51:31 [INFO ] [hotwords]   → total 658 words
+2026-09-07 18:51:33 [INFO ] [hotwords] [ 32/111] Anzughose
+2026-09-07 18:51:33 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:51:34 [INFO ] [hotwords]   new_rank: 22 words
+2026-09-07 18:51:34 [INFO ] [hotwords]   → total 681 words
+2026-09-07 18:51:36 [INFO ] [hotwords] [ 33/111] Chinohose
+2026-09-07 18:51:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:37 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:51:37 [INFO ] [hotwords]   → total 683 words
+2026-09-07 18:51:39 [INFO ] [hotwords] [ 34/111] Leinenhose
+2026-09-07 18:51:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:41 [INFO ] [hotwords]   new_rank: 13 words
+2026-09-07 18:51:41 [INFO ] [hotwords]   → total 696 words
+2026-09-07 18:51:43 [INFO ] [hotwords] [ 35/111] Stoffhose
+2026-09-07 18:51:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:44 [INFO ] [hotwords]   new_rank: 20 words
+2026-09-07 18:51:44 [INFO ] [hotwords]   → total 716 words
+2026-09-07 18:51:46 [INFO ] [hotwords] [ 36/111] Cordhose
+2026-09-07 18:51:46 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:51:47 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-07 18:51:47 [INFO ] [hotwords]   → total 725 words
+2026-09-07 18:51:49 [INFO ] [hotwords] [ 37/111] Jeanshose
+2026-09-07 18:51:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:50 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-07 18:51:50 [INFO ] [hotwords]   → total 733 words
+2026-09-07 18:51:52 [INFO ] [hotwords] [ 38/111] Stretchhose
+2026-09-07 18:51:52 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:53 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:51:53 [INFO ] [hotwords]   → total 733 words
+2026-09-07 18:51:55 [INFO ] [hotwords] [ 39/111] Yogahose
+2026-09-07 18:51:55 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:56 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:51:56 [INFO ] [hotwords]   → total 739 words
+2026-09-07 18:51:58 [INFO ] [hotwords] [ 40/111] Kompressionshose
+2026-09-07 18:51:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:51:59 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:51:59 [INFO ] [hotwords]   → total 742 words
+2026-09-07 18:52:01 [INFO ] [hotwords] [ 41/111] Unterhose
+2026-09-07 18:52:02 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:52:03 [INFO ] [hotwords]   new_rank: 196 words
+2026-09-07 18:52:03 [INFO ] [hotwords]   → total 940 words
+2026-09-07 18:52:05 [INFO ] [hotwords] [ 42/111] Unterziehhose
+2026-09-07 18:52:05 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:27 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3d9810>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:52:29 [INFO ] [hotwords] [ 43/111] Reithose
+2026-09-07 18:52:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:30 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:52:30 [INFO ] [hotwords]   → total 946 words
+2026-09-07 18:52:32 [INFO ] [hotwords] [ 44/111] Golfhose
+2026-09-07 18:52:32 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:33 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:52:33 [INFO ] [hotwords]   → total 952 words
+2026-09-07 18:52:35 [INFO ] [hotwords] [ 45/111] Skihose
+2026-09-07 18:52:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:36 [INFO ] [hotwords]   new_rank: 5 words
+2026-09-07 18:52:36 [INFO ] [hotwords]   → total 957 words
+2026-09-07 18:52:38 [INFO ] [hotwords] [ 46/111] Boulderhose
+2026-09-07 18:52:39 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:39 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:52:39 [INFO ] [hotwords]   → total 957 words
+2026-09-07 18:52:41 [INFO ] [hotwords] [ 47/111] Fischerhose
+2026-09-07 18:52:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:43 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:52:43 [INFO ] [hotwords]   → total 957 words
+2026-09-07 18:52:45 [INFO ] [hotwords] [ 48/111] Strandhose
+2026-09-07 18:52:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:46 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:52:46 [INFO ] [hotwords]   → total 958 words
+2026-09-07 18:52:48 [INFO ] [hotwords] [ 49/111] Relaxhose
+2026-09-07 18:52:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:49 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:52:49 [INFO ] [hotwords]   → total 959 words
+2026-09-07 18:52:51 [INFO ] [hotwords] [ 50/111] Schlaghose
+2026-09-07 18:52:51 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-07 18:52:52 [INFO ] [hotwords]   new_rank: 15 words
+2026-09-07 18:52:52 [INFO ] [hotwords]   → total 976 words
+2026-09-07 18:52:54 [INFO ] [hotwords] [ 51/111] Pumphose
+2026-09-07 18:52:55 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:55 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:52:55 [INFO ] [hotwords]   → total 978 words
+2026-09-07 18:52:57 [INFO ] [hotwords] [ 52/111] Caprihose
+2026-09-07 18:52:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:52:59 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:52:59 [INFO ] [hotwords]   → total 981 words
+2026-09-07 18:53:01 [INFO ] [hotwords] [ 53/111] Haremshose
+2026-09-07 18:53:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:02 [INFO ] [hotwords]   new_rank: 5 words
+2026-09-07 18:53:02 [INFO ] [hotwords]   → total 986 words
+2026-09-07 18:53:04 [INFO ] [hotwords] [ 54/111] Schlupfhose
+2026-09-07 18:53:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:05 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-07 18:53:05 [INFO ] [hotwords]   → total 994 words
+2026-09-07 18:53:07 [INFO ] [hotwords] [ 55/111] Trachtenhose
+2026-09-07 18:53:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:08 [INFO ] [hotwords]   new_rank: 9 words
+2026-09-07 18:53:08 [INFO ] [hotwords]   → total 1003 words
+2026-09-07 18:53:10 [INFO ] [hotwords] [ 56/111] Schnittschutzhose
+2026-09-07 18:53:31 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3d9950>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:53:33 [INFO ] [hotwords] [ 57/111] Funktionsunterhose
+2026-09-07 18:53:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:34 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:53:34 [INFO ] [hotwords]   → total 1003 words
+2026-09-07 18:53:36 [INFO ] [hotwords] [ 58/111] Fahrradunterhose
+2026-09-07 18:53:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:38 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:53:38 [INFO ] [hotwords]   → total 1009 words
+2026-09-07 18:53:40 [INFO ] [hotwords] [ 59/111] Radunterhose
+2026-09-07 18:53:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:41 [INFO ] [hotwords]   new_rank: 11 words
+2026-09-07 18:53:41 [INFO ] [hotwords]   → total 1020 words
+2026-09-07 18:53:43 [INFO ] [hotwords] [ 60/111] Turnhose
+2026-09-07 18:53:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:53:44 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-07 18:53:44 [INFO ] [hotwords]   → total 1024 words
+2026-09-07 18:53:46 [INFO ] [hotwords] [ 61/111] Rennradhose
+2026-09-07 18:53:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:08 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3d9590>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:54:10 [INFO ] [hotwords] [ 62/111] Torwarthose
+2026-09-07 18:54:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:11 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-07 18:54:11 [INFO ] [hotwords]   → total 1028 words
+2026-09-07 18:54:13 [INFO ] [hotwords] [ 63/111] Segelhose
+2026-09-07 18:54:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:14 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:54:14 [INFO ] [hotwords]   → total 1029 words
+2026-09-07 18:54:16 [INFO ] [hotwords] [ 64/111] Triathlonhose
+2026-09-07 18:54:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:17 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:17 [INFO ] [hotwords]   → total 1029 words
+2026-09-07 18:54:19 [INFO ] [hotwords] [ 65/111] Überziehhose
+2026-09-07 18:54:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:20 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:54:20 [INFO ] [hotwords]   → total 1031 words
+2026-09-07 18:54:22 [INFO ] [hotwords] [ 66/111] Fussballhose
+2026-09-07 18:54:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:23 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:23 [INFO ] [hotwords]   → total 1031 words
+2026-09-07 18:54:25 [INFO ] [hotwords] [ 67/111] Palazzohose
+2026-09-07 18:54:26 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:27 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:27 [INFO ] [hotwords]   → total 1031 words
+2026-09-07 18:54:29 [INFO ] [hotwords] [ 68/111] Marlenehose
+2026-09-07 18:54:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:30 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:54:30 [INFO ] [hotwords]   → total 1032 words
+2026-09-07 18:54:32 [INFO ] [hotwords] [ 69/111] Bootcut
+2026-09-07 18:54:32 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:54:33 [INFO ] [hotwords]   new_rank: 18 words
+2026-09-07 18:54:33 [INFO ] [hotwords]   → total 1051 words
+2026-09-07 18:54:35 [INFO ] [hotwords] [ 70/111] Pluderhose
+2026-09-07 18:54:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:36 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:54:36 [INFO ] [hotwords]   → total 1052 words
+2026-09-07 18:54:38 [INFO ] [hotwords] [ 71/111] Trompetenhose
+2026-09-07 18:54:38 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:39 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:39 [INFO ] [hotwords]   → total 1052 words
+2026-09-07 18:54:41 [INFO ] [hotwords] [ 72/111] Glockenhose
+2026-09-07 18:54:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:43 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:43 [INFO ] [hotwords]   → total 1052 words
+2026-09-07 18:54:45 [INFO ] [hotwords] [ 73/111] Strumpfhose
+2026-09-07 18:54:45 [INFO ] [hotwords]   fluctuation: 8 words
+2026-09-07 18:54:46 [INFO ] [hotwords]   new_rank: 87 words
+2026-09-07 18:54:46 [INFO ] [hotwords]   → total 1147 words
+2026-09-07 18:54:48 [INFO ] [hotwords] [ 74/111] Lackhose
+2026-09-07 18:54:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:49 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:49 [INFO ] [hotwords]   → total 1147 words
+2026-09-07 18:54:51 [INFO ] [hotwords] [ 75/111] Cordhose
+2026-09-07 18:54:51 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-07 18:54:52 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-07 18:54:52 [INFO ] [hotwords]   → total 1156 words
+2026-09-07 18:54:54 [INFO ] [hotwords] [ 76/111] Fallschirmhose
+2026-09-07 18:54:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:55 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:55 [INFO ] [hotwords]   → total 1156 words
+2026-09-07 18:54:57 [INFO ] [hotwords] [ 77/111] Saunahose
+2026-09-07 18:54:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:54:58 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:54:58 [INFO ] [hotwords]   → total 1156 words
+2026-09-07 18:55:00 [INFO ] [hotwords] [ 78/111] Breitbeinigehose
+2026-09-07 18:55:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:02 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:55:02 [INFO ] [hotwords]   → total 1156 words
+2026-09-07 18:55:04 [INFO ] [hotwords] [ 79/111] Jazzpants
+2026-09-07 18:55:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:05 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:55:05 [INFO ] [hotwords]   → total 1157 words
+2026-09-07 18:55:07 [INFO ] [hotwords] [ 80/111] Ballonhose
+2026-09-07 18:55:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:08 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:55:08 [INFO ] [hotwords]   → total 1160 words
+2026-09-07 18:55:10 [INFO ] [hotwords] [ 81/111] Culotte
+2026-09-07 18:55:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:11 [INFO ] [hotwords]   new_rank: 5 words
+2026-09-07 18:55:11 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:55:13 [INFO ] [hotwords] [ 82/111] Wickelhose
+2026-09-07 18:55:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:35 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3da5d0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:55:37 [INFO ] [hotwords] [ 83/111] Röhrenjeans
+2026-09-07 18:55:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:55:38 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:55:38 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:55:40 [INFO ] [hotwords] [ 84/111] Schlupfjeans
+2026-09-07 18:56:01 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3da990>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:56:03 [INFO ] [hotwords] [ 85/111] Stretchjeans
+2026-09-07 18:56:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:04 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:04 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:56:06 [INFO ] [hotwords] [ 86/111] Geradejeans
+2026-09-07 18:56:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:07 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:07 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:56:09 [INFO ] [hotwords] [ 87/111] Denimhose
+2026-09-07 18:56:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:11 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:11 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:56:13 [INFO ] [hotwords] [ 88/111] Flaredjeans
+2026-09-07 18:56:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:14 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:14 [INFO ] [hotwords]   → total 1165 words
+2026-09-07 18:56:16 [INFO ] [hotwords] [ 89/111] Schlagjeans
+2026-09-07 18:56:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:17 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:56:17 [INFO ] [hotwords]   → total 1166 words
+2026-09-07 18:56:19 [INFO ] [hotwords] [ 90/111] Glitzerjeans
+2026-09-07 18:56:19 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:20 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:20 [INFO ] [hotwords]   → total 1166 words
+2026-09-07 18:56:22 [INFO ] [hotwords] [ 91/111] Radlerunterhose
+2026-09-07 18:56:22 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:23 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-07 18:56:23 [INFO ] [hotwords]   → total 1168 words
+2026-09-07 18:56:25 [INFO ] [hotwords] [ 92/111] Schlabberhose
+2026-09-07 18:56:26 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:26 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:26 [INFO ] [hotwords]   → total 1168 words
+2026-09-07 18:56:28 [INFO ] [hotwords] [ 93/111] Loungehose
+2026-09-07 18:56:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:30 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:30 [INFO ] [hotwords]   → total 1168 words
+2026-09-07 18:56:32 [INFO ] [hotwords] [ 94/111] Segelhose
+2026-09-07 18:56:32 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:33 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:56:33 [INFO ] [hotwords]   → total 1169 words
+2026-09-07 18:56:35 [INFO ] [hotwords] [ 95/111] Miederhose
+2026-09-07 18:56:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:36 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-07 18:56:36 [INFO ] [hotwords]   → total 1175 words
+2026-09-07 18:56:38 [INFO ] [hotwords] [ 96/111] Sweatpants
+2026-09-07 18:56:38 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:39 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-07 18:56:39 [INFO ] [hotwords]   → total 1179 words
+2026-09-07 18:56:41 [INFO ] [hotwords] [ 97/111] Leggings
+2026-09-07 18:56:42 [INFO ] [hotwords]   fluctuation: 16 words
+2026-09-07 18:56:43 [INFO ] [hotwords]   new_rank: 177 words
+2026-09-07 18:56:43 [INFO ] [hotwords]   → total 1372 words
+2026-09-07 18:56:45 [INFO ] [hotwords] [ 98/111] Sportleggings
+2026-09-07 18:56:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:46 [INFO ] [hotwords]   new_rank: 5 words
+2026-09-07 18:56:46 [INFO ] [hotwords]   → total 1377 words
+2026-09-07 18:56:48 [INFO ] [hotwords] [ 99/111] Laufleggings
+2026-09-07 18:56:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:49 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:56:49 [INFO ] [hotwords]   → total 1378 words
+2026-09-07 18:56:51 [INFO ] [hotwords] [100/111] Wanderleggings
+2026-09-07 18:56:51 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:52 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:56:52 [INFO ] [hotwords]   → total 1381 words
+2026-09-07 18:56:54 [INFO ] [hotwords] [101/111] Kompressionsleggings
+2026-09-07 18:56:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:55 [INFO ] [hotwords]   new_rank: 12 words
+2026-09-07 18:56:55 [INFO ] [hotwords]   → total 1393 words
+2026-09-07 18:56:57 [INFO ] [hotwords] [102/111] Treggings
+2026-09-07 18:56:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:56:58 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:56:58 [INFO ] [hotwords]   → total 1393 words
+2026-09-07 18:57:00 [INFO ] [hotwords] [103/111] jeans
+2026-09-07 18:57:01 [INFO ] [hotwords]   fluctuation: 53 words
+2026-09-07 18:57:02 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-07 18:57:02 [INFO ] [hotwords]   → total 1646 words
+2026-09-07 18:57:04 [INFO ] [hotwords] [104/111] hose
+2026-09-07 18:57:25 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3d9d10>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:57:27 [INFO ] [hotwords] [105/111] Lange Hose
+2026-09-07 18:57:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:57:28 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-07 18:57:28 [INFO ] [hotwords]   → total 1649 words
+2026-09-07 18:57:30 [INFO ] [hotwords] [106/111] Karottenhose
+2026-09-07 18:57:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:57:52 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3d9f90>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:57:54 [INFO ] [hotwords] [107/111] Uniformhose
+2026-09-07 18:57:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:57:55 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:57:55 [INFO ] [hotwords]   → total 1649 words
+2026-09-07 18:57:57 [INFO ] [hotwords] [108/111] Baumwollhose
+2026-09-07 18:57:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:57:58 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-07 18:57:58 [INFO ] [hotwords]   → total 1650 words
+2026-09-07 18:58:00 [INFO ] [hotwords] [109/111] Wattierte Hose
+2026-09-07 18:58:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:58:02 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:58:02 [INFO ] [hotwords]   → total 1650 words
+2026-09-07 18:58:04 [INFO ] [hotwords] [110/111] Bodenlange Hose
+2026-09-07 18:58:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:58:05 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:58:05 [INFO ] [hotwords]   → total 1650 words
+2026-09-07 18:58:07 [INFO ] [hotwords] [111/111] Piratenhose
+2026-09-07 18:58:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-07 18:58:08 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-07 18:58:08 [INFO ] [hotwords]   → total 1650 words
+2026-09-07 18:58:10 [INFO ] [hotwords] 
+2026-09-07 18:58:10 [INFO ] [hotwords] Retry round 1: 7 failed keyword(s)
+2026-09-07 18:58:13 [INFO ] [hotwords]   Retrying: Unterziehhose
+2026-09-07 18:58:13 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-07 18:58:14 [INFO ] [hotwords]     new_rank: 5 words
+2026-09-07 18:58:14 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:16 [INFO ] [hotwords]   Retrying: Schnittschutzhose
+2026-09-07 18:58:16 [INFO ] [hotwords]     fluctuation: 1 words
+2026-09-07 18:58:17 [INFO ] [hotwords]     new_rank: 3 words
+2026-09-07 18:58:17 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:19 [INFO ] [hotwords]   Retrying: Rennradhose
+2026-09-07 18:58:20 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-07 18:58:20 [INFO ] [hotwords]     new_rank: 2 words
+2026-09-07 18:58:20 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:22 [INFO ] [hotwords]   Retrying: Wickelhose
+2026-09-07 18:58:23 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-07 18:58:24 [INFO ] [hotwords]     new_rank: 2 words
+2026-09-07 18:58:24 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:26 [INFO ] [hotwords]   Retrying: Schlupfjeans
+2026-09-07 18:58:26 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-07 18:58:27 [INFO ] [hotwords]     new_rank: 2 words
+2026-09-07 18:58:27 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:29 [INFO ] [hotwords]   Retrying: hose
+2026-09-07 18:58:29 [INFO ] [hotwords]     fluctuation: 92 words
+2026-09-07 18:58:30 [INFO ] [hotwords]     new_rank: 200 words
+2026-09-07 18:58:30 [INFO ] [hotwords]     → OK
+2026-09-07 18:58:32 [INFO ] [hotwords]   Retrying: Karottenhose
+2026-09-07 18:58:53 [WARNING] [hotwords]     FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x2beff3da990>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-07 18:58:55 [INFO ] [hotwords] 
+2026-09-07 18:58:55 [INFO ] [hotwords] Retry round 2: 1 failed keyword(s)
+2026-09-07 18:58:58 [INFO ] [hotwords]   Retrying: Karottenhose
+2026-09-07 18:58:58 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-07 18:58:59 [INFO ] [hotwords]     new_rank: 0 words
+2026-09-07 18:58:59 [INFO ] [hotwords]     → OK
+2026-09-07 18:59:01 [INFO ] [hotwords] All keywords collected successfully
+2026-09-07 18:59:01 [INFO ] [hotwords] 
+2026-09-07 18:59:01 [INFO ] [hotwords] Combining: 204 fluctuation + 1753 new_rank = 1957 total
+2026-09-07 18:59:01 [INFO ] [hotwords] 
+2026-09-07 18:59:01 [INFO ] [hotwords] Cleaning...
+2026-09-07 18:59:01 [INFO ] [hotwords]   strip_whitespace: 1957 → 1957 (0 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords]   normalize_case: 1957 → 1957 (0 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords]   drop_single_word: 1957 → 1851 (106 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords]   drop_brands: 1851 → 1439 (412 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords]   drop_reordered: 1439 → 1309 (130 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords]   deduplicate: 1309 → 1202 (107 removed)
+2026-09-07 18:59:01 [INFO ] [hotwords] herren=306    damen=534    other=362  
+2026-09-07 18:59:01 [INFO ] [hotwords] Saved 1202 words (raw: 1957, errors: 7) → 20260907_184954_de.txt
+2026-09-07 18:59:01 [INFO ] [hotwords] ==================================================
+2026-09-07 18:59:01 [INFO ] [hotwords] Done.

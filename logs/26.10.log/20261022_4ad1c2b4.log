@@ -1,0 +1,678 @@
+2026-10-22 16:46:49 [INFO ] [jenkins] ==================================================
+2026-10-22 16:46:49 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-22 16:46:49 [INFO ] [jenkins] ==================================================
+2026-10-22 16:46:49 [INFO ] [jenkins] 
+2026-10-22 16:46:49 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-22 16:46:49 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:46:49 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-22 16:46:49 [INFO ] [jenkins] 
+2026-10-22 16:46:49 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-22 16:46:49 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:46:49 [INFO ] [preprocess] Preprocessing 21 file(s) with 1 step(s)
+2026-10-22 16:46:49 [INFO ] [preprocess] [product_20261022024332686.xlsx]
+2026-10-22 16:46:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:49 [INFO ] [preprocess]   [product_20261022024332686.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:49 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:49 [INFO ] [preprocess] [product_20261022024648617.xlsx]
+2026-10-22 16:46:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:50 [INFO ] [preprocess]   [product_20261022024648617.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:50 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:50 [INFO ] [preprocess] [product_20261022024845991.xlsx]
+2026-10-22 16:46:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:50 [INFO ] [preprocess]   [product_20261022024845991.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:50 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:50 [INFO ] [preprocess] [product_20261022031245388.xlsx]
+2026-10-22 16:46:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:52 [INFO ] [preprocess]   [product_20261022031245388.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:52 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:52 [INFO ] [preprocess] [product_20261022031711775.xlsx]
+2026-10-22 16:46:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:53 [INFO ] [preprocess]   [product_20261022031711775.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:53 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:53 [INFO ] [preprocess] [product_20261022032132196.xlsx]
+2026-10-22 16:46:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:55 [INFO ] [preprocess]   [product_20261022032132196.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:55 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:55 [INFO ] [preprocess] [product_20261022032628642.xlsx]
+2026-10-22 16:46:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:55 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:56 [INFO ] [preprocess]   [product_20261022032628642.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:56 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:56 [INFO ] [preprocess] [product_20261022033105280.xlsx]
+2026-10-22 16:46:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:56 [INFO ] [preprocess]   [product_20261022033105280.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:56 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:56 [INFO ] [preprocess] [product_20261022033412427.xlsx]
+2026-10-22 16:46:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:57 [INFO ] [preprocess]   [product_20261022033412427.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:57 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:57 [INFO ] [preprocess] [product_20261022033657471.xlsx]
+2026-10-22 16:46:57 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:57 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:58 [INFO ] [preprocess]   [product_20261022033657471.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:58 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:58 [INFO ] [preprocess] [product_20261022034243949.xlsx]
+2026-10-22 16:46:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:58 [INFO ] [preprocess]   [product_20261022034243949.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:58 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:58 [INFO ] [preprocess] [product_20261022034517889.xlsx]
+2026-10-22 16:46:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:58 [INFO ] [preprocess]   [product_20261022034517889.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:58 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:58 [INFO ] [preprocess] [product_20261022034627818.xlsx]
+2026-10-22 16:46:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:59 [INFO ] [preprocess]   [product_20261022034627818.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:59 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:59 [INFO ] [preprocess] [product_20261022034927354.xlsx]
+2026-10-22 16:46:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:59 [INFO ] [preprocess]   [product_20261022034927354.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:59 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:59 [INFO ] [preprocess] [product_20261022035216364.xlsx]
+2026-10-22 16:46:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:46:59 [INFO ] [preprocess]   [product_20261022035216364.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:46:59 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:46:59 [INFO ] [preprocess] [product_20261022035441199.xlsx]
+2026-10-22 16:46:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:46:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:00 [INFO ] [preprocess]   [product_20261022035441199.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:00 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:00 [INFO ] [preprocess] [product_20261022035657172.xlsx]
+2026-10-22 16:47:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:47:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:00 [INFO ] [preprocess]   [product_20261022035657172.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:00 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:00 [INFO ] [preprocess] [product_20261022035815731.xlsx]
+2026-10-22 16:47:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:47:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:00 [INFO ] [preprocess]   [product_20261022035815731.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:00 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:00 [INFO ] [preprocess] [product_20261022035957893.xlsx]
+2026-10-22 16:47:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:47:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:01 [INFO ] [preprocess]   [product_20261022035957893.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:01 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:01 [INFO ] [preprocess] [product_20261022040133240.xlsx]
+2026-10-22 16:47:01 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:47:01 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:01 [INFO ] [preprocess]   [product_20261022040133240.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:01 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:01 [INFO ] [preprocess] [Tz1.xlsx]
+2026-10-22 16:47:01 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:47:01 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:47:03 [INFO ] [preprocess]   [Tz1.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:47:03 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:03 [INFO ] [preprocess] Preprocessing complete
+2026-10-22 16:47:03 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-22 16:47:03 [INFO ] [jenkins] 
+2026-10-22 16:47:03 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-22 16:47:03 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:47:04 [INFO ] [main] Log file: 20261022_4ad1c2b4.log
+2026-10-22 16:47:04 [INFO ] [main] Found 21 file(s):
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022024332686.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022024648617.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022024845991.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022031245388.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022031711775.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022032132196.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022032628642.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022033105280.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022033412427.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022033657471.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022034243949.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022034517889.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022034627818.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022034927354.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022035216364.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022035441199.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022035657172.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022035815731.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022035957893.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   product_20261022040133240.xlsx
+2026-10-22 16:47:04 [INFO ] [main]   Tz1.xlsx
+2026-10-22 16:47:04 [INFO ] [main] Output: 10.20v1_de.xlsx
+2026-10-22 16:47:04 [INFO ] [main] ==================================================
+2026-10-22 16:47:17 [INFO ] [main] Merged 21 files, 5671 images total
+2026-10-22 16:47:17 [INFO ] [main] Deleted 21 source file(s)
+2026-10-22 16:47:18 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-22 16:47:18 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_2]: 145 rows, 247 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_3]: 31 rows, 78 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_4]: 402 rows, 836 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_5]: 205 rows, 444 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_6]: 338 rows, 747 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_7]: 137 rows, 298 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_8]: 115 rows, 248 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_9]: 225 rows, 409 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_10]: 49 rows, 81 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_11]: 41 rows, 89 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_12]: 61 rows, 114 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_13]: 127 rows, 236 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_14]: 13 rows, 33 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_15]: 55 rows, 133 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_16]: 109 rows, 242 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_17]: 79 rows, 174 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_18]: 25 rows, 48 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_19]: 97 rows, 166 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_20]: 37 rows, 71 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Sheet [Sheet0_21]: 438 rows, 885 images
+2026-10-22 16:47:28 [INFO ] [pipeline]   Merged 21 sheets -> 1, 2729 data rows, 5579 images
+2026-10-22 16:47:28 [INFO ] [pipeline] [2/12] validate
+2026-10-22 16:47:28 [INFO ] [pipeline]   Validated: 2778 rows, 27 cols (expect ~32)
+2026-10-22 16:47:28 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-22 16:47:29 [INFO ] [pipeline]   Backed up 5671 images
+2026-10-22 16:47:29 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-22 16:47:29 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-22 16:47:29 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-22 16:47:29 [INFO ] [pipeline]   Restored 5671 images with adjusted anchors
+2026-10-22 16:47:29 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-22 16:47:29 [INFO ] [pipeline]   Column 2: 2778 IDs generated
+2026-10-22 16:47:29 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-22 16:47:29 [INFO ] [pipeline]   Column 3: 2778 cells filled
+2026-10-22 16:47:29 [INFO ] [pipeline] [6/12] map_colors
+2026-10-22 16:47:29 [INFO ] [pipeline]   Colors J -> K: 2749 cells mapped, 29 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-22 16:47:29 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-22 16:47:29 [INFO ] [pipeline]   Size column L: 2749 mapped, 29 cleared (col A has fill), 0 no match (recorded)
+2026-10-22 16:47:29 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-22 16:47:29 [INFO ] [pipeline]   Mirror copy: 17414 cells written
+2026-10-22 16:47:29 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-22 16:47:29 [INFO ] [pipeline]   Price source M -> AS: 2778 cells copied
+2026-10-22 16:47:29 [INFO ] [pipeline] [10/12] calc_price
+2026-10-22 16:47:29 [INFO ] [pipeline]   Price columns AT-AW: 2778 rows calculated
+2026-10-22 16:47:29 [INFO ] [pipeline] [11/12] format_cells
+2026-10-22 16:47:30 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-22 16:47:30 [INFO ] [pipeline]   Formatted 2778 rows: h=50, align=left/center
+2026-10-22 16:47:30 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-22 16:47:30 [INFO ] [pipeline] [12/12] finalize
+2026-10-22 16:47:30 [INFO ] [pipeline]   Done: 2778 rows x 49 cols (target: 49)
+2026-10-22 16:47:30 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:47:33 [INFO ] [main] Size: 2778 rows x 49 cols
+2026-10-22 16:47:33 [INFO ] [main] ==================================================
+2026-10-22 16:47:33 [INFO ] [main] Done: 10.20v1_de.xlsx
+2026-10-22 16:47:33 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-22 16:47:33 [INFO ] [jenkins] 
+2026-10-22 16:47:33 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-22 16:47:33 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:47:34 [INFO ] [color_size_main] Source: 10.20v1_de.xlsx
+2026-10-22 16:47:36 [INFO ] [color_size_main] Extracted: 2749 data lines + 29 separators → check_.txt
+2026-10-22 16:47:36 [INFO ] [color_size_main] Running: process.py
+2026-10-22 16:47:36 [INFO ] [color_size_deal] Groups: 29, lines: 2749 (file: 2778)
+2026-10-22 16:47:36 [INFO ] [color_size_deal] Prefixes: {'01': 558, '02': 331, '03': 220, '04': 126, '05': 100, '06': 88, '07': 61, '08': 18, '09': 12, '10': 12, '11': 6, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6}
+2026-10-22 16:47:36 [INFO ] [color_size_deal] Done.
+2026-10-22 16:47:36 [INFO ] [color_size_main] Processing write-back: 2778 lines
+2026-10-22 16:47:42 [INFO ] [color_size_main] Write-back: 1621 written, 1157 unchanged → 10.20v1_de.xlsx
+2026-10-22 16:47:42 [INFO ] [color_size_main] Done.
+2026-10-22 16:47:42 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-22 16:47:42 [INFO ] [jenkins] 
+2026-10-22 16:47:42 [INFO ] [jenkins] ==================================================
+2026-10-22 16:47:42 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-22 16:47:42 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-22 16:47:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-22 16:47:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-22 16:47:42 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-22 16:48:08 [INFO ] [jenkins] ==================================================
+2026-10-22 16:48:08 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-22 16:48:08 [INFO ] [jenkins] ==================================================
+2026-10-22 16:48:08 [INFO ] [jenkins] 
+2026-10-22 16:48:08 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-22 16:48:08 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:48:08 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-22 16:48:08 [INFO ] [jenkins] 
+2026-10-22 16:48:08 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-22 16:48:08 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:48:08 [INFO ] [preprocess] Preprocessing 21 file(s) with 1 step(s)
+2026-10-22 16:48:08 [INFO ] [preprocess] [product_20261022024332686.xlsx]
+2026-10-22 16:48:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:08 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:09 [INFO ] [preprocess]   [product_20261022024332686.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:09 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:09 [INFO ] [preprocess] [product_20261022024648617.xlsx]
+2026-10-22 16:48:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:09 [INFO ] [preprocess]   [product_20261022024648617.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:09 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:09 [INFO ] [preprocess] [product_20261022024845991.xlsx]
+2026-10-22 16:48:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:09 [INFO ] [preprocess]   [product_20261022024845991.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:09 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:10 [INFO ] [preprocess] [product_20261022031245388.xlsx]
+2026-10-22 16:48:10 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:10 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:11 [INFO ] [preprocess]   [product_20261022031245388.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:11 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:12 [INFO ] [preprocess] [product_20261022031711775.xlsx]
+2026-10-22 16:48:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:12 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:12 [INFO ] [preprocess]   [product_20261022031711775.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:12 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:13 [INFO ] [preprocess] [product_20261022032132196.xlsx]
+2026-10-22 16:48:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:14 [INFO ] [preprocess]   [product_20261022032132196.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:14 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:14 [INFO ] [preprocess] [product_20261022032628642.xlsx]
+2026-10-22 16:48:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:14 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:15 [INFO ] [preprocess]   [product_20261022032628642.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:15 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:15 [INFO ] [preprocess] [product_20261022033105280.xlsx]
+2026-10-22 16:48:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:15 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:15 [INFO ] [preprocess]   [product_20261022033105280.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:15 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:15 [INFO ] [preprocess] [product_20261022033412427.xlsx]
+2026-10-22 16:48:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:16 [INFO ] [preprocess]   [product_20261022033412427.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:16 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:17 [INFO ] [preprocess] [product_20261022033657471.xlsx]
+2026-10-22 16:48:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:17 [INFO ] [preprocess]   [product_20261022033657471.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:17 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:17 [INFO ] [preprocess] [product_20261022034243949.xlsx]
+2026-10-22 16:48:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:17 [INFO ] [preprocess]   [product_20261022034243949.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:17 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:17 [INFO ] [preprocess] [product_20261022034517889.xlsx]
+2026-10-22 16:48:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:17 [INFO ] [preprocess]   [product_20261022034517889.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:17 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:17 [INFO ] [preprocess] [product_20261022034627818.xlsx]
+2026-10-22 16:48:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:18 [INFO ] [preprocess]   [product_20261022034627818.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:18 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:18 [INFO ] [preprocess] [product_20261022034927354.xlsx]
+2026-10-22 16:48:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:18 [INFO ] [preprocess]   [product_20261022034927354.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:18 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:18 [INFO ] [preprocess] [product_20261022035216364.xlsx]
+2026-10-22 16:48:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:18 [INFO ] [preprocess]   [product_20261022035216364.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:18 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:18 [INFO ] [preprocess] [product_20261022035441199.xlsx]
+2026-10-22 16:48:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:19 [INFO ] [preprocess]   [product_20261022035441199.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:19 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:19 [INFO ] [preprocess] [product_20261022035657172.xlsx]
+2026-10-22 16:48:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:19 [INFO ] [preprocess]   [product_20261022035657172.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:19 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:19 [INFO ] [preprocess] [product_20261022035815731.xlsx]
+2026-10-22 16:48:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:20 [INFO ] [preprocess]   [product_20261022035815731.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:20 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:20 [INFO ] [preprocess] [product_20261022035957893.xlsx]
+2026-10-22 16:48:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:20 [INFO ] [preprocess]   [product_20261022035957893.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:20 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:20 [INFO ] [preprocess] [product_20261022040133240.xlsx]
+2026-10-22 16:48:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:20 [INFO ] [preprocess]   [product_20261022040133240.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:20 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:20 [INFO ] [preprocess] [Tz1.xlsx]
+2026-10-22 16:48:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-22 16:48:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-22 16:48:22 [INFO ] [preprocess]   [Tz1.xlsx] Sheet [Sheet0]: header row removed
+2026-10-22 16:48:22 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:22 [INFO ] [preprocess] Preprocessing complete
+2026-10-22 16:48:22 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-22 16:48:22 [INFO ] [jenkins] 
+2026-10-22 16:48:22 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-22 16:48:22 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:48:23 [INFO ] [main] Log file: 20261022_4ad1c2b4.log
+2026-10-22 16:48:23 [INFO ] [main] Found 21 file(s):
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022024332686.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022024648617.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022024845991.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022031245388.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022031711775.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022032132196.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022032628642.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022033105280.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022033412427.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022033657471.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022034243949.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022034517889.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022034627818.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022034927354.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022035216364.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022035441199.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022035657172.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022035815731.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022035957893.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   product_20261022040133240.xlsx
+2026-10-22 16:48:23 [INFO ] [main]   Tz1.xlsx
+2026-10-22 16:48:23 [INFO ] [main] Output: 10.20v1_fr.xlsx
+2026-10-22 16:48:23 [INFO ] [main] ==================================================
+2026-10-22 16:48:35 [INFO ] [main] Merged 21 files, 5671 images total
+2026-10-22 16:48:35 [INFO ] [main] Deleted 21 source file(s)
+2026-10-22 16:48:37 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-22 16:48:37 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_2]: 145 rows, 247 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_3]: 31 rows, 78 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_4]: 402 rows, 836 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_5]: 205 rows, 444 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_6]: 338 rows, 747 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_7]: 137 rows, 298 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_8]: 115 rows, 248 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_9]: 225 rows, 409 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_10]: 49 rows, 81 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_11]: 41 rows, 89 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_12]: 61 rows, 114 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_13]: 127 rows, 236 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_14]: 13 rows, 33 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_15]: 55 rows, 133 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_16]: 109 rows, 242 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_17]: 79 rows, 174 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_18]: 25 rows, 48 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_19]: 97 rows, 166 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_20]: 37 rows, 71 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Sheet [Sheet0_21]: 438 rows, 885 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Merged 21 sheets -> 1, 2729 data rows, 5579 images
+2026-10-22 16:48:47 [INFO ] [pipeline] [2/12] validate
+2026-10-22 16:48:47 [INFO ] [pipeline]   Validated: 2778 rows, 27 cols (expect ~32)
+2026-10-22 16:48:47 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-22 16:48:47 [INFO ] [pipeline]   Backed up 5671 images
+2026-10-22 16:48:47 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-22 16:48:47 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-22 16:48:47 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-22 16:48:47 [INFO ] [pipeline]   Restored 5671 images with adjusted anchors
+2026-10-22 16:48:47 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-22 16:48:47 [INFO ] [pipeline]   Column 2: 2778 IDs generated
+2026-10-22 16:48:47 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-22 16:48:47 [INFO ] [pipeline]   Column 3: 2778 cells filled
+2026-10-22 16:48:47 [INFO ] [pipeline] [6/12] map_colors
+2026-10-22 16:48:47 [INFO ] [pipeline]   Colors J -> K: 2749 cells mapped, 29 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-22 16:48:47 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-22 16:48:47 [INFO ] [pipeline]   Size column L: 2749 mapped, 29 cleared (col A has fill), 0 no match (recorded)
+2026-10-22 16:48:47 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-22 16:48:47 [INFO ] [pipeline]   Mirror copy: 17414 cells written
+2026-10-22 16:48:47 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-22 16:48:47 [INFO ] [pipeline]   Price source M -> AS: 2778 cells copied
+2026-10-22 16:48:47 [INFO ] [pipeline] [10/12] calc_price
+2026-10-22 16:48:47 [INFO ] [pipeline]   Price columns AT-AW: 2778 rows calculated
+2026-10-22 16:48:47 [INFO ] [pipeline] [11/12] format_cells
+2026-10-22 16:48:48 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-22 16:48:48 [INFO ] [pipeline]   Formatted 2778 rows: h=50, align=left/center
+2026-10-22 16:48:48 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-22 16:48:48 [INFO ] [pipeline] [12/12] finalize
+2026-10-22 16:48:48 [INFO ] [pipeline]   Done: 2778 rows x 49 cols (target: 49)
+2026-10-22 16:48:48 [INFO ] [pipeline] Pipeline complete
+2026-10-22 16:48:51 [INFO ] [main] Size: 2778 rows x 49 cols
+2026-10-22 16:48:51 [INFO ] [main] ==================================================
+2026-10-22 16:48:51 [INFO ] [main] Done: 10.20v1_fr.xlsx
+2026-10-22 16:48:51 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-22 16:48:51 [INFO ] [jenkins] 
+2026-10-22 16:48:51 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-22 16:48:51 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:48:52 [INFO ] [color_size_main] Source: 10.20v1_fr.xlsx
+2026-10-22 16:48:54 [INFO ] [color_size_main] Extracted: 2749 data lines + 29 separators → check_.txt
+2026-10-22 16:48:54 [INFO ] [color_size_main] Running: process.py
+2026-10-22 16:48:55 [INFO ] [color_size_deal] Groups: 29, lines: 2749 (file: 2778)
+2026-10-22 16:48:55 [INFO ] [color_size_deal] Prefixes: {'01': 558, '02': 331, '03': 220, '04': 126, '05': 100, '06': 88, '07': 61, '08': 18, '09': 12, '10': 12, '11': 6, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6}
+2026-10-22 16:48:55 [INFO ] [color_size_deal] Done.
+2026-10-22 16:48:55 [INFO ] [color_size_main] Processing write-back: 2778 lines
+2026-10-22 16:49:00 [INFO ] [color_size_main] Write-back: 1621 written, 1157 unchanged → 10.20v1_fr.xlsx
+2026-10-22 16:49:00 [INFO ] [color_size_main] Done.
+2026-10-22 16:49:00 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-22 16:49:00 [INFO ] [jenkins] 
+2026-10-22 16:49:00 [INFO ] [jenkins] ==================================================
+2026-10-22 16:49:00 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-22 16:49:00 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-22 16:49:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-22 16:49:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-22 16:49:00 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-22 16:52:22 [INFO ] [jenkins] ==================================================
+2026-10-22 16:52:22 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-22 16:52:22 [INFO ] [jenkins] ==================================================
+2026-10-22 16:52:22 [INFO ] [jenkins] 
+2026-10-22 16:52:22 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-22 16:52:22 [INFO ] [jenkins] ------------------------------
+2026-10-22 16:52:23 [INFO ] [title_workflow] Source: 10.20v1.xlsx
+2026-10-22 16:52:25 [INFO ] [title_workflow] Extracted 29 titles + 29 links
+2026-10-22 16:52:25 [INFO ] [title_workflow] Written: origin_title (29) + origin_link (29)
+2026-10-22 16:52:25 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-22 16:52:25 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-22 16:52:26 [INFO ] [deepseek_web] Opening DeepSeek web (29 titles)...
+2026-10-22 16:52:26 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-22 16:52:35 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-22 16:52:37 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-22 16:52:37 [INFO ] [deepseek_web] [1/29] 男士圣诞节丝绸缎面短袖短裤纽扣睡衣套装
+2026-10-22 16:52:40 [INFO ] [deepseek_web]   Downloaded: 0001_2910434380273114419263.jpg
+2026-10-22 16:52:40 [INFO ] [deepseek_web]   Prefetching next image (2/29)
+2026-10-22 16:52:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:52:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:53:09 [INFO ] [deepseek_web]   Response: 圣诞主题动物印花 撞色包边 单侧胸前贴袋 男士短袖短裤睡衣套装 常规版型 丝绸缎面 翻领 单排纽扣门襟
+2026-10-22 16:53:09 [INFO ] [deepseek_web]   Deleted: 0001_2910434380273114419263.jpg
+2026-10-22 16:53:14 [INFO ] [deepseek_web] [2/29] 男士圣诞卫衣套装
+2026-10-22 16:53:14 [INFO ] [deepseek_web]   Downloaded: 0002_3841046527141158589977.jpg
+2026-10-22 16:53:14 [INFO ] [deepseek_web]   Prefetching next image (3/29)
+2026-10-22 16:53:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:53:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:53:43 [INFO ] [deepseek_web]   Response: 圣诞节庆灯饰雪花印花 帽口抽绳 罗纹收口束脚裤 男士连帽卫衣长裤两件套 常规版型 套头门襟 长袖 前置袋鼠口袋
+2026-10-22 16:53:43 [INFO ] [deepseek_web]   Deleted: 0002_3841046527141158589977.jpg
+2026-10-22 16:53:48 [INFO ] [deepseek_web] [3/29] 男士圣诞搞怪套装
+2026-10-22 16:53:48 [INFO ] [deepseek_web]   Downloaded: 0003_6740928587474373322423.jpg
+2026-10-22 16:53:48 [INFO ] [deepseek_web]   Prefetching next image (4/29)
+2026-10-22 16:53:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:53:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:54:17 [INFO ] [deepseek_web]   Response: 3D立体肌肉男印花 圣诞老人外套图案 纯色直筒长裤 男士长袖上衣长裤两件套 常规版型 圆领套头
+2026-10-22 16:54:17 [INFO ] [deepseek_web]   Deleted: 0003_6740928587474373322423.jpg
+2026-10-22 16:54:22 [INFO ] [deepseek_web] [4/29] 男士圣诞节睡衣套装
+2026-10-22 16:54:22 [INFO ] [deepseek_web]   Downloaded: 0004_4850818544714412640546.jpg
+2026-10-22 16:54:22 [INFO ] [deepseek_web]   Prefetching next image (5/29)
+2026-10-22 16:54:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:54:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:54:51 [INFO ] [deepseek_web]   Response: 3D立体腹部印花 圣诞人物开衫图案 宽腰带图案 雪花印花 男士长袖睡衣长裤两件套 常规版型 翻领 单排纽扣门襟
+2026-10-22 16:54:51 [INFO ] [deepseek_web]   Deleted: 0004_4850818544714412640546.jpg
+2026-10-22 16:54:56 [INFO ] [deepseek_web] [5/29] 男士圣诞节睡衣套装
+2026-10-22 16:54:56 [INFO ] [deepseek_web]   Downloaded: 0005_7941015396035511478146.jpg
+2026-10-22 16:54:56 [INFO ] [deepseek_web]   Prefetching next image (6/29)
+2026-10-22 16:54:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:55:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:55:26 [INFO ] [deepseek_web]   Response: 3D立体肌肉躯干印花 圣诞精灵外套印花 横条纹印花波浪边裤脚 男士长袖睡衣长裤两件套 常规版型 翻领 单排纽扣门襟
+2026-10-22 16:55:26 [INFO ] [deepseek_web]   Deleted: 0005_7941015396035511478146.jpg
+2026-10-22 16:55:31 [INFO ] [deepseek_web] [6/29] 男士西装三件套套装
+2026-10-22 16:55:31 [INFO ] [deepseek_web]   Downloaded: 0006_2861132020121617116636.jpg
+2026-10-22 16:55:31 [INFO ] [deepseek_web]   Prefetching next image (7/29)
+2026-10-22 16:55:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:55:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:56:00 [INFO ] [deepseek_web]   Response: 格纹雪花印花 配套领带 带盖口袋 单排扣门襟 男士西装外套长裤领带三件套 常规版型 平驳领 长袖 直筒长裤
+2026-10-22 16:56:00 [INFO ] [deepseek_web]   Deleted: 0006_2861132020121617116636.jpg
+2026-10-22 16:56:05 [INFO ] [deepseek_web] [7/29] 男士西装三件套套装
+2026-10-22 16:56:05 [INFO ] [deepseek_web]   Downloaded: 0007_0721021548249820437039.jpg
+2026-10-22 16:56:05 [INFO ] [deepseek_web]   Prefetching next image (8/29)
+2026-10-22 16:56:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:56:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:56:34 [INFO ] [deepseek_web]   Response: 驯鹿雪花印花 胸前圣诞人物图案 同款印花领带 男士西装外套长裤领带三件套 常规版型 平驳领 单排扣门襟 长袖 直筒长裤
+2026-10-22 16:56:34 [INFO ] [deepseek_web]   Deleted: 0007_0721021548249820437039.jpg
+2026-10-22 16:56:39 [INFO ] [deepseek_web] [8/29] 男士西装三件套套装
+2026-10-22 16:56:39 [INFO ] [deepseek_web]   Downloaded: 0008_8260919325323615747560.jpg
+2026-10-22 16:56:39 [INFO ] [deepseek_web]   Prefetching next image (9/29)
+2026-10-22 16:56:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:56:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:57:08 [INFO ] [deepseek_web]   Response: 胸前圣诞老人脸部图案 松枝针叶印花 同款印花领带 男士西装外套长裤领带三件套 常规版型 平驳领 单排扣门襟 长袖 直筒长裤
+2026-10-22 16:57:08 [INFO ] [deepseek_web]   Deleted: 0008_8260919325323615747560.jpg
+2026-10-22 16:57:13 [INFO ] [deepseek_web] [9/29] 男士圣诞节印花加绒套装
+2026-10-22 16:57:13 [INFO ] [deepseek_web]   Downloaded: 0009_2340641512718397027088.jpg
+2026-10-22 16:57:13 [INFO ] [deepseek_web]   Prefetching next image (10/29)
+2026-10-22 16:57:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:57:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:57:43 [INFO ] [deepseek_web]   Response: 圣诞鹿树星图案印花 连帽抽绳 前置袋鼠口袋 束脚长裤 男士加绒连帽卫衣长裤两件套 常规版型 长袖 套头
+2026-10-22 16:57:43 [INFO ] [deepseek_web]   Deleted: 0009_2340641512718397027088.jpg
+2026-10-22 16:57:48 [INFO ] [deepseek_web] [10/29] 男士红色圣诞西装白色毛领时尚套装
+2026-10-22 16:57:48 [INFO ] [deepseek_web]   Downloaded: 0010_3840443543716611648361.jpg
+2026-10-22 16:57:48 [INFO ] [deepseek_web]   Prefetching next image (11/29)
+2026-10-22 16:57:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:57:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:58:17 [INFO ] [deepseek_web]   Response: 撞色毛质拼接驳领 双侧带盖平贴口袋 单排单粒扣门襟 男士西装外套长裤两件套 常规版型 常规长袖 直筒西裤
+2026-10-22 16:58:17 [INFO ] [deepseek_web]   Deleted: 0010_3840443543716611648361.jpg
+2026-10-22 16:58:22 [INFO ] [deepseek_web] [11/29] 男士圣诞印花套装两件套
+2026-10-22 16:58:22 [INFO ] [deepseek_web]   Downloaded: 0011_7151020467854712454948.jpg
+2026-10-22 16:58:22 [INFO ] [deepseek_web]   Prefetching next image (12/29)
+2026-10-22 16:58:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:58:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:58:51 [INFO ] [deepseek_web]   Response: 圣诞驯鹿字母雪花印花 撞色拼接袖口下摆 前置袋鼠口袋 束脚长裤 男士连帽卫衣长裤两件套 常规版型 套头门襟 长袖
+2026-10-22 16:58:51 [INFO ] [deepseek_web]   Deleted: 0011_7151020467854712454948.jpg
+2026-10-22 16:58:56 [INFO ] [deepseek_web] [12/29] 男士圣诞节连帽卫衣长裤套装
+2026-10-22 16:58:56 [INFO ] [deepseek_web]   Downloaded: 0012_3310943007272620524226.jpg
+2026-10-22 16:58:56 [INFO ] [deepseek_web]   Prefetching next image (13/29)
+2026-10-22 16:58:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:59:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:59:25 [INFO ] [deepseek_web]   Response: 圣诞老人胡子腰带图案印花 连帽套头门襟 束脚长裤 男士连帽卫衣长裤两件套 常规版型 常规长袖 前置袋鼠口袋
+2026-10-22 16:59:25 [INFO ] [deepseek_web]   Deleted: 0012_3310943007272620524226.jpg
+2026-10-22 16:59:30 [INFO ] [deepseek_web] [13/29] 男士仿毛衣卫衣裤套装
+2026-10-22 16:59:30 [INFO ] [deepseek_web]   Downloaded: 0013_3530416478573011938505.jpg
+2026-10-22 16:59:30 [INFO ] [deepseek_web]   Prefetching next image (14/29)
+2026-10-22 16:59:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 16:59:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 16:59:59 [INFO ] [deepseek_web]   Response: 3D立体肌肉躯干印花 缎带蝴蝶结图案 雪花星点印花 男士长袖卫衣长裤两件套 常规版型 圆领 套头门襟 束脚长裤
+2026-10-22 16:59:59 [INFO ] [deepseek_web]   Deleted: 0013_3530416478573011938505.jpg
+2026-10-22 17:00:04 [INFO ] [deepseek_web] [14/29] 男士圣诞节套装
+2026-10-22 17:00:04 [INFO ] [deepseek_web]   Downloaded: 0014_1641134284851640789559.jpg
+2026-10-22 17:00:04 [INFO ] [deepseek_web]   Prefetching next image (15/29)
+2026-10-22 17:00:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:00:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:00:34 [INFO ] [deepseek_web]   Response: 格纹印花 墨镜圣诞老人图案 雪花印花 男士连帽卫衣长裤两件套 常规版型 套头门襟 长袖 前置袋鼠口袋 束脚长裤
+2026-10-22 17:00:34 [INFO ] [deepseek_web]   Deleted: 0014_1641134284851640789559.jpg
+2026-10-22 17:00:39 [INFO ] [deepseek_web] [15/29] 男士圣诞节连帽卫衣卫裤套装（加绒款）
+2026-10-22 17:00:39 [INFO ] [deepseek_web]   Downloaded: 0015_8150828103721421067948.jpg
+2026-10-22 17:00:39 [INFO ] [deepseek_web]   Prefetching next image (16/29)
+2026-10-22 17:00:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:00:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:01:08 [INFO ] [deepseek_web]   Response: 圣诞老人读书图案印花 雪花渐变印花 连帽抽绳 前置袋鼠口袋 男士加绒连帽卫衣长裤两件套 常规版型 长袖 束脚长裤
+2026-10-22 17:01:08 [INFO ] [deepseek_web]   Deleted: 0015_8150828103721421067948.jpg
+2026-10-22 17:01:13 [INFO ] [deepseek_web] [16/29] 男士圣诞节三件套西服套装
+2026-10-22 17:01:13 [INFO ] [deepseek_web]   Downloaded: 0016_2640859298771613098358.jpg
+2026-10-22 17:01:13 [INFO ] [deepseek_web]   Prefetching next image (17/29)
+2026-10-22 17:01:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:01:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:01:46 [INFO ] [deepseek_web]   Response: 圣诞老人雪橇印花 驯鹿剪影印花 松林村庄图案印花 男士西装外套马甲长裤三件套 常规版型 平驳领 单排扣门襟 带盖口袋 V领马甲 长袖 直筒长裤
+2026-10-22 17:01:46 [INFO ] [deepseek_web]   Deleted: 0016_2640859298771613098358.jpg
+2026-10-22 17:01:51 [INFO ] [deepseek_web] [17/29] 圣诞男士连帽卫衣套装
+2026-10-22 17:01:51 [INFO ] [deepseek_web]   Downloaded: 0017_3851209536852820387751.jpg
+2026-10-22 17:01:51 [INFO ] [deepseek_web]   Prefetching next image (18/29)
+2026-10-22 17:01:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:02:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:02:20 [INFO ] [deepseek_web]   Response: 姜饼人糖霜滴落印花 卡通面部图案 糖豆纽扣图案 男士连帽卫衣长裤两件套 常规版型 连帽抽绳 套头门襟 前置袋鼠口袋 长袖 束脚长裤
+2026-10-22 17:02:20 [INFO ] [deepseek_web]   Deleted: 0017_3851209536852820387751.jpg
+2026-10-22 17:02:25 [INFO ] [deepseek_web] [18/29] 男士圣诞印花西装套装
+2026-10-22 17:02:25 [INFO ] [deepseek_web]   Downloaded: 0018_1061035223063399978540.jpg
+2026-10-22 17:02:25 [INFO ] [deepseek_web]   Prefetching next image (19/29)
+2026-10-22 17:02:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:02:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:02:54 [INFO ] [deepseek_web]   Response: 圣诞老人雪橇场景印花 驯鹿剪影图案 雪夜村庄场景图案 男士西装外套长裤两件套 常规版型 平驳领 单排扣门襟 带盖口袋 长袖 直筒长裤
+2026-10-22 17:02:54 [INFO ] [deepseek_web]   Deleted: 0018_1061035223063399978540.jpg
+2026-10-22 17:02:59 [INFO ] [deepseek_web] [19/29] 男士圣诞节西装印花时尚户外派对聚餐套装
+2026-10-22 17:02:59 [INFO ] [deepseek_web]   Downloaded: 0019_5910206032231617480448.jpg
+2026-10-22 17:02:59 [INFO ] [deepseek_web]   Prefetching next image (20/29)
+2026-10-22 17:02:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:03:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:03:28 [INFO ] [deepseek_web]   Response: 节日灯串印花 毛质拼接驳领 毛质拼接带盖口袋 男士西装外套长裤领带三件套 常规版型 单排单粒扣门襟 长袖 直筒长裤
+2026-10-22 17:03:28 [INFO ] [deepseek_web]   Deleted: 0019_5910206032231617480448.jpg
+2026-10-22 17:03:33 [INFO ] [deepseek_web] [20/29] 圣诞男士西装套装
+2026-10-22 17:03:33 [INFO ] [deepseek_web]   Downloaded: 0020_9461129147551129300202.jpg
+2026-10-22 17:03:33 [INFO ] [deepseek_web]   Prefetching next image (21/29)
+2026-10-22 17:03:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:03:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:04:02 [INFO ] [deepseek_web]   Response: 圣诞老人驯鹿树印花 雪花拐杖糖图案 单排扣门襟 带盖口袋 男士西装外套长裤两件套 常规版型 平驳领 长袖 直筒长裤
+2026-10-22 17:04:02 [INFO ] [deepseek_web]   Deleted: 0020_9461129147551129300202.jpg
+2026-10-22 17:04:07 [INFO ] [deepseek_web] [21/29] 男士圣诞印花套装两件套卫衣卫裤加绒套装
+2026-10-22 17:04:07 [INFO ] [deepseek_web]   Downloaded: 0021_4360924315532364878342.jpg
+2026-10-22 17:04:07 [INFO ] [deepseek_web]   Prefetching next image (22/29)
+2026-10-22 17:04:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:04:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:04:37 [INFO ] [deepseek_web]   Response: 卡通驯鹿红酒图案 雪花圆点印花 撞色拼接袖口 男士连帽卫衣长裤两件套 常规版型 连帽抽绳 套头门襟 前置袋鼠口袋 长袖 束脚长裤 加绒
+2026-10-22 17:04:37 [INFO ] [deepseek_web]   Deleted: 0021_4360924315532364878342.jpg
+2026-10-22 17:04:42 [INFO ] [deepseek_web] [22/29] 男士圣诞印花西装套装
+2026-10-22 17:04:42 [INFO ] [deepseek_web]   Downloaded: 0022_8511235081421613232719.jpg
+2026-10-22 17:04:42 [INFO ] [deepseek_web]   Prefetching next image (23/29)
+2026-10-22 17:04:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:04:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:05:11 [INFO ] [deepseek_web]   Response: 雪花星星印花 圣诞礼物盒印花 字母印花 单排单粒扣门襟 男士西装外套长裤两件套 常规版型 平驳领 双侧带盖口袋 长袖 直筒长裤
+2026-10-22 17:05:11 [INFO ] [deepseek_web]   Deleted: 0022_8511235081421613232719.jpg
+2026-10-22 17:05:16 [INFO ] [deepseek_web] [23/29] 男士冬季圣诞3d印花搞怪卫衣套装上衣无口袋
+2026-10-22 17:05:16 [INFO ] [deepseek_web]   Downloaded: 0023_1271109183759111309542.jpg
+2026-10-22 17:05:16 [INFO ] [deepseek_web]   Prefetching next image (24/29)
+2026-10-22 17:05:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:05:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:05:45 [INFO ] [deepseek_web]   Response: 3D立体搞怪圣诞老人面部印花 雪花图案印花 上衣无口袋 男士连帽卫衣长裤两件套 常规版型 连帽抽绳 套头门襟 长袖 罗纹收口 束脚长裤
+2026-10-22 17:05:45 [INFO ] [deepseek_web]   Deleted: 0023_1271109183759111309542.jpg
+2026-10-22 17:05:50 [INFO ] [deepseek_web] [24/29] 男士圣诞节印花加绒套装
+2026-10-22 17:05:50 [INFO ] [deepseek_web]   Downloaded: 0024_0700324534472259982585.jpg
+2026-10-22 17:05:50 [INFO ] [deepseek_web]   Prefetching next image (25/29)
+2026-10-22 17:05:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:06:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:06:19 [INFO ] [deepseek_web]   Response: 圣诞驯鹿雪花印花 上下拼接设计 加绒材质 连帽抽绳 男士连帽卫衣长裤两件套 常规版型 套头门襟 长袖 前置袋鼠口袋 松紧腰头 束脚长裤
+2026-10-22 17:06:19 [INFO ] [deepseek_web]   Deleted: 0024_0700324534472259982585.jpg
+2026-10-22 17:06:24 [INFO ] [deepseek_web] [25/29] 男士圣诞节印花加绒套装
+2026-10-22 17:06:24 [INFO ] [deepseek_web]   Downloaded: 0025_8511004423261272085376.jpg
+2026-10-22 17:06:24 [INFO ] [deepseek_web]   Prefetching next image (26/29)
+2026-10-22 17:06:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:06:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:06:53 [INFO ] [deepseek_web]   Response: 卡通驯鹿图案印花 雪花圆点印花 撞色拼接袖口裤脚 男士连帽卫衣长裤两件套 常规版型 连帽抽绳 套头门襟 长袖 前置袋鼠口袋 束脚长裤 加绒
+2026-10-22 17:06:53 [INFO ] [deepseek_web]   Deleted: 0025_8511004423261272085376.jpg
+2026-10-22 17:06:58 [INFO ] [deepseek_web] [26/29] 男士仿真丝睡衣套装
+2026-10-22 17:06:58 [INFO ] [deepseek_web]   Downloaded: 0026_0401003443161714085518.jpg
+2026-10-22 17:06:58 [INFO ] [deepseek_web]   Prefetching next image (27/29)
+2026-10-22 17:06:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:07:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:07:27 [INFO ] [deepseek_web]   Response: 3D立体肌肉躯干印花 圣诞彩灯图案 毛质拼接驳领 针织纹理印花 男士常规版型仿真丝睡衣长裤两件套 翻领 单排扣门襟 长袖 直筒长裤
+2026-10-22 17:07:27 [INFO ] [deepseek_web]   Deleted: 0026_0401003443161714085518.jpg
+2026-10-22 17:07:32 [INFO ] [deepseek_web] [27/29] 男士圣诞趣味卫衣套装
+2026-10-22 17:07:32 [INFO ] [deepseek_web]   Downloaded: 0027_6440325509282614010988.jpg
+2026-10-22 17:07:32 [INFO ] [deepseek_web]   Prefetching next image (28/29)
+2026-10-22 17:07:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:07:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:08:02 [INFO ] [deepseek_web]   Response: 3D立体肌肉躯干印花 毛绒拼接包边 前后镂空设计 铃铛挂饰 男士常规版型长袖长裤家居服两件套 V领开襟 腰带图案 松紧腰头
+2026-10-22 17:08:02 [INFO ] [deepseek_web]   Deleted: 0027_6440325509282614010988.jpg
+2026-10-22 17:08:07 [INFO ] [deepseek_web] [28/29] 圣诞男士毛边西服套装
+2026-10-22 17:08:07 [INFO ] [deepseek_web]   Downloaded: 0028_7210413414332737528404.jpg
+2026-10-22 17:08:07 [INFO ] [deepseek_web]   Prefetching next image (29/29)
+2026-10-22 17:08:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:08:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:08:36 [INFO ] [deepseek_web]   Response: 毛绒拼接驳领 毛绒拼接袖口 毛绒拼接裤脚 单排单粒扣门襟 双侧嵌线口袋 男士西装外套长裤两件套 常规版型 长袖 直筒长裤
+2026-10-22 17:08:36 [INFO ] [deepseek_web]   Deleted: 0028_7210413414332737528404.jpg
+2026-10-22 17:08:41 [INFO ] [deepseek_web] [29/29] 男圣诞节搞怪套装
+2026-10-22 17:08:41 [INFO ] [deepseek_web]   Downloaded: 0029_0701122236421316804367.jpg
+2026-10-22 17:08:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-22 17:08:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-22 17:09:10 [INFO ] [deepseek_web]   Response: 3D视觉姜饼图案印花 圣诞元素仿毛衣图案 罗纹收口袖口裤脚 男士长袖睡衣长裤两件套 常规版型 翻领 单排纽扣门襟 长袖 直筒长裤
+2026-10-22 17:09:10 [INFO ] [deepseek_web]   Deleted: 0029_0701122236421316804367.jpg
+2026-10-22 17:09:12 [INFO ] [deepseek_web] ==================================================
+2026-10-22 17:09:12 [INFO ] [deepseek_web] Done: 29 success, 0 failed → optimize_title
+2026-10-22 17:09:12 [INFO ] [title_workflow] Optimization complete: 29 titles
+2026-10-22 17:09:19 [INFO ] [title_workflow] Written 29 optimized titles to column H (8)
+2026-10-22 17:09:19 [INFO ] [title_workflow] Done: 10.20v1.xlsx
+2026-10-22 17:09:19 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-22 17:09:19 [INFO ] [jenkins] 
+2026-10-22 17:09:19 [INFO ] [jenkins] ==================================================
+2026-10-22 17:09:19 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-22 17:09:20 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-22 17:09:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-22 17:09:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-22 17:09:20 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

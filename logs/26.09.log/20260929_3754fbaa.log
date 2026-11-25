@@ -1,0 +1,563 @@
+2026-09-29 15:16:36 [INFO ] [jenkins] ==================================================
+2026-09-29 15:16:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-29 15:16:36 [INFO ] [jenkins] ==================================================
+2026-09-29 15:16:36 [INFO ] [jenkins] 
+2026-09-29 15:16:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-29 15:16:36 [INFO ] [jenkins] ------------------------------
+2026-09-29 15:16:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-29 15:16:36 [INFO ] [jenkins] 
+2026-09-29 15:16:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-29 15:16:36 [INFO ] [jenkins] ------------------------------
+2026-09-29 15:16:36 [INFO ] [preprocess] Preprocessing 15 file(s) with 1 step(s)
+2026-09-29 15:16:36 [INFO ] [preprocess] [product_20260929020706625.xlsx]
+2026-09-29 15:16:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:37 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:38 [INFO ] [preprocess]   [product_20260929020706625.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:38 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:39 [INFO ] [preprocess] [product_20260929020738447.xlsx]
+2026-09-29 15:16:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:39 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:41 [INFO ] [preprocess]   [product_20260929020738447.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:41 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:41 [INFO ] [preprocess] [product_20260929021124720.xlsx]
+2026-09-29 15:16:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:43 [INFO ] [preprocess]   [product_20260929021124720.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:43 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:43 [INFO ] [preprocess] [product_20260929021702286.xlsx]
+2026-09-29 15:16:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:43 [INFO ] [preprocess]   [product_20260929021702286.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:43 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:43 [INFO ] [preprocess] [product_20260929022527135.xlsx]
+2026-09-29 15:16:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:43 [INFO ] [preprocess]   [product_20260929022527135.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:43 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:43 [INFO ] [preprocess] [product_20260929022925184.xlsx]
+2026-09-29 15:16:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:44 [INFO ] [preprocess]   [product_20260929022925184.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:44 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:44 [INFO ] [preprocess] [product_20260929023412238.xlsx]
+2026-09-29 15:16:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:44 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:45 [INFO ] [preprocess]   [product_20260929023412238.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:45 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:45 [INFO ] [preprocess] [product_20260929023518258.xlsx]
+2026-09-29 15:16:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:45 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:46 [INFO ] [preprocess]   [product_20260929023518258.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:46 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:47 [INFO ] [preprocess] [product_20260929024538660.xlsx]
+2026-09-29 15:16:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:47 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:47 [INFO ] [preprocess]   [product_20260929024538660.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:47 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:47 [INFO ] [preprocess] [product_20260929024829531.xlsx]
+2026-09-29 15:16:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:47 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:47 [INFO ] [preprocess]   [product_20260929024829531.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:47 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:47 [INFO ] [preprocess] [product_20260929024956668.xlsx]
+2026-09-29 15:16:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:47 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:48 [INFO ] [preprocess]   [product_20260929024956668.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:48 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:48 [INFO ] [preprocess] [product_20260929025737915.xlsx]
+2026-09-29 15:16:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:48 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:49 [INFO ] [preprocess]   [product_20260929025737915.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:49 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:49 [INFO ] [preprocess] [product_20260929030519909.xlsx]
+2026-09-29 15:16:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:49 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:51 [INFO ] [preprocess]   [product_20260929030519909.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:51 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:52 [INFO ] [preprocess] [product_20260929030748729.xlsx]
+2026-09-29 15:16:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:52 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:52 [INFO ] [preprocess]   [product_20260929030748729.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:52 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:52 [INFO ] [preprocess] [product_20260929030945637.xlsx]
+2026-09-29 15:16:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-29 15:16:52 [INFO ] [pipeline] [1/1] remove_header
+2026-09-29 15:16:52 [INFO ] [preprocess]   [product_20260929030945637.xlsx] Sheet [Sheet0]: header row removed
+2026-09-29 15:16:52 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:16:52 [INFO ] [preprocess] Preprocessing complete
+2026-09-29 15:16:52 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-29 15:16:52 [INFO ] [jenkins] 
+2026-09-29 15:16:52 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-29 15:16:52 [INFO ] [jenkins] ------------------------------
+2026-09-29 15:16:53 [INFO ] [main] Log file: 20260929_3754fbaa.log
+2026-09-29 15:16:53 [INFO ] [main] Found 15 file(s):
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929020706625.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929020738447.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929021124720.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929021702286.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929022527135.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929022925184.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929023412238.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929023518258.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929024538660.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929024829531.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929024956668.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929025737915.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929030519909.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929030748729.xlsx
+2026-09-29 15:16:53 [INFO ] [main]   product_20260929030945637.xlsx
+2026-09-29 15:16:53 [INFO ] [main] Output: 9.22v1_de.xlsx
+2026-09-29 15:16:53 [INFO ] [main] ==================================================
+2026-09-29 15:17:07 [INFO ] [main] Merged 15 files, 6299 images total
+2026-09-29 15:17:07 [INFO ] [main] Deleted 15 source file(s)
+2026-09-29 15:17:09 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-29 15:17:09 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_2]: 507 rows, 1093 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_3]: 326 rows, 721 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_4]: 31 rows, 81 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_5]: 19 rows, 34 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_6]: 46 rows, 134 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_7]: 295 rows, 583 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_8]: 295 rows, 583 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_9]: 61 rows, 135 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_10]: 56 rows, 113 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_11]: 193 rows, 434 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_12]: 78 rows, 119 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_13]: 507 rows, 876 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_14]: 13 rows, 24 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Sheet [Sheet0_15]: 113 rows, 232 images
+2026-09-29 15:17:20 [INFO ] [pipeline]   Merged 15 sheets -> 1, 2540 data rows, 5162 images
+2026-09-29 15:17:20 [INFO ] [pipeline] [2/12] validate
+2026-09-29 15:17:20 [INFO ] [pipeline]   Validated: 3066 rows, 27 cols (expect ~32)
+2026-09-29 15:17:20 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-29 15:17:21 [INFO ] [pipeline]   Backed up 6299 images
+2026-09-29 15:17:21 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-29 15:17:21 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-29 15:17:21 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-29 15:17:21 [INFO ] [pipeline]   Restored 6299 images with adjusted anchors
+2026-09-29 15:17:21 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-29 15:17:21 [INFO ] [pipeline]   Column 2: 3066 IDs generated
+2026-09-29 15:17:21 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-29 15:17:21 [INFO ] [pipeline]   Column 3: 3066 cells filled
+2026-09-29 15:17:21 [INFO ] [pipeline] [6/12] map_colors
+2026-09-29 15:17:21 [INFO ] [pipeline]   Colors J -> K: 3017 cells mapped, 48 rows skipped (col A has fill), 1 no match (recorded)
+2026-09-29 15:17:21 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-29 15:17:21 [INFO ] [pipeline]   Size column L: 2994 mapped, 48 cleared (col A has fill), 24 no match (recorded)
+2026-09-29 15:17:21 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-29 15:17:21 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-09-29 15:17:21 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-29 15:17:21 [INFO ] [pipeline]   Price source M -> AS: 3066 cells copied
+2026-09-29 15:17:21 [INFO ] [pipeline] [10/12] calc_price
+2026-09-29 15:17:21 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-09-29 15:17:21 [INFO ] [pipeline] [11/12] format_cells
+2026-09-29 15:17:22 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-29 15:17:22 [INFO ] [pipeline]   Formatted 3066 rows: h=50, align=left/center
+2026-09-29 15:17:22 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-29 15:17:22 [INFO ] [pipeline] [12/12] finalize
+2026-09-29 15:17:22 [INFO ] [pipeline]   Done: 3066 rows x 49 cols (target: 49)
+2026-09-29 15:17:22 [INFO ] [pipeline] Pipeline complete
+2026-09-29 15:17:25 [INFO ] [main] Size: 3066 rows x 49 cols
+2026-09-29 15:17:25 [INFO ] [main] ==================================================
+2026-09-29 15:17:25 [INFO ] [main] Done: 9.22v1_de.xlsx
+2026-09-29 15:17:26 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-29 15:17:26 [INFO ] [jenkins] 
+2026-09-29 15:17:26 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-29 15:17:26 [INFO ] [jenkins] ------------------------------
+2026-09-29 15:17:26 [INFO ] [color_size_main] Source: 9.22v1_de.xlsx
+2026-09-29 15:17:29 [INFO ] [color_size_main] Extracted: 3017 data lines + 49 separators → check_.txt
+2026-09-29 15:17:29 [INFO ] [color_size_main] Running: process.py
+2026-09-29 15:17:29 [INFO ] [color_size_deal] Groups: 49, lines: 3017 (file: 3066)
+2026-09-29 15:17:29 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-09-29 15:17:29 [INFO ] [color_size_deal] Done.
+2026-09-29 15:17:29 [INFO ] [color_size_main] Processing write-back: 3066 lines
+2026-09-29 15:17:36 [INFO ] [color_size_main] Write-back: 1258 written, 1808 unchanged → 9.22v1_de.xlsx
+2026-09-29 15:17:36 [INFO ] [color_size_main] Done.
+2026-09-29 15:17:36 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-29 15:17:36 [INFO ] [jenkins] 
+2026-09-29 15:17:36 [INFO ] [jenkins] ==================================================
+2026-09-29 15:17:36 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-29 15:17:36 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-29 15:17:36 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-29 15:17:36 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-29 15:17:36 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-29 15:22:08 [INFO ] [jenkins] ==================================================
+2026-09-29 15:22:08 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-29 15:22:08 [INFO ] [jenkins] ==================================================
+2026-09-29 15:22:08 [INFO ] [jenkins] 
+2026-09-29 15:22:08 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-29 15:22:08 [INFO ] [jenkins] ------------------------------
+2026-09-29 15:22:08 [INFO ] [title_workflow] Source: 9.22v1.xlsx
+2026-09-29 15:22:10 [INFO ] [title_workflow] Extracted 48 titles + 48 links
+2026-09-29 15:22:10 [INFO ] [title_workflow] Written: origin_title (48) + origin_link (48)
+2026-09-29 15:22:10 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-29 15:22:10 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-29 15:22:11 [INFO ] [deepseek_web] Opening DeepSeek web (48 titles)...
+2026-09-29 15:22:11 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-29 15:22:20 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-29 15:22:22 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-29 15:22:22 [INFO ] [deepseek_web] [1/48] 男士圣诞节法兰绒保暖宽松大码节日狂欢西装马甲
+2026-09-29 15:22:26 [INFO ] [deepseek_web]   Downloaded: 0001_2390219016771414327877.jpg
+2026-09-29 15:22:26 [INFO ] [deepseek_web]   Prefetching next image (2/48)
+2026-09-29 15:22:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:22:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:22:55 [INFO ] [deepseek_web]   Response: 毛绒拼接边饰 单排扣门襟 双侧镶边口袋 尖角下摆 西装马甲 男士 常规版型 V领 无袖 丝绒质感 保暖 节日派对
+2026-09-29 15:22:55 [INFO ] [deepseek_web]   Deleted: 0001_2390219016771414327877.jpg
+2026-09-29 15:23:00 [INFO ] [deepseek_web] [2/48] 男士舞台演出服小亮片马甲背心影楼拍照主持人歌手司仪马甲
+2026-09-29 15:23:00 [INFO ] [deepseek_web]   Downloaded: 0002_1630932320166018944932.jpg
+2026-09-29 15:23:00 [INFO ] [deepseek_web]   Prefetching next image (3/48)
+2026-09-29 15:23:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:23:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:23:33 [INFO ] [deepseek_web]   Response: 小亮片装饰 V领 单排扣 嵌线口袋 尖角下摆 西装马甲 男士 修身版型 无袖 舞台演出 影楼拍照 主持人 歌手 司仪
+2026-09-29 15:23:33 [INFO ] [deepseek_web]   Deleted: 0002_1630932320166018944932.jpg
+2026-09-29 15:23:38 [INFO ] [deepseek_web] [3/48] 男士马甲V领新郎伴郎婚礼礼服马甲啤酒节传统马甲背心外套
+2026-09-29 15:23:38 [INFO ] [deepseek_web]   Downloaded: 0003_8360454113961915813406.jpg
+2026-09-29 15:23:38 [INFO ] [deepseek_web]   Prefetching next image (4/48)
+2026-09-29 15:23:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:23:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:24:07 [INFO ] [deepseek_web]   Response: 刺绣领边 装饰性纽扣 双侧嵌线口袋 尖角下摆 西装马甲 男士 修身版型 立领 单排扣门襟 无袖 传统巴伐利亚风格 婚礼 啤酒节
+2026-09-29 15:24:07 [INFO ] [deepseek_web]   Deleted: 0003_8360454113961915813406.jpg
+2026-09-29 15:24:12 [INFO ] [deepseek_web] [4/48] 25新款欧码男士复古拼接翻领男士西装马甲粗花呢人字呢马夹
+2026-09-29 15:24:12 [INFO ] [deepseek_web]   Downloaded: 0004_1920435324032819778449.jpg
+2026-09-29 15:24:12 [INFO ] [deepseek_web]   Prefetching next image (5/48)
+2026-09-29 15:24:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:24:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:24:47 [INFO ] [deepseek_web]   Response: 人字纹拼接 千鸟格拼接 格纹拼接 西装马甲 男士 常规版型 双侧贴袋 翻领 单排扣 五粒纽扣 无袖 粗花呢 尖角下摆
+2026-09-29 15:24:47 [INFO ] [deepseek_web]   Deleted: 0004_1920435324032819778449.jpg
+2026-09-29 15:24:52 [INFO ] [deepseek_web] [5/48] 男士秋冬马甲外套帽子可拆卸纯色加厚宽松背心
+2026-09-29 15:24:52 [INFO ] [deepseek_web]   Downloaded: 0005_5320213116221712136823.jpg
+2026-09-29 15:24:52 [INFO ] [deepseek_web]   Prefetching next image (6/48)
+2026-09-29 15:24:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:25:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:25:23 [INFO ] [deepseek_web]   Response: 可拆卸连帽设计 全拉链门襟 双侧拉链口袋 横向绗缝工艺 加厚连帽马甲外套 男士 宽松版型设计 无袖 纯色外观 秋冬
+2026-09-29 15:25:23 [INFO ] [deepseek_web]   Deleted: 0005_5320213116221712136823.jpg
+2026-09-29 15:25:28 [INFO ] [deepseek_web] [6/48] 男士复古立领纯色纽扣绑带马甲
+2026-09-29 15:25:28 [INFO ] [deepseek_web]   Downloaded: 0006_6090847030427212219742.jpg
+2026-09-29 15:25:28 [INFO ] [deepseek_web]   Prefetching next image (7/48)
+2026-09-29 15:25:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:25:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:25:57 [INFO ] [deepseek_web]   Response: 皮质搭扣门襟 不对称前襟 后开衩下摆 西装马甲 男士 常规版型 立领 无袖 纯色 绒面质感 复古风格
+2026-09-29 15:25:57 [INFO ] [deepseek_web]   Deleted: 0006_6090847030427212219742.jpg
+2026-09-29 15:26:02 [INFO ] [deepseek_web] [7/48] 9181#男士时尚休闲纽扣连帽透气无袖紧身弹力贴身健身运动马甲背心坎肩
+2026-09-29 15:26:02 [INFO ] [deepseek_web]   Downloaded: 0007_2960504568721997908755.jpg
+2026-09-29 15:26:02 [INFO ] [deepseek_web]   Prefetching next image (8/48)
+2026-09-29 15:26:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:26:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:26:31 [INFO ] [deepseek_web]   Response: 胸前皮质贴章 罗纹弹力面料 半开襟纽扣设计 连帽套头背心 男士 修身版型 无袖 纯色 V领 透气 弹力 健身运动 9181
+2026-09-29 15:26:31 [INFO ] [deepseek_web]   Deleted: 0007_2960504568721997908755.jpg
+2026-09-29 15:26:36 [INFO ] [deepseek_web] [8/48] 男士秋冬印花加绒口袋针织毛线开衫背心毛坎肩马甲
+2026-09-29 15:26:36 [INFO ] [deepseek_web]   Downloaded: 0008_8150308044798910699621.jpg
+2026-09-29 15:26:36 [INFO ] [deepseek_web]   Prefetching next image (9/48)
+2026-09-29 15:26:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:26:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:27:05 [INFO ] [deepseek_web]   Response: 格纹内衬拼接 罗纹立领 全拉链门襟 双侧斜插口袋 罗纹收口下摆 针织开衫马甲 男士 常规版型 无袖 针织纹理
+2026-09-29 15:27:05 [INFO ] [deepseek_web]   Deleted: 0008_8150308044798910699621.jpg
+2026-09-29 15:27:10 [INFO ] [deepseek_web] [9/48] 男士西装背心V领马甲修身休闲正式商务礼服
+2026-09-29 15:27:10 [INFO ] [deepseek_web]   Downloaded: 0009_5970500039472011756125.jpg
+2026-09-29 15:27:10 [INFO ] [deepseek_web]   Prefetching next image (10/48)
+2026-09-29 15:27:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:27:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:27:39 [INFO ] [deepseek_web]   Response: V领单排扣五粒纽扣 双侧嵌线口袋 尖角下摆 西装马甲 男士 修身版型 无袖 纯色设计 商务礼服 正式场合
+2026-09-29 15:27:39 [INFO ] [deepseek_web]   Deleted: 0009_5970500039472011756125.jpg
+2026-09-29 15:27:44 [INFO ] [deepseek_web] [10/48] 男士灯芯绒马甲
+2026-09-29 15:27:44 [INFO ] [deepseek_web]   Downloaded: 0010_7840441344832614115427.jpg
+2026-09-29 15:27:44 [INFO ] [deepseek_web]   Prefetching next image (11/48)
+2026-09-29 15:27:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:27:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:28:21 [INFO ] [deepseek_web]   Response: 竖条纹灯芯绒 V领 单排扣门襟 左胸贴袋 右下摆口袋 尖角下摆 五粒纽扣 马甲背心 男士 常规版型 无袖 纯色 休闲场合
+2026-09-29 15:28:21 [INFO ] [deepseek_web]   Deleted: 0010_7840441344832614115427.jpg
+2026-09-29 15:28:26 [INFO ] [deepseek_web] [11/48] 男士啤酒节马甲背心人字纹马甲背心外套
+2026-09-29 15:28:26 [INFO ] [deepseek_web]   Downloaded: 0011_2810920345915814639926.jpg
+2026-09-29 15:28:26 [INFO ] [deepseek_web]   Prefetching next image (12/48)
+2026-09-29 15:28:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:28:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:28:56 [INFO ] [deepseek_web]   Response: 人字纹图案 立领 单排扣门襟 左胸贴袋 双侧嵌线口袋 五粒纽扣 马甲背心 男士 常规版型 无袖 传统巴伐利亚风格 啤酒节
+2026-09-29 15:28:56 [INFO ] [deepseek_web]   Deleted: 0011_2810920345915814639926.jpg
+2026-09-29 15:29:01 [INFO ] [deepseek_web] [12/48] 男士纯色传统背心马甲外套
+2026-09-29 15:29:01 [INFO ] [deepseek_web]   Downloaded: 0012_5661129170257030265704.jpg
+2026-09-29 15:29:01 [INFO ] [deepseek_web]   Prefetching next image (13/48)
+2026-09-29 15:29:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:29:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:29:30 [INFO ] [deepseek_web]   Response: 人字纹图案 金属怀表链装饰 左胸嵌线口袋 右下嵌线口袋 尖角下摆 西装马甲 男士 修身版型 翻领 单排扣 无袖 传统风格
+2026-09-29 15:29:30 [INFO ] [deepseek_web]   Deleted: 0012_5661129170257030265704.jpg
+2026-09-29 15:29:35 [INFO ] [deepseek_web] [13/48] 男士啤酒节特色服饰立领背心马甲外套
+2026-09-29 15:29:35 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-29 15:29:40 [INFO ] [deepseek_web] [14/48] 男式修身韩版西装马甲大码无袖背心V领单排扣假口袋男式马夹
+2026-09-29 15:29:42 [INFO ] [deepseek_web]   Downloaded: 0014_5260432237568116375672.jpg
+2026-09-29 15:29:42 [INFO ] [deepseek_web]   Prefetching next image (15/48)
+2026-09-29 15:29:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:29:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:30:13 [INFO ] [deepseek_web]   Response: 左胸装饰性假口袋 双侧翻盖假口袋 尖角下摆 西装马甲 男士 修身版型 单排扣门襟 四粒纽扣 V领 无袖 纯色外观
+2026-09-29 15:30:13 [INFO ] [deepseek_web]   Deleted: 0014_5260432237568116375672.jpg
+2026-09-29 15:30:18 [INFO ] [deepseek_web] [15/48] 男士时尚朋克复古短款马甲外套
+2026-09-29 15:30:18 [INFO ] [deepseek_web]   Downloaded: 0015_0600418151051814476397.jpg
+2026-09-29 15:30:18 [INFO ] [deepseek_web]   Prefetching next image (16/48)
+2026-09-29 15:30:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:30:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:30:47 [INFO ] [deepseek_web]   Response: 提花图案 左胸嵌线装饰口袋 单排扣三粒纽扣门襟 尖角下摆 西装马甲 男士 修身版型 V领 无袖 短款 朋克风格 复古风格
+2026-09-29 15:30:47 [INFO ] [deepseek_web]   Deleted: 0015_0600418151051814476397.jpg
+2026-09-29 15:30:52 [INFO ] [deepseek_web] [16/48] 跨境热销男士马甲新款人字纹休闲修身单排扣马甲平驳领背心
+2026-09-29 15:30:52 [INFO ] [deepseek_web]   Downloaded: 0016_2590403509952732104584.jpg
+2026-09-29 15:30:52 [INFO ] [deepseek_web]   Prefetching next image (17/48)
+2026-09-29 15:30:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:31:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:31:21 [INFO ] [deepseek_web]   Response: 人字纹图案 平驳领 左胸嵌线口袋 西装马甲 男士 修身版型 双侧下方贴袋 尖角下摆 单排扣五粒纽扣 无袖 休闲
+2026-09-29 15:31:21 [INFO ] [deepseek_web]   Deleted: 0016_2590403509952732104584.jpg
+2026-09-29 15:31:26 [INFO ] [deepseek_web] [17/48] 45634男士哥特式蒸汽朋克系带复古马甲上衣背心
+2026-09-29 15:31:26 [INFO ] [deepseek_web]   Downloaded: 0017_2661012474101455310779.jpg
+2026-09-29 15:31:26 [INFO ] [deepseek_web]   Prefetching next image (18/48)
+2026-09-29 15:31:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:31:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:31:55 [INFO ] [deepseek_web]   Response: 金属扣眼系带门襟 V领 绒面质感 腰部横向拼接 马甲背心 男士 修身版型 无袖 纯色 哥特风格 蒸汽朋克风格 复古风格 45634
+2026-09-29 15:31:55 [INFO ] [deepseek_web]   Deleted: 0017_2661012474101455310779.jpg
+2026-09-29 15:32:00 [INFO ] [deepseek_web] [18/48] 男士新款马甲时尚中长款背心宫廷燕尾服
+2026-09-29 15:32:00 [INFO ] [deepseek_web]   Downloaded: 0018_9800353579916510090616.jpg
+2026-09-29 15:32:00 [INFO ] [deepseek_web]   Prefetching next image (19/48)
+2026-09-29 15:32:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:32:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:32:30 [INFO ] [deepseek_web]   Response: 佩斯利提花图案 双排六粒纽扣门襟 燕尾式中长下摆 翻领 燕尾马甲背心 男士 修身版型 无袖 宫廷风格 复古风格
+2026-09-29 15:32:30 [INFO ] [deepseek_web]   Deleted: 0018_9800353579916510090616.jpg
+2026-09-29 15:32:35 [INFO ] [deepseek_web] [19/48] 男士DIY反光马甲
+2026-09-29 15:32:35 [INFO ] [deepseek_web]   Downloaded: 0019_5261113004211317265308.jpg
+2026-09-29 15:32:35 [INFO ] [deepseek_web]   Prefetching next image (20/48)
+2026-09-29 15:32:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:32:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:33:04 [INFO ] [deepseek_web]   Response: 双水平反光条 前开襟 V领 无袖 平直下摆 反光安全背心 男士 常规版型 反光功能 安全作业 交通引导
+2026-09-29 15:33:04 [INFO ] [deepseek_web]   Deleted: 0019_5261113004211317265308.jpg
+2026-09-29 15:33:09 [INFO ] [deepseek_web] [20/48] 马甲
+2026-09-29 15:33:09 [INFO ] [deepseek_web]   Downloaded: 0020_5820539093147014699686.jpg
+2026-09-29 15:33:09 [INFO ] [deepseek_web]   Prefetching next image (21/48)
+2026-09-29 15:33:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:33:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:33:42 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 双侧拉链口袋 马甲背心 男士 常规版型 无袖 平直下摆 纯色外观 多色可选 无帽设计 常规衣长
+2026-09-29 15:33:42 [INFO ] [deepseek_web]   Deleted: 0020_5820539093147014699686.jpg
+2026-09-29 15:33:47 [INFO ] [deepseek_web] [21/48] 男士加厚加绒纯色摇粒绒背心马甲
+2026-09-29 15:33:47 [INFO ] [deepseek_web]   Downloaded: 0021_5170154311451574441629.jpg
+2026-09-29 15:33:47 [INFO ] [deepseek_web]   Prefetching next image (22/48)
+2026-09-29 15:33:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:33:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:34:16 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 仿羊羔绒内里 双侧斜插口袋 摇粒绒外层 加厚保暖设计 加绒马甲背心 男士 常规版型 无袖 纯色 秋冬
+2026-09-29 15:34:16 [INFO ] [deepseek_web]   Deleted: 0021_5170154311451574441629.jpg
+2026-09-29 15:34:21 [INFO ] [deepseek_web] [22/48] 男式条纹连帽马甲时尚都市大码
+2026-09-29 15:34:21 [INFO ] [deepseek_web]   Downloaded: 0022_7450810004171710103032.jpg
+2026-09-29 15:34:21 [INFO ] [deepseek_web]   Prefetching next image (23/48)
+2026-09-29 15:34:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:34:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:34:50 [INFO ] [deepseek_web]   Response: 横向绗缝纹理 袖窿包边设计 下摆松紧收口 连帽马甲外套 男士 宽松版型 无袖 全拉链门襟 双侧拉链口袋 纯色外观
+2026-09-29 15:34:50 [INFO ] [deepseek_web]   Deleted: 0022_7450810004171710103032.jpg
+2026-09-29 15:34:55 [INFO ] [deepseek_web] [23/48] 男士西装修身马甲背心
+2026-09-29 15:34:55 [INFO ] [deepseek_web]   Downloaded: 0023_8090943523171918724374.jpg
+2026-09-29 15:34:55 [INFO ] [deepseek_web]   Prefetching next image (24/48)
+2026-09-29 15:34:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:35:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:35:24 [INFO ] [deepseek_web]   Response: 佩斯利提花图案 单排四粒纽扣门襟 双侧嵌线口袋 尖角下摆 V领 无袖 西装马甲 男士 修身版型 正式场合 常规衣长
+2026-09-29 15:35:24 [INFO ] [deepseek_web]   Deleted: 0023_8090943523171918724374.jpg
+2026-09-29 15:35:29 [INFO ] [deepseek_web] [24/48] 男女同款新款轻薄立领保暖坎肩背心马甲上衣
+2026-09-29 15:35:29 [INFO ] [deepseek_web]   Downloaded: 0024_0931049368221018453259.jpg
+2026-09-29 15:35:29 [INFO ] [deepseek_web]   Prefetching next image (25/48)
+2026-09-29 15:35:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:35:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:35:59 [INFO ] [deepseek_web]   Response: 横向绗缝纹理 立领 全拉链门襟 双侧拉链口袋 轻薄绗缝马甲背心 中性 常规版型 无袖 纯色 保暖 常规衣长 平直下摆
+2026-09-29 15:35:59 [INFO ] [deepseek_web]   Deleted: 0024_0931049368221018453259.jpg
+2026-09-29 15:36:04 [INFO ] [deepseek_web] [25/48] 男士单排扣时尚撞色绣花西装马甲背心
+2026-09-29 15:36:04 [INFO ] [deepseek_web]   Downloaded: 0025_9690941588384015007337.jpg
+2026-09-29 15:36:04 [INFO ] [deepseek_web]   Prefetching next image (26/48)
+2026-09-29 15:36:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:36:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:36:33 [INFO ] [deepseek_web]   Response: 花卉刺绣装饰 绒面质感 单排多粒纽扣门襟 双侧大贴袋 尖角下摆 西装马甲 男士 修身版型 V领 无袖 纯色底 常规衣长
+2026-09-29 15:36:33 [INFO ] [deepseek_web]   Deleted: 0025_9690941588384015007337.jpg
+2026-09-29 15:36:38 [INFO ] [deepseek_web] [26/48] 男士秋冬季时尚休闲立领拉链口袋针织毛衣马甲
+2026-09-29 15:36:38 [INFO ] [deepseek_web]   Downloaded: 0026_6400454016645615273648.jpg
+2026-09-29 15:36:38 [INFO ] [deepseek_web]   Prefetching next image (27/48)
+2026-09-29 15:36:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:36:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:37:07 [INFO ] [deepseek_web]   Response: 混色针织纹理 立领 全拉链门襟 双侧拉链口袋 罗纹收口下摆 针织毛衣马甲 男士 常规版型 无袖 常规衣长 秋冬
+2026-09-29 15:37:07 [INFO ] [deepseek_web]   Deleted: 0026_6400454016645615273648.jpg
+2026-09-29 15:37:12 [INFO ] [deepseek_web] [27/48] 男士亮片西装马甲
+2026-09-29 15:37:12 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-29 15:37:17 [INFO ] [deepseek_web] [28/48] 男士针织背心马甲外套
+2026-09-29 15:37:19 [INFO ] [deepseek_web]   Downloaded: 0028_3370329506031376485302.jpg
+2026-09-29 15:37:19 [INFO ] [deepseek_web]   Prefetching next image (29/48)
+2026-09-29 15:37:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:37:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:37:48 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 撞色拉链边 单侧斜向拉链口袋 混色针织纹理 针织马甲背心 男士 常规版型 无袖 平直下摆 常规衣长
+2026-09-29 15:37:48 [INFO ] [deepseek_web]   Deleted: 0028_3370329506031376485302.jpg
+2026-09-29 15:37:53 [INFO ] [deepseek_web] [29/48] 夏季新款男士纯色西装马甲英伦修身大码坎肩正装背心
+2026-09-29 15:37:53 [INFO ] [deepseek_web]   Downloaded: 0029_2270439543141313656295.jpg
+2026-09-29 15:37:53 [INFO ] [deepseek_web]   Prefetching next image (30/48)
+2026-09-29 15:37:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:38:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:38:23 [INFO ] [deepseek_web]   Response: 左胸嵌线口袋 单侧链条装饰口袋 尖角下摆 V领 单排扣门襟 三粒纽扣 西装马甲 男士 修身版型 无袖 纯色外观 正装
+2026-09-29 15:38:23 [INFO ] [deepseek_web]   Deleted: 0029_2270439543141313656295.jpg
+2026-09-29 15:38:28 [INFO ] [deepseek_web] [30/48] SD1ADB2627531B男士秋冬休闲复古单排扣西装马甲
+2026-09-29 15:38:28 [INFO ] [deepseek_web]   Downloaded: 0030_1680424048582717274876.jpg
+2026-09-29 15:38:28 [INFO ] [deepseek_web]   Prefetching next image (31/48)
+2026-09-29 15:38:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:38:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:38:58 [INFO ] [deepseek_web]   Response: 皮革肩带装饰 金属D环扣 肩部皮革拼接 西装马甲 男士 修身版型 V领 单排扣门襟 五粒纽扣 嵌线口袋 尖角下摆 无袖 粗花呢质感 复古风格 SD1ADB262
+2026-09-29 15:38:58 [INFO ] [deepseek_web]   Deleted: 0030_1680424048582717274876.jpg
+2026-09-29 15:39:03 [INFO ] [deepseek_web] [31/48] 男士西装马甲
+2026-09-29 15:39:03 [INFO ] [deepseek_web]   Downloaded: 0031_1100551215483119788713.jpg
+2026-09-29 15:39:03 [INFO ] [deepseek_web]   Prefetching next image (32/48)
+2026-09-29 15:39:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:39:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:39:32 [INFO ] [deepseek_web]   Response: 闪光星纹图案 单排扣门襟 四粒纽扣 尖角下摆 V领 西装马甲 男士 修身版型 无袖 常规衣长 派对演出 舞台表演
+2026-09-29 15:39:32 [INFO ] [deepseek_web]   Deleted: 0031_1100551215483119788713.jpg
+2026-09-29 15:39:37 [INFO ] [deepseek_web] [32/48] 男士亮片印花西装马甲
+2026-09-29 15:39:37 [INFO ] [deepseek_web]   Downloaded: 0032_8251039454776330635469.jpg
+2026-09-29 15:39:37 [INFO ] [deepseek_web]   Prefetching next image (33/48)
+2026-09-29 15:39:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:39:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:40:06 [INFO ] [deepseek_web]   Response: 密集亮片全覆盖装饰 V领 单排扣门襟 尖角下摆 西装马甲 男士 修身版型 无袖 常规衣长 多色可选 节日派对 舞台表演
+2026-09-29 15:40:06 [INFO ] [deepseek_web]   Deleted: 0032_8251039454776330635469.jpg
+2026-09-29 15:40:11 [INFO ] [deepseek_web] [33/48] 男士麂皮绒印花西马甲
+2026-09-29 15:40:11 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-29 15:40:16 [INFO ] [deepseek_web] [34/48] 男士外贸马甲新款中世纪礼服马甲万圣节服装
+2026-09-29 15:40:19 [INFO ] [deepseek_web]   Downloaded: 0034_1031059296415556339759.jpg
+2026-09-29 15:40:19 [INFO ] [deepseek_web]   Prefetching next image (35/48)
+2026-09-29 15:40:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:40:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:40:48 [INFO ] [deepseek_web]   Response: 提花图案 平驳领 单排扣五粒纽扣 左胸嵌线口袋 尖角下摆 西装马甲 男士 修身版型 无袖 中世纪风格 万圣节服装
+2026-09-29 15:40:48 [INFO ] [deepseek_web]   Deleted: 0034_1031059296415556339759.jpg
+2026-09-29 15:40:53 [INFO ] [deepseek_web] [35/48] 男士单排扣马甲朋克1920S服装男士中世纪复古英伦马甲啤酒节背心
+2026-09-29 15:40:53 [INFO ] [deepseek_web]   Downloaded: 0035_8430417341563144457067.jpg
+2026-09-29 15:40:53 [INFO ] [deepseek_web]   Prefetching next image (36/48)
+2026-09-29 15:40:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:41:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:41:23 [INFO ] [deepseek_web]   Response: 千鸟格图案 左胸嵌线口袋 双侧下方嵌线口袋 西装马甲 男士 修身版型 单排多粒纽扣门襟 V领 无袖 尖角下摆 啤酒节
+2026-09-29 15:41:23 [INFO ] [deepseek_web]   Deleted: 0035_8430417341563144457067.jpg
+2026-09-29 15:41:28 [INFO ] [deepseek_web] [36/48] 德国啤酒节男士灯芯绒外套背心马甲
+2026-09-29 15:41:28 [INFO ] [deepseek_web]   Downloaded: 0036_6830525220051719048108.jpg
+2026-09-29 15:41:28 [INFO ] [deepseek_web]   Prefetching next image (37/48)
+2026-09-29 15:41:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:41:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:41:57 [INFO ] [deepseek_web]   Response: 左胸矩形贴章 双侧下摆矩形贴章 灯芯绒纹理 立领 单排扣门襟 五粒纽扣 西装马甲 男士 常规版型 无袖 尖角下摆 啤酒节
+2026-09-29 15:41:57 [INFO ] [deepseek_web]   Deleted: 0036_6830525220051719048108.jpg
+2026-09-29 15:42:02 [INFO ] [deepseek_web] [37/48] 德国啤酒节男士斜纹布外套背心马甲
+2026-09-29 15:42:02 [INFO ] [deepseek_web]   Downloaded: 0037_8891107272203134085798.jpg
+2026-09-29 15:42:02 [INFO ] [deepseek_web]   Prefetching next image (38/48)
+2026-09-29 15:42:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:42:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:45:29 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 15:45:29 [INFO ] [deepseek_web]   Deleted: 0037_8891107272203134085798.jpg
+2026-09-29 15:45:34 [INFO ] [deepseek_web] [38/48] 男士哥特式蒸汽朋克系带复古马甲上衣背心
+2026-09-29 15:45:37 [INFO ] [deepseek_web]   Downloaded: 0038_8990521158854697074704.jpg
+2026-09-29 15:45:37 [INFO ] [deepseek_web]   Prefetching next image (39/48)
+2026-09-29 15:45:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:45:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:49:04 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 15:49:04 [INFO ] [deepseek_web]   Deleted: 0038_8990521158854697074704.jpg
+2026-09-29 15:49:09 [INFO ] [deepseek_web] [39/48] 休闲商务单排扣马甲
+2026-09-29 15:49:10 [INFO ] [deepseek_web]   Downloaded: 0039_4630540204971613030866.jpg
+2026-09-29 15:49:10 [INFO ] [deepseek_web]   Prefetching next image (40/48)
+2026-09-29 15:49:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:49:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:52:37 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 15:52:37 [INFO ] [deepseek_web]   Deleted: 0039_4630540204971613030866.jpg
+2026-09-29 15:52:42 [INFO ] [deepseek_web] [40/48] 男士西装马甲韩版修身西服马夹背心秋冬款休闲英伦风婚礼小马甲男
+2026-09-29 15:52:45 [INFO ] [deepseek_web]   Downloaded: 0040_8210419540554515620191.jpg
+2026-09-29 15:52:45 [INFO ] [deepseek_web]   Prefetching next image (41/48)
+2026-09-29 15:52:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:52:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:56:12 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 15:56:12 [INFO ] [deepseek_web]   Deleted: 0040_8210419540554515620191.jpg
+2026-09-29 15:56:17 [INFO ] [deepseek_web] [41/48] 男士针织马甲背心
+2026-09-29 15:56:19 [INFO ] [deepseek_web]   Downloaded: 0041_4021033443776213627142.jpg
+2026-09-29 15:56:19 [INFO ] [deepseek_web]   Prefetching next image (42/48)
+2026-09-29 15:56:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 15:56:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 15:59:45 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 15:59:45 [INFO ] [deepseek_web]   Deleted: 0041_4021033443776213627142.jpg
+2026-09-29 15:59:50 [INFO ] [deepseek_web] [42/48] 薄款男士马甲户外摄影登山钓鱼马夹工程救援工作服
+2026-09-29 15:59:53 [INFO ] [deepseek_web]   Downloaded: 0042_6030432400573033546788.jpg
+2026-09-29 15:59:53 [INFO ] [deepseek_web]   Prefetching next image (43/48)
+2026-09-29 15:59:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:00:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:03:19 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-29 16:03:19 [INFO ] [deepseek_web]   Deleted: 0042_6030432400573033546788.jpg
+2026-09-29 16:03:24 [INFO ] [deepseek_web] [43/48] 男士慕尼黑啤酒节背心印花马甲
+2026-09-29 16:03:27 [INFO ] [deepseek_web]   Downloaded: 0043_8191055563251320761166.jpg
+2026-09-29 16:03:27 [INFO ] [deepseek_web]   Prefetching next image (44/48)
+2026-09-29 16:03:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:03:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:03:56 [INFO ] [deepseek_web]   Response: 领口花卉刺绣装饰 左胸嵌线口袋 双侧下方嵌线口袋 立领 单排扣门襟 多粒纽扣 尖角下摆 西装马甲 男士 修身版型 无袖 常规衣长 啤酒节
+2026-09-29 16:03:56 [INFO ] [deepseek_web]   Deleted: 0043_8191055563251320761166.jpg
+2026-09-29 16:04:01 [INFO ] [deepseek_web] [44/48] 男士慕尼黑啤酒节背心印花马甲
+2026-09-29 16:04:01 [INFO ] [deepseek_web]   Downloaded: 0044_0320304172442414527009.jpg
+2026-09-29 16:04:01 [INFO ] [deepseek_web]   Prefetching next image (45/48)
+2026-09-29 16:04:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:04:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:04:30 [INFO ] [deepseek_web]   Response: 领口花卉刺绣装饰 左胸嵌线口袋 双侧下方嵌线口袋 立领 单排扣门襟 多粒纽扣 尖角下摆 西装马甲 男士 修身版型 无袖 慕尼黑啤酒节
+2026-09-29 16:04:30 [INFO ] [deepseek_web]   Deleted: 0044_0320304172442414527009.jpg
+2026-09-29 16:04:35 [INFO ] [deepseek_web] [45/48] 男士慕尼黑啤酒节背心印花马甲
+2026-09-29 16:04:35 [INFO ] [deepseek_web]   Downloaded: 0045_8840238408392291170358.jpg
+2026-09-29 16:04:35 [INFO ] [deepseek_web]   Prefetching next image (46/48)
+2026-09-29 16:04:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:04:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:05:04 [INFO ] [deepseek_web]   Response: 领口花卉刺绣装饰 左胸嵌线口袋 双侧下方嵌线口袋 立领 单排扣门襟 多粒纽扣 尖角下摆 传统马甲 男士 修身版型 无袖 啤酒节
+2026-09-29 16:05:04 [INFO ] [deepseek_web]   Deleted: 0045_8840238408392291170358.jpg
+2026-09-29 16:05:09 [INFO ] [deepseek_web] [46/48] 男士印花背心单排扣西装马甲
+2026-09-29 16:05:09 [INFO ] [deepseek_web]   Downloaded: 0046_9691020246826266588856.jpg
+2026-09-29 16:05:09 [INFO ] [deepseek_web]   Prefetching next image (47/48)
+2026-09-29 16:05:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:05:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:05:39 [INFO ] [deepseek_web]   Response: 抽象几何印花图案 单排三粒纽扣门襟 尖角下摆 西装马甲 男士 修身版型 V领 无袖 平直肩线 常规衣长 无口袋设计
+2026-09-29 16:05:39 [INFO ] [deepseek_web]   Deleted: 0046_9691020246826266588856.jpg
+2026-09-29 16:05:44 [INFO ] [deepseek_web] [47/48] 男士秋冬季时尚休闲套头打底针织毛衣马甲
+2026-09-29 16:05:44 [INFO ] [deepseek_web]   Downloaded: 0047_7860357423224422247826.jpg
+2026-09-29 16:05:44 [INFO ] [deepseek_web]   Prefetching next image (48/48)
+2026-09-29 16:05:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:05:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:06:13 [INFO ] [deepseek_web]   Response: 菱形格纹图案 V领 罗纹收口下摆 罗纹收口袖窿 套头无门襟 无口袋设计 针织毛衣马甲 男士 常规版型 无袖 秋冬
+2026-09-29 16:06:13 [INFO ] [deepseek_web]   Deleted: 0047_7860357423224422247826.jpg
+2026-09-29 16:06:18 [INFO ] [deepseek_web] [48/48] 男士秋冬季时尚休闲套头V领拼色针织毛衣马甲织毛衣马甲
+2026-09-29 16:06:18 [INFO ] [deepseek_web]   Downloaded: 0048_0880459147682020811180.jpg
+2026-09-29 16:06:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-29 16:06:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-29 16:06:51 [INFO ] [deepseek_web]   Response: 几何菱形拼接图案 单排六粒纽扣门襟 双侧嵌线口袋 罗纹收口下摆 针织开衫马甲 男士 常规版型 V领 无袖 秋冬
+2026-09-29 16:06:51 [INFO ] [deepseek_web]   Deleted: 0048_0880459147682020811180.jpg
+2026-09-29 16:06:51 [INFO ] [deepseek_web] 
+2026-09-29 16:06:51 [INFO ] [deepseek_web] Retry round 1: 9 failed item(s)
+2026-09-29 16:06:56 [INFO ] [deepseek_web]   Retry [13]: 男士啤酒节特色服饰立领背心马甲外套
+2026-09-29 16:07:15 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:07:33 [INFO ] [deepseek_web]     OK: 竖条纹纹理 立领 单排六粒纽扣门襟 左胸嵌线口袋 双侧下摆嵌线口袋 尖角下摆 传统马甲背心 男士 修身版型 无袖 啤酒节
+2026-09-29 16:07:36 [INFO ] [deepseek_web]   Retry [27]: 男士亮片西装马甲
+2026-09-29 16:07:55 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:08:13 [INFO ] [deepseek_web]     OK: 亮片全覆盖装饰 V领 单排三粒纽扣门襟 无袖 尖角下摆 西装马甲 男士 常规版型 多色可选 派对演出 舞台表演
+2026-09-29 16:08:16 [INFO ] [deepseek_web]   Retry [33]: 男士麂皮绒印花西马甲
+2026-09-29 16:08:34 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:08:52 [INFO ] [deepseek_web]     OK: 斑驳印花纹理 双排六粒纽扣门襟 左胸嵌线口袋 双侧下方嵌线口袋 平驳领 尖角下摆 西装马甲 男士 常规版型 无袖 麂皮绒质感
+2026-09-29 16:08:55 [INFO ] [deepseek_web]   Retry [37]: 德国啤酒节男士斜纹布外套背心马甲
+2026-09-29 16:09:13 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:09:31 [INFO ] [deepseek_web]     OK: 斜纹布纹理 左胸矩形嵌线装饰 双侧下方矩形嵌线装饰 立领 单排扣门襟 多粒纽扣 尖角下摆 传统马甲背心 男士 修身版型 无袖 啤酒节
+2026-09-29 16:09:34 [INFO ] [deepseek_web]   Retry [38]: 男士哥特式蒸汽朋克系带复古马甲上衣背心
+2026-09-29 16:09:39 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-29 16:09:42 [INFO ] [deepseek_web]   Retry [39]: 休闲商务单排扣马甲
+2026-09-29 16:10:00 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:10:18 [INFO ] [deepseek_web]     OK: 左胸嵌线口袋 双侧翻盖口袋 尖角下摆 单排扣门襟 四粒纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外观 商务休闲
+2026-09-29 16:10:21 [INFO ] [deepseek_web]   Retry [40]: 男士西装马甲韩版修身西服马夹背心秋冬款休闲英伦风婚礼小马甲男
+2026-09-29 16:10:39 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:10:57 [INFO ] [deepseek_web]     OK: 左胸嵌线口袋 双侧翻盖口袋 尖角下摆 单排扣门襟 四粒纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外观 婚礼
+2026-09-29 16:11:00 [INFO ] [deepseek_web]   Retry [41]: 男士针织马甲背心
+2026-09-29 16:11:18 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:11:36 [INFO ] [deepseek_web]     OK: V领 单排扣门襟 罗纹收口下摆 双侧嵌线口袋 罗纹收口袖窿 针织马甲背心 男士 常规版型 无袖 纯色
+2026-09-29 16:11:39 [INFO ] [deepseek_web]   Retry [42]: 薄款男士马甲户外摄影登山钓鱼马夹工程救援工作服
+2026-09-29 16:11:57 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:12:15 [INFO ] [deepseek_web]     OK: 立领 全拉链门襟 双侧拉链口袋 网眼内里 薄款 户外工作马甲背心 男士 常规版型 无袖 平直下摆 户外摄影 登山 钓鱼 工程救援
+2026-09-29 16:12:18 [INFO ] [deepseek_web] 
+2026-09-29 16:12:18 [INFO ] [deepseek_web] Retry round 2: 1 failed item(s)
+2026-09-29 16:12:23 [INFO ] [deepseek_web]   Retry [38]: 男士哥特式蒸汽朋克系带复古马甲上衣背心
+2026-09-29 16:12:40 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-29 16:12:58 [INFO ] [deepseek_web]     OK: 金属扣眼系带门襟 绒面质感 腰部横向拼接 平直下摆 V领 无袖 系带马甲背心 男士 常规版型 哥特式 蒸汽朋克 复古风格
+2026-09-29 16:13:02 [INFO ] [deepseek_web] ==================================================
+2026-09-29 16:13:02 [INFO ] [deepseek_web] Done: 48 success, 0 failed → optimize_title
+2026-09-29 16:13:03 [INFO ] [title_workflow] Optimization complete: 48 titles
+2026-09-29 16:13:09 [INFO ] [title_workflow] Written 48 optimized titles to column H (8)
+2026-09-29 16:13:09 [INFO ] [title_workflow] Done: 9.22v1.xlsx
+2026-09-29 16:13:10 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-29 16:13:10 [INFO ] [jenkins] 
+2026-09-29 16:13:10 [INFO ] [jenkins] ==================================================
+2026-09-29 16:13:10 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-29 16:13:10 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-29 16:13:10 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-29 16:13:10 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-29 16:13:10 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

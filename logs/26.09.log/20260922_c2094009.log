@@ -1,0 +1,776 @@
+2026-09-22 11:46:13 [INFO ] [jenkins] ==================================================
+2026-09-22 11:46:13 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-22 11:46:13 [INFO ] [jenkins] ==================================================
+2026-09-22 11:46:13 [INFO ] [jenkins] 
+2026-09-22 11:46:13 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-22 11:46:13 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:46:13 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-22 11:46:13 [INFO ] [jenkins] 
+2026-09-22 11:46:13 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-22 11:46:13 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:46:13 [INFO ] [preprocess] Preprocessing 11 file(s) with 1 step(s)
+2026-09-22 11:46:13 [INFO ] [preprocess] [listbyM@1.xlsx]
+2026-09-22 11:46:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:14 [INFO ] [preprocess]   [listbyM@1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:14 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:14 [INFO ] [preprocess] [listbyM@2.xlsx]
+2026-09-22 11:46:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:14 [INFO ] [preprocess]   [listbyM@2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:14 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:14 [INFO ] [preprocess] [listbyM@3.xlsx]
+2026-09-22 11:46:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:15 [INFO ] [preprocess]   [listbyM@3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:15 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:15 [INFO ] [preprocess] [p1.xlsx]
+2026-09-22 11:46:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:15 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:16 [INFO ] [preprocess]   [p1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:16 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:16 [INFO ] [preprocess] [p2.xlsx]
+2026-09-22 11:46:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:17 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:19 [INFO ] [preprocess]   [p2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:19 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:19 [INFO ] [preprocess] [p3.xlsx]
+2026-09-22 11:46:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:19 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:21 [INFO ] [preprocess]   [p3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:21 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:22 [INFO ] [preprocess] [p4.xlsx]
+2026-09-22 11:46:22 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:22 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:24 [INFO ] [preprocess]   [p4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:24 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:25 [INFO ] [preprocess] [p5.xlsx]
+2026-09-22 11:46:25 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:25 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:27 [INFO ] [preprocess]   [p5.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:27 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:28 [INFO ] [preprocess] [p6.xlsx]
+2026-09-22 11:46:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:28 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:29 [INFO ] [preprocess]   [p6.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:29 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:29 [INFO ] [preprocess] [p7.xlsx]
+2026-09-22 11:46:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:30 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:31 [INFO ] [preprocess]   [p7.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:31 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:32 [INFO ] [preprocess] [p8.xlsx]
+2026-09-22 11:46:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:46:32 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:46:34 [INFO ] [preprocess]   [p8.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:46:34 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:46:34 [INFO ] [preprocess] Preprocessing complete
+2026-09-22 11:46:35 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-22 11:46:35 [INFO ] [jenkins] 
+2026-09-22 11:46:35 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-22 11:46:35 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:46:35 [INFO ] [main] Log file: 20260922_c2094009.log
+2026-09-22 11:46:35 [INFO ] [main] Found 11 file(s):
+2026-09-22 11:46:35 [INFO ] [main]   listbyM@1.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   listbyM@2.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   listbyM@3.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p1.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p2.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p3.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p4.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p5.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p6.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p7.xlsx
+2026-09-22 11:46:35 [INFO ] [main]   p8.xlsx
+2026-09-22 11:46:35 [INFO ] [main] Output: 9.15v1_de.xlsx
+2026-09-22 11:46:35 [INFO ] [main] ==================================================
+2026-09-22 11:46:54 [INFO ] [main] Merged 11 files, 7694 images total
+2026-09-22 11:46:54 [INFO ] [main] Deleted 11 source file(s)
+2026-09-22 11:46:57 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-22 11:46:57 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_2]: 65 rows, 123 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_3]: 64 rows, 119 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_4]: 358 rows, 736 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_5]: 526 rows, 994 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_6]: 605 rows, 1143 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_7]: 623 rows, 1008 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_8]: 531 rows, 854 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_9]: 381 rows, 614 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_10]: 450 rows, 816 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Sheet [Sheet0_11]: 561 rows, 1162 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Merged 11 sheets -> 1, 4164 data rows, 7569 images
+2026-09-22 11:47:14 [INFO ] [pipeline] [2/12] validate
+2026-09-22 11:47:14 [INFO ] [pipeline]   Validated: 4229 rows, 27 cols (expect ~32)
+2026-09-22 11:47:14 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-22 11:47:14 [INFO ] [pipeline]   Backed up 7694 images
+2026-09-22 11:47:14 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-22 11:47:14 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-22 11:47:14 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-22 11:47:14 [INFO ] [pipeline]   Restored 7694 images with adjusted anchors
+2026-09-22 11:47:14 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-22 11:47:14 [INFO ] [pipeline]   Column 2: 4229 IDs generated
+2026-09-22 11:47:14 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-22 11:47:14 [INFO ] [pipeline]   Column 3: 4229 cells filled
+2026-09-22 11:47:14 [INFO ] [pipeline] [6/12] map_colors
+2026-09-22 11:47:14 [INFO ] [pipeline]   Column 11: 4169 cells mapped, 60 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-22 11:47:14 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-22 11:47:14 [INFO ] [pipeline]   Column 12: 4169 mapped, 60 cleared (col A has fill), 0 no match (recorded)
+2026-09-22 11:47:14 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-22 11:47:14 [INFO ] [pipeline]   Mirror copy: 21031 cells written
+2026-09-22 11:47:14 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-22 11:47:14 [INFO ] [pipeline]   Column 45: 4229 cells copied from col 13
+2026-09-22 11:47:14 [INFO ] [pipeline] [10/12] calc_price
+2026-09-22 11:47:15 [INFO ] [pipeline]   Columns 46-49: 4229 rows calculated
+2026-09-22 11:47:15 [INFO ] [pipeline] [11/12] format_cells
+2026-09-22 11:47:15 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-22 11:47:15 [INFO ] [pipeline]   Formatted 4229 rows: h=50, align=left/center
+2026-09-22 11:47:15 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-22 11:47:15 [INFO ] [pipeline] [12/12] finalize
+2026-09-22 11:47:15 [INFO ] [pipeline]   Done: 4229 rows x 49 cols (target: 49)
+2026-09-22 11:47:15 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:47:20 [INFO ] [main] Size: 4229 rows x 49 cols
+2026-09-22 11:47:20 [INFO ] [main] ==================================================
+2026-09-22 11:47:20 [INFO ] [main] Done: 9.15v1_de.xlsx
+2026-09-22 11:47:20 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-22 11:47:20 [INFO ] [jenkins] 
+2026-09-22 11:47:20 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-22 11:47:20 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:47:21 [INFO ] [color_size_main] Source: 9.15v1_de.xlsx
+2026-09-22 11:47:24 [INFO ] [color_size_main] Extracted: 4169 data lines + 60 separators → check_.txt
+2026-09-22 11:47:24 [INFO ] [color_size_main] Running: process.py
+2026-09-22 11:47:24 [INFO ] [color_size_deal] Groups: 60, lines: 4169 (file: 4229)
+2026-09-22 11:47:24 [INFO ] [color_size_deal] Prefixes: {'01': 666, '02': 384, '03': 271, '04': 208, '05': 144, '06': 109, '07': 89, '08': 69, '09': 43, '10': 22, '11': 22, '12': 22, '13': 14, '14': 14, '15': 7, '16': 7, '17': 7, '18': 7, '19': 7, '20': 7}
+2026-09-22 11:47:24 [INFO ] [color_size_deal] Done.
+2026-09-22 11:47:24 [INFO ] [color_size_main] Processing write-back: 4229 lines
+2026-09-22 11:47:32 [INFO ] [color_size_main] Write-back: 2179 written, 2050 unchanged → 9.15v1_de.xlsx
+2026-09-22 11:47:32 [INFO ] [color_size_main] Done.
+2026-09-22 11:47:33 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-22 11:47:33 [INFO ] [jenkins] 
+2026-09-22 11:47:33 [INFO ] [jenkins] ==================================================
+2026-09-22 11:47:33 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-22 11:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-22 11:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-22 11:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-22 11:47:33 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-22 11:49:13 [INFO ] [jenkins] ==================================================
+2026-09-22 11:49:13 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-22 11:49:13 [INFO ] [jenkins] ==================================================
+2026-09-22 11:49:13 [INFO ] [jenkins] 
+2026-09-22 11:49:13 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-22 11:49:13 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:49:13 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-22 11:49:13 [INFO ] [jenkins] 
+2026-09-22 11:49:13 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-22 11:49:13 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:49:13 [INFO ] [preprocess] Preprocessing 11 file(s) with 1 step(s)
+2026-09-22 11:49:13 [INFO ] [preprocess] [listbyM@1.xlsx]
+2026-09-22 11:49:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:14 [INFO ] [preprocess]   [listbyM@1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:14 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:14 [INFO ] [preprocess] [listbyM@2.xlsx]
+2026-09-22 11:49:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:14 [INFO ] [preprocess]   [listbyM@2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:14 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:14 [INFO ] [preprocess] [listbyM@3.xlsx]
+2026-09-22 11:49:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:14 [INFO ] [preprocess]   [listbyM@3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:14 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:14 [INFO ] [preprocess] [p1.xlsx]
+2026-09-22 11:49:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:15 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:16 [INFO ] [preprocess]   [p1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:16 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:16 [INFO ] [preprocess] [p2.xlsx]
+2026-09-22 11:49:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:16 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:18 [INFO ] [preprocess]   [p2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:18 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:19 [INFO ] [preprocess] [p3.xlsx]
+2026-09-22 11:49:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:19 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:21 [INFO ] [preprocess]   [p3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:21 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:22 [INFO ] [preprocess] [p4.xlsx]
+2026-09-22 11:49:22 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:22 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:24 [INFO ] [preprocess]   [p4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:24 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:25 [INFO ] [preprocess] [p5.xlsx]
+2026-09-22 11:49:25 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:25 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:27 [INFO ] [preprocess]   [p5.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:27 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:27 [INFO ] [preprocess] [p6.xlsx]
+2026-09-22 11:49:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:28 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:29 [INFO ] [preprocess]   [p6.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:29 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:29 [INFO ] [preprocess] [p7.xlsx]
+2026-09-22 11:49:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:29 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:31 [INFO ] [preprocess]   [p7.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:31 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:31 [INFO ] [preprocess] [p8.xlsx]
+2026-09-22 11:49:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-22 11:49:32 [INFO ] [pipeline] [1/1] remove_header
+2026-09-22 11:49:34 [INFO ] [preprocess]   [p8.xlsx] Sheet [Sheet0]: header row removed
+2026-09-22 11:49:34 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:49:34 [INFO ] [preprocess] Preprocessing complete
+2026-09-22 11:49:34 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-22 11:49:34 [INFO ] [jenkins] 
+2026-09-22 11:49:34 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-22 11:49:34 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:49:35 [INFO ] [main] Log file: 20260922_c2094009.log
+2026-09-22 11:49:35 [INFO ] [main] Found 11 file(s):
+2026-09-22 11:49:35 [INFO ] [main]   listbyM@1.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   listbyM@2.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   listbyM@3.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p1.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p2.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p3.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p4.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p5.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p6.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p7.xlsx
+2026-09-22 11:49:35 [INFO ] [main]   p8.xlsx
+2026-09-22 11:49:35 [INFO ] [main] Output: 9.15v1_fr.xlsx
+2026-09-22 11:49:35 [INFO ] [main] ==================================================
+2026-09-22 11:49:54 [INFO ] [main] Merged 11 files, 7694 images total
+2026-09-22 11:49:54 [INFO ] [main] Deleted 11 source file(s)
+2026-09-22 11:49:56 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-22 11:49:56 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_2]: 65 rows, 123 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_3]: 64 rows, 119 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_4]: 358 rows, 736 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_5]: 526 rows, 994 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_6]: 605 rows, 1143 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_7]: 623 rows, 1008 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_8]: 531 rows, 854 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_9]: 381 rows, 614 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_10]: 450 rows, 816 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Sheet [Sheet0_11]: 561 rows, 1162 images
+2026-09-22 11:50:16 [INFO ] [pipeline]   Merged 11 sheets -> 1, 4164 data rows, 7569 images
+2026-09-22 11:50:16 [INFO ] [pipeline] [2/12] validate
+2026-09-22 11:50:16 [INFO ] [pipeline]   Validated: 4229 rows, 27 cols (expect ~32)
+2026-09-22 11:50:16 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-22 11:50:17 [INFO ] [pipeline]   Backed up 7694 images
+2026-09-22 11:50:17 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-22 11:50:17 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-22 11:50:17 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-22 11:50:17 [INFO ] [pipeline]   Restored 7694 images with adjusted anchors
+2026-09-22 11:50:17 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-22 11:50:17 [INFO ] [pipeline]   Column 2: 4229 IDs generated
+2026-09-22 11:50:17 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-22 11:50:17 [INFO ] [pipeline]   Column 3: 4229 cells filled
+2026-09-22 11:50:17 [INFO ] [pipeline] [6/12] map_colors
+2026-09-22 11:50:17 [INFO ] [pipeline]   Column 11: 4169 cells mapped, 60 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-22 11:50:17 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-22 11:50:17 [INFO ] [pipeline]   Column 12: 4169 mapped, 60 cleared (col A has fill), 0 no match (recorded)
+2026-09-22 11:50:17 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-22 11:50:17 [INFO ] [pipeline]   Mirror copy: 21031 cells written
+2026-09-22 11:50:17 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-22 11:50:17 [INFO ] [pipeline]   Column 45: 4229 cells copied from col 13
+2026-09-22 11:50:17 [INFO ] [pipeline] [10/12] calc_price
+2026-09-22 11:50:17 [INFO ] [pipeline]   Columns 46-49: 4229 rows calculated
+2026-09-22 11:50:17 [INFO ] [pipeline] [11/12] format_cells
+2026-09-22 11:50:18 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-22 11:50:18 [INFO ] [pipeline]   Formatted 4229 rows: h=50, align=left/center
+2026-09-22 11:50:18 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-22 11:50:18 [INFO ] [pipeline] [12/12] finalize
+2026-09-22 11:50:18 [INFO ] [pipeline]   Done: 4229 rows x 49 cols (target: 49)
+2026-09-22 11:50:18 [INFO ] [pipeline] Pipeline complete
+2026-09-22 11:50:24 [INFO ] [main] Size: 4229 rows x 49 cols
+2026-09-22 11:50:24 [INFO ] [main] ==================================================
+2026-09-22 11:50:24 [INFO ] [main] Done: 9.15v1_fr.xlsx
+2026-09-22 11:50:24 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-22 11:50:24 [INFO ] [jenkins] 
+2026-09-22 11:50:24 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-22 11:50:24 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:50:27 [INFO ] [color_size_main] Source: 9.15v1_fr.xlsx
+2026-09-22 11:50:31 [INFO ] [color_size_main] Extracted: 4169 data lines + 60 separators → check_.txt
+2026-09-22 11:50:31 [INFO ] [color_size_main] Running: process.py
+2026-09-22 11:50:32 [INFO ] [color_size_deal] Groups: 60, lines: 4169 (file: 4229)
+2026-09-22 11:50:32 [INFO ] [color_size_deal] Prefixes: {'01': 666, '02': 384, '03': 271, '04': 208, '05': 144, '06': 109, '07': 89, '08': 69, '09': 43, '10': 22, '11': 22, '12': 22, '13': 14, '14': 14, '15': 7, '16': 7, '17': 7, '18': 7, '19': 7, '20': 7}
+2026-09-22 11:50:32 [INFO ] [color_size_deal] Done.
+2026-09-22 11:50:32 [INFO ] [color_size_main] Processing write-back: 4229 lines
+2026-09-22 11:50:41 [INFO ] [color_size_main] Write-back: 2179 written, 2050 unchanged → 9.15v1_fr.xlsx
+2026-09-22 11:50:41 [INFO ] [color_size_main] Done.
+2026-09-22 11:50:41 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-22 11:50:41 [INFO ] [jenkins] 
+2026-09-22 11:50:41 [INFO ] [jenkins] ==================================================
+2026-09-22 11:50:41 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-22 11:50:41 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-22 11:50:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-22 11:50:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-22 11:50:41 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-22 11:54:09 [INFO ] [jenkins] ==================================================
+2026-09-22 11:54:09 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-22 11:54:09 [INFO ] [jenkins] ==================================================
+2026-09-22 11:54:09 [INFO ] [jenkins] 
+2026-09-22 11:54:09 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-22 11:54:09 [INFO ] [jenkins] ------------------------------
+2026-09-22 11:54:09 [INFO ] [title_workflow] Source: 9.15v1.xlsx
+2026-09-22 11:54:12 [INFO ] [title_workflow] Extracted 60 titles + 60 links
+2026-09-22 11:54:12 [INFO ] [title_workflow] Written: origin_title (60) + origin_link (60)
+2026-09-22 11:54:12 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-22 11:54:12 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-22 11:54:13 [INFO ] [deepseek_web] Opening DeepSeek web (60 titles)...
+2026-09-22 11:54:13 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-22 11:54:33 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-22 11:54:36 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-22 11:54:36 [INFO ] [deepseek_web] [1/60] 男士印花灯芯绒西装
+2026-09-22 11:54:38 [INFO ] [deepseek_web]   Downloaded: 0001_9030345341332687241129.jpg
+2026-09-22 11:54:38 [INFO ] [deepseek_web]   Prefetching next image (2/60)
+2026-09-22 11:54:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:54:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:55:07 [INFO ] [deepseek_web]   Response: 骷髅印花 花卉刺绣 拼接结构 吉他图案 灯芯绒西装外套 男士 常规版型 西装领 单排扣 翻盖口袋 长袖
+2026-09-22 11:55:07 [INFO ] [deepseek_web]   Deleted: 0001_9030345341332687241129.jpg
+2026-09-22 11:55:12 [INFO ] [deepseek_web] [2/60] 男士印花灯芯绒西装
+2026-09-22 11:55:12 [INFO ] [deepseek_web]   Downloaded: 0002_8521052508501114936114.jpg
+2026-09-22 11:55:12 [INFO ] [deepseek_web]   Prefetching next image (3/60)
+2026-09-22 11:55:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:55:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:55:42 [INFO ] [deepseek_web]   Response: 十字架印花 南瓜印花 蝙蝠印花 花卉刺绣 藤蔓图案 灯芯绒西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 11:55:42 [INFO ] [deepseek_web]   Deleted: 0002_8521052508501114936114.jpg
+2026-09-22 11:55:47 [INFO ] [deepseek_web] [3/60] 男士印花灯芯绒西装
+2026-09-22 11:55:47 [INFO ] [deepseek_web]   Downloaded: 0003_9030345341332687241129.jpg
+2026-09-22 11:55:47 [INFO ] [deepseek_web]   Prefetching next image (4/60)
+2026-09-22 11:55:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:55:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:56:17 [INFO ] [deepseek_web]   Response: 骷髅图案 花卉刺绣 吉他图案 爱心图案 蜡烛图案 拼接结构 灯芯绒西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 11:56:17 [INFO ] [deepseek_web]   Deleted: 0003_9030345341332687241129.jpg
+2026-09-22 11:56:22 [INFO ] [deepseek_web] [4/60] 男士印花灯芯绒西装
+2026-09-22 11:56:22 [INFO ] [deepseek_web]   Downloaded: 0004_6201110416501367261414.jpg
+2026-09-22 11:56:22 [INFO ] [deepseek_web]   Prefetching next image (5/60)
+2026-09-22 11:56:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:56:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:56:51 [INFO ] [deepseek_web]   Response: 骷髅印花 花卉刺绣 吉他图案 爱心图案 蜡烛图案 拼接结构 灯芯绒西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 11:56:51 [INFO ] [deepseek_web]   Deleted: 0004_6201110416501367261414.jpg
+2026-09-22 11:56:56 [INFO ] [deepseek_web] [5/60] 男士印花灯芯绒西装
+2026-09-22 11:56:56 [INFO ] [deepseek_web]   Downloaded: 0005_9030345341332687241129.jpg
+2026-09-22 11:56:56 [INFO ] [deepseek_web]   Prefetching next image (6/60)
+2026-09-22 11:56:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:57:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:57:25 [INFO ] [deepseek_web]   Response: 拼图拼接结构 骷髅印花 花卉印花 吉他图案 爱心图案 灯芯绒西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 11:57:25 [INFO ] [deepseek_web]   Deleted: 0005_9030345341332687241129.jpg
+2026-09-22 11:57:30 [INFO ] [deepseek_web] [6/60] 男士万圣节印花休闲外套
+2026-09-22 11:57:30 [INFO ] [deepseek_web]   Downloaded: 0006_6791251589552397770764.jpg
+2026-09-22 11:57:30 [INFO ] [deepseek_web]   Prefetching next image (7/60)
+2026-09-22 11:57:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:57:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:57:59 [INFO ] [deepseek_web]   Response: 做旧磨损效果 破洞修补细节 缝线拼接结构 万圣节主题印花 平驳领单排扣夹克 男士 常规版型 长袖 斜插口袋
+2026-09-22 11:57:59 [INFO ] [deepseek_web]   Deleted: 0006_6791251589552397770764.jpg
+2026-09-22 11:58:04 [INFO ] [deepseek_web] [7/60] 男士万圣节印花西装
+2026-09-22 11:58:04 [INFO ] [deepseek_web]   Downloaded: 0007_2610718376771098160947.jpg
+2026-09-22 11:58:04 [INFO ] [deepseek_web]   Prefetching next image (8/60)
+2026-09-22 11:58:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:58:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:58:39 [INFO ] [deepseek_web]   Response: 3D数码印花 骷髅图案 火焰图案 肋骨图案 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣门襟 翻盖口袋 长袖
+2026-09-22 11:58:39 [INFO ] [deepseek_web]   Deleted: 0007_2610718376771098160947.jpg
+2026-09-22 11:58:44 [INFO ] [deepseek_web] [8/60] 万圣节男士骷髅西装
+2026-09-22 11:58:44 [INFO ] [deepseek_web]   Downloaded: 0008_7490103169553613047600.jpg
+2026-09-22 11:58:44 [INFO ] [deepseek_web]   Prefetching next image (9/60)
+2026-09-22 11:58:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:58:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:59:13 [INFO ] [deepseek_web]   Response: 骷髅骨骼印花 几何线条图案 脊椎图案门襟 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 11:59:13 [INFO ] [deepseek_web]   Deleted: 0008_7490103169553613047600.jpg
+2026-09-22 11:59:18 [INFO ] [deepseek_web] [9/60] 男士万圣节灯芯绒夹克
+2026-09-22 11:59:18 [INFO ] [deepseek_web]   Downloaded: 0009_4041009489304520397342.jpg
+2026-09-22 11:59:18 [INFO ] [deepseek_web]   Prefetching next image (10/60)
+2026-09-22 11:59:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 11:59:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 11:59:49 [INFO ] [deepseek_web]   Response: 满印蜘蛛网图案 背部满印设计 灯芯绒纹理 万圣节主题元素 男士灯芯绒夹克 常规版型 平驳领 长袖设计 直筒下摆
+2026-09-22 11:59:49 [INFO ] [deepseek_web]   Deleted: 0009_4041009489304520397342.jpg
+2026-09-22 11:59:54 [INFO ] [deepseek_web] [10/60] 男士万圣节搞怪趣味印花西装外套
+2026-09-22 11:59:54 [INFO ] [deepseek_web]   Downloaded: 0010_9480338271722214989608.jpg
+2026-09-22 11:59:54 [INFO ] [deepseek_web]   Prefetching next image (11/60)
+2026-09-22 11:59:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:00:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:00:24 [INFO ] [deepseek_web]   Response: 万圣节主题印花 花卉图案 玫瑰图案 满印设计 平驳领 单排扣门襟 双侧翻盖口袋 西装外套 男士 常规版型 长袖
+2026-09-22 12:00:24 [INFO ] [deepseek_web]   Deleted: 0010_9480338271722214989608.jpg
+2026-09-22 12:00:29 [INFO ] [deepseek_web] [11/60] 男士血迹印花款西装外套
+2026-09-22 12:00:29 [INFO ] [deepseek_web]   Downloaded: 0011_2130840435932631573139.jpg
+2026-09-22 12:00:29 [INFO ] [deepseek_web]   Prefetching next image (12/60)
+2026-09-22 12:00:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:00:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:00:58 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 血手印图案 英文字母印花 不对称印花设计 西装外套 男士 常规版型 平驳领 单排扣 双侧翻盖口袋 长袖
+2026-09-22 12:00:58 [INFO ] [deepseek_web]   Deleted: 0011_2130840435932631573139.jpg
+2026-09-22 12:01:03 [INFO ] [deepseek_web] [12/60] 男士万圣节印花灯芯绒西装
+2026-09-22 12:01:03 [INFO ] [deepseek_web]   Downloaded: 0012_5950846141032259614765.jpg
+2026-09-22 12:01:03 [INFO ] [deepseek_web]   Prefetching next image (13/60)
+2026-09-22 12:01:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:01:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:01:36 [INFO ] [deepseek_web]   Response: 花卉刺绣 藤蔓图案 灯芯绒纹理 刺绣饰边 西装外套 男士 常规版型 万圣节主题 平驳领 单排扣 双侧翻盖口袋 长袖
+2026-09-22 12:01:36 [INFO ] [deepseek_web]   Deleted: 0012_5950846141032259614765.jpg
+2026-09-22 12:01:41 [INFO ] [deepseek_web] [13/60] 男士万圣节印花灯芯绒西装
+2026-09-22 12:01:41 [INFO ] [deepseek_web]   Downloaded: 0013_5740353325663216604192.jpg
+2026-09-22 12:01:41 [INFO ] [deepseek_web]   Prefetching next image (14/60)
+2026-09-22 12:01:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:01:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:02:10 [INFO ] [deepseek_web]   Response: 万圣节主题 满印设计 骷髅头刺绣 花卉刺绣 灯芯绒纹理 西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 12:02:10 [INFO ] [deepseek_web]   Deleted: 0013_5740353325663216604192.jpg
+2026-09-22 12:02:15 [INFO ] [deepseek_web] [14/60] 男士北欧神话维京3d印花款无帽开衫无纽扣无拉链外套
+2026-09-22 12:02:15 [INFO ] [deepseek_web]   Downloaded: 0014_0320320023622630706029.jpg
+2026-09-22 12:02:15 [INFO ] [deepseek_web]   Prefetching next image (15/60)
+2026-09-22 12:02:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:02:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:02:45 [INFO ] [deepseek_web]   Response: 北欧神话主题印花 维京战士图案 乌鸦图案 山峦几何图案 3D印花 无扣开襟外套 男士 宽松版型 无帽 V领 长袖 无拉链
+2026-09-22 12:02:45 [INFO ] [deepseek_web]   Deleted: 0014_0320320023622630706029.jpg
+2026-09-22 12:02:50 [INFO ] [deepseek_web] [15/60] 男士中世纪复古维京中长款印花连帽开衫无拉链无纽扣卫衣
+2026-09-22 12:02:50 [INFO ] [deepseek_web]   Downloaded: 0015_8140824373981614142387.jpg
+2026-09-22 12:02:50 [INFO ] [deepseek_web]   Prefetching next image (16/60)
+2026-09-22 12:02:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:03:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:03:19 [INFO ] [deepseek_web]   Response: 龙图案印花 星月图案 骷髅图案 罗盘图案 几何图腾印花 中长款连帽开衫卫衣 男士 常规版型 长袖 无拉链无纽扣门襟 斜插口袋 下摆装饰边
+2026-09-22 12:03:19 [INFO ] [deepseek_web]   Deleted: 0015_8140824373981614142387.jpg
+2026-09-22 12:03:24 [INFO ] [deepseek_web] [16/60] 万圣节男士骷髅头提花个性长款宽松连帽针织开衫
+2026-09-22 12:03:24 [INFO ] [deepseek_web]   Downloaded: 0016_5890221307471974652499.jpg
+2026-09-22 12:03:24 [INFO ] [deepseek_web]   Prefetching next image (17/60)
+2026-09-22 12:03:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:03:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:03:54 [INFO ] [deepseek_web]   Response: 骷髅头提花图案 长款过膝设计 连帽开襟 针织开衫 男士 宽松版型 长袖 无拉链无纽扣门襟 侧插口袋 万圣节主题图案
+2026-09-22 12:03:54 [INFO ] [deepseek_web]   Deleted: 0016_5890221307471974652499.jpg
+2026-09-22 12:03:59 [INFO ] [deepseek_web] [17/60] 男士中世纪北欧神话维京华夫格连帽外套
+2026-09-22 12:03:59 [INFO ] [deepseek_web]   Downloaded: 0017_6090743074076436694098.jpg
+2026-09-22 12:03:59 [INFO ] [deepseek_web]   Prefetching next image (18/60)
+2026-09-22 12:03:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:04:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:04:29 [INFO ] [deepseek_web]   Response: 华夫格纹理拼接设计 维京图腾印花 连帽抽绳设计 全拉链门襟 连帽夹克 男士 常规版型 长袖 罗纹袖口 罗纹下摆
+2026-09-22 12:04:29 [INFO ] [deepseek_web]   Deleted: 0017_6090743074076436694098.jpg
+2026-09-22 12:04:34 [INFO ] [deepseek_web] [18/60] 男士万圣节血腥印花灯芯绒印花西装外套
+2026-09-22 12:04:34 [INFO ] [deepseek_web]   Downloaded: 0018_0380828118532199640119.jpg
+2026-09-22 12:04:34 [INFO ] [deepseek_web]   Prefetching next image (19/60)
+2026-09-22 12:04:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:04:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:05:03 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 滴落字母印花 灯芯绒纹理 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 双侧翻盖口袋 长袖
+2026-09-22 12:05:03 [INFO ] [deepseek_web]   Deleted: 0018_0380828118532199640119.jpg
+2026-09-22 12:05:08 [INFO ] [deepseek_web] [19/60] 男士万圣节印花灯芯绒印花西装外套
+2026-09-22 12:05:08 [INFO ] [deepseek_web]   Downloaded: 0019_4730839326062415021474.jpg
+2026-09-22 12:05:08 [INFO ] [deepseek_web]   Prefetching next image (20/60)
+2026-09-22 12:05:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:05:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:05:37 [INFO ] [deepseek_web]   Response: 菱形格纹印花 灯芯绒纹理 做旧磨损效果 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖设计
+2026-09-22 12:05:37 [INFO ] [deepseek_web]   Deleted: 0019_4730839326062415021474.jpg
+2026-09-22 12:05:42 [INFO ] [deepseek_web] [20/60] 男士北欧神话维京3d印花款无帽开衫无纽扣无拉链外套
+2026-09-22 12:05:42 [INFO ] [deepseek_web]   Downloaded: 0020_4460831394323136231909.jpg
+2026-09-22 12:05:42 [INFO ] [deepseek_web]   Prefetching next image (21/60)
+2026-09-22 12:05:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:05:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:06:11 [INFO ] [deepseek_web]   Response: 北欧神话主题印花 维京符文图案 乌鸦图案 立体印花效果 无扣开襟外套 男士 宽松版型 无帽 长袖 无拉链门襟
+2026-09-22 12:06:11 [INFO ] [deepseek_web]   Deleted: 0020_4460831394323136231909.jpg
+2026-09-22 12:06:16 [INFO ] [deepseek_web] [21/60] 骷髅圆领长袖男女时尚秋冬宽松oversize套头潮流毛衣
+2026-09-22 12:06:16 [INFO ] [deepseek_web]   Downloaded: 0021_6170742048562392449472.jpg
+2026-09-22 12:06:16 [INFO ] [deepseek_web]   Prefetching next image (22/60)
+2026-09-22 12:06:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:06:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:06:45 [INFO ] [deepseek_web]   Response: 骷髅骨骼图案 肋骨图案 脊椎图案 提花针织结构 背部满印设计 圆领套头毛衣 中性 宽松版型 长袖 罗纹袖口 罗纹下摆
+2026-09-22 12:06:45 [INFO ] [deepseek_web]   Deleted: 0021_6170742048562392449472.jpg
+2026-09-22 12:06:50 [INFO ] [deepseek_web] [22/60] 骷髅提花破洞毛衣秋冬男宽松套头针织衫
+2026-09-22 12:06:50 [INFO ] [deepseek_web]   Downloaded: 0022_5840306013742239151353.jpg
+2026-09-22 12:06:50 [INFO ] [deepseek_web]   Prefetching next image (23/60)
+2026-09-22 12:06:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:07:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:07:24 [INFO ] [deepseek_web]   Response: 骷髅提花图案 破洞毛边设计 做旧磨损效果 圆领套头针织衫 男士 宽松版型 长袖 落肩袖 罗纹袖口 无帽 无拉链 秋冬
+2026-09-22 12:07:24 [INFO ] [deepseek_web]   Deleted: 0022_5840306013742239151353.jpg
+2026-09-22 12:07:29 [INFO ] [deepseek_web] [23/60] 男士中世纪北欧神话维京夹克外套
+2026-09-22 12:07:29 [INFO ] [deepseek_web]   Downloaded: 0023_4620257137111868966773.jpg
+2026-09-22 12:07:29 [INFO ] [deepseek_web]   Prefetching next image (24/60)
+2026-09-22 12:07:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:07:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:07:58 [INFO ] [deepseek_web]   Response: 骷髅图案 交叉斧头图案 凯尔特结图案 做旧纹理 立领拉链夹克 男士 常规版型 长袖 罗纹袖口 罗纹下摆 斜插口袋
+2026-09-22 12:07:58 [INFO ] [deepseek_web]   Deleted: 0023_4620257137111868966773.jpg
+2026-09-22 12:08:03 [INFO ] [deepseek_web] [24/60] 男士中世纪复古维京中长款印花连帽开衫
+2026-09-22 12:08:03 [INFO ] [deepseek_web]   Downloaded: 0024_3430256053239119532433.jpg
+2026-09-22 12:08:03 [INFO ] [deepseek_web]   Prefetching next image (25/60)
+2026-09-22 12:08:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:08:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:08:38 [INFO ] [deepseek_web]   Response: 羊头图案印花 几何符号印花 无拉链开襟 连帽开衫外套 男士 宽松版型 中长款 长袖 落肩袖 圆形符号图案 直筒下摆
+2026-09-22 12:08:38 [INFO ] [deepseek_web]   Deleted: 0024_3430256053239119532433.jpg
+2026-09-22 12:08:43 [INFO ] [deepseek_web] [25/60] 万圣节男士印花休闲派对西装外套
+2026-09-22 12:08:43 [INFO ] [deepseek_web]   Downloaded: 0025_5080918166612815143704.jpg
+2026-09-22 12:08:43 [INFO ] [deepseek_web]   Prefetching next image (26/60)
+2026-09-22 12:08:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:08:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:09:12 [INFO ] [deepseek_web]   Response: 骷髅印花 玫瑰印花 花卉图案 藤蔓图案 满印设计 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 翻盖口袋 长袖
+2026-09-22 12:09:12 [INFO ] [deepseek_web]   Deleted: 0025_5080918166612815143704.jpg
+2026-09-22 12:09:17 [INFO ] [deepseek_web] [26/60] 男士中世纪北欧神话中长款带帽开衫酷炫摩托夹克外套
+2026-09-22 12:09:17 [INFO ] [deepseek_web]   Downloaded: 0026_1550814594641515358502.jpg
+2026-09-22 12:09:17 [INFO ] [deepseek_web]   Prefetching next image (27/60)
+2026-09-22 12:09:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:09:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:09:46 [INFO ] [deepseek_web]   Response: 狼图案印花 凯尔特结图案 锁链图案 圆形徽章图案 无拉链无纽扣开襟 连帽开衫外套 男士 宽松版型 中长款 长袖 斜插口袋
+2026-09-22 12:09:46 [INFO ] [deepseek_web]   Deleted: 0026_1550814594641515358502.jpg
+2026-09-22 12:09:51 [INFO ] [deepseek_web] [27/60] 男士万圣节暗黑血腥中世纪北欧神话维京连帽开衫披风
+2026-09-22 12:09:51 [INFO ] [deepseek_web]   Downloaded: 0027_0070914376393512259423.jpg
+2026-09-22 12:09:51 [INFO ] [deepseek_web]   Prefetching next image (28/60)
+2026-09-22 12:09:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:10:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:10:20 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 狼图案印花 万圣节主题 无拉链开襟 连帽开衫披风外套 男士 宽松版型 中长款 长袖设计 直筒下摆
+2026-09-22 12:10:20 [INFO ] [deepseek_web]   Deleted: 0027_0070914376393512259423.jpg
+2026-09-22 12:10:25 [INFO ] [deepseek_web] [28/60] 男士维京中世纪北欧神话加绒连帽外套
+2026-09-22 12:10:25 [INFO ] [deepseek_web]   Downloaded: 0028_4850336320611761012885.jpg
+2026-09-22 12:10:25 [INFO ] [deepseek_web]   Prefetching next image (29/60)
+2026-09-22 12:10:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:10:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:10:54 [INFO ] [deepseek_web]   Response: 抽象刷痕印花 泼墨图案 加绒保暖内里 全拉链连帽夹克 男士 常规版型 长袖 罗纹袖口 罗纹下摆 双侧斜插口袋
+2026-09-22 12:10:54 [INFO ] [deepseek_web]   Deleted: 0028_4850336320611761012885.jpg
+2026-09-22 12:10:59 [INFO ] [deepseek_web] [29/60] 男士圣诞节优雅休闲纽扣西装外套
+2026-09-22 12:10:59 [INFO ] [deepseek_web]   Downloaded: 0029_8920906043872654015719.jpg
+2026-09-22 12:10:59 [INFO ] [deepseek_web]   Prefetching next image (30/60)
+2026-09-22 12:10:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:11:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:11:28 [INFO ] [deepseek_web]   Response: 骷髅姜饼人印花 拐杖糖图案 雪花图案 星星图案 满印设计 圣诞节主题 西装外套 男士 常规版型 平驳领 单排扣 长袖 翻盖口袋
+2026-09-22 12:11:28 [INFO ] [deepseek_web]   Deleted: 0029_8920906043872654015719.jpg
+2026-09-22 12:11:33 [INFO ] [deepseek_web] [30/60] 男士哥特风纯色开衫纽扣长款风衣万圣节战袍
+2026-09-22 12:11:33 [INFO ] [deepseek_web]   Downloaded: 0030_4971008497034758234624.jpg
+2026-09-22 12:11:33 [INFO ] [deepseek_web]   Prefetching next image (31/60)
+2026-09-22 12:11:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:11:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:12:02 [INFO ] [deepseek_web]   Response: 长款过膝设计 翻领结构 单排扣门襟 长袖设计 无帽设计 长款风衣外套 男士 常规版型 纯色外观 直筒下摆 哥特风格
+2026-09-22 12:12:02 [INFO ] [deepseek_web]   Deleted: 0030_4971008497034758234624.jpg
+2026-09-22 12:12:07 [INFO ] [deepseek_web] [31/60] 男士中世纪复古维京中长款印花连帽开衫
+2026-09-22 12:12:07 [INFO ] [deepseek_web]   Downloaded: 0031_3060717173525116767846.jpg
+2026-09-22 12:12:07 [INFO ] [deepseek_web]   Prefetching next image (32/60)
+2026-09-22 12:12:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:12:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:12:37 [INFO ] [deepseek_web]   Response: 背面月亮枯树印花 连帽设计 中长款 无拉链无纽扣开襟 斜插口袋 连帽开衫外套 男士 宽松版型 长袖
+2026-09-22 12:12:37 [INFO ] [deepseek_web]   Deleted: 0031_3060717173525116767846.jpg
+2026-09-22 12:12:42 [INFO ] [deepseek_web] [32/60] 男士中世纪复古维京中长款印花连帽开衫
+2026-09-22 12:12:42 [INFO ] [deepseek_web]   Downloaded: 0032_6230721472581414389915.jpg
+2026-09-22 12:12:42 [INFO ] [deepseek_web]   Prefetching next image (33/60)
+2026-09-22 12:12:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:12:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:13:11 [INFO ] [deepseek_web]   Response: 地图印花 罗盘图案 帆船图案 盾牌图案 无拉链无纽扣门襟 中长款 连帽开衫外套 男士 常规版型 长袖 斜插口袋
+2026-09-22 12:13:11 [INFO ] [deepseek_web]   Deleted: 0032_6230721472581414389915.jpg
+2026-09-22 12:13:16 [INFO ] [deepseek_web] [33/60] 男士中世纪北欧神话中长款带帽开衫酷炫摩托夹克外套
+2026-09-22 12:13:16 [INFO ] [deepseek_web]   Downloaded: 0033_3241119123394611771928.jpg
+2026-09-22 12:13:16 [INFO ] [deepseek_web]   Prefetching next image (34/60)
+2026-09-22 12:13:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:13:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:13:45 [INFO ] [deepseek_web]   Response: 狼头印花 维京符文图案 后背大幅印花 中长款 连帽开衫外套 男士 常规版型 无拉链无纽扣门襟 斜插口袋 长袖
+2026-09-22 12:13:45 [INFO ] [deepseek_web]   Deleted: 0033_3241119123394611771928.jpg
+2026-09-22 12:13:50 [INFO ] [deepseek_web] [34/60] 男士中世纪复古维京中长款印花连帽开衫
+2026-09-22 12:13:50 [INFO ] [deepseek_web]   Downloaded: 0034_8220631053192711872428.jpg
+2026-09-22 12:13:50 [INFO ] [deepseek_web]   Prefetching next image (35/60)
+2026-09-22 12:13:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:14:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:14:19 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 维京符文图案 树状图案 中长款连帽开衫外套 男士 常规版型 无拉链无纽扣门襟 长袖 斜插口袋
+2026-09-22 12:14:19 [INFO ] [deepseek_web]   Deleted: 0034_8220631053192711872428.jpg
+2026-09-22 12:14:24 [INFO ] [deepseek_web] [35/60] 万圣节男士印花休闲派对西装外套
+2026-09-22 12:14:24 [INFO ] [deepseek_web]   Downloaded: 0035_8970858233531711470911.jpg
+2026-09-22 12:14:24 [INFO ] [deepseek_web]   Prefetching next image (36/60)
+2026-09-22 12:14:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:14:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:14:53 [INFO ] [deepseek_web]   Response: 骷髅头印花 玫瑰花卉印花 满印图案 万圣节主题 派对西装外套 男士 常规版型 平驳领 单排扣门襟 长袖 双侧翻盖口袋
+2026-09-22 12:14:53 [INFO ] [deepseek_web]   Deleted: 0035_8970858233531711470911.jpg
+2026-09-22 12:14:58 [INFO ] [deepseek_web] [36/60] 万圣节男士印花休闲派对西装外套
+2026-09-22 12:14:58 [INFO ] [deepseek_web]   Downloaded: 0036_7150927264742147889729.jpg
+2026-09-22 12:14:58 [INFO ] [deepseek_web]   Prefetching next image (37/60)
+2026-09-22 12:14:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:15:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:15:27 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 撕裂破损印花 渐变喷溅图案 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 双侧翻盖口袋 长袖
+2026-09-22 12:15:27 [INFO ] [deepseek_web]   Deleted: 0036_7150927264742147889729.jpg
+2026-09-22 12:15:32 [INFO ] [deepseek_web] [37/60] 男士万圣节复古血渍血迹屠夫连帽开衫外套披风
+2026-09-22 12:15:32 [INFO ] [deepseek_web]   Downloaded: 0037_8090302269811689571565.jpg
+2026-09-22 12:15:32 [INFO ] [deepseek_web]   Prefetching next image (38/60)
+2026-09-22 12:15:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:15:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:16:01 [INFO ] [deepseek_web]   Response: 血迹飞溅印花 字母印花 做旧斑驳纹理 万圣节主题 连帽开衫披风外套 男士 宽松版型 中长款 长袖 无拉链无纽扣门襟 侧插口袋
+2026-09-22 12:16:01 [INFO ] [deepseek_web]   Deleted: 0037_8090302269811689571565.jpg
+2026-09-22 12:16:06 [INFO ] [deepseek_web] [38/60] 男士中世纪北欧神话中长款带帽开衫酷炫机车外套披风
+2026-09-22 12:16:06 [INFO ] [deepseek_web]   Downloaded: 0038_3430301341061918907999.jpg
+2026-09-22 12:16:06 [INFO ] [deepseek_web]   Prefetching next image (39/60)
+2026-09-22 12:16:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:16:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:16:35 [INFO ] [deepseek_web]   Response: 维京符文图案 雷神之锤图案 世界树图案 编织纹饰 无拉链无纽扣门襟 中长款连帽开衫外套 男士 常规版型 长袖 斜插口袋
+2026-09-22 12:16:35 [INFO ] [deepseek_web]   Deleted: 0038_3430301341061918907999.jpg
+2026-09-22 12:16:40 [INFO ] [deepseek_web] [39/60] 男士开孔拉链连帽纯色夹克外套
+2026-09-22 12:16:40 [INFO ] [deepseek_web]   Downloaded: 0039_8820943243866514984128.jpg
+2026-09-22 12:16:40 [INFO ] [deepseek_web]   Prefetching next image (40/60)
+2026-09-22 12:16:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:16:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:17:19 [INFO ] [deepseek_web]   Response: 帽子金属孔眼设计 无帽绳设计 袋鼠口袋 罗纹袖口 罗纹下摆 纯色外观 全拉链夹克外套 男士 常规版型 长袖 连帽
+2026-09-22 12:17:19 [INFO ] [deepseek_web]   Deleted: 0039_8820943243866514984128.jpg
+2026-09-22 12:17:24 [INFO ] [deepseek_web] [40/60] 男士连帽巫师斗篷斜拉链开衫外套
+2026-09-22 12:17:24 [INFO ] [deepseek_web]   Downloaded: 0040_7600723081619374666028.jpg
+2026-09-22 12:17:24 [INFO ] [deepseek_web]   Prefetching next image (41/60)
+2026-09-22 12:17:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:17:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:17:58 [INFO ] [deepseek_web]   Response: 尖顶帽型 斜拉链门襟 无抽绳设计 连帽开衫夹克 男士 常规版型 长袖设计 袋鼠口袋 罗纹袖口 罗纹下摆 纯色外观
+2026-09-22 12:17:58 [INFO ] [deepseek_web]   Deleted: 0040_7600723081619374666028.jpg
+2026-09-22 12:18:03 [INFO ] [deepseek_web] [41/60] 男士万圣节印花休闲宽松西服外套
+2026-09-22 12:18:03 [INFO ] [deepseek_web]   Downloaded: 0041_4801154186434415438706.jpg
+2026-09-22 12:18:03 [INFO ] [deepseek_web]   Prefetching next image (42/60)
+2026-09-22 12:18:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:18:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:18:32 [INFO ] [deepseek_web]   Response: 幽灵图案印花 抽象线条图案 满印设计 万圣节主题 休闲西装外套 男士 宽松版型 平驳领 单粒扣门襟 长袖设计
+2026-09-22 12:18:32 [INFO ] [deepseek_web]   Deleted: 0041_4801154186434415438706.jpg
+2026-09-22 12:18:37 [INFO ] [deepseek_web] [42/60] 男士纯色牧师服万圣节神父中世纪复古cosplay服装
+2026-09-22 12:18:37 [INFO ] [deepseek_web]   Downloaded: 0042_2750929282513415557225.jpg
+2026-09-22 12:18:37 [INFO ] [deepseek_web]   Prefetching next image (43/60)
+2026-09-22 12:18:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:18:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:19:06 [INFO ] [deepseek_web]   Response: 立领设计 肩部披肩结构 胸前十字架装饰 腰部流苏装饰 长款过膝 单排扣门襟 牧师服长袍 男士 常规版型 长袖 万圣节角色扮演服装
+2026-09-22 12:19:06 [INFO ] [deepseek_web]   Deleted: 0042_2750929282513415557225.jpg
+2026-09-22 12:19:11 [INFO ] [deepseek_web] [43/60] 男士万圣节 立领夹克拉链卫衣
+2026-09-22 12:19:11 [INFO ] [deepseek_web]   Downloaded: 0043_3210555497971811183890.jpg
+2026-09-22 12:19:11 [INFO ] [deepseek_web]   Prefetching next image (44/60)
+2026-09-22 12:19:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:19:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:19:40 [INFO ] [deepseek_web]   Response: 蜘蛛印花 荆棘线条图案 蜘蛛网图案 万圣节主题 立领拉链夹克 男士 常规版型 全拉链门襟 长袖 罗纹袖口 罗纹下摆
+2026-09-22 12:19:40 [INFO ] [deepseek_web]   Deleted: 0043_3210555497971811183890.jpg
+2026-09-22 12:19:45 [INFO ] [deepseek_web] [44/60] 男士万圣节cosplay服装 中世纪立领纽扣外套
+2026-09-22 12:19:45 [INFO ] [deepseek_web]   Downloaded: 0044_4560223075814014679283.jpg
+2026-09-22 12:19:45 [INFO ] [deepseek_web]   Prefetching next image (45/60)
+2026-09-22 12:19:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:19:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:20:14 [INFO ] [deepseek_web]   Response: 肩部层叠披肩结构 立领设计 单排扣门襟 长款过膝 长袖 袖口翻边 侧插口袋 男士 常规版型 中世纪长款外套 万圣节角色扮演服装
+2026-09-22 12:20:14 [INFO ] [deepseek_web]   Deleted: 0044_4560223075814014679283.jpg
+2026-09-22 12:20:19 [INFO ] [deepseek_web] [45/60] 男士中世纪万圣节复古拼接外套服装
+2026-09-22 12:20:19 [INFO ] [deepseek_web]   Downloaded: 0045_4590233485376820529296.jpg
+2026-09-22 12:20:19 [INFO ] [deepseek_web]   Prefetching next image (46/60)
+2026-09-22 12:20:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:20:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:20:49 [INFO ] [deepseek_web]   Response: 连帽设计 肩部拼接结构 皮带扣装饰 拉链门襟 不规则尖角下摆 袖口绑带 暗纹提花 男士复古拼接长款外套 常规版型 长袖 万圣节角色扮演服装
+2026-09-22 12:20:49 [INFO ] [deepseek_web]   Deleted: 0045_4590233485376820529296.jpg
+2026-09-22 12:20:54 [INFO ] [deepseek_web] [46/60] 男士万圣节西装外套
+2026-09-22 12:20:54 [INFO ] [deepseek_web]   Downloaded: 0046_9340445345022060160582.jpg
+2026-09-22 12:20:54 [INFO ] [deepseek_web]   Prefetching next image (47/60)
+2026-09-22 12:20:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:21:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:21:23 [INFO ] [deepseek_web]   Response: 蝙蝠图案印花 满印设计 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣 双侧翻盖口袋 长袖
+2026-09-22 12:21:23 [INFO ] [deepseek_web]   Deleted: 0046_9340445345022060160582.jpg
+2026-09-22 12:21:28 [INFO ] [deepseek_web] [47/60] 男士中世纪北欧神话中长款带帽开衫酷炫摩托夹克外套
+2026-09-22 12:21:28 [INFO ] [deepseek_web]   Downloaded: 0047_7330254334191857653752.jpg
+2026-09-22 12:21:28 [INFO ] [deepseek_web]   Prefetching next image (48/60)
+2026-09-22 12:21:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:21:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:21:57 [INFO ] [deepseek_web]   Response: 双鸟图案 凯尔特结图案 下摆编织装饰边 袖口编织装饰边 中长款连帽开衫外套 男士 常规版型 长袖 无拉链无纽扣门襟 斜插口袋 北欧神话主题
+2026-09-22 12:21:57 [INFO ] [deepseek_web]   Deleted: 0047_7330254334191857653752.jpg
+2026-09-22 12:22:02 [INFO ] [deepseek_web] [48/60] 男士燕尾服中世纪复古中长朋克金边大衣外套
+2026-09-22 12:22:02 [INFO ] [deepseek_web]   Downloaded: 0048_3810352409524810854871.jpg
+2026-09-22 12:22:02 [INFO ] [deepseek_web]   Prefetching next image (49/60)
+2026-09-22 12:22:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:22:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:22:31 [INFO ] [deepseek_web]   Response: 编织装饰边 V领设计 前开衩燕尾下摆 袖口装饰边 中长款燕尾服外套 男士 常规版型 单排扣门襟 长袖 中世纪风格
+2026-09-22 12:22:31 [INFO ] [deepseek_web]   Deleted: 0048_3810352409524810854871.jpg
+2026-09-22 12:22:36 [INFO ] [deepseek_web] [49/60] 男士时尚万圣节印花西装外套
+2026-09-22 12:22:36 [INFO ] [deepseek_web]   Downloaded: 0049_8170555268322667013075.jpg
+2026-09-22 12:22:36 [INFO ] [deepseek_web]   Prefetching next image (50/60)
+2026-09-22 12:22:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:22:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:23:05 [INFO ] [deepseek_web]   Response: 蝙蝠图案印花 满印设计 渐变背景 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣门襟 长袖 双侧翻盖口袋
+2026-09-22 12:23:05 [INFO ] [deepseek_web]   Deleted: 0049_8170555268322667013075.jpg
+2026-09-22 12:23:10 [INFO ] [deepseek_web] [50/60] 男士复古中世纪纯色长袖立领三排扣男士外套交叉绑带收腰长款
+2026-09-22 12:23:10 [INFO ] [deepseek_web]   Downloaded: 0050_7371111033062111298975.jpg
+2026-09-22 12:23:10 [INFO ] [deepseek_web]   Prefetching next image (51/60)
+2026-09-22 12:23:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:23:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:23:39 [INFO ] [deepseek_web]   Response: 立领设计 三排扣门襟 长款过膝 无帽设计 长款外套 男士 常规版型 长袖 纯色外观 多粒纽扣装饰 直筒下摆 中世纪风格
+2026-09-22 12:23:39 [INFO ] [deepseek_web]   Deleted: 0050_7371111033062111298975.jpg
+2026-09-22 12:23:44 [INFO ] [deepseek_web] [51/60] 男士万圣节圣诞节哥特式蒸汽朋克背心燕尾衣提花锦缎双排扣礼服
+2026-09-22 12:23:44 [INFO ] [deepseek_web]   Downloaded: 0051_3650306255372316931808.jpg
+2026-09-22 12:23:44 [INFO ] [deepseek_web]   Prefetching next image (52/60)
+2026-09-22 12:23:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:23:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:24:15 [INFO ] [deepseek_web]   Response: 提花锦缎纹理 燕尾前开衩下摆 双排扣多粒纽扣 翻领无袖设计 长款燕尾马甲 男士 常规版型 哥特式蒸汽朋克风格 万圣节角色扮演服装
+2026-09-22 12:24:15 [INFO ] [deepseek_web]   Deleted: 0051_3650306255372316931808.jpg
+2026-09-22 12:24:20 [INFO ] [deepseek_web] [52/60] 男士万圣节中世纪复古服装中长朋克燕尾服
+2026-09-22 12:24:20 [INFO ] [deepseek_web]   Downloaded: 0052_8180549109141714052675.jpg
+2026-09-22 12:24:20 [INFO ] [deepseek_web]   Prefetching next image (53/60)
+2026-09-22 12:24:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:24:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:24:50 [INFO ] [deepseek_web]   Response: 立领设计 前拉链门襟 双排扣装饰扣 胸前蝴蝶结装饰 袖口刺绣宽边 尖角燕尾下摆 中长款燕尾服外套 男士 常规版型 长袖 万圣节主题 中世纪复古风格 朋克风格
+2026-09-22 12:24:50 [INFO ] [deepseek_web]   Deleted: 0052_8180549109141714052675.jpg
+2026-09-22 12:24:55 [INFO ] [deepseek_web] [53/60] 男士万圣节燕尾服中世纪复古服装中长朋克男款大衣
+2026-09-22 12:24:55 [INFO ] [deepseek_web]   Downloaded: 0053_7250503046611310868763.jpg
+2026-09-22 12:24:55 [INFO ] [deepseek_web]   Prefetching next image (54/60)
+2026-09-22 12:24:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:25:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:25:24 [INFO ] [deepseek_web]   Response: 提花纹理 刺绣装饰 拼接门襟 燕尾下摆 燕尾服外套 男士 常规版型 立领设计 长袖 无帽 中世纪复古风格 万圣节角色扮演服装
+2026-09-22 12:25:24 [INFO ] [deepseek_web]   Deleted: 0053_7250503046611310868763.jpg
+2026-09-22 12:25:29 [INFO ] [deepseek_web] [54/60] 男士万圣节中世纪文艺复兴时期圣殿骑士束腰外衣海盗复古舞台服（含腰带）
+2026-09-22 12:25:29 [INFO ] [deepseek_web]   Downloaded: 0054_6980930507542017543409.jpg
+2026-09-22 12:25:29 [INFO ] [deepseek_web]   Prefetching next image (55/60)
+2026-09-22 12:25:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:25:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:25:58 [INFO ] [deepseek_web]   Response: V形领口拼色 下摆开衩设计 袖口拼接结构 腰部配皮带 中世纪束腰外衣 男士 常规版型 圆领 长袖 套头式 舞台服装
+2026-09-22 12:25:58 [INFO ] [deepseek_web]   Deleted: 0054_6980930507542017543409.jpg
+2026-09-22 12:26:03 [INFO ] [deepseek_web] [55/60] 男士万圣节cosplay哥特蒸汽朋克复古纯色立领风衣大衣外套
+2026-09-22 12:26:03 [INFO ] [deepseek_web]   Downloaded: 0055_3711125285011317104119.jpg
+2026-09-22 12:26:03 [INFO ] [deepseek_web]   Prefetching next image (56/60)
+2026-09-22 12:26:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:26:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:26:32 [INFO ] [deepseek_web]   Response: 立领设计 双排多粒纽扣装饰 前开衩下摆 长款过膝 风衣大衣外套 男士 常规版型 长袖 纯色外观 哥特蒸汽朋克风格 万圣节角色扮演服装
+2026-09-22 12:26:32 [INFO ] [deepseek_web]   Deleted: 0055_3711125285011317104119.jpg
+2026-09-22 12:26:37 [INFO ] [deepseek_web] [56/60] 3652 男士复古宫廷哥特晚礼服cos带帽长袖刺绣PU燕尾舞台装外套
+2026-09-22 12:26:37 [INFO ] [deepseek_web]   Downloaded: 0056_4490912533282678887505.JPG
+2026-09-22 12:26:37 [INFO ] [deepseek_web]   Prefetching next image (57/60)
+2026-09-22 12:26:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:26:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:27:10 [INFO ] [deepseek_web]   Response: 肩部拼接结构 胸前提花刺绣 双皮带扣装饰 前拉链门襟 尖角燕尾下摆 袖口扣带 连帽长款外套 男士 常规版型 长袖 哥特风格 舞台服装 3652
+2026-09-22 12:27:10 [INFO ] [deepseek_web]   Deleted: 0056_4490912533282678887505.JPG
+2026-09-22 12:27:15 [INFO ] [deepseek_web] [57/60] 新款万圣节燕尾复古金边大衣中世纪蒸汽朋克外套舞台表演服
+2026-09-22 12:27:15 [INFO ] [deepseek_web]   Downloaded: 0057_1260403530046720958593.jpg
+2026-09-22 12:27:15 [INFO ] [deepseek_web]   Prefetching next image (58/60)
+2026-09-22 12:27:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:27:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:27:49 [INFO ] [deepseek_web]   Response: 金属光泽镶边 尖角燕尾下摆 前胸马甲拼接 燕尾服外套 男士 修身版型 翻领 单排扣 长袖 翻盖口袋 中长款 万圣节角色扮演服装
+2026-09-22 12:27:49 [INFO ] [deepseek_web]   Deleted: 0057_1260403530046720958593.jpg
+2026-09-22 12:27:54 [INFO ] [deepseek_web] [58/60] 男士亮面夹克70年代迪斯科派对大学夹克拉链棒球服
+2026-09-22 12:27:54 [INFO ] [deepseek_web]   Downloaded: 0058_9060252057601326169739.jpg
+2026-09-22 12:27:54 [INFO ] [deepseek_web]   Prefetching next image (59/60)
+2026-09-22 12:27:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:28:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:28:30 [INFO ] [deepseek_web]   Response: 全息反光面料 亮面材质 罗纹立领 全拉链棒球夹克 男士 常规版型 罗纹袖口 罗纹下摆 无帽设计 长袖 迪斯科派对场景
+2026-09-22 12:28:30 [INFO ] [deepseek_web]   Deleted: 0058_9060252057601326169739.jpg
+2026-09-22 12:28:35 [INFO ] [deepseek_web] [59/60] 男士万圣节哥特式COS服风衣外套
+2026-09-22 12:28:35 [INFO ] [deepseek_web]   Downloaded: 0059_2081142134265043826612.jpg
+2026-09-22 12:28:35 [INFO ] [deepseek_web]   Prefetching next image (60/60)
+2026-09-22 12:28:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:28:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:29:04 [INFO ] [deepseek_web]   Response: 金属O环装饰 交叉绑带结构 肩部拼接设计 前拉链门襟 连帽风衣外套 男士 常规版型 长袖 长款过膝 下摆开衩 哥特风格 万圣节角色扮演服装
+2026-09-22 12:29:04 [INFO ] [deepseek_web]   Deleted: 0059_2081142134265043826612.jpg
+2026-09-22 12:29:09 [INFO ] [deepseek_web] [60/60] 男士万圣节主题长袖单西装外套
+2026-09-22 12:29:09 [INFO ] [deepseek_web]   Downloaded: 0060_9320117364311021454161.jpg
+2026-09-22 12:29:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-22 12:29:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-22 12:29:38 [INFO ] [deepseek_web]   Response: 竖条纹图案 不规则条纹边缘 满印设计 万圣节主题 西装外套 男士 常规版型 平驳领 单排扣门襟 长袖 双侧翻盖口袋
+2026-09-22 12:29:38 [INFO ] [deepseek_web]   Deleted: 0060_9320117364311021454161.jpg
+2026-09-22 12:29:39 [INFO ] [deepseek_web] ==================================================
+2026-09-22 12:29:39 [INFO ] [deepseek_web] Done: 60 success, 0 failed → optimize_title
+2026-09-22 12:29:39 [INFO ] [title_workflow] Optimization complete: 60 titles
+2026-09-22 12:29:47 [INFO ] [title_workflow] Written 60 optimized titles to column H (8)
+2026-09-22 12:29:47 [INFO ] [title_workflow] Done: 9.15v1.xlsx
+2026-09-22 12:29:48 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-22 12:29:48 [INFO ] [jenkins] 
+2026-09-22 12:29:48 [INFO ] [jenkins] ==================================================
+2026-09-22 12:29:48 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-22 12:29:48 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-22 12:29:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-22 12:29:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-22 12:29:48 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-22 14:55:29 [INFO ] [hotwords] Loop mode: 1 keywords  country=de  category=(all)  mode=dual
+2026-09-22 14:55:29 [INFO ] [hotwords] 
+2026-09-22 14:55:29 [INFO ] [hotwords] [  1/1] halloween
+2026-09-22 14:55:29 [INFO ] [hotwords]   fluctuation: 13 words
+2026-09-22 14:55:30 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-22 14:55:30 [INFO ] [hotwords]   → total 213 words
+2026-09-22 14:55:32 [INFO ] [hotwords] All keywords collected successfully
+2026-09-22 14:55:32 [INFO ] [hotwords] 
+2026-09-22 14:55:32 [INFO ] [hotwords] Combining: 13 fluctuation + 200 new_rank = 213 total
+2026-09-22 14:55:32 [INFO ] [hotwords] 
+2026-09-22 14:55:32 [INFO ] [hotwords] Cleaning...
+2026-09-22 14:55:32 [INFO ] [hotwords]   strip_whitespace: 213 → 213 (0 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords]   normalize_case: 213 → 213 (0 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords]   drop_single_word: 213 → 208 (5 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords]   drop_brands: 208 → 205 (3 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords]   drop_reordered: 205 → 191 (14 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords]   deduplicate: 191 → 191 (0 removed)
+2026-09-22 14:55:32 [INFO ] [hotwords] herren=2      damen=10     other=179  
+2026-09-22 14:55:32 [INFO ] [hotwords] Saved 191 words (raw: 213, errors: 0) → 20260922_145529_de.txt
+2026-09-22 14:55:32 [INFO ] [hotwords] ==================================================
+2026-09-22 14:55:32 [INFO ] [hotwords] Done.

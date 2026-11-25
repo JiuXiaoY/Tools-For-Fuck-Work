@@ -1,0 +1,13 @@
+2026-08-31 09:46:58 [INFO ] [jenkins] ==================================================
+2026-08-31 09:46:58 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-31 09:46:58 [INFO ] [jenkins] ==================================================
+2026-08-31 09:46:58 [INFO ] [jenkins] 
+2026-08-31 09:46:58 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-31 09:46:58 [INFO ] [jenkins] ------------------------------
+2026-08-31 09:46:59 [INFO ] [title_workflow] Source: 8.27v1.xlsx
+2026-08-31 09:47:01 [INFO ] [title_workflow] Extracted 71 titles + 71 links
+2026-08-31 09:47:01 [INFO ] [title_workflow] Written: origin_title (71) + origin_link (71)
+2026-08-31 09:47:01 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-31 09:47:01 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-31 09:47:02 [INFO ] [deepseek_web] Opening DeepSeek web (71 titles)...
+2026-08-31 09:47:02 [INFO ] [deepseek_web] Browser state: deepseek_state.json

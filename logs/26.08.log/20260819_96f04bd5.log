@@ -1,0 +1,1012 @@
+2026-08-19 14:05:26 [INFO ] [jenkins] ==================================================
+2026-08-19 14:05:26 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-19 14:05:26 [INFO ] [jenkins] ==================================================
+2026-08-19 14:05:26 [INFO ] [jenkins] 
+2026-08-19 14:05:26 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-19 14:05:26 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:05:26 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-19 14:05:26 [INFO ] [jenkins] 
+2026-08-19 14:05:26 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-19 14:05:26 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:05:26 [INFO ] [preprocess] Preprocessing 10 file(s) with 1 step(s)
+2026-08-19 14:05:26 [INFO ] [preprocess] [男士长袖1.xlsx]
+2026-08-19 14:05:27 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:27 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:30 [INFO ] [preprocess]   [男士长袖1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:30 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:31 [INFO ] [preprocess] [男士长袖10.xlsx]
+2026-08-19 14:05:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:31 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:34 [INFO ] [preprocess]   [男士长袖10.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:34 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:35 [INFO ] [preprocess] [男士长袖2.xlsx]
+2026-08-19 14:05:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:35 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:39 [INFO ] [preprocess]   [男士长袖2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:39 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:40 [INFO ] [preprocess] [男士长袖3.xlsx]
+2026-08-19 14:05:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:40 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:42 [INFO ] [preprocess]   [男士长袖3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:42 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:43 [INFO ] [preprocess] [男士长袖4.xlsx]
+2026-08-19 14:05:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:43 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:46 [INFO ] [preprocess]   [男士长袖4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:46 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:46 [INFO ] [preprocess] [男士长袖5.xlsx]
+2026-08-19 14:05:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:46 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:49 [INFO ] [preprocess]   [男士长袖5.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:49 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:49 [INFO ] [preprocess] [男士长袖6.xlsx]
+2026-08-19 14:05:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:49 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:52 [INFO ] [preprocess]   [男士长袖6.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:52 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:52 [INFO ] [preprocess] [男士长袖7.xlsx]
+2026-08-19 14:05:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:53 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:56 [INFO ] [preprocess]   [男士长袖7.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:56 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:05:56 [INFO ] [preprocess] [男士长袖8.xlsx]
+2026-08-19 14:05:57 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:05:57 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:05:59 [INFO ] [preprocess]   [男士长袖8.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:05:59 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:06:00 [INFO ] [preprocess] [男士长袖9.xlsx]
+2026-08-19 14:06:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-08-19 14:06:00 [INFO ] [pipeline] [1/1] remove_header
+2026-08-19 14:06:03 [INFO ] [preprocess]   [男士长袖9.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:06:03 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:06:04 [INFO ] [preprocess] Preprocessing complete
+2026-08-19 14:06:04 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-19 14:06:04 [INFO ] [jenkins] 
+2026-08-19 14:06:04 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-19 14:06:04 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:06:05 [INFO ] [main] Log file: 20260819_96f04bd5.log
+2026-08-19 14:06:05 [INFO ] [main] Found 10 file(s):
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖1.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖10.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖2.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖3.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖4.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖5.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖6.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖7.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖8.xlsx
+2026-08-19 14:06:05 [INFO ] [main]   男士长袖9.xlsx
+2026-08-19 14:06:05 [INFO ] [main] Output: 8.18v1.xlsx
+2026-08-19 14:06:05 [INFO ] [main] ==================================================
+2026-08-19 14:06:38 [INFO ] [main] Merged 10 files, 16164 images total
+2026-08-19 14:06:38 [INFO ] [main] Deleted 10 source file(s)
+2026-08-19 14:06:42 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-19 14:06:42 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_2]: 851 rows, 1601 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_3]: 935 rows, 1970 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_4]: 721 rows, 1734 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_5]: 626 rows, 1348 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_6]: 596 rows, 1314 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_7]: 684 rows, 1314 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_8]: 839 rows, 1657 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_9]: 674 rows, 1315 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Sheet [Sheet0_10]: 935 rows, 1972 images
+2026-08-19 14:07:11 [INFO ] [pipeline]   Merged 10 sheets -> 1, 6861 data rows, 14225 images
+2026-08-19 14:07:11 [INFO ] [pipeline] [2/12] validate
+2026-08-19 14:07:11 [INFO ] [pipeline]   Validated: 7766 rows, 27 cols (expect ~32)
+2026-08-19 14:07:11 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-19 14:07:12 [INFO ] [pipeline]   Backed up 16164 images
+2026-08-19 14:07:12 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-19 14:07:12 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-19 14:07:12 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-19 14:07:12 [INFO ] [pipeline]   Restored 16164 images with adjusted anchors
+2026-08-19 14:07:12 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-19 14:07:12 [INFO ] [pipeline]   Column 2: 7766 IDs generated
+2026-08-19 14:07:12 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-19 14:07:12 [INFO ] [pipeline]   Column 3: 7766 cells filled
+2026-08-19 14:07:12 [INFO ] [pipeline] [6/12] map_colors
+2026-08-19 14:07:12 [INFO ] [pipeline]   Column 10: 7365 cells mapped, 400 rows skipped (col A has fill)
+2026-08-19 14:07:12 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-19 14:07:12 [INFO ] [pipeline]   Column 11: 7272 mapped, 400 cleared (col A has fill), 94 no match
+2026-08-19 14:07:12 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-19 14:07:12 [INFO ] [pipeline]   Mirror copy: 39933 cells written
+2026-08-19 14:07:12 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-19 14:07:12 [INFO ] [pipeline]   Column 44: 7766 cells copied from col 12
+2026-08-19 14:07:12 [INFO ] [pipeline] [10/12] calc_price
+2026-08-19 14:07:13 [INFO ] [pipeline]   Columns 45-48: 7766 rows calculated
+2026-08-19 14:07:13 [INFO ] [pipeline] [11/12] format_cells
+2026-08-19 14:08:59 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-19 14:08:59 [INFO ] [pipeline]   Formatted 7766 rows: h=50, align=left/center
+2026-08-19 14:08:59 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-19 14:08:59 [INFO ] [pipeline] [12/12] finalize
+2026-08-19 14:08:59 [INFO ] [pipeline]   Done: 7766 rows x 48 cols (target: 48)
+2026-08-19 14:08:59 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:09:08 [INFO ] [main] Size: 7766 rows x 48 cols
+2026-08-19 14:09:08 [INFO ] [main] ==================================================
+2026-08-19 14:09:08 [INFO ] [main] Done: 8.18v1.xlsx
+2026-08-19 14:09:09 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-19 14:09:09 [INFO ] [jenkins] 
+2026-08-19 14:09:09 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-19 14:09:09 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:09:10 [INFO ] [color_size_main] Source: 8.18v1.xlsx
+2026-08-19 14:09:18 [INFO ] [color_size_main] Extracted: 7365 data lines + 401 separators → check_.txt
+2026-08-19 14:09:18 [INFO ] [color_size_main] Running: process.py
+2026-08-19 14:09:18 [INFO ] [color_size_deal] Groups: 401, lines: 7365 (file: 7766)
+2026-08-19 14:09:18 [INFO ] [color_size_deal] Prefixes: none
+2026-08-19 14:09:18 [INFO ] [color_size_deal] Done.
+2026-08-19 14:09:18 [INFO ] [color_size_main] Processing write-back: 7766 lines
+2026-08-19 14:09:36 [INFO ] [color_size_main] Write-back: 401 written, 7365 unchanged → 8.18v1.xlsx
+2026-08-19 14:09:36 [INFO ] [color_size_main] Done.
+2026-08-19 14:09:36 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-19 14:09:36 [INFO ] [jenkins] 
+2026-08-19 14:09:36 [INFO ] [jenkins] ==================================================
+2026-08-19 14:09:36 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-19 14:09:36 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-19 14:09:36 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-19 14:09:36 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-19 14:09:36 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-19 14:42:56 [INFO ] [jenkins] ==================================================
+2026-08-19 14:42:56 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-19 14:42:56 [INFO ] [jenkins] ==================================================
+2026-08-19 14:42:56 [INFO ] [jenkins] 
+2026-08-19 14:42:56 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-19 14:42:56 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:42:56 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-19 14:42:56 [INFO ] [jenkins] 
+2026-08-19 14:42:56 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-19 14:42:56 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:42:56 [INFO ] [preprocess] Preprocessing 10 file(s) with 2 step(s)
+2026-08-19 14:42:56 [INFO ] [preprocess] [男士长袖1.xlsx]
+2026-08-19 14:42:57 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:42:57 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:00 [INFO ] [preprocess]   [男士长袖1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:03 [INFO ] [preprocess]   [男士长袖1.xlsx] Dedup: 34 filled rows, 4 deleted
+2026-08-19 14:43:03 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:04 [INFO ] [preprocess] [男士长袖10.xlsx]
+2026-08-19 14:43:04 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:04 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:07 [INFO ] [preprocess]   [男士长袖10.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:07 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:10 [INFO ] [preprocess]   [男士长袖10.xlsx] Dedup: 41 filled rows, 31 deleted
+2026-08-19 14:43:10 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:11 [INFO ] [preprocess] [男士长袖2.xlsx]
+2026-08-19 14:43:11 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:11 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:14 [INFO ] [preprocess]   [男士长袖2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:14 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:18 [INFO ] [preprocess]   [男士长袖2.xlsx] Dedup: 35 filled rows, 2 deleted
+2026-08-19 14:43:18 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:18 [INFO ] [preprocess] [男士长袖3.xlsx]
+2026-08-19 14:43:19 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:19 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:21 [INFO ] [preprocess]   [男士长袖3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:21 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:24 [INFO ] [preprocess]   [男士长袖3.xlsx] Dedup: 37 filled rows, 17 deleted
+2026-08-19 14:43:24 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:24 [INFO ] [preprocess] [男士长袖4.xlsx]
+2026-08-19 14:43:25 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:25 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:27 [INFO ] [preprocess]   [男士长袖4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:27 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:29 [INFO ] [preprocess]   [男士长袖4.xlsx] Dedup: 47 filled rows, 35 deleted
+2026-08-19 14:43:29 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:29 [INFO ] [preprocess] [男士长袖5.xlsx]
+2026-08-19 14:43:30 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:30 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:32 [INFO ] [preprocess]   [男士长袖5.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:32 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:34 [INFO ] [preprocess]   [男士长袖5.xlsx] Dedup: 55 filled rows, 44 deleted
+2026-08-19 14:43:34 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:34 [INFO ] [preprocess] [男士长袖6.xlsx]
+2026-08-19 14:43:35 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:35 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:37 [INFO ] [preprocess]   [男士长袖6.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:37 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:39 [INFO ] [preprocess]   [男士长袖6.xlsx] Dedup: 52 filled rows, 42 deleted
+2026-08-19 14:43:39 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:40 [INFO ] [preprocess] [男士长袖7.xlsx]
+2026-08-19 14:43:40 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:40 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:43 [INFO ] [preprocess]   [男士长袖7.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:43 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:46 [INFO ] [preprocess]   [男士长袖7.xlsx] Dedup: 36 filled rows, 30 deleted
+2026-08-19 14:43:46 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:47 [INFO ] [preprocess] [男士长袖8.xlsx]
+2026-08-19 14:43:47 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:47 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:49 [INFO ] [preprocess]   [男士长袖8.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:49 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:52 [INFO ] [preprocess]   [男士长袖8.xlsx] Dedup: 31 filled rows, 15 deleted
+2026-08-19 14:43:52 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:43:52 [INFO ] [preprocess] [男士长袖9.xlsx]
+2026-08-19 14:43:53 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-19 14:43:53 [INFO ] [pipeline] [1/2] remove_header
+2026-08-19 14:43:56 [INFO ] [preprocess]   [男士长袖9.xlsx] Sheet [Sheet0]: header row removed
+2026-08-19 14:43:56 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-19 14:43:59 [INFO ] [preprocess]   [男士长袖9.xlsx] Dedup: 32 filled rows, 23 deleted
+2026-08-19 14:43:59 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:44:00 [INFO ] [preprocess] Preprocessing complete
+2026-08-19 14:44:00 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-19 14:44:00 [INFO ] [jenkins] 
+2026-08-19 14:44:00 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-19 14:44:00 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:44:00 [INFO ] [main] Log file: 20260819_96f04bd5.log
+2026-08-19 14:44:00 [INFO ] [main] Found 10 file(s):
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖1.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖10.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖2.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖3.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖4.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖5.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖6.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖7.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖8.xlsx
+2026-08-19 14:44:00 [INFO ] [main]   男士长袖9.xlsx
+2026-08-19 14:44:00 [INFO ] [main] Output: 8.18v1.xlsx
+2026-08-19 14:44:00 [INFO ] [main] ==================================================
+2026-08-19 14:44:32 [INFO ] [main] Merged 10 files, 14748 images total
+2026-08-19 14:44:32 [INFO ] [main] Deleted 10 source file(s)
+2026-08-19 14:44:38 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-19 14:44:38 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_2]: 820 rows, 1425 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_3]: 933 rows, 1950 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_4]: 704 rows, 1631 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_5]: 591 rows, 1163 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_6]: 552 rows, 1088 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_7]: 642 rows, 1120 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_8]: 809 rows, 1471 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_9]: 659 rows, 1249 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Sheet [Sheet0_10]: 912 rows, 1744 images
+2026-08-19 14:45:05 [INFO ] [pipeline]   Merged 10 sheets -> 1, 6622 data rows, 12841 images
+2026-08-19 14:45:05 [INFO ] [pipeline] [2/12] validate
+2026-08-19 14:45:05 [INFO ] [pipeline]   Validated: 7523 rows, 27 cols (expect ~32)
+2026-08-19 14:45:05 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-19 14:45:06 [INFO ] [pipeline]   Backed up 14748 images
+2026-08-19 14:45:06 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-19 14:45:06 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-19 14:45:06 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-19 14:45:06 [INFO ] [pipeline]   Restored 14748 images with adjusted anchors
+2026-08-19 14:45:06 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-19 14:45:06 [INFO ] [pipeline]   Column 2: 7523 IDs generated
+2026-08-19 14:45:06 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-19 14:45:06 [INFO ] [pipeline]   Column 3: 7523 cells filled
+2026-08-19 14:45:06 [INFO ] [pipeline] [6/12] map_colors
+2026-08-19 14:45:06 [INFO ] [pipeline]   Column 10: 7353 cells mapped, 169 rows skipped (col A has fill), 1 no match (recorded)
+2026-08-19 14:45:06 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-19 14:45:06 [INFO ] [pipeline]   Column 11: 7260 mapped, 169 cleared (col A has fill), 94 no match (recorded)
+2026-08-19 14:45:06 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-19 14:45:07 [INFO ] [pipeline]   Mirror copy: 38730 cells written
+2026-08-19 14:45:07 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-19 14:45:07 [INFO ] [pipeline]   Column 44: 7523 cells copied from col 12
+2026-08-19 14:45:07 [INFO ] [pipeline] [10/12] calc_price
+2026-08-19 14:45:07 [INFO ] [pipeline]   Columns 45-48: 7523 rows calculated
+2026-08-19 14:45:07 [INFO ] [pipeline] [11/12] format_cells
+2026-08-19 14:45:08 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-19 14:45:08 [INFO ] [pipeline]   Formatted 7523 rows: h=50, align=left/center
+2026-08-19 14:45:08 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-19 14:45:08 [INFO ] [pipeline] [12/12] finalize
+2026-08-19 14:45:08 [INFO ] [pipeline]   Done: 7523 rows x 48 cols (target: 48)
+2026-08-19 14:45:08 [INFO ] [pipeline] Pipeline complete
+2026-08-19 14:45:16 [INFO ] [main] Size: 7523 rows x 48 cols
+2026-08-19 14:45:16 [INFO ] [main] ==================================================
+2026-08-19 14:45:16 [INFO ] [main] Done: 8.18v1.xlsx
+2026-08-19 14:45:17 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-19 14:45:17 [INFO ] [jenkins] 
+2026-08-19 14:45:17 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-19 14:45:17 [INFO ] [jenkins] ------------------------------
+2026-08-19 14:45:17 [INFO ] [color_size_main] Source: 8.18v1.xlsx
+2026-08-19 14:45:25 [INFO ] [color_size_main] Extracted: 7353 data lines + 170 separators → check_.txt
+2026-08-19 14:45:25 [INFO ] [color_size_main] Running: process.py
+2026-08-19 14:45:25 [INFO ] [color_size_deal] Groups: 170, lines: 7353 (file: 7523)
+2026-08-19 14:45:25 [INFO ] [color_size_deal] Prefixes: {'01': 722, '02': 482, '03': 270, '04': 238, '05': 140, '06': 120, '07': 105, '08': 79, '09': 54, '10': 38, '11': 20, '12': 20, '13': 20, '14': 19, '15': 7, '16': 7, '17': 7, '18': 7, '19': 7}
+2026-08-19 14:45:25 [INFO ] [color_size_deal] Done.
+2026-08-19 14:45:25 [INFO ] [color_size_main] Processing write-back: 7523 lines
+2026-08-19 14:45:41 [INFO ] [color_size_main] Write-back: 2532 written, 4991 unchanged → 8.18v1.xlsx
+2026-08-19 14:45:41 [INFO ] [color_size_main] Done.
+2026-08-19 14:45:42 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-19 14:45:42 [INFO ] [jenkins] 
+2026-08-19 14:45:42 [INFO ] [jenkins] ==================================================
+2026-08-19 14:45:42 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-19 14:45:42 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-19 14:45:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-19 14:45:42 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-19 14:45:42 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-19 15:24:49 [INFO ] [jenkins] ==================================================
+2026-08-19 15:24:49 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-19 15:24:49 [INFO ] [jenkins] ==================================================
+2026-08-19 15:24:49 [INFO ] [jenkins] 
+2026-08-19 15:24:49 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-19 15:24:49 [INFO ] [jenkins] ------------------------------
+2026-08-19 15:24:49 [INFO ] [title_workflow] Source: 8.18v1.xlsx
+2026-08-19 15:24:50 [INFO ] [title_workflow] Extracted 65 titles + 65 links
+2026-08-19 15:24:50 [INFO ] [title_workflow] Written: origin_title (65) + origin_link (65)
+2026-08-19 15:24:50 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-19 15:24:50 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-19 15:24:51 [INFO ] [deepseek_web] Opening DeepSeek web (65 titles)...
+2026-08-19 15:24:51 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-19 15:24:58 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-19 15:25:00 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-19 15:25:00 [INFO ] [deepseek_web] [1/65] 春夏新款男款宽松时尚防晒连帽长袖纯色亚麻衬衫
+2026-08-19 15:25:03 [INFO ] [deepseek_web]   Downloaded: 0001_5691054201246711828281.jpg
+2026-08-19 15:25:03 [INFO ] [deepseek_web]   Prefetching next image (2/65)
+2026-08-19 15:25:03 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-19 15:25:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:25:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:25:40 [INFO ] [deepseek_web]   Response: 男士宽松连帽长袖亚麻防晒衬衫 单排扣抽绳开衫 透气纯色休闲上衣
+2026-08-19 15:25:40 [INFO ] [deepseek_web]   Deleted: 0001_5691054201246711828281.jpg
+2026-08-19 15:25:45 [INFO ] [deepseek_web] [2/65] 男士复古民族印花双口袋长袖翻领衬衫
+2026-08-19 15:25:45 [INFO ] [deepseek_web]   Downloaded: 0002_4350417595812353496059.jpg
+2026-08-19 15:25:45 [INFO ] [deepseek_web]   Prefetching next image (3/65)
+2026-08-19 15:25:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:25:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:26:18 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫 民族几何印花双口袋 西部牛仔渐变色单排扣开衫上衣
+2026-08-19 15:26:18 [INFO ] [deepseek_web]   Deleted: 0002_4350417595812353496059.jpg
+2026-08-19 15:26:23 [INFO ] [deepseek_web] [3/65] 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-08-19 15:26:23 [INFO ] [deepseek_web]   Downloaded: 0003_4870632244262557033778.jpg
+2026-08-19 15:26:23 [INFO ] [deepseek_web]   Prefetching next image (4/65)
+2026-08-19 15:26:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:26:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:26:52 [INFO ] [deepseek_web]   Response: 男士翻领长袖衬衫 巴洛克卷草3D印花单排扣门襟 复古骑士风格表演上衣
+2026-08-19 15:26:52 [INFO ] [deepseek_web]   Deleted: 0003_4870632244262557033778.jpg
+2026-08-19 15:26:57 [INFO ] [deepseek_web] [4/65] 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-08-19 15:26:57 [INFO ] [deepseek_web]   Downloaded: 0004_8270922240761522973208.jpg
+2026-08-19 15:26:57 [INFO ] [deepseek_web]   Prefetching next image (5/65)
+2026-08-19 15:26:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:27:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:27:26 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫 复古70年代佩斯利几何花卉印花 单排扣撞色纽扣迪斯科主题表演上衣
+2026-08-19 15:27:26 [INFO ] [deepseek_web]   Deleted: 0004_8270922240761522973208.jpg
+2026-08-19 15:27:31 [INFO ] [deepseek_web] [5/65] 男士穆斯林长袖连帽拉链刺绣宽松长袍
+2026-08-19 15:27:31 [INFO ] [deepseek_web]   Downloaded: 0005_8071016439821019339089.jpg
+2026-08-19 15:27:31 [INFO ] [deepseek_web]   Prefetching next image (6/65)
+2026-08-19 15:27:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:27:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:28:00 [INFO ] [deepseek_web]   Response: 男士连帽拉链长袖及踝长袍 对比色刺绣装饰单侧胸袋 穆斯林风格宽松长衫
+2026-08-19 15:28:00 [INFO ] [deepseek_web]   Deleted: 0005_8071016439821019339089.jpg
+2026-08-19 15:28:05 [INFO ] [deepseek_web] [6/65] 0005 #男士时尚条纹民族风穆斯林长袖长袍
+2026-08-19 15:28:05 [INFO ] [deepseek_web]   Downloaded: 0006_7510255355101621297569.jpg
+2026-08-19 15:28:05 [INFO ] [deepseek_web]   Prefetching next image (7/65)
+2026-08-19 15:28:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:28:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:28:38 [INFO ] [deepseek_web]   Response: 男士小立领长袖竖条纹单排扣双侧口袋宽松及踝长袍 民族风穆斯林休闲透气长衫
+2026-08-19 15:28:38 [INFO ] [deepseek_web]   Deleted: 0006_7510255355101621297569.jpg
+2026-08-19 15:28:43 [INFO ] [deepseek_web] [7/65] 男士啤酒节衬衣透气棉长袖格子衬衣休闲外套
+2026-08-19 15:28:43 [INFO ] [deepseek_web]   Downloaded: 0007_8770931342384915537151.jpg
+2026-08-19 15:28:43 [INFO ] [deepseek_web]   Prefetching next image (8/65)
+2026-08-19 15:28:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:28:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:29:12 [INFO ] [deepseek_web]   Response: 男士长袖扣尖领透气棉细格纹衬衫 单排扣对比色纽扣贴袋休闲开衫上衣
+2026-08-19 15:29:12 [INFO ] [deepseek_web]   Deleted: 0007_8770931342384915537151.jpg
+2026-08-19 15:29:17 [INFO ] [deepseek_web] [8/65] 男士弹力烫金条纹男士长袖衬衫
+2026-08-19 15:29:17 [INFO ] [deepseek_web]   Downloaded: 0008_1760320465171810507426.jpg
+2026-08-19 15:29:17 [INFO ] [deepseek_web]   Prefetching next image (9/65)
+2026-08-19 15:29:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:29:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:29:46 [INFO ] [deepseek_web]   Response: 男士长袖翻领弹力衬衫 抽象垂直波浪条纹烫金装饰 单排扣休闲上衣
+2026-08-19 15:29:46 [INFO ] [deepseek_web]   Deleted: 0008_1760320465171810507426.jpg
+2026-08-19 15:29:51 [INFO ] [deepseek_web] [9/65] 男士时尚大码宽松休闲狂欢节数码印花翻领长袖衬衫
+2026-08-19 15:29:51 [INFO ] [deepseek_web]   Downloaded: 0009_2710453235334018911821.jpg
+2026-08-19 15:29:51 [INFO ] [deepseek_web]   Prefetching next image (10/65)
+2026-08-19 15:29:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:30:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:30:21 [INFO ] [deepseek_web]   Response: 男士大码宽松翻领长袖衬衫 彩虹圆点渐变数码印花单排扣狂欢节派对表演上衣
+2026-08-19 15:30:21 [INFO ] [deepseek_web]   Deleted: 0009_2710453235334018911821.jpg
+2026-08-19 15:30:26 [INFO ] [deepseek_web] [10/65] 男士加拿大国旗印花长袖华夫格T恤
+2026-08-19 15:30:26 [INFO ] [deepseek_web]   Downloaded: 0010_0650326472411493237005.jpg
+2026-08-19 15:30:26 [INFO ] [deepseek_web]   Prefetching next image (11/65)
+2026-08-19 15:30:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:30:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:30:55 [INFO ] [deepseek_web]   Response: 男士圆领长袖华夫格T恤 加拿大字母枫叶印花袖臂国旗补丁套头休闲上衣
+2026-08-19 15:30:55 [INFO ] [deepseek_web]   Deleted: 0010_0650326472411493237005.jpg
+2026-08-19 15:31:00 [INFO ] [deepseek_web] [11/65] 男士长袖翻领假口袋商务休闲西装外套
+2026-08-19 15:31:00 [INFO ] [deepseek_web]   Downloaded: 0011_6770456100462814385930.jpg
+2026-08-19 15:31:00 [INFO ] [deepseek_web]   Prefetching next image (12/65)
+2026-08-19 15:31:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:31:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:31:30 [INFO ] [deepseek_web]   Response: 男士长袖平驳领单排扣亚麻西装外套 贴袋翻盖口袋商务休闲单西上衣
+2026-08-19 15:31:30 [INFO ] [deepseek_web]   Deleted: 0011_6770456100462814385930.jpg
+2026-08-19 15:31:35 [INFO ] [deepseek_web] [12/65] 男士长袖棉麻上衣 货号 6572（不要成分标）
+2026-08-19 15:31:35 [INFO ] [deepseek_web]   Downloaded: 0012_2231056064432671195684.jpg
+2026-08-19 15:31:35 [INFO ] [deepseek_web]   Prefetching next image (13/65)
+2026-08-19 15:31:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:31:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:32:04 [INFO ] [deepseek_web]   Response: 男士宽松V领拼接领长袖棉麻套头上衣 纯色落肩袖透气休闲罩衫
+2026-08-19 15:32:04 [INFO ] [deepseek_web]   Deleted: 0012_2231056064432671195684.jpg
+2026-08-19 15:32:09 [INFO ] [deepseek_web] [13/65] 男士长袖衬衫
+2026-08-19 15:32:09 [INFO ] [deepseek_web]   Downloaded: 0013_4321038571679613066385.jpg
+2026-08-19 15:32:09 [INFO ] [deepseek_web]   Prefetching next image (14/65)
+2026-08-19 15:32:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:32:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:35:36 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-08-19 15:35:36 [INFO ] [deepseek_web]   Deleted: 0013_4321038571679613066385.jpg
+2026-08-19 15:35:41 [INFO ] [deepseek_web] [14/65] 男士啤酒节特色服饰翻领褶边长袖衬衫
+2026-08-19 15:35:42 [INFO ] [deepseek_web]   Downloaded: 0014_3960736254256818600717.jpg
+2026-08-19 15:35:42 [INFO ] [deepseek_web]   Prefetching next image (15/65)
+2026-08-19 15:35:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:35:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:39:09 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-08-19 15:39:09 [INFO ] [deepseek_web]   Deleted: 0014_3960736254256818600717.jpg
+2026-08-19 15:39:14 [INFO ] [deepseek_web] [15/65] 男女装西部牛仔风翻领长袖纽扣衬衫带流苏衬衫
+2026-08-19 15:39:20 [INFO ] [deepseek_web]   Downloaded: 0015_7470448044361717788419.jpg
+2026-08-19 15:39:20 [INFO ] [deepseek_web]   Prefetching next image (16/65)
+2026-08-19 15:39:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:39:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:41:44 [INFO ] [deepseek_web]   Deleted: 0015_7470448044361717788419.jpg
+2026-08-19 15:42:07 [INFO ] [jenkins] ==================================================
+2026-08-19 15:42:07 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-08-19 15:42:07 [INFO ] [jenkins] ==================================================
+2026-08-19 15:42:07 [INFO ] [jenkins] 
+2026-08-19 15:42:07 [INFO ] [jenkins] ==================================================
+2026-08-19 15:42:07 [INFO ] [jenkins] All 0 steps completed successfully
+2026-08-19 15:42:07 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-19 15:42:07 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-19 15:42:07 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-19 15:42:07 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-19 15:42:15 [INFO ] [jenkins] ==================================================
+2026-08-19 15:42:15 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-19 15:42:15 [INFO ] [jenkins] ==================================================
+2026-08-19 15:42:15 [INFO ] [jenkins] 
+2026-08-19 15:42:15 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-19 15:42:15 [INFO ] [jenkins] ------------------------------
+2026-08-19 15:42:16 [INFO ] [title_workflow] Source: 8.18v1.xlsx
+2026-08-19 15:42:17 [INFO ] [title_workflow] Extracted 65 titles + 65 links
+2026-08-19 15:42:17 [INFO ] [title_workflow] Written: origin_title (65) + origin_link (65)
+2026-08-19 15:42:17 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-19 15:42:17 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-19 15:42:17 [INFO ] [deepseek_web] Opening DeepSeek web (65 titles)...
+2026-08-19 15:42:17 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-19 15:42:19 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-19 15:42:21 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-19 15:42:21 [INFO ] [deepseek_web] [1/65] 春夏新款男款宽松时尚防晒连帽长袖纯色亚麻衬衫
+2026-08-19 15:42:29 [INFO ] [deepseek_web]   Downloaded: 0001_5691054201246711828281.jpg
+2026-08-19 15:42:29 [INFO ] [deepseek_web]   Prefetching next image (2/65)
+2026-08-19 15:42:29 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-19 15:42:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:42:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:43:00 [INFO ] [deepseek_web]   Response: 男款宽松连帽长袖纯色亚麻衬衫 抽绳兜帽弧形下摆开襟纽扣卷袖设计 轻薄透气防晒度假休闲上衣开衫外套
+2026-08-19 15:43:00 [INFO ] [deepseek_web]   Deleted: 0001_5691054201246711828281.jpg
+2026-08-19 15:43:05 [INFO ] [deepseek_web] [2/65] 男士复古民族印花双口袋长袖翻领衬衫
+2026-08-19 15:43:05 [INFO ] [deepseek_web]   Downloaded: 0002_4350417595812353496059.jpg
+2026-08-19 15:43:05 [INFO ] [deepseek_web]   Prefetching next image (3/65)
+2026-08-19 15:43:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:43:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:43:43 [INFO ] [deepseek_web]   Response: 男士复古民族印花长袖翻领衬衫 常规版型几何图案渐变染色 双侧翻盖胸袋纽扣开襟 西部牛仔风户外休闲上衣
+2026-08-19 15:43:43 [INFO ] [deepseek_web]   Deleted: 0002_4350417595812353496059.jpg
+2026-08-19 15:43:48 [INFO ] [deepseek_web] [3/65] 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-08-19 15:43:48 [INFO ] [deepseek_web]   Downloaded: 0003_4870632244262557033778.jpg
+2026-08-19 15:43:48 [INFO ] [deepseek_web]   Prefetching next image (4/65)
+2026-08-19 15:43:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:43:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:44:20 [INFO ] [deepseek_web]   Response: 男士3D印花长袖翻领衬衫 巴洛克藤蔓花纹纽扣开襟尖领设计 中世纪狂欢节西部牛仔风格派对上衣
+2026-08-19 15:44:20 [INFO ] [deepseek_web]   Deleted: 0003_4870632244262557033778.jpg
+2026-08-19 15:44:25 [INFO ] [deepseek_web] [4/65] 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-08-19 15:44:25 [INFO ] [deepseek_web]   Downloaded: 0004_8270922240761522973208.jpg
+2026-08-19 15:44:25 [INFO ] [deepseek_web]   Prefetching next image (5/65)
+2026-08-19 15:44:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:44:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:44:55 [INFO ] [deepseek_web]   Response: 男士70年代复古迷幻花卉印花长袖翻领衬衫 纽扣开襟常规版型 狂欢节派对迪斯科风格上衣
+2026-08-19 15:44:55 [INFO ] [deepseek_web]   Deleted: 0004_8270922240761522973208.jpg
+2026-08-19 15:45:00 [INFO ] [deepseek_web] [5/65] 男士穆斯林长袖连帽拉链刺绣宽松长袍
+2026-08-19 15:45:00 [INFO ] [deepseek_web]   Downloaded: 0005_8071016439821019339089.jpg
+2026-08-19 15:45:00 [INFO ] [deepseek_web]   Prefetching next image (6/65)
+2026-08-19 15:45:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:45:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:45:30 [INFO ] [deepseek_web]   Response: 男士宽松连帽长袖及踝长袍 前拉链门襟左胸口袋刺绣饰边 穆斯林中东风格休闲罩袍
+2026-08-19 15:45:30 [INFO ] [deepseek_web]   Deleted: 0005_8071016439821019339089.jpg
+2026-08-19 15:45:35 [INFO ] [deepseek_web] [6/65] 0005 #男士时尚条纹民族风穆斯林长袖长袍
+2026-08-19 15:45:35 [INFO ] [deepseek_web]   Downloaded: 0006_7510255355101621297569.jpg
+2026-08-19 15:45:35 [INFO ] [deepseek_web]   Prefetching next image (7/65)
+2026-08-19 15:45:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:45:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:46:04 [INFO ] [deepseek_web]   Response: 男士宽松无领半开襟纽扣长袖及踝长袍 彩色竖条纹前置双贴袋设计 穆斯林民族风度假休闲家居罩袍
+2026-08-19 15:46:04 [INFO ] [deepseek_web]   Deleted: 0006_7510255355101621297569.jpg
+2026-08-19 15:46:09 [INFO ] [deepseek_web] [7/65] 男士啤酒节衬衣透气棉长袖格子衬衣休闲外套
+2026-08-19 15:46:09 [INFO ] [deepseek_web]   Downloaded: 0007_8770931342384915537151.jpg
+2026-08-19 15:46:09 [INFO ] [deepseek_web]   Prefetching next image (8/65)
+2026-08-19 15:46:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:46:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:46:38 [INFO ] [deepseek_web]   Response: 男士长袖格子衬衫 透气棉质纽扣领前开襟单口袋 休闲商务日常通勤上衣
+2026-08-19 15:46:38 [INFO ] [deepseek_web]   Deleted: 0007_8770931342384915537151.jpg
+2026-08-19 15:46:43 [INFO ] [deepseek_web] [8/65] 男士弹力烫金条纹男士长袖衬衫
+2026-08-19 15:46:43 [INFO ] [deepseek_web]   Downloaded: 0008_1760320465171810507426.jpg
+2026-08-19 15:46:43 [INFO ] [deepseek_web]   Prefetching next image (9/65)
+2026-08-19 15:46:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:46:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:47:12 [INFO ] [deepseek_web]   Response: 男士弹力烫金细条纹长袖翻领衬衫 尖领纽扣门襟弧形下摆 商务休闲派对通勤上衣
+2026-08-19 15:47:12 [INFO ] [deepseek_web]   Deleted: 0008_1760320465171810507426.jpg
+2026-08-19 15:47:17 [INFO ] [deepseek_web] [9/65] 男士时尚大码宽松休闲狂欢节数码印花翻领长袖衬衫
+2026-08-19 15:47:17 [INFO ] [deepseek_web]   Downloaded: 0009_2710453235334018911821.jpg
+2026-08-19 15:47:17 [INFO ] [deepseek_web]   Prefetching next image (10/65)
+2026-08-19 15:47:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:47:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:47:54 [INFO ] [deepseek_web]   Response: 男士大码宽松数码印花翻领长袖衬衫 彩虹渐变波普波点图案 纽扣门襟弧形下摆 狂欢节派对休闲上衣
+2026-08-19 15:47:54 [INFO ] [deepseek_web]   Deleted: 0009_2710453235334018911821.jpg
+2026-08-19 15:47:59 [INFO ] [deepseek_web] [10/65] 男士加拿大国旗印花长袖华夫格T恤
+2026-08-19 15:47:59 [INFO ] [deepseek_web]   Downloaded: 0010_0650326472411493237005.jpg
+2026-08-19 15:47:59 [INFO ] [deepseek_web]   Prefetching next image (11/65)
+2026-08-19 15:47:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:48:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:48:28 [INFO ] [deepseek_web]   Response: 男士长袖华夫格圆领套头T恤 加拿大文字枫叶条纹印花左袖旗帜徽章 罗纹袖口下摆休闲运动户外上衣
+2026-08-19 15:48:28 [INFO ] [deepseek_web]   Deleted: 0010_0650326472411493237005.jpg
+2026-08-19 15:48:33 [INFO ] [deepseek_web] [11/65] 男士长袖翻领假口袋商务休闲西装外套
+2026-08-19 15:48:33 [INFO ] [deepseek_web]   Downloaded: 0011_6770456100462814385930.jpg
+2026-08-19 15:48:33 [INFO ] [deepseek_web]   Prefetching next image (12/65)
+2026-08-19 15:48:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:48:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:49:02 [INFO ] [deepseek_web]   Response: 男士长袖翻领单排扣西装外套 亚麻棉麻质感假口袋细节设计 商务休闲度假通勤春夏轻薄便服夹克
+2026-08-19 15:49:02 [INFO ] [deepseek_web]   Deleted: 0011_6770456100462814385930.jpg
+2026-08-19 15:49:07 [INFO ] [deepseek_web] [12/65] 男士长袖棉麻上衣 货号 6572（不要成分标）
+2026-08-19 15:49:07 [INFO ] [deepseek_web]   Downloaded: 0012_2231056064432671195684.jpg
+2026-08-19 15:49:07 [INFO ] [deepseek_web]   Prefetching next image (13/65)
+2026-08-19 15:49:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:49:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:49:38 [INFO ] [deepseek_web]   Response: 男士宽松V领无扣棉麻套头长袖上衣 纯色前胸拼接覆片不规则弧形下摆 休闲度假透气罩衫
+2026-08-19 15:49:38 [INFO ] [deepseek_web]   Deleted: 0012_2231056064432671195684.jpg
+2026-08-19 15:49:43 [INFO ] [deepseek_web] [13/65] 男士长袖衬衫
+2026-08-19 15:49:43 [INFO ] [deepseek_web]   Downloaded: 0013_4321038571679613066385.jpg
+2026-08-19 15:49:43 [INFO ] [deepseek_web]   Prefetching next image (14/65)
+2026-08-19 15:49:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:49:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:50:15 [INFO ] [deepseek_web]   Response: 男士长袖翻领纯色衬衫 门襟两侧垂直镂空装饰线 纽扣开襟卷袖弧形下摆 度假休闲透气上衣
+2026-08-19 15:50:15 [INFO ] [deepseek_web]   Deleted: 0013_4321038571679613066385.jpg
+2026-08-19 15:50:20 [INFO ] [deepseek_web] [14/65] 男士啤酒节特色服饰翻领褶边长袖衬衫
+2026-08-19 15:50:20 [INFO ] [deepseek_web]   Downloaded: 0014_3960736254256818600717.jpg
+2026-08-19 15:50:20 [INFO ] [deepseek_web]   Prefetching next image (15/65)
+2026-08-19 15:50:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:50:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:50:49 [INFO ] [deepseek_web]   Response: 男士巴伐利亚风格啤酒节长袖翻领衬衫 前胸对称纵向打褶装饰纽扣开襟 纯白传统节日派对休闲上衣
+2026-08-19 15:50:49 [INFO ] [deepseek_web]   Deleted: 0014_3960736254256818600717.jpg
+2026-08-19 15:50:54 [INFO ] [deepseek_web] [15/65] 男女装西部牛仔风翻领长袖纽扣衬衫带流苏衬衫
+2026-08-19 15:50:54 [INFO ] [deepseek_web]   Downloaded: 0015_7470448044361717788419.jpg
+2026-08-19 15:50:54 [INFO ] [deepseek_web]   Prefetching next image (16/65)
+2026-08-19 15:50:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:51:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:51:30 [INFO ] [deepseek_web]   Response: 男士西部牛仔风翻领长袖纽扣衬衫 前胸对比色流苏装饰纽扣固定卷袖 休闲派对舞台演出上衣
+2026-08-19 15:51:30 [INFO ] [deepseek_web]   Deleted: 0015_7470448044361717788419.jpg
+2026-08-19 15:51:35 [INFO ] [deepseek_web] [16/65] 复古 欧码简约长袖牛仔衬衣 男士大码衬衫
+2026-08-19 15:51:35 [INFO ] [deepseek_web]   Downloaded: 0016_3810954090234721396290.jpg
+2026-08-19 15:51:35 [INFO ] [deepseek_web]   Prefetching next image (17/65)
+2026-08-19 15:51:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:51:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:52:04 [INFO ] [deepseek_web]   Response: 男士大码长袖水洗做旧牛仔衬衫 翻领双按扣翻盖胸袋金属按扣门襟 卷袖弧形下摆 复古西部风工装休闲上衣
+2026-08-19 15:52:04 [INFO ] [deepseek_web]   Deleted: 0016_3810954090234721396290.jpg
+2026-08-19 15:52:09 [INFO ] [deepseek_web] [17/65] 欧美男士休闲时尚系绳立领亚麻长袖嘻哈上衣男装潮流男（不要成份标）
+2026-08-19 15:52:09 [INFO ] [deepseek_web]   Downloaded: 0017_0621104253543816849318.jpg
+2026-08-19 15:52:09 [INFO ] [deepseek_web]   Prefetching next image (18/65)
+2026-08-19 15:52:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:52:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:52:39 [INFO ] [deepseek_web]   Response: 男士长袖立领交叉系绳亚麻套头衬衫 纯色单侧胸袋卷袖设计 休闲度假透气上衣
+2026-08-19 15:52:39 [INFO ] [deepseek_web]   Deleted: 0017_0621104253543816849318.jpg
+2026-08-19 15:52:44 [INFO ] [deepseek_web] [18/65] 男士夏季棉麻纯色休闲加大尺码翻领长袖衬衫 不要成分标 （不要成分标）
+2026-08-19 15:52:44 [INFO ] [deepseek_web]   Downloaded: 0018_9650526133615436489095.jpg
+2026-08-19 15:52:44 [INFO ] [deepseek_web]   Prefetching next image (19/65)
+2026-08-19 15:52:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:52:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:53:13 [INFO ] [deepseek_web]   Response: 男士宽松加大码棉麻质感纯色翻领长袖衬衫 纽扣门襟弧形下摆 休闲度假透气上衣
+2026-08-19 15:53:13 [INFO ] [deepseek_web]   Deleted: 0018_9650526133615436489095.jpg
+2026-08-19 15:53:18 [INFO ] [deepseek_web] [19/65] 男士时尚休闲T恤骷颅骨印花长袖T恤上衣
+2026-08-19 15:53:18 [INFO ] [deepseek_web]   Downloaded: 0019_0191058221726016009994.jpg
+2026-08-19 15:53:18 [INFO ] [deepseek_web]   Prefetching next image (20/65)
+2026-08-19 15:53:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:53:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:53:47 [INFO ] [deepseek_web]   Response: 男士长袖圆领套头T恤 3D逼真人体骨架骨骼印花黑底拼接 万圣节派对休闲上衣
+2026-08-19 15:53:47 [INFO ] [deepseek_web]   Deleted: 0019_0191058221726016009994.jpg
+2026-08-19 15:53:52 [INFO ] [deepseek_web] [20/65] 男士连帽长袖卫衣棉麻宽松纯色潮流休闲男士衬衫（不要成分标）
+2026-08-19 15:53:52 [INFO ] [deepseek_web]   Downloaded: 0020_1270255129015310894255.jpg
+2026-08-19 15:53:52 [INFO ] [deepseek_web]   Prefetching next image (21/65)
+2026-08-19 15:53:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:54:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:54:21 [INFO ] [deepseek_web]   Response: 男士宽松棉麻质感纯色连帽长袖套头衬衫 抽绳兜帽半开襟纽扣双贴袋设计 休闲度假户外透气上衣
+2026-08-19 15:54:21 [INFO ] [deepseek_web]   Deleted: 0020_1270255129015310894255.jpg
+2026-08-19 15:54:26 [INFO ] [deepseek_web] [21/65] 嬉皮士男士70年代迪斯科嘻哈纽扣花卉复古长袖衬衣
+2026-08-19 15:54:26 [INFO ] [deepseek_web]   Downloaded: 0021_8560551049402910207757.jpg
+2026-08-19 15:54:26 [INFO ] [deepseek_web]   Prefetching next image (22/65)
+2026-08-19 15:54:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:54:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:54:55 [INFO ] [deepseek_web]   Response: 男士70年代复古密集彩色花卉印花长袖翻领衬衫 纽扣开襟尖领设计 派对节日休闲上衣
+2026-08-19 15:54:55 [INFO ] [deepseek_web]   Deleted: 0021_8560551049402910207757.jpg
+2026-08-19 15:55:00 [INFO ] [deepseek_web] [22/65] 休闲纯色长袖衬衫棉翻领系扣长袖沙滩衬衫男
+2026-08-19 15:55:00 [INFO ] [deepseek_web]   Downloaded: 0022_0850252206561214015180.jpg
+2026-08-19 15:55:00 [INFO ] [deepseek_web]   Prefetching next image (23/65)
+2026-08-19 15:55:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:55:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:55:30 [INFO ] [deepseek_web]   Response: 男士纯色棉质翻领长袖纽扣衬衫 挽袖设计弧形下摆 休闲度假沙滩通勤上衣
+2026-08-19 15:55:30 [INFO ] [deepseek_web]   Deleted: 0022_0850252206561214015180.jpg
+2026-08-19 15:55:35 [INFO ] [deepseek_web] [23/65] 男士春夏季宽松立领纯色口袋长袖套头衬衫 （不要成分标）
+2026-08-19 15:55:35 [INFO ] [deepseek_web]   Downloaded: 0023_8220456436352914185296.jpg
+2026-08-19 15:55:35 [INFO ] [deepseek_web]   Prefetching next image (24/65)
+2026-08-19 15:55:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:55:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:56:10 [INFO ] [deepseek_web]   Response: 男士宽松立领纯色长袖半开襟纽扣套头衬衫 单侧贴袋卷袖弧形下摆 休闲度假透气上衣
+2026-08-19 15:56:10 [INFO ] [deepseek_web]   Deleted: 0023_8220456436352914185296.jpg
+2026-08-19 15:56:15 [INFO ] [deepseek_web] [24/65] 男士透气反光条长袖环卫工人安全服T恤
+2026-08-19 15:56:15 [INFO ] [deepseek_web]   Downloaded: 0024_4751102407648914778364.jpg
+2026-08-19 15:56:15 [INFO ] [deepseek_web]   Prefetching next image (25/65)
+2026-08-19 15:56:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:56:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:56:44 [INFO ] [deepseek_web]   Response: 男士拼色圆领长袖反光安全T恤 胸腹部及袖部水平高亮反光条肩部反光片 透气罗纹袖口户外交通作业工装上衣服
+2026-08-19 15:56:44 [INFO ] [deepseek_web]   Deleted: 0024_4751102407648914778364.jpg
+2026-08-19 15:56:49 [INFO ] [deepseek_web] [25/65] 男士啤酒节特色服饰翻领褶边长袖衬衫
+2026-08-19 15:56:49 [INFO ] [deepseek_web]   Downloaded: 0025_0750407475942814692014.jpg
+2026-08-19 15:56:49 [INFO ] [deepseek_web]   Prefetching next image (26/65)
+2026-08-19 15:56:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:57:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:57:23 [INFO ] [deepseek_web]   Response: 男士啤酒节特色翻领长袖衬衫 前胸对称竖向压褶门襟鹿头及领口袖口枝叶刺绣 巴伐利亚传统民族风格派对上衣
+2026-08-19 15:57:23 [INFO ] [deepseek_web]   Deleted: 0025_0750407475942814692014.jpg
+2026-08-19 15:57:28 [INFO ] [deepseek_web] [26/65] 男士纯色棉麻图案长袖（不要成分标）
+2026-08-19 15:57:28 [INFO ] [deepseek_web]   Downloaded: 0026_1901013112084556666014.jpg
+2026-08-19 15:57:28 [INFO ] [deepseek_web]   Prefetching next image (27/65)
+2026-08-19 15:57:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:57:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:57:57 [INFO ] [deepseek_web]   Response: 男士宽松长袖V领系绳套头衫 胸前圆形图腾徽章图案 袖口下摆对比色缝线侧边开衩系带设计 复古部落风休闲上衣
+2026-08-19 15:57:57 [INFO ] [deepseek_web]   Deleted: 0026_1901013112084556666014.jpg
+2026-08-19 15:58:02 [INFO ] [deepseek_web] [27/65] 男士中领长袖T恤上衣
+2026-08-19 15:58:02 [INFO ] [deepseek_web]   Downloaded: 0027_2700703142851615444890.jpg
+2026-08-19 15:58:02 [INFO ] [deepseek_web]   Prefetching next image (28/65)
+2026-08-19 15:58:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:58:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:58:31 [INFO ] [deepseek_web]   Response: 男士修身纯色中领长袖T恤 弹力针织套头打底衫
+2026-08-19 15:58:31 [INFO ] [deepseek_web]   Deleted: 0027_2700703142851615444890.jpg
+2026-08-19 15:58:36 [INFO ] [deepseek_web] [28/65] 026男士3D印花骷髅纽扣衬衫装长袖上衣街头潮流衬衫
+2026-08-19 15:58:36 [INFO ] [deepseek_web]   Downloaded: 0028_2271146227646652077001.jpg
+2026-08-19 15:58:36 [INFO ] [deepseek_web]   Prefetching next image (29/65)
+2026-08-19 15:58:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:58:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:59:05 [INFO ] [deepseek_web]   Response: 男士3D骨架印花翻领长袖纽扣衬衫 灰底胸臂骨骼图案开襟设计 万圣节派对休闲上衣
+2026-08-19 15:59:05 [INFO ] [deepseek_web]   Deleted: 0028_2271146227646652077001.jpg
+2026-08-19 15:59:10 [INFO ] [deepseek_web] [29/65] 026男士3D印花骷髅纽扣衬衫装长袖上衣街头潮流衬衫
+2026-08-19 15:59:10 [INFO ] [deepseek_web]   Downloaded: 0029_0920445474563046725958.jpg
+2026-08-19 15:59:10 [INFO ] [deepseek_web]   Prefetching next image (30/65)
+2026-08-19 15:59:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:59:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 15:59:43 [INFO ] [deepseek_web]   Response: 男士3D骨架印花翻领长袖纽扣衬衫 灰底骨骼图案开襟设计 万圣节派对休闲上衣
+2026-08-19 15:59:43 [INFO ] [deepseek_web]   Deleted: 0029_0920445474563046725958.jpg
+2026-08-19 15:59:48 [INFO ] [deepseek_web] [30/65] 2026男士3D印花骷髅纽扣衬衫装长袖上衣街头潮流衬衫
+2026-08-19 15:59:48 [INFO ] [deepseek_web]   Downloaded: 0030_8351156020301111522750.jpg
+2026-08-19 15:59:48 [INFO ] [deepseek_web]   Prefetching next image (31/65)
+2026-08-19 15:59:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 15:59:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:00:17 [INFO ] [deepseek_web]   Response: 男士3D骨骼印花翻领长袖纽扣衬衫 灰底全身骨架图案开襟设计 万圣节派对休闲上衣
+2026-08-19 16:00:17 [INFO ] [deepseek_web]   Deleted: 0030_8351156020301111522750.jpg
+2026-08-19 16:00:22 [INFO ] [deepseek_web] [31/65] 男士高级感撞色包边拼色格纹衬衣弹力翻长袖衬衫
+2026-08-19 16:00:34 [INFO ] [deepseek_web]   Downloaded: 0031_7280520309143320104503.jpg
+2026-08-19 16:00:34 [INFO ] [deepseek_web]   Prefetching next image (32/65)
+2026-08-19 16:00:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:00:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:01:05 [INFO ] [deepseek_web]   Response: 男士弹力翻领长袖纽扣衬衫 纯色主体撞色包边领口门襟 袖口内侧格纹拼接设计 商务休闲通勤上衣
+2026-08-19 16:01:05 [INFO ] [deepseek_web]   Deleted: 0031_7280520309143320104503.jpg
+2026-08-19 16:01:10 [INFO ] [deepseek_web] [32/65] 男士万圣节印花长袖衬衫
+2026-08-19 16:01:10 [INFO ] [deepseek_web]   Downloaded: 0032_4931011505294523240461.jpg
+2026-08-19 16:01:10 [INFO ] [deepseek_web]   Prefetching next image (33/65)
+2026-08-19 16:01:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:01:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:01:39 [INFO ] [deepseek_web]   Response: 男士万圣节印花长袖翻领衬衫 橙色底黑色鬼屋黑猫剪影图案 纽扣开襟拼接黑色袖口 派对节日主题休闲上衣
+2026-08-19 16:01:39 [INFO ] [deepseek_web]   Deleted: 0032_4931011505294523240461.jpg
+2026-08-19 16:01:44 [INFO ] [deepseek_web] [33/65] 男士复古工装衬衫男长袖春款潮牌潮流港风宽松休闲休闲衬衣外套衬衫
+2026-08-19 16:01:44 [INFO ] [deepseek_web]   Downloaded: 0033_2470224518516311339968.jpg
+2026-08-19 16:01:44 [INFO ] [deepseek_web]   Prefetching next image (34/65)
+2026-08-19 16:01:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:01:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:02:13 [INFO ] [deepseek_web]   Response: 男士宽松长袖工装风翻领纽扣衬衫外套 前胸翻盖多口袋设计弧形下摆 户外休闲通勤轻量化上衣
+2026-08-19 16:02:13 [INFO ] [deepseek_web]   Deleted: 0033_2470224518516311339968.jpg
+2026-08-19 16:02:18 [INFO ] [deepseek_web] [34/65] 男士长袖冰丝凉感T恤
+2026-08-19 16:02:18 [INFO ] [deepseek_web]   Downloaded: 0034_1181030277945914558745.jpg
+2026-08-19 16:02:18 [INFO ] [deepseek_web]   Prefetching next image (35/65)
+2026-08-19 16:02:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:02:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:02:47 [INFO ] [deepseek_web]   Response: 男士长袖翻领Polo衫 纯色华夫格透气纹理面料半开襟纽扣左胸口袋 冰丝凉感运动休闲通勤上衣
+2026-08-19 16:02:47 [INFO ] [deepseek_web]   Deleted: 0034_1181030277945914558745.jpg
+2026-08-19 16:02:52 [INFO ] [deepseek_web] [35/65] 男士万圣节印花长袖衬衫
+2026-08-19 16:02:52 [INFO ] [deepseek_web]   Downloaded: 0035_6770323020207111828270.jpg
+2026-08-19 16:02:52 [INFO ] [deepseek_web]   Prefetching next image (36/65)
+2026-08-19 16:02:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:03:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:03:21 [INFO ] [deepseek_web]   Response: 男士万圣节印花翻领长袖纽扣衬衫 橙色底沸腾大锅气泡图案黑色撞色袖口 派对节日主题休闲上衣
+2026-08-19 16:03:21 [INFO ] [deepseek_web]   Deleted: 0035_6770323020207111828270.jpg
+2026-08-19 16:03:26 [INFO ] [deepseek_web] [36/65] 男士万圣节血腥印花长袖衬衫
+2026-08-19 16:03:26 [INFO ] [deepseek_web]   Downloaded: 0036_5980341342847314513167.jpg
+2026-08-19 16:03:26 [INFO ] [deepseek_web]   Prefetching next image (37/65)
+2026-08-19 16:03:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:03:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:04:02 [INFO ] [deepseek_web]   Response: 男士3D血腥泼墨拼接印花翻领长袖纽扣衬衫 白底门襟及袖口撞色设计 万圣节派对恐怖主题休闲上衣
+2026-08-19 16:04:02 [INFO ] [deepseek_web]   Deleted: 0036_5980341342847314513167.jpg
+2026-08-19 16:04:07 [INFO ] [deepseek_web] [37/65] 男士紧身训练运动跑步长袖T恤
+2026-08-19 16:04:07 [INFO ] [deepseek_web]   Downloaded: 0037_9070445351512987712348.jpg
+2026-08-19 16:04:07 [INFO ] [deepseek_web]   Prefetching next image (38/65)
+2026-08-19 16:04:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:04:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:04:37 [INFO ] [deepseek_web]   Response: 男士紧身小立领插肩袖长袖运动T恤 弹力压缩跑步训练健身上衣
+2026-08-19 16:04:37 [INFO ] [deepseek_web]   Deleted: 0037_9070445351512987712348.jpg
+2026-08-19 16:04:42 [INFO ] [deepseek_web] [38/65] 外贸新款肌肉男健身弹力纯色运动休闲开衫长袖立领衬衫
+2026-08-19 16:04:42 [INFO ] [deepseek_web]   Downloaded: 0038_0440954224822728733379.jpg
+2026-08-19 16:04:42 [INFO ] [deepseek_web]   Prefetching next image (39/65)
+2026-08-19 16:04:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:04:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:05:11 [INFO ] [deepseek_web]   Response: 男士修身弹力纯色翻领长袖纽扣衬衫 肌肉健身运动休闲通勤上衣
+2026-08-19 16:05:11 [INFO ] [deepseek_web]   Deleted: 0038_0440954224822728733379.jpg
+2026-08-19 16:05:16 [INFO ] [deepseek_web] [39/65] 男士时尚休闲大码宽松狂欢节数码印花翻领长袖衬衫
+2026-08-19 16:05:16 [INFO ] [deepseek_web]   Downloaded: 0039_9380348391441991078660.jpg
+2026-08-19 16:05:16 [INFO ] [deepseek_web]   Prefetching next image (40/65)
+2026-08-19 16:05:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:05:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:05:45 [INFO ] [deepseek_web]   Response: 男士宽松大码翻领长袖纽扣衬衫 黑底霓虹荧光波浪迷幻图案数码印花 狂欢节派对休闲上衣
+2026-08-19 16:05:45 [INFO ] [deepseek_web]   Deleted: 0039_9380348391441991078660.jpg
+2026-08-19 16:05:50 [INFO ] [deepseek_web] [40/65] 男士休闲时尚透气大码印花新款长袖T恤打底衫
+2026-08-19 16:05:50 [INFO ] [deepseek_web]   Downloaded: 0040_7551042223848517169789.jpg
+2026-08-19 16:05:50 [INFO ] [deepseek_web]   Prefetching next image (41/65)
+2026-08-19 16:05:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:06:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:06:19 [INFO ] [deepseek_web]   Response: 男士大码宽松圆领长袖套头T恤 纯色底胸前PARIS文字撞色矩形印花 透气休闲运动打底衫
+2026-08-19 16:06:19 [INFO ] [deepseek_web]   Deleted: 0040_7551042223848517169789.jpg
+2026-08-19 16:06:24 [INFO ] [deepseek_web] [41/65] 男士圣诞节主题印花长袖翻领衬衫
+2026-08-19 16:06:24 [INFO ] [deepseek_web]   Downloaded: 0041_9250222159601712277331.jpg
+2026-08-19 16:06:24 [INFO ] [deepseek_web]   Prefetching next image (42/65)
+2026-08-19 16:06:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:06:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:06:53 [INFO ] [deepseek_web]   Response: 男士圣诞主题3D印花翻领长袖纽扣衬衫 白底圣诞老人雪景图案 节日派对休闲上衣
+2026-08-19 16:06:53 [INFO ] [deepseek_web]   Deleted: 0041_9250222159601712277331.jpg
+2026-08-19 16:06:58 [INFO ] [deepseek_web] [42/65] 男士时尚美国独立日胸部印花休闲大码长袖翻领衬衫
+2026-08-19 16:06:58 [INFO ] [deepseek_web]   Downloaded: 0042_5580527492911215610434.jpg
+2026-08-19 16:06:58 [INFO ] [deepseek_web]   Prefetching next image (43/65)
+2026-08-19 16:06:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:07:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:07:27 [INFO ] [deepseek_web]   Response: 男士大码长袖翻领纽扣衬衫 美国独立日主题胸部及双袖USA字母星条旗徽章印花 节日派对休闲上衣
+2026-08-19 16:07:27 [INFO ] [deepseek_web]   Deleted: 0042_5580527492911215610434.jpg
+2026-08-19 16:07:32 [INFO ] [deepseek_web] [43/65] 男士弹力纯色酷丝棉四面弹音符印花长袖翻领衬衫
+2026-08-19 16:07:32 [INFO ] [deepseek_web]   Downloaded: 0043_2560358567892612165713.jpg
+2026-08-19 16:07:32 [INFO ] [deepseek_web]   Prefetching next image (44/65)
+2026-08-19 16:07:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:07:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:08:01 [INFO ] [deepseek_web]   Response: 男士弹力纯色翻领长袖纽扣衬衫 左胸贴袋黑色音符小印花 商务休闲通勤上衣
+2026-08-19 16:08:01 [INFO ] [deepseek_web]   Deleted: 0043_2560358567892612165713.jpg
+2026-08-19 16:08:06 [INFO ] [deepseek_web] [44/65] 男士时尚美国独立日胸部印花休闲大码长袖翻领衬衫
+2026-08-19 16:08:06 [INFO ] [deepseek_web]   Downloaded: 0044_1580328434262110616055.jpg
+2026-08-19 16:08:06 [INFO ] [deepseek_web]   Prefetching next image (45/65)
+2026-08-19 16:08:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:08:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:08:36 [INFO ] [deepseek_web]   Response: 男士大码长袖翻领纽扣衬衫 美国独立日主题胸前圆形徽章星星及垂直旗帜印花 左袖UNITED STATE文字印花 左胸贴袋卷袖设计 休闲度假派对上衣
+2026-08-19 16:08:36 [INFO ] [deepseek_web]   Deleted: 0044_1580328434262110616055.jpg
+2026-08-19 16:08:41 [INFO ] [deepseek_web] [45/65] 男士万圣节骷髅长袖圆领T恤上衣 AWJ250819001,AWJ250822006,AWJ250822007,AWJ25
+2026-08-19 16:08:41 [INFO ] [deepseek_web]   Downloaded: 0045_2830906578192092020607.jpg
+2026-08-19 16:08:41 [INFO ] [deepseek_web]   Prefetching next image (46/65)
+2026-08-19 16:08:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:08:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:09:11 [INFO ] [deepseek_web]   Response: 男士修身3D全身骷髅骨架印花圆领长袖T恤 撞色领边万圣节派对节日上衣
+2026-08-19 16:09:11 [INFO ] [deepseek_web]   Deleted: 0045_2830906578192092020607.jpg
+2026-08-19 16:09:16 [INFO ] [deepseek_web] [46/65] 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-08-19 16:09:16 [INFO ] [deepseek_web]   Downloaded: 0046_8581115548201619166630.jpg
+2026-08-19 16:09:16 [INFO ] [deepseek_web]   Prefetching next image (47/65)
+2026-08-19 16:09:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:09:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:09:46 [INFO ] [deepseek_web]   Response: 男士长袖翻领纽扣衬衫 黑底拼接金色巴洛克藤蔓印花 狂欢节中世纪西部牛仔骑士派对上衣
+2026-08-19 16:09:46 [INFO ] [deepseek_web]   Deleted: 0046_8581115548201619166630.jpg
+2026-08-19 16:09:51 [INFO ] [deepseek_web] [47/65] 男士餐饮厨师工作服厨师服长袖上衣开衫衬衫
+2026-08-19 16:09:51 [INFO ] [deepseek_web]   Downloaded: 0047_5391123258156816831897.jpg
+2026-08-19 16:09:51 [INFO ] [deepseek_web]   Prefetching next image (48/65)
+2026-08-19 16:09:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:10:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:10:20 [INFO ] [deepseek_web]   Response: 男士餐饮厨师工作服长袖 斜襟立领纽扣门襟 左胸贴袋黑边装饰袖口插笔袋 酒店餐厅厨房职业工装上衣
+2026-08-19 16:10:20 [INFO ] [deepseek_web]   Deleted: 0047_5391123258156816831897.jpg
+2026-08-19 16:10:25 [INFO ] [deepseek_web] [48/65] 男士长袖亨利衫纯色系带领休闲时尚海滩打底衫男士上衣体恤
+2026-08-19 16:10:25 [INFO ] [deepseek_web]   Downloaded: 0048_7680433433021438434274.jpg
+2026-08-19 16:10:25 [INFO ] [deepseek_web]   Prefetching next image (49/65)
+2026-08-19 16:10:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:10:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:10:56 [INFO ] [deepseek_web]   Response: 男士修身纯色长袖V领交叉系带套头T恤 金属环穿绳设计左袖徽章贴片 休闲沙滩度假打底上衣
+2026-08-19 16:10:56 [INFO ] [deepseek_web]   Deleted: 0048_7680433433021438434274.jpg
+2026-08-19 16:11:01 [INFO ] [deepseek_web] [49/65] 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-08-19 16:11:01 [INFO ] [deepseek_web]   Downloaded: 0049_0520906399071110605759.jpg
+2026-08-19 16:11:01 [INFO ] [deepseek_web]   Prefetching next image (50/65)
+2026-08-19 16:11:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:11:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:11:31 [INFO ] [deepseek_web]   Response: 男士70年代复古花卉印花长袖翻领衬衫 纽扣开襟多彩图案狂欢节派对休闲上衣
+2026-08-19 16:11:31 [INFO ] [deepseek_web]   Deleted: 0049_0520906399071110605759.jpg
+2026-08-19 16:11:36 [INFO ] [deepseek_web] [50/65] 男士华夫格维京印花长袖t恤
+2026-08-19 16:11:36 [INFO ] [deepseek_web]   Downloaded: 0050_6330354474622020044215.jpg
+2026-08-19 16:11:36 [INFO ] [deepseek_web]   Prefetching next image (51/65)
+2026-08-19 16:11:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:11:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:12:06 [INFO ] [deepseek_web]   Response: 男士华夫格圆领长袖套头T恤 黑色底金色维京罗盘符文印花 罗纹袖口领口 休闲复古户外上衣
+2026-08-19 16:12:06 [INFO ] [deepseek_web]   Deleted: 0050_6330354474622020044215.jpg
+2026-08-19 16:12:11 [INFO ] [deepseek_web] [51/65] 男士英国国旗印花长袖衬衫
+2026-08-19 16:12:11 [INFO ] [deepseek_web]   Downloaded: 0051_9740413159851818413446.jpg
+2026-08-19 16:12:11 [INFO ] [deepseek_web]   Prefetching next image (52/65)
+2026-08-19 16:12:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:12:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:12:41 [INFO ] [deepseek_web]   Response: 男士英国国旗印花翻领长袖纽扣衬衫 前襟米字旗图案卷袖设计 休闲度假派对上衣
+2026-08-19 16:12:41 [INFO ] [deepseek_web]   Deleted: 0051_9740413159851818413446.jpg
+2026-08-19 16:12:46 [INFO ] [deepseek_web] [52/65] 男士啤酒节格子印花带刺绣长袖衬衫
+2026-08-19 16:12:46 [INFO ] [deepseek_web]   Downloaded: 0052_6100430033722312327635.jpg
+2026-08-19 16:12:46 [INFO ] [deepseek_web]   Prefetching next image (53/65)
+2026-08-19 16:12:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:12:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:13:15 [INFO ] [deepseek_web]   Response: 男士长袖翻领格纹衬衫 白色门襟刺绣装饰 巴伐利亚啤酒节派对上衣
+2026-08-19 16:13:15 [INFO ] [deepseek_web]   Deleted: 0052_6100430033722312327635.jpg
+2026-08-19 16:13:20 [INFO ] [deepseek_web] [53/65] 男士加拿大国旗印花长袖华夫格T恤
+2026-08-19 16:13:20 [INFO ] [deepseek_web]   Downloaded: 0053_7750322372711314438145.jpg
+2026-08-19 16:13:20 [INFO ] [deepseek_web]   Prefetching next image (54/65)
+2026-08-19 16:13:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:13:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:13:50 [INFO ] [deepseek_web]   Response: 男士华夫格圆领长袖套头T恤 胸前心电波形枫叶图案左袖加拿大国旗徽章标识 罗纹收口休闲运动上衣
+2026-08-19 16:13:50 [INFO ] [deepseek_web]   Deleted: 0053_7750322372711314438145.jpg
+2026-08-19 16:13:55 [INFO ] [deepseek_web] [54/65] 男士夏季棉麻翻领沙滩衬衫长袖纯色夏威夷假日服装（不要成分标）
+2026-08-19 16:13:55 [INFO ] [deepseek_web]   Downloaded: 0054_5320241119331626300095.jpg
+2026-08-19 16:13:55 [INFO ] [deepseek_web]   Prefetching next image (55/65)
+2026-08-19 16:13:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:14:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:14:25 [INFO ] [deepseek_web]   Response: 男士纯色棉麻长袖翻领衬衫 纽扣门襟卷袖弧形下摆 沙滩度假休闲透气上衣
+2026-08-19 16:14:25 [INFO ] [deepseek_web]   Deleted: 0054_5320241119331626300095.jpg
+2026-08-19 16:14:30 [INFO ] [deepseek_web] [55/65] 男士四面弹格纹长袖翻领长袖衬衫高级感商务男士衬衣
+2026-08-19 16:14:30 [INFO ] [deepseek_web]   Downloaded: 0055_3231046409146617475830.jpg
+2026-08-19 16:14:30 [INFO ] [deepseek_web]   Prefetching next image (56/65)
+2026-08-19 16:14:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:14:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:14:59 [INFO ] [deepseek_web]   Response: 男士四面弹竖条纹长袖翻领纽扣衬衫 商务休闲通勤上衣
+2026-08-19 16:14:59 [INFO ] [deepseek_web]   Deleted: 0055_3231046409146617475830.jpg
+2026-08-19 16:15:04 [INFO ] [deepseek_web] [56/65] 四面弹条纹长袖翻领男士衬衫高级感男士衬衣男装
+2026-08-19 16:15:04 [INFO ] [deepseek_web]   Downloaded: 0056_8950502499221513825089.jpg
+2026-08-19 16:15:04 [INFO ] [deepseek_web]   Prefetching next image (57/65)
+2026-08-19 16:15:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:15:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:15:34 [INFO ] [deepseek_web]   Response: 男士四面弹竖条纹长袖翻领纽扣衬衫 弧形下摆商务休闲通勤上衣
+2026-08-19 16:15:34 [INFO ] [deepseek_web]   Deleted: 0056_8950502499221513825089.jpg
+2026-08-19 16:15:39 [INFO ] [deepseek_web] [57/65] 男士个性搞笑趣味日常街头圆领长袖T恤
+2026-08-19 16:15:39 [INFO ] [deepseek_web]   Downloaded: 0057_0620801111708121151929.jpg
+2026-08-19 16:15:39 [INFO ] [deepseek_web]   Prefetching next image (58/65)
+2026-08-19 16:15:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:15:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:16:08 [INFO ] [deepseek_web]   Response: 男士圆领长袖T恤 宽松版型趣味火柴人箭头“ow!”印花 街头休闲日常打底上衣
+2026-08-19 16:16:08 [INFO ] [deepseek_web]   Deleted: 0057_0620801111708121151929.jpg
+2026-08-19 16:16:13 [INFO ] [deepseek_web] [58/65] 男士维京文化中世纪北欧神话圆领长袖T恤
+2026-08-19 16:16:13 [INFO ] [deepseek_web]   Downloaded: 0058_4021110190921010524659.jpg
+2026-08-19 16:16:13 [INFO ] [deepseek_web]   Prefetching next image (59/65)
+2026-08-19 16:16:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:16:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:16:43 [INFO ] [deepseek_web]   Response: 男士修身圆领长袖套头T恤 黑底维京骷髅符文几何印花左袖同款点缀 中世纪北欧神话街头休闲上衣
+2026-08-19 16:16:43 [INFO ] [deepseek_web]   Deleted: 0058_4021110190921010524659.jpg
+2026-08-19 16:16:48 [INFO ] [deepseek_web] [59/65] 男士健身长袖运动紧身运动紧身T恤
+2026-08-19 16:16:48 [INFO ] [deepseek_web]   Downloaded: 0059_0281114112541117928792.jpg
+2026-08-19 16:16:48 [INFO ] [deepseek_web]   Prefetching next image (60/65)
+2026-08-19 16:16:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:16:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:17:18 [INFO ] [deepseek_web]   Response: 男士紧身圆领长袖运动T恤 高弹压缩透气面料肩部撞色明线装饰 跑步健身训练上衣
+2026-08-19 16:17:18 [INFO ] [deepseek_web]   Deleted: 0059_0281114112541117928792.jpg
+2026-08-19 16:17:23 [INFO ] [deepseek_web] [60/65] 男士长袖衬衫秋装新款时尚撞色亮片迪斯科衬衣
+2026-08-19 16:17:23 [INFO ] [deepseek_web]   Downloaded: 0060_5810255359547320897911.jpg
+2026-08-19 16:17:23 [INFO ] [deepseek_web]   Prefetching next image (61/65)
+2026-08-19 16:17:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:17:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:17:53 [INFO ] [deepseek_web]   Response: 男士亮面金属质感亮片拼接长袖翻领衬衫 纽扣开襟弧形下摆 迪斯科派对舞台演出休闲上衣
+2026-08-19 16:17:53 [INFO ] [deepseek_web]   Deleted: 0060_5810255359547320897911.jpg
+2026-08-19 16:17:58 [INFO ] [deepseek_web] [61/65] 演出衬衫男士长袖舞台晚会大合唱服装成人主持领结礼服衬衣
+2026-08-19 16:17:58 [INFO ] [deepseek_web]   Downloaded: 0061_3160926246923434619601.jpg
+2026-08-19 16:17:58 [INFO ] [deepseek_web]   Prefetching next image (62/65)
+2026-08-19 16:17:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:18:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:18:27 [INFO ] [deepseek_web]   Response: 男士立领前胸风琴褶长袖衬衫 配领结纽扣门襟 舞台晚会主持人合唱演出礼服上衣
+2026-08-19 16:18:27 [INFO ] [deepseek_web]   Deleted: 0061_3160926246923434619601.jpg
+2026-08-19 16:18:32 [INFO ] [deepseek_web] [62/65] 男士修身格子印花长袖格子衬衫
+2026-08-19 16:18:32 [INFO ] [deepseek_web]   Downloaded: 0062_0930935188543269418101.jpg
+2026-08-19 16:18:32 [INFO ] [deepseek_web]   Prefetching next image (63/65)
+2026-08-19 16:18:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:18:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:19:01 [INFO ] [deepseek_web]   Response: 男士修身长袖格子印花翻领衬衫 纽扣门襟弧形下摆 商务休闲通勤上衣
+2026-08-19 16:19:01 [INFO ] [deepseek_web]   Deleted: 0062_0930935188543269418101.jpg
+2026-08-19 16:19:06 [INFO ] [deepseek_web] [63/65] 男士时尚休闲衬衫独立日印花长袖翻领衬衫 上衣
+2026-08-19 16:19:06 [INFO ] [deepseek_web]   Downloaded: 0063_8640938149252159048925.jpg
+2026-08-19 16:19:06 [INFO ] [deepseek_web]   Prefetching next image (64/65)
+2026-08-19 16:19:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:19:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:19:40 [INFO ] [deepseek_web]   Response: 男士长袖翻领纽扣衬衫 拼接星条旗美国国旗印花蓝底白星红白条纹 左胸贴袋弧形下摆 独立日节日派对休闲上衣
+2026-08-19 16:19:40 [INFO ] [deepseek_web]   Deleted: 0063_8640938149252159048925.jpg
+2026-08-19 16:19:45 [INFO ] [deepseek_web] [64/65] 男士时尚休闲衬衫独立日国旗印花长袖翻领衬衫 上衣
+2026-08-19 16:19:45 [INFO ] [deepseek_web]   Downloaded: 0064_3400240416271690792386.jpg
+2026-08-19 16:19:45 [INFO ] [deepseek_web]   Prefetching next image (65/65)
+2026-08-19 16:19:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:19:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:20:18 [INFO ] [deepseek_web]   Response: 男士做旧水洗星条旗拼接印花长袖翻领纽扣衬衫 复古休闲独立日节日上衣
+2026-08-19 16:20:18 [INFO ] [deepseek_web]   Deleted: 0064_3400240416271690792386.jpg
+2026-08-19 16:20:23 [INFO ] [deepseek_web] [65/65] 男士西部牛仔3D印花翻领长袖衬衫休闲花衬衣
+2026-08-19 16:20:23 [INFO ] [deepseek_web]   Downloaded: 0065_9370452262702417843352.jpg
+2026-08-19 16:20:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-19 16:20:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-19 16:20:54 [INFO ] [deepseek_web]   Response: 男士西部牛仔风对称玫瑰藤蔓印花翻领长袖纽扣衬衫 对比色包边领口门襟装饰 休闲上衣
+2026-08-19 16:20:54 [INFO ] [deepseek_web]   Deleted: 0065_9370452262702417843352.jpg
+2026-08-19 16:20:54 [INFO ] [deepseek_web] ==================================================
+2026-08-19 16:20:54 [INFO ] [deepseek_web] Done: 65 success, 0 failed → optimize_title
+2026-08-19 16:20:55 [INFO ] [title_workflow] Optimization complete: 65 titles
+2026-08-19 16:20:58 [INFO ] [title_workflow] Written 65 optimized titles to column H (8)
+2026-08-19 16:20:58 [INFO ] [title_workflow] Done: 8.18v1.xlsx
+2026-08-19 16:20:58 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-19 16:20:58 [INFO ] [jenkins] 
+2026-08-19 16:20:58 [INFO ] [jenkins] ==================================================
+2026-08-19 16:20:58 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-19 16:20:58 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-19 16:20:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-19 16:20:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-19 16:20:58 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-19 17:08:39 [INFO ] [hotwords] Loop mode: 17 keywords  country=fr  category=(all)  mode=dual
+2026-08-19 17:08:39 [INFO ] [hotwords] 
+2026-08-19 17:08:39 [INFO ] [hotwords] [  1/17] Chemise
+2026-08-19 17:08:42 [INFO ] [hotwords]   fluctuation: 2 words
+2026-08-19 17:08:46 [INFO ] [hotwords]   new_rank: 115 words
+2026-08-19 17:08:46 [INFO ] [hotwords]   → total 117 words
+2026-08-19 17:08:48 [INFO ] [hotwords] [  2/17] Tunique
+2026-08-19 17:08:51 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:08:54 [INFO ] [hotwords]   new_rank: 10 words
+2026-08-19 17:08:54 [INFO ] [hotwords]   → total 127 words
+2026-08-19 17:08:56 [INFO ] [hotwords] [  3/17] Abaya
+2026-08-19 17:08:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:09:01 [INFO ] [hotwords]   new_rank: 2 words
+2026-08-19 17:09:01 [INFO ] [hotwords]   → total 129 words
+2026-08-19 17:09:03 [INFO ] [hotwords] [  4/17] Robe longue
+2026-08-19 17:09:06 [INFO ] [hotwords]   fluctuation: 1 words
+2026-08-19 17:09:10 [INFO ] [hotwords]   new_rank: 26 words
+2026-08-19 17:09:10 [INFO ] [hotwords]   → total 156 words
+2026-08-19 17:09:12 [INFO ] [hotwords] [  5/17] T-shirt
+2026-08-19 17:09:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:09:17 [INFO ] [hotwords]   new_rank: 31 words
+2026-08-19 17:09:17 [INFO ] [hotwords]   → total 187 words
+2026-08-19 17:09:19 [INFO ] [hotwords] [  6/17] Polo
+2026-08-19 17:09:24 [INFO ] [hotwords]   fluctuation: 2 words
+2026-08-19 17:09:28 [INFO ] [hotwords]   new_rank: 56 words
+2026-08-19 17:09:28 [INFO ] [hotwords]   → total 245 words
+2026-08-19 17:09:30 [INFO ] [hotwords] [  7/17] Veste
+2026-08-19 17:09:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:09:37 [INFO ] [hotwords]   new_rank: 55 words
+2026-08-19 17:09:37 [INFO ] [hotwords]   → total 300 words
+2026-08-19 17:09:39 [INFO ] [hotwords] [  8/17] Blouson
+2026-08-19 17:09:41 [INFO ] [hotwords]   fluctuation: 1 words
+2026-08-19 17:09:44 [INFO ] [hotwords]   new_rank: 10 words
+2026-08-19 17:09:44 [INFO ] [hotwords]   → total 311 words
+2026-08-19 17:09:46 [INFO ] [hotwords] [  9/17] Cardigan
+2026-08-19 17:09:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:09:52 [INFO ] [hotwords]   new_rank: 4 words
+2026-08-19 17:09:52 [INFO ] [hotwords]   → total 315 words
+2026-08-19 17:09:54 [INFO ] [hotwords] [ 10/17] Chemise en jean
+2026-08-19 17:09:57 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:01 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:01 [INFO ] [hotwords]   → total 315 words
+2026-08-19 17:10:03 [INFO ] [hotwords] [ 11/17] Chemise veste
+2026-08-19 17:10:06 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:09 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:09 [INFO ] [hotwords]   → total 315 words
+2026-08-19 17:10:11 [INFO ] [hotwords] [ 12/17] Haut de sport
+2026-08-19 17:10:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:16 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-19 17:10:16 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:18 [INFO ] [hotwords] [ 13/17] Pull over
+2026-08-19 17:10:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:23 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:23 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:25 [INFO ] [hotwords] [ 14/17] Haut de base
+2026-08-19 17:10:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:30 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:30 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:32 [INFO ] [hotwords] [ 15/17] Veste de costume
+2026-08-19 17:10:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:37 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:37 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:39 [INFO ] [hotwords] [ 16/17] Uniforme de travail
+2026-08-19 17:10:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:45 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:45 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:47 [INFO ] [hotwords] [ 17/17] Blouse de chef
+2026-08-19 17:10:50 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-19 17:10:53 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-19 17:10:53 [INFO ] [hotwords]   → total 316 words
+2026-08-19 17:10:55 [INFO ] [hotwords] All keywords collected successfully
+2026-08-19 17:10:55 [INFO ] [hotwords] 
+2026-08-19 17:10:55 [INFO ] [hotwords] Combining: 6 fluctuation + 310 new_rank = 316 total
+2026-08-19 17:10:55 [INFO ] [hotwords] 
+2026-08-19 17:10:55 [INFO ] [hotwords] Cleaning...
+2026-08-19 17:10:55 [INFO ] [hotwords]   strip_whitespace: 316 → 316 (0 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords]   normalize_case: 316 → 316 (0 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords]   drop_single_word: 316 → 302 (14 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords]   drop_brands: 302 → 256 (46 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords]   drop_reordered: 256 → 256 (0 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords]   deduplicate: 256 → 256 (0 removed)
+2026-08-19 17:10:55 [INFO ] [hotwords] homme=99     femme=71     other=86   
+2026-08-19 17:10:55 [INFO ] [hotwords] Saved 256 words (raw: 316, errors: 0) → 20260819_170839_fr.txt
+2026-08-19 17:10:55 [INFO ] [hotwords] ==================================================
+2026-08-19 17:10:55 [INFO ] [hotwords] Done.

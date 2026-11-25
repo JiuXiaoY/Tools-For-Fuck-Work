@@ -1,0 +1,1440 @@
+2026-09-09 08:44:49 [INFO ] [jenkins] ==================================================
+2026-09-09 08:44:49 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-09 08:44:49 [INFO ] [jenkins] ==================================================
+2026-09-09 08:44:49 [INFO ] [jenkins] 
+2026-09-09 08:44:49 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-09 08:44:49 [INFO ] [jenkins] ------------------------------
+2026-09-09 08:44:49 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-09 08:44:49 [INFO ] [jenkins] 
+2026-09-09 08:44:49 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-09 08:44:49 [INFO ] [jenkins] ------------------------------
+2026-09-09 08:44:50 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-09-09 08:44:50 [INFO ] [preprocess] [suit1.xlsx]
+2026-09-09 08:44:50 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 08:44:50 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 08:44:55 [INFO ] [preprocess]   [suit1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 08:44:55 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 08:44:55 [INFO ] [preprocess]   [suit1.xlsx] No duplicate filled rows to remove
+2026-09-09 08:44:55 [INFO ] [pipeline] Pipeline complete
+2026-09-09 08:44:56 [INFO ] [preprocess] [suit2.xlsx]
+2026-09-09 08:44:57 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 08:44:57 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 08:45:00 [INFO ] [preprocess]   [suit2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 08:45:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 08:45:00 [INFO ] [preprocess]   [suit2.xlsx] No duplicate filled rows to remove
+2026-09-09 08:45:00 [INFO ] [pipeline] Pipeline complete
+2026-09-09 08:45:00 [INFO ] [preprocess] [suit3.xlsx]
+2026-09-09 08:45:01 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 08:45:01 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 08:45:04 [INFO ] [preprocess]   [suit3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 08:45:04 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 08:45:04 [INFO ] [preprocess]   [suit3.xlsx] No duplicate filled rows to remove
+2026-09-09 08:45:04 [INFO ] [pipeline] Pipeline complete
+2026-09-09 08:45:05 [INFO ] [preprocess] [suit4.xlsx]
+2026-09-09 08:45:05 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 08:45:05 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 08:45:08 [INFO ] [preprocess]   [suit4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 08:45:08 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 08:45:12 [INFO ] [preprocess]   [suit4.xlsx] Dedup: 22 filled rows, 1 deleted
+2026-09-09 08:45:12 [INFO ] [pipeline] Pipeline complete
+2026-09-09 08:45:12 [INFO ] [preprocess] Preprocessing complete
+2026-09-09 08:45:12 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-09 08:45:12 [INFO ] [jenkins] 
+2026-09-09 08:45:12 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-09 08:45:12 [INFO ] [jenkins] ------------------------------
+2026-09-09 08:45:13 [INFO ] [main] Log file: 20260909_dd0b73ae.log
+2026-09-09 08:45:13 [INFO ] [main] Found 4 file(s):
+2026-09-09 08:45:13 [INFO ] [main]   suit1.xlsx
+2026-09-09 08:45:13 [INFO ] [main]   suit2.xlsx
+2026-09-09 08:45:13 [INFO ] [main]   suit3.xlsx
+2026-09-09 08:45:13 [INFO ] [main]   suit4.xlsx
+2026-09-09 08:45:13 [INFO ] [main] Output: 9.2v1_de.xlsx
+2026-09-09 08:45:13 [INFO ] [main] ==================================================
+2026-09-09 08:45:27 [INFO ] [main] Merged 4 files, 8502 images total
+2026-09-09 08:45:27 [INFO ] [main] Deleted 4 source file(s)
+2026-09-09 08:45:29 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-09 08:45:29 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-09 08:45:41 [INFO ] [pipeline]   Sheet [Sheet0_2]: 903 rows, 2079 images
+2026-09-09 08:45:41 [INFO ] [pipeline]   Sheet [Sheet0_3]: 908 rows, 1855 images
+2026-09-09 08:45:41 [INFO ] [pipeline]   Sheet [Sheet0_4]: 902 rows, 1824 images
+2026-09-09 08:45:41 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2713 data rows, 5758 images
+2026-09-09 08:45:41 [INFO ] [pipeline] [2/12] validate
+2026-09-09 08:45:41 [INFO ] [pipeline]   Validated: 4026 rows, 27 cols (expect ~32)
+2026-09-09 08:45:41 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-09 08:45:42 [INFO ] [pipeline]   Backed up 8502 images
+2026-09-09 08:45:42 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-09 08:45:42 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-09 08:45:42 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-09 08:45:42 [INFO ] [pipeline]   Restored 8502 images with adjusted anchors
+2026-09-09 08:45:42 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-09 08:45:42 [INFO ] [pipeline]   Column 2: 4026 IDs generated
+2026-09-09 08:45:42 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-09 08:45:42 [INFO ] [pipeline]   Column 3: 4026 cells filled
+2026-09-09 08:45:42 [INFO ] [pipeline] [6/12] map_colors
+2026-09-09 08:45:42 [INFO ] [pipeline]   Column 10: 3946 cells mapped, 75 rows skipped (col A has fill), 5 no match (recorded)
+2026-09-09 08:45:42 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-09 08:45:42 [INFO ] [pipeline]   Column 11: 3951 mapped, 75 cleared (col A has fill), 0 no match (recorded)
+2026-09-09 08:45:42 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-09 08:45:42 [INFO ] [pipeline]   Mirror copy: 23561 cells written
+2026-09-09 08:45:42 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-09 08:45:42 [INFO ] [pipeline]   Column 44: 4026 cells copied from col 12
+2026-09-09 08:45:42 [INFO ] [pipeline] [10/12] calc_price
+2026-09-09 08:45:42 [INFO ] [pipeline]   Columns 45-48: 4026 rows calculated
+2026-09-09 08:45:42 [INFO ] [pipeline] [11/12] format_cells
+2026-09-09 08:45:43 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-09 08:45:43 [INFO ] [pipeline]   Formatted 4026 rows: h=50, align=left/center
+2026-09-09 08:45:43 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-09 08:45:43 [INFO ] [pipeline] [12/12] finalize
+2026-09-09 08:45:43 [INFO ] [pipeline]   Done: 4026 rows x 48 cols (target: 48)
+2026-09-09 08:45:43 [INFO ] [pipeline] Pipeline complete
+2026-09-09 08:45:47 [INFO ] [main] Size: 4026 rows x 48 cols
+2026-09-09 08:45:47 [INFO ] [main] ==================================================
+2026-09-09 08:45:47 [INFO ] [main] Done: 9.2v1_de.xlsx
+2026-09-09 08:45:48 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-09 08:45:48 [INFO ] [jenkins] 
+2026-09-09 08:45:48 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-09 08:45:48 [INFO ] [jenkins] ------------------------------
+2026-09-09 08:45:48 [ERROR] [color_size_main] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\9.2v1.xlsx
+2026-09-09 08:45:48 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-09 08:45:48 [INFO ] [jenkins] 
+2026-09-09 08:45:48 [INFO ] [jenkins] ==================================================
+2026-09-09 08:45:48 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-09 08:45:48 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-09 08:45:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-09 08:45:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-09 08:45:48 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-09 09:57:06 [INFO ] [jenkins] ==================================================
+2026-09-09 09:57:06 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-09 09:57:06 [INFO ] [jenkins] ==================================================
+2026-09-09 09:57:06 [INFO ] [jenkins] 
+2026-09-09 09:57:06 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-09 09:57:06 [INFO ] [jenkins] ------------------------------
+2026-09-09 09:57:06 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-09 09:57:06 [INFO ] [jenkins] 
+2026-09-09 09:57:06 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-09 09:57:06 [INFO ] [jenkins] ------------------------------
+2026-09-09 09:57:06 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-09-09 09:57:06 [INFO ] [preprocess] [suit1.xlsx]
+2026-09-09 09:57:07 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 09:57:07 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 09:57:11 [INFO ] [preprocess]   [suit1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 09:57:11 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 09:57:11 [INFO ] [preprocess]   [suit1.xlsx] No duplicate filled rows to remove
+2026-09-09 09:57:11 [INFO ] [pipeline] Pipeline complete
+2026-09-09 09:57:12 [INFO ] [preprocess] [suit2.xlsx]
+2026-09-09 09:57:13 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 09:57:13 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 09:57:16 [INFO ] [preprocess]   [suit2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 09:57:16 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 09:57:16 [INFO ] [preprocess]   [suit2.xlsx] No duplicate filled rows to remove
+2026-09-09 09:57:16 [INFO ] [pipeline] Pipeline complete
+2026-09-09 09:57:16 [INFO ] [preprocess] [suit3.xlsx]
+2026-09-09 09:57:17 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 09:57:17 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 09:57:20 [INFO ] [preprocess]   [suit3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 09:57:20 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 09:57:20 [INFO ] [preprocess]   [suit3.xlsx] No duplicate filled rows to remove
+2026-09-09 09:57:20 [INFO ] [pipeline] Pipeline complete
+2026-09-09 09:57:21 [INFO ] [preprocess] [suit4.xlsx]
+2026-09-09 09:57:21 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 09:57:21 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 09:57:24 [INFO ] [preprocess]   [suit4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 09:57:24 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 09:57:28 [INFO ] [preprocess]   [suit4.xlsx] Dedup: 22 filled rows, 1 deleted
+2026-09-09 09:57:28 [INFO ] [pipeline] Pipeline complete
+2026-09-09 09:57:28 [INFO ] [preprocess] Preprocessing complete
+2026-09-09 09:57:28 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-09 09:57:28 [INFO ] [jenkins] 
+2026-09-09 09:57:28 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-09 09:57:28 [INFO ] [jenkins] ------------------------------
+2026-09-09 09:57:29 [INFO ] [main] Log file: 20260909_dd0b73ae.log
+2026-09-09 09:57:29 [INFO ] [main] Found 4 file(s):
+2026-09-09 09:57:29 [INFO ] [main]   suit1.xlsx
+2026-09-09 09:57:29 [INFO ] [main]   suit2.xlsx
+2026-09-09 09:57:29 [INFO ] [main]   suit3.xlsx
+2026-09-09 09:57:29 [INFO ] [main]   suit4.xlsx
+2026-09-09 09:57:29 [INFO ] [main] Output: 9.2v1.xlsx
+2026-09-09 09:57:29 [INFO ] [main] ==================================================
+2026-09-09 09:57:43 [INFO ] [main] Merged 4 files, 8502 images total
+2026-09-09 09:57:43 [INFO ] [main] Deleted 4 source file(s)
+2026-09-09 09:57:45 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-09 09:57:45 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-09 09:57:57 [INFO ] [pipeline]   Sheet [Sheet0_2]: 903 rows, 2079 images
+2026-09-09 09:57:57 [INFO ] [pipeline]   Sheet [Sheet0_3]: 908 rows, 1855 images
+2026-09-09 09:57:57 [INFO ] [pipeline]   Sheet [Sheet0_4]: 902 rows, 1824 images
+2026-09-09 09:57:57 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2713 data rows, 5758 images
+2026-09-09 09:57:57 [INFO ] [pipeline] [2/12] validate
+2026-09-09 09:57:57 [INFO ] [pipeline]   Validated: 4026 rows, 27 cols (expect ~32)
+2026-09-09 09:57:57 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-09 09:57:58 [INFO ] [pipeline]   Backed up 8502 images
+2026-09-09 09:57:58 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-09 09:57:58 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-09 09:57:58 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-09 09:57:58 [INFO ] [pipeline]   Restored 8502 images with adjusted anchors
+2026-09-09 09:57:58 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-09 09:57:58 [INFO ] [pipeline]   Column 2: 4026 IDs generated
+2026-09-09 09:57:58 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-09 09:57:58 [INFO ] [pipeline]   Column 3: 4026 cells filled
+2026-09-09 09:57:58 [INFO ] [pipeline] [6/12] map_colors
+2026-09-09 09:57:58 [INFO ] [pipeline]   Column 10: 3946 cells mapped, 75 rows skipped (col A has fill), 5 no match (recorded)
+2026-09-09 09:57:58 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-09 09:57:58 [INFO ] [pipeline]   Column 11: 3951 mapped, 75 cleared (col A has fill), 0 no match (recorded)
+2026-09-09 09:57:58 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-09 09:57:58 [INFO ] [pipeline]   Mirror copy: 23561 cells written
+2026-09-09 09:57:58 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-09 09:57:58 [INFO ] [pipeline]   Column 44: 4026 cells copied from col 12
+2026-09-09 09:57:58 [INFO ] [pipeline] [10/12] calc_price
+2026-09-09 09:57:58 [INFO ] [pipeline]   Columns 45-48: 4026 rows calculated
+2026-09-09 09:57:58 [INFO ] [pipeline] [11/12] format_cells
+2026-09-09 09:57:59 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-09 09:57:59 [INFO ] [pipeline]   Formatted 4026 rows: h=50, align=left/center
+2026-09-09 09:57:59 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-09 09:57:59 [INFO ] [pipeline] [12/12] finalize
+2026-09-09 09:57:59 [INFO ] [pipeline]   Done: 4026 rows x 48 cols (target: 48)
+2026-09-09 09:57:59 [INFO ] [pipeline] Pipeline complete
+2026-09-09 09:58:03 [INFO ] [main] Size: 4026 rows x 48 cols
+2026-09-09 09:58:03 [INFO ] [main] ==================================================
+2026-09-09 09:58:03 [INFO ] [main] Done: 9.2v1.xlsx
+2026-09-09 09:58:04 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-09 09:58:04 [INFO ] [jenkins] 
+2026-09-09 09:58:04 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-09 09:58:04 [INFO ] [jenkins] ------------------------------
+2026-09-09 09:58:04 [INFO ] [color_size_main] Source: 9.2v1.xlsx
+2026-09-09 09:58:09 [INFO ] [color_size_main] Extracted: 3946 data lines + 80 separators → check_.txt
+2026-09-09 09:58:09 [INFO ] [color_size_main] Running: process.py
+2026-09-09 09:58:10 [INFO ] [color_size_deal] Groups: 75, lines: 3946 (file: 4026)
+2026-09-09 09:58:10 [INFO ] [color_size_deal] Prefixes: {'01': 191, '02': 103, '03': 69, '04': 48, '05': 42, '06': 36, '07': 30, '08': 30, '09': 30, '10': 30, '11': 30, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6, '22': 6}
+2026-09-09 09:58:10 [INFO ] [color_size_deal] Done.
+2026-09-09 09:58:10 [INFO ] [color_size_main] Processing write-back: 4026 lines
+2026-09-09 09:58:18 [INFO ] [color_size_main] Write-back: 785 written, 3241 unchanged → 9.2v1.xlsx
+2026-09-09 09:58:18 [INFO ] [color_size_main] Done.
+2026-09-09 09:58:18 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-09 09:58:18 [INFO ] [jenkins] 
+2026-09-09 09:58:18 [INFO ] [jenkins] ==================================================
+2026-09-09 09:58:18 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-09 09:58:18 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-09 09:58:18 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-09 09:58:18 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-09 09:58:18 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-09 10:12:03 [INFO ] [hotwords] Single mode: keyword=ensemble femme  country=fr  category=(all)
+2026-09-09 10:12:03 [ERROR] [hotwords] Request failed: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by NewConnectionError("HTTPSConnection(host='api.amz123.com', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"))
+2026-09-09 10:12:23 [INFO ] [hotwords] Single mode: keyword=ensemble femme  country=fr  category=(all)
+2026-09-09 10:12:24 [INFO ] [hotwords] Fetched 9 words (total=9  status=0)
+2026-09-09 10:12:24 [INFO ] [hotwords]   strip_whitespace: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords]   normalize_case: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords]   drop_single_word: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords]   drop_brands: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords]   drop_reordered: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords]   deduplicate: 9 → 9 (0 removed)
+2026-09-09 10:12:24 [INFO ] [hotwords] homme=0      femme=9      other=0    
+2026-09-09 10:12:24 [INFO ] [hotwords] Saved 9 words (raw: 9) → 20260909_101223_fr.txt
+2026-09-09 10:12:46 [INFO ] [hotwords] Single mode: keyword=tailleur femme  country=fr  category=(all)
+2026-09-09 10:12:46 [ERROR] [hotwords] Request failed: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by NewConnectionError("HTTPSConnection(host='api.amz123.com', port=443): Failed to establish a new connection: [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。"))
+2026-09-09 10:13:16 [INFO ] [hotwords] Single mode: keyword=ensemble pantalon femme  country=fr  category=(all)
+2026-09-09 10:13:17 [INFO ] [hotwords] Fetched 2 words (total=2  status=0)
+2026-09-09 10:13:17 [INFO ] [hotwords]   strip_whitespace: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords]   normalize_case: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords]   drop_single_word: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords]   drop_brands: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords]   drop_reordered: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords]   deduplicate: 2 → 2 (0 removed)
+2026-09-09 10:13:17 [INFO ] [hotwords] homme=0      femme=2      other=0    
+2026-09-09 10:13:17 [INFO ] [hotwords] Saved 2 words (raw: 2) → 20260909_101316_fr.txt
+2026-09-09 10:13:20 [INFO ] [hotwords] Single mode: keyword=tailleur femme  country=fr  category=(all)
+2026-09-09 10:13:20 [INFO ] [hotwords] Fetched 10 words (total=10  status=0)
+2026-09-09 10:13:20 [INFO ] [hotwords]   strip_whitespace: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords]   normalize_case: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords]   drop_single_word: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords]   drop_brands: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords]   drop_reordered: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords]   deduplicate: 10 → 10 (0 removed)
+2026-09-09 10:13:20 [INFO ] [hotwords] homme=0      femme=10     other=0    
+2026-09-09 10:13:20 [INFO ] [hotwords] Saved 10 words (raw: 10) → 20260909_101320_fr.txt
+2026-09-09 10:13:27 [INFO ] [hotwords] Single mode: keyword=ensemble jupe femme  country=fr  category=(all)
+2026-09-09 10:13:27 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:13:27 [INFO ] [hotwords] No words found.
+2026-09-09 10:13:49 [INFO ] [hotwords] Single mode: keyword=ensemble short femme  country=fr  category=(all)
+2026-09-09 10:13:49 [INFO ] [hotwords] Fetched 1 words (total=1  status=0)
+2026-09-09 10:13:49 [INFO ] [hotwords]   strip_whitespace: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords]   normalize_case: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords]   drop_single_word: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords]   drop_brands: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords]   drop_reordered: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords]   deduplicate: 1 → 1 (0 removed)
+2026-09-09 10:13:49 [INFO ] [hotwords] homme=0      femme=1      other=0    
+2026-09-09 10:13:49 [INFO ] [hotwords] Saved 1 words (raw: 1) → 20260909_101349_fr.txt
+2026-09-09 10:13:53 [INFO ] [hotwords] Single mode: keyword=ensemble jogging femme  country=fr  category=(all)
+2026-09-09 10:13:54 [INFO ] [hotwords] Fetched 1 words (total=1  status=0)
+2026-09-09 10:13:54 [INFO ] [hotwords]   strip_whitespace: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords]   normalize_case: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords]   drop_single_word: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords]   drop_brands: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords]   drop_reordered: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords]   deduplicate: 1 → 1 (0 removed)
+2026-09-09 10:13:54 [INFO ] [hotwords] homme=0      femme=1      other=0    
+2026-09-09 10:13:54 [INFO ] [hotwords] Saved 1 words (raw: 1) → 20260909_101353_fr.txt
+2026-09-09 10:13:57 [INFO ] [hotwords] Single mode: keyword=ensemble été femme  country=fr  category=(all)
+2026-09-09 10:13:57 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:13:57 [INFO ] [hotwords] No words found.
+2026-09-09 10:14:00 [INFO ] [hotwords] Single mode: keyword=ensemble lin femme  country=fr  category=(all)
+2026-09-09 10:14:00 [INFO ] [hotwords] Fetched 1 words (total=1  status=0)
+2026-09-09 10:14:00 [INFO ] [hotwords]   strip_whitespace: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords]   normalize_case: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords]   drop_single_word: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords]   drop_brands: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords]   drop_reordered: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords]   deduplicate: 1 → 1 (0 removed)
+2026-09-09 10:14:00 [INFO ] [hotwords] homme=0      femme=1      other=0    
+2026-09-09 10:14:00 [INFO ] [hotwords] Saved 1 words (raw: 1) → 20260909_101400_fr.txt
+2026-09-09 10:14:24 [INFO ] [hotwords] Single mode: keyword=ensemble femme mariage  country=fr  category=(all)
+2026-09-09 10:14:25 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:14:25 [INFO ] [hotwords] No words found.
+2026-09-09 10:14:29 [INFO ] [hotwords] Single mode: keyword=ensemble femme grande taille  country=fr  category=(all)
+2026-09-09 10:14:29 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:14:29 [INFO ] [hotwords] No words found.
+2026-09-09 10:14:34 [INFO ] [hotwords] Single mode: keyword=ensemble 2 pieces femme  country=fr  category=(all)
+2026-09-09 10:14:39 [ERROR] [hotwords] Request failed: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-09 10:14:43 [INFO ] [hotwords] Single mode: keyword=survetement femme  country=fr  category=(all)
+2026-09-09 10:14:44 [INFO ] [hotwords] Fetched 4 words (total=4  status=0)
+2026-09-09 10:14:44 [INFO ] [hotwords]   strip_whitespace: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords]   normalize_case: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords]   drop_single_word: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords]   drop_brands: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords]   drop_reordered: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords]   deduplicate: 4 → 4 (0 removed)
+2026-09-09 10:14:44 [INFO ] [hotwords] homme=0      femme=4      other=0    
+2026-09-09 10:14:44 [INFO ] [hotwords] Saved 4 words (raw: 4) → 20260909_101443_fr.txt
+2026-09-09 10:14:47 [INFO ] [hotwords] Single mode: keyword=costume femme  country=fr  category=(all)
+2026-09-09 10:14:48 [INFO ] [hotwords] Fetched 8 words (total=8  status=0)
+2026-09-09 10:14:48 [INFO ] [hotwords]   strip_whitespace: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords]   normalize_case: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords]   drop_single_word: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords]   drop_brands: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords]   drop_reordered: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords]   deduplicate: 8 → 8 (0 removed)
+2026-09-09 10:14:48 [INFO ] [hotwords] homme=0      femme=8      other=0    
+2026-09-09 10:14:48 [INFO ] [hotwords] Saved 8 words (raw: 8) → 20260909_101447_fr.txt
+2026-09-09 10:15:09 [INFO ] [hotwords] Single mode: keyword=ensemble  country=fr  category=(all)
+2026-09-09 10:15:09 [INFO ] [hotwords] Fetched 190 words (total=190  status=0)
+2026-09-09 10:15:09 [INFO ] [hotwords]   strip_whitespace: 190 → 190 (0 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords]   normalize_case: 190 → 190 (0 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords]   drop_single_word: 190 → 189 (1 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords]   drop_brands: 189 → 171 (18 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords]   drop_reordered: 171 → 171 (0 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords]   deduplicate: 171 → 171 (0 removed)
+2026-09-09 10:15:09 [INFO ] [hotwords] homme=17     femme=44     other=110  
+2026-09-09 10:15:09 [INFO ] [hotwords] Saved 171 words (raw: 190) → 20260909_101509_fr.txt
+2026-09-09 10:15:13 [INFO ] [hotwords] Single mode: keyword=tailleur  country=fr  category=(all)
+2026-09-09 10:15:13 [INFO ] [hotwords] Fetched 18 words (total=18  status=0)
+2026-09-09 10:15:13 [INFO ] [hotwords]   strip_whitespace: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords]   normalize_case: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords]   drop_single_word: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords]   drop_brands: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords]   drop_reordered: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords]   deduplicate: 18 → 18 (0 removed)
+2026-09-09 10:15:13 [INFO ] [hotwords] homme=0      femme=15     other=3    
+2026-09-09 10:15:13 [INFO ] [hotwords] Saved 18 words (raw: 18) → 20260909_101513_fr.txt
+2026-09-09 10:15:16 [INFO ] [hotwords] Single mode: keyword=ensemble deux pieces femme  country=fr  category=(all)
+2026-09-09 10:15:17 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:15:17 [INFO ] [hotwords] No words found.
+2026-09-09 10:15:20 [INFO ] [hotwords] Single mode: keyword=ensemble sport femme  country=fr  category=(all)
+2026-09-09 10:15:20 [INFO ] [hotwords] Fetched 2 words (total=2  status=0)
+2026-09-09 10:15:20 [INFO ] [hotwords]   strip_whitespace: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords]   normalize_case: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords]   drop_single_word: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords]   drop_brands: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords]   drop_reordered: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords]   deduplicate: 2 → 2 (0 removed)
+2026-09-09 10:15:20 [INFO ] [hotwords] homme=0      femme=2      other=0    
+2026-09-09 10:15:20 [INFO ] [hotwords] Saved 2 words (raw: 2) → 20260909_101520_fr.txt
+2026-09-09 10:18:58 [INFO ] [hotwords] Single mode: keyword=ensemble coordonne femme  country=fr  category=(all)
+2026-09-09 10:18:59 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:18:59 [INFO ] [hotwords] No words found.
+2026-09-09 10:19:04 [INFO ] [hotwords] Single mode: keyword=ensemble 3 pieces femme  country=fr  category=(all)
+2026-09-09 10:19:05 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:19:05 [INFO ] [hotwords] No words found.
+2026-09-09 10:19:12 [INFO ] [hotwords] Single mode: keyword=ensemble pantalon  country=fr  category=(all)
+2026-09-09 10:19:13 [INFO ] [hotwords] Fetched 3 words (total=3  status=0)
+2026-09-09 10:19:13 [INFO ] [hotwords]   strip_whitespace: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords]   normalize_case: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords]   drop_single_word: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords]   drop_brands: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords]   drop_reordered: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords]   deduplicate: 3 → 3 (0 removed)
+2026-09-09 10:19:13 [INFO ] [hotwords] homme=0      femme=3      other=0    
+2026-09-09 10:19:13 [INFO ] [hotwords] Saved 3 words (raw: 3) → 20260909_101912_fr.txt
+2026-09-09 10:19:19 [INFO ] [hotwords] Single mode: keyword=ensemble femme chic  country=fr  category=(all)
+2026-09-09 10:19:19 [INFO ] [hotwords] Fetched 3 words (total=3  status=0)
+2026-09-09 10:19:19 [INFO ] [hotwords]   strip_whitespace: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords]   normalize_case: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords]   drop_single_word: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords]   drop_brands: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords]   drop_reordered: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords]   deduplicate: 3 → 3 (0 removed)
+2026-09-09 10:19:19 [INFO ] [hotwords] homme=0      femme=3      other=0    
+2026-09-09 10:19:19 [INFO ] [hotwords] Saved 3 words (raw: 3) → 20260909_101919_fr.txt
+2026-09-09 10:19:53 [INFO ] [hotwords] Single mode: keyword=ensemble femme ete  country=fr  category=(all)
+2026-09-09 10:19:53 [INFO ] [hotwords] Fetched 1 words (total=1  status=0)
+2026-09-09 10:19:53 [INFO ] [hotwords]   strip_whitespace: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords]   normalize_case: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords]   drop_single_word: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords]   drop_brands: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords]   drop_reordered: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords]   deduplicate: 1 → 1 (0 removed)
+2026-09-09 10:19:53 [INFO ] [hotwords] homme=0      femme=1      other=0    
+2026-09-09 10:19:53 [INFO ] [hotwords] Saved 1 words (raw: 1) → 20260909_101953_fr.txt
+2026-09-09 10:19:57 [INFO ] [hotwords] Single mode: keyword=ensemble 2 pieces  country=fr  category=(all)
+2026-09-09 10:19:57 [INFO ] [hotwords] Fetched 0 words (total=0  status=0)
+2026-09-09 10:19:57 [INFO ] [hotwords] No words found.
+2026-09-09 10:55:46 [INFO ] [jenkins] ==================================================
+2026-09-09 10:55:46 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-09 10:55:46 [INFO ] [jenkins] ==================================================
+2026-09-09 10:55:46 [INFO ] [jenkins] 
+2026-09-09 10:55:46 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-09 10:55:46 [INFO ] [jenkins] ------------------------------
+2026-09-09 10:55:46 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-09 10:55:46 [INFO ] [jenkins] 
+2026-09-09 10:55:46 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-09 10:55:46 [INFO ] [jenkins] ------------------------------
+2026-09-09 10:55:46 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-09-09 10:55:46 [INFO ] [preprocess] [hose1.xlsx]
+2026-09-09 10:55:47 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 10:55:47 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 10:55:48 [INFO ] [preprocess]   [hose1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 10:55:48 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 10:55:50 [INFO ] [preprocess]   [hose1.xlsx] Dedup: 17 filled rows, 2 deleted
+2026-09-09 10:55:50 [INFO ] [pipeline] Pipeline complete
+2026-09-09 10:55:50 [INFO ] [preprocess] [hose2.xlsx]
+2026-09-09 10:55:51 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 10:55:51 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 10:55:55 [INFO ] [preprocess]   [hose2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 10:55:55 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 10:55:55 [INFO ] [preprocess]   [hose2.xlsx] No duplicate filled rows to remove
+2026-09-09 10:55:55 [INFO ] [pipeline] Pipeline complete
+2026-09-09 10:55:55 [INFO ] [preprocess] [hose3.xlsx]
+2026-09-09 10:55:56 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-09 10:55:56 [INFO ] [pipeline] [1/2] remove_header
+2026-09-09 10:56:01 [INFO ] [preprocess]   [hose3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-09 10:56:01 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-09 10:56:01 [INFO ] [preprocess]   [hose3.xlsx] No duplicate filled rows to remove
+2026-09-09 10:56:01 [INFO ] [pipeline] Pipeline complete
+2026-09-09 10:56:02 [INFO ] [preprocess] Preprocessing complete
+2026-09-09 10:56:02 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-09 10:56:02 [INFO ] [jenkins] 
+2026-09-09 10:56:02 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-09 10:56:02 [INFO ] [jenkins] ------------------------------
+2026-09-09 10:56:02 [INFO ] [main] Log file: 20260909_dd0b73ae.log
+2026-09-09 10:56:02 [INFO ] [main] Found 3 file(s):
+2026-09-09 10:56:02 [INFO ] [main]   hose1.xlsx
+2026-09-09 10:56:02 [INFO ] [main]   hose2.xlsx
+2026-09-09 10:56:02 [INFO ] [main]   hose3.xlsx
+2026-09-09 10:56:02 [INFO ] [main] Output: 9.4v1_de.xlsx
+2026-09-09 10:56:02 [INFO ] [main] ==================================================
+2026-09-09 10:56:14 [INFO ] [main] Merged 3 files, 4735 images total
+2026-09-09 10:56:14 [INFO ] [main] Deleted 3 source file(s)
+2026-09-09 10:56:16 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-09 10:56:16 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-09 10:56:28 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1239 rows, 1701 images
+2026-09-09 10:56:28 [INFO ] [pipeline]   Sheet [Sheet0_3]: 1569 rows, 2289 images
+2026-09-09 10:56:28 [INFO ] [pipeline]   Merged 3 sheets -> 1, 2808 data rows, 3990 images
+2026-09-09 10:56:28 [INFO ] [pipeline] [2/12] validate
+2026-09-09 10:56:28 [INFO ] [pipeline]   Validated: 3355 rows, 27 cols (expect ~32)
+2026-09-09 10:56:28 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-09 10:56:28 [INFO ] [pipeline]   Backed up 4735 images
+2026-09-09 10:56:28 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-09 10:56:28 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-09 10:56:28 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-09 10:56:28 [INFO ] [pipeline]   Restored 4735 images with adjusted anchors
+2026-09-09 10:56:28 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-09 10:56:28 [INFO ] [pipeline]   Column 2: 3355 IDs generated
+2026-09-09 10:56:28 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-09 10:56:28 [INFO ] [pipeline]   Column 3: 3355 cells filled
+2026-09-09 10:56:28 [INFO ] [pipeline] [6/12] map_colors
+2026-09-09 10:56:28 [INFO ] [pipeline]   Column 10: 3266 cells mapped, 89 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-09 10:56:28 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-09 10:56:28 [INFO ] [pipeline]   Column 11: 3238 mapped, 89 cleared (col A has fill), 28 no match (recorded)
+2026-09-09 10:56:28 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-09 10:56:28 [INFO ] [pipeline]   Mirror copy: 22364 cells written
+2026-09-09 10:56:28 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-09 10:56:28 [INFO ] [pipeline]   Column 44: 3355 cells copied from col 12
+2026-09-09 10:56:28 [INFO ] [pipeline] [10/12] calc_price
+2026-09-09 10:56:29 [INFO ] [pipeline]   Columns 45-48: 3355 rows calculated
+2026-09-09 10:56:29 [INFO ] [pipeline] [11/12] format_cells
+2026-09-09 10:56:29 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-09 10:56:29 [INFO ] [pipeline]   Formatted 3355 rows: h=50, align=left/center
+2026-09-09 10:56:29 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-09 10:56:29 [INFO ] [pipeline] [12/12] finalize
+2026-09-09 10:56:29 [INFO ] [pipeline]   Done: 3355 rows x 48 cols (target: 48)
+2026-09-09 10:56:29 [INFO ] [pipeline] Pipeline complete
+2026-09-09 10:56:32 [INFO ] [main] Size: 3355 rows x 48 cols
+2026-09-09 10:56:32 [INFO ] [main] ==================================================
+2026-09-09 10:56:32 [INFO ] [main] Done: 9.4v1_de.xlsx
+2026-09-09 10:56:32 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-09 10:56:32 [INFO ] [jenkins] 
+2026-09-09 10:56:32 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-09 10:56:32 [INFO ] [jenkins] ------------------------------
+2026-09-09 10:56:32 [ERROR] [color_size_main] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\9.4v1.xlsx
+2026-09-09 10:56:32 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-09 10:56:32 [INFO ] [jenkins] 
+2026-09-09 10:56:32 [INFO ] [jenkins] ==================================================
+2026-09-09 10:56:32 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-09 10:56:32 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-09 10:56:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-09 10:56:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-09 10:56:32 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-09 11:33:10 [INFO ] [jenkins] ==================================================
+2026-09-09 11:33:10 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-09 11:33:10 [INFO ] [jenkins] ==================================================
+2026-09-09 11:33:10 [INFO ] [jenkins] 
+2026-09-09 11:33:10 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-09 11:33:10 [INFO ] [jenkins] ------------------------------
+2026-09-09 11:33:10 [INFO ] [title_workflow] Source: 9.2v1.xlsx
+2026-09-09 11:33:12 [INFO ] [title_workflow] Extracted 75 titles + 75 links
+2026-09-09 11:33:12 [INFO ] [title_workflow] Written: origin_title (75) + origin_link (75)
+2026-09-09 11:33:12 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-09 11:33:12 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-09 11:33:13 [INFO ] [deepseek_web] Opening DeepSeek web (75 titles)...
+2026-09-09 11:33:13 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-09 11:33:15 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-09 11:33:17 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-09 11:33:17 [INFO ] [deepseek_web] [1/75] 穆斯林休闲时尚男装非洲男士套装烫金上衣长裤2件套
+2026-09-09 11:33:18 [INFO ] [deepseek_web]   Downloaded: 0001_4510445140343416575280.jpg
+2026-09-09 11:33:18 [INFO ] [deepseek_web]   Prefetching next image (2/75)
+2026-09-09 11:33:18 [INFO ] [deepseek_web]   Switched to vision mode
+2026-09-09 11:33:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:33:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:34:25 [INFO ] [deepseek_web]   Response: 立领 抽象几何烫金印花 两侧下摆开衩 抽绳松紧裤腰 长款上衣长裤两件套 男士 宽松版型 长袖纽扣门襟 直筒长裤
+2026-09-09 11:34:25 [INFO ] [deepseek_web]   Deleted: 0001_4510445140343416575280.jpg
+2026-09-09 11:34:30 [INFO ] [deepseek_web] [2/75] 男士两件套运动跑步大码宽松休闲圆领卫衣
+2026-09-09 11:34:30 [INFO ] [deepseek_web]   Downloaded: 0002_8070443372442213210841.jpg
+2026-09-09 11:34:30 [INFO ] [deepseek_web]   Prefetching next image (3/75)
+2026-09-09 11:34:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:34:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:35:07 [INFO ] [deepseek_web]   Response: 胸前横向拼接 下摆装饰贴标 侧边条纹拼接 圆领套头卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 直筒长裤
+2026-09-09 11:35:07 [INFO ] [deepseek_web]   Deleted: 0002_8070443372442213210841.jpg
+2026-09-09 11:35:12 [INFO ] [deepseek_web] [3/75] 男士半拉链运动衫和运动裤束脚服套装套装
+2026-09-09 11:35:12 [INFO ] [deepseek_web]   Downloaded: 0003_3560329262762190948292.jpg
+2026-09-09 11:35:12 [INFO ] [deepseek_web]   Prefetching next image (4/75)
+2026-09-09 11:35:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:35:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:36:20 [INFO ] [deepseek_web]   Response: 半拉链门襟 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚 双侧口袋 连帽卫衣束脚长裤两件套 男士 宽松版型 纯色 长袖
+2026-09-09 11:36:20 [INFO ] [deepseek_web]   Deleted: 0003_3560329262762190948292.jpg
+2026-09-09 11:36:25 [INFO ] [deepseek_web] [4/75] 男士字母压花长袖长裤肌理提花休闲运动套装
+2026-09-09 11:36:25 [INFO ] [deepseek_web]   Downloaded: 0004_8271213367116111641260.jpg
+2026-09-09 11:36:25 [INFO ] [deepseek_web]   Prefetching next image (5/75)
+2026-09-09 11:36:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:36:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:36:57 [INFO ] [deepseek_web]   Response: 字母压花肌理 左胸装饰贴标 裤侧装饰贴标 长袖上衣长裤两件套 男士 宽松版型 圆领套头 抽绳松紧裤腰 直筒长裤
+2026-09-09 11:36:57 [INFO ] [deepseek_web]   Deleted: 0004_8271213367116111641260.jpg
+2026-09-09 11:37:02 [INFO ] [deepseek_web] [5/75] 男士加绒宽松休闲工装户外运动连帽卫衣长裤套装
+2026-09-09 11:37:02 [INFO ] [deepseek_web]   Downloaded: 0005_2980613059814421006321.jpg
+2026-09-09 11:37:02 [INFO ] [deepseek_web]   Prefetching next image (6/75)
+2026-09-09 11:37:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:37:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:37:43 [INFO ] [deepseek_web]   Response: 不对称斜拉链门襟 双侧工装口袋 抽绳松紧裤腰 束脚裤脚 男士 宽松版型 连帽卫衣长裤两件套 长袖 纯色 加绒
+2026-09-09 11:37:43 [INFO ] [deepseek_web]   Deleted: 0005_2980613059814421006321.jpg
+2026-09-09 11:37:48 [INFO ] [deepseek_web] [6/75] 男士新款半开门襟拉链套头男士休闲时尚长袖男运动套装
+2026-09-09 11:37:48 [INFO ] [deepseek_web]   Downloaded: 0006_6941117489351560413785.jpg
+2026-09-09 11:37:48 [INFO ] [deepseek_web]   Prefetching next image (7/75)
+2026-09-09 11:37:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:38:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:38:58 [INFO ] [deepseek_web]   Response: 撞色条纹拼接 半开襟拉链门襟 抽绳松紧裤腰 罗纹袖口下摆 长袖套头卫衣长裤两件套 男士 常规版型 直筒长裤
+2026-09-09 11:38:58 [INFO ] [deepseek_web]   Deleted: 0006_6941117489351560413785.jpg
+2026-09-09 11:39:03 [INFO ] [deepseek_web] [7/75] 男士两件套宽松运动套装拉链款连帽衫与慢跑裤休闲套装
+2026-09-09 11:39:03 [INFO ] [deepseek_web]   Downloaded: 0007_9841036456872915767386.jpg
+2026-09-09 11:39:03 [INFO ] [deepseek_web]   Prefetching next image (8/75)
+2026-09-09 11:39:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:39:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:39:38 [INFO ] [deepseek_web]   Response: 拉链前襟 连帽抽绳 两侧口袋 罗纹袖口下摆 束脚裤脚 抽绳松紧裤腰 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 纯色
+2026-09-09 11:39:38 [INFO ] [deepseek_web]   Deleted: 0007_9841036456872915767386.jpg
+2026-09-09 11:39:43 [INFO ] [deepseek_web] [8/75] 男女套装城市名字母印花连帽卫衣套装
+2026-09-09 11:39:43 [INFO ] [deepseek_web]   Downloaded: 0008_0280755339802869542927.jpg
+2026-09-09 11:39:43 [INFO ] [deepseek_web]   Prefetching next image (9/75)
+2026-09-09 11:39:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:39:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:40:23 [INFO ] [deepseek_web]   Response: 胸前字母印花 裤腿字母印花 袋鼠口袋 连帽卫衣长裤两件套 中性 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚
+2026-09-09 11:40:23 [INFO ] [deepseek_web]   Deleted: 0008_0280755339802869542927.jpg
+2026-09-09 11:40:28 [INFO ] [deepseek_web] [9/75] 男士飞行夹克秋冬潮流百搭高级感透气休闲夹克套装
+2026-09-09 11:40:28 [INFO ] [deepseek_web]   Downloaded: 0009_7460319095462115195331.jpg
+2026-09-09 11:40:28 [INFO ] [deepseek_web]   Prefetching next image (10/75)
+2026-09-09 11:40:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:40:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:41:07 [INFO ] [deepseek_web]   Response: 细格纹纹理 胸前贴袋装饰贴标 翻领纽扣门襟 抽绳松紧裤腰 夹克长裤两件套 男士 常规版型 长袖 直筒长裤 透气
+2026-09-09 11:41:07 [INFO ] [deepseek_web]   Deleted: 0009_7460319095462115195331.jpg
+2026-09-09 11:41:12 [INFO ] [deepseek_web] [10/75] 男士纯色日本卫衣竖直口袋无帽卫衣套装带抽绳
+2026-09-09 11:41:12 [INFO ] [deepseek_web]   Downloaded: 0010_6140416545242620266137.jpg
+2026-09-09 11:41:12 [INFO ] [deepseek_web]   Prefetching next image (11/75)
+2026-09-09 11:41:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:41:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:42:01 [INFO ] [deepseek_web]   Response: 竖直侧缝口袋 无帽圆领 抽绳松紧裤腰 罗纹袖口下摆 圆领套头卫衣直筒长裤两件套 男士 宽松版型 长袖 纯色
+2026-09-09 11:42:01 [INFO ] [deepseek_web]   Deleted: 0010_6140416545242620266137.jpg
+2026-09-09 11:42:06 [INFO ] [deepseek_web] [11/75] 男士运动休闲纯色圆领提花针织衫两件套
+2026-09-09 11:42:06 [INFO ] [deepseek_web]   Downloaded: 0011_3420221235011719363592.jpg
+2026-09-09 11:42:06 [INFO ] [deepseek_web]   Prefetching next image (12/75)
+2026-09-09 11:42:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:42:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:42:43 [INFO ] [deepseek_web]   Response: 肌理提花面料 胸前装饰贴标 抽绳松紧裤腰 圆领套头针织衫长裤两件套 男士 宽松版型 长袖 束脚裤脚 纯色
+2026-09-09 11:42:43 [INFO ] [deepseek_web]   Deleted: 0011_3420221235011719363592.jpg
+2026-09-09 11:42:48 [INFO ] [deepseek_web] [12/75] 男士长袖口袋连帽卫衣系带长裤带口袋套装两件套
+2026-09-09 11:42:48 [INFO ] [deepseek_web]   Downloaded: 0012_9961002079894858303288.jpg
+2026-09-09 11:42:48 [INFO ] [deepseek_web]   Prefetching next image (13/75)
+2026-09-09 11:42:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:43:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:43:30 [INFO ] [deepseek_web]   Response: 连帽抽绳 袋鼠前袋 裤侧工装口袋 罗纹袖口下摆 连帽卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 束脚裤脚
+2026-09-09 11:43:30 [INFO ] [deepseek_web]   Deleted: 0012_9961002079894858303288.jpg
+2026-09-09 11:43:35 [INFO ] [deepseek_web] [13/75] 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 11:43:35 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='h513imd7tdqzzdcg.imgsapp.com', port=443): Max retries exceeded with url: /afsd/6086/2131118187701717347662.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-09 11:43:40 [INFO ] [deepseek_web] [14/75] 男士春秋冬时尚简约纯色中厚款保暖内衣套装打底裤打底衫秋衣秋裤
+2026-09-09 11:43:41 [INFO ] [deepseek_web]   Downloaded: 0014_4890956574623318231925.jpg
+2026-09-09 11:43:41 [INFO ] [deepseek_web]   Prefetching next image (15/75)
+2026-09-09 11:43:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:43:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:44:55 [INFO ] [deepseek_web]   Response: 罗纹收袖口 罗纹收裤脚 圆领套头 平下摆 松紧裤腰 无口袋 纯色 保暖内衣长袖上衣长裤两件套 男士 常规版型
+2026-09-09 11:44:55 [INFO ] [deepseek_web]   Deleted: 0014_4890956574623318231925.jpg
+2026-09-09 11:45:00 [INFO ] [deepseek_web] [15/75] 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 11:45:00 [INFO ] [deepseek_web]   Downloaded: 0015_1610410575011987211371.jpg
+2026-09-09 11:45:00 [INFO ] [deepseek_web]   Prefetching next image (16/75)
+2026-09-09 11:45:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:45:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:45:35 [INFO ] [deepseek_web]   Response: 渐变波点印花 全拉链门襟 连帽抽绳 袋鼠口袋 罗纹袖口下摆 束脚裤脚 抽绳松紧裤腰 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖
+2026-09-09 11:45:35 [INFO ] [deepseek_web]   Deleted: 0015_1610410575011987211371.jpg
+2026-09-09 11:45:40 [INFO ] [deepseek_web] [16/75] 男士美国独立日印花西装三件套
+2026-09-09 11:45:40 [INFO ] [deepseek_web]   Downloaded: 0016_4760808195238128695369.jpg
+2026-09-09 11:45:40 [INFO ] [deepseek_web]   Prefetching next image (17/75)
+2026-09-09 11:45:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:45:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:46:13 [INFO ] [deepseek_web]   Response: 五星条纹国旗印花 胸前USA字母贴袋 单排扣西装门襟 多粒扣马甲 西装外套马甲长裤三件套 男士 常规版型 长袖 平驳领 直筒长裤
+2026-09-09 11:46:13 [INFO ] [deepseek_web]   Deleted: 0016_4760808195238128695369.jpg
+2026-09-09 11:46:18 [INFO ] [deepseek_web] [17/75] 男士非洲民族风格黑人历史月刺绣衬衫和纯色抽绳裤子2件套装
+2026-09-09 11:46:18 [INFO ] [deepseek_web]   Downloaded: 0017_6810339199482218978657.jpg
+2026-09-09 11:46:18 [INFO ] [deepseek_web]   Prefetching next image (18/75)
+2026-09-09 11:46:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:46:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:46:47 [INFO ] [deepseek_web]   Response: 胸前金色几何刺绣 领口刺绣装饰带 袖口纽扣 长袖上衣长裤两件套 男士 宽松版型 圆领套头 抽绳松紧裤腰 纯色
+2026-09-09 11:46:47 [INFO ] [deepseek_web]   Deleted: 0017_6810339199482218978657.jpg
+2026-09-09 11:46:52 [INFO ] [deepseek_web] [18/75] 男士印花套装
+2026-09-09 11:46:52 [INFO ] [deepseek_web]   Downloaded: 0018_6230425246513771830411.jpg
+2026-09-09 11:46:52 [INFO ] [deepseek_web]   Prefetching next image (19/75)
+2026-09-09 11:46:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:47:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:47:40 [INFO ] [deepseek_web]   Response: 泼溅血迹印花 字母印花 连帽抽绳 袋鼠口袋 抽绳裤腰 束脚裤脚 连帽套头卫衣长裤两件套 男士 宽松版型 长袖
+2026-09-09 11:47:40 [INFO ] [deepseek_web]   Deleted: 0018_6230425246513771830411.jpg
+2026-09-09 11:47:45 [INFO ] [deepseek_web] [19/75] 男士夹克万圣节氛围卫衣男士休闲套装
+2026-09-09 11:47:45 [INFO ] [deepseek_web]   Downloaded: 0019_6580228234391712620737.jpg
+2026-09-09 11:47:45 [INFO ] [deepseek_web]   Prefetching next image (20/75)
+2026-09-09 11:47:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:47:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:48:14 [INFO ] [deepseek_web]   Response: 蛇眼月亮植物印花 立领全拉链门襟 抽绳松紧裤腰 罗纹袖口下摆 夹克长裤两件套 男士 宽松版型 长袖 束脚长裤
+2026-09-09 11:48:14 [INFO ] [deepseek_web]   Deleted: 0019_6580228234391712620737.jpg
+2026-09-09 11:48:19 [INFO ] [deepseek_web] [20/75] 男士纯色休闲套装
+2026-09-09 11:48:19 [INFO ] [deepseek_web]   Downloaded: 0020_3590937018222890969873.jpg
+2026-09-09 11:48:19 [INFO ] [deepseek_web]   Prefetching next image (21/75)
+2026-09-09 11:48:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:48:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:48:49 [INFO ] [deepseek_web]   Response: 全拉链门襟 双侧工装口袋 连帽抽绳 长袖 罗纹袖口下摆 连帽卫衣长裤两件套 男士 宽松版型 抽绳松紧裤腰 束脚长裤 纯色
+2026-09-09 11:48:49 [INFO ] [deepseek_web]   Deleted: 0020_3590937018222890969873.jpg
+2026-09-09 11:48:54 [INFO ] [deepseek_web] [21/75] 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 11:48:54 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='yzx3128md7n3cwn9.imgsapp.com', port=443): Read timed out. (read timeout=30)
+2026-09-09 11:48:59 [INFO ] [deepseek_web] [22/75] 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 11:49:18 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='trsoygrksw6qt2fr.imgsapp.com', port=443): Max retries exceeded with url: /afsd/6665/3980240253041529290015.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-09 11:49:23 [INFO ] [deepseek_web] [23/75] 男士爆款城市印花卫衣套装
+2026-09-09 11:49:24 [INFO ] [deepseek_web]   Downloaded: 0023_6230855328333813478075.jpg
+2026-09-09 11:49:24 [INFO ] [deepseek_web]   Prefetching next image (24/75)
+2026-09-09 11:49:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:49:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:49:57 [INFO ] [deepseek_web]   Response: 胸前字母印花 裤腿字母印花 袋鼠口袋 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 抽绳松紧裤腰 束脚裤脚
+2026-09-09 11:49:57 [INFO ] [deepseek_web]   Deleted: 0023_6230855328333813478075.jpg
+2026-09-09 11:50:02 [INFO ] [deepseek_web] [24/75] 男士休闲纯色套装两件套
+2026-09-09 11:50:02 [INFO ] [deepseek_web]   Downloaded: 0024_7710302453121812668097.jpg
+2026-09-09 11:50:02 [INFO ] [deepseek_web]   Prefetching next image (25/75)
+2026-09-09 11:50:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:50:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:50:31 [INFO ] [deepseek_web]   Response: 半拉链门襟 双侧工装口袋 立领 罗纹袖口下摆 套头衫长裤两件套 男士 宽松版型 长袖 直筒长裤 纯色
+2026-09-09 11:50:31 [INFO ] [deepseek_web]   Deleted: 0024_7710302453121812668097.jpg
+2026-09-09 11:50:36 [INFO ] [deepseek_web] [25/75] 男士万圣节骷髅印花套装
+2026-09-09 11:50:36 [INFO ] [deepseek_web]   Downloaded: 0025_8850916472583810706785.jpg
+2026-09-09 11:50:36 [INFO ] [deepseek_web]   Prefetching next image (26/75)
+2026-09-09 11:50:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:50:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:51:06 [INFO ] [deepseek_web]   Response: 骷髅骨骼印花 全拉链门襟 连帽抽绳 袋鼠口袋 束脚裤脚 罗纹袖口下摆 连帽卫衣长裤两件套 男士 宽松版型 长袖
+2026-09-09 11:51:06 [INFO ] [deepseek_web]   Deleted: 0025_8850916472583810706785.jpg
+2026-09-09 11:51:11 [INFO ] [deepseek_web] [26/75] 男士纯色插肩卫衣休闲裤套装两件套
+2026-09-09 11:51:11 [INFO ] [deepseek_web]   Downloaded: 0026_4600816531701836413848.jpg
+2026-09-09 11:51:11 [INFO ] [deepseek_web]   Prefetching next image (27/75)
+2026-09-09 11:51:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:51:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:51:43 [INFO ] [deepseek_web]   Response: 插肩袖 裤侧工装口袋 连帽抽绳 全拉链门襟 罗纹袖口下摆 纯色 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 直筒长裤
+2026-09-09 11:51:43 [INFO ] [deepseek_web]   Deleted: 0026_4600816531701836413848.jpg
+2026-09-09 11:51:48 [INFO ] [deepseek_web] [27/75] 男士纯色休闲卫衣套装长袖口袋连帽卫衣系带长裤套装两件套
+2026-09-09 11:51:48 [INFO ] [deepseek_web]   Downloaded: 0027_1190847115551911863525.jpg
+2026-09-09 11:51:48 [INFO ] [deepseek_web]   Prefetching next image (28/75)
+2026-09-09 11:51:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:51:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:52:21 [INFO ] [deepseek_web]   Response: 半拉链门襟 裤侧工装口袋 束脚裤脚 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 纯色
+2026-09-09 11:52:21 [INFO ] [deepseek_web]   Deleted: 0027_1190847115551911863525.jpg
+2026-09-09 11:52:26 [INFO ] [deepseek_web] [28/75] 男士休闲运动卫衣卫裤套装
+2026-09-09 11:52:26 [INFO ] [deepseek_web]   Downloaded: 0028_9961114417121412353545.jpg
+2026-09-09 11:52:26 [INFO ] [deepseek_web]   Prefetching next image (29/75)
+2026-09-09 11:52:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:52:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:52:55 [INFO ] [deepseek_web]   Response: 胸前字母印花 裤腿侧字母印花 裤侧工装口袋 袋鼠口袋 罗纹袖口下摆 束脚裤脚 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 抽绳松紧裤腰
+2026-09-09 11:52:55 [INFO ] [deepseek_web]   Deleted: 0028_9961114417121412353545.jpg
+2026-09-09 11:53:00 [INFO ] [deepseek_web] [29/75] 男士冬季卫衣套装
+2026-09-09 11:53:00 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='fb60paauu5l7z1wj.imgsapp.com', port=443): Max retries exceeded with url: /afsd/5220/7291105273899243406055.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-09 11:53:05 [INFO ] [deepseek_web] [30/75] 男士多口袋连帽卫衣套装
+2026-09-09 11:53:06 [INFO ] [deepseek_web]   Downloaded: 0030_0960035951779219596229.jpg
+2026-09-09 11:53:06 [INFO ] [deepseek_web]   Prefetching next image (31/75)
+2026-09-09 11:53:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:53:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:53:46 [INFO ] [deepseek_web]   Response: 胸前双侧翻盖口袋带拉链装饰 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 纯色
+2026-09-09 11:53:46 [INFO ] [deepseek_web]   Deleted: 0030_0960035951779219596229.jpg
+2026-09-09 11:53:51 [INFO ] [deepseek_web] [31/75] 男士工装套装
+2026-09-09 11:53:51 [INFO ] [deepseek_web]   Downloaded: 0031_8411059045587321303621.jpg
+2026-09-09 11:53:51 [INFO ] [deepseek_web]   Prefetching next image (32/75)
+2026-09-09 11:53:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:54:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:54:21 [INFO ] [deepseek_web]   Response: 双侧翻盖工装口袋 抽绳松紧裤腰 束脚裤脚 罗纹袖口下摆 圆领套头卫衣长裤两件套 男士 宽松版型 长袖 纯色
+2026-09-09 11:54:21 [INFO ] [deepseek_web]   Deleted: 0031_8411059045587321303621.jpg
+2026-09-09 11:54:26 [INFO ] [deepseek_web] [32/75] 男士套装1
+2026-09-09 11:54:26 [INFO ] [deepseek_web]   Downloaded: 0032_2270323018873932565632.jpg
+2026-09-09 11:54:26 [INFO ] [deepseek_web]   Prefetching next image (33/75)
+2026-09-09 11:54:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:54:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:54:55 [INFO ] [deepseek_web]   Response: 翻领 双侧带扣翻盖胸袋 裤侧翻盖工装口袋 按扣门襟 抽绳裤腰 直筒长裤 夹克外套长裤两件套 男士 宽松版型 长袖 纯色
+2026-09-09 11:54:55 [INFO ] [deepseek_web]   Deleted: 0032_2270323018873932565632.jpg
+2026-09-09 11:55:00 [INFO ] [deepseek_web] [33/75] 男士套装2
+2026-09-09 11:55:00 [INFO ] [deepseek_web]   Downloaded: 0033_6980448195503213855021.jpg
+2026-09-09 11:55:00 [INFO ] [deepseek_web]   Prefetching next image (34/75)
+2026-09-09 11:55:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:55:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:55:30 [INFO ] [deepseek_web]   Response: 半拉链门襟 左胸翻盖贴袋 双侧翻盖工装口袋 罗纹袖口下摆 半拉链卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 束脚裤脚 纯色
+2026-09-09 11:55:30 [INFO ] [deepseek_web]   Deleted: 0033_6980448195503213855021.jpg
+2026-09-09 11:55:35 [INFO ] [deepseek_web] [34/75] 男士套装3
+2026-09-09 11:55:35 [INFO ] [deepseek_web]   Downloaded: 0034_2540407379813223409448.jpg
+2026-09-09 11:55:35 [INFO ] [deepseek_web]   Prefetching next image (35/75)
+2026-09-09 11:55:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:55:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:56:09 [INFO ] [deepseek_web]   Response: 胸前双侧按扣翻盖口袋 裤侧翻盖工装口袋 束脚裤脚 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 袋鼠口袋 罗纹袖口下摆 抽绳松紧裤腰 纯色
+2026-09-09 11:56:09 [INFO ] [deepseek_web]   Deleted: 0034_2540407379813223409448.jpg
+2026-09-09 11:56:14 [INFO ] [deepseek_web] [35/75] 男士半拉链无帽绳无裤绳斜插口袋休闲卫裤套装
+2026-09-09 11:56:14 [INFO ] [deepseek_web]   Downloaded: 0035_5241105172511311982551.jpg
+2026-09-09 11:56:14 [INFO ] [deepseek_web]   Prefetching next image (36/75)
+2026-09-09 11:56:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:56:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:56:44 [INFO ] [deepseek_web]   Response: 半拉链门襟 无帽绳连帽 无裤绳松紧裤腰 斜插口袋 连帽卫衣长裤两件套 男士 宽松版型 长袖 袋鼠口袋 罗纹袖口下摆 纯色
+2026-09-09 11:56:44 [INFO ] [deepseek_web]   Deleted: 0035_5241105172511311982551.jpg
+2026-09-09 11:56:49 [INFO ] [deepseek_web] [36/75] 男士城市名字母印花卫衣套装
+2026-09-09 11:56:49 [INFO ] [deepseek_web]   Downloaded: 0036_0120401371032011519941.jpg
+2026-09-09 11:56:49 [INFO ] [deepseek_web]   Prefetching next image (37/75)
+2026-09-09 11:56:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:57:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:57:18 [INFO ] [deepseek_web]   Response: 胸前字母印花 裤腿字母印花 袋鼠口袋 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚
+2026-09-09 11:57:18 [INFO ] [deepseek_web]   Deleted: 0036_0120401371032011519941.jpg
+2026-09-09 11:57:23 [INFO ] [deepseek_web] [37/75] 男士四季时尚休闲柔软舒适居家纯色上衣裤子睡衣套装家居服两件套
+2026-09-09 11:57:23 [INFO ] [deepseek_web]   Downloaded: 0037_5160408373853411623481.jpg
+2026-09-09 11:57:23 [INFO ] [deepseek_web]   Prefetching next image (38/75)
+2026-09-09 11:57:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:57:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:58:21 [INFO ] [deepseek_web]   Response: 撞色拼接插肩袖 圆领套头 双侧侧缝插袋 松紧腰直筒长裤 纯色 长袖上衣 居家睡衣长裤两件套 男士 宽松版型
+2026-09-09 11:58:21 [INFO ] [deepseek_web]   Deleted: 0037_5160408373853411623481.jpg
+2026-09-09 11:58:26 [INFO ] [deepseek_web] [38/75] 男士半拉链运动衫和运动裤服套装套装
+2026-09-09 11:58:26 [INFO ] [deepseek_web]   Downloaded: 0038_5630340163212156009088.jpg
+2026-09-09 11:58:26 [INFO ] [deepseek_web]   Prefetching next image (39/75)
+2026-09-09 11:58:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:58:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:59:06 [INFO ] [deepseek_web]   Response: 半拉链门襟 连帽抽绳 直筒裤腿 连帽卫衣长裤两件套 男士 宽松版型 长袖 纯色 罗纹袖口下摆 抽绳松紧裤腰 双侧斜插口袋
+2026-09-09 11:59:06 [INFO ] [deepseek_web]   Deleted: 0038_5630340163212156009088.jpg
+2026-09-09 11:59:11 [INFO ] [deepseek_web] [39/75] 男女秋冬时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 11:59:11 [INFO ] [deepseek_web]   Downloaded: 0039_6160406013992713208328.jpg
+2026-09-09 11:59:11 [INFO ] [deepseek_web]   Prefetching next image (40/75)
+2026-09-09 11:59:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 11:59:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 11:59:40 [INFO ] [deepseek_web]   Response: 袋鼠口袋 束脚裤脚 连帽抽绳 连帽套头卫衣长裤两件套 中性 宽松版型 长袖 罗纹袖口下摆 抽绳松紧裤腰 纯色
+2026-09-09 11:59:40 [INFO ] [deepseek_web]   Deleted: 0039_6160406013992713208328.jpg
+2026-09-09 11:59:45 [INFO ] [deepseek_web] [40/75] 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 11:59:45 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='d57bt197owey58vg.imgsapp.com', port=443): Read timed out. (read timeout=30)
+2026-09-09 11:59:50 [INFO ] [deepseek_web] [41/75] 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:00:04 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='j6qtyj790kchmemv.imgsapp.com', port=443): Max retries exceeded with url: /afsd/9239/9270906274307615397477.jpg (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-09-09 12:00:09 [INFO ] [deepseek_web] [42/75] 西服套装男士三件套修身礼服商务休闲帅气西装男
+2026-09-09 12:00:10 [INFO ] [deepseek_web]   Downloaded: 0042_2000957352243858709683.jpg
+2026-09-09 12:00:10 [INFO ] [deepseek_web]   Prefetching next image (43/75)
+2026-09-09 12:00:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:00:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:00:52 [INFO ] [deepseek_web]   Response: 青果领 丝绒面料 单排一粒扣门襟 西装外套长裤两件套 男士 修身版型 长袖 双侧翻盖口袋 左胸贴袋 直筒长裤 纯色
+2026-09-09 12:00:52 [INFO ] [deepseek_web]   Deleted: 0042_2000957352243858709683.jpg
+2026-09-09 12:00:57 [INFO ] [deepseek_web] [43/75] 秋冬季运动拼接外套长袖长裤连帽休闲运动男式套装
+2026-09-09 12:00:57 [INFO ] [deepseek_web]   Downloaded: 0043_3870801224114710634564.jpg
+2026-09-09 12:00:57 [INFO ] [deepseek_web]   Prefetching next image (44/75)
+2026-09-09 12:00:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:01:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:01:42 [INFO ] [deepseek_web]   Response: 撞色拼接 全拉链门襟 束脚裤脚 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰
+2026-09-09 12:01:42 [INFO ] [deepseek_web]   Deleted: 0043_3870801224114710634564.jpg
+2026-09-09 12:01:47 [INFO ] [deepseek_web] [44/75] 男士英国连帽卫衣套装
+2026-09-09 12:01:47 [INFO ] [deepseek_web]   Downloaded: 0044_5330650072632810207359.jpg
+2026-09-09 12:01:47 [INFO ] [deepseek_web]   Prefetching next image (45/75)
+2026-09-09 12:01:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:01:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:02:18 [INFO ] [deepseek_web]   Response: 肩部英国国旗印花 胸前字母印花 裤腿字母印花 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 袋鼠口袋 束脚裤脚 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰
+2026-09-09 12:02:18 [INFO ] [deepseek_web]   Deleted: 0044_5330650072632810207359.jpg
+2026-09-09 12:02:23 [INFO ] [deepseek_web] [45/75] 套装皮衣皮裤两件套PU皮质休闲套装中世纪服
+2026-09-09 12:02:23 [INFO ] [deepseek_web]   Downloaded: 0045_9800241205259619195103.jpg
+2026-09-09 12:02:23 [INFO ] [deepseek_web]   Prefetching next image (46/75)
+2026-09-09 12:02:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:02:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:02:56 [INFO ] [deepseek_web]   Response: 不对称拉链门襟 胸部双侧拉链口袋 裤侧翻盖工装口袋 PU皮衣长裤两件套 男士 修身版型 长袖 立领 直筒长裤 纯色
+2026-09-09 12:02:56 [INFO ] [deepseek_web]   Deleted: 0045_9800241205259619195103.jpg
+2026-09-09 12:03:01 [INFO ] [deepseek_web] [46/75] 男士沙滩裤套装
+2026-09-09 12:03:01 [INFO ] [deepseek_web]   Downloaded: 0046_7510440286513016364785.jpg
+2026-09-09 12:03:01 [INFO ] [deepseek_web]   Prefetching next image (47/75)
+2026-09-09 12:03:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:03:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:04:19 [INFO ] [deepseek_web]   Response: 逼真人体印花 前后国旗图案拼接 抽绳松紧裤腰 短袖上衣短裤两件套 男士 宽松版型 圆领套头上衣 沙滩短裤
+2026-09-09 12:04:19 [INFO ] [deepseek_web]   Deleted: 0046_7510440286513016364785.jpg
+2026-09-09 12:04:24 [INFO ] [deepseek_web] [47/75] 翻领长袖长裤华夫格套装
+2026-09-09 12:04:24 [INFO ] [deepseek_web]   Downloaded: 0047_0040751201671811035112.jpg
+2026-09-09 12:04:24 [INFO ] [deepseek_web]   Prefetching next image (48/75)
+2026-09-09 12:04:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:04:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:04:55 [INFO ] [deepseek_web]   Response: 华夫格纹理 对比色翻领 胸前贴袋装饰条 翻领长袖上衣长裤两件套 男士 宽松版型 长袖 纽扣门襟 抽绳松紧裤腰 直筒长裤
+2026-09-09 12:04:55 [INFO ] [deepseek_web]   Deleted: 0047_0040751201671811035112.jpg
+2026-09-09 12:05:00 [INFO ] [deepseek_web] [48/75] 时尚趋势潮流长袖长裤套装亚马逊欧美卫衣卫裤套装
+2026-09-09 12:05:00 [INFO ] [deepseek_web]   Downloaded: 0048_4571029297815159222817.jpg
+2026-09-09 12:05:00 [INFO ] [deepseek_web]   Prefetching next image (49/75)
+2026-09-09 12:05:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:05:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:05:33 [INFO ] [deepseek_web]   Response: 胸前字母印花 裤腿侧边字母印花 抽绳松紧裤腰 束脚裤脚 罗纹袖口下摆 长袖上衣长裤两件套 男士 宽松版型 圆领套头
+2026-09-09 12:05:33 [INFO ] [deepseek_web]   Deleted: 0048_4571029297815159222817.jpg
+2026-09-09 12:05:38 [INFO ] [deepseek_web] [49/75] 男士秋冬户外潮流帅气渐变城市字母套装
+2026-09-09 12:05:38 [INFO ] [deepseek_web]   Downloaded: 0049_8561104195011138561730.jpg
+2026-09-09 12:05:38 [INFO ] [deepseek_web]   Prefetching next image (50/75)
+2026-09-09 12:05:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:05:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:06:09 [INFO ] [deepseek_web]   Response: 渐变印花 胸前字母印花 裤腿字母印花 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 袋鼠口袋 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚
+2026-09-09 12:06:09 [INFO ] [deepseek_web]   Deleted: 0049_8561104195011138561730.jpg
+2026-09-09 12:06:14 [INFO ] [deepseek_web] [50/75] 男士复古朋克哥特式西装外套双襟礼服婚礼两件套舞台表演服装
+2026-09-09 12:06:14 [INFO ] [deepseek_web]   Downloaded: 0050_0001018258142916109838.jpg
+2026-09-09 12:06:14 [INFO ] [deepseek_web]   Prefetching next image (51/75)
+2026-09-09 12:06:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:06:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:06:52 [INFO ] [deepseek_web]   Response: 金属光泽格纹印花 平驳领 两粒扣单排门襟 双侧翻盖口袋 西装外套长裤两件套 男士 常规版型 长袖 直筒长裤
+2026-09-09 12:06:52 [INFO ] [deepseek_web]   Deleted: 0050_0001018258142916109838.jpg
+2026-09-09 12:06:57 [INFO ] [deepseek_web] [51/75] 男士狂欢节3D数码亮片印花西服套装轻商务西装外套西裤套装
+2026-09-09 12:06:57 [INFO ] [deepseek_web]   Downloaded: 0051_9931056144201013647780.jpg
+2026-09-09 12:06:57 [INFO ] [deepseek_web]   Prefetching next image (52/75)
+2026-09-09 12:06:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:07:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:07:43 [INFO ] [deepseek_web]   Response: 3D数码亮片渐变印花 平驳领 单排扣门襟 双侧翻盖口袋 西装外套长裤两件套 男士 常规版型 长袖 直筒长裤
+2026-09-09 12:07:43 [INFO ] [deepseek_web]   Deleted: 0051_9931056144201013647780.jpg
+2026-09-09 12:07:48 [INFO ] [deepseek_web] [52/75] 男士狂欢节亮面迪斯科衬衫长裤套装休闲男装两件套
+2026-09-09 12:07:48 [INFO ] [deepseek_web]   Downloaded: 0052_6570326217246218388703.jpg
+2026-09-09 12:07:48 [INFO ] [deepseek_web]   Prefetching next image (53/75)
+2026-09-09 12:07:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:07:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:08:44 [INFO ] [deepseek_web]   Response: 亮面反光材质 彩虹方格印花 翻领 单排纽扣门襟 长袖弧形下摆衬衫 直筒长裤 衬衫长裤两件套 男士 常规版型
+2026-09-09 12:08:44 [INFO ] [deepseek_web]   Deleted: 0052_6570326217246218388703.jpg
+2026-09-09 12:08:49 [INFO ] [deepseek_web] [53/75] 男士万圣节印花卫衣套装
+2026-09-09 12:08:49 [INFO ] [deepseek_web]   Downloaded: 0053_8070236336582232752111.jpg
+2026-09-09 12:08:49 [INFO ] [deepseek_web]   Prefetching next image (54/75)
+2026-09-09 12:08:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:09:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:09:20 [INFO ] [deepseek_web]   Response: 十字架图案 骷髅头印花 裤侧翻盖工装口袋 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 束脚裤脚 万圣节风格印花
+2026-09-09 12:09:20 [INFO ] [deepseek_web]   Deleted: 0053_8070236336582232752111.jpg
+2026-09-09 12:09:25 [INFO ] [deepseek_web] [54/75] 男士圣诞节西装印花时尚户外派对聚餐套装
+2026-09-09 12:09:25 [INFO ] [deepseek_web]   Downloaded: 0054_5910206032231617480448.jpg
+2026-09-09 12:09:25 [INFO ] [deepseek_web]   Prefetching next image (55/75)
+2026-09-09 12:09:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:09:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:10:00 [INFO ] [deepseek_web]   Response: 彩色圣诞彩灯印花 对比色青果领 左胸口袋巾装饰 西装外套长裤两件套 男士 常规版型 长袖 单排扣门襟 双侧翻盖口袋 直筒长裤
+2026-09-09 12:10:00 [INFO ] [deepseek_web]   Deleted: 0054_5910206032231617480448.jpg
+2026-09-09 12:10:05 [INFO ] [deepseek_web] [55/75] TZ02   男士西装套装两件套
+2026-09-09 12:10:05 [INFO ] [deepseek_web]   Downloaded: 0055_1335820181022120021391.jpg
+2026-09-09 12:10:05 [INFO ] [deepseek_web]   Prefetching next image (56/75)
+2026-09-09 12:10:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:10:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:10:37 [INFO ] [deepseek_web]   Response: 佩斯利提花面料 平驳领 单排一粒扣门襟 双侧翻盖口袋 左胸贴袋 西装外套长裤两件套 男士 常规版型 长袖 直筒长裤 TZ02
+2026-09-09 12:10:37 [INFO ] [deepseek_web]   Deleted: 0055_1335820181022120021391.jpg
+2026-09-09 12:10:42 [INFO ] [deepseek_web] [56/75] 骷髅印花连帽卫衣套装
+2026-09-09 12:10:42 [INFO ] [deepseek_web]   Downloaded: 0056_3220918157691913289548.jpg
+2026-09-09 12:10:42 [INFO ] [deepseek_web]   Prefetching next image (57/75)
+2026-09-09 12:10:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:10:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:11:44 [INFO ] [deepseek_web]   Response: 巨大骷髅印花 连帽抽绳 束脚裤脚 裤腿骷髅印花 套头卫衣长裤两件套 男士 宽松版型 长袖 连帽 抽绳松紧裤腰
+2026-09-09 12:11:44 [INFO ] [deepseek_web]   Deleted: 0056_3220918157691913289548.jpg
+2026-09-09 12:11:49 [INFO ] [deepseek_web] [57/75] 男士西服套装欧美休闲西服西裤两件套
+2026-09-09 12:11:49 [INFO ] [deepseek_web]   Downloaded: 0057_0590555243382419909273.jpg
+2026-09-09 12:11:49 [INFO ] [deepseek_web]   Prefetching next image (58/75)
+2026-09-09 12:11:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:12:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:12:19 [INFO ] [deepseek_web]   Response: 平驳领 左胸口袋巾装饰 单排两粒扣门襟 西装外套长裤两件套 男士 常规版型 长袖 双侧翻盖口袋 直筒长裤 包含腰带袢 纯色
+2026-09-09 12:12:19 [INFO ] [deepseek_web]   Deleted: 0057_0590555243382419909273.jpg
+2026-09-09 12:12:24 [INFO ] [deepseek_web] [58/75] 万圣节血腥男士连帽卫衣套装
+2026-09-09 12:12:24 [INFO ] [deepseek_web]   Downloaded: 0058_9920234127701316717841.jpg
+2026-09-09 12:12:24 [INFO ] [deepseek_web]   Prefetching next image (59/75)
+2026-09-09 12:12:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:12:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:12:53 [INFO ] [deepseek_web]   Response: 血腥喷溅印花 袋鼠口袋 束脚裤脚 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰
+2026-09-09 12:12:53 [INFO ] [deepseek_web]   Deleted: 0058_9920234127701316717841.jpg
+2026-09-09 12:12:58 [INFO ] [deepseek_web] [59/75] 新款拉链连帽卫衣卫裤套装
+2026-09-09 12:12:58 [INFO ] [deepseek_web]   Downloaded: 0059_6930438486691526308587.jpg
+2026-09-09 12:12:58 [INFO ] [deepseek_web]   Prefetching next image (60/75)
+2026-09-09 12:12:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:13:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:13:43 [INFO ] [deepseek_web]   Response: 胸前条纹字母印花 裤腿字母印花 连帽抽绳 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 袋鼠口袋 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚
+2026-09-09 12:13:43 [INFO ] [deepseek_web]   Deleted: 0059_6930438486691526308587.jpg
+2026-09-09 12:13:48 [INFO ] [deepseek_web] [60/75] 男士夏季欧美男装纯色商务正装通勤西装西裤套装
+2026-09-09 12:13:48 [INFO ] [deepseek_web]   Downloaded: 0060_0830453034993015174364.jpg
+2026-09-09 12:13:48 [INFO ] [deepseek_web]   Prefetching next image (61/75)
+2026-09-09 12:13:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:13:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:14:24 [INFO ] [deepseek_web]   Response: 平驳领 两粒扣单排门襟 左胸口袋巾装饰 双侧翻盖口袋 西装外套长裤两件套 男士 常规版型 长袖 直筒西裤 纯色
+2026-09-09 12:14:24 [INFO ] [deepseek_web]   Deleted: 0060_0830453034993015174364.jpg
+2026-09-09 12:14:29 [INFO ] [deepseek_web] [61/75] 男士男士西服套装欧美休闲西服西裤套装
+2026-09-09 12:14:29 [INFO ] [deepseek_web]   Downloaded: 0061_6110944265276425214740.jpg
+2026-09-09 12:14:29 [INFO ] [deepseek_web]   Prefetching next image (62/75)
+2026-09-09 12:14:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:14:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:15:01 [INFO ] [deepseek_web]   Response: 领部撞色包边 左胸口袋巾装饰 单排单粒扣门襟 西装外套长裤两件套 男士 常规版型 长袖 双侧翻盖口袋 直筒长裤 纯色
+2026-09-09 12:15:01 [INFO ] [deepseek_web]   Deleted: 0061_6110944265276425214740.jpg
+2026-09-09 12:15:06 [INFO ] [deepseek_web] [62/75] 男士西装马甲西裤两件套装商务正装伴郎职业装免烫马甲裤新款
+2026-09-09 12:15:06 [INFO ] [deepseek_web]   Downloaded: 0062_6870323112742216125840.jpg
+2026-09-09 12:15:06 [INFO ] [deepseek_web]   Prefetching next image (63/75)
+2026-09-09 12:15:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:15:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:15:54 [INFO ] [deepseek_web]   Response: V领 单排多粒扣门襟 左胸口袋巾装饰 前侧裤褶 双侧下摆口袋 西装马甲长裤两件套 男士 常规版型 直筒长裤 免烫
+2026-09-09 12:15:54 [INFO ] [deepseek_web]   Deleted: 0062_6870323112742216125840.jpg
+2026-09-09 12:15:59 [INFO ] [deepseek_web] [63/75] 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:15:59 [INFO ] [deepseek_web]   Downloaded: 0063_3380338254132248039014.jpg
+2026-09-09 12:15:59 [INFO ] [deepseek_web]   Prefetching next image (64/75)
+2026-09-09 12:15:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:16:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:19:26 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-09 12:19:26 [INFO ] [deepseek_web]   Deleted: 0063_3380338254132248039014.jpg
+2026-09-09 12:19:31 [INFO ] [deepseek_web] [64/75] 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:19:32 [INFO ] [deepseek_web]   Downloaded: 0064_2910857469904926281162.jpg
+2026-09-09 12:19:32 [INFO ] [deepseek_web]   Prefetching next image (65/75)
+2026-09-09 12:19:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:19:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:22:59 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-09 12:22:59 [INFO ] [deepseek_web]   Deleted: 0064_2910857469904926281162.jpg
+2026-09-09 12:23:04 [INFO ] [deepseek_web] [65/75] 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:23:04 [INFO ] [deepseek_web]   Downloaded: 0065_0060338249602211154372.jpg
+2026-09-09 12:23:04 [INFO ] [deepseek_web]   Prefetching next image (66/75)
+2026-09-09 12:23:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-09 12:23:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-09 12:24:57 [ERROR] [deepseek_web]   FAILED: Locator.all: Target page, context or browser has been closed
+2026-09-09 12:24:57 [INFO ] [deepseek_web]   Deleted: 0065_0060338249602211154372.jpg
+2026-09-09 12:25:02 [INFO ] [deepseek_web] [66/75] 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:25:06 [INFO ] [deepseek_web]   Downloaded: 0066_6710217077231776378880.jpg
+2026-09-09 12:25:06 [INFO ] [deepseek_web]   Prefetching next image (67/75)
+2026-09-09 12:25:06 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:25:06 [INFO ] [deepseek_web]   Deleted: 0066_6710217077231776378880.jpg
+2026-09-09 12:25:11 [INFO ] [deepseek_web] [67/75] 男士拼色西服套装两件套
+2026-09-09 12:25:13 [INFO ] [deepseek_web]   Downloaded: 0067_2020215585831483876405.jpg
+2026-09-09 12:25:13 [INFO ] [deepseek_web]   Prefetching next image (68/75)
+2026-09-09 12:25:13 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:25:13 [INFO ] [deepseek_web]   Deleted: 0067_2020215585831483876405.jpg
+2026-09-09 12:25:18 [INFO ] [deepseek_web] [68/75] 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:25:41 [INFO ] [deepseek_web]   Downloaded: 0068_1931115394141019483182.jpg
+2026-09-09 12:25:41 [INFO ] [deepseek_web]   Prefetching next image (69/75)
+2026-09-09 12:25:41 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:25:41 [INFO ] [deepseek_web]   Deleted: 0068_1931115394141019483182.jpg
+2026-09-09 12:25:46 [INFO ] [deepseek_web] [69/75] 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:25:47 [INFO ] [deepseek_web]   Downloaded: 0069_3991100110281516480126.jpg
+2026-09-09 12:25:47 [INFO ] [deepseek_web]   Prefetching next image (70/75)
+2026-09-09 12:25:47 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:25:47 [INFO ] [deepseek_web]   Deleted: 0069_3991100110281516480126.jpg
+2026-09-09 12:25:52 [INFO ] [deepseek_web] [70/75] 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:25:55 [INFO ] [deepseek_web]   Downloaded: 0070_9960425113642980319943.jpg
+2026-09-09 12:25:55 [INFO ] [deepseek_web]   Prefetching next image (71/75)
+2026-09-09 12:25:55 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:25:55 [INFO ] [deepseek_web]   Deleted: 0070_9960425113642980319943.jpg
+2026-09-09 12:26:00 [INFO ] [deepseek_web] [71/75] 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:26:03 [INFO ] [deepseek_web]   Downloaded: 0071_1811051094562810842673.jpg
+2026-09-09 12:26:03 [INFO ] [deepseek_web]   Prefetching next image (72/75)
+2026-09-09 12:26:03 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:03 [INFO ] [deepseek_web]   Deleted: 0071_1811051094562810842673.jpg
+2026-09-09 12:26:08 [INFO ] [deepseek_web] [72/75] 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:26:12 [INFO ] [deepseek_web]   Downloaded: 0072_6140441250871597229808.jpg
+2026-09-09 12:26:12 [INFO ] [deepseek_web]   Prefetching next image (73/75)
+2026-09-09 12:26:12 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:12 [INFO ] [deepseek_web]   Deleted: 0072_6140441250871597229808.jpg
+2026-09-09 12:26:17 [INFO ] [deepseek_web] [73/75] 男士圣诞印花西装套装
+2026-09-09 12:26:19 [INFO ] [deepseek_web]   Downloaded: 0073_8511235081421613232719.jpg
+2026-09-09 12:26:19 [INFO ] [deepseek_web]   Prefetching next image (74/75)
+2026-09-09 12:26:19 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:19 [INFO ] [deepseek_web]   Deleted: 0073_8511235081421613232719.jpg
+2026-09-09 12:26:24 [INFO ] [deepseek_web] [74/75] 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:26:27 [INFO ] [deepseek_web]   Downloaded: 0074_8030437449333312506467.jpg
+2026-09-09 12:26:27 [INFO ] [deepseek_web]   Prefetching next image (75/75)
+2026-09-09 12:26:27 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:27 [INFO ] [deepseek_web]   Deleted: 0074_8030437449333312506467.jpg
+2026-09-09 12:26:32 [INFO ] [deepseek_web] [75/75] 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:26:36 [INFO ] [deepseek_web]   Downloaded: 0075_7190906202831924600114.jpg
+2026-09-09 12:26:36 [ERROR] [deepseek_web]   FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:36 [INFO ] [deepseek_web]   Deleted: 0075_7190906202831924600114.jpg
+2026-09-09 12:26:36 [INFO ] [deepseek_web] 
+2026-09-09 12:26:36 [INFO ] [deepseek_web] Retry round 1: 19 failed item(s)
+2026-09-09 12:26:41 [INFO ] [deepseek_web]   Retry [13]: 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 12:26:45 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:48 [INFO ] [deepseek_web]   Retry [21]: 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 12:26:53 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:26:56 [INFO ] [deepseek_web]   Retry [22]: 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 12:27:07 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:10 [INFO ] [deepseek_web]   Retry [29]: 男士冬季卫衣套装
+2026-09-09 12:27:13 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:16 [INFO ] [deepseek_web]   Retry [40]: 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 12:27:20 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:23 [INFO ] [deepseek_web]   Retry [41]: 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:27:27 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:30 [INFO ] [deepseek_web]   Retry [63]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:27:34 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:37 [INFO ] [deepseek_web]   Retry [64]: 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:27:42 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:45 [INFO ] [deepseek_web]   Retry [65]: 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:27:49 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:27:52 [INFO ] [deepseek_web]   Retry [66]: 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:27:57 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:00 [INFO ] [deepseek_web]   Retry [67]: 男士拼色西服套装两件套
+2026-09-09 12:28:05 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:08 [INFO ] [deepseek_web]   Retry [68]: 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:28:12 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:15 [INFO ] [deepseek_web]   Retry [69]: 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:28:19 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:22 [INFO ] [deepseek_web]   Retry [70]: 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:28:25 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:28 [INFO ] [deepseek_web]   Retry [71]: 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:28:31 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:34 [INFO ] [deepseek_web]   Retry [72]: 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:28:38 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:41 [INFO ] [deepseek_web]   Retry [73]: 男士圣诞印花西装套装
+2026-09-09 12:28:46 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:28:49 [INFO ] [deepseek_web]   Retry [74]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:29:13 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:16 [INFO ] [deepseek_web]   Retry [75]: 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:29:23 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:26 [INFO ] [deepseek_web] 
+2026-09-09 12:29:26 [INFO ] [deepseek_web] Retry round 2: 19 failed item(s)
+2026-09-09 12:29:31 [INFO ] [deepseek_web]   Retry [13]: 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 12:29:35 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:38 [INFO ] [deepseek_web]   Retry [21]: 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 12:29:42 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:45 [INFO ] [deepseek_web]   Retry [22]: 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 12:29:49 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:52 [INFO ] [deepseek_web]   Retry [29]: 男士冬季卫衣套装
+2026-09-09 12:29:55 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:29:58 [INFO ] [deepseek_web]   Retry [40]: 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 12:30:01 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:04 [INFO ] [deepseek_web]   Retry [41]: 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:30:07 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:10 [INFO ] [deepseek_web]   Retry [63]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:30:14 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:17 [INFO ] [deepseek_web]   Retry [64]: 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:30:21 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:24 [INFO ] [deepseek_web]   Retry [65]: 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:30:29 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:32 [INFO ] [deepseek_web]   Retry [66]: 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:30:36 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:30:39 [INFO ] [deepseek_web]   Retry [67]: 男士拼色西服套装两件套
+2026-09-09 12:31:05 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:31:08 [INFO ] [deepseek_web]   Retry [68]: 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:31:12 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:31:15 [INFO ] [deepseek_web]   Retry [69]: 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:31:18 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:31:21 [INFO ] [deepseek_web]   Retry [70]: 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:31:23 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:31:26 [INFO ] [deepseek_web]   Retry [71]: 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:31:58 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:01 [INFO ] [deepseek_web]   Retry [72]: 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:32:06 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:09 [INFO ] [deepseek_web]   Retry [73]: 男士圣诞印花西装套装
+2026-09-09 12:32:14 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:17 [INFO ] [deepseek_web]   Retry [74]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:32:20 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:23 [INFO ] [deepseek_web]   Retry [75]: 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:32:27 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:30 [INFO ] [deepseek_web] 
+2026-09-09 12:32:30 [INFO ] [deepseek_web] Retry round 3: 19 failed item(s)
+2026-09-09 12:32:35 [INFO ] [deepseek_web]   Retry [13]: 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 12:32:39 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:42 [INFO ] [deepseek_web]   Retry [21]: 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 12:32:44 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:47 [INFO ] [deepseek_web]   Retry [22]: 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 12:32:52 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:32:55 [INFO ] [deepseek_web]   Retry [29]: 男士冬季卫衣套装
+2026-09-09 12:33:20 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:23 [INFO ] [deepseek_web]   Retry [40]: 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 12:33:26 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:29 [INFO ] [deepseek_web]   Retry [41]: 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:33:34 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:37 [INFO ] [deepseek_web]   Retry [63]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:33:40 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:43 [INFO ] [deepseek_web]   Retry [64]: 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:33:46 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:49 [INFO ] [deepseek_web]   Retry [65]: 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:33:53 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:33:56 [INFO ] [deepseek_web]   Retry [66]: 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:33:57 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:00 [INFO ] [deepseek_web]   Retry [67]: 男士拼色西服套装两件套
+2026-09-09 12:34:03 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:06 [INFO ] [deepseek_web]   Retry [68]: 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:34:14 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:17 [INFO ] [deepseek_web]   Retry [69]: 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:34:19 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:22 [INFO ] [deepseek_web]   Retry [70]: 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:34:24 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:27 [INFO ] [deepseek_web]   Retry [71]: 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:34:33 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:36 [INFO ] [deepseek_web]   Retry [72]: 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:34:40 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:43 [INFO ] [deepseek_web]   Retry [73]: 男士圣诞印花西装套装
+2026-09-09 12:34:47 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:50 [INFO ] [deepseek_web]   Retry [74]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:34:52 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:34:56 [INFO ] [deepseek_web]   Retry [75]: 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:34:59 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:02 [INFO ] [deepseek_web] 
+2026-09-09 12:35:02 [INFO ] [deepseek_web] Retry round 4: 19 failed item(s)
+2026-09-09 12:35:07 [INFO ] [deepseek_web]   Retry [13]: 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 12:35:10 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:13 [INFO ] [deepseek_web]   Retry [21]: 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 12:35:17 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:20 [INFO ] [deepseek_web]   Retry [22]: 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 12:35:25 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:28 [INFO ] [deepseek_web]   Retry [29]: 男士冬季卫衣套装
+2026-09-09 12:35:30 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:33 [INFO ] [deepseek_web]   Retry [40]: 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 12:35:39 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:35:42 [INFO ] [deepseek_web]   Retry [41]: 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:36:06 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:09 [INFO ] [deepseek_web]   Retry [63]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:36:14 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:17 [INFO ] [deepseek_web]   Retry [64]: 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:36:23 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:26 [INFO ] [deepseek_web]   Retry [65]: 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:36:30 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:33 [INFO ] [deepseek_web]   Retry [66]: 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:36:36 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:39 [INFO ] [deepseek_web]   Retry [67]: 男士拼色西服套装两件套
+2026-09-09 12:36:44 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:47 [INFO ] [deepseek_web]   Retry [68]: 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:36:55 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:36:58 [INFO ] [deepseek_web]   Retry [69]: 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:37:02 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:05 [INFO ] [deepseek_web]   Retry [70]: 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:37:09 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:12 [INFO ] [deepseek_web]   Retry [71]: 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:37:16 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:19 [INFO ] [deepseek_web]   Retry [72]: 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:37:22 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:25 [INFO ] [deepseek_web]   Retry [73]: 男士圣诞印花西装套装
+2026-09-09 12:37:30 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:33 [INFO ] [deepseek_web]   Retry [74]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:37:35 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:38 [INFO ] [deepseek_web]   Retry [75]: 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:37:44 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:47 [INFO ] [deepseek_web] 
+2026-09-09 12:37:47 [INFO ] [deepseek_web] Retry round 5: 19 failed item(s)
+2026-09-09 12:37:52 [INFO ] [deepseek_web]   Retry [13]: 男士时尚休闲纯色卫衣卫裤运动套装
+2026-09-09 12:37:55 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:37:58 [INFO ] [deepseek_web]   Retry [21]: 男士夹克长袖衬衫工装裤加绒套装
+2026-09-09 12:38:02 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:05 [INFO ] [deepseek_web]   Retry [22]: 男士炫酷亮片烫金舞蹈服衬衫侧面亮片喇叭裤套装
+2026-09-09 12:38:08 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:11 [INFO ] [deepseek_web]   Retry [29]: 男士冬季卫衣套装
+2026-09-09 12:38:19 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:22 [INFO ] [deepseek_web]   Retry [40]: 男士无帽绳城市字母印花加绒长袖长裤连帽卫衣套装
+2026-09-09 12:38:25 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:28 [INFO ] [deepseek_web]   Retry [41]: 男士修身商务婚礼派对西装3件春秋季西服套装韩版修身西装男职业套装婚庆礼服伴郎服
+2026-09-09 12:38:32 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:35 [INFO ] [deepseek_web]   Retry [63]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:38:38 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:41 [INFO ] [deepseek_web]   Retry [64]: 男士撞色条纹立领拉链长袖直筒长裤休闲舒适男士两件套套装2
+2026-09-09 12:38:43 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:46 [INFO ] [deepseek_web]   Retry [65]: 男士新款纯色亚麻爆款四季长袖宽松纽扣开衫衬衣长裤套装2（不要成分标）
+2026-09-09 12:38:48 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:51 [INFO ] [deepseek_web]   Retry [66]: 男士2024秋冬宽松翻领居家服长袖睡衣套装
+2026-09-09 12:38:54 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:38:57 [INFO ] [deepseek_web]   Retry [67]: 男士拼色西服套装两件套
+2026-09-09 12:39:00 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:03 [INFO ] [deepseek_web]   Retry [68]: 男士时尚舞台亮面服装演出服套装
+2026-09-09 12:39:08 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:11 [INFO ] [deepseek_web]   Retry [69]: 男士秋冬季防风防水冲锋衣裤套装
+2026-09-09 12:39:34 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:37 [INFO ] [deepseek_web]   Retry [70]: 男士长袖健身长裤裤透气运动紧身套装
+2026-09-09 12:39:39 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:42 [INFO ] [deepseek_web]   Retry [71]: 冬季男士连帽圆点卫衣卫裤运动休闲健身套装
+2026-09-09 12:39:45 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:48 [INFO ] [deepseek_web]   Retry [72]: 男士秋冬季时尚休闲运动透气网格长袖卫衣套装
+2026-09-09 12:39:52 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:39:55 [INFO ] [deepseek_web]   Retry [73]: 男士圣诞印花西装套装
+2026-09-09 12:39:57 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:40:00 [INFO ] [deepseek_web]   Retry [74]: 男士春秋季美式休闲简约仿麂皮翻领多口袋工装夹克套装
+2026-09-09 12:40:02 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:40:05 [INFO ] [deepseek_web]   Retry [75]: 男士万圣节骨骼印花无帽卫衣套装
+2026-09-09 12:40:10 [WARNING] [deepseek_web]     FAILED: Locator.is_visible: Target page, context or browser has been closed
+2026-09-09 12:40:13 [WARNING] [deepseek_web] Gave up on 19 items after 5 rounds
+2026-09-09 12:40:14 [INFO ] [deepseek_web] ==================================================
+2026-09-09 12:40:14 [INFO ] [deepseek_web] Done: 56 success, 19 failed → optimize_title
+2026-09-09 12:40:14 [WARNING] [deepseek_web] Unresolved: 19 [FAILED] placeholders in output
+2026-09-09 12:40:15 [INFO ] [title_workflow] Optimization complete: 75 titles
+2026-09-09 12:40:20 [INFO ] [title_workflow] Written 75 optimized titles to column H (8)
+2026-09-09 12:40:20 [INFO ] [title_workflow] Done: 9.2v1.xlsx
+2026-09-09 12:40:21 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-09 12:40:21 [INFO ] [jenkins] 
+2026-09-09 12:40:21 [INFO ] [jenkins] ==================================================
+2026-09-09 12:40:21 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-09 12:40:21 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-09 12:40:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-09 12:40:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-09 12:40:21 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-09 15:39:21 [INFO ] [hotwords] Loop mode: 56 keywords  country=de  category=(all)  mode=dual
+2026-09-09 15:39:21 [INFO ] [hotwords] 
+2026-09-09 15:39:21 [INFO ] [hotwords] [  1/56] Yogaanzug
+2026-09-09 15:39:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:22 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:22 [INFO ] [hotwords]   → total 0 words
+2026-09-09 15:39:24 [INFO ] [hotwords] [  2/56] Laufanzug
+2026-09-09 15:39:24 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:25 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:25 [INFO ] [hotwords]   → total 0 words
+2026-09-09 15:39:27 [INFO ] [hotwords] [  3/56] Jogginganzug
+2026-09-09 15:39:28 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-09 15:39:29 [INFO ] [hotwords]   new_rank: 35 words
+2026-09-09 15:39:29 [INFO ] [hotwords]   → total 36 words
+2026-09-09 15:39:31 [INFO ] [hotwords] [  4/56] Fitnessanzug
+2026-09-09 15:39:31 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:32 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:32 [INFO ] [hotwords]   → total 36 words
+2026-09-09 15:39:34 [INFO ] [hotwords] [  5/56] Trainingsanzug
+2026-09-09 15:39:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:35 [INFO ] [hotwords]   new_rank: 38 words
+2026-09-09 15:39:35 [INFO ] [hotwords]   → total 74 words
+2026-09-09 15:39:37 [INFO ] [hotwords] [  6/56] Sportanzug
+2026-09-09 15:39:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:38 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-09 15:39:38 [INFO ] [hotwords]   → total 80 words
+2026-09-09 15:39:40 [INFO ] [hotwords] [  7/56] Gymnastikanzug
+2026-09-09 15:39:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:41 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-09 15:39:41 [INFO ] [hotwords]   → total 82 words
+2026-09-09 15:39:43 [INFO ] [hotwords] [  8/56] Turnanzug
+2026-09-09 15:39:48 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-09 15:39:50 [INFO ] [hotwords] [  9/56] UV-Anzug
+2026-09-09 15:39:50 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:51 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:51 [INFO ] [hotwords]   → total 82 words
+2026-09-09 15:39:53 [INFO ] [hotwords] [ 10/56] UV-Schutzanzug
+2026-09-09 15:39:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:54 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:54 [INFO ] [hotwords]   → total 82 words
+2026-09-09 15:39:56 [INFO ] [hotwords] [ 11/56] Sonnenschutzanzug
+2026-09-09 15:39:57 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:39:57 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:39:57 [INFO ] [hotwords]   → total 82 words
+2026-09-09 15:39:59 [INFO ] [hotwords] [ 12/56] Regenanzug
+2026-09-09 15:40:00 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:01 [INFO ] [hotwords]   new_rank: 9 words
+2026-09-09 15:40:01 [INFO ] [hotwords]   → total 91 words
+2026-09-09 15:40:03 [INFO ] [hotwords] [ 13/56] Wetteranzug
+2026-09-09 15:40:08 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-09 15:40:10 [INFO ] [hotwords] [ 14/56] Radsportanzug
+2026-09-09 15:40:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:11 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:11 [INFO ] [hotwords]   → total 91 words
+2026-09-09 15:40:13 [INFO ] [hotwords] [ 15/56] Skianzug
+2026-09-09 15:40:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:14 [INFO ] [hotwords]   new_rank: 4 words
+2026-09-09 15:40:14 [INFO ] [hotwords]   → total 95 words
+2026-09-09 15:40:16 [INFO ] [hotwords] [ 16/56] Schneeanzug
+2026-09-09 15:40:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:17 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-09 15:40:17 [INFO ] [hotwords]   → total 101 words
+2026-09-09 15:40:19 [INFO ] [hotwords] [ 17/56] Thermoanzug
+2026-09-09 15:40:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:20 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:20 [INFO ] [hotwords]   → total 101 words
+2026-09-09 15:40:22 [INFO ] [hotwords] [ 18/56] Schutzanzug
+2026-09-09 15:40:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:24 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-09 15:40:24 [INFO ] [hotwords]   → total 107 words
+2026-09-09 15:40:26 [INFO ] [hotwords] [ 19/56] Badeanzug
+2026-09-09 15:40:26 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:27 [INFO ] [hotwords]   new_rank: 89 words
+2026-09-09 15:40:27 [INFO ] [hotwords]   → total 196 words
+2026-09-09 15:40:29 [INFO ] [hotwords] [ 20/56] Taucheranzug
+2026-09-09 15:40:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:30 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:30 [INFO ] [hotwords]   → total 196 words
+2026-09-09 15:40:32 [INFO ] [hotwords] [ 21/56] Surfanzug
+2026-09-09 15:40:32 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:33 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:33 [INFO ] [hotwords]   → total 196 words
+2026-09-09 15:40:35 [INFO ] [hotwords] [ 22/56] Freizeitanzug
+2026-09-09 15:40:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:36 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-09 15:40:36 [INFO ] [hotwords]   → total 199 words
+2026-09-09 15:40:38 [INFO ] [hotwords] [ 23/56] Relaxanzug
+2026-09-09 15:40:39 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:40 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:40 [INFO ] [hotwords]   → total 199 words
+2026-09-09 15:40:42 [INFO ] [hotwords] [ 24/56] Kuschelanzug
+2026-09-09 15:40:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:43 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-09 15:40:43 [INFO ] [hotwords]   → total 206 words
+2026-09-09 15:40:45 [INFO ] [hotwords] [ 25/56] Hausanzug
+2026-09-09 15:40:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:46 [INFO ] [hotwords]   new_rank: 9 words
+2026-09-09 15:40:46 [INFO ] [hotwords]   → total 215 words
+2026-09-09 15:40:48 [INFO ] [hotwords] [ 26/56] Wohnanzug
+2026-09-09 15:40:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:49 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:49 [INFO ] [hotwords]   → total 215 words
+2026-09-09 15:40:51 [INFO ] [hotwords] [ 27/56] Schlafanzug
+2026-09-09 15:40:52 [INFO ] [hotwords]   fluctuation: 13 words
+2026-09-09 15:40:52 [INFO ] [hotwords]   new_rank: 87 words
+2026-09-09 15:40:52 [INFO ] [hotwords]   → total 315 words
+2026-09-09 15:40:54 [INFO ] [hotwords] [ 28/56] Unteranzug
+2026-09-09 15:40:55 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:40:56 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:40:56 [INFO ] [hotwords]   → total 315 words
+2026-09-09 15:40:58 [INFO ] [hotwords] [ 29/56] Hosenanzug
+2026-09-09 15:40:58 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-09 15:40:59 [INFO ] [hotwords]   new_rank: 14 words
+2026-09-09 15:40:59 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:01 [INFO ] [hotwords] [ 30/56] Kurzanzug
+2026-09-09 15:41:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:02 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:02 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:04 [INFO ] [hotwords] [ 31/56] Sommeranzug
+2026-09-09 15:41:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:05 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:05 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:07 [INFO ] [hotwords] [ 32/56] Strandanzug
+2026-09-09 15:41:08 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:08 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:08 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:10 [INFO ] [hotwords] [ 33/56] Urlaubsanzug
+2026-09-09 15:41:11 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:12 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:12 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:14 [INFO ] [hotwords] [ 34/56] Blusenanzug
+2026-09-09 15:41:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:15 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:15 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:17 [INFO ] [hotwords] [ 35/56] Businessanzug
+2026-09-09 15:41:17 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:18 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:18 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:20 [INFO ] [hotwords] [ 36/56] Damenanzug
+2026-09-09 15:41:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:21 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:21 [INFO ] [hotwords]   → total 330 words
+2026-09-09 15:41:23 [INFO ] [hotwords] [ 37/56] Herrenanzug
+2026-09-09 15:41:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:24 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-09 15:41:24 [INFO ] [hotwords]   → total 332 words
+2026-09-09 15:41:26 [INFO ] [hotwords] [ 38/56] Leinenanzug
+2026-09-09 15:41:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:27 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-09 15:41:27 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:29 [INFO ] [hotwords] [ 39/56] Strickanzug
+2026-09-09 15:41:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:31 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:31 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:33 [INFO ] [hotwords] [ 40/56] Samtanzug
+2026-09-09 15:41:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:34 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:34 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:36 [INFO ] [hotwords] [ 41/56] Nickianzug
+2026-09-09 15:41:41 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-09 15:41:43 [INFO ] [hotwords] [ 42/56] Flanellanzug
+2026-09-09 15:41:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:44 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:44 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:46 [INFO ] [hotwords] [ 43/56] Seidenanzug
+2026-09-09 15:41:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:47 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:47 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:49 [INFO ] [hotwords] [ 44/56] Satinanzug
+2026-09-09 15:41:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:50 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:50 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:52 [INFO ] [hotwords] [ 45/56] Baumwollanzug
+2026-09-09 15:41:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:53 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:53 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:55 [INFO ] [hotwords] [ 46/56] Jeansanzug
+2026-09-09 15:41:56 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:41:57 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:41:57 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:41:59 [INFO ] [hotwords] [ 47/56] Frotteeanzug
+2026-09-09 15:41:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:00 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:42:00 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:42:02 [INFO ] [hotwords] [ 48/56] Sweatanzug
+2026-09-09 15:42:02 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:03 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:42:03 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:42:05 [INFO ] [hotwords] [ 49/56] Kapuzenanzug
+2026-09-09 15:42:05 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:06 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:42:06 [INFO ] [hotwords]   → total 333 words
+2026-09-09 15:42:08 [INFO ] [hotwords] [ 50/56] anzug
+2026-09-09 15:42:08 [INFO ] [hotwords]   fluctuation: 17 words
+2026-09-09 15:42:09 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-09 15:42:09 [INFO ] [hotwords]   → total 550 words
+2026-09-09 15:42:11 [INFO ] [hotwords] [ 51/56] 2 teiler
+2026-09-09 15:42:12 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:13 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-09 15:42:13 [INFO ] [hotwords]   → total 557 words
+2026-09-09 15:42:15 [INFO ] [hotwords] [ 52/56] zweiteiler
+2026-09-09 15:42:20 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-09 15:42:22 [INFO ] [hotwords] [ 53/56] Pyjama
+2026-09-09 15:42:22 [INFO ] [hotwords]   fluctuation: 10 words
+2026-09-09 15:42:23 [INFO ] [hotwords]   new_rank: 68 words
+2026-09-09 15:42:23 [INFO ] [hotwords]   → total 635 words
+2026-09-09 15:42:25 [INFO ] [hotwords] [ 54/56] Arbeitsanzug
+2026-09-09 15:42:25 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:26 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:42:26 [INFO ] [hotwords]   → total 635 words
+2026-09-09 15:42:28 [INFO ] [hotwords] [ 55/56] Cargo-Set
+2026-09-09 15:42:28 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-09 15:42:29 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-09 15:42:29 [INFO ] [hotwords]   → total 635 words
+2026-09-09 15:42:31 [INFO ] [hotwords] [ 56/56] Halloween
+2026-09-09 15:42:32 [INFO ] [hotwords]   fluctuation: 46 words
+2026-09-09 15:42:32 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-09 15:42:32 [INFO ] [hotwords]   → total 881 words
+2026-09-09 15:42:34 [INFO ] [hotwords] 
+2026-09-09 15:42:34 [INFO ] [hotwords] Retry round 1: 4 failed keyword(s)
+2026-09-09 15:42:37 [INFO ] [hotwords]   Retrying: Turnanzug
+2026-09-09 15:42:38 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-09 15:42:39 [INFO ] [hotwords]     new_rank: 6 words
+2026-09-09 15:42:39 [INFO ] [hotwords]     → OK
+2026-09-09 15:42:41 [INFO ] [hotwords]   Retrying: Wetteranzug
+2026-09-09 15:42:41 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-09 15:42:42 [INFO ] [hotwords]     new_rank: 0 words
+2026-09-09 15:42:42 [INFO ] [hotwords]     → OK
+2026-09-09 15:42:44 [INFO ] [hotwords]   Retrying: Nickianzug
+2026-09-09 15:42:44 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-09 15:42:45 [INFO ] [hotwords]     new_rank: 0 words
+2026-09-09 15:42:45 [INFO ] [hotwords]     → OK
+2026-09-09 15:42:47 [INFO ] [hotwords]   Retrying: zweiteiler
+2026-09-09 15:42:47 [INFO ] [hotwords]     fluctuation: 1 words
+2026-09-09 15:42:48 [INFO ] [hotwords]     new_rank: 14 words
+2026-09-09 15:42:48 [INFO ] [hotwords]     → OK
+2026-09-09 15:42:50 [INFO ] [hotwords] All keywords collected successfully
+2026-09-09 15:42:50 [INFO ] [hotwords] 
+2026-09-09 15:42:50 [INFO ] [hotwords] Combining: 89 fluctuation + 813 new_rank = 902 total
+2026-09-09 15:42:50 [INFO ] [hotwords] 
+2026-09-09 15:42:50 [INFO ] [hotwords] Cleaning...
+2026-09-09 15:42:50 [INFO ] [hotwords]   strip_whitespace: 902 → 902 (0 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords]   normalize_case: 902 → 902 (0 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords]   drop_single_word: 902 → 865 (37 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords]   drop_brands: 865 → 752 (113 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords]   drop_reordered: 752 → 667 (85 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords]   deduplicate: 667 → 588 (79 removed)
+2026-09-09 15:42:50 [INFO ] [hotwords] herren=71     damen=153    other=364  
+2026-09-09 15:42:50 [INFO ] [hotwords] Saved 588 words (raw: 902, errors: 4) → 20260909_153921_de.txt
+2026-09-09 15:42:50 [INFO ] [hotwords] ==================================================
+2026-09-09 15:42:50 [INFO ] [hotwords] Done.

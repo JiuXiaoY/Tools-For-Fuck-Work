@@ -1,0 +1,1913 @@
+2026-10-20 19:34:07 [INFO ] [jenkins] ==================================================
+2026-10-20 19:34:07 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-20 19:34:07 [INFO ] [jenkins] ==================================================
+2026-10-20 19:34:07 [INFO ] [jenkins] 
+2026-10-20 19:34:07 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-20 19:34:07 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:34:07 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-20 19:34:07 [INFO ] [jenkins] 
+2026-10-20 19:34:07 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-20 19:34:07 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:34:07 [INFO ] [preprocess] Preprocessing 33 file(s) with 1 step(s)
+2026-10-20 19:34:07 [INFO ] [preprocess] [product_20261020030140127.xlsx]
+2026-10-20 19:34:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:08 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:11 [INFO ] [preprocess]   [product_20261020030140127.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:11 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:11 [INFO ] [preprocess] [product_20261020030144159.xlsx]
+2026-10-20 19:34:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:12 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:13 [INFO ] [preprocess]   [product_20261020030144159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:13 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:13 [INFO ] [preprocess] [product_20261020030232955.xlsx]
+2026-10-20 19:34:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:15 [INFO ] [preprocess]   [product_20261020030232955.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:15 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:16 [INFO ] [preprocess] [product_20261020030743861.xlsx]
+2026-10-20 19:34:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:16 [INFO ] [preprocess]   [product_20261020030743861.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:16 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:16 [INFO ] [preprocess] [product_20261020031606228.xlsx]
+2026-10-20 19:34:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:16 [INFO ] [preprocess]   [product_20261020031606228.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:16 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:16 [INFO ] [preprocess] [product_20261020033655518.xlsx]
+2026-10-20 19:34:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:16 [INFO ] [preprocess]   [product_20261020033655518.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:16 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:16 [INFO ] [preprocess] [product_20261020034129954.xlsx]
+2026-10-20 19:34:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:17 [INFO ] [preprocess]   [product_20261020034129954.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:17 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:17 [INFO ] [preprocess] [product_20261020034421124.xlsx]
+2026-10-20 19:34:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:17 [INFO ] [preprocess]   [product_20261020034421124.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:17 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:17 [INFO ] [preprocess] [product_20261020035006444.xlsx]
+2026-10-20 19:34:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:18 [INFO ] [preprocess]   [product_20261020035006444.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:18 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:18 [INFO ] [preprocess] [product_20261020045945159.xlsx]
+2026-10-20 19:34:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:18 [INFO ] [preprocess]   [product_20261020045945159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:18 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:18 [INFO ] [preprocess] [product_20261020050358104.xlsx]
+2026-10-20 19:34:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:18 [INFO ] [preprocess]   [product_20261020050358104.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:18 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:18 [INFO ] [preprocess] [product_20261020050855159.xlsx]
+2026-10-20 19:34:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:19 [INFO ] [preprocess]   [product_20261020050855159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:19 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:19 [INFO ] [preprocess] [product_20261020053406440.xlsx]
+2026-10-20 19:34:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:19 [INFO ] [preprocess]   [product_20261020053406440.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:19 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:19 [INFO ] [preprocess] [product_20261020053656455.xlsx]
+2026-10-20 19:34:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:20 [INFO ] [preprocess]   [product_20261020053656455.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:20 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:20 [INFO ] [preprocess] [product_20261020053853762.xlsx]
+2026-10-20 19:34:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:20 [INFO ] [preprocess]   [product_20261020053853762.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:20 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:20 [INFO ] [preprocess] [product_20261020053921296.xlsx]
+2026-10-20 19:34:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:20 [INFO ] [preprocess]   [product_20261020053921296.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:20 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:20 [INFO ] [preprocess] [product_20261020054223475.xlsx]
+2026-10-20 19:34:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:21 [INFO ] [preprocess]   [product_20261020054223475.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:21 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:21 [INFO ] [preprocess] [product_20261020054604722.xlsx]
+2026-10-20 19:34:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:21 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:21 [INFO ] [preprocess]   [product_20261020054604722.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:21 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:21 [INFO ] [preprocess] [product_20261020054918908.xlsx]
+2026-10-20 19:34:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:21 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:22 [INFO ] [preprocess]   [product_20261020054918908.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:22 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:22 [INFO ] [preprocess] [product_20261020055105746.xlsx]
+2026-10-20 19:34:22 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:22 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:22 [INFO ] [preprocess]   [product_20261020055105746.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:22 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:22 [INFO ] [preprocess] [product_20261020055504718.xlsx]
+2026-10-20 19:34:22 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:22 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:22 [INFO ] [preprocess]   [product_20261020055504718.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:22 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:23 [INFO ] [preprocess] [product_20261020055632972.xlsx]
+2026-10-20 19:34:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:23 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:23 [INFO ] [preprocess]   [product_20261020055632972.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:23 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:23 [INFO ] [preprocess] [product_20261020055903285.xlsx]
+2026-10-20 19:34:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:23 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:24 [INFO ] [preprocess]   [product_20261020055903285.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:24 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:24 [INFO ] [preprocess] [product_20261020064816061.xlsx]
+2026-10-20 19:34:24 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:24 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:24 [INFO ] [preprocess]   [product_20261020064816061.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:24 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:24 [INFO ] [preprocess] [product_20261020065145091.xlsx]
+2026-10-20 19:34:25 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:25 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:25 [INFO ] [preprocess]   [product_20261020065145091.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:25 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:25 [INFO ] [preprocess] [product_20261020065428764.xlsx]
+2026-10-20 19:34:25 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:25 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:25 [INFO ] [preprocess]   [product_20261020065428764.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:25 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:25 [INFO ] [preprocess] [product_20261020065946436.xlsx]
+2026-10-20 19:34:25 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:25 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:25 [INFO ] [preprocess]   [product_20261020065946436.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:25 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:25 [INFO ] [preprocess] [product_20261020070112041.xlsx]
+2026-10-20 19:34:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:26 [INFO ] [preprocess]   [product_20261020070112041.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:26 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:26 [INFO ] [preprocess] [product_20261020070709156.xlsx]
+2026-10-20 19:34:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:27 [INFO ] [preprocess]   [product_20261020070709156.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:27 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:27 [INFO ] [preprocess] [product_20261020071147234.xlsx]
+2026-10-20 19:34:27 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:27 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:27 [INFO ] [preprocess]   [product_20261020071147234.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:27 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:27 [INFO ] [preprocess] [product_20261020071535909.xlsx]
+2026-10-20 19:34:27 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:27 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:27 [INFO ] [preprocess]   [product_20261020071535909.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:27 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:28 [INFO ] [preprocess] [product_20261020071658828.xlsx]
+2026-10-20 19:34:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:28 [INFO ] [preprocess]   [product_20261020071658828.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:28 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:28 [INFO ] [preprocess] [product_20261020071752090.xlsx]
+2026-10-20 19:34:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:34:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:34:28 [INFO ] [preprocess]   [product_20261020071752090.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:34:28 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:34:28 [INFO ] [preprocess] Preprocessing complete
+2026-10-20 19:34:28 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-20 19:34:28 [INFO ] [jenkins] 
+2026-10-20 19:34:28 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-20 19:34:28 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:34:28 [INFO ] [main] Log file: 20261020_a91259cb.log
+2026-10-20 19:34:28 [INFO ] [main] Found 33 file(s):
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020030140127.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020030144159.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020030232955.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020030743861.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020031606228.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020033655518.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020034129954.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020034421124.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020035006444.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020045945159.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020050358104.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020050855159.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020053406440.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020053656455.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020053853762.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020053921296.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020054223475.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020054604722.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020054918908.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020055105746.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020055504718.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020055632972.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020055903285.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020064816061.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020065145091.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020065428764.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020065946436.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020070112041.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020070709156.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020071147234.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020071535909.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020071658828.xlsx
+2026-10-20 19:34:28 [INFO ] [main]   product_20261020071752090.xlsx
+2026-10-20 19:34:28 [INFO ] [main] Output: 10.15v1_de.xlsx
+2026-10-20 19:34:28 [INFO ] [main] ==================================================
+2026-10-20 19:34:44 [INFO ] [main] Merged 33 files, 8540 images total
+2026-10-20 19:34:44 [INFO ] [main] Deleted 33 source file(s)
+2026-10-20 19:34:47 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-20 19:34:47 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_2]: 249 rows, 659 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_3]: 585 rows, 1257 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_4]: 45 rows, 157 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_5]: 28 rows, 114 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_6]: 22 rows, 82 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_7]: 109 rows, 208 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_8]: 50 rows, 146 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_9]: 97 rows, 237 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_10]: 35 rows, 116 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_11]: 54 rows, 169 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_12]: 177 rows, 302 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_13]: 30 rows, 79 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_14]: 41 rows, 86 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_15]: 56 rows, 115 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_16]: 56 rows, 114 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_17]: 46 rows, 113 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_18]: 97 rows, 162 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_19]: 186 rows, 406 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_20]: 63 rows, 165 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_21]: 50 rows, 89 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_22]: 121 rows, 242 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_23]: 97 rows, 173 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_24]: 181 rows, 258 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_25]: 104 rows, 165 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_26]: 19 rows, 47 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_27]: 112 rows, 329 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_28]: 94 rows, 219 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_29]: 186 rows, 327 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_30]: 85 rows, 144 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_31]: 37 rows, 100 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_32]: 6 rows, 33 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Sheet [Sheet0_33]: 16 rows, 50 images
+2026-10-20 19:34:58 [INFO ] [pipeline]   Merged 33 sheets -> 1, 3134 data rows, 6863 images
+2026-10-20 19:34:58 [INFO ] [pipeline] [2/12] validate
+2026-10-20 19:34:58 [INFO ] [pipeline]   Validated: 3842 rows, 27 cols (expect ~32)
+2026-10-20 19:34:58 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-20 19:34:59 [INFO ] [pipeline]   Backed up 8540 images
+2026-10-20 19:34:59 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-20 19:34:59 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-20 19:34:59 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-20 19:34:59 [INFO ] [pipeline]   Restored 8540 images with adjusted anchors
+2026-10-20 19:34:59 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-20 19:34:59 [INFO ] [pipeline]   Column 2: 3842 IDs generated
+2026-10-20 19:34:59 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-20 19:34:59 [INFO ] [pipeline]   Column 3: 3842 cells filled
+2026-10-20 19:34:59 [INFO ] [pipeline] [6/12] map_colors
+2026-10-20 19:34:59 [INFO ] [pipeline]   Colors J -> K: 3710 cells mapped, 132 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-20 19:34:59 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-20 19:34:59 [INFO ] [pipeline]   Size column L: 2810 mapped, 132 cleared (col A has fill), 900 no match (recorded)
+2026-10-20 19:34:59 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-20 19:35:00 [INFO ] [pipeline]   Mirror copy: 23449 cells written
+2026-10-20 19:35:00 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-20 19:35:00 [INFO ] [pipeline]   Price source M -> AS: 3842 cells copied
+2026-10-20 19:35:00 [INFO ] [pipeline] [10/12] calc_price
+2026-10-20 19:35:00 [INFO ] [pipeline]   Price columns AT-AW: 3842 rows calculated
+2026-10-20 19:35:00 [INFO ] [pipeline] [11/12] format_cells
+2026-10-20 19:35:01 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-20 19:35:01 [INFO ] [pipeline]   Formatted 3842 rows: h=50, align=left/center
+2026-10-20 19:35:01 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-20 19:35:01 [INFO ] [pipeline] [12/12] finalize
+2026-10-20 19:35:01 [INFO ] [pipeline]   Done: 3842 rows x 49 cols (target: 49)
+2026-10-20 19:35:01 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:35:05 [INFO ] [main] Size: 3842 rows x 49 cols
+2026-10-20 19:35:05 [INFO ] [main] ==================================================
+2026-10-20 19:35:05 [INFO ] [main] Done: 10.15v1_de.xlsx
+2026-10-20 19:35:06 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-20 19:35:06 [INFO ] [jenkins] 
+2026-10-20 19:35:06 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-20 19:35:06 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:35:06 [INFO ] [color_size_main] Source: 10.15v1_de.xlsx
+2026-10-20 19:35:10 [INFO ] [color_size_main] Extracted: 3710 data lines + 132 separators → check_.txt
+2026-10-20 19:35:10 [INFO ] [color_size_main] Running: process.py
+2026-10-20 19:35:11 [INFO ] [color_size_deal] Groups: 132, lines: 3710 (file: 3842)
+2026-10-20 19:35:11 [INFO ] [color_size_deal] Prefixes: {'01': 504, '02': 189, '03': 73, '04': 58, '05': 33, '06': 29, '07': 21, '08': 21, '09': 16, '10': 8, '11': 8}
+2026-10-20 19:35:11 [INFO ] [color_size_deal] Done.
+2026-10-20 19:35:11 [INFO ] [color_size_main] Processing write-back: 3842 lines
+2026-10-20 19:35:19 [INFO ] [color_size_main] Write-back: 1092 written, 2750 unchanged → 10.15v1_de.xlsx
+2026-10-20 19:35:19 [INFO ] [color_size_main] Done.
+2026-10-20 19:35:19 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-20 19:35:19 [INFO ] [jenkins] 
+2026-10-20 19:35:19 [INFO ] [jenkins] ==================================================
+2026-10-20 19:35:19 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-20 19:35:19 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-20 19:35:19 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-20 19:35:19 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-20 19:35:19 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-20 19:35:36 [INFO ] [jenkins] ==================================================
+2026-10-20 19:35:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-20 19:35:36 [INFO ] [jenkins] ==================================================
+2026-10-20 19:35:36 [INFO ] [jenkins] 
+2026-10-20 19:35:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-20 19:35:36 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:35:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-20 19:35:36 [INFO ] [jenkins] 
+2026-10-20 19:35:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-20 19:35:36 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:35:37 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-10-20 19:35:37 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-20 19:35:37 [INFO ] [jenkins] 
+2026-10-20 19:35:37 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-20 19:35:37 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:35:37 [INFO ] [main] Log file: 20261020_a91259cb.log
+2026-10-20 19:35:37 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-10-20 19:35:37 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-20 19:35:37 [INFO ] [jenkins] 
+2026-10-20 19:35:37 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-20 19:35:37 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:35:38 [INFO ] [color_size_main] Source: 10.15v1_de.xlsx
+2026-10-20 19:35:42 [INFO ] [color_size_main] Extracted: 3710 data lines + 132 separators → check_.txt
+2026-10-20 19:35:42 [INFO ] [color_size_main] Running: process.py
+2026-10-20 19:35:42 [INFO ] [color_size_deal] Groups: 132, lines: 3710 (file: 3842)
+2026-10-20 19:35:42 [INFO ] [color_size_deal] Prefixes: {'01': 504, '02': 189, '03': 73, '04': 58, '05': 33, '06': 29, '07': 21, '08': 21, '09': 16, '10': 8, '11': 8}
+2026-10-20 19:35:42 [INFO ] [color_size_deal] Done.
+2026-10-20 19:35:42 [INFO ] [color_size_main] Processing write-back: 3842 lines
+2026-10-20 19:35:50 [INFO ] [color_size_main] Write-back: 132 written, 3710 unchanged → 10.15v1_de.xlsx
+2026-10-20 19:35:50 [INFO ] [color_size_main] Done.
+2026-10-20 19:35:51 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-20 19:35:51 [INFO ] [jenkins] 
+2026-10-20 19:35:51 [INFO ] [jenkins] ==================================================
+2026-10-20 19:35:51 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-20 19:35:51 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-20 19:35:51 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-20 19:35:51 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-20 19:35:51 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-20 19:36:36 [INFO ] [jenkins] ==================================================
+2026-10-20 19:36:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-20 19:36:36 [INFO ] [jenkins] ==================================================
+2026-10-20 19:36:36 [INFO ] [jenkins] 
+2026-10-20 19:36:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-20 19:36:36 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:36:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-20 19:36:36 [INFO ] [jenkins] 
+2026-10-20 19:36:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-20 19:36:36 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:36:37 [INFO ] [preprocess] Preprocessing 33 file(s) with 1 step(s)
+2026-10-20 19:36:37 [INFO ] [preprocess] [product_20261020030140127.xlsx]
+2026-10-20 19:36:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:40 [INFO ] [preprocess]   [product_20261020030140127.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:40 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:40 [INFO ] [preprocess] [product_20261020030144159.xlsx]
+2026-10-20 19:36:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:41 [INFO ] [preprocess]   [product_20261020030144159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:41 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:42 [INFO ] [preprocess] [product_20261020030232955.xlsx]
+2026-10-20 19:36:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:44 [INFO ] [preprocess]   [product_20261020030232955.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:44 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:44 [INFO ] [preprocess] [product_20261020030743861.xlsx]
+2026-10-20 19:36:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:45 [INFO ] [preprocess]   [product_20261020030743861.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:45 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:45 [INFO ] [preprocess] [product_20261020031606228.xlsx]
+2026-10-20 19:36:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:45 [INFO ] [preprocess]   [product_20261020031606228.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:45 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:45 [INFO ] [preprocess] [product_20261020033655518.xlsx]
+2026-10-20 19:36:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:45 [INFO ] [preprocess]   [product_20261020033655518.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:45 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:45 [INFO ] [preprocess] [product_20261020034129954.xlsx]
+2026-10-20 19:36:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:45 [INFO ] [preprocess]   [product_20261020034129954.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:45 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:46 [INFO ] [preprocess] [product_20261020034421124.xlsx]
+2026-10-20 19:36:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:46 [INFO ] [preprocess]   [product_20261020034421124.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:46 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:46 [INFO ] [preprocess] [product_20261020035006444.xlsx]
+2026-10-20 19:36:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:46 [INFO ] [preprocess]   [product_20261020035006444.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:46 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:46 [INFO ] [preprocess] [product_20261020045945159.xlsx]
+2026-10-20 19:36:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:47 [INFO ] [preprocess]   [product_20261020045945159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:47 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:47 [INFO ] [preprocess] [product_20261020050358104.xlsx]
+2026-10-20 19:36:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:47 [INFO ] [preprocess]   [product_20261020050358104.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:47 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:47 [INFO ] [preprocess] [product_20261020050855159.xlsx]
+2026-10-20 19:36:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:48 [INFO ] [preprocess]   [product_20261020050855159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:48 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:48 [INFO ] [preprocess] [product_20261020053406440.xlsx]
+2026-10-20 19:36:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:48 [INFO ] [preprocess]   [product_20261020053406440.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:48 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:48 [INFO ] [preprocess] [product_20261020053656455.xlsx]
+2026-10-20 19:36:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:48 [INFO ] [preprocess]   [product_20261020053656455.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:48 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:48 [INFO ] [preprocess] [product_20261020053853762.xlsx]
+2026-10-20 19:36:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:48 [INFO ] [preprocess]   [product_20261020053853762.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:48 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:48 [INFO ] [preprocess] [product_20261020053921296.xlsx]
+2026-10-20 19:36:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:49 [INFO ] [preprocess]   [product_20261020053921296.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:49 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:49 [INFO ] [preprocess] [product_20261020054223475.xlsx]
+2026-10-20 19:36:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:49 [INFO ] [preprocess]   [product_20261020054223475.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:49 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:49 [INFO ] [preprocess] [product_20261020054604722.xlsx]
+2026-10-20 19:36:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:49 [INFO ] [preprocess]   [product_20261020054604722.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:49 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:50 [INFO ] [preprocess] [product_20261020054918908.xlsx]
+2026-10-20 19:36:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:50 [INFO ] [preprocess]   [product_20261020054918908.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:50 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:50 [INFO ] [preprocess] [product_20261020055105746.xlsx]
+2026-10-20 19:36:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:51 [INFO ] [preprocess]   [product_20261020055105746.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:51 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:51 [INFO ] [preprocess] [product_20261020055504718.xlsx]
+2026-10-20 19:36:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:51 [INFO ] [preprocess]   [product_20261020055504718.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:51 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:51 [INFO ] [preprocess] [product_20261020055632972.xlsx]
+2026-10-20 19:36:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:51 [INFO ] [preprocess]   [product_20261020055632972.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:51 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:52 [INFO ] [preprocess] [product_20261020055903285.xlsx]
+2026-10-20 19:36:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:52 [INFO ] [preprocess]   [product_20261020055903285.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:52 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:52 [INFO ] [preprocess] [product_20261020064816061.xlsx]
+2026-10-20 19:36:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:53 [INFO ] [preprocess]   [product_20261020064816061.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:53 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:53 [INFO ] [preprocess] [product_20261020065145091.xlsx]
+2026-10-20 19:36:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:53 [INFO ] [preprocess]   [product_20261020065145091.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:53 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:53 [INFO ] [preprocess] [product_20261020065428764.xlsx]
+2026-10-20 19:36:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:54 [INFO ] [preprocess]   [product_20261020065428764.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:54 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:54 [INFO ] [preprocess] [product_20261020065946436.xlsx]
+2026-10-20 19:36:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:54 [INFO ] [preprocess]   [product_20261020065946436.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:54 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:54 [INFO ] [preprocess] [product_20261020070112041.xlsx]
+2026-10-20 19:36:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:54 [INFO ] [preprocess]   [product_20261020070112041.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:54 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:54 [INFO ] [preprocess] [product_20261020070709156.xlsx]
+2026-10-20 19:36:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:55 [INFO ] [preprocess]   [product_20261020070709156.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:55 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:55 [INFO ] [preprocess] [product_20261020071147234.xlsx]
+2026-10-20 19:36:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:55 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:56 [INFO ] [preprocess]   [product_20261020071147234.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:56 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:56 [INFO ] [preprocess] [product_20261020071535909.xlsx]
+2026-10-20 19:36:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:56 [INFO ] [preprocess]   [product_20261020071535909.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:56 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:56 [INFO ] [preprocess] [product_20261020071658828.xlsx]
+2026-10-20 19:36:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:56 [INFO ] [preprocess]   [product_20261020071658828.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:56 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:56 [INFO ] [preprocess] [product_20261020071752090.xlsx]
+2026-10-20 19:36:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:36:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:36:56 [INFO ] [preprocess]   [product_20261020071752090.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:36:56 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:36:56 [INFO ] [preprocess] Preprocessing complete
+2026-10-20 19:36:56 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-20 19:36:56 [INFO ] [jenkins] 
+2026-10-20 19:36:56 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-20 19:36:56 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:36:57 [INFO ] [main] Log file: 20261020_a91259cb.log
+2026-10-20 19:36:57 [INFO ] [main] Found 33 file(s):
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020030140127.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020030144159.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020030232955.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020030743861.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020031606228.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020033655518.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020034129954.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020034421124.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020035006444.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020045945159.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020050358104.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020050855159.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020053406440.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020053656455.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020053853762.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020053921296.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020054223475.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020054604722.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020054918908.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020055105746.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020055504718.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020055632972.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020055903285.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020064816061.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020065145091.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020065428764.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020065946436.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020070112041.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020070709156.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020071147234.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020071535909.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020071658828.xlsx
+2026-10-20 19:36:57 [INFO ] [main]   product_20261020071752090.xlsx
+2026-10-20 19:36:57 [INFO ] [main] Output: 10.15v1_fr.xlsx
+2026-10-20 19:36:57 [INFO ] [main] ==================================================
+2026-10-20 19:37:12 [INFO ] [main] Merged 33 files, 8540 images total
+2026-10-20 19:37:12 [INFO ] [main] Deleted 33 source file(s)
+2026-10-20 19:37:15 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-20 19:37:15 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_2]: 249 rows, 659 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_3]: 585 rows, 1257 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_4]: 45 rows, 157 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_5]: 28 rows, 114 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_6]: 22 rows, 82 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_7]: 109 rows, 208 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_8]: 50 rows, 146 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_9]: 97 rows, 237 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_10]: 35 rows, 116 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_11]: 54 rows, 169 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_12]: 177 rows, 302 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_13]: 30 rows, 79 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_14]: 41 rows, 86 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_15]: 56 rows, 115 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_16]: 56 rows, 114 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_17]: 46 rows, 113 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_18]: 97 rows, 162 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_19]: 186 rows, 406 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_20]: 63 rows, 165 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_21]: 50 rows, 89 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_22]: 121 rows, 242 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_23]: 97 rows, 173 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_24]: 181 rows, 258 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_25]: 104 rows, 165 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_26]: 19 rows, 47 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_27]: 112 rows, 329 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_28]: 94 rows, 219 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_29]: 186 rows, 327 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_30]: 85 rows, 144 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_31]: 37 rows, 100 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_32]: 6 rows, 33 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Sheet [Sheet0_33]: 16 rows, 50 images
+2026-10-20 19:37:26 [INFO ] [pipeline]   Merged 33 sheets -> 1, 3134 data rows, 6863 images
+2026-10-20 19:37:26 [INFO ] [pipeline] [2/12] validate
+2026-10-20 19:37:26 [INFO ] [pipeline]   Validated: 3842 rows, 27 cols (expect ~32)
+2026-10-20 19:37:26 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-20 19:37:27 [INFO ] [pipeline]   Backed up 8540 images
+2026-10-20 19:37:27 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-20 19:37:27 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-20 19:37:27 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-20 19:37:27 [INFO ] [pipeline]   Restored 8540 images with adjusted anchors
+2026-10-20 19:37:27 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-20 19:37:27 [INFO ] [pipeline]   Column 2: 3842 IDs generated
+2026-10-20 19:37:27 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-20 19:37:27 [INFO ] [pipeline]   Column 3: 3842 cells filled
+2026-10-20 19:37:27 [INFO ] [pipeline] [6/12] map_colors
+2026-10-20 19:37:27 [INFO ] [pipeline]   Colors J -> K: 3710 cells mapped, 132 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-20 19:37:27 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-20 19:37:28 [INFO ] [pipeline]   Size column L: 2810 mapped, 132 cleared (col A has fill), 900 no match (recorded)
+2026-10-20 19:37:28 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-20 19:37:28 [INFO ] [pipeline]   Mirror copy: 23449 cells written
+2026-10-20 19:37:28 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-20 19:37:28 [INFO ] [pipeline]   Price source M -> AS: 3842 cells copied
+2026-10-20 19:37:28 [INFO ] [pipeline] [10/12] calc_price
+2026-10-20 19:37:28 [INFO ] [pipeline]   Price columns AT-AW: 3842 rows calculated
+2026-10-20 19:37:28 [INFO ] [pipeline] [11/12] format_cells
+2026-10-20 19:37:29 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-20 19:37:29 [INFO ] [pipeline]   Formatted 3842 rows: h=50, align=left/center
+2026-10-20 19:37:29 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-20 19:37:29 [INFO ] [pipeline] [12/12] finalize
+2026-10-20 19:37:29 [INFO ] [pipeline]   Done: 3842 rows x 49 cols (target: 49)
+2026-10-20 19:37:29 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:37:33 [INFO ] [main] Size: 3842 rows x 49 cols
+2026-10-20 19:37:33 [INFO ] [main] ==================================================
+2026-10-20 19:37:33 [INFO ] [main] Done: 10.15v1_fr.xlsx
+2026-10-20 19:37:34 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-20 19:37:34 [INFO ] [jenkins] 
+2026-10-20 19:37:34 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-20 19:37:34 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:37:34 [INFO ] [color_size_main] Source: 10.15v1_fr.xlsx
+2026-10-20 19:37:38 [INFO ] [color_size_main] Extracted: 3710 data lines + 132 separators → check_.txt
+2026-10-20 19:37:38 [INFO ] [color_size_main] Running: process.py
+2026-10-20 19:37:39 [INFO ] [color_size_deal] Groups: 132, lines: 3710 (file: 3842)
+2026-10-20 19:37:39 [INFO ] [color_size_deal] Prefixes: {'01': 504, '02': 189, '03': 73, '04': 58, '05': 33, '06': 29, '07': 21, '08': 21, '09': 16, '10': 8, '11': 8}
+2026-10-20 19:37:39 [INFO ] [color_size_deal] Done.
+2026-10-20 19:37:39 [INFO ] [color_size_main] Processing write-back: 3842 lines
+2026-10-20 19:37:47 [INFO ] [color_size_main] Write-back: 1092 written, 2750 unchanged → 10.15v1_fr.xlsx
+2026-10-20 19:37:47 [INFO ] [color_size_main] Done.
+2026-10-20 19:37:47 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-20 19:37:47 [INFO ] [jenkins] 
+2026-10-20 19:37:47 [INFO ] [jenkins] ==================================================
+2026-10-20 19:37:47 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-20 19:37:47 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-20 19:37:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-20 19:37:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-20 19:37:47 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-20 19:38:16 [INFO ] [jenkins] ==================================================
+2026-10-20 19:38:16 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-20 19:38:16 [INFO ] [jenkins] ==================================================
+2026-10-20 19:38:16 [INFO ] [jenkins] 
+2026-10-20 19:38:16 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-20 19:38:16 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:38:16 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-20 19:38:16 [INFO ] [jenkins] 
+2026-10-20 19:38:16 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-20 19:38:16 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:38:17 [INFO ] [preprocess] Preprocessing 33 file(s) with 1 step(s)
+2026-10-20 19:38:17 [INFO ] [preprocess] [product_20261020030140127.xlsx]
+2026-10-20 19:38:18 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:18 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:20 [INFO ] [preprocess]   [product_20261020030140127.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:20 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:21 [INFO ] [preprocess] [product_20261020030144159.xlsx]
+2026-10-20 19:38:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:21 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:22 [INFO ] [preprocess]   [product_20261020030144159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:22 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:22 [INFO ] [preprocess] [product_20261020030232955.xlsx]
+2026-10-20 19:38:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:23 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:25 [INFO ] [preprocess]   [product_20261020030232955.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:25 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:26 [INFO ] [preprocess] [product_20261020030743861.xlsx]
+2026-10-20 19:38:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:26 [INFO ] [preprocess]   [product_20261020030743861.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:26 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:26 [INFO ] [preprocess] [product_20261020031606228.xlsx]
+2026-10-20 19:38:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:26 [INFO ] [preprocess]   [product_20261020031606228.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:26 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:26 [INFO ] [preprocess] [product_20261020033655518.xlsx]
+2026-10-20 19:38:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:26 [INFO ] [preprocess]   [product_20261020033655518.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:26 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:26 [INFO ] [preprocess] [product_20261020034129954.xlsx]
+2026-10-20 19:38:26 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:26 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:27 [INFO ] [preprocess]   [product_20261020034129954.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:27 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:27 [INFO ] [preprocess] [product_20261020034421124.xlsx]
+2026-10-20 19:38:27 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:27 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:27 [INFO ] [preprocess]   [product_20261020034421124.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:27 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:27 [INFO ] [preprocess] [product_20261020035006444.xlsx]
+2026-10-20 19:38:27 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:27 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:28 [INFO ] [preprocess]   [product_20261020035006444.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:28 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:28 [INFO ] [preprocess] [product_20261020045945159.xlsx]
+2026-10-20 19:38:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:28 [INFO ] [preprocess]   [product_20261020045945159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:28 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:28 [INFO ] [preprocess] [product_20261020050358104.xlsx]
+2026-10-20 19:38:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:28 [INFO ] [preprocess]   [product_20261020050358104.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:28 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:28 [INFO ] [preprocess] [product_20261020050855159.xlsx]
+2026-10-20 19:38:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:29 [INFO ] [preprocess]   [product_20261020050855159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:29 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:29 [INFO ] [preprocess] [product_20261020053406440.xlsx]
+2026-10-20 19:38:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:29 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:29 [INFO ] [preprocess]   [product_20261020053406440.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:29 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:29 [INFO ] [preprocess] [product_20261020053656455.xlsx]
+2026-10-20 19:38:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:29 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:30 [INFO ] [preprocess]   [product_20261020053656455.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:30 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:30 [INFO ] [preprocess] [product_20261020053853762.xlsx]
+2026-10-20 19:38:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:30 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:30 [INFO ] [preprocess]   [product_20261020053853762.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:30 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:30 [INFO ] [preprocess] [product_20261020053921296.xlsx]
+2026-10-20 19:38:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:30 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:30 [INFO ] [preprocess]   [product_20261020053921296.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:30 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:30 [INFO ] [preprocess] [product_20261020054223475.xlsx]
+2026-10-20 19:38:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:30 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:30 [INFO ] [preprocess]   [product_20261020054223475.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:30 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:30 [INFO ] [preprocess] [product_20261020054604722.xlsx]
+2026-10-20 19:38:30 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:30 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:31 [INFO ] [preprocess]   [product_20261020054604722.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:31 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:31 [INFO ] [preprocess] [product_20261020054918908.xlsx]
+2026-10-20 19:38:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:31 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:32 [INFO ] [preprocess]   [product_20261020054918908.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:32 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:32 [INFO ] [preprocess] [product_20261020055105746.xlsx]
+2026-10-20 19:38:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:32 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:32 [INFO ] [preprocess]   [product_20261020055105746.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:32 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:32 [INFO ] [preprocess] [product_20261020055504718.xlsx]
+2026-10-20 19:38:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:32 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:32 [INFO ] [preprocess]   [product_20261020055504718.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:32 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:32 [INFO ] [preprocess] [product_20261020055632972.xlsx]
+2026-10-20 19:38:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:32 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:33 [INFO ] [preprocess]   [product_20261020055632972.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:33 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:33 [INFO ] [preprocess] [product_20261020055903285.xlsx]
+2026-10-20 19:38:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:33 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:33 [INFO ] [preprocess]   [product_20261020055903285.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:33 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:33 [INFO ] [preprocess] [product_20261020064816061.xlsx]
+2026-10-20 19:38:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:34 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:34 [INFO ] [preprocess]   [product_20261020064816061.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:34 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:34 [INFO ] [preprocess] [product_20261020065145091.xlsx]
+2026-10-20 19:38:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:34 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:35 [INFO ] [preprocess]   [product_20261020065145091.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:35 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:35 [INFO ] [preprocess] [product_20261020065428764.xlsx]
+2026-10-20 19:38:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:35 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:35 [INFO ] [preprocess]   [product_20261020065428764.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:35 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:35 [INFO ] [preprocess] [product_20261020065946436.xlsx]
+2026-10-20 19:38:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:35 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:35 [INFO ] [preprocess]   [product_20261020065946436.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:35 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:35 [INFO ] [preprocess] [product_20261020070112041.xlsx]
+2026-10-20 19:38:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:35 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:36 [INFO ] [preprocess]   [product_20261020070112041.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:36 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:36 [INFO ] [preprocess] [product_20261020070709156.xlsx]
+2026-10-20 19:38:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:36 [INFO ] [preprocess]   [product_20261020070709156.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:36 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:37 [INFO ] [preprocess] [product_20261020071147234.xlsx]
+2026-10-20 19:38:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:37 [INFO ] [preprocess]   [product_20261020071147234.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:37 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:37 [INFO ] [preprocess] [product_20261020071535909.xlsx]
+2026-10-20 19:38:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:37 [INFO ] [preprocess]   [product_20261020071535909.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:37 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:37 [INFO ] [preprocess] [product_20261020071658828.xlsx]
+2026-10-20 19:38:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:37 [INFO ] [preprocess]   [product_20261020071658828.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:37 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:37 [INFO ] [preprocess] [product_20261020071752090.xlsx]
+2026-10-20 19:38:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-20 19:38:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-20 19:38:37 [INFO ] [preprocess]   [product_20261020071752090.xlsx] Sheet [Sheet0]: header row removed
+2026-10-20 19:38:37 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:38:37 [INFO ] [preprocess] Preprocessing complete
+2026-10-20 19:38:38 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-20 19:38:38 [INFO ] [jenkins] 
+2026-10-20 19:38:38 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-20 19:38:38 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:38:38 [INFO ] [main] Log file: 20261020_a91259cb.log
+2026-10-20 19:38:38 [INFO ] [main] Found 33 file(s):
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020030140127.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020030144159.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020030232955.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020030743861.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020031606228.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020033655518.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020034129954.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020034421124.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020035006444.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020045945159.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020050358104.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020050855159.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020053406440.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020053656455.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020053853762.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020053921296.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020054223475.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020054604722.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020054918908.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020055105746.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020055504718.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020055632972.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020055903285.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020064816061.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020065145091.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020065428764.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020065946436.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020070112041.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020070709156.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020071147234.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020071535909.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020071658828.xlsx
+2026-10-20 19:38:38 [INFO ] [main]   product_20261020071752090.xlsx
+2026-10-20 19:38:38 [INFO ] [main] Output: 10.15v1_de.xlsx
+2026-10-20 19:38:38 [INFO ] [main] ==================================================
+2026-10-20 19:38:54 [INFO ] [main] Merged 33 files, 8540 images total
+2026-10-20 19:38:54 [INFO ] [main] Deleted 33 source file(s)
+2026-10-20 19:38:56 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-20 19:38:56 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_2]: 249 rows, 659 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_3]: 585 rows, 1257 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_4]: 45 rows, 157 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_5]: 28 rows, 114 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_6]: 22 rows, 82 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_7]: 109 rows, 208 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_8]: 50 rows, 146 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_9]: 97 rows, 237 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_10]: 35 rows, 116 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_11]: 54 rows, 169 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_12]: 177 rows, 302 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_13]: 30 rows, 79 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_14]: 41 rows, 86 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_15]: 56 rows, 115 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_16]: 56 rows, 114 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_17]: 46 rows, 113 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_18]: 97 rows, 162 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_19]: 186 rows, 406 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_20]: 63 rows, 165 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_21]: 50 rows, 89 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_22]: 121 rows, 242 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_23]: 97 rows, 173 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_24]: 181 rows, 258 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_25]: 104 rows, 165 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_26]: 19 rows, 47 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_27]: 112 rows, 329 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_28]: 94 rows, 219 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_29]: 186 rows, 327 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_30]: 85 rows, 144 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_31]: 37 rows, 100 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_32]: 6 rows, 33 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Sheet [Sheet0_33]: 16 rows, 50 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Merged 33 sheets -> 1, 3134 data rows, 6863 images
+2026-10-20 19:39:08 [INFO ] [pipeline] [2/12] validate
+2026-10-20 19:39:08 [INFO ] [pipeline]   Validated: 3842 rows, 27 cols (expect ~32)
+2026-10-20 19:39:08 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-20 19:39:08 [INFO ] [pipeline]   Backed up 8540 images
+2026-10-20 19:39:08 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-20 19:39:08 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-20 19:39:08 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-20 19:39:08 [INFO ] [pipeline]   Restored 8540 images with adjusted anchors
+2026-10-20 19:39:08 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-20 19:39:08 [INFO ] [pipeline]   Column 2: 3842 IDs generated
+2026-10-20 19:39:08 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-20 19:39:08 [INFO ] [pipeline]   Column 3: 3842 cells filled
+2026-10-20 19:39:08 [INFO ] [pipeline] [6/12] map_colors
+2026-10-20 19:39:08 [INFO ] [pipeline]   Colors J -> K: 3710 cells mapped, 132 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-20 19:39:08 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-20 19:39:09 [INFO ] [pipeline]   Size column L: 2810 mapped, 132 cleared (col A has fill), 900 no match (recorded)
+2026-10-20 19:39:09 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-20 19:39:09 [INFO ] [pipeline]   Mirror copy: 23449 cells written
+2026-10-20 19:39:09 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-20 19:39:09 [INFO ] [pipeline]   Price source M -> AS: 3842 cells copied
+2026-10-20 19:39:09 [INFO ] [pipeline] [10/12] calc_price
+2026-10-20 19:39:09 [INFO ] [pipeline]   Price columns AT-AW: 3842 rows calculated
+2026-10-20 19:39:09 [INFO ] [pipeline] [11/12] format_cells
+2026-10-20 19:39:10 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-20 19:39:10 [INFO ] [pipeline]   Formatted 3842 rows: h=50, align=left/center
+2026-10-20 19:39:10 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-20 19:39:10 [INFO ] [pipeline] [12/12] finalize
+2026-10-20 19:39:10 [INFO ] [pipeline]   Done: 3842 rows x 49 cols (target: 49)
+2026-10-20 19:39:10 [INFO ] [pipeline] Pipeline complete
+2026-10-20 19:39:14 [INFO ] [main] Size: 3842 rows x 49 cols
+2026-10-20 19:39:14 [INFO ] [main] ==================================================
+2026-10-20 19:39:14 [INFO ] [main] Done: 10.15v1_de.xlsx
+2026-10-20 19:39:15 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-20 19:39:15 [INFO ] [jenkins] 
+2026-10-20 19:39:15 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-20 19:39:15 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:39:15 [INFO ] [color_size_main] Source: 10.15v1_de.xlsx
+2026-10-20 19:39:19 [INFO ] [color_size_main] Extracted: 3710 data lines + 132 separators → check_.txt
+2026-10-20 19:39:19 [INFO ] [color_size_main] Running: process.py
+2026-10-20 19:39:19 [INFO ] [color_size_deal] Groups: 132, lines: 3710 (file: 3842)
+2026-10-20 19:39:19 [INFO ] [color_size_deal] Prefixes: {'01': 504, '02': 189, '03': 73, '04': 58, '05': 33, '06': 29, '07': 21, '08': 21, '09': 16, '10': 8, '11': 8}
+2026-10-20 19:39:19 [INFO ] [color_size_deal] Done.
+2026-10-20 19:39:19 [INFO ] [color_size_main] Processing write-back: 3842 lines
+2026-10-20 19:39:27 [INFO ] [color_size_main] Write-back: 1092 written, 2750 unchanged → 10.15v1_de.xlsx
+2026-10-20 19:39:27 [INFO ] [color_size_main] Done.
+2026-10-20 19:39:28 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-20 19:39:28 [INFO ] [jenkins] 
+2026-10-20 19:39:28 [INFO ] [jenkins] ==================================================
+2026-10-20 19:39:28 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-20 19:39:28 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-20 19:39:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-20 19:39:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-20 19:39:28 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-20 19:48:32 [INFO ] [jenkins] ==================================================
+2026-10-20 19:48:32 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-20 19:48:32 [INFO ] [jenkins] ==================================================
+2026-10-20 19:48:32 [INFO ] [jenkins] 
+2026-10-20 19:48:32 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-20 19:48:32 [INFO ] [jenkins] ------------------------------
+2026-10-20 19:48:32 [INFO ] [title_workflow] Source: 10.15v1.xlsx
+2026-10-20 19:48:35 [INFO ] [title_workflow] Extracted 132 titles + 132 links
+2026-10-20 19:48:35 [INFO ] [title_workflow] Written: origin_title (132) + origin_link (132)
+2026-10-20 19:48:35 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-20 19:48:35 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-20 19:48:37 [INFO ] [deepseek_web] Opening DeepSeek web (132 titles)...
+2026-10-20 19:48:37 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-20 19:48:47 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-20 19:48:49 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-20 19:48:49 [INFO ] [deepseek_web] [1/132] 女士复古中世纪连衣裙 文艺复兴维多利亚女巫刺绣V领喇叭袖礼服裙
+2026-10-20 19:48:51 [INFO ] [deepseek_web]   Downloaded: 0001_0030445022361031612656.jpg
+2026-10-20 19:48:51 [INFO ] [deepseek_web]   Prefetching next image (2/132)
+2026-10-20 19:48:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:49:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:49:24 [INFO ] [deepseek_web]   Response: 腰部骨骼刺绣 深V交叉领 宽大喇叭长袖 高腰结构 复古哥特风礼服连衣裙 女士 A字版型 自然垂坠裙身 中长款套头纯色
+2026-10-20 19:49:24 [INFO ] [deepseek_web]   Deleted: 0001_0030445022361031612656.jpg
+2026-10-20 19:49:29 [INFO ] [deepseek_web] [2/132] 万圣节服装 血腥医生护士扮演服装鬼屋 鬼节派对节庆用品
+2026-10-20 19:49:29 [INFO ] [deepseek_web]   Downloaded: 0002_3121047289043016773388.jpg
+2026-10-20 19:49:29 [INFO ] [deepseek_web]   Prefetching next image (3/132)
+2026-10-20 19:49:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:49:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:49:58 [INFO ] [deepseek_web]   Response: 十字护士帽 血渍飞溅印花 双层锯齿下摆 角色扮演连衣裙套装 女士 常规版型 长袖 拼接袖口 万圣节派对
+2026-10-20 19:49:58 [INFO ] [deepseek_web]   Deleted: 0002_3121047289043016773388.jpg
+2026-10-20 19:50:03 [INFO ] [deepseek_web] [3/132] 万圣节服装儿童cosplay星月蜘蛛网纱披风裙摆不规则连帽系带斗篷
+2026-10-20 19:50:03 [INFO ] [deepseek_web]   Downloaded: 0003_6180439544493413593352.jpg
+2026-10-20 19:50:03 [INFO ] [deepseek_web]   Prefetching next image (4/132)
+2026-10-20 19:50:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:50:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:50:32 [INFO ] [deepseek_web]   Response: 星月蜘蛛网印花 网纱连帽系带披风 不规则下摆 花卉印花 儿童角色扮演连衣裙套装 女童 常规版型 短袖 抽绳收腰
+2026-10-20 19:50:32 [INFO ] [deepseek_web]   Deleted: 0003_6180439544493413593352.jpg
+2026-10-20 19:50:37 [INFO ] [deepseek_web] [4/132] 哥特式不规则下摆万圣节女装包臀连衣裙
+2026-10-20 19:50:37 [INFO ] [deepseek_web]   Downloaded: 0004_5071037302045311715341.jpg
+2026-10-20 19:50:37 [INFO ] [deepseek_web]   Prefetching next image (5/132)
+2026-10-20 19:50:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:50:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:51:06 [INFO ] [deepseek_web]   Response: 深V领交叉绑带 宽大蝙蝠翼喇叭袖 尖角不规则下摆 连帽包臀连衣裙 女士 修身版型 长袖套头 纯色 哥特风万圣节派对服装
+2026-10-20 19:51:06 [INFO ] [deepseek_web]   Deleted: 0004_5071037302045311715341.jpg
+2026-10-20 19:51:11 [INFO ] [deepseek_web] [5/132] 万圣节成人服装鬼节恐怖血腥护士连衣裙带血女护士裙子
+2026-10-20 19:51:11 [INFO ] [deepseek_web]   Downloaded: 0005_5871107396679020401855.jpg
+2026-10-20 19:51:11 [INFO ] [deepseek_web]   Prefetching next image (6/132)
+2026-10-20 19:51:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:51:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:51:40 [INFO ] [deepseek_web]   Response: 方领抽褶 宽幅交叉绑带腰封 飞溅印花 蕾丝拼接下摆 泡泡短袖 角色扮演连衣裙 女士 修身版型 套头 万圣节派对
+2026-10-20 19:51:40 [INFO ] [deepseek_web]   Deleted: 0005_5871107396679020401855.jpg
+2026-10-20 19:51:45 [INFO ] [deepseek_web] [6/132] 中世纪连帽连帽蒸汽朋克连衣裙扮演万圣节哥特裙
+2026-10-20 19:51:45 [INFO ] [deepseek_web]   Downloaded: 0006_2571058393856921124470.jpg
+2026-10-20 19:51:45 [INFO ] [deepseek_web]   Prefetching next image (7/132)
+2026-10-20 19:51:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:51:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:52:15 [INFO ] [deepseek_web]   Response: 前开襟长袍拼接内搭短裙 腰部交叉绑带装饰 尖顶连帽 长袖连帽长裙套装 女士 修身版型 套头 纯色 哥特风角色扮演
+2026-10-20 19:52:15 [INFO ] [deepseek_web]   Deleted: 0006_2571058393856921124470.jpg
+2026-10-20 19:52:20 [INFO ] [deepseek_web] [7/132] 中世纪文艺复兴舞台cos服万圣节复古女士长裙
+2026-10-20 19:52:20 [INFO ] [deepseek_web]   Downloaded: 0007_7000337157078187087870.jpg
+2026-10-20 19:52:20 [INFO ] [deepseek_web]   Prefetching next image (8/132)
+2026-10-20 19:52:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:52:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:52:49 [INFO ] [deepseek_web]   Response: 一字肩抽绳 弹力抽褶腰 多层拼接裙摆 泡泡短袖 女士长款连衣裙 修身版型 套头款式 纯色 角色扮演服装
+2026-10-20 19:52:49 [INFO ] [deepseek_web]   Deleted: 0007_7000337157078187087870.jpg
+2026-10-20 19:52:54 [INFO ] [deepseek_web] [8/132] 中世纪吸血鬼女裙万圣节角色扮演吸血鬼表演裙
+2026-10-20 19:52:54 [INFO ] [deepseek_web]   Downloaded: 0008_1300854297435414195947.jpg
+2026-10-20 19:52:54 [INFO ] [deepseek_web]   Prefetching next image (9/132)
+2026-10-20 19:52:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:53:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:53:23 [INFO ] [deepseek_web]   Response: 大翻领连帽 交叉绑带束腰 不规则尖角喇叭袖 多层拼接裙摆 长款连衣裙 女士 修身版型 长袖 纯色 角色扮演服装
+2026-10-20 19:53:23 [INFO ] [deepseek_web]   Deleted: 0008_1300854297435414195947.jpg
+2026-10-20 19:53:28 [INFO ] [deepseek_web] [9/132] 暗黑血腥修女角色扮演丧尸染血修女裙舞台表演服
+2026-10-20 19:53:28 [INFO ] [deepseek_web]   Downloaded: 0009_1051053017085614964313.jpg
+2026-10-20 19:53:28 [INFO ] [deepseek_web]   Prefetching next image (10/132)
+2026-10-20 19:53:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:53:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:53:57 [INFO ] [deepseek_web]   Response: 修女头巾 血迹飞溅印花 不规则锯齿下摆 宽大喇叭袖 拼接层叠结构 修女角色扮演连衣裙 女士 修身版型 长袖 长裙 万圣节派对
+2026-10-20 19:53:57 [INFO ] [deepseek_web]   Deleted: 0009_1051053017085614964313.jpg
+2026-10-20 19:54:02 [INFO ] [deepseek_web] [10/132] 万圣节儿童蓬蓬纱裙
+2026-10-20 19:54:02 [INFO ] [deepseek_web]   Downloaded: 0010_3710940324585114489253.jpg
+2026-10-20 19:54:02 [INFO ] [deepseek_web]   Prefetching next image (11/132)
+2026-10-20 19:54:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:54:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:54:31 [INFO ] [deepseek_web]   Response: 立体花朵肩饰 亮片拼接上衣 多层网纱蓬蓬裙 露肩设计 附带女巫帽 女童连衣裙套装 常规版型 短袖 收腰 纯色 角色扮演
+2026-10-20 19:54:31 [INFO ] [deepseek_web]   Deleted: 0010_3710940324585114489253.jpg
+2026-10-20 19:54:36 [INFO ] [deepseek_web] [11/132] 万圣节COS夜店护士演出服套装
+2026-10-20 19:54:36 [INFO ] [deepseek_web]   Downloaded: 0011_6130225356081191121574.jpg
+2026-10-20 19:54:36 [INFO ] [deepseek_web]   Prefetching next image (12/132)
+2026-10-20 19:54:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:54:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:55:06 [INFO ] [deepseek_web]   Response: 挂脖深V领 包边工艺 仿皮材质 十字徽章围裙前襟 附带护士帽 护士服连衣裙套装 女士 修身版型 无袖 角色扮演服装
+2026-10-20 19:55:06 [INFO ] [deepseek_web]   Deleted: 0011_6130225356081191121574.jpg
+2026-10-20 19:55:11 [INFO ] [deepseek_web] [12/132] 新款万圣节个性搞怪骨架爱心印花拼接网纱长袖连衣裙
+2026-10-20 19:55:11 [INFO ] [deepseek_web]   Downloaded: 0012_1921101544868136502421.jpg
+2026-10-20 19:55:11 [INFO ] [deepseek_web]   Prefetching next image (13/132)
+2026-10-20 19:55:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:55:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:55:40 [INFO ] [deepseek_web]   Response: 骨架印花 爱心图案 多层网纱拼接 蓬蓬裙摆 圆领长袖 女童连衣裙 常规版型 套头款式 收腰结构 万圣节派对扮演服
+2026-10-20 19:55:40 [INFO ] [deepseek_web]   Deleted: 0012_1921101544868136502421.jpg
+2026-10-20 19:55:45 [INFO ] [deepseek_web] [13/132] 万圣儿童南瓜脸连衣裙
+2026-10-20 19:55:45 [INFO ] [deepseek_web]   Downloaded: 0013_5030222393081939382105.jpg
+2026-10-20 19:55:45 [INFO ] [deepseek_web]   Prefetching next image (14/132)
+2026-10-20 19:55:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:55:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:56:14 [INFO ] [deepseek_web]   Response: 方形领 南瓜脸贴布 格子蝴蝶结 蕾丝拼接 荷叶边短袖 女童角色扮演连衣裙 女童 常规版型 套头 收腰 裙摆南瓜印花
+2026-10-20 19:56:14 [INFO ] [deepseek_web]   Deleted: 0013_5030222393081939382105.jpg
+2026-10-20 19:56:19 [INFO ] [deepseek_web] [14/132] 万圣儿童森林仙子裙
+2026-10-20 19:56:19 [INFO ] [deepseek_web]   Downloaded: 0014_6700233180281911204324.jpg
+2026-10-20 19:56:19 [INFO ] [deepseek_web]   Prefetching next image (15/132)
+2026-10-20 19:56:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:56:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:56:48 [INFO ] [deepseek_web]   Response: 金色纽扣肩带 波点印花 撞色网纱拼接 多层蓬蓬裙摆 女童角色扮演连衣裙 常规版型 方领 无袖 套头结构 仙子扮演服
+2026-10-20 19:56:48 [INFO ] [deepseek_web]   Deleted: 0014_6700233180281911204324.jpg
+2026-10-20 19:56:53 [INFO ] [deepseek_web] [15/132] 儿童cosplay裙
+2026-10-20 19:56:53 [INFO ] [deepseek_web]   Downloaded: 0015_6121141363371969747857.jpg
+2026-10-20 19:56:53 [INFO ] [deepseek_web]   Prefetching next image (16/132)
+2026-10-20 19:56:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:57:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:57:22 [INFO ] [deepseek_web]   Response: 交叉绑带宽腰封 露肩抽褶领口 宽大喇叭长袖 荷叶边散摆 女童角色扮演上衣腰封套装 修身版型 套头款式 纯色
+2026-10-20 19:57:22 [INFO ] [deepseek_web]   Deleted: 0015_6121141363371969747857.jpg
+2026-10-20 19:57:27 [INFO ] [deepseek_web] [16/132] 哥特式暗黑风cos方领收腰宫廷公主裙
+2026-10-20 19:57:27 [INFO ] [deepseek_web]   Downloaded: 0016_9970317320272212905399.jpg
+2026-10-20 19:57:27 [INFO ] [deepseek_web]   Prefetching next image (17/132)
+2026-10-20 19:57:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:57:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:57:57 [INFO ] [deepseek_web]   Response: 胸前胸针装饰 方领蕾丝花边 荷叶边短袖 层叠抽褶裙摆 裙摆蕾丝拼接 宫廷风角色扮演连衣裙 女士 修身版型 套头 短裙
+2026-10-20 19:57:57 [INFO ] [deepseek_web]   Deleted: 0016_9970317320272212905399.jpg
+2026-10-20 19:58:02 [INFO ] [deepseek_web] [17/132] 万圣节蕾丝宫廷长裙
+2026-10-20 19:58:02 [INFO ] [deepseek_web]   Downloaded: 0017_1180448452175286037911.jpg
+2026-10-20 19:58:02 [INFO ] [deepseek_web]   Prefetching next image (18/132)
+2026-10-20 19:58:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:58:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:58:31 [INFO ] [deepseek_web]   Response: 细吊带露肩 蕾丝喇叭长袖 大面积蕾丝罩纱拼接 蕾丝花边领口 拖地长裙摆 女士长款连衣裙 女士 修身版型 一字领 套头款式 纯色
+2026-10-20 19:58:31 [INFO ] [deepseek_web]   Deleted: 0017_1180448452175286037911.jpg
+2026-10-20 19:58:36 [INFO ] [deepseek_web] [18/132] 万圣节cos裙子套装
+2026-10-20 19:58:36 [INFO ] [deepseek_web]   Downloaded: 0018_9770441175697118135642.jpg
+2026-10-20 19:58:36 [INFO ] [deepseek_web]   Prefetching next image (19/132)
+2026-10-20 19:58:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:58:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:59:05 [INFO ] [deepseek_web]   Response: 附带羽毛翅膀 附带长手套 附带领花颈圈 抹胸花朵装饰 多层网纱拼接裙摆 蕾丝花边 角色扮演连衣裙套装 女士 修身版型 抹胸吊带 无袖 短裙 纯色
+2026-10-20 19:59:05 [INFO ] [deepseek_web]   Deleted: 0018_9770441175697118135642.jpg
+2026-10-20 19:59:10 [INFO ] [deepseek_web] [19/132] 万圣节骷髅印花连衣裙儿童化装舞会鬼装恐怖主题派对表演裙
+2026-10-20 19:59:10 [INFO ] [deepseek_web]   Downloaded: 0019_4300324387102448527121.jpg
+2026-10-20 19:59:10 [INFO ] [deepseek_web]   Prefetching next image (20/132)
+2026-10-20 19:59:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:59:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 19:59:39 [INFO ] [deepseek_web]   Response: 骷髅骨骼印花 不规则撕裂下摆 连帽款式 腰部链条装饰 角色扮演连衣裙套装 女童 常规版型 长袖 套头 长裙
+2026-10-20 19:59:39 [INFO ] [deepseek_web]   Deleted: 0019_4300324387102448527121.jpg
+2026-10-20 19:59:44 [INFO ] [deepseek_web] [20/132] 女士万圣节圆领长袖裙
+2026-10-20 19:59:44 [INFO ] [deepseek_web]   Downloaded: 0020_2170425556883120649235.jpg
+2026-10-20 19:59:44 [INFO ] [deepseek_web]   Prefetching next image (21/132)
+2026-10-20 19:59:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 19:59:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:00:13 [INFO ] [deepseek_web]   Response: 全身骨骼图案印花 微喇叭长袖 飘逸大裙摆 长款连衣裙 女士 修身版型 圆领 套头款式 收腰剪裁 万圣节派对扮演服
+2026-10-20 20:00:13 [INFO ] [deepseek_web]   Deleted: 0020_2170425556883120649235.jpg
+2026-10-20 20:00:18 [INFO ] [deepseek_web] [21/132] 女士万圣节裙子
+2026-10-20 20:00:18 [INFO ] [deepseek_web]   Downloaded: 0021_7910458053073219962437.jpg
+2026-10-20 20:00:18 [INFO ] [deepseek_web]   Prefetching next image (22/132)
+2026-10-20 20:00:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:00:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:00:48 [INFO ] [deepseek_web]   Response: 披肩式宽大长袖 领口抽褶设计 尖角不规则下摆 撞色宽腰封 角色扮演连衣裙套装 女士 修身版型 套头款式 短裙 撞色拼接
+2026-10-20 20:00:48 [INFO ] [deepseek_web]   Deleted: 0021_7910458053073219962437.jpg
+2026-10-20 20:00:53 [INFO ] [deepseek_web] [22/132] 女士纯色裙子
+2026-10-20 20:00:53 [INFO ] [deepseek_web]   Downloaded: 0022_7131105484031020556671.jpg
+2026-10-20 20:00:53 [INFO ] [deepseek_web]   Prefetching next image (23/132)
+2026-10-20 20:00:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:01:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:01:22 [INFO ] [deepseek_web]   Response: 露肩抽褶领口 腰部交叉绑带 微透喇叭长袖 薄纱拼接裙摆 女士短款连衣裙 修身版型 一字肩套头款式 复古纯色
+2026-10-20 20:01:22 [INFO ] [deepseek_web]   Deleted: 0022_7131105484031020556671.jpg
+2026-10-20 20:01:27 [INFO ] [deepseek_web] [23/132] 女士纯色裙子
+2026-10-20 20:01:27 [INFO ] [deepseek_web]   Downloaded: 0023_9671007266314638283771.jpg
+2026-10-20 20:01:27 [INFO ] [deepseek_web]   Prefetching next image (24/132)
+2026-10-20 20:01:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:01:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:01:56 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 宽大喇叭袖 多层拼接裙摆 女士长款连衣裙 修身版型 套头款式 长袖 纯色
+2026-10-20 20:01:56 [INFO ] [deepseek_web]   Deleted: 0023_9671007266314638283771.jpg
+2026-10-20 20:02:01 [INFO ] [deepseek_web] [24/132] 女士撞色半身裙
+2026-10-20 20:02:01 [INFO ] [deepseek_web]   Downloaded: 0024_5830417495922517389014.jpg
+2026-10-20 20:02:01 [INFO ] [deepseek_web]   Prefetching next image (25/132)
+2026-10-20 20:02:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:02:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:02:30 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 前胸细绳系带 宽大喇叭长袖 宽幅高腰裙头 多层拼接荷叶边裙摆 撞色内衬边缘 女士半身裙套装 常规版型 套头款式 纯色
+2026-10-20 20:02:30 [INFO ] [deepseek_web]   Deleted: 0024_5830417495922517389014.jpg
+2026-10-20 20:02:35 [INFO ] [deepseek_web] [25/132] 女士纯色裙子
+2026-10-20 20:02:35 [INFO ] [deepseek_web]   Downloaded: 0025_0890408084902455931395.jpg
+2026-10-20 20:02:35 [INFO ] [deepseek_web]   Prefetching next image (26/132)
+2026-10-20 20:02:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:02:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:03:04 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 胸前细绳系带 宽幅交叉绑带腰封 泡泡短袖 荷叶边拼接裙摆 女士中长款连衣裙 修身版型 纯色
+2026-10-20 20:03:04 [INFO ] [deepseek_web]   Deleted: 0025_0890408084902455931395.jpg
+2026-10-20 20:03:09 [INFO ] [deepseek_web] [26/132] 女士纯色半身裙
+2026-10-20 20:03:09 [INFO ] [deepseek_web]   Downloaded: 0026_3040449237863015177035.jpg
+2026-10-20 20:03:09 [INFO ] [deepseek_web]   Prefetching next image (27/132)
+2026-10-20 20:03:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:03:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:03:39 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 胸前细绳系带 宽幅交叉绑带腰封 宽大喇叭长袖 不规则层叠下摆 女士连衣裙套装 修身版型 套头款式 纯色 角色扮演服
+2026-10-20 20:03:39 [INFO ] [deepseek_web]   Deleted: 0026_3040449237863015177035.jpg
+2026-10-20 20:03:44 [INFO ] [deepseek_web] [27/132] 女童万圣节女巫裙套装
+2026-10-20 20:03:44 [INFO ] [deepseek_web]   Downloaded: 0027_5270457291474921330831.jpg
+2026-10-20 20:03:44 [INFO ] [deepseek_web]   Prefetching next image (28/132)
+2026-10-20 20:03:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:03:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:04:13 [INFO ] [deepseek_web]   Response: 尖顶装饰女巫帽 亮片交叉绑带上衣 蝴蝶结腰带 多层撞色网纱裙摆 附带扫帚配件 女童连衣裙套装 常规版型 方领 吊带 短裙 万圣节角色扮演
+2026-10-20 20:04:13 [INFO ] [deepseek_web]   Deleted: 0027_5270457291474921330831.jpg
+2026-10-20 20:04:18 [INFO ] [deepseek_web] [28/132] 女童一字肩海盗连衣裙
+2026-10-20 20:04:18 [INFO ] [deepseek_web]   Downloaded: 0028_9570351405642286166728.jpg
+2026-10-20 20:04:18 [INFO ] [deepseek_web]   Prefetching next image (29/132)
+2026-10-20 20:04:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:04:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:04:47 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 宽幅交叉绑带腰封 宽大喇叭袖 不规则下摆 女童角色扮演连衣裙 常规版型 长袖套头 纯色 万圣节扮演服
+2026-10-20 20:04:47 [INFO ] [deepseek_web]   Deleted: 0028_9570351405642286166728.jpg
+2026-10-20 20:04:52 [INFO ] [deepseek_web] [29/132] 女童一字肩海盗连衣裙
+2026-10-20 20:04:52 [INFO ] [deepseek_web]   Downloaded: 0029_2340435383842836076536.jpg
+2026-10-20 20:04:52 [INFO ] [deepseek_web]   Prefetching next image (30/132)
+2026-10-20 20:04:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:05:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:05:21 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 宽大喇叭袖 不规则下摆 女童角色扮演连衣裙 常规版型 套头款式 长袖 纯色
+2026-10-20 20:05:21 [INFO ] [deepseek_web]   Deleted: 0029_2340435383842836076536.jpg
+2026-10-20 20:05:26 [INFO ] [deepseek_web] [30/132] 女童海盗复古半身裙
+2026-10-20 20:05:26 [INFO ] [deepseek_web]   Downloaded: 0030_6191122373701815118115.jpg
+2026-10-20 20:05:26 [INFO ] [deepseek_web]   Prefetching next image (31/132)
+2026-10-20 20:05:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:05:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:05:55 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 宽幅交叉绑带腰封 宽大喇叭长袖 多层拼接不规则裙摆 附带海盗帽 女童上衣半身裙套装 常规版型 两件套 套头款式 纯色
+2026-10-20 20:05:55 [INFO ] [deepseek_web]   Deleted: 0030_6191122373701815118115.jpg
+2026-10-20 20:06:00 [INFO ] [deepseek_web] [31/132] 女士啦啦队连衣裙
+2026-10-20 20:06:00 [INFO ] [deepseek_web]   Downloaded: 0031_4011043580901216393736.jpg
+2026-10-20 20:06:00 [INFO ] [deepseek_web]   Prefetching next image (32/132)
+2026-10-20 20:06:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:06:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:06:29 [INFO ] [deepseek_web]   Response: 胸前字母印花 皇冠图案 飞溅印花 条纹百褶裙摆 拼接收腰 啦啦队连衣裙 女士 修身版型 无袖圆领 套头款式 短裙
+2026-10-20 20:06:29 [INFO ] [deepseek_web]   Deleted: 0031_4011043580901216393736.jpg
+2026-10-20 20:06:34 [INFO ] [deepseek_web] [32/132] 女式中世纪cos服复古万圣节一字肩喇叭袖收腰宫廷连衣长裙舞台演出服
+2026-10-20 20:06:34 [INFO ] [deepseek_web]   Downloaded: 0032_8151156547436222376323.jpg
+2026-10-20 20:06:34 [INFO ] [deepseek_web]   Prefetching next image (33/132)
+2026-10-20 20:06:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:06:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:07:04 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 宽大喇叭长袖 不规则荷叶边下摆 宽幅收腰设计 女士角色扮演连衣裙 常规版型 套头款式 纯色
+2026-10-20 20:07:04 [INFO ] [deepseek_web]   Deleted: 0032_8151156547436222376323.jpg
+2026-10-20 20:07:09 [INFO ] [deepseek_web] [33/132] 万圣女士宫廷长裙
+2026-10-20 20:07:09 [INFO ] [deepseek_web]   Downloaded: 0033_5210538267864012444563.jpg
+2026-10-20 20:07:09 [INFO ] [deepseek_web]   Prefetching next image (34/132)
+2026-10-20 20:07:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:07:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:07:38 [INFO ] [deepseek_web]   Response: 胸前交叉绑带 两侧几何图案拼接 领口荷叶边装饰 灯笼泡泡长袖 女士复古宫廷连衣裙 修身版型 圆领套头结构 宽大长裙摆
+2026-10-20 20:07:38 [INFO ] [deepseek_web]   Deleted: 0033_5210538267864012444563.jpg
+2026-10-20 20:07:43 [INFO ] [deepseek_web] [34/132] 女士蕾丝蛋糕裤裙
+2026-10-20 20:07:43 [INFO ] [deepseek_web]   Downloaded: 0034_7790339278712614521236.jpg
+2026-10-20 20:07:43 [INFO ] [deepseek_web]   Prefetching next image (35/132)
+2026-10-20 20:07:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:07:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:08:12 [INFO ] [deepseek_web]   Response: 多层拼接蕾丝花边 腰部蝴蝶结装饰 宽幅松紧腰头 女士防走光裤裙 常规版型 网纱百褶裙摆 内衬短裤结构 套穿款式
+2026-10-20 20:08:12 [INFO ] [deepseek_web]   Deleted: 0034_7790339278712614521236.jpg
+2026-10-20 20:08:17 [INFO ] [deepseek_web] [35/132] 万圣节服装cosplay服性感制服裙护士服
+2026-10-20 20:08:17 [INFO ] [deepseek_web]   Downloaded: 0035_1180551261868864747765.jpg
+2026-10-20 20:08:17 [INFO ] [deepseek_web]   Prefetching next image (36/132)
+2026-10-20 20:08:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:08:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:08:46 [INFO ] [deepseek_web]   Response: 护士帽 胸前十字标 侧开衩裙摆 附带条纹长袜 护士服连衣裙套装 女士 修身版型 短袖翻领 套头款式
+2026-10-20 20:08:46 [INFO ] [deepseek_web]   Deleted: 0035_1180551261868864747765.jpg
+2026-10-20 20:08:51 [INFO ] [deepseek_web] [36/132] 女哥特式纯色网纱连衣裙 朋克风露肩抽绳大摆长裙
+2026-10-20 20:08:51 [INFO ] [deepseek_web]   Downloaded: 0036_5550315126992877136202.jpg
+2026-10-20 20:08:51 [INFO ] [deepseek_web]   Prefetching next image (37/132)
+2026-10-20 20:08:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:09:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:09:20 [INFO ] [deepseek_web]   Response: 胸前交叉绑带 露肩细吊带 宽大喇叭袖 百褶大裙摆 女士网纱长款连衣裙 修身版型 套头款式 长袖 纯色
+2026-10-20 20:09:20 [INFO ] [deepseek_web]   Deleted: 0036_5550315126992877136202.jpg
+2026-10-20 20:09:25 [INFO ] [deepseek_web] [37/132] 女士万圣节休闲裙
+2026-10-20 20:09:25 [INFO ] [deepseek_web]   Downloaded: 0037_0850446316484715847490.jpg
+2026-10-20 20:09:25 [INFO ] [deepseek_web]   Prefetching next image (38/132)
+2026-10-20 20:09:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:09:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:09:55 [INFO ] [deepseek_web]   Response: 树木城堡图案印花 宽大伞形裙摆 袖口图案拼接 附带尖顶女巫帽 女士长袖连衣裙 修身版型 圆领套头款式 万圣节角色扮演服
+2026-10-20 20:09:55 [INFO ] [deepseek_web]   Deleted: 0037_0850446316484715847490.jpg
+2026-10-20 20:10:00 [INFO ] [deepseek_web] [38/132] 圣诞节节日氛围感女童可爱表演服连衣裙套装（3-9岁）
+2026-10-20 20:10:00 [INFO ] [deepseek_web]   Downloaded: 0038_9700328140322114232476.jpg
+2026-10-20 20:10:00 [INFO ] [deepseek_web]   Prefetching next image (39/132)
+2026-10-20 20:10:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:10:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:10:29 [INFO ] [deepseek_web]   Response: 尖顶精灵帽 胸前字母刺绣 袖口绒毛拼接 背带式结构 蓬蓬裙摆 女童角色扮演连衣裙套装 常规版型 长袖圆领 套头款式 撞色拼接 圣诞节派对
+2026-10-20 20:10:29 [INFO ] [deepseek_web]   Deleted: 0038_9700328140322114232476.jpg
+2026-10-20 20:10:34 [INFO ] [deepseek_web] [39/132] 万圣节紫色女巫cos套装成人魔法师装扮巫婆裙
+2026-10-20 20:10:34 [INFO ] [deepseek_web]   Downloaded: 0039_6990819162512190711866.jpg
+2026-10-20 20:10:34 [INFO ] [deepseek_web]   Prefetching next image (40/132)
+2026-10-20 20:10:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:10:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:11:03 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 胸前交叉绑带 前短后长不规则下摆 网纱拼接短袖 附带扫帚配件 女士角色扮演连衣裙套装 修身版型 套头款式
+2026-10-20 20:11:03 [INFO ] [deepseek_web]   Deleted: 0039_6990819162512190711866.jpg
+2026-10-20 20:11:08 [INFO ] [deepseek_web] [40/132] 万圣节儿童服装天使恶魔连衣裙女巫吸血鬼精灵童装演出服
+2026-10-20 20:11:08 [INFO ] [deepseek_web]   Downloaded: 0040_3800256044001627628174.jpg
+2026-10-20 20:11:08 [INFO ] [deepseek_web]   Prefetching next image (41/132)
+2026-10-20 20:11:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:11:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:11:37 [INFO ] [deepseek_web]   Response: 羽毛翅膀装饰 蕾丝颈圈 网纱拼接长袖 多层蕾丝裙摆 女童角色扮演连衣裙套装 常规版型 圆领套头款式 长袖 中长款 万圣节派对
+2026-10-20 20:11:37 [INFO ] [deepseek_web]   Deleted: 0040_3800256044001627628174.jpg
+2026-10-20 20:11:42 [INFO ] [deepseek_web] [41/132] 女童海盗连衣裙
+2026-10-20 20:11:42 [INFO ] [deepseek_web]   Downloaded: 0041_3031033163058611711145.jpg
+2026-10-20 20:11:42 [INFO ] [deepseek_web]   Prefetching next image (42/132)
+2026-10-20 20:11:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:11:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:12:11 [INFO ] [deepseek_web]   Response: 附带海盗帽 一字肩抽褶领口 宽大喇叭长袖 宽幅松紧收腰 女童角色扮演连衣裙套装 常规版型 中长款 套头款式 纯色
+2026-10-20 20:12:11 [INFO ] [deepseek_web]   Deleted: 0041_3031033163058611711145.jpg
+2026-10-20 20:12:16 [INFO ] [deepseek_web] [42/132] 儿童连衣裙3-14Y
+2026-10-20 20:12:16 [INFO ] [deepseek_web]   Downloaded: 0042_2740444594907916989115.jpg
+2026-10-20 20:12:16 [INFO ] [deepseek_web]   Prefetching next image (43/132)
+2026-10-20 20:12:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:12:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:12:45 [INFO ] [deepseek_web]   Response: 幽灵读书图案印花 下摆明线装饰 拼接收腰剪裁 A字伞形裙摆 女童长袖连衣裙 常规版型 圆领套头款式 中长款
+2026-10-20 20:12:45 [INFO ] [deepseek_web]   Deleted: 0042_2740444594907916989115.jpg
+2026-10-20 20:12:50 [INFO ] [deepseek_web] [43/132] 万圣节儿童成人 TUTU 蓬蓬裙套装 彩色网纱半身裙节日派对 cosplay 装扮服饰
+2026-10-20 20:12:50 [INFO ] [deepseek_web]   Downloaded: 0043_8050448109423619189220.jpg
+2026-10-20 20:12:50 [INFO ] [deepseek_web]   Prefetching next image (44/132)
+2026-10-20 20:12:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:13:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:13:20 [INFO ] [deepseek_web]   Response: 幽灵脸图案印花 袖口拼接条纹 宽幅松紧腰头 女童T恤蓬蓬裙两件套 常规版型 圆领短袖 套头款式 网纱半身裙
+2026-10-20 20:13:20 [INFO ] [deepseek_web]   Deleted: 0043_8050448109423619189220.jpg
+2026-10-20 20:13:25 [INFO ] [deepseek_web] [44/132] 万圣节儿童服装南瓜装稻草人服装农场田园风装扮女童连衣裙猎人装 4-12y
+2026-10-20 20:13:25 [INFO ] [deepseek_web]   Downloaded: 0044_0991116042471338748471.jpg
+2026-10-20 20:13:25 [INFO ] [deepseek_web]   Prefetching next image (45/132)
+2026-10-20 20:13:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:13:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:13:54 [INFO ] [deepseek_web]   Response: 向日葵装饰尖顶帽 背带式围裙前襟 胸前方形口袋 格纹拼接长袖 领口蝴蝶结装饰 腰部抽绳系带 裙摆拼接荷叶边 女童角色扮演连衣裙套装 常规版型 套头款式
+2026-10-20 20:13:54 [INFO ] [deepseek_web]   Deleted: 0044_0991116042471338748471.jpg
+2026-10-20 20:13:59 [INFO ] [deepseek_web] [45/132] 女童中世纪公主裙万圣节儿童文艺复兴宫廷风角色扮演舞台表演出服 8-14y
+2026-10-20 20:13:59 [INFO ] [deepseek_web]   Downloaded: 0045_4651008430274921406562.jpg
+2026-10-20 20:13:59 [INFO ] [deepseek_web]   Prefetching next image (46/132)
+2026-10-20 20:13:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:14:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:14:28 [INFO ] [deepseek_web]   Response: 带皇冠头饰 胸前刺绣贴花 泡泡袖拼接喇叭长袖 多层网纱拼接裙摆 腰部装饰边 女童角色扮演连衣裙套装 修身版型 方领套头款式 长款 宫廷风舞台表演服
+2026-10-20 20:14:28 [INFO ] [deepseek_web]   Deleted: 0045_4651008430274921406562.jpg
+2026-10-20 20:14:33 [INFO ] [deepseek_web] [46/132] 黑色猫咪女连衣裙万圣节服装cosplay 猫耳帽子尾巴套装舞台派对服
+2026-10-20 20:14:33 [INFO ] [deepseek_web]   Downloaded: 0046_6331119040201313480220.jpg
+2026-10-20 20:14:33 [INFO ] [deepseek_web]   Prefetching next image (47/132)
+2026-10-20 20:14:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:14:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:15:02 [INFO ] [deepseek_web]   Response: 猫耳连帽 附带猫爪手套 金属带扣腰带 网纱拼接裙摆 角色扮演连帽连衣裙套装 女士 修身版型 长袖套头款式 短裙 纯色
+2026-10-20 20:15:02 [INFO ] [deepseek_web]   Deleted: 0046_6331119040201313480220.jpg
+2026-10-20 20:15:07 [INFO ] [deepseek_web] [47/132] 皮质大摆裙女夜店舞台表演服百褶裙
+2026-10-20 20:15:07 [INFO ] [deepseek_web]   Downloaded: 0047_6961123496021279662203.jpg
+2026-10-20 20:15:07 [INFO ] [deepseek_web]   Prefetching next image (48/132)
+2026-10-20 20:15:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:15:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:15:36 [INFO ] [deepseek_web]   Response: 亮面皮革质感面料 宽幅高腰头设计 细密垂坠百褶结构 A字伞形大裙摆 女士百褶半身裙 常规版型 短裙 套穿款式 纯色
+2026-10-20 20:15:36 [INFO ] [deepseek_web]   Deleted: 0047_6961123496021279662203.jpg
+2026-10-20 20:15:41 [INFO ] [deepseek_web] [48/132] 女士pu半身包臀裙
+2026-10-20 20:15:41 [INFO ] [deepseek_web]   Downloaded: 0048_1670719351501928662733.jpg
+2026-10-20 20:15:41 [INFO ] [deepseek_web]   Prefetching next image (49/132)
+2026-10-20 20:15:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:15:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:16:11 [INFO ] [deepseek_web]   Response: 侧开衩设计 腰部抽褶堆叠 亮面皮革材质 女士包臀半身裙 修身版型 高腰剪裁 中长裙摆 套穿款式 纯色
+2026-10-20 20:16:11 [INFO ] [deepseek_web]   Deleted: 0048_1670719351501928662733.jpg
+2026-10-20 20:16:16 [INFO ] [deepseek_web] [49/132] 女士性感方领万圣节骷颅头蕾丝绑带不规则蝙蝠袖连衣裙
+2026-10-20 20:16:16 [INFO ] [deepseek_web]   Downloaded: 0049_9460552297094160453203.jpg
+2026-10-20 20:16:16 [INFO ] [deepseek_web]   Prefetching next image (50/132)
+2026-10-20 20:16:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:16:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:16:45 [INFO ] [deepseek_web]   Response: 胸前交叉绑带 宽大喇叭袖 前短后长不规则下摆 骷髅图案拼接 女士长袖连衣裙 修身版型 方领套头款式 中长款
+2026-10-20 20:16:45 [INFO ] [deepseek_web]   Deleted: 0049_9460552297094160453203.jpg
+2026-10-20 20:16:50 [INFO ] [deepseek_web] [50/132] 女士骨架丝绒裙2
+2026-10-20 20:16:50 [INFO ] [deepseek_web]   Downloaded: 0050_0520903056354019543662.jpg
+2026-10-20 20:16:50 [INFO ] [deepseek_web]   Prefetching next image (51/132)
+2026-10-20 20:16:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:17:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:17:19 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案拼接 鱼尾拖地裙摆 天鹅绒质感 女士长款连衣裙 修身版型 圆领长袖 套头款式 包臀收腰
+2026-10-20 20:17:19 [INFO ] [deepseek_web]   Deleted: 0050_0520903056354019543662.jpg
+2026-10-20 20:17:24 [INFO ] [deepseek_web] [51/132] 万圣节半高领休闲裙
+2026-10-20 20:17:24 [INFO ] [deepseek_web]   Downloaded: 0051_9910259454081654668733.jpg
+2026-10-20 20:17:24 [INFO ] [deepseek_web]   Prefetching next image (52/132)
+2026-10-20 20:17:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:17:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:17:53 [INFO ] [deepseek_web]   Response: 骷髅骨架印花 花卉图案印花 紧身包臀剪裁 女士连衣短裙 修身版型 长袖 半高圆领 套头款式
+2026-10-20 20:17:53 [INFO ] [deepseek_web]   Deleted: 0051_9910259454081654668733.jpg
+2026-10-20 20:17:58 [INFO ] [deepseek_web] [52/132] 万圣节女童复古碎花裙
+2026-10-20 20:17:58 [INFO ] [deepseek_web]   Downloaded: 0052_1290441035494017541338.jpg
+2026-10-20 20:17:58 [INFO ] [deepseek_web]   Prefetching next image (53/132)
+2026-10-20 20:17:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:18:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:18:28 [INFO ] [deepseek_web]   Response: 领口蕾丝花边 泡泡短袖 花卉印花 裙摆蕾丝拼接 女童连衣裙 女童 常规版型 立领 短袖 套头款式 中长裙
+2026-10-20 20:18:28 [INFO ] [deepseek_web]   Deleted: 0052_1290441035494017541338.jpg
+2026-10-20 20:18:33 [INFO ] [deepseek_web] [53/132] 万圣节血腥印花女裙
+2026-10-20 20:18:33 [INFO ] [deepseek_web]   Downloaded: 0053_6730442191845198699680.jpg
+2026-10-20 20:18:33 [INFO ] [deepseek_web]   Prefetching next image (54/132)
+2026-10-20 20:18:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:18:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:19:02 [INFO ] [deepseek_web]   Response: 双细吊带 胸前骨骼图案印花 高腰拼接剪裁 玫瑰花卉印花 大摆伞裙结构 女士吊带连衣裙 修身版型 无袖 中长款
+2026-10-20 20:19:02 [INFO ] [deepseek_web]   Deleted: 0053_6730442191845198699680.jpg
+2026-10-20 20:19:07 [INFO ] [deepseek_web] [54/132] 万圣节印花中长裙
+2026-10-20 20:19:07 [INFO ] [deepseek_web]   Downloaded: 0054_3490310163501910988375.jpg
+2026-10-20 20:19:07 [INFO ] [deepseek_web]   Prefetching next image (55/132)
+2026-10-20 20:19:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:19:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:19:36 [INFO ] [deepseek_web]   Response: 骨骼图案印花 火焰纹拼接 宽大蝙蝠袖 V型领 女士连衣短裙 修身版型 套头款式 长袖 包臀剪裁 万圣节派对服
+2026-10-20 20:19:36 [INFO ] [deepseek_web]   Deleted: 0054_3490310163501910988375.jpg
+2026-10-20 20:19:41 [INFO ] [deepseek_web] [55/132] 万圣节女士印花连衣裙
+2026-10-20 20:19:41 [INFO ] [deepseek_web]   Downloaded: 0055_8610452275425389054986.jpg
+2026-10-20 20:19:41 [INFO ] [deepseek_web]   Prefetching next image (56/132)
+2026-10-20 20:19:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:19:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:20:10 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案印花 飞溅印花 领口蕾丝拼接 腰部抽褶设计 女士连衣短裙 修身版型 圆领长袖 套头款式 包臀剪裁
+2026-10-20 20:20:10 [INFO ] [deepseek_web]   Deleted: 0055_8610452275425389054986.jpg
+2026-10-20 20:20:15 [INFO ] [deepseek_web] [56/132] 女士万圣节印花裙
+2026-10-20 20:20:15 [INFO ] [deepseek_web]   Downloaded: 0056_0350339344963120047965.jpg
+2026-10-20 20:20:15 [INFO ] [deepseek_web]   Prefetching next image (57/132)
+2026-10-20 20:20:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:20:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:20:44 [INFO ] [deepseek_web]   Response: 骨骼图案印花 玫瑰花卉图案 紧身包臀剪裁 女士长袖连衣裙 修身版型 圆领套头款式 短裙 万圣节派对角色扮演服
+2026-10-20 20:20:44 [INFO ] [deepseek_web]   Deleted: 0056_0350339344963120047965.jpg
+2026-10-20 20:20:49 [INFO ] [deepseek_web] [57/132] 女士万圣节印花长裙
+2026-10-20 20:20:49 [INFO ] [deepseek_web]   Downloaded: 0057_1620446091254158704486.jpg
+2026-10-20 20:20:49 [INFO ] [deepseek_web]   Prefetching next image (58/132)
+2026-10-20 20:20:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:21:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:21:18 [INFO ] [deepseek_web]   Response: 蜘蛛网印花 蜘蛛图案印花 手印装饰 宽大喇叭长袖 鱼尾拖地裙摆 女士长款连衣裙 修身版型 大圆领 套头款式 万圣节角色扮演服
+2026-10-20 20:21:18 [INFO ] [deepseek_web]   Deleted: 0057_1620446091254158704486.jpg
+2026-10-20 20:21:23 [INFO ] [deepseek_web] [58/132] 万圣节搞怪鬼脸小幽灵连帽珊瑚绒睡衣女款冬季新款加厚毛绒睡裙
+2026-10-20 20:21:23 [INFO ] [deepseek_web]   Downloaded: 0058_6131027385025158747397.jpg
+2026-10-20 20:21:23 [INFO ] [deepseek_web]   Prefetching next image (59/132)
+2026-10-20 20:21:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:21:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:21:53 [INFO ] [deepseek_web]   Response: 搞怪鬼脸图案 立体吐舌装饰 连帽带耳结构 星星图案点缀 华夫格毛绒面料 女士连帽睡裙 宽松版型 长袖套头款式 中长款
+2026-10-20 20:21:53 [INFO ] [deepseek_web]   Deleted: 0058_6131027385025158747397.jpg
+2026-10-20 20:21:58 [INFO ] [deepseek_web] [59/132] 万圣节女士印花休闲裙
+2026-10-20 20:21:58 [INFO ] [deepseek_web]   Downloaded: 0059_3291128019191019213655.jpg
+2026-10-20 20:21:58 [INFO ] [deepseek_web]   Prefetching next image (60/132)
+2026-10-20 20:21:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:22:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:22:27 [INFO ] [deepseek_web]   Response: 骨骼图案印花 蜘蛛网图案印花 花卉图案点缀 领口包边拼接 女士长款连衣裙 常规版型 V型领 短袖 套头款式 大摆裙摆
+2026-10-20 20:22:27 [INFO ] [deepseek_web]   Deleted: 0059_3291128019191019213655.jpg
+2026-10-20 20:22:32 [INFO ] [deepseek_web] [60/132] Cosplay欧洲复古宫廷丝绒连衣裙
+2026-10-20 20:22:32 [INFO ] [deepseek_web]   Downloaded: 0060_8010913305886810299913.jpg
+2026-10-20 20:22:32 [INFO ] [deepseek_web]   Prefetching next image (61/132)
+2026-10-20 20:22:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:22:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:23:01 [INFO ] [deepseek_web]   Response: 一字肩宽翻领 胸前宝石装饰 交叉镶边腰带 宽大垂坠喇叭袖 女士复古丝绒连衣裙 修身版型 长袖套头款式 长款 宫廷风角色扮演服
+2026-10-20 20:23:01 [INFO ] [deepseek_web]   Deleted: 0060_8010913305886810299913.jpg
+2026-10-20 20:23:06 [INFO ] [deepseek_web] [61/132] 万圣节儿童表演裙套装 修女风裙女巫Cos
+2026-10-20 20:23:06 [INFO ] [deepseek_web]   Downloaded: 0061_4921000199634519646280.jpg
+2026-10-20 20:23:06 [INFO ] [deepseek_web]   Prefetching next image (62/132)
+2026-10-20 20:23:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:23:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:23:35 [INFO ] [deepseek_web]   Response: 修女头巾 胸前十字架 不规则锯齿下摆 领口蝴蝶结系带 女童角色扮演连衣裙套装 常规版型 长袖方领 套头款式 拼接裙摆 万圣节表演服
+2026-10-20 20:23:35 [INFO ] [deepseek_web]   Deleted: 0061_4921000199634519646280.jpg
+2026-10-20 20:23:40 [INFO ] [deepseek_web] [62/132] 万圣节服装南瓜裙女孩女仆装大码连衣裙
+2026-10-20 20:23:40 [INFO ] [deepseek_web]   Downloaded: 0062_7270350460912721320824.jpg
+2026-10-20 20:23:40 [INFO ] [deepseek_web]   Prefetching next image (63/132)
+2026-10-20 20:23:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:23:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:24:09 [INFO ] [deepseek_web]   Response: 大蝴蝶结发饰 胸前大蝴蝶结 背带围裙结构 多层拼接裙摆 女仆装连衣裙套装 女士 修身版型 方领短袖 套头款式 撞色拼接
+2026-10-20 20:24:09 [INFO ] [deepseek_web]   Deleted: 0062_7270350460912721320824.jpg
+2026-10-20 20:24:14 [INFO ] [deepseek_web] [63/132] 万圣节COS服暗黑系泡泡袖女仆服连衣裙日系歌特女仆装
+2026-10-20 20:24:14 [INFO ] [deepseek_web]   Downloaded: 0063_8820554489853714021363.jpg
+2026-10-20 20:24:14 [INFO ] [deepseek_web]   Prefetching next image (64/132)
+2026-10-20 20:24:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:24:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:24:44 [INFO ] [deepseek_web]   Response: 附带女仆发饰 胸前蕾丝拼接 泡泡袖 侧边层叠褶皱 裙摆蕾丝包边 女仆装连衣裙套装 女士 修身版型 长袖立领 套头款式 撞色拼接
+2026-10-20 20:24:44 [INFO ] [deepseek_web]   Deleted: 0063_8820554489853714021363.jpg
+2026-10-20 20:24:49 [INFO ] [deepseek_web] [64/132] 万圣节服饰恐怖医院手术室鬼护士舞台演出服
+2026-10-20 20:24:49 [INFO ] [deepseek_web]   Downloaded: 0064_5860447077063716532215.jpg
+2026-10-20 20:24:49 [INFO ] [deepseek_web]   Prefetching next image (65/132)
+2026-10-20 20:24:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:25:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:25:18 [INFO ] [deepseek_web]   Response: 十字图案护士帽 飞溅印花 不规则锯齿下摆 拼接剪裁 护士服连衣裙套装 女士 常规版型 长袖圆领 套头款式 中长款 万圣节派对服装
+2026-10-20 20:25:18 [INFO ] [deepseek_web]   Deleted: 0064_5860447077063716532215.jpg
+2026-10-20 20:25:23 [INFO ] [deepseek_web] [65/132] 万圣节服饰恐怖医院鬼护士舞台演出服
+2026-10-20 20:25:23 [INFO ] [deepseek_web]   Downloaded: 0065_9010441275493648256221.jpg
+2026-10-20 20:25:23 [INFO ] [deepseek_web]   Prefetching next image (66/132)
+2026-10-20 20:25:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:25:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:25:52 [INFO ] [deepseek_web]   Response: 十字图案护士帽 飞溅印花 不规则锯齿下摆 附带条纹长袜 护士服连衣裙套装 女士 常规版型 短袖圆领 套头款式 中长款
+2026-10-20 20:25:52 [INFO ] [deepseek_web]   Deleted: 0065_9010441275493648256221.jpg
+2026-10-20 20:25:57 [INFO ] [deepseek_web] [66/132] cos服儿童长款礼服裙万圣节cosplay
+2026-10-20 20:25:57 [INFO ] [deepseek_web]   Downloaded: 0066_3781021484164618119425.jpg
+2026-10-20 20:25:57 [INFO ] [deepseek_web]   Prefetching next image (67/132)
+2026-10-20 20:25:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:26:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:26:26 [INFO ] [deepseek_web]   Response: 大蝴蝶结发箍 胸前领带图案 多层条纹网纱拼接 裙摆扇形装饰 背带式结构 女童吊带蓬蓬裙套装 女童 常规版型 无袖 短裙 撞色拼接
+2026-10-20 20:26:26 [INFO ] [deepseek_web]   Deleted: 0066_3781021484164618119425.jpg
+2026-10-20 20:26:31 [INFO ] [deepseek_web] [67/132] 女童海盗休闲裙
+2026-10-20 20:26:31 [INFO ] [deepseek_web]   Downloaded: 0067_2241034337595964184791.jpg
+2026-10-20 20:26:31 [INFO ] [deepseek_web]   Prefetching next image (68/132)
+2026-10-20 20:26:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:26:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:27:00 [INFO ] [deepseek_web]   Response: 附带海盗帽 一字肩抽褶领口 宽大喇叭长袖 宽幅松紧收腰 荷叶边拼接裙摆 女童角色扮演连衣裙 常规版型 中长款 套头款式 纯色
+2026-10-20 20:27:00 [INFO ] [deepseek_web]   Deleted: 0067_2241034337595964184791.jpg
+2026-10-20 20:27:05 [INFO ] [deepseek_web] [68/132] 女童万圣节长袖连衣裙
+2026-10-20 20:27:05 [INFO ] [deepseek_web]   Downloaded: 0068_8190320465241871922984.jpg
+2026-10-20 20:27:05 [INFO ] [deepseek_web]   Prefetching next image (69/132)
+2026-10-20 20:27:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:27:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:27:35 [INFO ] [deepseek_web]   Response: 领口荷叶边拼接 胸前蜘蛛网印花 裙摆动物图案印花 腰部蝴蝶结装饰 女童长袖连衣裙 常规版型 圆领套头款式 中长款
+2026-10-20 20:27:35 [INFO ] [deepseek_web]   Deleted: 0068_8190320465241871922984.jpg
+2026-10-20 20:27:40 [INFO ] [deepseek_web] [69/132] 万圣节服装成人女护士角色扮演服开衫式性感情趣护士裙
+2026-10-20 20:27:40 [INFO ] [deepseek_web]   Downloaded: 0069_1510325514576312043037.jpg
+2026-10-20 20:27:40 [INFO ] [deepseek_web]   Prefetching next image (70/132)
+2026-10-20 20:27:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:27:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:28:09 [INFO ] [deepseek_web]   Response: 附带护士帽 腹部十字徽章口袋 深V交叉门襟 附带注射器配件 护士服连衣裙套装 女士 修身版型 短袖 短裙
+2026-10-20 20:28:09 [INFO ] [deepseek_web]   Deleted: 0069_1510325514576312043037.jpg
+2026-10-20 20:28:14 [INFO ] [deepseek_web] [70/132] 万圣节亲子南瓜服装亲子背带南瓜扮演服舞台表演派对cos搞怪服装
+2026-10-20 20:28:14 [INFO ] [deepseek_web]   Downloaded: 0070_2330441313732717477626.jpg
+2026-10-20 20:28:14 [INFO ] [deepseek_web]   Prefetching next image (71/132)
+2026-10-20 20:28:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:28:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:28:43 [INFO ] [deepseek_web]   Response: 附带南瓜造型帽子 背带式围裙结构 南瓜鬼脸图案印花 瓣状南瓜下摆 女士背带裙套装 常规版型 圆领短袖内搭 套穿款式
+2026-10-20 20:28:43 [INFO ] [deepseek_web]   Deleted: 0070_2330441313732717477626.jpg
+2026-10-20 20:28:48 [INFO ] [deepseek_web] [71/132] 儿童紫色带灯连衣裙带钻女生网纱长袖纱裙舞台表演 4-10岁
+2026-10-20 20:28:48 [INFO ] [deepseek_web]   Downloaded: 0071_0940344115524540974763.jpg
+2026-10-20 20:28:48 [INFO ] [deepseek_web]   Prefetching next image (72/132)
+2026-10-20 20:28:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:28:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:29:17 [INFO ] [deepseek_web]   Response: 亮片波点拼接 蝴蝶结装饰 裙摆发光设计 网纱拼接长袖 女童连衣裙 常规版型 圆领套头款式 大摆裙
+2026-10-20 20:29:17 [INFO ] [deepseek_web]   Deleted: 0071_0940344115524540974763.jpg
+2026-10-20 20:29:22 [INFO ] [deepseek_web] [72/132] 万圣节儿童服装女童礼服角色女巫吸血鬼演出服 4-13岁
+2026-10-20 20:29:22 [INFO ] [deepseek_web]   Downloaded: 0072_6530329516394595538369.jpg
+2026-10-20 20:29:22 [INFO ] [deepseek_web]   Prefetching next image (73/132)
+2026-10-20 20:29:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:29:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:29:51 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 亮片图案拼接 尖角不规则下摆 腰部蝴蝶结装饰 女童角色扮演连衣裙套装 女童 常规版型 泡泡长袖 圆领 套头款式
+2026-10-20 20:29:51 [INFO ] [deepseek_web]   Deleted: 0072_6530329516394595538369.jpg
+2026-10-20 20:29:56 [INFO ] [deepseek_web] [73/132] 儿童幽灵发光鬼脸披风
+2026-10-20 20:29:56 [INFO ] [deepseek_web]   Downloaded: 0073_1350546111084019715266.jpg
+2026-10-20 20:29:56 [INFO ] [deepseek_web]   Prefetching next image (74/132)
+2026-10-20 20:29:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:30:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:30:25 [INFO ] [deepseek_web]   Response: 发光鬼脸图案 不规则锯齿下摆 宽大斗篷廓形 女童角色扮演披风 宽松版型 圆领套头款式 中长款 夜光功能
+2026-10-20 20:30:25 [INFO ] [deepseek_web]   Deleted: 0073_1350546111084019715266.jpg
+2026-10-20 20:30:30 [INFO ] [deepseek_web] [74/132] 儿童女巫披风cos服
+2026-10-20 20:30:30 [INFO ] [deepseek_web]   Downloaded: 0074_6900146168251842247207.jpg
+2026-10-20 20:30:30 [INFO ] [deepseek_web]   Prefetching next image (75/132)
+2026-10-20 20:30:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:30:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:30:59 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 不规则锯齿下摆 毛绒袖口拼接 胸前贴章装饰 附带扫帚 女童角色扮演连衣裙套装 女童 常规版型 圆领长袖 套头款式
+2026-10-20 20:30:59 [INFO ] [deepseek_web]   Deleted: 0074_6900146168251842247207.jpg
+2026-10-20 20:31:04 [INFO ] [deepseek_web] [75/132] 万圣节儿童cos服装儿童表演女巫装扮服装 4-12岁
+2026-10-20 20:31:04 [INFO ] [deepseek_web]   Downloaded: 0075_8920314317514412009193.jpg
+2026-10-20 20:31:04 [INFO ] [deepseek_web]   Prefetching next image (76/132)
+2026-10-20 20:31:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:31:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:31:34 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 胸前交叉绑带 条纹围裙装饰 多层荷叶边裙摆 角色扮演连衣裙套装 女童 常规版型 长袖方领 套头款式 中长款
+2026-10-20 20:31:34 [INFO ] [deepseek_web]   Deleted: 0075_8920314317514412009193.jpg
+2026-10-20 20:31:39 [INFO ] [deepseek_web] [76/132] 万圣节吸血鬼服装
+2026-10-20 20:31:39 [INFO ] [deepseek_web]   Downloaded: 0076_0081054572071014029097.jpg
+2026-10-20 20:31:39 [INFO ] [deepseek_web]   Prefetching next image (77/132)
+2026-10-20 20:31:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:31:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:32:08 [INFO ] [deepseek_web]   Response: 附带恶魔角头饰 胸前骷髅图案印花 撞色拼接袖口下摆 附带三叉戟配件 儿童连帽长袍 宽松版型 长袖套头款式 万圣节角色扮演服
+2026-10-20 20:32:08 [INFO ] [deepseek_web]   Deleted: 0076_0081054572071014029097.jpg
+2026-10-20 20:32:13 [INFO ] [deepseek_web] [77/132] 儿童舞台cos服装
+2026-10-20 20:32:13 [INFO ] [deepseek_web]   Downloaded: 0077_5541000503384577335623.jpg
+2026-10-20 20:32:13 [INFO ] [deepseek_web]   Prefetching next image (78/132)
+2026-10-20 20:32:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:32:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:32:42 [INFO ] [deepseek_web]   Response: 亮片装饰礼帽 亮片马甲上衣 长手套魔术棒配件 翻折立领披风 领口蝴蝶结装饰 女童舞台角色扮演套装 常规版型 无袖短裙 套穿款式 撞色拼接
+2026-10-20 20:32:42 [INFO ] [deepseek_web]   Deleted: 0077_5541000503384577335623.jpg
+2026-10-20 20:32:47 [INFO ] [deepseek_web] [78/132] 女童装扮cos裙
+2026-10-20 20:32:47 [INFO ] [deepseek_web]   Downloaded: 0078_0470439193652969577226.jpg
+2026-10-20 20:32:47 [INFO ] [deepseek_web]   Prefetching next image (79/132)
+2026-10-20 20:32:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:32:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:33:16 [INFO ] [deepseek_web]   Response: 驯鹿角发箍 亮片拼接上衣 挂脖颈带 腰部蝴蝶结 多层网纱裙摆 女童角色扮演连衣裙套装 女童 常规版型 无袖 短裙
+2026-10-20 20:33:16 [INFO ] [deepseek_web]   Deleted: 0078_0470439193652969577226.jpg
+2026-10-20 20:33:21 [INFO ] [deepseek_web] [79/132] 女童cos装扮裙
+2026-10-20 20:33:21 [INFO ] [deepseek_web]   Downloaded: 0079_0810334369292215703108.jpg
+2026-10-20 20:33:21 [INFO ] [deepseek_web]   Prefetching next image (80/132)
+2026-10-20 20:33:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:33:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:33:50 [INFO ] [deepseek_web]   Response: 蝙蝠造型眼罩 网纱立领拼接 亮片网格上衣 腰部宽幅腰带 多层网纱蓬蓬裙 女童角色扮演连衣裙套装 常规版型 无袖短裙 套穿款式
+2026-10-20 20:33:50 [INFO ] [deepseek_web]   Deleted: 0079_0810334369292215703108.jpg
+2026-10-20 20:33:55 [INFO ] [deepseek_web] [80/132] 女士万圣节哥特风服饰绒面蕾丝拼接半裙
+2026-10-20 20:33:55 [INFO ] [deepseek_web]   Downloaded: 0080_5410659118594399012514.jpg
+2026-10-20 20:33:55 [INFO ] [deepseek_web]   Prefetching next image (81/132)
+2026-10-20 20:33:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:34:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:34:24 [INFO ] [deepseek_web]   Response: 蕾丝拼接 多层荷叶边下摆 腰部抽褶设计 绒面材质 女士半身长裙 修身版型 高腰 套穿款式 长款 哥特风
+2026-10-20 20:34:24 [INFO ] [deepseek_web]   Deleted: 0080_5410659118594399012514.jpg
+2026-10-20 20:34:29 [INFO ] [deepseek_web] [81/132] 女士秋冬万圣节搞怪血渍印花圆领长袖套头无帽卫衣裙 (加绒)
+2026-10-20 20:34:29 [INFO ] [deepseek_web]   Downloaded: 0081_6300841574195441770999.jpg
+2026-10-20 20:34:29 [INFO ] [deepseek_web]   Prefetching next image (82/132)
+2026-10-20 20:34:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:34:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:35:00 [INFO ] [deepseek_web]   Response: 血渍飞溅印花 标语字母印花 不对称斜向下摆 圆领长袖无帽卫衣裙 女士 宽松版型 套头款式 罗纹袖口 加绒短裙
+2026-10-20 20:35:00 [INFO ] [deepseek_web]   Deleted: 0081_6300841574195441770999.jpg
+2026-10-20 20:35:05 [INFO ] [deepseek_web] [82/132] 儿童万圣节南瓜表演服装橙色网纱tutu公主裙
+2026-10-20 20:35:05 [INFO ] [deepseek_web]   Downloaded: 0082_4311152190481214733518.jpg
+2026-10-20 20:35:05 [INFO ] [deepseek_web]   Prefetching next image (83/132)
+2026-10-20 20:35:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:35:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:35:34 [INFO ] [deepseek_web]   Response: 亮片南瓜脸图案 网纱拼接领口 腰部网纱装饰 多层蓬蓬裙摆 附带尖顶女巫帽 女童角色扮演连衣裙套装 常规版型 无袖圆领 套头款式 短裙
+2026-10-20 20:35:34 [INFO ] [deepseek_web]   Deleted: 0082_4311152190481214733518.jpg
+2026-10-20 20:35:39 [INFO ] [deepseek_web] [83/132] 万圣节儿童cos套装
+2026-10-20 20:35:39 [INFO ] [deepseek_web]   Downloaded: 0083_5660426116546610322055.jpg
+2026-10-20 20:35:39 [INFO ] [deepseek_web]   Prefetching next image (84/132)
+2026-10-20 20:35:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:35:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:36:08 [INFO ] [deepseek_web]   Response: 南瓜造型发箍 亮片南瓜图案 腰部蝴蝶结装饰 多层网纱拼接裙摆 女童角色扮演连衣裙套装 女童 常规版型 方领 无袖 套头款式 短裙 波点拼接
+2026-10-20 20:36:08 [INFO ] [deepseek_web]   Deleted: 0083_5660426116546610322055.jpg
+2026-10-20 20:36:13 [INFO ] [deepseek_web] [84/132] 女童时尚休闲系带一字肩荷叶边海岛风裙子（3-12岁）
+2026-10-20 20:36:13 [INFO ] [deepseek_web]   Downloaded: 0084_4870231364661776803810.jpg
+2026-10-20 20:36:13 [INFO ] [deepseek_web]   Prefetching next image (85/132)
+2026-10-20 20:36:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:36:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:36:42 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 胸前细绳系带 宽大喇叭袖 不规则下摆 女童连衣裙 常规版型 长袖套头款式 纯色 A字裙摆
+2026-10-20 20:36:42 [INFO ] [deepseek_web]   Deleted: 0084_4870231364661776803810.jpg
+2026-10-20 20:36:47 [INFO ] [deepseek_web] [85/132] 万圣节女童黑猫印花长袖紫黑条纹飞袖网纱裙儿童派对公主连衣裙(3-7Y)
+2026-10-20 20:36:47 [INFO ] [deepseek_web]   Downloaded: 0085_2681035075438510094070.jpg
+2026-10-20 20:36:47 [INFO ] [deepseek_web]   Prefetching next image (86/132)
+2026-10-20 20:36:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:36:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:37:16 [INFO ] [deepseek_web]   Response: 猫脸图案印花 条纹拼接长袖 荷叶边肩部 网纱蓬蓬裙摆 女童长袖连衣裙 常规版型 圆领套头款式 收腰剪裁 中长款 派对扮演服
+2026-10-20 20:37:16 [INFO ] [deepseek_web]   Deleted: 0085_2681035075438510094070.jpg
+2026-10-20 20:37:21 [INFO ] [deepseek_web] [86/132] 万圣仙女束腰短裙套装
+2026-10-20 20:37:21 [INFO ] [deepseek_web]   Downloaded: 0086_7620613249904962343710.jpg
+2026-10-20 20:37:21 [INFO ] [deepseek_web]   Prefetching next image (87/132)
+2026-10-20 20:37:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:37:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:37:50 [INFO ] [deepseek_web]   Response: 心形抹胸领 正面交叉绑带 多层网纱蓬蓬裙摆 领口蝴蝶结装饰 束腰短裙套装 女士 修身版型 无袖 套穿款式 短裙
+2026-10-20 20:37:50 [INFO ] [deepseek_web]   Deleted: 0086_7620613249904962343710.jpg
+2026-10-20 20:37:55 [INFO ] [deepseek_web] [87/132] 万圣条纹束腰蓬裙套装
+2026-10-20 20:37:55 [INFO ] [deepseek_web]   Downloaded: 0087_4560600218134191834057.jpg
+2026-10-20 20:37:55 [INFO ] [deepseek_web]   Prefetching next image (88/132)
+2026-10-20 20:37:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:38:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:38:25 [INFO ] [deepseek_web]   Response: 竖条纹拼接图案 抹胸领口 胸前蝴蝶结系带 多层网纱蓬蓬裙 女士束腰短裙套装 女士 修身版型 无袖抹胸 套穿款式 短裙
+2026-10-20 20:38:25 [INFO ] [deepseek_web]   Deleted: 0087_4560600218134191834057.jpg
+2026-10-20 20:38:30 [INFO ] [deepseek_web] [88/132] 万圣印花女式长裙
+2026-10-20 20:38:30 [INFO ] [deepseek_web]   Downloaded: 0088_0611236397433510190788.jpg
+2026-10-20 20:38:30 [INFO ] [deepseek_web]   Prefetching next image (89/132)
+2026-10-20 20:38:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:38:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:38:59 [INFO ] [deepseek_web]   Response: 骨骼图案印花 玫瑰花卉图案 拼接剪裁 V型领 女士长袖连衣裙 修身版型 套头款式 收腰结构 A字大摆裙摆 万圣节派对角色扮演服
+2026-10-20 20:38:59 [INFO ] [deepseek_web]   Deleted: 0088_0611236397433510190788.jpg
+2026-10-20 20:39:04 [INFO ] [deepseek_web] [89/132] 女童万圣节印花网纱短裙cos女巫蓬蓬裙三件套
+2026-10-20 20:39:04 [INFO ] [deepseek_web]   Downloaded: 0089_5380724472942912732895.jpg
+2026-10-20 20:39:04 [INFO ] [deepseek_web]   Prefetching next image (90/132)
+2026-10-20 20:39:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:39:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:39:33 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 蝙蝠图案印花 多层网纱拼接裙摆 女童角色扮演连衣裙套装 女童 常规版型 圆领短袖 套头款式 亮面拼接包边 附带扫帚配件
+2026-10-20 20:39:33 [INFO ] [deepseek_web]   Deleted: 0089_5380724472942912732895.jpg
+2026-10-20 20:39:38 [INFO ] [deepseek_web] [90/132] 万圣节儿童cos服装女童女巫可爱百搭公主裙套装（2-13岁）
+2026-10-20 20:39:38 [INFO ] [deepseek_web]   Downloaded: 0090_5631000106395510800775.jpg
+2026-10-20 20:39:38 [INFO ] [deepseek_web]   Prefetching next image (91/132)
+2026-10-20 20:39:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:39:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:40:07 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 胸前交叉绑带 网纱拼接泡泡短袖 不规则尖角下摆 附带抽绳小包 女童角色扮演连衣裙套装 女童 常规版型 立领 短袖 套头款式 中长款
+2026-10-20 20:40:07 [INFO ] [deepseek_web]   Deleted: 0090_5631000106395510800775.jpg
+2026-10-20 20:40:12 [INFO ] [deepseek_web] [91/132] 中大女童万圣节吊带裙子 3Y-10Y
+2026-10-20 20:40:12 [INFO ] [deepseek_web]   Downloaded: 0091_4331031259397761111383.jpg
+2026-10-20 20:40:12 [INFO ] [deepseek_web]   Prefetching next image (92/132)
+2026-10-20 20:40:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:40:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:40:41 [INFO ] [deepseek_web]   Response: 南瓜图案印花 花卉图案印花 荷叶边肩带 A字大摆裙 女童吊带连衣裙 常规版型 圆领无袖 套头款式 中长款 收腰剪裁
+2026-10-20 20:40:41 [INFO ] [deepseek_web]   Deleted: 0091_4331031259397761111383.jpg
+2026-10-20 20:40:46 [INFO ] [deepseek_web] [92/132] 童万圣节血渍印花中世纪风吊带派对舞会裙(5-14岁)
+2026-10-20 20:40:46 [INFO ] [deepseek_web]   Downloaded: 0092_8081025230555511263754.jpg
+2026-10-20 20:40:46 [INFO ] [deepseek_web]   Prefetching next image (93/132)
+2026-10-20 20:40:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:40:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:41:15 [INFO ] [deepseek_web]   Response: 不对称双细吊带 V型领 飞溅晕染印花 收腰A字大摆 女童吊带连衣裙 常规版型 无袖 套头款式 中长款 万圣节派对扮演服
+2026-10-20 20:41:15 [INFO ] [deepseek_web]   Deleted: 0092_8081025230555511263754.jpg
+2026-10-20 20:41:20 [INFO ] [deepseek_web] [93/132] 女士万圣节搞怪血渍印花吊带中世纪风派对舞会裙（侧拉链）
+2026-10-20 20:41:20 [INFO ] [deepseek_web]   Downloaded: 0093_1771050228331082340590.jpg
+2026-10-20 20:41:20 [INFO ] [deepseek_web]   Prefetching next image (94/132)
+2026-10-20 20:41:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:41:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:41:50 [INFO ] [deepseek_web]   Response: 双细吊带 V型领口 飞溅印花 收腰剪裁 A字大摆 侧边拉链 女士连衣裙 修身版型 无袖款式 中长款
+2026-10-20 20:41:50 [INFO ] [deepseek_web]   Deleted: 0093_1771050228331082340590.jpg
+2026-10-20 20:41:55 [INFO ] [deepseek_web] [94/132] 万圣节女士休闲裙
+2026-10-20 20:41:55 [INFO ] [deepseek_web]   Downloaded: 0094_6610831552814211005198.jpg
+2026-10-20 20:41:55 [INFO ] [deepseek_web]   Prefetching next image (95/132)
+2026-10-20 20:41:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:42:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:42:24 [INFO ] [deepseek_web]   Response: 骨骼图案印花 双细吊带 方形领口 收腰剪裁 A字大摆 女士吊带连衣裙 修身版型 无袖 套头款式 中长款 万圣节派对扮演服
+2026-10-20 20:42:24 [INFO ] [deepseek_web]   Deleted: 0094_6610831552814211005198.jpg
+2026-10-20 20:42:29 [INFO ] [deepseek_web] [95/132] 女士万圣节长裙
+2026-10-20 20:42:30 [INFO ] [deepseek_web]   Downloaded: 0095_5530243116969813768297.jpg
+2026-10-20 20:42:30 [INFO ] [deepseek_web]   Prefetching next image (96/132)
+2026-10-20 20:42:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:42:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:42:59 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案拼接 鱼尾拖地裙摆 女士连衣裙 修身版型 圆领长袖 套头款式 长款 万圣节派对服装
+2026-10-20 20:42:59 [INFO ] [deepseek_web]   Deleted: 0095_5530243116969813768297.jpg
+2026-10-20 20:43:04 [INFO ] [deepseek_web] [96/132] 女士万圣节休闲裙
+2026-10-20 20:43:04 [INFO ] [deepseek_web]   Downloaded: 0096_3351113496707133219539.jpg
+2026-10-20 20:43:04 [INFO ] [deepseek_web]   Prefetching next image (97/132)
+2026-10-20 20:43:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:43:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:43:34 [INFO ] [deepseek_web]   Response: 对称图腾印花 底部蝙蝠图案 V型领口 宽大A字裙摆 女士长袖连衣裙 修身版型 套头款式 收腰剪裁 长款
+2026-10-20 20:43:34 [INFO ] [deepseek_web]   Deleted: 0096_3351113496707133219539.jpg
+2026-10-20 20:43:39 [INFO ] [deepseek_web] [97/132] 女士万圣节休闲裙
+2026-10-20 20:43:39 [INFO ] [deepseek_web]   Downloaded: 0097_6150735428494620651872.jpg
+2026-10-20 20:43:39 [INFO ] [deepseek_web]   Prefetching next image (98/132)
+2026-10-20 20:43:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:43:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:44:08 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案印花 装饰性图腾边框 长袖连衣裙 女士 修身版型 圆领套头款式 长款 大摆裙摆 万圣节派对服
+2026-10-20 20:44:08 [INFO ] [deepseek_web]   Deleted: 0097_6150735428494620651872.jpg
+2026-10-20 20:44:13 [INFO ] [deepseek_web] [98/132] 女士万圣节暗黑款个性骷髅印花吊带裙女
+2026-10-20 20:44:13 [INFO ] [deepseek_web]   Downloaded: 0098_5430229003881530446515.jpg
+2026-10-20 20:44:13 [INFO ] [deepseek_web]   Prefetching next image (99/132)
+2026-10-20 20:44:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:44:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:44:42 [INFO ] [deepseek_web]   Response: 大面积骷髅图案印花 领口蕾丝花边拼接 不规则破损撕裂下摆 女士吊带短裙 修身版型 细吊带 无袖套头款式 纯色 万圣节派对服
+2026-10-20 20:44:42 [INFO ] [deepseek_web]   Deleted: 0098_5430229003881530446515.jpg
+2026-10-20 20:44:47 [INFO ] [deepseek_web] [99/132] 中世纪万圣节COS复兴连衣裙捆绑束腰宫廷风长裙
+2026-10-20 20:44:47 [INFO ] [deepseek_web]   Downloaded: 0099_3001014097852454229967.jpg
+2026-10-20 20:44:47 [INFO ] [deepseek_web]   Prefetching next image (100/132)
+2026-10-20 20:44:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:44:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:45:16 [INFO ] [deepseek_web]   Response: 一字肩抽褶领口 分段式泡泡长袖 宽幅抽褶束腰 多层荷叶边裙摆 女士长款连衣裙 修身版型 套头款式 纯色 角色扮演服
+2026-10-20 20:45:16 [INFO ] [deepseek_web]   Deleted: 0099_3001014097852454229967.jpg
+2026-10-20 20:45:21 [INFO ] [deepseek_web] [100/132] 女士休闲裙荷叶边吊带连衣裙女2026夏季复古修身显瘦雪纺裙子
+2026-10-20 20:45:21 [INFO ] [deepseek_web]   Downloaded: 0100_7011111517881710090511.jpg
+2026-10-20 20:45:21 [INFO ] [deepseek_web]   Prefetching next image (101/132)
+2026-10-20 20:45:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:45:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:45:50 [INFO ] [deepseek_web]   Response: 细吊带设计 领口抽褶 多层荷叶边拼接 前短后长不规则下摆 女士雪纺吊带连衣裙 修身版型 无袖套头款式 高腰收腰剪裁 中长款 纯色
+2026-10-20 20:45:50 [INFO ] [deepseek_web]   Deleted: 0100_7011111517881710090511.jpg
+2026-10-20 20:45:55 [INFO ] [deepseek_web] [101/132] 女士Cosplay服装暗黑哥特提花纱裙黑白套装
+2026-10-20 20:45:55 [INFO ] [deepseek_web]   Downloaded: 0101_7260413290892751919197.jpg
+2026-10-20 20:45:55 [INFO ] [deepseek_web]   Prefetching next image (102/132)
+2026-10-20 20:45:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:46:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:46:24 [INFO ] [deepseek_web]   Response: 不对称撞色拼接 附带荷叶边颈圈 多层不规则网纱裙摆 束腰马甲式结构 女士角色扮演连衣裙套装 修身版型 一字肩短袖 单排扣 短裙
+2026-10-20 20:46:24 [INFO ] [deepseek_web]   Deleted: 0101_7260413290892751919197.jpg
+2026-10-20 20:46:29 [INFO ] [deepseek_web] [102/132] 塑身鱼骨宫廷风连衣裙
+2026-10-20 20:46:29 [INFO ] [deepseek_web]   Downloaded: 0102_1080323468832129187370.jpg
+2026-10-20 20:46:29 [INFO ] [deepseek_web]   Prefetching next image (103/132)
+2026-10-20 20:46:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:46:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:46:59 [INFO ] [deepseek_web]   Response: 抽褶一字肩领口 前胸细绳系带 鱼骨支撑收腰 多层荷叶边拼接下摆 泡泡短袖 女士连衣裙 修身版型 套头短裙 宫廷风角色扮演服
+2026-10-20 20:46:59 [INFO ] [deepseek_web]   Deleted: 0102_1080323468832129187370.jpg
+2026-10-20 20:47:04 [INFO ] [deepseek_web] [103/132] 女童飞袖甜美睡裙夏季休闲家居服饰万圣节3D印花连衣裙
+2026-10-20 20:47:04 [INFO ] [deepseek_web]   Downloaded: 0103_1520258425487114889096.jpg
+2026-10-20 20:47:04 [INFO ] [deepseek_web]   Prefetching next image (104/132)
+2026-10-20 20:47:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:47:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:47:33 [INFO ] [deepseek_web]   Response: 卡通猫图案印花 南瓜灯图案印花 城堡图案印花 圆领 荷叶边飞袖 A字裙摆 女童连衣裙 常规版型 套头款式 中长款
+2026-10-20 20:47:33 [INFO ] [deepseek_web]   Deleted: 0103_1520258425487114889096.jpg
+2026-10-20 20:47:38 [INFO ] [deepseek_web] [104/132] 万圣节儿童宫廷连衣裙
+2026-10-20 20:47:38 [INFO ] [deepseek_web]   Downloaded: 0104_5590529336365820310056.jpg
+2026-10-20 20:47:38 [INFO ] [deepseek_web]   Prefetching next image (105/132)
+2026-10-20 20:47:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:47:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:48:07 [INFO ] [deepseek_web]   Response: 胸前交叉绑带 领口蕾丝花边拼接 宽大薄纱喇叭袖 细吊带一字肩设计 大摆伞形裙身 女童角色扮演连衣裙 常规版型 套头款式 长袖 中长款
+2026-10-20 20:48:07 [INFO ] [deepseek_web]   Deleted: 0104_5590529336365820310056.jpg
+2026-10-20 20:48:12 [INFO ] [deepseek_web] [105/132] 万圣节印花V领休闲裙
+2026-10-20 20:48:12 [INFO ] [deepseek_web]   Downloaded: 0105_6860310472192917841509.jpg
+2026-10-20 20:48:12 [INFO ] [deepseek_web]   Prefetching next image (106/132)
+2026-10-20 20:48:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:48:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:48:41 [INFO ] [deepseek_web]   Response: 骨骼图案印花 骷髅花卉图案 附带装饰女巫帽 V领剪裁 宽大喇叭长袖 收腰设计 女士连衣裙 修身版型 套头款式 短裙
+2026-10-20 20:48:41 [INFO ] [deepseek_web]   Deleted: 0105_6860310472192917841509.jpg
+2026-10-20 20:48:46 [INFO ] [deepseek_web] [106/132] 经典荷叶花边提花调整型宫廷塑身分体套装 植绒奢华长裙
+2026-10-20 20:48:46 [INFO ] [deepseek_web]   Downloaded: 0106_2571100004351019486199.jpg
+2026-10-20 20:48:46 [INFO ] [deepseek_web]   Prefetching next image (107/132)
+2026-10-20 20:48:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:48:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:49:15 [INFO ] [deepseek_web]   Response: 正面排扣装饰 提花拼接 前短后长不规则下摆 领口蕾丝花边 女士抹胸连衣裙 女士 修身版型 束腰结构 无袖 套穿款式
+2026-10-20 20:49:15 [INFO ] [deepseek_web]   Deleted: 0106_2571100004351019486199.jpg
+2026-10-20 20:49:20 [INFO ] [deepseek_web] [107/132] 爆款万圣节元素长裙
+2026-10-20 20:49:20 [INFO ] [deepseek_web]   Downloaded: 0107_6820204494163783861330.jpg
+2026-10-20 20:49:20 [INFO ] [deepseek_web]   Prefetching next image (108/132)
+2026-10-20 20:49:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:49:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:49:49 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案拼接 蜘蛛网图案印花 女士长袖连衣裙 修身版型 圆领 套头款式 长款 收腰剪裁 大摆裙摆
+2026-10-20 20:49:49 [INFO ] [deepseek_web]   Deleted: 0107_6820204494163783861330.jpg
+2026-10-20 20:49:54 [INFO ] [deepseek_web] [108/132] 爆款万圣节元素长裙
+2026-10-20 20:49:54 [INFO ] [deepseek_web]   Downloaded: 0108_7860915162023611152250.jpg
+2026-10-20 20:49:54 [INFO ] [deepseek_web]   Prefetching next image (109/132)
+2026-10-20 20:49:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:50:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:50:24 [INFO ] [deepseek_web]   Response: 骨骼图案印花 玫瑰花卉图案 渐变裙摆 女士长袖连衣裙 女士 修身版型 圆领套头款式 收腰剪裁 大摆长裙 万圣节角色扮演服
+2026-10-20 20:50:24 [INFO ] [deepseek_web]   Deleted: 0108_7860915162023611152250.jpg
+2026-10-20 20:50:29 [INFO ] [deepseek_web] [109/132] 万圣节cosplay儿童女巫吸血鬼蜘蛛派聚会表演服(2-12Y)
+2026-10-20 20:50:29 [INFO ] [deepseek_web]   Downloaded: 0109_1360451179244319665220.jpg
+2026-10-20 20:50:29 [INFO ] [deepseek_web]   Prefetching next image (110/132)
+2026-10-20 20:50:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:50:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:50:58 [INFO ] [deepseek_web]   Response: 蜘蛛网图案拼接 蕾丝喇叭长袖 胸前交叉绑带 附带蕾丝颈饰 女童角色扮演连衣裙套装 女童 修身版型 高领 长袖 套头款式 长款
+2026-10-20 20:50:58 [INFO ] [deepseek_web]   Deleted: 0109_1360451179244319665220.jpg
+2026-10-20 20:51:03 [INFO ] [deepseek_web] [110/132] 万圣节新款儿童女巫师魔法帽子稻草人连衣裙套装吸血鬼表演服（5-12Y）
+2026-10-20 20:51:03 [INFO ] [deepseek_web]   Downloaded: 0110_9880929226745114693642.jpg
+2026-10-20 20:51:03 [INFO ] [deepseek_web]   Prefetching next image (111/132)
+2026-10-20 20:51:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:51:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:51:32 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 胸前交叉绑带 裙摆补丁贴布 不规则锯齿下摆 女童角色扮演连衣裙套装 女童 常规版型 泡泡短袖 圆领套头款式 中长款
+2026-10-20 20:51:32 [INFO ] [deepseek_web]   Deleted: 0110_9880929226745114693642.jpg
+2026-10-20 20:51:37 [INFO ] [deepseek_web] [111/132] 哥特修女黑色长短款op接袖围裙多穿万圣节女仆装
+2026-10-20 20:51:37 [INFO ] [deepseek_web]   Downloaded: 0111_6441022147415451141850.jpg
+2026-10-20 20:51:37 [INFO ] [deepseek_web]   Prefetching next image (112/132)
+2026-10-20 20:51:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:51:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:52:06 [INFO ] [deepseek_web]   Response: 领口蝴蝶结装饰 胸前V型蕾丝花边拼接 肩部荷叶边短袖 围裙式前襟 女士女仆装连衣裙 修身版型 高领套头款式 短裙 A字大摆 撞色拼接 角色扮演服
+2026-10-20 20:52:06 [INFO ] [deepseek_web]   Deleted: 0111_6441022147415451141850.jpg
+2026-10-20 20:52:11 [INFO ] [deepseek_web] [112/132] 哥特派对暗黑COSPLAY女仆连衣裙
+2026-10-20 20:52:11 [INFO ] [deepseek_web]   Downloaded: 0112_9830426213553284638373.jpg
+2026-10-20 20:52:11 [INFO ] [deepseek_web]   Prefetching next image (113/132)
+2026-10-20 20:52:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:52:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:52:40 [INFO ] [deepseek_web]   Response: 附带发饰 围裙式前襟 荷叶边短袖 胸前蝴蝶结装饰 女仆装连衣裙 女士 修身版型 套头款式 短裙 拼接设计
+2026-10-20 20:52:40 [INFO ] [deepseek_web]   Deleted: 0112_9830426213553284638373.jpg
+2026-10-20 20:52:45 [INFO ] [deepseek_web] [113/132] 哥特修女黑色长短款op接袖围裙多穿万圣节女仆装
+2026-10-20 20:52:45 [INFO ] [deepseek_web]   Downloaded: 0113_1870313205821888402510.jpg
+2026-10-20 20:52:45 [INFO ] [deepseek_web]   Prefetching next image (114/132)
+2026-10-20 20:52:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:52:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:53:14 [INFO ] [deepseek_web]   Response: 领口蝴蝶结装饰 胸前V型蕾丝拼接 围裙式前襟 荷叶边短袖 女仆装连衣裙 女士 常规版型 高领套头款式 长裙 角色扮演服
+2026-10-20 20:53:14 [INFO ] [deepseek_web]   Deleted: 0113_1870313205821888402510.jpg
+2026-10-20 20:53:19 [INFO ] [deepseek_web] [114/132] 女暗黑拼色cosplay万圣节女仆装
+2026-10-20 20:53:19 [INFO ] [deepseek_web]   Downloaded: 0114_9540324153171911691157.jpg
+2026-10-20 20:53:19 [INFO ] [deepseek_web]   Prefetching next image (115/132)
+2026-10-20 20:53:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:53:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:53:49 [INFO ] [deepseek_web]   Response: 胸前大蝴蝶结 围裙式前襟口袋 多层荷叶边裙摆 领口蕾丝花边 女仆装连衣裙 女士 常规版型 长袖 高领 套头款式 短裙 撞色拼接
+2026-10-20 20:53:49 [INFO ] [deepseek_web]   Deleted: 0114_9540324153171911691157.jpg
+2026-10-20 20:53:54 [INFO ] [deepseek_web] [115/132] 女节日派对拼色荷叶边女佣cosplay连衣裙
+2026-10-20 20:53:54 [INFO ] [deepseek_web]   Downloaded: 0115_8300328158421991369339.jpg
+2026-10-20 20:53:54 [INFO ] [deepseek_web]   Prefetching next image (116/132)
+2026-10-20 20:53:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:54:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:54:23 [INFO ] [deepseek_web]   Response: 附带女仆发饰 领口蝴蝶结装饰 围裙式前襟 花卉刺绣图案 撞色拼接荷叶边裙摆 女仆装连衣裙 女士 修身版型 高领 短袖 套头款式 短裙
+2026-10-20 20:54:23 [INFO ] [deepseek_web]   Deleted: 0115_8300328158421991369339.jpg
+2026-10-20 20:54:28 [INFO ] [deepseek_web] [116/132] 女士深蓝色节日cosplay女佣制服连衣裙
+2026-10-20 20:54:28 [INFO ] [deepseek_web]   Downloaded: 0116_5870334218451919746663.jpg
+2026-10-20 20:54:28 [INFO ] [deepseek_web]   Prefetching next image (117/132)
+2026-10-20 20:54:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:54:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:54:57 [INFO ] [deepseek_web]   Response: 附带蕾丝发饰 围裙式前襟 镂空蕾丝拼接 泡泡短袖 女仆装连衣裙 女士 修身版型 翻领 套头款式 短裙
+2026-10-20 20:54:57 [INFO ] [deepseek_web]   Deleted: 0116_5870334218451919746663.jpg
+2026-10-20 20:55:02 [INFO ] [deepseek_web] [117/132] 女士修女服性感变装护士服万圣节女仆紧身长袍
+2026-10-20 20:55:02 [INFO ] [deepseek_web]   Downloaded: 0117_1401117468816696850124.jpg
+2026-10-20 20:55:02 [INFO ] [deepseek_web]   Prefetching next image (118/132)
+2026-10-20 20:55:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:55:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:55:31 [INFO ] [deepseek_web]   Response: 附带修女头巾 胸前十字架吊坠 领口蝴蝶结系带 两侧高开衩 撞色拼接翻领 女士修女服连衣裙 修身版型 长袖 套头款式 中长款
+2026-10-20 20:55:31 [INFO ] [deepseek_web]   Deleted: 0117_1401117468816696850124.jpg
+2026-10-20 20:55:36 [INFO ] [deepseek_web] [118/132] 女士万圣节黑色连衣裙日系修女蕾丝女仆装
+2026-10-20 20:55:36 [INFO ] [deepseek_web]   Downloaded: 0118_2181007377055710111913.jpg
+2026-10-20 20:55:36 [INFO ] [deepseek_web]   Prefetching next image (119/132)
+2026-10-20 20:55:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:55:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:56:06 [INFO ] [deepseek_web]   Response: 附带女仆头饰 围裙式前襟 领口蝴蝶结系带 多层荷叶边裙摆 女仆装连衣裙 女士 修身版型 长袖翻领 套头款式 短裙 撞色拼接
+2026-10-20 20:56:06 [INFO ] [deepseek_web]   Deleted: 0118_2181007377055710111913.jpg
+2026-10-20 20:56:11 [INFO ] [deepseek_web] [119/132] 女士万圣节古早风倒褶木耳边女仆装
+2026-10-20 20:56:11 [INFO ] [deepseek_web]   Downloaded: 0119_7531012282065939913699.jpg
+2026-10-20 20:56:11 [INFO ] [deepseek_web]   Prefetching next image (120/132)
+2026-10-20 20:56:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:56:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:56:40 [INFO ] [deepseek_web]   Response: 附带女仆头饰 围裙式前襟 领口蝴蝶结装饰 多层荷叶边裙摆 泡泡短袖 女仆装连衣裙 女士 常规版型 翻领 套头款式 中长款 撞色拼接
+2026-10-20 20:56:40 [INFO ] [deepseek_web]   Deleted: 0119_7531012282065939913699.jpg
+2026-10-20 20:56:45 [INFO ] [deepseek_web] [120/132] 女士万圣节古早风倒褶木耳边女仆装
+2026-10-20 20:56:45 [INFO ] [deepseek_web]   Downloaded: 0120_0821021133256487490017.jpg
+2026-10-20 20:56:45 [INFO ] [deepseek_web]   Prefetching next image (121/132)
+2026-10-20 20:56:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:56:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:57:14 [INFO ] [deepseek_web]   Response: 附带女仆头饰 胸前大蝴蝶结 围裙式前襟 多层荷叶边拼接 泡泡短袖 女仆装连衣裙 女士 修身版型 翻领 套头款式 短裙 撞色拼接 角色扮演服
+2026-10-20 20:57:14 [INFO ] [deepseek_web]   Deleted: 0120_0821021133256487490017.jpg
+2026-10-20 20:57:19 [INFO ] [deepseek_web] [121/132] 女士万圣节蕾丝边日系长款女仆装
+2026-10-20 20:57:19 [INFO ] [deepseek_web]   Downloaded: 0121_4381030322557020282830.jpg
+2026-10-20 20:57:19 [INFO ] [deepseek_web]   Prefetching next image (122/132)
+2026-10-20 20:57:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:57:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:57:48 [INFO ] [deepseek_web]   Response: 附带女仆头饰 领口蝴蝶结装饰 围裙式前襟 蕾丝花边拼接 多层荷叶边裙摆 撞色拼接 女仆装连衣裙 女士 常规版型 长袖 翻领 套头款式 长款
+2026-10-20 20:57:48 [INFO ] [deepseek_web]   Deleted: 0121_4381030322557020282830.jpg
+2026-10-20 20:57:53 [INFO ] [deepseek_web] [122/132] 女士万圣节暗黑系高级感泡泡袖连衣裙
+2026-10-20 20:57:53 [INFO ] [deepseek_web]   Downloaded: 0122_5851039545197720758221.jpg
+2026-10-20 20:57:53 [INFO ] [deepseek_web]   Prefetching next image (123/132)
+2026-10-20 20:57:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:58:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:58:22 [INFO ] [deepseek_web]   Response: 附带女仆发饰 胸前围裙拼接 领口荷叶边 泡泡长袖 女仆装连衣裙 女士 常规版型 高领 套头款式 长裙 角色扮演服
+2026-10-20 20:58:22 [INFO ] [deepseek_web]   Deleted: 0122_5851039545197720758221.jpg
+2026-10-20 20:58:27 [INFO ] [deepseek_web] [123/132] 万圣节女仆装cosplay表演服装
+2026-10-20 20:58:27 [INFO ] [deepseek_web]   Downloaded: 0123_9260421552453020969582.jpg
+2026-10-20 20:58:27 [INFO ] [deepseek_web]   Prefetching next image (124/132)
+2026-10-20 20:58:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:58:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:58:56 [INFO ] [deepseek_web]   Response: 翻领设计 围裙式前襟 胸前交叉背带 宽袖口翻边 女仆装连衣裙 女士 常规版型 短袖 单排扣 A字裙摆 荷叶边拼接 角色扮演服
+2026-10-20 20:58:56 [INFO ] [deepseek_web]   Deleted: 0123_9260421552453020969582.jpg
+2026-10-20 20:59:01 [INFO ] [deepseek_web] [124/132] 哥特修女黑色长短款op接袖围裙多穿万圣节女仆装
+2026-10-20 20:59:01 [INFO ] [deepseek_web]   Downloaded: 0124_6441022147415451141850.jpg
+2026-10-20 20:59:01 [INFO ] [deepseek_web]   Prefetching next image (125/132)
+2026-10-20 20:59:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:59:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 20:59:31 [INFO ] [deepseek_web]   Response: 领口蝴蝶结装饰 胸前V型蕾丝拼接 肩部荷叶边短袖 围裙式前襟 女仆装连衣裙 女士 修身版型 高领 套头款式 短裙 角色扮演服
+2026-10-20 20:59:31 [INFO ] [deepseek_web]   Deleted: 0124_6441022147415451141850.jpg
+2026-10-20 20:59:36 [INFO ] [deepseek_web] [125/132] 女士万圣节黑色连衣裙日系修女蕾丝女仆装
+2026-10-20 20:59:36 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='sra03n69kpnwm32b.imgsapp.com', port=443): Max retries exceeded with url: /afsd/8547/2181007377055710111913.jpg (Caused by NameResolutionError("HTTPSConnection(host='sra03n69kpnwm32b.imgsapp.com', port=443): Failed to resolve 'sra03n69kpnwm32b.imgsapp.com' ([Errno 11001] getaddrinfo failed)"))
+2026-10-20 20:59:41 [INFO ] [deepseek_web] [126/132] 女士万圣节印花长裙
+2026-10-20 20:59:42 [INFO ] [deepseek_web]   Downloaded: 0126_4150447511401565638572.jpg
+2026-10-20 20:59:42 [INFO ] [deepseek_web]   Prefetching next image (127/132)
+2026-10-20 20:59:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 20:59:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:00:12 [INFO ] [deepseek_web]   Response: 骨骼图案印花 花卉图案拼接 立体花朵装饰 鱼尾拖地裙摆 女士长袖连衣裙 修身版型 圆领套头款式 长款 万圣节角色扮演服
+2026-10-20 21:00:12 [INFO ] [deepseek_web]   Deleted: 0126_4150447511401565638572.jpg
+2026-10-20 21:00:17 [INFO ] [deepseek_web] [127/132] 女士万圣节圆领休闲裙
+2026-10-20 21:00:17 [INFO ] [deepseek_web]   Downloaded: 0127_7781021071685516462210.jpg
+2026-10-20 21:00:17 [INFO ] [deepseek_web]   Prefetching next image (128/132)
+2026-10-20 21:00:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:00:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:00:46 [INFO ] [deepseek_web]   Response: 尖顶女巫帽 城堡图案印花 树枝剪影图案 女士长款连衣裙 修身版型 圆领短袖 套头款式 收腰剪裁 大摆裙摆 万圣节角色扮演服
+2026-10-20 21:00:46 [INFO ] [deepseek_web]   Deleted: 0127_7781021071685516462210.jpg
+2026-10-20 21:00:51 [INFO ] [deepseek_web] [128/132] 女童万圣节时尚休闲可爱幽灵印花睡裙
+2026-10-20 21:00:51 [INFO ] [deepseek_web]   Downloaded: 0128_0361010271956242031191.jpg
+2026-10-20 21:00:51 [INFO ] [deepseek_web]   Prefetching next image (129/132)
+2026-10-20 21:00:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:01:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:01:20 [INFO ] [deepseek_web]   Response: 糖骷髅印花 吉他图案印花 骨头图案印花 荷叶边飞袖 女童睡裙 常规版型 圆领 短袖 套头款式 A字裙摆
+2026-10-20 21:01:20 [INFO ] [deepseek_web]   Deleted: 0128_0361010271956242031191.jpg
+2026-10-20 21:01:25 [INFO ] [deepseek_web] [129/132] 女童海盗服连衣裙套装
+2026-10-20 21:01:25 [INFO ] [deepseek_web]   Downloaded: 0129_2140638565535788763419.jpg
+2026-10-20 21:01:25 [INFO ] [deepseek_web]   Prefetching next image (130/132)
+2026-10-20 21:01:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:01:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:01:54 [INFO ] [deepseek_web]   Response: 附带海盗帽 宽幅交叉绑带腰封 一字肩抽褶领口 宽大喇叭长袖 不规则荷叶边下摆 女童角色扮演连衣裙套装 女童 修身版型 长袖 套头款式 中长款 万圣节扮演服
+2026-10-20 21:01:54 [INFO ] [deepseek_web]   Deleted: 0129_2140638565535788763419.jpg
+2026-10-20 21:01:59 [INFO ] [deepseek_web] [130/132] Y2006 万圣节服装成人女巫婆吸血鬼化妆舞会僵尸cos服女皇鬼新娘连衣裙
+2026-10-20 21:01:59 [INFO ] [deepseek_web]   Downloaded: 0130_8970508360692111640912.jpg
+2026-10-20 21:01:59 [INFO ] [deepseek_web]   Prefetching next image (131/132)
+2026-10-20 21:01:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:02:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:02:28 [INFO ] [deepseek_web]   Response: 新娘头纱 血渍印花 前短后长不规则下摆 多层网纱拼接 女士角色扮演连衣裙 常规版型 V领 泡泡短袖 套头款式 万圣节派对
+2026-10-20 21:02:28 [INFO ] [deepseek_web]   Deleted: 0130_8970508360692111640912.jpg
+2026-10-20 21:02:33 [INFO ] [deepseek_web] [131/132] 2014 护士服万圣节服装成人女巫婆吸血鬼化妆舞会僵尸cos服女皇鬼新娘连衣裙
+2026-10-20 21:02:33 [INFO ] [deepseek_web]   Downloaded: 0131_7280328016592787190025.jpg
+2026-10-20 21:02:33 [INFO ] [deepseek_web]   Prefetching next image (132/132)
+2026-10-20 21:02:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:02:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:03:02 [INFO ] [deepseek_web]   Response: 十字图案护士帽 飞溅印花 不规则锯齿下摆 附带口罩 附带长手套 翻领短袖 女士角色扮演连衣裙套装 修身版型 套头款式 短裙 万圣节派对服装
+2026-10-20 21:03:02 [INFO ] [deepseek_web]   Deleted: 0131_7280328016592787190025.jpg
+2026-10-20 21:03:07 [INFO ] [deepseek_web] [132/132] 女士中世纪服饰复古宫廷女王长款连衣裙舞会派对表演服装
+2026-10-20 21:03:07 [INFO ] [deepseek_web]   Downloaded: 0132_7051041424016321246339.jpg
+2026-10-20 21:03:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-20 21:03:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-20 21:03:37 [INFO ] [deepseek_web]   Response: 胸前交叉绑带 肩部系带露肩设计 宽大灯笼喇叭袖 背心式拼接结构 女士长款连衣裙 女士 修身版型 一字肩 长袖 套头款式 大摆长裙 舞台表演服
+2026-10-20 21:03:37 [INFO ] [deepseek_web]   Deleted: 0132_7051041424016321246339.jpg
+2026-10-20 21:03:37 [INFO ] [deepseek_web] 
+2026-10-20 21:03:37 [INFO ] [deepseek_web] Retry round 1: 1 failed item(s)
+2026-10-20 21:03:42 [INFO ] [deepseek_web]   Retry [125]: 女士万圣节黑色连衣裙日系修女蕾丝女仆装
+2026-10-20 21:04:01 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-20 21:04:20 [INFO ] [deepseek_web]     OK: 附带女仆发饰 领口蝴蝶结装饰 围裙式前襟 多层荷叶边裙摆 蕾丝花边拼接 女仆装连衣裙 女士 常规版型 长袖 翻领 套头款式 短裙
+2026-10-20 21:04:24 [INFO ] [deepseek_web] ==================================================
+2026-10-20 21:04:24 [INFO ] [deepseek_web] Done: 132 success, 0 failed → optimize_title
+2026-10-20 21:04:24 [INFO ] [title_workflow] Optimization complete: 132 titles
+2026-10-20 21:04:33 [INFO ] [title_workflow] Written 132 optimized titles to column H (8)
+2026-10-20 21:04:33 [INFO ] [title_workflow] Done: 10.15v1.xlsx
+2026-10-20 21:04:34 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-20 21:04:34 [INFO ] [jenkins] 
+2026-10-20 21:04:34 [INFO ] [jenkins] ==================================================
+2026-10-20 21:04:34 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-20 21:04:34 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-20 21:04:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-20 21:04:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-20 21:04:34 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

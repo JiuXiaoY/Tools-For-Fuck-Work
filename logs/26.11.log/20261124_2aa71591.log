@@ -1,0 +1,184 @@
+2026-11-24 11:50:22 [INFO ] [jenkins] ==================================================
+2026-11-24 11:50:22 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-24 11:50:22 [INFO ] [jenkins] ==================================================
+2026-11-24 11:50:22 [INFO ] [jenkins] 
+2026-11-24 11:50:22 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-24 11:50:22 [INFO ] [jenkins] ------------------------------
+2026-11-24 11:50:22 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-24 11:50:22 [INFO ] [jenkins] 
+2026-11-24 11:50:22 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-24 11:50:22 [INFO ] [jenkins] ------------------------------
+2026-11-24 11:50:22 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-24 11:50:22 [INFO ] [preprocess] [Mz.xlsx]
+2026-11-24 11:50:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-24 11:50:23 [INFO ] [pipeline] [1/1] remove_header
+2026-11-24 11:50:23 [INFO ] [preprocess]   [Mz.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-11-24 11:50:23 [INFO ] [pipeline] Pipeline complete
+2026-11-24 11:50:24 [INFO ] [preprocess] Preprocessing complete
+2026-11-24 11:50:24 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-24 11:50:24 [INFO ] [jenkins] 
+2026-11-24 11:50:24 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-24 11:50:24 [INFO ] [jenkins] ------------------------------
+2026-11-24 11:50:24 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261124_2aa71591.log
+2026-11-24 11:50:24 [INFO ] [main] Found 1 file(s):
+2026-11-24 11:50:24 [INFO ] [main]   Mz.xlsx
+2026-11-24 11:50:24 [INFO ] [main] Output: 11.20v1_de.xlsx
+2026-11-24 11:50:24 [INFO ] [main] ==================================================
+2026-11-24 11:50:24 [INFO ] [main] Single file, copied
+2026-11-24 11:50:25 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-24 11:50:25 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-24 11:50:25 [INFO ] [pipeline]   Sheet [Sheet0] selected; 0 other sheet(s) skipped
+2026-11-24 11:50:25 [INFO ] [pipeline] [2/12] validate
+2026-11-24 11:50:25 [INFO ] [pipeline]   Validated: 337 rows, 27 cols (expect ~32)
+2026-11-24 11:50:25 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-24 11:50:25 [INFO ] [pipeline]   Backed up 2326 images
+2026-11-24 11:50:25 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-24 11:50:25 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-24 11:50:25 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-24 11:50:25 [INFO ] [pipeline]   Restored 2326 images with adjusted anchors
+2026-11-24 11:50:25 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-24 11:50:25 [INFO ] [pipeline]   Column 2: 337 IDs generated
+2026-11-24 11:50:25 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-24 11:50:25 [INFO ] [pipeline]   Column 3: 337 cells filled
+2026-11-24 11:50:25 [INFO ] [pipeline] [6/12] map_colors
+2026-11-24 11:50:25 [INFO ] [pipeline]   Colors J -> K: 301 cells mapped, 34 rows skipped (col A has fill), 2 no match
+2026-11-24 11:50:25 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-24 11:50:25 [INFO ] [pipeline]   Size column L: 301 mapped, 34 cleared (col A has fill), 2 no match
+2026-11-24 11:50:25 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-24 11:50:25 [INFO ] [pipeline]   Mirror copy: 1989 cells written
+2026-11-24 11:50:25 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-24 11:50:25 [INFO ] [pipeline]   Price source M -> AS: 337 cells copied
+2026-11-24 11:50:25 [INFO ] [pipeline] [10/12] calc_price
+2026-11-24 11:50:25 [INFO ] [pipeline]   Price columns AT-AW: 337 rows calculated
+2026-11-24 11:50:25 [INFO ] [pipeline] [11/12] format_cells
+2026-11-24 11:50:25 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-24 11:50:25 [INFO ] [pipeline]   Formatted 337 rows: h=50, align=left/center
+2026-11-24 11:50:25 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-24 11:50:25 [INFO ] [pipeline] [12/12] finalize
+2026-11-24 11:50:25 [INFO ] [pipeline]   Done: 337 rows x 49 cols (target: 49)
+2026-11-24 11:50:25 [INFO ] [pipeline] Pipeline complete
+2026-11-24 11:50:26 [INFO ] [main] Size: 337 rows x 49 cols
+2026-11-24 11:50:26 [INFO ] [main] ==================================================
+2026-11-24 11:50:26 [INFO ] [main] Done: 11.20v1_de.xlsx
+2026-11-24 11:50:26 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-24 11:50:26 [INFO ] [jenkins] 
+2026-11-24 11:50:26 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-24 11:50:26 [INFO ] [jenkins] ------------------------------
+2026-11-24 11:50:26 [INFO ] [color_size_main] Source: 11.20v1_de.xlsx
+2026-11-24 11:50:27 [INFO ] [color_size_main] Extracted: 301 data lines + 36 separators → check_.txt
+2026-11-24 11:50:27 [INFO ] [color_size_main] Running: process.py
+2026-11-24 11:50:27 [INFO ] [color_size_deal] Groups: 35, lines: 301 (file: 337)
+2026-11-24 11:50:27 [INFO ] [color_size_deal] Prefixes: {'01': 56, '02': 12, '03': 6, '04': 4, '05': 2, '06': 1}
+2026-11-24 11:50:27 [INFO ] [color_size_deal] Done.
+2026-11-24 11:50:27 [INFO ] [color_size_main] Processing write-back: 337 lines
+2026-11-24 11:50:29 [INFO ] [color_size_main] Write-back: 117 written, 220 unchanged → 11.20v1_de.xlsx
+2026-11-24 11:50:29 [INFO ] [color_size_main] Done.
+2026-11-24 11:50:29 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-24 11:50:29 [INFO ] [jenkins] 
+2026-11-24 11:50:29 [INFO ] [jenkins] ==================================================
+2026-11-24 11:50:29 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-24 11:50:29 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-24 11:50:29 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-24 11:50:29 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-24 11:50:29 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-24 17:35:36 [INFO ] [jenkins] ==================================================
+2026-11-24 17:35:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-24 17:35:36 [INFO ] [jenkins] ==================================================
+2026-11-24 17:35:36 [INFO ] [jenkins] 
+2026-11-24 17:35:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-24 17:35:36 [INFO ] [jenkins] ------------------------------
+2026-11-24 17:35:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-24 17:35:36 [INFO ] [jenkins] 
+2026-11-24 17:35:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-24 17:35:36 [INFO ] [jenkins] ------------------------------
+2026-11-24 17:35:36 [INFO ] [preprocess] Preprocessing 4 file(s) with 1 step(s)
+2026-11-24 17:35:36 [INFO ] [preprocess] [女士裤子1.xlsx]
+2026-11-24 17:35:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-24 17:35:37 [INFO ] [pipeline] [1/1] remove_header
+2026-11-24 17:35:41 [INFO ] [preprocess]   [女士裤子1.xlsx] Sheet [Sheet0]: header row removed
+2026-11-24 17:35:41 [INFO ] [pipeline] Pipeline complete
+2026-11-24 17:35:41 [INFO ] [preprocess] [女士裤子2.xlsx]
+2026-11-24 17:35:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-24 17:35:42 [INFO ] [pipeline] [1/1] remove_header
+2026-11-24 17:35:45 [INFO ] [preprocess]   [女士裤子2.xlsx] Sheet [Sheet0]: header row removed
+2026-11-24 17:35:45 [INFO ] [pipeline] Pipeline complete
+2026-11-24 17:35:45 [INFO ] [preprocess] [女士裤子3.xlsx]
+2026-11-24 17:35:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-24 17:35:46 [INFO ] [pipeline] [1/1] remove_header
+2026-11-24 17:35:46 [INFO ] [preprocess]   [女士裤子3.xlsx] Sheet [Sheet0]: header row removed
+2026-11-24 17:35:46 [INFO ] [pipeline] Pipeline complete
+2026-11-24 17:35:46 [INFO ] [preprocess] [女士裤子4.xlsx]
+2026-11-24 17:35:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-24 17:35:47 [INFO ] [pipeline] [1/1] remove_header
+2026-11-24 17:35:50 [INFO ] [preprocess]   [女士裤子4.xlsx] Sheet [Sheet0]: header row removed
+2026-11-24 17:35:50 [INFO ] [pipeline] Pipeline complete
+2026-11-24 17:35:51 [INFO ] [preprocess] Preprocessing complete
+2026-11-24 17:35:51 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-24 17:35:51 [INFO ] [jenkins] 
+2026-11-24 17:35:51 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-24 17:35:51 [INFO ] [jenkins] ------------------------------
+2026-11-24 17:35:51 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261124_2aa71591.log
+2026-11-24 17:35:51 [INFO ] [main] Found 4 file(s):
+2026-11-24 17:35:51 [INFO ] [main]   女士裤子1.xlsx
+2026-11-24 17:35:51 [INFO ] [main]   女士裤子2.xlsx
+2026-11-24 17:35:51 [INFO ] [main]   女士裤子3.xlsx
+2026-11-24 17:35:51 [INFO ] [main]   女士裤子4.xlsx
+2026-11-24 17:35:51 [INFO ] [main] Output: 11.23v1_fr.xlsx
+2026-11-24 17:35:51 [INFO ] [main] ==================================================
+2026-11-24 17:36:01 [INFO ] [main] Merged 4 files, 6237 images total
+2026-11-24 17:36:04 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-24 17:36:04 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-24 17:36:04 [INFO ] [pipeline]   Sheet [Sheet0] selected; 0 other sheet(s) skipped
+2026-11-24 17:36:04 [INFO ] [pipeline] [2/12] validate
+2026-11-24 17:36:04 [INFO ] [pipeline]   Validated: 2742 rows, 27 cols (expect ~32)
+2026-11-24 17:36:04 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-24 17:36:04 [INFO ] [pipeline]   Backed up 6237 images
+2026-11-24 17:36:04 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-24 17:36:04 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-24 17:36:04 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-24 17:36:04 [INFO ] [pipeline]   Restored 6237 images with adjusted anchors
+2026-11-24 17:36:04 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-24 17:36:04 [INFO ] [pipeline]   Column 2: 2742 IDs generated
+2026-11-24 17:36:04 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-24 17:36:04 [INFO ] [pipeline]   Column 3: 2742 cells filled
+2026-11-24 17:36:04 [INFO ] [pipeline] [6/12] map_colors
+2026-11-24 17:36:04 [INFO ] [pipeline]   Colors J -> K: 2682 cells mapped, 60 rows skipped (col A has fill), 0 no match
+2026-11-24 17:36:04 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-24 17:36:04 [INFO ] [pipeline]   Size column L: 2682 mapped, 60 cleared (col A has fill), 0 no match
+2026-11-24 17:36:04 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-24 17:36:04 [INFO ] [pipeline]   Mirror copy: 18093 cells written
+2026-11-24 17:36:04 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-24 17:36:04 [INFO ] [pipeline]   Price source M -> AS: 2742 cells copied
+2026-11-24 17:36:04 [INFO ] [pipeline] [10/12] calc_price
+2026-11-24 17:36:05 [INFO ] [pipeline]   Price columns AT-AW: 2742 rows calculated
+2026-11-24 17:36:05 [INFO ] [pipeline] [11/12] format_cells
+2026-11-24 17:36:05 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-24 17:36:05 [INFO ] [pipeline]   Formatted 2742 rows: h=50, align=left/center
+2026-11-24 17:36:05 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-24 17:36:05 [INFO ] [pipeline] [12/12] finalize
+2026-11-24 17:36:05 [INFO ] [pipeline]   Done: 2742 rows x 49 cols (target: 49)
+2026-11-24 17:36:05 [INFO ] [pipeline] Pipeline complete
+2026-11-24 17:36:08 [INFO ] [main] Size: 2742 rows x 49 cols
+2026-11-24 17:36:08 [INFO ] [main] ==================================================
+2026-11-24 17:36:08 [INFO ] [main] Done: 11.23v1_fr.xlsx
+2026-11-24 17:36:09 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-24 17:36:09 [INFO ] [jenkins] 
+2026-11-24 17:36:09 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-24 17:36:09 [INFO ] [jenkins] ------------------------------
+2026-11-24 17:36:09 [INFO ] [color_size_main] Source: 11.23v1_fr.xlsx
+2026-11-24 17:36:12 [INFO ] [color_size_main] Extracted: 2682 data lines + 60 separators → check_.txt
+2026-11-24 17:36:12 [INFO ] [color_size_main] Running: process.py
+2026-11-24 17:36:12 [INFO ] [color_size_deal] Groups: 60, lines: 2682 (file: 2742)
+2026-11-24 17:36:12 [INFO ] [color_size_deal] Prefixes: {'01': 283, '02': 45, '03': 25, '04': 14, '05': 6, '06': 6, '07': 6, '08': 6, '09': 6}
+2026-11-24 17:36:12 [INFO ] [color_size_deal] Done.
+2026-11-24 17:36:12 [INFO ] [color_size_main] Processing write-back: 2742 lines
+2026-11-24 17:36:18 [INFO ] [color_size_main] Write-back: 457 written, 2285 unchanged → 11.23v1_fr.xlsx
+2026-11-24 17:36:18 [INFO ] [color_size_main] Done.
+2026-11-24 17:36:18 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-24 17:36:18 [INFO ] [jenkins] 
+2026-11-24 17:36:18 [INFO ] [jenkins] ==================================================
+2026-11-24 17:36:18 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-24 17:36:18 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-24 17:36:18 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-24 17:36:18 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-24 17:36:18 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

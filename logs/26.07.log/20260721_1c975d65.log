@@ -1,0 +1,118 @@
+2026-07-21 09:13:40 [INFO ] [jenkins] ==================================================
+2026-07-21 09:13:40 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-07-21 09:13:40 [INFO ] [jenkins] ==================================================
+2026-07-21 09:13:40 [INFO ] [jenkins] 
+2026-07-21 09:13:40 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-07-21 09:13:40 [INFO ] [jenkins] ------------------------------
+2026-07-21 09:13:40 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-07-21 09:13:40 [INFO ] [jenkins] 
+2026-07-21 09:13:40 [INFO ] [jenkins] [2/5] Excel pipeline
+2026-07-21 09:13:40 [INFO ] [jenkins] ------------------------------
+2026-07-21 09:13:41 [INFO ] [main] Log file: 20260721_1c975d65.log
+2026-07-21 09:13:41 [INFO ] [main] Found 1 file(s):
+2026-07-21 09:13:41 [INFO ] [main]   product_20260718100643342.xlsx
+2026-07-21 09:13:41 [INFO ] [main] Output: 7.31v1.xlsx
+2026-07-21 09:13:41 [INFO ] [main] ==================================================
+2026-07-21 09:13:41 [INFO ] [main] Single file, copied
+2026-07-21 09:13:41 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-21 09:13:41 [INFO ] [pipeline] [1/13] delete_header
+2026-07-21 09:13:41 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-21 09:13:41 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-21 09:13:41 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-07-21 09:13:41 [INFO ] [pipeline] [3/13] validate
+2026-07-21 09:13:41 [INFO ] [pipeline]   Validated: 65 rows, 27 cols (expect ~32)
+2026-07-21 09:13:41 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-21 09:13:41 [INFO ] [pipeline]   Backed up 126 images
+2026-07-21 09:13:41 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-21 09:13:41 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-21 09:13:41 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-21 09:13:41 [INFO ] [pipeline]   Restored 126 images with adjusted anchors
+2026-07-21 09:13:41 [INFO ] [pipeline] [5/13] fill_id
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 2: 65 random IDs (date: bfzgca)
+2026-07-21 09:13:41 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 3: 65 cells filled
+2026-07-21 09:13:41 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 10: 63 cells mapped, 2 rows skipped (col A has fill)
+2026-07-21 09:13:41 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 11: 63 mapped, 2 cleared (col A has fill), 0 no match
+2026-07-21 09:13:41 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-21 09:13:41 [INFO ] [pipeline]   Mirror copy: 365 cells written
+2026-07-21 09:13:41 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 44: 65 cells copied from col 12
+2026-07-21 09:13:41 [INFO ] [pipeline] [11/13] calc_price
+2026-07-21 09:13:41 [INFO ] [pipeline]   Columns 45-48: 65 rows calculated
+2026-07-21 09:13:41 [INFO ] [pipeline] [12/13] format_cells
+2026-07-21 09:13:41 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-21 09:13:41 [INFO ] [pipeline]   Formatted 65 rows: h=50, align=left/center
+2026-07-21 09:13:41 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-21 09:13:41 [INFO ] [pipeline] [13/13] finalize
+2026-07-21 09:13:41 [INFO ] [pipeline]   Done: 65 rows x 48 cols (target: 48)
+2026-07-21 09:13:41 [INFO ] [pipeline] Pipeline complete
+2026-07-21 09:13:41 [INFO ] [main] Size: 65 rows x 48 cols
+2026-07-21 09:13:41 [INFO ] [main] ==================================================
+2026-07-21 09:13:41 [INFO ] [main] Done: 7.31v1.xlsx
+2026-07-21 09:13:41 [INFO ] [jenkins] [2/5] Excel pipeline OK
+2026-07-21 09:13:41 [INFO ] [jenkins] 
+2026-07-21 09:13:41 [INFO ] [jenkins] [3/5] Color re-processing
+2026-07-21 09:13:41 [INFO ] [jenkins] ------------------------------
+2026-07-21 09:13:42 [INFO ] [color_size_main] Source: 7.31v1.xlsx
+2026-07-21 09:13:42 [INFO ] [color_size_main] Extracted: 63 data lines + 2 separators → check_.txt
+2026-07-21 09:13:42 [INFO ] [color_size_main] Running: process.py
+2026-07-21 09:13:42 [INFO ] [color_size_deal] Groups: 2, lines: 63 (file: 65)
+2026-07-21 09:13:42 [INFO ] [color_size_deal] Prefixes: {'01': 16, '02': 8, '03': 8}
+2026-07-21 09:13:42 [INFO ] [color_size_deal] Done.
+2026-07-21 09:13:42 [INFO ] [color_size_main] Processing write-back: 65 lines
+2026-07-21 09:13:42 [INFO ] [color_size_main] Write-back: 34 written, 31 unchanged → 7.31v1.xlsx
+2026-07-21 09:13:42 [INFO ] [color_size_main] Done.
+2026-07-21 09:13:42 [INFO ] [jenkins] [3/5] Color re-processing OK
+2026-07-21 09:13:42 [INFO ] [jenkins] 
+2026-07-21 09:13:42 [INFO ] [jenkins] [4/5] Title optimization
+2026-07-21 09:13:42 [INFO ] [jenkins] ------------------------------
+2026-07-21 09:13:43 [INFO ] [title_workflow] Source: 7.31v1.xlsx
+2026-07-21 09:13:43 [INFO ] [title_workflow] Extracted 2 titles + 2 links
+2026-07-21 09:13:43 [INFO ] [title_workflow] Written: origin_title (2) + origin_link (2)
+2026-07-21 09:13:43 [INFO ] [title_workflow] optimize_title already has 2 optimized lines, skipping optimization
+2026-07-21 09:13:43 [INFO ] [title_workflow] Optimization complete: 2 titles
+2026-07-21 09:13:43 [INFO ] [title_workflow] Inserted new column at position 8 (after G)
+2026-07-21 09:13:43 [INFO ] [title_workflow] Written 2 optimized titles to column H (8)
+2026-07-21 09:13:43 [INFO ] [title_workflow] Done: 7.31v1.xlsx
+2026-07-21 09:13:43 [INFO ] [jenkins] [4/5] Title optimization OK
+2026-07-21 09:13:43 [INFO ] [jenkins] 
+2026-07-21 09:13:43 [INFO ] [jenkins] [5/5] de title build
+2026-07-21 09:13:43 [INFO ] [jenkins] ------------------------------
+2026-07-21 09:13:44 [INFO ] [de_title_build] [Collect titles]
+2026-07-21 09:13:44 [INFO ] [collect_titles] collect_titles — not yet implemented
+2026-07-21 09:13:44 [INFO ] [de_title_build] Collect titles OK
+2026-07-21 09:13:44 [INFO ] [de_title_build] [Write back]
+2026-07-21 09:13:45 [INFO ] [write_back] Loaded 2 titles from final_de_title
+2026-07-21 09:13:45 [INFO ] [write_back] Written 2 titles to column 4
+2026-07-21 09:13:45 [INFO ] [write_back] Filled 63 blank cells with =D{above}
+2026-07-21 09:13:45 [INFO ] [write_back] Done: 7.31v1.xlsx
+2026-07-21 09:13:45 [INFO ] [de_title_build] Write back OK
+2026-07-21 09:13:45 [INFO ] [de_title_build] Done.
+2026-07-21 09:13:45 [INFO ] [jenkins] [5/5] de title build OK
+2026-07-21 09:13:45 [INFO ] [jenkins] 
+2026-07-21 09:13:45 [INFO ] [jenkins] ==================================================
+2026-07-21 09:13:45 [INFO ] [jenkins] All 5 steps completed successfully
+2026-07-21 11:07:34 [INFO ] [color_size_deal] Groups: 88, lines: 2835 (file: 2924)
+2026-07-21 11:07:34 [INFO ] [color_size_deal] Prefixes: {'01': 204, '02': 102, '03': 58, '04': 30}
+2026-07-21 11:07:34 [INFO ] [color_size_deal] Done.
+2026-07-21 19:21:46 [INFO ] [gemini_web] Opening Gemini...
+2026-07-21 19:22:20 [INFO ] [gemini_web] Opening Gemini...
+2026-07-21 19:22:26 [INFO ] [gemini_web] Opened Gemini
+2026-07-21 19:22:26 [INFO ] [gemini_web] ========================================
+2026-07-21 19:22:26 [INFO ] [gemini_web] ACTION: Log in to Gemini in the browser
+2026-07-21 19:22:26 [INFO ] [gemini_web] Once logged in, press Enter here to continue...
+2026-07-21 19:22:26 [INFO ] [gemini_web] ========================================
+2026-07-21 19:25:33 [INFO ] [gemini_web] Opening Gemini...
+2026-07-21 19:25:36 [INFO ] [gemini_web] Opened Gemini
+2026-07-21 19:25:36 [INFO ] [gemini_web] ========================================
+2026-07-21 19:25:36 [INFO ] [gemini_web] ACTION: Log in to Gemini in the browser
+2026-07-21 19:25:36 [INFO ] [gemini_web] Once logged in, press Enter here to continue...
+2026-07-21 19:25:36 [INFO ] [gemini_web] ========================================
+2026-07-21 19:29:26 [INFO ] [gemini_web] Opening Gemini...
+2026-07-21 19:29:30 [INFO ] [gemini_web] Opened Gemini
+2026-07-21 19:29:30 [INFO ] [gemini_web] ========================================
+2026-07-21 19:29:30 [INFO ] [gemini_web] ACTION: Log in to Gemini in the browser
+2026-07-21 19:29:30 [INFO ] [gemini_web] Once logged in, press Enter here to continue...
+2026-07-21 19:29:30 [INFO ] [gemini_web] ========================================

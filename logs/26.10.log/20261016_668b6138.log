@@ -1,0 +1,1390 @@
+2026-10-16 16:32:36 [INFO ] [jenkins] ==================================================
+2026-10-16 16:32:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-16 16:32:36 [INFO ] [jenkins] ==================================================
+2026-10-16 16:32:36 [INFO ] [jenkins] 
+2026-10-16 16:32:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-16 16:32:36 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:32:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-16 16:32:36 [INFO ] [jenkins] 
+2026-10-16 16:32:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-16 16:32:36 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:32:36 [INFO ] [preprocess] Preprocessing 34 file(s) with 1 step(s)
+2026-10-16 16:32:36 [INFO ] [preprocess] [product_20261007044704779.xlsx]
+2026-10-16 16:32:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:37 [INFO ] [preprocess]   [product_20261007044704779.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:37 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:37 [INFO ] [preprocess] [product_20261007044718946.xlsx]
+2026-10-16 16:32:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:37 [INFO ] [preprocess]   [product_20261007044718946.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:37 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:38 [INFO ] [preprocess] [product_20261016015622099.xlsx]
+2026-10-16 16:32:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:38 [INFO ] [preprocess]   [product_20261016015622099.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:38 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:38 [INFO ] [preprocess] [product_20261016015731500.xlsx]
+2026-10-16 16:32:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:39 [INFO ] [preprocess]   [product_20261016015731500.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:39 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:39 [INFO ] [preprocess] [product_20261016020106971.xlsx]
+2026-10-16 16:32:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:39 [INFO ] [preprocess]   [product_20261016020106971.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:39 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:39 [INFO ] [preprocess] [product_20261016020252914.xlsx]
+2026-10-16 16:32:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:40 [INFO ] [preprocess]   [product_20261016020252914.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:40 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:40 [INFO ] [preprocess] [product_20261016020617046.xlsx]
+2026-10-16 16:32:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:40 [INFO ] [preprocess]   [product_20261016020617046.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:40 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:40 [INFO ] [preprocess] [product_20261016021028241.xlsx]
+2026-10-16 16:32:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:40 [INFO ] [preprocess]   [product_20261016021028241.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:40 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:41 [INFO ] [preprocess] [product_20261016021526531.xlsx]
+2026-10-16 16:32:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:41 [INFO ] [preprocess]   [product_20261016021526531.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:41 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:41 [INFO ] [preprocess] [product_20261016021730120.xlsx]
+2026-10-16 16:32:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:42 [INFO ] [preprocess]   [product_20261016021730120.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:42 [INFO ] [preprocess] [product_20261016021927122.xlsx]
+2026-10-16 16:32:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:42 [INFO ] [preprocess]   [product_20261016021927122.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:42 [INFO ] [preprocess] [product_20261016022809017.xlsx]
+2026-10-16 16:32:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:42 [INFO ] [preprocess]   [product_20261016022809017.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:42 [INFO ] [preprocess] [product_20261016023140734.xlsx]
+2026-10-16 16:32:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:43 [INFO ] [preprocess]   [product_20261016023140734.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:43 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:43 [INFO ] [preprocess] [product_20261016025256861.xlsx]
+2026-10-16 16:32:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:43 [INFO ] [preprocess]   [product_20261016025256861.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:43 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:43 [INFO ] [preprocess] [product_20261016025650626.xlsx]
+2026-10-16 16:32:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:44 [INFO ] [preprocess]   [product_20261016025650626.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:44 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:44 [INFO ] [preprocess] [product_20261016025900475.xlsx]
+2026-10-16 16:32:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:45 [INFO ] [preprocess]   [product_20261016025900475.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:45 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:45 [INFO ] [preprocess] [product_20261016030105390.xlsx]
+2026-10-16 16:32:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:45 [INFO ] [preprocess]   [product_20261016030105390.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:45 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:45 [INFO ] [preprocess] [product_20261016030410345.xlsx]
+2026-10-16 16:32:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:46 [INFO ] [preprocess]   [product_20261016030410345.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:46 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:46 [INFO ] [preprocess] [product_20261016031209628.xlsx]
+2026-10-16 16:32:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:47 [INFO ] [preprocess]   [product_20261016031209628.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:47 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:47 [INFO ] [preprocess] [product_20261016031324347.xlsx]
+2026-10-16 16:32:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:47 [INFO ] [preprocess]   [product_20261016031324347.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:47 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:47 [INFO ] [preprocess] [product_20261016032053250.xlsx]
+2026-10-16 16:32:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:47 [INFO ] [preprocess]   [product_20261016032053250.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:47 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:48 [INFO ] [preprocess] [product_20261016032308474.xlsx]
+2026-10-16 16:32:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:48 [INFO ] [preprocess]   [product_20261016032308474.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:48 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:48 [INFO ] [preprocess] [product_20261016034108184.xlsx]
+2026-10-16 16:32:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:48 [INFO ] [preprocess]   [product_20261016034108184.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:48 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:48 [INFO ] [preprocess] [product_20261016034350329.xlsx]
+2026-10-16 16:32:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:48 [INFO ] [preprocess]   [product_20261016034350329.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:48 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:48 [INFO ] [preprocess] [product_20261016034951315.xlsx]
+2026-10-16 16:32:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:49 [INFO ] [preprocess]   [product_20261016034951315.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:49 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:49 [INFO ] [preprocess] [product_20261016035154826.xlsx]
+2026-10-16 16:32:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:49 [INFO ] [preprocess]   [product_20261016035154826.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:49 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:49 [INFO ] [preprocess] [product_20261016035439574.xlsx]
+2026-10-16 16:32:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:50 [INFO ] [preprocess]   [product_20261016035439574.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:50 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:50 [INFO ] [preprocess] [product_20261016035815920.xlsx]
+2026-10-16 16:32:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:51 [INFO ] [preprocess]   [product_20261016035815920.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:51 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:51 [INFO ] [preprocess] [product_20261016040152230.xlsx]
+2026-10-16 16:32:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:51 [INFO ] [preprocess]   [product_20261016040152230.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:51 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:51 [INFO ] [preprocess] [product_20261016043022697.xlsx]
+2026-10-16 16:32:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:52 [INFO ] [preprocess]   [product_20261016043022697.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:52 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:52 [INFO ] [preprocess] [product_20261016043054415.xlsx]
+2026-10-16 16:32:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:52 [INFO ] [preprocess]   [product_20261016043054415.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:52 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:52 [INFO ] [preprocess] [product_20261016115816661.xlsx]
+2026-10-16 16:32:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:54 [INFO ] [preprocess]   [product_20261016115816661.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:54 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:54 [INFO ] [preprocess] [product_20261016115817010.xlsx]
+2026-10-16 16:32:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:56 [INFO ] [preprocess]   [product_20261016115817010.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:56 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:56 [INFO ] [preprocess] [product_20261016115819699.xlsx]
+2026-10-16 16:32:56 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:32:56 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:32:58 [INFO ] [preprocess]   [product_20261016115819699.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:32:58 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:32:58 [INFO ] [preprocess] Preprocessing complete
+2026-10-16 16:32:59 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-16 16:32:59 [INFO ] [jenkins] 
+2026-10-16 16:32:59 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-16 16:32:59 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:32:59 [INFO ] [main] Log file: 20261016_668b6138.log
+2026-10-16 16:32:59 [INFO ] [main] Found 34 file(s):
+2026-10-16 16:32:59 [INFO ] [main]   product_20261007044704779.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261007044718946.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016015622099.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016015731500.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016020106971.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016020252914.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016020617046.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016021028241.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016021526531.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016021730120.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016021927122.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016022809017.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016023140734.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016025256861.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016025650626.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016025900475.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016030105390.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016030410345.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016031209628.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016031324347.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016032053250.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016032308474.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016034108184.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016034350329.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016034951315.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016035154826.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016035439574.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016035815920.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016040152230.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016043022697.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016043054415.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016115816661.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016115817010.xlsx
+2026-10-16 16:32:59 [INFO ] [main]   product_20261016115819699.xlsx
+2026-10-16 16:32:59 [INFO ] [main] Output: 10.13v1_de.xlsx
+2026-10-16 16:32:59 [INFO ] [main] ==================================================
+2026-10-16 16:33:19 [INFO ] [main] Merged 34 files, 9890 images total
+2026-10-16 16:33:19 [INFO ] [main] Deleted 34 source file(s)
+2026-10-16 16:33:21 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-16 16:33:21 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_2]: 150 rows, 366 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_3]: 107 rows, 253 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_4]: 52 rows, 149 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_5]: 126 rows, 252 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_6]: 141 rows, 364 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_7]: 18 rows, 51 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_8]: 81 rows, 239 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_9]: 131 rows, 300 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_10]: 66 rows, 147 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_11]: 88 rows, 207 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_12]: 41 rows, 122 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_13]: 81 rows, 165 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_14]: 146 rows, 322 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_15]: 126 rows, 258 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_16]: 121 rows, 274 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_17]: 103 rows, 203 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_18]: 166 rows, 340 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_19]: 101 rows, 232 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_20]: 13 rows, 48 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_21]: 136 rows, 356 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_22]: 56 rows, 117 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_23]: 26 rows, 62 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_24]: 33 rows, 68 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_25]: 67 rows, 131 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_26]: 101 rows, 206 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_27]: 159 rows, 494 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_28]: 163 rows, 338 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_29]: 43 rows, 82 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_30]: 109 rows, 218 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_31]: 61 rows, 133 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_32]: 442 rows, 1073 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_33]: 304 rows, 649 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Sheet [Sheet0_34]: 512 rows, 1305 images
+2026-10-16 16:33:37 [INFO ] [pipeline]   Merged 34 sheets -> 1, 4070 data rows, 9524 images
+2026-10-16 16:33:37 [INFO ] [pipeline] [2/12] validate
+2026-10-16 16:33:37 [INFO ] [pipeline]   Validated: 4220 rows, 27 cols (expect ~32)
+2026-10-16 16:33:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-16 16:33:38 [INFO ] [pipeline]   Backed up 9890 images
+2026-10-16 16:33:38 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-16 16:33:38 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-16 16:33:38 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-16 16:33:38 [INFO ] [pipeline]   Restored 9890 images with adjusted anchors
+2026-10-16 16:33:38 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-16 16:33:38 [INFO ] [pipeline]   Column 2: 4220 IDs generated
+2026-10-16 16:33:38 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-16 16:33:38 [INFO ] [pipeline]   Column 3: 4220 cells filled
+2026-10-16 16:33:38 [INFO ] [pipeline] [6/12] map_colors
+2026-10-16 16:33:38 [INFO ] [pipeline]   Colors J -> K: 4135 cells mapped, 75 rows skipped (col A has fill), 10 no match (recorded)
+2026-10-16 16:33:38 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-16 16:33:38 [INFO ] [pipeline]   Size column L: 4129 mapped, 75 cleared (col A has fill), 16 no match (recorded)
+2026-10-16 16:33:38 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-16 16:33:38 [INFO ] [pipeline]   Mirror copy: 26874 cells written
+2026-10-16 16:33:38 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-16 16:33:38 [INFO ] [pipeline]   Price source M -> AS: 4220 cells copied
+2026-10-16 16:33:38 [INFO ] [pipeline] [10/12] calc_price
+2026-10-16 16:33:38 [INFO ] [pipeline]   Price columns AT-AW: 4220 rows calculated
+2026-10-16 16:33:38 [INFO ] [pipeline] [11/12] format_cells
+2026-10-16 16:33:39 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-16 16:33:39 [INFO ] [pipeline]   Formatted 4220 rows: h=50, align=left/center
+2026-10-16 16:33:39 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-16 16:33:39 [INFO ] [pipeline] [12/12] finalize
+2026-10-16 16:33:39 [INFO ] [pipeline]   Done: 4220 rows x 49 cols (target: 49)
+2026-10-16 16:33:39 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:33:44 [INFO ] [main] Size: 4220 rows x 49 cols
+2026-10-16 16:33:44 [INFO ] [main] ==================================================
+2026-10-16 16:33:44 [INFO ] [main] Done: 10.13v1_de.xlsx
+2026-10-16 16:33:45 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-16 16:33:45 [INFO ] [jenkins] 
+2026-10-16 16:33:45 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-16 16:33:45 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:33:45 [INFO ] [color_size_main] Source: 10.13v1_de.xlsx
+2026-10-16 16:33:50 [INFO ] [color_size_main] Extracted: 4135 data lines + 85 separators → check_.txt
+2026-10-16 16:33:50 [INFO ] [color_size_main] Running: process.py
+2026-10-16 16:33:50 [INFO ] [color_size_deal] Groups: 75, lines: 4135 (file: 4220)
+2026-10-16 16:33:50 [INFO ] [color_size_deal] Prefixes: {'01': 620, '02': 330, '03': 224, '04': 135, '05': 56, '06': 31, '07': 15, '08': 10, '09': 5, '10': 5, '11': 5, '12': 5, '13': 5, '14': 5, '15': 5, '16': 5, '17': 5, '18': 5, '19': 5, '20': 5, '21': 5, '22': 5, '23': 5}
+2026-10-16 16:33:50 [INFO ] [color_size_deal] Done.
+2026-10-16 16:33:50 [INFO ] [color_size_main] Processing write-back: 4220 lines
+2026-10-16 16:33:59 [INFO ] [color_size_main] Write-back: 1581 written, 2639 unchanged → 10.13v1_de.xlsx
+2026-10-16 16:33:59 [INFO ] [color_size_main] Done.
+2026-10-16 16:34:00 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-16 16:34:00 [INFO ] [jenkins] 
+2026-10-16 16:34:00 [INFO ] [jenkins] ==================================================
+2026-10-16 16:34:00 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-16 16:34:00 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-16 16:34:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-16 16:34:00 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-16 16:34:00 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-16 16:34:30 [INFO ] [jenkins] ==================================================
+2026-10-16 16:34:30 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-16 16:34:30 [INFO ] [jenkins] ==================================================
+2026-10-16 16:34:30 [INFO ] [jenkins] 
+2026-10-16 16:34:30 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-16 16:34:30 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:34:30 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-16 16:34:30 [INFO ] [jenkins] 
+2026-10-16 16:34:30 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-16 16:34:30 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:34:31 [INFO ] [preprocess] Preprocessing 34 file(s) with 1 step(s)
+2026-10-16 16:34:31 [INFO ] [preprocess] [product_20261007044704779.xlsx]
+2026-10-16 16:34:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:31 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:31 [INFO ] [preprocess]   [product_20261007044704779.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:31 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:31 [INFO ] [preprocess] [product_20261007044718946.xlsx]
+2026-10-16 16:34:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:31 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:32 [INFO ] [preprocess]   [product_20261007044718946.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:32 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:32 [INFO ] [preprocess] [product_20261016015622099.xlsx]
+2026-10-16 16:34:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:32 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:32 [INFO ] [preprocess]   [product_20261016015622099.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:32 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:33 [INFO ] [preprocess] [product_20261016015731500.xlsx]
+2026-10-16 16:34:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:33 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:33 [INFO ] [preprocess]   [product_20261016015731500.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:33 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:33 [INFO ] [preprocess] [product_20261016020106971.xlsx]
+2026-10-16 16:34:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:33 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:33 [INFO ] [preprocess]   [product_20261016020106971.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:33 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:34 [INFO ] [preprocess] [product_20261016020252914.xlsx]
+2026-10-16 16:34:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:34 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:34 [INFO ] [preprocess]   [product_20261016020252914.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:34 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:34 [INFO ] [preprocess] [product_20261016020617046.xlsx]
+2026-10-16 16:34:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:34 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:34 [INFO ] [preprocess]   [product_20261016020617046.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:34 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:34 [INFO ] [preprocess] [product_20261016021028241.xlsx]
+2026-10-16 16:34:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:34 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:35 [INFO ] [preprocess]   [product_20261016021028241.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:35 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:35 [INFO ] [preprocess] [product_20261016021526531.xlsx]
+2026-10-16 16:34:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:35 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:35 [INFO ] [preprocess]   [product_20261016021526531.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:35 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:36 [INFO ] [preprocess] [product_20261016021730120.xlsx]
+2026-10-16 16:34:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:36 [INFO ] [preprocess]   [product_20261016021730120.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:36 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:36 [INFO ] [preprocess] [product_20261016021927122.xlsx]
+2026-10-16 16:34:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:36 [INFO ] [preprocess]   [product_20261016021927122.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:36 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:36 [INFO ] [preprocess] [product_20261016022809017.xlsx]
+2026-10-16 16:34:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:37 [INFO ] [preprocess]   [product_20261016022809017.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:37 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:37 [INFO ] [preprocess] [product_20261016023140734.xlsx]
+2026-10-16 16:34:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:37 [INFO ] [preprocess]   [product_20261016023140734.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:37 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:37 [INFO ] [preprocess] [product_20261016025256861.xlsx]
+2026-10-16 16:34:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:38 [INFO ] [preprocess]   [product_20261016025256861.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:38 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:38 [INFO ] [preprocess] [product_20261016025650626.xlsx]
+2026-10-16 16:34:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:38 [INFO ] [preprocess]   [product_20261016025650626.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:38 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:39 [INFO ] [preprocess] [product_20261016025900475.xlsx]
+2026-10-16 16:34:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:39 [INFO ] [preprocess]   [product_20261016025900475.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:39 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:39 [INFO ] [preprocess] [product_20261016030105390.xlsx]
+2026-10-16 16:34:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:40 [INFO ] [preprocess]   [product_20261016030105390.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:40 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:40 [INFO ] [preprocess] [product_20261016030410345.xlsx]
+2026-10-16 16:34:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:40 [INFO ] [preprocess]   [product_20261016030410345.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:40 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:40 [INFO ] [preprocess] [product_20261016031209628.xlsx]
+2026-10-16 16:34:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:41 [INFO ] [preprocess]   [product_20261016031209628.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:41 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:41 [INFO ] [preprocess] [product_20261016031324347.xlsx]
+2026-10-16 16:34:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:41 [INFO ] [preprocess]   [product_20261016031324347.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:41 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:41 [INFO ] [preprocess] [product_20261016032053250.xlsx]
+2026-10-16 16:34:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:42 [INFO ] [preprocess]   [product_20261016032053250.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:42 [INFO ] [preprocess] [product_20261016032308474.xlsx]
+2026-10-16 16:34:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:42 [INFO ] [preprocess]   [product_20261016032308474.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:42 [INFO ] [preprocess] [product_20261016034108184.xlsx]
+2026-10-16 16:34:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:42 [INFO ] [preprocess]   [product_20261016034108184.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:42 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:42 [INFO ] [preprocess] [product_20261016034350329.xlsx]
+2026-10-16 16:34:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:43 [INFO ] [preprocess]   [product_20261016034350329.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:43 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:43 [INFO ] [preprocess] [product_20261016034951315.xlsx]
+2026-10-16 16:34:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:43 [INFO ] [preprocess]   [product_20261016034951315.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:43 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:43 [INFO ] [preprocess] [product_20261016035154826.xlsx]
+2026-10-16 16:34:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:43 [INFO ] [preprocess]   [product_20261016035154826.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:43 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:43 [INFO ] [preprocess] [product_20261016035439574.xlsx]
+2026-10-16 16:34:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:44 [INFO ] [preprocess]   [product_20261016035439574.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:44 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:44 [INFO ] [preprocess] [product_20261016035815920.xlsx]
+2026-10-16 16:34:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:45 [INFO ] [preprocess]   [product_20261016035815920.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:45 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:45 [INFO ] [preprocess] [product_20261016040152230.xlsx]
+2026-10-16 16:34:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:45 [INFO ] [preprocess]   [product_20261016040152230.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:45 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:45 [INFO ] [preprocess] [product_20261016043022697.xlsx]
+2026-10-16 16:34:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:46 [INFO ] [preprocess]   [product_20261016043022697.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:46 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:46 [INFO ] [preprocess] [product_20261016043054415.xlsx]
+2026-10-16 16:34:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:46 [INFO ] [preprocess]   [product_20261016043054415.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:46 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:46 [INFO ] [preprocess] [product_20261016115816661.xlsx]
+2026-10-16 16:34:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:48 [INFO ] [preprocess]   [product_20261016115816661.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:48 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:49 [INFO ] [preprocess] [product_20261016115817010.xlsx]
+2026-10-16 16:34:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:50 [INFO ] [preprocess]   [product_20261016115817010.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:50 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:50 [INFO ] [preprocess] [product_20261016115819699.xlsx]
+2026-10-16 16:34:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-16 16:34:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-16 16:34:52 [INFO ] [preprocess]   [product_20261016115819699.xlsx] Sheet [Sheet0]: header row removed
+2026-10-16 16:34:52 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:34:53 [INFO ] [preprocess] Preprocessing complete
+2026-10-16 16:34:53 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-16 16:34:53 [INFO ] [jenkins] 
+2026-10-16 16:34:53 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-16 16:34:53 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:34:53 [INFO ] [main] Log file: 20261016_668b6138.log
+2026-10-16 16:34:53 [INFO ] [main] Found 34 file(s):
+2026-10-16 16:34:53 [INFO ] [main]   product_20261007044704779.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261007044718946.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016015622099.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016015731500.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016020106971.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016020252914.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016020617046.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016021028241.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016021526531.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016021730120.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016021927122.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016022809017.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016023140734.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016025256861.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016025650626.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016025900475.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016030105390.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016030410345.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016031209628.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016031324347.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016032053250.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016032308474.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016034108184.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016034350329.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016034951315.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016035154826.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016035439574.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016035815920.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016040152230.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016043022697.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016043054415.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016115816661.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016115817010.xlsx
+2026-10-16 16:34:53 [INFO ] [main]   product_20261016115819699.xlsx
+2026-10-16 16:34:53 [INFO ] [main] Output: 10.13v1_fr.xlsx
+2026-10-16 16:34:53 [INFO ] [main] ==================================================
+2026-10-16 16:35:13 [INFO ] [main] Merged 34 files, 9890 images total
+2026-10-16 16:35:13 [INFO ] [main] Deleted 34 source file(s)
+2026-10-16 16:35:16 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-16 16:35:16 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_2]: 150 rows, 366 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_3]: 107 rows, 253 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_4]: 52 rows, 149 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_5]: 126 rows, 252 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_6]: 141 rows, 364 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_7]: 18 rows, 51 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_8]: 81 rows, 239 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_9]: 131 rows, 300 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_10]: 66 rows, 147 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_11]: 88 rows, 207 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_12]: 41 rows, 122 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_13]: 81 rows, 165 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_14]: 146 rows, 322 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_15]: 126 rows, 258 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_16]: 121 rows, 274 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_17]: 103 rows, 203 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_18]: 166 rows, 340 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_19]: 101 rows, 232 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_20]: 13 rows, 48 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_21]: 136 rows, 356 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_22]: 56 rows, 117 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_23]: 26 rows, 62 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_24]: 33 rows, 68 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_25]: 67 rows, 131 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_26]: 101 rows, 206 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_27]: 159 rows, 494 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_28]: 163 rows, 338 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_29]: 43 rows, 82 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_30]: 109 rows, 218 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_31]: 61 rows, 133 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_32]: 442 rows, 1073 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_33]: 304 rows, 649 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Sheet [Sheet0_34]: 512 rows, 1305 images
+2026-10-16 16:35:31 [INFO ] [pipeline]   Merged 34 sheets -> 1, 4070 data rows, 9524 images
+2026-10-16 16:35:31 [INFO ] [pipeline] [2/12] validate
+2026-10-16 16:35:31 [INFO ] [pipeline]   Validated: 4220 rows, 27 cols (expect ~32)
+2026-10-16 16:35:31 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-16 16:35:32 [INFO ] [pipeline]   Backed up 9890 images
+2026-10-16 16:35:32 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-16 16:35:32 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-16 16:35:32 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-16 16:35:32 [INFO ] [pipeline]   Restored 9890 images with adjusted anchors
+2026-10-16 16:35:32 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-16 16:35:32 [INFO ] [pipeline]   Column 2: 4220 IDs generated
+2026-10-16 16:35:32 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-16 16:35:32 [INFO ] [pipeline]   Column 3: 4220 cells filled
+2026-10-16 16:35:32 [INFO ] [pipeline] [6/12] map_colors
+2026-10-16 16:35:32 [INFO ] [pipeline]   Colors J -> K: 4145 cells mapped, 75 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-16 16:35:32 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-16 16:35:32 [INFO ] [pipeline]   Size column L: 4129 mapped, 75 cleared (col A has fill), 16 no match (recorded)
+2026-10-16 16:35:32 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-16 16:35:32 [INFO ] [pipeline]   Mirror copy: 26874 cells written
+2026-10-16 16:35:32 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-16 16:35:32 [INFO ] [pipeline]   Price source M -> AS: 4220 cells copied
+2026-10-16 16:35:32 [INFO ] [pipeline] [10/12] calc_price
+2026-10-16 16:35:33 [INFO ] [pipeline]   Price columns AT-AW: 4220 rows calculated
+2026-10-16 16:35:33 [INFO ] [pipeline] [11/12] format_cells
+2026-10-16 16:35:33 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-16 16:35:33 [INFO ] [pipeline]   Formatted 4220 rows: h=50, align=left/center
+2026-10-16 16:35:33 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-16 16:35:33 [INFO ] [pipeline] [12/12] finalize
+2026-10-16 16:35:33 [INFO ] [pipeline]   Done: 4220 rows x 49 cols (target: 49)
+2026-10-16 16:35:33 [INFO ] [pipeline] Pipeline complete
+2026-10-16 16:35:38 [INFO ] [main] Size: 4220 rows x 49 cols
+2026-10-16 16:35:38 [INFO ] [main] ==================================================
+2026-10-16 16:35:38 [INFO ] [main] Done: 10.13v1_fr.xlsx
+2026-10-16 16:35:39 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-16 16:35:39 [INFO ] [jenkins] 
+2026-10-16 16:35:39 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-16 16:35:39 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:35:39 [INFO ] [color_size_main] Source: 10.13v1_fr.xlsx
+2026-10-16 16:35:44 [INFO ] [color_size_main] Extracted: 4145 data lines + 75 separators → check_.txt
+2026-10-16 16:35:44 [INFO ] [color_size_main] Running: process.py
+2026-10-16 16:35:44 [INFO ] [color_size_deal] Groups: 75, lines: 4145 (file: 4220)
+2026-10-16 16:35:44 [INFO ] [color_size_deal] Prefixes: {'01': 620, '02': 330, '03': 224, '04': 135, '05': 56, '06': 31, '07': 15, '08': 10, '09': 5, '10': 5, '11': 5, '12': 5, '13': 5, '14': 5, '15': 5, '16': 5, '17': 5, '18': 5, '19': 5, '20': 5, '21': 5, '22': 5, '23': 5}
+2026-10-16 16:35:44 [INFO ] [color_size_deal] Done.
+2026-10-16 16:35:44 [INFO ] [color_size_main] Processing write-back: 4220 lines
+2026-10-16 16:35:53 [INFO ] [color_size_main] Write-back: 1571 written, 2649 unchanged → 10.13v1_fr.xlsx
+2026-10-16 16:35:53 [INFO ] [color_size_main] Done.
+2026-10-16 16:35:53 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-16 16:35:53 [INFO ] [jenkins] 
+2026-10-16 16:35:53 [INFO ] [jenkins] ==================================================
+2026-10-16 16:35:53 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-16 16:35:53 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-16 16:35:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-16 16:35:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-16 16:35:53 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-16 16:36:55 [INFO ] [jenkins] ==================================================
+2026-10-16 16:36:55 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-16 16:36:55 [INFO ] [jenkins] ==================================================
+2026-10-16 16:36:55 [INFO ] [jenkins] 
+2026-10-16 16:36:55 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-16 16:36:55 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:36:55 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\10.13v1_fr.xlsx
+2026-10-16 16:36:55 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-16 16:36:55 [INFO ] [jenkins] 
+2026-10-16 16:36:55 [INFO ] [jenkins] ==================================================
+2026-10-16 16:36:55 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-16 16:36:55 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-16 16:36:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-16 16:36:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-16 16:36:55 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-16 16:37:20 [INFO ] [jenkins] ==================================================
+2026-10-16 16:37:20 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-16 16:37:20 [INFO ] [jenkins] ==================================================
+2026-10-16 16:37:20 [INFO ] [jenkins] 
+2026-10-16 16:37:20 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-16 16:37:20 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:37:20 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\10.13v1_de.xlsx
+2026-10-16 16:37:20 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-16 16:37:20 [INFO ] [jenkins] 
+2026-10-16 16:37:20 [INFO ] [jenkins] ==================================================
+2026-10-16 16:37:20 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-16 16:37:20 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-16 16:37:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-16 16:37:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-16 16:37:20 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-16 16:37:47 [INFO ] [jenkins] ==================================================
+2026-10-16 16:37:47 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-16 16:37:47 [INFO ] [jenkins] ==================================================
+2026-10-16 16:37:47 [INFO ] [jenkins] 
+2026-10-16 16:37:47 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-16 16:37:47 [INFO ] [jenkins] ------------------------------
+2026-10-16 16:37:47 [INFO ] [title_workflow] Source: 10.13v1.xlsx
+2026-10-16 16:37:52 [INFO ] [title_workflow] Extracted 75 titles + 75 links
+2026-10-16 16:37:52 [INFO ] [title_workflow] Written: origin_title (75) + origin_link (75)
+2026-10-16 16:37:52 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-16 16:37:52 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-16 16:37:53 [INFO ] [deepseek_web] Opening DeepSeek web (75 titles)...
+2026-10-16 16:37:53 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-16 16:38:00 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-16 16:38:03 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-16 16:38:03 [INFO ] [deepseek_web] [1/75] 女士万圣节印花打底裤
+2026-10-16 16:38:09 [INFO ] [deepseek_web]   Downloaded: 0001_2970842016642810433825.jpg
+2026-10-16 16:38:09 [INFO ] [deepseek_web]   Prefetching next image (2/75)
+2026-10-16 16:38:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:38:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:38:46 [INFO ] [deepseek_web]   Response: 南瓜图案 女巫图案 蝙蝠图案 城堡图案 星空图案 藤蔓图案 万圣节主题印花 束脚设计 女士 修身版型 紧身打底裤
+2026-10-16 16:38:46 [INFO ] [deepseek_web]   Deleted: 0001_2970842016642810433825.jpg
+2026-10-16 16:38:51 [INFO ] [deepseek_web] [2/75] 女士万圣节印花打底裤
+2026-10-16 16:38:51 [INFO ] [deepseek_web]   Downloaded: 0002_2970842016642810433825.jpg
+2026-10-16 16:38:51 [INFO ] [deepseek_web]   Prefetching next image (3/75)
+2026-10-16 16:38:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:39:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:39:20 [INFO ] [deepseek_web]   Response: 南瓜图案 女巫剪影 蝙蝠图案 城堡图案 藤蔓装饰 星空图案 高腰套穿 万圣节主题印花 女士 修身版型 紧身打底长裤
+2026-10-16 16:39:20 [INFO ] [deepseek_web]   Deleted: 0002_2970842016642810433825.jpg
+2026-10-16 16:39:25 [INFO ] [deepseek_web] [3/75] 秋冬季女士法兰绒双面绒卡通印花睡裤
+2026-10-16 16:39:25 [INFO ] [deepseek_web]   Downloaded: 0003_1501121292871775754005.jpg
+2026-10-16 16:39:25 [INFO ] [deepseek_web]   Prefetching next image (4/75)
+2026-10-16 16:39:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:39:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:40:00 [INFO ] [deepseek_web]   Response: 卡通卡车印花 圣诞树印花 花卉印花 松紧腰设计 女士 家居睡裤 宽松版型 直筒长裤 法兰绒面料 双面绒材质 秋冬季
+2026-10-16 16:40:00 [INFO ] [deepseek_web]   Deleted: 0003_1501121292871775754005.jpg
+2026-10-16 16:40:05 [INFO ] [deepseek_web] [4/75] 女士时尚裤腰绳口袋抓绒家居休闲运动宽松束脚裤
+2026-10-16 16:40:05 [INFO ] [deepseek_web]   Downloaded: 0004_0241129304336290533388.jpg
+2026-10-16 16:40:05 [INFO ] [deepseek_web]   Prefetching next image (5/75)
+2026-10-16 16:40:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:40:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:41:21 [INFO ] [deepseek_web]   Response: 高腰抽绳 松紧腰带 双侧口袋 束脚裤口设计 抓绒面料 纯色图案 女士装 宽松版型 秋冬季节 休闲运动卫裤 长裤
+2026-10-16 16:41:21 [INFO ] [deepseek_web]   Deleted: 0004_0241129304336290533388.jpg
+2026-10-16 16:41:26 [INFO ] [deepseek_web] [5/75] 女士休闲时尚万圣节印花运动紧身裤瑜伽裤打底裤
+2026-10-16 16:41:26 [INFO ] [deepseek_web]   Downloaded: 0005_4600710456462579347450.jpg
+2026-10-16 16:41:26 [INFO ] [deepseek_web]   Prefetching next image (6/75)
+2026-10-16 16:41:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:41:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:41:57 [INFO ] [deepseek_web]   Response: 万圣节南瓜脸印花 不对称图案设计 色块拼接 条纹图案 紧身打底长裤 女士 修身版型 松紧腰套穿 运动瑜伽适用
+2026-10-16 16:41:57 [INFO ] [deepseek_web]   Deleted: 0005_4600710456462579347450.jpg
+2026-10-16 16:42:02 [INFO ] [deepseek_web] [6/75] 万圣节女士印拼接卫裤
+2026-10-16 16:42:02 [INFO ] [deepseek_web]   Downloaded: 0006_2591114331311414419385.jpg
+2026-10-16 16:42:02 [INFO ] [deepseek_web]   Prefetching next image (7/75)
+2026-10-16 16:42:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:42:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:42:31 [INFO ] [deepseek_web]   Response: 万圣节主题印花 骷髅图案 幽灵图案 女士 宽松版型 束脚卫裤 南瓜图案 蝙蝠图案 抽绳松紧腰 束脚裤口 双侧口袋 不对称拼接设计
+2026-10-16 16:42:31 [INFO ] [deepseek_web]   Deleted: 0006_2591114331311414419385.jpg
+2026-10-16 16:42:36 [INFO ] [deepseek_web] [7/75] 女装加绒女式弹性紧身牛仔裤蓝色洗水高腰修身小脚牛仔长裤
+2026-10-16 16:42:36 [INFO ] [deepseek_web]   Downloaded: 0007_3161108027879329866961.jpg
+2026-10-16 16:42:36 [INFO ] [deepseek_web]   Prefetching next image (8/75)
+2026-10-16 16:42:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:42:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:43:16 [INFO ] [deepseek_web]   Response: 秋冬加绒 小脚裤口 高腰设计 水洗牛仔纹理 女士款 修身版型 紧身牛仔长裤 纽扣门襟 后口袋 弹性面料 腰带环
+2026-10-16 16:43:16 [INFO ] [deepseek_web]   Deleted: 0007_3161108027879329866961.jpg
+2026-10-16 16:43:21 [INFO ] [deepseek_web] [8/75] 女士松紧高腰束脚宽松休闲裤
+2026-10-16 16:43:21 [INFO ] [deepseek_web]   Downloaded: 0008_2920344447098738518144.jpg
+2026-10-16 16:43:21 [INFO ] [deepseek_web]   Prefetching next image (9/75)
+2026-10-16 16:43:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:43:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:44:01 [INFO ] [deepseek_web]   Response: 高腰收腹设计 抽绳松紧腰带 双侧实用口袋 束脚裤口设计 加绒保暖内里 纯色纹理面料 女士 宽松版型 束脚休闲运动长裤
+2026-10-16 16:44:01 [INFO ] [deepseek_web]   Deleted: 0008_2920344447098738518144.jpg
+2026-10-16 16:44:06 [INFO ] [deepseek_web] [9/75] 孕妇睡裤冬季半边绒大码可调节不勒肚柔软亲肤家居裤
+2026-10-16 16:44:06 [INFO ] [deepseek_web]   Downloaded: 0009_4670335557462215511130.jpg
+2026-10-16 16:44:06 [INFO ] [deepseek_web]   Prefetching next image (10/75)
+2026-10-16 16:44:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:44:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:44:39 [INFO ] [deepseek_web]   Response: 高腰托腹设计 宽腿直筒裤型 可调节松紧腰带 绒面材质 纯色 孕妇家居长裤 女士 宽松版型 长裤 大码 冬季 家居穿着
+2026-10-16 16:44:39 [INFO ] [deepseek_web]   Deleted: 0009_4670335557462215511130.jpg
+2026-10-16 16:44:44 [INFO ] [deepseek_web] [10/75] 女士加厚休闲宽松外穿冬季睡裤
+2026-10-16 16:44:44 [INFO ] [deepseek_web]   Downloaded: 0010_8290415201742863159976.jpg
+2026-10-16 16:44:44 [INFO ] [deepseek_web]   Prefetching next image (11/75)
+2026-10-16 16:44:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:44:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:45:24 [INFO ] [deepseek_web]   Response: 字母刺绣 束脚裤口 松紧腰带 双侧口袋 绒面材质 加厚 可外穿 纯色 女士 宽松版型 家居睡裤 长裤 冬季 休闲 日常
+2026-10-16 16:45:24 [INFO ] [deepseek_web]   Deleted: 0010_8290415201742863159976.jpg
+2026-10-16 16:45:29 [INFO ] [deepseek_web] [11/75] 女士纯色收腰喇叭裤口袋款加绒保暖休闲运动型紧身裤
+2026-10-16 16:45:29 [INFO ] [deepseek_web]   Downloaded: 0011_9730449242133120396620.jpg
+2026-10-16 16:45:29 [INFO ] [deepseek_web]   Prefetching next image (12/75)
+2026-10-16 16:45:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:45:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:46:16 [INFO ] [deepseek_web]   Response: 后侧贴袋 喇叭裤口 高腰收腰 女士款 修身版型 紧身喇叭长裤 松紧腰头 加绒保暖内里 纯色 休闲运动 日常外穿
+2026-10-16 16:46:16 [INFO ] [deepseek_web]   Deleted: 0011_9730449242133120396620.jpg
+2026-10-16 16:46:21 [INFO ] [deepseek_web] [12/75] 女士秋冬季万圣节印花抽绳直筒阔腿运动休闲卫裤
+2026-10-16 16:46:21 [INFO ] [deepseek_web]   Downloaded: 0012_1720319427115520376316.jpg
+2026-10-16 16:46:21 [INFO ] [deepseek_web]   Prefetching next image (13/75)
+2026-10-16 16:46:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:46:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:46:50 [INFO ] [deepseek_web]   Response: 万圣节主题印花 南瓜图案 蝙蝠图案 抽绳松紧腰 双侧口袋 直筒阔腿设计 女士 宽松版型 休闲运动卫裤 秋冬季
+2026-10-16 16:46:50 [INFO ] [deepseek_web]   Deleted: 0012_1720319427115520376316.jpg
+2026-10-16 16:46:55 [INFO ] [deepseek_web] [13/75] 女士睡裤法兰绒秋冬季加绒珊瑚绒家居裤带口袋
+2026-10-16 16:46:55 [INFO ] [deepseek_web]   Downloaded: 0013_6931049497277376219950.jpg
+2026-10-16 16:46:55 [INFO ] [deepseek_web]   Prefetching next image (14/75)
+2026-10-16 16:46:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:47:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:47:24 [INFO ] [deepseek_web]   Response: 波浪条纹拼接 抽绳松紧腰 双侧口袋 宽腿直筒 法兰绒珊瑚绒面料 加绒保暖 女士 宽松版型 家居睡裤 长裤 秋冬季
+2026-10-16 16:47:24 [INFO ] [deepseek_web]   Deleted: 0013_6931049497277376219950.jpg
+2026-10-16 16:47:29 [INFO ] [deepseek_web] [14/75] 女士法兰绒加绒绒毛睡裤柔软舒适保暖睡裤
+2026-10-16 16:47:29 [INFO ] [deepseek_web]   Downloaded: 0014_6340422482662625484344.jpg
+2026-10-16 16:47:29 [INFO ] [deepseek_web]   Prefetching next image (15/75)
+2026-10-16 16:47:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:47:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:47:58 [INFO ] [deepseek_web]   Response: 波浪形凹凸纹理 松紧腰头 直筒宽松裤腿 法兰绒加绒面料 纯色 女士 宽松版型 家居睡裤 长裤 冬季保暖 居家睡眠
+2026-10-16 16:47:58 [INFO ] [deepseek_web]   Deleted: 0014_6340422482662625484344.jpg
+2026-10-16 16:48:03 [INFO ] [deepseek_web] [15/75] 女士秋冬纯色西装风半松紧腰阔腿休闲卫裤带口袋 (加绒)
+2026-10-16 16:48:03 [INFO ] [deepseek_web]   Downloaded: 0015_9650355436572179403551.jpg
+2026-10-16 16:48:03 [INFO ] [deepseek_web]   Prefetching next image (16/75)
+2026-10-16 16:48:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:48:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:48:33 [INFO ] [deepseek_web]   Response: 西装风单排纽扣门襟 腰带环设计 双侧插袋 女士 宽松版型 休闲卫裤 高腰阔腿直筒 半松紧腰 加绒内里 纯色 秋冬
+2026-10-16 16:48:33 [INFO ] [deepseek_web]   Deleted: 0015_9650355436572179403551.jpg
+2026-10-16 16:48:38 [INFO ] [deepseek_web] [16/75] 女士秋冬万圣节搞怪血渍印花抽绳弹力腰束脚运动卫裤带口袋
+2026-10-16 16:48:38 [INFO ] [deepseek_web]   Downloaded: 0016_4060202174946682819383.jpg
+2026-10-16 16:48:38 [INFO ] [deepseek_web]   Prefetching next image (17/75)
+2026-10-16 16:48:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:48:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:49:15 [INFO ] [deepseek_web]   Response: 血渍泼溅印花 抽绳松紧腰 束脚裤口 女士 宽松版型 休闲运动卫裤 高腰设计 双侧插袋 长裤 秋冬 万圣节主题印花
+2026-10-16 16:49:15 [INFO ] [deepseek_web]   Deleted: 0016_4060202174946682819383.jpg
+2026-10-16 16:49:20 [INFO ] [deepseek_web] [17/75] 女士万圣节仿毛衣裤子
+2026-10-16 16:49:20 [INFO ] [deepseek_web]   Downloaded: 0017_3710354276194419901482.jpg
+2026-10-16 16:49:20 [INFO ] [deepseek_web]   Prefetching next image (18/75)
+2026-10-16 16:49:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:49:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:49:49 [INFO ] [deepseek_web]   Response: 不对称木乃伊绷带印花 仿针织罗纹拼接 卡通眼睛图案 女士 修身版型 紧身打底长裤 高腰套穿 字母印花 万圣节主题
+2026-10-16 16:49:49 [INFO ] [deepseek_web]   Deleted: 0017_3710354276194419901482.jpg
+2026-10-16 16:49:54 [INFO ] [deepseek_web] [18/75] 女士万圣节阔腿舒适拉绳高腰休闲睡裤
+2026-10-16 16:49:54 [INFO ] [deepseek_web]   Downloaded: 0018_6260532357823430693632.jpg
+2026-10-16 16:49:54 [INFO ] [deepseek_web]   Prefetching next image (19/75)
+2026-10-16 16:49:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:50:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:50:23 [INFO ] [deepseek_web]   Response: 万圣节主题印花 女巫帽图案 蝙蝠图案 幽灵图案 月亮星星图案 抽绳松紧宽腰头 女士 宽松版型 阔腿家居睡裤
+2026-10-16 16:50:23 [INFO ] [deepseek_web]   Deleted: 0018_6260532357823430693632.jpg
+2026-10-16 16:50:28 [INFO ] [deepseek_web] [19/75] 女士万圣节阔腿宽松舒适休闲睡裤
+2026-10-16 16:50:28 [INFO ] [deepseek_web]   Downloaded: 0019_7190526241854217260311.jpg
+2026-10-16 16:50:28 [INFO ] [deepseek_web]   Prefetching next image (20/75)
+2026-10-16 16:50:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:50:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:50:57 [INFO ] [deepseek_web]   Response: 幽灵图案 南瓜图案 万圣节主题印花 松紧腰设计 套穿式 阔腿直筒裤型 女士 宽松版型 休闲睡裤 长裤 居家睡眠
+2026-10-16 16:50:57 [INFO ] [deepseek_web]   Deleted: 0019_7190526241854217260311.jpg
+2026-10-16 16:51:02 [INFO ] [deepseek_web] [20/75] 加绒男女士格子印花睡裤法兰绒睡裤加绒睡衣下装
+2026-10-16 16:51:02 [INFO ] [deepseek_web]   Downloaded: 0020_3490412044002217525710.jpg
+2026-10-16 16:51:02 [INFO ] [deepseek_web]   Prefetching next image (21/75)
+2026-10-16 16:51:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:51:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:51:36 [INFO ] [deepseek_web]   Response: 格纹印花图案 抽绳松紧腰带 直筒裤腿 套穿式设计 法兰绒睡裤 中性 宽松版型 加绒保暖 家居长裤 睡眠穿着
+2026-10-16 16:51:36 [INFO ] [deepseek_web]   Deleted: 0020_3490412044002217525710.jpg
+2026-10-16 16:51:41 [INFO ] [deepseek_web] [21/75] 全印日常时尚休闲裤
+2026-10-16 16:51:41 [INFO ] [deepseek_web]   Downloaded: 0021_5940852339552112644606.jpg
+2026-10-16 16:51:41 [INFO ] [deepseek_web]   Prefetching next image (22/75)
+2026-10-16 16:51:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:51:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:52:12 [INFO ] [deepseek_web]   Response: 格纹印花图案 抽绳松紧腰带 直筒宽松裤腿 套穿式设计 女士 宽松版型 休闲长裤 日常家居外穿 全印设计 居家穿着
+2026-10-16 16:52:12 [INFO ] [deepseek_web]   Deleted: 0021_5940852339552112644606.jpg
+2026-10-16 16:52:17 [INFO ] [deepseek_web] [22/75] 万圣节印花休闲裤
+2026-10-16 16:52:17 [INFO ] [deepseek_web]   Downloaded: 0022_9531127008001127153984.jpg
+2026-10-16 16:52:17 [INFO ] [deepseek_web]   Prefetching next image (23/75)
+2026-10-16 16:52:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:52:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:52:47 [INFO ] [deepseek_web]   Response: 万圣节主题印花 卡通蜘蛛图案 蜘蛛网图案 女士 宽松版型 休闲长裤 小花图案 圆点图案 抽绳松紧腰 双侧口袋 直筒阔腿
+2026-10-16 16:52:47 [INFO ] [deepseek_web]   Deleted: 0022_9531127008001127153984.jpg
+2026-10-16 16:52:52 [INFO ] [deepseek_web] [23/75] 女士万圣节休闲裤
+2026-10-16 16:52:52 [INFO ] [deepseek_web]   Downloaded: 0023_1290430318023213872246.jpg
+2026-10-16 16:52:52 [INFO ] [deepseek_web]   Prefetching next image (24/75)
+2026-10-16 16:52:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:53:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:53:21 [INFO ] [deepseek_web]   Response: 女巫帽印花 叶片图案 圆点图案 抽绳松紧腰 女士 宽松版型 休闲长裤 直筒宽松裤腿 万圣节主题印花 套穿式设计
+2026-10-16 16:53:21 [INFO ] [deepseek_web]   Deleted: 0023_1290430318023213872246.jpg
+2026-10-16 16:53:26 [INFO ] [deepseek_web] [24/75] 女士法兰绒圣诞节印花休闲裤居家睡裤
+2026-10-16 16:53:26 [INFO ] [deepseek_web]   Downloaded: 0024_2730430285553019039775.jpg
+2026-10-16 16:53:26 [INFO ] [deepseek_web]   Prefetching next image (25/75)
+2026-10-16 16:53:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:53:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:53:55 [INFO ] [deepseek_web]   Response: 圣诞老人印花 圣诞树印花 雪地场景印花 星星图案 礼物图案 抽绳松紧腰 女士 宽松版型 法兰绒面料 居家睡裤 休闲长裤
+2026-10-16 16:53:55 [INFO ] [deepseek_web]   Deleted: 0024_2730430285553019039775.jpg
+2026-10-16 16:54:00 [INFO ] [deepseek_web] [25/75] 女士万圣节印花睡裤舒适秋季出行休闲裤
+2026-10-16 16:54:00 [INFO ] [deepseek_web]   Downloaded: 0025_5870430416754013578373.jpg
+2026-10-16 16:54:00 [INFO ] [deepseek_web]   Prefetching next image (26/75)
+2026-10-16 16:54:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:54:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:54:29 [INFO ] [deepseek_web]   Response: 万圣节主题印花 纸杯蛋糕图案 南瓜图案 墓碑图案 蜘蛛图案 眼球图案 糖果图案 女士 宽松版型 休闲睡裤 抽绳松紧腰 双侧口袋 秋季
+2026-10-16 16:54:29 [INFO ] [deepseek_web]   Deleted: 0025_5870430416754013578373.jpg
+2026-10-16 16:54:34 [INFO ] [deepseek_web] [26/75] 女士舒适休闲睡裤万圣搞怪印花抽绳阔腿裤
+2026-10-16 16:54:34 [INFO ] [deepseek_web]   Downloaded: 0026_1530501358511513162183.jpg
+2026-10-16 16:54:34 [INFO ] [deepseek_web]   Prefetching next image (27/75)
+2026-10-16 16:54:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:54:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:55:03 [INFO ] [deepseek_web]   Response: 万圣节主题印花 卡通眼睛图案 条纹拼接设计 抽绳松紧腰带 女士 宽松版型 休闲睡裤 阔腿长裤 套穿式设计 居家睡眠穿着
+2026-10-16 16:55:03 [INFO ] [deepseek_web]   Deleted: 0026_1530501358511513162183.jpg
+2026-10-16 16:55:08 [INFO ] [deepseek_web] [27/75] 女士加厚加绒休闲长裤
+2026-10-16 16:55:08 [INFO ] [deepseek_web]   Downloaded: 0027_5080548531953891527681.jpg
+2026-10-16 16:55:08 [INFO ] [deepseek_web]   Prefetching next image (28/75)
+2026-10-16 16:55:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:55:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:55:37 [INFO ] [deepseek_web]   Response: 立体编织纹理 毛绒面料 侧边小标签 女士加厚加绒休闲长裤 宽松版型 直筒阔腿 松紧腰头 套穿式设计 居家休闲
+2026-10-16 16:55:37 [INFO ] [deepseek_web]   Deleted: 0027_5080548531953891527681.jpg
+2026-10-16 16:55:42 [INFO ] [deepseek_web] [28/75] 女士秋冬印花万圣节居家出行休闲裤
+2026-10-16 16:55:42 [INFO ] [deepseek_web]   Downloaded: 0028_8320436459484517094204.jpg
+2026-10-16 16:55:42 [INFO ] [deepseek_web]   Prefetching next image (29/75)
+2026-10-16 16:55:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:55:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:56:11 [INFO ] [deepseek_web]   Response: 万圣节主题印花 南瓜脸图案 横条纹拼接 抽绳松紧腰 高腰套穿 直筒阔腿 女士 宽松版型 休闲长裤 秋冬居家外穿
+2026-10-16 16:56:11 [INFO ] [deepseek_web]   Deleted: 0028_8320436459484517094204.jpg
+2026-10-16 16:56:16 [INFO ] [deepseek_web] [29/75] 万圣节女士休闲裤
+2026-10-16 16:56:16 [INFO ] [deepseek_web]   Downloaded: 0029_7791015570334436506996.jpg
+2026-10-16 16:56:16 [INFO ] [deepseek_web]   Prefetching next image (30/75)
+2026-10-16 16:56:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:56:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:56:45 [INFO ] [deepseek_web]   Response: 万圣节主题印花 南瓜图案 骷髅图案 藤蔓图案 闪电效果 纽扣门襟 腰带环 女士 宽松版型 阔腿休闲长裤 前插袋
+2026-10-16 16:56:45 [INFO ] [deepseek_web]   Deleted: 0029_7791015570334436506996.jpg
+2026-10-16 16:56:50 [INFO ] [deepseek_web] [30/75] 女士万圣节印花休闲裤
+2026-10-16 16:56:50 [INFO ] [deepseek_web]   Downloaded: 0030_3311100111481040120491.jpg
+2026-10-16 16:56:50 [INFO ] [deepseek_web]   Prefetching next image (31/75)
+2026-10-16 16:56:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:57:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:57:20 [INFO ] [deepseek_web]   Response: 万圣节主题印花 南瓜图案 蝙蝠图案 女巫帽图案 蜘蛛网图案 星星图案 圆点图案 抽绳松紧腰 高腰套穿 直筒宽松裤腿 女士 宽松版型 休闲长裤 居家外穿
+2026-10-16 16:57:20 [INFO ] [deepseek_web]   Deleted: 0030_3311100111481040120491.jpg
+2026-10-16 16:57:25 [INFO ] [deepseek_web] [31/75] 女士秋冬保暖裤松紧腰纯色毛绒打底裤加绒长裤休闲裤
+2026-10-16 16:57:25 [INFO ] [deepseek_web]   Downloaded: 0031_9270257508197612363589.jpg
+2026-10-16 16:57:25 [INFO ] [deepseek_web]   Prefetching next image (32/75)
+2026-10-16 16:57:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:57:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:57:54 [INFO ] [deepseek_web]   Response: 后腰方形贴标 高腰松紧腰头 脚口翻边毛绒 加绒保暖内里 纯色 女士 修身版型 加厚打底长裤 紧身裤腿 套穿式设计 秋冬
+2026-10-16 16:57:54 [INFO ] [deepseek_web]   Deleted: 0031_9270257508197612363589.jpg
+2026-10-16 16:57:59 [INFO ] [deepseek_web] [32/75] 女士秋冬印花万圣节居家出行休闲裤
+2026-10-16 16:57:59 [INFO ] [deepseek_web]   Downloaded: 0032_0290639073104220323501.jpg
+2026-10-16 16:57:59 [INFO ] [deepseek_web]   Prefetching next image (33/75)
+2026-10-16 16:57:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:58:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:58:28 [INFO ] [deepseek_web]   Response: 万圣节主题印花 女巫图案 枯树图案 蝙蝠图案 城堡图案 蜘蛛网图案 左右不对称图案设计 抽绳松紧腰 女士 宽松版型 直筒阔腿休闲长裤 套穿式设计 秋冬居家外穿
+2026-10-16 16:58:28 [INFO ] [deepseek_web]   Deleted: 0032_0290639073104220323501.jpg
+2026-10-16 16:58:33 [INFO ] [deepseek_web] [33/75] 女式北极绒连袜包脚睡裤冬天保暖护脚腕护膝宽松家居裤
+2026-10-16 16:58:33 [INFO ] [deepseek_web]   Downloaded: 0033_6251012475286919737645.jpg
+2026-10-16 16:58:33 [INFO ] [deepseek_web]   Prefetching next image (34/75)
+2026-10-16 16:58:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:58:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:59:06 [INFO ] [deepseek_web]   Response: 连袜包脚设计 加厚毛绒面料 松紧腰头 宽松直筒裤腿 女士连袜睡裤 宽松版型 长裤 套穿式 保暖 冬季居家睡眠
+2026-10-16 16:59:06 [INFO ] [deepseek_web]   Deleted: 0033_6251012475286919737645.jpg
+2026-10-16 16:59:11 [INFO ] [deepseek_web] [34/75] 女士万圣节印花休闲裤
+2026-10-16 16:59:11 [INFO ] [deepseek_web]   Downloaded: 0034_8940221445491819769657.jpg
+2026-10-16 16:59:11 [INFO ] [deepseek_web]   Prefetching next image (35/75)
+2026-10-16 16:59:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:59:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 16:59:41 [INFO ] [deepseek_web]   Response: 万圣节主题印花 南瓜脸图案 斑驳做旧纹理 高腰无拉链套穿 女士 修身版型 紧身打底长裤 秋冬季 日常休闲外穿
+2026-10-16 16:59:41 [INFO ] [deepseek_web]   Deleted: 0034_8940221445491819769657.jpg
+2026-10-16 16:59:46 [INFO ] [deepseek_web] [35/75] 万圣节印花宽松休闲裤
+2026-10-16 16:59:46 [INFO ] [deepseek_web]   Downloaded: 0035_8750929359671176854356.jpg
+2026-10-16 16:59:46 [INFO ] [deepseek_web]   Prefetching next image (36/75)
+2026-10-16 16:59:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 16:59:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:00:16 [INFO ] [deepseek_web]   Response: 字母标语印花 九月至十二月节日图案 抽绳松紧腰 女士 宽松版型 束脚卫裤 双侧口袋 束脚裤口 秋冬居家外穿
+2026-10-16 17:00:16 [INFO ] [deepseek_web]   Deleted: 0035_8750929359671176854356.jpg
+2026-10-16 17:00:21 [INFO ] [deepseek_web] [36/75] 女士纯色加绒打底裤高腰保暖瑜伽裤喇叭阔腿保暖裤
+2026-10-16 17:00:21 [INFO ] [deepseek_web]   Downloaded: 0036_6090358128708817662263.jpg
+2026-10-16 17:00:21 [INFO ] [deepseek_web]   Prefetching next image (37/75)
+2026-10-16 17:00:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:00:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:00:56 [INFO ] [deepseek_web]   Response: 后腰方形贴标 喇叭裤口 加绒内里 高腰无门襟套穿 纯色 女士 修身版型 喇叭打底长裤 保暖 秋冬 外穿 瑜伽适用
+2026-10-16 17:00:56 [INFO ] [deepseek_web]   Deleted: 0036_6090358128708817662263.jpg
+2026-10-16 17:01:01 [INFO ] [deepseek_web] [37/75] 女士纯色加绒保暖加厚外穿口袋高腰一体裤保暖棉裤
+2026-10-16 17:01:01 [INFO ] [deepseek_web]   Downloaded: 0037_0410434176671316875711.jpg
+2026-10-16 17:01:01 [INFO ] [deepseek_web]   Prefetching next image (38/75)
+2026-10-16 17:01:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:01:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:01:30 [INFO ] [deepseek_web]   Response: 高腰宽腰头 双侧斜插口袋 加绒内里 无门襟套穿设计 纯色 女士 修身版型 加厚保暖一体长裤 秋冬日常外穿
+2026-10-16 17:01:30 [INFO ] [deepseek_web]   Deleted: 0037_0410434176671316875711.jpg
+2026-10-16 17:01:35 [INFO ] [deepseek_web] [38/75] 男女休闲舒适宽松加绒卫裤运动长裤宽松束腿裤
+2026-10-16 17:01:35 [INFO ] [deepseek_web]   Downloaded: 0038_7670251569282774308339.jpg
+2026-10-16 17:01:35 [INFO ] [deepseek_web]   Prefetching next image (39/75)
+2026-10-16 17:01:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:01:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:02:05 [INFO ] [deepseek_web]   Response: 单侧竖向拉链口袋 字母装饰带 罗纹束脚裤口 抽绳松紧腰 加绒内里 中性 宽松版型 束脚卫裤 运动长裤 纯色 秋冬保暖
+2026-10-16 17:02:05 [INFO ] [deepseek_web]   Deleted: 0038_7670251569282774308339.jpg
+2026-10-16 17:02:10 [INFO ] [deepseek_web] [39/75] 女士印花保暖加绒休闲宽松毛绒长裤睡裤
+2026-10-16 17:02:10 [INFO ] [deepseek_web]   Downloaded: 0039_2800915317161647651763.jpg
+2026-10-16 17:02:10 [INFO ] [deepseek_web]   Prefetching next image (40/75)
+2026-10-16 17:02:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:02:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:02:39 [INFO ] [deepseek_web]   Response: 卡通恐龙印花 字母印花 毛绒面料 松紧腰设计 宽腿直筒裤型 女士 宽松版型 休闲长裤 睡裤 加绒保暖 居家睡眠 秋冬
+2026-10-16 17:02:39 [INFO ] [deepseek_web]   Deleted: 0039_2800915317161647651763.jpg
+2026-10-16 17:02:44 [INFO ] [deepseek_web] [40/75] 女士纯色加绒裤子
+2026-10-16 17:02:44 [INFO ] [deepseek_web]   Downloaded: 0040_3400457285561019023176.jpg
+2026-10-16 17:02:44 [INFO ] [deepseek_web]   Prefetching next image (41/75)
+2026-10-16 17:02:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:02:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:03:13 [INFO ] [deepseek_web]   Response: 抽绳松紧腰 加绒内里 直筒裤腿 金属抽绳头 双侧斜插口袋 纯色 女士 宽松版型 加绒保暖长裤 休闲外穿 秋冬
+2026-10-16 17:03:13 [INFO ] [deepseek_web]   Deleted: 0040_3400457285561019023176.jpg
+2026-10-16 17:03:18 [INFO ] [deepseek_web] [41/75] 女士纯色毛绒裤子
+2026-10-16 17:03:18 [INFO ] [deepseek_web]   Downloaded: 0041_4720346198193213046627.jpg
+2026-10-16 17:03:18 [INFO ] [deepseek_web]   Prefetching next image (42/75)
+2026-10-16 17:03:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:03:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:03:57 [INFO ] [deepseek_web]   Response: 抽绳松紧腰 双侧口袋 宽腿直筒裤型 毛绒休闲长裤 女士 宽松版型 加厚毛绒面料 纯色 套穿式 秋冬居家外穿 日常
+2026-10-16 17:03:57 [INFO ] [deepseek_web]   Deleted: 0041_4720346198193213046627.jpg
+2026-10-16 17:04:02 [INFO ] [deepseek_web] [42/75] 秋冬女士灯芯绒休闲裤
+2026-10-16 17:04:02 [INFO ] [deepseek_web]   Downloaded: 0042_4241150125621630909157.jpg
+2026-10-16 17:04:02 [INFO ] [deepseek_web]   Prefetching next image (43/75)
+2026-10-16 17:04:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:04:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:04:32 [INFO ] [deepseek_web]   Response: 侧边翻盖工装口袋 双侧斜插口袋 抽绳松紧腰 女士 宽松版型 灯芯绒工装休闲长裤 单粒纽扣腰头 直筒裤腿 纯色 秋冬
+2026-10-16 17:04:32 [INFO ] [deepseek_web]   Deleted: 0042_4241150125621630909157.jpg
+2026-10-16 17:04:37 [INFO ] [deepseek_web] [43/75] 秋冬女士灯芯绒休闲裤
+2026-10-16 17:04:37 [INFO ] [deepseek_web]   Downloaded: 0043_8011026047236454729521.jpg
+2026-10-16 17:04:37 [INFO ] [deepseek_web]   Prefetching next image (44/75)
+2026-10-16 17:04:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:04:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:05:06 [INFO ] [deepseek_web]   Response: 前侧大贴袋 单粒纽扣门襟 腰带环 高腰设计 竖条纹理 女士 宽松版型 灯芯绒阔腿休闲长裤 秋冬 日常外穿
+2026-10-16 17:05:06 [INFO ] [deepseek_web]   Deleted: 0043_8011026047236454729521.jpg
+2026-10-16 17:05:11 [INFO ] [deepseek_web] [44/75] 女士加绒纯色休闲裤卫裤阔腿多口袋运动裤
+2026-10-16 17:05:11 [INFO ] [deepseek_web]   Downloaded: 0044_6240416226802176287088.jpg
+2026-10-16 17:05:11 [INFO ] [deepseek_web]   Prefetching next image (45/75)
+2026-10-16 17:05:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:05:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:05:42 [INFO ] [deepseek_web]   Response: 前侧大贴袋 侧面翻盖工装口袋 抽绳松紧腰 阔腿直筒裤型 女士 宽松版型 加绒保暖 休闲运动卫裤 纯色 套穿式 日常外穿
+2026-10-16 17:05:42 [INFO ] [deepseek_web]   Deleted: 0044_6240416226802176287088.jpg
+2026-10-16 17:05:47 [INFO ] [deepseek_web] [45/75] 圣诞节女法兰绒睡裤
+2026-10-16 17:05:47 [INFO ] [deepseek_web]   Downloaded: 0045_7711115046651419454503.jpg
+2026-10-16 17:05:47 [INFO ] [deepseek_web]   Prefetching next image (46/75)
+2026-10-16 17:05:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:05:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:06:16 [INFO ] [deepseek_web]   Response: 圣诞主题印花 驯鹿图案 雪花图案 圣诞老人图案 蝴蝶结图案 女士 宽松版型 法兰绒睡裤 松紧腰 套穿式 宽腿直筒 居家睡眠
+2026-10-16 17:06:16 [INFO ] [deepseek_web]   Deleted: 0045_7711115046651419454503.jpg
+2026-10-16 17:06:21 [INFO ] [deepseek_web] [46/75] 无绳子女式秋冬纯色运动裤毛绒休闲裤宽松舒肤绒保暖家居裤
+2026-10-16 17:06:21 [INFO ] [deepseek_web]   Downloaded: 0046_3870231168741219276185.jpg
+2026-10-16 17:06:21 [INFO ] [deepseek_web]   Prefetching next image (47/75)
+2026-10-16 17:06:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:06:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:06:52 [INFO ] [deepseek_web]   Response: 无抽绳松紧腰头 束脚裤口 加厚毛绒面料 纯色 女士 宽松版型 套穿式设计 束脚运动长裤 保暖 秋冬日常居家外穿
+2026-10-16 17:06:52 [INFO ] [deepseek_web]   Deleted: 0046_3870231168741219276185.jpg
+2026-10-16 17:06:57 [INFO ] [deepseek_web] [47/75] 女士纯色加绒打底裤高腰保暖瑜伽裤喇叭阔腿保暖裤
+2026-10-16 17:06:57 [INFO ] [deepseek_web]   Downloaded: 0047_8980959313952776386069.jpg
+2026-10-16 17:06:57 [INFO ] [deepseek_web]   Prefetching next image (48/75)
+2026-10-16 17:06:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:07:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:07:27 [INFO ] [deepseek_web]   Response: 竖条纹肌理 加厚加绒内里 后腰方形贴标 女士 宽松版型 高腰松紧腰 直筒裤腿 套穿式保暖长裤 秋冬日常外穿
+2026-10-16 17:07:27 [INFO ] [deepseek_web]   Deleted: 0047_8980959313952776386069.jpg
+2026-10-16 17:07:32 [INFO ] [deepseek_web] [48/75] 女士高腰休闲裤纯色灯芯绒宽松直筒长裤
+2026-10-16 17:07:32 [INFO ] [deepseek_web]   Downloaded: 0048_2410708119421089768969.jpg
+2026-10-16 17:07:32 [INFO ] [deepseek_web]   Prefetching next image (49/75)
+2026-10-16 17:07:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:07:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:08:02 [INFO ] [deepseek_web]   Response: 前侧打褶设计 单粒纽扣门襟 腰带环 女士 宽松版型 高腰直筒灯芯绒休闲长裤 双侧斜插口袋 竖条纹肌理 纯色
+2026-10-16 17:08:02 [INFO ] [deepseek_web]   Deleted: 0048_2410708119421089768969.jpg
+2026-10-16 17:08:07 [INFO ] [deepseek_web] [49/75] 秋冬季新款海岛绒睡裤休闲慵懒风居家直筒保暖可外出
+2026-10-16 17:08:07 [INFO ] [deepseek_web]   Downloaded: 0049_7600428121892432971541.jpg
+2026-10-16 17:08:07 [INFO ] [deepseek_web]   Prefetching next image (50/75)
+2026-10-16 17:08:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:08:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:08:45 [INFO ] [deepseek_web]   Response: 蝴蝶结印花 菱形格纹 海岛绒面料 松紧腰头 女士 宽松版型 直筒睡裤 套穿式设计 保暖 秋冬季 居家外穿 休闲长裤
+2026-10-16 17:08:45 [INFO ] [deepseek_web]   Deleted: 0049_7600428121892432971541.jpg
+2026-10-16 17:08:50 [INFO ] [deepseek_web] [50/75] 女士秋冬灯芯绒休闲裤
+2026-10-16 17:08:50 [INFO ] [deepseek_web]   Downloaded: 0050_8310513077282720009102.jpg
+2026-10-16 17:08:50 [INFO ] [deepseek_web]   Prefetching next image (51/75)
+2026-10-16 17:08:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:09:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:09:20 [INFO ] [deepseek_web]   Response: 竖条纹灯芯绒肌理 正面裤中线设计 单粒纽扣门襟 腰带环 双侧斜插口袋 女士 宽松版型 高腰直筒休闲长裤 秋冬
+2026-10-16 17:09:20 [INFO ] [deepseek_web]   Deleted: 0050_8310513077282720009102.jpg
+2026-10-16 17:09:25 [INFO ] [deepseek_web] [51/75] 女式秋冬内置抽绳加绒宽松阔腿运动休闲长裤
+2026-10-16 17:09:25 [INFO ] [deepseek_web]   Downloaded: 0051_2120441094383413795976.jpg
+2026-10-16 17:09:25 [INFO ] [deepseek_web]   Prefetching next image (52/75)
+2026-10-16 17:09:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:09:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:09:54 [INFO ] [deepseek_web]   Response: 高腰抽绳松紧腰 双侧斜插口袋 阔腿直筒裤型 加绒保暖 女士 宽松版型 休闲运动长裤 纯色 秋冬 日常外穿
+2026-10-16 17:09:54 [INFO ] [deepseek_web]   Deleted: 0051_2120441094383413795976.jpg
+2026-10-16 17:09:59 [INFO ] [deepseek_web] [52/75] 金丝绒宽松阔腿裤
+2026-10-16 17:09:59 [INFO ] [deepseek_web]   Downloaded: 0052_0160454492523717319904.jpg
+2026-10-16 17:09:59 [INFO ] [deepseek_web]   Prefetching next image (53/75)
+2026-10-16 17:09:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:10:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:10:37 [INFO ] [deepseek_web]   Response: 亮面丝绒 松紧腰头 双侧口袋 直筒阔腿裤型 女士 宽松版型 高腰套穿休闲长裤 纯色 无束脚设计 无抽绳 日常外穿
+2026-10-16 17:10:37 [INFO ] [deepseek_web]   Deleted: 0052_0160454492523717319904.jpg
+2026-10-16 17:10:42 [INFO ] [deepseek_web] [53/75] 女式羔绒羊毛内穿棉裤
+2026-10-16 17:10:42 [INFO ] [deepseek_web]   Downloaded: 0053_0480358596532818216981.jpg
+2026-10-16 17:10:42 [INFO ] [deepseek_web]   Prefetching next image (54/75)
+2026-10-16 17:10:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:10:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:11:17 [INFO ] [deepseek_web]   Response: 菱形绗缝格纹 毛绒翻边裤脚 罗纹束脚口 加厚加绒保暖棉裤 女士 修身版型 高腰松紧腰头 套穿式设计 秋冬内穿
+2026-10-16 17:11:17 [INFO ] [deepseek_web]   Deleted: 0053_0480358596532818216981.jpg
+2026-10-16 17:11:22 [INFO ] [deepseek_web] [54/75] 女士纯色加绒运动裤松紧腰束脚卫裤休闲长裤
+2026-10-16 17:11:22 [INFO ] [deepseek_web]   Downloaded: 0054_5041052137443268234883.jpg
+2026-10-16 17:11:22 [INFO ] [deepseek_web]   Prefetching next image (55/75)
+2026-10-16 17:11:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:11:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:11:51 [INFO ] [deepseek_web]   Response: 前侧大贴袋 高腰松紧腰头 束脚裤口 加绒保暖内里 套穿式设计 女士 宽松版型 运动卫裤 纯色 休闲长裤 秋冬外穿
+2026-10-16 17:11:51 [INFO ] [deepseek_web]   Deleted: 0054_5041052137443268234883.jpg
+2026-10-16 17:11:56 [INFO ] [deepseek_web] [55/75] 女式宽松毛绒直筒开叉纯色休闲卫裤
+2026-10-16 17:11:56 [INFO ] [deepseek_web]   Downloaded: 0055_0740504302222915995408.jpg
+2026-10-16 17:11:56 [INFO ] [deepseek_web]   Prefetching next image (56/75)
+2026-10-16 17:11:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:12:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:12:26 [INFO ] [deepseek_web]   Response: 毛绒面料 裤脚侧开叉 松紧腰头 女士 宽松版型 直筒裤腿 休闲卫裤 纯色 套穿式长裤 无抽绳设计 日常外穿
+2026-10-16 17:12:26 [INFO ] [deepseek_web]   Deleted: 0055_0740504302222915995408.jpg
+2026-10-16 17:12:31 [INFO ] [deepseek_web] [56/75] 秋冬女士灯芯绒休闲裤
+2026-10-16 17:12:31 [INFO ] [deepseek_web]   Downloaded: 0056_0710857195583311639174.jpg
+2026-10-16 17:12:31 [INFO ] [deepseek_web]   Prefetching next image (57/75)
+2026-10-16 17:12:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:12:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:13:03 [INFO ] [deepseek_web]   Response: 抽绳松紧腰 阔腿直筒裤型 双侧斜插口袋 灯芯绒竖条纹肌理 纯色 女士 宽松版型 高腰套穿式休闲长裤 秋冬日常外穿
+2026-10-16 17:13:03 [INFO ] [deepseek_web]   Deleted: 0056_0710857195583311639174.jpg
+2026-10-16 17:13:08 [INFO ] [deepseek_web] [57/75] 女士开衩灯芯绒长裤
+2026-10-16 17:13:08 [INFO ] [deepseek_web]   Downloaded: 0057_1180709188701518083481.jpg
+2026-10-16 17:13:08 [INFO ] [deepseek_web]   Prefetching next image (58/75)
+2026-10-16 17:13:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:13:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:13:39 [INFO ] [deepseek_web]   Response: 裤脚侧开衩 开衩处装饰纽扣 抽绳松紧腰 双侧斜插口袋 竖条纹肌理 纯色 女士 宽松版型 灯芯绒阔腿休闲长裤 高腰直筒 休闲外穿
+2026-10-16 17:13:39 [INFO ] [deepseek_web]   Deleted: 0057_1180709188701518083481.jpg
+2026-10-16 17:13:44 [INFO ] [deepseek_web] [58/75] 女士纯色毛绒口袋长裤
+2026-10-16 17:13:44 [INFO ] [deepseek_web]   Downloaded: 0058_0900433453925417340442.jpg
+2026-10-16 17:13:44 [INFO ] [deepseek_web]   Prefetching next image (59/75)
+2026-10-16 17:13:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:13:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:14:14 [INFO ] [deepseek_web]   Response: 仿羊羔绒面料 直筒阔腿裤型 双侧口袋 高腰松紧腰头 套穿式设计 女士 宽松版型 休闲长裤 纯色 秋冬日常居家外穿
+2026-10-16 17:14:14 [INFO ] [deepseek_web]   Deleted: 0058_0900433453925417340442.jpg
+2026-10-16 17:14:19 [INFO ] [deepseek_web] [59/75] 复古长裤直筒休闲阔腿裤高腰条绒女装
+2026-10-16 17:14:19 [INFO ] [deepseek_web]   Downloaded: 0059_5570825070092046683178.jpg
+2026-10-16 17:14:19 [INFO ] [deepseek_web]   Prefetching next image (60/75)
+2026-10-16 17:14:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:14:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:14:49 [INFO ] [deepseek_web]   Response: 单粒纽扣门襟 腰带环 正面裤中线 双侧斜插口袋 竖条纹肌理 高腰设计 纯色 女士 宽松版型 灯芯绒阔腿休闲长裤 复古
+2026-10-16 17:14:49 [INFO ] [deepseek_web]   Deleted: 0059_5570825070092046683178.jpg
+2026-10-16 17:14:54 [INFO ] [deepseek_web] [60/75] 男女同款纯色系带运动裤简约直筒休闲裤灯芯绒痞帅高级感阔腿长裤
+2026-10-16 17:14:54 [INFO ] [deepseek_web]   Downloaded: 0060_5241048060149955758994.jpg
+2026-10-16 17:14:54 [INFO ] [deepseek_web]   Prefetching next image (61/75)
+2026-10-16 17:14:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:15:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:15:27 [INFO ] [deepseek_web]   Response: 竖条纹灯芯绒肌理 抽绳松紧腰头 阔腿直筒裤型 灯芯绒休闲长裤 中性 宽松版型 双侧斜插口袋 纯色 套穿式 日常外穿
+2026-10-16 17:15:27 [INFO ] [deepseek_web]   Deleted: 0060_5241048060149955758994.jpg
+2026-10-16 17:15:32 [INFO ] [deepseek_web] [61/75] 男女同款冬季休闲宽松羊羔绒卫裤运动长裤宽松阔腿裤（加绒束脚款）
+2026-10-16 17:15:32 [INFO ] [deepseek_web]   Downloaded: 0061_1920525464151913840394.jpg
+2026-10-16 17:15:32 [INFO ] [deepseek_web]   Prefetching next image (62/75)
+2026-10-16 17:15:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:15:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:16:03 [INFO ] [deepseek_web]   Response: 侧边竖向拉链口袋 抽绳松紧腰 罗纹束脚裤口 加绒羊羔绒内里 中性 宽松版型 束脚卫裤 运动长裤 冬季 保暖 日常外穿
+2026-10-16 17:16:03 [INFO ] [deepseek_web]   Deleted: 0061_1920525464151913840394.jpg
+2026-10-16 17:16:08 [INFO ] [deepseek_web] [62/75] 女士秋季纯色灯芯绒双纽扣半松紧腰直筒休闲裤
+2026-10-16 17:16:08 [INFO ] [deepseek_web]   Downloaded: 0062_3850947321175220122693.jpg
+2026-10-16 17:16:08 [INFO ] [deepseek_web]   Prefetching next image (63/75)
+2026-10-16 17:16:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:16:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:16:37 [INFO ] [deepseek_web]   Response: 双纽扣门襟 半松紧腰头 竖条纹灯芯绒肌理 前侧斜插口袋 直筒阔腿裤型 纯色 女士 宽松版型 灯芯绒休闲长裤 秋季 日常外穿
+2026-10-16 17:16:37 [INFO ] [deepseek_web]   Deleted: 0062_3850947321175220122693.jpg
+2026-10-16 17:16:42 [INFO ] [deepseek_web] [63/75] 女士纯色加绒高腰抽绳直筒休闲运动长裤卫裤带口袋
+2026-10-16 17:16:42 [INFO ] [deepseek_web]   Downloaded: 0063_2081034108495412615221.jpg
+2026-10-16 17:16:42 [INFO ] [deepseek_web]   Prefetching next image (64/75)
+2026-10-16 17:16:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:16:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:17:13 [INFO ] [deepseek_web]   Response: 高腰抽绳松紧腰 束脚裤口 双侧斜插口袋 加绒保暖内里 纯色 女士 宽松版型 束脚运动卫裤 秋冬日常外穿
+2026-10-16 17:17:13 [INFO ] [deepseek_web]   Deleted: 0063_2081034108495412615221.jpg
+2026-10-16 17:17:18 [INFO ] [deepseek_web] [64/75] 女士秋冬纯色半松紧腰运动休闲阔腿卫裤带口袋 (加绒)
+2026-10-16 17:17:18 [INFO ] [deepseek_web]   Downloaded: 0064_1150945381534217707591.jpg
+2026-10-16 17:17:18 [INFO ] [deepseek_web]   Prefetching next image (65/75)
+2026-10-16 17:17:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:17:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:17:49 [INFO ] [deepseek_web]   Response: 双侧斜插口袋 阔腿直筒裤型 半松紧腰头 加绒保暖内里 套穿式设计 纯色 女士 宽松版型 运动卫裤 长裤 秋冬日常外穿
+2026-10-16 17:17:49 [INFO ] [deepseek_web]   Deleted: 0064_1150945381534217707591.jpg
+2026-10-16 17:17:54 [INFO ] [deepseek_web] [65/75] 女士秋冬纯色Y2K辣妹风松紧腰阔腿休闲喇叭卫裤带口袋 (加绒)
+2026-10-16 17:17:54 [INFO ] [deepseek_web]   Downloaded: 0065_9340955281617414937002.jpg
+2026-10-16 17:17:54 [INFO ] [deepseek_web]   Prefetching next image (66/75)
+2026-10-16 17:17:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:18:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:18:23 [INFO ] [deepseek_web]   Response: 喇叭裤口 高腰松紧腰头 双侧斜插口袋 加绒保暖内里 纯色 女士 修身版型 微喇休闲长裤 秋冬外穿
+2026-10-16 17:18:23 [INFO ] [deepseek_web]   Deleted: 0065_9340955281617414937002.jpg
+2026-10-16 17:18:28 [INFO ] [deepseek_web] [66/75] 女士加绒卫裤带口袋
+2026-10-16 17:18:28 [INFO ] [deepseek_web]   Downloaded: 0066_4290849002993411419693.jpg
+2026-10-16 17:18:28 [INFO ] [deepseek_web]   Prefetching next image (67/75)
+2026-10-16 17:18:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:18:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:18:58 [INFO ] [deepseek_web]   Response: 抽绳松紧腰头 双侧斜插口袋 裤腿侧边拼接线条 阔腿直筒设计 女士 宽松版型 休闲卫裤 加绒保暖 纯色 秋冬日常外穿
+2026-10-16 17:18:58 [INFO ] [deepseek_web]   Deleted: 0066_4290849002993411419693.jpg
+2026-10-16 17:19:03 [INFO ] [deepseek_web] [67/75] 新款女士秋冬季时尚灯芯绒休闲女装高腰
+2026-10-16 17:19:03 [INFO ] [deepseek_web]   Downloaded: 0067_2860228442241419055501.jpg
+2026-10-16 17:19:03 [INFO ] [deepseek_web]   Prefetching next image (68/75)
+2026-10-16 17:19:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:19:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:19:32 [INFO ] [deepseek_web]   Response: 高腰设计 单粒纽扣门襟 腰带环 双侧斜插口袋 阔腿直筒裤型 灯芯绒竖条纹肌理 纯色 女士 宽松版型 灯芯绒休闲长裤 秋冬
+2026-10-16 17:19:32 [INFO ] [deepseek_web]   Deleted: 0067_2860228442241419055501.jpg
+2026-10-16 17:19:37 [INFO ] [deepseek_web] [68/75] 跨境外贸高腰女士牛仔裤加绒水洗宽松阔腿大码直筒裤子(加绒款）
+2026-10-16 17:19:37 [INFO ] [deepseek_web]   Downloaded: 0068_7470145405981057766760.jpg
+2026-10-16 17:19:37 [INFO ] [deepseek_web]   Prefetching next image (69/75)
+2026-10-16 17:19:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:19:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:20:06 [INFO ] [deepseek_web]   Response: 裤脚翻边毛绒内里 水洗牛仔纹理 高腰设计 女士 宽松版型 加绒直筒牛仔裤 单粒纽扣门襟 腰带环 双侧斜插口袋 直筒阔腿裤腿 加绒保暖 秋冬外穿
+2026-10-16 17:20:06 [INFO ] [deepseek_web]   Deleted: 0068_7470145405981057766760.jpg
+2026-10-16 17:20:11 [INFO ] [deepseek_web] [69/75] 女士复古加绒加厚牛仔裤
+2026-10-16 17:20:11 [INFO ] [deepseek_web]   Downloaded: 0069_5931132566411049486254.jpg
+2026-10-16 17:20:11 [INFO ] [deepseek_web]   Prefetching next image (70/75)
+2026-10-16 17:20:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:20:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:20:44 [INFO ] [deepseek_web]   Response: 裤脚翻边毛绒内里 水洗牛仔纹理 高腰设计 女士 宽松版型 直筒牛仔裤 单粒纽扣门襟 腰带环 双侧斜插口袋 直筒阔腿裤腿 加绒保暖 日常外穿
+2026-10-16 17:20:44 [INFO ] [deepseek_web]   Deleted: 0069_5931132566411049486254.jpg
+2026-10-16 17:20:49 [INFO ] [deepseek_web] [70/75] 加绒加厚宽松直筒牛仔裤女秋冬新款
+2026-10-16 17:20:49 [INFO ] [deepseek_web]   Downloaded: 0070_1330424568461839211929.jpg
+2026-10-16 17:20:49 [INFO ] [deepseek_web]   Prefetching next image (71/75)
+2026-10-16 17:20:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:21:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:21:18 [INFO ] [deepseek_web]   Response: 裤脚翻边毛绒内里 水洗牛仔纹理 高腰设计 女士 宽松版型 加绒直筒牛仔裤 单粒纽扣门襟 腰带环 双侧斜插口袋 秋冬保暖外穿
+2026-10-16 17:21:18 [INFO ] [deepseek_web]   Deleted: 0070_1330424568461839211929.jpg
+2026-10-16 17:21:23 [INFO ] [deepseek_web] [71/75] 女装提花毛绒纹理居家睡裤抽绳松紧腰阔腿裤女
+2026-10-16 17:21:23 [INFO ] [deepseek_web]   Downloaded: 0071_7531009541116158848264.jpg
+2026-10-16 17:21:23 [INFO ] [deepseek_web]   Prefetching next image (72/75)
+2026-10-16 17:21:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:21:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:21:56 [INFO ] [deepseek_web]   Response: 提花毛绒纹理 抽绳松紧腰 阔腿直筒裤型 无束脚设计 套穿式设计 纯色 女士 宽松版型 家居睡裤 长裤 居家睡眠
+2026-10-16 17:21:56 [INFO ] [deepseek_web]   Deleted: 0071_7531009541116158848264.jpg
+2026-10-16 17:22:01 [INFO ] [deepseek_web] [72/75] 新款女士灯芯绒休闲裤
+2026-10-16 17:22:01 [INFO ] [deepseek_web]   Downloaded: 0072_2210431406324014088274.jpg
+2026-10-16 17:22:01 [INFO ] [deepseek_web]   Prefetching next image (73/75)
+2026-10-16 17:22:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:22:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:22:30 [INFO ] [deepseek_web]   Response: 多层松紧褶皱宽腰头 前侧打褶设计 双侧斜插口袋 竖条纹灯芯绒肌理 阔腿直筒裤型 纯色 女士 宽松版型 高腰套穿休闲长裤 日常外穿
+2026-10-16 17:22:30 [INFO ] [deepseek_web]   Deleted: 0072_2210431406324014088274.jpg
+2026-10-16 17:22:35 [INFO ] [deepseek_web] [73/75] 男女加绒灯芯绒休闲裤
+2026-10-16 17:22:35 [INFO ] [deepseek_web]   Downloaded: 0073_2801033110791316835886.jpg
+2026-10-16 17:22:35 [INFO ] [deepseek_web]   Prefetching next image (74/75)
+2026-10-16 17:22:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:22:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:23:08 [INFO ] [deepseek_web]   Response: 裤脚翻边毛绒内里 后侧带盖贴袋 抽绳松紧腰头 竖条纹灯芯绒肌理 灯芯绒休闲长裤 中性 宽松版型 直筒阔腿裤型 双侧斜插口袋 加绒保暖 秋冬日常外穿
+2026-10-16 17:23:08 [INFO ] [deepseek_web]   Deleted: 0073_2801033110791316835886.jpg
+2026-10-16 17:23:13 [INFO ] [deepseek_web] [74/75] 新款羊羔绒阔腿直筒裤
+2026-10-16 17:23:13 [INFO ] [deepseek_web]   Downloaded: 0074_5161055250957488593956.jpg
+2026-10-16 17:23:13 [INFO ] [deepseek_web]   Prefetching next image (75/75)
+2026-10-16 17:23:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:23:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:23:47 [INFO ] [deepseek_web]   Response: 格纹印花 裤脚翻边毛绒内里 松紧腰头 女士 宽松版型 羊羔绒直筒阔腿长裤 套穿式设计 加绒保暖 居家睡眠 日常外穿
+2026-10-16 17:23:47 [INFO ] [deepseek_web]   Deleted: 0074_5161055250957488593956.jpg
+2026-10-16 17:23:52 [INFO ] [deepseek_web] [75/75] 女士加绒加厚牛仔裤
+2026-10-16 17:23:52 [INFO ] [deepseek_web]   Downloaded: 0075_4810605330914162442695.jpg
+2026-10-16 17:23:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-16 17:24:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-16 17:24:26 [INFO ] [deepseek_web]   Response: 抽绳松紧腰头 裤脚翻边毛绒内里 水洗牛仔纹理 直筒阔腿牛仔裤 女士 宽松版型 加绒加厚 双侧斜插口袋 日常外穿
+2026-10-16 17:24:26 [INFO ] [deepseek_web]   Deleted: 0075_4810605330914162442695.jpg
+2026-10-16 17:24:27 [INFO ] [deepseek_web] ==================================================
+2026-10-16 17:24:27 [INFO ] [deepseek_web] Done: 75 success, 0 failed → optimize_title
+2026-10-16 17:24:28 [INFO ] [title_workflow] Optimization complete: 75 titles
+2026-10-16 17:24:40 [INFO ] [title_workflow] Written 75 optimized titles to column H (8)
+2026-10-16 17:24:40 [INFO ] [title_workflow] Done: 10.13v1.xlsx
+2026-10-16 17:24:41 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-16 17:24:41 [INFO ] [jenkins] 
+2026-10-16 17:24:41 [INFO ] [jenkins] ==================================================
+2026-10-16 17:24:41 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-16 17:24:41 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-16 17:24:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-16 17:24:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-16 17:24:41 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-16 19:24:11 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-16 19:24:11 [INFO ] [hotwords] 
+2026-10-16 19:24:11 [INFO ] [hotwords] [  1/2] halloween
+2026-10-16 19:24:16 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-16 19:24:18 [INFO ] [hotwords] [  2/2] hose
+2026-10-16 19:24:19 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-16 19:24:24 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-16 19:24:26 [INFO ] [hotwords] 
+2026-10-16 19:24:26 [INFO ] [hotwords] Retry round 1: 2 failed keyword(s)
+2026-10-16 19:24:29 [INFO ] [hotwords]   Retrying: halloween
+2026-10-16 19:24:30 [INFO ] [hotwords]     fluctuation: 51 words
+2026-10-16 19:24:31 [INFO ] [hotwords]     new_rank: 200 words
+2026-10-16 19:24:31 [INFO ] [hotwords]     → OK
+2026-10-16 19:24:33 [INFO ] [hotwords]   Retrying: hose
+2026-10-16 19:24:33 [INFO ] [hotwords]     fluctuation: 0 words
+2026-10-16 19:24:34 [INFO ] [hotwords]     new_rank: 32 words
+2026-10-16 19:24:34 [INFO ] [hotwords]     → OK
+2026-10-16 19:24:36 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:24:36 [INFO ] [hotwords] 
+2026-10-16 19:24:36 [INFO ] [hotwords] Combining: 51 fluctuation + 232 new_rank = 283 total
+2026-10-16 19:24:36 [INFO ] [hotwords] 
+2026-10-16 19:24:36 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:24:36 [INFO ] [hotwords]   strip_whitespace: 283 → 283 (0 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords]   normalize_case: 283 → 283 (0 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords]   drop_single_word: 283 → 279 (4 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords]   drop_brands: 279 → 276 (3 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords]   drop_reordered: 276 → 271 (5 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords]   deduplicate: 271 → 271 (0 removed)
+2026-10-16 19:24:36 [INFO ] [hotwords] homme=12     femme=32     other=227  
+2026-10-16 19:24:36 [INFO ] [hotwords] Saved 271 words (raw: 283, errors: 2) → 20261016_192411_fr.txt
+2026-10-16 19:24:36 [INFO ] [hotwords] ==================================================
+2026-10-16 19:24:36 [INFO ] [hotwords] Done.
+2026-10-16 19:25:37 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-16 19:25:37 [INFO ] [hotwords] 
+2026-10-16 19:25:37 [INFO ] [hotwords] [  1/2] hose
+2026-10-16 19:25:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-16 19:25:38 [INFO ] [hotwords]   new_rank: 32 words
+2026-10-16 19:25:38 [INFO ] [hotwords]   → total 32 words
+2026-10-16 19:25:40 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 19:25:41 [INFO ] [hotwords]   fluctuation: 51 words
+2026-10-16 19:25:42 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 19:25:42 [INFO ] [hotwords]   → total 283 words
+2026-10-16 19:25:44 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:25:44 [INFO ] [hotwords] 
+2026-10-16 19:25:44 [INFO ] [hotwords] Combining: 51 fluctuation + 232 new_rank = 283 total
+2026-10-16 19:25:44 [INFO ] [hotwords] 
+2026-10-16 19:25:44 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:25:44 [INFO ] [hotwords]   strip_whitespace: 283 → 283 (0 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords]   normalize_case: 283 → 283 (0 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords]   drop_single_word: 283 → 279 (4 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords]   drop_brands: 279 → 276 (3 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords]   drop_reordered: 276 → 271 (5 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords]   deduplicate: 271 → 271 (0 removed)
+2026-10-16 19:25:44 [INFO ] [hotwords] homme=12     femme=32     other=227  
+2026-10-16 19:25:44 [INFO ] [hotwords] Saved 271 words (raw: 283, errors: 0) → 20261016_192537_fr.txt
+2026-10-16 19:25:44 [INFO ] [hotwords] ==================================================
+2026-10-16 19:25:44 [INFO ] [hotwords] Done.
+2026-10-16 19:26:16 [INFO ] [hotwords] Loop mode: 2 keywords  country=de  category=(all)  mode=dual
+2026-10-16 19:26:16 [INFO ] [hotwords] 
+2026-10-16 19:26:16 [INFO ] [hotwords] [  1/2] hose
+2026-10-16 19:26:17 [INFO ] [hotwords]   fluctuation: 63 words
+2026-10-16 19:26:18 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 19:26:18 [INFO ] [hotwords]   → total 263 words
+2026-10-16 19:26:20 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 19:26:20 [INFO ] [hotwords]   fluctuation: 30 words
+2026-10-16 19:26:21 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 19:26:21 [INFO ] [hotwords]   → total 493 words
+2026-10-16 19:26:23 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:26:23 [INFO ] [hotwords] 
+2026-10-16 19:26:23 [INFO ] [hotwords] Combining: 93 fluctuation + 400 new_rank = 493 total
+2026-10-16 19:26:23 [INFO ] [hotwords] 
+2026-10-16 19:26:23 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:26:23 [INFO ] [hotwords]   strip_whitespace: 493 → 493 (0 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords]   normalize_case: 493 → 493 (0 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords]   drop_single_word: 493 → 470 (23 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords]   drop_brands: 470 → 414 (56 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords]   drop_reordered: 414 → 391 (23 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords]   deduplicate: 391 → 390 (1 removed)
+2026-10-16 19:26:23 [INFO ] [hotwords] herren=70     damen=94     other=226  
+2026-10-16 19:26:23 [INFO ] [hotwords] Saved 390 words (raw: 493, errors: 0) → 20261016_192616_de.txt
+2026-10-16 19:26:23 [INFO ] [hotwords] ==================================================
+2026-10-16 19:26:23 [INFO ] [hotwords] Done.
+2026-10-16 19:27:07 [INFO ] [hotwords] Loop mode: 2 keywords  country=de  category=(all)  mode=fluctuation
+2026-10-16 19:27:07 [INFO ] [hotwords] 
+2026-10-16 19:27:07 [INFO ] [hotwords] [  1/2] hose
+2026-10-16 19:27:07 [INFO ] [hotwords]   fluctuation: 63 words
+2026-10-16 19:27:07 [INFO ] [hotwords]   → total 63 words
+2026-10-16 19:27:09 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 19:27:10 [INFO ] [hotwords]   fluctuation: 30 words
+2026-10-16 19:27:10 [INFO ] [hotwords]   → total 93 words
+2026-10-16 19:27:12 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:27:12 [INFO ] [hotwords] 
+2026-10-16 19:27:12 [INFO ] [hotwords] Combining: 93 fluctuation + 0 new_rank = 93 total
+2026-10-16 19:27:12 [INFO ] [hotwords] 
+2026-10-16 19:27:12 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:27:12 [INFO ] [hotwords]   strip_whitespace: 93 → 93 (0 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords]   normalize_case: 93 → 93 (0 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords]   drop_single_word: 93 → 93 (0 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords]   drop_brands: 93 → 74 (19 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords]   drop_reordered: 74 → 74 (0 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords]   deduplicate: 74 → 74 (0 removed)
+2026-10-16 19:27:12 [INFO ] [hotwords] herren=14     damen=14     other=46   
+2026-10-16 19:27:12 [INFO ] [hotwords] Saved 74 words (raw: 93, errors: 0) → 20261016_192707_de.txt
+2026-10-16 19:27:12 [INFO ] [hotwords] ==================================================
+2026-10-16 19:27:12 [INFO ] [hotwords] Done.
+2026-10-16 19:58:11 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=fluctuation
+2026-10-16 19:58:11 [INFO ] [hotwords] 
+2026-10-16 19:58:11 [INFO ] [hotwords] [  1/2] pantalons
+2026-10-16 19:58:11 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-16 19:58:11 [INFO ] [hotwords]   → total 0 words
+2026-10-16 19:58:13 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 19:58:14 [INFO ] [hotwords]   fluctuation: 51 words
+2026-10-16 19:58:14 [INFO ] [hotwords]   → total 51 words
+2026-10-16 19:58:16 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:58:16 [INFO ] [hotwords] 
+2026-10-16 19:58:16 [INFO ] [hotwords] Combining: 51 fluctuation + 0 new_rank = 51 total
+2026-10-16 19:58:16 [INFO ] [hotwords] 
+2026-10-16 19:58:16 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:58:16 [INFO ] [hotwords]   strip_whitespace: 51 → 51 (0 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords]   normalize_case: 51 → 51 (0 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords]   drop_single_word: 51 → 51 (0 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords]   drop_brands: 51 → 49 (2 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords]   drop_reordered: 49 → 49 (0 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords]   deduplicate: 49 → 49 (0 removed)
+2026-10-16 19:58:16 [INFO ] [hotwords] homme=2      femme=9      other=38   
+2026-10-16 19:58:16 [INFO ] [hotwords] Saved 49 words (raw: 51, errors: 0) → 20261016_195811_fr.txt
+2026-10-16 19:58:16 [INFO ] [hotwords] ==================================================
+2026-10-16 19:58:16 [INFO ] [hotwords] Done.
+2026-10-16 19:58:47 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-16 19:58:47 [INFO ] [hotwords] 
+2026-10-16 19:58:47 [INFO ] [hotwords] [  1/2] pantalons
+2026-10-16 19:58:47 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-16 19:58:48 [INFO ] [hotwords]   new_rank: 10 words
+2026-10-16 19:58:48 [INFO ] [hotwords]   → total 10 words
+2026-10-16 19:58:50 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 19:58:51 [INFO ] [hotwords]   fluctuation: 51 words
+2026-10-16 19:58:51 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 19:58:51 [INFO ] [hotwords]   → total 261 words
+2026-10-16 19:58:53 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 19:58:53 [INFO ] [hotwords] 
+2026-10-16 19:58:53 [INFO ] [hotwords] Combining: 51 fluctuation + 210 new_rank = 261 total
+2026-10-16 19:58:53 [INFO ] [hotwords] 
+2026-10-16 19:58:53 [INFO ] [hotwords] Cleaning...
+2026-10-16 19:58:53 [INFO ] [hotwords]   strip_whitespace: 261 → 261 (0 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords]   normalize_case: 261 → 261 (0 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords]   drop_single_word: 261 → 260 (1 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords]   drop_brands: 260 → 257 (3 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords]   drop_reordered: 257 → 252 (5 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords]   deduplicate: 252 → 252 (0 removed)
+2026-10-16 19:58:53 [INFO ] [hotwords] homme=15     femme=35     other=202  
+2026-10-16 19:58:53 [INFO ] [hotwords] Saved 252 words (raw: 261, errors: 0) → 20261016_195847_fr.txt
+2026-10-16 19:58:53 [INFO ] [hotwords] ==================================================
+2026-10-16 19:58:53 [INFO ] [hotwords] Done.
+2026-10-16 20:00:01 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-16 20:00:01 [INFO ] [hotwords] 
+2026-10-16 20:00:01 [INFO ] [hotwords] [  1/2] pantalon
+2026-10-16 20:00:02 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-16 20:00:03 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 20:00:03 [INFO ] [hotwords]   → total 201 words
+2026-10-16 20:00:05 [INFO ] [hotwords] [  2/2] halloween
+2026-10-16 20:00:05 [INFO ] [hotwords]   fluctuation: 51 words
+2026-10-16 20:00:08 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-16 20:00:08 [INFO ] [hotwords]   → total 452 words
+2026-10-16 20:00:10 [INFO ] [hotwords] All keywords collected successfully
+2026-10-16 20:00:10 [INFO ] [hotwords] 
+2026-10-16 20:00:10 [INFO ] [hotwords] Combining: 52 fluctuation + 400 new_rank = 452 total
+2026-10-16 20:00:10 [INFO ] [hotwords] 
+2026-10-16 20:00:10 [INFO ] [hotwords] Cleaning...
+2026-10-16 20:00:10 [INFO ] [hotwords]   strip_whitespace: 452 → 452 (0 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords]   normalize_case: 452 → 452 (0 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords]   drop_single_word: 452 → 450 (2 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords]   drop_brands: 450 → 433 (17 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords]   drop_reordered: 433 → 428 (5 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords]   deduplicate: 428 → 427 (1 removed)
+2026-10-16 20:00:10 [INFO ] [hotwords] homme=80     femme=99     other=248  
+2026-10-16 20:00:10 [INFO ] [hotwords] Saved 427 words (raw: 452, errors: 0) → 20261016_200001_fr.txt
+2026-10-16 20:00:10 [INFO ] [hotwords] ==================================================
+2026-10-16 20:00:10 [INFO ] [hotwords] Done.

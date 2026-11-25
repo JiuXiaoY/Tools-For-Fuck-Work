@@ -1,0 +1,59 @@
+2026-10-06 15:10:07 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-10-06 15:10:12 [WARNING] [hotwords_fashion] 请求失败(第 1/5 次): ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-06 15:10:15 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-10-06 15:10:18 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-10-06 15:10:20 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-10-06 15:10:22 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 第 2 次请求成功: 1000 条
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261006.txt (1000 条)
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] === 报告 ===
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261006.txt
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 清洗命中: 品类 91 / 属性 11(过滤前)
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 清洗丢弃: 898 条(黑名单 172 / 无关 726)
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 最终保留: 102 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\de\hotwords_fashion_20261006.txt
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   dirndl anstecker damen	181020	品类:dirndl;属性:damen
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   anstecker dirndl	170203	品类:dirndl
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   cozy fit skechers slip ins	160199	品类:slip
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   kugelsichere weste	157100	品类:weste
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   bomberjacke damen weiß	155918	品类:jacke;属性:weiß,damen
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   silber jacke damen	153440	品类:jacke;属性:damen
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   kuschel pyjama damen	143916	品类:pyjama;属性:damen
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   thermoleggings kinder	143861	品类:leggings;属性:thermo,kinder
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   thermo handschuhe herren	143835	属性:thermo
+2026-10-06 15:10:25 [INFO ] [hotwords_fashion]   trikot 2026	143772	品类:trikot;去品牌:deutschland
+2026-10-06 17:18:39 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-10-06 17:18:39 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-10-06 17:18:46 [WARNING] [hotwords_fashion] 请求失败(第 1/5 次): ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-06 17:18:50 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-10-06 17:18:52 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-10-06 17:18:55 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-10-06 17:18:57 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-10-06 17:18:59 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-10-06 17:18:59 [INFO ] [hotwords_fashion] 第 2 次请求成功: 1000 条
+2026-10-06 17:18:59 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\fr\hotwords_20261006.txt (1000 条)
+2026-10-06 17:18:59 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-10-06 17:18:59 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] === 报告 ===
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\fr\hotwords_20261006.txt
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 清洗命中: 品类 34 / 属性 10(过滤前)
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 清洗丢弃: 956 条(黑名单 53 / 无关 903)
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 最终保留: 44 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\fr\hotwords_fashion_20261006.txt
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   faux gilet pare-balles	101599	品类:gilet
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   vampire costume	97239	品类:costume
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   pantalon hello kitty halloween	95722	品类:pantalon
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   nuria serum coreen peptide de soie	89409	属性:soie
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   tshirt rose femme	89019	品类:tshirt;属性:femme
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   laine fourrure	88908	属性:laine
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   tee shirt homme rose	88265	品类:tee shirt;属性:homme
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   veste spiderman	88236	品类:veste
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   gilet chauffant homme avec batterie	84904	品类:gilet;属性:homme
+2026-10-06 17:19:00 [INFO ] [hotwords_fashion]   tshirt rose	84504	品类:tshirt

@@ -1,0 +1,1145 @@
+2026-08-28 20:08:27 [INFO ] [jenkins] ==================================================
+2026-08-28 20:08:27 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:08:27 [INFO ] [jenkins] ==================================================
+2026-08-28 20:08:27 [INFO ] [jenkins] 
+2026-08-28 20:08:27 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:08:27 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:08:27 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:08:27 [INFO ] [jenkins] 
+2026-08-28 20:08:27 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:08:27 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:08:27 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:08:27 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:08:28 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:08:28 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:08:29 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:08:29 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:08:30 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 35 deleted
+2026-08-28 20:08:30 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:08:31 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:08:31 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:08:31 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:08:33 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:08:33 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:08:34 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 34 deleted
+2026-08-28 20:08:34 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:08:34 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:08:35 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:08:35 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:08:36 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:08:36 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:08:37 [INFO ] [preprocess]   [万圣节3.xlsx] Dedup: 14 filled rows, 24 deleted
+2026-08-28 20:08:37 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:08:37 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:08:37 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:08:37 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:08:38 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:08:38 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:08:40 [INFO ] [preprocess]   [万圣节4.xlsx] Dedup: 16 filled rows, 15 deleted
+2026-08-28 20:08:40 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:08:40 [INFO ] [preprocess] Preprocessing complete
+2026-08-28 20:08:40 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-08-28 20:08:40 [INFO ] [jenkins] 
+2026-08-28 20:08:40 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-08-28 20:08:40 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:08:40 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:08:40 [INFO ] [main] Found 4 file(s):
+2026-08-28 20:08:40 [INFO ] [main]   万圣节1.xlsx
+2026-08-28 20:08:40 [INFO ] [main]   万圣节2.xlsx
+2026-08-28 20:08:40 [INFO ] [main]   万圣节3.xlsx
+2026-08-28 20:08:40 [INFO ] [main]   万圣节4.xlsx
+2026-08-28 20:08:40 [INFO ] [main] Output: 8.26v1.xlsx
+2026-08-28 20:08:40 [INFO ] [main] ==================================================
+2026-08-28 20:08:46 [INFO ] [main] Merged 4 files, 3230 images total
+2026-08-28 20:08:46 [INFO ] [main] Deleted 4 source file(s)
+2026-08-28 20:08:47 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-28 20:08:47 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-28 20:08:51 [INFO ] [pipeline]   Sheet [Sheet0_2]: 438 rows, 965 images
+2026-08-28 20:08:51 [INFO ] [pipeline]   Sheet [Sheet0_3]: 268 rows, 574 images
+2026-08-28 20:08:51 [INFO ] [pipeline]   Sheet [Sheet0_4]: 389 rows, 776 images
+2026-08-28 20:08:51 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1095 data rows, 2315 images
+2026-08-28 20:08:51 [INFO ] [pipeline] [2/12] validate
+2026-08-28 20:08:51 [INFO ] [pipeline]   Validated: 1467 rows, 27 cols (expect ~32)
+2026-08-28 20:08:51 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-28 20:08:51 [INFO ] [pipeline]   Backed up 3230 images
+2026-08-28 20:08:51 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-28 20:08:51 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-28 20:08:51 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-28 20:08:51 [INFO ] [pipeline]   Restored 3230 images with adjusted anchors
+2026-08-28 20:08:51 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-28 20:08:51 [INFO ] [pipeline]   Column 2: 1467 IDs generated
+2026-08-28 20:08:51 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-28 20:08:51 [INFO ] [pipeline]   Column 3: 1467 cells filled
+2026-08-28 20:08:51 [INFO ] [pipeline] [6/12] map_colors
+2026-08-28 20:08:51 [INFO ] [pipeline]   Column 10: 1406 cells mapped, 61 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-28 20:08:51 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-28 20:08:51 [INFO ] [pipeline]   Column 11: 1402 mapped, 61 cleared (col A has fill), 4 no match (recorded)
+2026-08-28 20:08:51 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-28 20:08:51 [INFO ] [pipeline]   Mirror copy: 7771 cells written
+2026-08-28 20:08:51 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-28 20:08:51 [INFO ] [pipeline]   Column 44: 1467 cells copied from col 12
+2026-08-28 20:08:51 [INFO ] [pipeline] [10/12] calc_price
+2026-08-28 20:08:51 [INFO ] [pipeline]   Columns 45-48: 1467 rows calculated
+2026-08-28 20:08:51 [INFO ] [pipeline] [11/12] format_cells
+2026-08-28 20:08:52 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-28 20:08:52 [INFO ] [pipeline]   Formatted 1467 rows: h=50, align=left/center
+2026-08-28 20:08:52 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-28 20:08:52 [INFO ] [pipeline] [12/12] finalize
+2026-08-28 20:08:52 [INFO ] [pipeline]   Done: 1467 rows x 48 cols (target: 48)
+2026-08-28 20:08:52 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:08:53 [INFO ] [main] Size: 1467 rows x 48 cols
+2026-08-28 20:08:53 [INFO ] [main] ==================================================
+2026-08-28 20:08:53 [INFO ] [main] Done: 8.26v1.xlsx
+2026-08-28 20:08:53 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-08-28 20:08:53 [INFO ] [jenkins] 
+2026-08-28 20:08:53 [INFO ] [jenkins] [4/5] Color re-processing
+2026-08-28 20:08:53 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:08:54 [INFO ] [color_size_main] Source: 8.26v1.xlsx
+2026-08-28 20:08:55 [INFO ] [color_size_main] Extracted: 1406 data lines + 61 separators → check_.txt
+2026-08-28 20:08:55 [INFO ] [color_size_main] Running: process.py
+2026-08-28 20:08:55 [INFO ] [color_size_deal] Groups: 61, lines: 1406 (file: 1467)
+2026-08-28 20:08:55 [INFO ] [color_size_deal] Prefixes: {'01': 153, '02': 69, '03': 49, '04': 37, '05': 26, '06': 23, '07': 18, '08': 13, '09': 6, '10': 6}
+2026-08-28 20:08:55 [INFO ] [color_size_deal] Done.
+2026-08-28 20:08:55 [INFO ] [color_size_main] Processing write-back: 1467 lines
+2026-08-28 20:08:57 [INFO ] [color_size_main] Write-back: 461 written, 1006 unchanged → 8.26v1.xlsx
+2026-08-28 20:08:57 [INFO ] [color_size_main] Done.
+2026-08-28 20:08:57 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-08-28 20:08:57 [INFO ] [jenkins] 
+2026-08-28 20:08:57 [INFO ] [jenkins] [5/5] Title optimization
+2026-08-28 20:08:57 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:08:58 [INFO ] [title_workflow] Source: 8.26v1.xlsx
+2026-08-28 20:08:59 [INFO ] [title_workflow] Extracted 61 titles + 61 links
+2026-08-28 20:08:59 [INFO ] [title_workflow] Written: origin_title (61) + origin_link (61)
+2026-08-28 20:08:59 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-28 20:08:59 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-28 20:09:00 [INFO ] [deepseek_web] Opening DeepSeek web (61 titles)...
+2026-08-28 20:09:00 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-28 20:09:08 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-28 20:09:10 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-28 20:09:10 [INFO ] [deepseek_web] [1/61] 女士德式啤酒节传统裙碎花立领无袖围裙两件套万圣节派对服装两色
+2026-08-28 20:09:16 [INFO ] [deepseek_web]   Downloaded: 0001_2581055104389119868405.jpg
+2026-08-28 20:09:16 [INFO ] [deepseek_web]   Prefetching next image (2/61)
+2026-08-28 20:09:16 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-28 20:09:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:09:24 [INFO ] [deepseek_web]   Deleted: 0001_2581055104389119868405.jpg
+2026-08-28 20:10:17 [INFO ] [jenkins] ==================================================
+2026-08-28 20:10:17 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:10:17 [INFO ] [jenkins] ==================================================
+2026-08-28 20:10:17 [INFO ] [jenkins] 
+2026-08-28 20:10:17 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:10:17 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:10:17 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:10:17 [INFO ] [jenkins] 
+2026-08-28 20:10:17 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:10:17 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:10:17 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:10:17 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:10:17 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:10:17 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:10:19 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:10:19 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:10:20 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 5 deleted
+2026-08-28 20:10:20 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:10:20 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:10:21 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:10:21 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:10:22 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:10:22 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:10:24 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 2 deleted
+2026-08-28 20:10:24 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:10:24 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:10:24 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:10:24 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:10:26 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:10:26 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:10:26 [INFO ] [preprocess]   [万圣节3.xlsx] No duplicate filled rows to remove
+2026-08-28 20:10:26 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:10:26 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:10:26 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:10:26 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:10:27 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:10:27 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:10:29 [INFO ] [preprocess]   [万圣节4.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-28 20:10:29 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:10:29 [INFO ] [preprocess] Preprocessing complete
+2026-08-28 20:10:29 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-08-28 20:10:29 [INFO ] [jenkins] 
+2026-08-28 20:10:29 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-08-28 20:10:29 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:10:29 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:10:29 [INFO ] [main] Found 4 file(s):
+2026-08-28 20:10:29 [INFO ] [main]   万圣节1.xlsx
+2026-08-28 20:10:29 [INFO ] [main]   万圣节2.xlsx
+2026-08-28 20:10:29 [INFO ] [main]   万圣节3.xlsx
+2026-08-28 20:10:29 [INFO ] [main]   万圣节4.xlsx
+2026-08-28 20:10:29 [INFO ] [main] Output: 8.26v1.xlsx
+2026-08-28 20:10:29 [INFO ] [main] ==================================================
+2026-08-28 20:10:36 [INFO ] [main] Merged 4 files, 3664 images total
+2026-08-28 20:10:36 [INFO ] [main] Deleted 4 source file(s)
+2026-08-28 20:10:36 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-28 20:10:36 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-28 20:11:51 [INFO ] [jenkins] ==================================================
+2026-08-28 20:11:51 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:11:51 [INFO ] [jenkins] ==================================================
+2026-08-28 20:11:51 [INFO ] [jenkins] 
+2026-08-28 20:11:51 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:11:51 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:11:51 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:11:51 [INFO ] [jenkins] 
+2026-08-28 20:11:51 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:11:51 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:11:51 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:11:51 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:11:51 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:11:51 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:11:53 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:11:53 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:11:54 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 1 deleted
+2026-08-28 20:11:54 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:11:54 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:11:55 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:11:55 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:11:56 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:11:56 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:11:58 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 2 deleted
+2026-08-28 20:11:58 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:11:58 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:11:59 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:11:59 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:12:00 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:12:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:12:00 [INFO ] [preprocess]   [万圣节3.xlsx] No duplicate filled rows to remove
+2026-08-28 20:12:00 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:12:00 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:12:00 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:12:00 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:12:01 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:12:01 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:12:03 [INFO ] [preprocess]   [万圣节4.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-28 20:12:03 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:12:03 [INFO ] [preprocess] Preprocessing complete
+2026-08-28 20:12:03 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-08-28 20:12:03 [INFO ] [jenkins] 
+2026-08-28 20:12:03 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-08-28 20:12:03 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:12:04 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:12:04 [INFO ] [main] Found 4 file(s):
+2026-08-28 20:12:04 [INFO ] [main]   万圣节1.xlsx
+2026-08-28 20:12:04 [INFO ] [main]   万圣节2.xlsx
+2026-08-28 20:12:04 [INFO ] [main]   万圣节3.xlsx
+2026-08-28 20:12:04 [INFO ] [main]   万圣节4.xlsx
+2026-08-28 20:12:04 [INFO ] [main] Output: 8.26v1.xlsx
+2026-08-28 20:12:04 [INFO ] [main] ==================================================
+2026-08-28 20:12:09 [INFO ] [main] Merged 4 files, 3700 images total
+2026-08-28 20:12:09 [INFO ] [main] Deleted 4 source file(s)
+2026-08-28 20:13:54 [INFO ] [jenkins] ==================================================
+2026-08-28 20:13:54 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:13:54 [INFO ] [jenkins] ==================================================
+2026-08-28 20:13:54 [INFO ] [jenkins] 
+2026-08-28 20:13:54 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:13:54 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:13:54 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:13:54 [INFO ] [jenkins] 
+2026-08-28 20:13:54 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:13:54 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:13:55 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:13:55 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:13:55 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:13:55 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:13:56 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:13:56 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:13:58 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 1 deleted
+2026-08-28 20:13:58 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:13:58 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:13:58 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:13:58 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:14:00 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:14:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:14:02 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 2 deleted
+2026-08-28 20:14:02 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:14:02 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:14:02 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:14:02 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:14:03 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:14:03 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:14:03 [INFO ] [preprocess]   [万圣节3.xlsx] No duplicate filled rows to remove
+2026-08-28 20:14:03 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:14:03 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:14:04 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:14:04 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:14:05 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:14:05 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:18:24 [INFO ] [jenkins] ==================================================
+2026-08-28 20:18:24 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-28 20:18:24 [INFO ] [jenkins] ==================================================
+2026-08-28 20:18:24 [INFO ] [jenkins] 
+2026-08-28 20:18:24 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-28 20:18:24 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:18:24 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-28 20:18:24 [INFO ] [jenkins] 
+2026-08-28 20:18:24 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-28 20:18:24 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:18:24 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:18:24 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:18:24 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:18:24 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:18:25 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:18:25 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:18:27 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 1 deleted
+2026-08-28 20:18:27 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:18:27 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:18:28 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:18:28 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:18:29 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:18:29 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:18:31 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 2 deleted
+2026-08-28 20:18:31 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:18:31 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:18:31 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:18:31 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:18:32 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:18:32 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:18:32 [INFO ] [preprocess]   [万圣节3.xlsx] No duplicate filled rows to remove
+2026-08-28 20:18:32 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:18:33 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:18:33 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:18:33 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:18:34 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:18:34 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:18:36 [INFO ] [preprocess]   [万圣节4.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-28 20:18:36 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:18:36 [INFO ] [preprocess] Preprocessing complete
+2026-08-28 20:18:36 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-28 20:18:36 [INFO ] [jenkins] 
+2026-08-28 20:18:36 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-28 20:18:36 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:18:36 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:18:36 [INFO ] [main] Found 4 file(s):
+2026-08-28 20:18:36 [INFO ] [main]   万圣节1.xlsx
+2026-08-28 20:18:36 [INFO ] [main]   万圣节2.xlsx
+2026-08-28 20:18:36 [INFO ] [main]   万圣节3.xlsx
+2026-08-28 20:18:36 [INFO ] [main]   万圣节4.xlsx
+2026-08-28 20:18:36 [INFO ] [main] Output: 8.26v1.xlsx
+2026-08-28 20:18:36 [INFO ] [main] ==================================================
+2026-08-28 20:18:42 [INFO ] [main] Merged 4 files, 3700 images total
+2026-08-28 20:18:42 [INFO ] [main] Deleted 4 source file(s)
+2026-08-28 20:18:43 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-28 20:18:43 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-28 20:18:48 [INFO ] [pipeline]   Sheet [Sheet0_2]: 470 rows, 1101 images
+2026-08-28 20:18:48 [INFO ] [pipeline]   Sheet [Sheet0_3]: 292 rows, 671 images
+2026-08-28 20:18:48 [INFO ] [pipeline]   Sheet [Sheet0_4]: 402 rows, 832 images
+2026-08-28 20:18:48 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1164 data rows, 2604 images
+2026-08-28 20:18:48 [INFO ] [pipeline] [2/12] validate
+2026-08-28 20:18:48 [INFO ] [pipeline]   Validated: 1570 rows, 27 cols (expect ~32)
+2026-08-28 20:18:48 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-28 20:18:48 [INFO ] [pipeline]   Backed up 3700 images
+2026-08-28 20:18:48 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-28 20:18:48 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-28 20:18:48 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-28 20:18:48 [INFO ] [pipeline]   Restored 3700 images with adjusted anchors
+2026-08-28 20:18:48 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-28 20:18:48 [INFO ] [pipeline]   Column 2: 1570 IDs generated
+2026-08-28 20:18:48 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-28 20:18:48 [INFO ] [pipeline]   Column 3: 1570 cells filled
+2026-08-28 20:18:48 [INFO ] [pipeline] [6/12] map_colors
+2026-08-28 20:18:48 [INFO ] [pipeline]   Column 10: 1485 cells mapped, 85 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-28 20:18:48 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-28 20:18:48 [INFO ] [pipeline]   Column 11: 1476 mapped, 85 cleared (col A has fill), 9 no match (recorded)
+2026-08-28 20:18:48 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-28 20:18:48 [INFO ] [pipeline]   Mirror copy: 8534 cells written
+2026-08-28 20:18:48 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-28 20:18:48 [INFO ] [pipeline]   Column 44: 1570 cells copied from col 12
+2026-08-28 20:18:48 [INFO ] [pipeline] [10/12] calc_price
+2026-08-28 20:18:48 [INFO ] [pipeline]   Columns 45-48: 1570 rows calculated
+2026-08-28 20:18:48 [INFO ] [pipeline] [11/12] format_cells
+2026-08-28 20:18:49 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-28 20:18:49 [INFO ] [pipeline]   Formatted 1570 rows: h=50, align=left/center
+2026-08-28 20:18:49 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-28 20:18:49 [INFO ] [pipeline] [12/12] finalize
+2026-08-28 20:18:49 [INFO ] [pipeline]   Done: 1570 rows x 48 cols (target: 48)
+2026-08-28 20:18:49 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:18:50 [INFO ] [main] Size: 1570 rows x 48 cols
+2026-08-28 20:18:50 [INFO ] [main] ==================================================
+2026-08-28 20:18:50 [INFO ] [main] Done: 8.26v1.xlsx
+2026-08-28 20:18:50 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-28 20:18:50 [INFO ] [jenkins] 
+2026-08-28 20:18:50 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-28 20:18:50 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:18:51 [INFO ] [color_size_main] Source: 8.26v1.xlsx
+2026-08-28 20:18:52 [INFO ] [color_size_main] Extracted: 1485 data lines + 85 separators → check_.txt
+2026-08-28 20:18:52 [INFO ] [color_size_main] Running: process.py
+2026-08-28 20:18:52 [INFO ] [color_size_deal] Groups: 85, lines: 1485 (file: 1570)
+2026-08-28 20:18:52 [INFO ] [color_size_deal] Prefixes: {'01': 155, '02': 69, '03': 49, '04': 37, '05': 26, '06': 23, '07': 18, '08': 13, '09': 6, '10': 6}
+2026-08-28 20:18:52 [INFO ] [color_size_deal] Done.
+2026-08-28 20:18:52 [INFO ] [color_size_main] Processing write-back: 1570 lines
+2026-08-28 20:18:55 [INFO ] [color_size_main] Write-back: 487 written, 1083 unchanged → 8.26v1.xlsx
+2026-08-28 20:18:55 [INFO ] [color_size_main] Done.
+2026-08-28 20:18:55 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-28 20:18:55 [INFO ] [jenkins] 
+2026-08-28 20:18:55 [INFO ] [jenkins] ==================================================
+2026-08-28 20:18:55 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-28 20:18:55 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-28 20:18:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-28 20:18:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-28 20:18:55 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-28 20:19:34 [INFO ] [jenkins] ==================================================
+2026-08-28 20:19:34 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:19:34 [INFO ] [jenkins] ==================================================
+2026-08-28 20:19:34 [INFO ] [jenkins] 
+2026-08-28 20:19:34 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:19:34 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:34 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:19:34 [INFO ] [jenkins] 
+2026-08-28 20:19:34 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:19:34 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:35 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-08-28 20:19:35 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-08-28 20:19:35 [INFO ] [jenkins] 
+2026-08-28 20:19:35 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-08-28 20:19:35 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:35 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:19:35 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-08-28 20:19:35 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-08-28 20:19:35 [INFO ] [jenkins] 
+2026-08-28 20:19:35 [INFO ] [jenkins] [4/5] Color re-processing
+2026-08-28 20:19:35 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:35 [ERROR] [color_size_main] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\8.26v1.xlsx
+2026-08-28 20:19:35 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-08-28 20:19:35 [INFO ] [jenkins] 
+2026-08-28 20:19:35 [INFO ] [jenkins] [5/5] Title optimization
+2026-08-28 20:19:35 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:35 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\8.26v1.xlsx
+2026-08-28 20:19:35 [INFO ] [jenkins] [5/5] Title optimization OK
+2026-08-28 20:19:35 [INFO ] [jenkins] 
+2026-08-28 20:19:35 [INFO ] [jenkins] ==================================================
+2026-08-28 20:19:35 [INFO ] [jenkins] All 5 steps completed successfully
+2026-08-28 20:19:35 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-28 20:19:35 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-28 20:19:35 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-28 20:19:35 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-28 20:19:55 [INFO ] [jenkins] ==================================================
+2026-08-28 20:19:55 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-08-28 20:19:55 [INFO ] [jenkins] ==================================================
+2026-08-28 20:19:55 [INFO ] [jenkins] 
+2026-08-28 20:19:55 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-08-28 20:19:55 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:55 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-08-28 20:19:55 [INFO ] [jenkins] 
+2026-08-28 20:19:55 [INFO ] [jenkins] [2/5] Preprocess
+2026-08-28 20:19:55 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:19:55 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-28 20:19:55 [INFO ] [preprocess] [万圣节1.xlsx]
+2026-08-28 20:19:55 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:19:55 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:19:57 [INFO ] [preprocess]   [万圣节1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:19:57 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:19:58 [INFO ] [preprocess]   [万圣节1.xlsx] Dedup: 30 filled rows, 1 deleted
+2026-08-28 20:19:58 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:19:59 [INFO ] [preprocess] [万圣节2.xlsx]
+2026-08-28 20:19:59 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:19:59 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:20:01 [INFO ] [preprocess]   [万圣节2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:20:01 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:20:02 [INFO ] [preprocess]   [万圣节2.xlsx] Dedup: 30 filled rows, 2 deleted
+2026-08-28 20:20:02 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:20:03 [INFO ] [preprocess] [万圣节3.xlsx]
+2026-08-28 20:20:03 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:20:03 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:20:04 [INFO ] [preprocess]   [万圣节3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:20:04 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:20:04 [INFO ] [preprocess]   [万圣节3.xlsx] No duplicate filled rows to remove
+2026-08-28 20:20:04 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:20:04 [INFO ] [preprocess] [万圣节4.xlsx]
+2026-08-28 20:20:04 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-28 20:20:04 [INFO ] [pipeline] [1/2] remove_header
+2026-08-28 20:20:06 [INFO ] [preprocess]   [万圣节4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-28 20:20:06 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-28 20:20:07 [INFO ] [preprocess]   [万圣节4.xlsx] Dedup: 16 filled rows, 2 deleted
+2026-08-28 20:20:07 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:20:07 [INFO ] [preprocess] Preprocessing complete
+2026-08-28 20:20:07 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-08-28 20:20:07 [INFO ] [jenkins] 
+2026-08-28 20:20:07 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-08-28 20:20:07 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:20:08 [INFO ] [main] Log file: 20260828_4bdd7dee.log
+2026-08-28 20:20:08 [INFO ] [main] Found 4 file(s):
+2026-08-28 20:20:08 [INFO ] [main]   万圣节1.xlsx
+2026-08-28 20:20:08 [INFO ] [main]   万圣节2.xlsx
+2026-08-28 20:20:08 [INFO ] [main]   万圣节3.xlsx
+2026-08-28 20:20:08 [INFO ] [main]   万圣节4.xlsx
+2026-08-28 20:20:08 [INFO ] [main] Output: 8.26v1.xlsx
+2026-08-28 20:20:08 [INFO ] [main] ==================================================
+2026-08-28 20:20:14 [INFO ] [main] Merged 4 files, 3700 images total
+2026-08-28 20:20:14 [INFO ] [main] Deleted 4 source file(s)
+2026-08-28 20:20:14 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-28 20:20:14 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-28 20:20:19 [INFO ] [pipeline]   Sheet [Sheet0_2]: 470 rows, 1101 images
+2026-08-28 20:20:19 [INFO ] [pipeline]   Sheet [Sheet0_3]: 292 rows, 671 images
+2026-08-28 20:20:19 [INFO ] [pipeline]   Sheet [Sheet0_4]: 402 rows, 832 images
+2026-08-28 20:20:19 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1164 data rows, 2604 images
+2026-08-28 20:20:19 [INFO ] [pipeline] [2/12] validate
+2026-08-28 20:20:19 [INFO ] [pipeline]   Validated: 1570 rows, 27 cols (expect ~32)
+2026-08-28 20:20:19 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-28 20:20:19 [INFO ] [pipeline]   Backed up 3700 images
+2026-08-28 20:20:19 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-28 20:20:19 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-28 20:20:19 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-28 20:20:19 [INFO ] [pipeline]   Restored 3700 images with adjusted anchors
+2026-08-28 20:20:19 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-28 20:20:19 [INFO ] [pipeline]   Column 2: 1570 IDs generated
+2026-08-28 20:20:19 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-28 20:20:19 [INFO ] [pipeline]   Column 3: 1570 cells filled
+2026-08-28 20:20:19 [INFO ] [pipeline] [6/12] map_colors
+2026-08-28 20:20:19 [INFO ] [pipeline]   Column 10: 1485 cells mapped, 85 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-28 20:20:19 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-28 20:20:19 [INFO ] [pipeline]   Column 11: 1476 mapped, 85 cleared (col A has fill), 9 no match (recorded)
+2026-08-28 20:20:19 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-28 20:20:19 [INFO ] [pipeline]   Mirror copy: 8534 cells written
+2026-08-28 20:20:19 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-28 20:20:19 [INFO ] [pipeline]   Column 44: 1570 cells copied from col 12
+2026-08-28 20:20:19 [INFO ] [pipeline] [10/12] calc_price
+2026-08-28 20:20:19 [INFO ] [pipeline]   Columns 45-48: 1570 rows calculated
+2026-08-28 20:20:19 [INFO ] [pipeline] [11/12] format_cells
+2026-08-28 20:20:20 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-28 20:20:20 [INFO ] [pipeline]   Formatted 1570 rows: h=50, align=left/center
+2026-08-28 20:20:20 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-28 20:20:20 [INFO ] [pipeline] [12/12] finalize
+2026-08-28 20:20:20 [INFO ] [pipeline]   Done: 1570 rows x 48 cols (target: 48)
+2026-08-28 20:20:20 [INFO ] [pipeline] Pipeline complete
+2026-08-28 20:20:21 [INFO ] [main] Size: 1570 rows x 48 cols
+2026-08-28 20:20:21 [INFO ] [main] ==================================================
+2026-08-28 20:20:21 [INFO ] [main] Done: 8.26v1.xlsx
+2026-08-28 20:20:21 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-08-28 20:20:21 [INFO ] [jenkins] 
+2026-08-28 20:20:21 [INFO ] [jenkins] [4/5] Color re-processing
+2026-08-28 20:20:21 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:20:22 [INFO ] [color_size_main] Source: 8.26v1.xlsx
+2026-08-28 20:20:23 [INFO ] [color_size_main] Extracted: 1485 data lines + 85 separators → check_.txt
+2026-08-28 20:20:23 [INFO ] [color_size_main] Running: process.py
+2026-08-28 20:20:23 [INFO ] [color_size_deal] Groups: 85, lines: 1485 (file: 1570)
+2026-08-28 20:20:23 [INFO ] [color_size_deal] Prefixes: {'01': 155, '02': 69, '03': 49, '04': 37, '05': 26, '06': 23, '07': 18, '08': 13, '09': 6, '10': 6}
+2026-08-28 20:20:23 [INFO ] [color_size_deal] Done.
+2026-08-28 20:20:23 [INFO ] [color_size_main] Processing write-back: 1570 lines
+2026-08-28 20:20:26 [INFO ] [color_size_main] Write-back: 487 written, 1083 unchanged → 8.26v1.xlsx
+2026-08-28 20:20:26 [INFO ] [color_size_main] Done.
+2026-08-28 20:20:26 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-08-28 20:20:26 [INFO ] [jenkins] 
+2026-08-28 20:20:26 [INFO ] [jenkins] [5/5] Title optimization
+2026-08-28 20:20:26 [INFO ] [jenkins] ------------------------------
+2026-08-28 20:20:26 [INFO ] [title_workflow] Source: 8.26v1.xlsx
+2026-08-28 20:20:27 [INFO ] [title_workflow] Extracted 85 titles + 85 links
+2026-08-28 20:20:27 [INFO ] [title_workflow] Written: origin_title (85) + origin_link (85)
+2026-08-28 20:20:27 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-28 20:20:27 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-28 20:20:28 [INFO ] [deepseek_web] Opening DeepSeek web (85 titles)...
+2026-08-28 20:20:28 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-28 20:20:30 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-28 20:20:32 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-28 20:20:32 [INFO ] [deepseek_web] [1/85] 女士德式啤酒节传统裙碎花立领无袖围裙两件套万圣节派对服装两色
+2026-08-28 20:20:38 [INFO ] [deepseek_web]   Downloaded: 0001_2581055104389119868405.jpg
+2026-08-28 20:20:38 [INFO ] [deepseek_web]   Prefetching next image (2/85)
+2026-08-28 20:20:38 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-28 20:20:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:20:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:21:08 [INFO ] [deepseek_web]   Response: 女士德式啤酒节传统围裙两件套 碎花立领无袖连衣裙 前排扣设计 亮金色缎面褶皱围裙 腰部系带收腰 A字及膝版型 万圣节派对服装 两色
+2026-08-28 20:21:08 [INFO ] [deepseek_web]   Deleted: 0001_2581055104389119868405.jpg
+2026-08-28 20:21:13 [INFO ] [deepseek_web] [2/85] 女士万圣节欧美中世纪宫廷复古金丝绒绑带长袖连衣裙舞台晚会表演戏服
+2026-08-28 20:21:13 [INFO ] [deepseek_web]   Downloaded: 0002_3600557290534812436287.jpg
+2026-08-28 20:21:13 [INFO ] [deepseek_web]   Prefetching next image (3/85)
+2026-08-28 20:21:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:21:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:21:42 [INFO ] [deepseek_web]   Response: 女士中世纪宫廷复古连衣裙 金丝绒提花拼接面料 万圣节舞台晚会表演戏服 方领长袖大喇叭袖 胸前交叉绑带抽绳 金色滚边 外袍叠穿及踝长裙 宽松版型 多色可选
+2026-08-28 20:21:42 [INFO ] [deepseek_web]   Deleted: 0002_3600557290534812436287.jpg
+2026-08-28 20:21:47 [INFO ] [deepseek_web] [3/85] 成人趣味恶搞万圣节南瓜海绵服搞笑舞台表演服饰人偶服装
+2026-08-28 20:21:47 [INFO ] [deepseek_web]   Downloaded: 0003_9800327162927616778296.jpg
+2026-08-28 20:21:47 [INFO ] [deepseek_web]   Prefetching next image (4/85)
+2026-08-28 20:21:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:21:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:22:16 [INFO ] [deepseek_web]   Response: 成人万圣节趣味恶搞南瓜海绵服 大圆领无袖套头罩衫 超大宽松版型 立体海绵填充 橙色黑边南瓜鬼脸印花 舞台表演人偶服装 女士款
+2026-08-28 20:22:16 [INFO ] [deepseek_web]   Deleted: 0003_9800327162927616778296.jpg
+2026-08-28 20:22:21 [INFO ] [deepseek_web] [4/85] 2026女士哥特风万圣节女巫绑带大摆连衣长裙COS服
+2026-08-28 20:22:21 [INFO ] [deepseek_web]   Downloaded: 0004_4961022504465529692297.jpg
+2026-08-28 20:22:21 [INFO ] [deepseek_web]   Prefetching next image (5/85)
+2026-08-28 20:22:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:22:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:22:50 [INFO ] [deepseek_web]   Response: 女士哥特风万圣节女巫连衣长裙 雪纺薄纱透视材质 吊带露肩领 大喇叭长袖 胸前交叉绑带抽绳 束腰修身版型 前短后长不规则大摆裙 万圣节COS服 舞台表演服装
+2026-08-28 20:22:50 [INFO ] [deepseek_web]   Deleted: 0004_4961022504465529692297.jpg
+2026-08-28 20:22:55 [INFO ] [deepseek_web] [5/85] 新连帽炫彩蛇皮披肩男女万圣节角色扮演舞台演出披风斗篷
+2026-08-28 20:22:55 [INFO ] [deepseek_web]   Downloaded: 0005_7571119595871317823181.jpg
+2026-08-28 20:22:55 [INFO ] [deepseek_web]   Prefetching next image (6/85)
+2026-08-28 20:22:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:23:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:23:25 [INFO ] [deepseek_web]   Response: 男女通用连帽披风斗篷 炫彩蛇皮纹亮面材质 万圣节角色扮演舞台演出服 尖顶连帽 领口系带 前开襟及地长款 无袖宽松版型 多色可选
+2026-08-28 20:23:25 [INFO ] [deepseek_web]   Deleted: 0005_7571119595871317823181.jpg
+2026-08-28 20:23:30 [INFO ] [deepseek_web] [6/85] 万圣节服装儿童cosplay星月蜘蛛网纱披风裙摆不规则连帽系带斗篷
+2026-08-28 20:23:30 [INFO ] [deepseek_web]   Downloaded: 0006_6180439544493413593352.jpg
+2026-08-28 20:23:30 [INFO ] [deepseek_web]   Prefetching next image (7/85)
+2026-08-28 20:23:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:23:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:23:59 [INFO ] [deepseek_web]   Response: 儿童万圣节Cosplay连帽披风斗篷 女童网纱材质 星月蜘蛛网烫金印花 连帽领口系带 不规则锯齿裙摆 宽松版型 附黑色印花内搭裙 舞台表演服
+2026-08-28 20:23:59 [INFO ] [deepseek_web]   Deleted: 0006_6180439544493413593352.jpg
+2026-08-28 20:24:04 [INFO ] [deepseek_web] [7/85] 新款 实拍分码万圣节啤酒女郎连衣裙塑身舞台演出服装女佣服装
+2026-08-28 20:24:04 [INFO ] [deepseek_web]   Downloaded: 0007_8230502534641518865998.jpg
+2026-08-28 20:24:04 [INFO ] [deepseek_web]   Prefetching next image (8/85)
+2026-08-28 20:24:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:24:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:24:33 [INFO ] [deepseek_web]   Response: 女士德式啤酒节连衣裙 白色泡泡袖方领内搭 紫红色缎面拼接黑色 胸前交叉绑带抽绳 塑身收腰及踝A字大摆 万圣节啤酒女郎舞台演出女佣服装 分码
+2026-08-28 20:24:33 [INFO ] [deepseek_web]   Deleted: 0007_8230502534641518865998.jpg
+2026-08-28 20:24:38 [INFO ] [deepseek_web] [8/85] 万圣节文艺复兴哥特花边公主长裙
+2026-08-28 20:24:38 [INFO ] [deepseek_web]   Downloaded: 0008_5201122456098811404320.jpg
+2026-08-28 20:24:38 [INFO ] [deepseek_web]   Prefetching next image (9/85)
+2026-08-28 20:24:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:24:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:25:07 [INFO ] [deepseek_web]   Response: 女士万圣节文艺复兴哥特花边公主长裙 高领荷叶边长袖泡泡袖 前胸排扣收腰修身 多层叠层及地大摆 舞台演出服
+2026-08-28 20:25:07 [INFO ] [deepseek_web]   Deleted: 0008_5201122456098811404320.jpg
+2026-08-28 20:25:12 [INFO ] [deepseek_web] [9/85] 万圣节裙子女装吊带连衣裙印花惊悚裙子
+2026-08-28 20:25:12 [INFO ] [deepseek_web]   Downloaded: 0009_5200202367821320134460.jpg
+2026-08-28 20:25:12 [INFO ] [deepseek_web]   Prefetching next image (10/85)
+2026-08-28 20:25:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:25:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:25:41 [INFO ] [deepseek_web]   Response: 女士万圣节惊悚印花吊带连衣裙 双细吊带心形领 蕾丝花边拼接 亮面光滑面料 收腰修身A字大摆裙 黑红白撞色 红玫瑰血渍图案 哥特风格派对舞台演出服
+2026-08-28 20:25:41 [INFO ] [deepseek_web]   Deleted: 0009_5200202367821320134460.jpg
+2026-08-28 20:25:46 [INFO ] [deepseek_web] [10/85] 女士万圣节女巫骷髅印花哥特式连衣裙
+2026-08-28 20:25:46 [INFO ] [deepseek_web]   Downloaded: 0010_4500822357981214207884.jpg
+2026-08-28 20:25:46 [INFO ] [deepseek_web]   Prefetching next image (11/85)
+2026-08-28 20:25:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:25:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:26:15 [INFO ] [deepseek_web]   Response: 女士万圣节女巫哥特式连衣裙 金丝绒拼接网纱面料 连帽领口系带 长袖喇叭袖 胸前交叉绑带 骷髅印花 前开叉及地大摆 万圣节舞台演出服
+2026-08-28 20:26:15 [INFO ] [deepseek_web]   Deleted: 0010_4500822357981214207884.jpg
+2026-08-28 20:26:20 [INFO ] [deepseek_web] [11/85] 万圣节成人加勒比女海盗服装女骑士服
+2026-08-28 20:26:20 [INFO ] [deepseek_web]   Downloaded: 0011_3170402295022126509079.jpg
+2026-08-28 20:26:20 [INFO ] [deepseek_web]   Prefetching next image (12/85)
+2026-08-28 20:26:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:26:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:26:49 [INFO ] [deepseek_web]   Response: 女士万圣节成人加勒比女海盗女骑士服装 棕色宽檐羽毛帽 白色露肩荷叶边短袖 仿皮拼接无袖马甲 胸前交叉绑带 腰侧金属搭扣 酒红色雪纺多层荷叶边裙 前短后长不规则裙
+2026-08-28 20:26:49 [INFO ] [deepseek_web]   Deleted: 0011_3170402295022126509079.jpg
+2026-08-28 20:26:54 [INFO ] [deepseek_web] [12/85] 万圣节中世纪礼服女装立领大规则下摆复古长款女裙
+2026-08-28 20:26:54 [INFO ] [deepseek_web]   Downloaded: 0012_2130858048171613103049.jpg
+2026-08-28 20:26:54 [INFO ] [deepseek_web]   Prefetching next image (13/85)
+2026-08-28 20:26:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:27:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:27:24 [INFO ] [deepseek_web]   Response: 女士中世纪复古长款连衣裙 立领长袖 前排单排扣 亮片刺绣拼接 收腰打褶大摆裙 及踝长款 万圣节派对舞台演出服 紫色
+2026-08-28 20:27:24 [INFO ] [deepseek_web]   Deleted: 0012_2130858048171613103049.jpg
+2026-08-28 20:27:29 [INFO ] [deepseek_web] [13/85] 万圣节服装十字架修女服装吸血鬼暗黑哥特幽灵表演服
+2026-08-28 20:27:29 [INFO ] [deepseek_web]   Downloaded: 0013_8711052171176721324693.jpg
+2026-08-28 20:27:29 [INFO ] [deepseek_web]   Prefetching next image (14/85)
+2026-08-28 20:27:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:27:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:27:58 [INFO ] [deepseek_web]   Response: 女士万圣节暗黑哥特修女连衣裙 黑色网纱透视长袖 蕾丝高领 胸前白色交叉绑带 尖角裙摆带银色滚边及十字架印花 连体头纱 收腰A字版型 多件套 吸血鬼幽灵表演服
+2026-08-28 20:27:58 [INFO ] [deepseek_web]   Deleted: 0013_8711052171176721324693.jpg
+2026-08-28 20:28:03 [INFO ] [deepseek_web] [14/85] 万圣节天使套装鬼新娘性感小魔女舞台精灵表演服
+2026-08-28 20:28:03 [INFO ] [deepseek_web]   Downloaded: 0014_9690938485853918277243.jpg
+2026-08-28 20:28:03 [INFO ] [deepseek_web]   Prefetching next image (15/85)
+2026-08-28 20:28:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:28:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:28:32 [INFO ] [deepseek_web]   Response: 女士万圣节天使精灵舞台表演服 无袖心形领缎面束腰 网纱亮片多层蓬蓬短裙 银色镶边装饰 配羽毛翅膀及头饰 修身版型 角色扮演套装
+2026-08-28 20:28:32 [INFO ] [deepseek_web]   Deleted: 0014_9690938485853918277243.jpg
+2026-08-28 20:28:37 [INFO ] [deepseek_web] [15/85] 中世纪吸血鬼女裙万圣节角色扮演吸血鬼表演裙
+2026-08-28 20:28:37 [INFO ] [deepseek_web]   Downloaded: 0015_1300854297435414195947.jpg
+2026-08-28 20:28:37 [INFO ] [deepseek_web]   Prefetching next image (16/85)
+2026-08-28 20:28:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:28:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:29:06 [INFO ] [deepseek_web]   Response: 女士中世纪吸血鬼连衣长裙 缎面光滑面料 连帽领设计 大喇叭长袖尖角袖口 腰部交叉绑带束腰 收腰修身版型 及地不规则裙摆 万圣节角色扮演舞台表演裙
+2026-08-28 20:29:06 [INFO ] [deepseek_web]   Deleted: 0015_1300854297435414195947.jpg
+2026-08-28 20:29:11 [INFO ] [deepseek_web] [16/85] 万圣节束腰裙复古中世纪文艺复兴连衣裙宫廷晚会
+2026-08-28 20:29:11 [INFO ] [deepseek_web]   Downloaded: 0016_1301203044406210521303.jpg
+2026-08-28 20:29:11 [INFO ] [deepseek_web]   Prefetching next image (17/85)
+2026-08-28 20:29:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:29:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:29:40 [INFO ] [deepseek_web]   Response: 女士中世纪复古束腰连衣裙 缎面拼接面料 方领蕾丝花边 前胸黑色交叉绑带 大喇叭长袖 紫黑拼色 蕾丝镶边 收腰及地大摆裙 万圣节宫廷晚会舞台表演服
+2026-08-28 20:29:40 [INFO ] [deepseek_web]   Deleted: 0016_1301203044406210521303.jpg
+2026-08-28 20:29:45 [INFO ] [deepseek_web] [17/85] 啤酒节服装连衣裙小白衫短款衫传统节日派对服装万圣节服饰
+2026-08-28 20:29:45 [INFO ] [deepseek_web]   Downloaded: 0017_0760259165995420985726.jpg
+2026-08-28 20:29:45 [INFO ] [deepseek_web]   Prefetching next image (18/85)
+2026-08-28 20:29:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:29:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:30:14 [INFO ] [deepseek_web]   Response: 女士德式啤酒节传统连衣裙 白色荷叶边短袖内搭 深色系带收腰吊带裙 胸前交叉绑带 腰部宽缎带系带 格纹围裙装饰 短款及膝常规版型 多色可选 传统节日派对万圣节舞台
+2026-08-28 20:30:14 [INFO ] [deepseek_web]   Deleted: 0017_0760259165995420985726.jpg
+2026-08-28 20:30:19 [INFO ] [deepseek_web] [18/85] 成人万圣节装扮斗篷带帽披风下摆不规则印花长袖外套
+2026-08-28 20:30:19 [INFO ] [deepseek_web]   Downloaded: 0018_6011043513511417335626.jpg
+2026-08-28 20:30:19 [INFO ] [deepseek_web]   Prefetching next image (19/85)
+2026-08-28 20:30:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:30:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:30:49 [INFO ] [deepseek_web]   Response: 女士万圣节连帽斗篷外套 长袖拉链开衫 白色树枝/闪电印花 紫色针织面料 前短后长不规则下摆 宽松版型 成人带帽披风 哥特复古派对演出服
+2026-08-28 20:30:49 [INFO ] [deepseek_web]   Deleted: 0018_6011043513511417335626.jpg
+2026-08-28 20:30:54 [INFO ] [deepseek_web] [19/85] 万圣节COS服哥特风复古格纹不规则蕾丝拼接飘带半裙
+2026-08-28 20:30:54 [INFO ] [deepseek_web]   Downloaded: 0019_6830808083191016629922.jpg
+2026-08-28 20:30:54 [INFO ] [deepseek_web]   Prefetching next image (20/85)
+2026-08-28 20:30:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:31:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:31:23 [INFO ] [deepseek_web]   Response: 女士半裙 哥特风 复古 红黑格纹 黑色蕾丝拼接 不规则裙摆 腰部金属链条装饰 飘带 万圣节COS服
+2026-08-28 20:31:23 [INFO ] [deepseek_web]   Deleted: 0019_6830808083191016629922.jpg
+2026-08-28 20:31:28 [INFO ] [deepseek_web] [20/85] 成人款万圣节亲子装表演服成人欧式中世纪酒红色吸血鬼Cosplay服装
+2026-08-28 20:31:28 [INFO ] [deepseek_web]   Downloaded: 0020_4630431551922423389218.jpg
+2026-08-28 20:31:28 [INFO ] [deepseek_web]   Prefetching next image (21/85)
+2026-08-28 20:31:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:31:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:31:57 [INFO ] [deepseek_web]   Response: 女士中世纪吸血鬼连帽长裙 金丝绒面料 长袖大喇叭袖 收腰及踝大摆 领口袖口金色花纹镶边 宽松版型 多色可选 万圣节欧式Cosplay舞台表演服
+2026-08-28 20:31:57 [INFO ] [deepseek_web]   Deleted: 0020_4630431551922423389218.jpg
+2026-08-28 20:32:02 [INFO ] [deepseek_web] [21/85] 万圣节猫咪cos披风带帽斗篷
+2026-08-28 20:32:02 [INFO ] [deepseek_web]   Downloaded: 0021_1500421354363015003154.jpg
+2026-08-28 20:32:02 [INFO ] [deepseek_web]   Prefetching next image (22/85)
+2026-08-28 20:32:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:32:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:32:31 [INFO ] [deepseek_web]   Response: 女士万圣节猫咪Cosplay连帽斗篷 针织面料 宽松版型 连帽白色猫耳装饰 猫脸印花 宽大蝙蝠袖 套头设计 角色扮演派对披风
+2026-08-28 20:32:31 [INFO ] [deepseek_web]   Deleted: 0021_1500421354363015003154.jpg
+2026-08-28 20:32:36 [INFO ] [deepseek_web] [22/85] 跨境 COSPLAY万圣节刺绣女仆装
+2026-08-28 20:32:36 [INFO ] [deepseek_web]   Downloaded: 0022_0871030467903586085373.jpg
+2026-08-28 20:32:36 [INFO ] [deepseek_web]   Prefetching next image (23/85)
+2026-08-28 20:32:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:32:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:33:05 [INFO ] [deepseek_web]   Response: 女士万圣节COSPLAY女仆装 缎面光泽材质 挂脖露肩短袖 胸前蝴蝶结装饰 腰部深色交叉绑带 收腰A字蓬蓬短裙 多层荷叶边裙摆 蝙蝠刺绣图案 橙色拼接深色 配套
+2026-08-28 20:33:05 [INFO ] [deepseek_web]   Deleted: 0022_0871030467903586085373.jpg
+2026-08-28 20:33:10 [INFO ] [deepseek_web] [23/85] 万圣节啤酒节酒吧啤酒女郎连衣裙舞台演出服装大码女佣服装(不含内衬）
+2026-08-28 20:33:10 [INFO ] [deepseek_web]   Downloaded: 0023_8761025322304860162707.jpg
+2026-08-28 20:33:10 [INFO ] [deepseek_web]   Prefetching next image (24/85)
+2026-08-28 20:33:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:33:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:33:42 [INFO ] [deepseek_web]   Response: 女士德式啤酒节连衣裙 黑色蕾丝拼接面料 蕾丝泡泡短袖方领 胸前银色交叉绑带 腰部宽缎带蝴蝶结 收腰A字蓬蓬裙摆 万圣节舞台演出女佣服装 不含内衬
+2026-08-28 20:33:42 [INFO ] [deepseek_web]   Deleted: 0023_8761025322304860162707.jpg
+2026-08-28 20:33:47 [INFO ] [deepseek_web] [24/85] 万圣节希腊女神宫廷公主女王服装复古长裙话剧舞台剧演出服
+2026-08-28 20:33:47 [INFO ] [deepseek_web]   Downloaded: 0024_0290317121012717362434.jpg
+2026-08-28 20:33:47 [INFO ] [deepseek_web]   Prefetching next image (25/85)
+2026-08-28 20:33:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:33:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:34:17 [INFO ] [deepseek_web]   Response: 女士复古宫廷长裙 金丝绒拼接材质 方领长袖大喇叭袖 胸前黄色交叉绑带 金色滚边装饰 撞色拼接收腰修身 A字及踝大摆 希腊女神宫廷公主女王服装 万圣节话剧舞台剧演
+2026-08-28 20:34:17 [INFO ] [deepseek_web]   Deleted: 0024_0290317121012717362434.jpg
+2026-08-28 20:34:22 [INFO ] [deepseek_web] [25/85] 女士万圣节印花连帽cosplay连衣裙长袖长裙
+2026-08-28 20:34:22 [INFO ] [deepseek_web]   Downloaded: 0025_1880157294441217180099.jpg
+2026-08-28 20:34:22 [INFO ] [deepseek_web]   Prefetching next image (26/85)
+2026-08-28 20:34:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:34:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:34:51 [INFO ] [deepseek_web]   Response: 女士连帽长袖连衣裙 印花面料 3D骷髅死神图案 宽松版型 及踝长裙 万圣节哥特风Cosplay演出服
+2026-08-28 20:34:51 [INFO ] [deepseek_web]   Deleted: 0025_1880157294441217180099.jpg
+2026-08-28 20:34:56 [INFO ] [deepseek_web] [26/85] 女士时尚万圣节V领短袖休闲长裙
+2026-08-28 20:34:56 [INFO ] [deepseek_web]   Downloaded: 0026_7210405551712819585621.jpg
+2026-08-28 20:34:56 [INFO ] [deepseek_web]   Prefetching next image (27/85)
+2026-08-28 20:34:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:35:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:35:25 [INFO ] [deepseek_web]   Response: 女士万圣节V领短袖长裙 印花面料 收腰大摆 视觉显瘦 骷髅骨骼印花 酒红黑渐变色 及踝长裙 休闲派对演出服
+2026-08-28 20:35:25 [INFO ] [deepseek_web]   Deleted: 0026_7210405551712819585621.jpg
+2026-08-28 20:35:30 [INFO ] [deepseek_web] [27/85] 万圣节儿童女巫精灵cos服装披风斗篷
+2026-08-28 20:35:30 [INFO ] [deepseek_web]   Downloaded: 0027_8381104363236974697109.jpg
+2026-08-28 20:35:30 [INFO ] [deepseek_web]   Prefetching next image (28/85)
+2026-08-28 20:35:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:35:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:35:59 [INFO ] [deepseek_web]   Response: 儿童万圣节女巫精灵Cosplay连帽披风斗篷 网纱材质 星星蝙蝠南瓜印花 领口白色系带 宽松版型及膝长 多色可选 舞台演出服
+2026-08-28 20:35:59 [INFO ] [deepseek_web]   Deleted: 0027_8381104363236974697109.jpg
+2026-08-28 20:36:04 [INFO ] [deepseek_web] [28/85] 新款万圣节哥特小恶魔洛丽塔 女仆装 连衣裙
+2026-08-28 20:36:04 [INFO ] [deepseek_web]   Downloaded: 0028_8410441507864618693692.jpg
+2026-08-28 20:36:04 [INFO ] [deepseek_web]   Prefetching next image (29/85)
+2026-08-28 20:36:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:36:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:36:33 [INFO ] [deepseek_web]   Response: 女士万圣节哥特小恶魔洛丽塔女仆装连衣裙 缎面拼接面料 立领长袖 红黑撞色 肩部荷叶边 领口系带 胸前交叉绑带蝴蝶结 收腰A字大摆 腰部黑色围裙 多层荷叶边裙摆 
+2026-08-28 20:36:33 [INFO ] [deepseek_web]   Deleted: 0028_8410441507864618693692.jpg
+2026-08-28 20:36:38 [INFO ] [deepseek_web] [29/85] 女士小可爱女仆装cosplay洛丽塔万圣节女裝 演出服
+2026-08-28 20:36:38 [INFO ] [deepseek_web]   Downloaded: 0029_5760417307221689916560.jpg
+2026-08-28 20:36:38 [INFO ] [deepseek_web]   Prefetching next image (30/85)
+2026-08-28 20:36:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:36:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:37:07 [INFO ] [deepseek_web]   Response: 女士女仆装连衣裙 短袖泡泡袖 荷叶边圆领 胸前粉色蝴蝶结 腰部白色围裙 卡通小熊印花 裙摆多层荷叶边 收腰A字蓬蓬裙 多色可选 Cosplay洛丽塔万圣节舞台演
+2026-08-28 20:37:07 [INFO ] [deepseek_web]   Deleted: 0029_5760417307221689916560.jpg
+2026-08-28 20:37:12 [INFO ] [deepseek_web] [30/85] 女士跨万圣节气质女装长袖宽松舒适印花连衣裙休闲裙
+2026-08-28 20:37:12 [INFO ] [deepseek_web]   Downloaded: 0030_0951047062086777954657.jpg
+2026-08-28 20:37:12 [INFO ] [deepseek_web]   Prefetching next image (31/85)
+2026-08-28 20:37:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:37:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:37:41 [INFO ] [deepseek_web]   Response: 女士万圣节哥特风修身鱼尾连衣裙 光滑面料圆领长袖 骨骼玫瑰印花 舞台派对表演服 印花长裙
+2026-08-28 20:37:41 [INFO ] [deepseek_web]   Deleted: 0030_0951047062086777954657.jpg
+2026-08-28 20:37:46 [INFO ] [deepseek_web] [31/85] 女士万圣节暗黑蕾丝哥特风气质性感微透修身鱼尾长袖连衣裙
+2026-08-28 20:37:46 [INFO ] [deepseek_web]   Downloaded: 0031_0840931517793013153723.jpg
+2026-08-28 20:37:46 [INFO ] [deepseek_web]   Prefetching next image (32/85)
+2026-08-28 20:37:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:37:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:38:16 [INFO ] [deepseek_web]   Response: 女士万圣节暗黑哥特风连衣裙 金丝绒拼接蕾丝面料 微透大喇叭长袖 领口系带 收腰修身鱼尾长裙 舞台表演服
+2026-08-28 20:38:16 [INFO ] [deepseek_web]   Deleted: 0031_0840931517793013153723.jpg
+2026-08-28 20:38:21 [INFO ] [deepseek_web] [32/85] 万圣节cosplay儿童女巫吸血鬼蜘蛛派聚会表演服(2-12Y)
+2026-08-28 20:38:21 [INFO ] [deepseek_web]   Downloaded: 0032_1360451179244319665220.jpg
+2026-08-28 20:38:21 [INFO ] [deepseek_web]   Prefetching next image (33/85)
+2026-08-28 20:38:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:38:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:38:52 [INFO ] [deepseek_web]   Response: 儿童万圣节Cosplay女巫吸血鬼连衣裙 金丝绒拼接透明网纱 立领蕾丝颈饰 长袖透视大喇叭袖 胸前金色交叉绑带 金色蜘蛛网印花 收腰A字及踝裙摆 常规版型 万圣
+2026-08-28 20:38:52 [INFO ] [deepseek_web]   Deleted: 0032_1360451179244319665220.jpg
+2026-08-28 20:38:57 [INFO ] [deepseek_web] [33/85] 万圣节新款儿童女巫师魔法帽子稻草人连衣裙套装吸血鬼表演服（5-12Y）
+2026-08-28 20:38:57 [INFO ] [deepseek_web]   Downloaded: 0033_9880929226745114693642.jpg
+2026-08-28 20:38:57 [INFO ] [deepseek_web]   Prefetching next image (34/85)
+2026-08-28 20:38:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:39:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:39:26 [INFO ] [deepseek_web]   Response: 儿童万圣节女巫稻草人连衣裙套装 尖顶魔法帽带蜘蛛网装饰 泡泡袖 胸前交叉绑带 黑色宽腰带 锯齿形不规则下摆 黑色补丁拼接 女童收腰A字版型 5-12Y 万圣节派
+2026-08-28 20:39:26 [INFO ] [deepseek_web]   Deleted: 0033_9880929226745114693642.jpg
+2026-08-28 20:39:31 [INFO ] [deepseek_web] [34/85] 女士万圣节啤酒节舞台演出女仆连衣裙
+2026-08-28 20:39:31 [INFO ] [deepseek_web]   Downloaded: 0034_6350348161781018695398.jpg
+2026-08-28 20:39:31 [INFO ] [deepseek_web]   Prefetching next image (35/85)
+2026-08-28 20:39:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:39:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:40:00 [INFO ] [deepseek_web]   Response: 女士女仆连衣裙 棉混纺面料 翻领泡泡短袖 白色荷叶边围裙拼接 宽腰带 收腰A字蓬蓬裙 多层荷叶边裙摆 黑白格纹印花 万圣节啤酒节舞台演出服 多色可选
+2026-08-28 20:40:00 [INFO ] [deepseek_web]   Deleted: 0034_6350348161781018695398.jpg
+2026-08-28 20:40:05 [INFO ] [deepseek_web] [35/85] 女士中世纪复古宫廷服万圣节cos服
+2026-08-28 20:40:05 [INFO ] [deepseek_web]   Downloaded: 0035_1060431324492435116046.jpg
+2026-08-28 20:40:05 [INFO ] [deepseek_web]   Prefetching next image (36/85)
+2026-08-28 20:40:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:40:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:40:34 [INFO ] [deepseek_web]   Response: 女士中世纪复古宫廷连衣裙 棉混纺面料 方领荷叶边领口 胸前抽绳 长袖大喇叭袖 深色无袖束腰马甲 胸前交叉系带 白色内搭长袖裙 荷叶边裙摆 前短后长不规则下摆 收
+2026-08-28 20:40:34 [INFO ] [deepseek_web]   Deleted: 0035_1060431324492435116046.jpg
+2026-08-28 20:40:39 [INFO ] [deepseek_web] [36/85] 女士万圣节骷髅印花长袖连衣裙
+2026-08-28 20:40:39 [INFO ] [deepseek_web]   Downloaded: 0036_1690934337094911059463.jpg
+2026-08-28 20:40:39 [INFO ] [deepseek_web]   Prefetching next image (37/85)
+2026-08-28 20:40:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:40:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:41:08 [INFO ] [deepseek_web]   Response: 女士万圣节哥特风连衣裙 圆领长袖 修身版型 套头设计 3D骷髅骨骼玫瑰南瓜印花 舞台派对演出服
+2026-08-28 20:41:08 [INFO ] [deepseek_web]   Deleted: 0036_1690934337094911059463.jpg
+2026-08-28 20:41:13 [INFO ] [deepseek_web] [37/85] 儿童大童德国啤酒节万圣节狂欢派对服饰
+2026-08-28 20:41:13 [INFO ] [deepseek_web]   Downloaded: 0037_8550241051171115948201.jpg
+2026-08-28 20:41:13 [INFO ] [deepseek_web]   Prefetching next image (38/85)
+2026-08-28 20:41:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:41:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:41:43 [INFO ] [deepseek_web]   Response: 儿童大童德国啤酒节万圣节狂欢派对服饰 多件套（米白衬衫+藏青背心裙+白围裙+头巾） 立领系带长袖 前胸排扣 背后交叉绑带 腰部蝴蝶结 蕾丝花边荷叶边裙摆 收腰A
+2026-08-28 20:41:43 [INFO ] [deepseek_web]   Deleted: 0037_8550241051171115948201.jpg
+2026-08-28 20:41:48 [INFO ] [deepseek_web] [38/85] 女士万圣节提花连帽披风蕾丝连衣裙套装
+2026-08-28 20:41:48 [INFO ] [deepseek_web]   Downloaded: 0038_6450947584663819621950.jpg
+2026-08-28 20:41:48 [INFO ] [deepseek_web]   Prefetching next image (39/85)
+2026-08-28 20:41:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:41:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:42:17 [INFO ] [deepseek_web]   Response: 女士万圣节连帽披风蕾丝连衣裙套装 缎面披风 提花蕾丝面料 收腰修身版型 连帽领口系带 黑色蕾丝镶边 胸前交叉绑带 无袖 前短后长不规则裙摆 万圣节派对舞台演出服
+2026-08-28 20:42:17 [INFO ] [deepseek_web]   Deleted: 0038_6450947584663819621950.jpg
+2026-08-28 20:42:22 [INFO ] [deepseek_web] [39/85] 女士万圣节黑色连衣裙日系修女蕾丝女仆装
+2026-08-28 20:42:22 [INFO ] [deepseek_web]   Downloaded: 0039_2181007377055710111913.jpg
+2026-08-28 20:42:22 [INFO ] [deepseek_web]   Prefetching next image (40/85)
+2026-08-28 20:42:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:42:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:42:51 [INFO ] [deepseek_web]   Response: 女士万圣节日系修女蕾丝女仆装连衣裙 黑色面料 长袖方领 白色荷叶边围裙 黑色蝴蝶结装饰 白领结 袖口蕾丝花边 多层荷叶边A字裙摆 白色女仆头饰 收腰修身版型 多
+2026-08-28 20:42:51 [INFO ] [deepseek_web]   Deleted: 0039_2181007377055710111913.jpg
+2026-08-28 20:42:56 [INFO ] [deepseek_web] [40/85] 万圣节女仆装cosplay表演服装
+2026-08-28 20:42:56 [INFO ] [deepseek_web]   Downloaded: 0040_9260421552453020969582.jpg
+2026-08-28 20:42:56 [INFO ] [deepseek_web]   Prefetching next image (41/85)
+2026-08-28 20:42:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:43:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:43:25 [INFO ] [deepseek_web]   Response: 女士万圣节女仆装 Cosplay表演服 棉混纺面料 常规版型 及膝A字裙摆 白色尖领短袖 袖口翻边 前排单排纽扣 白色V型拼接带 腰部白色荷叶边围裙 经典黑白撞
+2026-08-28 20:43:25 [INFO ] [deepseek_web]   Deleted: 0040_9260421552453020969582.jpg
+2026-08-28 20:43:30 [INFO ] [deepseek_web] [41/85] 万圣节服装成人灰姑娘女仆服舞台剧演出田园农场女仆平民穷人衣服
+2026-08-28 20:43:30 [INFO ] [deepseek_web]   Downloaded: 0041_0151137104825621461677.jpg
+2026-08-28 20:43:30 [INFO ] [deepseek_web]   Prefetching next image (42/85)
+2026-08-28 20:43:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:43:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:43:59 [INFO ] [deepseek_web]   Response: 女士万圣节成人田园农场女仆服 复古灰姑娘平民穷人舞台剧演出服 长袖泡泡袖娃娃领 米棕拼色外搭围裙罩裙 荷叶边裙摆 配头巾 棉麻质感及膝连衣裙
+2026-08-28 20:43:59 [INFO ] [deepseek_web]   Deleted: 0041_0151137104825621461677.jpg
+2026-08-28 20:44:04 [INFO ] [deepseek_web] [42/85] 女士万圣节圣诞节中世纪复古哥特宫廷连衣裙拼接复古连衣裙
+2026-08-28 20:44:04 [INFO ] [deepseek_web]   Downloaded: 0042_1130346513612642618180.jpg
+2026-08-28 20:44:04 [INFO ] [deepseek_web]   Prefetching next image (43/85)
+2026-08-28 20:44:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:44:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:44:33 [INFO ] [deepseek_web]   Response: 女士中世纪复古哥特宫廷连衣裙 拼接提花缎面面料 长袖大喇叭袖口 方领胸前绑带 收腰及地大摆 连颈饰项圈 多色可选 万圣节圣诞节舞台剧演出服 复古宫廷风
+2026-08-28 20:44:33 [INFO ] [deepseek_web]   Deleted: 0042_1130346513612642618180.jpg
+2026-08-28 20:44:38 [INFO ] [deepseek_web] [43/85] 万圣节啤酒节性感情趣内衣游戏装角色扮演制服诱惑cos服
+2026-08-28 20:44:38 [INFO ] [deepseek_web]   Downloaded: 0043_2010206460056720193277.jpg
+2026-08-28 20:44:38 [INFO ] [deepseek_web]   Prefetching next image (44/85)
+2026-08-28 20:44:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:44:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:45:07 [INFO ] [deepseek_web]   Response: 女士女仆装连衣裙 光泽缎面面料 蕾丝拼接 修身短款版型 泡泡短袖 高领镂空设计 胸前交叉绑带 白色蝴蝶结 白色荷叶边围裙 多层蕾丝裙摆 配女仆发箍 多件套 万圣
+2026-08-28 20:45:07 [INFO ] [deepseek_web]   Deleted: 0043_2010206460056720193277.jpg
+2026-08-28 20:45:12 [INFO ] [deepseek_web] [44/85] 万圣节服饰女装巫婆巫师连帽套装舞台演出服女男女套装
+2026-08-28 20:45:12 [INFO ] [deepseek_web]   Downloaded: 0044_5351127430951658802849.jpg
+2026-08-28 20:45:12 [INFO ] [deepseek_web]   Prefetching next image (45/85)
+2026-08-28 20:45:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:45:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:45:42 [INFO ] [deepseek_web]   Response: 女士万圣节巫婆巫师连帽长袍套装 金丝绒面料 宽松版型及地长裙 大喇叭长袖 荷叶边领口金色滚边 腰部系带飘带 男女同款 舞台演出服
+2026-08-28 20:45:42 [INFO ] [deepseek_web]   Deleted: 0044_5351127430951658802849.jpg
+2026-08-28 20:45:47 [INFO ] [deepseek_web] [45/85] 万圣节COS服暗黑系泡泡袖女仆服连衣裙日系歌特女仆装
+2026-08-28 20:45:47 [INFO ] [deepseek_web]   Downloaded: 0045_8820554489853714021363.jpg
+2026-08-28 20:45:47 [INFO ] [deepseek_web]   Prefetching next image (46/85)
+2026-08-28 20:45:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:45:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:46:16 [INFO ] [deepseek_web]   Response: 女士日系哥特女仆装连衣裙 万圣节COS服 暗黑系派对表演服 小立领长袖泡泡袖 白色荷叶边蕾丝围裙 黑色网纱蜘蛛网裙摆 多层荷叶边拼接 收腰A字版型 含头饰多件套
+2026-08-28 20:46:16 [INFO ] [deepseek_web]   Deleted: 0045_8820554489853714021363.jpg
+2026-08-28 20:46:21 [INFO ] [deepseek_web] [46/85] 万圣节服装哥特风鬼新娘装暗黑风女巫婆装吸血鬼服装酒吧演出服装
+2026-08-28 20:46:21 [INFO ] [deepseek_web]   Downloaded: 0046_1960456446073416530478.jpg
+2026-08-28 20:46:21 [INFO ] [deepseek_web]   Prefetching next image (47/85)
+2026-08-28 20:46:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:46:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:46:50 [INFO ] [deepseek_web]   Response: 女士万圣节哥特风鬼新娘连衣裙 缎面拼接网纱面料 方领泡泡短袖 胸前蕾丝拼接 骷髅骨影渐变印花 不规则网纱下摆 收腰A字短款版型 附十字架项链和网纱头饰 暗黑吸血
+2026-08-28 20:46:50 [INFO ] [deepseek_web]   Deleted: 0046_1960456446073416530478.jpg
+2026-08-28 20:46:55 [INFO ] [deepseek_web] [47/85] 万圣节服饰鬼新娘头纱+婚纱连衣裙套装舞台演出服
+2026-08-28 20:46:55 [INFO ] [deepseek_web]   Downloaded: 0047_4100458013993936878026.jpg
+2026-08-28 20:46:55 [INFO ] [deepseek_web]   Prefetching next image (48/85)
+2026-08-28 20:46:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:47:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:47:24 [INFO ] [deepseek_web]   Response: 女士鬼新娘婚纱连衣裙套装 蕾丝拼接缎面面料 一字肩心形领 长袖透视蕾丝袖 红黑撞色 收腰修身A字及地长裙 配玫瑰花头纱 万圣节哥特风舞台演出服
+2026-08-28 20:47:24 [INFO ] [deepseek_web]   Deleted: 0047_4100458013993936878026.jpg
+2026-08-28 20:47:29 [INFO ] [deepseek_web] [48/85] 万圣节服饰恐怖医院手术室鬼护士舞台演出服
+2026-08-28 20:47:29 [INFO ] [deepseek_web]   Downloaded: 0048_5860447077063716532215.jpg
+2026-08-28 20:47:29 [INFO ] [deepseek_web]   Prefetching next image (49/85)
+2026-08-28 20:47:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:47:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:47:58 [INFO ] [deepseek_web]   Response: 女士万圣节恐怖医院鬼护士连衣裙 印花面料 及膝常规版型 黑色长袖高圆领 白色血迹喷溅印花 红色十字图案 锯齿形不规则下摆 配护士帽 舞台演出服
+2026-08-28 20:47:58 [INFO ] [deepseek_web]   Deleted: 0048_5860447077063716532215.jpg
+2026-08-28 20:48:03 [INFO ] [deepseek_web] [49/85] 万圣节服装田园风格女童绿色格子连衣蓬蓬裙 日常款洋装
+2026-08-28 20:48:03 [INFO ] [deepseek_web]   Downloaded: 0049_6560221121751259538471.jpg
+2026-08-28 20:48:03 [INFO ] [deepseek_web]   Prefetching next image (50/85)
+2026-08-28 20:48:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:48:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:48:32 [INFO ] [deepseek_web]   Response: 女童万圣节田园风连衣蓬蓬裙 绿白格子面料 泡泡短袖 娃娃领 白色系带围裙 裙摆蕾丝花边 配套头巾 A字蓬蓬裙版型 日常款洋装 多件套
+2026-08-28 20:48:32 [INFO ] [deepseek_web]   Deleted: 0049_6560221121751259538471.jpg
+2026-08-28 20:48:37 [INFO ] [deepseek_web] [50/85] 女装慕尼黑啤酒节复古啤酒裙万圣节派对衣服
+2026-08-28 20:48:37 [INFO ] [deepseek_web]   Downloaded: 0050_9891047476184619956156.jpg
+2026-08-28 20:48:37 [INFO ] [deepseek_web]   Prefetching next image (51/85)
+2026-08-28 20:48:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:48:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:49:07 [INFO ] [deepseek_web]   Response: 女士慕尼黑啤酒节复古连衣裙 缎面光泽面料 荷叶边飞袖 方领单排纽扣 黑白豹纹宽腰带 撞色拼接 收腰A字及膝裙 万圣节派对舞台演出服
+2026-08-28 20:49:07 [INFO ] [deepseek_web]   Deleted: 0050_9891047476184619956156.jpg
+2026-08-28 20:49:12 [INFO ] [deepseek_web] [51/85] 万圣节成人服装稻草人服装农场田园风装扮连衣裙套装
+2026-08-28 20:49:12 [INFO ] [deepseek_web]   Downloaded: 0051_6330209153686915303985.jpg
+2026-08-28 20:49:12 [INFO ] [deepseek_web]   Prefetching next image (52/85)
+2026-08-28 20:49:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:49:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:49:41 [INFO ] [deepseek_web]   Response: 女士万圣节成人稻草人连衣裙套装 布料材质 修身版型 尖顶向日葵帽 红白条纹长袖衫 袖口橙色流苏 背带式背心裙 腰部系带 裙摆橙色流苏 农场田园风舞台演出服
+2026-08-28 20:49:41 [INFO ] [deepseek_web]   Deleted: 0051_6330209153686915303985.jpg
+2026-08-28 20:49:46 [INFO ] [deepseek_web] [52/85] 8032黑红 万圣节吸血鬼小恶魔女仆 Lolita哥特风黑红女仆cos动漫角色扮演服
+2026-08-28 20:49:46 [INFO ] [deepseek_web]   Downloaded: 0052_5370515542171631238410.jpg
+2026-08-28 20:49:46 [INFO ] [deepseek_web]   Prefetching next image (53/85)
+2026-08-28 20:49:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:49:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:50:15 [INFO ] [deepseek_web]   Response: 女士Lolita哥特风女仆装连衣裙 黑红配色 短袖荷叶边领 胸前大红蝴蝶结猫爪装饰 白色双排扣围裙 多层荷叶边蓬蓬裙摆 万圣节吸血鬼小恶魔Cosplay动漫角色
+2026-08-28 20:50:15 [INFO ] [deepseek_web]   Deleted: 0052_5370515542171631238410.jpg
+2026-08-28 20:50:20 [INFO ] [deepseek_web] [53/85] 女式中世纪cos服复古万圣节一字肩喇叭袖收腰宫廷连衣长裙舞台演出服
+2026-08-28 20:50:20 [INFO ] [deepseek_web]   Downloaded: 0053_8151156547436222376323.jpg
+2026-08-28 20:50:20 [INFO ] [deepseek_web]   Prefetching next image (54/85)
+2026-08-28 20:50:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:50:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:50:49 [INFO ] [deepseek_web]   Response: 女士中世纪复古宫廷连衣长裙 雪纺垂坠面料 一字肩荷叶边领口 长袖大喇叭袖 松紧收腰 前短后长不规则荷叶边裙摆 纯色多色可选 万圣节Cosplay舞台演出服
+2026-08-28 20:50:49 [INFO ] [deepseek_web]   Deleted: 0053_8151156547436222376323.jpg
+2026-08-28 20:50:54 [INFO ] [deepseek_web] [54/85] 亮片蝴蝶结幽灵披风万圣节
+2026-08-28 20:50:54 [INFO ] [deepseek_web]   Downloaded: 0054_1530308286597310296322.jpg
+2026-08-28 20:50:54 [INFO ] [deepseek_web]   Prefetching next image (55/85)
+2026-08-28 20:50:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:51:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:51:23 [INFO ] [deepseek_web]   Response: 女士万圣节幽灵连帽披风 亮片网纱面料 连帽双眼孔镂空 顶部超大蝴蝶结 长袖宽松垂坠 及地长款 派对舞台演出服
+2026-08-28 20:51:23 [INFO ] [deepseek_web]   Deleted: 0054_1530308286597310296322.jpg
+2026-08-28 20:51:28 [INFO ] [deepseek_web] [55/85] 万圣节服装cosplay服性感制服裙护士服
+2026-08-28 20:51:28 [INFO ] [deepseek_web]   Downloaded: 0055_1180551261868864747765.jpg
+2026-08-28 20:51:28 [INFO ] [deepseek_web]   Prefetching next image (56/85)
+2026-08-28 20:51:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:51:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:51:58 [INFO ] [deepseek_web]   Response: 女士万圣节Cosplay护士服套装 白色连衣短裙 短袖小翻领 红色十字印花 单排门襟 修身包臀版型 含护士帽 含听诊器 含条纹长筒袜 派对角色扮演制服
+2026-08-28 20:51:58 [INFO ] [deepseek_web]   Deleted: 0055_1180551261868864747765.jpg
+2026-08-28 20:52:03 [INFO ] [deepseek_web] [56/85] 泡泡长袖cosplay角色扮演万圣节儿童服装6-12岁
+2026-08-28 20:52:03 [INFO ] [deepseek_web]   Downloaded: 0056_7090557370134118250417.jpg
+2026-08-28 20:52:03 [INFO ] [deepseek_web]   Prefetching next image (57/85)
+2026-08-28 20:52:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:52:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:52:32 [INFO ] [deepseek_web]   Response: 儿童万圣节女巫Cosplay角色扮演连衣裙套装 尖顶女巫帽带网纱 黑色长袖 绿色亮片网纱泡泡短袖 胸前金色交叉绑带 星星闪光网纱裙摆 腰间小口袋装饰 收腰A字蓬
+2026-08-28 20:52:32 [INFO ] [deepseek_web]   Deleted: 0056_7090557370134118250417.jpg
+2026-08-28 20:52:37 [INFO ] [deepseek_web] [57/85] 万圣节cosplay蓬蓬公主裙1-4岁
+2026-08-28 20:52:37 [INFO ] [deepseek_web]   Downloaded: 0057_4820447114743715593690.jpg
+2026-08-28 20:52:37 [INFO ] [deepseek_web]   Prefetching next image (58/85)
+2026-08-28 20:52:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:52:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:53:06 [INFO ] [deepseek_web]   Response: 儿童万圣节Cosplay蓬蓬公主裙 无袖圆领 橙黑拼色波点面料 多层网纱蓬蓬裙摆 配迷你巫师帽发饰 幼童舞台派对表演服
+2026-08-28 20:53:06 [INFO ] [deepseek_web]   Deleted: 0057_4820447114743715593690.jpg
+2026-08-28 20:53:11 [INFO ] [deepseek_web] [58/85] 2025万圣节死神服装儿童成人神秘恐怖死神镰刀装扮cosplay服扮演(4-13)
+2026-08-28 20:53:11 [INFO ] [deepseek_web]   Downloaded: 0058_5200250209641410471769.jpg
+2026-08-28 20:53:11 [INFO ] [deepseek_web]   Prefetching next image (59/85)
+2026-08-28 20:53:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:53:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:53:40 [INFO ] [deepseek_web]   Response: 儿童成人万圣节死神Cosplay扮演服 连帽长袍 做旧破布条拼接面料 长袖不规则下摆 领口系带 宽松版型 配死神镰刀道具 恐怖神秘舞台演出服 4-13岁
+2026-08-28 20:53:40 [INFO ] [deepseek_web]   Deleted: 0058_5200250209641410471769.jpg
+2026-08-28 20:53:45 [INFO ] [deepseek_web] [59/85] 节万圣节新款女装纯色绑带不规则血腥连衣裙
+2026-08-28 20:53:45 [INFO ] [deepseek_web]   Downloaded: 0059_7901116586565044401120.jpg
+2026-08-28 20:53:45 [INFO ] [deepseek_web]   Prefetching next image (60/85)
+2026-08-28 20:53:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:53:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:54:14 [INFO ] [deepseek_web]   Response: 女士万圣节血腥印花连衣裙 圆领蝙蝠长袖 宽松版型 不规则锯齿下摆 红白血迹泼溅印花 舞台演出服
+2026-08-28 20:54:14 [INFO ] [deepseek_web]   Deleted: 0059_7901116586565044401120.jpg
+2026-08-28 20:54:19 [INFO ] [deepseek_web] [60/85] 万圣节服装 文艺复兴时期中世纪荷叶边长裙含头巾维多利亚成人女
+2026-08-28 20:54:19 [INFO ] [deepseek_web]   Downloaded: 0060_5290336267291712286123.jpg
+2026-08-28 20:54:19 [INFO ] [deepseek_web]   Prefetching next image (61/85)
+2026-08-28 20:54:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:54:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:54:48 [INFO ] [deepseek_web]   Response: 女士中世纪复古长裙套装 万圣节文艺复兴维多利亚舞台演出服 抽绳圆领长袖大喇叭袖 层叠荷叶边大摆裙 黑色底边拼接 配腰带及头巾 多色可选
+2026-08-28 20:54:48 [INFO ] [deepseek_web]   Deleted: 0060_5290336267291712286123.jpg
+2026-08-28 20:54:53 [INFO ] [deepseek_web] [61/85] 万圣节儿童女巫cos服套装泡泡袖黑纱连衣裙（4-12Y）
+2026-08-28 20:54:53 [INFO ] [deepseek_web]   Downloaded: 0061_6320404103333436958627.jpg
+2026-08-28 20:54:53 [INFO ] [deepseek_web]   Prefetching next image (62/85)
+2026-08-28 20:54:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:55:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:55:22 [INFO ] [deepseek_web]   Response: 儿童万圣节女巫Cosplay连衣裙套装 黑纱面料 尖顶女巫帽 黑色领结 泡泡袖 网纱袖 黑色腰带方扣 收腰A字蓬蓬裙摆 4-12Y 万圣节派对舞台演出服
+2026-08-28 20:55:22 [INFO ] [deepseek_web]   Deleted: 0061_6320404103333436958627.jpg
+2026-08-28 20:55:27 [INFO ] [deepseek_web] [62/85] 万圣节女巫装扮黑色蕾丝连帽披风暗黑哥特式披风
+2026-08-28 20:55:40 [INFO ] [deepseek_web]   Downloaded: 0062_9731024534945510098799.jpg
+2026-08-28 20:55:40 [INFO ] [deepseek_web]   Prefetching next image (63/85)
+2026-08-28 20:55:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:55:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:56:09 [INFO ] [deepseek_web]   Response: 女士万圣节暗黑哥特式连帽披风 黑色蕾丝网纱材质 蜘蛛网印花 领口黑色丝带系带 透肉效果 不规则垂坠下摆 配黑色紧身内搭连衣裙 派对舞台演出服
+2026-08-28 20:56:09 [INFO ] [deepseek_web]   Deleted: 0062_9731024534945510098799.jpg
+2026-08-28 20:56:14 [INFO ] [deepseek_web] [63/85] 万圣节女士角色扮演黑暗吸血鬼新娘舞会表演服套装
+2026-08-28 20:56:14 [INFO ] [deepseek_web]   Downloaded: 0063_4803042859612837767963.jpg
+2026-08-28 20:56:14 [INFO ] [deepseek_web]   Prefetching next image (64/85)
+2026-08-28 20:56:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:56:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:56:43 [INFO ] [deepseek_web]   Response: 女士万圣节黑暗吸血鬼新娘角色扮演连衣裙套装 缎面拼接蕾丝网纱面料 透视蕾丝长袖 V领收腰修身 不规则开叉锯齿裙摆 舞会舞台表演服
+2026-08-28 20:56:43 [INFO ] [deepseek_web]   Deleted: 0063_4803042859612837767963.jpg
+2026-08-28 20:56:48 [INFO ] [deepseek_web] [64/85] 万圣节紫色女巫cos套装成人魔法师装扮巫婆裙
+2026-08-28 20:56:48 [INFO ] [deepseek_web]   Downloaded: 0064_6990819162512190711866.jpg
+2026-08-28 20:56:48 [INFO ] [deepseek_web]   Prefetching next image (65/85)
+2026-08-28 20:56:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:56:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:57:17 [INFO ] [deepseek_web]   Response: 女士万圣节女巫Cosplay连衣裙套装 缎面拼接网纱 尖顶女巫帽 金色交叉绑带 网纱泡泡短袖 前短后长不规则裙摆 黑色蕾丝花边 亮片装饰 收腰A字版型 成人魔法
+2026-08-28 20:57:17 [INFO ] [deepseek_web]   Deleted: 0064_6990819162512190711866.jpg
+2026-08-28 20:57:22 [INFO ] [deepseek_web] [65/85] 31645#女士万圣节啤酒女郎连衣裙塑身舞台演出服装
+2026-08-28 20:57:22 [INFO ] [deepseek_web]   Downloaded: 0065_6060622543791311402319.jpg
+2026-08-28 20:57:22 [INFO ] [deepseek_web]   Prefetching next image (66/85)
+2026-08-28 20:57:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:57:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:57:51 [INFO ] [deepseek_web]   Response: 女士万圣节啤酒女郎连衣裙套装 缎面拼接蕾丝网纱面料 露肩泡泡短袖 黑色仿皮背带 胸前蝴蝶结 腹部刺绣装饰块 黑色蕾丝围裙口袋 收腰修身 A字蓬蓬裙 黑色蕾丝裙边
+2026-08-28 20:57:51 [INFO ] [deepseek_web]   Deleted: 0065_6060622543791311402319.jpg
+2026-08-28 20:57:56 [INFO ] [deepseek_web] [66/85] 女士万圣节连衣裙中世纪文艺复兴时期复古宫廷风连衣裙
+2026-08-28 20:57:56 [INFO ] [deepseek_web]   Downloaded: 0066_1860407297834013719805.jpg
+2026-08-28 20:57:56 [INFO ] [deepseek_web]   Prefetching next image (67/85)
+2026-08-28 20:57:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:58:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:58:26 [INFO ] [deepseek_web]   Response: 女士中世纪文艺复兴复古宫廷风连衣裙 拼接面料 圆领长袖 大喇叭袖口 胸前交叉绑带 收腰修身 及踝大摆裙 多色可选 万圣节角色扮演舞台演出服
+2026-08-28 20:58:26 [INFO ] [deepseek_web]   Deleted: 0066_1860407297834013719805.jpg
+2026-08-28 20:58:31 [INFO ] [deepseek_web] [67/85] 女士万圣节文艺复兴时期的中世纪连衣裙拼色一字肩飞飞袖系带收腰大摆裙复古礼服裙
+2026-08-28 20:58:31 [INFO ] [deepseek_web]   Downloaded: 0067_1310911207872217564003.jpg
+2026-08-28 20:58:31 [INFO ] [deepseek_web]   Prefetching next image (68/85)
+2026-08-28 20:58:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:58:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:59:00 [INFO ] [deepseek_web]   Response: 女士中世纪复古连衣裙 缎面拼接面料 一字肩领口 荷叶边飞飞袖 胸前交叉绑带系带 撞色拼接设计 收腰修身及踝大摆裙 万圣节文艺复兴复古礼服裙 舞台演出服 多色可选
+2026-08-28 20:59:00 [INFO ] [deepseek_web]   Deleted: 0067_1310911207872217564003.jpg
+2026-08-28 20:59:05 [INFO ] [deepseek_web] [68/85] 女士万圣节摇摆裙派对裙长袖鸡尾酒摇摆裙南瓜蝙蝠女巫印花角色扮演赫本裙
+2026-08-28 20:59:05 [INFO ] [deepseek_web]   Downloaded: 0068_5400532082932857342077.jpg
+2026-08-28 20:59:05 [INFO ] [deepseek_web]   Prefetching next image (69/85)
+2026-08-28 20:59:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:59:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 20:59:34 [INFO ] [deepseek_web]   Response: 女士万圣节派对摇摆裙 长袖波浪边领口 黑色缎带系带收腰 紫色蜘蛛网蝙蝠印花 复古A字大摆裙 鸡尾酒角色扮演演出服
+2026-08-28 20:59:34 [INFO ] [deepseek_web]   Deleted: 0068_5400532082932857342077.jpg
+2026-08-28 20:59:39 [INFO ] [deepseek_web] [69/85] 万圣节中世纪宫廷儿童鬼新娘女巫吸血鬼公主裙表演服装
+2026-08-28 20:59:39 [INFO ] [deepseek_web]   Downloaded: 0069_4610308106672216554794.jpg
+2026-08-28 20:59:39 [INFO ] [deepseek_web]   Prefetching next image (70/85)
+2026-08-28 20:59:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 20:59:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:00:08 [INFO ] [deepseek_web]   Response: 儿童万圣节中世纪宫廷鬼新娘女巫吸血鬼公主连衣裙 红黑拼接蕾丝网纱面料 高领长袖喇叭袖 收腰A字版型 黑色蕾丝层叠装饰 红色立体玫瑰花朵点缀 配黑色网纱花朵头饰 
+2026-08-28 21:00:08 [INFO ] [deepseek_web]   Deleted: 0069_4610308106672216554794.jpg
+2026-08-28 21:00:13 [INFO ] [deepseek_web] [70/85] 万圣节儿童服装女巫恶魔鬼新娘吸血鬼骷髅僵尸装女童装搞怪连衣裙
+2026-08-28 21:00:13 [INFO ] [deepseek_web]   Downloaded: 0070_3101113437801339162865.jpg
+2026-08-28 21:00:13 [INFO ] [deepseek_web]   Prefetching next image (71/85)
+2026-08-28 21:00:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:00:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:00:42 [INFO ] [deepseek_web]   Response: 女童万圣节Cosplay连衣裙 黑色面料拼接网纱 圆领透视长袖 胸前骷髅骨骼印花 白色荷叶边拼接裙摆 及踝长裙 配网纱头饰 鬼新娘僵尸装 多件套 常规版型
+2026-08-28 21:00:42 [INFO ] [deepseek_web]   Deleted: 0070_3101113437801339162865.jpg
+2026-08-28 21:00:47 [INFO ] [deepseek_web] [71/85] 万圣节成人服装连衣裙黑暗幽灵吸血鬼恐怖骷髅
+2026-08-28 21:00:47 [INFO ] [deepseek_web]   Downloaded: 0071_3920305507532212008114.jpg
+2026-08-28 21:00:47 [INFO ] [deepseek_web]   Prefetching next image (72/85)
+2026-08-28 21:00:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:00:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:01:16 [INFO ] [deepseek_web]   Response: 女士成人万圣节连衣裙 针织拼接网纱面料 圆领透视长袖 骷髅骨骼印花 白色荷叶边拼接 收腰及踝长裙 配玫瑰花头纱 黑暗幽灵吸血鬼恐怖鬼新娘派对舞台演出服
+2026-08-28 21:01:16 [INFO ] [deepseek_web]   Deleted: 0071_3920305507532212008114.jpg
+2026-08-28 21:01:21 [INFO ] [deepseek_web] [72/85] 万圣节童装儿童网纱扮演服(2-12Y)
+2026-08-28 21:01:21 [INFO ] [deepseek_web]   Downloaded: 0072_8441032533873716084340.jpg
+2026-08-28 21:01:21 [INFO ] [deepseek_web]   Prefetching next image (73/85)
+2026-08-28 21:01:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:01:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:01:51 [INFO ] [deepseek_web]   Response: 儿童万圣节小丑扮演连衣裙 网纱拼接面料 女童无袖常规版型 黑白波点毛领上衣 红黑撞色蓬蓬裙摆 红色圆点装饰 配蝴蝶结发饰 派对舞台演出服
+2026-08-28 21:01:51 [INFO ] [deepseek_web]   Deleted: 0072_8441032533873716084340.jpg
+2026-08-28 21:01:56 [INFO ] [deepseek_web] [73/85] 万圣节儿童服装古埃及艳后雅典娜表演出服（5-12Y）
+2026-08-28 21:01:56 [INFO ] [deepseek_web]   Downloaded: 0073_6500236416481617835162.jpg
+2026-08-28 21:01:56 [INFO ] [deepseek_web]   Prefetching next image (74/85)
+2026-08-28 21:01:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:02:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:02:27 [INFO ] [deepseek_web]   Response: 儿童万圣节古埃及艳后雅典娜表演服 5-12Y 雪纺面料 女童宽松版型 单肩露肩无袖 金色桂冠头饰 金色臂环 金色绳带系带收腰 侧开叉及踝长摆裙 多件套
+2026-08-28 21:02:27 [INFO ] [deepseek_web]   Deleted: 0073_6500236416481617835162.jpg
+2026-08-28 21:02:32 [INFO ] [deepseek_web] [74/85] 女士万圣节搞怪血渍印花吊带中世纪风派对舞会裙（侧拉链）
+2026-08-28 21:02:32 [INFO ] [deepseek_web]   Downloaded: 0074_1771050228331082340590.jpg
+2026-08-28 21:02:32 [INFO ] [deepseek_web]   Prefetching next image (75/85)
+2026-08-28 21:02:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:02:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:03:01 [INFO ] [deepseek_web]   Response: 女士万圣节吊带派对舞会裙 光滑面料 细双吊带 V领 侧拉链设计 红色血渍泼溅印花 收腰A字及膝版型 搞怪角色扮演演出服
+2026-08-28 21:03:01 [INFO ] [deepseek_web]   Deleted: 0074_1771050228331082340590.jpg
+2026-08-28 21:03:06 [INFO ] [deepseek_web] [75/85] 女士万圣节啤酒节女郎露肩连衣裙塑身舞台演出服装
+2026-08-28 21:03:06 [INFO ] [deepseek_web]   Downloaded: 0075_4550307456632012714679.jpg
+2026-08-28 21:03:06 [INFO ] [deepseek_web]   Prefetching next image (76/85)
+2026-08-28 21:03:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:03:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:03:35 [INFO ] [deepseek_web]   Response: 女士啤酒节女郎连衣裙 露肩荷叶边白色短袖内搭 绒面拼接面料 红色胸前交叉绑带 背部拉链 花朵刺绣织带 白色蕾丝裙摆 收腰修身A字蓬蓬裙 万圣节舞台演出服
+2026-08-28 21:03:35 [INFO ] [deepseek_web]   Deleted: 0075_4550307456632012714679.jpg
+2026-08-28 21:03:40 [INFO ] [deepseek_web] [76/85] 女式性感方领蕾丝绑带万圣节派对女性角色扮演服装豪华化妆舞会礼服带帽子
+2026-08-28 21:03:40 [INFO ] [deepseek_web]   Downloaded: 0076_6141021327154813431424.jpg
+2026-08-28 21:03:40 [INFO ] [deepseek_web]   Prefetching next image (77/85)
+2026-08-28 21:03:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:03:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:04:12 [INFO ] [deepseek_web]   Response: 女士万圣节派对角色扮演礼服 方领蕾丝绑带 长袖喇叭袖 缎面拼接网纱 前侧网纱抽褶 及地大摆 配头饰 收腰修身版型 哥特复古化妆舞会服装
+2026-08-28 21:04:12 [INFO ] [deepseek_web]   Deleted: 0076_6141021327154813431424.jpg
+2026-08-28 21:04:17 [INFO ] [deepseek_web] [77/85] 女士万圣节啤酒女郎连衣裙塑身舞台演出服装
+2026-08-28 21:04:17 [INFO ] [deepseek_web]   Downloaded: 0077_0670722071501814855365.jpg
+2026-08-28 21:04:17 [INFO ] [deepseek_web]   Prefetching next image (78/85)
+2026-08-28 21:04:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:04:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:04:46 [INFO ] [deepseek_web]   Response: 女士万圣节啤酒女郎连衣裙套装 白色泡泡袖荷叶边衬衫 红白格纹拼接纯色围裙 胸前粉色交叉绑带 心形刺绣装饰 收腰修身A字大摆 多色可选 舞台演出服装
+2026-08-28 21:04:46 [INFO ] [deepseek_web]   Deleted: 0077_0670722071501814855365.jpg
+2026-08-28 21:04:51 [INFO ] [deepseek_web] [78/85] 万圣节文艺前短后长荷叶边长裙.中世纪服装海盗款塑腰裙
+2026-08-28 21:04:51 [INFO ] [deepseek_web]   Downloaded: 0078_7591138421254318694663.jpg
+2026-08-28 21:04:51 [INFO ] [deepseek_web]   Prefetching next image (79/85)
+2026-08-28 21:04:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:05:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:05:21 [INFO ] [deepseek_web]   Response: 女士万圣节中世纪海盗塑腰裙套装 圆领抽绳长袖喇叭袖 光滑面料拼接黑色仿皮束腰 胸前交叉绑带 多层荷叶边前短后长裙摆 收腰修身版型 舞台演出服 多色可选
+2026-08-28 21:05:21 [INFO ] [deepseek_web]   Deleted: 0078_7591138421254318694663.jpg
+2026-08-28 21:05:26 [INFO ] [deepseek_web] [79/85] 女士万圣节印花 V 领长袖休闲裙 节日派对 cos 装扮连衣裙
+2026-08-28 21:05:26 [INFO ] [deepseek_web]   Downloaded: 0079_1521116087381417676772.jpg
+2026-08-28 21:05:26 [INFO ] [deepseek_web]   Prefetching next image (80/85)
+2026-08-28 21:05:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:05:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:05:55 [INFO ] [deepseek_web]   Response: 女士万圣节哥特风Cosplay连衣裙 弹性针织面料 V领长袖 逼真3D骨骼骷髅印花 收腰修身A字及膝裙 节日派对装扮 多色可选
+2026-08-28 21:05:55 [INFO ] [deepseek_web]   Deleted: 0079_1521116087381417676772.jpg
+2026-08-28 21:06:00 [INFO ] [deepseek_web] [80/85] 成人中世纪维多利亚礼服万圣节文艺复兴哥特花边皇后公主长裙
+2026-08-28 21:06:00 [INFO ] [deepseek_web]   Downloaded: 0080_5740201458833517745410.jpg
+2026-08-28 21:06:00 [INFO ] [deepseek_web]   Prefetching next image (81/85)
+2026-08-28 21:06:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:06:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:06:30 [INFO ] [deepseek_web]   Response: 女士中世纪维多利亚礼服 高领荷叶边领口 前排纽扣 长袖 高腰侧边系带 多层荷叶边及地大摆裙 垂坠面料 成人收腰版型 万圣节文艺复兴哥特宫廷公主长裙 舞台演出服
+2026-08-28 21:06:30 [INFO ] [deepseek_web]   Deleted: 0080_5740201458833517745410.jpg
+2026-08-28 21:06:35 [INFO ] [deepseek_web] [81/85] 万圣节儿童服装南瓜装稻草人服装农场田园风装扮女童连衣裙猎人装 4-12y
+2026-08-28 21:06:35 [INFO ] [deepseek_web]   Downloaded: 0081_0991116042471338748471.jpg
+2026-08-28 21:06:35 [INFO ] [deepseek_web]   Prefetching next image (82/85)
+2026-08-28 21:06:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:06:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:07:06 [INFO ] [deepseek_web]   Response: 女童万圣节稻草人连衣裙 多件套 棉涤混纺面料 长袖拼接袖 尖顶向日葵帽 领口蝴蝶结 胸前口袋 橙色荷叶边裙摆 流苏装饰 常规版型 农场田园风 Cosplay表演
+2026-08-28 21:07:06 [INFO ] [deepseek_web]   Deleted: 0081_0991116042471338748471.jpg
+2026-08-28 21:07:11 [INFO ] [deepseek_web] [82/85] 万圣节教堂修女cosplay女佣女仆服
+2026-08-28 21:07:11 [INFO ] [deepseek_web]   Downloaded: 0082_1941122536421156023520.jpg
+2026-08-28 21:07:11 [INFO ] [deepseek_web]   Prefetching next image (83/85)
+2026-08-28 21:07:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:07:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:07:40 [INFO ] [deepseek_web]   Response: 女士万圣节教堂修女Cosplay女仆连衣裙套装 布料拼接蕾丝 短袖泡泡袖 白色尖领 白色荷叶边围裙 胸前十字架刺绣 腰部交叉绑带 收腰A字蓬蓬裙 黑白蓝白撞色 
+2026-08-28 21:07:40 [INFO ] [deepseek_web]   Deleted: 0082_1941122536421156023520.jpg
+2026-08-28 21:07:45 [INFO ] [deepseek_web] [83/85] 万圣节服装亮片美人鱼公主演出舞台表演服晚礼服精灵欧美性感长裙
+2026-08-28 21:07:45 [INFO ] [deepseek_web]   Downloaded: 0083_1480222279261237933502.jpg
+2026-08-28 21:07:45 [INFO ] [deepseek_web]   Prefetching next image (84/85)
+2026-08-28 21:07:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:07:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:08:14 [INFO ] [deepseek_web]   Response: 女士万圣节美人鱼精灵公主连衣裙 亮片镭射拼接仿皮网纱面料 长袖喇叭袖 露肩领口 胸前交叉绑带 前短后长不规则开叉裙摆 紫色荷叶边装饰 收腰修身版型 舞台演出服
+2026-08-28 21:08:14 [INFO ] [deepseek_web]   Deleted: 0083_1480222279261237933502.jpg
+2026-08-28 21:08:19 [INFO ] [deepseek_web] [84/85] 儿童秋冬款万圣节印花斗篷连帽服纯色裤子套装两件套
+2026-08-28 21:08:19 [INFO ] [deepseek_web]   Downloaded: 0084_3371157394407113917769.jpg
+2026-08-28 21:08:19 [INFO ] [deepseek_web]   Prefetching next image (85/85)
+2026-08-28 21:08:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:08:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:08:48 [INFO ] [deepseek_web]   Response: 儿童万圣节连帽斗篷套装 针织面料 宽松版型 两件套 长袖 锯齿下摆 卡通幽灵笑脸印花 黑色纯色长裤 秋冬派对Cosplay表演服
+2026-08-28 21:08:48 [INFO ] [deepseek_web]   Deleted: 0084_3371157394407113917769.jpg
+2026-08-28 21:08:53 [INFO ] [deepseek_web] [85/85] 女士性感方领万圣节骷颅头蕾丝绑带不规则蝙蝠袖连衣裙
+2026-08-28 21:08:53 [INFO ] [deepseek_web]   Downloaded: 0085_9460552297094160453203.jpg
+2026-08-28 21:08:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-28 21:09:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-28 21:09:23 [INFO ] [deepseek_web]   Response: 女士万圣节哥特风连衣裙 针织拼接网纱面料 方领长袖蝙蝠袖 胸前交叉绑带 骷髅头印花 不规则前短后长裙摆 收腰修身版型 万圣节派对舞台演出服
+2026-08-28 21:09:23 [INFO ] [deepseek_web]   Deleted: 0085_9460552297094160453203.jpg
+2026-08-28 21:09:23 [INFO ] [deepseek_web] ==================================================
+2026-08-28 21:09:23 [INFO ] [deepseek_web] Done: 85 success, 0 failed → optimize_title
+2026-08-28 21:09:23 [INFO ] [title_workflow] Optimization complete: 85 titles
+2026-08-28 21:09:26 [INFO ] [title_workflow] Written 85 optimized titles to column H (8)
+2026-08-28 21:09:26 [INFO ] [title_workflow] Done: 8.26v1.xlsx
+2026-08-28 21:09:26 [INFO ] [jenkins] [5/5] Title optimization OK
+2026-08-28 21:09:26 [INFO ] [jenkins] 
+2026-08-28 21:09:26 [INFO ] [jenkins] ==================================================
+2026-08-28 21:09:26 [INFO ] [jenkins] All 5 steps completed successfully
+2026-08-28 21:09:26 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-28 21:09:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-28 21:09:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-28 21:09:26 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

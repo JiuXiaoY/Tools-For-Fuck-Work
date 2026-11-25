@@ -1,0 +1,582 @@
+2026-10-30 17:03:21 [INFO ] [jenkins] ==================================================
+2026-10-30 17:03:21 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-30 17:03:21 [INFO ] [jenkins] ==================================================
+2026-10-30 17:03:21 [INFO ] [jenkins] 
+2026-10-30 17:03:21 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-30 17:03:21 [INFO ] [jenkins] ------------------------------
+2026-10-30 17:03:21 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-30 17:03:21 [INFO ] [jenkins] 
+2026-10-30 17:03:21 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-30 17:03:21 [INFO ] [jenkins] ------------------------------
+2026-10-30 17:03:22 [INFO ] [preprocess] Preprocessing 13 file(s) with 1 step(s)
+2026-10-30 17:03:22 [INFO ] [preprocess] [product_20261030032231290.xlsx]
+2026-10-30 17:03:22 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:22 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:23 [INFO ] [preprocess]   [product_20261030032231290.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:23 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:24 [INFO ] [preprocess] [product_20261030032407356.xlsx]
+2026-10-30 17:03:24 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:24 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:27 [INFO ] [preprocess]   [product_20261030032407356.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:27 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:27 [INFO ] [preprocess] [product_20261030032549094.xlsx]
+2026-10-30 17:03:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:28 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:31 [INFO ] [preprocess]   [product_20261030032549094.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:31 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:32 [INFO ] [preprocess] [product_20261030032554868.xlsx]
+2026-10-30 17:03:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:32 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:35 [INFO ] [preprocess]   [product_20261030032554868.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:35 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:35 [INFO ] [preprocess] [product_20261030032623460.xlsx]
+2026-10-30 17:03:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:36 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:38 [INFO ] [preprocess]   [product_20261030032623460.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:38 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:39 [INFO ] [preprocess] [product_20261030032811782.xlsx]
+2026-10-30 17:03:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:41 [INFO ] [preprocess]   [product_20261030032811782.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:41 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:41 [INFO ] [preprocess] [product_20261030033032229.xlsx]
+2026-10-30 17:03:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:44 [INFO ] [preprocess]   [product_20261030033032229.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:44 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:44 [INFO ] [preprocess] [product_20261030033140874.xlsx]
+2026-10-30 17:03:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:46 [INFO ] [preprocess]   [product_20261030033140874.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:46 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:47 [INFO ] [preprocess] [product_20261030033235337.xlsx]
+2026-10-30 17:03:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:51 [INFO ] [preprocess]   [product_20261030033235337.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:51 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:51 [INFO ] [preprocess] [product_20261030033516250.xlsx]
+2026-10-30 17:03:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:03:56 [INFO ] [preprocess]   [product_20261030033516250.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:03:56 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:03:56 [INFO ] [preprocess] [product_20261030033604335.xlsx]
+2026-10-30 17:03:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:03:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:04:01 [INFO ] [preprocess]   [product_20261030033604335.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:04:01 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:04:02 [INFO ] [preprocess] [product_20261030033809405.xlsx]
+2026-10-30 17:04:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:04:03 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:04:06 [INFO ] [preprocess]   [product_20261030033809405.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:04:06 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:04:07 [INFO ] [preprocess] [product_20261030033848142.xlsx]
+2026-10-30 17:04:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-30 17:04:08 [INFO ] [pipeline] [1/1] remove_header
+2026-10-30 17:04:10 [INFO ] [preprocess]   [product_20261030033848142.xlsx] Sheet [Sheet0]: header row removed
+2026-10-30 17:04:10 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:04:11 [INFO ] [preprocess] Preprocessing complete
+2026-10-30 17:04:11 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-30 17:04:11 [INFO ] [jenkins] 
+2026-10-30 17:04:11 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-30 17:04:11 [INFO ] [jenkins] ------------------------------
+2026-10-30 17:04:12 [INFO ] [main] Log file: 20261030_3d903bc9.log
+2026-10-30 17:04:12 [INFO ] [main] Found 13 file(s):
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032231290.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032407356.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032549094.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032554868.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032623460.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030032811782.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033032229.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033140874.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033235337.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033516250.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033604335.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033809405.xlsx
+2026-10-30 17:04:12 [INFO ] [main]   product_20261030033848142.xlsx
+2026-10-30 17:04:12 [INFO ] [main] Output: 10.27v1_de.xlsx
+2026-10-30 17:04:12 [INFO ] [main] ==================================================
+2026-10-30 17:04:54 [INFO ] [main] Merged 13 files, 15702 images total
+2026-10-30 17:04:54 [INFO ] [main] Deleted 13 source file(s)
+2026-10-30 17:05:01 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-30 17:05:01 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_2]: 807 rows, 656 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_3]: 889 rows, 1654 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_4]: 759 rows, 1312 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_5]: 724 rows, 579 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_6]: 451 rows, 821 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_7]: 653 rows, 1238 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_8]: 357 rows, 801 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_9]: 672 rows, 1186 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_10]: 966 rows, 1906 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_11]: 697 rows, 1276 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_12]: 867 rows, 1857 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Sheet [Sheet0_13]: 720 rows, 1585 images
+2026-10-30 17:05:37 [INFO ] [pipeline]   Merged 13 sheets -> 1, 8562 data rows, 14871 images
+2026-10-30 17:05:37 [INFO ] [pipeline] [2/12] validate
+2026-10-30 17:05:37 [INFO ] [pipeline]   Validated: 8958 rows, 27 cols (expect ~32)
+2026-10-30 17:05:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-30 17:05:38 [INFO ] [pipeline]   Backed up 15702 images
+2026-10-30 17:05:38 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-30 17:05:38 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-30 17:05:38 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-30 17:05:38 [INFO ] [pipeline]   Restored 15702 images with adjusted anchors
+2026-10-30 17:05:38 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-30 17:05:38 [INFO ] [pipeline]   Column 2: 8958 IDs generated
+2026-10-30 17:05:38 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-30 17:05:39 [INFO ] [pipeline]   Column 3: 8958 cells filled
+2026-10-30 17:05:39 [INFO ] [pipeline] [6/12] map_colors
+2026-10-30 17:05:39 [INFO ] [pipeline]   Colors J -> K: 8895 cells mapped, 63 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-30 17:05:39 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-30 17:05:39 [INFO ] [pipeline]   Size column L: 8895 mapped, 63 cleared (col A has fill), 0 no match (recorded)
+2026-10-30 17:05:39 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-30 17:05:39 [INFO ] [pipeline]   Mirror copy: 50312 cells written
+2026-10-30 17:05:39 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-30 17:05:39 [INFO ] [pipeline]   Price source M -> AS: 8958 cells copied
+2026-10-30 17:05:39 [INFO ] [pipeline] [10/12] calc_price
+2026-10-30 17:05:39 [INFO ] [pipeline]   Price columns AT-AW: 8958 rows calculated
+2026-10-30 17:05:39 [INFO ] [pipeline] [11/12] format_cells
+2026-10-30 17:05:41 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-30 17:05:41 [INFO ] [pipeline]   Formatted 8958 rows: h=50, align=left/center
+2026-10-30 17:05:41 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-30 17:05:41 [INFO ] [pipeline] [12/12] finalize
+2026-10-30 17:05:41 [INFO ] [pipeline]   Done: 8958 rows x 49 cols (target: 49)
+2026-10-30 17:05:41 [INFO ] [pipeline] Pipeline complete
+2026-10-30 17:05:50 [INFO ] [main] Size: 8958 rows x 49 cols
+2026-10-30 17:05:50 [INFO ] [main] ==================================================
+2026-10-30 17:05:50 [INFO ] [main] Done: 10.27v1_de.xlsx
+2026-10-30 17:05:52 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-30 17:05:52 [INFO ] [jenkins] 
+2026-10-30 17:05:52 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-30 17:05:52 [INFO ] [jenkins] ------------------------------
+2026-10-30 17:05:52 [INFO ] [color_size_main] Source: 10.27v1_de.xlsx
+2026-10-30 17:06:02 [INFO ] [color_size_main] Extracted: 8895 data lines + 63 separators → check_.txt
+2026-10-30 17:06:02 [INFO ] [color_size_main] Running: process.py
+2026-10-30 17:06:02 [INFO ] [color_size_deal] Groups: 63, lines: 8895 (file: 8958)
+2026-10-30 17:06:02 [INFO ] [color_size_deal] Prefixes: {'01': 1900, '02': 1034, '03': 639, '04': 429, '05': 362, '06': 272, '07': 87, '08': 44, '09': 14, '10': 14, '11': 14, '12': 14}
+2026-10-30 17:06:02 [INFO ] [color_size_deal] Done.
+2026-10-30 17:06:02 [INFO ] [color_size_main] Processing write-back: 8958 lines
+2026-10-30 17:06:21 [INFO ] [color_size_main] Write-back: 4886 written, 4072 unchanged → 10.27v1_de.xlsx
+2026-10-30 17:06:21 [INFO ] [color_size_main] Done.
+2026-10-30 17:06:21 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-30 17:06:21 [INFO ] [jenkins] 
+2026-10-30 17:06:21 [INFO ] [jenkins] ==================================================
+2026-10-30 17:06:21 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-30 17:06:21 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-30 17:06:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-30 17:06:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-30 17:06:21 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-30 18:04:56 [INFO ] [jenkins] ==================================================
+2026-10-30 18:04:56 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-30 18:04:56 [INFO ] [jenkins] ==================================================
+2026-10-30 18:04:56 [INFO ] [jenkins] 
+2026-10-30 18:04:56 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-30 18:04:56 [INFO ] [jenkins] ------------------------------
+2026-10-30 18:04:57 [INFO ] [title_workflow] Source: 10.27v1_de.xlsx
+2026-10-30 18:05:01 [INFO ] [title_workflow] Extracted 50 titles + 50 links
+2026-10-30 18:05:01 [INFO ] [title_workflow] Written: origin_title (50) + origin_link (50)
+2026-10-30 18:05:01 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-30 18:05:01 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-30 18:05:02 [INFO ] [deepseek_web] Opening DeepSeek web (50 titles)...
+2026-10-30 18:05:02 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-30 18:05:05 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-30 18:05:08 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-30 18:05:08 [INFO ] [deepseek_web] [1/50] 成人圣诞节丑毛衣
+2026-10-30 18:05:19 [INFO ] [deepseek_web]   Downloaded: 0001_0480859066903069798331.jpg
+2026-10-30 18:05:19 [INFO ] [deepseek_web]   Prefetching next image (2/50)
+2026-10-30 18:05:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:05:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:05:48 [INFO ] [deepseek_web]   Response: 成人圣诞节丑毛衣 男女同款圆领套头针织衫 长袖保暖毛衣 秋冬冬季针织衫 圣诞雪花驯鹿趣味字母印花套头衫 恶搞Excel表格节日派对丑毛衣 休闲针织上衣
+2026-10-30 18:05:48 [INFO ] [deepseek_web]   Deleted: 0001_0480859066903069798331.jpg
+2026-10-30 18:05:53 [INFO ] [deepseek_web] [2/50] 秋冬毛绒长袖连帽卫衣
+2026-10-30 18:05:53 [INFO ] [deepseek_web]   Downloaded: 0002_3510446191603211198154.jpg
+2026-10-30 18:05:53 [INFO ] [deepseek_web]   Prefetching next image (3/50)
+2026-10-30 18:05:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:06:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:06:23 [INFO ] [deepseek_web]   Response: 女士套头连帽卫衣 宽松版型休闲卫衣 长袖V领连帽衫 毛绒拼接连帽外套 带口袋套头卫衣 毛球抽绳连帽上衣 秋冬保暖加绒卫衣 冬季加绒连帽外套 纯色毛绒领套头衫 休
+2026-10-30 18:06:23 [INFO ] [deepseek_web]   Deleted: 0002_3510446191603211198154.jpg
+2026-10-30 18:06:28 [INFO ] [deepseek_web] [3/50] 女士圣诞老人连帽卫衣
+2026-10-30 18:06:28 [INFO ] [deepseek_web]   Downloaded: 0003_2250433560692713168088.jpg
+2026-10-30 18:06:28 [INFO ] [deepseek_web]   Prefetching next image (4/50)
+2026-10-30 18:06:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:06:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:06:57 [INFO ] [deepseek_web]   Response: 女士圣诞老人连帽卫衣 套头连帽衫 宽松长袖休闲卫衣 秋冬保暖套头衫 圣诞老人印花连帽外套 格纹拼接连帽衫 雪花星星图案上衣 节日派对套头卫衣 女士加绒保暖连帽衫
+2026-10-30 18:06:57 [INFO ] [deepseek_web]   Deleted: 0003_2250433560692713168088.jpg
+2026-10-30 18:07:02 [INFO ] [deepseek_web] [4/50] 圣诞节雪人连帽卫衣
+2026-10-30 18:07:02 [INFO ] [deepseek_web]   Downloaded: 0004_7621038528878128022057.jpg
+2026-10-30 18:07:02 [INFO ] [deepseek_web]   Prefetching next image (5/50)
+2026-10-30 18:07:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:07:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:07:31 [INFO ] [deepseek_web]   Response: 女士圣诞节雪人连帽卫衣 宽松休闲长袖套头衫 雪人印花连帽外套 雪花图案拼接套头卫衣 秋冬保暖连帽上衣 节日主题休闲卫衣 女士套头连帽衫 冬季保暖长袖上衣 休闲连
+2026-10-30 18:07:31 [INFO ] [deepseek_web]   Deleted: 0004_7621038528878128022057.jpg
+2026-10-30 18:07:36 [INFO ] [deepseek_web] [5/50] 女士圣诞节麋鹿印花卫衣
+2026-10-30 18:07:36 [INFO ] [deepseek_web]   Downloaded: 0005_0851010517623250466718.jpg
+2026-10-30 18:07:36 [INFO ] [deepseek_web]   Prefetching next image (6/50)
+2026-10-30 18:07:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:07:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:08:05 [INFO ] [deepseek_web]   Response: 女士圣诞节印花卫衣 宽松圆领套头衫 地精小矮人图案休闲卫衣 女士长袖保暖上衣 秋冬套头卫衣 冬季休闲衫 雪花树印花长袖套头衫 节日派对保暖卫衣 圆领套头休闲上衣
+2026-10-30 18:08:05 [INFO ] [deepseek_web]   Deleted: 0005_0851010517623250466718.jpg
+2026-10-30 18:08:10 [INFO ] [deepseek_web] [6/50] 女士圣诞节搞怪卫衣
+2026-10-30 18:08:10 [INFO ] [deepseek_web]   Downloaded: 0006_0130341575452738393758.jpg
+2026-10-30 18:08:10 [INFO ] [deepseek_web]   Prefetching next image (7/50)
+2026-10-30 18:08:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:08:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:08:39 [INFO ] [deepseek_web]   Response: 女士圣诞节搞怪卫衣 宽松圆领套头衫 长袖休闲卫衣 3D搞笑印花套头衫 圣诞姜饼人图案上衣 秋冬保暖长袖 趣味恶搞休闲衫 节日派对套头卫衣 圆领印花长袖上衣 女士
+2026-10-30 18:08:39 [INFO ] [deepseek_web]   Deleted: 0006_0130341575452738393758.jpg
+2026-10-30 18:08:44 [INFO ] [deepseek_web] [7/50] 连帽卫衣（仿毛衣）
+2026-10-30 18:08:44 [INFO ] [deepseek_web]   Downloaded: 0007_3291116089961016623355.jpg
+2026-10-30 18:08:44 [INFO ] [deepseek_web]   Prefetching next image (8/50)
+2026-10-30 18:08:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:08:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:09:13 [INFO ] [deepseek_web]   Response: 圣诞老人3D印花连帽卫衣 宽松休闲套头连帽衫 仿毛衣图案长袖上衣 秋冬保暖套头卫衣 趣味搞怪圣诞连帽衫 节日派对休闲外套 带口袋连帽上衣 男女同款圣诞卫衣 冬季
+2026-10-30 18:09:13 [INFO ] [deepseek_web]   Deleted: 0007_3291116089961016623355.jpg
+2026-10-30 18:09:18 [INFO ] [deepseek_web] [8/50] 连帽卫衣（仿毛衣）
+2026-10-30 18:09:18 [INFO ] [deepseek_web]   Downloaded: 0008_1390440386873118909054.jpg
+2026-10-30 18:09:18 [INFO ] [deepseek_web]   Prefetching next image (9/50)
+2026-10-30 18:09:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:09:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:09:47 [INFO ] [deepseek_web]   Response: 仿毛衣纹理连帽卫衣 宽松休闲套头衫 圣诞驯鹿印花长袖上衣 秋冬保暖连帽衫 趣味图案休闲外套 男女同款套头卫衣 冬季保暖外套 针织条纹连帽上衣 圣诞主题休闲卫衣
+2026-10-30 18:09:47 [INFO ] [deepseek_web]   Deleted: 0008_1390440386873118909054.jpg
+2026-10-30 18:09:52 [INFO ] [deepseek_web] [9/50] 女士无帽卫衣2
+2026-10-30 18:09:52 [INFO ] [deepseek_web]   Downloaded: 0009_9781014531587263465423.jpg
+2026-10-30 18:09:52 [INFO ] [deepseek_web]   Prefetching next image (10/50)
+2026-10-30 18:09:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:10:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:10:22 [INFO ] [deepseek_web]   Response: 女士无帽卫衣 圆领套头衫 宽松长袖休闲上衣 圣诞老人印花套头衫 带纽扣无帽卫衣 秋冬保暖打底衫 趣味3D图案节日卫衣 圣诞主题长袖上衣 条纹拼接休闲衫 冬季内搭
+2026-10-30 18:10:22 [INFO ] [deepseek_web]   Deleted: 0009_9781014531587263465423.jpg
+2026-10-30 18:10:27 [INFO ] [deepseek_web] [10/50] 女士圣诞印花连帽卫衣
+2026-10-30 18:10:27 [INFO ] [deepseek_web]   Downloaded: 0010_8590240135721910748249.jpg
+2026-10-30 18:10:27 [INFO ] [deepseek_web]   Prefetching next image (11/50)
+2026-10-30 18:10:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:10:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:10:56 [INFO ] [deepseek_web]   Response: 女士圣诞印花连帽卫衣 宽松休闲拉链开衫外套 毛领连帽夹克 秋冬保暖拉链卫衣 冬季加厚连帽开衫 雪花圣诞球印花上衣 节日图案休闲外套 带口袋连帽衫 女士保暖拉链夹
+2026-10-30 18:10:56 [INFO ] [deepseek_web]   Deleted: 0010_8590240135721910748249.jpg
+2026-10-30 18:11:01 [INFO ] [deepseek_web] [11/50] 女士圣诞无帽卫衣
+2026-10-30 18:11:01 [INFO ] [deepseek_web]   Downloaded: 0011_1450248257152119932226.jpg
+2026-10-30 18:11:01 [INFO ] [deepseek_web]   Prefetching next image (12/50)
+2026-10-30 18:11:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:11:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:11:30 [INFO ] [deepseek_web]   Response: 女士圣诞无帽卫衣 圆领套头衫 宽松休闲长袖上衣 3D搞怪圣诞老人印花卫衣 趣味驯鹿图案套头衫 秋冬保暖休闲卫衣 节日派对圆领上衣 女士长袖套头衫 趣味图案打底衫
+2026-10-30 18:11:30 [INFO ] [deepseek_web]   Deleted: 0011_1450248257152119932226.jpg
+2026-10-30 18:11:35 [INFO ] [deepseek_web] [12/50] 仿毛衣无帽卫衣
+2026-10-30 18:11:35 [INFO ] [deepseek_web]   Downloaded: 0012_1721211387381541234483.jpg
+2026-10-30 18:11:35 [INFO ] [deepseek_web]   Prefetching next image (13/50)
+2026-10-30 18:11:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:11:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:12:04 [INFO ] [deepseek_web]   Response: 女士仿毛衣无帽卫衣 宽松圆领套头衫 休闲长袖保暖上衣 秋冬圣诞印花卫衣 十字绣风驯鹿图案套头衫 仿V领蝴蝶结设计休闲卫衣 仿针织纹理长袖上衣 带口袋节日派对套头
+2026-10-30 18:12:04 [INFO ] [deepseek_web]   Deleted: 0012_1721211387381541234483.jpg
+2026-10-30 18:12:09 [INFO ] [deepseek_web] [13/50] 圣诞节宠物袋女士卫衣
+2026-10-30 18:12:09 [INFO ] [deepseek_web]   Downloaded: 0013_5131234146721477241882.jpg
+2026-10-30 18:12:09 [INFO ] [deepseek_web]   Prefetching next image (14/50)
+2026-10-30 18:12:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:12:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:12:38 [INFO ] [deepseek_web]   Response: 女士圣诞节宠物袋连帽卫衣 宽松套头衫 休闲长袖上衣 胸前宠物袋设计连帽衫 带拉链套头卫衣 带口袋连帽衫 秋冬保暖卫衣 冬季休闲打底衫 圣诞老人印花卫衣 驯鹿雪花
+2026-10-30 18:12:38 [INFO ] [deepseek_web]   Deleted: 0013_5131234146721477241882.jpg
+2026-10-30 18:12:43 [INFO ] [deepseek_web] [14/50] 女士圣诞毛绒卫衣
+2026-10-30 18:12:43 [INFO ] [deepseek_web]   Downloaded: 0014_1011043043195619025921.jpg
+2026-10-30 18:12:43 [INFO ] [deepseek_web]   Prefetching next image (15/50)
+2026-10-30 18:12:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:12:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:13:12 [INFO ] [deepseek_web]   Response: 女士圣诞毛绒卫衣 宽松套头连帽衫 宠物袋连帽卫衣 秋冬保暖加绒卫衣 大口袋毛绒拼接外套 纯色仿针织连帽上衣 冬季休闲保暖套头衫 宠物携带卫衣 女士保暖连帽外套 
+2026-10-30 18:13:12 [INFO ] [deepseek_web]   Deleted: 0014_1011043043195619025921.jpg
+2026-10-30 18:13:17 [INFO ] [deepseek_web] [15/50] 女士圣诞印花宠物卫衣
+2026-10-30 18:13:17 [INFO ] [deepseek_web]   Downloaded: 0015_4980319377481811761019.jpg
+2026-10-30 18:13:17 [INFO ] [deepseek_web]   Prefetching next image (16/50)
+2026-10-30 18:13:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:13:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:13:46 [INFO ] [deepseek_web]   Response: 女士万圣节宠物袋连帽卫衣 宽松套头衫 猫咪袋鼠兜外套 带口袋拉链卫衣 秋冬保暖长袖上衣 万圣节女巫印花休闲卫衣 宠物携带连帽衫 女士休闲套头外套
+2026-10-30 18:13:46 [INFO ] [deepseek_web]   Deleted: 0015_4980319377481811761019.jpg
+2026-10-30 18:13:51 [INFO ] [deepseek_web] [16/50] 女士圣诞节印花卫衣
+2026-10-30 18:13:51 [INFO ] [deepseek_web]   Downloaded: 0016_0361034152681895992110.jpg
+2026-10-30 18:13:51 [INFO ] [deepseek_web]   Prefetching next image (17/50)
+2026-10-30 18:13:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:14:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:14:20 [INFO ] [deepseek_web]   Response: 女士圣诞节印花卫衣 圆领套头针织衫 宽松休闲长袖上衣 无帽套头毛衣 秋冬保暖针织卫衣 冬季节日派对打底衫 雪人图案仿毛衣 树枝印花套头衫 女士休闲毛衣 圣诞主题
+2026-10-30 18:14:20 [INFO ] [deepseek_web]   Deleted: 0016_0361034152681895992110.jpg
+2026-10-30 18:14:25 [INFO ] [deepseek_web] [17/50] 女士圣诞节印花卫衣
+2026-10-30 18:14:25 [INFO ] [deepseek_web]   Downloaded: 0017_3061119089761447616282.jpg
+2026-10-30 18:14:25 [INFO ] [deepseek_web]   Prefetching next image (18/50)
+2026-10-30 18:14:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:14:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:14:55 [INFO ] [deepseek_web]   Response: 女士圣诞节印花连帽卫衣 宽松休闲套头衫 带口袋长袖针织上衣 秋冬保暖仿毛衣卫衣 腊肠狗圣诞灯串图案套头衫 可爱小狗印花连帽衫 冬季休闲针织外套 节日派对保暖上衣
+2026-10-30 18:14:55 [INFO ] [deepseek_web]   Deleted: 0017_3061119089761447616282.jpg
+2026-10-30 18:15:00 [INFO ] [deepseek_web] [18/50] 女士圣诞节印花卫衣
+2026-10-30 18:15:00 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-30 18:15:05 [INFO ] [deepseek_web] [19/50] 圣诞节印花女士卫衣
+2026-10-30 18:15:07 [INFO ] [deepseek_web]   Downloaded: 0019_6231037563048410275895.jpg
+2026-10-30 18:15:07 [INFO ] [deepseek_web]   Prefetching next image (20/50)
+2026-10-30 18:15:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:15:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:15:36 [INFO ] [deepseek_web]   Response: 女士圣诞节印花卫衣 宽松休闲套头衫 圆领长袖保暖上衣 秋冬套头卫衣 仿毛衣圣诞老人图案套头衫 带腰带印花休闲卫衣 冬季节日派对打底衫 仿针织纹理套头卫衣 女士休
+2026-10-30 18:15:36 [INFO ] [deepseek_web]   Deleted: 0019_6231037563048410275895.jpg
+2026-10-30 18:15:41 [INFO ] [deepseek_web] [20/50] 女士圣诞节圆领搞怪丑毛衣仿毛衣印花无帽卫衣2
+2026-10-30 18:15:41 [INFO ] [deepseek_web]   Downloaded: 0020_4761213181591189520643.jpg
+2026-10-30 18:15:41 [INFO ] [deepseek_web]   Prefetching next image (21/50)
+2026-10-30 18:15:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:15:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:16:10 [INFO ] [deepseek_web]   Response: 女士圣诞无帽卫衣 圆领套头衫 仿毛衣印花上衣 宽松休闲长袖卫衣 秋冬保暖套头衫 3D立体圣诞老人印花 趣味搞怪图案休闲卫衣 仿针织纹理套头衫 节日派对丑毛衣 冬
+2026-10-30 18:16:10 [INFO ] [deepseek_web]   Deleted: 0020_4761213181591189520643.jpg
+2026-10-30 18:16:15 [INFO ] [deepseek_web] [21/50] 女士圣诞趣味无帽卫衣
+2026-10-30 18:16:15 [INFO ] [deepseek_web]   Downloaded: 0021_6740452558353752957946.jpg
+2026-10-30 18:16:15 [INFO ] [deepseek_web]   Prefetching next image (22/50)
+2026-10-30 18:16:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:16:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:16:44 [INFO ] [deepseek_web]   Response: 女士圣诞趣味无帽卫衣 宽松圆领套头衫 长袖休闲卫衣 深V领毛绒拼接上衣 挂脖绑带套头衫 蕾丝边设计休闲卫衣 秋冬保暖套头衫 圣诞灯串印花上衣 彩色灯泡图案打底衫
+2026-10-30 18:16:44 [INFO ] [deepseek_web]   Deleted: 0021_6740452558353752957946.jpg
+2026-10-30 18:16:49 [INFO ] [deepseek_web] [22/50] 女士圣诞节连帽卫衣
+2026-10-30 18:16:49 [INFO ] [deepseek_web]   Downloaded: 0022_5260156022481578580835.jpg
+2026-10-30 18:16:49 [INFO ] [deepseek_web]   Prefetching next image (23/50)
+2026-10-30 18:16:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:17:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:17:18 [INFO ] [deepseek_web]   Response: 女士圣诞节连帽卫衣 宽松长袖套头衫 带口袋休闲连帽卫衣 秋冬保暖套头衫 高地牛圣诞印花上衣 格纹拼接连帽衫 女士休闲外套 冬季长袖卫衣
+2026-10-30 18:17:18 [INFO ] [deepseek_web]   Deleted: 0022_5260156022481578580835.jpg
+2026-10-30 18:17:23 [INFO ] [deepseek_web] [23/50] 女士无帽卫衣
+2026-10-30 18:17:23 [INFO ] [deepseek_web]   Downloaded: 0023_3160310348292374627748.jpg
+2026-10-30 18:17:23 [INFO ] [deepseek_web]   Prefetching next image (24/50)
+2026-10-30 18:17:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:17:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:17:53 [INFO ] [deepseek_web]   Response: 女士无帽卫衣 圆领套头衫 宽松休闲长袖上衣 秋冬保暖套头衫 圣诞彩灯印花卫衣 3D立体圣诞球图案上衣 带口袋休闲卫衣 仿毛衣视觉打底衫 节日派对丑毛衣 趣味印花
+2026-10-30 18:17:53 [INFO ] [deepseek_web]   Deleted: 0023_3160310348292374627748.jpg
+2026-10-30 18:17:58 [INFO ] [deepseek_web] [24/50] 女士圣诞节印花卫衣
+2026-10-30 18:17:58 [INFO ] [deepseek_web]   Downloaded: 0024_5871058330115915294947.jpg
+2026-10-30 18:17:58 [INFO ] [deepseek_web]   Prefetching next image (25/50)
+2026-10-30 18:17:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:18:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:18:27 [INFO ] [deepseek_web]   Response: 女士圣诞节印花卫衣 圆领套头衫 宽松休闲长袖上衣 毛绒拼接领口套头衫 带口袋休闲卫衣 秋冬保暖内搭打底衫 亮片圣诞老人图案上衣 假腰带印花丑毛衣 节日派对套头毛
+2026-10-30 18:18:27 [INFO ] [deepseek_web]   Deleted: 0024_5871058330115915294947.jpg
+2026-10-30 18:18:32 [INFO ] [deepseek_web] [25/50] 女士秋冬印花卫衣
+2026-10-30 18:18:32 [INFO ] [deepseek_web]   Downloaded: 0025_4940530398625817012605.jpg
+2026-10-30 18:18:32 [INFO ] [deepseek_web]   Prefetching next image (26/50)
+2026-10-30 18:18:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:18:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:19:01 [INFO ] [deepseek_web]   Response: 女士秋冬印花卫衣 宽松圆领套头衫 休闲长袖上衣 毛绒质感无帽卫衣 仿毛绒保暖打底衫 冬季加绒保暖卫衣 秋冬休闲套头衫 圣诞驯鹿雪景印花 雪花森林图案上衣 女士节
+2026-10-30 18:19:01 [INFO ] [deepseek_web]   Deleted: 0025_4940530398625817012605.jpg
+2026-10-30 18:19:06 [INFO ] [deepseek_web] [26/50] 圣诞节女趣味印花卫衣
+2026-10-30 18:19:06 [INFO ] [deepseek_web]   Downloaded: 0026_0751128287681112005441.jpg
+2026-10-30 18:19:06 [INFO ] [deepseek_web]   Prefetching next image (27/50)
+2026-10-30 18:19:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:19:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:22:32 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-30 18:22:32 [INFO ] [deepseek_web]   Deleted: 0026_0751128287681112005441.jpg
+2026-10-30 18:22:37 [INFO ] [deepseek_web] [27/50] 圣诞男女宠物连帽卫衣
+2026-10-30 18:22:39 [INFO ] [deepseek_web]   Downloaded: 0027_4270250470332160446722.jpg
+2026-10-30 18:22:39 [INFO ] [deepseek_web]   Prefetching next image (28/50)
+2026-10-30 18:22:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:22:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:23:08 [INFO ] [deepseek_web]   Response: 圣诞男女同款宠物连帽卫衣 宽松套头衫 猫咪袋鼠兜卫衣 抽绳连帽衫 带口袋休闲外套 秋冬保暖长袖上衣 圣诞壁炉印花连帽卫衣 宠物携带套头衫 雪花彩灯图案休闲卫衣 
+2026-10-30 18:23:08 [INFO ] [deepseek_web]   Deleted: 0027_4270250470332160446722.jpg
+2026-10-30 18:23:13 [INFO ] [deepseek_web] [28/50] 圣诞节圆领卫衣
+2026-10-30 18:23:13 [INFO ] [deepseek_web]   Downloaded: 0028_3690433045649217258228.jpg
+2026-10-30 18:23:13 [INFO ] [deepseek_web]   Prefetching next image (29/50)
+2026-10-30 18:23:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:23:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:23:42 [INFO ] [deepseek_web]   Response: 女士圣诞节圆领卫衣 宽松长袖套头衫 霓虹灯圣诞树印花上衣 无帽休闲卫衣 秋冬保暖打底衫 发光雪花星星图案套头衫 节日派对长袖卫衣 冬季内搭休闲上衣
+2026-10-30 18:23:42 [INFO ] [deepseek_web]   Deleted: 0028_3690433045649217258228.jpg
+2026-10-30 18:23:47 [INFO ] [deepseek_web] [29/50] 女士万圣节无帽卫衣
+2026-10-30 18:23:47 [INFO ] [deepseek_web]   Downloaded: 0029_0720251278652769975953.jpg
+2026-10-30 18:23:47 [INFO ] [deepseek_web]   Prefetching next image (30/50)
+2026-10-30 18:23:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:23:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:24:16 [INFO ] [deepseek_web]   Response: 女士圣诞圆领卫衣 宽松休闲套头衫 长袖无帽上衣 秋冬保暖打底衫 涂鸦风圣诞树印花休闲卫衣 水彩风雪花星星图案上衣 节日派对无帽卫衣 女士保暖长袖衫 冬季内搭休闲
+2026-10-30 18:24:16 [INFO ] [deepseek_web]   Deleted: 0029_0720251278652769975953.jpg
+2026-10-30 18:24:21 [INFO ] [deepseek_web] [30/50] 圣诞节宠物袋女士卫衣
+2026-10-30 18:24:21 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-30 18:24:26 [INFO ] [deepseek_web] [31/50] 圣诞节女士趣味卫衣
+2026-10-30 18:24:34 [INFO ] [deepseek_web]   Downloaded: 0031_4040322051658411546697.jpg
+2026-10-30 18:24:34 [INFO ] [deepseek_web]   Prefetching next image (32/50)
+2026-10-30 18:24:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:24:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:25:03 [INFO ] [deepseek_web]   Response: 女士圣诞节趣味开衫卫衣 宽松V领长袖套头衫 正面纽扣开衫外套 背面镂空设计休闲卫衣 秋冬保暖针织衫 圣诞驯鹿雪花图案上衣 节日派对开衫外套 女士休闲针织卫衣 冬
+2026-10-30 18:25:03 [INFO ] [deepseek_web]   Deleted: 0031_4040322051658411546697.jpg
+2026-10-30 18:25:08 [INFO ] [deepseek_web] [32/50] 圣诞节女浪形长袖卫衣
+2026-10-30 18:25:08 [INFO ] [deepseek_web]   Downloaded: 0032_6620439373269314915484.jpg
+2026-10-30 18:25:08 [INFO ] [deepseek_web]   Prefetching next image (33/50)
+2026-10-30 18:25:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:25:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:25:37 [INFO ] [deepseek_web]   Response: 女士圣诞节长袖卫衣 宽松圆领套头衫 浪形下摆休闲卫衣 格纹拼接袖打底衫 圣诞老人字母印花上衣 秋冬保暖内搭 节日派对无帽卫衣 女士长袖休闲衫
+2026-10-30 18:25:37 [INFO ] [deepseek_web]   Deleted: 0032_6620439373269314915484.jpg
+2026-10-30 18:25:42 [INFO ] [deepseek_web] [33/50] 女士圆领卫衣
+2026-10-30 18:25:42 [INFO ] [deepseek_web]   Downloaded: 0033_5201032436169315899591.jpg
+2026-10-30 18:25:42 [INFO ] [deepseek_web]   Prefetching next image (34/50)
+2026-10-30 18:25:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:25:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:26:11 [INFO ] [deepseek_web]   Response: 女士圆领卫衣 宽松长袖套头衫 雪花印花休闲卫衣 无帽保暖打底衫 秋冬套头休闲上衣 圣诞彩灯图案卫衣 节日主题长袖衫 女士休闲套头卫衣 冬季长袖上衣 日常休闲打底
+2026-10-30 18:26:11 [INFO ] [deepseek_web]   Deleted: 0033_5201032436169315899591.jpg
+2026-10-30 18:26:16 [INFO ] [deepseek_web] [34/50] 女士圣诞节连帽卫衣
+2026-10-30 18:26:16 [INFO ] [deepseek_web]   Downloaded: 0034_9411030488381965030207.jpg
+2026-10-30 18:26:16 [INFO ] [deepseek_web]   Prefetching next image (35/50)
+2026-10-30 18:26:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:26:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:26:45 [INFO ] [deepseek_web]   Response: 女士圣诞节连帽卫衣 宽松套头连帽衫 长袖休闲上衣 加厚羊羔绒内里连帽外套 带口袋袋鼠兜卫衣 秋冬加绒保暖卫衣 冬季加厚保暖套头衫 高地牛圣诞球印花上衣 趣味字母
+2026-10-30 18:26:45 [INFO ] [deepseek_web]   Deleted: 0034_9411030488381965030207.jpg
+2026-10-30 18:26:50 [INFO ] [deepseek_web] [35/50] 女士印花上衣
+2026-10-30 18:26:50 [INFO ] [deepseek_web]   Downloaded: 0035_5821049183951210019951.jpg
+2026-10-30 18:26:50 [INFO ] [deepseek_web]   Prefetching next image (36/50)
+2026-10-30 18:26:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:27:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:27:19 [INFO ] [deepseek_web]   Response: 女士圣诞印花上衣 圆领套头衫 宽松长袖卫衣 无帽套头衫 带口袋套头卫衣 秋冬保暖上衣 圣诞麋鹿雪花图案 格纹拼接休闲衫 仿毛衣针织衫 节日派对丑毛衣 冬季内搭打
+2026-10-30 18:27:19 [INFO ] [deepseek_web]   Deleted: 0035_5821049183951210019951.jpg
+2026-10-30 18:27:24 [INFO ] [deepseek_web] [36/50] 圣诞节女士无帽卫衣
+2026-10-30 18:27:24 [INFO ] [deepseek_web]   Downloaded: 0036_4140448107073011115575.jpg
+2026-10-30 18:27:24 [INFO ] [deepseek_web]   Prefetching next image (37/50)
+2026-10-30 18:27:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:27:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:27:53 [INFO ] [deepseek_web]   Response: 女士圣诞节无帽卫衣 宽松圆领套头衫 长袖休闲上衣 秋冬保暖打底衫 圣诞树彩灯印花卫衣 圆领套头长袖衫 女士休闲打底上衣 节日主题套头卫衣 长袖无帽衫
+2026-10-30 18:27:53 [INFO ] [deepseek_web]   Deleted: 0036_4140448107073011115575.jpg
+2026-10-30 18:27:58 [INFO ] [deepseek_web] [37/50] 圣诞节女士无帽卫衣
+2026-10-30 18:27:58 [INFO ] [deepseek_web]   Downloaded: 0037_8570338145002745218124.jpg
+2026-10-30 18:27:58 [INFO ] [deepseek_web]   Prefetching next image (38/50)
+2026-10-30 18:27:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:28:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:28:28 [INFO ] [deepseek_web]   Response: 女士圣诞节无帽卫衣 圆领套头衫 宽松长袖卫衣 秋冬保暖打底衫 圣诞帽字母印花上衣 节日主题休闲卫衣 女士休闲套头衫 雪花图案长袖上衣 冬季内搭保暖卫衣 圣诞聚会
+2026-10-30 18:28:28 [INFO ] [deepseek_web]   Deleted: 0037_8570338145002745218124.jpg
+2026-10-30 18:28:33 [INFO ] [deepseek_web] [38/50] 双帽落肩无袋连帽卫衣
+2026-10-30 18:28:33 [INFO ] [deepseek_web]   Downloaded: 0038_2210419038283015000450.jpg
+2026-10-30 18:28:33 [INFO ] [deepseek_web]   Prefetching next image (39/50)
+2026-10-30 18:28:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:28:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:29:02 [INFO ] [deepseek_web]   Response: 女士双帽落肩连帽卫衣 宽松套头衫 长袖休闲上衣 无袋连帽衫 秋冬保暖套头卫衣 圣诞老人酒杯印花连帽外套 趣味创意图案长袖上衣 雪花星星印花套头衫 落肩休闲连帽衫
+2026-10-30 18:29:02 [INFO ] [deepseek_web]   Deleted: 0038_2210419038283015000450.jpg
+2026-10-30 18:29:07 [INFO ] [deepseek_web] [39/50] 仿毛衣无卫衣
+2026-10-30 18:29:07 [INFO ] [deepseek_web]   Downloaded: 0039_3380429337862978213156.jpg
+2026-10-30 18:29:07 [INFO ] [deepseek_web]   Prefetching next image (40/50)
+2026-10-30 18:29:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:29:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:32:33 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-30 18:32:33 [INFO ] [deepseek_web]   Deleted: 0039_3380429337862978213156.jpg
+2026-10-30 18:32:38 [INFO ] [deepseek_web] [40/50] 女士圣诞节印花卫衣
+2026-10-30 18:32:46 [INFO ] [deepseek_web]   Downloaded: 0040_7190416374343120989024.jpg
+2026-10-30 18:32:46 [INFO ] [deepseek_web]   Prefetching next image (41/50)
+2026-10-30 18:32:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:32:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:33:15 [INFO ] [deepseek_web]   Response: 女士圣诞节连帽卫衣 宠物袋连帽卫衣 猫咪袋鼠兜卫衣 宽松套头衫 休闲长袖上衣 宠物携带连帽衫 企鹅造型图案外套 带拉链口袋休闲卫衣 秋冬保暖加绒卫衣 冬季毛绒连
+2026-10-30 18:33:15 [INFO ] [deepseek_web]   Deleted: 0040_7190416374343120989024.jpg
+2026-10-30 18:33:20 [INFO ] [deepseek_web] [41/50] 女士连帽卫衣
+2026-10-30 18:33:20 [INFO ] [deepseek_web]   Downloaded: 0041_7870434311403012509539.jpg
+2026-10-30 18:33:20 [INFO ] [deepseek_web]   Prefetching next image (42/50)
+2026-10-30 18:33:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:33:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:33:49 [INFO ] [deepseek_web]   Response: 女士连帽卫衣 宽松套头衫 长袖休闲上衣 秋冬保暖连帽外套 带口袋套头卫衣 圣诞树雪纳瑞犬印花连帽衫 提花拼接袖套头外套 复古水洗休闲卫衣 冬季保暖长袖上衣 女士
+2026-10-30 18:33:49 [INFO ] [deepseek_web]   Deleted: 0041_7870434311403012509539.jpg
+2026-10-30 18:33:54 [INFO ] [deepseek_web] [42/50] 女士连帽卫衣
+2026-10-30 18:33:54 [INFO ] [deepseek_web]   Downloaded: 0042_7180947514591081817844.jpg
+2026-10-30 18:33:54 [INFO ] [deepseek_web]   Prefetching next image (43/50)
+2026-10-30 18:33:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:34:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:34:23 [INFO ] [deepseek_web]   Response: 女士连帽卫衣 宽松休闲套头衫 抽绳连帽外套 带口袋连帽衫 秋冬保暖长袖上衣 圣诞小狗印花卫衣 泰迪犬提花拼接袖套头衫 冬季休闲卫衣 长袖套头外套
+2026-10-30 18:34:23 [INFO ] [deepseek_web]   Deleted: 0042_7180947514591081817844.jpg
+2026-10-30 18:34:28 [INFO ] [deepseek_web] [43/50] 女士英文字母趣味印花连帽长袖卫衣
+2026-10-30 18:34:28 [INFO ] [deepseek_web]   Downloaded: 0043_9500326354792415174182.jpg
+2026-10-30 18:34:28 [INFO ] [deepseek_web]   Prefetching next image (44/50)
+2026-10-30 18:34:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:34:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:34:57 [INFO ] [deepseek_web]   Response: 女士连帽卫衣 宽松休闲套头衫 抽绳连帽衫 带口袋长袖上衣 秋冬保暖休闲卫衣 圣诞火鸡字母印花套头衫 趣味卡通动物图案连帽衫 节日派对连帽外套 女士长袖休闲上衣 
+2026-10-30 18:34:57 [INFO ] [deepseek_web]   Deleted: 0043_9500326354792415174182.jpg
+2026-10-30 18:35:02 [INFO ] [deepseek_web] [44/50] 女士圣诞节金丝绒卫衣
+2026-10-30 18:35:02 [INFO ] [deepseek_web]   Downloaded: 0044_4890447153983716284031.jpg
+2026-10-30 18:35:02 [INFO ] [deepseek_web]   Prefetching next image (45/50)
+2026-10-30 18:35:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:35:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:35:31 [INFO ] [deepseek_web]   Response: 女士圣诞节金丝绒卫衣 休闲圆领套头衫 长袖保暖上衣 毛绒拼接领口无帽卫衣 丝绒打底衫 秋冬保暖休闲衫 节日派对套头卫衣 女士丝绒长袖上衣 毛边袖口保暖内搭 圣诞
+2026-10-30 18:35:31 [INFO ] [deepseek_web]   Deleted: 0044_4890447153983716284031.jpg
+2026-10-30 18:35:36 [INFO ] [deepseek_web] [45/50] 女士圣诞节无帽卫衣
+2026-10-30 18:35:36 [INFO ] [deepseek_web]   Downloaded: 0045_6820244121881713090523.jpg
+2026-10-30 18:35:36 [INFO ] [deepseek_web]   Prefetching next image (46/50)
+2026-10-30 18:35:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:35:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:36:05 [INFO ] [deepseek_web]   Response: 女士圣诞节无帽卫衣 圆领套头衫 宽松休闲长袖上衣 3D圣诞老人印花卫衣 油画风人像图案套头衫 雪花图案休闲衫 秋冬保暖打底衫 冬季长袖内搭 女士无帽套头卫衣 节
+2026-10-30 18:36:05 [INFO ] [deepseek_web]   Deleted: 0045_6820244121881713090523.jpg
+2026-10-30 18:36:10 [INFO ] [deepseek_web] [46/50] 冬季女士高地牛连帽衫
+2026-10-30 18:36:10 [INFO ] [deepseek_web]   Downloaded: 0046_1590256012402113229086.jpg
+2026-10-30 18:36:10 [INFO ] [deepseek_web]   Prefetching next image (47/50)
+2026-10-30 18:36:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:36:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:36:40 [INFO ] [deepseek_web]   Response: 女士冬季高地牛连帽卫衣 宽松长袖套头衫 抽绳连帽衫 带口袋休闲卫衣 秋冬保暖套头衫 圣诞高地牛风笛印花卫衣 苏格兰格纹图案连帽衫 雪花字母印花休闲衫 女士连帽套
+2026-10-30 18:36:40 [INFO ] [deepseek_web]   Deleted: 0046_1590256012402113229086.jpg
+2026-10-30 18:36:45 [INFO ] [deepseek_web] [47/50] 女士圣诞节宠物袋卫衣
+2026-10-30 18:36:45 [INFO ] [deepseek_web]   Downloaded: 0047_9710459552255028420256.jpg
+2026-10-30 18:36:45 [INFO ] [deepseek_web]   Prefetching next image (48/50)
+2026-10-30 18:36:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:36:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:37:14 [INFO ] [deepseek_web]   Response: 女士圣诞节宠物袋连帽卫衣 宽松套头衫 长袖休闲上衣 宠物携带连帽衫 袋鼠兜宠物袋卫衣 带拉链口袋套头外套 秋冬保暖连帽卫衣 圣诞老人驯鹿雪花印花上衣 节日派对休
+2026-10-30 18:37:14 [INFO ] [deepseek_web]   Deleted: 0047_9710459552255028420256.jpg
+2026-10-30 18:37:19 [INFO ] [deepseek_web] [48/50] 女士搞怪圣诞上衣
+2026-10-30 18:37:19 [INFO ] [deepseek_web]   Downloaded: 0048_5710436185935367815359.jpg
+2026-10-30 18:37:19 [INFO ] [deepseek_web]   Prefetching next image (49/50)
+2026-10-30 18:37:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:37:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:37:48 [INFO ] [deepseek_web]   Response: 女士搞怪圣诞上衣 圆领长袖套头衫 宽松休闲无帽卫衣 秋冬保暖打底衫 3D立体圣诞女郎印花衫 蝴蝶结铃铛图案套头衫 条纹拼接袖长袖上衣 节日派对搞怪卫衣 女士休闲
+2026-10-30 18:37:48 [INFO ] [deepseek_web]   Deleted: 0048_5710436185935367815359.jpg
+2026-10-30 18:37:53 [INFO ] [deepseek_web] [49/50] 女士圣诞印花卫衣
+2026-10-30 18:37:53 [INFO ] [deepseek_web]   Downloaded: 0049_9031122092931319672142.jpg
+2026-10-30 18:37:53 [INFO ] [deepseek_web]   Prefetching next image (50/50)
+2026-10-30 18:37:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:38:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:38:22 [INFO ] [deepseek_web]   Response: 女士圣诞印花卫衣 宽松圆领套头衫 长袖无帽休闲上衣 秋冬保暖打底衫 驯鹿雪花彩灯图案套头卫衣 女士休闲长袖衫 节日派对保暖内搭 圆领套头休闲上衣 圣诞主题印花长
+2026-10-30 18:38:22 [INFO ] [deepseek_web]   Deleted: 0049_9031122092931319672142.jpg
+2026-10-30 18:38:27 [INFO ] [deepseek_web] [50/50] 女士圣诞绒面无帽卫衣
+2026-10-30 18:38:27 [INFO ] [deepseek_web]   Downloaded: 0050_3791134564002311228709.jpg
+2026-10-30 18:38:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-30 18:38:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-30 18:38:56 [INFO ] [deepseek_web]   Response: 女士圣诞绒面无帽卫衣 宽松圆领套头衫 长袖休闲上衣 秋冬保暖打底衫 毛绒质感圆领卫衣 猫咪圣诞树印花套头衫 酒杯雪花图案休闲衫 冬季保暖内搭上衣 女士休闲长袖卫
+2026-10-30 18:38:56 [INFO ] [deepseek_web]   Deleted: 0050_3791134564002311228709.jpg
+2026-10-30 18:38:56 [INFO ] [deepseek_web] 
+2026-10-30 18:38:56 [INFO ] [deepseek_web] Retry round 1: 4 failed item(s)
+2026-10-30 18:39:01 [INFO ] [deepseek_web]   Retry [18]: 女士圣诞节印花卫衣
+2026-10-30 18:39:20 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:39:38 [INFO ] [deepseek_web]     OK: 女士圣诞节印花卫衣 宽松圆领套头毛衣 长袖休闲针织上衣 仿毛衣无帽卫衣 秋冬保暖打底衫 猫咪圣诞帽印花套头衫 趣味动物图案休闲衫 圣诞主题针织卫衣 女士冬季保暖
+2026-10-30 18:39:41 [INFO ] [deepseek_web]   Retry [26]: 圣诞节女趣味印花卫衣
+2026-10-30 18:40:04 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:43:19 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 18:43:22 [INFO ] [deepseek_web]   Retry [30]: 圣诞节宠物袋女士卫衣
+2026-10-30 18:43:41 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:43:59 [INFO ] [deepseek_web]     OK: 女士圣诞节宠物袋连帽卫衣 宽松套头衫 休闲长袖上衣 宠物携带连帽衫 袋鼠兜卫衣 带拉链口袋连帽外套 抽绳连帽卫衣 秋冬保暖套头衫 冬季加绒保暖休闲卫衣 雪人印花
+2026-10-30 18:44:02 [INFO ] [deepseek_web]   Retry [39]: 仿毛衣无卫衣
+2026-10-30 18:44:20 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:47:35 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 18:47:38 [INFO ] [deepseek_web] 
+2026-10-30 18:47:38 [INFO ] [deepseek_web] Retry round 2: 2 failed item(s)
+2026-10-30 18:47:43 [INFO ] [deepseek_web]   Retry [26]: 圣诞节女趣味印花卫衣
+2026-10-30 18:48:02 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:51:17 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 18:51:20 [INFO ] [deepseek_web]   Retry [39]: 仿毛衣无卫衣
+2026-10-30 18:51:38 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:54:54 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 18:54:57 [INFO ] [deepseek_web] 
+2026-10-30 18:54:57 [INFO ] [deepseek_web] Retry round 3: 2 failed item(s)
+2026-10-30 18:55:02 [INFO ] [deepseek_web]   Retry [26]: 圣诞节女趣味印花卫衣
+2026-10-30 18:55:20 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 18:58:36 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 18:58:39 [INFO ] [deepseek_web]   Retry [39]: 仿毛衣无卫衣
+2026-10-30 18:59:03 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 19:02:18 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 19:02:21 [INFO ] [deepseek_web] 
+2026-10-30 19:02:21 [INFO ] [deepseek_web] Retry round 4: 2 failed item(s)
+2026-10-30 19:02:26 [INFO ] [deepseek_web]   Retry [26]: 圣诞节女趣味印花卫衣
+2026-10-30 19:02:45 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 19:06:00 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 19:06:03 [INFO ] [deepseek_web]   Retry [39]: 仿毛衣无卫衣
+2026-10-30 19:06:21 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 19:09:37 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 19:09:40 [INFO ] [deepseek_web] 
+2026-10-30 19:09:40 [INFO ] [deepseek_web] Retry round 5: 2 failed item(s)
+2026-10-30 19:09:45 [INFO ] [deepseek_web]   Retry [26]: 圣诞节女趣味印花卫衣
+2026-10-30 19:09:50 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-30 19:09:53 [INFO ] [deepseek_web]   Retry [39]: 仿毛衣无卫衣
+2026-10-30 19:10:12 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-30 19:13:32 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-10-30 19:13:35 [WARNING] [deepseek_web] Gave up on 2 items after 5 rounds
+2026-10-30 19:13:36 [INFO ] [deepseek_web] ==================================================
+2026-10-30 19:13:36 [INFO ] [deepseek_web] Done: 48 success, 2 failed → optimize_title
+2026-10-30 19:13:36 [WARNING] [deepseek_web] Unresolved: 2 [FAILED] placeholders in output
+2026-10-30 19:13:37 [INFO ] [title_workflow] Optimization complete: 50 titles
+2026-10-30 19:13:45 [INFO ] [title_workflow] Written 50 optimized titles to column H (8)
+2026-10-30 19:13:45 [INFO ] [title_workflow] Done: 10.27v1_de.xlsx
+2026-10-30 19:13:45 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-30 19:13:45 [INFO ] [jenkins] 
+2026-10-30 19:13:45 [INFO ] [jenkins] ==================================================
+2026-10-30 19:13:45 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-30 19:13:45 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-30 19:13:45 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-30 19:13:45 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-30 19:13:45 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

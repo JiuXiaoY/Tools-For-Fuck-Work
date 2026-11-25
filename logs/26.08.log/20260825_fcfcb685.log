@@ -1,0 +1,1161 @@
+2026-08-25 11:47:52 [INFO ] [jenkins] ==================================================
+2026-08-25 11:47:52 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-25 11:47:52 [INFO ] [jenkins] ==================================================
+2026-08-25 11:47:52 [INFO ] [jenkins] 
+2026-08-25 11:47:52 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-25 11:47:52 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:47:52 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-25 11:47:52 [INFO ] [jenkins] 
+2026-08-25 11:47:52 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-25 11:47:52 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:47:52 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-08-25 11:47:52 [INFO ] [preprocess] [冲锋衣1.xlsx]
+2026-08-25 11:47:53 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:47:53 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:47:53 [INFO ] [preprocess]   [冲锋衣1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-25 11:47:53 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:47:53 [INFO ] [preprocess]   [冲锋衣1.xlsx] Dedup: 23 filled rows, 2 deleted
+2026-08-25 11:47:53 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:47:54 [INFO ] [preprocess] [冲锋衣2.xlsx]
+2026-08-25 11:47:55 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:47:55 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:47:55 [INFO ] [preprocess]   [冲锋衣2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-25 11:47:55 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:47:56 [INFO ] [preprocess]   [冲锋衣2.xlsx] Dedup: 32 filled rows, 4 deleted
+2026-08-25 11:47:56 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:47:56 [INFO ] [preprocess] [冲锋衣3.xlsx]
+2026-08-25 11:47:57 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:47:57 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:47:57 [INFO ] [preprocess]   [冲锋衣3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-25 11:47:57 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:47:57 [INFO ] [preprocess]   [冲锋衣3.xlsx] No duplicate filled rows to remove
+2026-08-25 11:47:57 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:47:57 [INFO ] [preprocess] Preprocessing complete
+2026-08-25 11:47:57 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-25 11:47:57 [INFO ] [jenkins] 
+2026-08-25 11:47:57 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-25 11:47:57 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:47:58 [INFO ] [main] Log file: 20260825_fcfcb685.log
+2026-08-25 11:47:58 [INFO ] [main] Found 3 file(s):
+2026-08-25 11:47:58 [INFO ] [main]   冲锋衣1.xlsx
+2026-08-25 11:47:58 [INFO ] [main]   冲锋衣2.xlsx
+2026-08-25 11:47:58 [INFO ] [main]   冲锋衣3.xlsx
+2026-08-25 11:47:58 [INFO ] [main] Output: 8.24v1.xlsx
+2026-08-25 11:47:58 [INFO ] [main] ==================================================
+2026-08-25 11:48:01 [INFO ] [main] Merged 3 files, 4892 images total
+2026-08-25 11:48:02 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-25 11:48:02 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-25 11:48:03 [INFO ] [pipeline]   Sheet [Sheet0_2]: 952 rows, 2012 images
+2026-08-25 11:48:03 [INFO ] [pipeline]   Sheet [Sheet0_3]: 468 rows, 1037 images
+2026-08-25 11:48:03 [INFO ] [pipeline]   Merged 3 sheets -> 1, 1420 data rows, 3049 images
+2026-08-25 11:48:03 [INFO ] [pipeline] [2/12] validate
+2026-08-25 11:48:03 [INFO ] [pipeline]   Validated: 2309 rows, 27 cols (expect ~32)
+2026-08-25 11:48:03 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-25 11:48:04 [INFO ] [pipeline]   Backed up 4892 images
+2026-08-25 11:48:04 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-25 11:48:04 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-25 11:48:04 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-25 11:48:04 [INFO ] [pipeline]   Restored 4892 images with adjusted anchors
+2026-08-25 11:48:04 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 2: 2309 IDs generated
+2026-08-25 11:48:04 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 3: 2309 cells filled
+2026-08-25 11:48:04 [INFO ] [pipeline] [6/12] map_colors
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 10: 2241 cells mapped, 68 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-25 11:48:04 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 11: 2241 mapped, 68 cleared (col A has fill), 0 no match (recorded)
+2026-08-25 11:48:04 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-25 11:48:04 [INFO ] [pipeline]   Mirror copy: 12468 cells written
+2026-08-25 11:48:04 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 44: 2309 cells copied from col 12
+2026-08-25 11:48:04 [INFO ] [pipeline] [10/12] calc_price
+2026-08-25 11:48:04 [INFO ] [pipeline]   Columns 45-48: 2309 rows calculated
+2026-08-25 11:48:04 [INFO ] [pipeline] [11/12] format_cells
+2026-08-25 11:48:04 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-25 11:48:04 [INFO ] [pipeline]   Formatted 2309 rows: h=50, align=left/center
+2026-08-25 11:48:04 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-25 11:48:04 [INFO ] [pipeline] [12/12] finalize
+2026-08-25 11:48:04 [INFO ] [pipeline]   Done: 2309 rows x 48 cols (target: 48)
+2026-08-25 11:48:04 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:48:07 [INFO ] [main] Size: 2309 rows x 48 cols
+2026-08-25 11:48:07 [INFO ] [main] ==================================================
+2026-08-25 11:48:07 [INFO ] [main] Done: 8.24v1.xlsx
+2026-08-25 11:48:07 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-25 11:48:07 [INFO ] [jenkins] 
+2026-08-25 11:48:07 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-25 11:48:07 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:48:07 [INFO ] [color_size_main] Source: 8.24v1.xlsx
+2026-08-25 11:48:09 [INFO ] [color_size_main] Extracted: 2241 data lines + 68 separators → check_.txt
+2026-08-25 11:48:09 [INFO ] [color_size_main] Running: process.py
+2026-08-25 11:48:09 [INFO ] [color_size_deal] Groups: 68, lines: 2241 (file: 2309)
+2026-08-25 11:48:09 [INFO ] [color_size_deal] Prefixes: {'01': 28}
+2026-08-25 11:48:09 [INFO ] [color_size_deal] Done.
+2026-08-25 11:48:09 [INFO ] [color_size_main] Processing write-back: 2309 lines
+2026-08-25 11:48:13 [INFO ] [color_size_main] Write-back: 96 written, 2213 unchanged → 8.24v1.xlsx
+2026-08-25 11:48:13 [INFO ] [color_size_main] Done.
+2026-08-25 11:48:13 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-25 11:48:13 [INFO ] [jenkins] 
+2026-08-25 11:48:13 [INFO ] [jenkins] ==================================================
+2026-08-25 11:48:13 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-25 11:48:13 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-25 11:48:13 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-25 11:48:13 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-25 11:48:13 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-25 11:50:28 [INFO ] [jenkins] ==================================================
+2026-08-25 11:50:28 [INFO ] [jenkins] Jenkins pipeline — 3 steps
+2026-08-25 11:50:28 [INFO ] [jenkins] ==================================================
+2026-08-25 11:50:28 [INFO ] [jenkins] 
+2026-08-25 11:50:28 [INFO ] [jenkins] [1/3] Preprocess
+2026-08-25 11:50:28 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:50:28 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-08-25 11:50:28 [INFO ] [preprocess] [冲锋衣1.xlsx]
+2026-08-25 11:50:28 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:50:28 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:50:28 [INFO ] [preprocess]   [冲锋衣1.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:50:28 [INFO ] [preprocess]   [冲锋衣1.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:50:28 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:50:28 [INFO ] [preprocess]   [冲锋衣1.xlsx] No duplicate filled rows to remove
+2026-08-25 11:50:28 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:50:29 [INFO ] [preprocess] [冲锋衣2.xlsx]
+2026-08-25 11:50:30 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:50:30 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:50:30 [INFO ] [preprocess]   [冲锋衣2.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:50:30 [INFO ] [preprocess]   [冲锋衣2.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:50:30 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:50:30 [INFO ] [preprocess]   [冲锋衣2.xlsx] No duplicate filled rows to remove
+2026-08-25 11:50:30 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:50:30 [INFO ] [preprocess] [冲锋衣3.xlsx]
+2026-08-25 11:50:31 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:50:31 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:50:31 [INFO ] [preprocess]   [冲锋衣3.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:50:31 [INFO ] [preprocess]   [冲锋衣3.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:50:31 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:50:31 [INFO ] [preprocess]   [冲锋衣3.xlsx] No duplicate filled rows to remove
+2026-08-25 11:50:31 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:50:31 [INFO ] [preprocess] Preprocessing complete
+2026-08-25 11:50:31 [INFO ] [jenkins] [1/3] Preprocess OK
+2026-08-25 11:50:31 [INFO ] [jenkins] 
+2026-08-25 11:50:31 [INFO ] [jenkins] [2/3] Excel pipeline
+2026-08-25 11:50:31 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:50:31 [INFO ] [main] Log file: 20260825_fcfcb685.log
+2026-08-25 11:50:31 [INFO ] [main] Found 3 file(s):
+2026-08-25 11:50:31 [INFO ] [main]   冲锋衣1.xlsx
+2026-08-25 11:50:31 [INFO ] [main]   冲锋衣2.xlsx
+2026-08-25 11:50:31 [INFO ] [main]   冲锋衣3.xlsx
+2026-08-25 11:50:31 [INFO ] [main] Output: 8.24v1.xlsx
+2026-08-25 11:50:31 [INFO ] [main] ==================================================
+2026-08-25 11:50:35 [INFO ] [main] Merged 3 files, 4892 images total
+2026-08-25 11:50:36 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-25 11:50:36 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-25 11:50:37 [INFO ] [pipeline]   Sheet [Sheet0_2]: 952 rows, 2012 images
+2026-08-25 11:50:37 [INFO ] [pipeline]   Sheet [Sheet0_3]: 468 rows, 1037 images
+2026-08-25 11:50:37 [INFO ] [pipeline]   Merged 3 sheets -> 1, 1420 data rows, 3049 images
+2026-08-25 11:50:37 [INFO ] [pipeline] [2/12] validate
+2026-08-25 11:50:37 [INFO ] [pipeline]   Validated: 2309 rows, 27 cols (expect ~32)
+2026-08-25 11:50:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-25 11:50:37 [INFO ] [pipeline]   Backed up 4892 images
+2026-08-25 11:50:37 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-25 11:50:37 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-25 11:50:37 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-25 11:50:37 [INFO ] [pipeline]   Restored 4892 images with adjusted anchors
+2026-08-25 11:50:37 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 2: 2309 IDs generated
+2026-08-25 11:50:38 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 3: 2309 cells filled
+2026-08-25 11:50:38 [INFO ] [pipeline] [6/12] map_colors
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 10: 2241 cells mapped, 68 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-25 11:50:38 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 11: 2241 mapped, 68 cleared (col A has fill), 0 no match (recorded)
+2026-08-25 11:50:38 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-25 11:50:38 [INFO ] [pipeline]   Mirror copy: 12468 cells written
+2026-08-25 11:50:38 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 44: 2309 cells copied from col 12
+2026-08-25 11:50:38 [INFO ] [pipeline] [10/12] calc_price
+2026-08-25 11:50:38 [INFO ] [pipeline]   Columns 45-48: 2309 rows calculated
+2026-08-25 11:50:38 [INFO ] [pipeline] [11/12] format_cells
+2026-08-25 11:50:38 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-25 11:50:38 [INFO ] [pipeline]   Formatted 2309 rows: h=50, align=left/center
+2026-08-25 11:50:38 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-25 11:50:38 [INFO ] [pipeline] [12/12] finalize
+2026-08-25 11:50:38 [INFO ] [pipeline]   Done: 2309 rows x 48 cols (target: 48)
+2026-08-25 11:50:38 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:50:40 [INFO ] [main] Size: 2309 rows x 48 cols
+2026-08-25 11:50:40 [INFO ] [main] ==================================================
+2026-08-25 11:50:40 [INFO ] [main] Done: 8.24v1.xlsx
+2026-08-25 11:50:41 [INFO ] [jenkins] [2/3] Excel pipeline OK
+2026-08-25 11:50:41 [INFO ] [jenkins] 
+2026-08-25 11:50:41 [INFO ] [jenkins] [3/3] Color re-processing
+2026-08-25 11:50:41 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:50:41 [INFO ] [color_size_main] Source: 8.24v1.xlsx
+2026-08-25 11:50:43 [INFO ] [color_size_main] Extracted: 2241 data lines + 68 separators → check_.txt
+2026-08-25 11:50:43 [INFO ] [color_size_main] Running: process.py
+2026-08-25 11:50:43 [INFO ] [color_size_deal] Groups: 68, lines: 2241 (file: 2309)
+2026-08-25 11:50:43 [INFO ] [color_size_deal] Prefixes: {'01': 28}
+2026-08-25 11:50:43 [INFO ] [color_size_deal] Done.
+2026-08-25 11:50:43 [INFO ] [color_size_main] Processing write-back: 2309 lines
+2026-08-25 11:50:47 [INFO ] [color_size_main] Write-back: 96 written, 2213 unchanged → 8.24v1.xlsx
+2026-08-25 11:50:47 [INFO ] [color_size_main] Done.
+2026-08-25 11:50:47 [INFO ] [jenkins] [3/3] Color re-processing OK
+2026-08-25 11:50:47 [INFO ] [jenkins] 
+2026-08-25 11:50:47 [INFO ] [jenkins] ==================================================
+2026-08-25 11:50:47 [INFO ] [jenkins] All 3 steps completed successfully
+2026-08-25 11:50:47 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-25 11:50:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-25 11:50:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-25 11:50:47 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-25 11:52:12 [INFO ] [jenkins] ==================================================
+2026-08-25 11:52:12 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-25 11:52:12 [INFO ] [jenkins] ==================================================
+2026-08-25 11:52:12 [INFO ] [jenkins] 
+2026-08-25 11:52:12 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-25 11:52:12 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:52:12 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-25 11:52:12 [INFO ] [jenkins] 
+2026-08-25 11:52:12 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-25 11:52:12 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:52:12 [INFO ] [preprocess] Preprocessing 3 file(s) with 2 step(s)
+2026-08-25 11:52:12 [INFO ] [preprocess] [冲锋衣1.xlsx]
+2026-08-25 11:52:13 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:52:13 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:52:13 [INFO ] [preprocess]   [冲锋衣1.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:52:13 [INFO ] [preprocess]   [冲锋衣1.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:52:13 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:52:13 [INFO ] [preprocess]   [冲锋衣1.xlsx] No duplicate filled rows to remove
+2026-08-25 11:52:13 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:52:13 [INFO ] [preprocess] [冲锋衣2.xlsx]
+2026-08-25 11:52:14 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:52:14 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:52:14 [INFO ] [preprocess]   [冲锋衣2.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:52:14 [INFO ] [preprocess]   [冲锋衣2.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:52:14 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:52:14 [INFO ] [preprocess]   [冲锋衣2.xlsx] No duplicate filled rows to remove
+2026-08-25 11:52:14 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:52:15 [INFO ] [preprocess] [冲锋衣3.xlsx]
+2026-08-25 11:52:15 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-25 11:52:15 [INFO ] [pipeline] [1/2] remove_header
+2026-08-25 11:52:15 [INFO ] [preprocess]   [冲锋衣3.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-08-25 11:52:15 [INFO ] [preprocess]   [冲锋衣3.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-08-25 11:52:15 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-25 11:52:15 [INFO ] [preprocess]   [冲锋衣3.xlsx] No duplicate filled rows to remove
+2026-08-25 11:52:15 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:52:15 [INFO ] [preprocess] Preprocessing complete
+2026-08-25 11:52:15 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-25 11:52:15 [INFO ] [jenkins] 
+2026-08-25 11:52:15 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-25 11:52:15 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:52:16 [INFO ] [main] Log file: 20260825_fcfcb685.log
+2026-08-25 11:52:16 [INFO ] [main] Found 3 file(s):
+2026-08-25 11:52:16 [INFO ] [main]   冲锋衣1.xlsx
+2026-08-25 11:52:16 [INFO ] [main]   冲锋衣2.xlsx
+2026-08-25 11:52:16 [INFO ] [main]   冲锋衣3.xlsx
+2026-08-25 11:52:16 [INFO ] [main] Output: 8.24v1.xlsx
+2026-08-25 11:52:16 [INFO ] [main] ==================================================
+2026-08-25 11:52:19 [INFO ] [main] Merged 3 files, 4892 images total
+2026-08-25 11:52:20 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-25 11:52:20 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-25 11:52:22 [INFO ] [pipeline]   Sheet [Sheet0_2]: 952 rows, 2012 images
+2026-08-25 11:52:22 [INFO ] [pipeline]   Sheet [Sheet0_3]: 468 rows, 1037 images
+2026-08-25 11:52:22 [INFO ] [pipeline]   Merged 3 sheets -> 1, 1420 data rows, 3049 images
+2026-08-25 11:52:22 [INFO ] [pipeline] [2/12] validate
+2026-08-25 11:52:22 [INFO ] [pipeline]   Validated: 2309 rows, 27 cols (expect ~32)
+2026-08-25 11:52:22 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-25 11:52:22 [INFO ] [pipeline]   Backed up 4892 images
+2026-08-25 11:52:22 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-25 11:52:22 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-25 11:52:22 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-25 11:52:22 [INFO ] [pipeline]   Restored 4892 images with adjusted anchors
+2026-08-25 11:52:22 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-25 11:52:22 [INFO ] [pipeline]   Column 2: 2309 IDs generated
+2026-08-25 11:52:22 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-25 11:52:22 [INFO ] [pipeline]   Column 3: 2309 cells filled
+2026-08-25 11:52:22 [INFO ] [pipeline] [6/12] map_colors
+2026-08-25 11:52:22 [INFO ] [pipeline]   Column 10: 2241 cells mapped, 68 rows skipped (col A has fill), 0 no match (recorded)
+2026-08-25 11:52:22 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-25 11:52:22 [INFO ] [pipeline]   Column 11: 2241 mapped, 68 cleared (col A has fill), 0 no match (recorded)
+2026-08-25 11:52:22 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-25 11:52:22 [INFO ] [pipeline]   Mirror copy: 12468 cells written
+2026-08-25 11:52:22 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-25 11:52:22 [INFO ] [pipeline]   Column 44: 2309 cells copied from col 12
+2026-08-25 11:52:22 [INFO ] [pipeline] [10/12] calc_price
+2026-08-25 11:52:22 [INFO ] [pipeline]   Columns 45-48: 2309 rows calculated
+2026-08-25 11:52:22 [INFO ] [pipeline] [11/12] format_cells
+2026-08-25 11:52:23 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-25 11:52:23 [INFO ] [pipeline]   Formatted 2309 rows: h=50, align=left/center
+2026-08-25 11:52:23 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-25 11:52:23 [INFO ] [pipeline] [12/12] finalize
+2026-08-25 11:52:23 [INFO ] [pipeline]   Done: 2309 rows x 48 cols (target: 48)
+2026-08-25 11:52:23 [INFO ] [pipeline] Pipeline complete
+2026-08-25 11:52:25 [INFO ] [main] Size: 2309 rows x 48 cols
+2026-08-25 11:52:25 [INFO ] [main] ==================================================
+2026-08-25 11:52:25 [INFO ] [main] Done: 8.24v1.xlsx
+2026-08-25 11:52:25 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-25 11:52:25 [INFO ] [jenkins] 
+2026-08-25 11:52:25 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-25 11:52:25 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:52:26 [INFO ] [color_size_main] Source: 8.24v1.xlsx
+2026-08-25 11:52:27 [INFO ] [color_size_main] Extracted: 2241 data lines + 68 separators → check_.txt
+2026-08-25 11:52:27 [INFO ] [color_size_main] Running: process.py
+2026-08-25 11:52:28 [INFO ] [color_size_deal] Groups: 68, lines: 2241 (file: 2309)
+2026-08-25 11:52:28 [INFO ] [color_size_deal] Prefixes: {'01': 28}
+2026-08-25 11:52:28 [INFO ] [color_size_deal] Done.
+2026-08-25 11:52:28 [INFO ] [color_size_main] Processing write-back: 2309 lines
+2026-08-25 11:52:32 [INFO ] [color_size_main] Write-back: 96 written, 2213 unchanged → 8.24v1.xlsx
+2026-08-25 11:52:32 [INFO ] [color_size_main] Done.
+2026-08-25 11:52:32 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-25 11:52:32 [INFO ] [jenkins] 
+2026-08-25 11:52:32 [INFO ] [jenkins] ==================================================
+2026-08-25 11:52:32 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-25 11:52:32 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-25 11:52:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-25 11:52:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-25 11:52:32 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-25 11:56:07 [INFO ] [jenkins] ==================================================
+2026-08-25 11:56:07 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-25 11:56:07 [INFO ] [jenkins] ==================================================
+2026-08-25 11:56:07 [INFO ] [jenkins] 
+2026-08-25 11:56:07 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-25 11:56:07 [INFO ] [jenkins] ------------------------------
+2026-08-25 11:56:07 [INFO ] [title_workflow] Source: 8.24v1.xlsx
+2026-08-25 11:56:09 [INFO ] [title_workflow] Extracted 68 titles + 68 links
+2026-08-25 11:56:09 [INFO ] [title_workflow] Written: origin_title (68) + origin_link (68)
+2026-08-25 11:56:09 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-25 11:56:09 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-25 11:56:09 [INFO ] [deepseek_web] Opening DeepSeek web (68 titles)...
+2026-08-25 11:56:09 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-25 11:56:17 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-25 11:56:19 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-25 11:56:19 [INFO ] [deepseek_web] [1/68] 薄款冲锋衣男女同款休闲防风防水冲锋衣外套
+2026-08-25 11:56:22 [INFO ] [deepseek_web]   Downloaded: 0001_0070912553105012240835.jpg
+2026-08-25 11:56:22 [INFO ] [deepseek_web]   Prefetching next image (2/68)
+2026-08-25 11:56:22 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-25 11:56:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:56:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:56:52 [INFO ] [deepseek_web]   Response: 薄款立领冲锋衣男女同款休闲防风防水外套宽松版型长袖松紧袖口前中拉链胸部竖直口袋侧缝插袋纯色撞色拼接户外运动夹克
+2026-08-25 11:56:52 [INFO ] [deepseek_web]   Deleted: 0001_0070912553105012240835.jpg
+2026-08-25 11:56:57 [INFO ] [deepseek_web] [2/68] 情侣户外冲锋衣女外套薄款透气百搭防风防水冲锋衣
+2026-08-25 11:56:57 [INFO ] [deepseek_web]   Downloaded: 0002_1560926571437912820103.jpg
+2026-08-25 11:56:57 [INFO ] [deepseek_web]   Prefetching next image (3/68)
+2026-08-25 11:56:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:57:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:57:26 [INFO ] [deepseek_web]   Response: 薄款透气防风防水冲锋衣男女同款情侣户外夹克立领长袖撞色拼接前门襟拉链按扣两侧插袋魔术贴袖口百搭休闲外套。
+2026-08-25 11:57:26 [INFO ] [deepseek_web]   Deleted: 0002_1560926571437912820103.jpg
+2026-08-25 11:57:31 [INFO ] [deepseek_web] [3/68] 情侣户外冲锋衣男防风防水百搭休闲冲锋衣女宽松外套潮流
+2026-08-25 11:57:31 [INFO ] [deepseek_web]   Downloaded: 0003_6200936577961110827311.jpg
+2026-08-25 11:57:31 [INFO ] [deepseek_web]   Prefetching next image (4/68)
+2026-08-25 11:57:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:57:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:58:00 [INFO ] [deepseek_web]   Response: 情侣户外冲锋衣男女同款宽松休闲外套防风防水立领长袖前门襟拉链按扣带肩章胸袋侧插袋魔术贴袖口纯色运动夹克。
+2026-08-25 11:58:00 [INFO ] [deepseek_web]   Deleted: 0003_6200936577961110827311.jpg
+2026-08-25 11:58:05 [INFO ] [deepseek_web] [4/68] 春秋户外单层薄款冲锋衣男女同款防风防水透气情侣夹克外套男
+2026-08-25 11:58:05 [INFO ] [deepseek_web]   Downloaded: 0004_5991030370123720340229.jpg
+2026-08-25 11:58:05 [INFO ] [deepseek_web]   Prefetching next image (5/68)
+2026-08-25 11:58:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:58:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:58:35 [INFO ] [deepseek_web]   Response: 春秋户外单层薄款连帽冲锋衣夹克外套男女同款情侣款防风防水透气纯色前门襟拉链连帽抽绳两侧斜插口袋袖口按扣长袖宽松休闲版型
+2026-08-25 11:58:35 [INFO ] [deepseek_web]   Deleted: 0004_5991030370123720340229.jpg
+2026-08-25 11:58:40 [INFO ] [deepseek_web] [5/68] 情侣户外冲锋衣女外套薄款透气百搭防风防水冲锋衣
+2026-08-25 11:58:40 [INFO ] [deepseek_web]   Downloaded: 0005_4311041037714920888437.jpg
+2026-08-25 11:58:40 [INFO ] [deepseek_web]   Prefetching next image (6/68)
+2026-08-25 11:58:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:58:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:59:09 [INFO ] [deepseek_web]   Response: 薄款户外冲锋衣外套情侣男女同款防风防水透气宽松立领长袖撞色拼接前门襟按扣胸前斜向拉链口袋侧缝插袋魔术贴袖口休闲百搭。
+2026-08-25 11:59:09 [INFO ] [deepseek_web]   Deleted: 0005_4311041037714920888437.jpg
+2026-08-25 11:59:14 [INFO ] [deepseek_web] [6/68] 女士时尚防风外套修身风衣防风冲锋衣夹克外套
+2026-08-25 11:59:14 [INFO ] [deepseek_web]   Downloaded: 0006_3101011476233452019359.jpg
+2026-08-25 11:59:14 [INFO ] [deepseek_web]   Prefetching next image (7/68)
+2026-08-25 11:59:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:59:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 11:59:43 [INFO ] [deepseek_web]   Response: 女士修身连帽冲锋衣夹克外套防风防水面料纯色长袖前中拉链两侧黑色拉链口袋松紧袖口连帽及下摆抽绳可调节户外休闲运动风衣
+2026-08-25 11:59:43 [INFO ] [deepseek_web]   Deleted: 0006_3101011476233452019359.jpg
+2026-08-25 11:59:48 [INFO ] [deepseek_web] [7/68] 女士时尚休闲连帽纯色防风冲锋衣夹克
+2026-08-25 11:59:48 [INFO ] [deepseek_web]   Downloaded: 0007_9670430120672320137093.jpg
+2026-08-25 11:59:48 [INFO ] [deepseek_web]   Prefetching next image (8/68)
+2026-08-25 11:59:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 11:59:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:00:17 [INFO ] [deepseek_web]   Response: 女士宽松连帽冲锋衣夹克纯色长袖前门襟拉链胸部及两侧拉链口袋魔术贴袖口下摆抽绳防风防水户外休闲运动外套。
+2026-08-25 12:00:17 [INFO ] [deepseek_web]   Deleted: 0007_9670430120672320137093.jpg
+2026-08-25 12:00:22 [INFO ] [deepseek_web] [8/68] 女士秋季户外男女同款夹克个性潮流百搭连帽外套冲锋衣
+2026-08-25 12:00:22 [INFO ] [deepseek_web]   Downloaded: 0008_0321125262241212059434.jpg
+2026-08-25 12:00:22 [INFO ] [deepseek_web]   Prefetching next image (9/68)
+2026-08-25 12:00:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:00:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:00:51 [INFO ] [deepseek_web]   Response: 女士秋季户外冲锋衣夹克男女同款宽松版型连帽抽绳长袖前门襟拉链两侧口袋魔术贴袖口下摆抽绳防风防水透气纯色百搭休闲运动外套。
+2026-08-25 12:00:51 [INFO ] [deepseek_web]   Deleted: 0008_0321125262241212059434.jpg
+2026-08-25 12:00:56 [INFO ] [deepseek_web] [9/68] 女士秋季男女新款户外个性时尚百搭单层连帽冲锋衣
+2026-08-25 12:00:56 [INFO ] [deepseek_web]   Downloaded: 0009_1201108485811219724091.jpg
+2026-08-25 12:00:56 [INFO ] [deepseek_web]   Prefetching next image (10/68)
+2026-08-25 12:00:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:01:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:01:28 [INFO ] [deepseek_web]   Response: 女士秋季户外百搭单层连帽冲锋衣男女同款宽松版型防风防水撞色拼接长袖前门襟拉链按扣两侧拉链口袋魔术贴袖口下摆抽绳休闲外套。
+2026-08-25 12:01:28 [INFO ] [deepseek_web]   Deleted: 0009_1201108485811219724091.jpg
+2026-08-25 12:01:33 [INFO ] [deepseek_web] [10/68] 女士多口袋美式夹克外套工装休闲冲锋衣
+2026-08-25 12:01:33 [INFO ] [deepseek_web]   Downloaded: 0010_1430604335863656768278.jpg
+2026-08-25 12:01:33 [INFO ] [deepseek_web]   Prefetching next image (11/68)
+2026-08-25 12:01:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:01:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:02:03 [INFO ] [deepseek_web]   Response: 女士连帽多口袋美式工装休闲冲锋衣夹克纯色长袖前门襟拉链两侧斜向拉链口袋魔术贴袖口连帽及下摆抽绳防风防水宽松外套。
+2026-08-25 12:02:03 [INFO ] [deepseek_web]   Deleted: 0010_1430604335863656768278.jpg
+2026-08-25 12:02:08 [INFO ] [deepseek_web] [11/68] 儿童秋季防风防水冲锋衣外套
+2026-08-25 12:02:08 [INFO ] [deepseek_web]   Downloaded: 0011_4731109285629072494437.jpg
+2026-08-25 12:02:08 [INFO ] [deepseek_web]   Prefetching next image (12/68)
+2026-08-25 12:02:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:02:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:02:37 [INFO ] [deepseek_web]   Response: 儿童秋季防风防水冲锋衣外套连帽长袖蓝白撞色拼接前门襟拉链胸前及两侧拉链口袋松紧袖口户外休闲宽松版型。
+2026-08-25 12:02:37 [INFO ] [deepseek_web]   Deleted: 0011_4731109285629072494437.jpg
+2026-08-25 12:02:42 [INFO ] [deepseek_web] [12/68] 冲锋衣情侣春秋外套户外防风防水登山服休闲冲锋衣
+2026-08-25 12:02:42 [INFO ] [deepseek_web]   Downloaded: 0012_7020808438271484287032.jpg
+2026-08-25 12:02:42 [INFO ] [deepseek_web]   Prefetching next image (13/68)
+2026-08-25 12:02:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:02:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:03:11 [INFO ] [deepseek_web]   Response: 冲锋衣情侣男女同款春秋户外防风防水宽松版型长袖立领纯色前门襟拉链胸前及两侧拉链口袋松紧袖口下摆抽绳登山休闲外套。
+2026-08-25 12:03:11 [INFO ] [deepseek_web]   Deleted: 0012_7020808438271484287032.jpg
+2026-08-25 12:03:16 [INFO ] [deepseek_web] [13/68] 户外冲锋衣男女情侣款登山服拼色带帽加厚防水防
+2026-08-25 12:03:16 [INFO ] [deepseek_web]   Downloaded: 0013_2891055531157568817308.jpg
+2026-08-25 12:03:16 [INFO ] [deepseek_web]   Prefetching next image (14/68)
+2026-08-25 12:03:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:03:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:03:45 [INFO ] [deepseek_web]   Response: 户外冲锋衣男女情侣款登山服拼色连帽加厚宽松版型长袖前门襟拉链按扣两侧拉链口袋魔术贴袖口下摆抽绳防风防水休闲外套。
+2026-08-25 12:03:45 [INFO ] [deepseek_web]   Deleted: 0013_2891055531157568817308.jpg
+2026-08-25 12:03:50 [INFO ] [deepseek_web] [14/68] 男女同款冲锋衣户外风衣外套夹克休闲宽松
+2026-08-25 12:03:50 [INFO ] [deepseek_web]   Downloaded: 0014_7830435459932533173369.jpg
+2026-08-25 12:03:50 [INFO ] [deepseek_web]   Prefetching next image (15/68)
+2026-08-25 12:03:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:04:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:04:19 [INFO ] [deepseek_web]   Response: 男女同款户外冲锋衣夹克宽松连帽长袖纯色前门襟拉链按扣左臂徽标胸袋侧插袋魔术贴袖口下摆抽绳防风防水休闲风衣外套。
+2026-08-25 12:04:19 [INFO ] [deepseek_web]   Deleted: 0014_7830435459932533173369.jpg
+2026-08-25 12:04:24 [INFO ] [deepseek_web] [15/68] 冲锋衣防风防水户外连帽中长款时尚百搭外套
+2026-08-25 12:04:24 [INFO ] [deepseek_web]   Downloaded: 0015_0901127393871322277806.jpg
+2026-08-25 12:04:24 [INFO ] [deepseek_web]   Prefetching next image (16/68)
+2026-08-25 12:04:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:04:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:04:53 [INFO ] [deepseek_web]   Response: 连帽中长款冲锋衣外套男女同款宽松版型纯色长袖松紧袖口前门襟拉链按扣两侧翻盖按扣口袋连帽抽绳防风防水户外休闲
+2026-08-25 12:04:53 [INFO ] [deepseek_web]   Deleted: 0015_0901127393871322277806.jpg
+2026-08-25 12:04:58 [INFO ] [deepseek_web] [16/68] 男女冲锋衣外套新款加厚连帽工装时尚宽松户外登山服
+2026-08-25 12:04:58 [INFO ] [deepseek_web]   Downloaded: 0016_3261029537085648982701.jpg
+2026-08-25 12:04:58 [INFO ] [deepseek_web]   Prefetching next image (17/68)
+2026-08-25 12:04:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:05:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:05:28 [INFO ] [deepseek_web]   Response: 男女同款加厚连帽冲锋衣外套防风防水宽松工装户外登山服纯色多口袋长袖胸前双拉链口袋两侧拉链口袋松紧袖口下摆抽绳夹克。
+2026-08-25 12:05:28 [INFO ] [deepseek_web]   Deleted: 0016_3261029537085648982701.jpg
+2026-08-25 12:05:33 [INFO ] [deepseek_web] [17/68] 春秋连帽户外冲锋衣女薄款休闲外套青年防风单衣多色工装
+2026-08-25 12:05:33 [INFO ] [deepseek_web]   Downloaded: 0017_2471032436164918909338.jpg
+2026-08-25 12:05:33 [INFO ] [deepseek_web]   Prefetching next image (18/68)
+2026-08-25 12:05:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:05:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:06:02 [INFO ] [deepseek_web]   Response: 春秋女式薄款连帽冲锋衣外套宽松休闲防风防水户外工装多色单衣青年长袖前门襟拉链胸前双拉链口袋侧插袋魔术贴袖口下摆抽绳D型环
+2026-08-25 12:06:02 [INFO ] [deepseek_web]   Deleted: 0017_2471032436164918909338.jpg
+2026-08-25 12:06:07 [INFO ] [deepseek_web] [18/68] 春秋单层薄款冲锋衣男女同款工装夹克防风耐脏外套连帽
+2026-08-25 12:06:07 [INFO ] [deepseek_web]   Downloaded: 0018_3781120547895079990855.jpg
+2026-08-25 12:06:07 [INFO ] [deepseek_web]   Prefetching next image (19/68)
+2026-08-25 12:06:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:06:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:06:36 [INFO ] [deepseek_web]   Response: 春秋单层薄款冲锋衣连帽夹克男女同款宽松版型长袖魔术贴袖口前门襟拉链按扣左胸竖拉链口袋侧缝斜插袋手臂圆形徽章连帽抽绳防风耐脏防泼水工装户外休闲外套
+2026-08-25 12:06:36 [INFO ] [deepseek_web]   Deleted: 0018_3781120547895079990855.jpg
+2026-08-25 12:06:41 [INFO ] [deepseek_web] [19/68] 欧美新款女装热卖防水防风风衣连帽外套拉链冲锋衣
+2026-08-25 12:06:41 [INFO ] [deepseek_web]   Downloaded: 0019_9431049185619684687462.jpg
+2026-08-25 12:06:41 [INFO ] [deepseek_web]   Prefetching next image (20/68)
+2026-08-25 12:06:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:06:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:07:10 [INFO ] [deepseek_web]   Response: 女式连帽冲锋衣外套轻便防水防风纯色长袖前门襟拉链两侧插袋松紧袖口连帽抽绳带收纳袋户外休闲风衣。
+2026-08-25 12:07:10 [INFO ] [deepseek_web]   Deleted: 0019_9431049185619684687462.jpg
+2026-08-25 12:07:15 [INFO ] [deepseek_web] [20/68] 欧美女装热卖防水防风风衣连帽外套拉链冲锋衣
+2026-08-25 12:07:15 [INFO ] [deepseek_web]   Downloaded: 0020_0031040379709186353891.jpg
+2026-08-25 12:07:15 [INFO ] [deepseek_web]   Prefetching next image (21/68)
+2026-08-25 12:07:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:07:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:07:44 [INFO ] [deepseek_web]   Response: 女士连帽冲锋衣风衣外套防水防风可收纳长袖前门襟拉链连帽抽绳两侧斜插袋松紧袖口宽松版型户外休闲。
+2026-08-25 12:07:44 [INFO ] [deepseek_web]   Deleted: 0020_0031040379709186353891.jpg
+2026-08-25 12:07:49 [INFO ] [deepseek_web] [21/68] 女士新款欧美女装休闲夹克户外防水连帽外套冲锋衣
+2026-08-25 12:07:49 [INFO ] [deepseek_web]   Downloaded: 0021_6500441247612621441258.jpg
+2026-08-25 12:07:49 [INFO ] [deepseek_web]   Prefetching next image (22/68)
+2026-08-25 12:07:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:08:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:08:18 [INFO ] [deepseek_web]   Response: 女士连帽冲锋衣夹克户外防水防风休闲外套长袖纯色前门襟拉链胸前竖直拉链口袋两侧斜插拉链口袋松紧袖口连帽抽绳轻薄可收纳。
+2026-08-25 12:08:18 [INFO ] [deepseek_web]   Deleted: 0021_6500441247612621441258.jpg
+2026-08-25 12:08:23 [INFO ] [deepseek_web] [22/68] 情侣反光冲锋衣
+2026-08-25 12:08:23 [INFO ] [deepseek_web]   Downloaded: 0022_3831111578241310348707.jpg
+2026-08-25 12:08:23 [INFO ] [deepseek_web]   Prefetching next image (23/68)
+2026-08-25 12:08:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:08:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:08:52 [INFO ] [deepseek_web]   Response: 情侣反光冲锋衣男女同款连帽长袖宽松休闲防风防水外套全反光面料前门襟黑色拉链带抽绳松紧袖口两侧斜插袋户外夜跑安全夹克。
+2026-08-25 12:08:52 [INFO ] [deepseek_web]   Deleted: 0022_3831111578241310348707.jpg
+2026-08-25 12:08:57 [INFO ] [deepseek_web] [23/68] 春秋新款户外休闲三合一冲锋衣连帽外套男士潮牌工装美式夹克
+2026-08-25 12:08:57 [INFO ] [deepseek_web]   Downloaded: 0023_5341033576516925609401.jpg
+2026-08-25 12:08:57 [INFO ] [deepseek_web]   Prefetching next image (24/68)
+2026-08-25 12:08:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:09:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:09:27 [INFO ] [deepseek_web]   Response: 春秋户外男士三合一冲锋衣连帽夹克外套长袖宽松版型美式工装休闲纯色防风防水前门襟拉链按扣胸前口袋两侧插袋魔术贴袖口下摆抽绳。
+2026-08-25 12:09:27 [INFO ] [deepseek_web]   Deleted: 0023_5341033576516925609401.jpg
+2026-08-25 12:09:32 [INFO ] [deepseek_web] [24/68] 软壳衣冲锋衣上衣男夹克宽松机能冲锋衣外套
+2026-08-25 12:09:32 [INFO ] [deepseek_web]   Downloaded: 0024_7031010467424519517161.jpg
+2026-08-25 12:09:32 [INFO ] [deepseek_web]   Prefetching next image (25/68)
+2026-08-25 12:09:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:09:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:10:01 [INFO ] [deepseek_web]   Response: 男士宽松软壳冲锋衣机能夹克外套连帽抽绳长袖前门襟拉链两侧斜拉链口袋松紧袖口防风防水户外休闲。
+2026-08-25 12:10:01 [INFO ] [deepseek_web]   Deleted: 0024_7031010467424519517161.jpg
+2026-08-25 12:10:06 [INFO ] [deepseek_web] [25/68] 女士纯色拉链连帽冲锋衣休闲户外运动薄款防风外套
+2026-08-25 12:10:06 [INFO ] [deepseek_web]   Downloaded: 0025_8270505488213452502565.jpg
+2026-08-25 12:10:06 [INFO ] [deepseek_web]   Prefetching next image (26/68)
+2026-08-25 12:10:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:10:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:10:35 [INFO ] [deepseek_web]   Response: 女士纯色薄款连帽冲锋衣外套拉链按扣门襟抽绳领口两侧口袋松紧袖口防水防风休闲户外运动
+2026-08-25 12:10:35 [INFO ] [deepseek_web]   Deleted: 0025_8270505488213452502565.jpg
+2026-08-25 12:10:40 [INFO ] [deepseek_web] [26/68] 女士纯色时尚冲锋衣洋气防水风衣外套
+2026-08-25 12:10:40 [INFO ] [deepseek_web]   Downloaded: 0026_4010428533912615336079.jpg
+2026-08-25 12:10:40 [INFO ] [deepseek_web]   Prefetching next image (27/68)
+2026-08-25 12:10:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:10:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:11:09 [INFO ] [deepseek_web]   Response: 女士长款连帽冲锋衣防水风衣外套纯色宽松版型长袖松紧袖口前门襟拉链两侧口袋户外休闲。
+2026-08-25 12:11:09 [INFO ] [deepseek_web]   Deleted: 0026_4010428533912615336079.jpg
+2026-08-25 12:11:14 [INFO ] [deepseek_web] [27/68] 男女同款户外运动情侣款登山服软壳冲锋衣连帽风衣夹克外套男女软壳衣休闲夹克
+2026-08-25 12:11:14 [INFO ] [deepseek_web]   Downloaded: 0027_5481033456908312167711.jpg
+2026-08-25 12:11:14 [INFO ] [deepseek_web]   Prefetching next image (28/68)
+2026-08-25 12:11:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:11:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:11:43 [INFO ] [deepseek_web]   Response: 男女同款情侣软壳冲锋衣连帽风衣夹克外套长袖纯色前门襟拉链两侧斜插拉链口袋魔术贴袖口防风防泼水户外休闲登山服。
+2026-08-25 12:11:43 [INFO ] [deepseek_web]   Deleted: 0027_5481033456908312167711.jpg
+2026-08-25 12:11:48 [INFO ] [deepseek_web] [28/68] 女士欧美女式风衣春秋季新款防水防风冲锋衣外套风衣女休闲夹克
+2026-08-25 12:11:48 [INFO ] [deepseek_web]   Downloaded: 0028_2090444403132713909524.jpg
+2026-08-25 12:11:48 [INFO ] [deepseek_web]   Prefetching next image (29/68)
+2026-08-25 12:11:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:11:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:12:17 [INFO ] [deepseek_web]   Response: 女士冲锋衣风衣休闲夹克外套纯色中长款连帽抽绳前门襟拉链按扣两侧插袋松紧袖口腰部收腰抽绳防风防水春秋户外。
+2026-08-25 12:12:17 [INFO ] [deepseek_web]   Deleted: 0028_2090444403132713909524.jpg
+2026-08-25 12:12:22 [INFO ] [deepseek_web] [29/68] 女士外套拉链帽衫纯色轻量级户外防雨夹克冲锋衣休闲夹克雨季专用
+2026-08-25 12:12:22 [INFO ] [deepseek_web]   Downloaded: 0029_2491035149275093625989.jpg
+2026-08-25 12:12:22 [INFO ] [deepseek_web]   Prefetching next image (30/68)
+2026-08-25 12:12:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:12:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:12:52 [INFO ] [deepseek_web]   Response: 女士纯色连帽轻量级防雨冲锋衣夹克外套长袖前门襟白色拉链两侧插袋松紧袖口腰部抽绳收腰户外休闲
+2026-08-25 12:12:52 [INFO ] [deepseek_web]   Deleted: 0029_2491035149275093625989.jpg
+2026-08-25 12:12:57 [INFO ] [deepseek_web] [30/68] 女童冲锋衣三合一儿童加绒外套春秋冬女孩户外两件套(2-16Y)
+2026-08-25 12:12:57 [INFO ] [deepseek_web]   Downloaded: 0030_5070356556342622081943.jpg
+2026-08-25 12:12:57 [INFO ] [deepseek_web]   Prefetching next image (31/68)
+2026-08-25 12:12:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:13:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:13:26 [INFO ] [deepseek_web]   Response: 女童三合一冲锋衣儿童加绒外套户外两件套连帽长袖前门襟拉链按扣两侧斜插拉链口袋松紧袖口内胆立领防风防水保暖春秋冬(2-16Y)
+2026-08-25 12:13:26 [INFO ] [deepseek_web]   Deleted: 0030_5070356556342622081943.jpg
+2026-08-25 12:13:31 [INFO ] [deepseek_web] [31/68] 女士休闲纯色花苞短外套户外冲锋衣长袖高领夹克外套
+2026-08-25 12:13:31 [INFO ] [deepseek_web]   Downloaded: 0031_6090309470141825964773.jpg
+2026-08-25 12:13:31 [INFO ] [deepseek_web]   Prefetching next image (32/68)
+2026-08-25 12:13:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:13:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:14:00 [INFO ] [deepseek_web]   Response: 女士休闲纯色连帽高领冲锋衣夹克短外套长袖前门襟拉链两侧插袋松紧袖口下摆抽绳花苞收腰防风防水户外运动。
+2026-08-25 12:14:00 [INFO ] [deepseek_web]   Deleted: 0031_6090309470141825964773.jpg
+2026-08-25 12:14:05 [INFO ] [deepseek_web] [32/68] 2025女士新款时尚印花户外运动服冲锋衣外套长袖连帽休闲外套
+2026-08-25 12:14:05 [INFO ] [deepseek_web]   Downloaded: 0032_5380146086375114736648.jpg
+2026-08-25 12:14:05 [INFO ] [deepseek_web]   Prefetching next image (33/68)
+2026-08-25 12:14:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:14:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:14:34 [INFO ] [deepseek_web]   Response: 女士印花连帽冲锋衣外套中长款长袖前门襟拉链按扣两侧翻盖按扣口袋腰部抽绳袖口按扣防风防水户外休闲运动。
+2026-08-25 12:14:34 [INFO ] [deepseek_web]   Deleted: 0032_5380146086375114736648.jpg
+2026-08-25 12:14:39 [INFO ] [deepseek_web] [33/68] 女款冲锋衣春秋薄款风衣夹克外套防水防风
+2026-08-25 12:14:39 [INFO ] [deepseek_web]   Downloaded: 0033_8970310533973810955635.jpg
+2026-08-25 12:14:39 [INFO ] [deepseek_web]   Prefetching next image (34/68)
+2026-08-25 12:14:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:14:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:15:08 [INFO ] [deepseek_web]   Response: 女款春秋薄款冲锋衣风衣夹克外套防水防风立领长袖拼色撞色前门襟拉链按扣两侧拉链口袋左臂拉链袖袋户外休闲运动。
+2026-08-25 12:15:08 [INFO ] [deepseek_web]   Deleted: 0033_8970310533973810955635.jpg
+2026-08-25 12:15:13 [INFO ] [deepseek_web] [34/68] 女式新款户外立领冲锋衣防风防水外套
+2026-08-25 12:15:13 [INFO ] [deepseek_web]   Downloaded: 0034_7390459191605019723210.jpg
+2026-08-25 12:15:13 [INFO ] [deepseek_web]   Prefetching next image (35/68)
+2026-08-25 12:15:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:15:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:15:42 [INFO ] [deepseek_web]   Response: 女式户外立领冲锋衣外套防风防水长袖纯色黑色线条拼接前门襟拉链侧缝插袋松紧袖口松紧下摆休闲运动
+2026-08-25 12:15:42 [INFO ] [deepseek_web]   Deleted: 0034_7390459191605019723210.jpg
+2026-08-25 12:15:47 [INFO ] [deepseek_web] [35/68] 新款冲锋衣防风防水户外薄款登山服男女款情侣款春秋外套
+2026-08-25 12:15:47 [INFO ] [deepseek_web]   Downloaded: 0035_6161106030107511378970.jpg
+2026-08-25 12:15:47 [INFO ] [deepseek_web]   Prefetching next image (36/68)
+2026-08-25 12:15:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:15:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:16:16 [INFO ] [deepseek_web]   Response: 春秋薄款冲锋衣外套男女同款情侣户外登山服宽松版型连帽立领双色撞色拼接前门襟拉链按扣两侧斜插袋魔术贴袖口防风防水休闲夹克。
+2026-08-25 12:16:16 [INFO ] [deepseek_web]   Deleted: 0035_6161106030107511378970.jpg
+2026-08-25 12:16:21 [INFO ] [deepseek_web] [36/68] 女士软壳防风防水登山服单层冲锋衣外壳无内胆
+2026-08-25 12:16:21 [INFO ] [deepseek_web]   Downloaded: 0036_5090432503023312118148.jpg
+2026-08-25 12:16:21 [INFO ] [deepseek_web]   Prefetching next image (37/68)
+2026-08-25 12:16:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:16:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:16:50 [INFO ] [deepseek_web]   Response: 女士单层软壳冲锋衣外壳户外登山服无内胆防风防水纯色宽松版型长袖连帽立领抽绳前门襟拉链按扣胸前及两侧拉链口袋魔术贴袖口下摆抽绳
+2026-08-25 12:16:50 [INFO ] [deepseek_web]   Deleted: 0036_5090432503023312118148.jpg
+2026-08-25 12:16:55 [INFO ] [deepseek_web] [37/68] 春季硬壳冲锋衣立领户外防风运动休闲外套防水拉链徒步登山服
+2026-08-25 12:16:55 [INFO ] [deepseek_web]   Downloaded: 0037_3720923449714615379075.jpg
+2026-08-25 12:16:55 [INFO ] [deepseek_web]   Prefetching next image (38/68)
+2026-08-25 12:16:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:17:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:17:25 [INFO ] [deepseek_web]   Response: 春季硬壳冲锋衣女士立领防风防水户外运动休闲外套宽松版型纯色长袖前门襟拉链两侧斜拉链口袋松紧袖口下摆抽绳徒步登山服。
+2026-08-25 12:17:25 [INFO ] [deepseek_web]   Deleted: 0037_3720923449714615379075.jpg
+2026-08-25 12:17:30 [INFO ] [deepseek_web] [38/68] 儿童外套女孩防水冲锋衣户外夹克防风衣（1-8Y）
+2026-08-25 12:17:30 [INFO ] [deepseek_web]   Downloaded: 0038_7140433215571220902982.jpg
+2026-08-25 12:17:30 [INFO ] [deepseek_web]   Prefetching next image (39/68)
+2026-08-25 12:17:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:17:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:17:59 [INFO ] [deepseek_web]   Response: 儿童女童连帽冲锋衣外套（1-8Y）防水防风户外夹克满印太阳卡通图案长袖前门襟拉链两侧斜插袋松紧袖口连帽抽绳休闲防风衣
+2026-08-25 12:17:59 [INFO ] [deepseek_web]   Deleted: 0038_7140433215571220902982.jpg
+2026-08-25 12:18:04 [INFO ] [deepseek_web] [39/68] 大码女士户外运动服冲锋衣轻便连帽收腰外套
+2026-08-25 12:18:04 [INFO ] [deepseek_web]   Downloaded: 0039_9540153526681520251921.jpg
+2026-08-25 12:18:04 [INFO ] [deepseek_web]   Prefetching next image (40/68)
+2026-08-25 12:18:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:18:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:18:33 [INFO ] [deepseek_web]   Response: 大码女士户外运动服轻便冲锋衣外套中长款连帽抽绳长袖松紧袖口前门襟拉链两侧斜插袋腰部抽绳收腰防风防水休闲夹克
+2026-08-25 12:18:33 [INFO ] [deepseek_web]   Deleted: 0039_9540153526681520251921.jpg
+2026-08-25 12:18:38 [INFO ] [deepseek_web] [40/68] 女士防水外套修身风衣防风冲锋衣
+2026-08-25 12:18:38 [INFO ] [deepseek_web]   Downloaded: 0040_9330433559623425742421.jpg
+2026-08-25 12:18:38 [INFO ] [deepseek_web]   Prefetching next image (41/68)
+2026-08-25 12:18:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:18:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:19:07 [INFO ] [deepseek_web]   Response: 女士修身风衣冲锋衣外套连帽纯色长袖前门襟拉链两侧斜插袋松紧袖口松紧下摆轻便防水防风户外休闲。
+2026-08-25 12:19:07 [INFO ] [deepseek_web]   Deleted: 0040_9330433559623425742421.jpg
+2026-08-25 12:19:12 [INFO ] [deepseek_web] [41/68] 女士长款风衣休闲夹克外套冲锋衣登山服
+2026-08-25 12:19:12 [INFO ] [deepseek_web]   Downloaded: 0041_3791122213911315152709.jpg
+2026-08-25 12:19:12 [INFO ] [deepseek_web]   Prefetching next image (42/68)
+2026-08-25 12:19:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:19:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:19:41 [INFO ] [deepseek_web]   Response: 女士长款冲锋衣风衣休闲夹克外套登山服连帽抽绳长袖前门襟拉链按扣两侧翻盖按扣口袋防风防水户外运动。
+2026-08-25 12:19:41 [INFO ] [deepseek_web]   Deleted: 0041_3791122213911315152709.jpg
+2026-08-25 12:19:46 [INFO ] [deepseek_web] [42/68] 女士夏款防风防水冲锋衣防紫外线健身跑步运动外套立领抽绳上衣
+2026-08-25 12:19:46 [INFO ] [deepseek_web]   Downloaded: 0042_9740953531876382409500.jpg
+2026-08-25 12:19:46 [INFO ] [deepseek_web]   Prefetching next image (43/68)
+2026-08-25 12:19:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:19:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:20:15 [INFO ] [deepseek_web]   Response: 女士夏款薄款冲锋衣运动外套立领半拉链长袖松紧袖口下摆抽绳两侧插袋宽松版型纯色防风防水防紫外线户外健身跑步休闲上衣
+2026-08-25 12:20:15 [INFO ] [deepseek_web]   Deleted: 0042_9740953531876382409500.jpg
+2026-08-25 12:20:20 [INFO ] [deepseek_web] [43/68] 情侣款冲锋衣男女宽松户外夹克登山服薄运动夹克
+2026-08-25 12:20:20 [INFO ] [deepseek_web]   Downloaded: 0043_1150928227954319994596.jpg
+2026-08-25 12:20:20 [INFO ] [deepseek_web]   Prefetching next image (44/68)
+2026-08-25 12:20:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:20:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:20:49 [INFO ] [deepseek_web]   Response: 情侣款冲锋衣男女同款薄款户外登山服宽松运动夹克连帽抽绳长袖前门襟拉链按扣胸前竖直拉链口袋两侧插袋魔术贴袖口下摆抽绳防风防水。
+2026-08-25 12:20:49 [INFO ] [deepseek_web]   Deleted: 0043_1150928227954319994596.jpg
+2026-08-25 12:20:54 [INFO ] [deepseek_web] [44/68] 男士新款冲锋衣男女同款秋季防风防水登山服外套情侣款夹克
+2026-08-25 12:20:54 [INFO ] [deepseek_web]   Downloaded: 0044_4811042296232391803601.jpg
+2026-08-25 12:20:54 [INFO ] [deepseek_web]   Prefetching next image (45/68)
+2026-08-25 12:20:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:21:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:21:24 [INFO ] [deepseek_web]   Response: 连帽撞色拼接冲锋衣夹克外套男女同款情侣款秋季防风防水户外登山服宽松版型长袖前门襟拉链按扣两侧插袋胸前拉链口袋松紧袖口下摆抽绳。
+2026-08-25 12:21:24 [INFO ] [deepseek_web]   Deleted: 0044_4811042296232391803601.jpg
+2026-08-25 12:21:29 [INFO ] [deepseek_web] [45/68] 男女春秋季户外防水冲锋衣防风登山服外套
+2026-08-25 12:21:29 [INFO ] [deepseek_web]   Downloaded: 0045_9951038083247424467826.jpg
+2026-08-25 12:21:29 [INFO ] [deepseek_web]   Prefetching next image (46/68)
+2026-08-25 12:21:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:21:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:21:58 [INFO ] [deepseek_web]   Response: 男女同款春秋户外防水防风冲锋衣外套连帽抽绳长袖宽松版型工装多口袋胸前翻盖口袋及竖拉链口袋魔术贴袖口下摆抽绳左袖徽标贴标登山服。
+2026-08-25 12:21:58 [INFO ] [deepseek_web]   Deleted: 0045_9951038083247424467826.jpg
+2026-08-25 12:22:03 [INFO ] [deepseek_web] [46/68] 夹克冲锋衣春秋季休闲大码宽松外套情侣户外工装登山服骑行服
+2026-08-25 12:22:03 [INFO ] [deepseek_web]   Downloaded: 0046_0380449197043015194628.jpg
+2026-08-25 12:22:03 [INFO ] [deepseek_web]   Prefetching next image (47/68)
+2026-08-25 12:22:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:22:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:22:32 [INFO ] [deepseek_web]   Response: 春秋季大码宽松冲锋衣夹克情侣款男女同款连帽抽绳长袖前门襟拉链胸口拉链口袋侧缝插袋松紧袖口纯色防风防水休闲户外工装登山骑行服。
+2026-08-25 12:22:32 [INFO ] [deepseek_web]   Deleted: 0046_0380449197043015194628.jpg
+2026-08-25 12:22:37 [INFO ] [deepseek_web] [47/68] 冲锋衣外套男女早春潮牌户外拉链潮酷防水防风透气冲锋衣
+2026-08-25 12:22:37 [INFO ] [deepseek_web]   Downloaded: 0047_7421107473545919423393.jpg
+2026-08-25 12:22:37 [INFO ] [deepseek_web]   Prefetching next image (48/68)
+2026-08-25 12:22:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:22:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:23:06 [INFO ] [deepseek_web]   Response: 男女同款宽松冲锋衣外套户外休闲运动透气防水防风连帽抽绳长袖前门襟拉链按扣胸前竖直拉链口袋两侧斜插袋魔术贴袖口。
+2026-08-25 12:23:06 [INFO ] [deepseek_web]   Deleted: 0047_7421107473545919423393.jpg
+2026-08-25 12:23:11 [INFO ] [deepseek_web] [48/68] 男女早春潮牌户外拉链潮酷防水防风透气冲锋衣外套
+2026-08-25 12:23:11 [INFO ] [deepseek_web]   Downloaded: 0048_1130321046572091260190.jpg
+2026-08-25 12:23:11 [INFO ] [deepseek_web]   Prefetching next image (49/68)
+2026-08-25 12:23:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:23:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:23:40 [INFO ] [deepseek_web]   Response: 早春男女同款宽松冲锋衣外套户外连帽抽绳长袖前门襟拉链按扣胸部拉链口袋两侧斜插口袋魔术贴袖口防风防水透气休闲夹克。
+2026-08-25 12:23:40 [INFO ] [deepseek_web]   Deleted: 0048_1130321046572091260190.jpg
+2026-08-25 12:23:45 [INFO ] [deepseek_web] [49/68] 男女同款美式宽松防风冲锋衣户外潮流外套
+2026-08-25 12:23:45 [INFO ] [deepseek_web]   Downloaded: 0049_4180252286681856369061.jpg
+2026-08-25 12:23:45 [INFO ] [deepseek_web]   Prefetching next image (50/68)
+2026-08-25 12:23:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:23:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:24:15 [INFO ] [deepseek_web]   Response: 男女同款美式宽松冲锋衣外套连帽抽绳长袖前门襟拉链按扣两侧斜插袋魔术贴袖口下摆抽绳臂部标识防风防水户外休闲夹克。
+2026-08-25 12:24:15 [INFO ] [deepseek_web]   Deleted: 0049_4180252286681856369061.jpg
+2026-08-25 12:24:20 [INFO ] [deepseek_web] [50/68] 女式纯色轻便便携连帽风衣冲锋衣
+2026-08-25 12:24:20 [INFO ] [deepseek_web]   Downloaded: 0050_8891115592794717865070.jpg
+2026-08-25 12:24:20 [INFO ] [deepseek_web]   Prefetching next image (51/68)
+2026-08-25 12:24:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:24:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:24:49 [INFO ] [deepseek_web]   Response: 女式纯色轻便便携连帽风衣冲锋衣外套宽松版型长袖前门襟拉链两侧斜插袋松紧袖口连帽下摆抽绳户外休闲。
+2026-08-25 12:24:49 [INFO ] [deepseek_web]   Deleted: 0050_8891115592794717865070.jpg
+2026-08-25 12:24:54 [INFO ] [deepseek_web] [51/68] 冲锋衣夹克短款
+2026-08-25 12:24:54 [INFO ] [deepseek_web]   Downloaded: 0051_4721110338351264127495.jpg
+2026-08-25 12:24:54 [INFO ] [deepseek_web]   Prefetching next image (52/68)
+2026-08-25 12:24:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:25:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:25:23 [INFO ] [deepseek_web]   Response: 女式短款冲锋衣夹克连帽抽绳长袖前门襟拉链两侧斜插袋松紧袖口下摆纯色防风防水宽松户外休闲外套。
+2026-08-25 12:25:23 [INFO ] [deepseek_web]   Deleted: 0051_4721110338351264127495.jpg
+2026-08-25 12:25:28 [INFO ] [deepseek_web] [52/68] 冲锋衣外套女士
+2026-08-25 12:25:28 [INFO ] [deepseek_web]   Downloaded: 0052_6610422234081315634528.jpg
+2026-08-25 12:25:28 [INFO ] [deepseek_web]   Prefetching next image (53/68)
+2026-08-25 12:25:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:25:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:25:57 [INFO ] [deepseek_web]   Response: 女士冲锋衣外套立领纯色长袖前门襟拉链两侧斜插袋松紧袖口下摆宽松轻便休闲户外防风。
+2026-08-25 12:25:57 [INFO ] [deepseek_web]   Deleted: 0052_6610422234081315634528.jpg
+2026-08-25 12:26:02 [INFO ] [deepseek_web] [53/68] 工装外套上衣连帽冲锋衣
+2026-08-25 12:26:02 [INFO ] [deepseek_web]   Downloaded: 0053_3720405582901113967854.jpg
+2026-08-25 12:26:02 [INFO ] [deepseek_web]   Prefetching next image (54/68)
+2026-08-25 12:26:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:26:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:26:31 [INFO ] [deepseek_web]   Response: 女式连帽冲锋衣工装外套上衣户外休闲防风防水轻便纯色宽松版型长袖前门襟拉链两侧斜插袋松紧袖口连帽抽绳下摆抽绳。
+2026-08-25 12:26:31 [INFO ] [deepseek_web]   Deleted: 0053_3720405582901113967854.jpg
+2026-08-25 12:26:36 [INFO ] [deepseek_web] [54/68] 连帽冲锋衣女
+2026-08-25 12:26:36 [INFO ] [deepseek_web]   Downloaded: 0054_4571019291967315784596.jpg
+2026-08-25 12:26:36 [INFO ] [deepseek_web]   Prefetching next image (55/68)
+2026-08-25 12:26:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:26:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:27:05 [INFO ] [deepseek_web]   Response: 女式连帽冲锋衣宽松短款纯色长袖连帽抽绳前门襟拉链两侧斜插拉链口袋松紧袖口下摆抽绳左胸刺绣防风防水户外休闲外套。
+2026-08-25 12:27:05 [INFO ] [deepseek_web]   Deleted: 0054_4571019291967315784596.jpg
+2026-08-25 12:27:10 [INFO ] [deepseek_web] [55/68] 运动外套 春秋连帽夹克外套户外休闲宽松大码冲锋衣 情侣装 风衣外套
+2026-08-25 12:27:10 [INFO ] [deepseek_web]   Downloaded: 0055_8650349358012832651116.jpg
+2026-08-25 12:27:10 [INFO ] [deepseek_web]   Prefetching next image (56/68)
+2026-08-25 12:27:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:27:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:27:43 [INFO ] [deepseek_web]   Response: 春秋户外运动冲锋衣风衣夹克外套男女同款情侣装大码宽松连帽长袖前门襟拉链领口抽绳两侧口袋魔术贴袖口防风防水休闲
+2026-08-25 12:27:43 [INFO ] [deepseek_web]   Deleted: 0055_8650349358012832651116.jpg
+2026-08-25 12:27:48 [INFO ] [deepseek_web] [56/68] 冰丝可拆缷连帽网眼透气防晒衣女士夏季薄款空调衣外套
+2026-08-25 12:27:48 [INFO ] [deepseek_web]   Downloaded: 0056_3011045577228317269906.jpg
+2026-08-25 12:27:48 [INFO ] [deepseek_web]   Prefetching next image (57/68)
+2026-08-25 12:27:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:28:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:28:18 [INFO ] [deepseek_web]   Response: 女士夏季冰丝薄款可拆卸连帽防晒衣外套网眼透气纯色长袖前门襟拉链两侧斜插拉链口袋松紧袖口户外空调衣。
+2026-08-25 12:28:18 [INFO ] [deepseek_web]   Deleted: 0056_3011045577228317269906.jpg
+2026-08-25 12:28:23 [INFO ] [deepseek_web] [57/68] 大码装轻便拉链外套长袖连帽夹克可折叠外套带收纳袋外套
+2026-08-25 12:28:23 [INFO ] [deepseek_web]   Downloaded: 0057_8340321523152115795489.jpg
+2026-08-25 12:28:23 [INFO ] [deepseek_web]   Prefetching next image (58/68)
+2026-08-25 12:28:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:28:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:28:52 [INFO ] [deepseek_web]   Response: 大码女士轻便连帽夹克外套长袖前门襟拉链两侧斜插拉链口袋松紧袖口下摆抽绳纯色防风防水可折叠带收纳袋休闲户外
+2026-08-25 12:28:52 [INFO ] [deepseek_web]   Deleted: 0057_8340321523152115795489.jpg
+2026-08-25 12:28:57 [INFO ] [deepseek_web] [58/68] 夏季新款女士防晒衣修身外套舒适透气户外休闲皮肤衣女外套
+2026-08-25 12:28:57 [INFO ] [deepseek_web]   Downloaded: 0058_6280955105553355656392.jpg
+2026-08-25 12:28:57 [INFO ] [deepseek_web]   Prefetching next image (59/68)
+2026-08-25 12:28:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:29:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:29:26 [INFO ] [deepseek_web]   Response: 女士夏季修身防晒皮肤衣外套户外休闲运动长袖立领纯色前门襟拉链两侧斜拉链口袋拇指洞袖口透气。
+2026-08-25 12:29:26 [INFO ] [deepseek_web]   Deleted: 0058_6280955105553355656392.jpg
+2026-08-25 12:29:31 [INFO ] [deepseek_web] [59/68] 新款山系防晒衣女防紫外线轻薄透气男户外运动外套防晒衣
+2026-08-25 12:29:31 [INFO ] [deepseek_web]   Downloaded: 0059_7630306053091995908617.jpg
+2026-08-25 12:29:31 [INFO ] [deepseek_web]   Prefetching next image (60/68)
+2026-08-25 12:29:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:29:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:30:00 [INFO ] [deepseek_web]   Response: 男女同款防晒衣外套防紫外线轻薄透气户外运动立领长袖纯色前门襟拉链松紧袖口下摆宽松休闲皮肤衣
+2026-08-25 12:30:00 [INFO ] [deepseek_web]   Deleted: 0059_7630306053091995908617.jpg
+2026-08-25 12:30:05 [INFO ] [deepseek_web] [60/68] 新款冰丝防晒衣男女防晒服薄款男士钓鱼服皮肤衣外套多色外套
+2026-08-25 12:30:05 [INFO ] [deepseek_web]   Downloaded: 0060_0680443010922814989260.jpg
+2026-08-25 12:30:05 [INFO ] [deepseek_web]   Prefetching next image (61/68)
+2026-08-25 12:30:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:30:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:30:34 [INFO ] [deepseek_web]   Response: 男女同款冰丝连帽防晒衣皮肤衣外套薄款透气防紫外线宽松版型长袖松紧袖口下摆多色户外运动钓鱼服。
+2026-08-25 12:30:34 [INFO ] [deepseek_web]   Deleted: 0060_0680443010922814989260.jpg
+2026-08-25 12:30:39 [INFO ] [deepseek_web] [61/68] 夏季防晒服套装连帽薄防晒衣外套男女皮肤衣纯色休闲 长裤短裤外套三件套
+2026-08-25 12:30:39 [INFO ] [deepseek_web]   Downloaded: 0061_7681044072561045638089.jpg
+2026-08-25 12:30:39 [INFO ] [deepseek_web]   Prefetching next image (62/68)
+2026-08-25 12:30:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:30:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:31:08 [INFO ] [deepseek_web]   Response: 男女同款夏季薄款连帽防晒服套装纯色休闲透气皮肤衣前门襟拉链长袖松紧袖口外套松紧腰抽绳短裤户外运动
+2026-08-25 12:31:08 [INFO ] [deepseek_web]   Deleted: 0061_7681044072561045638089.jpg
+2026-08-25 12:31:13 [INFO ] [deepseek_web] [62/68] 夏季连帽防晒衣外套女小个子休闲百搭短款防晒上衣外套
+2026-08-25 12:31:13 [INFO ] [deepseek_web]   Downloaded: 0062_5871125021451615199675.jpg
+2026-08-25 12:31:13 [INFO ] [deepseek_web]   Prefetching next image (63/68)
+2026-08-25 12:31:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:31:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:31:43 [INFO ] [deepseek_web]   Response: 女士夏季短款连帽防晒衣外套防紫外线轻薄透气纯色前门襟拉链连帽抽绳长袖松紧袖口两侧斜插袋户外休闲。
+2026-08-25 12:31:43 [INFO ] [deepseek_web]   Deleted: 0062_5871125021451615199675.jpg
+2026-08-25 12:31:48 [INFO ] [deepseek_web] [63/68] 外套
+2026-08-25 12:31:48 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='qqxf0t2pnz1jigm7.imgsapp.com', port=443): Max retries exceeded with url: /afsd/8192/1390916408659719650518.jpg (Caused by NameResolutionError("HTTPSConnection(host='qqxf0t2pnz1jigm7.imgsapp.com', port=443): Failed to resolve 'qqxf0t2pnz1jigm7.imgsapp.com' ([Errno 11001] getaddrinfo failed)"))
+2026-08-25 12:31:53 [INFO ] [deepseek_web] [64/68] 纯色轻薄款透气皮肤衣男防紫外线户外套防晒服外套
+2026-08-25 12:31:57 [INFO ] [deepseek_web]   Downloaded: 0064_0310502198631512094326.jpg
+2026-08-25 12:31:57 [INFO ] [deepseek_web]   Prefetching next image (65/68)
+2026-08-25 12:31:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:32:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:32:26 [INFO ] [deepseek_web]   Response: 男女同款纯色轻薄透气防紫外线皮肤衣防晒服外套连帽抽绳长袖松紧袖口下摆抽绳宽松户外休闲
+2026-08-25 12:32:26 [INFO ] [deepseek_web]   Deleted: 0064_0310502198631512094326.jpg
+2026-08-25 12:32:31 [INFO ] [deepseek_web] [65/68] 轻薄短款防晒衣UPF40+女夏凉感防紫外线冰丝小个子防晒服外套
+2026-08-25 12:32:31 [INFO ] [deepseek_web]   Downloaded: 0065_9630504468733913010693.jpg
+2026-08-25 12:32:31 [INFO ] [deepseek_web]   Prefetching next image (66/68)
+2026-08-25 12:32:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:32:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:33:01 [INFO ] [deepseek_web]   Response: 女式短款连帽防晒衣外套纯色长袖前门襟拉链两侧插袋松紧袖口下摆抽绳冰丝凉感UPF40+防紫外线轻薄透气户外休闲。
+2026-08-25 12:33:01 [INFO ] [deepseek_web]   Deleted: 0065_9630504468733913010693.jpg
+2026-08-25 12:33:06 [INFO ] [deepseek_web] [66/68] 外套
+2026-08-25 12:33:06 [INFO ] [deepseek_web]   Downloaded: 0066_0870959376221127170709.jpg
+2026-08-25 12:33:06 [INFO ] [deepseek_web]   Prefetching next image (67/68)
+2026-08-25 12:33:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:33:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:33:35 [INFO ] [deepseek_web]   Response: 女式修身连帽运动外套纯色长袖前门襟拉链两侧斜插袋拇指洞袖口弹力面料瑜伽跑步户外休闲夹克。
+2026-08-25 12:33:35 [INFO ] [deepseek_web]   Deleted: 0066_0870959376221127170709.jpg
+2026-08-25 12:33:40 [INFO ] [deepseek_web] [67/68] 春秋季户外单层冲锋衣防风防水连帽外套男女登山服外套
+2026-08-25 12:33:40 [INFO ] [deepseek_web]   Downloaded: 0067_9891040338903917746737.jpg
+2026-08-25 12:33:40 [INFO ] [deepseek_web]   Prefetching next image (68/68)
+2026-08-25 12:33:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:33:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:34:09 [INFO ] [deepseek_web]   Response: 春秋季户外单层冲锋衣外套男女同款防风防水连帽长袖前门襟拉链两侧斜插拉链口袋松紧袖口登山服
+2026-08-25 12:34:09 [INFO ] [deepseek_web]   Deleted: 0067_9891040338903917746737.jpg
+2026-08-25 12:34:14 [INFO ] [deepseek_web] [68/68] 连帽风衣夹克外套女春秋季纯色休闲时尚冲锋衣
+2026-08-25 12:34:14 [INFO ] [deepseek_web]   Downloaded: 0068_2540540043543353020641.jpg
+2026-08-25 12:34:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-25 12:34:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-25 12:34:43 [INFO ] [deepseek_web]   Response: 女式春秋纯色连帽冲锋衣风衣夹克外套薄款防风防水长袖松紧袖口前门襟拉链两侧翻盖按扣口袋腰部抽绳收腰休闲户外。
+2026-08-25 12:34:43 [INFO ] [deepseek_web]   Deleted: 0068_2540540043543353020641.jpg
+2026-08-25 12:34:43 [INFO ] [deepseek_web] 
+2026-08-25 12:34:43 [INFO ] [deepseek_web] Retry round 1: 1 failed item(s)
+2026-08-25 12:34:48 [INFO ] [deepseek_web]   Retry [63]: 外套
+2026-08-25 12:35:29 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-08-25 12:35:47 [INFO ] [deepseek_web]     OK: 女式修身短款立领运动外套纯色长袖拇指洞袖口网眼拼接透气前门襟拉链两侧斜插拉链口袋健身跑步休闲夹克。
+2026-08-25 12:35:51 [INFO ] [deepseek_web] ==================================================
+2026-08-25 12:35:51 [INFO ] [deepseek_web] Done: 68 success, 0 failed → optimize_title
+2026-08-25 12:35:52 [INFO ] [title_workflow] Optimization complete: 68 titles
+2026-08-25 12:35:56 [INFO ] [title_workflow] Written 68 optimized titles to column H (8)
+2026-08-25 12:35:56 [INFO ] [title_workflow] Done: 8.24v1.xlsx
+2026-08-25 12:35:57 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-25 12:35:57 [INFO ] [jenkins] 
+2026-08-25 12:35:57 [INFO ] [jenkins] ==================================================
+2026-08-25 12:35:57 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-25 12:35:57 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-25 12:35:57 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-25 12:35:57 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-25 12:35:57 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-25 14:54:34 [INFO ] [hotwords] Loop mode: 79 keywords  country=fr  category=(all)  mode=dual
+2026-08-25 14:54:34 [INFO ] [hotwords] 
+2026-08-25 14:54:34 [INFO ] [hotwords] [  1/79] Coupe-vent
+2026-08-25 14:54:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:35 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:54:35 [INFO ] [hotwords]   → total 0 words
+2026-08-25 14:54:37 [INFO ] [hotwords] [  2/79] Doudoune
+2026-08-25 14:54:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:38 [INFO ] [hotwords]   new_rank: 19 words
+2026-08-25 14:54:38 [INFO ] [hotwords]   → total 19 words
+2026-08-25 14:54:40 [INFO ] [hotwords] [  3/79] Parka
+2026-08-25 14:54:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:41 [INFO ] [hotwords]   new_rank: 2 words
+2026-08-25 14:54:41 [INFO ] [hotwords]   → total 21 words
+2026-08-25 14:54:43 [INFO ] [hotwords] [  4/79] Veste
+2026-08-25 14:54:44 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:45 [INFO ] [hotwords]   new_rank: 102 words
+2026-08-25 14:54:45 [INFO ] [hotwords]   → total 123 words
+2026-08-25 14:54:47 [INFO ] [hotwords] [  5/79] Manteau
+2026-08-25 14:54:47 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:48 [INFO ] [hotwords]   new_rank: 53 words
+2026-08-25 14:54:48 [INFO ] [hotwords]   → total 176 words
+2026-08-25 14:54:50 [INFO ] [hotwords] [  6/79] Blouson
+2026-08-25 14:54:50 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:51 [INFO ] [hotwords]   new_rank: 15 words
+2026-08-25 14:54:51 [INFO ] [hotwords]   → total 191 words
+2026-08-25 14:54:53 [INFO ] [hotwords] [  7/79] Anorak
+2026-08-25 14:54:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:54 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:54:54 [INFO ] [hotwords]   → total 191 words
+2026-08-25 14:54:56 [INFO ] [hotwords] [  8/79] Softshell
+2026-08-25 14:54:56 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:54:57 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-25 14:54:57 [INFO ] [hotwords]   → total 192 words
+2026-08-25 14:54:59 [INFO ] [hotwords] [  9/79] Polaire
+2026-08-25 14:55:00 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:00 [INFO ] [hotwords]   new_rank: 19 words
+2026-08-25 14:55:00 [INFO ] [hotwords]   → total 211 words
+2026-08-25 14:55:02 [INFO ] [hotwords] [ 10/79] Imperméable
+2026-08-25 14:55:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:04 [INFO ] [hotwords]   new_rank: 84 words
+2026-08-25 14:55:04 [INFO ] [hotwords]   → total 295 words
+2026-08-25 14:55:06 [INFO ] [hotwords] [ 11/79] 3 en 1
+2026-08-25 14:55:06 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:07 [INFO ] [hotwords]   new_rank: 54 words
+2026-08-25 14:55:07 [INFO ] [hotwords]   → total 349 words
+2026-08-25 14:55:09 [INFO ] [hotwords] [ 12/79] 2 en 1
+2026-08-25 14:55:09 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:15 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-08-25 14:55:17 [INFO ] [hotwords] [ 13/79] Veste de randonnée
+2026-08-25 14:55:17 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:18 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:18 [INFO ] [hotwords]   → total 349 words
+2026-08-25 14:55:20 [INFO ] [hotwords] [ 14/79] Veste de ski
+2026-08-25 14:55:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:21 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:21 [INFO ] [hotwords]   → total 349 words
+2026-08-25 14:55:23 [INFO ] [hotwords] [ 15/79] Veste de camping
+2026-08-25 14:55:24 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:25 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:25 [INFO ] [hotwords]   → total 349 words
+2026-08-25 14:55:27 [INFO ] [hotwords] [ 16/79] Veste de voyage
+2026-08-25 14:55:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:28 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:28 [INFO ] [hotwords]   → total 349 words
+2026-08-25 14:55:30 [INFO ] [hotwords] [ 17/79] Veste de sport
+2026-08-25 14:55:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:31 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-25 14:55:31 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:33 [INFO ] [hotwords] [ 18/79] Veste urbaine
+2026-08-25 14:55:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:34 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:34 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:36 [INFO ] [hotwords] [ 19/79] Veste technique
+2026-08-25 14:55:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:38 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:38 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:40 [INFO ] [hotwords] [ 20/79] Veste décontractée
+2026-08-25 14:55:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:41 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:41 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:43 [INFO ] [hotwords] [ 21/79] Veste classique
+2026-08-25 14:55:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:44 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:44 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:46 [INFO ] [hotwords] [ 22/79] Veste cintrée
+2026-08-25 14:55:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:47 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:47 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:49 [INFO ] [hotwords] [ 23/79] Veste légère
+2026-08-25 14:55:50 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:50 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:50 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:52 [INFO ] [hotwords] [ 24/79] Veste épaisse
+2026-08-25 14:55:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:55:54 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:55:54 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:55:56 [INFO ] [hotwords] [ 25/79] Veste doublée
+2026-08-25 14:56:01 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-08-25 14:56:03 [INFO ] [hotwords] [ 26/79] Veste non doublée
+2026-08-25 14:56:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:04 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:04 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:56:06 [INFO ] [hotwords] [ 27/79] Veste à capuche
+2026-08-25 14:56:06 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:07 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:07 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:56:09 [INFO ] [hotwords] [ 28/79] Veste col montant
+2026-08-25 14:56:09 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:10 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:10 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:56:12 [INFO ] [hotwords] [ 29/79] Manteau mi-long
+2026-08-25 14:56:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:13 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:13 [INFO ] [hotwords]   → total 350 words
+2026-08-25 14:56:15 [INFO ] [hotwords] [ 30/79] Manteau long
+2026-08-25 14:56:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:17 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-25 14:56:17 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:19 [INFO ] [hotwords] [ 31/79] Coupe-vent imperméable
+2026-08-25 14:56:19 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:20 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:20 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:22 [INFO ] [hotwords] [ 32/79] Trench (coupe-vent)
+2026-08-25 14:56:22 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:23 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:23 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:25 [INFO ] [hotwords] [ 33/79] Veste de trekking
+2026-08-25 14:56:25 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:26 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:26 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:28 [INFO ] [hotwords] [ 34/79] Veste de plein air
+2026-08-25 14:56:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:29 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:29 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:31 [INFO ] [hotwords] [ 35/79] Veste imperméable respirante
+2026-08-25 14:56:32 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:33 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:33 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:35 [INFO ] [hotwords] [ 36/79] K-way (imperméable)
+2026-08-25 14:56:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:36 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:36 [INFO ] [hotwords]   → total 351 words
+2026-08-25 14:56:38 [INFO ] [hotwords] [ 37/79] Veste polaire (doublure)
+2026-08-25 14:56:38 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:44 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-08-25 14:56:46 [INFO ] [hotwords] [ 38/79] Veste matelassée
+2026-08-25 14:56:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:47 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-25 14:56:47 [INFO ] [hotwords]   → total 352 words
+2026-08-25 14:56:49 [INFO ] [hotwords] [ 39/79] Veste softshell
+2026-08-25 14:56:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:50 [INFO ] [hotwords]   new_rank: 1 words
+2026-08-25 14:56:50 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:56:52 [INFO ] [hotwords] [ 40/79] Veste 3 couches
+2026-08-25 14:56:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:54 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:54 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:56:56 [INFO ] [hotwords] [ 41/79] Veste coupe-vent déperlante
+2026-08-25 14:56:56 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:56:57 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:56:57 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:56:59 [INFO ] [hotwords] [ 42/79] Veste à capuche amovible
+2026-08-25 14:56:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:00 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:00 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:02 [INFO ] [hotwords] [ 43/79] Blouson coupe-vent
+2026-08-25 14:57:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:04 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:04 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:06 [INFO ] [hotwords] [ 44/79] Blouson léger
+2026-08-25 14:57:06 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:07 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:07 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:09 [INFO ] [hotwords] [ 45/79] Blouson matelassé
+2026-08-25 14:57:09 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:10 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:10 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:12 [INFO ] [hotwords] [ 46/79] Parka longue
+2026-08-25 14:57:12 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:13 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:13 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:15 [INFO ] [hotwords] [ 47/79] Parka mi-longue
+2026-08-25 14:57:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:17 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:17 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:19 [INFO ] [hotwords] [ 48/79] Doudoune légère
+2026-08-25 14:57:19 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:20 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:20 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:22 [INFO ] [hotwords] [ 49/79] Doudoune épaisse
+2026-08-25 14:57:22 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:23 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:23 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:25 [INFO ] [hotwords] [ 50/79] Doudoune à capuche
+2026-08-25 14:57:25 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:26 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:26 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:28 [INFO ] [hotwords] [ 51/79] Manteau d'hiver
+2026-08-25 14:57:28 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:29 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:29 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:31 [INFO ] [hotwords] [ 52/79] Manteau imperméable
+2026-08-25 14:57:32 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:33 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:33 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:35 [INFO ] [hotwords] [ 53/79] Manteau de pluie
+2026-08-25 14:57:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:36 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:36 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:38 [INFO ] [hotwords] [ 54/79] Surveste
+2026-08-25 14:57:38 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:39 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:39 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:41 [INFO ] [hotwords] [ 55/79] Veste multi-poches
+2026-08-25 14:57:41 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:42 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:42 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:44 [INFO ] [hotwords] [ 56/79] Veste cargo
+2026-08-25 14:57:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:45 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:45 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:47 [INFO ] [hotwords] [ 57/79] Veste utilitaire
+2026-08-25 14:57:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:49 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:49 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:51 [INFO ] [hotwords] [ 58/79] Veste oversize
+2026-08-25 14:57:51 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:52 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:52 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:54 [INFO ] [hotwords] [ 59/79] Veste oversize coupe-vent
+2026-08-25 14:57:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:55 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:55 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:57:57 [INFO ] [hotwords] [ 60/79] Veste ajustée
+2026-08-25 14:57:57 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:57:58 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:57:58 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:00 [INFO ] [hotwords] [ 61/79] Veste à taille élastique
+2026-08-25 14:58:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:01 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:01 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:03 [INFO ] [hotwords] [ 62/79] Veste à cordon de serrage
+2026-08-25 14:58:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:05 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:05 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:07 [INFO ] [hotwords] [ 63/79] Veste à manches longues
+2026-08-25 14:58:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:08 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:08 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:10 [INFO ] [hotwords] [ 64/79] Veste doublée polaire
+2026-08-25 14:58:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:11 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:11 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:13 [INFO ] [hotwords] [ 65/79] Veste anti-UV
+2026-08-25 14:58:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:14 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:14 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:16 [INFO ] [hotwords] [ 66/79] Veste respirante
+2026-08-25 14:58:17 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:18 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:18 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:20 [INFO ] [hotwords] [ 67/79] Veste déperlante
+2026-08-25 14:58:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:21 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:21 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:23 [INFO ] [hotwords] [ 68/79] Veste étanche
+2026-08-25 14:58:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:24 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:24 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:26 [INFO ] [hotwords] [ 69/79] Veste thermique
+2026-08-25 14:58:26 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:27 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:27 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:29 [INFO ] [hotwords] [ 70/79] Veste hivernale
+2026-08-25 14:58:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:30 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:30 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:32 [INFO ] [hotwords] [ 71/79] Veste de mi-saison
+2026-08-25 14:58:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:33 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:33 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:35 [INFO ] [hotwords] [ 72/79] Veste de transition
+2026-08-25 14:58:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:37 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:37 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:39 [INFO ] [hotwords] [ 73/79] Veste quotidienne
+2026-08-25 14:58:39 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:40 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:40 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:42 [INFO ] [hotwords] [ 74/79] Veste tout-terrain
+2026-08-25 14:58:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:43 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:43 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:45 [INFO ] [hotwords] [ 75/79] Veste de rando
+2026-08-25 14:58:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:46 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:46 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:48 [INFO ] [hotwords] [ 76/79] Veste d'alpinisme
+2026-08-25 14:58:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:50 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:58:50 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:58:52 [INFO ] [hotwords] [ 77/79] Veste outdoor
+2026-08-25 14:58:52 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:58:57 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-08-25 14:58:59 [INFO ] [hotwords] [ 78/79] Veste de running
+2026-08-25 14:59:00 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:59:01 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:59:01 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:59:03 [INFO ] [hotwords] [ 79/79] Veste de fitness
+2026-08-25 14:59:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-08-25 14:59:04 [INFO ] [hotwords]   new_rank: 0 words
+2026-08-25 14:59:04 [INFO ] [hotwords]   → total 353 words
+2026-08-25 14:59:06 [INFO ] [hotwords] 
+2026-08-25 14:59:06 [INFO ] [hotwords] Retry round 1: 4 failed keyword(s)
+2026-08-25 14:59:09 [INFO ] [hotwords]   Retrying: 2 en 1
+2026-08-25 14:59:09 [INFO ] [hotwords]     fluctuation: 0 words
+2026-08-25 14:59:10 [INFO ] [hotwords]     new_rank: 29 words
+2026-08-25 14:59:10 [INFO ] [hotwords]     → OK
+2026-08-25 14:59:12 [INFO ] [hotwords]   Retrying: Veste doublée
+2026-08-25 14:59:13 [INFO ] [hotwords]     fluctuation: 0 words
+2026-08-25 14:59:13 [INFO ] [hotwords]     new_rank: 0 words
+2026-08-25 14:59:13 [INFO ] [hotwords]     → OK
+2026-08-25 14:59:15 [INFO ] [hotwords]   Retrying: Veste polaire (doublure)
+2026-08-25 14:59:16 [INFO ] [hotwords]     fluctuation: 0 words
+2026-08-25 14:59:17 [INFO ] [hotwords]     new_rank: 0 words
+2026-08-25 14:59:17 [INFO ] [hotwords]     → OK
+2026-08-25 14:59:19 [INFO ] [hotwords]   Retrying: Veste outdoor
+2026-08-25 14:59:19 [INFO ] [hotwords]     fluctuation: 0 words
+2026-08-25 14:59:20 [INFO ] [hotwords]     new_rank: 0 words
+2026-08-25 14:59:20 [INFO ] [hotwords]     → OK
+2026-08-25 14:59:22 [INFO ] [hotwords] All keywords collected successfully
+2026-08-25 14:59:22 [INFO ] [hotwords] 
+2026-08-25 14:59:22 [INFO ] [hotwords] Combining: 0 fluctuation + 382 new_rank = 382 total
+2026-08-25 14:59:22 [INFO ] [hotwords] 
+2026-08-25 14:59:22 [INFO ] [hotwords] Cleaning...
+2026-08-25 14:59:22 [INFO ] [hotwords]   strip_whitespace: 382 → 382 (0 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords]   normalize_case: 382 → 382 (0 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords]   drop_single_word: 382 → 378 (4 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords]   drop_brands: 378 → 347 (31 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords]   drop_reordered: 347 → 344 (3 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords]   deduplicate: 344 → 333 (11 removed)
+2026-08-25 14:59:22 [INFO ] [hotwords] homme=61     femme=50     other=222  
+2026-08-25 14:59:22 [INFO ] [hotwords] Saved 333 words (raw: 382, errors: 4) → 20260825_145434_fr.txt
+2026-08-25 14:59:22 [INFO ] [hotwords] ==================================================
+2026-08-25 14:59:22 [INFO ] [hotwords] Done.

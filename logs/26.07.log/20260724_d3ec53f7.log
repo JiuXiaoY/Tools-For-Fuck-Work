@@ -1,0 +1,301 @@
+2026-07-24 10:13:01 [INFO ] [hotwords] Loop mode: 56 keywords  country=de  category=(all)  mode=dual
+2026-07-24 10:13:01 [INFO ] [hotwords] 
+2026-07-24 10:13:01 [INFO ] [hotwords] [  1/56] Yogaanzug
+2026-07-24 10:13:04 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-24 10:13:06 [INFO ] [hotwords] [  2/56] Laufanzug
+2026-07-24 10:13:06 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+2026-07-24 10:13:08 [INFO ] [hotwords] [  3/56] Jogginganzug
+2026-07-24 10:13:17 [INFO ] [hotwords] Loop mode: 56 keywords  country=de  category=(all)  mode=dual
+2026-07-24 10:13:17 [INFO ] [hotwords] 
+2026-07-24 10:13:17 [INFO ] [hotwords] [  1/56] Yogaanzug
+2026-07-24 10:13:18 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:13:19 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:13:36 [INFO ] [hotwords] Loop mode: 56 keywords  country=de  category=(all)  mode=dual
+2026-07-24 10:13:36 [INFO ] [hotwords] 
+2026-07-24 10:13:36 [INFO ] [hotwords] [  1/56] Yogaanzug
+2026-07-24 10:13:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:13:37 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:16:41 [INFO ] [hotwords] Loop mode: 56 keywords  country=de  category=(all)  mode=dual
+2026-07-24 10:16:41 [INFO ] [hotwords] 
+2026-07-24 10:16:41 [INFO ] [hotwords] [  1/56] Yogaanzug
+2026-07-24 10:16:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:16:43 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:16:43 [INFO ] [hotwords]   → total 0 words
+2026-07-24 10:16:45 [INFO ] [hotwords] [  2/56] Laufanzug
+2026-07-24 10:16:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:16:46 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:16:46 [INFO ] [hotwords]   → total 0 words
+2026-07-24 10:16:48 [INFO ] [hotwords] [  3/56] Jogginganzug
+2026-07-24 10:16:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:16:49 [INFO ] [hotwords]   new_rank: 21 words
+2026-07-24 10:16:49 [INFO ] [hotwords]   → total 21 words
+2026-07-24 10:16:51 [INFO ] [hotwords] [  4/56] Fitnessanzug
+2026-07-24 10:16:52 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:16:53 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:16:53 [INFO ] [hotwords]   → total 21 words
+2026-07-24 10:16:55 [INFO ] [hotwords] [  5/56] Trainingsanzug
+2026-07-24 10:16:55 [INFO ] [hotwords]   fluctuation: 1 words
+2026-07-24 10:16:56 [INFO ] [hotwords]   new_rank: 26 words
+2026-07-24 10:16:56 [INFO ] [hotwords]   → total 48 words
+2026-07-24 10:16:58 [INFO ] [hotwords] [  6/56] Sportanzug
+2026-07-24 10:16:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:16:59 [INFO ] [hotwords]   new_rank: 7 words
+2026-07-24 10:16:59 [INFO ] [hotwords]   → total 55 words
+2026-07-24 10:17:01 [INFO ] [hotwords] [  7/56] Gymnastikanzug
+2026-07-24 10:17:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:02 [INFO ] [hotwords]   new_rank: 3 words
+2026-07-24 10:17:02 [INFO ] [hotwords]   → total 58 words
+2026-07-24 10:17:04 [INFO ] [hotwords] [  8/56] Turnanzug
+2026-07-24 10:17:04 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:05 [INFO ] [hotwords]   new_rank: 6 words
+2026-07-24 10:17:05 [INFO ] [hotwords]   → total 64 words
+2026-07-24 10:17:07 [INFO ] [hotwords] [  9/56] UV-Anzug
+2026-07-24 10:17:08 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:09 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:09 [INFO ] [hotwords]   → total 64 words
+2026-07-24 10:17:11 [INFO ] [hotwords] [ 10/56] UV-Schutzanzug
+2026-07-24 10:17:11 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:12 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:12 [INFO ] [hotwords]   → total 64 words
+2026-07-24 10:17:14 [INFO ] [hotwords] [ 11/56] Sonnenschutzanzug
+2026-07-24 10:17:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:36 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x14574735d10>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-24 10:17:38 [INFO ] [hotwords] [ 12/56] Regenanzug
+2026-07-24 10:17:38 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:39 [INFO ] [hotwords]   new_rank: 6 words
+2026-07-24 10:17:39 [INFO ] [hotwords]   → total 70 words
+2026-07-24 10:17:41 [INFO ] [hotwords] [ 13/56] Wetteranzug
+2026-07-24 10:17:42 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:42 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:42 [INFO ] [hotwords]   → total 70 words
+2026-07-24 10:17:44 [INFO ] [hotwords] [ 14/56] Radsportanzug
+2026-07-24 10:17:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:46 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:46 [INFO ] [hotwords]   → total 70 words
+2026-07-24 10:17:48 [INFO ] [hotwords] [ 15/56] Skianzug
+2026-07-24 10:17:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:49 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:49 [INFO ] [hotwords]   → total 70 words
+2026-07-24 10:17:51 [INFO ] [hotwords] [ 16/56] Schneeanzug
+2026-07-24 10:17:51 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:52 [INFO ] [hotwords]   new_rank: 2 words
+2026-07-24 10:17:52 [INFO ] [hotwords]   → total 72 words
+2026-07-24 10:17:54 [INFO ] [hotwords] [ 17/56] Thermoanzug
+2026-07-24 10:17:55 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:56 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:17:56 [INFO ] [hotwords]   → total 72 words
+2026-07-24 10:17:58 [INFO ] [hotwords] [ 18/56] Schutzanzug
+2026-07-24 10:17:58 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:17:59 [INFO ] [hotwords]   new_rank: 8 words
+2026-07-24 10:17:59 [INFO ] [hotwords]   → total 80 words
+2026-07-24 10:18:01 [INFO ] [hotwords] [ 19/56] Badeanzug
+2026-07-24 10:18:01 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:02 [INFO ] [hotwords]   new_rank: 19 words
+2026-07-24 10:18:02 [INFO ] [hotwords]   → total 99 words
+2026-07-24 10:18:04 [INFO ] [hotwords] [ 20/56] Taucheranzug
+2026-07-24 10:18:05 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:05 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:05 [INFO ] [hotwords]   → total 99 words
+2026-07-24 10:18:07 [INFO ] [hotwords] [ 21/56] Surfanzug
+2026-07-24 10:18:08 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:09 [INFO ] [hotwords]   new_rank: 1 words
+2026-07-24 10:18:09 [INFO ] [hotwords]   → total 100 words
+2026-07-24 10:18:11 [INFO ] [hotwords] [ 22/56] Freizeitanzug
+2026-07-24 10:18:11 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:12 [INFO ] [hotwords]   new_rank: 2 words
+2026-07-24 10:18:12 [INFO ] [hotwords]   → total 102 words
+2026-07-24 10:18:14 [INFO ] [hotwords] [ 23/56] Relaxanzug
+2026-07-24 10:18:14 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:15 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:15 [INFO ] [hotwords]   → total 102 words
+2026-07-24 10:18:17 [INFO ] [hotwords] [ 24/56] Kuschelanzug
+2026-07-24 10:18:17 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:18 [INFO ] [hotwords]   new_rank: 3 words
+2026-07-24 10:18:18 [INFO ] [hotwords]   → total 105 words
+2026-07-24 10:18:20 [INFO ] [hotwords] [ 25/56] Hausanzug
+2026-07-24 10:18:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:21 [INFO ] [hotwords]   new_rank: 5 words
+2026-07-24 10:18:21 [INFO ] [hotwords]   → total 110 words
+2026-07-24 10:18:23 [INFO ] [hotwords] [ 26/56] Wohnanzug
+2026-07-24 10:18:24 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:25 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:25 [INFO ] [hotwords]   → total 110 words
+2026-07-24 10:18:27 [INFO ] [hotwords] [ 27/56] Schlafanzug
+2026-07-24 10:18:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:28 [INFO ] [hotwords]   new_rank: 83 words
+2026-07-24 10:18:28 [INFO ] [hotwords]   → total 193 words
+2026-07-24 10:18:30 [INFO ] [hotwords] [ 28/56] Unteranzug
+2026-07-24 10:18:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:31 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:31 [INFO ] [hotwords]   → total 193 words
+2026-07-24 10:18:33 [INFO ] [hotwords] [ 29/56] Hosenanzug
+2026-07-24 10:18:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:34 [INFO ] [hotwords]   new_rank: 15 words
+2026-07-24 10:18:34 [INFO ] [hotwords]   → total 208 words
+2026-07-24 10:18:36 [INFO ] [hotwords] [ 30/56] Kurzanzug
+2026-07-24 10:18:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:38 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:38 [INFO ] [hotwords]   → total 208 words
+2026-07-24 10:18:40 [INFO ] [hotwords] [ 31/56] Sommeranzug
+2026-07-24 10:18:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:41 [INFO ] [hotwords]   new_rank: 2 words
+2026-07-24 10:18:41 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:43 [INFO ] [hotwords] [ 32/56] Strandanzug
+2026-07-24 10:18:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:44 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:44 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:46 [INFO ] [hotwords] [ 33/56] Urlaubsanzug
+2026-07-24 10:18:47 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:48 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:48 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:50 [INFO ] [hotwords] [ 34/56] Blusenanzug
+2026-07-24 10:18:50 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:51 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:51 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:53 [INFO ] [hotwords] [ 35/56] Businessanzug
+2026-07-24 10:18:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:54 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:54 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:56 [INFO ] [hotwords] [ 36/56] Damenanzug
+2026-07-24 10:18:57 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:18:57 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:18:57 [INFO ] [hotwords]   → total 210 words
+2026-07-24 10:18:59 [INFO ] [hotwords] [ 37/56] Herrenanzug
+2026-07-24 10:19:00 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:01 [INFO ] [hotwords]   new_rank: 3 words
+2026-07-24 10:19:01 [INFO ] [hotwords]   → total 213 words
+2026-07-24 10:19:03 [INFO ] [hotwords] [ 38/56] Leinenanzug
+2026-07-24 10:19:03 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:04 [INFO ] [hotwords]   new_rank: 4 words
+2026-07-24 10:19:04 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:06 [INFO ] [hotwords] [ 39/56] Strickanzug
+2026-07-24 10:19:07 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:08 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:08 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:10 [INFO ] [hotwords] [ 40/56] Samtanzug
+2026-07-24 10:19:10 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:11 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:11 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:13 [INFO ] [hotwords] [ 41/56] Nickianzug
+2026-07-24 10:19:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:14 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:14 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:16 [INFO ] [hotwords] [ 42/56] Flanellanzug
+2026-07-24 10:19:17 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:17 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:17 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:19 [INFO ] [hotwords] [ 43/56] Seidenanzug
+2026-07-24 10:19:20 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:21 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:21 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:23 [INFO ] [hotwords] [ 44/56] Satinanzug
+2026-07-24 10:19:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:24 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:24 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:26 [INFO ] [hotwords] [ 45/56] Baumwollanzug
+2026-07-24 10:19:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:28 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:28 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:30 [INFO ] [hotwords] [ 46/56] Jeansanzug
+2026-07-24 10:19:31 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:32 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:32 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:34 [INFO ] [hotwords] [ 47/56] Frotteeanzug
+2026-07-24 10:19:35 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:36 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:36 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:38 [INFO ] [hotwords] [ 48/56] Sweatanzug
+2026-07-24 10:19:39 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:41 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:41 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:43 [INFO ] [hotwords] [ 49/56] Kapuzenanzug
+2026-07-24 10:19:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:45 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:19:45 [INFO ] [hotwords]   → total 217 words
+2026-07-24 10:19:47 [INFO ] [hotwords] [ 50/56] anzug
+2026-07-24 10:19:48 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:19:49 [INFO ] [hotwords]   new_rank: 55 words
+2026-07-24 10:19:49 [INFO ] [hotwords]   → total 272 words
+2026-07-24 10:19:51 [INFO ] [hotwords] [ 51/56] 2 teiler
+2026-07-24 10:19:51 [INFO ] [hotwords]   fluctuation: 1 words
+2026-07-24 10:19:52 [INFO ] [hotwords]   new_rank: 21 words
+2026-07-24 10:19:52 [INFO ] [hotwords]   → total 294 words
+2026-07-24 10:19:54 [INFO ] [hotwords] [ 52/56] zweiteiler
+2026-07-24 10:20:15 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x14574735f90>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-24 10:20:17 [INFO ] [hotwords] [ 53/56] Pyjama
+2026-07-24 10:20:18 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:20:18 [INFO ] [hotwords]   new_rank: 77 words
+2026-07-24 10:20:18 [INFO ] [hotwords]   → total 371 words
+2026-07-24 10:20:20 [INFO ] [hotwords] [ 54/56] Arbeitsanzug
+2026-07-24 10:20:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:20:22 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:20:22 [INFO ] [hotwords]   → total 371 words
+2026-07-24 10:20:24 [INFO ] [hotwords] [ 55/56] Cargo-Set
+2026-07-24 10:20:25 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:20:27 [INFO ] [hotwords]   new_rank: 0 words
+2026-07-24 10:20:27 [INFO ] [hotwords]   → total 371 words
+2026-07-24 10:20:29 [INFO ] [hotwords] [ 56/56] Halloween
+2026-07-24 10:20:50 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x14574734f50>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-24 10:20:52 [INFO ] [hotwords] 
+2026-07-24 10:20:52 [INFO ] [hotwords] Retry round 1: 3 failed keyword(s)
+2026-07-24 10:20:55 [INFO ] [hotwords]   Retrying: Sonnenschutzanzug
+2026-07-24 10:20:55 [INFO ] [hotwords]     fluctuation: 0 words
+2026-07-24 10:21:17 [WARNING] [hotwords]     FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x145747356d0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-24 10:21:19 [INFO ] [hotwords]   Retrying: zweiteiler
+2026-07-24 10:21:20 [INFO ] [hotwords]     fluctuation: 0 words
+2026-07-24 10:21:21 [INFO ] [hotwords]     new_rank: 32 words
+2026-07-24 10:21:21 [INFO ] [hotwords]     → OK
+2026-07-24 10:21:23 [INFO ] [hotwords]   Retrying: Halloween
+2026-07-24 10:21:24 [INFO ] [hotwords]     fluctuation: 2 words
+2026-07-24 10:21:25 [INFO ] [hotwords]     new_rank: 32 words
+2026-07-24 10:21:25 [INFO ] [hotwords]     → OK
+2026-07-24 10:21:27 [INFO ] [hotwords] 
+2026-07-24 10:21:27 [INFO ] [hotwords] Retry round 2: 1 failed keyword(s)
+2026-07-24 10:21:30 [INFO ] [hotwords]   Retrying: Sonnenschutzanzug
+2026-07-24 10:21:31 [INFO ] [hotwords]     fluctuation: 0 words
+2026-07-24 10:21:33 [INFO ] [hotwords]     new_rank: 0 words
+2026-07-24 10:21:33 [INFO ] [hotwords]     → OK
+2026-07-24 10:21:35 [INFO ] [hotwords] All keywords collected successfully
+2026-07-24 10:21:35 [INFO ] [hotwords] 
+2026-07-24 10:21:35 [INFO ] [hotwords] Combining: 4 fluctuation + 433 new_rank = 437 total
+2026-07-24 10:21:35 [INFO ] [hotwords] 
+2026-07-24 10:21:35 [INFO ] [hotwords] Cleaning...
+2026-07-24 10:21:35 [INFO ] [hotwords]   strip_whitespace: 437 → 437 (0 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords]   normalize_case: 437 → 437 (0 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords]   drop_single_word: 437 → 414 (23 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords]   drop_brands: 414 → 373 (41 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords]   drop_reordered: 373 → 342 (31 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords]   deduplicate: 342 → 318 (24 removed)
+2026-07-24 10:21:35 [INFO ] [hotwords] herren=67     damen=134    other=117  
+2026-07-24 10:21:35 [INFO ] [hotwords] Saved 318 words (raw: 437, errors: 3) → 20260724_101641_de.txt
+2026-07-24 10:21:35 [INFO ] [hotwords] ==================================================
+2026-07-24 10:21:35 [INFO ] [hotwords] Done.
+2026-07-24 10:30:35 [INFO ] [hotwords] Loop mode: 2 keywords  country=de  category=(all)  mode=dual
+2026-07-24 10:30:35 [INFO ] [hotwords] 
+2026-07-24 10:30:35 [INFO ] [hotwords] [  1/2] sakko
+2026-07-24 10:30:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-07-24 10:30:36 [INFO ] [hotwords]   new_rank: 16 words
+2026-07-24 10:30:36 [INFO ] [hotwords]   → total 16 words
+2026-07-24 10:30:38 [INFO ] [hotwords] [  2/2] sportsakko
+2026-07-24 10:30:59 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1e2131f65d0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-07-24 10:31:01 [INFO ] [hotwords] 
+2026-07-24 10:31:01 [INFO ] [hotwords] Retry round 1: 1 failed keyword(s)
+2026-07-24 10:31:04 [INFO ] [hotwords]   Retrying: sportsakko
+2026-07-24 10:31:05 [INFO ] [hotwords]     fluctuation: 0 words
+2026-07-24 10:31:06 [INFO ] [hotwords]     new_rank: 0 words
+2026-07-24 10:31:06 [INFO ] [hotwords]     → OK
+2026-07-24 10:31:08 [INFO ] [hotwords] All keywords collected successfully
+2026-07-24 10:31:08 [INFO ] [hotwords] 
+2026-07-24 10:31:08 [INFO ] [hotwords] Combining: 0 fluctuation + 16 new_rank = 16 total
+2026-07-24 10:31:08 [INFO ] [hotwords] 
+2026-07-24 10:31:08 [INFO ] [hotwords] Cleaning...
+2026-07-24 10:31:08 [INFO ] [hotwords]   strip_whitespace: 16 → 16 (0 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords]   normalize_case: 16 → 16 (0 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords]   drop_single_word: 16 → 15 (1 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords]   drop_brands: 15 → 15 (0 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords]   drop_reordered: 15 → 14 (1 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords]   deduplicate: 14 → 14 (0 removed)
+2026-07-24 10:31:08 [INFO ] [hotwords] herren=13     damen=0      other=1    
+2026-07-24 10:31:08 [INFO ] [hotwords] Saved 14 words (raw: 16, errors: 1) → 20260724_103035_de.txt
+2026-07-24 10:31:08 [INFO ] [hotwords] ==================================================
+2026-07-24 10:31:08 [INFO ] [hotwords] Done.

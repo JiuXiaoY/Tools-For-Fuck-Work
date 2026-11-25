@@ -1,0 +1,383 @@
+2026-09-17 08:51:33 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-09-17 08:51:33 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-09-17 08:51:36 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-09-17 08:51:38 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-09-17 08:51:40 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 第 1 次请求成功: 1000 条
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): hotwords_20260917.txt (1000 条)
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] === 报告 ===
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → raw/hotwords_20260917.txt
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 清洗命中: 品类 51 / 属性 1(过滤前)
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 清洗丢弃: 948 条(黑名单 204 / 无关 744)
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 最终保留: 52 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 结果文件: result/hotwords_fashion_20260917.txt
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   harry potter gesamtausgabe deutsch	145148	属性:samt
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   regenjacke damen wasserdicht gefüttert	135608	品类:jacke;属性:wasserdicht,gefüttert,damen
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   gefütterte strumpfhose damen	133549	品类:hose;属性:gefüttert,damen
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   slipper damen schwarz	128285	品类:slip;属性:schwarz,damen
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   herren dessous	119570	品类:dessous;属性:herren
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   apache 207 tshirt	119503	品类:shirt
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   herren t-shirts multipack 3er 5er	118144	品类:shirt;属性:herren
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   waterproof jacket	116945	品类:jacke
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   regenjacke	116596	品类:jacke;去品牌:jako
+2026-09-17 08:51:43 [INFO ] [hotwords_fashion]   mantel herbst damen	115700	品类:mantel;属性:herbst,damen
+2026-09-17 10:17:15 [ERROR] [clean_fashion] C:\Users\xmzj\AppData\Local\Temp\tmp3e8s88jx\raw\fr/ 下没有原始文件，请先运行 hotwords_fashion.py --country fr 采集
+2026-09-17 10:17:30 [ERROR] [clean_fashion] C:\Users\xmzj\AppData\Local\Temp\tmpmfq2i7ll\raw\fr/ 下没有原始文件，请先运行 hotwords_fashion.py --country fr 采集
+2026-09-17 10:18:06 [ERROR] [clean_fashion] C:\Users\xmzj\AppData\Local\Temp\tmpe3nsztum\raw\fr/ 下没有原始文件，请先运行 hotwords_fashion.py --country fr 采集
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=1 (不带搜索词,按涨幅降序) ===
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 第 1 次请求成功: 4 条
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): C:\Users\xmzj\AppData\Local\Temp\tmpqoe2zpt4\raw\fr\hotwords_20260917.txt (3 条)
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] === 报告 ===
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 采集原始: 3 条 → C:\Users\xmzj\AppData\Local\Temp\tmpqoe2zpt4\raw\fr\hotwords_20260917.txt
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 清洗命中: 品类 2 / 属性 0(过滤前)
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 清洗丢弃: 1 条(黑名单 1 / 无关 0)
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 最终保留: 2 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 结果文件: C:\Users\xmzj\AppData\Local\Temp\tmpqoe2zpt4\result\fr\hotwords_fashion_20260917.txt
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:18:06 [INFO ] [hotwords_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 站点: fr；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\fr
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 输入: hotwords_20260917.txt (3 条)
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 
+2026-09-17 10:18:06 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 保留: 2 (品类 2 / 属性 0)
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 丢弃: 1 (黑名单 1 / 无关 0)
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Temp\tmpqoe2zpt4\result\fr\hotwords_fashion_20260917_101806_364650.txt
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 
+2026-09-17 10:18:06 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-09-17 10:18:06 [INFO ] [clean_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:18:06 [INFO ] [clean_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:19:24 [ERROR] [clean_fashion] C:\Users\xmzj\AppData\Local\Temp\tmp25htrfor\raw\fr/ 下没有原始文件，请先运行 hotwords_fashion.py --country fr 采集
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=1 (不带搜索词,按涨幅降序) ===
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 第 1 次请求成功: 4 条
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): C:\Users\xmzj\AppData\Local\Temp\tmpmflssvrn\raw\fr\hotwords_20260917.txt (3 条)
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] === 报告 ===
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 采集原始: 3 条 → C:\Users\xmzj\AppData\Local\Temp\tmpmflssvrn\raw\fr\hotwords_20260917.txt
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 清洗命中: 品类 2 / 属性 0(过滤前)
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 清洗丢弃: 1 条(黑名单 1 / 无关 0)
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 最终保留: 2 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 结果文件: C:\Users\xmzj\AppData\Local\Temp\tmpmflssvrn\result\fr\hotwords_fashion_20260917.txt
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:19:24 [INFO ] [hotwords_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 站点: fr；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\fr
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 输入: hotwords_20260917.txt (3 条)
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 
+2026-09-17 10:19:24 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 保留: 2 (品类 2 / 属性 0)
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 丢弃: 1 (黑名单 1 / 无关 0)
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Temp\tmpmflssvrn\result\fr\hotwords_fashion_20260917_101924_789867.txt
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 
+2026-09-17 10:19:24 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-09-17 10:19:24 [INFO ] [clean_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:19:24 [INFO ] [clean_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:24:22 [ERROR] [clean_fashion] C:\Users\xmzj\AppData\Local\Temp\tmp9xxv2s65\raw\fr/ 下没有原始文件，请先运行 hotwords_fashion.py --country fr 采集
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=1 (不带搜索词,按涨幅降序) ===
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 第 1 次请求成功: 4 条
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): C:\Users\xmzj\AppData\Local\Temp\tmpx6pkznt2\raw\fr\hotwords_20260917.txt (3 条)
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] === 报告 ===
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 采集原始: 3 条 → C:\Users\xmzj\AppData\Local\Temp\tmpx6pkznt2\raw\fr\hotwords_20260917.txt
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 清洗命中: 品类 2 / 属性 0(过滤前)
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 清洗丢弃: 1 条(黑名单 1 / 无关 0)
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 最终保留: 2 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 结果文件: C:\Users\xmzj\AppData\Local\Temp\tmpx6pkznt2\result\fr\hotwords_fashion_20260917.txt
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:24:22 [INFO ] [hotwords_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 站点: fr；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\fr
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 输入: hotwords_20260917.txt (3 条)
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 
+2026-09-17 10:24:22 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 保留: 2 (品类 2 / 属性 0)
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 丢弃: 1 (黑名单 1 / 无关 0)
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Temp\tmpx6pkznt2\result\fr\hotwords_fashion_20260917_102422_123760.txt
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 
+2026-09-17 10:24:22 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-09-17 10:24:22 [INFO ] [clean_fashion]   robe femme	40	品类:robe;属性:femme
+2026-09-17 10:24:22 [INFO ] [clean_fashion]   Veste de sport	20	品类:veste;属性:sport
+2026-09-17 10:36:05 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-09-17 10:36:05 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-09-17 10:36:08 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-09-17 10:36:10 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-09-17 10:36:13 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 第 1 次请求成功: 1000 条
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\fr\hotwords_20260917.txt (1000 条)
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] === 报告 ===
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\fr\hotwords_20260917.txt
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 清洗命中: 品类 43 / 属性 3(过滤前)
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 清洗丢弃: 954 条(黑名单 57 / 无关 897)
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 最终保留: 46 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\fr\hotwords_fashion_20260917.txt
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse blanche chimie lycee taille s	145827	品类:blouse
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   maillot de bain fille 12 ans	138105	品类:maillot de bain
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse de chimie lycee	134833	品类:blouse
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   pierre et jean maupassant	122665	品类:jean
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   courir jean echenoz folio lycee	121565	品类:jean
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse blanche chimie coton	117227	品类:blouse;属性:coton
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse chimie 100% coton	110400	品类:blouse;属性:coton
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse blanche chimie lycee bouton pression	108734	品类:blouse
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   costume oktoberfest femme	108490	品类:costume;属性:femme
+2026-09-17 10:36:15 [INFO ] [hotwords_fashion]   blouse chimie lycee coton	103230	品类:blouse;属性:coton
+2026-09-17 11:14:42 [INFO ] [jenkins] ==================================================
+2026-09-17 11:14:42 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-09-17 11:14:42 [INFO ] [jenkins] ==================================================
+2026-09-17 11:14:42 [INFO ] [jenkins] 
+2026-09-17 11:14:42 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-09-17 11:14:42 [INFO ] [jenkins] ------------------------------
+2026-09-17 11:14:43 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-09-17 11:14:43 [INFO ] [jenkins] 
+2026-09-17 11:14:43 [INFO ] [jenkins] [2/5] Preprocess
+2026-09-17 11:14:43 [INFO ] [jenkins] ------------------------------
+2026-09-17 11:14:43 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-09-17 11:14:43 [INFO ] [preprocess] [白大褂.xlsx]
+2026-09-17 11:14:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-17 11:14:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-17 11:14:45 [INFO ] [preprocess]   [白大褂.xlsx] Sheet [Sheet0]: header row removed
+2026-09-17 11:14:45 [INFO ] [pipeline] Pipeline complete
+2026-09-17 11:14:45 [INFO ] [preprocess] Preprocessing complete
+2026-09-17 11:14:45 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-09-17 11:14:45 [INFO ] [jenkins] 
+2026-09-17 11:14:45 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-09-17 11:14:45 [INFO ] [jenkins] ------------------------------
+2026-09-17 11:14:46 [INFO ] [main] Log file: 20260917_3a458e2a.log
+2026-09-17 11:14:46 [INFO ] [main] Found 1 file(s):
+2026-09-17 11:14:46 [INFO ] [main]   白大褂.xlsx
+2026-09-17 11:14:46 [INFO ] [main] Output: 9.10v1_fr.xlsx
+2026-09-17 11:14:46 [INFO ] [main] ==================================================
+2026-09-17 11:14:46 [INFO ] [main] Single file, copied
+2026-09-17 11:14:46 [INFO ] [main] Deleted 1 source file(s)
+2026-09-17 11:14:46 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-17 11:14:46 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-17 11:14:46 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-09-17 11:14:46 [INFO ] [pipeline] [2/12] validate
+2026-09-17 11:14:46 [INFO ] [pipeline]   Validated: 457 rows, 27 cols (expect ~32)
+2026-09-17 11:14:46 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-17 11:14:46 [INFO ] [pipeline]   Backed up 955 images
+2026-09-17 11:14:46 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-17 11:14:46 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-17 11:14:46 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-17 11:14:46 [INFO ] [pipeline]   Restored 955 images with adjusted anchors
+2026-09-17 11:14:46 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column 2: 457 IDs generated
+2026-09-17 11:14:46 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column 3: 457 cells filled
+2026-09-17 11:14:46 [INFO ] [pipeline] [6/12] map_colors
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column 11: 437 cells mapped, 20 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-17 11:14:46 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column 12: 433 mapped, 20 cleared (col A has fill), 4 no match (recorded)
+2026-09-17 11:14:46 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-17 11:14:46 [INFO ] [pipeline]   Mirror copy: 2373 cells written
+2026-09-17 11:14:46 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column 45: 457 cells copied from col 13
+2026-09-17 11:14:46 [INFO ] [pipeline] [10/12] calc_price
+2026-09-17 11:14:46 [INFO ] [pipeline]   Columns 46-49: 457 rows calculated
+2026-09-17 11:14:46 [INFO ] [pipeline] [11/12] format_cells
+2026-09-17 11:14:46 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-17 11:14:46 [INFO ] [pipeline]   Formatted 457 rows: h=50, align=left/center
+2026-09-17 11:14:46 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-17 11:14:46 [INFO ] [pipeline] [12/12] finalize
+2026-09-17 11:14:46 [INFO ] [pipeline]   Done: 457 rows x 49 cols (target: 49)
+2026-09-17 11:14:46 [INFO ] [pipeline] Pipeline complete
+2026-09-17 11:14:47 [INFO ] [main] Size: 457 rows x 49 cols
+2026-09-17 11:14:47 [INFO ] [main] ==================================================
+2026-09-17 11:14:47 [INFO ] [main] Done: 9.10v1_fr.xlsx
+2026-09-17 11:14:47 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-09-17 11:14:47 [INFO ] [jenkins] 
+2026-09-17 11:14:47 [INFO ] [jenkins] [4/5] Color re-processing
+2026-09-17 11:14:47 [INFO ] [jenkins] ------------------------------
+2026-09-17 11:14:47 [INFO ] [color_size_main] Source: 9.10v1_fr.xlsx
+2026-09-17 11:14:47 [INFO ] [color_size_main] Extracted: 437 data lines + 20 separators → check_.txt
+2026-09-17 11:14:47 [INFO ] [color_size_main] Running: process.py
+2026-09-17 11:14:48 [INFO ] [color_size_deal] Groups: 20, lines: 437 (file: 457)
+2026-09-17 11:14:48 [INFO ] [color_size_deal] Prefixes: {'01': 118, '02': 53, '03': 48, '04': 12, '05': 12}
+2026-09-17 11:14:48 [INFO ] [color_size_deal] Done.
+2026-09-17 11:14:48 [INFO ] [color_size_main] Processing write-back: 457 lines
+2026-09-17 11:14:48 [INFO ] [color_size_main] Write-back: 263 written, 194 unchanged → 9.10v1_fr.xlsx
+2026-09-17 11:14:48 [INFO ] [color_size_main] Done.
+2026-09-17 11:14:48 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-09-17 11:14:48 [INFO ] [jenkins] 
+2026-09-17 11:14:48 [INFO ] [jenkins] [5/5] Title optimization
+2026-09-17 11:14:48 [INFO ] [jenkins] ------------------------------
+2026-09-17 11:14:49 [INFO ] [title_workflow] Source: 9.10v1_fr.xlsx
+2026-09-17 11:14:49 [INFO ] [title_workflow] Extracted 20 titles + 20 links
+2026-09-17 11:14:49 [INFO ] [title_workflow] Written: origin_title (20) + origin_link (20)
+2026-09-17 11:14:49 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-17 11:14:49 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-17 11:14:50 [INFO ] [deepseek_web] Opening DeepSeek web (20 titles)...
+2026-09-17 11:14:50 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-17 11:14:59 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-17 11:15:01 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-17 11:15:01 [INFO ] [deepseek_web] [1/20] 成人医生黏贴款白大褂
+2026-09-17 11:15:03 [INFO ] [deepseek_web]   Downloaded: 0001_0941105333451212543443.jpg
+2026-09-17 11:15:03 [INFO ] [deepseek_web]   Prefetching next image (2/20)
+2026-09-17 11:15:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:15:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:15:32 [INFO ] [deepseek_web]   Response: 翻领 黏贴暗门襟 左胸单口袋 双侧大贴袋 侧摆开衩 纯色 医生白大褂 中性 宽松版型 直筒长袖 中长款 医护工作服
+2026-09-17 11:15:32 [INFO ] [deepseek_web]   Deleted: 0001_0941105333451212543443.jpg
+2026-09-17 11:15:37 [INFO ] [deepseek_web] [2/20] 女士DIY白大褂长袖cosplay实验服学生护士工作服
+2026-09-17 11:15:37 [INFO ] [deepseek_web]   Downloaded: 0002_8271139117961015170409.jpg
+2026-09-17 11:15:37 [INFO ] [deepseek_web]   Prefetching next image (3/20)
+2026-09-17 11:15:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:15:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:16:06 [INFO ] [deepseek_web]   Response: 翻领 左胸单口袋 双侧大贴袋 单排扣门襟 长袖 中长款 纯色 医生工作服 女士 常规版型 直筒下摆 学生护士工作服
+2026-09-17 11:16:06 [INFO ] [deepseek_web]   Deleted: 0002_8271139117961015170409.jpg
+2026-09-17 11:16:11 [INFO ] [deepseek_web] [3/20] 男士长袖白大褂实验室男人女人工业衬衫
+2026-09-17 11:16:11 [INFO ] [deepseek_web]   Downloaded: 0003_2190312196383511862771.jpg
+2026-09-17 11:16:11 [INFO ] [deepseek_web]   Prefetching next image (4/20)
+2026-09-17 11:16:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:16:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:16:42 [INFO ] [deepseek_web]   Response: 左胸单口袋 双侧大贴袋 翻领 长袖 直筒袖口 中长款 直筒下摆 纯色 前门襟 医生白大褂 中性 常规版型 实验室工作服
+2026-09-17 11:16:42 [INFO ] [deepseek_web]   Deleted: 0003_2190312196383511862771.jpg
+2026-09-17 11:16:47 [INFO ] [deepseek_web] [4/20] 女士DIY白大褂长袖cosplay实验服学生护士工作服（全工艺）
+2026-09-17 11:16:47 [INFO ] [deepseek_web]   Downloaded: 0004_9970303084571420443444.jpg
+2026-09-17 11:16:47 [INFO ] [deepseek_web]   Prefetching next image (5/20)
+2026-09-17 11:16:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:16:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:17:16 [INFO ] [deepseek_web]   Response: 后腰横向拼接 后摆开衩 左胸单口袋 双侧大贴袋 袖口纽扣设计 纯色 女士 医生工作服 常规版型 翻领 长袖 单排扣门襟 中长款
+2026-09-17 11:17:16 [INFO ] [deepseek_web]   Deleted: 0004_9970303084571420443444.jpg
+2026-09-17 11:17:21 [INFO ] [deepseek_web] [5/20] 女士白大褂短袖cosplay实验服学生护士工作服
+2026-09-17 11:17:21 [INFO ] [deepseek_web]   Downloaded: 0005_0301126469171021304026.jpg
+2026-09-17 11:17:21 [INFO ] [deepseek_web]   Prefetching next image (6/20)
+2026-09-17 11:17:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:17:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:17:50 [INFO ] [deepseek_web]   Response: 左胸单口袋 双侧大贴袋 口袋条纹拼接 短袖 翻领 单排扣门襟 中长款 女士 常规版型 医生白大褂 护士工作服 实验服 工作服
+2026-09-17 11:17:50 [INFO ] [deepseek_web]   Deleted: 0005_0301126469171021304026.jpg
+2026-09-17 11:17:55 [INFO ] [deepseek_web] [6/20] 长袖白大褂实验服男医生隔离衣棉学生 女食品厂护士服白大衣
+2026-09-17 11:17:55 [INFO ] [deepseek_web]   Downloaded: 0006_4400346537781813147460.jpg
+2026-09-17 11:17:55 [INFO ] [deepseek_web]   Prefetching next image (7/20)
+2026-09-17 11:17:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:18:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:18:25 [INFO ] [deepseek_web]   Response: 左胸单口袋 双侧大贴袋 收口袖口 翻领 长袖 单排扣门襟 中长款 纯色 医生白大褂 中性 常规版型 实验室工作服
+2026-09-17 11:18:25 [INFO ] [deepseek_web]   Deleted: 0006_4400346537781813147460.jpg
+2026-09-17 11:18:30 [INFO ] [deepseek_web] [7/20] 男女士白大褂工装外套  白色
+2026-09-17 11:18:30 [INFO ] [deepseek_web]   Downloaded: 0007_0120620181021035817784.jpg
+2026-09-17 11:18:30 [INFO ] [deepseek_web]   Prefetching next image (8/20)
+2026-09-17 11:18:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:18:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:19:05 [INFO ] [deepseek_web]   Response: 翻领 长袖 纽扣门襟 中长款 纯色 医生工作服外套 中性 常规版型 工装外套 医护工作服 实验室工作服
+2026-09-17 11:19:05 [INFO ] [deepseek_web]   Deleted: 0007_0120620181021035817784.jpg
+2026-09-17 11:19:10 [INFO ] [deepseek_web] [8/20] 长袖白大褂学生实验室药店医生美容男女白大褂实验服
+2026-09-17 11:19:10 [INFO ] [deepseek_web]   Downloaded: 0008_5771046353348415585746.jpg
+2026-09-17 11:19:10 [INFO ] [deepseek_web]   Prefetching next image (9/20)
+2026-09-17 11:19:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:19:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:19:39 [INFO ] [deepseek_web]   Response: 松紧收口袖口 左胸单口袋 双侧大贴袋 翻领 单排扣门襟 中长款 纯色 医生白大褂 中性 宽松版型 长袖 实验室工作服 药店工作服 美容工作服
+2026-09-17 11:19:39 [INFO ] [deepseek_web]   Deleted: 0008_5771046353348415585746.jpg
+2026-09-17 11:19:44 [INFO ] [deepseek_web] [9/20] 短款护士工作服分体套装长短袖夏季薄款白大褂美容口腔牙科医护服
+2026-09-17 11:19:44 [INFO ] [deepseek_web]   Downloaded: 0009_7990350058191811703711.jpg
+2026-09-17 11:19:44 [INFO ] [deepseek_web]   Prefetching next image (10/20)
+2026-09-17 11:19:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:19:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:20:15 [INFO ] [deepseek_web]   Response: 不对称斜门襟 立领 左胸单贴袋 短袖 短款 护士工作服分体套装 女士 常规版型 上衣长裤两件套 医护美容工作服
+2026-09-17 11:20:15 [INFO ] [deepseek_web]   Deleted: 0009_7990350058191811703711.jpg
+2026-09-17 11:20:20 [INFO ] [deepseek_web] [10/20] 护士服女长袖春秋白大褂药店美容院医院厚款工作服夏季套装冬季
+2026-09-17 11:20:20 [INFO ] [deepseek_web]   Downloaded: 0010_3500322555191620418197.jpg
+2026-09-17 11:20:20 [INFO ] [deepseek_web]   Prefetching next image (11/20)
+2026-09-17 11:20:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:20:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:20:49 [INFO ] [deepseek_web]   Response: 不对称斜门襟 立领 腰部横向拼接带 左胸单口袋 双侧大贴袋 短袖 中长款 纯色 女士 医院护士工作服上衣 常规版型
+2026-09-17 11:20:49 [INFO ] [deepseek_web]   Deleted: 0010_3500322555191620418197.jpg
+2026-09-17 11:20:54 [INFO ] [deepseek_web] [11/20] 男士长袖白大褂实验室工作服纽扣修袖款
+2026-09-17 11:20:54 [INFO ] [deepseek_web]   Downloaded: 0011_8621109598453070636512.jpg
+2026-09-17 11:20:54 [INFO ] [deepseek_web]   Prefetching next image (12/20)
+2026-09-17 11:20:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:21:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:21:23 [INFO ] [deepseek_web]   Response: 翻领 单排扣门襟 双侧大贴袋 袖口纽扣设计 纯色 医生白大褂 男士 宽松版型 长袖 中长款 直筒下摆 实验室工作服
+2026-09-17 11:21:23 [INFO ] [deepseek_web]   Deleted: 0011_8621109598453070636512.jpg
+2026-09-17 11:21:28 [INFO ] [deepseek_web] [12/20] 长袖白大褂实验室工作服螺纹袖口暗扣门襟白大褂
+2026-09-17 11:21:28 [INFO ] [deepseek_web]   Downloaded: 0012_7100929598644215697391.jpg
+2026-09-17 11:21:28 [INFO ] [deepseek_web]   Prefetching next image (13/20)
+2026-09-17 11:21:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:21:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:21:57 [INFO ] [deepseek_web]   Response: 螺纹袖口 暗扣前门襟 左胸单口袋 双侧大贴袋 翻领 长袖 中长款 直筒下摆 纯色 医生白大褂 中性 宽松直筒版型
+2026-09-17 11:21:57 [INFO ] [deepseek_web]   Deleted: 0012_7100929598644215697391.jpg
+2026-09-17 11:22:02 [INFO ] [deepseek_web] [13/20] 医生服cos服白大褂高端大学生长袖衬衫
+2026-09-17 11:22:02 [INFO ] [deepseek_web]   Downloaded: 0013_8401023569924141459458.jpg
+2026-09-17 11:22:02 [INFO ] [deepseek_web]   Prefetching next image (14/20)
+2026-09-17 11:22:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:22:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:22:34 [INFO ] [deepseek_web]   Response: 后腰横向腰带 后中开衩 左胸单口袋 女士 医生工作服 常规版型 双侧大贴袋 单排扣门襟 翻领 长袖 中长款 直筒袖口 纯色 实验室工作服
+2026-09-17 11:22:34 [INFO ] [deepseek_web]   Deleted: 0013_8401023569924141459458.jpg
+2026-09-17 11:22:39 [INFO ] [deepseek_web] [14/20] 医生护士cos服长款实验室工作服衬衫西服领斜角口袋
+2026-09-17 11:22:39 [INFO ] [deepseek_web]   Downloaded: 0014_7780448510103012310248.jpg
+2026-09-17 11:22:39 [INFO ] [deepseek_web]   Prefetching next image (15/20)
+2026-09-17 11:22:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:22:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:23:08 [INFO ] [deepseek_web]   Response: 西服领 双侧斜角贴袋 单排扣门襟 左胸单口袋 女士 常规版型 医生白大褂 长袖 中长款 纯色 护士工作服 实验室工作服
+2026-09-17 11:23:08 [INFO ] [deepseek_web]   Deleted: 0014_7780448510103012310248.jpg
+2026-09-17 11:23:13 [INFO ] [deepseek_web] [15/20] 男女白大褂实验服-优质棉纽扣袖
+2026-09-17 11:23:13 [INFO ] [deepseek_web]   Downloaded: 0015_3960945046716086155229.jpg
+2026-09-17 11:23:13 [INFO ] [deepseek_web]   Prefetching next image (16/20)
+2026-09-17 11:23:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:23:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:23:42 [INFO ] [deepseek_web]   Response: 翻领 单排扣门襟 左胸单口袋 双侧大贴袋 纽扣袖口 长袖 中长款 纯色 医生工作服 中性 常规版型 实验室工作服
+2026-09-17 11:23:42 [INFO ] [deepseek_web]   Deleted: 0015_3960945046716086155229.jpg
+2026-09-17 11:23:47 [INFO ] [deepseek_web] [16/20] 女士白大褂长袖cosplay实验服学生护士工作服
+2026-09-17 11:23:47 [INFO ] [deepseek_web]   Downloaded: 0016_2401036220206614182349.jpg
+2026-09-17 11:23:47 [INFO ] [deepseek_web]   Prefetching next image (17/20)
+2026-09-17 11:23:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:23:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:24:17 [INFO ] [deepseek_web]   Response: 条纹拼接左胸口袋 条纹拼接双侧大贴袋 单排扣门襟 翻领 长袖 中长款 女士 常规版型 医生工作服 护士工作服 实验服
+2026-09-17 11:24:17 [INFO ] [deepseek_web]   Deleted: 0016_2401036220206614182349.jpg
+2026-09-17 11:24:22 [INFO ] [deepseek_web] [17/20] 女士200斤白大褂长袖cosplay实验服学生护士工作服
+2026-09-17 11:24:22 [INFO ] [deepseek_web]   Downloaded: 0017_4571025246165812001885.jpg
+2026-09-17 11:24:22 [INFO ] [deepseek_web]   Prefetching next image (18/20)
+2026-09-17 11:24:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:24:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:24:51 [INFO ] [deepseek_web]   Response: 松紧收口袖口 左胸单口袋 双侧大贴袋 医生白大褂 女士 宽松版型 翻领 单排扣门襟 长袖 中长款 纯色 护士工作服 实验服
+2026-09-17 11:24:51 [INFO ] [deepseek_web]   Deleted: 0017_4571025246165812001885.jpg
+2026-09-17 11:24:56 [INFO ] [deepseek_web] [18/20] 女士白大褂长袖cosplay实验服学生护士工作服
+2026-09-17 11:24:56 [INFO ] [deepseek_web]   Downloaded: 0018_7101010186505118239373.jpg
+2026-09-17 11:24:56 [INFO ] [deepseek_web]   Prefetching next image (19/20)
+2026-09-17 11:24:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:25:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:25:25 [INFO ] [deepseek_web]   Response: 腰部横向拼接 袖口翻折 前门襟开衩 翻领 单排扣门襟 长袖 中长款 纯色 医生工作服 女士 常规版型 护士工作服 实验服
+2026-09-17 11:25:25 [INFO ] [deepseek_web]   Deleted: 0018_7101010186505118239373.jpg
+2026-09-17 11:25:30 [INFO ] [deepseek_web] [19/20] 女士纯色宽松短袖白大褂护士工作服
+2026-09-17 11:25:30 [INFO ] [deepseek_web]   Downloaded: 0019_4620505328973615397906.jpg
+2026-09-17 11:25:30 [INFO ] [deepseek_web]   Prefetching next image (20/20)
+2026-09-17 11:25:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:25:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:26:00 [INFO ] [deepseek_web]   Response: 口袋撞色包边 双侧大贴袋 V领 单排扣门襟 短袖 女士 宽松版型 护士工作服 短款 膝上长度 直筒下摆 纯色 医护工作服
+2026-09-17 11:26:00 [INFO ] [deepseek_web]   Deleted: 0019_4620505328973615397906.jpg
+2026-09-17 11:26:05 [INFO ] [deepseek_web] [20/20] 女士短袖V领护士服白大褂带口袋
+2026-09-17 11:26:05 [INFO ] [deepseek_web]   Downloaded: 0020_7550437360273110637277.jpg
+2026-09-17 11:26:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-17 11:26:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-17 11:26:34 [INFO ] [deepseek_web]   Response: 翻领 单排扣门襟 左胸单口袋 双侧大贴袋 腰部横向拼接带 短袖 中长款 纯色 护士工作服 女士 常规版型
+2026-09-17 11:26:34 [INFO ] [deepseek_web]   Deleted: 0020_7550437360273110637277.jpg
+2026-09-17 11:26:34 [INFO ] [deepseek_web] ==================================================
+2026-09-17 11:26:34 [INFO ] [deepseek_web] Done: 20 success, 0 failed → optimize_title
+2026-09-17 11:26:34 [INFO ] [title_workflow] Optimization complete: 20 titles
+2026-09-17 11:26:35 [INFO ] [title_workflow] Written 20 optimized titles to column H (8)
+2026-09-17 11:26:35 [INFO ] [title_workflow] Done: 9.10v1_fr.xlsx
+2026-09-17 11:26:35 [INFO ] [jenkins] [5/5] Title optimization OK
+2026-09-17 11:26:35 [INFO ] [jenkins] 
+2026-09-17 11:26:35 [INFO ] [jenkins] ==================================================
+2026-09-17 11:26:35 [INFO ] [jenkins] All 5 steps completed successfully
+2026-09-17 11:26:35 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-17 11:26:35 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-17 11:26:35 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-17 11:26:35 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

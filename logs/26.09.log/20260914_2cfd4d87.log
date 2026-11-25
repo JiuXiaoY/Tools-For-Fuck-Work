@@ -1,0 +1,1459 @@
+2026-09-14 17:19:59 [INFO ] [jenkins] ==================================================
+2026-09-14 17:19:59 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-14 17:19:59 [INFO ] [jenkins] ==================================================
+2026-09-14 17:19:59 [INFO ] [jenkins] 
+2026-09-14 17:19:59 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-14 17:19:59 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:19:59 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-14 17:19:59 [INFO ] [jenkins] 
+2026-09-14 17:19:59 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-14 17:19:59 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:19:59 [INFO ] [preprocess] Preprocessing 26 file(s) with 1 step(s)
+2026-09-14 17:19:59 [INFO ] [preprocess] [21.xlsx]
+2026-09-14 17:19:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:19:59 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:19:59 [INFO ] [preprocess]   [21.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:19:59 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:19:59 [INFO ] [preprocess] [22.xlsx]
+2026-09-14 17:19:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:19:59 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:00 [INFO ] [preprocess]   [22.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:00 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:00 [INFO ] [preprocess] [23.xlsx]
+2026-09-14 17:20:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:00 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:02 [INFO ] [preprocess]   [23.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:02 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:02 [INFO ] [preprocess] [24.xlsx]
+2026-09-14 17:20:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:02 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:02 [INFO ] [preprocess]   [24.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:02 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:02 [INFO ] [preprocess] [25.xlsx]
+2026-09-14 17:20:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:02 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:02 [INFO ] [preprocess]   [25.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:02 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:03 [INFO ] [preprocess] [26.xlsx]
+2026-09-14 17:20:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:03 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:03 [INFO ] [preprocess]   [26.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:03 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:03 [INFO ] [preprocess] [31.xlsx]
+2026-09-14 17:20:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:03 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:04 [INFO ] [preprocess]   [31.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:04 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:04 [INFO ] [preprocess] [32.xlsx]
+2026-09-14 17:20:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:04 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:04 [INFO ] [preprocess]   [32.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:04 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:04 [INFO ] [preprocess] [33.xlsx]
+2026-09-14 17:20:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:04 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:05 [INFO ] [preprocess]   [33.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:05 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:05 [INFO ] [preprocess] [34.xlsx]
+2026-09-14 17:20:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:05 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:05 [INFO ] [preprocess]   [34.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:05 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:05 [INFO ] [preprocess] [35.xlsx]
+2026-09-14 17:20:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:05 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:05 [INFO ] [preprocess]   [35.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:05 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:05 [INFO ] [preprocess] [36.xlsx]
+2026-09-14 17:20:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:05 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:07 [INFO ] [preprocess]   [36.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:07 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:07 [INFO ] [preprocess] [37.xlsx]
+2026-09-14 17:20:07 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:07 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:07 [INFO ] [preprocess]   [37.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:07 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:07 [INFO ] [preprocess] [38.xlsx]
+2026-09-14 17:20:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:08 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:08 [INFO ] [preprocess]   [38.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:08 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:08 [INFO ] [preprocess] [39.xlsx]
+2026-09-14 17:20:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:08 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:09 [INFO ] [preprocess]   [39.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:09 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:10 [INFO ] [preprocess] [extra1.xlsx]
+2026-09-14 17:20:10 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:10 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:10 [INFO ] [preprocess]   [extra1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:10 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:10 [INFO ] [preprocess] [extra2.xlsx]
+2026-09-14 17:20:10 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:10 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:11 [INFO ] [preprocess]   [extra2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:11 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:12 [INFO ] [preprocess] [extra3.xlsx]
+2026-09-14 17:20:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:12 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:13 [INFO ] [preprocess]   [extra3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:13 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:13 [INFO ] [preprocess] [extra4.xlsx]
+2026-09-14 17:20:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:13 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:13 [INFO ] [preprocess]   [extra4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:13 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:13 [INFO ] [preprocess] [extra5.xlsx]
+2026-09-14 17:20:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:13 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:14 [INFO ] [preprocess]   [extra5.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:14 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:14 [INFO ] [preprocess] [extra6.xlsx]
+2026-09-14 17:20:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:14 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:15 [INFO ] [preprocess]   [extra6.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:15 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:15 [INFO ] [preprocess] [extra7.xlsx]
+2026-09-14 17:20:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:15 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:16 [INFO ] [preprocess]   [extra7.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:16 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:16 [INFO ] [preprocess] [extra8.xlsx]
+2026-09-14 17:20:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:16 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:16 [INFO ] [preprocess]   [extra8.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:16 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:16 [INFO ] [preprocess] [st1.xlsx]
+2026-09-14 17:20:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:17 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:19 [INFO ] [preprocess]   [st1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:19 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:20 [INFO ] [preprocess] [st2.xlsx]
+2026-09-14 17:20:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:20 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:22 [INFO ] [preprocess]   [st2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:22 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:23 [INFO ] [preprocess] [st3.xlsx]
+2026-09-14 17:20:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:20:23 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:20:26 [INFO ] [preprocess]   [st3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:20:26 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:20:26 [INFO ] [preprocess] Preprocessing complete
+2026-09-14 17:20:26 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-14 17:20:26 [INFO ] [jenkins] 
+2026-09-14 17:20:26 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-14 17:20:26 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:20:27 [INFO ] [main] Log file: 20260914_2cfd4d87.log
+2026-09-14 17:20:27 [INFO ] [main] Found 26 file(s):
+2026-09-14 17:20:27 [INFO ] [main]   21.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   22.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   23.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   24.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   25.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   26.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   31.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   32.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   33.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   34.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   35.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   36.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   37.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   38.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   39.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra1.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra2.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra3.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra4.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra5.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra6.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra7.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   extra8.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   st1.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   st2.xlsx
+2026-09-14 17:20:27 [INFO ] [main]   st3.xlsx
+2026-09-14 17:20:27 [INFO ] [main] Output: 9.8v1_de.xlsx
+2026-09-14 17:20:27 [INFO ] [main] ==================================================
+2026-09-14 17:20:53 [INFO ] [main] Merged 26 files, 9967 images total
+2026-09-14 17:20:53 [INFO ] [main] Deleted 26 source file(s)
+2026-09-14 17:20:56 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-14 17:20:56 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_2]: 73 rows, 139 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_3]: 483 rows, 744 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_4]: 43 rows, 74 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_5]: 49 rows, 98 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_6]: 177 rows, 358 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_7]: 151 rows, 280 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_8]: 61 rows, 125 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_9]: 81 rows, 164 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_10]: 73 rows, 141 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_11]: 38 rows, 97 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_12]: 362 rows, 548 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_13]: 113 rows, 172 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_14]: 73 rows, 114 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_15]: 362 rows, 549 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_16]: 193 rows, 347 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_17]: 249 rows, 389 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_18]: 241 rows, 445 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_19]: 73 rows, 137 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_20]: 247 rows, 478 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_21]: 225 rows, 385 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_22]: 44 rows, 82 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_23]: 193 rows, 381 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_24]: 757 rows, 805 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_25]: 729 rows, 1390 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Sheet [Sheet0_26]: 744 rows, 1373 images
+2026-09-14 17:21:18 [INFO ] [pipeline]   Merged 26 sheets -> 1, 5834 data rows, 9815 images
+2026-09-14 17:21:18 [INFO ] [pipeline] [2/12] validate
+2026-09-14 17:21:18 [INFO ] [pipeline]   Validated: 5923 rows, 27 cols (expect ~32)
+2026-09-14 17:21:18 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-14 17:21:19 [INFO ] [pipeline]   Backed up 9967 images
+2026-09-14 17:21:19 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-14 17:21:19 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-14 17:21:19 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-14 17:21:19 [INFO ] [pipeline]   Restored 9967 images with adjusted anchors
+2026-09-14 17:21:19 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-14 17:21:19 [INFO ] [pipeline]   Column 2: 5923 IDs generated
+2026-09-14 17:21:19 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-14 17:21:19 [INFO ] [pipeline]   Column 3: 5923 cells filled
+2026-09-14 17:21:19 [INFO ] [pipeline] [6/12] map_colors
+2026-09-14 17:21:19 [INFO ] [pipeline]   Column 11: 5859 cells mapped, 64 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-14 17:21:19 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-14 17:21:19 [INFO ] [pipeline]   Column 12: 5769 mapped, 64 cleared (col A has fill), 90 no match (recorded)
+2026-09-14 17:21:19 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-14 17:21:19 [INFO ] [pipeline]   Mirror copy: 31793 cells written
+2026-09-14 17:21:19 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-14 17:21:19 [INFO ] [pipeline]   Column 45: 5923 cells copied from col 13
+2026-09-14 17:21:19 [INFO ] [pipeline] [10/12] calc_price
+2026-09-14 17:21:19 [INFO ] [pipeline]   Columns 46-49: 5923 rows calculated
+2026-09-14 17:21:19 [INFO ] [pipeline] [11/12] format_cells
+2026-09-14 17:21:21 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-14 17:21:21 [INFO ] [pipeline]   Formatted 5923 rows: h=50, align=left/center
+2026-09-14 17:21:21 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-14 17:21:21 [INFO ] [pipeline] [12/12] finalize
+2026-09-14 17:21:21 [INFO ] [pipeline]   Done: 5923 rows x 49 cols (target: 49)
+2026-09-14 17:21:21 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:21:26 [INFO ] [main] Size: 5923 rows x 49 cols
+2026-09-14 17:21:26 [INFO ] [main] ==================================================
+2026-09-14 17:21:26 [INFO ] [main] Done: 9.8v1_de.xlsx
+2026-09-14 17:21:27 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-14 17:21:27 [INFO ] [jenkins] 
+2026-09-14 17:21:27 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-14 17:21:27 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:21:27 [INFO ] [color_size_main] Source: 9.8v1_de.xlsx
+2026-09-14 17:21:32 [INFO ] [color_size_main] Extracted: 5859 data lines + 64 separators → check_.txt
+2026-09-14 17:21:32 [INFO ] [color_size_main] Running: process.py
+2026-09-14 17:21:32 [INFO ] [color_size_deal] Groups: 64, lines: 5859 (file: 5923)
+2026-09-14 17:21:32 [INFO ] [color_size_deal] Prefixes: {'01': 825, '02': 436, '03': 324, '04': 278, '05': 156, '06': 130, '07': 92, '08': 86, '09': 66, '10': 54, '11': 48, '12': 48, '13': 40, '14': 32, '15': 24, '16': 16, '17': 16}
+2026-09-14 17:21:32 [INFO ] [color_size_deal] Done.
+2026-09-14 17:21:32 [INFO ] [color_size_main] Processing write-back: 5923 lines
+2026-09-14 17:21:43 [INFO ] [color_size_main] Write-back: 2735 written, 3188 unchanged → 9.8v1_de.xlsx
+2026-09-14 17:21:43 [INFO ] [color_size_main] Done.
+2026-09-14 17:21:43 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-14 17:21:43 [INFO ] [jenkins] 
+2026-09-14 17:21:43 [INFO ] [jenkins] ==================================================
+2026-09-14 17:21:43 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-14 17:21:43 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-14 17:21:43 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-14 17:21:43 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-14 17:21:43 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-14 17:23:36 [INFO ] [jenkins] ==================================================
+2026-09-14 17:23:36 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-14 17:23:36 [INFO ] [jenkins] ==================================================
+2026-09-14 17:23:36 [INFO ] [jenkins] 
+2026-09-14 17:23:36 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-14 17:23:36 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:23:36 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-14 17:23:36 [INFO ] [jenkins] 
+2026-09-14 17:23:36 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-14 17:23:36 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:23:36 [INFO ] [preprocess] Preprocessing 26 file(s) with 1 step(s)
+2026-09-14 17:23:36 [INFO ] [preprocess] [21.xlsx]
+2026-09-14 17:23:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:36 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:37 [INFO ] [preprocess]   [21.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:37 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:37 [INFO ] [preprocess] [22.xlsx]
+2026-09-14 17:23:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:37 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:37 [INFO ] [preprocess]   [22.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:37 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:37 [INFO ] [preprocess] [23.xlsx]
+2026-09-14 17:23:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:37 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:39 [INFO ] [preprocess]   [23.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:39 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:39 [INFO ] [preprocess] [24.xlsx]
+2026-09-14 17:23:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:39 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:39 [INFO ] [preprocess]   [24.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:39 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:40 [INFO ] [preprocess] [25.xlsx]
+2026-09-14 17:23:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:40 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:40 [INFO ] [preprocess]   [25.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:40 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:40 [INFO ] [preprocess] [26.xlsx]
+2026-09-14 17:23:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:40 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:40 [INFO ] [preprocess]   [26.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:40 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:41 [INFO ] [preprocess] [31.xlsx]
+2026-09-14 17:23:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:41 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:41 [INFO ] [preprocess]   [31.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:41 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:41 [INFO ] [preprocess] [32.xlsx]
+2026-09-14 17:23:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:41 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:42 [INFO ] [preprocess]   [32.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:42 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:42 [INFO ] [preprocess] [33.xlsx]
+2026-09-14 17:23:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:42 [INFO ] [preprocess]   [33.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:42 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:42 [INFO ] [preprocess] [34.xlsx]
+2026-09-14 17:23:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:42 [INFO ] [preprocess]   [34.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:42 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:42 [INFO ] [preprocess] [35.xlsx]
+2026-09-14 17:23:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:43 [INFO ] [preprocess]   [35.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:43 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:43 [INFO ] [preprocess] [36.xlsx]
+2026-09-14 17:23:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:44 [INFO ] [preprocess]   [36.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:44 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:44 [INFO ] [preprocess] [37.xlsx]
+2026-09-14 17:23:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:45 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:45 [INFO ] [preprocess]   [37.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:45 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:45 [INFO ] [preprocess] [38.xlsx]
+2026-09-14 17:23:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:45 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:45 [INFO ] [preprocess]   [38.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:45 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:46 [INFO ] [preprocess] [39.xlsx]
+2026-09-14 17:23:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:46 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:47 [INFO ] [preprocess]   [39.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:47 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:47 [INFO ] [preprocess] [extra1.xlsx]
+2026-09-14 17:23:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:48 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:48 [INFO ] [preprocess]   [extra1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:48 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:48 [INFO ] [preprocess] [extra2.xlsx]
+2026-09-14 17:23:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:49 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:49 [INFO ] [preprocess]   [extra2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:49 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:50 [INFO ] [preprocess] [extra3.xlsx]
+2026-09-14 17:23:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:50 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:51 [INFO ] [preprocess]   [extra3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:51 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:51 [INFO ] [preprocess] [extra4.xlsx]
+2026-09-14 17:23:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:51 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:51 [INFO ] [preprocess]   [extra4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:51 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:51 [INFO ] [preprocess] [extra5.xlsx]
+2026-09-14 17:23:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:51 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:52 [INFO ] [preprocess]   [extra5.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:52 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:52 [INFO ] [preprocess] [extra6.xlsx]
+2026-09-14 17:23:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:52 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:53 [INFO ] [preprocess]   [extra6.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:53 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:53 [INFO ] [preprocess] [extra7.xlsx]
+2026-09-14 17:23:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:53 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:54 [INFO ] [preprocess]   [extra7.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:54 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:54 [INFO ] [preprocess] [extra8.xlsx]
+2026-09-14 17:23:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:54 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:55 [INFO ] [preprocess]   [extra8.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:55 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:55 [INFO ] [preprocess] [st1.xlsx]
+2026-09-14 17:23:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:55 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:23:58 [INFO ] [preprocess]   [st1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:23:58 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:23:58 [INFO ] [preprocess] [st2.xlsx]
+2026-09-14 17:23:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:23:58 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:24:01 [INFO ] [preprocess]   [st2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:24:01 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:24:02 [INFO ] [preprocess] [st3.xlsx]
+2026-09-14 17:24:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:24:02 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:24:05 [INFO ] [preprocess]   [st3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:24:05 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:24:05 [INFO ] [preprocess] Preprocessing complete
+2026-09-14 17:24:05 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-14 17:24:05 [INFO ] [jenkins] 
+2026-09-14 17:24:05 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-14 17:24:05 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:24:06 [INFO ] [main] Log file: 20260914_2cfd4d87.log
+2026-09-14 17:24:06 [INFO ] [main] Found 26 file(s):
+2026-09-14 17:24:06 [INFO ] [main]   21.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   22.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   23.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   24.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   25.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   26.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   31.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   32.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   33.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   34.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   35.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   36.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   37.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   38.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   39.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra1.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra2.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra3.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra4.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra5.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra6.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra7.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   extra8.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   st1.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   st2.xlsx
+2026-09-14 17:24:06 [INFO ] [main]   st3.xlsx
+2026-09-14 17:24:06 [INFO ] [main] Output: 9.8v1_fr.xlsx
+2026-09-14 17:24:06 [INFO ] [main] ==================================================
+2026-09-14 17:24:34 [INFO ] [main] Merged 26 files, 9967 images total
+2026-09-14 17:24:34 [INFO ] [main] Deleted 26 source file(s)
+2026-09-14 17:24:36 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-14 17:24:36 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_2]: 73 rows, 139 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_3]: 483 rows, 744 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_4]: 43 rows, 74 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_5]: 49 rows, 98 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_6]: 177 rows, 358 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_7]: 151 rows, 280 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_8]: 61 rows, 125 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_9]: 81 rows, 164 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_10]: 73 rows, 141 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_11]: 38 rows, 97 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_12]: 362 rows, 548 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_13]: 113 rows, 172 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_14]: 73 rows, 114 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_15]: 362 rows, 549 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_16]: 193 rows, 347 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_17]: 249 rows, 389 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_18]: 241 rows, 445 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_19]: 73 rows, 137 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_20]: 247 rows, 478 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_21]: 225 rows, 385 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_22]: 44 rows, 82 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_23]: 193 rows, 381 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_24]: 757 rows, 805 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_25]: 729 rows, 1390 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Sheet [Sheet0_26]: 744 rows, 1373 images
+2026-09-14 17:24:59 [INFO ] [pipeline]   Merged 26 sheets -> 1, 5834 data rows, 9815 images
+2026-09-14 17:24:59 [INFO ] [pipeline] [2/12] validate
+2026-09-14 17:24:59 [INFO ] [pipeline]   Validated: 5923 rows, 27 cols (expect ~32)
+2026-09-14 17:24:59 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-14 17:25:00 [INFO ] [pipeline]   Backed up 9967 images
+2026-09-14 17:25:00 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-14 17:25:00 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-14 17:25:00 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-14 17:25:00 [INFO ] [pipeline]   Restored 9967 images with adjusted anchors
+2026-09-14 17:25:00 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-14 17:25:00 [INFO ] [pipeline]   Column 2: 5923 IDs generated
+2026-09-14 17:25:00 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-14 17:25:00 [INFO ] [pipeline]   Column 3: 5923 cells filled
+2026-09-14 17:25:00 [INFO ] [pipeline] [6/12] map_colors
+2026-09-14 17:25:00 [INFO ] [pipeline]   Column 11: 5859 cells mapped, 64 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-14 17:25:00 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-14 17:25:00 [INFO ] [pipeline]   Column 12: 5769 mapped, 64 cleared (col A has fill), 90 no match (recorded)
+2026-09-14 17:25:00 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-14 17:25:00 [INFO ] [pipeline]   Mirror copy: 31793 cells written
+2026-09-14 17:25:00 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-14 17:25:00 [INFO ] [pipeline]   Column 45: 5923 cells copied from col 13
+2026-09-14 17:25:00 [INFO ] [pipeline] [10/12] calc_price
+2026-09-14 17:25:00 [INFO ] [pipeline]   Columns 46-49: 5923 rows calculated
+2026-09-14 17:25:00 [INFO ] [pipeline] [11/12] format_cells
+2026-09-14 17:25:01 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-14 17:25:01 [INFO ] [pipeline]   Formatted 5923 rows: h=50, align=left/center
+2026-09-14 17:25:01 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-14 17:25:01 [INFO ] [pipeline] [12/12] finalize
+2026-09-14 17:25:02 [INFO ] [pipeline]   Done: 5923 rows x 49 cols (target: 49)
+2026-09-14 17:25:02 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:25:07 [INFO ] [main] Size: 5923 rows x 49 cols
+2026-09-14 17:25:07 [INFO ] [main] ==================================================
+2026-09-14 17:25:07 [INFO ] [main] Done: 9.8v1_fr.xlsx
+2026-09-14 17:25:08 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-14 17:25:08 [INFO ] [jenkins] 
+2026-09-14 17:25:08 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-14 17:25:08 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:25:08 [INFO ] [color_size_main] Source: 9.8v1_fr.xlsx
+2026-09-14 17:25:13 [INFO ] [color_size_main] Extracted: 5859 data lines + 64 separators → check_.txt
+2026-09-14 17:25:13 [INFO ] [color_size_main] Running: process.py
+2026-09-14 17:25:14 [INFO ] [color_size_deal] Groups: 64, lines: 5859 (file: 5923)
+2026-09-14 17:25:14 [INFO ] [color_size_deal] Prefixes: {'01': 825, '02': 436, '03': 324, '04': 278, '05': 156, '06': 130, '07': 92, '08': 86, '09': 66, '10': 54, '11': 48, '12': 48, '13': 40, '14': 32, '15': 24, '16': 16, '17': 16}
+2026-09-14 17:25:14 [INFO ] [color_size_deal] Done.
+2026-09-14 17:25:14 [INFO ] [color_size_main] Processing write-back: 5923 lines
+2026-09-14 17:25:26 [INFO ] [color_size_main] Write-back: 2735 written, 3188 unchanged → 9.8v1_fr.xlsx
+2026-09-14 17:25:26 [INFO ] [color_size_main] Done.
+2026-09-14 17:25:26 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-14 17:25:26 [INFO ] [jenkins] 
+2026-09-14 17:25:26 [INFO ] [jenkins] ==================================================
+2026-09-14 17:25:26 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-14 17:25:26 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-14 17:25:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-14 17:25:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-14 17:25:26 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-14 17:27:28 [INFO ] [jenkins] ==================================================
+2026-09-14 17:27:28 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-09-14 17:27:28 [INFO ] [jenkins] ==================================================
+2026-09-14 17:27:28 [INFO ] [jenkins] 
+2026-09-14 17:27:28 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-09-14 17:27:28 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:27:28 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-09-14 17:27:28 [INFO ] [jenkins] 
+2026-09-14 17:27:28 [INFO ] [jenkins] [2/5] Preprocess
+2026-09-14 17:27:28 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:27:28 [INFO ] [preprocess] Preprocessing 26 file(s) with 1 step(s)
+2026-09-14 17:27:28 [INFO ] [preprocess] [21.xlsx]
+2026-09-14 17:27:28 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:28 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:29 [INFO ] [preprocess]   [21.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:29 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:29 [INFO ] [preprocess] [22.xlsx]
+2026-09-14 17:27:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:29 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:29 [INFO ] [preprocess]   [22.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:29 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:29 [INFO ] [preprocess] [23.xlsx]
+2026-09-14 17:27:29 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:29 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:31 [INFO ] [preprocess]   [23.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:31 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:31 [INFO ] [preprocess] [24.xlsx]
+2026-09-14 17:27:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:31 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:31 [INFO ] [preprocess]   [24.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:31 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:31 [INFO ] [preprocess] [25.xlsx]
+2026-09-14 17:27:31 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:31 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:32 [INFO ] [preprocess]   [25.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:32 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:32 [INFO ] [preprocess] [26.xlsx]
+2026-09-14 17:27:32 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:32 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:32 [INFO ] [preprocess]   [26.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:32 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:32 [INFO ] [preprocess] [31.xlsx]
+2026-09-14 17:27:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:33 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:33 [INFO ] [preprocess]   [31.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:33 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:33 [INFO ] [preprocess] [32.xlsx]
+2026-09-14 17:27:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:33 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:33 [INFO ] [preprocess]   [32.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:33 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:33 [INFO ] [preprocess] [33.xlsx]
+2026-09-14 17:27:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:34 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:34 [INFO ] [preprocess]   [33.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:34 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:34 [INFO ] [preprocess] [34.xlsx]
+2026-09-14 17:27:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:34 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:34 [INFO ] [preprocess]   [34.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:34 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:34 [INFO ] [preprocess] [35.xlsx]
+2026-09-14 17:27:34 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:34 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:34 [INFO ] [preprocess]   [35.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:34 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:34 [INFO ] [preprocess] [36.xlsx]
+2026-09-14 17:27:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:35 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:36 [INFO ] [preprocess]   [36.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:36 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:36 [INFO ] [preprocess] [37.xlsx]
+2026-09-14 17:27:36 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:36 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:37 [INFO ] [preprocess]   [37.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:37 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:37 [INFO ] [preprocess] [38.xlsx]
+2026-09-14 17:27:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:37 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:37 [INFO ] [preprocess]   [38.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:37 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:37 [INFO ] [preprocess] [39.xlsx]
+2026-09-14 17:27:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:37 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:38 [INFO ] [preprocess]   [39.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:38 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:39 [INFO ] [preprocess] [extra1.xlsx]
+2026-09-14 17:27:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:39 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:39 [INFO ] [preprocess]   [extra1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:39 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:40 [INFO ] [preprocess] [extra2.xlsx]
+2026-09-14 17:27:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:40 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:41 [INFO ] [preprocess]   [extra2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:41 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:41 [INFO ] [preprocess] [extra3.xlsx]
+2026-09-14 17:27:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:41 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:42 [INFO ] [preprocess]   [extra3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:42 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:42 [INFO ] [preprocess] [extra4.xlsx]
+2026-09-14 17:27:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:42 [INFO ] [preprocess]   [extra4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:42 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:42 [INFO ] [preprocess] [extra5.xlsx]
+2026-09-14 17:27:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:42 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:43 [INFO ] [preprocess]   [extra5.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:43 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:43 [INFO ] [preprocess] [extra6.xlsx]
+2026-09-14 17:27:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:43 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:44 [INFO ] [preprocess]   [extra6.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:44 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:44 [INFO ] [preprocess] [extra7.xlsx]
+2026-09-14 17:27:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:44 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:45 [INFO ] [preprocess]   [extra7.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:45 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:45 [INFO ] [preprocess] [extra8.xlsx]
+2026-09-14 17:27:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:45 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:45 [INFO ] [preprocess]   [extra8.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:45 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:46 [INFO ] [preprocess] [st1.xlsx]
+2026-09-14 17:27:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:46 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:48 [INFO ] [preprocess]   [st1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:48 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:49 [INFO ] [preprocess] [st2.xlsx]
+2026-09-14 17:27:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:49 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:51 [INFO ] [preprocess]   [st2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:51 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:52 [INFO ] [preprocess] [st3.xlsx]
+2026-09-14 17:27:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-09-14 17:27:52 [INFO ] [pipeline] [1/1] remove_header
+2026-09-14 17:27:55 [INFO ] [preprocess]   [st3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-14 17:27:55 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:27:55 [INFO ] [preprocess] Preprocessing complete
+2026-09-14 17:27:56 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-09-14 17:27:56 [INFO ] [jenkins] 
+2026-09-14 17:27:56 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-09-14 17:27:56 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:27:56 [INFO ] [main] Log file: 20260914_2cfd4d87.log
+2026-09-14 17:27:56 [INFO ] [main] Found 26 file(s):
+2026-09-14 17:27:56 [INFO ] [main]   21.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   22.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   23.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   24.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   25.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   26.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   31.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   32.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   33.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   34.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   35.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   36.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   37.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   38.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   39.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra1.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra2.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra3.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra4.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra5.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra6.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra7.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   extra8.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   st1.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   st2.xlsx
+2026-09-14 17:27:56 [INFO ] [main]   st3.xlsx
+2026-09-14 17:27:56 [INFO ] [main] Output: 9.9v1_fr.xlsx
+2026-09-14 17:27:56 [INFO ] [main] ==================================================
+2026-09-14 17:28:22 [INFO ] [main] Merged 26 files, 9967 images total
+2026-09-14 17:28:22 [INFO ] [main] Deleted 26 source file(s)
+2026-09-14 17:28:24 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-14 17:28:24 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_2]: 73 rows, 139 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_3]: 483 rows, 744 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_4]: 43 rows, 74 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_5]: 49 rows, 98 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_6]: 177 rows, 358 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_7]: 151 rows, 280 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_8]: 61 rows, 125 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_9]: 81 rows, 164 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_10]: 73 rows, 141 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_11]: 38 rows, 97 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_12]: 362 rows, 548 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_13]: 113 rows, 172 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_14]: 73 rows, 114 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_15]: 362 rows, 549 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_16]: 193 rows, 347 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_17]: 249 rows, 389 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_18]: 241 rows, 445 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_19]: 73 rows, 137 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_20]: 247 rows, 478 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_21]: 225 rows, 385 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_22]: 44 rows, 82 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_23]: 193 rows, 381 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_24]: 757 rows, 805 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_25]: 729 rows, 1390 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Sheet [Sheet0_26]: 744 rows, 1373 images
+2026-09-14 17:28:46 [INFO ] [pipeline]   Merged 26 sheets -> 1, 5834 data rows, 9815 images
+2026-09-14 17:28:46 [INFO ] [pipeline] [2/12] validate
+2026-09-14 17:28:46 [INFO ] [pipeline]   Validated: 5923 rows, 27 cols (expect ~32)
+2026-09-14 17:28:46 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-14 17:28:47 [INFO ] [pipeline]   Backed up 9967 images
+2026-09-14 17:28:47 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-14 17:28:47 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-14 17:28:47 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-14 17:28:47 [INFO ] [pipeline]   Restored 9967 images with adjusted anchors
+2026-09-14 17:28:47 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-14 17:28:47 [INFO ] [pipeline]   Column 2: 5923 IDs generated
+2026-09-14 17:28:47 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-14 17:28:47 [INFO ] [pipeline]   Column 3: 5923 cells filled
+2026-09-14 17:28:47 [INFO ] [pipeline] [6/12] map_colors
+2026-09-14 17:28:47 [INFO ] [pipeline]   Column 11: 5859 cells mapped, 64 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-14 17:28:47 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-14 17:28:47 [INFO ] [pipeline]   Column 12: 5769 mapped, 64 cleared (col A has fill), 90 no match (recorded)
+2026-09-14 17:28:47 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-14 17:28:47 [INFO ] [pipeline]   Mirror copy: 31793 cells written
+2026-09-14 17:28:47 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-14 17:28:47 [INFO ] [pipeline]   Column 45: 5923 cells copied from col 13
+2026-09-14 17:28:47 [INFO ] [pipeline] [10/12] calc_price
+2026-09-14 17:28:48 [INFO ] [pipeline]   Columns 46-49: 5923 rows calculated
+2026-09-14 17:28:48 [INFO ] [pipeline] [11/12] format_cells
+2026-09-14 17:28:49 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-14 17:28:49 [INFO ] [pipeline]   Formatted 5923 rows: h=50, align=left/center
+2026-09-14 17:28:49 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-14 17:28:49 [INFO ] [pipeline] [12/12] finalize
+2026-09-14 17:28:49 [INFO ] [pipeline]   Done: 5923 rows x 49 cols (target: 49)
+2026-09-14 17:28:49 [INFO ] [pipeline] Pipeline complete
+2026-09-14 17:28:54 [INFO ] [main] Size: 5923 rows x 49 cols
+2026-09-14 17:28:54 [INFO ] [main] ==================================================
+2026-09-14 17:28:54 [INFO ] [main] Done: 9.9v1_fr.xlsx
+2026-09-14 17:28:55 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-09-14 17:28:55 [INFO ] [jenkins] 
+2026-09-14 17:28:55 [INFO ] [jenkins] [4/5] Color re-processing
+2026-09-14 17:28:55 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:28:55 [INFO ] [color_size_main] Source: 9.9v1_fr.xlsx
+2026-09-14 17:29:00 [INFO ] [color_size_main] Extracted: 5859 data lines + 64 separators → check_.txt
+2026-09-14 17:29:00 [INFO ] [color_size_main] Running: process.py
+2026-09-14 17:29:00 [INFO ] [color_size_deal] Groups: 64, lines: 5859 (file: 5923)
+2026-09-14 17:29:00 [INFO ] [color_size_deal] Prefixes: {'01': 825, '02': 436, '03': 324, '04': 278, '05': 156, '06': 130, '07': 92, '08': 86, '09': 66, '10': 54, '11': 48, '12': 48, '13': 40, '14': 32, '15': 24, '16': 16, '17': 16}
+2026-09-14 17:29:00 [INFO ] [color_size_deal] Done.
+2026-09-14 17:29:00 [INFO ] [color_size_main] Processing write-back: 5923 lines
+2026-09-14 17:29:11 [INFO ] [color_size_main] Write-back: 2735 written, 3188 unchanged → 9.9v1_fr.xlsx
+2026-09-14 17:29:11 [INFO ] [color_size_main] Done.
+2026-09-14 17:29:12 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-09-14 17:29:12 [INFO ] [jenkins] 
+2026-09-14 17:29:12 [INFO ] [jenkins] [5/5] Title optimization
+2026-09-14 17:29:12 [INFO ] [jenkins] ------------------------------
+2026-09-14 17:29:12 [INFO ] [title_workflow] Source: 9.9v1_fr.xlsx
+2026-09-14 17:29:17 [INFO ] [title_workflow] Extracted 64 titles + 64 links
+2026-09-14 17:29:17 [INFO ] [title_workflow] Written: origin_title (64) + origin_link (64)
+2026-09-14 17:29:17 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-14 17:29:17 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-14 17:29:18 [INFO ] [deepseek_web] Opening DeepSeek web (64 titles)...
+2026-09-14 17:29:18 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-14 17:29:25 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-14 17:29:27 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-14 17:29:27 [INFO ] [deepseek_web] [1/64] 基督教风无帽半拉链卫衣
+2026-09-14 17:29:33 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-14 17:29:39 [INFO ] [deepseek_web] [2/64] 万圣节男士无帽卫衣
+2026-09-14 17:29:41 [INFO ] [deepseek_web]   Downloaded: 0002_4101150393881718611701.jpg
+2026-09-14 17:29:41 [INFO ] [deepseek_web]   Prefetching next image (3/64)
+2026-09-14 17:29:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:29:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:33:08 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-14 17:33:08 [INFO ] [deepseek_web]   Deleted: 0002_4101150393881718611701.jpg
+2026-09-14 17:33:13 [INFO ] [deepseek_web] [3/64] 新款圣诞节系列针织坑条男士无帽卫衣
+2026-09-14 17:33:13 [INFO ] [deepseek_web]   Downloaded: 0003_5891010574705790196883.jpg
+2026-09-14 17:33:13 [INFO ] [deepseek_web]   Prefetching next image (4/64)
+2026-09-14 17:33:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:33:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:33:43 [INFO ] [deepseek_web]   Response: 圣诞驯鹿动物印花 雪花图案 格纹拼接 罗纹领口袖口下摆 男士 常规版型 圆领套头卫衣 长袖无帽 针织坑条
+2026-09-14 17:33:43 [INFO ] [deepseek_web]   Deleted: 0003_5891010574705790196883.jpg
+2026-09-14 17:33:48 [INFO ] [deepseek_web] [4/64] 新款圣诞节系列针织坑条男士无帽卫衣
+2026-09-14 17:33:48 [INFO ] [deepseek_web]   Downloaded: 0004_8421044464599621349567.jpg
+2026-09-14 17:33:48 [INFO ] [deepseek_web]   Prefetching next image (5/64)
+2026-09-14 17:33:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:33:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:34:21 [INFO ] [deepseek_web]   Response: 圣诞老人面部印花 松枝背景图案 左下方方格贴片装饰 罗纹领口袖口下摆 男士 常规版型 圆领套头卫衣 长袖 无帽 针织坑条
+2026-09-14 17:34:21 [INFO ] [deepseek_web]   Deleted: 0004_8421044464599621349567.jpg
+2026-09-14 17:34:26 [INFO ] [deepseek_web] [5/64] 新款圣诞节系列针织坑条男士无帽卫衣
+2026-09-14 17:34:26 [INFO ] [deepseek_web]   Downloaded: 0005_5000414349642715765394.jpg
+2026-09-14 17:34:26 [INFO ] [deepseek_web]   Prefetching next image (6/64)
+2026-09-14 17:34:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:34:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:34:55 [INFO ] [deepseek_web]   Response: 圣诞老人面部印花 城市景观图案 罗纹领口袖口下摆 男士 常规版型 圆领套头卫衣 长袖 无帽 圣诞节系列 针织坑条
+2026-09-14 17:34:55 [INFO ] [deepseek_web]   Deleted: 0005_5000414349642715765394.jpg
+2026-09-14 17:35:00 [INFO ] [deepseek_web] [6/64] 男士趣味搞怪头像3d印花空气层无帽卫衣
+2026-09-14 17:35:00 [INFO ] [deepseek_web]   Downloaded: 0006_1630944129442712394936.jpg
+2026-09-14 17:35:00 [INFO ] [deepseek_web]   Prefetching next image (7/64)
+2026-09-14 17:35:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:35:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:35:31 [INFO ] [deepseek_web]   Response: 3D立体卡通人物踢腿图案印花 破洞裤赤脚造型 罗纹领口袖口下摆 男士 常规版型 无帽套头卫衣 圆领 长袖 空气层
+2026-09-14 17:35:31 [INFO ] [deepseek_web]   Deleted: 0006_1630944129442712394936.jpg
+2026-09-14 17:35:36 [INFO ] [deepseek_web] [7/64] 男士万圣节3d印花圆领无帽卫衣
+2026-09-14 17:35:36 [INFO ] [deepseek_web]   Downloaded: 0007_1671107027521119982493.jpg
+2026-09-14 17:35:36 [INFO ] [deepseek_web]   Prefetching next image (8/64)
+2026-09-14 17:35:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:35:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:36:06 [INFO ] [deepseek_web]   Response: 骷髅南瓜幽灵印花 蜘蛛网图案装饰 锯齿形撞色拼接 男士 常规版型 圆领套头卫衣 长袖 无帽 罗纹领口袖口下摆
+2026-09-14 17:36:06 [INFO ] [deepseek_web]   Deleted: 0007_1671107027521119982493.jpg
+2026-09-14 17:36:11 [INFO ] [deepseek_web] [8/64] 男士圣诞节丑卫衣3d印花无帽卫衣
+2026-09-14 17:36:11 [INFO ] [deepseek_web]   Downloaded: 0008_2890952079087721257961.jpg
+2026-09-14 17:36:11 [INFO ] [deepseek_web]   Prefetching next image (9/64)
+2026-09-14 17:36:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:36:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:36:40 [INFO ] [deepseek_web]   Response: 3D错觉印花 露腹图案 双纽扣装饰 V形图案 罗纹袖口下摆 男士 常规版型 圆领套头卫衣 长袖 无帽 圣诞节系列
+2026-09-14 17:36:40 [INFO ] [deepseek_web]   Deleted: 0008_2890952079087721257961.jpg
+2026-09-14 17:36:45 [INFO ] [deepseek_web] [9/64] 男士维京系列无帽半拉链加绒卫衣
+2026-09-14 17:36:45 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-14 17:36:50 [INFO ] [deepseek_web] [10/64] 男士美国250周年休闲顶级爱国国旗半拉链无帽卫衣
+2026-09-14 17:36:52 [INFO ] [deepseek_web]   Downloaded: 0010_4750942525231314344182.jpg
+2026-09-14 17:36:52 [INFO ] [deepseek_web]   Prefetching next image (11/64)
+2026-09-14 17:36:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:37:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:37:21 [INFO ] [deepseek_web]   Response: 美国国旗刺绣贴片 领口加绒内衬 肘部拼贴装饰 胸前字母印花 半拉链套头卫衣 男士 常规版型 立领 长袖 无帽 罗纹袖口下摆
+2026-09-14 17:37:21 [INFO ] [deepseek_web]   Deleted: 0010_4750942525231314344182.jpg
+2026-09-14 17:37:26 [INFO ] [deepseek_web] [11/64] 男士圣诞节搞怪趣味滑稽的丑陋的毛衣-无帽卫衣（仿毛衣）
+2026-09-14 17:37:26 [INFO ] [deepseek_web]   Downloaded: 0011_1360900216914345237568.jpg
+2026-09-14 17:37:26 [INFO ] [deepseek_web]   Prefetching next image (12/64)
+2026-09-14 17:37:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:37:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:37:55 [INFO ] [deepseek_web]   Response: 圣诞老人服装错觉印花 男性躯干图案 领带图案 腰带扣图案 拐杖糖装饰 男士 常规版型 仿毛衣无帽套头卫衣 圆领 长袖 罗纹领口袖口下摆 圣诞节主题
+2026-09-14 17:37:55 [INFO ] [deepseek_web]   Deleted: 0011_1360900216914345237568.jpg
+2026-09-14 17:38:00 [INFO ] [deepseek_web] [12/64] 圣诞节男女同款卫衣
+2026-09-14 17:38:00 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-14 17:38:05 [INFO ] [deepseek_web] [13/64] 男士无帽卫衣
+2026-09-14 17:38:07 [INFO ] [deepseek_web]   Downloaded: 0013_3010458200132880894207.jpg
+2026-09-14 17:38:07 [INFO ] [deepseek_web]   Prefetching next image (14/64)
+2026-09-14 17:38:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:38:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:38:41 [INFO ] [deepseek_web]   Response: 立领设计 抓绒面料 落肩袖 纯色 男士 宽松版型 半拉链套头卫衣 长袖设计 无帽 直筒下摆 无口袋设计 常规衣长
+2026-09-14 17:38:41 [INFO ] [deepseek_web]   Deleted: 0013_3010458200132880894207.jpg
+2026-09-14 17:38:46 [INFO ] [deepseek_web] [14/64] 男士英国半拉链无帽卫衣
+2026-09-14 17:38:46 [INFO ] [deepseek_web]   Downloaded: 0014_6031236150311217470420.jpg
+2026-09-14 17:38:46 [INFO ] [deepseek_web]   Prefetching next image (15/64)
+2026-09-14 17:38:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:38:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:39:15 [INFO ] [deepseek_web]   Response: 英国地图轮廓国旗印花 袖部国旗印花 撞色领口 罗纹袖口下摆 半拉链套头卫衣 男士 宽松版型 立领 长袖 无帽 常规衣长
+2026-09-14 17:39:15 [INFO ] [deepseek_web]   Deleted: 0014_6031236150311217470420.jpg
+2026-09-14 17:39:20 [INFO ] [deepseek_web] [15/64] 男士英国半拉链无帽卫衣
+2026-09-14 17:39:20 [INFO ] [deepseek_web]   Downloaded: 0015_5670127503961316707479.jpg
+2026-09-14 17:39:20 [INFO ] [deepseek_web]   Prefetching next image (16/64)
+2026-09-14 17:39:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:39:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:39:49 [INFO ] [deepseek_web]   Response: 英国国旗印花 迷彩拼接袖 撞色罗纹领口 半拉链套头卫衣 男士 宽松版型 立领 长袖 无帽 罗纹袖口下摆
+2026-09-14 17:39:49 [INFO ] [deepseek_web]   Deleted: 0015_5670127503961316707479.jpg
+2026-09-14 17:39:54 [INFO ] [deepseek_web] [16/64] 男士圣诞节圆领长袖针织衫
+2026-09-14 17:39:54 [INFO ] [deepseek_web]   Downloaded: 0016_1370435450092017268415.jpg
+2026-09-14 17:39:54 [INFO ] [deepseek_web]   Prefetching next image (17/64)
+2026-09-14 17:39:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:40:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:40:23 [INFO ] [deepseek_web]   Response: 圣诞老人半身像印花 手持书本图案 雪花渐变袖部 男士 常规版型 圆领套头针织衫 长袖 无帽 罗纹袖口下摆 常规衣长
+2026-09-14 17:40:23 [INFO ] [deepseek_web]   Deleted: 0016_1370435450092017268415.jpg
+2026-09-14 17:40:28 [INFO ] [deepseek_web] [17/64] 男士维京中世纪北欧神话半拉链无帽卫衣（加绒款）
+2026-09-14 17:40:28 [INFO ] [deepseek_web]   Downloaded: 0017_6560812085731834462655.jpg
+2026-09-14 17:40:28 [INFO ] [deepseek_web]   Prefetching next image (18/64)
+2026-09-14 17:40:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:40:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:40:58 [INFO ] [deepseek_web]   Response: 北欧凯尔特结印花 肘部贴片拼接 仿针织纹理袖 半拉链套头卫衣 男士 常规版型 立领 长袖 无帽 加绒 罗纹袖口下摆
+2026-09-14 17:40:58 [INFO ] [deepseek_web]   Deleted: 0017_6560812085731834462655.jpg
+2026-09-14 17:41:03 [INFO ] [deepseek_web] [18/64] 男士圣帕半拉链无帽卫衣
+2026-09-14 17:41:03 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-14 17:41:08 [INFO ] [deepseek_web] [19/64] 男士圣帕半拉链无帽卫衣
+2026-09-14 17:41:10 [INFO ] [deepseek_web]   Downloaded: 0019_9680803264454116128814.jpg
+2026-09-14 17:41:10 [INFO ] [deepseek_web]   Prefetching next image (20/64)
+2026-09-14 17:41:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:41:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:41:39 [INFO ] [deepseek_web]   Response: 三叶草印花 横条纹拼接 肘部贴片装饰 撞色罗纹领口 半拉链套头卫衣 男士 常规版型 立领 长袖 无帽 罗纹袖口下摆 圣帕特里克节主题
+2026-09-14 17:41:39 [INFO ] [deepseek_web]   Deleted: 0019_9680803264454116128814.jpg
+2026-09-14 17:41:44 [INFO ] [deepseek_web] [20/64] 男士万圣节搞怪表情印花时尚大码宽松长袖无帽卫衣
+2026-09-14 17:41:44 [INFO ] [deepseek_web]   Downloaded: 0020_8941156221821515651292.jpg
+2026-09-14 17:41:44 [INFO ] [deepseek_web]   Prefetching next image (21/64)
+2026-09-14 17:41:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:41:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:42:14 [INFO ] [deepseek_web]   Response: 搞怪南瓜脸印花 蝙蝠图案 做旧渐变下摆 落肩袖 圆领套头卫衣 男士 宽松版型 长袖 无帽 罗纹袖口下摆 万圣节主题
+2026-09-14 17:42:14 [INFO ] [deepseek_web]   Deleted: 0020_8941156221821515651292.jpg
+2026-09-14 17:42:19 [INFO ] [deepseek_web] [21/64] 男士圣诞无帽卫衣
+2026-09-14 17:42:19 [INFO ] [deepseek_web]   Downloaded: 0021_5190456173864424186934.jpg
+2026-09-14 17:42:19 [INFO ] [deepseek_web]   Prefetching next image (22/64)
+2026-09-14 17:42:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:42:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:42:48 [INFO ] [deepseek_web]   Response: 立体圣诞老人面部图案 毛线编织胡须 菱形格纹袖 罗纹领口袖口下摆 男士 常规版型 圆领套头卫衣 长袖 无帽 圣诞主题
+2026-09-14 17:42:48 [INFO ] [deepseek_web]   Deleted: 0021_5190456173864424186934.jpg
+2026-09-14 17:42:53 [INFO ] [deepseek_web] [22/64] 圣诞男士圆领卫衣
+2026-09-14 17:42:53 [INFO ] [deepseek_web]   Downloaded: 0022_9300953223027315535243.jpg
+2026-09-14 17:42:53 [INFO ] [deepseek_web]   Prefetching next image (23/64)
+2026-09-14 17:42:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:43:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:43:22 [INFO ] [deepseek_web]   Response: 3D错觉印花 圣诞灯串图案 腰带扣图案 V形毛绒边缘 罗纹袖口下摆 男士 常规版型 圆领套头卫衣 长袖 无帽 圣诞主题
+2026-09-14 17:43:22 [INFO ] [deepseek_web]   Deleted: 0022_9300953223027315535243.jpg
+2026-09-14 17:43:27 [INFO ] [deepseek_web] [23/64] 男士圣诞节加绒无帽立领长袖卫衣
+2026-09-14 17:43:27 [INFO ] [deepseek_web]   Downloaded: 0023_4150445225783614710666.jpg
+2026-09-14 17:43:27 [INFO ] [deepseek_web]   Prefetching next image (24/64)
+2026-09-14 17:43:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:43:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:43:56 [INFO ] [deepseek_web]   Response: 驯鹿面部印花 星星图案 松枝装饰 立领 加绒内衬 男士 常规版型 半拉链套头卫衣 长袖 罗纹袖口下摆 圣诞主题
+2026-09-14 17:43:56 [INFO ] [deepseek_web]   Deleted: 0023_4150445225783614710666.jpg
+2026-09-14 17:44:01 [INFO ] [deepseek_web] [24/64] 万圣节男士印花款圆领宽松长袖卫衣
+2026-09-14 17:44:01 [INFO ] [deepseek_web]   Downloaded: 0024_3830333090232223531880.jpg
+2026-09-14 17:44:01 [INFO ] [deepseek_web]   Prefetching next image (25/64)
+2026-09-14 17:44:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:44:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:44:30 [INFO ] [deepseek_web]   Response: 骷髅火焰印花 做旧水洗纹理 交叉骨图案 落肩袖 男士 宽松版型 圆领套头卫衣 长袖 无帽 罗纹袖口下摆 万圣节主题
+2026-09-14 17:44:30 [INFO ] [deepseek_web]   Deleted: 0024_3830333090232223531880.jpg
+2026-09-14 17:44:35 [INFO ] [deepseek_web] [25/64] 男士圣诞节趣味3D印花无帽卫衣
+2026-09-14 17:44:35 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-14 17:44:40 [INFO ] [deepseek_web] [26/64] 男士圣诞节印花卫衣
+2026-09-14 17:44:44 [INFO ] [deepseek_web]   Downloaded: 0026_7901242270171721251816.jpg
+2026-09-14 17:44:44 [INFO ] [deepseek_web]   Prefetching next image (27/64)
+2026-09-14 17:44:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:44:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:45:13 [INFO ] [deepseek_web]   Response: 圣诞老人与猿猴印花 圣诞树灯串图案 雪花夜景图案 男士 常规版型 圆领套头卫衣 长袖 无帽 罗纹领口袖口下摆 圣诞主题
+2026-09-14 17:45:13 [INFO ] [deepseek_web]   Deleted: 0026_7901242270171721251816.jpg
+2026-09-14 17:45:18 [INFO ] [deepseek_web] [27/64] 男士圣诞节印花卫衣
+2026-09-14 17:45:18 [INFO ] [deepseek_web]   Downloaded: 0027_5140805255819516378118.jpg
+2026-09-14 17:45:18 [INFO ] [deepseek_web]   Prefetching next image (28/64)
+2026-09-14 17:45:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:45:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:45:47 [INFO ] [deepseek_web]   Response: 圣诞老人服装错觉印花 雪花冬青图案 腰带扣图案 圆领套头卫衣 男士 常规版型 长袖 无帽 罗纹领口袖口下摆 圣诞主题
+2026-09-14 17:45:47 [INFO ] [deepseek_web]   Deleted: 0027_5140805255819516378118.jpg
+2026-09-14 17:45:52 [INFO ] [deepseek_web] [28/64] 男士渐变色印花休闲时尚大码运动无帽卫衣
+2026-09-14 17:45:52 [INFO ] [deepseek_web]   Downloaded: 0028_0280335528457011834450.jpg
+2026-09-14 17:45:52 [INFO ] [deepseek_web]   Prefetching next image (29/64)
+2026-09-14 17:45:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:46:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:46:29 [INFO ] [deepseek_web]   Response: 渐变色 落肩袖 罗纹袖口下摆 无口袋设计 无抽绳设计 圆领套头卫衣 男士 宽松版型 大码 长袖 无帽 无门襟 常规衣长 运动
+2026-09-14 17:46:29 [INFO ] [deepseek_web]   Deleted: 0028_0280335528457011834450.jpg
+2026-09-14 17:46:34 [INFO ] [deepseek_web] [29/64] 男士万圣节骷髅印花时尚休闲大码宽松运动无帽卫衣
+2026-09-14 17:46:34 [INFO ] [deepseek_web]   Downloaded: 0029_1421121437581420219176.jpg
+2026-09-14 17:46:34 [INFO ] [deepseek_web]   Prefetching next image (30/64)
+2026-09-14 17:46:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:46:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:47:03 [INFO ] [deepseek_web]   Response: 骷髅肋骨印花 心脏图案 袖部骨骼图案 圆领套头卫衣 男士 宽松版型 长袖 无帽 罗纹袖口下摆 万圣节主题
+2026-09-14 17:47:03 [INFO ] [deepseek_web]   Deleted: 0029_1421121437581420219176.jpg
+2026-09-14 17:47:08 [INFO ] [deepseek_web] [30/64] 男士秋季休闲时尚大码宽松运动套头半拉链无帽卫衣
+2026-09-14 17:47:08 [INFO ] [deepseek_web]   Downloaded: 0030_7860614045204010111048.jpg
+2026-09-14 17:47:08 [INFO ] [deepseek_web]   Prefetching next image (31/64)
+2026-09-14 17:47:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:47:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:47:37 [INFO ] [deepseek_web]   Response: 华夫格针织纹理 左胸贴袋 落肩袖 罗纹袖口下摆 男士 宽松版型 半拉链套头卫衣 立领 长袖 无帽 纯色 常规衣长
+2026-09-14 17:47:37 [INFO ] [deepseek_web]   Deleted: 0030_7860614045204010111048.jpg
+2026-09-14 17:47:42 [INFO ] [deepseek_web] [31/64] 2026男士复古格子立领潮牌时尚宽松休闲套头长袖无帽卫衣
+2026-09-14 17:47:42 [INFO ] [deepseek_web]   Downloaded: 0031_8660327480472678692495.jpg
+2026-09-14 17:47:42 [INFO ] [deepseek_web]   Prefetching next image (32/64)
+2026-09-14 17:47:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:47:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:48:12 [INFO ] [deepseek_web]   Response: 门襟内侧格子拼接 三粒纽扣门襟 小立领 落肩袖 罗纹袖口下摆 男士 宽松版型 半开襟套头卫衣 长袖 无帽 常规衣长 纯色
+2026-09-14 17:48:12 [INFO ] [deepseek_web]   Deleted: 0031_8660327480472678692495.jpg
+2026-09-14 17:48:17 [INFO ] [deepseek_web] [32/64] 2026秋冬男士重磅复古简约套头宽松大码卫衣
+2026-09-14 17:48:17 [INFO ] [deepseek_web]   Downloaded: 0032_7520024501228243280070.jpg
+2026-09-14 17:48:17 [INFO ] [deepseek_web]   Prefetching next image (33/64)
+2026-09-14 17:48:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:48:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:48:47 [INFO ] [deepseek_web]   Response: 翻领 三粒纽扣半开襟 落肩袖 杂色横纹针织纹理 罗纹袖口下摆 无口袋设计 男士 宽松版型 套头卫衣 长袖 无帽 常规衣长
+2026-09-14 17:48:47 [INFO ] [deepseek_web]   Deleted: 0032_7520024501228243280070.jpg
+2026-09-14 17:48:52 [INFO ] [deepseek_web] [33/64] 2026秋冬季男士立体刺绣圆领休闲时尚大码长袖卫衣
+2026-09-14 17:48:52 [INFO ] [deepseek_web]   Downloaded: 0033_9390253218742519683984.jpg
+2026-09-14 17:48:52 [INFO ] [deepseek_web]   Prefetching next image (34/64)
+2026-09-14 17:48:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:49:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:49:23 [INFO ] [deepseek_web]   Response: 领口立体刺绣装饰 落肩袖 罗纹袖口下摆 圆领套头卫衣 男士 宽松版型 大码 长袖 无帽 无口袋设计 纯色 常规衣长
+2026-09-14 17:49:23 [INFO ] [deepseek_web]   Deleted: 0033_9390253218742519683984.jpg
+2026-09-14 17:49:28 [INFO ] [deepseek_web] [34/64] 男士圣诞节圣诞雪花印花休闲潮流复古运动衫无帽长袖卫衣
+2026-09-14 17:49:28 [INFO ] [deepseek_web]   Downloaded: 0034_4621013218715315245239.jpg
+2026-09-14 17:49:28 [INFO ] [deepseek_web]   Prefetching next image (35/64)
+2026-09-14 17:49:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:49:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:49:57 [INFO ] [deepseek_web]   Response: 满身印花 雪花图案 星芒闪光图案 圆点装饰 罗纹领口袖口下摆 圆领套头卫衣 男士 常规版型 长袖 无帽 圣诞主题
+2026-09-14 17:49:57 [INFO ] [deepseek_web]   Deleted: 0034_4621013218715315245239.jpg
+2026-09-14 17:50:02 [INFO ] [deepseek_web] [35/64] 男士菱形格半拉链立领上衣撞色拼接长袖休闲运动卫衣
+2026-09-14 17:50:02 [INFO ] [deepseek_web]   Downloaded: 0035_6660405074783410247692.jpg
+2026-09-14 17:50:02 [INFO ] [deepseek_web]   Prefetching next image (36/64)
+2026-09-14 17:50:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:50:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:50:33 [INFO ] [deepseek_web]   Response: 菱形格纹 撞色领口拼接 双侧斜插口袋 半拉链套头卫衣 男士 常规版型 罗纹袖口 罗纹下摆 落肩袖 立领 长袖 无帽
+2026-09-14 17:50:33 [INFO ] [deepseek_web]   Deleted: 0035_6660405074783410247692.jpg
+2026-09-14 17:50:39 [INFO ] [deepseek_web] [36/64] 男士秋冬阳离子加绒卫衣半开拉链立领贴袋长袖卫衣
+2026-09-14 17:50:39 [INFO ] [deepseek_web]   Downloaded: 0036_2910455499683798343726.jpg
+2026-09-14 17:50:39 [INFO ] [deepseek_web]   Prefetching next image (37/64)
+2026-09-14 17:50:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:50:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:51:10 [INFO ] [deepseek_web]   Response: 立领设计 左胸异形拉链贴袋 满身暗纹肌理 罗纹袖口下摆 落肩袖 半拉链套头卫衣 男士 常规版型 长袖 无帽 加绒 阳离子
+2026-09-14 17:51:10 [INFO ] [deepseek_web]   Deleted: 0036_2910455499683798343726.jpg
+2026-09-14 17:51:15 [INFO ] [deepseek_web] [37/64] 男士斜拉链套头卫衣
+2026-09-14 17:51:15 [INFO ] [deepseek_web]   Downloaded: 0037_1140245298892111126573.jpg
+2026-09-14 17:51:15 [INFO ] [deepseek_web]   Prefetching next image (38/64)
+2026-09-14 17:51:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:51:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:51:54 [INFO ] [deepseek_web]   Response: 斜向拉链装饰 金属拉链头 罗纹圆领 罗纹袖口下摆 无帽套头卫衣 男士 常规版型 长袖 纯色 无口袋设计 常规衣长
+2026-09-14 17:51:54 [INFO ] [deepseek_web]   Deleted: 0037_1140245298892111126573.jpg
+2026-09-14 17:51:59 [INFO ] [deepseek_web] [38/64] 男士加绒拉链套头卫衣
+2026-09-14 17:51:59 [INFO ] [deepseek_web]   Downloaded: 0038_4820353307763045807254.jpg
+2026-09-14 17:51:59 [INFO ] [deepseek_web]   Prefetching next image (39/64)
+2026-09-14 17:51:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:52:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:52:28 [INFO ] [deepseek_web]   Response: 左胸贴袋带装饰条 肘部撞色拼接贴片 领口撞色包边 表面肌理面料 半拉链套头卫衣 男士 常规版型 立领 长袖 无帽 罗纹袖口下摆 加绒 常规衣长
+2026-09-14 17:52:28 [INFO ] [deepseek_web]   Deleted: 0038_4820353307763045807254.jpg
+2026-09-14 17:52:33 [INFO ] [deepseek_web] [39/64] 长袖宽松卫衣加厚外套春秋季半拉链大码男女同
+2026-09-14 17:52:33 [INFO ] [deepseek_web]   Downloaded: 0039_4960524052912831339664.jpg
+2026-09-14 17:52:33 [INFO ] [deepseek_web]   Prefetching next image (40/64)
+2026-09-14 17:52:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:52:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:53:02 [INFO ] [deepseek_web]   Response: 左胸菱形字母刺绣贴章 左袖国旗刺绣贴章 金属拉链头 半拉链套头卫衣 中性 宽松版型 立领 长袖 无帽 罗纹袖口下摆 加厚 纯色
+2026-09-14 17:53:02 [INFO ] [deepseek_web]   Deleted: 0039_4960524052912831339664.jpg
+2026-09-14 17:53:07 [INFO ] [deepseek_web] [40/64] 男宽松休闲运动华夫格长袖卫衣
+2026-09-14 17:53:07 [INFO ] [deepseek_web]   Downloaded: 0040_8320305179261718103607.jpg
+2026-09-14 17:53:07 [INFO ] [deepseek_web]   Prefetching next image (41/64)
+2026-09-14 17:53:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:53:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:53:37 [INFO ] [deepseek_web]   Response: 印第安人头饰印花 袖部条纹拼接 华夫格纹理 圆领套头卫衣 男士 宽松版型 长袖 无帽 罗纹袖口下摆 落肩袖
+2026-09-14 17:53:37 [INFO ] [deepseek_web]   Deleted: 0040_8320305179261718103607.jpg
+2026-09-14 17:53:42 [INFO ] [deepseek_web] [41/64] 男女款圣诞节麋鹿卫衣
+2026-09-14 17:53:42 [INFO ] [deepseek_web]   Downloaded: 0041_0030737247738243625087.jpg
+2026-09-14 17:53:42 [INFO ] [deepseek_web]   Prefetching next image (42/64)
+2026-09-14 17:53:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:53:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:54:11 [INFO ] [deepseek_web]   Response: 圣诞麋鹿印花 雪花图案 字母印花 星星铃铛装饰 中性 常规版型 圆领套头卫衣 长袖 无帽 罗纹袖口下摆 落肩袖
+2026-09-14 17:54:11 [INFO ] [deepseek_web]   Deleted: 0041_0030737247738243625087.jpg
+2026-09-14 17:54:16 [INFO ] [deepseek_web] [42/64] 欧美跨境新款男装纯色长袖圆领时尚毛衣宽松美式复古针织衫
+2026-09-14 17:54:16 [INFO ] [deepseek_web]   Downloaded: 0042_7390407522953015417717.jpg
+2026-09-14 17:54:16 [INFO ] [deepseek_web]   Prefetching next image (43/64)
+2026-09-14 17:54:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:54:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:54:45 [INFO ] [deepseek_web]   Response: 粗针织纹理 落肩袖 罗纹领口袖口下摆 圆领套头针织衫 男士 宽松版型 长袖 无帽 纯色 常规衣长
+2026-09-14 17:54:45 [INFO ] [deepseek_web]   Deleted: 0042_7390407522953015417717.jpg
+2026-09-14 17:54:50 [INFO ] [deepseek_web] [43/64] 春秋新品男士长袖半拉链印花休闲时尚欧美潮流夹克外套
+2026-09-14 17:54:50 [INFO ] [deepseek_web]   Downloaded: 0043_9451040039135545544507.jpg
+2026-09-14 17:54:50 [INFO ] [deepseek_web]   Prefetching next image (44/64)
+2026-09-14 17:54:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:55:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:55:23 [INFO ] [deepseek_web]   Response: 领口毛绒内衬 正面袋鼠式口袋 立领 半拉链套头卫衣 男士 宽松版型 罗纹袖口下摆 落肩袖 长袖 无帽 纯色 常规衣长
+2026-09-14 17:55:23 [INFO ] [deepseek_web]   Deleted: 0043_9451040039135545544507.jpg
+2026-09-14 17:55:28 [INFO ] [deepseek_web] [44/64] 秋冬季新款白底大码美式街头卫衣男士成人卫衣
+2026-09-14 17:55:28 [INFO ] [deepseek_web]   Downloaded: 0044_0480353146012115402868.jpg
+2026-09-14 17:55:28 [INFO ] [deepseek_web]   Prefetching next image (45/64)
+2026-09-14 17:55:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:55:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:55:59 [INFO ] [deepseek_web]   Response: 领口双纽扣 人字纹肌理 落肩袖 无口袋设计 男士 宽松版型 大码 翻领套头卫衣 长袖 无帽 罗纹袖口 罗纹下摆 纯色
+2026-09-14 17:55:59 [INFO ] [deepseek_web]   Deleted: 0044_0480353146012115402868.jpg
+2026-09-14 17:56:04 [INFO ] [deepseek_web] [45/64] 男士潮流拼色帅气不规则印花袖口假口袋无帽半拉链卫衣
+2026-09-14 17:56:04 [INFO ] [deepseek_web]   Downloaded: 0045_4221030019205616204920.jpg
+2026-09-14 17:56:04 [INFO ] [deepseek_web]   Prefetching next image (46/64)
+2026-09-14 17:56:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:56:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:56:33 [INFO ] [deepseek_web]   Response: 不规则滴落渐变印花 肘部拼接贴片 撞色翻领 金属拉链头 半拉链套头卫衣 男士 常规版型 长袖 无帽 罗纹袖口 罗纹下摆
+2026-09-14 17:56:33 [INFO ] [deepseek_web]   Deleted: 0045_4221030019205616204920.jpg
+2026-09-14 17:56:38 [INFO ] [deepseek_web] [46/64] 男士拼色半拉链卫衣
+2026-09-14 17:56:38 [INFO ] [deepseek_web]   Downloaded: 0046_8601131422476314941726.jpg
+2026-09-14 17:56:38 [INFO ] [deepseek_web]   Prefetching next image (47/64)
+2026-09-14 17:56:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:56:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:57:07 [INFO ] [deepseek_web]   Response: 胸前十字架装饰 不对称斜线拼接 肩部肘部贴片拼接 半拉链套头卫衣 男士 宽松版型 翻领 长袖 无帽 罗纹袖口下摆
+2026-09-14 17:57:07 [INFO ] [deepseek_web]   Deleted: 0046_8601131422476314941726.jpg
+2026-09-14 17:57:12 [INFO ] [deepseek_web] [47/64] 男士日常休闲无帽半拉链卫衣
+2026-09-14 17:57:12 [INFO ] [deepseek_web]   Downloaded: 0047_3091012001635313981963.jpg
+2026-09-14 17:57:12 [INFO ] [deepseek_web]   Prefetching next image (48/64)
+2026-09-14 17:57:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:57:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:57:42 [INFO ] [deepseek_web]   Response: 肩部贴片拼接 肘部贴片拼接 翻领设计 男士 宽松版型 半拉链套头卫衣 长袖 无帽 罗纹袖口下摆 落肩袖 纯色 常规衣长
+2026-09-14 17:57:42 [INFO ] [deepseek_web]   Deleted: 0047_3091012001635313981963.jpg
+2026-09-14 17:57:47 [INFO ] [deepseek_web] [48/64] 男士加绒连帽卫衣
+2026-09-14 17:57:47 [INFO ] [deepseek_web]   Downloaded: 0048_6441023439288217270475.jpg
+2026-09-14 17:57:47 [INFO ] [deepseek_web]   Prefetching next image (49/64)
+2026-09-14 17:57:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:57:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:58:16 [INFO ] [deepseek_web]   Response: 抽绳连帽 正面袋鼠口袋 落肩袖 加绒 男士 宽松版型 半拉链连帽卫衣 长袖 罗纹袖口下摆 纯色
+2026-09-14 17:58:16 [INFO ] [deepseek_web]   Deleted: 0048_6441023439288217270475.jpg
+2026-09-14 17:58:21 [INFO ] [deepseek_web] [49/64] 圣诞节情侣仿毛衣
+2026-09-14 17:58:21 [INFO ] [deepseek_web]   Downloaded: 0049_0120839168711865507004.jpg
+2026-09-14 17:58:21 [INFO ] [deepseek_web]   Prefetching next image (50/64)
+2026-09-14 17:58:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:58:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:58:54 [INFO ] [deepseek_web]   Response: 麋鹿图案 雪花图案 锯齿形条纹 仿毛衣圆领套头卫衣 中性 常规版型 长袖 无帽 罗纹领口袖口下摆 圣诞主题 常规衣长
+2026-09-14 17:58:54 [INFO ] [deepseek_web]   Deleted: 0049_0120839168711865507004.jpg
+2026-09-14 17:58:59 [INFO ] [deepseek_web] [50/64] 圣诞节男士毛衣
+2026-09-14 17:58:59 [INFO ] [deepseek_web]   Downloaded: 0050_7841111169813397106568.jpg
+2026-09-14 17:58:59 [INFO ] [deepseek_web]   Prefetching next image (51/64)
+2026-09-14 17:58:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:59:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 17:59:28 [INFO ] [deepseek_web]   Response: 圣诞卡车图案 松树图案 雪花图案 几何图案 圆领套头毛衣 男士 常规版型 长袖 无帽 罗纹圆领 罗纹袖口下摆 圣诞主题
+2026-09-14 17:59:28 [INFO ] [deepseek_web]   Deleted: 0050_7841111169813397106568.jpg
+2026-09-14 17:59:33 [INFO ] [deepseek_web] [51/64] 男士圣诞节无帽卫衣
+2026-09-14 17:59:33 [INFO ] [deepseek_web]   Downloaded: 0051_2901006368067115249638.jpg
+2026-09-14 17:59:33 [INFO ] [deepseek_web]   Prefetching next image (52/64)
+2026-09-14 17:59:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 17:59:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:00:02 [INFO ] [deepseek_web]   Response: 圣诞老人面部印花 黑框眼镜图案 张嘴表情图案 雪花图案 圆领套头卫衣 男士 常规版型 长袖 无帽 罗纹领口袖口下摆 圣诞主题
+2026-09-14 18:00:02 [INFO ] [deepseek_web]   Deleted: 0051_2901006368067115249638.jpg
+2026-09-14 18:00:07 [INFO ] [deepseek_web] [52/64] 男士圣诞搞怪丑陋卫衣
+2026-09-14 18:00:07 [INFO ] [deepseek_web]   Downloaded: 0052_6920948124417314552745.jpg
+2026-09-14 18:00:07 [INFO ] [deepseek_web]   Prefetching next image (53/64)
+2026-09-14 18:00:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:00:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:00:36 [INFO ] [deepseek_web]   Response: 3D错觉胸部印花 糖果装饰图案 腰带扣图案 波浪线装饰 圆领套头卫衣 男士 常规版型 长袖 无帽 罗纹领口袖口下摆 圣诞主题
+2026-09-14 18:00:36 [INFO ] [deepseek_web]   Deleted: 0052_6920948124417314552745.jpg
+2026-09-14 18:00:41 [INFO ] [deepseek_web] [53/64] 男士简约立领拉链长袖灯芯绒T恤
+2026-09-14 18:00:41 [INFO ] [deepseek_web]   Downloaded: 0053_2280606129523379249403.jpg
+2026-09-14 18:00:41 [INFO ] [deepseek_web]   Prefetching next image (54/64)
+2026-09-14 18:00:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:00:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:01:11 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹肌理 立领 落肩袖 罗纹袖口下摆 无口袋设计 男士 宽松版型 半拉链套头卫衣 长袖 无帽 纯色 常规衣长
+2026-09-14 18:01:11 [INFO ] [deepseek_web]   Deleted: 0053_2280606129523379249403.jpg
+2026-09-14 18:01:16 [INFO ] [deepseek_web] [54/64] 男士无帽卫衣
+2026-09-14 18:01:16 [INFO ] [deepseek_web]   Downloaded: 0054_5881113539178982119739.jpg
+2026-09-14 18:01:16 [INFO ] [deepseek_web]   Prefetching next image (55/64)
+2026-09-14 18:01:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:01:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:01:45 [INFO ] [deepseek_web]   Response: 立领纽扣半开襟 胸前字母十字架刺绣 肘部贴片拼接 灯芯绒竖条纹纹理 撞色拼接 男士 宽松版型 无帽套头卫衣 长袖 罗纹袖口下摆
+2026-09-14 18:01:45 [INFO ] [deepseek_web]   Deleted: 0054_5881113539178982119739.jpg
+2026-09-14 18:01:50 [INFO ] [deepseek_web] [55/64] 男士万圣节印花无帽卫衣
+2026-09-14 18:01:50 [INFO ] [deepseek_web]   Downloaded: 0055_3700927309327184633536.jpg
+2026-09-14 18:01:50 [INFO ] [deepseek_web]   Prefetching next image (56/64)
+2026-09-14 18:01:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:02:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:02:19 [INFO ] [deepseek_web]   Response: 万圣节南瓜灯印花 蝙蝠图案 肘部拼接贴片 撞色领口 金属拉链 半拉链套头卫衣 男士 常规版型 立领 长袖 无帽 罗纹袖口下摆 万圣节主题
+2026-09-14 18:02:19 [INFO ] [deepseek_web]   Deleted: 0055_3700927309327184633536.jpg
+2026-09-14 18:02:24 [INFO ] [deepseek_web] [56/64] 男士仿毛衣纯色休闲无帽卫衣
+2026-09-14 18:02:24 [INFO ] [deepseek_web]   Downloaded: 0056_0590902458793771222286.jpg
+2026-09-14 18:02:24 [INFO ] [deepseek_web]   Prefetching next image (57/64)
+2026-09-14 18:02:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:02:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:02:57 [INFO ] [deepseek_web]   Response: 仿毛衣针织肌理 罗纹圆领 落肩袖 罗纹袖口下摆 男士 宽松版型 长袖 无帽 圆领套头卫衣 纯色 无口袋设计 常规衣长
+2026-09-14 18:02:57 [INFO ] [deepseek_web]   Deleted: 0056_0590902458793771222286.jpg
+2026-09-14 18:03:02 [INFO ] [deepseek_web] [57/64] 男士半拉链立领卫衣
+2026-09-14 18:03:02 [INFO ] [deepseek_web]   Downloaded: 0057_8470313532522348926409.jpg
+2026-09-14 18:03:02 [INFO ] [deepseek_web]   Prefetching next image (58/64)
+2026-09-14 18:03:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:03:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:03:35 [INFO ] [deepseek_web]   Response: 立领 罗纹袖口下摆 落肩袖 无口袋设计 表面肌理 金属拉链头 男士 常规版型 半拉链套头卫衣 长袖 无帽 纯色 常规衣长
+2026-09-14 18:03:35 [INFO ] [deepseek_web]   Deleted: 0057_8470313532522348926409.jpg
+2026-09-14 18:03:40 [INFO ] [deepseek_web] [58/64] 男士男装美式斜纹肌理半拉链立领长袖上衣大码休闲套头卫衣无帽卫衣
+2026-09-14 18:03:40 [INFO ] [deepseek_web]   Downloaded: 0058_5920351358137788254726.jpg
+2026-09-14 18:03:40 [INFO ] [deepseek_web]   Prefetching next image (59/64)
+2026-09-14 18:03:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:03:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:04:09 [INFO ] [deepseek_web]   Response: 斜纹肌理 立领 罗纹袖口下摆 金属拉链头 落肩袖 半拉链套头卫衣 男士 宽松版型 大码 长袖 无帽 纯色 常规衣长
+2026-09-14 18:04:09 [INFO ] [deepseek_web]   Deleted: 0058_5920351358137788254726.jpg
+2026-09-14 18:04:14 [INFO ] [deepseek_web] [59/64] 男士万圣节骨骼印花无帽卫衣
+2026-09-14 18:04:14 [INFO ] [deepseek_web]   Downloaded: 0059_4050142311931279986402.jpg
+2026-09-14 18:04:14 [INFO ] [deepseek_web]   Prefetching next image (60/64)
+2026-09-14 18:04:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:04:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:04:43 [INFO ] [deepseek_web]   Response: 正面骨骼印花 肋骨图案 袖部骨骼图案 圆领套头卫衣 男士 常规版型 长袖 无帽 罗纹袖口下摆 万圣节主题
+2026-09-14 18:04:43 [INFO ] [deepseek_web]   Deleted: 0059_4050142311931279986402.jpg
+2026-09-14 18:04:48 [INFO ] [deepseek_web] [60/64] 男士卫衣宽松双袖拼色户外保暖透气战术男装上衣
+2026-09-14 18:04:48 [INFO ] [deepseek_web]   Downloaded: 0060_0650349018141915893654.jpg
+2026-09-14 18:04:48 [INFO ] [deepseek_web]   Prefetching next image (61/64)
+2026-09-14 18:04:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:04:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:05:19 [INFO ] [deepseek_web]   Response: 双袖拼色拼接 左臂拉链口袋 胸前横向拼接缝 罗纹袖口下摆 立领 男士 宽松版型 半拉链套头卫衣 长袖 无帽 保暖 透气 户外 战术
+2026-09-14 18:05:19 [INFO ] [deepseek_web]   Deleted: 0060_0650349018141915893654.jpg
+2026-09-14 18:05:24 [INFO ] [deepseek_web] [61/64] 男士圣诞节四分之一拉链无帽圆领卫衣
+2026-09-14 18:05:24 [INFO ] [deepseek_web]   Downloaded: 0061_2880949039585020016939.jpg
+2026-09-14 18:05:24 [INFO ] [deepseek_web]   Prefetching next image (62/64)
+2026-09-14 18:05:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:05:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:05:53 [INFO ] [deepseek_web]   Response: 驯鹿图案 松树图案 雪花点状图案 半拉链套头卫衣 男士 宽松版型 立领 长袖 无帽 罗纹袖口下摆 圣诞主题
+2026-09-14 18:05:53 [INFO ] [deepseek_web]   Deleted: 0061_2880949039585020016939.jpg
+2026-09-14 18:05:58 [INFO ] [deepseek_web] [62/64] 男士美国250周年自由之旅半拉链无帽卫衣
+2026-09-14 18:05:58 [INFO ] [deepseek_web]   Downloaded: 0062_6230811511261110313502.jpg
+2026-09-14 18:05:58 [INFO ] [deepseek_web]   Prefetching next image (63/64)
+2026-09-14 18:05:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:06:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:06:30 [INFO ] [deepseek_web]   Response: USA字母印花 圆形徽章贴片 袖部星条图案 领口毛绒内衬 半拉链套头卫衣 男士 宽松版型 立领 长袖 无帽 罗纹袖口下摆 美国250周年主题
+2026-09-14 18:06:30 [INFO ] [deepseek_web]   Deleted: 0062_6230811511261110313502.jpg
+2026-09-14 18:06:35 [INFO ] [deepseek_web] [63/64] 男士狂欢节条纹半拉链无帽卫衣
+2026-09-14 18:06:35 [INFO ] [deepseek_web]   Downloaded: 0063_4380622254912717302891.jpg
+2026-09-14 18:06:35 [INFO ] [deepseek_web]   Prefetching next image (64/64)
+2026-09-14 18:06:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:06:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:07:07 [INFO ] [deepseek_web]   Response: 竖条纹图案 立领 领口撞色拼接 罗纹袖口下摆 落肩袖 无口袋设计 半拉链套头卫衣 男士 常规版型 长袖 无帽 常规衣长
+2026-09-14 18:07:07 [INFO ] [deepseek_web]   Deleted: 0063_4380622254912717302891.jpg
+2026-09-14 18:07:12 [INFO ] [deepseek_web] [64/64] 男士圣诞节丑陋毛衣圣诞节日礼物无帽卫衣（仿毛衣）
+2026-09-14 18:07:12 [INFO ] [deepseek_web]   Downloaded: 0064_1360555330903765176077.jpg
+2026-09-14 18:07:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-14 18:07:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-14 18:07:47 [INFO ] [deepseek_web]   Response: 3D错觉人体躯干印花 链条装饰图案 腰带扣图案 仿毛衣无帽套头卫衣 男士 常规版型 长袖 罗纹领口袖口下摆 圣诞主题
+2026-09-14 18:07:47 [INFO ] [deepseek_web]   Deleted: 0064_1360555330903765176077.jpg
+2026-09-14 18:07:47 [INFO ] [deepseek_web] 
+2026-09-14 18:07:47 [INFO ] [deepseek_web] Retry round 1: 6 failed item(s)
+2026-09-14 18:07:52 [INFO ] [deepseek_web]   Retry [1]: 基督教风无帽半拉链卫衣
+2026-09-14 18:08:11 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:08:29 [INFO ] [deepseek_web]     OK: 胸前十字架国旗图案 肩部撞色拼接贴片 袖部星星条纹印花 翻领 半拉链套头卫衣 男士 常规版型 长袖 无帽 罗纹袖口下摆 常规衣长
+2026-09-14 18:08:32 [INFO ] [deepseek_web]   Retry [2]: 万圣节男士无帽卫衣
+2026-09-14 18:08:52 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:09:10 [INFO ] [deepseek_web]     OK: 搞怪南瓜脸印花 锯齿形嘴部图案 落肩袖 圆领套头卫衣 男士 宽松版型 长袖 无帽 罗纹领口袖口下摆 万圣节主题
+2026-09-14 18:09:13 [INFO ] [deepseek_web]   Retry [9]: 男士维京系列无帽半拉链加绒卫衣
+2026-09-14 18:09:33 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:09:52 [INFO ] [deepseek_web]     OK: 胸前圆形符文印花 袖部符文印花 撞色拼接 半拉链套头卫衣 男士 宽松版型 立领 长袖 无帽 罗纹袖口下摆 正面袋鼠口袋 加绒 维京主题
+2026-09-14 18:09:55 [INFO ] [deepseek_web]   Retry [12]: 圣诞节男女同款卫衣
+2026-09-14 18:10:12 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:10:31 [INFO ] [deepseek_web]     OK: 雪人印花 雪花图案 松树图案 几何图案拼接 仿毛衣针织纹理 罗纹领口袖口下摆 中性 宽松版型 圆领套头卫衣 长袖 无帽 圣诞主题
+2026-09-14 18:10:34 [INFO ] [deepseek_web]   Retry [18]: 男士圣帕半拉链无帽卫衣
+2026-09-14 18:10:52 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:11:10 [INFO ] [deepseek_web]     OK: 三叶草图案 方格拼接 撞色领口 金属拉链头 男士 常规版型 半拉链套头卫衣 立领 长袖 无帽 罗纹袖口下摆 圣帕特里克节主题
+2026-09-14 18:11:13 [INFO ] [deepseek_web]   Retry [25]: 男士圣诞节趣味3D印花无帽卫衣
+2026-09-14 18:11:34 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-14 18:11:53 [INFO ] [deepseek_web]     OK: 3D错觉开衫印花 圣诞灯串图案 胸毛图案 腰带扣图案 雪花图案 圆领套头卫衣 男士 常规版型 长袖 无帽 圣诞主题
+2026-09-14 18:11:57 [INFO ] [deepseek_web] ==================================================
+2026-09-14 18:11:57 [INFO ] [deepseek_web] Done: 64 success, 0 failed → optimize_title
+2026-09-14 18:11:57 [INFO ] [title_workflow] Optimization complete: 64 titles
+2026-09-14 18:12:08 [INFO ] [title_workflow] Written 64 optimized titles to column H (8)
+2026-09-14 18:12:08 [INFO ] [title_workflow] Done: 9.9v1_fr.xlsx
+2026-09-14 18:12:09 [INFO ] [jenkins] [5/5] Title optimization OK
+2026-09-14 18:12:09 [INFO ] [jenkins] 
+2026-09-14 18:12:09 [INFO ] [jenkins] ==================================================
+2026-09-14 18:12:09 [INFO ] [jenkins] All 5 steps completed successfully
+2026-09-14 18:12:09 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-14 18:12:09 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-14 18:12:09 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-14 18:12:09 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-14 18:16:36 [INFO ] [hotwords] Loop mode: 48 keywords  country=de  category=(all)  mode=dual
+2026-09-14 18:16:36 [INFO ] [hotwords] 
+2026-09-14 18:16:36 [INFO ] [hotwords] [  1/48] Sweatshirt
+2026-09-14 18:16:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:16:38 [INFO ] [hotwords]   new_rank: 34 words
+2026-09-14 18:16:38 [INFO ] [hotwords]   → total 34 words
+2026-09-14 18:16:40 [INFO ] [hotwords] [  2/48] Kapuzenpullover
+2026-09-14 18:16:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:16:41 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-14 18:16:41 [INFO ] [hotwords]   → total 41 words
+2026-09-14 18:16:43 [INFO ] [hotwords] [  3/48] Pullover
+2026-09-14 18:16:43 [INFO ] [hotwords]   fluctuation: 17 words
+2026-09-14 18:16:44 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-14 18:16:44 [INFO ] [hotwords]   → total 258 words
+2026-09-14 18:16:46 [INFO ] [hotwords] [  4/48] Sweatjacke
+2026-09-14 18:16:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:16:47 [INFO ] [hotwords]   new_rank: 33 words
+2026-09-14 18:16:47 [INFO ] [hotwords]   → total 291 words
+2026-09-14 18:16:49 [INFO ] [hotwords] [  5/48] Hoodie
+2026-09-14 18:16:49 [INFO ] [hotwords]   fluctuation: 6 words
+2026-09-14 18:16:50 [INFO ] [hotwords]   new_rank: 107 words
+2026-09-14 18:16:50 [INFO ] [hotwords]   → total 404 words
+2026-09-14 18:16:52 [INFO ] [hotwords] [  6/48] Halbreißverschluss
+2026-09-14 18:16:53 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:16:53 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:16:53 [INFO ] [hotwords]   → total 404 words
+2026-09-14 18:16:55 [INFO ] [hotwords] [  7/48] Viertelreißverschluss
+2026-09-14 18:16:56 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:16:57 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:16:57 [INFO ] [hotwords]   → total 404 words
+2026-09-14 18:16:59 [INFO ] [hotwords] [  8/48] Kapuzen
+2026-09-14 18:16:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:00 [INFO ] [hotwords]   new_rank: 23 words
+2026-09-14 18:17:00 [INFO ] [hotwords]   → total 427 words
+2026-09-14 18:17:02 [INFO ] [hotwords] [  9/48] Jacke
+2026-09-14 18:17:02 [INFO ] [hotwords]   fluctuation: 74 words
+2026-09-14 18:17:03 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-14 18:17:03 [INFO ] [hotwords]   → total 701 words
+2026-09-14 18:17:05 [INFO ] [hotwords] [ 10/48] Freizeitjacke
+2026-09-14 18:17:05 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:06 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-14 18:17:06 [INFO ] [hotwords]   → total 702 words
+2026-09-14 18:17:08 [INFO ] [hotwords] [ 11/48] Fleecejacke
+2026-09-14 18:17:08 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-14 18:17:09 [INFO ] [hotwords]   new_rank: 49 words
+2026-09-14 18:17:09 [INFO ] [hotwords]   → total 752 words
+2026-09-14 18:17:11 [INFO ] [hotwords] [ 12/48] Thermojacke
+2026-09-14 18:17:12 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:12 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:17:12 [INFO ] [hotwords]   → total 752 words
+2026-09-14 18:17:14 [INFO ] [hotwords] [ 13/48] Übergangsjacke
+2026-09-14 18:17:15 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-14 18:17:15 [INFO ] [hotwords]   new_rank: 47 words
+2026-09-14 18:17:15 [INFO ] [hotwords]   → total 801 words
+2026-09-14 18:17:17 [INFO ] [hotwords] [ 14/48] Softshelljacke
+2026-09-14 18:17:18 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-14 18:17:19 [INFO ] [hotwords]   new_rank: 37 words
+2026-09-14 18:17:19 [INFO ] [hotwords]   → total 839 words
+2026-09-14 18:17:21 [INFO ] [hotwords] [ 15/48] Reißverschlussjacke
+2026-09-14 18:17:21 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:22 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:17:22 [INFO ] [hotwords]   → total 839 words
+2026-09-14 18:17:24 [INFO ] [hotwords] [ 16/48] Strickpullover
+2026-09-14 18:17:24 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:25 [INFO ] [hotwords]   new_rank: 11 words
+2026-09-14 18:17:25 [INFO ] [hotwords]   → total 850 words
+2026-09-14 18:17:27 [INFO ] [hotwords] [ 17/48] Strickjacke
+2026-09-14 18:17:27 [INFO ] [hotwords]   fluctuation: 3 words
+2026-09-14 18:17:28 [INFO ] [hotwords]   new_rank: 85 words
+2026-09-14 18:17:28 [INFO ] [hotwords]   → total 938 words
+2026-09-14 18:17:30 [INFO ] [hotwords] [ 18/48] Schutz
+2026-09-14 18:17:31 [INFO ] [hotwords]   fluctuation: 31 words
+2026-09-14 18:17:32 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-14 18:17:32 [INFO ] [hotwords]   → total 1169 words
+2026-09-14 18:17:34 [INFO ] [hotwords] [ 19/48] Angelshirt
+2026-09-14 18:17:34 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:35 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:17:35 [INFO ] [hotwords]   → total 1169 words
+2026-09-14 18:17:37 [INFO ] [hotwords] [ 20/48] Anglerjacke
+2026-09-14 18:17:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:38 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:17:38 [INFO ] [hotwords]   → total 1169 words
+2026-09-14 18:17:40 [INFO ] [hotwords] [ 21/48] Sonnenschutzjacke
+2026-09-14 18:17:41 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:41 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:17:41 [INFO ] [hotwords]   → total 1169 words
+2026-09-14 18:17:43 [INFO ] [hotwords] [ 22/48] Trainingsshirt
+2026-09-14 18:17:44 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:17:45 [INFO ] [hotwords]   new_rank: 2 words
+2026-09-14 18:17:45 [INFO ] [hotwords]   → total 1171 words
+2026-09-14 18:17:47 [INFO ] [hotwords] [ 23/48] Langarmshirt
+2026-09-14 18:17:47 [INFO ] [hotwords]   fluctuation: 3 words
+2026-09-14 18:17:48 [INFO ] [hotwords]   new_rank: 59 words
+2026-09-14 18:17:48 [INFO ] [hotwords]   → total 1233 words
+2026-09-14 18:17:50 [INFO ] [hotwords] [ 24/48] Fleece
+2026-09-14 18:17:50 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-14 18:17:51 [INFO ] [hotwords]   new_rank: 92 words
+2026-09-14 18:17:51 [INFO ] [hotwords]   → total 1326 words
+2026-09-14 18:17:53 [INFO ] [hotwords] [ 25/48] Strick
+2026-09-14 18:17:53 [INFO ] [hotwords]   fluctuation: 9 words
+2026-09-14 18:17:54 [INFO ] [hotwords]   new_rank: 199 words
+2026-09-14 18:17:54 [INFO ] [hotwords]   → total 1534 words
+2026-09-14 18:17:56 [INFO ] [hotwords] [ 26/48] Baseballjacke
+2026-09-14 18:17:57 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:18:18 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1fa0a60a0d0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-14 18:18:20 [INFO ] [hotwords] [ 27/48] Bomberjacke
+2026-09-14 18:18:20 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-14 18:18:21 [INFO ] [hotwords]   new_rank: 12 words
+2026-09-14 18:18:21 [INFO ] [hotwords]   → total 1547 words
+2026-09-14 18:18:23 [INFO ] [hotwords] [ 28/48] Jeansjacke
+2026-09-14 18:18:24 [INFO ] [hotwords]   fluctuation: 2 words
+2026-09-14 18:18:24 [INFO ] [hotwords]   new_rank: 31 words
+2026-09-14 18:18:24 [INFO ] [hotwords]   → total 1580 words
+2026-09-14 18:18:26 [INFO ] [hotwords] [ 29/48] Cargojacke
+2026-09-14 18:18:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:18:28 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:18:28 [INFO ] [hotwords]   → total 1580 words
+2026-09-14 18:18:30 [INFO ] [hotwords] [ 30/48] Coachjacke
+2026-09-14 18:18:30 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:18:31 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:18:31 [INFO ] [hotwords]   → total 1580 words
+2026-09-14 18:18:33 [INFO ] [hotwords] [ 31/48] Harringtonjacke
+2026-09-14 18:18:33 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:18:34 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:18:34 [INFO ] [hotwords]   → total 1580 words
+2026-09-14 18:18:36 [INFO ] [hotwords] [ 32/48] Lederjacke
+2026-09-14 18:18:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:18:58 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1fa0a609e50>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-14 18:19:00 [INFO ] [hotwords] [ 33/48] Bikerjacke
+2026-09-14 18:19:21 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1fa0a6096d0>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-14 18:19:23 [INFO ] [hotwords] [ 34/48] Trenchcoat
+2026-09-14 18:19:23 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:24 [INFO ] [hotwords]   new_rank: 14 words
+2026-09-14 18:19:24 [INFO ] [hotwords]   → total 1594 words
+2026-09-14 18:19:26 [INFO ] [hotwords] [ 35/48] Daunenjacke
+2026-09-14 18:19:27 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:27 [INFO ] [hotwords]   new_rank: 9 words
+2026-09-14 18:19:27 [INFO ] [hotwords]   → total 1603 words
+2026-09-14 18:19:29 [INFO ] [hotwords] [ 36/48] Steppjacke
+2026-09-14 18:19:30 [INFO ] [hotwords]   fluctuation: 1 words
+2026-09-14 18:19:30 [INFO ] [hotwords]   new_rank: 17 words
+2026-09-14 18:19:30 [INFO ] [hotwords]   → total 1621 words
+2026-09-14 18:19:32 [INFO ] [hotwords] [ 37/48] Weste
+2026-09-14 18:19:33 [INFO ] [hotwords]   fluctuation: 18 words
+2026-09-14 18:19:34 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-14 18:19:34 [INFO ] [hotwords]   → total 1839 words
+2026-09-14 18:19:36 [INFO ] [hotwords] [ 38/48] Hardshelljacke
+2026-09-14 18:19:36 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:37 [INFO ] [hotwords]   new_rank: 3 words
+2026-09-14 18:19:37 [INFO ] [hotwords]   → total 1842 words
+2026-09-14 18:19:39 [INFO ] [hotwords] [ 39/48] Poloshirt
+2026-09-14 18:19:40 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:40 [INFO ] [hotwords]   new_rank: 62 words
+2026-09-14 18:19:40 [INFO ] [hotwords]   → total 1904 words
+2026-09-14 18:19:42 [INFO ] [hotwords] [ 40/48] Kompressionsshirt
+2026-09-14 18:19:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:44 [INFO ] [hotwords]   new_rank: 8 words
+2026-09-14 18:19:44 [INFO ] [hotwords]   → total 1912 words
+2026-09-14 18:19:46 [INFO ] [hotwords] [ 41/48] Windbreaker
+2026-09-14 18:19:46 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:19:47 [INFO ] [hotwords]   new_rank: 13 words
+2026-09-14 18:19:47 [INFO ] [hotwords]   → total 1925 words
+2026-09-14 18:19:49 [INFO ] [hotwords] [ 42/48] Taktische
+2026-09-14 18:19:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:20:11 [WARNING] [hotwords]   FAILED: HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x1fa0a609810>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-09-14 18:20:13 [INFO ] [hotwords] [ 43/48] Angelweste
+2026-09-14 18:20:13 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:20:14 [INFO ] [hotwords]   new_rank: 1 words
+2026-09-14 18:20:14 [INFO ] [hotwords]   → total 1926 words
+2026-09-14 18:20:16 [INFO ] [hotwords] [ 44/48] Fahrradtrikot
+2026-09-14 18:20:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:20:17 [INFO ] [hotwords]   new_rank: 6 words
+2026-09-14 18:20:17 [INFO ] [hotwords]   → total 1932 words
+2026-09-14 18:20:19 [INFO ] [hotwords] [ 45/48] Skijacke
+2026-09-14 18:20:19 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:20:20 [INFO ] [hotwords]   new_rank: 7 words
+2026-09-14 18:20:20 [INFO ] [hotwords]   → total 1939 words
+2026-09-14 18:20:22 [INFO ] [hotwords] [ 46/48] Regenjacke
+2026-09-14 18:20:23 [INFO ] [hotwords]   fluctuation: 25 words
+2026-09-14 18:20:24 [INFO ] [hotwords]   new_rank: 200 words
+2026-09-14 18:20:24 [INFO ] [hotwords]   → total 2164 words
+2026-09-14 18:20:26 [INFO ] [hotwords] [ 47/48] Regenponcho
+2026-09-14 18:20:26 [INFO ] [hotwords]   fluctuation: 5 words
+2026-09-14 18:20:27 [INFO ] [hotwords]   new_rank: 64 words
+2026-09-14 18:20:27 [INFO ] [hotwords]   → total 2233 words
+2026-09-14 18:20:29 [INFO ] [hotwords] [ 48/48] Sweatponcho
+2026-09-14 18:20:29 [INFO ] [hotwords]   fluctuation: 0 words
+2026-09-14 18:20:30 [INFO ] [hotwords]   new_rank: 0 words
+2026-09-14 18:20:30 [INFO ] [hotwords]   → total 2233 words
+2026-09-14 18:20:32 [INFO ] [hotwords] 
+2026-09-14 18:20:32 [INFO ] [hotwords] Retry round 1: 4 failed keyword(s)
+2026-09-14 18:20:35 [INFO ] [hotwords]   Retrying: Baseballjacke
+2026-09-14 18:20:35 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-14 18:20:36 [INFO ] [hotwords]     new_rank: 0 words
+2026-09-14 18:20:36 [INFO ] [hotwords]     → OK
+2026-09-14 18:20:38 [INFO ] [hotwords]   Retrying: Lederjacke
+2026-09-14 18:20:38 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-14 18:20:39 [INFO ] [hotwords]     new_rank: 31 words
+2026-09-14 18:20:39 [INFO ] [hotwords]     → OK
+2026-09-14 18:20:41 [INFO ] [hotwords]   Retrying: Bikerjacke
+2026-09-14 18:20:42 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-14 18:20:43 [INFO ] [hotwords]     new_rank: 3 words
+2026-09-14 18:20:43 [INFO ] [hotwords]     → OK
+2026-09-14 18:20:45 [INFO ] [hotwords]   Retrying: Taktische
+2026-09-14 18:20:45 [INFO ] [hotwords]     fluctuation: 0 words
+2026-09-14 18:20:46 [INFO ] [hotwords]     new_rank: 22 words
+2026-09-14 18:20:46 [INFO ] [hotwords]     → OK
+2026-09-14 18:20:48 [INFO ] [hotwords] All keywords collected successfully
+2026-09-14 18:20:48 [INFO ] [hotwords] 
+2026-09-14 18:20:48 [INFO ] [hotwords] Combining: 200 fluctuation + 2089 new_rank = 2289 total
+2026-09-14 18:20:48 [INFO ] [hotwords] 
+2026-09-14 18:20:48 [INFO ] [hotwords] Cleaning...
+2026-09-14 18:20:48 [INFO ] [hotwords]   strip_whitespace: 2289 → 2289 (0 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords]   normalize_case: 2289 → 2289 (0 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords]   drop_single_word: 2289 → 2134 (155 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords]   drop_brands: 2134 → 1725 (409 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords]   drop_reordered: 1725 → 1564 (161 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords]   deduplicate: 1564 → 1416 (148 removed)
+2026-09-14 18:20:48 [INFO ] [hotwords] herren=268    damen=481    other=667  
+2026-09-14 18:20:48 [INFO ] [hotwords] Saved 1416 words (raw: 2289, errors: 4) → 20260914_181636_de.txt
+2026-09-14 18:20:48 [INFO ] [hotwords] ==================================================
+2026-09-14 18:20:48 [INFO ] [hotwords] Done.

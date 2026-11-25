@@ -1,0 +1,864 @@
+2026-11-20 08:50:12 [INFO ] [jenkins] ==================================================
+2026-11-20 08:50:12 [INFO ] [jenkins] Jenkins pipeline — 5 steps
+2026-11-20 08:50:12 [INFO ] [jenkins] ==================================================
+2026-11-20 08:50:12 [INFO ] [jenkins] 
+2026-11-20 08:50:12 [INFO ] [jenkins] [1/5] xls → xlsx
+2026-11-20 08:50:12 [INFO ] [jenkins] ------------------------------
+2026-11-20 08:50:12 [INFO ] [jenkins] [1/5] xls → xlsx OK
+2026-11-20 08:50:12 [INFO ] [jenkins] 
+2026-11-20 08:50:12 [INFO ] [jenkins] [2/5] Preprocess
+2026-11-20 08:50:12 [INFO ] [jenkins] ------------------------------
+2026-11-20 08:50:13 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-11-20 08:50:13 [INFO ] [jenkins] [2/5] Preprocess OK
+2026-11-20 08:50:13 [INFO ] [jenkins] 
+2026-11-20 08:50:13 [INFO ] [jenkins] [3/5] Excel pipeline
+2026-11-20 08:50:13 [INFO ] [jenkins] ------------------------------
+2026-11-20 08:50:14 [INFO ] [main] Log file: 20261120_5b3e4b8f.log
+2026-11-20 08:50:14 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-11-20 08:50:14 [INFO ] [jenkins] [3/5] Excel pipeline OK
+2026-11-20 08:50:14 [INFO ] [jenkins] 
+2026-11-20 08:50:14 [INFO ] [jenkins] [4/5] Color re-processing
+2026-11-20 08:50:14 [INFO ] [jenkins] ------------------------------
+2026-11-20 08:50:14 [INFO ] [color_size_main] Source: 11.18v1_fr.xlsx
+2026-11-20 08:50:15 [INFO ] [color_size_main] Extracted: 430 data lines + 39 separators → check_.txt
+2026-11-20 08:50:15 [INFO ] [color_size_main] Running: process.py
+2026-11-20 08:50:15 [INFO ] [color_size_deal] Groups: 35, lines: 430 (file: 469)
+2026-11-20 08:50:15 [INFO ] [color_size_deal] Prefixes: {'01': 50, '02': 21, '03': 4, '04': 4}
+2026-11-20 08:50:15 [INFO ] [color_size_deal] Done.
+2026-11-20 08:50:15 [INFO ] [color_size_main] Processing write-back: 469 lines
+2026-11-20 08:50:17 [INFO ] [color_size_main] Write-back: 39 written, 430 unchanged → 11.18v1_fr.xlsx
+2026-11-20 08:50:17 [INFO ] [color_size_main] Done.
+2026-11-20 08:50:17 [INFO ] [jenkins] [4/5] Color re-processing OK
+2026-11-20 08:50:17 [INFO ] [jenkins] 
+2026-11-20 08:50:17 [INFO ] [jenkins] [5/5] Title optimization
+2026-11-20 08:50:17 [INFO ] [jenkins] ------------------------------
+2026-11-20 08:50:17 [INFO ] [title_workflow] Source: 11.18v1_fr.xlsx
+2026-11-20 08:50:18 [INFO ] [title_workflow] Extracted 35 titles + 35 links
+2026-11-20 08:50:18 [INFO ] [title_workflow] Written: origin_title (35) + origin_link (35)
+2026-11-20 08:50:18 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-20 08:50:18 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-20 08:50:19 [INFO ] [deepseek_web] Opening DeepSeek web (35 titles)...
+2026-11-20 08:50:19 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-20 08:50:21 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-20 08:50:24 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-20 08:50:24 [INFO ] [deepseek_web] [1/35] 男士性感蕾丝丁字裤 T裤短裤欧码情趣内裤男士透气内裤
+2026-11-20 08:50:25 [INFO ] [deepseek_web]   Downloaded: 0001_0260312099451417973170.jpg
+2026-11-20 08:50:25 [INFO ] [deepseek_web]   Prefetching next image (2/35)
+2026-11-20 08:50:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:50:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:50:54 [INFO ] [deepseek_web]   Response: 男士蕾丝丁字裤 网眼T裤 低腰情趣内裤 透气短裤 弹力腰带欧码内裤 性感男士丁字裤 T裤内裤
+2026-11-20 08:50:54 [INFO ] [deepseek_web]   Deleted: 0001_0260312099451417973170.jpg
+2026-11-20 08:50:59 [INFO ] [deepseek_web] [2/35] 三角裤低腰性感纯色男士情趣内裤
+2026-11-20 08:50:59 [INFO ] [deepseek_web]   Downloaded: 0002_9201023352708581111906.jpg
+2026-11-20 08:50:59 [INFO ] [deepseek_web]   Prefetching next image (3/35)
+2026-11-20 08:51:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:51:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:51:29 [INFO ] [deepseek_web]   Response: 男士情趣三角裤 纯色低腰内裤 性感U凸囊袋三角裤 宽边腰带男士内裤 透气弹力底裤 男士贴身内裤
+2026-11-20 08:51:29 [INFO ] [deepseek_web]   Deleted: 0002_9201023352708581111906.jpg
+2026-11-20 08:51:34 [INFO ] [deepseek_web] [3/35] 男士束缚情趣捆绑胸衣
+2026-11-20 08:51:34 [INFO ] [deepseek_web]   Downloaded: 0003_2700323347172184855507.jpg
+2026-11-20 08:51:34 [INFO ] [deepseek_web]   Prefetching next image (4/35)
+2026-11-20 08:51:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:51:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:52:09 [INFO ] [deepseek_web]   Response: 男士情趣胸衣 束缚捆绑胸背带 金属链条胸衣 男士性感绑带胸饰 情趣角色扮演配饰 包含双臂环
+2026-11-20 08:52:09 [INFO ] [deepseek_web]   Deleted: 0003_2700323347172184855507.jpg
+2026-11-20 08:52:14 [INFO ] [deepseek_web] [4/35] 男生猛男肌肉亲肤高弹透气时尚男士薄透连体衣
+2026-11-20 08:52:14 [INFO ] [deepseek_web]   Downloaded: 0004_1870634377022712016339.jpg
+2026-11-20 08:52:14 [INFO ] [deepseek_web]   Prefetching next image (5/35)
+2026-11-20 08:52:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:52:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:52:43 [INFO ] [deepseek_web]   Response: 男士薄透连体衣 无袖半高领连体背心 高叉连裆体操服 透气高弹摔跤服 男士情趣紧身衣 健身连体衣
+2026-11-20 08:52:43 [INFO ] [deepseek_web]   Deleted: 0004_1870634377022712016339.jpg
+2026-11-20 08:52:48 [INFO ] [deepseek_web] [5/35] 男士时尚性感低腰网眼透气性感平角情趣内裤
+2026-11-20 08:52:48 [INFO ] [deepseek_web]   Downloaded: 0005_6371119537724273106991.jpg
+2026-11-20 08:52:48 [INFO ] [deepseek_web]   Prefetching next image (6/35)
+2026-11-20 08:52:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:52:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:53:17 [INFO ] [deepseek_web]   Response: 男士网眼平角内裤 低腰情趣内裤 透气四角裤 网眼平角裤 男士低腰内裤 情趣平角短裤 弹力腰带平角裤 网眼透气底裤
+2026-11-20 08:53:17 [INFO ] [deepseek_web]   Deleted: 0005_6371119537724273106991.jpg
+2026-11-20 08:53:22 [INFO ] [deepseek_web] [6/35] 男士大码超薄全透隐形透气情趣平角冰丝网纱内裤
+2026-11-20 08:53:22 [INFO ] [deepseek_web]   Downloaded: 0006_9970438291456150457895.jpg
+2026-11-20 08:53:22 [INFO ] [deepseek_web]   Prefetching next image (7/35)
+2026-11-20 08:53:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:53:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:53:51 [INFO ] [deepseek_web]   Response: 男士平角内裤 低腰性感四角裤 大码透视内裤 冰丝网纱平角裤 超薄全透情趣内裤 U凸囊袋底裤 字母腰带平角短裤 网纱透气内裤
+2026-11-20 08:53:51 [INFO ] [deepseek_web]   Deleted: 0006_9970438291456150457895.jpg
+2026-11-20 08:53:56 [INFO ] [deepseek_web] [7/35] 男士豹纹内裤低腰丁字三角裤
+2026-11-20 08:53:56 [INFO ] [deepseek_web]   Downloaded: 0007_1250155224694691459338.jpg
+2026-11-20 08:53:56 [INFO ] [deepseek_web]   Prefetching next image (8/35)
+2026-11-20 08:53:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:54:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:54:27 [INFO ] [deepseek_web]   Response: 男士豹纹内裤 低腰三角裤 细边丁字裤 U凸囊袋内裤 豹纹印花底裤 男士情趣内裤 窄边贴身三角裤 男士丁字裤
+2026-11-20 08:54:27 [INFO ] [deepseek_web]   Deleted: 0007_1250155224694691459338.jpg
+2026-11-20 08:54:32 [INFO ] [deepseek_web] [8/35] 男式情趣前开洞丁字裤
+2026-11-20 08:54:32 [INFO ] [deepseek_web]   Downloaded: 0008_4571158077001617115407.jpg
+2026-11-20 08:54:32 [INFO ] [deepseek_web]   Prefetching next image (9/35)
+2026-11-20 08:54:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:54:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:55:02 [INFO ] [deepseek_web]   Response: 男士情趣丁字裤 前开洞T裤 蕾丝花边三角裤 低腰镂空内裤 蝴蝶结男士内裤 透气性感底裤 细边丁字短裤
+2026-11-20 08:55:02 [INFO ] [deepseek_web]   Deleted: 0008_4571158077001617115407.jpg
+2026-11-20 08:55:07 [INFO ] [deepseek_web] [9/35] n050 男士情趣内裤透视高弹力网纱漏洞三角内裤T裤丁字裤
+2026-11-20 08:55:07 [INFO ] [deepseek_web]   Downloaded: 0009_2740412208263415424780.jpg
+2026-11-20 08:55:07 [INFO ] [deepseek_web]   Prefetching next image (10/35)
+2026-11-20 08:55:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:55:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:55:36 [INFO ] [deepseek_web]   Response: 男士情趣内裤 前开洞三角裤 网纱透视T裤 低腰丁字裤 漏洞镂空内裤 高弹力透气底裤 男士网纱三角裤
+2026-11-20 08:55:36 [INFO ] [deepseek_web]   Deleted: 0009_2740412208263415424780.jpg
+2026-11-20 08:55:41 [INFO ] [deepseek_web] [10/35] 男士蕾丝镂空透视低腰丁字裤两侧开口细带无痕情趣内裤
+2026-11-20 08:55:41 [INFO ] [deepseek_web]   Downloaded: 0010_3991041225018317988214.jpg
+2026-11-20 08:55:41 [INFO ] [deepseek_web]   Prefetching next image (11/35)
+2026-11-20 08:55:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:55:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:56:10 [INFO ] [deepseek_web]   Response: 男士情趣丁字裤 低腰蕾丝镂空T裤 两侧细带开口内裤 透视无痕三角裤 男士透气底裤 性感男士内裤
+2026-11-20 08:56:10 [INFO ] [deepseek_web]   Deleted: 0010_3991041225018317988214.jpg
+2026-11-20 08:56:15 [INFO ] [deepseek_web] [11/35] 男士性感连体衣丁字裤
+2026-11-20 08:56:15 [INFO ] [deepseek_web]   Downloaded: 0011_4391212134236217279238.jpg
+2026-11-20 08:56:15 [INFO ] [deepseek_web]   Prefetching next image (12/35)
+2026-11-20 08:56:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:56:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:56:44 [INFO ] [deepseek_web]   Response: 男士连体丁字裤 低腰高叉连体衣 细肩带深V情趣内衣 囊袋连体摔跤服 男士露背连体衣 弹力贴身连体内裤
+2026-11-20 08:56:44 [INFO ] [deepseek_web]   Deleted: 0011_4391212134236217279238.jpg
+2026-11-20 08:56:49 [INFO ] [deepseek_web] [12/35] 男士吊带裤男士透气性感吊带丁字裤内衣内衣紧身衣
+2026-11-20 08:56:49 [INFO ] [deepseek_web]   Downloaded: 0012_3131051533135119106672.jpg
+2026-11-20 08:56:49 [INFO ] [deepseek_web]   Prefetching next image (13/35)
+2026-11-20 08:56:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:57:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:57:22 [INFO ] [deepseek_web]   Response: 男士吊带丁字裤 双细带连体衣 深V囊袋内裤 露背高叉紧身衣 透气男士情趣内衣 性感摔跤服
+2026-11-20 08:57:22 [INFO ] [deepseek_web]   Deleted: 0012_3131051533135119106672.jpg
+2026-11-20 08:57:27 [INFO ] [deepseek_web] [13/35] 男士性感丁字裤
+2026-11-20 08:57:27 [INFO ] [deepseek_web]   Downloaded: 0013_4361125383186210992028.jpg
+2026-11-20 08:57:27 [INFO ] [deepseek_web]   Prefetching next image (14/35)
+2026-11-20 08:57:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:57:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:57:56 [INFO ] [deepseek_web]   Response: 男士细带丁字裤 低腰性感内裤 U凸囊袋T裤 纯色透气底裤 男士微比基尼内裤 细绳G弦裤 情趣内衣
+2026-11-20 08:57:56 [INFO ] [deepseek_web]   Deleted: 0013_4361125383186210992028.jpg
+2026-11-20 08:58:01 [INFO ] [deepseek_web] [14/35] 男士情趣内裤舒适透气泳衣套套开口丁字裤T裤
+2026-11-20 08:58:01 [INFO ] [deepseek_web]   Downloaded: 0014_8550958573071120641573.jpg
+2026-11-20 08:58:01 [INFO ] [deepseek_web]   Prefetching next image (15/35)
+2026-11-20 08:58:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:58:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:58:31 [INFO ] [deepseek_web]   Response: 男士情趣内裤 套套开口丁字裤 管状开口T裤 透气泳衣内裤 低腰比基尼底裤 弹力贴身男士内裤 男士T裤 情趣底裤
+2026-11-20 08:58:31 [INFO ] [deepseek_web]   Deleted: 0014_8550958573071120641573.jpg
+2026-11-20 08:58:36 [INFO ] [deepseek_web] [15/35] 男士情趣内衣连体连丁字裤体衣性感漆皮水手表演背带式诱惑男泳衣
+2026-11-20 08:58:36 [INFO ] [deepseek_web]   Downloaded: 0015_1561003022293312094712.jpg
+2026-11-20 08:58:36 [INFO ] [deepseek_web]   Prefetching next image (16/35)
+2026-11-20 08:58:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:58:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:59:05 [INFO ] [deepseek_web]   Response: 男士连体丁字裤 漆皮连体衣 宽肩带情趣内衣 纯色亮面连体内裤 低腰高叉囊袋摔跤服 深V连体泳衣 男士背带式连体内衣
+2026-11-20 08:59:05 [INFO ] [deepseek_web]   Deleted: 0015_1561003022293312094712.jpg
+2026-11-20 08:59:10 [INFO ] [deepseek_web] [16/35] 男士情趣内衣套装透明银光网衣性感JK装角斗士服
+2026-11-20 08:59:10 [INFO ] [deepseek_web]   Downloaded: 0016_0370947241612913058171.jpg
+2026-11-20 08:59:10 [INFO ] [deepseek_web]   Prefetching next image (17/35)
+2026-11-20 08:59:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:59:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 08:59:39 [INFO ] [deepseek_web]   Response: 男士情趣内衣套装 包含网眼短袖上衣与平角短裤 网纱透视短袖T恤 低腰网眼平角内裤 男士网眼套装 弹力透气底裤
+2026-11-20 08:59:39 [INFO ] [deepseek_web]   Deleted: 0016_0370947241612913058171.jpg
+2026-11-20 08:59:44 [INFO ] [deepseek_web] [17/35] 皮质网纱拼接男士T恤短裤连体衣
+2026-11-20 08:59:44 [INFO ] [deepseek_web]   Downloaded: 0017_1091124161671478877166.jpg
+2026-11-20 08:59:44 [INFO ] [deepseek_web]   Prefetching next image (18/35)
+2026-11-20 08:59:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 08:59:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:00:13 [INFO ] [deepseek_web]   Response: 男士皮质连体衣 网纱拼接短袖连体衣 正面拉链紧身连体短裤 弹力修身连体衣 男士连体短裤 网纱透视连体衣 短袖连体衣 拉链连体衣 男士紧身连体衣
+2026-11-20 09:00:13 [INFO ] [deepseek_web]   Deleted: 0017_1091124161671478877166.jpg
+2026-11-20 09:00:18 [INFO ] [deepseek_web] [18/35] 男士个性双丁裤性感丁字情趣内裤
+2026-11-20 09:00:18 [INFO ] [deepseek_web]   Downloaded: 0018_4100221019311719104096.jpg
+2026-11-20 09:00:18 [INFO ] [deepseek_web]   Prefetching next image (19/35)
+2026-11-20 09:00:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:00:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:00:52 [INFO ] [deepseek_web]   Response: 男士双丁裤 低腰细带丁字裤 囊袋情趣内裤 透气弹力男士底裤 窄边无痕双丁内裤
+2026-11-20 09:00:52 [INFO ] [deepseek_web]   Deleted: 0018_4100221019311719104096.jpg
+2026-11-20 09:00:57 [INFO ] [deepseek_web] [19/35] 男士网纱拼接连体衣S角色扮演M诱惑制服拉链紧身情趣性感蹦迪装
+2026-11-20 09:00:57 [INFO ] [deepseek_web]   Downloaded: 0019_2020316118292136854888.jpg
+2026-11-20 09:00:57 [INFO ] [deepseek_web]   Prefetching next image (20/35)
+2026-11-20 09:00:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:01:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:01:29 [INFO ] [deepseek_web]   Response: 男士网纱拼接连体衣 长袖透视连体裤 正面拉链紧身连体衣 角色扮演情趣制服 男士连体紧身衣 派对连体内衣
+2026-11-20 09:01:29 [INFO ] [deepseek_web]   Deleted: 0019_2020316118292136854888.jpg
+2026-11-20 09:01:34 [INFO ] [deepseek_web] [20/35] 男士图案丁字情趣连体衣
+2026-11-20 09:01:34 [INFO ] [deepseek_web]   Downloaded: 0020_9770544087242415368367.jpg
+2026-11-20 09:01:34 [INFO ] [deepseek_web]   Prefetching next image (21/35)
+2026-11-20 09:01:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:01:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:02:07 [INFO ] [deepseek_web]   Response: 男士情趣连体衣 连体丁字裤 细带吊带连体衣 图案印花紧身连体衣 深V囊袋连体裤 低腰高叉连体内裤 男士连体摔跤服
+2026-11-20 09:02:07 [INFO ] [deepseek_web]   Deleted: 0020_9770544087242415368367.jpg
+2026-11-20 09:02:12 [INFO ] [deepseek_web] [21/35] WOXUAN男士拉丝内裤丁字裤
+2026-11-20 09:02:12 [INFO ] [deepseek_web]   Downloaded: 0021_8961014163743453006085.jpg
+2026-11-20 09:02:12 [INFO ] [deepseek_web]   Prefetching next image (22/35)
+2026-11-20 09:02:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:02:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:02:41 [INFO ] [deepseek_web]   Response: 男士拉丝丁字裤 低腰双丁裤 细带囊袋内裤 U凸T裤 男士情趣内裤 透气弹力底裤 男士性感内裤
+2026-11-20 09:02:41 [INFO ] [deepseek_web]   Deleted: 0021_8961014163743453006085.jpg
+2026-11-20 09:02:46 [INFO ] [deepseek_web] [22/35] 男士连体平角裤性感网纱透气露屁连体男士内裤
+2026-11-20 09:02:46 [INFO ] [deepseek_web]   Downloaded: 0022_5010814387979420436385.jpg
+2026-11-20 09:02:46 [INFO ] [deepseek_web]   Prefetching next image (23/35)
+2026-11-20 09:02:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:02:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:03:22 [INFO ] [deepseek_web]   Response: 男士连体平角裤 网纱透视连体内裤 露背高叉连体衣 囊袋平角短裤 网眼透气情趣内裤 男士后空连体裤
+2026-11-20 09:03:22 [INFO ] [deepseek_web]   Deleted: 0022_5010814387979420436385.jpg
+2026-11-20 09:03:27 [INFO ] [deepseek_web] [23/35] 男士性感丁字裤低腰情趣内裤
+2026-11-20 09:03:27 [INFO ] [deepseek_web]   Downloaded: 0023_8760859364493216261097.jpg
+2026-11-20 09:03:27 [INFO ] [deepseek_web]   Prefetching next image (24/35)
+2026-11-20 09:03:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:03:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:03:56 [INFO ] [deepseek_web]   Response: 男士丁字裤 低腰情趣内裤 双丁裤 细带T裤 囊袋内裤 交叉带内裤 弹力透气底裤 男士性感内裤
+2026-11-20 09:03:56 [INFO ] [deepseek_web]   Deleted: 0023_8760859364493216261097.jpg
+2026-11-20 09:04:01 [INFO ] [deepseek_web] [24/35] D4014#男士镂空平脚内裤棉质情趣网眼镂空性感三角内裤
+2026-11-20 09:04:01 [INFO ] [deepseek_web]   Downloaded: 0024_6070909547005914268232.jpg
+2026-11-20 09:04:01 [INFO ] [deepseek_web]   Prefetching next image (25/35)
+2026-11-20 09:04:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:04:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:04:33 [INFO ] [deepseek_web]   Response: 男士网眼平角内裤 镂空透视三角裤 低腰情趣内裤 网纱透气底裤 弹力囊袋平角短裤 男士内裤
+2026-11-20 09:04:33 [INFO ] [deepseek_web]   Deleted: 0024_6070909547005914268232.jpg
+2026-11-20 09:04:38 [INFO ] [deepseek_web] [25/35] 男士激凸网纱透视低腰内裤
+2026-11-20 09:04:38 [INFO ] [deepseek_web]   Downloaded: 0025_9420346312344535628966.jpg
+2026-11-20 09:04:38 [INFO ] [deepseek_web]   Prefetching next image (26/35)
+2026-11-20 09:04:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:04:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:05:08 [INFO ] [deepseek_web]   Response: 男士激凸网纱透视内裤 低腰三角裤 U凸囊袋T裤 网眼透气男士底裤 半透明情趣内裤 男士贴身内裤
+2026-11-20 09:05:08 [INFO ] [deepseek_web]   Deleted: 0025_9420346312344535628966.jpg
+2026-11-20 09:05:13 [INFO ] [deepseek_web] [26/35] B605男士性感蜘蛛网低腰丁字内裤
+2026-11-20 09:05:13 [INFO ] [deepseek_web]   Downloaded: 0026_0520555244406519070463.jpg
+2026-11-20 09:05:13 [INFO ] [deepseek_web]   Prefetching next image (27/35)
+2026-11-20 09:05:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:05:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:05:44 [INFO ] [deepseek_web]   Response: 男士蜘蛛网丁字裤 低腰透视三角裤 U凸囊袋T裤 网纱网眼内裤 细带透气底裤 男士情趣内裤
+2026-11-20 09:05:44 [INFO ] [deepseek_web]   Deleted: 0026_0520555244406519070463.jpg
+2026-11-20 09:05:49 [INFO ] [deepseek_web] [27/35] 男士网纱背心情趣内衣
+2026-11-20 09:05:49 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-20 09:05:54 [INFO ] [deepseek_web] [28/35] 男士玫瑰花蕾丝前后开洞半透明情趣平角裤
+2026-11-20 09:05:57 [INFO ] [deepseek_web]   Downloaded: 0028_0270433322893177617083.jpg
+2026-11-20 09:05:57 [INFO ] [deepseek_web]   Prefetching next image (29/35)
+2026-11-20 09:05:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:06:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:06:26 [INFO ] [deepseek_web]   Response: 男士蕾丝平角内裤 前后开洞四角内裤 半透明情趣平角裤 玫瑰花图案底裤 蕾丝透视平角短裤 弹力贴身男士内裤
+2026-11-20 09:06:26 [INFO ] [deepseek_web]   Deleted: 0028_0270433322893177617083.jpg
+2026-11-20 09:06:31 [INFO ] [deepseek_web] [29/35] 男士情趣内裤仿皮低腰性感内裤
+2026-11-20 09:06:31 [INFO ] [deepseek_web]   Downloaded: 0029_9860446553152664669452.jpg
+2026-11-20 09:06:31 [INFO ] [deepseek_web]   Prefetching next image (30/35)
+2026-11-20 09:06:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:06:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:07:00 [INFO ] [deepseek_web]   Response: 男士仿皮内裤 低腰皮质三角裤 宽腰带囊袋底裤 男士情趣内裤 窄边丁字裤 弹力U凸T裤 男士性感内裤
+2026-11-20 09:07:00 [INFO ] [deepseek_web]   Deleted: 0029_9860446553152664669452.jpg
+2026-11-20 09:07:05 [INFO ] [deepseek_web] [30/35] 男士连体网衣情趣内衣男式紧身圆领长袖
+2026-11-20 09:07:05 [INFO ] [deepseek_web]   Downloaded: 0030_9821117041627711321666.jpg
+2026-11-20 09:07:05 [INFO ] [deepseek_web]   Prefetching next image (31/35)
+2026-11-20 09:07:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:07:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:10:32 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-20 09:10:32 [INFO ] [deepseek_web]   Deleted: 0030_9821117041627711321666.jpg
+2026-11-20 09:10:37 [INFO ] [deepseek_web] [31/35] 男士性感蕾丝超薄迷你三角裤高叉内衣透明舒适全包臀内裤
+2026-11-20 09:10:38 [INFO ] [deepseek_web]   Downloaded: 0031_1840345546022011098341.jpg
+2026-11-20 09:10:38 [INFO ] [deepseek_web]   Prefetching next image (32/35)
+2026-11-20 09:10:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:10:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:11:10 [INFO ] [deepseek_web]   Response: 男士蕾丝三角裤 低腰高叉透明内裤 超薄细带透视底裤 迷你全包臀丁字裤 男士镂空情趣内裤
+2026-11-20 09:11:10 [INFO ] [deepseek_web]   Deleted: 0031_1840345546022011098341.jpg
+2026-11-20 09:11:15 [INFO ] [deepseek_web] [32/35] 男士透明蕾丝丁字内裤
+2026-11-20 09:11:15 [INFO ] [deepseek_web]   Downloaded: 0032_1540653466443415514591.jpg
+2026-11-20 09:11:15 [INFO ] [deepseek_web]   Prefetching next image (33/35)
+2026-11-20 09:11:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:11:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:14:41 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-20 09:14:41 [INFO ] [deepseek_web]   Deleted: 0032_1540653466443415514591.jpg
+2026-11-20 09:14:46 [INFO ] [deepseek_web] [33/35] 男士性感网纱透视刺绣花纹丁字裤情趣镂空透视前开洞内裤
+2026-11-20 09:14:47 [INFO ] [deepseek_web]   Downloaded: 0033_7980656482861817274025.jpg
+2026-11-20 09:14:47 [INFO ] [deepseek_web]   Prefetching next image (34/35)
+2026-11-20 09:14:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:14:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:18:14 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-20 09:18:14 [INFO ] [deepseek_web]   Deleted: 0033_7980656482861817274025.jpg
+2026-11-20 09:18:19 [INFO ] [deepseek_web] [34/35] 男士性感内裤低腰菱形网丁字裤
+2026-11-20 09:18:22 [INFO ] [deepseek_web]   Downloaded: 0034_7991152188751515465387.jpg
+2026-11-20 09:18:22 [INFO ] [deepseek_web]   Prefetching next image (35/35)
+2026-11-20 09:18:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:18:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:21:49 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-20 09:21:49 [INFO ] [deepseek_web]   Deleted: 0034_7991152188751515465387.jpg
+2026-11-20 09:21:54 [INFO ] [deepseek_web] [35/35] 猛男性感蕾丝三点连体情趣内衣
+2026-11-20 09:21:57 [INFO ] [deepseek_web]   Downloaded: 0035_4100329165551949395045.jpg
+2026-11-20 09:21:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-20 09:22:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-20 09:25:24 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-20 09:25:24 [INFO ] [deepseek_web]   Deleted: 0035_4100329165551949395045.jpg
+2026-11-20 09:25:24 [INFO ] [deepseek_web] 
+2026-11-20 09:25:24 [INFO ] [deepseek_web] Retry round 1: 6 failed item(s)
+2026-11-20 09:25:29 [INFO ] [deepseek_web]   Retry [27]: 男士网纱背心情趣内衣
+2026-11-20 09:25:49 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:29:05 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-11-20 09:29:08 [INFO ] [deepseek_web]   Retry [30]: 男士连体网衣情趣内衣男式紧身圆领长袖
+2026-11-20 09:29:39 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:32:54 [WARNING] [deepseek_web]     FAILED: No new assistant response found
+2026-11-20 09:32:57 [INFO ] [deepseek_web]   Retry [32]: 男士透明蕾丝丁字内裤
+2026-11-20 09:33:14 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:33:32 [INFO ] [deepseek_web]     OK: 男士透明蕾丝丁字内裤 低腰囊袋丁字裤 性感蕾丝内裤 男士丁字裤 透视蕾丝内裤 低腰男士内裤 蕾丝丁字裤
+2026-11-20 09:33:35 [INFO ] [deepseek_web]   Retry [33]: 男士性感网纱透视刺绣花纹丁字裤情趣镂空透视前开洞内裤
+2026-11-20 09:33:55 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:34:18 [INFO ] [deepseek_web]     OK: 男士性感网纱丁字裤 蕾丝透视刺绣内裤 前开洞镂空丁字裤 情趣内裤 花卉花纹男士内裤 透视网纱低腰底裤
+2026-11-20 09:34:21 [INFO ] [deepseek_web]   Retry [34]: 男士性感内裤低腰菱形网丁字裤
+2026-11-20 09:34:49 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:35:09 [INFO ] [deepseek_web]     OK: 男士低腰丁字裤 菱形网纱内裤 透视网纱丁字裤 囊袋男士内裤 男士网眼丁字裤 性感男士底裤
+2026-11-20 09:35:12 [INFO ] [deepseek_web]   Retry [35]: 猛男性感蕾丝三点连体情趣内衣
+2026-11-20 09:35:41 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:36:11 [INFO ] [deepseek_web]     OK: 男士情趣连体丁字裤 蕾丝连体内裤 带项圈领结 情趣内衣 男士连体内裤 蕾丝丁字裤 男士连体内衣 蕾丝花边内裤 男士性感内裤 连体内裤 包含项圈领结
+2026-11-20 09:36:14 [INFO ] [deepseek_web] 
+2026-11-20 09:36:14 [INFO ] [deepseek_web] Retry round 2: 2 failed item(s)
+2026-11-20 09:36:19 [INFO ] [deepseek_web]   Retry [27]: 男士网纱背心情趣内衣
+2026-11-20 09:36:45 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:37:04 [INFO ] [deepseek_web]     OK: 男士网纱背心情趣内衣 网眼透视无袖打底衫 修身圆领工字背心 男士性感网纱背心 男士网眼打底背心
+2026-11-20 09:37:07 [INFO ] [deepseek_web]   Retry [30]: 男士连体网衣情趣内衣男式紧身圆领长袖
+2026-11-20 09:37:29 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-20 09:40:25 [INFO ] [deepseek_web]     OK: 男士连体网衣情趣内衣 紧身长袖连体裤 男士透视渔网连体衣 深V领情趣连体服 男士性感连体打底衫
+2026-11-20 09:40:29 [INFO ] [deepseek_web] ==================================================
+2026-11-20 09:40:29 [INFO ] [deepseek_web] Done: 35 success, 0 failed → optimize_title
+2026-11-20 09:40:30 [INFO ] [title_workflow] Optimization complete: 35 titles
+2026-11-20 09:40:32 [ERROR] [jenkins] [5/5] Title optimization FAILED (code 1)
+2026-11-20 09:40:32 [ERROR] [jenkins] Pipeline aborted.
+2026-11-20 19:06:36 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-20 19:06:36 [INFO ] [preprocess] [temp.xlsx]
+2026-11-20 19:06:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-20 19:06:37 [INFO ] [pipeline] [1/1] remove_header
+2026-11-20 19:06:53 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet0]: header row removed
+2026-11-20 19:06:53 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet1]: header row removed
+2026-11-20 19:06:53 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:06:55 [INFO ] [preprocess] Preprocessing complete
+2026-11-20 19:06:55 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261120_5b3e4b8f.log
+2026-11-20 19:06:55 [INFO ] [main] Found 1 file(s):
+2026-11-20 19:06:55 [INFO ] [main]   temp.xlsx
+2026-11-20 19:06:55 [INFO ] [main] Output: 11.18v1_uk.xlsx
+2026-11-20 19:06:55 [INFO ] [main] ==================================================
+2026-11-20 19:06:55 [INFO ] [main] Single file, copied
+2026-11-20 19:06:55 [INFO ] [main] Deleted 1 source file(s)
+2026-11-20 19:06:58 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:06:58 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-20 19:06:58 [INFO ] [pipeline]   Sheet [Sheet1]: 47 rows, 0 images
+2026-11-20 19:06:58 [INFO ] [pipeline]   Merged 2 sheets -> 1, 47 data rows, 0 images
+2026-11-20 19:06:58 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:06:58 [INFO ] [pipeline]   Validated: 3113 rows, 27 cols (expect ~32)
+2026-11-20 19:06:58 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:06:59 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-20 19:06:59 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:06:59 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:06:59 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:06:59 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-20 19:06:59 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:06:59 [INFO ] [pipeline]   Column 2: 3113 IDs generated
+2026-11-20 19:06:59 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:06:59 [INFO ] [pipeline]   Column 3: 3113 cells filled
+2026-11-20 19:06:59 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:06:59 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 47 no match
+2026-11-20 19:06:59 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:06:59 [INFO ] [pipeline]   Size column L: 498 mapped, 48 cleared (col A has fill), 2520 no match
+2026-11-20 19:06:59 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:06:59 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-20 19:06:59 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:06:59 [INFO ] [pipeline]   Price source M -> AS: 3113 cells copied
+2026-11-20 19:06:59 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:06:59 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-20 19:06:59 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:07:00 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:07:00 [INFO ] [pipeline]   Formatted 3113 rows: h=50, align=left/center
+2026-11-20 19:07:00 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:07:00 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:07:00 [INFO ] [pipeline]   Done: 3113 rows x 49 cols (target: 49)
+2026-11-20 19:07:00 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:07:03 [INFO ] [main] Size: 3113 rows x 49 cols
+2026-11-20 19:07:03 [INFO ] [main] ==================================================
+2026-11-20 19:07:03 [INFO ] [main] Done: 11.18v1_uk.xlsx
+2026-11-20 19:07:03 [INFO ] [color_size_main] Source: 11.18v1_uk.xlsx
+2026-11-20 19:07:06 [INFO ] [color_size_main] Extracted: 3018 data lines + 95 separators → check_.txt
+2026-11-20 19:07:06 [INFO ] [color_size_main] Running: process.py
+2026-11-20 19:07:07 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3113)
+2026-11-20 19:07:07 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-20 19:07:07 [INFO ] [color_size_deal] Done.
+2026-11-20 19:07:07 [INFO ] [color_size_main] Processing write-back: 3113 lines
+2026-11-20 19:07:12 [INFO ] [color_size_main] Write-back: 1304 written, 1809 unchanged → 11.18v1_uk.xlsx
+2026-11-20 19:07:12 [INFO ] [color_size_main] Done.
+2026-11-20 19:17:20 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-20 19:17:20 [INFO ] [preprocess] [temp.xlsx]
+2026-11-20 19:17:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-20 19:17:21 [INFO ] [pipeline] [1/1] remove_header
+2026-11-20 19:17:36 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet0]: header row removed
+2026-11-20 19:17:37 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet1]: header row removed
+2026-11-20 19:17:37 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:17:38 [INFO ] [preprocess] Preprocessing complete
+2026-11-20 19:17:38 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261120_5b3e4b8f.log
+2026-11-20 19:17:38 [INFO ] [main] Found 1 file(s):
+2026-11-20 19:17:38 [INFO ] [main]   temp.xlsx
+2026-11-20 19:17:38 [INFO ] [main] Output: 11.18v1_uk.xlsx
+2026-11-20 19:17:38 [INFO ] [main] ==================================================
+2026-11-20 19:17:38 [INFO ] [main] Single file, copied
+2026-11-20 19:17:39 [INFO ] [main] Deleted 1 source file(s)
+2026-11-20 19:17:41 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:17:41 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-20 19:17:41 [INFO ] [pipeline]   Sheet [Sheet1]: 47 rows, 0 images
+2026-11-20 19:17:41 [INFO ] [pipeline]   Merged 2 sheets -> 1, 47 data rows, 0 images
+2026-11-20 19:17:41 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:17:41 [INFO ] [pipeline]   Validated: 3113 rows, 27 cols (expect ~32)
+2026-11-20 19:17:41 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:17:41 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-20 19:17:41 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:17:41 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:17:41 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:17:41 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-20 19:17:41 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:17:41 [INFO ] [pipeline]   Column 2: 3113 IDs generated
+2026-11-20 19:17:41 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:17:41 [INFO ] [pipeline]   Column 3: 3113 cells filled
+2026-11-20 19:17:41 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:17:41 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 47 no match
+2026-11-20 19:17:41 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:17:41 [INFO ] [pipeline]   Size column L: 498 mapped, 48 cleared (col A has fill), 2520 no match
+2026-11-20 19:17:41 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:17:41 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-20 19:17:41 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:17:41 [INFO ] [pipeline]   Price source M -> AS: 3113 cells copied
+2026-11-20 19:17:41 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:17:42 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-20 19:17:42 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:17:43 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:17:43 [INFO ] [pipeline]   Formatted 3113 rows: h=50, align=left/center
+2026-11-20 19:17:43 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:17:43 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:17:43 [INFO ] [pipeline]   Done: 3113 rows x 49 cols (target: 49)
+2026-11-20 19:17:43 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:17:46 [INFO ] [main] Size: 3113 rows x 49 cols
+2026-11-20 19:17:46 [INFO ] [main] ==================================================
+2026-11-20 19:17:46 [INFO ] [main] Done: 11.18v1_uk.xlsx
+2026-11-20 19:17:46 [INFO ] [color_size_main] Source: 11.18v1_uk.xlsx
+2026-11-20 19:17:48 [INFO ] [color_size_main] Extracted: 3018 data lines + 95 separators → check_.txt
+2026-11-20 19:17:48 [INFO ] [color_size_main] Running: process.py
+2026-11-20 19:17:49 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3113)
+2026-11-20 19:17:49 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-20 19:17:49 [INFO ] [color_size_deal] Done.
+2026-11-20 19:17:49 [INFO ] [color_size_main] Processing write-back: 3113 lines
+2026-11-20 19:17:53 [INFO ] [color_size_main] Write-back: 1304 written, 1809 unchanged → 11.18v1_uk.xlsx
+2026-11-20 19:17:53 [INFO ] [color_size_main] Done.
+2026-11-20 19:38:41 [INFO ] [jenkins] ==================================================
+2026-11-20 19:38:41 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-20 19:38:41 [INFO ] [jenkins] ==================================================
+2026-11-20 19:38:41 [INFO ] [jenkins] 
+2026-11-20 19:38:41 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-20 19:38:41 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:38:41 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-20 19:38:41 [INFO ] [jenkins] 
+2026-11-20 19:38:41 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-20 19:38:41 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:38:41 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-20 19:38:41 [INFO ] [preprocess] [temp.xlsx]
+2026-11-20 19:38:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-20 19:38:43 [INFO ] [pipeline] [1/1] remove_header
+2026-11-20 19:38:56 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet0]: header row removed
+2026-11-20 19:38:56 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet1]: header row removed
+2026-11-20 19:38:56 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:38:58 [INFO ] [preprocess] Preprocessing complete
+2026-11-20 19:38:58 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-20 19:38:58 [INFO ] [jenkins] 
+2026-11-20 19:38:58 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-20 19:38:58 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:38:59 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261120_5b3e4b8f.log
+2026-11-20 19:38:59 [INFO ] [main] Found 1 file(s):
+2026-11-20 19:38:59 [INFO ] [main]   temp.xlsx
+2026-11-20 19:38:59 [INFO ] [main] Output: 11.18v1_uk.xlsx
+2026-11-20 19:38:59 [INFO ] [main] ==================================================
+2026-11-20 19:38:59 [INFO ] [main] Single file, copied
+2026-11-20 19:39:00 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:39:00 [INFO ] [pipeline] [1/12] merge_sheets
+2026-11-20 19:39:00 [INFO ] [pipeline]   Sheet [Sheet1]: 47 rows, 0 images
+2026-11-20 19:39:00 [INFO ] [pipeline]   Merged 2 sheets -> 1, 47 data rows, 0 images
+2026-11-20 19:39:00 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:39:00 [INFO ] [pipeline]   Validated: 3113 rows, 27 cols (expect ~32)
+2026-11-20 19:39:00 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:39:01 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-20 19:39:01 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:39:01 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:39:01 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:39:01 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-20 19:39:01 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:39:01 [INFO ] [pipeline]   Column 2: 3113 IDs generated
+2026-11-20 19:39:01 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:39:01 [INFO ] [pipeline]   Column 3: 3113 cells filled
+2026-11-20 19:39:01 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:39:01 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 47 no match
+2026-11-20 19:39:01 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:39:01 [INFO ] [pipeline]   Size column L: 498 mapped, 48 cleared (col A has fill), 2520 no match
+2026-11-20 19:39:01 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:39:01 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-20 19:39:01 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:39:01 [INFO ] [pipeline]   Price source M -> AS: 3113 cells copied
+2026-11-20 19:39:01 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:39:01 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-20 19:39:01 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:39:03 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:39:03 [INFO ] [pipeline]   Formatted 3113 rows: h=50, align=left/center
+2026-11-20 19:39:03 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:39:03 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:39:03 [INFO ] [pipeline]   Done: 3113 rows x 49 cols (target: 49)
+2026-11-20 19:39:03 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:39:06 [INFO ] [main] Size: 3113 rows x 49 cols
+2026-11-20 19:39:06 [INFO ] [main] ==================================================
+2026-11-20 19:39:06 [INFO ] [main] Done: 11.18v1_uk.xlsx
+2026-11-20 19:39:06 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-20 19:39:06 [INFO ] [jenkins] 
+2026-11-20 19:39:06 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-20 19:39:06 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:39:07 [INFO ] [color_size_main] Source: 11.18v1_uk.xlsx
+2026-11-20 19:39:08 [INFO ] [color_size_main] Extracted: 3018 data lines + 95 separators → check_.txt
+2026-11-20 19:39:08 [INFO ] [color_size_main] Running: process.py
+2026-11-20 19:39:09 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3113)
+2026-11-20 19:39:09 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-20 19:39:09 [INFO ] [color_size_deal] Done.
+2026-11-20 19:39:09 [INFO ] [color_size_main] Processing write-back: 3113 lines
+2026-11-20 19:39:13 [INFO ] [color_size_main] Write-back: 1304 written, 1809 unchanged → 11.18v1_uk.xlsx
+2026-11-20 19:39:13 [INFO ] [color_size_main] Done.
+2026-11-20 19:39:13 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-20 19:39:13 [INFO ] [jenkins] 
+2026-11-20 19:39:13 [INFO ] [jenkins] ==================================================
+2026-11-20 19:39:13 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-20 19:39:13 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-20 19:39:13 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-20 19:39:13 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-20 19:39:13 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-20 19:44:48 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:44:48 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:44:48 [ERROR] [pipeline] Step remove_header failed
+Traceback (most recent call last):
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\core\runner.py", line 108, in run
+    context = step.run(context)
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\preprocess\steps\remove_header.py", line 23, in run
+    ctx.worksheet = rebuild_sheet(
+                    ~~~~~~~~~~~~~^
+        ctx.workbook,
+        ^^^^^^^^^^^^^
+        worksheet,
+        ^^^^^^^^^^
+        lambda row: row != 1,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FW20260325\besskyproject\dealExcel_refactoring\preprocess\steps\rebuild.py", line 60, in rebuild_sheet
+    rebuilt.merge_cells(
+    ~~~~~~~~~~~~~~~~~~~^
+        min_row=row_map[merged.min_row],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        max_col=merged.max_col,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Worksheet.merge_cells() got an unexpected keyword argument 'min_row'
+2026-11-20 19:45:25 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:45:25 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:45:25 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:45:25 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:45:25 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:45:25 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:45:25 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:45:25 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:45:25 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:45:25 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:45:25 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:45:25 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:45:36 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:45:36 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:45:37 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:45:37 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:45:37 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:45:37 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:45:37 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:45:37 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:45:37 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:45:37 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:45:37 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:45:37 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:45:37 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:45:37 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:45:37 [INFO ] [pipeline]   Sheet [Products] selected; 0 other sheet(s) skipped
+2026-11-20 19:45:37 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:45:37 [INFO ] [pipeline]   Validated: 2 rows, 6 cols (expect ~32)
+2026-11-20 19:45:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:45:37 [INFO ] [pipeline]   Backed up 1 images
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:45:37 [INFO ] [pipeline]   Restored 1 images with adjusted anchors
+2026-11-20 19:45:37 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column 2: 2 IDs generated
+2026-11-20 19:45:37 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column 3: 2 cells filled
+2026-11-20 19:45:37 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:45:37 [INFO ] [pipeline]   Colors J -> K: 0 cells mapped, 2 rows skipped (col A has fill), 0 no match
+2026-11-20 19:45:37 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:45:37 [INFO ] [pipeline]   Size column L: 0 mapped, 2 cleared (col A has fill), 0 no match
+2026-11-20 19:45:37 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:45:37 [INFO ] [pipeline]   Mirror copy: 0 cells written
+2026-11-20 19:45:37 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:45:37 [INFO ] [pipeline]   Price source M -> AS: 0 cells copied
+2026-11-20 19:45:37 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:45:37 [INFO ] [pipeline]   No matching prices before JPY for uk, price columns skipped
+2026-11-20 19:45:37 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:45:37 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:45:37 [INFO ] [pipeline]   Formatted 2 rows: h=50, align=left/center
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:45:37 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:45:37 [INFO ] [pipeline]   Done: 2 rows x 45 cols (target: 49)
+2026-11-20 19:45:37 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:45:37 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:45:37 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:45:37 [INFO ] [pipeline]   Sheet [Products] selected; 1 other sheet(s) skipped
+2026-11-20 19:45:37 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:45:37 [INFO ] [pipeline]   Validated: 1 rows, 6 cols (expect ~32)
+2026-11-20 19:45:37 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:45:37 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:45:37 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column 2: 1 IDs generated
+2026-11-20 19:45:37 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column 3: 1 cells filled
+2026-11-20 19:45:37 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:45:37 [INFO ] [pipeline]   Colors J -> K: 0 cells mapped, 1 rows skipped (col A has fill), 0 no match
+2026-11-20 19:45:37 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:45:37 [INFO ] [pipeline]   Size column L: 0 mapped, 1 cleared (col A has fill), 0 no match
+2026-11-20 19:45:37 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:45:37 [INFO ] [pipeline]   Mirror copy: 0 cells written
+2026-11-20 19:45:37 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:45:37 [INFO ] [pipeline]   Price source M -> AS: 0 cells copied
+2026-11-20 19:45:37 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:45:37 [INFO ] [pipeline]   No matching prices before JPY for uk, price columns skipped
+2026-11-20 19:45:37 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:45:37 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:45:37 [INFO ] [pipeline]   Formatted 1 rows: h=50, align=left/center
+2026-11-20 19:45:37 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:45:37 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:45:37 [INFO ] [pipeline]   Done: 1 rows x 45 cols (target: 49)
+2026-11-20 19:45:37 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:46:03 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-20 19:46:03 [INFO ] [preprocess] [11.19.xlsx]
+2026-11-20 19:46:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-20 19:46:04 [INFO ] [pipeline] [1/1] remove_header
+2026-11-20 19:46:21 [INFO ] [preprocess]   [11.19.xlsx] Sheet [Sheet0]: header row removed
+2026-11-20 19:46:21 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:46:22 [INFO ] [preprocess] Preprocessing complete
+2026-11-20 19:46:22 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261120_5b3e4b8f.log
+2026-11-20 19:46:22 [INFO ] [main] Found 1 file(s):
+2026-11-20 19:46:22 [INFO ] [main]   11.19.xlsx
+2026-11-20 19:46:22 [INFO ] [main] Output: 11.18v1_uk.xlsx
+2026-11-20 19:46:22 [INFO ] [main] ==================================================
+2026-11-20 19:46:22 [INFO ] [main] Single file, copied
+2026-11-20 19:46:25 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:46:25 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:46:25 [INFO ] [pipeline]   Sheet [Sheet0] selected; 1 other sheet(s) skipped
+2026-11-20 19:46:25 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:46:25 [INFO ] [pipeline]   Validated: 3066 rows, 27 cols (expect ~32)
+2026-11-20 19:46:25 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:46:25 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-20 19:46:25 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:46:25 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:46:25 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:46:25 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-20 19:46:25 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:46:25 [INFO ] [pipeline]   Column 2: 3066 IDs generated
+2026-11-20 19:46:25 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:46:25 [INFO ] [pipeline]   Column 3: 3066 cells filled
+2026-11-20 19:46:25 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:46:25 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 0 no match
+2026-11-20 19:46:25 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:46:25 [INFO ] [pipeline]   Size column L: 498 mapped, 48 cleared (col A has fill), 2520 no match
+2026-11-20 19:46:25 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:46:26 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-20 19:46:26 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:46:26 [INFO ] [pipeline]   Price source M -> AS: 3066 cells copied
+2026-11-20 19:46:26 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:46:26 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-20 19:46:26 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:46:29 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:46:29 [INFO ] [pipeline]   Formatted 3066 rows: h=50, align=left/center
+2026-11-20 19:46:29 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:46:29 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:46:29 [INFO ] [pipeline]   Done: 3066 rows x 49 cols (target: 49)
+2026-11-20 19:46:29 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:46:32 [INFO ] [main] Size: 3066 rows x 49 cols
+2026-11-20 19:46:32 [INFO ] [main] ==================================================
+2026-11-20 19:46:32 [INFO ] [main] Done: 11.18v1_uk.xlsx
+2026-11-20 19:46:32 [INFO ] [color_size_main] Source: 11.18v1_uk.xlsx
+2026-11-20 19:46:33 [INFO ] [color_size_main] Extracted: 3018 data lines + 48 separators → check_.txt
+2026-11-20 19:46:33 [INFO ] [color_size_main] Running: process.py
+2026-11-20 19:46:34 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3066)
+2026-11-20 19:46:34 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-20 19:46:34 [INFO ] [color_size_deal] Done.
+2026-11-20 19:46:35 [INFO ] [color_size_main] Processing write-back: 3066 lines
+2026-11-20 19:46:39 [INFO ] [color_size_main] Write-back: 1257 written, 1809 unchanged → 11.18v1_uk.xlsx
+2026-11-20 19:46:39 [INFO ] [color_size_main] Done.
+2026-11-20 19:48:08 [INFO ] [jenkins] ==================================================
+2026-11-20 19:48:08 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-20 19:48:08 [INFO ] [jenkins] ==================================================
+2026-11-20 19:48:08 [INFO ] [jenkins] 
+2026-11-20 19:48:08 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-20 19:48:08 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:48:08 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-20 19:48:08 [INFO ] [jenkins] 
+2026-11-20 19:48:08 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-20 19:48:08 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:48:09 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-20 19:48:09 [INFO ] [preprocess] [temp.xlsx]
+2026-11-20 19:48:10 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-20 19:48:10 [INFO ] [pipeline] [1/1] remove_header
+2026-11-20 19:48:10 [INFO ] [preprocess]   [temp.xlsx] Sheet [Sheet0]: row 1 has fill, skip
+2026-11-20 19:48:10 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:48:12 [INFO ] [preprocess] Preprocessing complete
+2026-11-20 19:48:12 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-20 19:48:12 [INFO ] [jenkins] 
+2026-11-20 19:48:12 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-20 19:48:12 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:48:13 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261120_5b3e4b8f.log
+2026-11-20 19:48:13 [INFO ] [main] Found 1 file(s):
+2026-11-20 19:48:13 [INFO ] [main]   temp.xlsx
+2026-11-20 19:48:13 [INFO ] [main] Output: 11.18v1_uk.xlsx
+2026-11-20 19:48:13 [INFO ] [main] ==================================================
+2026-11-20 19:48:13 [INFO ] [main] Single file, copied
+2026-11-20 19:48:14 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:48:14 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:48:14 [INFO ] [pipeline]   Sheet [Sheet0] selected; 1 other sheet(s) skipped
+2026-11-20 19:48:14 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:48:14 [INFO ] [pipeline]   Validated: 3066 rows, 27 cols (expect ~32)
+2026-11-20 19:48:14 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:48:14 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-20 19:48:14 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:48:14 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:48:14 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:48:14 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-20 19:48:14 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:48:14 [INFO ] [pipeline]   Column 2: 3066 IDs generated
+2026-11-20 19:48:14 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:48:14 [INFO ] [pipeline]   Column 3: 3066 cells filled
+2026-11-20 19:48:14 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:48:14 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 0 no match
+2026-11-20 19:48:14 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:48:14 [INFO ] [pipeline]   Size column L: 498 mapped, 48 cleared (col A has fill), 2520 no match
+2026-11-20 19:48:14 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:48:15 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-20 19:48:15 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:48:15 [INFO ] [pipeline]   Price source M -> AS: 3066 cells copied
+2026-11-20 19:48:15 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:48:15 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-20 19:48:15 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:48:16 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:48:16 [INFO ] [pipeline]   Formatted 3066 rows: h=50, align=left/center
+2026-11-20 19:48:16 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:48:16 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:48:16 [INFO ] [pipeline]   Done: 3066 rows x 49 cols (target: 49)
+2026-11-20 19:48:16 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:48:18 [INFO ] [main] Size: 3066 rows x 49 cols
+2026-11-20 19:48:18 [INFO ] [main] ==================================================
+2026-11-20 19:48:18 [INFO ] [main] Done: 11.18v1_uk.xlsx
+2026-11-20 19:48:19 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-20 19:48:19 [INFO ] [jenkins] 
+2026-11-20 19:48:19 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-20 19:48:19 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:48:19 [INFO ] [color_size_main] Source: 11.18v1_uk.xlsx
+2026-11-20 19:48:21 [INFO ] [color_size_main] Extracted: 3018 data lines + 48 separators → check_.txt
+2026-11-20 19:48:21 [INFO ] [color_size_main] Running: process.py
+2026-11-20 19:48:21 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3066)
+2026-11-20 19:48:21 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-20 19:48:21 [INFO ] [color_size_deal] Done.
+2026-11-20 19:48:21 [INFO ] [color_size_main] Processing write-back: 3066 lines
+2026-11-20 19:48:25 [INFO ] [color_size_main] Write-back: 1257 written, 1809 unchanged → 11.18v1_uk.xlsx
+2026-11-20 19:48:25 [INFO ] [color_size_main] Done.
+2026-11-20 19:48:26 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-20 19:48:26 [INFO ] [jenkins] 
+2026-11-20 19:48:26 [INFO ] [jenkins] ==================================================
+2026-11-20 19:48:26 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-20 19:48:26 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-20 19:48:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-20 19:48:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-20 19:48:26 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-20 19:50:00 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:50:00 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:50:00 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:50:00 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:50:00 [INFO ] [preprocess]   [first.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:50:00 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:50:00 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-11-20 19:50:00 [INFO ] [pipeline] [1/2] remove_header
+2026-11-20 19:50:00 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: header row removed
+2026-11-20 19:50:00 [INFO ] [pipeline] [2/2] remove_empty_j
+2026-11-20 19:50:00 [INFO ] [preprocess]   [second.xlsx] Sheet [Products]: 1 empty J-column rows removed
+2026-11-20 19:50:00 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:50:00 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:50:00 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:50:00 [INFO ] [pipeline]   Sheet [Products] selected; 0 other sheet(s) skipped
+2026-11-20 19:50:00 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:50:00 [INFO ] [pipeline]   Validated: 2 rows, 6 cols (expect ~32)
+2026-11-20 19:50:00 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:50:00 [INFO ] [pipeline]   Backed up 1 images
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:50:00 [INFO ] [pipeline]   Restored 1 images with adjusted anchors
+2026-11-20 19:50:00 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column 2: 2 IDs generated
+2026-11-20 19:50:00 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column 3: 2 cells filled
+2026-11-20 19:50:00 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:50:00 [INFO ] [pipeline]   Colors J -> K: 0 cells mapped, 2 rows skipped (col A has fill), 0 no match
+2026-11-20 19:50:00 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:50:00 [INFO ] [pipeline]   Size column L: 0 mapped, 2 cleared (col A has fill), 0 no match
+2026-11-20 19:50:00 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:50:00 [INFO ] [pipeline]   Mirror copy: 0 cells written
+2026-11-20 19:50:00 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:50:00 [INFO ] [pipeline]   Price source M -> AS: 0 cells copied
+2026-11-20 19:50:00 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:50:00 [INFO ] [pipeline]   No matching prices before JPY for uk, price columns skipped
+2026-11-20 19:50:00 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:50:00 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:50:00 [INFO ] [pipeline]   Formatted 2 rows: h=50, align=left/center
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:50:00 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:50:00 [INFO ] [pipeline]   Done: 2 rows x 45 cols (target: 49)
+2026-11-20 19:50:00 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:50:00 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-20 19:50:00 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-20 19:50:00 [INFO ] [pipeline]   Sheet [Products] selected; 1 other sheet(s) skipped
+2026-11-20 19:50:00 [INFO ] [pipeline] [2/12] validate
+2026-11-20 19:50:00 [INFO ] [pipeline]   Validated: 1 rows, 6 cols (expect ~32)
+2026-11-20 19:50:00 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-20 19:50:00 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-20 19:50:00 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column 2: 1 IDs generated
+2026-11-20 19:50:00 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column 3: 1 cells filled
+2026-11-20 19:50:00 [INFO ] [pipeline] [6/12] map_colors
+2026-11-20 19:50:00 [INFO ] [pipeline]   Colors J -> K: 0 cells mapped, 1 rows skipped (col A has fill), 0 no match
+2026-11-20 19:50:00 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-20 19:50:00 [INFO ] [pipeline]   Size column L: 0 mapped, 1 cleared (col A has fill), 0 no match
+2026-11-20 19:50:00 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-20 19:50:00 [INFO ] [pipeline]   Mirror copy: 0 cells written
+2026-11-20 19:50:00 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-20 19:50:00 [INFO ] [pipeline]   Price source M -> AS: 0 cells copied
+2026-11-20 19:50:00 [INFO ] [pipeline] [10/12] calc_price
+2026-11-20 19:50:00 [INFO ] [pipeline]   No matching prices before JPY for uk, price columns skipped
+2026-11-20 19:50:00 [INFO ] [pipeline] [11/12] format_cells
+2026-11-20 19:50:00 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-20 19:50:00 [INFO ] [pipeline]   Formatted 1 rows: h=50, align=left/center
+2026-11-20 19:50:00 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-20 19:50:00 [INFO ] [pipeline] [12/12] finalize
+2026-11-20 19:50:00 [INFO ] [pipeline]   Done: 1 rows x 45 cols (target: 49)
+2026-11-20 19:50:00 [INFO ] [pipeline] Pipeline complete
+2026-11-20 19:52:25 [INFO ] [jenkins] ==================================================
+2026-11-20 19:52:25 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-20 19:52:25 [INFO ] [jenkins] ==================================================
+2026-11-20 19:52:25 [INFO ] [jenkins] 
+2026-11-20 19:52:25 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-20 19:52:25 [INFO ] [jenkins] ------------------------------
+2026-11-20 19:52:26 [INFO ] [title_workflow] Source: 11.18v1_uk.xlsx
+2026-11-20 19:52:28 [INFO ] [title_workflow] Extracted 48 titles + 48 links
+2026-11-20 19:52:28 [INFO ] [title_workflow] Written: origin_title (48) + origin_link (48)
+2026-11-20 19:52:28 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-20 19:52:28 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-20 19:52:28 [INFO ] [deepseek_web] Opening DeepSeek web (48 titles)...
+2026-11-20 19:52:28 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-20 19:52:31 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-20 19:52:33 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-20 19:52:33 [INFO ] [deepseek_web] [1/48] 男士圣诞节法兰绒保暖宽松大码节日狂欢西装马甲 毛绒拼接边饰 纽扣 带口袋 西装马甲 男士 常规版型 V领 无袖 丝绒质感

@@ -1,0 +1,983 @@
+2026-10-24 09:03:01 [INFO ] [jenkins] ==================================================
+2026-10-24 09:03:01 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-24 09:03:01 [INFO ] [jenkins] ==================================================
+2026-10-24 09:03:01 [INFO ] [jenkins] 
+2026-10-24 09:03:01 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-24 09:03:01 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:03:01 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-24 09:03:01 [INFO ] [jenkins] 
+2026-10-24 09:03:01 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-24 09:03:01 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:03:02 [INFO ] [preprocess] Preprocessing 45 file(s) with 1 step(s)
+2026-10-24 09:03:02 [INFO ] [preprocess] [product_20261023020637564.xlsx]
+2026-10-24 09:03:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:02 [INFO ] [preprocess]   [product_20261023020637564.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:02 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:02 [INFO ] [preprocess] [product_20261023021245523.xlsx]
+2026-10-24 09:03:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:03 [INFO ] [preprocess]   [product_20261023021245523.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:03 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:03 [INFO ] [preprocess] [product_20261023021423916.xlsx]
+2026-10-24 09:03:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:03 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:03 [INFO ] [preprocess]   [product_20261023021423916.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:03 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:03 [INFO ] [preprocess] [product_20261023021625895.xlsx]
+2026-10-24 09:03:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:03 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:03 [INFO ] [preprocess]   [product_20261023021625895.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:03 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:04 [INFO ] [preprocess] [product_20261023021749752.xlsx]
+2026-10-24 09:03:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:04 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:04 [INFO ] [preprocess]   [product_20261023021749752.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:04 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:04 [INFO ] [preprocess] [product_20261023021925627.xlsx]
+2026-10-24 09:03:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:04 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:04 [INFO ] [preprocess]   [product_20261023021925627.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:04 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:04 [INFO ] [preprocess] [product_20261023022221583.xlsx]
+2026-10-24 09:03:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:04 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:04 [INFO ] [preprocess]   [product_20261023022221583.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:04 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:04 [INFO ] [preprocess] [product_20261023022959425.xlsx]
+2026-10-24 09:03:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:04 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:05 [INFO ] [preprocess]   [product_20261023022959425.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:05 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:05 [INFO ] [preprocess] [product_20261023023211550.xlsx]
+2026-10-24 09:03:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:05 [INFO ] [preprocess]   [product_20261023023211550.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:05 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:05 [INFO ] [preprocess] [product_20261023023419795.xlsx]
+2026-10-24 09:03:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:05 [INFO ] [preprocess]   [product_20261023023419795.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:05 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:05 [INFO ] [preprocess] [product_20261023023553570.xlsx]
+2026-10-24 09:03:06 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:06 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:06 [INFO ] [preprocess]   [product_20261023023553570.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:06 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:06 [INFO ] [preprocess] [product_20261023023644033.xlsx]
+2026-10-24 09:03:06 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:06 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:06 [INFO ] [preprocess]   [product_20261023023644033.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:06 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:06 [INFO ] [preprocess] [product_20261023023815398.xlsx]
+2026-10-24 09:03:06 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:06 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:07 [INFO ] [preprocess]   [product_20261023023815398.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:07 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:07 [INFO ] [preprocess] [product_20261023024122292.xlsx]
+2026-10-24 09:03:07 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:07 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:07 [INFO ] [preprocess]   [product_20261023024122292.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:07 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:07 [INFO ] [preprocess] [product_20261023024543893.xlsx]
+2026-10-24 09:03:07 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:07 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:08 [INFO ] [preprocess]   [product_20261023024543893.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:08 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:08 [INFO ] [preprocess] [product_20261023024953173.xlsx]
+2026-10-24 09:03:08 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:08 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:09 [INFO ] [preprocess]   [product_20261023024953173.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:09 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:09 [INFO ] [preprocess] [product_20261023025158096.xlsx]
+2026-10-24 09:03:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:09 [INFO ] [preprocess]   [product_20261023025158096.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:09 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:09 [INFO ] [preprocess] [product_20261023025407193.xlsx]
+2026-10-24 09:03:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:09 [INFO ] [preprocess]   [product_20261023025407193.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:09 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:09 [INFO ] [preprocess] [product_20261023025552935.xlsx]
+2026-10-24 09:03:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:09 [INFO ] [preprocess]   [product_20261023025552935.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:09 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:09 [INFO ] [preprocess] [product_20261023025848700.xlsx]
+2026-10-24 09:03:09 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:09 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:11 [INFO ] [preprocess]   [product_20261023025848700.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:11 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:11 [INFO ] [preprocess] [product_20261023030216822.xlsx]
+2026-10-24 09:03:11 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:11 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:11 [INFO ] [preprocess]   [product_20261023030216822.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:11 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:11 [INFO ] [preprocess] [product_20261023030350373.xlsx]
+2026-10-24 09:03:11 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:11 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:12 [INFO ] [preprocess]   [product_20261023030350373.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:12 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:12 [INFO ] [preprocess] [product_20261023030534630.xlsx]
+2026-10-24 09:03:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:12 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:12 [INFO ] [preprocess]   [product_20261023030534630.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:12 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:12 [INFO ] [preprocess] [product_20261023030732539.xlsx]
+2026-10-24 09:03:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:12 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:12 [INFO ] [preprocess]   [product_20261023030732539.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:12 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:12 [INFO ] [preprocess] [product_20261023031010239.xlsx]
+2026-10-24 09:03:12 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:12 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:13 [INFO ] [preprocess]   [product_20261023031010239.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:13 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:13 [INFO ] [preprocess] [product_20261023031244159.xlsx]
+2026-10-24 09:03:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:13 [INFO ] [preprocess]   [product_20261023031244159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:13 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:13 [INFO ] [preprocess] [product_20261023031456402.xlsx]
+2026-10-24 09:03:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:13 [INFO ] [preprocess]   [product_20261023031456402.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:13 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:13 [INFO ] [preprocess] [product_20261023031649891.xlsx]
+2026-10-24 09:03:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:13 [INFO ] [preprocess]   [product_20261023031649891.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:13 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:13 [INFO ] [preprocess] [product_20261023034820366.xlsx]
+2026-10-24 09:03:13 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:13 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:14 [INFO ] [preprocess]   [product_20261023034820366.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:14 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:14 [INFO ] [preprocess] [product_20261023035046827.xlsx]
+2026-10-24 09:03:14 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:14 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:14 [INFO ] [preprocess]   [product_20261023035046827.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:14 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:14 [INFO ] [preprocess] [product_20261023035354122.xlsx]
+2026-10-24 09:03:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:15 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:15 [INFO ] [preprocess]   [product_20261023035354122.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:15 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:15 [INFO ] [preprocess] [product_20261023040020836.xlsx]
+2026-10-24 09:03:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:15 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:15 [INFO ] [preprocess]   [product_20261023040020836.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:15 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:15 [INFO ] [preprocess] [product_20261023043053739.xlsx]
+2026-10-24 09:03:15 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:15 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:16 [INFO ] [preprocess]   [product_20261023043053739.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:16 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:16 [INFO ] [preprocess] [product_20261023043219992.xlsx]
+2026-10-24 09:03:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:16 [INFO ] [preprocess]   [product_20261023043219992.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:16 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:16 [INFO ] [preprocess] [product_20261023043506306.xlsx]
+2026-10-24 09:03:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:16 [INFO ] [preprocess]   [product_20261023043506306.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:16 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:16 [INFO ] [preprocess] [product_20261023043537822.xlsx]
+2026-10-24 09:03:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:16 [INFO ] [preprocess]   [product_20261023043537822.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:16 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:16 [INFO ] [preprocess] [product_20261023043757988.xlsx]
+2026-10-24 09:03:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:16 [INFO ] [preprocess]   [product_20261023043757988.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:16 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:16 [INFO ] [preprocess] [product_20261023044128328.xlsx]
+2026-10-24 09:03:16 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:16 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:17 [INFO ] [preprocess]   [product_20261023044128328.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:17 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:17 [INFO ] [preprocess] [product_20261023044256462.xlsx]
+2026-10-24 09:03:17 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:17 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:18 [INFO ] [preprocess]   [product_20261023044256462.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:18 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:19 [INFO ] [preprocess] [product_20261023044532899.xlsx]
+2026-10-24 09:03:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:19 [INFO ] [preprocess]   [product_20261023044532899.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:19 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:19 [INFO ] [preprocess] [product_20261023044710631.xlsx]
+2026-10-24 09:03:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:19 [INFO ] [preprocess]   [product_20261023044710631.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:19 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:19 [INFO ] [preprocess] [product_20261023044854515.xlsx]
+2026-10-24 09:03:19 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:19 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:20 [INFO ] [preprocess]   [product_20261023044854515.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:20 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:20 [INFO ] [preprocess] [sdjqz1.xlsx]
+2026-10-24 09:03:20 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:20 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:21 [INFO ] [preprocess]   [sdjqz1.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:21 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:21 [INFO ] [preprocess] [sdjqz2.xlsx]
+2026-10-24 09:03:21 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:21 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:23 [INFO ] [preprocess]   [sdjqz2.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:03:23 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:23 [INFO ] [preprocess] [sdjqz3.xlsx]
+2026-10-24 09:03:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:03:23 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:03:23 [INFO ] [preprocess]   [sdjqz3.xlsx] Sheet [Sheet1]: row 1 has fill, skip
+2026-10-24 09:03:23 [INFO ] [preprocess]   [sdjqz3.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-10-24 09:03:23 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:03:23 [INFO ] [preprocess] Preprocessing complete
+2026-10-24 09:03:23 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-24 09:03:23 [INFO ] [jenkins] 
+2026-10-24 09:03:23 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-24 09:03:23 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:03:24 [INFO ] [main] Log file: 20261024_b0f8eea4.log
+2026-10-24 09:03:24 [INFO ] [main] Found 45 file(s):
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023020637564.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023021245523.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023021423916.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023021625895.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023021749752.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023021925627.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023022221583.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023022959425.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023023211550.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023023419795.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023023553570.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023023644033.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023023815398.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023024122292.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023024543893.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023024953173.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023025158096.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023025407193.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023025552935.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023025848700.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023030216822.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023030350373.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023030534630.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023030732539.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023031010239.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023031244159.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023031456402.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023031649891.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023034820366.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023035046827.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023035354122.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023040020836.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023043053739.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023043219992.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023043506306.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023043537822.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023043757988.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023044128328.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023044256462.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023044532899.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023044710631.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   product_20261023044854515.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   sdjqz1.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   sdjqz2.xlsx
+2026-10-24 09:03:24 [INFO ] [main]   sdjqz3.xlsx
+2026-10-24 09:03:24 [INFO ] [main] Output: 10.21v1_de.xlsx
+2026-10-24 09:03:24 [INFO ] [main] ==================================================
+2026-10-24 09:03:42 [INFO ] [main] Merged 45 files, 8276 images total
+2026-10-24 09:03:42 [INFO ] [main] Deleted 45 source file(s)
+2026-10-24 09:03:45 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-24 09:03:45 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_2]: 46 rows, 95 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_3]: 11 rows, 32 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_4]: 133 rows, 274 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_5]: 13 rows, 82 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_6]: 26 rows, 54 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_7]: 21 rows, 55 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_8]: 76 rows, 214 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_9]: 121 rows, 230 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_10]: 40 rows, 83 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_11]: 73 rows, 134 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_12]: 43 rows, 74 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_13]: 116 rows, 214 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_14]: 12 rows, 88 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_15]: 109 rows, 207 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_16]: 197 rows, 387 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_17]: 16 rows, 51 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_18]: 9 rows, 20 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_19]: 27 rows, 63 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_20]: 373 rows, 725 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_21]: 71 rows, 150 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_22]: 97 rows, 202 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_23]: 6 rows, 13 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_24]: 126 rows, 210 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_25]: 41 rows, 87 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_26]: 30 rows, 112 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_27]: 19 rows, 75 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_28]: 48 rows, 123 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_29]: 16 rows, 39 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_30]: 189 rows, 375 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_31]: 57 rows, 134 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_32]: 133 rows, 252 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_33]: 28 rows, 66 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_34]: 32 rows, 59 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_35]: 13 rows, 54 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_36]: 7 rows, 23 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_37]: 43 rows, 88 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_38]: 157 rows, 322 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_39]: 313 rows, 556 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_40]: 121 rows, 242 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_41]: 16 rows, 46 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_42]: 113 rows, 248 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_43]: 242 rows, 636 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet0_44]: 335 rows, 820 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Sheet [Sheet1]: 31 rows, 72 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Merged 45 sheets -> 1, 3746 data rows, 8086 images
+2026-10-24 09:03:59 [INFO ] [pipeline] [2/12] validate
+2026-10-24 09:03:59 [INFO ] [pipeline]   Validated: 3858 rows, 27 cols (expect ~32)
+2026-10-24 09:03:59 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-24 09:03:59 [INFO ] [pipeline]   Backed up 8276 images
+2026-10-24 09:03:59 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-24 09:03:59 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-24 09:03:59 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-24 09:03:59 [INFO ] [pipeline]   Restored 8276 images with adjusted anchors
+2026-10-24 09:03:59 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-24 09:03:59 [INFO ] [pipeline]   Column 2: 3858 IDs generated
+2026-10-24 09:03:59 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-24 09:03:59 [INFO ] [pipeline]   Column 3: 3858 cells filled
+2026-10-24 09:03:59 [INFO ] [pipeline] [6/12] map_colors
+2026-10-24 09:03:59 [INFO ] [pipeline]   Colors J -> K: 3768 cells mapped, 90 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-24 09:03:59 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-24 09:03:59 [INFO ] [pipeline]   Size column L: 3764 mapped, 90 cleared (col A has fill), 4 no match (recorded)
+2026-10-24 09:03:59 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-24 09:03:59 [INFO ] [pipeline]   Mirror copy: 22685 cells written
+2026-10-24 09:03:59 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-24 09:03:59 [INFO ] [pipeline]   Price source M -> AS: 3858 cells copied
+2026-10-24 09:03:59 [INFO ] [pipeline] [10/12] calc_price
+2026-10-24 09:04:00 [INFO ] [pipeline]   Price columns AT-AW: 3858 rows calculated
+2026-10-24 09:04:00 [INFO ] [pipeline] [11/12] format_cells
+2026-10-24 09:04:00 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-24 09:04:00 [INFO ] [pipeline]   Formatted 3858 rows: h=50, align=left/center
+2026-10-24 09:04:00 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-24 09:04:00 [INFO ] [pipeline] [12/12] finalize
+2026-10-24 09:04:00 [INFO ] [pipeline]   Done: 3858 rows x 49 cols (target: 49)
+2026-10-24 09:04:00 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:07 [INFO ] [main] Size: 3858 rows x 49 cols
+2026-10-24 09:04:07 [INFO ] [main] ==================================================
+2026-10-24 09:04:07 [INFO ] [main] Done: 10.21v1_de.xlsx
+2026-10-24 09:04:07 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-24 09:04:07 [INFO ] [jenkins] 
+2026-10-24 09:04:07 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-24 09:04:07 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:04:08 [INFO ] [color_size_main] Source: 10.21v1_de.xlsx
+2026-10-24 09:04:12 [INFO ] [color_size_main] Extracted: 3768 data lines + 90 separators → check_.txt
+2026-10-24 09:04:12 [INFO ] [color_size_main] Running: process.py
+2026-10-24 09:04:13 [INFO ] [color_size_deal] Groups: 90, lines: 3768 (file: 3858)
+2026-10-24 09:04:13 [INFO ] [color_size_deal] Prefixes: {'01': 770, '02': 440, '03': 232, '04': 111, '05': 74, '06': 63, '07': 51, '08': 12, '09': 12, '10': 12}
+2026-10-24 09:04:13 [INFO ] [color_size_deal] Done.
+2026-10-24 09:04:13 [INFO ] [color_size_main] Processing write-back: 3858 lines
+2026-10-24 09:04:21 [INFO ] [color_size_main] Write-back: 1867 written, 1991 unchanged → 10.21v1_de.xlsx
+2026-10-24 09:04:21 [INFO ] [color_size_main] Done.
+2026-10-24 09:04:21 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-24 09:04:21 [INFO ] [jenkins] 
+2026-10-24 09:04:21 [INFO ] [jenkins] ==================================================
+2026-10-24 09:04:21 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-24 09:04:21 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-24 09:04:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-24 09:04:21 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-24 09:04:21 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-24 09:04:37 [INFO ] [jenkins] ==================================================
+2026-10-24 09:04:37 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-24 09:04:37 [INFO ] [jenkins] ==================================================
+2026-10-24 09:04:37 [INFO ] [jenkins] 
+2026-10-24 09:04:37 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-24 09:04:37 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:04:37 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-24 09:04:37 [INFO ] [jenkins] 
+2026-10-24 09:04:37 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-24 09:04:37 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:04:37 [INFO ] [preprocess] Preprocessing 45 file(s) with 1 step(s)
+2026-10-24 09:04:37 [INFO ] [preprocess] [product_20261023020637564.xlsx]
+2026-10-24 09:04:37 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:37 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:38 [INFO ] [preprocess]   [product_20261023020637564.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:38 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:38 [INFO ] [preprocess] [product_20261023021245523.xlsx]
+2026-10-24 09:04:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:38 [INFO ] [preprocess]   [product_20261023021245523.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:38 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:38 [INFO ] [preprocess] [product_20261023021423916.xlsx]
+2026-10-24 09:04:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:38 [INFO ] [preprocess]   [product_20261023021423916.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:38 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:39 [INFO ] [preprocess] [product_20261023021625895.xlsx]
+2026-10-24 09:04:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:39 [INFO ] [preprocess]   [product_20261023021625895.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:39 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:39 [INFO ] [preprocess] [product_20261023021749752.xlsx]
+2026-10-24 09:04:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:40 [INFO ] [preprocess]   [product_20261023021749752.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:40 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:40 [INFO ] [preprocess] [product_20261023021925627.xlsx]
+2026-10-24 09:04:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:40 [INFO ] [preprocess]   [product_20261023021925627.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:40 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:40 [INFO ] [preprocess] [product_20261023022221583.xlsx]
+2026-10-24 09:04:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:40 [INFO ] [preprocess]   [product_20261023022221583.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:40 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:40 [INFO ] [preprocess] [product_20261023022959425.xlsx]
+2026-10-24 09:04:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:40 [INFO ] [preprocess]   [product_20261023022959425.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:40 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:40 [INFO ] [preprocess] [product_20261023023211550.xlsx]
+2026-10-24 09:04:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:41 [INFO ] [preprocess]   [product_20261023023211550.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:41 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:41 [INFO ] [preprocess] [product_20261023023419795.xlsx]
+2026-10-24 09:04:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:41 [INFO ] [preprocess]   [product_20261023023419795.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:41 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:41 [INFO ] [preprocess] [product_20261023023553570.xlsx]
+2026-10-24 09:04:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:42 [INFO ] [preprocess]   [product_20261023023553570.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:42 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:42 [INFO ] [preprocess] [product_20261023023644033.xlsx]
+2026-10-24 09:04:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:42 [INFO ] [preprocess]   [product_20261023023644033.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:42 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:42 [INFO ] [preprocess] [product_20261023023815398.xlsx]
+2026-10-24 09:04:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:42 [INFO ] [preprocess]   [product_20261023023815398.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:42 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:42 [INFO ] [preprocess] [product_20261023024122292.xlsx]
+2026-10-24 09:04:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:43 [INFO ] [preprocess]   [product_20261023024122292.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:43 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:43 [INFO ] [preprocess] [product_20261023024543893.xlsx]
+2026-10-24 09:04:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:43 [INFO ] [preprocess]   [product_20261023024543893.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:43 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:43 [INFO ] [preprocess] [product_20261023024953173.xlsx]
+2026-10-24 09:04:43 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:43 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:44 [INFO ] [preprocess]   [product_20261023024953173.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:44 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:44 [INFO ] [preprocess] [product_20261023025158096.xlsx]
+2026-10-24 09:04:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:44 [INFO ] [preprocess]   [product_20261023025158096.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:44 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:44 [INFO ] [preprocess] [product_20261023025407193.xlsx]
+2026-10-24 09:04:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:44 [INFO ] [preprocess]   [product_20261023025407193.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:44 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:44 [INFO ] [preprocess] [product_20261023025552935.xlsx]
+2026-10-24 09:04:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:45 [INFO ] [preprocess]   [product_20261023025552935.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:45 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:45 [INFO ] [preprocess] [product_20261023025848700.xlsx]
+2026-10-24 09:04:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:46 [INFO ] [preprocess]   [product_20261023025848700.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:46 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:46 [INFO ] [preprocess] [product_20261023030216822.xlsx]
+2026-10-24 09:04:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:47 [INFO ] [preprocess]   [product_20261023030216822.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:47 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:47 [INFO ] [preprocess] [product_20261023030350373.xlsx]
+2026-10-24 09:04:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:47 [INFO ] [preprocess]   [product_20261023030350373.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:47 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:47 [INFO ] [preprocess] [product_20261023030534630.xlsx]
+2026-10-24 09:04:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:47 [INFO ] [preprocess]   [product_20261023030534630.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:47 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:47 [INFO ] [preprocess] [product_20261023030732539.xlsx]
+2026-10-24 09:04:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:48 [INFO ] [preprocess]   [product_20261023030732539.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:48 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:48 [INFO ] [preprocess] [product_20261023031010239.xlsx]
+2026-10-24 09:04:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:48 [INFO ] [preprocess]   [product_20261023031010239.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:48 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:48 [INFO ] [preprocess] [product_20261023031244159.xlsx]
+2026-10-24 09:04:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:48 [INFO ] [preprocess]   [product_20261023031244159.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:48 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:48 [INFO ] [preprocess] [product_20261023031456402.xlsx]
+2026-10-24 09:04:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:48 [INFO ] [preprocess]   [product_20261023031456402.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:48 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:48 [INFO ] [preprocess] [product_20261023031649891.xlsx]
+2026-10-24 09:04:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:49 [INFO ] [preprocess]   [product_20261023031649891.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:49 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:49 [INFO ] [preprocess] [product_20261023034820366.xlsx]
+2026-10-24 09:04:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:49 [INFO ] [preprocess]   [product_20261023034820366.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:49 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:49 [INFO ] [preprocess] [product_20261023035046827.xlsx]
+2026-10-24 09:04:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:50 [INFO ] [preprocess]   [product_20261023035046827.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:50 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:50 [INFO ] [preprocess] [product_20261023035354122.xlsx]
+2026-10-24 09:04:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:50 [INFO ] [preprocess]   [product_20261023035354122.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:50 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:50 [INFO ] [preprocess] [product_20261023040020836.xlsx]
+2026-10-24 09:04:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023040020836.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:51 [INFO ] [preprocess] [product_20261023043053739.xlsx]
+2026-10-24 09:04:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023043053739.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:51 [INFO ] [preprocess] [product_20261023043219992.xlsx]
+2026-10-24 09:04:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023043219992.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:51 [INFO ] [preprocess] [product_20261023043506306.xlsx]
+2026-10-24 09:04:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023043506306.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:51 [INFO ] [preprocess] [product_20261023043537822.xlsx]
+2026-10-24 09:04:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023043537822.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:51 [INFO ] [preprocess] [product_20261023043757988.xlsx]
+2026-10-24 09:04:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:51 [INFO ] [preprocess]   [product_20261023043757988.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:51 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:52 [INFO ] [preprocess] [product_20261023044128328.xlsx]
+2026-10-24 09:04:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:52 [INFO ] [preprocess]   [product_20261023044128328.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:52 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:52 [INFO ] [preprocess] [product_20261023044256462.xlsx]
+2026-10-24 09:04:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:54 [INFO ] [preprocess]   [product_20261023044256462.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:54 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:54 [INFO ] [preprocess] [product_20261023044532899.xlsx]
+2026-10-24 09:04:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:54 [INFO ] [preprocess]   [product_20261023044532899.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:54 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:54 [INFO ] [preprocess] [product_20261023044710631.xlsx]
+2026-10-24 09:04:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:54 [INFO ] [preprocess]   [product_20261023044710631.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:54 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:55 [INFO ] [preprocess] [product_20261023044854515.xlsx]
+2026-10-24 09:04:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:55 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:55 [INFO ] [preprocess]   [product_20261023044854515.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:55 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:55 [INFO ] [preprocess] [sdjqz1.xlsx]
+2026-10-24 09:04:55 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:55 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:56 [INFO ] [preprocess]   [sdjqz1.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:56 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:56 [INFO ] [preprocess] [sdjqz2.xlsx]
+2026-10-24 09:04:57 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:57 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:58 [INFO ] [preprocess]   [sdjqz2.xlsx] Sheet [Sheet0]: header row removed
+2026-10-24 09:04:58 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:58 [INFO ] [preprocess] [sdjqz3.xlsx]
+2026-10-24 09:04:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-24 09:04:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-24 09:04:58 [INFO ] [preprocess]   [sdjqz3.xlsx] Sheet [Sheet1]: row 1 has fill, skip
+2026-10-24 09:04:58 [INFO ] [preprocess]   [sdjqz3.xlsx] All sheets: row 1 has fill, nothing to remove
+2026-10-24 09:04:58 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:04:58 [INFO ] [preprocess] Preprocessing complete
+2026-10-24 09:04:58 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-24 09:04:58 [INFO ] [jenkins] 
+2026-10-24 09:04:58 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-24 09:04:58 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:04:59 [INFO ] [main] Log file: 20261024_b0f8eea4.log
+2026-10-24 09:04:59 [INFO ] [main] Found 45 file(s):
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023020637564.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023021245523.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023021423916.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023021625895.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023021749752.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023021925627.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023022221583.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023022959425.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023023211550.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023023419795.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023023553570.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023023644033.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023023815398.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023024122292.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023024543893.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023024953173.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023025158096.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023025407193.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023025552935.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023025848700.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023030216822.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023030350373.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023030534630.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023030732539.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023031010239.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023031244159.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023031456402.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023031649891.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023034820366.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023035046827.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023035354122.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023040020836.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023043053739.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023043219992.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023043506306.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023043537822.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023043757988.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023044128328.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023044256462.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023044532899.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023044710631.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   product_20261023044854515.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   sdjqz1.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   sdjqz2.xlsx
+2026-10-24 09:04:59 [INFO ] [main]   sdjqz3.xlsx
+2026-10-24 09:04:59 [INFO ] [main] Output: 10.21v1_fr.xlsx
+2026-10-24 09:04:59 [INFO ] [main] ==================================================
+2026-10-24 09:05:17 [INFO ] [main] Merged 45 files, 8276 images total
+2026-10-24 09:05:18 [INFO ] [main] Deleted 45 source file(s)
+2026-10-24 09:05:20 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-24 09:05:20 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_2]: 46 rows, 95 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_3]: 11 rows, 32 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_4]: 133 rows, 274 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_5]: 13 rows, 82 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_6]: 26 rows, 54 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_7]: 21 rows, 55 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_8]: 76 rows, 214 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_9]: 121 rows, 230 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_10]: 40 rows, 83 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_11]: 73 rows, 134 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_12]: 43 rows, 74 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_13]: 116 rows, 214 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_14]: 12 rows, 88 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_15]: 109 rows, 207 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_16]: 197 rows, 387 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_17]: 16 rows, 51 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_18]: 9 rows, 20 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_19]: 27 rows, 63 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_20]: 373 rows, 725 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_21]: 71 rows, 150 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_22]: 97 rows, 202 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_23]: 6 rows, 13 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_24]: 126 rows, 210 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_25]: 41 rows, 87 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_26]: 30 rows, 112 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_27]: 19 rows, 75 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_28]: 48 rows, 123 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_29]: 16 rows, 39 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_30]: 189 rows, 375 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_31]: 57 rows, 134 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_32]: 133 rows, 252 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_33]: 28 rows, 66 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_34]: 32 rows, 59 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_35]: 13 rows, 54 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_36]: 7 rows, 23 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_37]: 43 rows, 88 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_38]: 157 rows, 322 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_39]: 313 rows, 556 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_40]: 121 rows, 242 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_41]: 16 rows, 46 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_42]: 113 rows, 248 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_43]: 242 rows, 636 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet0_44]: 335 rows, 820 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Sheet [Sheet1]: 31 rows, 72 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Merged 45 sheets -> 1, 3746 data rows, 8086 images
+2026-10-24 09:05:34 [INFO ] [pipeline] [2/12] validate
+2026-10-24 09:05:34 [INFO ] [pipeline]   Validated: 3858 rows, 27 cols (expect ~32)
+2026-10-24 09:05:34 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-24 09:05:34 [INFO ] [pipeline]   Backed up 8276 images
+2026-10-24 09:05:34 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-24 09:05:34 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-24 09:05:34 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-24 09:05:34 [INFO ] [pipeline]   Restored 8276 images with adjusted anchors
+2026-10-24 09:05:34 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-24 09:05:34 [INFO ] [pipeline]   Column 2: 3858 IDs generated
+2026-10-24 09:05:34 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-24 09:05:34 [INFO ] [pipeline]   Column 3: 3858 cells filled
+2026-10-24 09:05:34 [INFO ] [pipeline] [6/12] map_colors
+2026-10-24 09:05:34 [INFO ] [pipeline]   Colors J -> K: 3768 cells mapped, 90 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-24 09:05:34 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-24 09:05:34 [INFO ] [pipeline]   Size column L: 3764 mapped, 90 cleared (col A has fill), 4 no match (recorded)
+2026-10-24 09:05:34 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-24 09:05:34 [INFO ] [pipeline]   Mirror copy: 22685 cells written
+2026-10-24 09:05:34 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-24 09:05:34 [INFO ] [pipeline]   Price source M -> AS: 3858 cells copied
+2026-10-24 09:05:34 [INFO ] [pipeline] [10/12] calc_price
+2026-10-24 09:05:35 [INFO ] [pipeline]   Price columns AT-AW: 3858 rows calculated
+2026-10-24 09:05:35 [INFO ] [pipeline] [11/12] format_cells
+2026-10-24 09:05:35 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-24 09:05:35 [INFO ] [pipeline]   Formatted 3858 rows: h=50, align=left/center
+2026-10-24 09:05:35 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-24 09:05:35 [INFO ] [pipeline] [12/12] finalize
+2026-10-24 09:05:36 [INFO ] [pipeline]   Done: 3858 rows x 49 cols (target: 49)
+2026-10-24 09:05:36 [INFO ] [pipeline] Pipeline complete
+2026-10-24 09:05:41 [INFO ] [main] Size: 3858 rows x 49 cols
+2026-10-24 09:05:41 [INFO ] [main] ==================================================
+2026-10-24 09:05:41 [INFO ] [main] Done: 10.21v1_fr.xlsx
+2026-10-24 09:05:42 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-24 09:05:42 [INFO ] [jenkins] 
+2026-10-24 09:05:42 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-24 09:05:42 [INFO ] [jenkins] ------------------------------
+2026-10-24 09:05:43 [INFO ] [color_size_main] Source: 10.21v1_fr.xlsx
+2026-10-24 09:05:46 [INFO ] [color_size_main] Extracted: 3768 data lines + 90 separators → check_.txt
+2026-10-24 09:05:46 [INFO ] [color_size_main] Running: process.py
+2026-10-24 09:05:47 [INFO ] [color_size_deal] Groups: 90, lines: 3768 (file: 3858)
+2026-10-24 09:05:47 [INFO ] [color_size_deal] Prefixes: {'01': 770, '02': 440, '03': 232, '04': 111, '05': 74, '06': 63, '07': 51, '08': 12, '09': 12, '10': 12}
+2026-10-24 09:05:47 [INFO ] [color_size_deal] Done.
+2026-10-24 09:05:47 [INFO ] [color_size_main] Processing write-back: 3858 lines
+2026-10-24 09:05:55 [INFO ] [color_size_main] Write-back: 1867 written, 1991 unchanged → 10.21v1_fr.xlsx
+2026-10-24 09:05:55 [INFO ] [color_size_main] Done.
+2026-10-24 09:05:55 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-24 09:05:55 [INFO ] [jenkins] 
+2026-10-24 09:05:55 [INFO ] [jenkins] ==================================================
+2026-10-24 09:05:55 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-24 09:05:55 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-24 09:05:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-24 09:05:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-24 09:05:55 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-24 10:05:27 [INFO ] [hotwords] Loop mode: 13 keywords  country=de  category=(all)  mode=fluctuation
+2026-10-24 10:05:27 [INFO ] [hotwords] 
+2026-10-24 10:05:27 [INFO ] [hotwords] [  1/13] Weihnachts
+2026-10-24 10:05:28 [INFO ] [hotwords]   fluctuation: 56 words
+2026-10-24 10:05:28 [INFO ] [hotwords]   → total 56 words
+2026-10-24 10:05:30 [INFO ] [hotwords] [  2/13] Rentier
+2026-10-24 10:05:35 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-24 10:05:37 [INFO ] [hotwords] [  3/13] Schneeflocken
+2026-10-24 10:05:37 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:37 [INFO ] [hotwords]   → total 56 words
+2026-10-24 10:05:39 [INFO ] [hotwords] [  4/13] Weihnachtsbaum
+2026-10-24 10:05:40 [INFO ] [hotwords]   fluctuation: 9 words
+2026-10-24 10:05:40 [INFO ] [hotwords]   → total 65 words
+2026-10-24 10:05:42 [INFO ] [hotwords] [  5/13] Tannenbaum
+2026-10-24 10:05:42 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:05:42 [INFO ] [hotwords]   → total 67 words
+2026-10-24 10:05:44 [INFO ] [hotwords] [  6/13] Weihnachtsmann
+2026-10-24 10:05:45 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:45 [INFO ] [hotwords]   → total 67 words
+2026-10-24 10:05:47 [INFO ] [hotwords] [  7/13] Sterne
+2026-10-24 10:05:47 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:05:47 [INFO ] [hotwords]   → total 69 words
+2026-10-24 10:05:49 [INFO ] [hotwords] [  8/13] Strickkleid
+2026-10-24 10:05:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:49 [INFO ] [hotwords]   → total 69 words
+2026-10-24 10:05:51 [INFO ] [hotwords] [  9/13] Norwegermuster
+2026-10-24 10:05:52 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:52 [INFO ] [hotwords]   → total 69 words
+2026-10-24 10:05:54 [INFO ] [hotwords] [ 10/13] festliches
+2026-10-24 10:05:54 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:54 [INFO ] [hotwords]   → total 69 words
+2026-10-24 10:05:56 [INFO ] [hotwords] [ 11/13] Weihnachten
+2026-10-24 10:05:57 [INFO ] [hotwords]   fluctuation: 27 words
+2026-10-24 10:05:57 [INFO ] [hotwords]   → total 96 words
+2026-10-24 10:05:59 [INFO ] [hotwords] [ 12/13] Paillettenkleid
+2026-10-24 10:05:59 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:05:59 [INFO ] [hotwords]   → total 96 words
+2026-10-24 10:06:01 [INFO ] [hotwords] [ 13/13] kleid
+2026-10-24 10:06:01 [INFO ] [hotwords]   fluctuation: 19 words
+2026-10-24 10:06:01 [INFO ] [hotwords]   → total 115 words
+2026-10-24 10:06:03 [INFO ] [hotwords] 
+2026-10-24 10:06:03 [INFO ] [hotwords] Retry round 1: 1 failed keyword(s)
+2026-10-24 10:06:06 [INFO ] [hotwords]   Retrying: Rentier
+2026-10-24 10:06:07 [INFO ] [hotwords]     fluctuation: 1 words
+2026-10-24 10:06:07 [INFO ] [hotwords]     → OK
+2026-10-24 10:06:09 [INFO ] [hotwords] All keywords collected successfully
+2026-10-24 10:06:09 [INFO ] [hotwords] 
+2026-10-24 10:06:09 [INFO ] [hotwords] Combining: 116 fluctuation + 0 new_rank = 116 total
+2026-10-24 10:06:09 [INFO ] [hotwords] 
+2026-10-24 10:06:09 [INFO ] [hotwords] Cleaning...
+2026-10-24 10:06:09 [INFO ] [hotwords]   strip_whitespace: 116 → 116 (0 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords]   normalize_case: 116 → 116 (0 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords]   drop_single_word: 116 → 116 (0 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords]   drop_brands: 116 → 116 (0 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords]   drop_reordered: 116 → 116 (0 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords]   deduplicate: 116 → 106 (10 removed)
+2026-10-24 10:06:09 [INFO ] [hotwords] herren=2      damen=9      other=95   
+2026-10-24 10:06:09 [INFO ] [hotwords] Saved 106 words (raw: 116, errors: 1) → 20261024_100527_de.txt
+2026-10-24 10:06:09 [INFO ] [hotwords] ==================================================
+2026-10-24 10:06:09 [INFO ] [hotwords] Done.
+2026-10-24 10:08:05 [INFO ] [hotwords] Loop mode: 13 keywords  country=de  category=(all)  mode=dual
+2026-10-24 10:08:05 [INFO ] [hotwords] 
+2026-10-24 10:08:05 [INFO ] [hotwords] [  1/13] Weihnachts
+2026-10-24 10:08:10 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-24 10:08:12 [INFO ] [hotwords] [  2/13] Rentier
+2026-10-24 10:08:12 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-24 10:08:13 [INFO ] [hotwords]   new_rank: 20 words
+2026-10-24 10:08:13 [INFO ] [hotwords]   → total 21 words
+2026-10-24 10:08:15 [INFO ] [hotwords] [  3/13] Schneeflocken
+2026-10-24 10:08:16 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:08:17 [INFO ] [hotwords]   new_rank: 7 words
+2026-10-24 10:08:17 [INFO ] [hotwords]   → total 28 words
+2026-10-24 10:08:19 [INFO ] [hotwords] [  4/13] Weihnachtsbaum
+2026-10-24 10:08:19 [INFO ] [hotwords]   fluctuation: 9 words
+2026-10-24 10:08:20 [INFO ] [hotwords]   new_rank: 162 words
+2026-10-24 10:08:20 [INFO ] [hotwords]   → total 199 words
+2026-10-24 10:08:22 [INFO ] [hotwords] [  5/13] Tannenbaum
+2026-10-24 10:08:22 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:08:23 [INFO ] [hotwords]   new_rank: 37 words
+2026-10-24 10:08:23 [INFO ] [hotwords]   → total 238 words
+2026-10-24 10:08:25 [INFO ] [hotwords] [  6/13] Weihnachtsmann
+2026-10-24 10:08:26 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:08:27 [INFO ] [hotwords]   new_rank: 40 words
+2026-10-24 10:08:27 [INFO ] [hotwords]   → total 278 words
+2026-10-24 10:08:29 [INFO ] [hotwords] [  7/13] Sterne
+2026-10-24 10:08:29 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:08:30 [INFO ] [hotwords]   new_rank: 129 words
+2026-10-24 10:08:30 [INFO ] [hotwords]   → total 409 words
+2026-10-24 10:08:32 [INFO ] [hotwords] [  8/13] Strickkleid
+2026-10-24 10:08:37 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-24 10:08:39 [INFO ] [hotwords] [  9/13] Norwegermuster
+2026-10-24 10:08:39 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:08:40 [INFO ] [hotwords]   new_rank: 0 words
+2026-10-24 10:08:40 [INFO ] [hotwords]   → total 409 words
+2026-10-24 10:08:42 [INFO ] [hotwords] [ 10/13] festliches
+2026-10-24 10:08:43 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:08:44 [INFO ] [hotwords]   new_rank: 6 words
+2026-10-24 10:08:44 [INFO ] [hotwords]   → total 415 words
+2026-10-24 10:08:46 [INFO ] [hotwords] [ 11/13] Weihnachten
+2026-10-24 10:08:46 [INFO ] [hotwords]   fluctuation: 27 words
+2026-10-24 10:08:47 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-24 10:08:47 [INFO ] [hotwords]   → total 642 words
+2026-10-24 10:08:49 [INFO ] [hotwords] [ 12/13] Paillettenkleid
+2026-10-24 10:08:49 [INFO ] [hotwords]   fluctuation: 0 words
+2026-10-24 10:08:50 [INFO ] [hotwords]   new_rank: 2 words
+2026-10-24 10:08:50 [INFO ] [hotwords]   → total 644 words
+2026-10-24 10:08:52 [INFO ] [hotwords] [ 13/13] kleid
+2026-10-24 10:08:53 [INFO ] [hotwords]   fluctuation: 19 words
+2026-10-24 10:08:54 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-24 10:08:54 [INFO ] [hotwords]   → total 863 words
+2026-10-24 10:08:56 [INFO ] [hotwords] 
+2026-10-24 10:08:56 [INFO ] [hotwords] Retry round 1: 2 failed keyword(s)
+2026-10-24 10:08:59 [INFO ] [hotwords]   Retrying: Weihnachts
+2026-10-24 10:08:59 [INFO ] [hotwords]     fluctuation: 56 words
+2026-10-24 10:09:00 [INFO ] [hotwords]     new_rank: 200 words
+2026-10-24 10:09:00 [INFO ] [hotwords]     → OK
+2026-10-24 10:09:02 [INFO ] [hotwords]   Retrying: Strickkleid
+2026-10-24 10:09:02 [INFO ] [hotwords]     fluctuation: 0 words
+2026-10-24 10:09:03 [INFO ] [hotwords]     new_rank: 19 words
+2026-10-24 10:09:03 [INFO ] [hotwords]     → OK
+2026-10-24 10:09:05 [INFO ] [hotwords] All keywords collected successfully
+2026-10-24 10:09:05 [INFO ] [hotwords] 
+2026-10-24 10:09:05 [INFO ] [hotwords] Combining: 116 fluctuation + 1022 new_rank = 1138 total
+2026-10-24 10:09:05 [INFO ] [hotwords] 
+2026-10-24 10:09:05 [INFO ] [hotwords] Cleaning...
+2026-10-24 10:09:05 [INFO ] [hotwords]   strip_whitespace: 1138 → 1138 (0 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords]   normalize_case: 1138 → 1138 (0 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords]   drop_single_word: 1138 → 987 (151 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords]   drop_brands: 987 → 967 (20 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords]   drop_reordered: 967 → 903 (64 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords]   deduplicate: 903 → 878 (25 removed)
+2026-10-24 10:09:05 [INFO ] [hotwords] herren=11     damen=77     other=790  
+2026-10-24 10:09:05 [INFO ] [hotwords] Saved 878 words (raw: 1138, errors: 2) → 20261024_100805_de.txt
+2026-10-24 10:09:05 [INFO ] [hotwords] ==================================================
+2026-10-24 10:09:05 [INFO ] [hotwords] Done.
+2026-10-24 10:53:57 [INFO ] [hotwords] Loop mode: 4 keywords  country=fr  category=(all)  mode=dual
+2026-10-24 10:53:57 [INFO ] [hotwords] 
+2026-10-24 10:53:57 [INFO ] [hotwords] [  1/4] Noël
+2026-10-24 10:53:57 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-24 10:53:58 [INFO ] [hotwords]   new_rank: 127 words
+2026-10-24 10:53:58 [INFO ] [hotwords]   → total 128 words
+2026-10-24 10:54:00 [INFO ] [hotwords] [  2/4] robe
+2026-10-24 10:54:01 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-24 10:54:02 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-24 10:54:02 [INFO ] [hotwords]   → total 329 words
+2026-10-24 10:54:04 [INFO ] [hotwords] [  3/4] christmas
+2026-10-24 10:54:04 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:54:05 [INFO ] [hotwords]   new_rank: 42 words
+2026-10-24 10:54:05 [INFO ] [hotwords]   → total 373 words
+2026-10-24 10:54:07 [INFO ] [hotwords] [  4/4] paillettes
+2026-10-24 10:54:07 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:54:08 [INFO ] [hotwords]   new_rank: 78 words
+2026-10-24 10:54:08 [INFO ] [hotwords]   → total 453 words
+2026-10-24 10:54:10 [INFO ] [hotwords] All keywords collected successfully
+2026-10-24 10:54:10 [INFO ] [hotwords] 
+2026-10-24 10:54:10 [INFO ] [hotwords] Combining: 6 fluctuation + 447 new_rank = 453 total
+2026-10-24 10:54:10 [INFO ] [hotwords] 
+2026-10-24 10:54:10 [INFO ] [hotwords] Cleaning...
+2026-10-24 10:54:10 [INFO ] [hotwords]   strip_whitespace: 453 → 453 (0 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords]   normalize_case: 453 → 453 (0 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords]   drop_single_word: 453 → 447 (6 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords]   drop_brands: 447 → 439 (8 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords]   drop_reordered: 439 → 439 (0 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords]   deduplicate: 439 → 439 (0 removed)
+2026-10-24 10:54:10 [INFO ] [hotwords] homme=7      femme=100    other=332  
+2026-10-24 10:54:10 [INFO ] [hotwords] Saved 439 words (raw: 453, errors: 0) → 20261024_105357_fr.txt
+2026-10-24 10:54:10 [INFO ] [hotwords] ==================================================
+2026-10-24 10:54:10 [INFO ] [hotwords] Done.
+2026-10-24 10:55:13 [INFO ] [hotwords] Loop mode: 4 keywords  country=fr  category=(all)  mode=fluctuation
+2026-10-24 10:55:13 [INFO ] [hotwords] 
+2026-10-24 10:55:13 [INFO ] [hotwords] [  1/4] Noël
+2026-10-24 10:55:13 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-24 10:55:13 [INFO ] [hotwords]   → total 1 words
+2026-10-24 10:55:15 [INFO ] [hotwords] [  2/4] robe
+2026-10-24 10:55:15 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-24 10:55:15 [INFO ] [hotwords]   → total 2 words
+2026-10-24 10:55:17 [INFO ] [hotwords] [  3/4] christmas
+2026-10-24 10:55:18 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:55:18 [INFO ] [hotwords]   → total 4 words
+2026-10-24 10:55:20 [INFO ] [hotwords] [  4/4] paillettes
+2026-10-24 10:55:20 [INFO ] [hotwords]   fluctuation: 2 words
+2026-10-24 10:55:20 [INFO ] [hotwords]   → total 6 words
+2026-10-24 10:55:22 [INFO ] [hotwords] All keywords collected successfully
+2026-10-24 10:55:22 [INFO ] [hotwords] 
+2026-10-24 10:55:22 [INFO ] [hotwords] Combining: 6 fluctuation + 0 new_rank = 6 total
+2026-10-24 10:55:22 [INFO ] [hotwords] 
+2026-10-24 10:55:22 [INFO ] [hotwords] Cleaning...
+2026-10-24 10:55:22 [INFO ] [hotwords]   strip_whitespace: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords]   normalize_case: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords]   drop_single_word: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords]   drop_brands: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords]   drop_reordered: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords]   deduplicate: 6 → 6 (0 removed)
+2026-10-24 10:55:22 [INFO ] [hotwords] homme=0      femme=1      other=5    
+2026-10-24 10:55:22 [INFO ] [hotwords] Saved 6 words (raw: 6, errors: 0) → 20261024_105513_fr.txt
+2026-10-24 10:55:22 [INFO ] [hotwords] ==================================================
+2026-10-24 10:55:22 [INFO ] [hotwords] Done.

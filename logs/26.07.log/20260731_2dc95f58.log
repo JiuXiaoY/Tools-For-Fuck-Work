@@ -1,0 +1,947 @@
+2026-07-31 15:00:52 [INFO ] [jenkins] ==================================================
+2026-07-31 15:00:52 [INFO ] [jenkins] Jenkins pipeline — 6 steps
+2026-07-31 15:00:52 [INFO ] [jenkins] ==================================================
+2026-07-31 15:00:52 [INFO ] [jenkins] 
+2026-07-31 15:00:52 [INFO ] [jenkins] [1/6] xls → xlsx
+2026-07-31 15:00:52 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:00:53 [INFO ] [jenkins] [1/6] xls → xlsx OK
+2026-07-31 15:00:53 [INFO ] [jenkins] 
+2026-07-31 15:00:53 [INFO ] [jenkins] [2/6] Preprocess
+2026-07-31 15:00:53 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:00:53 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-31 15:00:53 [INFO ] [preprocess] [product_20260731023130817.xlsx]
+2026-07-31 15:00:54 [INFO ] [preprocess]   [product_20260731023130817.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:00:54 [INFO ] [preprocess]   [product_20260731023130817.xlsx] Dedup: 25 filled rows, 23 deleted (sheet rebuilt)
+2026-07-31 15:00:55 [INFO ] [preprocess] [product_20260731023156280.xlsx]
+2026-07-31 15:00:56 [INFO ] [preprocess]   [product_20260731023156280.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:00:56 [INFO ] [preprocess]   [product_20260731023156280.xlsx] Dedup: 31 filled rows, 19 deleted (sheet rebuilt)
+2026-07-31 15:00:57 [INFO ] [preprocess] [product_20260731023223104.xlsx]
+2026-07-31 15:00:57 [INFO ] [preprocess]   [product_20260731023223104.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:00:58 [INFO ] [preprocess]   [product_20260731023223104.xlsx] Dedup: 36 filled rows, 28 deleted (sheet rebuilt)
+2026-07-31 15:00:58 [INFO ] [preprocess] [product_20260731025037923.xlsx]
+2026-07-31 15:00:59 [INFO ] [preprocess]   [product_20260731025037923.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:00:59 [INFO ] [preprocess]   [product_20260731025037923.xlsx] Dedup: 37 filled rows, 26 deleted (sheet rebuilt)
+2026-07-31 15:01:00 [INFO ] [preprocess] [product_20260731025129990.xlsx]
+2026-07-31 15:01:00 [INFO ] [preprocess]   [product_20260731025129990.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:01:01 [INFO ] [preprocess]   [product_20260731025129990.xlsx] Dedup: 40 filled rows, 36 deleted (sheet rebuilt)
+2026-07-31 15:01:01 [INFO ] [preprocess] [product_20260731025220264.xlsx]
+2026-07-31 15:01:02 [INFO ] [preprocess]   [product_20260731025220264.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:01:02 [INFO ] [preprocess]   [product_20260731025220264.xlsx] Dedup: 32 filled rows, 31 deleted (sheet rebuilt)
+2026-07-31 15:01:03 [INFO ] [preprocess] Preprocessing complete
+2026-07-31 15:01:03 [INFO ] [jenkins] [2/6] Preprocess OK
+2026-07-31 15:01:03 [INFO ] [jenkins] 
+2026-07-31 15:01:03 [INFO ] [jenkins] [3/6] Excel pipeline
+2026-07-31 15:01:03 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:01:03 [INFO ] [main] Log file: 20260731_2dc95f58.log
+2026-07-31 15:01:03 [INFO ] [main] Found 6 file(s):
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731023130817.xlsx
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731023156280.xlsx
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731023223104.xlsx
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731025037923.xlsx
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731025129990.xlsx
+2026-07-31 15:01:03 [INFO ] [main]   product_20260731025220264.xlsx
+2026-07-31 15:01:03 [INFO ] [main] Output: 7.31v1.xlsx
+2026-07-31 15:01:03 [INFO ] [main] ==================================================
+2026-07-31 15:01:09 [INFO ] [main] Merged 6 files, 9136 images total
+2026-07-31 15:01:09 [INFO ] [main] Deleted 6 source file(s)
+2026-07-31 15:01:12 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-31 15:01:12 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-31 15:01:14 [INFO ] [pipeline]   Sheet [Sheet0_2]: 652 rows, 1537 images
+2026-07-31 15:01:14 [INFO ] [pipeline]   Sheet [Sheet0_3]: 576 rows, 1385 images
+2026-07-31 15:01:14 [INFO ] [pipeline]   Sheet [Sheet0_4]: 614 rows, 1505 images
+2026-07-31 15:01:14 [INFO ] [pipeline]   Sheet [Sheet0_5]: 533 rows, 1309 images
+2026-07-31 15:01:14 [INFO ] [pipeline]   Sheet [Sheet0_6]: 727 rows, 1594 images
+2026-07-31 15:01:14 [INFO ] [pipeline]   Merged 6 sheets -> 1, 3102 data rows, 7330 images
+2026-07-31 15:01:14 [INFO ] [pipeline] [2/12] validate
+2026-07-31 15:01:14 [INFO ] [pipeline]   Validated: 3921 rows, 27 cols (expect ~32)
+2026-07-31 15:01:14 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-31 15:01:15 [INFO ] [pipeline]   Backed up 9136 images
+2026-07-31 15:01:15 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-31 15:01:15 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-31 15:01:15 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-31 15:01:15 [INFO ] [pipeline]   Restored 9136 images with adjusted anchors
+2026-07-31 15:01:15 [INFO ] [pipeline] [4/12] fill_id
+2026-07-31 15:01:15 [INFO ] [pipeline]   Column 2: 3921 random IDs (date: bzbfzgbb)
+2026-07-31 15:01:15 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-31 15:01:15 [INFO ] [pipeline]   Column 3: 3921 cells filled
+2026-07-31 15:01:15 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-31 15:01:15 [INFO ] [pipeline]   Column 10: 3765 cells mapped, 156 rows skipped (col A has fill)
+2026-07-31 15:01:15 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-31 15:01:15 [INFO ] [pipeline]   Column 11: 3749 mapped, 156 cleared (col A has fill), 16 no match
+2026-07-31 15:01:15 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-31 15:01:15 [INFO ] [pipeline]   Mirror copy: 23016 cells written
+2026-07-31 15:01:15 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-31 15:01:15 [INFO ] [pipeline]   Column 44: 3921 cells copied from col 12
+2026-07-31 15:01:15 [INFO ] [pipeline] [10/12] calc_price
+2026-07-31 15:01:15 [INFO ] [pipeline]   Columns 45-48: 3921 rows calculated
+2026-07-31 15:01:15 [INFO ] [pipeline] [11/12] format_cells
+2026-07-31 15:01:40 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-31 15:01:40 [INFO ] [pipeline]   Formatted 3921 rows: h=50, align=left/center
+2026-07-31 15:01:40 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-31 15:01:40 [INFO ] [pipeline] [12/12] finalize
+2026-07-31 15:01:40 [INFO ] [pipeline]   Done: 3921 rows x 48 cols (target: 48)
+2026-07-31 15:01:40 [INFO ] [pipeline] Pipeline complete
+2026-07-31 15:01:44 [INFO ] [main] Size: 3921 rows x 48 cols
+2026-07-31 15:01:44 [INFO ] [main] ==================================================
+2026-07-31 15:01:44 [INFO ] [main] Done: 7.31v1.xlsx
+2026-07-31 15:01:45 [INFO ] [jenkins] [3/6] Excel pipeline OK
+2026-07-31 15:01:45 [INFO ] [jenkins] 
+2026-07-31 15:01:45 [INFO ] [jenkins] [4/6] Color re-processing
+2026-07-31 15:01:45 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:01:45 [INFO ] [color_size_main] Source: 7.31v1.xlsx
+2026-07-31 15:01:49 [INFO ] [color_size_main] Extracted: 3765 data lines + 156 separators → check_.txt
+2026-07-31 15:01:49 [INFO ] [color_size_main] Running: process.py
+2026-07-31 15:01:50 [INFO ] [color_size_deal] Groups: 156, lines: 3765 (file: 3921)
+2026-07-31 15:01:50 [INFO ] [color_size_deal] Prefixes: {'01': 114}
+2026-07-31 15:01:50 [INFO ] [color_size_deal] Done.
+2026-07-31 15:01:50 [INFO ] [color_size_main] Processing write-back: 3921 lines
+2026-07-31 15:01:57 [INFO ] [color_size_main] Write-back: 270 written, 3651 unchanged → 7.31v1.xlsx
+2026-07-31 15:01:57 [INFO ] [color_size_main] Done.
+2026-07-31 15:01:58 [INFO ] [jenkins] [4/6] Color re-processing OK
+2026-07-31 15:01:58 [INFO ] [jenkins] 
+2026-07-31 15:01:58 [INFO ] [jenkins] [5/6] Title optimization
+2026-07-31 15:01:58 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:01:58 [INFO ] [title_workflow] Source: 7.31v1.xlsx
+2026-07-31 15:02:02 [INFO ] [title_workflow] Extracted 156 titles + 156 links
+2026-07-31 15:02:02 [INFO ] [title_workflow] Written: origin_title (156) + origin_link (156)
+2026-07-31 15:02:02 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-07-31 15:02:02 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-07-31 15:02:03 [INFO ] [deepseek_web] Opening DeepSeek web (156 titles)...
+2026-07-31 15:02:03 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-31 15:02:05 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-31 15:02:08 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-31 15:02:08 [INFO ] [deepseek_web] [1/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服
+2026-07-31 15:02:32 [INFO ] [deepseek_web]   Downloaded: 7881152174459468972815.jpg
+2026-07-31 15:02:32 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-31 15:02:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:02:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:03:04 [INFO ] [deepseek_web]   Response: 女士纯色连帽中长款棉服马甲 仿毛领抽绳兜帽 单排按扣门襟 侧边拉链开衩 斜插口袋 横向绗缝加厚保暖无袖修身棉背心 冬季休闲通勤户外叠穿外套上衣
+2026-07-31 15:03:04 [INFO ] [deepseek_web]   Deleted: 7881152174459468972815.jpg
+2026-07-31 15:03:09 [INFO ] [deepseek_web] [2/156] 女式冬季口袋棉服马甲背心外套
+2026-07-31 15:03:34 [INFO ] [deepseek_web]   Downloaded: 4241111589995311728442.jpg
+2026-07-31 15:03:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:03:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:04:05 [INFO ] [deepseek_web]   Response: 女士纯色中长款无袖棉服马甲 大翻领仿毛领 羊羔毛内里拼接 全开襟拉链门襟 侧缝斜插口袋 横向绗缝加厚保暖背心外套 冬季休闲叠穿上衣
+2026-07-31 15:04:05 [INFO ] [deepseek_web]   Deleted: 4241111589995311728442.jpg
+2026-07-31 15:04:10 [INFO ] [deepseek_web] [3/156] 女士毛绒连帽中长款斜拉链棉服外套
+2026-07-31 15:04:39 [INFO ] [jenkins] ==================================================
+2026-07-31 15:04:39 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-07-31 15:04:39 [INFO ] [jenkins] ==================================================
+2026-07-31 15:04:39 [INFO ] [jenkins] 
+2026-07-31 15:04:39 [INFO ] [jenkins] ==================================================
+2026-07-31 15:04:39 [INFO ] [jenkins] All 0 steps completed successfully
+2026-07-31 15:04:39 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-31 15:04:39 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-31 15:04:39 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-31 15:04:39 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-31 15:05:33 [INFO ] [jenkins] ==================================================
+2026-07-31 15:05:33 [INFO ] [jenkins] Jenkins pipeline — 6 steps
+2026-07-31 15:05:33 [INFO ] [jenkins] ==================================================
+2026-07-31 15:05:33 [INFO ] [jenkins] 
+2026-07-31 15:05:33 [INFO ] [jenkins] [1/6] xls → xlsx
+2026-07-31 15:05:33 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:05:33 [INFO ] [jenkins] [1/6] xls → xlsx OK
+2026-07-31 15:05:33 [INFO ] [jenkins] 
+2026-07-31 15:05:33 [INFO ] [jenkins] [2/6] Preprocess
+2026-07-31 15:05:33 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:05:33 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-31 15:05:33 [INFO ] [preprocess] [product_20260731023130817.xlsx]
+2026-07-31 15:05:34 [INFO ] [preprocess]   [product_20260731023130817.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:35 [INFO ] [preprocess]   [product_20260731023130817.xlsx] Dedup: 25 filled rows, 23 deleted (sheet rebuilt)
+2026-07-31 15:05:35 [INFO ] [preprocess] [product_20260731023156280.xlsx]
+2026-07-31 15:05:36 [INFO ] [preprocess]   [product_20260731023156280.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:36 [INFO ] [preprocess]   [product_20260731023156280.xlsx] Dedup: 31 filled rows, 19 deleted (sheet rebuilt)
+2026-07-31 15:05:37 [INFO ] [preprocess] [product_20260731023223104.xlsx]
+2026-07-31 15:05:38 [INFO ] [preprocess]   [product_20260731023223104.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:38 [INFO ] [preprocess]   [product_20260731023223104.xlsx] Dedup: 36 filled rows, 28 deleted (sheet rebuilt)
+2026-07-31 15:05:38 [INFO ] [preprocess] [product_20260731025037923.xlsx]
+2026-07-31 15:05:39 [INFO ] [preprocess]   [product_20260731025037923.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:39 [INFO ] [preprocess]   [product_20260731025037923.xlsx] Dedup: 37 filled rows, 26 deleted (sheet rebuilt)
+2026-07-31 15:05:40 [INFO ] [preprocess] [product_20260731025129990.xlsx]
+2026-07-31 15:05:41 [INFO ] [preprocess]   [product_20260731025129990.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:41 [INFO ] [preprocess]   [product_20260731025129990.xlsx] Dedup: 40 filled rows, 36 deleted (sheet rebuilt)
+2026-07-31 15:05:41 [INFO ] [preprocess] [product_20260731025220264.xlsx]
+2026-07-31 15:05:42 [INFO ] [preprocess]   [product_20260731025220264.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 15:05:43 [INFO ] [preprocess]   [product_20260731025220264.xlsx] Dedup: 32 filled rows, 31 deleted (sheet rebuilt)
+2026-07-31 15:05:43 [INFO ] [preprocess] Preprocessing complete
+2026-07-31 15:05:43 [INFO ] [jenkins] [2/6] Preprocess OK
+2026-07-31 15:05:43 [INFO ] [jenkins] 
+2026-07-31 15:05:43 [INFO ] [jenkins] [3/6] Excel pipeline
+2026-07-31 15:05:43 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:05:44 [INFO ] [main] Log file: 20260731_2dc95f58.log
+2026-07-31 15:05:44 [INFO ] [main] Found 6 file(s):
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731023130817.xlsx
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731023156280.xlsx
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731023223104.xlsx
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731025037923.xlsx
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731025129990.xlsx
+2026-07-31 15:05:44 [INFO ] [main]   product_20260731025220264.xlsx
+2026-07-31 15:05:44 [INFO ] [main] Output: 7.22v1.xlsx
+2026-07-31 15:05:44 [INFO ] [main] ==================================================
+2026-07-31 15:05:50 [INFO ] [main] Merged 6 files, 9136 images total
+2026-07-31 15:05:50 [INFO ] [main] Deleted 6 source file(s)
+2026-07-31 15:05:52 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-31 15:05:52 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-31 15:05:55 [INFO ] [pipeline]   Sheet [Sheet0_2]: 652 rows, 1537 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Sheet [Sheet0_3]: 576 rows, 1385 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Sheet [Sheet0_4]: 614 rows, 1505 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Sheet [Sheet0_5]: 533 rows, 1309 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Sheet [Sheet0_6]: 727 rows, 1594 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Merged 6 sheets -> 1, 3102 data rows, 7330 images
+2026-07-31 15:05:55 [INFO ] [pipeline] [2/12] validate
+2026-07-31 15:05:55 [INFO ] [pipeline]   Validated: 3921 rows, 27 cols (expect ~32)
+2026-07-31 15:05:55 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-31 15:05:55 [INFO ] [pipeline]   Backed up 9136 images
+2026-07-31 15:05:55 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-31 15:05:55 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-31 15:05:55 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-31 15:05:55 [INFO ] [pipeline]   Restored 9136 images with adjusted anchors
+2026-07-31 15:05:55 [INFO ] [pipeline] [4/12] fill_id
+2026-07-31 15:05:55 [INFO ] [pipeline]   Column 2: 3921 random IDs (date: bfzgbb)
+2026-07-31 15:05:55 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-31 15:05:56 [INFO ] [pipeline]   Column 3: 3921 cells filled
+2026-07-31 15:05:56 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-31 15:05:56 [INFO ] [pipeline]   Column 10: 3765 cells mapped, 156 rows skipped (col A has fill)
+2026-07-31 15:05:56 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-31 15:05:56 [INFO ] [pipeline]   Column 11: 3749 mapped, 156 cleared (col A has fill), 16 no match
+2026-07-31 15:05:56 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-31 15:05:56 [INFO ] [pipeline]   Mirror copy: 23016 cells written
+2026-07-31 15:05:56 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-31 15:05:56 [INFO ] [pipeline]   Column 44: 3921 cells copied from col 12
+2026-07-31 15:05:56 [INFO ] [pipeline] [10/12] calc_price
+2026-07-31 15:05:56 [INFO ] [pipeline]   Columns 45-48: 3921 rows calculated
+2026-07-31 15:05:56 [INFO ] [pipeline] [11/12] format_cells
+2026-07-31 15:06:22 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-31 15:06:22 [INFO ] [pipeline]   Formatted 3921 rows: h=50, align=left/center
+2026-07-31 15:06:22 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-31 15:06:22 [INFO ] [pipeline] [12/12] finalize
+2026-07-31 15:06:22 [INFO ] [pipeline]   Done: 3921 rows x 48 cols (target: 48)
+2026-07-31 15:06:22 [INFO ] [pipeline] Pipeline complete
+2026-07-31 15:06:26 [INFO ] [main] Size: 3921 rows x 48 cols
+2026-07-31 15:06:26 [INFO ] [main] ==================================================
+2026-07-31 15:06:26 [INFO ] [main] Done: 7.22v1.xlsx
+2026-07-31 15:06:27 [INFO ] [jenkins] [3/6] Excel pipeline OK
+2026-07-31 15:06:27 [INFO ] [jenkins] 
+2026-07-31 15:06:27 [INFO ] [jenkins] [4/6] Color re-processing
+2026-07-31 15:06:27 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:06:27 [INFO ] [color_size_main] Source: 7.22v1.xlsx
+2026-07-31 15:06:31 [INFO ] [color_size_main] Extracted: 3765 data lines + 156 separators → check_.txt
+2026-07-31 15:06:31 [INFO ] [color_size_main] Running: process.py
+2026-07-31 15:06:32 [INFO ] [color_size_deal] Groups: 156, lines: 3765 (file: 3921)
+2026-07-31 15:06:32 [INFO ] [color_size_deal] Prefixes: {'01': 114}
+2026-07-31 15:06:32 [INFO ] [color_size_deal] Done.
+2026-07-31 15:06:32 [INFO ] [color_size_main] Processing write-back: 3921 lines
+2026-07-31 15:06:39 [INFO ] [color_size_main] Write-back: 270 written, 3651 unchanged → 7.22v1.xlsx
+2026-07-31 15:06:39 [INFO ] [color_size_main] Done.
+2026-07-31 15:06:40 [INFO ] [jenkins] [4/6] Color re-processing OK
+2026-07-31 15:06:40 [INFO ] [jenkins] 
+2026-07-31 15:06:40 [INFO ] [jenkins] [5/6] Title optimization
+2026-07-31 15:06:40 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:06:40 [INFO ] [title_workflow] Source: 7.22v1.xlsx
+2026-07-31 15:06:44 [INFO ] [title_workflow] Extracted 156 titles + 156 links
+2026-07-31 15:06:44 [INFO ] [title_workflow] Written: origin_title (156) + origin_link (156)
+2026-07-31 15:06:44 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-07-31 15:06:44 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-07-31 15:06:45 [INFO ] [deepseek_web] Opening DeepSeek web (156 titles)...
+2026-07-31 15:06:45 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-31 15:06:47 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-31 15:06:49 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-31 15:06:49 [INFO ] [deepseek_web] [1/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服
+2026-07-31 15:06:54 [INFO ] [deepseek_web]   Downloaded: 7881152174459468972815.jpg
+2026-07-31 15:06:54 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-31 15:06:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:07:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:07:27 [INFO ] [deepseek_web]   Response: 女士中长款连帽毛领纯色单排按扣无袖棉服马甲 侧边拉链开叉斜插口袋抽绳修身保暖冬装外套
+2026-07-31 15:07:27 [INFO ] [deepseek_web]   Deleted: 7881152174459468972815.jpg
+2026-07-31 15:07:32 [INFO ] [deepseek_web] [2/156] 女式冬季口袋棉服马甲背心外套
+2026-07-31 15:07:36 [INFO ] [deepseek_web]   Downloaded: 4241111589995311728442.jpg
+2026-07-31 15:07:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:07:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:08:07 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：用户提供了一张图片和一个标题（"女式冬季口袋棉服马甲背心外套"）。角色是一名电商视觉分析师，需要基于图片的视觉事实优化/拓展标题
+2026-07-31 15:08:07 [INFO ] [deepseek_web]   Deleted: 4241111589995311728442.jpg
+2026-07-31 15:08:12 [INFO ] [deepseek_web] [3/156] 女士毛绒连帽中长款斜拉链棉服外套
+2026-07-31 15:08:14 [INFO ] [deepseek_web]   Downloaded: 7300354328582360025774.jpg
+2026-07-31 15:08:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:08:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:08:45 [INFO ] [deepseek_web]   Response: 女士连帽毛绒内里中长款斜拉链修身棉服外套 侧边金属环拉链口袋抽绳兜帽绗缝防风保暖冬季夹克
+2026-07-31 15:08:45 [INFO ] [deepseek_web]   Deleted: 7300354328582360025774.jpg
+2026-07-31 15:08:50 [INFO ] [deepseek_web] [4/156] 棉服女款冬装2025棉衣
+2026-07-31 15:08:55 [INFO ] [deepseek_web]   Downloaded: 3160531012352536588173.jpg
+2026-07-31 15:08:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:09:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:09:26 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求： 用户提供了一张女士棉服/羽绒服图片和一个原始标题（“棉服女款冬装2025棉衣”）。我需要作为电商视觉分析师，识别客观属性，并创
+2026-07-31 15:09:26 [INFO ] [deepseek_web]   Deleted: 3160531012352536588173.jpg
+2026-07-31 15:09:31 [INFO ] [deepseek_web] [5/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服2
+2026-07-31 15:09:34 [INFO ] [deepseek_web]   Downloaded: 3251110043033212669707.jpg
+2026-07-31 15:09:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:09:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:10:05 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色：资深电商视觉分析师与商品信息提取专家。
+
+任务：根据提供的图片和原始标题，优化/扩写商品标题。
+
+输入图片：一件女士中
+2026-07-31 15:10:05 [INFO ] [deepseek_web]   Deleted: 3251110043033212669707.jpg
+2026-07-31 15:10:10 [INFO ] [deepseek_web] [6/156] 女士妈妈装冬季女士大码显瘦棉袄百搭棉衣外套简约保暖立领棉服潮棉服2
+2026-07-31 15:10:12 [INFO ] [deepseek_web]   Downloaded: 6910454545173029163955.jpg
+2026-07-31 15:10:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:10:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:10:43 [INFO ] [deepseek_web]   Response: 女士冬季短款立领波浪绗缝纯色长袖棉服外套常规版型保暖防风夹克
+2026-07-31 15:10:43 [INFO ] [deepseek_web]   Deleted: 6910454545173029163955.jpg
+2026-07-31 15:10:48 [INFO ] [deepseek_web] [7/156] 女士棉衣女短款显瘦洋气大码时尚修身羽绒棉服妈妈装冬季外套
+2026-07-31 15:10:53 [INFO ] [deepseek_web]   Downloaded: 7150444476252916590979.jpg
+2026-07-31 15:10:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:11:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:11:24 [INFO ] [deepseek_web]   Response: 女士冬季短款立领纯色菱形绗缝长袖拉链棉服外套
+2026-07-31 15:11:24 [INFO ] [deepseek_web]   Deleted: 7150444476252916590979.jpg
+2026-07-31 15:11:29 [INFO ] [deepseek_web] [8/156] 女士冬款棉衣毛领拉链款棉服加厚保暖外套女棉服
+2026-07-31 15:11:33 [INFO ] [deepseek_web]   Downloaded: 7610216306841165203700.jpg
+2026-07-31 15:11:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:11:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:12:04 [INFO ] [deepseek_web]   Response: 女士冬季短款连帽大毛领横条绗缝斜拉链修身棉服外套 侧边斜插口袋罗纹袖口袖口拉链下摆抽绳加厚保暖防风夹克
+2026-07-31 15:12:04 [INFO ] [deepseek_web]   Deleted: 7610216306841165203700.jpg
+2026-07-31 15:12:09 [INFO ] [deepseek_web] [9/156] 女士冬季长款立领轻薄面包服棉袄棉服外套
+2026-07-31 15:12:15 [INFO ] [deepseek_web]   Downloaded: 4680414582752564152893.jpg
+2026-07-31 15:12:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:12:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:12:46 [INFO ] [deepseek_web]   Response: 女士冬季短款立领横条绗缝轻薄棉服外套 长袖松紧袖口拉链闭合纯色保暖夹克
+2026-07-31 15:12:46 [INFO ] [deepseek_web]   Deleted: 4680414582752564152893.jpg
+2026-07-31 15:12:51 [INFO ] [deepseek_web] [10/156] 女士中长款派克棉服收腰风衣外套棉袄棉服
+2026-07-31 15:12:53 [INFO ] [deepseek_web]   Downloaded: 7431142074663420780111.jpg
+2026-07-31 15:12:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:13:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:13:24 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：用户提供了一张商品图片和一个原始标题（"女士中长款派克棉服收腰风衣外套棉袄棉服"）。我需要扮演电商视觉分析师的角色，客观提取视觉
+2026-07-31 15:13:24 [INFO ] [deepseek_web]   Deleted: 7431142074663420780111.jpg
+2026-07-31 15:13:29 [INFO ] [deepseek_web] [11/156] 时尚收腰拼接长袖连帽保暖棉服夹克外套
+2026-07-31 15:13:54 [INFO ] [deepseek_web]   Downloaded: 3741030530696882575617.jpg
+2026-07-31 15:13:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:14:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:14:25 [INFO ] [deepseek_web]   Response: 女士连帽抽绳拼接长袖V字绗缝保暖棉服外套 侧边口袋拉链开合防风冬季夹克
+2026-07-31 15:14:25 [INFO ] [deepseek_web]   Deleted: 3741030530696882575617.jpg
+2026-07-31 15:14:30 [INFO ] [deepseek_web] [12/156] 女士棉服短款加绒长袖大码冬季棉衣显瘦防寒中老年外套
+2026-07-31 15:14:34 [INFO ] [deepseek_web]   Downloaded: 9241041442651039897710.jpg
+2026-07-31 15:14:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:14:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:15:05 [INFO ] [deepseek_web]   Response: 女士冬季短款无领波浪绗缝长袖纯色棉服外套 单排按扣门襟两侧贴袋加绒保暖常规版型夹克
+2026-07-31 15:15:05 [INFO ] [deepseek_web]   Deleted: 9241041442651039897710.jpg
+2026-07-31 15:15:10 [INFO ] [deepseek_web] [13/156] 女士可拆卸两件套防风防水摇粒绒加绒加厚外套
+2026-07-31 15:15:14 [INFO ] [deepseek_web]   Downloaded: 2260333238322028413264.jpg
+2026-07-31 15:15:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:15:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:15:46 [INFO ] [deepseek_web]   Response: 女士连帽抽绳可拆卸两件套植物花卉印花防风防水外套 抓绒摇粒绒加厚内胆多拉链口袋冬季户外保暖夹克
+2026-07-31 15:15:46 [INFO ] [deepseek_web]   Deleted: 2260333238322028413264.jpg
+2026-07-31 15:15:51 [INFO ] [deepseek_web] [14/156] 棉服女短款冬季宽松时尚加厚连帽棉袄
+2026-07-31 15:15:53 [INFO ] [deepseek_web]   Downloaded: 5470810584761533461645.jpg
+2026-07-31 15:15:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:16:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:16:24 [INFO ] [deepseek_web]   Response: 女士冬季短款连帽松紧袖口加厚宽松棉服外套 华夫格纹理斜插袋装饰方形搭扣长袖棉袄
+2026-07-31 15:16:24 [INFO ] [deepseek_web]   Deleted: 5470810584761533461645.jpg
+2026-07-31 15:16:29 [INFO ] [deepseek_web] [15/156] 纯色连帽棉服长袖双面穿修身气质开衫外套上衣加毛领
+2026-07-31 15:16:31 [INFO ] [deepseek_web]   Downloaded: 8240956340371019374519.jpg
+2026-07-31 15:16:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:16:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:17:02 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析用户请求： 用户提供了一张图片和一段原始中文标题，要求进行客观的视觉属性提取，并根据特定规则输出优化后的中文产品标题。
+
+分析图片：
+
+2026-07-31 15:17:02 [INFO ] [deepseek_web]   Deleted: 8240956340371019374519.jpg
+2026-07-31 15:17:07 [INFO ] [deepseek_web] [16/156] 纯色连帽棉服长袖双面绒修身气质开衫外套上衣加毛领
+2026-07-31 15:17:10 [INFO ] [deepseek_web]   Downloaded: 8530442191961314767074.jpg
+2026-07-31 15:17:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:17:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:17:41 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：用户提供了一张图片和原始标题，要求提取客观的物理特征，并优化为一个高密度、结构化、适用于跨境电商 SEO 的中文产品标题。
+
+分
+2026-07-31 15:17:41 [INFO ] [deepseek_web]   Deleted: 8530442191961314767074.jpg
+2026-07-31 15:17:46 [INFO ] [deepseek_web] [17/156] 女士纯色棉服宽松长袖连帽圆下摆拉链外套
+2026-07-31 15:17:49 [INFO ] [deepseek_web]   Downloaded: 6951057264647787606926.jpg
+2026-07-31 15:17:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:18:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:18:20 [INFO ] [deepseek_web]   Response: 女士冬季短款纯色翻领宽松拉链棉服外套 袖口按扣调节圆下摆菱形绗缝侧拉链口袋保暖夹克
+2026-07-31 15:18:20 [INFO ] [deepseek_web]   Deleted: 6951057264647787606926.jpg
+2026-07-31 15:18:25 [INFO ] [deepseek_web] [18/156] 秋冬女式轻质长袖防水可折叠棉服外套夹克
+2026-07-31 15:18:27 [INFO ] [deepseek_web]   Downloaded: 5320426280472317954692.jpg
+2026-07-31 15:18:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:18:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:18:58 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求： 用户提供了一张粉色夹克的图片和原始标题“秋冬女式轻质长袖防水可折叠棉服外套夹克”。
+
+分析图片：
+
+核心品类： 立领拉链夹克、
+2026-07-31 15:18:58 [INFO ] [deepseek_web]   Deleted: 5320426280472317954692.jpg
+2026-07-31 15:19:03 [INFO ] [deepseek_web] [19/156] 冬季夹克女式短款拉链衬垫保暖绗缝夹克外套
+2026-07-31 15:19:05 [INFO ] [deepseek_web]   Downloaded: 0150411381252191165426.jpg
+2026-07-31 15:19:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:19:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:19:36 [INFO ] [deepseek_web]   Response: 女士冬季短款立领纯色几何绗缝拉链棉服外套 侧边斜插袋松紧袖口保暖夹克
+2026-07-31 15:19:36 [INFO ] [deepseek_web]   Deleted: 0150411381252191165426.jpg
+2026-07-31 15:19:41 [INFO ] [deepseek_web] [20/156] 纯色连帽单排扣中长款棉服马甲修身气质开衫外套上衣
+2026-07-31 15:19:44 [INFO ] [deepseek_web]   Downloaded: 5801057381288352366894.jpg
+2026-07-31 15:19:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:20:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:20:15 [INFO ] [deepseek_web]   Response: 女士中长款立领无袖单排
+2026-07-31 15:20:15 [INFO ] [deepseek_web]   Deleted: 5801057381288352366894.jpg
+2026-07-31 15:20:20 [INFO ] [deepseek_web] [21/156] 女装休闲舒适防水棉服夹克外套
+2026-07-31 15:20:22 [INFO ] [deepseek_web]   Downloaded: 1701129551375510709469.jpg
+2026-07-31 15:20:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:20:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:20:53 [INFO ] [deepseek_web]   Response: 女士短款V领单排扣大贴袋几何绗缝宽松防水棉服外套 长袖休闲保暖夹克
+2026-07-31 15:20:53 [INFO ] [deepseek_web]   Deleted: 1701129551375510709469.jpg
+2026-07-31 15:20:58 [INFO ] [deepseek_web] [22/156] 女士纯色拉链冬季连帽加绒加厚羽绒服外套
+2026-07-31 15:21:01 [INFO ] [deepseek_web]   Downloaded: 3471204289201616629442.jpg
+2026-07-31 15:21:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:21:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:21:32 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求： 用户提供了一张女士冬季外套的图片，以及原始标题“女士纯色拉链冬季连帽加绒加厚羽绒服外套”。我的角色是电商视觉分析师和商品信息提
+2026-07-31 15:21:32 [INFO ] [deepseek_web]   Deleted: 3471204289201616629442.jpg
+2026-07-31 15:21:37 [INFO ] [deepseek_web] [23/156] 女士冬季大码纯色加绒牛角扣口袋大衣
+2026-07-31 15:21:43 [INFO ] [deepseek_web]   Downloaded: 9190442576953511695109.jpg
+2026-07-31 15:21:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:21:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:22:14 [INFO ] [deepseek_web]   Response: 女士冬季大码宽松纯色加绒中长款开襟大衣 青果领白色毛绒翻领卷边袖口双侧斜插口袋保暖外套
+2026-07-31 15:22:14 [INFO ] [deepseek_web]   Deleted: 9190442576953511695109.jpg
+2026-07-31 15:22:19 [INFO ] [deepseek_web] [24/156] 女士纯色复古加大码棉质拉链长袖连帽外套棉服带口袋
+2026-07-31 15:22:23 [INFO ] [deepseek_web]   Downloaded: 6581117597371517734728.jpg
+2026-07-31 15:22:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:22:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:22:55 [INFO ] [deepseek_web]   Response: 女士冬季纯色加大码连帽大方格绗缝长袖拉链棉服外套 侧边斜插口袋宽松棉质保暖夹克
+2026-07-31 15:22:55 [INFO ] [deepseek_web]   Deleted: 6581117597371517734728.jpg
+2026-07-31 15:23:00 [INFO ] [deepseek_web] [25/156] 2025外贸新款韩版羽绒棉服女短款连帽加厚
+2026-07-31 15:23:03 [INFO ] [deepseek_web]   Downloaded: 0980404190872419404093.jpg
+2026-07-31 15:23:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:23:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:23:34 [INFO ] [deepseek_web]   Response: 女士冬季短款连帽按扣门襟加厚纯色棉服外套 腰部抽绳收腰斜插大口袋长袖保暖夹克
+2026-07-31 15:23:34 [INFO ] [deepseek_web]   Deleted: 0980404190872419404093.jpg
+2026-07-31 15:23:39 [INFO ] [deepseek_web] [26/156] 秋冬季新款跨境欧美女装下摆抽绳立领长袖宽松棉服外套
+2026-07-31 15:23:44 [INFO ] [deepseek_web]   Downloaded: 6640355271902587322297.jpg
+2026-07-31 15:23:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:24:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:24:15 [INFO ] [deepseek_web]   Response: 女士冬季短款立领横条绗缝宽松长袖拉链棉服外套 侧边斜插袋纯色保暖夹克
+2026-07-31 15:24:15 [INFO ] [deepseek_web]   Deleted: 6640355271902587322297.jpg
+2026-07-31 15:24:20 [INFO ] [deepseek_web] [27/156] 2025外贸新款收腰显瘦羽绒棉服
+2026-07-31 15:24:25 [INFO ] [deepseek_web]   Downloaded: 6431108054071112184174.jpg
+2026-07-31 15:24:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:24:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:24:56 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：用户提供了一张图片（一件带抽绳的白色连帽棉服，侧边有拉链口袋，中间有拉链），以及一个原始标题："2025外贸新款收腰显瘦羽绒棉服
+2026-07-31 15:24:56 [INFO ] [deepseek_web]   Deleted: 6431108054071112184174.jpg
+2026-07-31 15:25:01 [INFO ] [deepseek_web] [28/156] 2025加绒加厚冲锋棉衣连帽棉服夹克衫外套
+2026-07-31 15:25:03 [INFO ] [deepseek_web]   Downloaded: 1200347416162411557495.jpg
+2026-07-31 15:25:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:25:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:25:34 [INFO ] [deepseek_web]   Response: 女士冬季连帽抽绳加绒加厚冲锋棉服外套 隐藏拉链按扣门襟斜插袋松紧袖口下摆调节宽松防风保暖夹克
+2026-07-31 15:25:34 [INFO ] [deepseek_web]   Deleted: 1200347416162411557495.jpg
+2026-07-31 15:25:39 [INFO ] [deepseek_web] [29/156] 2025新款连帽大毛领棉服短款冬季加厚棉衣
+2026-07-31 15:25:51 [INFO ] [deepseek_web]   Downloaded: 9270257550562086574637.jpg
+2026-07-31 15:25:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:26:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:26:22 [INFO ] [deepseek_web]   Response: 女士冬季短款连帽大毛领横条绗缝拉链加厚棉服外套 斜插口袋罗纹袖口下摆收口保暖夹克
+2026-07-31 15:26:22 [INFO ] [deepseek_web]   Deleted: 9270257550562086574637.jpg
+2026-07-31 15:26:27 [INFO ] [deepseek_web] [30/156] 2025外贸新款大毛领棉衣女中长款棉袄外套
+2026-07-31 15:26:33 [INFO ] [deepseek_web]   Downloaded: 1130759365693969774585.jpg
+2026-07-31 15:26:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:26:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:27:04 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色：资深电商视觉分析师和商品信息提取专家。
+
+任务：根据提供的图片和原始标题（“2025外贸新款大毛领棉衣女中长款棉袄外套
+2026-07-31 15:27:04 [INFO ] [deepseek_web]   Deleted: 1130759365693969774585.jpg
+2026-07-31 15:27:09 [INFO ] [deepseek_web] [31/156] 棉衣女中长款新款宽松毛领加绒派克服羽绒棉服
+2026-07-31 15:27:11 [INFO ] [deepseek_web]   Downloaded: 2861105352387644786157.jpg
+2026-07-31 15:27:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:27:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:27:42 [INFO ] [deepseek_web]   Response: 女士冬季中长款大毛领抽绳收腰宽松加绒派克服棉服外套 隐藏拉链门襟双侧翻盖大口袋保暖夹克
+2026-07-31 15:27:42 [INFO ] [deepseek_web]   Deleted: 2861105352387644786157.jpg
+2026-07-31 15:27:47 [INFO ] [deepseek_web] [32/156] 女士加厚小个子毛领洋气时髦棉袄棉服外套
+2026-07-31 15:27:50 [INFO ] [deepseek_web]   Downloaded: 5190955485446819426054.jpg
+2026-07-31 15:27:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:28:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:28:21 [INFO ] [deepseek_web]   Response: 女士冬季短款毛绒翻领V形绗缝单排按扣棉服外套 斜插袋长袖加厚保暖夹克
+2026-07-31 15:28:21 [INFO ] [deepseek_web]   Deleted: 5190955485446819426054.jpg
+2026-07-31 15:28:26 [INFO ] [deepseek_web] [33/156] 女士羽绒棉服2025新款时尚洋气棉袄中老年女冬季外套棉服
+2026-07-31 15:28:32 [INFO ] [deepseek_web]   Downloaded: 6820317239998420936944.jpg
+2026-07-31 15:28:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:28:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:29:03 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色：电商视觉分析师与商品信息提取专家。
+
+任务：根据提供的图片和原始标题，分析产品的客观物理特征，生成高密度、结构化的中文
+2026-07-31 15:29:03 [INFO ] [deepseek_web]   Deleted: 6820317239998420936944.jpg
+2026-07-31 15:29:08 [INFO ] [deepseek_web] [34/156] 女士轻薄保暖圆领长袖单排扣棉服外套休闲简约棉服
+2026-07-31 15:29:10 [INFO ] [deepseek_web]   Downloaded: 6720321558422510923739.jpg
+2026-07-31 15:29:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:29:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:29:41 [INFO ] [deepseek_web]   Response: 
+2026-07-31 15:29:41 [INFO ] [deepseek_web]   Deleted: 6720321558422510923739.jpg
+2026-07-31 15:29:46 [INFO ] [deepseek_web] [35/156] 女士羽绒服女短款立领秋冬新款修身大码轻便
+2026-07-31 15:29:49 [INFO ] [deepseek_web]   Downloaded: 8331105482314843859527.jpg
+2026-07-31 15:29:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:30:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:30:20 [INFO ] [deepseek_web]   Response: 
+2026-07-31 15:30:20 [INFO ] [deepseek_web]   Deleted: 8331105482314843859527.jpg
+2026-07-31 15:30:25 [INFO ] [deepseek_web] [36/156] 皮衣外套立领短款保暖面包棉服女
+2026-07-31 15:30:28 [INFO ] [deepseek_web]   Downloaded: 1001033292357610137901.jpg
+2026-07-31 15:30:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:30:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:30:59 [INFO ] [deepseek_web]   Response: 
+2026-07-31 15:30:59 [INFO ] [deepseek_web]   Deleted: 1001033292357610137901.jpg
+2026-07-31 15:31:04 [INFO ] [deepseek_web] [37/156] 短款宽松立领棉衣冬季外套小棉袄防寒女
+2026-07-31 15:31:06 [INFO ] [deepseek_web]   Downloaded: 4940445358698010141763.jpg
+2026-07-31 15:31:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:31:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:31:37 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析用户请求： 用户提供了一张包含两部分的图片：一件粉色立领常规长度绗缝夹克（图1）和一件黑色短款PU/皮革质感立领按扣夹克（图2）。任务
+2026-07-31 15:31:37 [INFO ] [deepseek_web]   Deleted: 4940445358698010141763.jpg
+2026-07-31 15:31:42 [INFO ] [deepseek_web] [38/156] 加绒棉衣外套时尚洋气免洗皮棉袄宽松上衣
+2026-07-31 15:31:47 [INFO ] [deepseek_web]   Downloaded: 6990416386553118105899.jpg
+2026-07-31 15:31:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:32:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:32:18 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色： 资深电商视觉分析师与商品信息提取专家。
+
+任务： 根据提供的图片（2张）和原始标题，优化/扩写为高密度、结构化的中文
+2026-07-31 15:32:18 [INFO ] [deepseek_web]   Deleted: 6990416386553118105899.jpg
+2026-07-31 15:32:23 [INFO ] [deepseek_web] [39/156] 时尚保暖连帽棉服加厚气质外套棉袄女
+2026-07-31 15:32:28 [INFO ] [deepseek_web]   Downloaded: 0231015228886197019658.jpg
+2026-07-31 15:32:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:32:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:32:59 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求： 用户提供了一张女士棉服外套的图片和原始标题“时尚保暖连帽棉服加厚气质外套棉袄女”。我需要充当电商视觉分析师，执行“五要素”扫描
+2026-07-31 15:32:59 [INFO ] [deepseek_web]   Deleted: 0231015228886197019658.jpg
+2026-07-31 15:33:04 [INFO ] [deepseek_web] [40/156] 时尚保暖棉服加厚大毛领气质外套棉袄女
+2026-07-31 15:33:09 [INFO ] [deepseek_web]   Downloaded: 9491009279045510486831.jpg
+2026-07-31 15:33:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:33:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:33:40 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析用户请求：用户提供了一张商品图片和原始中文标题，并遵循一系列规则（五要素扫描、去营销化、融合重组、直接输出）。
+
+分析图片：
+
+核心品
+2026-07-31 15:33:40 [INFO ] [deepseek_web]   Deleted: 9491009279045510486831.jpg
+2026-07-31 15:33:45 [INFO ] [deepseek_web] [41/156] 时尚保暖棉服加厚气质外套棉袄女
+2026-07-31 15:33:50 [INFO ] [deepseek_web]   Downloaded: 4110941459833623822378.jpg
+2026-07-31 15:33:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:34:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:34:21 [INFO ] [deepseek_web]   Response: 女士冬季短款立领隐藏拉链不规则几何绗缝加厚棉服外套 侧边斜插袋宽松保暖夹克
+2026-07-31 15:34:21 [INFO ] [deepseek_web]   Deleted: 4110941459833623822378.jpg
+2026-07-31 15:34:26 [INFO ] [deepseek_web] [42/156] 冬季大毛领短款时尚棉衣高档气质棉服宽松外套
+2026-07-31 15:34:31 [INFO ] [deepseek_web]   Downloaded: 3570242119552043828974.jpg
+2026-07-31 15:34:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:34:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:35:03 [INFO ] [deepseek_web]   Response: 女士冬季短款大毛领横条绗缝宽松棉服外套 罗纹袖口钩扣系带闭合按扣翻盖口袋保暖夹克
+2026-07-31 15:35:03 [INFO ] [deepseek_web]   Deleted: 3570242119552043828974.jpg
+2026-07-31 15:35:08 [INFO ] [deepseek_web] [43/156] 女装拼接时尚羽绒棉服外套修身显瘦立领棉袄薄棉款
+2026-07-31 15:35:10 [INFO ] [deepseek_web]   Downloaded: 3240440288333783985331.jpg
+2026-07-31 15:35:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:35:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:35:41 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色：高级电商视觉分析师和商品信息提取专家。
+
+任务：基于提供的商品图片和原始标题，识别客观物理特征，并将它们优化/扩展为一
+2026-07-31 15:35:41 [INFO ] [deepseek_web]   Deleted: 3240440288333783985331.jpg
+2026-07-31 15:35:46 [INFO ] [deepseek_web] [44/156] 派克大衣棉衣中长款连帽冬季保暖加绒大衣加棉棉服
+2026-07-31 15:35:49 [INFO ] [deepseek_web]   Downloaded: 6540402433532612638894.jpg
+2026-07-31 15:35:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:36:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:36:20 [INFO ] [deepseek_web]   Response: 
+2026-07-31 15:36:20 [INFO ] [deepseek_web]   Deleted: 6540402433532612638894.jpg
+2026-07-31 15:36:25 [INFO ] [deepseek_web] [45/156] 新款可拆卸毛领女派克服长袖欧美连帽棉衣绒大衣棉服女
+2026-07-31 15:36:28 [INFO ] [deepseek_web]   Downloaded: 1710430180332918651590.jpg
+2026-07-31 15:36:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:36:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:36:59 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求：
+
+角色：资深电商视觉分析师与商品信息提取专家。
+
+任务：根据提供的图片和原始标题（"新款可拆卸毛领女派克服长袖欧美连帽棉衣绒大
+2026-07-31 15:36:59 [INFO ] [deepseek_web]   Deleted: 1710430180332918651590.jpg
+2026-07-31 15:37:04 [INFO ] [deepseek_web] [46/156] 女士加厚羽绒棉服长款过膝棉衣宽松面包服冬季棉袄
+2026-07-31 15:37:06 [INFO ] [deepseek_web]   Downloaded: 7651236087791711358407.jpg
+2026-07-31 15:37:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:37:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:37:37 [INFO ] [deepseek_web]   Response: 女士冬季长款过膝连帽横条绗缝加厚羽绒棉服宽松面包服 斜插口袋胸前拉链装饰带保暖外套
+2026-07-31 15:37:37 [INFO ] [deepseek_web]   Deleted: 7651236087791711358407.jpg
+2026-07-31 15:37:42 [INFO ] [deepseek_web] [47/156] 收腰可拆卸羽绒棉服女长款时尚宽松棉袄女外套
+2026-07-31 15:37:43 [INFO ] [deepseek_web]   Downloaded: 5591038524498121040905.jpg
+2026-07-31 15:37:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:37:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:38:14 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析请求： 用户提供了一张图片和原始标题："收腰可拆卸羽绒棉服女长款时尚宽松棉袄女外套"。目标是根据严格的客观规则，提取视觉特征并优化/重
+2026-07-31 15:38:14 [INFO ] [deepseek_web]   Deleted: 5591038524498121040905.jpg
+2026-07-31 15:38:19 [INFO ] [deepseek_web] [48/156] 女士收腰大毛领冬外套中长款连帽棉衣腰绳显瘦加绒加厚棉服外套
+2026-07-31 15:38:23 [INFO ] [deepseek_web]   Downloaded: 0050933264172817513893.jpg
+2026-07-31 15:38:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:38:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:38:54 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+2026-07-31 15:38:54 [INFO ] [deepseek_web]   Deleted: 0050933264172817513893.jpg
+2026-07-31 15:38:59 [INFO ] [deepseek_web] [49/156] 羽绒棉服女冬季过膝新款版宽松棉衣长款棉袄
+2026-07-31 15:39:08 [INFO ] [deepseek_web]   Downloaded: 5951023478093019275942.jpg
+2026-07-31 15:39:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:39:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:39:39 [INFO ] [deepseek_web]   Response: 正在思考
+正在思考
+
+分析需求： 用户提供了一张女式冬季长款绗缝棉服/派克大衣的图片，以及原始标题：“羽绒棉服女冬季过膝新款版宽松棉衣长款棉袄”。我需要扮演电商
+2026-07-31 15:39:39 [INFO ] [deepseek_web]   Deleted: 5951023478093019275942.jpg
+2026-07-31 15:39:44 [INFO ] [deepseek_web] [50/156] 2025年新款羽绒棉服女短款加厚保暖大毛领棉衣
+2026-07-31 15:39:48 [INFO ] [deepseek_web]   Downloaded: 2681038303043213567168.jpg
+2026-07-31 15:39:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:39:55 [INFO ] [deepseek_web]   Deleted: 2681038303043213567168.jpg
+2026-07-31 15:47:01 [INFO ] [jenkins] ==================================================
+2026-07-31 15:47:01 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-07-31 15:47:01 [INFO ] [jenkins] ==================================================
+2026-07-31 15:47:01 [INFO ] [jenkins] 
+2026-07-31 15:47:01 [INFO ] [jenkins] ==================================================
+2026-07-31 15:47:01 [INFO ] [jenkins] All 0 steps completed successfully
+2026-07-31 15:47:01 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-31 15:47:01 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-31 15:47:01 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-31 15:47:01 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-31 15:47:10 [INFO ] [jenkins] ==================================================
+2026-07-31 15:47:10 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-07-31 15:47:10 [INFO ] [jenkins] ==================================================
+2026-07-31 15:47:10 [INFO ] [jenkins] 
+2026-07-31 15:47:10 [INFO ] [jenkins] [1/1] Title optimization
+2026-07-31 15:47:10 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:47:11 [INFO ] [title_workflow] Source: 7.22v1.xlsx
+2026-07-31 15:47:15 [INFO ] [title_workflow] Extracted 156 titles + 156 links
+2026-07-31 15:47:15 [INFO ] [title_workflow] Written: origin_title (156) + origin_link (156)
+2026-07-31 15:47:15 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-07-31 15:47:15 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-07-31 15:47:15 [INFO ] [deepseek_web] Opening DeepSeek web (156 titles)...
+2026-07-31 15:47:15 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-31 15:47:18 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-31 15:47:20 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-31 15:47:20 [INFO ] [deepseek_web] [1/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服
+2026-07-31 15:47:45 [INFO ] [deepseek_web]   Downloaded: 7881152174459468972815.jpg
+2026-07-31 15:47:45 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-31 15:47:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:48:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:48:25 [INFO ] [deepseek_web]   Response: 女士纯色中长款连帽无袖棉服马甲 毛领抽绳兜帽单排按扣侧边拉链斜插口袋修身保暖外套上衣
+2026-07-31 15:48:25 [INFO ] [deepseek_web]   Deleted: 7881152174459468972815.jpg
+2026-07-31 15:48:30 [INFO ] [deepseek_web] [2/156] 女式冬季口袋棉服马甲背心外套
+2026-07-31 15:48:33 [INFO ] [deepseek_web]   Downloaded: 4241111589995311728442.jpg
+2026-07-31 15:48:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:48:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:49:07 [INFO ] [deepseek_web]   Response: 女士纯色中长款无袖棉服马甲背心 连帽毛领拉链开襟羊羔绒内里侧边斜插口袋保暖冬季外套
+2026-07-31 15:49:07 [INFO ] [deepseek_web]   Deleted: 4241111589995311728442.jpg
+2026-07-31 15:49:12 [INFO ] [deepseek_web] [3/156] 女士毛绒连帽中长款斜拉链棉服外套
+2026-07-31 15:49:35 [INFO ] [deepseek_web]   Downloaded: 7300354328582360025774.jpg
+2026-07-31 15:49:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:49:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:50:09 [INFO ] [deepseek_web]   Response: 女士纯色中长款无袖棉服马甲背心 连帽毛领拉链开襟羊羔绒内里侧边斜插口袋保暖冬季外套
+2026-07-31 15:50:09 [INFO ] [deepseek_web]   Deleted: 7300354328582360025774.jpg
+2026-07-31 15:50:14 [INFO ] [deepseek_web] [4/156] 棉服女款冬装2025棉衣
+2026-07-31 15:50:21 [INFO ] [deepseek_web]   Downloaded: 3160531012352536588173.jpg
+2026-07-31 15:50:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:50:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:50:55 [INFO ] [deepseek_web]   Response: 女士短款菱形绗缝棉服外套 高立领斜拉链按扣开襟侧边按扣口袋下摆抽绳冬季保暖上衣
+2026-07-31 15:50:55 [INFO ] [deepseek_web]   Deleted: 3160531012352536588173.jpg
+2026-07-31 15:51:00 [INFO ] [deepseek_web] [5/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服2
+2026-07-31 15:51:05 [INFO ] [deepseek_web]   Downloaded: 3251110043033212669707.jpg
+2026-07-31 15:51:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:51:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:51:40 [INFO ] [deepseek_web]   Response: 女士短款菱形绗缝棉服外套 高立领斜拉链按扣开襟侧边按扣口袋下摆抽绳冬季保暖上衣
+2026-07-31 15:51:40 [INFO ] [deepseek_web]   Deleted: 3251110043033212669707.jpg
+2026-07-31 15:51:45 [INFO ] [deepseek_web] [6/156] 女士妈妈装冬季女士大码显瘦棉袄百搭棉衣外套简约保暖立领棉服潮棉服2
+2026-07-31 15:51:47 [INFO ] [deepseek_web]   Downloaded: 6910454545173029163955.jpg
+2026-07-31 15:51:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:52:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:52:22 [INFO ] [deepseek_web]   Response: 女士冬季大码纯色立领短款棉服外套 波浪形绗缝隐藏式拉链开襟保暖上衣
+2026-07-31 15:52:22 [INFO ] [deepseek_web]   Deleted: 6910454545173029163955.jpg
+2026-07-31 15:52:27 [INFO ] [deepseek_web] [7/156] 女士棉衣女短款显瘦洋气大码时尚修身羽绒棉服妈妈装冬季外套
+2026-07-31 15:52:29 [INFO ] [deepseek_web]   Downloaded: 7150444476252916590979.jpg
+2026-07-31 15:52:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:52:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:53:03 [INFO ] [deepseek_web]   Response: 女士大码短款立领棉服外套 菱格绗缝隐藏式拉链冬季保暖上衣
+2026-07-31 15:53:03 [INFO ] [deepseek_web]   Deleted: 7150444476252916590979.jpg
+2026-07-31 15:53:08 [INFO ] [deepseek_web] [8/156] 女士冬款棉衣毛领拉链款棉服加厚保暖外套女棉服
+2026-07-31 15:53:32 [INFO ] [deepseek_web]   Downloaded: 7610216306841165203700.jpg
+2026-07-31 15:53:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:53:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:54:06 [INFO ] [deepseek_web]   Response: 女士大码短款立领棉服外套 菱格绗缝隐藏式拉链冬季保暖上衣
+2026-07-31 15:54:06 [INFO ] [deepseek_web]   Deleted: 7610216306841165203700.jpg
+2026-07-31 15:54:11 [INFO ] [deepseek_web] [9/156] 女士冬季长款立领轻薄面包服棉袄棉服外套
+2026-07-31 15:54:15 [INFO ] [deepseek_web]   Downloaded: 4680414582752564152893.jpg
+2026-07-31 15:54:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:54:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:54:49 [INFO ] [deepseek_web]   Response: 女士冬季短款立领轻薄棉服外套 水平绗缝拉链开襟松紧袖口保暖上衣
+2026-07-31 15:54:49 [INFO ] [deepseek_web]   Deleted: 4680414582752564152893.jpg
+2026-07-31 15:54:54 [INFO ] [deepseek_web] [10/156] 女士中长款派克棉服收腰风衣外套棉袄棉服
+2026-07-31 15:55:17 [INFO ] [deepseek_web]   Downloaded: 7431142074663420780111.jpg
+2026-07-31 15:55:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:55:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:55:44 [INFO ] [deepseek_web]   Deleted: 7431142074663420780111.jpg
+2026-07-31 15:55:46 [INFO ] [jenkins] ==================================================
+2026-07-31 15:55:46 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-07-31 15:55:46 [INFO ] [jenkins] ==================================================
+2026-07-31 15:55:46 [INFO ] [jenkins] 
+2026-07-31 15:55:46 [INFO ] [jenkins] [1/1] Title optimization
+2026-07-31 15:55:46 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:55:47 [INFO ] [title_workflow] Source: 7.22v1.xlsx
+2026-07-31 15:55:58 [INFO ] [jenkins] ==================================================
+2026-07-31 15:55:58 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-07-31 15:55:58 [INFO ] [jenkins] ==================================================
+2026-07-31 15:55:58 [INFO ] [jenkins] 
+2026-07-31 15:55:58 [INFO ] [jenkins] ==================================================
+2026-07-31 15:55:58 [INFO ] [jenkins] All 0 steps completed successfully
+2026-07-31 15:55:58 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-31 15:55:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-31 15:55:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-31 15:55:58 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-31 15:56:06 [INFO ] [jenkins] ==================================================
+2026-07-31 15:56:06 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-07-31 15:56:06 [INFO ] [jenkins] ==================================================
+2026-07-31 15:56:06 [INFO ] [jenkins] 
+2026-07-31 15:56:06 [INFO ] [jenkins] [1/1] Title optimization
+2026-07-31 15:56:06 [INFO ] [jenkins] ------------------------------
+2026-07-31 15:56:07 [INFO ] [title_workflow] Source: 7.22v1.xlsx
+2026-07-31 15:56:11 [INFO ] [title_workflow] Extracted 156 titles + 156 links
+2026-07-31 15:56:11 [INFO ] [title_workflow] Written: origin_title (156) + origin_link (156)
+2026-07-31 15:56:11 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-07-31 15:56:11 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-07-31 15:56:11 [INFO ] [deepseek_web] Opening DeepSeek web (156 titles)...
+2026-07-31 15:56:11 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-31 15:56:12 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-31 15:56:14 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-31 15:56:14 [INFO ] [deepseek_web] [1/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服
+2026-07-31 15:56:19 [INFO ] [deepseek_web]   Downloaded: 7881152174459468972815.jpg
+2026-07-31 15:56:19 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-31 15:56:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:56:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:56:55 [INFO ] [deepseek_web]   Response: 女士纯色连帽加毛领单排扣中长款修身无袖马甲棉服 侧拉链口袋横绗缝抽绳侧开叉防风保暖冬季外套
+2026-07-31 15:56:55 [INFO ] [deepseek_web]   Deleted: 7881152174459468972815.jpg
+2026-07-31 15:57:00 [INFO ] [deepseek_web] [2/156] 女式冬季口袋棉服马甲背心外套
+2026-07-31 15:57:04 [INFO ] [deepseek_web]   Downloaded: 4241111589995311728442.jpg
+2026-07-31 15:57:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:57:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:57:38 [INFO ] [deepseek_web]   Response: 女士冬季中长款防风保暖马甲背心 大毛领加绒内衬横绗缝前拉链斜插口袋无袖棉服外套
+2026-07-31 15:57:38 [INFO ] [deepseek_web]   Deleted: 4241111589995311728442.jpg
+2026-07-31 15:57:43 [INFO ] [deepseek_web] [3/156] 女士毛绒连帽中长款斜拉链棉服外套
+2026-07-31 15:58:07 [INFO ] [deepseek_web]   Downloaded: 7300354328582360025774.jpg
+2026-07-31 15:58:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:58:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:58:43 [INFO ] [deepseek_web]   Response: 女士修身中长款连帽棉服外套 加厚毛绒内里斜拉链闭口收腰V形绗缝双侧拉链侧袋抽绳连帽袖口松紧冬季防风保暖
+2026-07-31 15:58:43 [INFO ] [deepseek_web]   Deleted: 7300354328582360025774.jpg
+2026-07-31 15:58:48 [INFO ] [deepseek_web] [4/156] 棉服女款冬装2025棉衣
+2026-07-31 15:58:51 [INFO ] [deepseek_web]   Downloaded: 3160531012352536588173.jpg
+2026-07-31 15:58:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:59:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 15:59:27 [INFO ] [deepseek_web]   Response: 女士冬季短款加厚保暖棉服外套 立领防风几何绗缝前中拉链按扣门襟下摆系带侧边斜插袋
+2026-07-31 15:59:27 [INFO ] [deepseek_web]   Deleted: 3160531012352536588173.jpg
+2026-07-31 15:59:32 [INFO ] [deepseek_web] [5/156] 女士纯色连帽单排扣中长款棉服马甲修身外套上衣加毛领马甲棉服2
+2026-07-31 15:59:35 [INFO ] [deepseek_web]   Downloaded: 3251110043033212669707.jpg
+2026-07-31 15:59:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 15:59:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:00:09 [INFO ] [deepseek_web]   Response: 女士纯色连帽加毛领单排扣中长款修身无袖棉服马甲 横绗缝侧拉链口袋侧开叉防风保暖冬季外套
+2026-07-31 16:00:09 [INFO ] [deepseek_web]   Deleted: 3251110043033212669707.jpg
+2026-07-31 16:00:14 [INFO ] [deepseek_web] [6/156] 女士妈妈装冬季女士大码显瘦棉袄百搭棉衣外套简约保暖立领棉服潮棉服2
+2026-07-31 16:00:25 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='gmesxwy4dzl4socw.imgsapp.com', port=443): Max retries exceeded with url: /afsd/6366/6910454545173029163955.jpg (Caused by NameResolutionError("HTTPSConnection(host='gmesxwy4dzl4socw.imgsapp.com', port=443): Failed to resolve 'gmesxwy4dzl4socw.imgsapp.com' ([Errno 11001] getaddrinfo failed)"))
+2026-07-31 16:00:30 [INFO ] [deepseek_web] [7/156] 女士棉衣女短款显瘦洋气大码时尚修身羽绒棉服妈妈装冬季外套
+2026-07-31 16:00:32 [INFO ] [deepseek_web]   Downloaded: 7150444476252916590979.jpg
+2026-07-31 16:00:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:00:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:01:07 [INFO ] [deepseek_web]   Response: 女士短款纯色立领长袖棉服外套 菱形格纹绗缝前中全拉链开合防风保暖冬季夹克
+2026-07-31 16:01:07 [INFO ] [deepseek_web]   Deleted: 7150444476252916590979.jpg
+2026-07-31 16:01:12 [INFO ] [deepseek_web] [8/156] 女士冬款棉衣毛领拉链款棉服加厚保暖外套女棉服
+2026-07-31 16:01:14 [INFO ] [deepseek_web]   Downloaded: 7610216306841165203700.jpg
+2026-07-31 16:01:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:01:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:01:58 [INFO ] [deepseek_web]   Response: 女士冬季短款加厚保暖毛领棉服外套 横绗缝前中拉链斜插拉链袋罗纹袖口修身防风夹克
+2026-07-31 16:01:58 [INFO ] [deepseek_web]   Deleted: 7610216306841165203700.jpg
+2026-07-31 16:02:03 [INFO ] [deepseek_web] [9/156] 女士冬季长款立领轻薄面包服棉袄棉服外套
+2026-07-31 16:02:07 [INFO ] [deepseek_web]   Downloaded: 4680414582752564152893.jpg
+2026-07-31 16:02:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:02:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:02:41 [INFO ] [deepseek_web]   Response: 女士冬季短款立领轻薄面包服棉服外套 横绗缝前中拉链长袖松紧收口防风保暖夹克
+2026-07-31 16:02:41 [INFO ] [deepseek_web]   Deleted: 4680414582752564152893.jpg
+2026-07-31 16:02:46 [INFO ] [deepseek_web] [10/156] 女士中长款派克棉服收腰风衣外套棉袄棉服
+2026-07-31 16:02:47 [INFO ] [deepseek_web]   Downloaded: 7431142074663420780111.jpg
+2026-07-31 16:02:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:03:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:03:23 [INFO ] [deepseek_web]   Response: 女士中长款连帽收腰防风派克棉服风衣 内置婴儿育婴袋腰部抽绳双向拉链下摆开叉大贴袋冬季保暖外套
+2026-07-31 16:03:23 [INFO ] [deepseek_web]   Deleted: 7431142074663420780111.jpg
+2026-07-31 16:03:28 [INFO ] [deepseek_web] [11/156] 时尚收腰拼接长袖连帽保暖棉服夹克外套
+2026-07-31 16:03:31 [INFO ] [deepseek_web]   Downloaded: 3741030530696882575617.jpg
+2026-07-31 16:03:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:03:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:04:08 [INFO ] [deepseek_web]   Response: 女士冬季连帽拼接长袖保暖棉服外套 人字形绗缝抽绳兜帽前中拉链侧缝拉链袋直筒版型防风夹克
+2026-07-31 16:04:08 [INFO ] [deepseek_web]   Deleted: 3741030530696882575617.jpg
+2026-07-31 16:04:13 [INFO ] [deepseek_web] [12/156] 女士棉服短款加绒长袖大码冬季棉衣显瘦防寒中老年外套
+2026-07-31 16:04:17 [INFO ] [deepseek_web]   Downloaded: 9241041442651039897710.jpg
+2026-07-31 16:04:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:04:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:04:52 [INFO ] [deepseek_web]   Response: 女士冬季短款加绒长袖无领按扣水波纹绗缝双侧贴袋棉服外套 大码中老年防风保暖夹克
+2026-07-31 16:04:52 [INFO ] [deepseek_web]   Deleted: 9241041442651039897710.jpg
+2026-07-31 16:04:57 [INFO ] [deepseek_web] [13/156] 女士可拆卸两件套防风防水摇粒绒加绒加厚外套
+2026-07-31 16:05:02 [INFO ] [deepseek_web]   Downloaded: 2260333238322028413264.jpg
+2026-07-31 16:05:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:05:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-31 16:05:40 [INFO ] [deepseek_web]   Response: 女士户外三合一可拆卸连帽冲锋衣外套 植物纹理印花防风防水摇粒绒加绒加厚内胆斜拉链口袋长袖冬季滑雪登山夹克
+2026-07-31 16:05:40 [INFO ] [deepseek_web]   Deleted: 2260333238322028413264.jpg
+2026-07-31 16:05:45 [INFO ] [deepseek_web] [14/156] 棉服女短款冬季宽松时尚加厚连帽棉袄
+2026-07-31 16:05:47 [INFO ] [deepseek_web]   Downloaded: 5470810584761533461645.jpg
+2026-07-31 16:05:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-31 16:05:51 [INFO ] [deepseek_web]   Deleted: 5470810584761533461645.jpg
+2026-07-31 16:05:59 [INFO ] [jenkins] ==================================================
+2026-07-31 16:05:59 [INFO ] [jenkins] Jenkins pipeline — 0 steps
+2026-07-31 16:05:59 [INFO ] [jenkins] ==================================================
+2026-07-31 16:05:59 [INFO ] [jenkins] 
+2026-07-31 16:05:59 [INFO ] [jenkins] ==================================================
+2026-07-31 16:05:59 [INFO ] [jenkins] All 0 steps completed successfully
+2026-07-31 16:05:59 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-31 16:05:59 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-31 16:05:59 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-31 16:05:59 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-31 16:31:32 [INFO ] [jenkins] ==================================================
+2026-07-31 16:31:32 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-31 16:31:32 [INFO ] [jenkins] ==================================================
+2026-07-31 16:31:32 [INFO ] [jenkins] 
+2026-07-31 16:31:32 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-31 16:31:32 [INFO ] [jenkins] ------------------------------
+2026-07-31 16:31:32 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-31 16:31:32 [INFO ] [jenkins] 
+2026-07-31 16:31:32 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-31 16:31:32 [INFO ] [jenkins] ------------------------------
+2026-07-31 16:31:32 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-07-31 16:31:32 [INFO ] [preprocess] [product_20260731042917062.xlsx]
+2026-07-31 16:31:33 [INFO ] [preprocess]   [product_20260731042917062.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 16:31:34 [INFO ] [preprocess]   [product_20260731042917062.xlsx] Dedup: 24 filled rows, 4 deleted (sheet rebuilt)
+2026-07-31 16:31:35 [INFO ] [preprocess] [product_20260731042933865.xlsx]
+2026-07-31 16:31:35 [INFO ] [preprocess]   [product_20260731042933865.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 16:31:35 [INFO ] [preprocess]   [product_20260731042933865.xlsx] Dedup: 14 filled rows, 13 deleted (sheet rebuilt)
+2026-07-31 16:31:35 [INFO ] [preprocess] [product_20260731043010584.xlsx]
+2026-07-31 16:31:36 [INFO ] [preprocess]   [product_20260731043010584.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 16:31:37 [INFO ] [preprocess]   [product_20260731043010584.xlsx] Dedup: 37 filled rows, 13 deleted (sheet rebuilt)
+2026-07-31 16:31:38 [INFO ] [preprocess] [product_20260731043012733.xlsx]
+2026-07-31 16:31:38 [INFO ] [preprocess]   [product_20260731043012733.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-31 16:31:39 [INFO ] [preprocess]   [product_20260731043012733.xlsx] Dedup: 25 filled rows, 6 deleted (sheet rebuilt)
+2026-07-31 16:31:39 [INFO ] [preprocess] Preprocessing complete
+2026-07-31 16:31:39 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-07-31 16:31:39 [INFO ] [jenkins] 
+2026-07-31 16:31:39 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-07-31 16:31:39 [INFO ] [jenkins] ------------------------------
+2026-07-31 16:31:40 [INFO ] [main] Log file: 20260731_2dc95f58.log
+2026-07-31 16:31:40 [INFO ] [main] Found 4 file(s):
+2026-07-31 16:31:40 [INFO ] [main]   product_20260731042917062.xlsx
+2026-07-31 16:31:40 [INFO ] [main]   product_20260731042933865.xlsx
+2026-07-31 16:31:40 [INFO ] [main]   product_20260731043010584.xlsx
+2026-07-31 16:31:40 [INFO ] [main]   product_20260731043012733.xlsx
+2026-07-31 16:31:40 [INFO ] [main] Output: 7.23v1.xlsx
+2026-07-31 16:31:40 [INFO ] [main] ==================================================
+2026-07-31 16:31:44 [INFO ] [main] Merged 4 files, 6096 images total
+2026-07-31 16:31:44 [INFO ] [main] Deleted 4 source file(s)
+2026-07-31 16:31:45 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-31 16:31:45 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-31 16:31:47 [INFO ] [pipeline]   Sheet [Sheet0_2]: 327 rows, 710 images
+2026-07-31 16:31:47 [INFO ] [pipeline]   Sheet [Sheet0_3]: 922 rows, 2008 images
+2026-07-31 16:31:47 [INFO ] [pipeline]   Sheet [Sheet0_4]: 738 rows, 1427 images
+2026-07-31 16:31:47 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1987 data rows, 4145 images
+2026-07-31 16:31:47 [INFO ] [pipeline] [2/12] validate
+2026-07-31 16:31:47 [INFO ] [pipeline]   Validated: 2906 rows, 27 cols (expect ~32)
+2026-07-31 16:31:47 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-31 16:31:48 [INFO ] [pipeline]   Backed up 6096 images
+2026-07-31 16:31:48 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-31 16:31:48 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-31 16:31:48 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-31 16:31:48 [INFO ] [pipeline]   Restored 6096 images with adjusted anchors
+2026-07-31 16:31:48 [INFO ] [pipeline] [4/12] fill_id
+2026-07-31 16:31:48 [INFO ] [pipeline]   Column 2: 2906 random IDs (date: bfzgbc)
+2026-07-31 16:31:48 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-31 16:31:48 [INFO ] [pipeline]   Column 3: 2906 cells filled
+2026-07-31 16:31:48 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-31 16:31:48 [INFO ] [pipeline]   Column 10: 2822 cells mapped, 83 rows skipped (col A has fill)
+2026-07-31 16:31:48 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-31 16:31:48 [INFO ] [pipeline]   Column 11: 2823 mapped, 83 cleared (col A has fill), 0 no match
+2026-07-31 16:31:48 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-31 16:31:48 [INFO ] [pipeline]   Mirror copy: 15665 cells written
+2026-07-31 16:31:48 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-31 16:31:48 [INFO ] [pipeline]   Column 44: 2906 cells copied from col 12
+2026-07-31 16:31:48 [INFO ] [pipeline] [10/12] calc_price
+2026-07-31 16:31:48 [INFO ] [pipeline]   Columns 45-48: 2906 rows calculated
+2026-07-31 16:31:48 [INFO ] [pipeline] [11/12] format_cells
+2026-07-31 16:32:03 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-31 16:32:03 [INFO ] [pipeline]   Formatted 2906 rows: h=50, align=left/center
+2026-07-31 16:32:03 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-31 16:32:03 [INFO ] [pipeline] [12/12] finalize
+2026-07-31 16:32:03 [INFO ] [pipeline]   Done: 2906 rows x 48 cols (target: 48)
+2026-07-31 16:32:03 [INFO ] [pipeline] Pipeline complete
+2026-07-31 16:32:06 [INFO ] [main] Size: 2906 rows x 48 cols
+2026-07-31 16:32:06 [INFO ] [main] ==================================================
+2026-07-31 16:32:06 [INFO ] [main] Done: 7.23v1.xlsx
+2026-07-31 16:32:06 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-07-31 16:32:06 [INFO ] [jenkins] 
+2026-07-31 16:32:06 [INFO ] [jenkins] [4/4] Color re-processing
+2026-07-31 16:32:06 [INFO ] [jenkins] ------------------------------
+2026-07-31 16:32:06 [INFO ] [color_size_main] Source: 7.23v1.xlsx
+2026-07-31 16:32:09 [INFO ] [color_size_main] Extracted: 2822 data lines + 84 separators → check_.txt
+2026-07-31 16:32:09 [INFO ] [color_size_main] Running: process.py
+2026-07-31 16:32:09 [INFO ] [color_size_deal] Groups: 84, lines: 2822 (file: 2906)
+2026-07-31 16:32:09 [INFO ] [color_size_deal] Prefixes: {'01': 149, '02': 35}
+2026-07-31 16:32:09 [INFO ] [color_size_deal] Done.
+2026-07-31 16:32:09 [INFO ] [color_size_main] Processing write-back: 2906 lines
+2026-07-31 16:32:15 [INFO ] [color_size_main] Write-back: 268 written, 2638 unchanged → 7.23v1.xlsx
+2026-07-31 16:32:15 [INFO ] [color_size_main] Done.
+2026-07-31 16:32:15 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-07-31 16:32:15 [INFO ] [jenkins] 
+2026-07-31 16:32:15 [INFO ] [jenkins] ==================================================
+2026-07-31 16:32:15 [INFO ] [jenkins] All 4 steps completed successfully
+2026-07-31 16:32:15 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-31 16:32:15 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-31 16:32:15 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-31 16:32:15 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

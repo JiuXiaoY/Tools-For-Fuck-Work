@@ -1,0 +1,640 @@
+2026-11-23 08:48:52 [INFO ] [jenkins] ==================================================
+2026-11-23 08:48:52 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-23 08:48:52 [INFO ] [jenkins] ==================================================
+2026-11-23 08:48:52 [INFO ] [jenkins] 
+2026-11-23 08:48:52 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-23 08:48:52 [INFO ] [jenkins] ------------------------------
+2026-11-23 08:48:53 [INFO ] [title_workflow] Source: 11.18v1_uk.xlsx
+2026-11-23 08:48:54 [INFO ] [title_workflow] Extracted 48 titles + 48 links
+2026-11-23 08:48:54 [INFO ] [title_workflow] Written: origin_title (48) + origin_link (48)
+2026-11-23 08:48:54 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-23 08:48:54 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-23 08:48:55 [INFO ] [deepseek_web] Opening DeepSeek web (48 titles)...
+2026-11-23 08:48:55 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-23 08:49:04 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-23 08:49:06 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-23 08:49:06 [INFO ] [deepseek_web] [1/48] 男士圣诞节法兰绒保暖宽松大码节日狂欢西装马甲 毛绒拼接边饰 纽扣 带口袋 西装马甲 男士 常规版型 V领 无袖 丝绒质感
+2026-11-23 08:49:12 [INFO ] [deepseek_web]   Downloaded: 0001_2390219016771414327877.jpg
+2026-11-23 08:49:12 [INFO ] [deepseek_web]   Prefetching next image (2/48)
+2026-11-23 08:49:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:49:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:49:50 [INFO ] [deepseek_web]   Response: 男士圣诞丝绒西装马甲 节日派对毛绒拼接马甲背心 常规版型V领无袖带纽扣坎肩 秋冬保暖带口袋 节日狂欢丝绒质感马甲外套 男士背心
+2026-11-23 08:49:50 [INFO ] [deepseek_web]   Deleted: 0001_2390219016771414327877.jpg
+2026-11-23 08:49:55 [INFO ] [deepseek_web] [2/48] 男士舞台演出服小亮片马甲背心影楼拍照主持人歌手司仪马甲 小亮片装饰 V领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 
+2026-11-23 08:49:55 [INFO ] [deepseek_web]   Downloaded: 0002_1630932320166018944932.jpg
+2026-11-23 08:49:55 [INFO ] [deepseek_web]   Prefetching next image (3/48)
+2026-11-23 08:49:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:50:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:50:30 [INFO ] [deepseek_web]   Response: 男士亮片西装马甲背心 修身V领无袖舞台演出马甲 带纽扣带口袋司仪歌手坎肩 派对主持人西装背心 影楼拍照小亮片表演马甲外套
+2026-11-23 08:50:30 [INFO ] [deepseek_web]   Deleted: 0002_1630932320166018944932.jpg
+2026-11-23 08:50:35 [INFO ] [deepseek_web] [3/48] 男士马甲V领新郎伴郎婚礼礼服马甲啤酒节传统马甲背心外套 刺绣领边 装饰性纽扣 带口袋 西装马甲 男士 修身版型 立领 纽
+2026-11-23 08:50:35 [INFO ] [deepseek_web]   Downloaded: 0003_8360454113961915813406.jpg
+2026-11-23 08:50:35 [INFO ] [deepseek_web]   Prefetching next image (4/48)
+2026-11-23 08:50:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:50:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:51:04 [INFO ] [deepseek_web]   Response: 男士巴伐利亚风格马甲 修身立领V领背心 刺绣领边装饰纽扣带口袋 啤酒节婚礼节日西装马甲 新郎伴郎礼服无袖马甲外套 传统民族风背心
+2026-11-23 08:51:04 [INFO ] [deepseek_web]   Deleted: 0003_8360454113961915813406.jpg
+2026-11-23 08:51:09 [INFO ] [deepseek_web] [4/48] 25新款欧码男士复古拼接翻领男士西装马甲粗花呢人字呢马夹 人字纹拼接 千鸟格拼接 格纹拼接 西装马甲 男士 常规版型 带
+2026-11-23 08:51:09 [INFO ] [deepseek_web]   Downloaded: 0004_1920435324032819778449.jpg
+2026-11-23 08:51:09 [INFO ] [deepseek_web]   Prefetching next image (5/48)
+2026-11-23 08:51:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:51:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:51:45 [INFO ] [deepseek_web]   Response: 男士复古拼接西装马甲 粗花呢人字纹千鸟格马夹 常规版型翻领带纽扣背心 秋冬无袖带口袋马甲外套 英伦风格纹西装背心 商务休闲正装男士马夹
+2026-11-23 08:51:45 [INFO ] [deepseek_web]   Deleted: 0004_1920435324032819778449.jpg
+2026-11-23 08:51:50 [INFO ] [deepseek_web] [5/48] 男士秋冬马甲外套帽子可拆卸纯色加厚宽松背心 可拆卸连帽设计 全拉链门襟 带口袋 横向绗缝工艺 加厚连帽马甲外套 男士 宽
+2026-11-23 08:51:50 [INFO ] [deepseek_web]   Downloaded: 0005_5320213116221712136823.jpg
+2026-11-23 08:51:50 [INFO ] [deepseek_web]   Prefetching next image (6/48)
+2026-11-23 08:51:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:52:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:52:26 [INFO ] [deepseek_web]   Response: 男士秋冬连帽马甲外套 宽松加厚保暖背心 可拆卸帽横向绗缝棉马甲 全拉链带口袋无袖夹克 纯色防风防寒背心 户外休闲马甲
+2026-11-23 08:52:26 [INFO ] [deepseek_web]   Deleted: 0005_5320213116221712136823.jpg
+2026-11-23 08:52:31 [INFO ] [deepseek_web] [6/48] 男士复古立领纯色纽扣绑带马甲 皮质搭扣门襟 不对称前襟 西装马甲 男士 常规版型 立领 无袖 纯色 绒面质感 复古风格
+2026-11-23 08:52:31 [INFO ] [deepseek_web]   Downloaded: 0006_6090847030427212219742.jpg
+2026-11-23 08:52:31 [INFO ] [deepseek_web]   Prefetching next image (7/48)
+2026-11-23 08:52:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:52:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:53:01 [INFO ] [deepseek_web]   Response: 男士复古绒面西装马甲 常规版型立领无袖背心 皮质搭扣不对称前襟马甲 中长款纯色绒面马甲外套 复古风舞台演出背心
+2026-11-23 08:53:01 [INFO ] [deepseek_web]   Deleted: 0006_6090847030427212219742.jpg
+2026-11-23 08:53:06 [INFO ] [deepseek_web] [7/48] 9181#男士时尚休闲纽扣连帽透气无袖紧身弹力贴身健身运动马甲背心坎肩 胸前皮质贴章 半开襟纽扣设计 连帽套头背心 男士
+2026-11-23 08:53:06 [INFO ] [deepseek_web]   Downloaded: 0007_2960504568721997908755.jpg
+2026-11-23 08:53:06 [INFO ] [deepseek_web]   Prefetching next image (8/48)
+2026-11-23 08:53:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:53:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:53:35 [INFO ] [deepseek_web]   Response: 男士健身运动连帽马甲背心 修身弹力无袖坎肩 半开襟纽扣套头背心 透气跑步训练马甲 胸前皮标纯色运动坎肩 男士紧身无袖运动外套
+2026-11-23 08:53:35 [INFO ] [deepseek_web]   Deleted: 0007_2960504568721997908755.jpg
+2026-11-23 08:53:40 [INFO ] [deepseek_web] [8/48] 男士秋冬印花加绒口袋针织毛线开衫背心毛坎肩马甲 格纹内衬拼接 全拉链门襟 带口袋 针织开衫马甲 男士 常规版型 无袖 针
+2026-11-23 08:53:40 [INFO ] [deepseek_web]   Downloaded: 0008_8150308044798910699621.jpg
+2026-11-23 08:53:40 [INFO ] [deepseek_web]   Prefetching next image (9/48)
+2026-11-23 08:53:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:53:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:54:12 [INFO ] [deepseek_web]   Response: 男士秋冬针织马甲背心 常规版型立领全拉链开衫 格纹内衬拼接带口袋 加绒保暖毛线坎肩 无袖针织外套 秋冬休闲背心 男士毛线马甲
+2026-11-23 08:54:12 [INFO ] [deepseek_web]   Deleted: 0008_8150308044798910699621.jpg
+2026-11-23 08:54:17 [INFO ] [deepseek_web] [9/48] 男士西装背心V领马甲修身休闲正式商务礼服 V领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 纯色设计 商务礼服 正式场
+2026-11-23 08:54:17 [INFO ] [deepseek_web]   Downloaded: 0009_5970500039472011756125.jpg
+2026-11-23 08:54:17 [INFO ] [deepseek_web]   Prefetching next image (10/48)
+2026-11-23 08:54:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:54:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:54:52 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 V领无袖带纽扣带口袋 纯色商务礼服马甲 正装马夹外套 休闲西装背心 男士西服坎肩
+2026-11-23 08:54:52 [INFO ] [deepseek_web]   Deleted: 0009_5970500039472011756125.jpg
+2026-11-23 08:54:57 [INFO ] [deepseek_web] [10/48] 男士灯芯绒马甲 竖条纹灯芯绒 V领 纽扣 带口袋 马甲背心 男士 常规版型 无袖 纯色 休闲场合
+2026-11-23 08:54:57 [INFO ] [deepseek_web]   Downloaded: 0010_7840441344832614115427.jpg
+2026-11-23 08:54:57 [INFO ] [deepseek_web]   Prefetching next image (11/48)
+2026-11-23 08:54:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:55:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:55:27 [INFO ] [deepseek_web]   Response: 男士灯芯绒马甲背心 常规版型V领无袖马夹 竖条纹纽扣带口袋西装背心 西部牛仔风休闲马甲外套 纯色灯芯绒坎肩
+2026-11-23 08:55:27 [INFO ] [deepseek_web]   Deleted: 0010_7840441344832614115427.jpg
+2026-11-23 08:55:32 [INFO ] [deepseek_web] [11/48] 男士啤酒节马甲背心人字纹马甲背心外套 人字纹图案 立领 纽扣 带口袋 马甲背心 男士 常规版型 无袖 传统巴伐利亚风格 
+2026-11-23 08:55:32 [INFO ] [deepseek_web]   Downloaded: 0011_2810920345915814639926.jpg
+2026-11-23 08:55:32 [INFO ] [deepseek_web]   Prefetching next image (12/48)
+2026-11-23 08:55:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:55:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:56:01 [INFO ] [deepseek_web]   Response: 男士巴伐利亚风格马甲背心 常规版型立领无袖西装马甲 人字纹带纽扣带口袋 啤酒节传统马甲外套 男士休闲马夹坎肩
+2026-11-23 08:56:01 [INFO ] [deepseek_web]   Deleted: 0011_2810920345915814639926.jpg
+2026-11-23 08:56:06 [INFO ] [deepseek_web] [12/48] 男士纯色传统背心马甲外套 人字纹图案 金属怀表链装饰 带口袋 西装马甲 男士 修身版型 翻领 纽扣 无袖 传统风格
+2026-11-23 08:56:06 [INFO ] [deepseek_web]   Downloaded: 0012_5661129170257030265704.jpg
+2026-11-23 08:56:06 [INFO ] [deepseek_web]   Prefetching next image (13/48)
+2026-11-23 08:56:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:56:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:56:36 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 翻领无袖带纽扣带口袋 人字纹传统马夹 金属怀表链装饰复古英伦风马甲外套 休闲坎肩
+2026-11-23 08:56:36 [INFO ] [deepseek_web]   Deleted: 0012_5661129170257030265704.jpg
+2026-11-23 08:56:41 [INFO ] [deepseek_web] [13/48] 男士啤酒节特色服饰立领背心马甲外套 竖条纹纹理 立领 纽扣 带口袋 传统马甲背心 男士 修身版型 无袖 啤酒节
+2026-11-23 08:56:41 [INFO ] [deepseek_web]   Downloaded: 0013_3680243502402021266701.jpg
+2026-11-23 08:56:41 [INFO ] [deepseek_web]   Prefetching next image (14/48)
+2026-11-23 08:56:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:56:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:57:14 [INFO ] [deepseek_web]   Response: 男士啤酒节马甲背心 修身立领无袖带纽扣带口袋 竖条纹纹理传统巴伐利亚马甲外套 西装马甲背心 节日派对休闲坎肩
+2026-11-23 08:57:14 [INFO ] [deepseek_web]   Deleted: 0013_3680243502402021266701.jpg
+2026-11-23 08:57:19 [INFO ] [deepseek_web] [14/48] 男式修身韩版西装马甲大码无袖背心V领单排扣假口袋男式马夹 带口袋 西装马甲 男士 修身版型 纽扣 V领 无袖 纯色外观
+2026-11-23 08:57:19 [INFO ] [deepseek_web]   Downloaded: 0014_5260432237568116375672.jpg
+2026-11-23 08:57:19 [INFO ] [deepseek_web]   Prefetching next image (15/48)
+2026-11-23 08:57:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:57:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:57:48 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 V领无袖带纽扣带口袋马夹 纯色商务正装礼服外套 婚礼伴郎主持人坎肩 韩版西装背心
+2026-11-23 08:57:48 [INFO ] [deepseek_web]   Deleted: 0014_5260432237568116375672.jpg
+2026-11-23 08:57:53 [INFO ] [deepseek_web] [15/48] 男士时尚朋克复古短款马甲外套 提花图案 带口袋 纽扣 西装马甲 男士 修身版型 V领 无袖 短款 朋克风格 复古风格
+2026-11-23 08:57:53 [INFO ] [deepseek_web]   Downloaded: 0015_0600418151051814476397.jpg
+2026-11-23 08:57:53 [INFO ] [deepseek_web]   Prefetching next image (16/48)
+2026-11-23 08:57:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:58:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:58:22 [INFO ] [deepseek_web]   Response: 男士复古提花西装马甲背心 修身V领无袖短款马夹 朋克风格带纽扣带口袋马甲外套 提花图案坎肩 西装背心
+2026-11-23 08:58:22 [INFO ] [deepseek_web]   Deleted: 0015_0600418151051814476397.jpg
+2026-11-23 08:58:27 [INFO ] [deepseek_web] [16/48] 跨境热销男士马甲新款人字纹休闲修身单排扣马甲平驳领背心 人字纹图案 平驳领 带口袋 西装马甲 男士 修身版型 纽扣 无袖
+2026-11-23 08:58:27 [INFO ] [deepseek_web]   Downloaded: 0016_2590403509952732104584.jpg
+2026-11-23 08:58:27 [INFO ] [deepseek_web]   Prefetching next image (17/48)
+2026-11-23 08:58:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:58:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:58:56 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 平驳领带纽扣无袖带口袋马夹 人字纹休闲马甲外套 英伦复古风西装坎肩 商务正装背心 春秋外搭男士马夹
+2026-11-23 08:58:56 [INFO ] [deepseek_web]   Deleted: 0016_2590403509952732104584.jpg
+2026-11-23 08:59:01 [INFO ] [deepseek_web] [17/48] 45634男士哥特式蒸汽朋克系带复古马甲上衣背心 金属扣眼系带门襟 V领 绒面质感 腰部横向拼接 马甲背心 男士 修身版
+2026-11-23 08:59:01 [INFO ] [deepseek_web]   Downloaded: 0017_2661012474101455310779.jpg
+2026-11-23 08:59:01 [INFO ] [deepseek_web]   Prefetching next image (18/48)
+2026-11-23 08:59:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:59:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 08:59:30 [INFO ] [deepseek_web]   Response: 男士哥特蒸汽朋克系带马甲背心 修身V领无袖绒面马夹 金属扣眼系带门襟复古马甲外套 腰部拼接纯色坎肩 男士无袖背心
+2026-11-23 08:59:30 [INFO ] [deepseek_web]   Deleted: 0017_2661012474101455310779.jpg
+2026-11-23 08:59:35 [INFO ] [deepseek_web] [18/48] 男士新款马甲时尚中长款背心宫廷燕尾服 佩斯利提花图案 双排六粒纽扣门襟 翻领 燕尾马甲背心 男士 修身版型 无袖 宫廷风
+2026-11-23 08:59:35 [INFO ] [deepseek_web]   Downloaded: 0018_9800353579916510090616.jpg
+2026-11-23 08:59:35 [INFO ] [deepseek_web]   Prefetching next image (19/48)
+2026-11-23 08:59:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 08:59:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:00:04 [INFO ] [deepseek_web]   Response: 男士宫廷风复古燕尾服马甲背心 修身翻领无袖双排扣中长款马夹 佩斯利提花图案燕尾背心 舞台演出cosplay复古马甲外套
+2026-11-23 09:00:04 [INFO ] [deepseek_web]   Deleted: 0018_9800353579916510090616.jpg
+2026-11-23 09:00:09 [INFO ] [deepseek_web] [19/48] 男士DIY反光马甲 双水平反光条 前开襟 V领 无袖 反光安全背心 男士 常规版型 反光功能 安全作业 交通引导
+2026-11-23 09:00:09 [INFO ] [deepseek_web]   Downloaded: 0019_5261113004211317265308.jpg
+2026-11-23 09:00:09 [INFO ] [deepseek_web]   Prefetching next image (20/48)
+2026-11-23 09:00:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:00:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:00:43 [INFO ] [deepseek_web]   Response: 男士反光安全马甲背心 常规版型无袖V领反光背心 双水平反光条前开襟安全马甲 安全作业交通引导反光外套 高可见度施工骑行背心
+2026-11-23 09:00:43 [INFO ] [deepseek_web]   Deleted: 0019_5261113004211317265308.jpg
+2026-11-23 09:00:48 [INFO ] [deepseek_web] [20/48] 马甲 立领 全拉链门襟 带口袋 马甲背心 男士 常规版型 无袖 纯色外观 多色可选 无帽设计 常规衣长
+2026-11-23 09:00:48 [INFO ] [deepseek_web]   Downloaded: 0020_5820539093147014699686.jpg
+2026-11-23 09:00:48 [INFO ] [deepseek_web]   Prefetching next image (21/48)
+2026-11-23 09:00:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:01:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:01:18 [INFO ] [deepseek_web]   Response: 男士户外立领马甲背心 常规版型无袖全拉链马夹 带口袋纯色休闲背心 无帽马甲外套 户外运动坎肩 多色可选 常规衣长
+2026-11-23 09:01:18 [INFO ] [deepseek_web]   Deleted: 0020_5820539093147014699686.jpg
+2026-11-23 09:01:23 [INFO ] [deepseek_web] [21/48] 男士加厚加绒纯色摇粒绒背心马甲 立领 全拉链门襟 仿羊羔绒内里 带口袋 摇粒绒外层 加厚保暖设计 加绒马甲背心 男士 常
+2026-11-23 09:01:23 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='kyltwwjqhbdusdek.imgsapp.com', port=443): Max retries exceeded with url: /afsd/2608/5170154311451574441629.jpg (Caused by NameResolutionError("HTTPSConnection(host='kyltwwjqhbdusdek.imgsapp.com', port=443): Failed to resolve 'kyltwwjqhbdusdek.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-11-23 09:01:28 [INFO ] [deepseek_web] [22/48] 男式条纹连帽马甲时尚都市大码 横向绗缝纹理 袖窿包边设计 连帽马甲外套 男士 宽松版型 无袖 全拉链门襟 带口袋 纯色外
+2026-11-23 09:01:32 [INFO ] [deepseek_web]   Downloaded: 0022_7450810004171710103032.jpg
+2026-11-23 09:01:32 [INFO ] [deepseek_web]   Prefetching next image (23/48)
+2026-11-23 09:01:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:01:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:02:01 [INFO ] [deepseek_web]   Response: 男士连帽马甲外套 宽松横向绗缝棉马甲 全拉链无袖带口袋背心 秋冬保暖防寒夹克 户外休闲坎肩
+2026-11-23 09:02:01 [INFO ] [deepseek_web]   Deleted: 0022_7450810004171710103032.jpg
+2026-11-23 09:02:06 [INFO ] [deepseek_web] [23/48] 男士西装修身马甲背心 佩斯利提花图案 纽扣 带口袋 V领 无袖 西装马甲 男士 修身版型 正式场合 常规衣长
+2026-11-23 09:02:06 [INFO ] [deepseek_web]   Downloaded: 0023_8090943523171918724374.jpg
+2026-11-23 09:02:06 [INFO ] [deepseek_web]   Prefetching next image (24/48)
+2026-11-23 09:02:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:02:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:02:35 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 V领无袖带纽扣带口袋马夹 佩斯利提花正装马甲外套 婚礼商务礼服坎肩 常规衣长西装背心
+2026-11-23 09:02:35 [INFO ] [deepseek_web]   Deleted: 0023_8090943523171918724374.jpg
+2026-11-23 09:02:40 [INFO ] [deepseek_web] [24/48] 男女同款新款轻薄立领保暖坎肩背心马甲上衣 横向绗缝纹理 立领 全拉链门襟 带口袋 轻薄绗缝马甲背心 中性 常规版型 无袖
+2026-11-23 09:02:40 [INFO ] [deepseek_web]   Downloaded: 0024_0931049368221018453259.jpg
+2026-11-23 09:02:40 [INFO ] [deepseek_web]   Prefetching next image (25/48)
+2026-11-23 09:02:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:02:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:03:09 [INFO ] [deepseek_web]   Response: 中性轻薄绗缝马甲背心 常规版型立领无袖坎肩 全拉链带口袋保暖马甲外套 横向绗缝纹理纯色背心 秋冬轻薄保暖坎肩 男女同款马甲上衣
+2026-11-23 09:03:09 [INFO ] [deepseek_web]   Deleted: 0024_0931049368221018453259.jpg
+2026-11-23 09:03:14 [INFO ] [deepseek_web] [25/48] 男士单排扣时尚撞色绣花西装马甲背心 花卉刺绣装饰 绒面质感 纽扣 带口袋 西装马甲 男士 修身版型 V领 无袖 纯色底 
+2026-11-23 09:03:14 [INFO ] [deepseek_web]   Downloaded: 0025_9690941588384015007337.jpg
+2026-11-23 09:03:14 [INFO ] [deepseek_web]   Prefetching next image (26/48)
+2026-11-23 09:03:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:03:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:03:44 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 V领无袖带纽扣带口袋马夹 花卉刺绣绒面马甲外套 正装西装背心 常规衣长坎肩 男士绣花马甲
+2026-11-23 09:03:44 [INFO ] [deepseek_web]   Deleted: 0025_9690941588384015007337.jpg
+2026-11-23 09:03:49 [INFO ] [deepseek_web] [26/48] 男士秋冬季时尚休闲立领拉链口袋针织毛衣马甲 混色针织纹理 立领 全拉链门襟 带口袋 针织毛衣马甲 男士 常规版型 无袖 
+2026-11-23 09:03:49 [INFO ] [deepseek_web]   Downloaded: 0026_6400454016645615273648.jpg
+2026-11-23 09:03:49 [INFO ] [deepseek_web]   Prefetching next image (27/48)
+2026-11-23 09:03:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:04:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:04:19 [INFO ] [deepseek_web]   Response: 男士针织马甲背心 常规版型无袖坎肩 立领全拉链带口袋 秋冬季休闲保暖马甲外套 针织纹理毛衣背心 男士毛衣马甲
+2026-11-23 09:04:19 [INFO ] [deepseek_web]   Deleted: 0026_6400454016645615273648.jpg
+2026-11-23 09:04:24 [INFO ] [deepseek_web] [27/48] 男士亮片西装马甲 亮片全覆盖装饰 V领 纽扣 无袖 西装马甲 男士 常规版型 多色可选 派对演出 舞台表演
+2026-11-23 09:04:24 [INFO ] [deepseek_web]   Downloaded: 0027_7900451127471710259499.jpg
+2026-11-23 09:04:24 [INFO ] [deepseek_web]   Prefetching next image (28/48)
+2026-11-23 09:04:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:04:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:04:53 [INFO ] [deepseek_web]   Response: 男士亮片西装马甲背心 V领无袖纽扣马甲 舞台演出派对表演马甲外套 亮片全覆盖装饰背心 常规版型多色可选演出服坎肩
+2026-11-23 09:04:53 [INFO ] [deepseek_web]   Deleted: 0027_7900451127471710259499.jpg
+2026-11-23 09:04:58 [INFO ] [deepseek_web] [28/48] 男士针织背心马甲外套 立领 全拉链门襟 撞色拉链边 带口袋 混色针织纹理 针织马甲背心 男士 常规版型 无袖 常规衣长
+2026-11-23 09:04:58 [INFO ] [deepseek_web]   Downloaded: 0028_3370329506031376485302.jpg
+2026-11-23 09:04:58 [INFO ] [deepseek_web]   Prefetching next image (29/48)
+2026-11-23 09:04:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:05:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:05:27 [INFO ] [deepseek_web]   Response: 男士针织马甲背心 常规版型立领无袖坎肩 全拉链撞色边带口袋 混色针织纹理马甲外套 休闲拉链马甲 立领针织背心 常规衣长
+2026-11-23 09:05:27 [INFO ] [deepseek_web]   Deleted: 0028_3370329506031376485302.jpg
+2026-11-23 09:05:32 [INFO ] [deepseek_web] [29/48] 夏季新款男士纯色西装马甲英伦修身大码坎肩正装背心 带口袋 V领 纽扣 西装马甲 男士 修身版型 无袖 纯色外观 正装
+2026-11-23 09:05:32 [INFO ] [deepseek_web]   Downloaded: 0029_2270439543141313656295.jpg
+2026-11-23 09:05:32 [INFO ] [deepseek_web]   Prefetching next image (30/48)
+2026-11-23 09:05:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:05:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:06:01 [INFO ] [deepseek_web]   Response: 男士修身西装马甲背心 V领无袖带纽扣带口袋马夹 夏季正装商务西服坎肩 英伦风马甲外套 伴郎礼服西装背心 男士休闲无袖马甲
+2026-11-23 09:06:01 [INFO ] [deepseek_web]   Deleted: 0029_2270439543141313656295.jpg
+2026-11-23 09:06:06 [INFO ] [deepseek_web] [30/48] SD1ADB2627531B男士秋冬休闲复古单排扣西装马甲 皮革肩带装饰 金属D环扣 肩部皮革拼接 西装马甲 男士 修身
+2026-11-23 09:06:06 [INFO ] [deepseek_web]   Downloaded: 0030_1680424048582717274876.jpg
+2026-11-23 09:06:06 [INFO ] [deepseek_web]   Prefetching next image (31/48)
+2026-11-23 09:06:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:06:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:06:35 [INFO ] [deepseek_web]   Response: 男士复古西装马甲背心 修身V领无袖带纽扣带口袋马夹 皮革肩带金属D环扣肩部拼接 秋冬粗花呢马甲外套 英伦复古风坎肩
+2026-11-23 09:06:35 [INFO ] [deepseek_web]   Deleted: 0030_1680424048582717274876.jpg
+2026-11-23 09:06:40 [INFO ] [deepseek_web] [31/48] 男士西装马甲 闪光星纹图案 纽扣 V领 西装马甲 男士 修身版型 无袖 常规衣长 派对演出 舞台表演
+2026-11-23 09:06:40 [INFO ] [deepseek_web]   Downloaded: 0031_1100551215483119788713.jpg
+2026-11-23 09:06:40 [INFO ] [deepseek_web]   Prefetching next image (32/48)
+2026-11-23 09:06:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:06:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:10:06 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-23 09:10:06 [INFO ] [deepseek_web]   Deleted: 0031_1100551215483119788713.jpg
+2026-11-23 09:10:11 [INFO ] [deepseek_web] [32/48] 男士亮片印花西装马甲 密集亮片全覆盖装饰 V领 纽扣 西装马甲 男士 修身版型 无袖 常规衣长 多色可选 节日派对 舞台
+2026-11-23 09:10:17 [INFO ] [deepseek_web]   Downloaded: 0032_8251039454776330635469.jpg
+2026-11-23 09:10:17 [INFO ] [deepseek_web]   Prefetching next image (33/48)
+2026-11-23 09:10:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:10:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:13:44 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-23 09:13:44 [INFO ] [deepseek_web]   Deleted: 0032_8251039454776330635469.jpg
+2026-11-23 09:13:49 [INFO ] [deepseek_web] [33/48] 男士麂皮绒印花西马甲 斑驳印花纹理 双排六粒纽扣门襟 带口袋 平驳领 西装马甲 男士 常规版型 无袖 麂皮绒质感
+2026-11-23 09:13:52 [INFO ] [deepseek_web]   Downloaded: 0033_4500344016252113734287.jpg
+2026-11-23 09:13:52 [INFO ] [deepseek_web]   Prefetching next image (34/48)
+2026-11-23 09:13:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:14:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:17:19 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-23 09:17:19 [INFO ] [deepseek_web]   Deleted: 0033_4500344016252113734287.jpg
+2026-11-23 09:17:24 [INFO ] [deepseek_web] [34/48] 男士外贸马甲新款中世纪礼服马甲万圣节服装 提花图案 平驳领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 中世纪风格 万
+2026-11-23 09:17:28 [INFO ] [deepseek_web]   Downloaded: 0034_1031059296415556339759.jpg
+2026-11-23 09:17:28 [INFO ] [deepseek_web]   Prefetching next image (35/48)
+2026-11-23 09:17:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:17:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:17:57 [INFO ] [deepseek_web]   Response: 男士西装马甲 修身无袖背心 平驳领带纽扣带口袋 提花图案礼服马甲 中世纪风格万圣节服装 西装背心
+2026-11-23 09:17:57 [INFO ] [deepseek_web]   Deleted: 0034_1031059296415556339759.jpg
+2026-11-23 09:18:02 [INFO ] [deepseek_web] [35/48] 男士单排扣马甲朋克1920S服装男士中世纪复古英伦马甲啤酒节背心 千鸟格图案 带口袋 西装马甲 男士 修身版型 纽扣 V
+2026-11-23 09:18:02 [INFO ] [deepseek_web]   Downloaded: 0035_8430417341563144457067.jpg
+2026-11-23 09:18:02 [INFO ] [deepseek_web]   Prefetching next image (36/48)
+2026-11-23 09:18:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:18:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:18:32 [INFO ] [deepseek_web]   Response: 男士西装马甲 修身无袖背心 V领带纽扣带口袋 千鸟格复古英伦马甲 啤酒节礼服背心 中世纪复古西装背心
+2026-11-23 09:18:32 [INFO ] [deepseek_web]   Deleted: 0035_8430417341563144457067.jpg
+2026-11-23 09:18:37 [INFO ] [deepseek_web] [36/48] 德国啤酒节男士灯芯绒外套背心马甲 左胸矩形贴章 灯芯绒纹理 立领 纽扣 西装马甲 男士 常规版型 无袖 啤酒节
+2026-11-23 09:18:37 [INFO ] [deepseek_web]   Downloaded: 0036_6830525220051719048108.jpg
+2026-11-23 09:18:37 [INFO ] [deepseek_web]   Prefetching next image (37/48)
+2026-11-23 09:18:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:18:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:19:06 [INFO ] [deepseek_web]   Response: 男士灯芯绒马甲背心 常规版型无袖西装背心 立领带纽扣带口袋啤酒节马甲 复古男装西服背心
+2026-11-23 09:19:06 [INFO ] [deepseek_web]   Deleted: 0036_6830525220051719048108.jpg
+2026-11-23 09:19:11 [INFO ] [deepseek_web] [37/48] 德国啤酒节男士斜纹布外套背心马甲 斜纹布纹理 左胸矩形嵌线装饰 双侧下方矩形嵌线装饰 立领 纽扣 传统马甲背心 男士 修
+2026-11-23 09:19:11 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='z9nhdyn9lw399l1n.imgsapp.com', port=443): Max retries exceeded with url: /afsd/8224/8891107272203134085798.jpg (Caused by NameResolutionError("HTTPSConnection(host='z9nhdyn9lw399l1n.imgsapp.com', port=443): Failed to resolve 'z9nhdyn9lw399l1n.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-11-23 09:19:16 [INFO ] [deepseek_web] [38/48] 男士哥特式蒸汽朋克系带复古马甲上衣背心 金属扣眼系带门襟 绒面质感 腰部横向拼接 V领 无袖 系带马甲背心 男士 常规版
+2026-11-23 09:19:39 [INFO ] [deepseek_web]   Downloaded: 0038_8990521158854697074704.jpg
+2026-11-23 09:19:39 [INFO ] [deepseek_web]   Prefetching next image (39/48)
+2026-11-23 09:19:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:19:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:20:10 [INFO ] [deepseek_web]   Response: 男士复古系带马甲背心 哥特式蒸汽朋克马甲 绒面质感V领无袖 金属扣眼门襟 腰部拼接常规版型上衣
+2026-11-23 09:20:10 [INFO ] [deepseek_web]   Deleted: 0038_8990521158854697074704.jpg
+2026-11-23 09:20:15 [INFO ] [deepseek_web] [39/48] 休闲商务单排扣马甲 带口袋 纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外观 商务休闲
+2026-11-23 09:20:15 [INFO ] [deepseek_web]   Downloaded: 0039_4630540204971613030866.jpg
+2026-11-23 09:20:15 [INFO ] [deepseek_web]   Prefetching next image (40/48)
+2026-11-23 09:20:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:20:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:20:46 [INFO ] [deepseek_web]   Response: 男士西装马甲 修身无袖背心 V领带纽扣带口袋 纯色商务马甲 休闲正装西装背心 西服马甲
+2026-11-23 09:20:46 [INFO ] [deepseek_web]   Deleted: 0039_4630540204971613030866.jpg
+2026-11-23 09:20:51 [INFO ] [deepseek_web] [40/48] 男士西装马甲韩版修身西服马夹背心秋冬款休闲英伦风婚礼小马甲男 带口袋 纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外
+2026-11-23 09:20:51 [INFO ] [deepseek_web]   Downloaded: 0040_8210419540554515620191.jpg
+2026-11-23 09:20:51 [INFO ] [deepseek_web]   Prefetching next image (41/48)
+2026-11-23 09:20:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:21:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:21:21 [INFO ] [deepseek_web]   Response: 男士西装马甲 修身无袖背心 V领带纽扣带口袋 纯色商务马甲 英伦风婚礼西服背心 秋冬正装马夹
+2026-11-23 09:21:21 [INFO ] [deepseek_web]   Deleted: 0040_8210419540554515620191.jpg
+2026-11-23 09:21:26 [INFO ] [deepseek_web] [41/48] 男士针织马甲背心 V领 纽扣 带口袋 针织马甲背心 男士 常规版型 无袖 纯色
+2026-11-23 09:21:26 [INFO ] [deepseek_web]   Downloaded: 0041_4021033443776213627142.jpg
+2026-11-23 09:21:26 [INFO ] [deepseek_web]   Prefetching next image (42/48)
+2026-11-23 09:21:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:21:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:22:05 [INFO ] [deepseek_web]   Response: 男士针织马甲背心 常规版型无袖毛衣背心 V领带纽扣带口袋 秋冬保暖纯色针织马甲 商务休闲西装内搭英伦学院风马甲 无袖打底衫
+2026-11-23 09:22:05 [INFO ] [deepseek_web]   Deleted: 0041_4021033443776213627142.jpg
+2026-11-23 09:22:10 [INFO ] [deepseek_web] [42/48] 薄款男士马甲户外摄影登山钓鱼马夹工程救援工作服 立领 全拉链门襟 带口袋 网眼内里 薄款 户外工作马甲背心 男士 常规版
+2026-11-23 09:22:10 [INFO ] [deepseek_web]   Downloaded: 0042_6030432400573033546788.jpg
+2026-11-23 09:22:10 [INFO ] [deepseek_web]   Prefetching next image (43/48)
+2026-11-23 09:22:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:22:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:22:40 [INFO ] [deepseek_web]   Response: 男士户外工作马甲背心 常规版型无袖薄款 立领全拉链门襟带口袋网眼内里 户外摄影登山钓鱼工程救援马夹 户外背心工作服
+2026-11-23 09:22:40 [INFO ] [deepseek_web]   Deleted: 0042_6030432400573033546788.jpg
+2026-11-23 09:22:45 [INFO ] [deepseek_web] [43/48] 男士慕尼黑啤酒节背心印花马甲 领口花卉刺绣装饰 带口袋 立领 纽扣 西装马甲 男士 修身版型 无袖 常规衣长 啤酒节
+2026-11-23 09:22:45 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='xnwr0bcksg9gqw57.imgsapp.com', port=443): Max retries exceeded with url: /afsd/8668/8191055563251320761166.jpg (Caused by NameResolutionError("HTTPSConnection(host='xnwr0bcksg9gqw57.imgsapp.com', port=443): Failed to resolve 'xnwr0bcksg9gqw57.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-11-23 09:22:50 [INFO ] [deepseek_web] [44/48] 男士慕尼黑啤酒节背心印花马甲 领口花卉刺绣装饰 带口袋 立领 纽扣 西装马甲 男士 修身版型 无袖 慕尼黑啤酒节
+2026-11-23 09:22:54 [INFO ] [deepseek_web]   Downloaded: 0044_0320304172442414527009.jpg
+2026-11-23 09:22:54 [INFO ] [deepseek_web]   Prefetching next image (45/48)
+2026-11-23 09:22:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:23:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:23:23 [INFO ] [deepseek_web]   Response: 男士慕尼黑啤酒节马甲背心 修身无袖西装马甲 立领带纽扣带口袋 领口花卉刺绣印花马夹 巴伐利亚民族风礼服背心
+2026-11-23 09:23:23 [INFO ] [deepseek_web]   Deleted: 0044_0320304172442414527009.jpg
+2026-11-23 09:23:28 [INFO ] [deepseek_web] [45/48] 男士慕尼黑啤酒节背心印花马甲 领口花卉刺绣装饰 带口袋 立领 纽扣 传统马甲 男士 修身版型 无袖 啤酒节
+2026-11-23 09:23:28 [INFO ] [deepseek_web]   Downloaded: 0045_8840238408392291170358.jpg
+2026-11-23 09:23:28 [INFO ] [deepseek_web]   Prefetching next image (46/48)
+2026-11-23 09:23:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:23:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:23:58 [INFO ] [deepseek_web]   Response: 男士慕尼黑啤酒节马甲背心 修身无袖西装马甲 立领带纽扣带口袋 领口花卉刺绣印花传统马夹 巴伐利亚民族风礼服背心
+2026-11-23 09:23:58 [INFO ] [deepseek_web]   Deleted: 0045_8840238408392291170358.jpg
+2026-11-23 09:24:03 [INFO ] [deepseek_web] [46/48] 男士印花背心单排扣西装马甲 抽象几何印花图案 纽扣 西装马甲 男士 修身版型 V领 无袖 平直肩线 常规衣长 带口袋
+2026-11-23 09:24:03 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-23 09:24:08 [INFO ] [deepseek_web] [47/48] 男士秋冬季时尚休闲套头打底针织毛衣马甲 菱形格纹图案 V领 套头无门襟 带口袋 针织毛衣马甲 男士 常规版型 无袖 秋冬
+2026-11-23 09:24:11 [INFO ] [deepseek_web]   Downloaded: 0047_7860357423224422247826.jpg
+2026-11-23 09:24:11 [INFO ] [deepseek_web]   Prefetching next image (48/48)
+2026-11-23 09:24:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:24:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:24:41 [INFO ] [deepseek_web]   Response: 男士套头针织马甲背心 常规版型无袖V领 秋冬保暖菱形格纹毛衣背心 英伦学院风打底针织衫 商务休闲毛线马甲
+2026-11-23 09:24:41 [INFO ] [deepseek_web]   Deleted: 0047_7860357423224422247826.jpg
+2026-11-23 09:24:46 [INFO ] [deepseek_web] [48/48] 男士秋冬季时尚休闲套头V领拼色针织毛衣马甲织毛衣马甲 几何菱形拼接图案 纽扣 带口袋 针织开衫马甲 男士 常规版型 V领
+2026-11-23 09:24:46 [INFO ] [deepseek_web]   Downloaded: 0048_0880459147682020811180.jpg
+2026-11-23 09:24:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-23 09:24:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-23 09:25:16 [INFO ] [deepseek_web]   Response: 男士针织马甲背心 常规版型无袖V领带纽扣带口袋 秋冬保暖菱形格纹几何拼接毛衣背心 针织开衫马甲 商务休闲打底衫
+2026-11-23 09:25:16 [INFO ] [deepseek_web]   Deleted: 0048_0880459147682020811180.jpg
+2026-11-23 09:25:16 [INFO ] [deepseek_web] 
+2026-11-23 09:25:16 [INFO ] [deepseek_web] Retry round 1: 7 failed item(s)
+2026-11-23 09:25:21 [INFO ] [deepseek_web]   Retry [21]: 男士加厚加绒纯色摇粒绒背心马甲 立领 全拉链门襟 仿羊羔绒内里 带口袋 摇粒绒外层 加厚保暖设计 加绒马甲背心 男士 常
+2026-11-23 09:25:40 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:25:58 [INFO ] [deepseek_web]     OK: 男士摇粒绒马甲背心 常规版型无袖 立领全拉链带口袋 秋冬加厚加绒保暖 仿羊羔绒内里 纯色摇粒绒背心 加绒保暖马甲 户外休闲背心
+2026-11-23 09:26:01 [INFO ] [deepseek_web]   Retry [31]: 男士西装马甲 闪光星纹图案 纽扣 V领 西装马甲 男士 修身版型 无袖 常规衣长 派对演出 舞台表演
+2026-11-23 09:26:24 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:26:48 [INFO ] [deepseek_web]     OK: 男士西装马甲背心 修身无袖V领带纽扣 常规衣长 闪光星纹图案 派对演出舞台表演马甲 男士西装背心 节日礼服背心
+2026-11-23 09:26:51 [INFO ] [deepseek_web]   Retry [32]: 男士亮片印花西装马甲 密集亮片全覆盖装饰 V领 纽扣 西装马甲 男士 修身版型 无袖 常规衣长 多色可选 节日派对 舞台
+2026-11-23 09:27:17 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:27:35 [INFO ] [deepseek_web]     OK: 男士西装马甲背心 修身无袖V领带纽扣 派对演出舞台表演 密集亮片装饰马甲 闪光礼服西装背心
+2026-11-23 09:27:38 [INFO ] [deepseek_web]   Retry [33]: 男士麂皮绒印花西马甲 斑驳印花纹理 双排六粒纽扣门襟 带口袋 平驳领 西装马甲 男士 常规版型 无袖 麂皮绒质感
+2026-11-23 09:27:59 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:28:23 [INFO ] [deepseek_web]     OK: 男士西装马甲背心 常规版型无袖 平驳领带纽扣带口袋 麂皮绒质感斑驳印花马甲 复古西服背心 商务正装马夹
+2026-11-23 09:28:26 [INFO ] [deepseek_web]   Retry [37]: 德国啤酒节男士斜纹布外套背心马甲 斜纹布纹理 左胸矩形嵌线装饰 双侧下方矩形嵌线装饰 立领 纽扣 传统马甲背心 男士 修
+2026-11-23 09:28:49 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:29:07 [INFO ] [deepseek_web]     OK: 男士啤酒节马甲背心 修身无袖西装马甲 立领带纽扣带口袋 斜纹布纹理传统马夹 巴伐利亚民族风西服背心
+2026-11-23 09:29:10 [INFO ] [deepseek_web]   Retry [43]: 男士慕尼黑啤酒节背心印花马甲 领口花卉刺绣装饰 带口袋 立领 纽扣 西装马甲 男士 修身版型 无袖 常规衣长 啤酒节
+2026-11-23 09:29:42 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:30:00 [INFO ] [deepseek_web]     OK: 男士慕尼黑啤酒节马甲背心 修身无袖常规衣长西装马甲 立领带纽扣带口袋 领口花卉刺绣印花传统马夹 巴伐利亚民族风礼服背心
+2026-11-23 09:30:03 [INFO ] [deepseek_web]   Retry [46]: 男士印花背心单排扣西装马甲 抽象几何印花图案 纽扣 西装马甲 男士 修身版型 V领 无袖 平直肩线 常规衣长 带口袋
+2026-11-23 09:30:23 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-23 09:30:41 [INFO ] [deepseek_web]     OK: 男士西装马甲背心 修身无袖V领带纽扣带口袋 抽象几何印花马甲 常规衣长平直肩线西服背心 休闲正装马甲
+2026-11-23 09:30:44 [INFO ] [deepseek_web] ==================================================
+2026-11-23 09:30:44 [INFO ] [deepseek_web] Done: 48 success, 0 failed → optimize_title
+2026-11-23 09:30:45 [INFO ] [title_workflow] Optimization complete: 48 titles
+2026-11-23 09:30:48 [ERROR] [jenkins] [1/1] Title optimization FAILED (code 1)
+2026-11-23 09:30:48 [ERROR] [jenkins] Pipeline aborted.
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 站点: de；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\de
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 输入: hotwords_20261116.txt (1000 条)
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 
+2026-11-23 09:39:48 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 保留: 76 (品类 59 / 属性 17)
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 丢弃: 924 (黑名单 178 / 无关 746)
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{98d3402c-7b74-4126-a5f0-908cadfa3ebf}\Temp\tmpzw9ntep5\de-legacy.txt
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 
+2026-11-23 09:39:48 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   griswold trikot	169667	品类:trikot
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   baumwoll pullover für damen	167455	品类:pullover;属性:damen
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   amedspor trikot	157321	品类:trikot
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   samtband beige	154242	属性:samt
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   thermoarbeitshosen herren	154062	品类:hose;属性:thermo,herren
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   staubhandschuhe waschbar	153717	品类:bh
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   thermostrümpfe damen	152124	属性:thermo
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   ana d rocky	150830	品类:rock
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   lange thermo unterhose herren	147175	品类:hose;属性:thermo,herren
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   skechers slip on boots damen	144878	品类:slip;属性:damen
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   gefütterte jogginghose kinder	144446	品类:hose,jogginghose;属性:gefüttert,kinder
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   thermo umstandsleggings winter	140653	品类:leggings;属性:thermo,winter
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   thermoskanne kinder schule	138204	属性:thermo
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   heizhose herren	136906	品类:hose;属性:herren
+2026-11-23 09:39:48 [INFO ] [clean_fashion]   winterarbeitshosen herren	135726	品类:hose;属性:winter,herren
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 站点: fr；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\fr
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 输入: hotwords_20261116.txt (1000 条)
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 
+2026-11-23 09:39:49 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 保留: 71 (品类 62 / 属性 9)
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 丢弃: 929 (黑名单 58 / 无关 871)
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{98d3402c-7b74-4126-a5f0-908cadfa3ebf}\Temp\tmpzw9ntep5\fr-legacy.txt
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 
+2026-11-23 09:39:49 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   ensemble string soutien-gorge	154293	品类:ensemble
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   manteau femme hiver doudoune	151233	品类:manteau,doudoune;属性:hiver,femme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   gilet chauffant enfant 12 ans	143451	品类:gilet;属性:enfant
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   tshirt thermique homme	136658	品类:tshirt;属性:homme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   doudoune sans manche homme chauffante	127790	品类:doudoune;属性:homme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   calendrier de l'avent culotte	119758	品类:culotte
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   bonnet laine femme	118946	属性:laine
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   batterie externe pour veste chauffante	118793	品类:veste
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   manteau femme chaud	118688	品类:manteau;属性:femme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   jean luc melenchon	117992	品类:jean
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   doudoune ado garcon	116189	品类:doudoune
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   pull noel femme rigolo	116113	品类:pull;属性:femme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   stylo retouche cuir	113524	属性:cuir
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   manteau femme mi-long hiver	112953	品类:manteau;属性:hiver,femme
+2026-11-23 09:39:49 [INFO ] [clean_fashion]   gant polaire homme	112345	属性:polaire
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 站点: de；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\de
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 输入: hotwords_20261116.txt (1000 条)
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 
+2026-11-23 09:46:45 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 保留: 76 (品类 59 / 属性 17)
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 丢弃: 924 (黑名单 178 / 无关 746)
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{8aacd862-c47a-4f11-868f-ec3f393547a6}\Temp\tmp9ip18s1t\de-reference.txt
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 
+2026-11-23 09:46:45 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   griswold trikot	169667	品类:trikot
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   baumwoll pullover für damen	167455	品类:pullover;属性:damen
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   amedspor trikot	157321	品类:trikot
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   samtband beige	154242	属性:samt
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   thermoarbeitshosen herren	154062	品类:hose;属性:thermo,herren
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   staubhandschuhe waschbar	153717	品类:bh
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   thermostrümpfe damen	152124	属性:thermo
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   ana d rocky	150830	品类:rock
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   lange thermo unterhose herren	147175	品类:hose;属性:thermo,herren
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   skechers slip on boots damen	144878	品类:slip;属性:damen
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   gefütterte jogginghose kinder	144446	品类:hose,jogginghose;属性:gefüttert,kinder
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   thermo umstandsleggings winter	140653	品类:leggings;属性:thermo,winter
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   thermoskanne kinder schule	138204	属性:thermo
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   heizhose herren	136906	品类:hose;属性:herren
+2026-11-23 09:46:45 [INFO ] [clean_fashion]   winterarbeitshosen herren	135726	品类:hose;属性:winter,herren
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 站点: fr；词根目录: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\fr
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 词根表: 品类 49 / 强属性 16 / 弱属性 31 / 黑名单 28 / 品牌 18
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 输入: hotwords_20261116.txt (1000 条)
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 
+2026-11-23 09:46:46 [INFO ] [clean_fashion] === 清洗报告 ===
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 保留: 71 (品类 62 / 属性 9)
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 丢弃: 929 (黑名单 58 / 无关 871)
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 输出: C:\Users\xmzj\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{8aacd862-c47a-4f11-868f-ec3f393547a6}\Temp\tmp9ip18s1t\fr-reference.txt
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 
+2026-11-23 09:46:46 [INFO ] [clean_fashion] 保留示例(Top15):
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   ensemble string soutien-gorge	154293	品类:ensemble
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   manteau femme hiver doudoune	151233	品类:manteau,doudoune;属性:hiver,femme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   gilet chauffant enfant 12 ans	143451	品类:gilet;属性:enfant
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   tshirt thermique homme	136658	品类:tshirt;属性:homme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   doudoune sans manche homme chauffante	127790	品类:doudoune;属性:homme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   calendrier de l'avent culotte	119758	品类:culotte
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   bonnet laine femme	118946	属性:laine
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   batterie externe pour veste chauffante	118793	品类:veste
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   manteau femme chaud	118688	品类:manteau;属性:femme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   jean luc melenchon	117992	品类:jean
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   doudoune ado garcon	116189	品类:doudoune
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   pull noel femme rigolo	116113	品类:pull;属性:femme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   stylo retouche cuir	113524	属性:cuir
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   manteau femme mi-long hiver	112953	品类:manteau;属性:hiver,femme
+2026-11-23 09:46:46 [INFO ] [clean_fashion]   gant polaire homme	112345	属性:polaire
+2026-11-23 11:00:52 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-23 11:01:42 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-23 11:30:37 [ERROR] [huTools.sizeColorTool.size_color] fixture write error
+2026-11-23 11:30:37 [INFO ] [jenkins] ==================================================
+2026-11-23 11:30:37 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-23 11:30:37 [INFO ] [jenkins] ==================================================
+2026-11-23 11:30:37 [INFO ] [jenkins] 
+2026-11-23 11:30:37 [INFO ] [jenkins] [1/1] Color re-processing
+2026-11-23 11:30:37 [INFO ] [jenkins] ------------------------------
+2026-11-23 11:30:37 [INFO ] [jenkins] [1/1] Color re-processing OK
+2026-11-23 11:30:37 [INFO ] [jenkins] 
+2026-11-23 11:30:37 [INFO ] [jenkins] ==================================================
+2026-11-23 11:30:37 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-23 11:30:37 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-23 11:30:37 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-23 11:30:37 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-23 16:44:02 [INFO ] [jenkins] ==================================================
+2026-11-23 16:44:02 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-23 16:44:02 [INFO ] [jenkins] ==================================================
+2026-11-23 16:44:02 [INFO ] [jenkins] 
+2026-11-23 16:44:02 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-23 16:44:02 [INFO ] [jenkins] ------------------------------
+2026-11-23 16:44:02 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-23 16:44:02 [INFO ] [jenkins] 
+2026-11-23 16:44:02 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-23 16:44:02 [INFO ] [jenkins] ------------------------------
+2026-11-23 16:44:02 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-23 16:44:02 [INFO ] [preprocess] [11.19.xlsx]
+2026-11-23 16:44:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-23 16:44:04 [INFO ] [pipeline] [1/1] remove_header
+2026-11-23 16:44:18 [INFO ] [preprocess]   [11.19.xlsx] Sheet [Sheet0]: header row removed
+2026-11-23 16:44:18 [INFO ] [pipeline] Pipeline complete
+2026-11-23 16:44:19 [INFO ] [preprocess] Preprocessing complete
+2026-11-23 16:44:20 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-23 16:44:20 [INFO ] [jenkins] 
+2026-11-23 16:44:20 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-23 16:44:20 [INFO ] [jenkins] ------------------------------
+2026-11-23 16:44:20 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261123_7d796efd.log
+2026-11-23 16:44:20 [INFO ] [main] Found 1 file(s):
+2026-11-23 16:44:20 [INFO ] [main]   11.19.xlsx
+2026-11-23 16:44:20 [INFO ] [main] Output: 11.19v1_fr.xlsx
+2026-11-23 16:44:20 [INFO ] [main] ==================================================
+2026-11-23 16:44:20 [INFO ] [main] Single file, copied
+2026-11-23 16:44:21 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-23 16:44:21 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-23 16:44:21 [INFO ] [pipeline]   Sheet [Sheet0] selected; 1 other sheet(s) skipped
+2026-11-23 16:44:21 [INFO ] [pipeline] [2/12] validate
+2026-11-23 16:44:21 [INFO ] [pipeline]   Validated: 3066 rows, 27 cols (expect ~32)
+2026-11-23 16:44:21 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-23 16:44:22 [INFO ] [pipeline]   Backed up 3225 images
+2026-11-23 16:44:22 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-23 16:44:22 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-23 16:44:22 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-23 16:44:22 [INFO ] [pipeline]   Restored 3225 images with adjusted anchors
+2026-11-23 16:44:22 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-23 16:44:22 [INFO ] [pipeline]   Column 2: 3066 IDs generated
+2026-11-23 16:44:22 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-23 16:44:22 [INFO ] [pipeline]   Column 3: 3066 cells filled
+2026-11-23 16:44:22 [INFO ] [pipeline] [6/12] map_colors
+2026-11-23 16:44:22 [INFO ] [pipeline]   Colors J -> K: 3018 cells mapped, 48 rows skipped (col A has fill), 0 no match
+2026-11-23 16:44:22 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-23 16:44:22 [INFO ] [pipeline]   Size column L: 1184 mapped, 48 cleared (col A has fill), 1834 no match
+2026-11-23 16:44:22 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-23 16:44:22 [INFO ] [pipeline]   Mirror copy: 17126 cells written
+2026-11-23 16:44:22 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-23 16:44:22 [INFO ] [pipeline]   Price source M -> AS: 3066 cells copied
+2026-11-23 16:44:22 [INFO ] [pipeline] [10/12] calc_price
+2026-11-23 16:44:22 [INFO ] [pipeline]   Price columns AT-AW: 3066 rows calculated
+2026-11-23 16:44:22 [INFO ] [pipeline] [11/12] format_cells
+2026-11-23 16:44:23 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-23 16:44:23 [INFO ] [pipeline]   Formatted 3066 rows: h=50, align=left/center
+2026-11-23 16:44:23 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-23 16:44:23 [INFO ] [pipeline] [12/12] finalize
+2026-11-23 16:44:23 [INFO ] [pipeline]   Done: 3066 rows x 49 cols (target: 49)
+2026-11-23 16:44:23 [INFO ] [pipeline] Pipeline complete
+2026-11-23 16:44:26 [INFO ] [main] Size: 3066 rows x 49 cols
+2026-11-23 16:44:26 [INFO ] [main] ==================================================
+2026-11-23 16:44:26 [INFO ] [main] Done: 11.19v1_fr.xlsx
+2026-11-23 16:44:26 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-23 16:44:26 [INFO ] [jenkins] 
+2026-11-23 16:44:26 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-23 16:44:26 [INFO ] [jenkins] ------------------------------
+2026-11-23 16:44:26 [INFO ] [color_size_main] Source: 11.19v1_fr.xlsx
+2026-11-23 16:44:28 [INFO ] [color_size_main] Extracted: 3018 data lines + 48 separators → check_.txt
+2026-11-23 16:44:28 [INFO ] [color_size_main] Running: process.py
+2026-11-23 16:44:28 [INFO ] [color_size_deal] Groups: 48, lines: 3018 (file: 3066)
+2026-11-23 16:44:28 [INFO ] [color_size_deal] Prefixes: {'01': 583, '02': 263, '03': 155, '04': 104, '05': 63, '06': 41}
+2026-11-23 16:44:28 [INFO ] [color_size_deal] Done.
+2026-11-23 16:44:28 [INFO ] [color_size_main] Processing write-back: 3066 lines
+2026-11-23 16:44:32 [INFO ] [color_size_main] Write-back: 1257 written, 1809 unchanged → 11.19v1_fr.xlsx
+2026-11-23 16:44:32 [INFO ] [color_size_main] Done.
+2026-11-23 16:44:32 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-23 16:44:32 [INFO ] [jenkins] 
+2026-11-23 16:44:32 [INFO ] [jenkins] ==================================================
+2026-11-23 16:44:32 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-23 16:44:32 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-23 16:44:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-23 16:44:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-23 16:44:32 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-23 18:34:39 [INFO ] [jenkins] ==================================================
+2026-11-23 18:34:39 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-11-23 18:34:39 [INFO ] [jenkins] ==================================================
+2026-11-23 18:34:39 [INFO ] [jenkins] 
+2026-11-23 18:34:39 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-11-23 18:34:39 [INFO ] [jenkins] ------------------------------
+2026-11-23 18:34:39 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-11-23 18:34:39 [INFO ] [jenkins] 
+2026-11-23 18:34:39 [INFO ] [jenkins] [2/4] Preprocess
+2026-11-23 18:34:39 [INFO ] [jenkins] ------------------------------
+2026-11-23 18:34:39 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-11-23 18:34:39 [INFO ] [preprocess] [Mz.xlsx]
+2026-11-23 18:34:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-11-23 18:34:40 [INFO ] [pipeline] [1/1] remove_header
+2026-11-23 18:34:42 [INFO ] [preprocess]   [Mz.xlsx] Sheet [Sheet0]: header row removed
+2026-11-23 18:34:42 [INFO ] [pipeline] Pipeline complete
+2026-11-23 18:34:43 [INFO ] [preprocess] Preprocessing complete
+2026-11-23 18:34:43 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-11-23 18:34:43 [INFO ] [jenkins] 
+2026-11-23 18:34:43 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-11-23 18:34:43 [INFO ] [jenkins] ------------------------------
+2026-11-23 18:34:43 [INFO ] [main] Log file: D:\FW20260325\besskyproject\dealExcel_refactoring\logs\26.11.log\20261123_7d796efd.log
+2026-11-23 18:34:43 [INFO ] [main] Found 1 file(s):
+2026-11-23 18:34:43 [INFO ] [main]   Mz.xlsx
+2026-11-23 18:34:43 [INFO ] [main] Output: 11.20v1_fr.xlsx
+2026-11-23 18:34:43 [INFO ] [main] ==================================================
+2026-11-23 18:34:43 [INFO ] [main] Single file, copied
+2026-11-23 18:34:44 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-11-23 18:34:44 [INFO ] [pipeline] [1/12] select_first_sheet
+2026-11-23 18:34:44 [INFO ] [pipeline]   Sheet [Sheet0] selected; 0 other sheet(s) skipped
+2026-11-23 18:34:44 [INFO ] [pipeline] [2/12] validate
+2026-11-23 18:34:44 [INFO ] [pipeline]   Validated: 337 rows, 27 cols (expect ~32)
+2026-11-23 18:34:44 [INFO ] [pipeline] [3/12] insert_columns
+2026-11-23 18:34:44 [INFO ] [pipeline]   Backed up 2326 images
+2026-11-23 18:34:44 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-11-23 18:34:44 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-11-23 18:34:44 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-11-23 18:34:44 [INFO ] [pipeline]   Restored 2326 images with adjusted anchors
+2026-11-23 18:34:44 [INFO ] [pipeline] [4/12] assign_ids
+2026-11-23 18:34:44 [INFO ] [pipeline]   Column 2: 337 IDs generated
+2026-11-23 18:34:44 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-11-23 18:34:44 [INFO ] [pipeline]   Column 3: 337 cells filled
+2026-11-23 18:34:44 [INFO ] [pipeline] [6/12] map_colors
+2026-11-23 18:34:44 [INFO ] [pipeline]   Colors J -> K: 301 cells mapped, 34 rows skipped (col A has fill), 2 no match
+2026-11-23 18:34:44 [INFO ] [pipeline] [7/12] size_mapping
+2026-11-23 18:34:44 [INFO ] [pipeline]   Size column L: 301 mapped, 34 cleared (col A has fill), 2 no match
+2026-11-23 18:34:44 [INFO ] [pipeline] [8/12] copy_mirror
+2026-11-23 18:34:44 [INFO ] [pipeline]   Mirror copy: 1989 cells written
+2026-11-23 18:34:44 [INFO ] [pipeline] [9/12] mirror_category
+2026-11-23 18:34:44 [INFO ] [pipeline]   Price source M -> AS: 337 cells copied
+2026-11-23 18:34:44 [INFO ] [pipeline] [10/12] calc_price
+2026-11-23 18:34:44 [INFO ] [pipeline]   Price columns AT-AW: 337 rows calculated
+2026-11-23 18:34:44 [INFO ] [pipeline] [11/12] format_cells
+2026-11-23 18:34:44 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-11-23 18:34:44 [INFO ] [pipeline]   Formatted 337 rows: h=50, align=left/center
+2026-11-23 18:34:44 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-11-23 18:34:44 [INFO ] [pipeline] [12/12] finalize
+2026-11-23 18:34:44 [INFO ] [pipeline]   Done: 337 rows x 49 cols (target: 49)
+2026-11-23 18:34:44 [INFO ] [pipeline] Pipeline complete
+2026-11-23 18:34:45 [INFO ] [main] Size: 337 rows x 49 cols
+2026-11-23 18:34:45 [INFO ] [main] ==================================================
+2026-11-23 18:34:45 [INFO ] [main] Done: 11.20v1_fr.xlsx
+2026-11-23 18:34:45 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-11-23 18:34:45 [INFO ] [jenkins] 
+2026-11-23 18:34:45 [INFO ] [jenkins] [4/4] Color re-processing
+2026-11-23 18:34:45 [INFO ] [jenkins] ------------------------------
+2026-11-23 18:34:45 [INFO ] [color_size_main] Source: 11.20v1_fr.xlsx
+2026-11-23 18:34:46 [INFO ] [color_size_main] Extracted: 301 data lines + 36 separators → check_.txt
+2026-11-23 18:34:46 [INFO ] [color_size_main] Running: process.py
+2026-11-23 18:34:46 [INFO ] [color_size_deal] Groups: 35, lines: 301 (file: 337)
+2026-11-23 18:34:46 [INFO ] [color_size_deal] Prefixes: {'01': 56, '02': 12, '03': 6, '04': 4, '05': 2, '06': 1}
+2026-11-23 18:34:46 [INFO ] [color_size_deal] Done.
+2026-11-23 18:34:46 [INFO ] [color_size_main] Processing write-back: 337 lines
+2026-11-23 18:34:48 [INFO ] [color_size_main] Write-back: 117 written, 220 unchanged → 11.20v1_fr.xlsx
+2026-11-23 18:34:48 [INFO ] [color_size_main] Done.
+2026-11-23 18:34:48 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-11-23 18:34:48 [INFO ] [jenkins] 
+2026-11-23 18:34:48 [INFO ] [jenkins] ==================================================
+2026-11-23 18:34:48 [INFO ] [jenkins] All 4 steps completed successfully
+2026-11-23 18:34:48 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-23 18:34:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-23 18:34:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-23 18:34:48 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

@@ -1,0 +1,329 @@
+2026-08-20 17:37:17 [INFO ] [jenkins] ==================================================
+2026-08-20 17:37:17 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-20 17:37:17 [INFO ] [jenkins] ==================================================
+2026-08-20 17:37:17 [INFO ] [jenkins] 
+2026-08-20 17:37:17 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-20 17:37:17 [INFO ] [jenkins] ------------------------------
+2026-08-20 17:37:17 [INFO ] [title_workflow] Source: 8.19v1.xlsx
+2026-08-20 17:37:18 [INFO ] [title_workflow] Extracted 43 titles + 43 links
+2026-08-20 17:37:18 [INFO ] [title_workflow] Written: origin_title (43) + origin_link (43)
+2026-08-20 17:37:18 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-20 17:37:18 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-20 17:37:19 [INFO ] [deepseek_web] Opening DeepSeek web (43 titles)...
+2026-08-20 17:37:19 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-20 17:37:24 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-20 17:37:32 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-20 17:37:32 [INFO ] [deepseek_web] [1/43] 男士时尚休闲T恤趣味印花长袖T恤上衣
+2026-08-20 17:37:36 [INFO ] [deepseek_web]   Downloaded: 0001_5970509218138614583633.jpg
+2026-08-20 17:37:36 [INFO ] [deepseek_web]   Prefetching next image (2/43)
+2026-08-20 17:37:36 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-20 17:37:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:37:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:38:06 [INFO ] [deepseek_web]   Response: 男士长袖T恤圆领3D仿真肌肉印花趣味搞怪上衣弹性修身休闲打底衫
+2026-08-20 17:38:06 [INFO ] [deepseek_web]   Deleted: 0001_5970509218138614583633.jpg
+2026-08-20 17:38:11 [INFO ] [deepseek_web] [2/43] 男士时尚休闲士印花长袖袖POLO衫衬上衣
+2026-08-20 17:38:11 [INFO ] [deepseek_web]   Downloaded: 0002_2830808273901417706874.jpg
+2026-08-20 17:38:11 [INFO ] [deepseek_web]   Prefetching next image (3/43)
+2026-08-20 17:38:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:38:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:38:40 [INFO ] [deepseek_web]   Response: 男士长袖Polo衫翻领单排纽扣开襟黑粉迷幻流体漩涡印花顺滑面料修身休闲运动上衣
+2026-08-20 17:38:40 [INFO ] [deepseek_web]   Deleted: 0002_2830808273901417706874.jpg
+2026-08-20 17:38:45 [INFO ] [deepseek_web] [3/43] 男士时尚休闲衬衫万圣节印花长袖翻领衬衫上衣
+2026-08-20 17:38:45 [INFO ] [deepseek_web]   Downloaded: 0003_1560220331241799721033.jpg
+2026-08-20 17:38:45 [INFO ] [deepseek_web]   Prefetching next image (4/43)
+2026-08-20 17:38:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:38:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:39:20 [INFO ] [deepseek_web]   Response: 男士休闲长袖翻领衬衫万圣节骷髅头古堡南瓜灯3D印花单排纽扣开襟左胸贴袋做旧水洗质感上衣
+2026-08-20 17:39:20 [INFO ] [deepseek_web]   Deleted: 0003_1560220331241799721033.jpg
+2026-08-20 17:39:25 [INFO ] [deepseek_web] [4/43] 男士时尚休闲T恤条纹印花长袖T恤上衣
+2026-08-20 17:39:25 [INFO ] [deepseek_web]   Downloaded: 0004_6331126347011117868516.jpg
+2026-08-20 17:39:25 [INFO ] [deepseek_web]   Prefetching next image (5/43)
+2026-08-20 17:39:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:39:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:39:54 [INFO ] [deepseek_web]   Response: 男士长袖T恤圆领不规则波浪条纹印花常规宽松版型多色可选休闲日常百搭上衣
+2026-08-20 17:39:54 [INFO ] [deepseek_web]   Deleted: 0004_6331126347011117868516.jpg
+2026-08-20 17:39:59 [INFO ] [deepseek_web] [5/43] 男士纯色针织复古弹力肌理纹休闲宽松百搭长袖亨利T恤
+2026-08-20 17:39:59 [INFO ] [deepseek_web]   Downloaded: 0005_0940335287082432435123.jpg
+2026-08-20 17:39:59 [INFO ] [deepseek_web]   Prefetching next image (6/43)
+2026-08-20 17:39:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:40:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:40:29 [INFO ] [deepseek_web]   Response: 男士长袖亨利T恤纯色针织复古麻花肌理纹半开襟纽扣门襟弹力面料罗纹袖口常规版型多色可选休闲百搭上衣
+2026-08-20 17:40:29 [INFO ] [deepseek_web]   Deleted: 0005_0940335287082432435123.jpg
+2026-08-20 17:40:34 [INFO ] [deepseek_web] [6/43] 男士小华夫格小西装领开衫单排扣双口袋商务休闲长袖外套
+2026-08-20 17:40:34 [INFO ] [deepseek_web]   Downloaded: 0006_7511032241327248522189.jpg
+2026-08-20 17:40:34 [INFO ] [deepseek_web]   Prefetching next image (7/43)
+2026-08-20 17:40:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:40:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:41:03 [INFO ] [deepseek_web]   Response: 男士小华夫格翻领单排扣双前贴袋纯色长袖开衫外套商务休闲针织上衣
+2026-08-20 17:41:03 [INFO ] [deepseek_web]   Deleted: 0006_7511032241327248522189.jpg
+2026-08-20 17:41:08 [INFO ] [deepseek_web] [7/43] 男士圆领休闲假两件纽扣亨利长袖T恤
+2026-08-20 17:41:08 [INFO ] [deepseek_web]   Downloaded: 0007_4581053319539052463945.jpg
+2026-08-20 17:41:08 [INFO ] [deepseek_web]   Prefetching next image (8/43)
+2026-08-20 17:41:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:41:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:41:37 [INFO ] [deepseek_web]   Response: 男士圆领长袖T恤假两件撞色领边半开襟三粒扣亨利衫纯色混纺休闲打底上衣
+2026-08-20 17:41:37 [INFO ] [deepseek_web]   Deleted: 0007_4581053319539052463945.jpg
+2026-08-20 17:41:42 [INFO ] [deepseek_web] [8/43] 万圣节男士血迹印花纽扣衬衫装长袖上衣衬衫
+2026-08-20 17:41:42 [INFO ] [deepseek_web]   Downloaded: 0008_4591202434267081310615.jpg
+2026-08-20 17:41:42 [INFO ] [deepseek_web]   Prefetching next image (9/43)
+2026-08-20 17:41:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:41:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:42:11 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫万圣节做旧血迹晕染印花黑色滴落字母Problem Gelöst单排纽扣开襟休闲派对上衣
+2026-08-20 17:42:11 [INFO ] [deepseek_web]   Deleted: 0008_4591202434267081310615.jpg
+2026-08-20 17:42:16 [INFO ] [deepseek_web] [9/43] 男士条纹长袖衬衫宽松水洗薄款开衫带口袋外套
+2026-08-20 17:42:16 [INFO ] [deepseek_web]   Downloaded: 0009_4211030203715260163750.jpg
+2026-08-20 17:42:16 [INFO ] [deepseek_web]   Prefetching next image (10/43)
+2026-08-20 17:42:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:42:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:42:46 [INFO ] [deepseek_web]   Response: 男士休闲长袖翻领衬衫宽松水洗薄款竖条纹单排纽扣开襟左胸贴袋上衣
+2026-08-20 17:42:46 [INFO ] [deepseek_web]   Deleted: 0009_4211030203715260163750.jpg
+2026-08-20 17:42:51 [INFO ] [deepseek_web] [10/43] 成人万圣节3D印花翻领长袖衬衫男士3D印花衬衫
+2026-08-20 17:42:51 [INFO ] [deepseek_web]   Downloaded: 0010_2591144207251413971952.jpg
+2026-08-20 17:42:51 [INFO ] [deepseek_web]   Prefetching next image (11/43)
+2026-08-20 17:42:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:43:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:43:20 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫万圣节3D全幅印花黑灰骷髅头兜帽心形手势暗纹单排纽扣开襟派对上衣
+2026-08-20 17:43:20 [INFO ] [deepseek_web]   Deleted: 0010_2591144207251413971952.jpg
+2026-08-20 17:43:25 [INFO ] [deepseek_web] [11/43] 成人万圣节3D印花翻领长袖衬衫男士3D印花衬衫
+2026-08-20 17:43:25 [INFO ] [deepseek_web]   Downloaded: 0011_3770157066641516797652.jpg
+2026-08-20 17:43:25 [INFO ] [deepseek_web]   Prefetching next image (12/43)
+2026-08-20 17:43:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:43:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:43:54 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫万圣节3D全幅印花破洞僵尸头图案裂痕血迹飞溅单排纽扣开襟派对上衣
+2026-08-20 17:43:54 [INFO ] [deepseek_web]   Deleted: 0011_3770157066641516797652.jpg
+2026-08-20 17:43:59 [INFO ] [deepseek_web] [12/43] 男士秋冬复古宽松潮牌趣味猫咪刺绣长袖衬衫上衣
+2026-08-20 17:43:59 [INFO ] [deepseek_web]   Downloaded: 0012_1140146302356297885882.jpg
+2026-08-20 17:43:59 [INFO ] [deepseek_web]   Prefetching next image (13/43)
+2026-08-20 17:43:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:44:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:44:39 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫单排纽扣开襟前胸多姿态猫咪刺绣图案多色可选休闲上衣
+2026-08-20 17:44:39 [INFO ] [deepseek_web]   Deleted: 0012_1140146302356297885882.jpg
+2026-08-20 17:44:44 [INFO ] [deepseek_web] [13/43] 男士时尚休闲缎面丝滑拼色长袖衬衫
+2026-08-20 17:44:44 [INFO ] [deepseek_web]   Downloaded: 0013_5640442455442214587408.jpg
+2026-08-20 17:44:44 [INFO ] [deepseek_web]   Prefetching next image (14/43)
+2026-08-20 17:44:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:44:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:45:13 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫缎面丝滑拼色撞色领口门襟袖口单排纽扣开襟商务休闲上衣
+2026-08-20 17:45:13 [INFO ] [deepseek_web]   Deleted: 0013_5640442455442214587408.jpg
+2026-08-20 17:45:18 [INFO ] [deepseek_web] [14/43] 男士复古棉麻休闲宽松长袖衬衫
+2026-08-20 17:45:18 [INFO ] [deepseek_web]   Downloaded: 0014_8830916515243059794275.jpg
+2026-08-20 17:45:18 [INFO ] [deepseek_web]   Prefetching next image (15/43)
+2026-08-20 17:45:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:45:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:45:47 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫棉麻质感单排纽扣左胸贴袋纯色多色可选休闲度假风上衣
+2026-08-20 17:45:47 [INFO ] [deepseek_web]   Deleted: 0014_8830916515243059794275.jpg
+2026-08-20 17:45:52 [INFO ] [deepseek_web] [15/43] 欧美民族风春秋新款印花V领长袖男衬衣
+2026-08-20 17:45:52 [INFO ] [deepseek_web]   Downloaded: 0015_6300234387901817492702.jpg
+2026-08-20 17:45:52 [INFO ] [deepseek_web]   Prefetching next image (16/43)
+2026-08-20 17:45:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:46:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:46:22 [INFO ] [deepseek_web]   Response: 男士V领长袖套头衫亚麻质感民族风几何花卉刺绣领口袖口宽松度假休闲上衣
+2026-08-20 17:46:22 [INFO ] [deepseek_web]   Deleted: 0015_6300234387901817492702.jpg
+2026-08-20 17:46:27 [INFO ] [deepseek_web] [16/43] 2026男士3D印花骷髅纽扣衬衫装长袖上衣街头潮流衬衫
+2026-08-20 17:46:27 [INFO ] [deepseek_web]   Downloaded: 0016_5930345216427676537082.jpg
+2026-08-20 17:46:27 [INFO ] [deepseek_web]   Prefetching next image (17/43)
+2026-08-20 17:46:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:46:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:46:57 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫3D全幅印花西部风格骷髅头黑帽流苏链条图案单排纽扣开襟休闲上衣
+2026-08-20 17:46:57 [INFO ] [deepseek_web]   Deleted: 0016_5930345216427676537082.jpg
+2026-08-20 17:47:02 [INFO ] [deepseek_web] [17/43] 2026男士3D印花骷髅纽扣衬衫装长袖上衣街头潮流衬衫
+2026-08-20 17:47:02 [INFO ] [deepseek_web]   Downloaded: 0017_7241042000839965657678.jpg
+2026-08-20 17:47:02 [INFO ] [deepseek_web]   Prefetching next image (18/43)
+2026-08-20 17:47:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:47:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:47:31 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫3D全幅印花万圣节南瓜灯蝙蝠枯树图案单排纽扣开襟休闲上衣
+2026-08-20 17:47:31 [INFO ] [deepseek_web]   Deleted: 0017_7241042000839965657678.jpg
+2026-08-20 17:47:36 [INFO ] [deepseek_web] [18/43] 男士格子口袋长袖翻领纽扣衬衫
+2026-08-20 17:47:36 [INFO ] [deepseek_web]   Downloaded: 0018_5950256094304011472419.jpg
+2026-08-20 17:47:36 [INFO ] [deepseek_web]   Prefetching next image (19/43)
+2026-08-20 17:47:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:47:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:48:05 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫经典大格纹单排纽扣开襟左胸单贴袋常规版型多色可选休闲上衣
+2026-08-20 17:48:05 [INFO ] [deepseek_web]   Deleted: 0018_5950256094304011472419.jpg
+2026-08-20 17:48:10 [INFO ] [deepseek_web] [19/43] 男士复古圆领长袖亨利彩棉纽扣T恤上衣
+2026-08-20 17:48:10 [INFO ] [deepseek_web]   Downloaded: 0019_6710813208555018596921.jpg
+2026-08-20 17:48:10 [INFO ] [deepseek_web]   Prefetching next image (20/43)
+2026-08-20 17:48:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:48:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:48:39 [INFO ] [deepseek_web]   Response: 男士长袖T恤亨利领半开襟纽扣撞色领边竹节棉花灰混色肌理休闲修身打底衫
+2026-08-20 17:48:39 [INFO ] [deepseek_web]   Deleted: 0019_6710813208555018596921.jpg
+2026-08-20 17:48:44 [INFO ] [deepseek_web] [20/43] 男士简约格子翻领口袋纽扣长袖衬衫
+2026-08-20 17:48:44 [INFO ] [deepseek_web]   Downloaded: 0020_6640504336904547943104.jpg
+2026-08-20 17:48:44 [INFO ] [deepseek_web]   Prefetching next image (21/43)
+2026-08-20 17:48:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:48:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:49:16 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫细格纹单排纽扣开襟左胸贴袋简约休闲上衣
+2026-08-20 17:49:16 [INFO ] [deepseek_web]   Deleted: 0020_6640504336904547943104.jpg
+2026-08-20 17:49:21 [INFO ] [deepseek_web] [21/43] 北欧神话维京热门印花男士长袖连帽衬衫
+2026-08-20 17:49:21 [INFO ] [deepseek_web]   Downloaded: 0021_3721049098929773234995.jpg
+2026-08-20 17:49:21 [INFO ] [deepseek_web]   Prefetching next image (22/43)
+2026-08-20 17:49:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:49:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:49:50 [INFO ] [deepseek_web]   Response: 男士宽松长袖连帽衬衫半开襟纽扣抽绳复古金色维京图腾植物印花休闲上衣
+2026-08-20 17:49:50 [INFO ] [deepseek_web]   Deleted: 0021_3721049098929773234995.jpg
+2026-08-20 17:49:55 [INFO ] [deepseek_web] [22/43] 男士啤酒节长袖衬衫啤酒节特色印花上衣
+2026-08-20 17:49:55 [INFO ] [deepseek_web]   Downloaded: 0022_7531103218331212379743.jpg
+2026-08-20 17:49:55 [INFO ] [deepseek_web]   Prefetching next image (23/43)
+2026-08-20 17:49:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:50:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:50:25 [INFO ] [deepseek_web]   Response: 男士啤酒节长袖翻领衬衫单排纽扣门襟细褶中央公鹿头与啤酒花印花袖口刺绣呼应巴伐利亚节日派对上衣
+2026-08-20 17:50:25 [INFO ] [deepseek_web]   Deleted: 0022_7531103218331212379743.jpg
+2026-08-20 17:50:30 [INFO ] [deepseek_web] [23/43] 男士复古纯色衬衫新款宽松百搭设计感小众长袖开衫外套
+2026-08-20 17:50:30 [INFO ] [deepseek_web]   Downloaded: 0023_0220216206737212124030.jpg
+2026-08-20 17:50:30 [INFO ] [deepseek_web]   Prefetching next image (24/43)
+2026-08-20 17:50:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:50:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:51:00 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领纯色衬衫单排纽扣开襟左胸翻盖口袋胸前拼接育克工装休闲上衣
+2026-08-20 17:51:00 [INFO ] [deepseek_web]   Deleted: 0023_0220216206737212124030.jpg
+2026-08-20 17:51:05 [INFO ] [deepseek_web] [24/43] 男士冰丝网眼拉链长袖
+2026-08-20 17:51:05 [INFO ] [deepseek_web]   Downloaded: 0024_5551105308491038439034.jpg
+2026-08-20 17:51:05 [INFO ] [deepseek_web]   Prefetching next image (25/43)
+2026-08-20 17:51:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:51:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:51:34 [INFO ] [deepseek_web]   Response: 男士长袖翻领T恤冰丝网眼华夫格肌理半开襟拉链纯色罗纹袖口休闲商务打底上衣
+2026-08-20 17:51:34 [INFO ] [deepseek_web]   Deleted: 0024_5551105308491038439034.jpg
+2026-08-20 17:51:39 [INFO ] [deepseek_web] [25/43] 男士啤酒节印花长袖衬衫
+2026-08-20 17:51:39 [INFO ] [deepseek_web]   Downloaded: 0025_4081052559881184474128.jpg
+2026-08-20 17:51:39 [INFO ] [deepseek_web]   Prefetching next image (26/43)
+2026-08-20 17:51:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:51:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:52:14 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫单排纽扣开襟胸前风琴褶压褶对称绿色藤蔓叶印花袖口点缀啤酒节休闲节日上衣
+2026-08-20 17:52:14 [INFO ] [deepseek_web]   Deleted: 0025_4081052559881184474128.jpg
+2026-08-20 17:52:19 [INFO ] [deepseek_web] [26/43] 北欧神话维京热门印花男士长袖连帽衬衫
+2026-08-20 17:52:19 [INFO ] [deepseek_web]   Downloaded: 0026_3460755541606426393115.jpg
+2026-08-20 17:52:19 [INFO ] [deepseek_web]   Prefetching next image (27/43)
+2026-08-20 17:52:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:52:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:52:48 [INFO ] [deepseek_web]   Response: 男士宽松长袖连帽衬衫抽绳半开襟纽扣做旧水洗晕染底色北欧维京符文图腾印花亚麻质感休闲上衣
+2026-08-20 17:52:48 [INFO ] [deepseek_web]   Deleted: 0026_3460755541606426393115.jpg
+2026-08-20 17:52:53 [INFO ] [deepseek_web] [27/43] 北欧神话维京热门印花男士长袖连帽衬衫
+2026-08-20 17:52:53 [INFO ] [deepseek_web]   Downloaded: 0027_2000924154484018531675.jpg
+2026-08-20 17:52:53 [INFO ] [deepseek_web]   Prefetching next image (28/43)
+2026-08-20 17:52:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:53:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:53:22 [INFO ] [deepseek_web]   Response: 男士长袖连帽衬衫抽绳半开襟纽扣做旧水洗灰色底色黑色乌鸦植物印花宽松休闲上衣
+2026-08-20 17:53:22 [INFO ] [deepseek_web]   Deleted: 0027_2000924154484018531675.jpg
+2026-08-20 17:53:27 [INFO ] [deepseek_web] [28/43] 男士啤酒节长袖衬衫啤酒节特色印花上衣
+2026-08-20 17:53:27 [INFO ] [deepseek_web]   Downloaded: 0028_5041059524981211319676.jpg
+2026-08-20 17:53:27 [INFO ] [deepseek_web]   Prefetching next image (29/43)
+2026-08-20 17:53:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:53:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:53:57 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫对称啤酒杯藤蔓印花中央风琴褶单排纽扣开襟袖口点缀巴伐利亚啤酒节派对休闲上衣
+2026-08-20 17:53:57 [INFO ] [deepseek_web]   Deleted: 0028_5041059524981211319676.jpg
+2026-08-20 17:54:02 [INFO ] [deepseek_web] [29/43] 男士万圣节南瓜印花长袖华夫格T恤
+2026-08-20 17:54:02 [INFO ] [deepseek_web]   Downloaded: 0029_9600320151042317014568.jpg
+2026-08-20 17:54:02 [INFO ] [deepseek_web]   Prefetching next image (30/43)
+2026-08-20 17:54:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:54:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:54:31 [INFO ] [deepseek_web]   Response: 男士圆领长袖华夫格T恤拼色黑袖万圣节南瓜骷髅满印Happy Halloween字母蜘蛛网图案多色可选休闲上衣
+2026-08-20 17:54:31 [INFO ] [deepseek_web]   Deleted: 0029_9600320151042317014568.jpg
+2026-08-20 17:54:36 [INFO ] [deepseek_web] [30/43] 男士纯色竹节麻复古长袖衬衫
+2026-08-20 17:54:36 [INFO ] [deepseek_web]   Downloaded: 0030_6590936355435110516362.jpg
+2026-08-20 17:54:36 [INFO ] [deepseek_web]   Prefetching next image (31/43)
+2026-08-20 17:54:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:54:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:55:05 [INFO ] [deepseek_web]   Response: 男士长袖衬衫小立领V字开襟胸前交叉系带抽绳纯色竹节麻肌理宽松复古休闲度假上衣
+2026-08-20 17:55:05 [INFO ] [deepseek_web]   Deleted: 0030_6590936355435110516362.jpg
+2026-08-20 17:55:10 [INFO ] [deepseek_web] [31/43] 男士黑白条纹海盗文化主题复古长袖海盗衬衫
+2026-08-20 17:55:10 [INFO ] [deepseek_web]   Downloaded: 0031_8081110334031213849070.jpg
+2026-08-20 17:55:10 [INFO ] [deepseek_web]   Prefetching next image (32/43)
+2026-08-20 17:55:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:55:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:55:41 [INFO ] [deepseek_web]   Response: 男士长袖小立领衬衫V领交叉系带抽绳黑白横条纹宽松复古海盗风上衣
+2026-08-20 17:55:41 [INFO ] [deepseek_web]   Deleted: 0031_8081110334031213849070.jpg
+2026-08-20 17:55:46 [INFO ] [deepseek_web] [32/43] 春秋季外贸新款男士宽松落肩袖华夫格大码长袖T恤男装休闲套头外套
+2026-08-20 17:55:46 [INFO ] [deepseek_web]   Downloaded: 0032_9621046530279466087093.jpg
+2026-08-20 17:55:46 [INFO ] [deepseek_web]   Prefetching next image (33/43)
+2026-08-20 17:55:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:55:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:56:15 [INFO ] [deepseek_web]   Response: 男士宽松落肩袖华夫格半开襟纽扣领长袖T恤大码休闲套头上衣
+2026-08-20 17:56:15 [INFO ] [deepseek_web]   Deleted: 0032_9621046530279466087093.jpg
+2026-08-20 17:56:20 [INFO ] [deepseek_web] [33/43] 男士时尚休闲衬衫万圣节印花长袖翻领衬衫上衣
+2026-08-20 17:56:20 [INFO ] [deepseek_web]   Downloaded: 0033_8180427555228143981910.jpg
+2026-08-20 17:56:20 [INFO ] [deepseek_web]   Prefetching next image (34/43)
+2026-08-20 17:56:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:56:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:56:49 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫万圣节青黑骷髅头满印单排纽扣开襟左胸贴袋休闲上衣
+2026-08-20 17:56:49 [INFO ] [deepseek_web]   Deleted: 0033_8180427555228143981910.jpg
+2026-08-20 17:56:54 [INFO ] [deepseek_web] [34/43] 男士啤酒节印花长袖衬衫
+2026-08-20 17:56:54 [INFO ] [deepseek_web]   Downloaded: 0034_5191049452511017702669.jpg
+2026-08-20 17:56:54 [INFO ] [deepseek_web]   Prefetching next image (35/43)
+2026-08-20 17:56:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:57:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:57:23 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫中央风琴褶对称啤酒杯酒花印花单排纽扣开襟啤酒节休闲派对上衣
+2026-08-20 17:57:23 [INFO ] [deepseek_web]   Deleted: 0034_5191049452511017702669.jpg
+2026-08-20 17:57:28 [INFO ] [deepseek_web] [35/43] 男士纯色薄款复古海浪皱纹透气超弹长袖翻领衬衫
+2026-08-20 17:57:28 [INFO ] [deepseek_web]   Downloaded: 0035_2780427394793219743053.jpg
+2026-08-20 17:57:28 [INFO ] [deepseek_web]   Prefetching next image (36/43)
+2026-08-20 17:57:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:57:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:57:58 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫纯色轻薄透气超弹力复古立体海浪褶皱肌理单排纽扣开襟休闲商务上衣
+2026-08-20 17:57:58 [INFO ] [deepseek_web]   Deleted: 0035_2780427394793219743053.jpg
+2026-08-20 17:58:03 [INFO ] [deepseek_web] [36/43] 男士纯色亚麻四季长袖翻领宽松纽扣棉麻开衫衬衣
+2026-08-20 17:58:03 [INFO ] [deepseek_web]   Downloaded: 0036_6221019400405315519914.jpg
+2026-08-20 17:58:03 [INFO ] [deepseek_web]   Prefetching next image (37/43)
+2026-08-20 17:58:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:58:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:58:35 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫纯色棉麻质感单排深色纽扣开襟前胸垂直风琴褶休闲度假上衣
+2026-08-20 17:58:35 [INFO ] [deepseek_web]   Deleted: 0036_6221019400405315519914.jpg
+2026-08-20 17:58:40 [INFO ] [deepseek_web] [37/43] 男士翻领纽扣长袖格子宽松休闲衬衫
+2026-08-20 17:58:40 [INFO ] [deepseek_web]   Downloaded: 0037_4141051171925991653742.jpg
+2026-08-20 17:58:40 [INFO ] [deepseek_web]   Prefetching next image (38/43)
+2026-08-20 17:58:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:58:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:59:09 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫细格纹单排纽扣开襟左胸贴袋休闲百搭上衣
+2026-08-20 17:59:09 [INFO ] [deepseek_web]   Deleted: 0037_4141051171925991653742.jpg
+2026-08-20 17:59:14 [INFO ] [deepseek_web] [38/43] 男士宽松格子复古翻领长袖休闲开衫衬衣
+2026-08-20 17:59:14 [INFO ] [deepseek_web]   Downloaded: 0038_8661102438486117904180.jpg
+2026-08-20 17:59:14 [INFO ] [deepseek_web]   Prefetching next image (39/43)
+2026-08-20 17:59:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 17:59:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 17:59:46 [INFO ] [deepseek_web]   Response: 男士宽松长袖翻领衬衫经典格纹单排纽扣开襟双胸贴袋休闲上衣
+2026-08-20 17:59:46 [INFO ] [deepseek_web]   Deleted: 0038_8661102438486117904180.jpg
+2026-08-20 17:59:51 [INFO ] [deepseek_web] [39/43] 万圣节男士3D印花南瓜骷髅纽扣衬衫装长袖上衣衬衫
+2026-08-20 17:59:51 [INFO ] [deepseek_web]   Downloaded: 0039_3230433095072495167552.jpg
+2026-08-20 17:59:51 [INFO ] [deepseek_web]   Prefetching next image (40/43)
+2026-08-20 17:59:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 18:00:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 18:00:20 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫3D全幅印花万圣节南瓜灯鬼屋枯树图案单排纽扣开襟休闲派对上衣
+2026-08-20 18:00:20 [INFO ] [deepseek_web]   Deleted: 0039_3230433095072495167552.jpg
+2026-08-20 18:00:25 [INFO ] [deepseek_web] [40/43] 男装耐磨男士长袖式衬衫百搭抗皱纯色商务上衣
+2026-08-20 18:00:25 [INFO ] [deepseek_web]   Downloaded: 0040_0761046200565943672410.jpg
+2026-08-20 18:00:25 [INFO ] [deepseek_web]   Prefetching next image (41/43)
+2026-08-20 18:00:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 18:00:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 18:00:54 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫纯色单排纽扣开襟左胸单贴袋抗皱顺滑面料商务休闲修身通勤上衣
+2026-08-20 18:00:54 [INFO ] [deepseek_web]   Deleted: 0040_0761046200565943672410.jpg
+2026-08-20 18:00:59 [INFO ] [deepseek_web] [41/43] 休闲纯色翻领polo长袖上衣户外百搭潮流男上衣
+2026-08-20 18:00:59 [INFO ] [deepseek_web]   Downloaded: 0041_7580452560863312521205.jpg
+2026-08-20 18:00:59 [INFO ] [deepseek_web]   Prefetching next image (42/43)
+2026-08-20 18:00:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 18:01:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 18:01:29 [INFO ] [deepseek_web]   Response: 男士长袖翻领Polo衫半拉链开襟纯色华夫格肌理左胸撞色贴袋休闲户外高尔夫上衣
+2026-08-20 18:01:29 [INFO ] [deepseek_web]   Deleted: 0041_7580452560863312521205.jpg
+2026-08-20 18:01:34 [INFO ] [deepseek_web] [42/43] 男士德国巴伐利亚啤酒节格子印花绑带长袖上衣
+2026-08-20 18:01:34 [INFO ] [deepseek_web]   Downloaded: 0042_3051015416263718759273.jpg
+2026-08-20 18:01:34 [INFO ] [deepseek_web]   Prefetching next image (43/43)
+2026-08-20 18:01:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 18:01:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 18:02:03 [INFO ] [deepseek_web]   Response: 男士长袖小立领上衣德国巴伐利亚啤酒节经典黑白格子印花胸前交叉绑带抽绳休闲节日派对衬衫
+2026-08-20 18:02:03 [INFO ] [deepseek_web]   Deleted: 0042_3051015416263718759273.jpg
+2026-08-20 18:02:08 [INFO ] [deepseek_web] [43/43] 男士长袖纯色衬衫奢华竹节麻衬衫透气优雅夏威夷风情翻领长袖衬衫（不要成分标）
+2026-08-20 18:02:08 [INFO ] [deepseek_web]   Downloaded: 0043_5831007538245613008844.jpg
+2026-08-20 18:02:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-20 18:02:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-20 18:02:37 [INFO ] [deepseek_web]   Response: 男士长袖翻领衬衫纯色竹节麻肌理单排纽扣开襟左胸单贴袋透气轻薄休闲度假风上衣
+2026-08-20 18:02:37 [INFO ] [deepseek_web]   Deleted: 0043_5831007538245613008844.jpg
+2026-08-20 18:02:37 [INFO ] [deepseek_web] ==================================================
+2026-08-20 18:02:37 [INFO ] [deepseek_web] Done: 43 success, 0 failed → optimize_title
+2026-08-20 18:02:37 [INFO ] [title_workflow] Optimization complete: 43 titles
+2026-08-20 18:02:41 [INFO ] [title_workflow] Written 43 optimized titles to column H (8)
+2026-08-20 18:02:41 [INFO ] [title_workflow] Done: 8.19v1.xlsx
+2026-08-20 18:02:41 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-20 18:02:41 [INFO ] [jenkins] 
+2026-08-20 18:02:41 [INFO ] [jenkins] ==================================================
+2026-08-20 18:02:41 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-20 18:02:41 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-20 18:02:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-20 18:02:41 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-20 18:02:41 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

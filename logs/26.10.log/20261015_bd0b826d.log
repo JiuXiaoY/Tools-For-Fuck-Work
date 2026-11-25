@@ -1,0 +1,1323 @@
+2026-10-15 16:58:39 [INFO ] [jenkins] ==================================================
+2026-10-15 16:58:39 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-15 16:58:39 [INFO ] [jenkins] ==================================================
+2026-10-15 16:58:39 [INFO ] [jenkins] 
+2026-10-15 16:58:39 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-15 16:58:39 [INFO ] [jenkins] ------------------------------
+2026-10-15 16:58:39 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-15 16:58:39 [INFO ] [jenkins] 
+2026-10-15 16:58:39 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-15 16:58:39 [INFO ] [jenkins] ------------------------------
+2026-10-15 16:58:39 [INFO ] [preprocess] Preprocessing 27 file(s) with 1 step(s)
+2026-10-15 16:58:39 [INFO ] [preprocess] [product_20261015020005763.xlsx]
+2026-10-15 16:58:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:40 [INFO ] [preprocess]   [product_20261015020005763.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:40 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:41 [INFO ] [preprocess] [product_20261015020244679.xlsx]
+2026-10-15 16:58:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:42 [INFO ] [preprocess]   [product_20261015020244679.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:42 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:42 [INFO ] [preprocess] [product_20261015020326390.xlsx]
+2026-10-15 16:58:42 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:42 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:45 [INFO ] [preprocess]   [product_20261015020326390.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:45 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:45 [INFO ] [preprocess] [product_20261015021643928.xlsx]
+2026-10-15 16:58:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:45 [INFO ] [preprocess]   [product_20261015021643928.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:45 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:45 [INFO ] [preprocess] [product_20261015021916323.xlsx]
+2026-10-15 16:58:45 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:45 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:46 [INFO ] [preprocess]   [product_20261015021916323.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:46 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:46 [INFO ] [preprocess] [product_20261015022944441.xlsx]
+2026-10-15 16:58:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:46 [INFO ] [preprocess]   [product_20261015022944441.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:46 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:46 [INFO ] [preprocess] [product_20261015023557039.xlsx]
+2026-10-15 16:58:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:46 [INFO ] [preprocess]   [product_20261015023557039.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:46 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:46 [INFO ] [preprocess] [product_20261015023856870.xlsx]
+2026-10-15 16:58:46 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:46 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:47 [INFO ] [preprocess]   [product_20261015023856870.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:47 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:47 [INFO ] [preprocess] [product_20261015024009616.xlsx]
+2026-10-15 16:58:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:47 [INFO ] [preprocess]   [product_20261015024009616.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:47 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:47 [INFO ] [preprocess] [product_20261015024358521.xlsx]
+2026-10-15 16:58:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:47 [INFO ] [preprocess]   [product_20261015024358521.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:47 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:47 [INFO ] [preprocess] [product_20261015030229046.xlsx]
+2026-10-15 16:58:47 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:47 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:48 [INFO ] [preprocess]   [product_20261015030229046.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:48 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:48 [INFO ] [preprocess] [product_20261015030430283.xlsx]
+2026-10-15 16:58:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:48 [INFO ] [preprocess]   [product_20261015030430283.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:48 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:48 [INFO ] [preprocess] [product_20261015030813633.xlsx]
+2026-10-15 16:58:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:48 [INFO ] [preprocess]   [product_20261015030813633.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:48 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:48 [INFO ] [preprocess] [product_20261015031109693.xlsx]
+2026-10-15 16:58:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:48 [INFO ] [preprocess]   [product_20261015031109693.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:48 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:48 [INFO ] [preprocess] [product_20261015031520918.xlsx]
+2026-10-15 16:58:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:49 [INFO ] [preprocess]   [product_20261015031520918.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:49 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:49 [INFO ] [preprocess] [product_20261015034357844.xlsx]
+2026-10-15 16:58:49 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:49 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:49 [INFO ] [preprocess]   [product_20261015034357844.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:49 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:49 [INFO ] [preprocess] [product_20261015034524663.xlsx]
+2026-10-15 16:58:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:50 [INFO ] [preprocess]   [product_20261015034524663.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:50 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:50 [INFO ] [preprocess] [product_20261015034803487.xlsx]
+2026-10-15 16:58:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:50 [INFO ] [preprocess]   [product_20261015034803487.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:50 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:50 [INFO ] [preprocess] [product_20261015035448704.xlsx]
+2026-10-15 16:58:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:50 [INFO ] [preprocess]   [product_20261015035448704.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:50 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:50 [INFO ] [preprocess] [product_20261015035941542.xlsx]
+2026-10-15 16:58:50 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:50 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:50 [INFO ] [preprocess]   [product_20261015035941542.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:50 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:50 [INFO ] [preprocess] [product_20261015043151244.xlsx]
+2026-10-15 16:58:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:51 [INFO ] [preprocess]   [product_20261015043151244.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:51 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:51 [INFO ] [preprocess] [product_20261015043502161.xlsx]
+2026-10-15 16:58:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:51 [INFO ] [preprocess]   [product_20261015043502161.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:51 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:51 [INFO ] [preprocess] [product_20261015043921030.xlsx]
+2026-10-15 16:58:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:52 [INFO ] [preprocess]   [product_20261015043921030.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:52 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:52 [INFO ] [preprocess] [product_20261015044444375.xlsx]
+2026-10-15 16:58:52 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:52 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:53 [INFO ] [preprocess]   [product_20261015044444375.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:53 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:53 [INFO ] [preprocess] [product_20261015045309295.xlsx]
+2026-10-15 16:58:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:53 [INFO ] [preprocess]   [product_20261015045309295.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:53 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:53 [INFO ] [preprocess] [product_20261015045529895.xlsx]
+2026-10-15 16:58:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:53 [INFO ] [preprocess]   [product_20261015045529895.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:53 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:53 [INFO ] [preprocess] [product_20261015045608175.xlsx]
+2026-10-15 16:58:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 16:58:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 16:58:54 [INFO ] [preprocess]   [product_20261015045608175.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 16:58:54 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:58:54 [INFO ] [preprocess] Preprocessing complete
+2026-10-15 16:58:54 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-15 16:58:54 [INFO ] [jenkins] 
+2026-10-15 16:58:54 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-15 16:58:54 [INFO ] [jenkins] ------------------------------
+2026-10-15 16:58:55 [INFO ] [main] Log file: 20261015_bd0b826d.log
+2026-10-15 16:58:55 [INFO ] [main] Found 27 file(s):
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015020005763.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015020244679.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015020326390.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015021643928.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015021916323.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015022944441.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015023557039.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015023856870.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015024009616.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015024358521.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015030229046.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015030430283.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015030813633.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015031109693.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015031520918.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015034357844.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015034524663.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015034803487.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015035448704.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015035941542.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015043151244.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015043502161.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015043921030.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015044444375.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015045309295.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015045529895.xlsx
+2026-10-15 16:58:55 [INFO ] [main]   product_20261015045608175.xlsx
+2026-10-15 16:58:55 [INFO ] [main] Output: 10.10v1_de.xlsx
+2026-10-15 16:58:55 [INFO ] [main] ==================================================
+2026-10-15 16:59:08 [INFO ] [main] Merged 27 files, 6560 images total
+2026-10-15 16:59:08 [INFO ] [main] Deleted 27 source file(s)
+2026-10-15 16:59:09 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-15 16:59:09 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_2]: 252 rows, 586 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_3]: 639 rows, 1358 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_4]: 16 rows, 40 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_5]: 125 rows, 325 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_6]: 44 rows, 95 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_7]: 29 rows, 83 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_8]: 87 rows, 157 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_9]: 94 rows, 228 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_10]: 7 rows, 25 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_11]: 63 rows, 119 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_12]: 19 rows, 48 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_13]: 43 rows, 81 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_14]: 71 rows, 184 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_15]: 23 rows, 104 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_16]: 163 rows, 280 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_17]: 25 rows, 56 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_18]: 25 rows, 50 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_19]: 107 rows, 269 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_20]: 13 rows, 40 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_21]: 49 rows, 102 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_22]: 25 rows, 77 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_23]: 195 rows, 493 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_24]: 170 rows, 321 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_25]: 13 rows, 30 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_26]: 97 rows, 216 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Sheet [Sheet0_27]: 175 rows, 353 images
+2026-10-15 16:59:19 [INFO ] [pipeline]   Merged 27 sheets -> 1, 2569 data rows, 5720 images
+2026-10-15 16:59:19 [INFO ] [pipeline] [2/12] validate
+2026-10-15 16:59:19 [INFO ] [pipeline]   Validated: 2923 rows, 27 cols (expect ~32)
+2026-10-15 16:59:19 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-15 16:59:20 [INFO ] [pipeline]   Backed up 6560 images
+2026-10-15 16:59:20 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-15 16:59:20 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-15 16:59:20 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-15 16:59:20 [INFO ] [pipeline]   Restored 6560 images with adjusted anchors
+2026-10-15 16:59:20 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-15 16:59:20 [INFO ] [pipeline]   Column 2: 2923 IDs generated
+2026-10-15 16:59:20 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-15 16:59:20 [INFO ] [pipeline]   Column 3: 2923 cells filled
+2026-10-15 16:59:20 [INFO ] [pipeline] [6/12] map_colors
+2026-10-15 16:59:20 [INFO ] [pipeline]   Colors J -> K: 2803 cells mapped, 104 rows skipped (col A has fill), 16 no match (recorded)
+2026-10-15 16:59:20 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-15 16:59:20 [INFO ] [pipeline]   Size column L: 2791 mapped, 104 cleared (col A has fill), 28 no match (recorded)
+2026-10-15 16:59:20 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-15 16:59:20 [INFO ] [pipeline]   Mirror copy: 16821 cells written
+2026-10-15 16:59:20 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-15 16:59:20 [INFO ] [pipeline]   Price source M -> AS: 2923 cells copied
+2026-10-15 16:59:20 [INFO ] [pipeline] [10/12] calc_price
+2026-10-15 16:59:20 [INFO ] [pipeline]   Price columns AT-AW: 2923 rows calculated
+2026-10-15 16:59:20 [INFO ] [pipeline] [11/12] format_cells
+2026-10-15 16:59:21 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-15 16:59:21 [INFO ] [pipeline]   Formatted 2923 rows: h=50, align=left/center
+2026-10-15 16:59:21 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-15 16:59:21 [INFO ] [pipeline] [12/12] finalize
+2026-10-15 16:59:21 [INFO ] [pipeline]   Done: 2923 rows x 49 cols (target: 49)
+2026-10-15 16:59:21 [INFO ] [pipeline] Pipeline complete
+2026-10-15 16:59:24 [INFO ] [main] Size: 2923 rows x 49 cols
+2026-10-15 16:59:24 [INFO ] [main] ==================================================
+2026-10-15 16:59:24 [INFO ] [main] Done: 10.10v1_de.xlsx
+2026-10-15 16:59:24 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-15 16:59:24 [INFO ] [jenkins] 
+2026-10-15 16:59:24 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-15 16:59:24 [INFO ] [jenkins] ------------------------------
+2026-10-15 16:59:24 [INFO ] [color_size_main] Source: 10.10v1_de.xlsx
+2026-10-15 16:59:27 [INFO ] [color_size_main] Extracted: 2803 data lines + 120 separators → check_.txt
+2026-10-15 16:59:27 [INFO ] [color_size_main] Running: process.py
+2026-10-15 16:59:27 [INFO ] [color_size_deal] Groups: 105, lines: 2803 (file: 2923)
+2026-10-15 16:59:27 [INFO ] [color_size_deal] Prefixes: {'01': 201, '02': 108, '03': 18, '04': 18, '05': 18, '06': 12, '07': 6}
+2026-10-15 16:59:27 [INFO ] [color_size_deal] Done.
+2026-10-15 16:59:27 [INFO ] [color_size_main] Processing write-back: 2923 lines
+2026-10-15 16:59:33 [INFO ] [color_size_main] Write-back: 501 written, 2422 unchanged → 10.10v1_de.xlsx
+2026-10-15 16:59:33 [INFO ] [color_size_main] Done.
+2026-10-15 16:59:33 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-15 16:59:33 [INFO ] [jenkins] 
+2026-10-15 16:59:33 [INFO ] [jenkins] ==================================================
+2026-10-15 16:59:33 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-15 16:59:33 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-15 16:59:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-15 16:59:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-15 16:59:33 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-15 17:15:51 [INFO ] [jenkins] ==================================================
+2026-10-15 17:15:51 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-15 17:15:51 [INFO ] [jenkins] ==================================================
+2026-10-15 17:15:51 [INFO ] [jenkins] 
+2026-10-15 17:15:51 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-15 17:15:51 [INFO ] [jenkins] ------------------------------
+2026-10-15 17:15:51 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-15 17:15:51 [INFO ] [jenkins] 
+2026-10-15 17:15:51 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-15 17:15:51 [INFO ] [jenkins] ------------------------------
+2026-10-15 17:15:51 [INFO ] [preprocess] Preprocessing 27 file(s) with 1 step(s)
+2026-10-15 17:15:51 [INFO ] [preprocess] [product_20261015020005763.xlsx]
+2026-10-15 17:15:51 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:51 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:52 [INFO ] [preprocess]   [product_20261015020005763.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:52 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:53 [INFO ] [preprocess] [product_20261015020244679.xlsx]
+2026-10-15 17:15:53 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:53 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:54 [INFO ] [preprocess]   [product_20261015020244679.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:54 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:54 [INFO ] [preprocess] [product_20261015020326390.xlsx]
+2026-10-15 17:15:54 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:54 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:57 [INFO ] [preprocess]   [product_20261015020326390.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:57 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:57 [INFO ] [preprocess] [product_20261015021643928.xlsx]
+2026-10-15 17:15:57 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:57 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:57 [INFO ] [preprocess]   [product_20261015021643928.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:57 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:57 [INFO ] [preprocess] [product_20261015021916323.xlsx]
+2026-10-15 17:15:57 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:57 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:58 [INFO ] [preprocess]   [product_20261015021916323.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:58 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:58 [INFO ] [preprocess] [product_20261015022944441.xlsx]
+2026-10-15 17:15:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:58 [INFO ] [preprocess]   [product_20261015022944441.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:58 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:58 [INFO ] [preprocess] [product_20261015023557039.xlsx]
+2026-10-15 17:15:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:58 [INFO ] [preprocess]   [product_20261015023557039.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:58 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:58 [INFO ] [preprocess] [product_20261015023856870.xlsx]
+2026-10-15 17:15:58 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:58 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:59 [INFO ] [preprocess]   [product_20261015023856870.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:59 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:59 [INFO ] [preprocess] [product_20261015024009616.xlsx]
+2026-10-15 17:15:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:59 [INFO ] [preprocess]   [product_20261015024009616.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:59 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:59 [INFO ] [preprocess] [product_20261015024358521.xlsx]
+2026-10-15 17:15:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:15:59 [INFO ] [preprocess]   [product_20261015024358521.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:15:59 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:15:59 [INFO ] [preprocess] [product_20261015030229046.xlsx]
+2026-10-15 17:15:59 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:15:59 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:00 [INFO ] [preprocess]   [product_20261015030229046.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:00 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:00 [INFO ] [preprocess] [product_20261015030430283.xlsx]
+2026-10-15 17:16:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:00 [INFO ] [preprocess]   [product_20261015030430283.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:00 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:00 [INFO ] [preprocess] [product_20261015030813633.xlsx]
+2026-10-15 17:16:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:00 [INFO ] [preprocess]   [product_20261015030813633.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:00 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:00 [INFO ] [preprocess] [product_20261015031109693.xlsx]
+2026-10-15 17:16:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:00 [INFO ] [preprocess]   [product_20261015031109693.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:00 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:00 [INFO ] [preprocess] [product_20261015031520918.xlsx]
+2026-10-15 17:16:00 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:00 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:00 [INFO ] [preprocess]   [product_20261015031520918.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:00 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:01 [INFO ] [preprocess] [product_20261015034357844.xlsx]
+2026-10-15 17:16:01 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:01 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:01 [INFO ] [preprocess]   [product_20261015034357844.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:01 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:01 [INFO ] [preprocess] [product_20261015034524663.xlsx]
+2026-10-15 17:16:01 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:01 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:01 [INFO ] [preprocess]   [product_20261015034524663.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:01 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:01 [INFO ] [preprocess] [product_20261015034803487.xlsx]
+2026-10-15 17:16:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:02 [INFO ] [preprocess]   [product_20261015034803487.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:02 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:02 [INFO ] [preprocess] [product_20261015035448704.xlsx]
+2026-10-15 17:16:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:02 [INFO ] [preprocess]   [product_20261015035448704.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:02 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:02 [INFO ] [preprocess] [product_20261015035941542.xlsx]
+2026-10-15 17:16:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:02 [INFO ] [preprocess]   [product_20261015035941542.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:02 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:02 [INFO ] [preprocess] [product_20261015043151244.xlsx]
+2026-10-15 17:16:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:03 [INFO ] [preprocess]   [product_20261015043151244.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:03 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:03 [INFO ] [preprocess] [product_20261015043502161.xlsx]
+2026-10-15 17:16:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:03 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:03 [INFO ] [preprocess]   [product_20261015043502161.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:03 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:03 [INFO ] [preprocess] [product_20261015043921030.xlsx]
+2026-10-15 17:16:03 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:03 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:04 [INFO ] [preprocess]   [product_20261015043921030.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:04 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:04 [INFO ] [preprocess] [product_20261015044444375.xlsx]
+2026-10-15 17:16:04 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:04 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:05 [INFO ] [preprocess]   [product_20261015044444375.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:05 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:05 [INFO ] [preprocess] [product_20261015045309295.xlsx]
+2026-10-15 17:16:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:05 [INFO ] [preprocess]   [product_20261015045309295.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:05 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:05 [INFO ] [preprocess] [product_20261015045529895.xlsx]
+2026-10-15 17:16:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:05 [INFO ] [preprocess]   [product_20261015045529895.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:05 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:05 [INFO ] [preprocess] [product_20261015045608175.xlsx]
+2026-10-15 17:16:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-15 17:16:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-15 17:16:06 [INFO ] [preprocess]   [product_20261015045608175.xlsx] Sheet [Sheet0]: header row removed
+2026-10-15 17:16:06 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:06 [INFO ] [preprocess] Preprocessing complete
+2026-10-15 17:16:06 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-15 17:16:06 [INFO ] [jenkins] 
+2026-10-15 17:16:06 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-15 17:16:06 [INFO ] [jenkins] ------------------------------
+2026-10-15 17:16:06 [INFO ] [main] Log file: 20261015_bd0b826d.log
+2026-10-15 17:16:06 [INFO ] [main] Found 27 file(s):
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015020005763.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015020244679.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015020326390.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015021643928.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015021916323.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015022944441.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015023557039.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015023856870.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015024009616.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015024358521.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015030229046.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015030430283.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015030813633.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015031109693.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015031520918.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015034357844.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015034524663.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015034803487.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015035448704.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015035941542.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015043151244.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015043502161.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015043921030.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015044444375.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015045309295.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015045529895.xlsx
+2026-10-15 17:16:06 [INFO ] [main]   product_20261015045608175.xlsx
+2026-10-15 17:16:06 [INFO ] [main] Output: 10.10v1_fr.xlsx
+2026-10-15 17:16:06 [INFO ] [main] ==================================================
+2026-10-15 17:16:21 [INFO ] [main] Merged 27 files, 6560 images total
+2026-10-15 17:16:21 [INFO ] [main] Deleted 27 source file(s)
+2026-10-15 17:16:23 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-15 17:16:23 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_2]: 252 rows, 586 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_3]: 639 rows, 1358 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_4]: 16 rows, 40 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_5]: 125 rows, 325 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_6]: 44 rows, 95 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_7]: 29 rows, 83 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_8]: 87 rows, 157 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_9]: 94 rows, 228 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_10]: 7 rows, 25 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_11]: 63 rows, 119 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_12]: 19 rows, 48 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_13]: 43 rows, 81 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_14]: 71 rows, 184 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_15]: 23 rows, 104 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_16]: 163 rows, 280 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_17]: 25 rows, 56 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_18]: 25 rows, 50 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_19]: 107 rows, 269 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_20]: 13 rows, 40 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_21]: 49 rows, 102 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_22]: 25 rows, 77 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_23]: 195 rows, 493 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_24]: 170 rows, 321 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_25]: 13 rows, 30 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_26]: 97 rows, 216 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Sheet [Sheet0_27]: 175 rows, 353 images
+2026-10-15 17:16:35 [INFO ] [pipeline]   Merged 27 sheets -> 1, 2569 data rows, 5720 images
+2026-10-15 17:16:35 [INFO ] [pipeline] [2/12] validate
+2026-10-15 17:16:35 [INFO ] [pipeline]   Validated: 2923 rows, 27 cols (expect ~32)
+2026-10-15 17:16:35 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-15 17:16:36 [INFO ] [pipeline]   Backed up 6560 images
+2026-10-15 17:16:36 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-15 17:16:36 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-15 17:16:36 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-15 17:16:36 [INFO ] [pipeline]   Restored 6560 images with adjusted anchors
+2026-10-15 17:16:36 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-15 17:16:36 [INFO ] [pipeline]   Column 2: 2923 IDs generated
+2026-10-15 17:16:36 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-15 17:16:36 [INFO ] [pipeline]   Column 3: 2923 cells filled
+2026-10-15 17:16:36 [INFO ] [pipeline] [6/12] map_colors
+2026-10-15 17:16:36 [INFO ] [pipeline]   Colors J -> K: 2803 cells mapped, 104 rows skipped (col A has fill), 16 no match (recorded)
+2026-10-15 17:16:36 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-15 17:16:36 [INFO ] [pipeline]   Size column L: 2791 mapped, 104 cleared (col A has fill), 28 no match (recorded)
+2026-10-15 17:16:36 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-15 17:16:36 [INFO ] [pipeline]   Mirror copy: 16821 cells written
+2026-10-15 17:16:36 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-15 17:16:36 [INFO ] [pipeline]   Price source M -> AS: 2923 cells copied
+2026-10-15 17:16:36 [INFO ] [pipeline] [10/12] calc_price
+2026-10-15 17:16:36 [INFO ] [pipeline]   Price columns AT-AW: 2923 rows calculated
+2026-10-15 17:16:36 [INFO ] [pipeline] [11/12] format_cells
+2026-10-15 17:16:37 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-15 17:16:37 [INFO ] [pipeline]   Formatted 2923 rows: h=50, align=left/center
+2026-10-15 17:16:37 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-15 17:16:37 [INFO ] [pipeline] [12/12] finalize
+2026-10-15 17:16:37 [INFO ] [pipeline]   Done: 2923 rows x 49 cols (target: 49)
+2026-10-15 17:16:37 [INFO ] [pipeline] Pipeline complete
+2026-10-15 17:16:40 [INFO ] [main] Size: 2923 rows x 49 cols
+2026-10-15 17:16:40 [INFO ] [main] ==================================================
+2026-10-15 17:16:40 [INFO ] [main] Done: 10.10v1_fr.xlsx
+2026-10-15 17:16:41 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-15 17:16:41 [INFO ] [jenkins] 
+2026-10-15 17:16:41 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-15 17:16:41 [INFO ] [jenkins] ------------------------------
+2026-10-15 17:16:41 [INFO ] [color_size_main] Source: 10.10v1_fr.xlsx
+2026-10-15 17:16:46 [INFO ] [color_size_main] Extracted: 2803 data lines + 120 separators → check_.txt
+2026-10-15 17:16:46 [INFO ] [color_size_main] Running: process.py
+2026-10-15 17:16:46 [INFO ] [color_size_deal] Groups: 105, lines: 2803 (file: 2923)
+2026-10-15 17:16:46 [INFO ] [color_size_deal] Prefixes: {'01': 201, '02': 108, '03': 18, '04': 18, '05': 18, '06': 12, '07': 6}
+2026-10-15 17:16:46 [INFO ] [color_size_deal] Done.
+2026-10-15 17:16:46 [INFO ] [color_size_main] Processing write-back: 2923 lines
+2026-10-15 17:16:53 [INFO ] [color_size_main] Write-back: 501 written, 2422 unchanged → 10.10v1_fr.xlsx
+2026-10-15 17:16:53 [INFO ] [color_size_main] Done.
+2026-10-15 17:16:53 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-15 17:16:53 [INFO ] [jenkins] 
+2026-10-15 17:16:53 [INFO ] [jenkins] ==================================================
+2026-10-15 17:16:53 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-15 17:16:53 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-15 17:16:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-15 17:16:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-15 17:16:53 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-15 17:21:13 [INFO ] [jenkins] ==================================================
+2026-10-15 17:21:13 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-15 17:21:13 [INFO ] [jenkins] ==================================================
+2026-10-15 17:21:13 [INFO ] [jenkins] 
+2026-10-15 17:21:13 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-15 17:21:13 [INFO ] [jenkins] ------------------------------
+2026-10-15 17:21:13 [INFO ] [title_workflow] Source: 10.10v1.xlsx
+2026-10-15 17:21:15 [INFO ] [title_workflow] Extracted 104 titles + 104 links
+2026-10-15 17:21:15 [INFO ] [title_workflow] Written: origin_title (104) + origin_link (104)
+2026-10-15 17:21:15 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-15 17:21:15 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-15 17:21:16 [INFO ] [deepseek_web] Opening DeepSeek web (104 titles)...
+2026-10-15 17:21:16 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-15 17:21:26 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-15 17:21:28 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-15 17:21:28 [INFO ] [deepseek_web] [1/104] 男士冬季灯芯绒翻领大码宽松加绒加厚工装夹克
+2026-10-15 17:21:32 [INFO ] [deepseek_web]   Downloaded: 0001_4120315251431525244579.jpg
+2026-10-15 17:21:32 [INFO ] [deepseek_web]   Prefetching next image (2/104)
+2026-10-15 17:21:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:21:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:22:10 [INFO ] [deepseek_web]   Response: 灯芯绒面料 羊羔绒内衬 双向拉链门襟 单侧贴袋 方形织标 罗纹袖口下摆 全拉链工装夹克 男士 宽松版型 翻领长袖 加厚保暖 冬季
+2026-10-15 17:22:10 [INFO ] [deepseek_web]   Deleted: 0001_4120315251431525244579.jpg
+2026-10-15 17:22:15 [INFO ] [deepseek_web] [2/104] 男士工装翻领潮流休闲宽松麂皮绒夹克上衣
+2026-10-15 17:22:15 [INFO ] [deepseek_web]   Downloaded: 0002_0770257018515815650681.jpg
+2026-10-15 17:22:15 [INFO ] [deepseek_web]   Prefetching next image (3/104)
+2026-10-15 17:22:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:22:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:22:47 [INFO ] [deepseek_web]   Response: 按扣门襟 胸前明线贴袋 袖口按扣 按扣下摆 麂皮绒工装夹克 男士 宽松版型 翻领 长袖 常规衣长 双侧斜插袋 纯色
+2026-10-15 17:22:47 [INFO ] [deepseek_web]   Deleted: 0002_0770257018515815650681.jpg
+2026-10-15 17:22:52 [INFO ] [deepseek_web] [3/104] 男士麂皮绒加绒加厚翻领商务休闲宽松时尚舒适夹克
+2026-10-15 17:22:52 [INFO ] [deepseek_web]   Downloaded: 0003_2641112229139321158691.jpg
+2026-10-15 17:22:52 [INFO ] [deepseek_web]   Prefetching next image (4/104)
+2026-10-15 17:22:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:23:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:23:21 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 按扣门襟 单侧大贴袋 明线装饰 胸前横向拼接 麂皮绒开衫夹克 男士 宽松版型 长袖 加绒加厚 常规衣长
+2026-10-15 17:23:21 [INFO ] [deepseek_web]   Deleted: 0003_2641112229139321158691.jpg
+2026-10-15 17:23:26 [INFO ] [deepseek_web] [4/104] 男士秋冬磨毛灯芯绒高街飞行员宽松美式做旧工装翻领夹克
+2026-10-15 17:23:26 [INFO ] [deepseek_web]   Downloaded: 0004_5910236530118588490176.jpg
+2026-10-15 17:23:26 [INFO ] [deepseek_web]   Prefetching next image (5/104)
+2026-10-15 17:23:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:23:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:23:58 [INFO ] [deepseek_web]   Response: 翻领 全拉链门襟 双侧斜插袋 罗纹袖口 罗纹下摆 磨毛灯芯绒 工装飞行员夹克 男士 宽松版型 短款衣长 长袖 纯色 秋冬
+2026-10-15 17:23:58 [INFO ] [deepseek_web]   Deleted: 0004_5910236530118588490176.jpg
+2026-10-15 17:24:03 [INFO ] [deepseek_web] [5/104] 男士秋冬复古立领扎染宽松涂层麂皮绒复古夹克
+2026-10-15 17:24:03 [INFO ] [deepseek_web]   Downloaded: 0005_9780242070758910398926.jpg
+2026-10-15 17:24:03 [INFO ] [deepseek_web]   Prefetching next image (6/104)
+2026-10-15 17:24:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:24:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:24:39 [INFO ] [deepseek_web]   Response: 左胸拉链口袋 左袖拉链口袋 扎染纹理 涂层麂皮绒夹克 男士 宽松版型 立领 全拉链门襟 罗纹袖口下摆 双侧斜插袋 长袖 秋冬
+2026-10-15 17:24:39 [INFO ] [deepseek_web]   Deleted: 0005_9780242070758910398926.jpg
+2026-10-15 17:24:44 [INFO ] [deepseek_web] [6/104] 男士秋冬纯色加绒斜拉链开合休闲连帽外套
+2026-10-15 17:24:44 [INFO ] [deepseek_web]   Downloaded: 0006_9781037343421093465652.jpg
+2026-10-15 17:24:44 [INFO ] [deepseek_web]   Prefetching next image (7/104)
+2026-10-15 17:24:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:24:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:25:16 [INFO ] [deepseek_web]   Response: 斜拉链门襟 不对称下摆 双侧斜插袋 罗纹袖口 加绒连帽开衫卫衣 男士款 常规版型 长袖 纯色 常规衣长 秋冬
+2026-10-15 17:25:16 [INFO ] [deepseek_web]   Deleted: 0006_9781037343421093465652.jpg
+2026-10-15 17:25:21 [INFO ] [deepseek_web] [7/104] 男士拼色拼接加绒加厚拉链休闲立领夹克外套
+2026-10-15 17:25:21 [INFO ] [deepseek_web]   Downloaded: 0007_2640814120724819788671.jpg
+2026-10-15 17:25:21 [INFO ] [deepseek_web]   Prefetching next image (8/104)
+2026-10-15 17:25:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:25:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:25:51 [INFO ] [deepseek_web]   Response: 方格绗缝纹理 撞色拼接 左胸竖拉链口袋 加绒加厚全拉链立领夹克 男士 常规版型 罗纹袖口下摆 双侧斜插袋 长袖
+2026-10-15 17:25:51 [INFO ] [deepseek_web]   Deleted: 0007_2640814120724819788671.jpg
+2026-10-15 17:25:56 [INFO ] [deepseek_web] [8/104] 男士灯芯绒撞色外套
+2026-10-15 17:25:56 [INFO ] [deepseek_web]   Downloaded: 0008_0410544054769552343273.jpg
+2026-10-15 17:25:56 [INFO ] [deepseek_web]   Prefetching next image (9/104)
+2026-10-15 17:25:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:26:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:26:39 [INFO ] [deepseek_web]   Response: 撞色翻领 左侧方形贴袋 右侧方形贴袋 袖口按扣 落肩袖 灯芯绒拼接工装夹克 男士 宽松版型 长袖 全拉链门襟 常规衣长
+2026-10-15 17:26:39 [INFO ] [deepseek_web]   Deleted: 0008_0410544054769552343273.jpg
+2026-10-15 17:26:44 [INFO ] [deepseek_web] [9/104] 夹克男宽松大码春秋男装上衣服工装飞行棒球服工装灯芯绒男外套潮
+2026-10-15 17:26:44 [INFO ] [deepseek_web]   Downloaded: 0009_6100225517171014208862.jpg
+2026-10-15 17:26:44 [INFO ] [deepseek_web]   Prefetching next image (10/104)
+2026-10-15 17:26:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:26:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:27:13 [INFO ] [deepseek_web]   Response: 左胸方形贴标 罗纹棒球领 全拉链门襟 罗纹袖口下摆 双侧斜插袋 灯芯绒棒球夹克 男士 宽松版型 长袖 短款衣长 春秋
+2026-10-15 17:27:13 [INFO ] [deepseek_web]   Deleted: 0009_6100225517171014208862.jpg
+2026-10-15 17:27:18 [INFO ] [deepseek_web] [10/104] 男士加绒拉链立领外套
+2026-10-15 17:27:18 [INFO ] [deepseek_web]   Downloaded: 0010_0860837210171910423507.jpg
+2026-10-15 17:27:18 [INFO ] [deepseek_web]   Prefetching next image (11/104)
+2026-10-15 17:27:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:27:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:27:47 [INFO ] [deepseek_web]   Response: 胸前双带盖贴袋 双侧斜插袋 罗纹立领 罗纹袖口下摆 加绒全拉链夹克 男士 常规版型 长袖 纯色
+2026-10-15 17:27:47 [INFO ] [deepseek_web]   Deleted: 0010_0860837210171910423507.jpg
+2026-10-15 17:27:52 [INFO ] [deepseek_web] [11/104] 男士时尚灯芯绒纯色外套休闲夹克
+2026-10-15 17:27:52 [INFO ] [deepseek_web]   Downloaded: 0011_3410758034452990539948.jpg
+2026-10-15 17:27:52 [INFO ] [deepseek_web]   Prefetching next image (12/104)
+2026-10-15 17:27:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:28:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:28:26 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹 立领 正面全拉链门襟 左右双侧斜插袋 纯色 灯芯绒夹克 男士 常规版型 长袖 常规衣长 无帽设计
+2026-10-15 17:28:26 [INFO ] [deepseek_web]   Deleted: 0011_3410758034452990539948.jpg
+2026-10-15 17:28:31 [INFO ] [deepseek_web] [12/104] 男士秋冬加绒摇粒绒冲锋衣休闲宽松户外防风防寒保暖外套夹克
+2026-10-15 17:28:31 [INFO ] [deepseek_web]   Downloaded: 0012_7300501082338013832012.jpg
+2026-10-15 17:28:31 [INFO ] [deepseek_web]   Prefetching next image (13/104)
+2026-10-15 17:28:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:28:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:31:58 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-15 17:31:58 [INFO ] [deepseek_web]   Deleted: 0012_7300501082338013832012.jpg
+2026-10-15 17:32:03 [INFO ] [deepseek_web] [13/104] 男装春秋季灯芯绒口袋拼接设计感外套
+2026-10-15 17:32:05 [INFO ] [deepseek_web]   Downloaded: 0013_3701035037225126680704.jpg
+2026-10-15 17:32:05 [INFO ] [deepseek_web]   Prefetching next image (14/104)
+2026-10-15 17:32:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:32:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:32:41 [INFO ] [deepseek_web]   Response: 左胸贴袋 双侧翻盖口袋 口袋拼接 翻领 单排扣门襟 灯芯绒西装外套 男士 常规版型 长袖 常规衣长 春秋季 纯色
+2026-10-15 17:32:41 [INFO ] [deepseek_web]   Deleted: 0013_3701035037225126680704.jpg
+2026-10-15 17:32:46 [INFO ] [deepseek_web] [14/104] 秋冬男士灯芯绒毛领羊羔绒夹克加绒加厚翻领外套
+2026-10-15 17:32:46 [INFO ] [deepseek_web]   Downloaded: 0014_0380949127243120766742.jpg
+2026-10-15 17:32:46 [INFO ] [deepseek_web]   Prefetching next image (15/104)
+2026-10-15 17:32:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:32:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:33:01 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-10-15 17:33:15 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 左胸方形贴标 罗纹袖口 罗纹下摆 灯芯绒加绒夹克 男士 常规版型 全拉链门襟 长袖 加绒加厚 秋冬
+2026-10-15 17:33:15 [INFO ] [deepseek_web]   Deleted: 0014_0380949127243120766742.jpg
+2026-10-15 17:33:20 [INFO ] [deepseek_web] [15/104] 男士圣诞节法兰绒休闲外套
+2026-10-15 17:33:20 [INFO ] [deepseek_web]   Downloaded: 0015_7461039027501319061428.jpg
+2026-10-15 17:33:20 [INFO ] [deepseek_web]   Prefetching next image (16/104)
+2026-10-15 17:33:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:33:22 [WARNING] [hotwords_fashion] 请求失败(第 1/5 次): HTTPSConnectionPool(host='api.amz123.com', port=443): Max retries exceeded with url: /search/v1/hotwords/search (Caused by ConnectTimeoutError(<HTTPSConnection(host='api.amz123.com', port=443) at 0x196c90be510>, 'Connection to api.amz123.com timed out. (connect timeout=30)'))
+2026-10-15 17:33:25 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-10-15 17:33:28 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-10-15 17:33:30 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-10-15 17:33:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:33:33 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 第 2 次请求成功: 1000 条
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261015.txt (1000 条)
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] === 报告 ===
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261015.txt
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 清洗命中: 品类 30 / 属性 7(过滤前)
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 清洗丢弃: 963 条(黑名单 151 / 无关 812)
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 最终保留: 37 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\de\hotwords_fashion_20261015.txt
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   icon hose herren	165178	品类:hose;属性:herren
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   die sieben schwestern band 1	153031	品类:weste
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   teddy chocolate	150556	属性:teddy;去品牌:reisenthel
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   jelly bh ohne bügel push up	146504	品类:bh
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   brevika herren jacke	146189	品类:jacke;属性:herren
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   fledermaus strumpfhose damen	144523	品类:hose;属性:leder,damen
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   rock of ages	140949	品类:rock
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   thermomix vorwerk	139167	属性:thermo
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   kindle fire hd 11 neuestes modell	136864	品类:mode
+2026-10-15 17:33:35 [INFO ] [hotwords_fashion]   mona ameziane christine westermann	136396	品类:weste
+2026-10-15 17:33:53 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 左胸贴袋 羊羔绒袖口 羊羔绒下摆 羊羔绒内衬 纽扣门襟 撞色拼接 法兰绒夹克 男士 常规版型 长袖 常规衣长
+2026-10-15 17:33:53 [INFO ] [deepseek_web]   Deleted: 0015_7461039027501319061428.jpg
+2026-10-15 17:33:58 [INFO ] [deepseek_web] [16/104] 男士秋冬时尚休闲磨毛格子口袋羊羔绒系扣复合外套夹克厚外套
+2026-10-15 17:33:58 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='omn3kgjqfy12ggeq.imgsapp.com', port=443): Max retries exceeded with url: /afsd/6370/7751149033353936096835.jpg (Caused by NameResolutionError("HTTPSConnection(host='omn3kgjqfy12ggeq.imgsapp.com', port=443): Failed to resolve 'omn3kgjqfy12ggeq.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-10-15 17:34:03 [INFO ] [deepseek_web] [17/104] 2024秋冬季新款夹克男装韩版潮流修身帅气加绒加厚外套
+2026-10-15 17:34:06 [INFO ] [deepseek_web]   Downloaded: 0017_7020402141302514551736.jpg
+2026-10-15 17:34:06 [INFO ] [deepseek_web]   Prefetching next image (18/104)
+2026-10-15 17:34:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:34:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:37:32 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-15 17:37:32 [INFO ] [deepseek_web]   Deleted: 0017_7020402141302514551736.jpg
+2026-10-15 17:37:37 [INFO ] [deepseek_web] [18/104] 男士外套上衣羊羔绒翻领拉链夹克男商务休闲
+2026-10-15 17:37:40 [INFO ] [deepseek_web]   Downloaded: 0018_8770351110832818448267.jpg
+2026-10-15 17:37:40 [INFO ] [deepseek_web]   Prefetching next image (19/104)
+2026-10-15 17:37:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:37:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:38:12 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 肘部羊羔绒拼接 胸前翻盖贴袋 袖口羊羔绒 羊羔绒内衬 全拉链夹克 男士 常规版型 长袖 常规衣长 商务休闲
+2026-10-15 17:38:12 [INFO ] [deepseek_web]   Deleted: 0018_8770351110832818448267.jpg
+2026-10-15 17:38:17 [INFO ] [deepseek_web] [19/104] 男女同款三合一两件套加绒户外冲锋衣
+2026-10-15 17:38:17 [INFO ] [deepseek_web]   Downloaded: 0019_4600908278633916253028.jpg
+2026-10-15 17:38:17 [INFO ] [deepseek_web]   Prefetching next image (20/104)
+2026-10-15 17:38:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:38:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:38:46 [INFO ] [deepseek_web]   Response: 左胸方形贴片 下摆方形贴片 立领加绒内胆 三合一两件套 连帽冲锋衣 男女同款 常规版型 长袖 全拉链门襟 户外 纯色
+2026-10-15 17:38:46 [INFO ] [deepseek_web]   Deleted: 0019_4600908278633916253028.jpg
+2026-10-15 17:38:51 [INFO ] [deepseek_web] [20/104] 男士多口袋摇粒绒外套
+2026-10-15 17:38:51 [INFO ] [deepseek_web]   Downloaded: 0020_8230947315275178960868.jpg
+2026-10-15 17:38:51 [INFO ] [deepseek_web]   Prefetching next image (21/104)
+2026-10-15 17:38:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:39:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:39:20 [INFO ] [deepseek_web]   Response: 左袖拉链口袋 双侧拉链口袋 胸前横向拼接 立领 全拉链门襟 松紧袖口 松紧下摆 摇粒绒夹克 男士 宽松版型 长袖 常规衣长 纯色
+2026-10-15 17:39:20 [INFO ] [deepseek_web]   Deleted: 0020_8230947315275178960868.jpg
+2026-10-15 17:39:25 [INFO ] [deepseek_web] [21/104] 男士加绒荔枝纹皮革夹克外套
+2026-10-15 17:39:25 [INFO ] [deepseek_web]   Downloaded: 0021_6240925449257316004404.jpg
+2026-10-15 17:39:25 [INFO ] [deepseek_web]   Prefetching next image (22/104)
+2026-10-15 17:39:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:39:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:39:54 [INFO ] [deepseek_web]   Response: 左胸翻盖按扣口袋 左胸横向拉链口袋 右胸竖拉链口袋 羊羔绒翻领 荔枝纹皮革夹克 男士 常规版型 长袖 全拉链门襟 加绒 常规衣长
+2026-10-15 17:39:54 [INFO ] [deepseek_web]   Deleted: 0021_6240925449257316004404.jpg
+2026-10-15 17:39:59 [INFO ] [deepseek_web] [22/104] 男士麂皮绒夹克
+2026-10-15 17:39:59 [INFO ] [deepseek_web]   Downloaded: 0022_3670407332582857874149.jpg
+2026-10-15 17:39:59 [INFO ] [deepseek_web]   Prefetching next image (23/104)
+2026-10-15 17:39:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:40:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:40:28 [INFO ] [deepseek_web]   Response: 肩章 左胸竖拉链口袋 右胸翻盖拉链口袋 立领 全拉链门襟 麂皮绒夹克 男士 常规版型 长袖 常规衣长 纯色
+2026-10-15 17:40:28 [INFO ] [deepseek_web]   Deleted: 0022_3670407332582857874149.jpg
+2026-10-15 17:40:33 [INFO ] [deepseek_web] [23/104] 加绒加棉超级厚实外套爸爸装
+2026-10-15 17:40:33 [INFO ] [deepseek_web]   Downloaded: 0023_5239043451483329171550.jpg
+2026-10-15 17:40:33 [INFO ] [deepseek_web]   Prefetching next image (24/104)
+2026-10-15 17:40:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:40:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:41:06 [INFO ] [deepseek_web]   Response: 领口内侧绒面拼接 左胸金属徽标 双侧斜插拉链口袋 加绒加棉夹克 男士 常规版型 立领 长袖 全拉链门襟 常规衣长 纯色
+2026-10-15 17:41:06 [INFO ] [deepseek_web]   Deleted: 0023_5239043451483329171550.jpg
+2026-10-15 17:41:11 [INFO ] [deepseek_web] [24/104] 男士连帽纯色休闲时尚秋冬摇粒绒外套
+2026-10-15 17:41:11 [INFO ] [deepseek_web]   Downloaded: 0024_2650437188717517683668.jpg
+2026-10-15 17:41:11 [INFO ] [deepseek_web]   Prefetching next image (25/104)
+2026-10-15 17:41:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:41:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:41:49 [INFO ] [deepseek_web]   Response: 毛绒面料 连帽 前中拉链门襟 双侧翻盖口袋 毛绒袖口 毛绒下摆 摇粒绒夹克 男士 宽松版型 长袖 常规衣长 纯色 秋冬
+2026-10-15 17:41:49 [INFO ] [deepseek_web]   Deleted: 0024_2650437188717517683668.jpg
+2026-10-15 17:41:54 [INFO ] [deepseek_web] [25/104] 男士新款软壳单层加绒冲锋秋冬防风防水夹克
+2026-10-15 17:41:54 [INFO ] [deepseek_web]   Downloaded: 0025_3408111135014147235444.jpg
+2026-10-15 17:41:54 [INFO ] [deepseek_web]   Prefetching next image (26/104)
+2026-10-15 17:41:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:42:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:42:24 [INFO ] [deepseek_web]   Response: 左胸竖拉链口袋 右侧斜插拉链口袋 连帽抽绳 加绒内衬 软壳冲锋夹克 男士 常规版型 立领 长袖 全拉链门襟 防风 防水 秋冬户外
+2026-10-15 17:42:24 [INFO ] [deepseek_web]   Deleted: 0025_3408111135014147235444.jpg
+2026-10-15 17:42:29 [INFO ] [deepseek_web] [26/104] 男士新款宽松加厚加绒翻领夹克外套
+2026-10-15 17:42:29 [INFO ] [deepseek_web]   Downloaded: 0026_4300351166702056196384.jpg
+2026-10-15 17:42:29 [INFO ] [deepseek_web]   Prefetching next image (27/104)
+2026-10-15 17:42:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:42:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:43:02 [INFO ] [deepseek_web]   Response: 胸前双侧按扣贴袋 袖口按扣 下摆斜插袋 加绒工装夹克 男士 宽松版型 羊羔绒翻领 长袖 正面按扣门襟 常规衣长 加绒加厚
+2026-10-15 17:43:02 [INFO ] [deepseek_web]   Deleted: 0026_4300351166702056196384.jpg
+2026-10-15 17:43:07 [INFO ] [deepseek_web] [27/104] 男士灯芯绒飞行服夹克休闲棒球服复古高街工
+2026-10-15 17:43:07 [INFO ] [deepseek_web]   Downloaded: 0027_0601134036911620597687.jpg
+2026-10-15 17:43:07 [INFO ] [deepseek_web]   Prefetching next image (28/104)
+2026-10-15 17:43:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:43:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:43:36 [INFO ] [deepseek_web]   Response: 左袖翻盖贴袋 胸前横向拼接 罗纹棒球领 罗纹袖口 罗纹下摆 灯芯绒飞行夹克 男士 宽松版型 长袖 全拉链门襟 常规衣长
+2026-10-15 17:43:36 [INFO ] [deepseek_web]   Deleted: 0027_0601134036911620597687.jpg
+2026-10-15 17:43:41 [INFO ] [deepseek_web] [28/104] 男士黑色加绒皮夹克PU皮衣
+2026-10-15 17:43:41 [INFO ] [deepseek_web]   Downloaded: 0028_9170915042784458105785.jpg
+2026-10-15 17:43:41 [INFO ] [deepseek_web]   Prefetching next image (29/104)
+2026-10-15 17:43:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:43:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:44:10 [INFO ] [deepseek_web]   Response: 罗纹棒球领 正面全拉链门襟 荔枝纹PU皮 罗纹袖口 加绒内衬 PU皮夹克 男士 常规版型 长袖 常规衣长 纯色
+2026-10-15 17:44:10 [INFO ] [deepseek_web]   Deleted: 0028_9170915042784458105785.jpg
+2026-10-15 17:44:15 [INFO ] [deepseek_web] [29/104] 男士灯芯绒休闲夹克
+2026-10-15 17:44:15 [INFO ] [deepseek_web]   Downloaded: 0029_2090330153282410307698.jpg
+2026-10-15 17:44:15 [INFO ] [deepseek_web]   Prefetching next image (30/104)
+2026-10-15 17:44:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:44:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:44:44 [INFO ] [deepseek_web]   Response: 左胸贴袋 方形贴标 灯芯绒竖条纹 翻领 单排扣门襟 袖口纽扣 直下摆 灯芯绒夹克 男士 常规版型 长袖 常规衣长 纯色
+2026-10-15 17:44:44 [INFO ] [deepseek_web]   Deleted: 0029_2090330153282410307698.jpg
+2026-10-15 17:44:49 [INFO ] [deepseek_web] [30/104] 男士灯芯绒翻领外套
+2026-10-15 17:44:49 [INFO ] [deepseek_web]   Downloaded: 0030_2990351533262881644234.jpg
+2026-10-15 17:44:49 [INFO ] [deepseek_web]   Prefetching next image (31/104)
+2026-10-15 17:44:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:45:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:45:18 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹 双侧翻盖贴袋 袖口纽扣 单排扣门襟 翻领 灯芯绒夹克 男士 常规版型 长袖 常规衣长 纯色
+2026-10-15 17:45:18 [INFO ] [deepseek_web]   Deleted: 0030_2990351533262881644234.jpg
+2026-10-15 17:45:23 [INFO ] [deepseek_web] [31/104] 男士秋冬新款加绒加厚夹克
+2026-10-15 17:45:23 [INFO ] [deepseek_web]   Downloaded: 0031_5980446446813867362119.jpg
+2026-10-15 17:45:23 [INFO ] [deepseek_web]   Prefetching next image (32/104)
+2026-10-15 17:45:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:45:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:48:50 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-15 17:48:50 [INFO ] [deepseek_web]   Deleted: 0031_5980446446813867362119.jpg
+2026-10-15 17:48:55 [INFO ] [deepseek_web] [32/104] 男士复古印花加绒休闲夹克
+2026-10-15 17:48:57 [INFO ] [deepseek_web]   Downloaded: 0032_9171119426536615006115.jpg
+2026-10-15 17:48:57 [INFO ] [deepseek_web]   Prefetching next image (33/104)
+2026-10-15 17:48:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:49:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:49:26 [INFO ] [deepseek_web]   Response: 左袖数字8印花 连帽抽绳 加绒内衬 正面全拉链门襟 罗纹袖口 罗纹下摆 加绒连帽夹克 男士 常规版型 长袖 常规衣长
+2026-10-15 17:49:26 [INFO ] [deepseek_web]   Deleted: 0032_9171119426536615006115.jpg
+2026-10-15 17:49:31 [INFO ] [deepseek_web] [33/104] 男士外套上衣鹿皮绒毛领拉链夹克商务休闲外套
+2026-10-15 17:49:31 [INFO ] [deepseek_web]   Downloaded: 0033_8180435562602920948674.jpg
+2026-10-15 17:49:31 [INFO ] [deepseek_web]   Prefetching next image (34/104)
+2026-10-15 17:49:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:49:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:50:02 [INFO ] [deepseek_web]   Response: 毛领 横向绗缝 撞色拼接 双侧拉链口袋 鹿皮绒夹克 男士 常规版型 翻领 长袖 全拉链门襟 罗纹袖口 常规衣长 商务休闲
+2026-10-15 17:50:02 [INFO ] [deepseek_web]   Deleted: 0033_8180435562602920948674.jpg
+2026-10-15 17:50:07 [INFO ] [deepseek_web] [34/104] 男士时尚简约立领翻领鹿皮绒复合毛绒夹克外套
+2026-10-15 17:50:07 [INFO ] [deepseek_web]   Downloaded: 0034_5371018576371319895116.jpg
+2026-10-15 17:50:07 [INFO ] [deepseek_web]   Prefetching next image (35/104)
+2026-10-15 17:50:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:50:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:50:36 [INFO ] [deepseek_web]   Response: 大翻领毛绒 门襟毛绒镶边 袖口毛绒翻边 袖口调节带扣 中长款 麂皮绒复合毛绒夹克 男士 常规版型 长袖 开襟 加绒加厚 秋冬
+2026-10-15 17:50:36 [INFO ] [deepseek_web]   Deleted: 0034_5371018576371319895116.jpg
+2026-10-15 17:50:41 [INFO ] [deepseek_web] [35/104] 男装夹克立领长袖摇粒绒纯色轻质宽松型外套
+2026-10-15 17:50:41 [INFO ] [deepseek_web]   Downloaded: 0035_6370437096833018276023.jpg
+2026-10-15 17:50:41 [INFO ] [deepseek_web]   Prefetching next image (36/104)
+2026-10-15 17:50:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:50:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:51:14 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 双侧斜插口袋 直筒袖口 纯色 摇粒绒夹克 男士款 宽松版型 长袖 直筒下摆 常规衣长 轻质 秋冬
+2026-10-15 17:51:14 [INFO ] [deepseek_web]   Deleted: 0035_6370437096833018276023.jpg
+2026-10-15 17:51:19 [INFO ] [deepseek_web] [36/104] 男士纯色拉链立领开衫抓绒摇粒绒夹克外套
+2026-10-15 17:51:19 [INFO ] [deepseek_web]   Downloaded: 0036_0210953481297215971697.jpg
+2026-10-15 17:51:19 [INFO ] [deepseek_web]   Prefetching next image (37/104)
+2026-10-15 17:51:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:51:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:51:49 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 双侧斜插拉链口袋 纯色 摇粒绒夹克外套 男士款 常规版型 长袖 常规衣长 直筒袖口 直筒下摆
+2026-10-15 17:51:49 [INFO ] [deepseek_web]   Deleted: 0036_0210953481297215971697.jpg
+2026-10-15 17:51:54 [INFO ] [deepseek_web] [37/104] 男士纯色复古口袋拉链连帽加绒外套
+2026-10-15 17:51:54 [INFO ] [deepseek_web]   Downloaded: 0037_2940341065191617571882.jpg
+2026-10-15 17:51:54 [INFO ] [deepseek_web]   Prefetching next image (38/104)
+2026-10-15 17:51:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:52:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:52:23 [INFO ] [deepseek_web]   Response: 羊羔绒内衬 连帽抽绳 正面全拉链 袋鼠口袋 罗纹袖口 罗纹下摆 加绒连帽开衫卫衣 男士 常规版型 长袖 纯色 保暖
+2026-10-15 17:52:23 [INFO ] [deepseek_web]   Deleted: 0037_2940341065191617571882.jpg
+2026-10-15 17:52:28 [INFO ] [deepseek_web] [38/104] 男士格子加绒保暖夹克外套
+2026-10-15 17:52:28 [INFO ] [deepseek_web]   Downloaded: 0038_6341058044981064959882.jpg
+2026-10-15 17:52:28 [INFO ] [deepseek_web]   Prefetching next image (39/104)
+2026-10-15 17:52:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:52:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:52:58 [INFO ] [deepseek_web]   Response: 格纹图案 胸前双翻盖按扣贴袋 按扣门襟 加绒内衬 翻领 袖口按扣 衬衫式夹克 男士 宽松版型 长袖 常规衣长 保暖
+2026-10-15 17:52:58 [INFO ] [deepseek_web]   Deleted: 0038_6341058044981064959882.jpg
+2026-10-15 17:53:03 [INFO ] [deepseek_web] [39/104] 男士冬季抓绒加厚纯色休闲夹克外套保暖立领拉链外套
+2026-10-15 17:53:03 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='fg0yk9rofoc7tqvd.imgsapp.com', port=443): Max retries exceeded with url: /afsd/2928/9631129012841419225133.jpg (Caused by NameResolutionError("HTTPSConnection(host='fg0yk9rofoc7tqvd.imgsapp.com', port=443): Failed to resolve 'fg0yk9rofoc7tqvd.imgsapp.com' ([Errno 11002] getaddrinfo failed)"))
+2026-10-15 17:53:08 [INFO ] [deepseek_web] [40/104] 男士双面穿美式户外羽绒棉服连帽工装外套
+2026-10-15 17:53:13 [INFO ] [deepseek_web]   Downloaded: 0040_8060246542042221188756.jpg
+2026-10-15 17:53:13 [INFO ] [deepseek_web]   Prefetching next image (41/104)
+2026-10-15 17:53:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:53:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:53:44 [INFO ] [deepseek_web]   Response: 左袖方形贴标 前置拉链口袋 羊羔绒内衬 连帽抽绳 松紧袖口 松紧下摆 双面穿连帽工装加绒夹克 男士 宽松版型 长袖 全拉链门襟 常规衣长 保暖 户外
+2026-10-15 17:53:44 [INFO ] [deepseek_web]   Deleted: 0040_8060246542042221188756.jpg
+2026-10-15 17:53:49 [INFO ] [deepseek_web] [41/104] 民族风提花摇粒绒夹克男秋冬款立领开衫短宽廓形休闲保暖上衣外套
+2026-10-15 17:53:49 [INFO ] [deepseek_web]   Downloaded: 0041_4310225124896391007991.jpg
+2026-10-15 17:53:49 [INFO ] [deepseek_web]   Prefetching next image (42/104)
+2026-10-15 17:53:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:54:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:54:22 [INFO ] [deepseek_web]   Response: 几何提花图案 领口拉链包边 双侧斜插口袋 摇粒绒夹克 男士 宽松版型 立领 长袖 全拉链门襟 短款衣长 保暖 秋冬
+2026-10-15 17:54:22 [INFO ] [deepseek_web]   Deleted: 0041_4310225124896391007991.jpg
+2026-10-15 17:54:27 [INFO ] [deepseek_web] [42/104] 新款男士夹克外套男秋冬季灯芯绒外套
+2026-10-15 17:54:27 [INFO ] [deepseek_web]   Downloaded: 0042_7390211295441415089338.jpg
+2026-10-15 17:54:27 [INFO ] [deepseek_web]   Prefetching next image (43/104)
+2026-10-15 17:54:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:54:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:54:56 [INFO ] [deepseek_web]   Response: 左胸横向拉链口袋 下摆双侧翻盖按扣口袋 罗纹袖口 罗纹下摆 翻领 全拉链门襟 灯芯绒工装夹克 男士 宽松版型 长袖 常规衣长 秋冬
+2026-10-15 17:54:56 [INFO ] [deepseek_web]   Deleted: 0042_7390211295441415089338.jpg
+2026-10-15 17:55:01 [INFO ] [deepseek_web] [43/104] 新款冬季潮牌皮毛一体翻领夹克男复古机车美拉德加绒加厚
+2026-10-15 17:55:01 [INFO ] [deepseek_web]   Downloaded: 0043_5421046041749213211771.jpg
+2026-10-15 17:55:01 [INFO ] [deepseek_web]   Prefetching next image (44/104)
+2026-10-15 17:55:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:55:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:55:31 [INFO ] [deepseek_web]   Response: 毛绒翻领 不对称斜拉链门襟 下摆按扣 拼接缝线 加绒加厚机车夹克 男士 常规版型 长袖 翻领 保暖 冬季
+2026-10-15 17:55:31 [INFO ] [deepseek_web]   Deleted: 0043_5421046041749213211771.jpg
+2026-10-15 17:55:36 [INFO ] [deepseek_web] [44/104] 男士灯芯绒装风上班加绒加厚外套休闲夹克
+2026-10-15 17:55:36 [INFO ] [deepseek_web]   Downloaded: 0044_4730939228113212683454.jpg
+2026-10-15 17:55:36 [INFO ] [deepseek_web]   Prefetching next image (45/104)
+2026-10-15 17:55:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:55:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:56:06 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 胸前双侧带盖贴袋 左胸方形贴标 灯芯绒夹克 男士 宽松版型 长袖 按扣门襟 袖口按扣 常规衣长 加绒加厚
+2026-10-15 17:56:06 [INFO ] [deepseek_web]   Deleted: 0044_4730939228113212683454.jpg
+2026-10-15 17:56:11 [INFO ] [deepseek_web] [45/104] 美码男士拉链纯棉鸭帆布绗棉外套 外贸底特律加厚保暖法兰绒夹克
+2026-10-15 17:56:11 [INFO ] [deepseek_web]   Downloaded: 0045_0060838424024670504171.jpg
+2026-10-15 17:56:11 [INFO ] [deepseek_web]   Prefetching next image (46/104)
+2026-10-15 17:56:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:56:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:56:41 [INFO ] [deepseek_web]   Response: 菱形绗缝 格纹法兰绒内衬 左胸拉链口袋 绗缝夹克 男士 常规版型 翻领 全拉链门襟 罗纹袖口 罗纹下摆 长袖 加厚保暖
+2026-10-15 17:56:41 [INFO ] [deepseek_web]   Deleted: 0045_0060838424024670504171.jpg
+2026-10-15 17:56:46 [INFO ] [deepseek_web] [46/104] 秋冬季新款美式复古翻领机车加绒时尚麂皮绒外套
+2026-10-15 17:56:46 [INFO ] [deepseek_web]   Downloaded: 0046_1521034146765768611320.jpg
+2026-10-15 17:56:46 [INFO ] [deepseek_web]   Prefetching next image (47/104)
+2026-10-15 17:56:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:56:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:57:15 [INFO ] [deepseek_web]   Response: 左胸竖拉链口袋 羊羔绒门襟内衬 罗纹袖口 罗纹下摆 双侧斜插口袋 麂皮绒机车夹克 男士 常规版型 翻领 长袖 全拉链门襟 加绒保暖
+2026-10-15 17:57:15 [INFO ] [deepseek_web]   Deleted: 0046_1521034146765768611320.jpg
+2026-10-15 17:57:20 [INFO ] [deepseek_web] [47/104] 男士复古棕色绒面革拉链口袋抓绒立领夹克
+2026-10-15 17:57:20 [INFO ] [deepseek_web]   Downloaded: 0047_4070844256511867108504.jpg
+2026-10-15 17:57:20 [INFO ] [deepseek_web]   Prefetching next image (48/104)
+2026-10-15 17:57:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:57:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:57:49 [INFO ] [deepseek_web]   Response: 胸前双横向拉链口袋 下摆双侧斜插拉链口袋 羊羔绒内衬 立领 绒面革夹克 男士 常规版型 长袖 全拉链门襟 常规衣长
+2026-10-15 17:57:49 [INFO ] [deepseek_web]   Deleted: 0047_4070844256511867108504.jpg
+2026-10-15 17:57:54 [INFO ] [deepseek_web] [48/104] 男女同款户外登山服情侣款三合一冲锋衣山系防水防风男女休闲抓绒衣外套
+2026-10-15 17:57:54 [INFO ] [deepseek_web]   Downloaded: 0048_0750929179225214421812.jpg
+2026-10-15 17:57:54 [INFO ] [deepseek_web]   Prefetching next image (49/104)
+2026-10-15 17:57:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:58:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:58:23 [INFO ] [deepseek_web]   Response: 连帽 立领抓绒内胆 胸前拉链口袋 双侧斜插拉链口袋 三合一冲锋衣 男女同款 常规版型 长袖 全拉链门襟 防水防风 户外登山
+2026-10-15 17:58:23 [INFO ] [deepseek_web]   Deleted: 0048_0750929179225214421812.jpg
+2026-10-15 17:58:28 [INFO ] [deepseek_web] [49/104] 男华夫格加绒连帽夹克
+2026-10-15 17:58:28 [INFO ] [deepseek_web]   Downloaded: 0049_6030330264959013720569.jpg
+2026-10-15 17:58:28 [INFO ] [deepseek_web]   Prefetching next image (50/104)
+2026-10-15 17:58:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:58:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:58:58 [INFO ] [deepseek_web]   Response: 华夫格纹理 羊羔绒内衬 左胸方形贴标 连帽抽绳 斜插口袋 罗纹袖口 罗纹下摆 华夫格加绒连帽夹克 男士 常规版型 长袖 全拉链门襟 保暖
+2026-10-15 17:58:58 [INFO ] [deepseek_web]   Deleted: 0049_6030330264959013720569.jpg
+2026-10-15 17:59:03 [INFO ] [deepseek_web] [50/104] 男士加绒连帽夹克外套
+2026-10-15 17:59:03 [INFO ] [deepseek_web]   Downloaded: 0050_9680451133351769846557.jpg
+2026-10-15 17:59:03 [INFO ] [deepseek_web]   Prefetching next image (51/104)
+2026-10-15 17:59:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:59:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 17:59:36 [INFO ] [deepseek_web]   Response: 左袖圆形贴标 双侧斜插拉链口袋 毛绒内里 加绒连帽夹克 男士 宽松版型 长袖 全拉链门襟 罗纹袖口 罗纹下摆 保暖 户外
+2026-10-15 17:59:36 [INFO ] [deepseek_web]   Deleted: 0050_9680451133351769846557.jpg
+2026-10-15 17:59:41 [INFO ] [deepseek_web] [51/104] 男士纯色麂皮绒长袖基础休闲拉链立领双口袋外套
+2026-10-15 17:59:41 [INFO ] [deepseek_web]   Downloaded: 0051_1050332363093014978441.jpg
+2026-10-15 17:59:41 [INFO ] [deepseek_web]   Prefetching next image (52/104)
+2026-10-15 17:59:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 17:59:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:00:10 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 双侧斜插拉链口袋 麂皮绒夹克 男士 宽松版型 松紧袖口 松紧下摆 胸前横向拼接 落肩袖 长袖 常规衣长 纯色
+2026-10-15 18:00:10 [INFO ] [deepseek_web]   Deleted: 0051_1050332363093014978441.jpg
+2026-10-15 18:00:15 [INFO ] [deepseek_web] [52/104] 秋冬季男士拼色连帽抓绒长袖口袋大码卫衣外套棉服
+2026-10-15 18:00:15 [INFO ] [deepseek_web]   Downloaded: 0052_4820900490593219133990.jpg
+2026-10-15 18:00:15 [INFO ] [deepseek_web]   Prefetching next image (53/104)
+2026-10-15 18:00:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:00:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:00:47 [INFO ] [deepseek_web]   Response: 民族风动物几何印花 羊羔绒内衬 立领 全拉链门襟 双侧斜插拉链口袋 抓绒夹克 男士款 宽松版型 长袖 常规衣长
+2026-10-15 18:00:47 [INFO ] [deepseek_web]   Deleted: 0052_4820900490593219133990.jpg
+2026-10-15 18:00:52 [INFO ] [deepseek_web] [53/104] 男士秋冬夹克皮衣宽松休闲新款美式复古时尚翻领外套
+2026-10-15 18:00:52 [INFO ] [deepseek_web]   Downloaded: 0053_9690313340211547861486.jpg
+2026-10-15 18:00:52 [INFO ] [deepseek_web]   Prefetching next image (54/104)
+2026-10-15 18:00:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:01:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:01:26 [INFO ] [deepseek_web]   Response: 翻领 全拉链门襟 肩部拼接缝线 罗纹袖口 罗纹下摆 双侧斜插口袋 落肩袖 皮夹克 男士 宽松版型 长袖 常规衣长 秋冬
+2026-10-15 18:01:26 [INFO ] [deepseek_web]   Deleted: 0053_9690313340211547861486.jpg
+2026-10-15 18:01:31 [INFO ] [deepseek_web] [54/104] 男士翻领工装夹克春秋纯色休闲飞行夹克外套
+2026-10-15 18:01:31 [INFO ] [deepseek_web]   Downloaded: 0054_6140945207074847152136.jpg
+2026-10-15 18:01:31 [INFO ] [deepseek_web]   Prefetching next image (55/104)
+2026-10-15 18:01:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:01:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:02:04 [INFO ] [deepseek_web]   Response: 左胸带盖按扣口袋 右胸横向拉链口袋 前中拉链按扣门襟 罗纹袖口 罗纹下摆 翻领 工装飞行夹克 男士 宽松版型 长袖 常规衣长 纯色 春秋
+2026-10-15 18:02:04 [INFO ] [deepseek_web]   Deleted: 0054_6140945207074847152136.jpg
+2026-10-15 18:02:09 [INFO ] [deepseek_web] [55/104] 男士纯色宽松插肩飞行员立领夹克青年时尚休闲拉链开衫外套
+2026-10-15 18:02:09 [INFO ] [deepseek_web]   Downloaded: 0055_6040248324823422097278.jpg
+2026-10-15 18:02:09 [INFO ] [deepseek_web]   Prefetching next image (56/104)
+2026-10-15 18:02:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:02:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:02:42 [INFO ] [deepseek_web]   Response: 插肩袖 立领按扣 罗纹袖口 罗纹下摆 全拉链门襟 双侧斜插袋 飞行员夹克 男士 宽松版型 长袖 常规衣长 纯色 无帽
+2026-10-15 18:02:42 [INFO ] [deepseek_web]   Deleted: 0055_6040248324823422097278.jpg
+2026-10-15 18:02:47 [INFO ] [deepseek_web] [56/104] 男士翻领花纹灯芯绒夹克时尚休闲纽扣开衫外套
+2026-10-15 18:02:47 [INFO ] [deepseek_web]   Downloaded: 0056_3610414418853619955555.jpg
+2026-10-15 18:02:47 [INFO ] [deepseek_web]   Prefetching next image (57/104)
+2026-10-15 18:02:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:02:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:03:16 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹 胸前双翻盖按扣贴袋 左胸方形贴标 袖口按扣 翻领 按扣门襟 灯芯绒夹克 男士 宽松版型 长袖 常规衣长
+2026-10-15 18:03:16 [INFO ] [deepseek_web]   Deleted: 0056_3610414418853619955555.jpg
+2026-10-15 18:03:21 [INFO ] [deepseek_web] [57/104] 男士立领宽松痞帅 PU 麂皮衣夹克时尚休闲开衫拉链外套
+2026-10-15 18:03:21 [INFO ] [deepseek_web]   Downloaded: 0057_0260322274706388542203.jpg
+2026-10-15 18:03:21 [INFO ] [deepseek_web]   Prefetching next image (58/104)
+2026-10-15 18:03:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:03:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:03:50 [INFO ] [deepseek_web]   Response: 立领按扣 前中拉链门襟 双侧斜插拉链口袋 竖向拼接缝线 罗纹袖口 麂皮绒夹克 男士 宽松版型 长袖 罗纹下摆 常规衣长 纯色
+2026-10-15 18:03:50 [INFO ] [deepseek_web]   Deleted: 0057_0260322274706388542203.jpg
+2026-10-15 18:03:55 [INFO ] [deepseek_web] [58/104] 冬季户外冲锋衣大码男士野外钓鱼服防风抗寒加绒加厚情侣登山服
+2026-10-15 18:03:55 [INFO ] [deepseek_web]   Downloaded: 0058_1181046466731017788515.jpg
+2026-10-15 18:03:55 [INFO ] [deepseek_web]   Prefetching next image (59/104)
+2026-10-15 18:03:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:04:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:04:26 [INFO ] [deepseek_web]   Response: 撞色拼接 胸前双翻盖贴袋 左胸竖向拉链口袋 左袖圆形贴标 羊羔绒内衬 连帽抽绳 加绒冲锋衣 男士 宽松版型 长袖 防风 抗寒 户外
+2026-10-15 18:04:26 [INFO ] [deepseek_web]   Deleted: 0058_1181046466731017788515.jpg
+2026-10-15 18:04:31 [INFO ] [deepseek_web] [59/104] 跨境外贸亚马逊冬季加绒PU皮衣男欧美大码皮毛一体男士皮夹克外套
+2026-10-15 18:04:31 [INFO ] [deepseek_web]   Downloaded: 0059_0960257562502514371397.jpg
+2026-10-15 18:04:31 [INFO ] [deepseek_web]   Prefetching next image (60/104)
+2026-10-15 18:04:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:04:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:05:00 [INFO ] [deepseek_web]   Response: 毛绒翻领 不对称斜拉链门襟 肩袖横向绗缝 拉链口袋 加绒PU皮夹克 男士 宽松版型 长袖 常规衣长 加绒保暖
+2026-10-15 18:05:00 [INFO ] [deepseek_web]   Deleted: 0059_0960257562502514371397.jpg
+2026-10-15 18:05:05 [INFO ] [deepseek_web] [60/104] 圣诞节欧美男装棉服北极绒连帽拼色印花秋冬棉衣
+2026-10-15 18:05:05 [INFO ] [deepseek_web]   Downloaded: 0060_3700515335602312402838.jpg
+2026-10-15 18:05:05 [INFO ] [deepseek_web]   Prefetching next image (61/104)
+2026-10-15 18:05:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:05:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:05:36 [INFO ] [deepseek_web]   Response: 圣诞树印花 雪花印花 字母印花 满印图案 羊羔绒内衬 连帽拉链夹克 男士 宽松版型 长袖 全拉链门襟 罗纹袖口 罗纹下摆 加绒保暖 秋冬
+2026-10-15 18:05:36 [INFO ] [deepseek_web]   Deleted: 0060_3700515335602312402838.jpg
+2026-10-15 18:05:41 [INFO ] [deepseek_web] [61/104] 男士露营运动感休闲夹克机能户外多口袋质感衣
+2026-10-15 18:05:41 [INFO ] [deepseek_web]   Downloaded: 0061_0830515544044411253691.jpg
+2026-10-15 18:05:41 [INFO ] [deepseek_web]   Prefetching next image (62/104)
+2026-10-15 18:05:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:05:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:06:11 [INFO ] [deepseek_web]   Response: 胸前双翻盖贴袋 下摆双翻盖贴袋 左袖拉链口袋 立领 全拉链门襟 罗纹袖口 罗纹下摆 工装夹克 男士 宽松版型 长袖 常规衣长 机能户外
+2026-10-15 18:06:11 [INFO ] [deepseek_web]   Deleted: 0061_0830515544044411253691.jpg
+2026-10-15 18:06:16 [INFO ] [deepseek_web] [62/104] 男士夹克休闲宽松运动外套灯芯绒百搭潮流复古衬衫纯色外套
+2026-10-15 18:06:16 [INFO ] [deepseek_web]   Downloaded: 0062_1231045197095619719976.jpg
+2026-10-15 18:06:16 [INFO ] [deepseek_web]   Prefetching next image (63/104)
+2026-10-15 18:06:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:06:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:06:48 [INFO ] [deepseek_web]   Response: 竖条纹灯芯绒 下摆双侧大贴袋 前中单排按扣 翻领 衬衫式夹克 男士 宽松版型 长袖 收口袖口 直筒下摆 常规衣长 纯色
+2026-10-15 18:06:48 [INFO ] [deepseek_web]   Deleted: 0062_1231045197095619719976.jpg
+2026-10-15 18:06:53 [INFO ] [deepseek_web] [63/104] 男士秋季夹克商务风外套春秋季潮流简约立领外套
+2026-10-15 18:06:53 [INFO ] [deepseek_web]   Downloaded: 0063_3750154143089311886167.jpg
+2026-10-15 18:06:53 [INFO ] [deepseek_web]   Prefetching next image (64/104)
+2026-10-15 18:06:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:07:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:07:25 [INFO ] [deepseek_web]   Response: 立领 左侧斜拉链口袋 条纹内衬 弹性袖口 罗纹下摆 全拉链夹克 男士 常规版型 长袖 商务休闲 春秋季 纯色
+2026-10-15 18:07:25 [INFO ] [deepseek_web]   Deleted: 0063_3750154143089311886167.jpg
+2026-10-15 18:07:30 [INFO ] [deepseek_web] [64/104] 男士登山冲锋衣春秋休闲外套户外连帽质感夹克男装
+2026-10-15 18:07:30 [INFO ] [deepseek_web]   Downloaded: 0064_4320202016679711941412.jpg
+2026-10-15 18:07:30 [INFO ] [deepseek_web]   Prefetching next image (65/104)
+2026-10-15 18:07:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:07:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:08:04 [INFO ] [deepseek_web]   Response: 领口网眼内衬 左胸拉链贴袋 双侧斜插拉链口袋 连帽冲锋衣 男士 常规版型 立领 长袖 全拉链门襟 松紧袖口 户外登山 纯色
+2026-10-15 18:08:04 [INFO ] [deepseek_web]   Deleted: 0064_4320202016679711941412.jpg
+2026-10-15 18:08:09 [INFO ] [deepseek_web] [65/104] 秋冬季新款加绒加厚翻领皮衣休闲夹克
+2026-10-15 18:08:09 [INFO ] [deepseek_web]   Downloaded: 0065_9600328204412286684555.jpg
+2026-10-15 18:08:09 [INFO ] [deepseek_web]   Prefetching next image (66/104)
+2026-10-15 18:08:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:08:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:08:38 [INFO ] [deepseek_web]   Response: 左胸圆形贴标 羊羔绒翻领 羊羔绒内衬 袖口按扣 双侧斜插口袋 皮夹克 男士 常规版型 长袖 全拉链门襟 加绒加厚 保暖 秋冬
+2026-10-15 18:08:38 [INFO ] [deepseek_web]   Deleted: 0065_9600328204412286684555.jpg
+2026-10-15 18:08:43 [INFO ] [deepseek_web] [66/104] 男士秋冬季休闲拼色加绒加厚插肩款套头连帽卫衣
+2026-10-15 18:08:43 [INFO ] [deepseek_web]   Downloaded: 0066_6350348192312550163312.jpg
+2026-10-15 18:08:43 [INFO ] [deepseek_web]   Prefetching next image (67/104)
+2026-10-15 18:08:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:08:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:09:14 [INFO ] [deepseek_web]   Response: 撞色拼接 插肩袖 连帽抽绳 加绒内衬 套头连帽卫衣 男士 常规版型 长袖 罗纹袖口 罗纹下摆 加绒加厚 保暖 秋冬
+2026-10-15 18:09:14 [INFO ] [deepseek_web]   Deleted: 0066_6350348192312550163312.jpg
+2026-10-15 18:09:19 [INFO ] [deepseek_web] [67/104] 2026男士大码数码印刷3D印花潮流长袖连帽卫衣
+2026-10-15 18:09:19 [INFO ] [deepseek_web]   Downloaded: 0067_0660538038642530309171.jpg
+2026-10-15 18:09:19 [INFO ] [deepseek_web]   Prefetching next image (68/104)
+2026-10-15 18:09:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:09:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:09:49 [INFO ] [deepseek_web]   Response: 胸前圆形图腾印花 左袖圆形印花 羊羔绒内衬 连帽抽绳 袋鼠口袋 罗纹袖口 罗纹下摆 套头连帽卫衣 男士 大码宽松版型 长袖 常规衣长 加绒保暖
+2026-10-15 18:09:49 [INFO ] [deepseek_web]   Deleted: 0067_0660538038642530309171.jpg
+2026-10-15 18:09:54 [INFO ] [deepseek_web] [68/104] 男士维京加绒连帽卫衣
+2026-10-15 18:09:54 [INFO ] [deepseek_web]   Downloaded: 0068_4410230458648118692829.jpg
+2026-10-15 18:09:54 [INFO ] [deepseek_web]   Prefetching next image (69/104)
+2026-10-15 18:09:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:10:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:10:23 [INFO ] [deepseek_web]   Response: 圆形符文印花 袖部字母印花 撞色拼接 连帽抽绳 袋鼠口袋 罗纹袖口 罗纹下摆 套头连帽卫衣 男士 宽松版型 长袖 加绒保暖
+2026-10-15 18:10:23 [INFO ] [deepseek_web]   Deleted: 0068_4410230458648118692829.jpg
+2026-10-15 18:10:28 [INFO ] [deepseek_web] [69/104] 秋冬男士复古西部风格户外运动休闲连帽卫衣
+2026-10-15 18:10:28 [INFO ] [deepseek_web]   Downloaded: 0069_4600912021422358991012.jpg
+2026-10-15 18:10:28 [INFO ] [deepseek_web]   Prefetching next image (70/104)
+2026-10-15 18:10:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:10:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:11:00 [INFO ] [deepseek_web]   Response: 肘部拼接贴片 帽口抽绳 袋鼠口袋 罗纹袖口 罗纹下摆 连帽套头卫衣 男士 常规版型 长袖 常规衣长 复古西部风格
+2026-10-15 18:11:00 [INFO ] [deepseek_web]   Deleted: 0069_4600912021422358991012.jpg
+2026-10-15 18:11:05 [INFO ] [deepseek_web] [70/104] 加绒加厚爸爸装夹克男
+2026-10-15 18:11:05 [INFO ] [deepseek_web]   Downloaded: 0070_0530321428502215077909.jpg
+2026-10-15 18:11:05 [INFO ] [deepseek_web]   Prefetching next image (71/104)
+2026-10-15 18:11:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:11:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:11:34 [INFO ] [deepseek_web]   Response: 立领 全拉链门襟 双侧斜插拉链口袋 加绒内衬 罗纹袖口 罗纹下摆 加绒夹克 男士 常规版型 长袖 常规衣长 加绒加厚保暖
+2026-10-15 18:11:34 [INFO ] [deepseek_web]   Deleted: 0070_0530321428502215077909.jpg
+2026-10-15 18:11:39 [INFO ] [deepseek_web] [71/104] 男士灯芯绒翻领薄款夹克男休闲时尚舒适潮流男士外套
+2026-10-15 18:11:39 [INFO ] [deepseek_web]   Downloaded: 0071_2270940199073019794576.jpg
+2026-10-15 18:11:39 [INFO ] [deepseek_web]   Prefetching next image (72/104)
+2026-10-15 18:11:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:11:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:12:09 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹 袖口按扣 横向拼接缝线 双侧斜插口袋 翻领 灯芯绒夹克 男士 常规版型 长袖 按扣门襟 常规衣长 薄款
+2026-10-15 18:12:09 [INFO ] [deepseek_web]   Deleted: 0071_2270940199073019794576.jpg
+2026-10-15 18:12:14 [INFO ] [deepseek_web] [72/104] 男士秋冬季时尚休闲单层防风透气修身连帽夹克
+2026-10-15 18:12:14 [INFO ] [deepseek_web]   Downloaded: 0072_3500358009085767488254.jpg
+2026-10-15 18:12:14 [INFO ] [deepseek_web]   Prefetching next image (73/104)
+2026-10-15 18:12:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:12:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:12:51 [INFO ] [deepseek_web]   Response: 左袖圆形贴标 胸前竖向拉链口袋 腰部双侧翻盖按扣口袋 格纹内衬 帽口抽绳 领口按扣 袖口魔术贴 连帽夹克 男士 修身版型 长袖 全拉链门襟 防风透气 秋冬
+2026-10-15 18:12:51 [INFO ] [deepseek_web]   Deleted: 0072_3500358009085767488254.jpg
+2026-10-15 18:12:56 [INFO ] [deepseek_web] [73/104] 男士秋冬季时尚休闲保暖加绒连帽拉链夹克
+2026-10-15 18:12:56 [INFO ] [deepseek_web]   Downloaded: 0073_7740347594275062394264.jpg
+2026-10-15 18:12:56 [INFO ] [deepseek_web]   Prefetching next image (74/104)
+2026-10-15 18:12:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:13:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:13:25 [INFO ] [deepseek_web]   Response: 毛领连帽 胸前反光条 左胸竖向拉链口袋 下摆双侧翻盖按扣口袋 左袖圆形贴标 加绒连帽夹克 男士 常规版型 长袖 全拉链门襟 加绒保暖 秋冬
+2026-10-15 18:13:25 [INFO ] [deepseek_web]   Deleted: 0073_7740347594275062394264.jpg
+2026-10-15 18:13:30 [INFO ] [deepseek_web] [74/104] 男士秋冬季时尚休闲保暖加绒工装防风夹克
+2026-10-15 18:13:30 [INFO ] [deepseek_web]   Downloaded: 0074_4290323201604214802336.jpg
+2026-10-15 18:13:30 [INFO ] [deepseek_web]   Prefetching next image (75/104)
+2026-10-15 18:13:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:13:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:14:00 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 左胸翻盖口袋 下部斜插口袋 单排扣门襟 袖口按扣 加绒内衬 加绒牛仔夹克 男士 常规版型 长袖 加绒保暖 秋冬
+2026-10-15 18:14:00 [INFO ] [deepseek_web]   Deleted: 0074_4290323201604214802336.jpg
+2026-10-15 18:14:05 [INFO ] [deepseek_web] [75/104] 男士秋冬季时尚休闲假两件连帽灯芯绒工装长袖外套
+2026-10-15 18:14:05 [INFO ] [deepseek_web]   Downloaded: 0075_0750439005731441232364.jpg
+2026-10-15 18:14:05 [INFO ] [deepseek_web]   Prefetching next image (76/104)
+2026-10-15 18:14:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:14:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:14:36 [INFO ] [deepseek_web]   Response: 假两件结构 撞色连帽 灯芯绒竖条纹 前襟拉链按扣 胸前贴袋 下摆双贴袋 罗纹袖口 灯芯绒工装夹克 男士 宽松版型 长袖 常规衣长 秋冬
+2026-10-15 18:14:36 [INFO ] [deepseek_web]   Deleted: 0075_0750439005731441232364.jpg
+2026-10-15 18:14:41 [INFO ] [deepseek_web] [76/104] 男士春秋季时尚休闲防风多口袋运动冲锋衣夹克
+2026-10-15 18:14:41 [INFO ] [deepseek_web]   Downloaded: 0076_4970343261311334835657.jpg
+2026-10-15 18:14:41 [INFO ] [deepseek_web]   Prefetching next image (77/104)
+2026-10-15 18:14:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:14:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:15:12 [INFO ] [deepseek_web]   Response: 连帽抽绳 胸前双竖拉链口袋 下摆双翻盖口袋 袖口魔术贴 正面全拉链门襟 连帽冲锋衣夹克 男士 常规版型 长袖 常规衣长 防风 春秋季 运动
+2026-10-15 18:15:12 [INFO ] [deepseek_web]   Deleted: 0076_4970343261311334835657.jpg
+2026-10-15 18:15:17 [INFO ] [deepseek_web] [77/104] 男士休闲格子加绒夹克外套
+2026-10-15 18:15:17 [INFO ] [deepseek_web]   Downloaded: 0077_6860721381802351489641.jpg
+2026-10-15 18:15:17 [INFO ] [deepseek_web]   Prefetching next image (78/104)
+2026-10-15 18:15:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:15:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:15:50 [INFO ] [deepseek_web]   Response: 格纹图案 胸前双贴袋 袖口纽扣 翻领 单排扣门襟 加绒内衬 衬衫式夹克 男士 宽松版型 长袖 常规衣长 加绒保暖
+2026-10-15 18:15:50 [INFO ] [deepseek_web]   Deleted: 0077_6860721381802351489641.jpg
+2026-10-15 18:15:55 [INFO ] [deepseek_web] [78/104] 男士局部印花羊羔绒纯色拉链外套
+2026-10-15 18:15:55 [INFO ] [deepseek_web]   Downloaded: 0078_2700649133222322044692.jpg
+2026-10-15 18:15:55 [INFO ] [deepseek_web]   Prefetching next image (79/104)
+2026-10-15 18:15:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:16:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:16:36 [INFO ] [deepseek_web]   Response: 左胸字母印花 十字架图案 羊羔绒内衬 连帽抽绳 正面袋鼠口袋 罗纹袖口 罗纹下摆 加绒连帽卫衣 男士 常规版型 长袖 全拉链门襟
+2026-10-15 18:16:36 [INFO ] [deepseek_web]   Deleted: 0078_2700649133222322044692.jpg
+2026-10-15 18:16:41 [INFO ] [deepseek_web] [79/104] 男士加绒羊羔绒纯色连帽外套夹克
+2026-10-15 18:16:41 [INFO ] [deepseek_web]   Downloaded: 0079_7250426034002171471499.jpg
+2026-10-15 18:16:41 [INFO ] [deepseek_web]   Prefetching next image (80/104)
+2026-10-15 18:16:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:16:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:17:11 [INFO ] [deepseek_web]   Response: 羊羔绒内衬 连帽抽绳 胸前双翻盖贴袋 罗纹袖口 罗纹下摆 加绒连帽夹克 男士 常规版型 长袖 全拉链门襟 加绒保暖
+2026-10-15 18:17:11 [INFO ] [deepseek_web]   Deleted: 0079_7250426034002171471499.jpg
+2026-10-15 18:17:16 [INFO ] [deepseek_web] [80/104] 冬季男士灯芯绒夹克羊羔绒外套保暖夹克外套
+2026-10-15 18:17:16 [INFO ] [deepseek_web]   Downloaded: 0080_5390918421245848666679.jpg
+2026-10-15 18:17:16 [INFO ] [deepseek_web]   Prefetching next image (81/104)
+2026-10-15 18:17:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:17:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:17:49 [INFO ] [deepseek_web]   Response: 羊羔绒翻领 胸前双翻盖按扣贴袋 下摆双侧斜插口袋 灯芯绒夹克 男士 宽松版型 长袖 按扣门襟 常规衣长 加绒保暖 冬季
+2026-10-15 18:17:49 [INFO ] [deepseek_web]   Deleted: 0080_5390918421245848666679.jpg
+2026-10-15 18:17:54 [INFO ] [deepseek_web] [81/104] 男士格子连帽加绒防风保暖纽扣开衫夹克外套
+2026-10-15 18:17:54 [INFO ] [deepseek_web]   Downloaded: 0081_0261118023104487229698.jpg
+2026-10-15 18:17:54 [INFO ] [deepseek_web]   Prefetching next image (82/104)
+2026-10-15 18:17:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:18:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:18:27 [INFO ] [deepseek_web]   Response: 格纹图案 胸前双翻盖按扣贴袋 羊羔绒内衬 纽扣门襟 袖口纽扣 加绒连帽开衫夹克 男士 宽松版型 长袖 常规衣长 防风保暖
+2026-10-15 18:18:27 [INFO ] [deepseek_web]   Deleted: 0081_0261118023104487229698.jpg
+2026-10-15 18:18:32 [INFO ] [deepseek_web] [82/104] 男士格子法兰绒连帽加绒夹克外套
+2026-10-15 18:18:32 [INFO ] [deepseek_web]   Downloaded: 0082_3750447047317811447619.jpg
+2026-10-15 18:18:32 [INFO ] [deepseek_web]   Prefetching next image (83/104)
+2026-10-15 18:18:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:18:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:19:01 [INFO ] [deepseek_web]   Response: 格纹图案 左胸翻盖贴袋 连帽抽绳 羊羔绒内衬 全拉链门襟 罗纹袖口 罗纹下摆 法兰绒加绒夹克 男士 常规版型 长袖 常规衣长 保暖
+2026-10-15 18:19:01 [INFO ] [deepseek_web]   Deleted: 0082_3750447047317811447619.jpg
+2026-10-15 18:19:06 [INFO ] [deepseek_web] [83/104] 男士秋冬翻领短款仿皮草羊羔绒加厚外套
+2026-10-15 18:19:06 [INFO ] [deepseek_web]   Downloaded: 0083_0140217314401516396659.jpg
+2026-10-15 18:19:06 [INFO ] [deepseek_web]   Prefetching next image (84/104)
+2026-10-15 18:19:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:19:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:19:44 [INFO ] [deepseek_web]   Response: 仿皮草颗粒绒 翻领单排扣 双侧大贴袋 纯色 无帽 仿皮草羊羔绒外套 男士 常规版型 长袖 中长款 直下摆 加厚保暖
+2026-10-15 18:19:44 [INFO ] [deepseek_web]   Deleted: 0083_0140217314401516396659.jpg
+2026-10-15 18:19:49 [INFO ] [deepseek_web] [84/104] 2024秋冬男外套跨境麂皮绒拼色夹克亚马逊多口袋拉链大衣
+2026-10-15 18:19:49 [INFO ] [deepseek_web]   Downloaded: 0084_2601059215521221131154.jpg
+2026-10-15 18:19:49 [INFO ] [deepseek_web]   Prefetching next image (85/104)
+2026-10-15 18:19:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:20:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:20:23 [INFO ] [deepseek_web]   Response: 肩部撞色拼接 毛绒翻领 胸前双翻盖口袋 下摆双大贴袋 袖口毛绒翻边 中长款麂皮绒大衣 男士 常规版型 长袖 前中拉链门襟
+2026-10-15 18:20:23 [INFO ] [deepseek_web]   Deleted: 0084_2601059215521221131154.jpg
+2026-10-15 18:20:28 [INFO ] [deepseek_web] [85/104] 男士休闲毛绒纽扣外套纯色长袖翻领外套
+2026-10-15 18:20:28 [INFO ] [deepseek_web]   Downloaded: 0085_0461122576673140435656.jpg
+2026-10-15 18:20:28 [INFO ] [deepseek_web]   Prefetching next image (86/104)
+2026-10-15 18:20:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:20:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:21:04 [INFO ] [deepseek_web]   Response: 毛绒翻领 门襟毛绒镶边 袖口毛绒翻边 双侧大贴袋 毛绒镶边中长款外套 男士 常规版型 长袖 单排扣门襟 纯色
+2026-10-15 18:21:04 [INFO ] [deepseek_web]   Deleted: 0085_0461122576673140435656.jpg
+2026-10-15 18:21:09 [INFO ] [deepseek_web] [86/104] 春秋季灯芯绒新款简约百搭春季长袖领夹克衫潮牌男士青年
+2026-10-15 18:21:09 [INFO ] [deepseek_web]   Downloaded: 0086_2480243117791419682972.jpg
+2026-10-15 18:21:09 [INFO ] [deepseek_web]   Prefetching next image (87/104)
+2026-10-15 18:21:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:21:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:21:51 [INFO ] [deepseek_web]   Response: 竖条纹纹理 胸前双翻盖按扣贴袋 袖口按扣 灯芯绒夹克 男士 宽松版型 翻领 长袖 单排按扣门襟 常规衣长 下摆斜插口袋
+2026-10-15 18:21:51 [INFO ] [deepseek_web]   Deleted: 0086_2480243117791419682972.jpg
+2026-10-15 18:21:56 [INFO ] [deepseek_web] [87/104] 灯芯绒外套欧美青年男士春秋薄翻领开衫夹克
+2026-10-15 18:21:56 [INFO ] [deepseek_web]   Downloaded: 0087_7001030200425820497751.jpg
+2026-10-15 18:21:56 [INFO ] [deepseek_web]   Prefetching next image (88/104)
+2026-10-15 18:21:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:22:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:22:26 [INFO ] [deepseek_web]   Response: 灯芯绒竖条纹 胸前双翻盖按扣贴袋 正面全拉链门襟 翻领 袖口纽扣 直下摆 灯芯绒夹克 男士 常规版型 长袖 常规衣长 春秋薄款
+2026-10-15 18:22:26 [INFO ] [deepseek_web]   Deleted: 0087_7001030200425820497751.jpg
+2026-10-15 18:22:31 [INFO ] [deepseek_web] [88/104] 宽松男女士夹克户外春秋青年外套
+2026-10-15 18:22:31 [INFO ] [deepseek_web]   Downloaded: 0088_8570252450471116947295.jpg
+2026-10-15 18:22:31 [INFO ] [deepseek_web]   Prefetching next image (89/104)
+2026-10-15 18:22:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:22:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:23:04 [INFO ] [deepseek_web]   Response: 罗纹棒球领 全拉链门襟 罗纹袖口 罗纹下摆 双侧斜插口袋 纯色 棒球夹克 中性 宽松版型 长袖 常规衣长 春秋户外
+2026-10-15 18:23:04 [INFO ] [deepseek_web]   Deleted: 0088_8570252450471116947295.jpg
+2026-10-15 18:23:09 [INFO ] [deepseek_web] [89/104] 美式慵懒风开衫毛衣单排扣男新款潮牌设计感宽松休闲针织衫外套
+2026-10-15 18:23:09 [INFO ] [deepseek_web]   Downloaded: 0089_0161102412351044309092.jpg
+2026-10-15 18:23:09 [INFO ] [deepseek_web]   Prefetching next image (90/104)
+2026-10-15 18:23:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:23:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:23:38 [INFO ] [deepseek_web]   Response: 绞花针织纹理 圆领 单排扣门襟 罗纹袖口 罗纹下摆 开衫毛衣 男士 宽松版型 长袖 常规衣长 休闲
+2026-10-15 18:23:38 [INFO ] [deepseek_web]   Deleted: 0089_0161102412351044309092.jpg
+2026-10-15 18:23:43 [INFO ] [deepseek_web] [90/104] 美式慵懒风开衫毛衣男2025新款潮牌设计感条纹宽松休闲针织衫外套
+2026-10-15 18:23:43 [INFO ] [deepseek_web]   Downloaded: 0090_5410148279871447780302.jpg
+2026-10-15 18:23:43 [INFO ] [deepseek_web]   Prefetching next image (91/104)
+2026-10-15 18:23:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:23:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:24:12 [INFO ] [deepseek_web]   Response: 袖部条纹拼接 拉链门襟 立领 罗纹袖口 罗纹下摆 针织开衫 男士 宽松版型 长袖 常规衣长
+2026-10-15 18:24:12 [INFO ] [deepseek_web]   Deleted: 0090_5410148279871447780302.jpg
+2026-10-15 18:24:17 [INFO ] [deepseek_web] [91/104] 新款男士毛衣时尚简约立领拉链开衫宽松青年美式针织衫外套男上衣
+2026-10-15 18:24:17 [INFO ] [deepseek_web]   Downloaded: 0091_8700157074581418109226.jpg
+2026-10-15 18:24:17 [INFO ] [deepseek_web]   Prefetching next image (92/104)
+2026-10-15 18:24:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:24:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:24:59 [INFO ] [deepseek_web]   Response: 罗纹立领 全拉链门襟 罗纹袖口 罗纹下摆 无帽 无口袋 无抽绳 针织开衫毛衣 男士 宽松版型 长袖 常规衣长 纯色
+2026-10-15 18:24:59 [INFO ] [deepseek_web]   Deleted: 0091_8700157074581418109226.jpg
+2026-10-15 18:25:04 [INFO ] [deepseek_web] [92/104] 美式斜拉链开衫连帽卫衣男秋款重磅质感短宽廓形夹克潮牌休闲外套
+2026-10-15 18:25:04 [INFO ] [deepseek_web]   Downloaded: 0092_4810949460672921141099.jpg
+2026-10-15 18:25:04 [INFO ] [deepseek_web]   Prefetching next image (93/104)
+2026-10-15 18:25:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:25:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:25:33 [INFO ] [deepseek_web]   Response: 斜拉链门襟 连帽 落肩袖 短款廓形 罗纹袖口 罗纹下摆 连帽开衫卫衣 男士 宽松版型 长袖 秋款
+2026-10-15 18:25:33 [INFO ] [deepseek_web]   Deleted: 0092_4810949460672921141099.jpg
+2026-10-15 18:25:38 [INFO ] [deepseek_web] [93/104] 重磅撞色内里双拉链连帽卫衣男秋季款运动宽松开衫夹克潮牌休闲外套
+2026-10-15 18:25:38 [INFO ] [deepseek_web]   Downloaded: 0093_7411005355923776342396.jpg
+2026-10-15 18:25:38 [INFO ] [deepseek_web]   Prefetching next image (94/104)
+2026-10-15 18:25:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:25:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:26:08 [INFO ] [deepseek_web]   Response: 撞色内里 双拉链头 连帽 袋鼠口袋 罗纹袖口 罗纹下摆 全拉链连帽卫衣 男士 宽松版型 长袖 落肩袖 常规衣长 纯色
+2026-10-15 18:26:08 [INFO ] [deepseek_web]   Deleted: 0093_7411005355923776342396.jpg
+2026-10-15 18:26:13 [INFO ] [deepseek_web] [94/104] 男士工装大码衬衫领夹克时尚耐穿外套
+2026-10-15 18:26:13 [INFO ] [deepseek_web]   Downloaded: 0094_0620804014863113397079.jpg
+2026-10-15 18:26:13 [INFO ] [deepseek_web]   Prefetching next image (95/104)
+2026-10-15 18:26:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:26:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:26:49 [INFO ] [deepseek_web]   Response: 明线装饰 胸前双贴袋 按扣门襟 袖口纽扣 下摆按扣 落肩袖 工装衬衫夹克 男士 宽松版型 翻领 长袖 常规衣长 纯色
+2026-10-15 18:26:49 [INFO ] [deepseek_web]   Deleted: 0094_0620804014863113397079.jpg
+2026-10-15 18:26:54 [INFO ] [deepseek_web] [95/104] 新款男士拼色纹理加绒拉链休闲夹克外套
+2026-10-15 18:26:54 [INFO ] [deepseek_web]   Downloaded: 0095_5510930536732413842481.jpg
+2026-10-15 18:26:54 [INFO ] [deepseek_web]   Prefetching next image (96/104)
+2026-10-15 18:26:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:27:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:27:33 [INFO ] [deepseek_web]   Response: 人字纹针织纹理 肩部皮革拼接 肘部皮革拼接 立领 全拉链门襟 双侧斜插口袋 加绒针织夹克 男士 常规版型 长袖 罗纹袖口 罗纹下摆
+2026-10-15 18:27:33 [INFO ] [deepseek_web]   Deleted: 0095_5510930536732413842481.jpg
+2026-10-15 18:27:38 [INFO ] [deepseek_web] [96/104] 男士仿皮连帽夹克秋冬加绒加厚保暖拉链带口袋休闲时尚外套
+2026-10-15 18:27:38 [INFO ] [deepseek_web]   Downloaded: 0096_6170918064982218986777.jpg
+2026-10-15 18:27:38 [INFO ] [deepseek_web]   Prefetching next image (97/104)
+2026-10-15 18:27:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:27:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:28:14 [INFO ] [deepseek_web]   Response: 肩部撞色拼接 肘部撞色贴片 胸前方形贴标 羊羔绒内衬 连帽抽绳 仿皮连帽夹克 男士 常规版型 长袖 全拉链门襟 罗纹袖口 罗纹下摆 加绒保暖
+2026-10-15 18:28:14 [INFO ] [deepseek_web]   Deleted: 0096_6170918064982218986777.jpg
+2026-10-15 18:28:19 [INFO ] [deepseek_web] [97/104] 爆款男士拉链针织夹克外套内里北极绒加厚棉服夹克
+2026-10-15 18:28:19 [INFO ] [deepseek_web]   Downloaded: 0097_5360910202312220548440.jpg
+2026-10-15 18:28:19 [INFO ] [deepseek_web]   Prefetching next image (98/104)
+2026-10-15 18:28:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:28:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:28:52 [INFO ] [deepseek_web]   Response: 肩部撞色拼接 肘部撞色贴片 立领 针织夹克 男士 常规版型 长袖 全拉链门襟 罗纹袖口 罗纹下摆 双侧斜插口袋 加绒内衬 常规衣长 加厚保暖
+2026-10-15 18:28:52 [INFO ] [deepseek_web]   Deleted: 0097_5360910202312220548440.jpg
+2026-10-15 18:28:57 [INFO ] [deepseek_web] [98/104] 男士连帽卫衣
+2026-10-15 18:28:57 [INFO ] [deepseek_web]   Downloaded: 0098_3660246382641011194380.jpg
+2026-10-15 18:28:57 [INFO ] [deepseek_web]   Prefetching next image (99/104)
+2026-10-15 18:28:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:29:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:29:32 [INFO ] [deepseek_web]   Response: 前领四粒扣半开襟 肘部拼接贴片 袋鼠口袋 领口方形贴标 套头连帽卫衣 男士 常规版型 长袖 罗纹袖口 罗纹下摆
+2026-10-15 18:29:32 [INFO ] [deepseek_web]   Deleted: 0098_3660246382641011194380.jpg
+2026-10-15 18:29:37 [INFO ] [deepseek_web] [99/104] 秋冬休闲肌理面料德绒撞色拼接单排扣长袖男士亨利衫
+2026-10-15 18:29:37 [INFO ] [deepseek_web]   Downloaded: 0099_1550926206363312468202.jpg
+2026-10-15 18:29:37 [INFO ] [deepseek_web]   Prefetching next image (100/104)
+2026-10-15 18:29:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:29:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:30:12 [INFO ] [deepseek_web]   Response: 胸前倒三角撞色拼接 肘部撞色贴片拼接 绞花针织肌理 半开襟单排扣 立领 长袖 针织亨利衫 男士 常规版型 罗纹袖口 罗纹下摆
+2026-10-15 18:30:12 [INFO ] [deepseek_web]   Deleted: 0099_1550926206363312468202.jpg
+2026-10-15 18:30:17 [INFO ] [deepseek_web] [100/104] 男士春秋季时尚拼色拉链翻领无帽卫衣
+2026-10-15 18:30:17 [INFO ] [deepseek_web]   Downloaded: 0100_2930849320422675644171.jpg
+2026-10-15 18:30:17 [INFO ] [deepseek_web]   Prefetching next image (101/104)
+2026-10-15 18:30:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:30:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:30:52 [INFO ] [deepseek_web]   Response: 肩部撞色拼接 肘部撞色贴片 人字纹肌理 翻领 无帽设计 罗纹袖口 罗纹下摆 半拉链套头卫衣 男士 常规版型 长袖 常规衣长
+2026-10-15 18:30:52 [INFO ] [deepseek_web]   Deleted: 0100_2930849320422675644171.jpg
+2026-10-15 18:30:57 [INFO ] [deepseek_web] [101/104] 男士复古针织提花拼接毛绒里布保暖中长款大衣
+2026-10-15 18:30:57 [INFO ] [deepseek_web]   Downloaded: 0101_2421002238882982141940.jpg
+2026-10-15 18:30:57 [INFO ] [deepseek_web]   Prefetching next image (102/104)
+2026-10-15 18:30:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:31:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:31:35 [INFO ] [deepseek_web]   Response: 肩部皮质拼接 肘部皮质拼接 毛绒翻领 毛绒内里 针织提花纹理 前中全拉链门襟 双侧斜插口袋 中长款针织开衫大衣 男士 常规版型 长袖 加绒保暖
+2026-10-15 18:31:35 [INFO ] [deepseek_web]   Deleted: 0101_2421002238882982141940.jpg
+2026-10-15 18:31:40 [INFO ] [deepseek_web] [102/104] 男士拼色加绒反光工作服夹克
+2026-10-15 18:31:40 [INFO ] [deepseek_web]   Downloaded: 0102_5540325056542310753727.jpg
+2026-10-15 18:31:40 [INFO ] [deepseek_web]   Prefetching next image (103/104)
+2026-10-15 18:31:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:31:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:32:20 [INFO ] [deepseek_web]   Response: 多道反光条 左胸翻盖按扣口袋 双侧竖向拉链口袋 魔术贴袖口 羊羔绒内衬 撞色拼接 反光工作服夹克 男士 宽松版型 立领 长袖 全拉链门襟 按扣门襟 反光 加绒保
+2026-10-15 18:32:20 [INFO ] [deepseek_web]   Deleted: 0102_5540325056542310753727.jpg
+2026-10-15 18:32:25 [INFO ] [deepseek_web] [103/104] 男士万圣节灯芯绒夹克
+2026-10-15 18:32:25 [INFO ] [deepseek_web]   Downloaded: 0103_4041009489304520397342.jpg
+2026-10-15 18:32:25 [INFO ] [deepseek_web]   Prefetching next image (104/104)
+2026-10-15 18:32:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:32:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:32:59 [INFO ] [deepseek_web]   Response: 背面满印蜘蛛网图案 后过肩拼接 翻领 无帽设计 灯芯绒夹克 男士 常规版型 长袖 常规衣长 直筒下摆 万圣节主题
+2026-10-15 18:32:59 [INFO ] [deepseek_web]   Deleted: 0103_4041009489304520397342.jpg
+2026-10-15 18:33:04 [INFO ] [deepseek_web] [104/104] 男士圣诞节灯芯绒夹克
+2026-10-15 18:33:04 [INFO ] [deepseek_web]   Downloaded: 0104_6050719003693262133007.jpg
+2026-10-15 18:33:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-15 18:33:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-15 18:33:35 [INFO ] [deepseek_web]   Response: 格纹图案 圣诞树印花 雪花印花 左胸贴袋 罗纹袖口 罗纹下摆 翻领 全拉链门襟 灯芯绒夹克 男士 常规版型 长袖 秋冬
+2026-10-15 18:33:35 [INFO ] [deepseek_web]   Deleted: 0104_6050719003693262133007.jpg
+2026-10-15 18:33:35 [INFO ] [deepseek_web] 
+2026-10-15 18:33:35 [INFO ] [deepseek_web] Retry round 1: 5 failed item(s)
+2026-10-15 18:33:40 [INFO ] [deepseek_web]   Retry [12]: 男士秋冬加绒摇粒绒冲锋衣休闲宽松户外防风防寒保暖外套夹克
+2026-10-15 18:34:00 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-15 18:34:22 [INFO ] [deepseek_web]     OK: 连帽抽绳 胸前双竖拉链口袋 下摆斜插拉链口袋 加绒内衬 软壳冲锋衣 男士 常规版型 长袖 全拉链门襟 立领 防风保暖 户外
+2026-10-15 18:34:25 [INFO ] [deepseek_web]   Retry [16]: 男士秋冬时尚休闲磨毛格子口袋羊羔绒系扣复合外套夹克厚外套
+2026-10-15 18:34:43 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-15 18:35:05 [INFO ] [deepseek_web]     OK: 格纹图案 胸前双翻盖贴袋 羊羔绒内衬 袖口羊羔绒翻边 系扣门襟 翻领 磨毛面料 加绒衬衫式夹克 男士 常规版型 长袖 常规衣长 保暖
+2026-10-15 18:35:08 [INFO ] [deepseek_web]   Retry [17]: 2024秋冬季新款夹克男装韩版潮流修身帅气加绒加厚外套
+2026-10-15 18:35:26 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-15 18:35:52 [INFO ] [deepseek_web]     OK: 左胸文字贴标 左袖文字印花 双侧拉链口袋 加绒加厚连帽夹克 男士 修身版型 长袖 全拉链门襟 松紧袖口 常规衣长 纯色 秋冬
+2026-10-15 18:35:55 [INFO ] [deepseek_web]   Retry [31]: 男士秋冬新款加绒加厚夹克
+2026-10-15 18:36:12 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-15 18:36:42 [INFO ] [deepseek_web]     OK: 褶皱纹理 左胸竖向拉链口袋 连帽抽绳 毛绒连帽开衫夹克 男士 宽松版型 全拉链门襟 长袖 罗纹袖口 罗纹下摆 加绒加厚 常规衣长
+2026-10-15 18:36:45 [INFO ] [deepseek_web]   Retry [39]: 男士冬季抓绒加厚纯色休闲夹克外套保暖立领拉链外套
+2026-10-15 18:37:05 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-15 18:37:28 [INFO ] [deepseek_web]     OK: 羊羔绒内衬领口 双侧拉链口袋 正面全拉链门襟 摇粒绒夹克 男士 常规版型 立领 长袖 常规衣长 加厚保暖 冬季 纯色
+2026-10-15 18:37:32 [INFO ] [deepseek_web] ==================================================
+2026-10-15 18:37:32 [INFO ] [deepseek_web] Done: 104 success, 0 failed → optimize_title
+2026-10-15 18:37:32 [INFO ] [title_workflow] Optimization complete: 104 titles
+2026-10-15 18:37:38 [INFO ] [title_workflow] Written 104 optimized titles to column H (8)
+2026-10-15 18:37:38 [INFO ] [title_workflow] Done: 10.10v1.xlsx
+2026-10-15 18:37:38 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-15 18:37:38 [INFO ] [jenkins] 
+2026-10-15 18:37:38 [INFO ] [jenkins] ==================================================
+2026-10-15 18:37:38 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-15 18:37:38 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-15 18:37:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-15 18:37:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-15 18:37:38 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

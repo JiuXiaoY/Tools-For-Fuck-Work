@@ -1,0 +1,580 @@
+2026-10-19 15:08:54 [INFO ] [jenkins] ==================================================
+2026-10-19 15:08:54 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-19 15:08:54 [INFO ] [jenkins] ==================================================
+2026-10-19 15:08:54 [INFO ] [jenkins] 
+2026-10-19 15:08:54 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-19 15:08:54 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:08:55 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\10.14v1_de.xlsx
+2026-10-19 15:08:55 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-19 15:08:55 [INFO ] [jenkins] 
+2026-10-19 15:08:55 [INFO ] [jenkins] ==================================================
+2026-10-19 15:08:55 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-19 15:08:55 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-19 15:08:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-19 15:08:55 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-19 15:08:55 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-19 15:09:32 [INFO ] [jenkins] ==================================================
+2026-10-19 15:09:32 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-19 15:09:32 [INFO ] [jenkins] ==================================================
+2026-10-19 15:09:32 [INFO ] [jenkins] 
+2026-10-19 15:09:32 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-19 15:09:32 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:09:32 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-19 15:09:32 [INFO ] [jenkins] 
+2026-10-19 15:09:32 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-19 15:09:32 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:09:32 [INFO ] [preprocess] Preprocessing 3 file(s) with 1 step(s)
+2026-10-19 15:09:32 [INFO ] [preprocess] [product_20261019024016797.xlsx]
+2026-10-19 15:09:33 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:09:33 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:09:34 [INFO ] [preprocess]   [product_20261019024016797.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:09:34 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:09:35 [INFO ] [preprocess] [product_20261019024211400.xlsx]
+2026-10-19 15:09:35 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:09:35 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:09:37 [INFO ] [preprocess]   [product_20261019024211400.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:09:37 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:09:37 [INFO ] [preprocess] [product_20261019024958549.xlsx]
+2026-10-19 15:09:38 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:09:38 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:09:38 [INFO ] [preprocess]   [product_20261019024958549.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:09:38 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:09:39 [INFO ] [preprocess] Preprocessing complete
+2026-10-19 15:09:39 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-19 15:09:39 [INFO ] [jenkins] 
+2026-10-19 15:09:39 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-19 15:09:39 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:09:39 [INFO ] [main] Log file: 20261019_f657d672.log
+2026-10-19 15:09:39 [INFO ] [main] Found 3 file(s):
+2026-10-19 15:09:39 [INFO ] [main]   product_20261019024016797.xlsx
+2026-10-19 15:09:39 [INFO ] [main]   product_20261019024211400.xlsx
+2026-10-19 15:09:39 [INFO ] [main]   product_20261019024958549.xlsx
+2026-10-19 15:09:39 [INFO ] [main] Output: 10.14v1_de.xlsx
+2026-10-19 15:09:39 [INFO ] [main] ==================================================
+2026-10-19 15:09:44 [INFO ] [main] Merged 3 files, 4804 images total
+2026-10-19 15:09:44 [INFO ] [main] Deleted 3 source file(s)
+2026-10-19 15:09:45 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-19 15:09:45 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-19 15:09:47 [INFO ] [pipeline]   Sheet [Sheet0_2]: 312 rows, 2122 images
+2026-10-19 15:09:47 [INFO ] [pipeline]   Sheet [Sheet0_3]: 142 rows, 964 images
+2026-10-19 15:09:47 [INFO ] [pipeline]   Merged 3 sheets -> 1, 454 data rows, 3086 images
+2026-10-19 15:09:47 [INFO ] [pipeline] [2/12] validate
+2026-10-19 15:09:47 [INFO ] [pipeline]   Validated: 697 rows, 27 cols (expect ~32)
+2026-10-19 15:09:47 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-19 15:09:48 [INFO ] [pipeline]   Backed up 4804 images
+2026-10-19 15:09:48 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-19 15:09:48 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-19 15:09:48 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-19 15:09:48 [INFO ] [pipeline]   Restored 4804 images with adjusted anchors
+2026-10-19 15:09:48 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-19 15:09:48 [INFO ] [pipeline]   Column 2: 697 IDs generated
+2026-10-19 15:09:48 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-19 15:09:48 [INFO ] [pipeline]   Column 3: 697 cells filled
+2026-10-19 15:09:48 [INFO ] [pipeline] [6/12] map_colors
+2026-10-19 15:09:48 [INFO ] [pipeline]   Colors J -> K: 647 cells mapped, 50 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-19 15:09:48 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-19 15:09:48 [INFO ] [pipeline]   Size column L: 628 mapped, 50 cleared (col A has fill), 19 no match (recorded)
+2026-10-19 15:09:48 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-19 15:09:48 [INFO ] [pipeline]   Mirror copy: 4107 cells written
+2026-10-19 15:09:48 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-19 15:09:48 [INFO ] [pipeline]   Price source M -> AS: 697 cells copied
+2026-10-19 15:09:48 [INFO ] [pipeline] [10/12] calc_price
+2026-10-19 15:09:48 [INFO ] [pipeline]   Price columns AT-AW: 697 rows calculated
+2026-10-19 15:09:48 [INFO ] [pipeline] [11/12] format_cells
+2026-10-19 15:09:48 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-19 15:09:48 [INFO ] [pipeline]   Formatted 697 rows: h=50, align=left/center
+2026-10-19 15:09:48 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-19 15:09:48 [INFO ] [pipeline] [12/12] finalize
+2026-10-19 15:09:48 [INFO ] [pipeline]   Done: 697 rows x 49 cols (target: 49)
+2026-10-19 15:09:48 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:09:50 [INFO ] [main] Size: 697 rows x 49 cols
+2026-10-19 15:09:50 [INFO ] [main] ==================================================
+2026-10-19 15:09:50 [INFO ] [main] Done: 10.14v1_de.xlsx
+2026-10-19 15:09:50 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-19 15:09:50 [INFO ] [jenkins] 
+2026-10-19 15:09:50 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-19 15:09:50 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:09:51 [INFO ] [color_size_main] Source: 10.14v1_de.xlsx
+2026-10-19 15:09:52 [INFO ] [color_size_main] Extracted: 647 data lines + 50 separators → check_.txt
+2026-10-19 15:09:52 [INFO ] [color_size_main] Running: process.py
+2026-10-19 15:09:52 [INFO ] [color_size_deal] Groups: 50, lines: 647 (file: 697)
+2026-10-19 15:09:52 [INFO ] [color_size_deal] Prefixes: {'01': 68, '02': 38, '03': 28, '04': 24, '05': 21, '06': 17, '07': 13, '08': 12, '09': 10, '10': 8, '11': 7, '12': 5, '13': 4, '14': 4, '15': 4, '16': 4, '17': 4, '18': 3, '19': 2, '20': 1, '21': 1}
+2026-10-19 15:09:52 [INFO ] [color_size_deal] Done.
+2026-10-19 15:09:53 [INFO ] [color_size_main] Processing write-back: 697 lines
+2026-10-19 15:09:56 [INFO ] [color_size_main] Write-back: 328 written, 369 unchanged → 10.14v1_de.xlsx
+2026-10-19 15:09:56 [INFO ] [color_size_main] Done.
+2026-10-19 15:09:56 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-19 15:09:56 [INFO ] [jenkins] 
+2026-10-19 15:09:56 [INFO ] [jenkins] ==================================================
+2026-10-19 15:09:56 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-19 15:09:56 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-19 15:09:56 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-19 15:09:56 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-19 15:09:56 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-19 15:10:38 [INFO ] [jenkins] ==================================================
+2026-10-19 15:10:38 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-19 15:10:38 [INFO ] [jenkins] ==================================================
+2026-10-19 15:10:38 [INFO ] [jenkins] 
+2026-10-19 15:10:38 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-19 15:10:38 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:10:38 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-19 15:10:38 [INFO ] [jenkins] 
+2026-10-19 15:10:38 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-19 15:10:38 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:10:38 [INFO ] [preprocess] Preprocessing 3 file(s) with 1 step(s)
+2026-10-19 15:10:38 [INFO ] [preprocess] [product_20261019024016797.xlsx]
+2026-10-19 15:10:39 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:10:39 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:10:40 [INFO ] [preprocess]   [product_20261019024016797.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:10:40 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:10:41 [INFO ] [preprocess] [product_20261019024211400.xlsx]
+2026-10-19 15:10:41 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:10:41 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:10:43 [INFO ] [preprocess]   [product_20261019024211400.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:10:43 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:10:43 [INFO ] [preprocess] [product_20261019024958549.xlsx]
+2026-10-19 15:10:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-19 15:10:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-19 15:10:44 [INFO ] [preprocess]   [product_20261019024958549.xlsx] Sheet [Sheet0]: header row removed
+2026-10-19 15:10:44 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:10:45 [INFO ] [preprocess] Preprocessing complete
+2026-10-19 15:10:45 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-19 15:10:45 [INFO ] [jenkins] 
+2026-10-19 15:10:45 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-19 15:10:45 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:10:45 [INFO ] [main] Log file: 20261019_f657d672.log
+2026-10-19 15:10:45 [INFO ] [main] Found 3 file(s):
+2026-10-19 15:10:45 [INFO ] [main]   product_20261019024016797.xlsx
+2026-10-19 15:10:45 [INFO ] [main]   product_20261019024211400.xlsx
+2026-10-19 15:10:45 [INFO ] [main]   product_20261019024958549.xlsx
+2026-10-19 15:10:45 [INFO ] [main] Output: 10.14v1_fr.xlsx
+2026-10-19 15:10:45 [INFO ] [main] ==================================================
+2026-10-19 15:10:50 [INFO ] [main] Merged 3 files, 4804 images total
+2026-10-19 15:10:50 [INFO ] [main] Deleted 3 source file(s)
+2026-10-19 15:10:51 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-19 15:10:51 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-19 15:10:53 [INFO ] [pipeline]   Sheet [Sheet0_2]: 312 rows, 2122 images
+2026-10-19 15:10:53 [INFO ] [pipeline]   Sheet [Sheet0_3]: 142 rows, 964 images
+2026-10-19 15:10:53 [INFO ] [pipeline]   Merged 3 sheets -> 1, 454 data rows, 3086 images
+2026-10-19 15:10:53 [INFO ] [pipeline] [2/12] validate
+2026-10-19 15:10:53 [INFO ] [pipeline]   Validated: 697 rows, 27 cols (expect ~32)
+2026-10-19 15:10:53 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-19 15:10:53 [INFO ] [pipeline]   Backed up 4804 images
+2026-10-19 15:10:53 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-19 15:10:53 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-19 15:10:53 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-19 15:10:53 [INFO ] [pipeline]   Restored 4804 images with adjusted anchors
+2026-10-19 15:10:53 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-19 15:10:53 [INFO ] [pipeline]   Column 2: 697 IDs generated
+2026-10-19 15:10:53 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-19 15:10:53 [INFO ] [pipeline]   Column 3: 697 cells filled
+2026-10-19 15:10:53 [INFO ] [pipeline] [6/12] map_colors
+2026-10-19 15:10:53 [INFO ] [pipeline]   Colors J -> K: 647 cells mapped, 50 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-19 15:10:53 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-19 15:10:53 [INFO ] [pipeline]   Size column L: 628 mapped, 50 cleared (col A has fill), 19 no match (recorded)
+2026-10-19 15:10:53 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-19 15:10:53 [INFO ] [pipeline]   Mirror copy: 4107 cells written
+2026-10-19 15:10:53 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-19 15:10:53 [INFO ] [pipeline]   Price source M -> AS: 697 cells copied
+2026-10-19 15:10:53 [INFO ] [pipeline] [10/12] calc_price
+2026-10-19 15:10:53 [INFO ] [pipeline]   Price columns AT-AW: 697 rows calculated
+2026-10-19 15:10:53 [INFO ] [pipeline] [11/12] format_cells
+2026-10-19 15:10:53 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-19 15:10:53 [INFO ] [pipeline]   Formatted 697 rows: h=50, align=left/center
+2026-10-19 15:10:53 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-19 15:10:53 [INFO ] [pipeline] [12/12] finalize
+2026-10-19 15:10:53 [INFO ] [pipeline]   Done: 697 rows x 49 cols (target: 49)
+2026-10-19 15:10:53 [INFO ] [pipeline] Pipeline complete
+2026-10-19 15:10:55 [INFO ] [main] Size: 697 rows x 49 cols
+2026-10-19 15:10:55 [INFO ] [main] ==================================================
+2026-10-19 15:10:55 [INFO ] [main] Done: 10.14v1_fr.xlsx
+2026-10-19 15:10:56 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-19 15:10:56 [INFO ] [jenkins] 
+2026-10-19 15:10:56 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-19 15:10:56 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:10:56 [INFO ] [color_size_main] Source: 10.14v1_fr.xlsx
+2026-10-19 15:10:57 [INFO ] [color_size_main] Extracted: 647 data lines + 50 separators → check_.txt
+2026-10-19 15:10:57 [INFO ] [color_size_main] Running: process.py
+2026-10-19 15:10:58 [INFO ] [color_size_deal] Groups: 50, lines: 647 (file: 697)
+2026-10-19 15:10:58 [INFO ] [color_size_deal] Prefixes: {'01': 68, '02': 38, '03': 28, '04': 24, '05': 21, '06': 17, '07': 13, '08': 12, '09': 10, '10': 8, '11': 7, '12': 5, '13': 4, '14': 4, '15': 4, '16': 4, '17': 4, '18': 3, '19': 2, '20': 1, '21': 1}
+2026-10-19 15:10:58 [INFO ] [color_size_deal] Done.
+2026-10-19 15:10:58 [INFO ] [color_size_main] Processing write-back: 697 lines
+2026-10-19 15:11:01 [INFO ] [color_size_main] Write-back: 328 written, 369 unchanged → 10.14v1_fr.xlsx
+2026-10-19 15:11:01 [INFO ] [color_size_main] Done.
+2026-10-19 15:11:01 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-19 15:11:01 [INFO ] [jenkins] 
+2026-10-19 15:11:01 [INFO ] [jenkins] ==================================================
+2026-10-19 15:11:01 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-19 15:11:01 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-19 15:11:01 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-19 15:11:01 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-19 15:11:01 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-19 15:20:25 [INFO ] [jenkins] ==================================================
+2026-10-19 15:20:25 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-19 15:20:25 [INFO ] [jenkins] ==================================================
+2026-10-19 15:20:25 [INFO ] [jenkins] 
+2026-10-19 15:20:25 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-19 15:20:25 [INFO ] [jenkins] ------------------------------
+2026-10-19 15:20:25 [INFO ] [title_workflow] Source: 10.14v1.xlsx
+2026-10-19 15:20:26 [INFO ] [title_workflow] Extracted 50 titles + 50 links
+2026-10-19 15:20:26 [INFO ] [title_workflow] Written: origin_title (50) + origin_link (50)
+2026-10-19 15:20:26 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-19 15:20:26 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-19 15:20:27 [INFO ] [deepseek_web] Opening DeepSeek web (50 titles)...
+2026-10-19 15:20:27 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-19 15:20:30 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-19 15:20:33 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-19 15:20:33 [INFO ] [deepseek_web] [1/50] 滑雪3D暴躁老头面具
+2026-10-19 15:20:37 [INFO ] [deepseek_web]   Downloaded: 0001_3720611117854510061329.jpg
+2026-10-19 15:20:37 [INFO ] [deepseek_web]   Prefetching next image (2/50)
+2026-10-19 15:20:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:20:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:21:06 [INFO ] [deepseek_web]   Response: 3D立体牙齿笑脸印花 佩斯利满印图案 眼部异形镂空开口 套头式全包围护颈 滑雪面罩 中性 常规版型 户外保暖
+2026-10-19 15:21:06 [INFO ] [deepseek_web]   Deleted: 0001_3720611117854510061329.jpg
+2026-10-19 15:21:11 [INFO ] [deepseek_web] [2/50] 动物头套防晒面具
+2026-10-19 15:21:11 [INFO ] [deepseek_web]   Downloaded: 0002_5810559500003420503522.jpg
+2026-10-19 15:21:11 [INFO ] [deepseek_web]   Prefetching next image (3/50)
+2026-10-19 15:21:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:21:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:21:40 [INFO ] [deepseek_web]   Response: 3D逼真动物头部印花 眼部镂空开口 面部全覆盖套头设计 边缘包边处理 套头式护颈头套面罩 中性 常规版型 防晒
+2026-10-19 15:21:40 [INFO ] [deepseek_web]   Deleted: 0002_5810559500003420503522.jpg
+2026-10-19 15:21:45 [INFO ] [deepseek_web] [3/50] 搞怪骑行滑雪人脸面罩
+2026-10-19 15:21:45 [INFO ] [deepseek_web]   Downloaded: 0003_1420514041995160631571.jpg
+2026-10-19 15:21:45 [INFO ] [deepseek_web]   Prefetching next image (4/50)
+2026-10-19 15:21:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:21:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:22:14 [INFO ] [deepseek_web]   Response: 3D立体笑脸面部印花 佩斯利满印图案 眼部开口结构 套头式全包围护颈 滑雪面罩 中性 常规版型 防晒 骑行
+2026-10-19 15:22:14 [INFO ] [deepseek_web]   Deleted: 0003_1420514041995160631571.jpg
+2026-10-19 15:22:19 [INFO ] [deepseek_web] [4/50] 多功能面具面罩
+2026-10-19 15:22:19 [INFO ] [deepseek_web]   Downloaded: 0004_0930439360874213384083.jpg
+2026-10-19 15:22:19 [INFO ] [deepseek_web]   Prefetching next image (5/50)
+2026-10-19 15:22:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:22:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:22:49 [INFO ] [deepseek_web]   Response: 3D立体老年男性面部印花 眼部横向一字镂空开口 顶部针织纹理图案拼接 连体护颈围脖结构 套头面罩 中性 常规版型 全包围覆盖式
+2026-10-19 15:22:49 [INFO ] [deepseek_web]   Deleted: 0004_0930439360874213384083.jpg
+2026-10-19 15:22:54 [INFO ] [deepseek_web] [5/50] 趣味搞怪骑行滑雪面罩
+2026-10-19 15:22:54 [INFO ] [deepseek_web]   Downloaded: 0005_9760236137591920067545.jpg
+2026-10-19 15:22:54 [INFO ] [deepseek_web]   Prefetching next image (6/50)
+2026-10-19 15:22:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:23:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:23:23 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 眼部横向镂空包边 颈部堆叠褶皱拼接 全包围套头护颈面罩 中性 常规版型 骑行滑雪
+2026-10-19 15:23:23 [INFO ] [deepseek_web]   Deleted: 0005_9760236137591920067545.jpg
+2026-10-19 15:23:28 [INFO ] [deepseek_web] [6/50] 冬季搞怪骑行滑雪面罩
+2026-10-19 15:23:28 [INFO ] [deepseek_web]   Downloaded: 0006_0870223452105913304499.jpg
+2026-10-19 15:23:28 [INFO ] [deepseek_web]   Prefetching next image (7/50)
+2026-10-19 15:23:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:23:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:23:57 [INFO ] [deepseek_web]   Response: 3D立体面部印花 O型嘴搞怪表情图案 颈部多层堆叠结构 套头面罩 中性 常规版型 全包围护颈 冬季骑行滑雪
+2026-10-19 15:23:57 [INFO ] [deepseek_web]   Deleted: 0006_0870223452105913304499.jpg
+2026-10-19 15:24:02 [INFO ] [deepseek_web] [7/50] 冬季搞怪滑雪骑行面罩
+2026-10-19 15:24:02 [INFO ] [deepseek_web]   Downloaded: 0007_4640305229682051070765.jpg
+2026-10-19 15:24:02 [INFO ] [deepseek_web]   Prefetching next image (8/50)
+2026-10-19 15:24:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:24:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:24:31 [INFO ] [deepseek_web]   Response: 3D立体面部表情印花 佩斯利满印图案 眼部横向镂空开口 包头护颈连体结构 套头面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:24:31 [INFO ] [deepseek_web]   Deleted: 0007_4640305229682051070765.jpg
+2026-10-19 15:24:36 [INFO ] [deepseek_web] [8/50] 搞怪印花头套面具面罩
+2026-10-19 15:24:36 [INFO ] [deepseek_web]   Downloaded: 0008_3631028433951064183160.jpg
+2026-10-19 15:24:36 [INFO ] [deepseek_web]   Prefetching next image (9/50)
+2026-10-19 15:24:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:24:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:25:06 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 横向一字眼部镂空开口 颈部仿毛绒包边拼接 全包围套头护颈面罩 中性 常规版型 冬季
+2026-10-19 15:25:06 [INFO ] [deepseek_web]   Deleted: 0008_3631028433951064183160.jpg
+2026-10-19 15:25:11 [INFO ] [deepseek_web] [9/50] 新品跨境万圣节RP头套紫色魔兽面具头套派对角色cosplay装扮道具
+2026-10-19 15:25:11 [INFO ] [deepseek_web]   Downloaded: 0009_0100828149261389549773.jpg
+2026-10-19 15:25:11 [INFO ] [deepseek_web]   Prefetching next image (10/50)
+2026-10-19 15:25:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:25:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:25:40 [INFO ] [deepseek_web]   Response: 3D立体异形面部造型 外凸尖耳结构 外露獠牙设计 眼部镂空开口 全包围套头面具 中性 常规版型 角色扮演道具
+2026-10-19 15:25:40 [INFO ] [deepseek_web]   Deleted: 0009_0100828149261389549773.jpg
+2026-10-19 15:25:45 [INFO ] [deepseek_web] [10/50] 男士万圣节面具
+2026-10-19 15:25:45 [INFO ] [deepseek_web]   Downloaded: 0010_5440357489533549208996.jpg
+2026-10-19 15:25:45 [INFO ] [deepseek_web]   Prefetching next image (11/50)
+2026-10-19 15:25:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:25:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:26:14 [INFO ] [deepseek_web]   Response: 3D立体恶魔角图案 面部血迹纹理印花 眼部镂空开口 颈部堆叠褶皱结构 全包围套头面罩 男士 常规版型 连体护颈设计 万圣节派对
+2026-10-19 15:26:14 [INFO ] [deepseek_web]   Deleted: 0010_5440357489533549208996.jpg
+2026-10-19 15:26:19 [INFO ] [deepseek_web] [11/50] 冬季搞怪滑雪面罩
+2026-10-19 15:26:19 [INFO ] [deepseek_web]   Downloaded: 0011_5251025317781210903523.jpg
+2026-10-19 15:26:19 [INFO ] [deepseek_web]   Prefetching next image (12/50)
+2026-10-19 15:26:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:26:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:26:48 [INFO ] [deepseek_web]   Response: 3D立体夸张笑脸印花 佩斯利满印图案 眼部横向镂空开口 颈部堆叠褶皱纹理 全包围套头面罩 中性 常规版型 滑雪
+2026-10-19 15:26:48 [INFO ] [deepseek_web]   Deleted: 0011_5251025317781210903523.jpg
+2026-10-19 15:26:53 [INFO ] [deepseek_web] [12/50] 印花面罩头套
+2026-10-19 15:26:53 [INFO ] [deepseek_web]   Downloaded: 0012_0910252585782590751819.jpg
+2026-10-19 15:26:53 [INFO ] [deepseek_web]   Prefetching next image (13/50)
+2026-10-19 15:26:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:27:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:27:22 [INFO ] [deepseek_web]   Response: 3D立体小丑笑脸印花 颜料泼溅涂鸦图案 眼部横向一字镂空 套头护颈面罩 中性 常规版型 颈部堆叠褶皱结构 全包围连体设计 滑雪
+2026-10-19 15:27:22 [INFO ] [deepseek_web]   Deleted: 0012_0910252585782590751819.jpg
+2026-10-19 15:27:27 [INFO ] [deepseek_web] [13/50] 搞怪骑行滑雪人脸面罩
+2026-10-19 15:27:27 [INFO ] [deepseek_web]   Downloaded: 0013_8270929120862111044815.jpg
+2026-10-19 15:27:27 [INFO ] [deepseek_web]   Prefetching next image (14/50)
+2026-10-19 15:27:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:27:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:27:57 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 横向一字形镂空 眼部包边缝线 颈部堆叠褶皱纹理 全包围连体护颈 套头面罩 中性 常规版型 骑行滑雪
+2026-10-19 15:27:57 [INFO ] [deepseek_web]   Deleted: 0013_8270929120862111044815.jpg
+2026-10-19 15:28:02 [INFO ] [deepseek_web] [14/50] 户外滑雪骑行搞怪趣味面罩
+2026-10-19 15:28:02 [INFO ] [deepseek_web]   Downloaded: 0014_7440345425917421006166.jpg
+2026-10-19 15:28:02 [INFO ] [deepseek_web]   Prefetching next image (15/50)
+2026-10-19 15:28:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:28:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:28:31 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 横向一字形眼部镂空 颈部堆叠褶皱纹理 套头护颈面罩 中性 常规版型 全包围连体结构 户外滑雪骑行
+2026-10-19 15:28:31 [INFO ] [deepseek_web]   Deleted: 0014_7440345425917421006166.jpg
+2026-10-19 15:28:36 [INFO ] [deepseek_web] [15/50] 搞怪印花头套面具面罩
+2026-10-19 15:28:36 [INFO ] [deepseek_web]   Downloaded: 0015_5581048157169413728355.jpg
+2026-10-19 15:28:36 [INFO ] [deepseek_web]   Prefetching next image (16/50)
+2026-10-19 15:28:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:28:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:29:05 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 横向一字形眼部镂空 颈部堆叠褶皱纹理 全包围套头面罩 中性 常规版型 连体护颈设计
+2026-10-19 15:29:05 [INFO ] [deepseek_web]   Deleted: 0015_5581048157169413728355.jpg
+2026-10-19 15:29:10 [INFO ] [deepseek_web] [16/50] 冬季搞怪滑雪面罩
+2026-10-19 15:29:10 [INFO ] [deepseek_web]   Downloaded: 0016_2470333497043635147141.jpg
+2026-10-19 15:29:10 [INFO ] [deepseek_web]   Prefetching next image (17/50)
+2026-10-19 15:29:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:29:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:29:39 [INFO ] [deepseek_web]   Response: 3D立体狼头面部印花 横向一字眼部镂空 颈部堆叠褶皱结构 全包围套头护颈面罩 中性 常规版型 冬季滑雪
+2026-10-19 15:29:39 [INFO ] [deepseek_web]   Deleted: 0016_2470333497043635147141.jpg
+2026-10-19 15:29:44 [INFO ] [deepseek_web] [17/50] 男士搞怪印花头套
+2026-10-19 15:29:44 [INFO ] [deepseek_web]   Downloaded: 0017_7410418070004290060951.jpg
+2026-10-19 15:29:44 [INFO ] [deepseek_web]   Prefetching next image (18/50)
+2026-10-19 15:29:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:29:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:30:14 [INFO ] [deepseek_web]   Response: 3D立体食物造型图案 针织肌理表面 横向一字眼部镂空 连体护颈套头面罩 男士 常规版型 全包围结构 冬季滑雪
+2026-10-19 15:30:14 [INFO ] [deepseek_web]   Deleted: 0017_7410418070004290060951.jpg
+2026-10-19 15:30:19 [INFO ] [deepseek_web] [18/50] 搞怪滑雪面具面罩
+2026-10-19 15:30:19 [INFO ] [deepseek_web]   Downloaded: 0018_8260449169753931922440.jpg
+2026-10-19 15:30:19 [INFO ] [deepseek_web]   Prefetching next image (19/50)
+2026-10-19 15:30:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:30:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:30:48 [INFO ] [deepseek_web]   Response: 3D立体面部印花 夸张表情图案 横向一字眼部镂空 颈部堆叠褶皱纹理 连体全包围护颈 套头面罩 中性 常规版型 滑雪
+2026-10-19 15:30:48 [INFO ] [deepseek_web]   Deleted: 0018_8260449169753931922440.jpg
+2026-10-19 15:30:53 [INFO ] [deepseek_web] [19/50] 搞怪面具
+2026-10-19 15:30:53 [INFO ] [deepseek_web]   Downloaded: 0019_8960335452833615857724.jpg
+2026-10-19 15:30:53 [INFO ] [deepseek_web]   Prefetching next image (20/50)
+2026-10-19 15:30:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:31:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:31:22 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 顶部卷发筒图案 横向一字形眼部镂空 颈部堆叠褶皱结构 全包围连体设计 套头护颈面罩 中性 常规版型
+2026-10-19 15:31:22 [INFO ] [deepseek_web]   Deleted: 0019_8960335452833615857724.jpg
+2026-10-19 15:31:27 [INFO ] [deepseek_web] [20/50] 趣味滑雪面罩3D头套
+2026-10-19 15:31:27 [INFO ] [deepseek_web]   Downloaded: 0020_9260310578202169413274.jpg
+2026-10-19 15:31:27 [INFO ] [deepseek_web]   Prefetching next image (21/50)
+2026-10-19 15:31:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:31:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:31:56 [INFO ] [deepseek_web]   Response: 3D立体面部印花 骷髅头串珠图案 眼部横向一字镂空 颈部多层堆叠结构 套头护颈面罩 中性 常规版型 一体式全包围 保暖透气 冬季滑雪骑行
+2026-10-19 15:31:56 [INFO ] [deepseek_web]   Deleted: 0020_9260310578202169413274.jpg
+2026-10-19 15:32:01 [INFO ] [deepseek_web] [21/50] 滑雪3D暴躁老头面具
+2026-10-19 15:32:01 [INFO ] [deepseek_web]   Downloaded: 0021_2480640421394168224366.jpg
+2026-10-19 15:32:01 [INFO ] [deepseek_web]   Prefetching next image (22/50)
+2026-10-19 15:32:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:32:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:32:31 [INFO ] [deepseek_web]   Response: 3D立体面部印花 横向一字眼部镂空 颈部堆叠褶皱肌理 连体全包围套头面罩 中性 常规版型 护颈 滑雪
+2026-10-19 15:32:31 [INFO ] [deepseek_web]   Deleted: 0021_2480640421394168224366.jpg
+2026-10-19 15:32:36 [INFO ] [deepseek_web] [22/50] 圣诞老人面具
+2026-10-19 15:32:36 [INFO ] [deepseek_web]   Downloaded: 0022_8331108341594841442058.jpg
+2026-10-19 15:32:36 [INFO ] [deepseek_web]   Prefetching next image (23/50)
+2026-10-19 15:32:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:32:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:33:05 [INFO ] [deepseek_web]   Response: 3D立体圣诞老人印花 夸张吐舌表情图案 仿毛绒边缘装饰 眼部横向一字镂空 套头护颈面罩 中性 常规版型 连体全包围设计
+2026-10-19 15:33:05 [INFO ] [deepseek_web]   Deleted: 0022_8331108341594841442058.jpg
+2026-10-19 15:33:10 [INFO ] [deepseek_web] [23/50] 圣诞搞怪印花面罩头套
+2026-10-19 15:33:10 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-19 15:33:15 [INFO ] [deepseek_web] [24/50] 万圣钩织毛线章鱼帽
+2026-10-19 15:33:17 [INFO ] [deepseek_web]   Downloaded: 0024_2270441302845117016152.jpg
+2026-10-19 15:33:17 [INFO ] [deepseek_web]   Prefetching next image (25/50)
+2026-10-19 15:33:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:33:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:33:46 [INFO ] [deepseek_web]   Response: 钩织毛线材质 立体章鱼触手造型 眼部双孔镂空 连体全包围护颈 套头面罩 中性 常规版型 万圣节角色扮演道具
+2026-10-19 15:33:46 [INFO ] [deepseek_web]   Deleted: 0024_2270441302845117016152.jpg
+2026-10-19 15:33:51 [INFO ] [deepseek_web] [25/50] 恐怖元素头套防晒
+2026-10-19 15:33:51 [INFO ] [deepseek_web]   Downloaded: 0025_8661113054615594066317.jpg
+2026-10-19 15:33:51 [INFO ] [deepseek_web]   Prefetching next image (26/50)
+2026-10-19 15:33:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:34:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:34:20 [INFO ] [deepseek_web]   Response: 3D立体恐怖面部印花 双眼镂空开口 连体全包围护颈 套头面罩 中性 常规版型 无门襟套头设计 防晒 万圣节派对骑行
+2026-10-19 15:34:20 [INFO ] [deepseek_web]   Deleted: 0025_8661113054615594066317.jpg
+2026-10-19 15:34:25 [INFO ] [deepseek_web] [26/50] 动物头套防晒面具
+2026-10-19 15:34:25 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-19 15:34:30 [INFO ] [deepseek_web] [27/50] 防晒头套面具
+2026-10-19 15:34:32 [INFO ] [deepseek_web]   Downloaded: 0027_3650419335103264226023.jpg
+2026-10-19 15:34:32 [INFO ] [deepseek_web]   Prefetching next image (28/50)
+2026-10-19 15:34:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:34:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:35:01 [INFO ] [deepseek_web]   Response: 3D立体人物面部印花 网格状面部纹理 恐怖血迹妆容图案 眼部横向镂空 连体全包围护颈 套头面罩 中性 常规版型 防晒 万圣节派对
+2026-10-19 15:35:01 [INFO ] [deepseek_web]   Deleted: 0027_3650419335103264226023.jpg
+2026-10-19 15:35:06 [INFO ] [deepseek_web] [28/50] 防晒面具头套
+2026-10-19 15:35:06 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-19 15:35:11 [INFO ] [deepseek_web] [29/50] 户外滑雪骑行搞怪趣味
+2026-10-19 15:35:13 [INFO ] [deepseek_web]   Downloaded: 0029_0760944147795572863588.jpg
+2026-10-19 15:35:13 [INFO ] [deepseek_web]   Prefetching next image (30/50)
+2026-10-19 15:35:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:35:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:35:42 [INFO ] [deepseek_web]   Response: 3D立体老头面部印花 吐舌搞怪表情图案 横向一字形眼部镂空 颈部堆叠褶皱肌理 全包围套头面罩 中性 常规版型 连体护颈设计 户外滑雪骑行
+2026-10-19 15:35:42 [INFO ] [deepseek_web]   Deleted: 0029_0760944147795572863588.jpg
+2026-10-19 15:35:47 [INFO ] [deepseek_web] [30/50] 趣味印花骑行帽
+2026-10-19 15:35:47 [INFO ] [deepseek_web]   Downloaded: 0030_7161007317907820355917.jpg
+2026-10-19 15:35:47 [INFO ] [deepseek_web]   Prefetching next image (31/50)
+2026-10-19 15:35:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:35:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:36:16 [INFO ] [deepseek_web]   Response: 3D立体圣诞老人面部印花 雪花几何编织图案 横向一字形眼部镂空 颈部堆叠褶皱肌理 套头护颈面罩 中性 常规版型 全包围结构 滑雪骑行
+2026-10-19 15:36:16 [INFO ] [deepseek_web]   Deleted: 0030_7161007317907820355917.jpg
+2026-10-19 15:36:21 [INFO ] [deepseek_web] [31/50] 趣味搞怪骑行滑雪面罩
+2026-10-19 15:36:21 [ERROR] [deepseek_web]   FAILED: HTTPSConnectionPool(host='q3c88tqe6sthi56v.imgsapp.com', port=443): Read timed out. (read timeout=30)
+2026-10-19 15:36:26 [INFO ] [deepseek_web] [32/50] 趣味搞怪骑行滑雪面罩
+2026-10-19 15:36:28 [INFO ] [deepseek_web]   Downloaded: 0032_2090733349834613158668.jpg
+2026-10-19 15:36:28 [INFO ] [deepseek_web]   Prefetching next image (33/50)
+2026-10-19 15:36:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:36:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:36:57 [INFO ] [deepseek_web]   Response: 3D立体人物面部印花 惊讶张嘴表情图案 横向一字眼部镂空 颈部堆叠褶皱结构 套头护颈面罩 中性 常规版型 全包围连体设计 户外骑行滑雪
+2026-10-19 15:36:57 [INFO ] [deepseek_web]   Deleted: 0032_2090733349834613158668.jpg
+2026-10-19 15:37:02 [INFO ] [deepseek_web] [33/50] 户外骑行搞怪趣味面罩
+2026-10-19 15:37:02 [INFO ] [deepseek_web]   Downloaded: 0033_1800419396523821103818.jpg
+2026-10-19 15:37:02 [INFO ] [deepseek_web]   Prefetching next image (34/50)
+2026-10-19 15:37:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:37:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:37:37 [INFO ] [deepseek_web]   Response: 管状无缝结构 颈部多层堆叠 下脸及颈部包裹 套头护颈面罩 男士 常规版型 无帽套头设计 纯色纹理面料 户外骑行
+2026-10-19 15:37:37 [INFO ] [deepseek_web]   Deleted: 0033_1800419396523821103818.jpg
+2026-10-19 15:37:42 [INFO ] [deepseek_web] [34/50] 户外滑雪骑行搞怪趣味
+2026-10-19 15:37:42 [INFO ] [deepseek_web]   Downloaded: 0034_4620311141292011378949.jpg
+2026-10-19 15:37:42 [INFO ] [deepseek_web]   Prefetching next image (35/50)
+2026-10-19 15:37:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:37:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:38:12 [INFO ] [deepseek_web]   Response: 3D立体老太太面部印花 顶部卷发筒图案 横向一字形眼部镂空 颈部堆叠褶皱肌理 套头护颈面罩 中性 常规版型 全包围结构 户外滑雪骑行
+2026-10-19 15:38:12 [INFO ] [deepseek_web]   Deleted: 0034_4620311141292011378949.jpg
+2026-10-19 15:38:17 [INFO ] [deepseek_web] [35/50] 户外趣味滑雪面具
+2026-10-19 15:38:17 [INFO ] [deepseek_web]   Downloaded: 0035_2510313433412319277342.jpg
+2026-10-19 15:38:17 [INFO ] [deepseek_web]   Prefetching next image (36/50)
+2026-10-19 15:38:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:38:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:38:46 [INFO ] [deepseek_web]   Response: 3D立体大猩猩面部图案 仿生毛发纹理 横向一字形眼部镂空 连体全包围套头面罩 中性 常规版型 护颈设计 户外滑雪
+2026-10-19 15:38:46 [INFO ] [deepseek_web]   Deleted: 0035_2510313433412319277342.jpg
+2026-10-19 15:38:51 [INFO ] [deepseek_web] [36/50] 搞怪骑行滑雪面罩
+2026-10-19 15:38:51 [INFO ] [deepseek_web]   Downloaded: 0036_2040311458136179616425.jpg
+2026-10-19 15:38:51 [INFO ] [deepseek_web]   Prefetching next image (37/50)
+2026-10-19 15:38:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:39:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:39:20 [INFO ] [deepseek_web]   Response: 3D立体大猩猩面部印花 仿生毛发纹理 横向一字形眼部镂空 全包围套头护颈面罩 中性 常规版型 一体式结构 户外骑行滑雪
+2026-10-19 15:39:20 [INFO ] [deepseek_web]   Deleted: 0036_2040311458136179616425.jpg
+2026-10-19 15:39:25 [INFO ] [deepseek_web] [37/50] 搞怪人脸面罩-加绒款
+2026-10-19 15:39:25 [INFO ] [deepseek_web]   Downloaded: 0037_5400410022536513701197.jpg
+2026-10-19 15:39:25 [INFO ] [deepseek_web]   Prefetching next image (38/50)
+2026-10-19 15:39:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:39:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:39:54 [INFO ] [deepseek_web]   Response: 3D立体大猩猩面部印花 仿生毛发纹理 横向一字形眼部镂空 连体套头护颈面罩 中性 常规版型 全包围结构 加绒保暖
+2026-10-19 15:39:54 [INFO ] [deepseek_web]   Deleted: 0037_5400410022536513701197.jpg
+2026-10-19 15:39:59 [INFO ] [deepseek_web] [38/50] 搞怪人脸面罩
+2026-10-19 15:39:59 [INFO ] [deepseek_web]   Downloaded: 0038_3790348239062393153884.jpg
+2026-10-19 15:39:59 [INFO ] [deepseek_web]   Prefetching next image (39/50)
+2026-10-19 15:39:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:40:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:40:28 [INFO ] [deepseek_web]   Response: 3D立体人脸印花 斑点皱纹纹理 横向一字形眼部镂空 颈部堆叠褶皱结构 连体套头护颈面罩 中性 常规版型 全包围设计 户外滑雪
+2026-10-19 15:40:28 [INFO ] [deepseek_web]   Deleted: 0038_3790348239062393153884.jpg
+2026-10-19 15:40:33 [INFO ] [deepseek_web] [39/50] 冬季搞怪骑行滑雪面罩
+2026-10-19 15:40:33 [INFO ] [deepseek_web]   Downloaded: 0039_7800506022165012364235.jpg
+2026-10-19 15:40:33 [INFO ] [deepseek_web]   Prefetching next image (40/50)
+2026-10-19 15:40:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:40:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:41:02 [INFO ] [deepseek_web]   Response: 3D立体圣诞老人面部印花 雪花与彩色装饰球图案 横向一字形眼部镂空 连体全包围护颈 套头面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:41:02 [INFO ] [deepseek_web]   Deleted: 0039_7800506022165012364235.jpg
+2026-10-19 15:41:07 [INFO ] [deepseek_web] [40/50] 冬季搞怪骑行滑雪面罩
+2026-10-19 15:41:07 [INFO ] [deepseek_web]   Downloaded: 0040_4270325368062915583814.jpg
+2026-10-19 15:41:07 [INFO ] [deepseek_web]   Prefetching next image (41/50)
+2026-10-19 15:41:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:41:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:41:37 [INFO ] [deepseek_web]   Response: 3D立体动物面部印花 皇冠图案 横向一字形眼部镂空 颈部堆叠褶皱结构 全包围套头护颈面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:41:37 [INFO ] [deepseek_web]   Deleted: 0040_4270325368062915583814.jpg
+2026-10-19 15:41:42 [INFO ] [deepseek_web] [41/50] 冬季搞怪骑行滑雪面罩
+2026-10-19 15:41:42 [INFO ] [deepseek_web]   Downloaded: 0041_5930847494194510375431.jpg
+2026-10-19 15:41:42 [INFO ] [deepseek_web]   Prefetching next image (42/50)
+2026-10-19 15:41:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:41:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:42:11 [INFO ] [deepseek_web]   Response: 3D立体女性面部印花 夸张大笑表情图案 横向一字形眼部镂空 颈部堆叠褶皱纹理 全包围连体套头面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:42:11 [INFO ] [deepseek_web]   Deleted: 0041_5930847494194510375431.jpg
+2026-10-19 15:42:16 [INFO ] [deepseek_web] [42/50] 男女搞怪骑行滑雪面罩
+2026-10-19 15:42:16 [INFO ] [deepseek_web]   Downloaded: 0042_4200225120531858805988.jpg
+2026-10-19 15:42:16 [INFO ] [deepseek_web]   Prefetching next image (43/50)
+2026-10-19 15:42:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:42:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:42:45 [INFO ] [deepseek_web]   Response: 3D立体人物面部印花 搞怪夸张表情图案 横向一字形眼部镂空 颈部堆叠褶皱结构 连体全包围套头护颈面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:42:45 [INFO ] [deepseek_web]   Deleted: 0042_4200225120531858805988.jpg
+2026-10-19 15:42:50 [INFO ] [deepseek_web] [43/50] 男士棒球队搞怪面罩
+2026-10-19 15:42:50 [INFO ] [deepseek_web]   Downloaded: 0043_9430815418974436867042.jpg
+2026-10-19 15:42:50 [INFO ] [deepseek_web]   Prefetching next image (44/50)
+2026-10-19 15:42:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:43:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:43:19 [INFO ] [deepseek_web]   Response: 3D立体面部印花 横向一字形眼部镂空 顶部针织纹理图案 颈部堆叠褶皱结构 全包围连体套头护颈面罩 中性 常规版型
+2026-10-19 15:43:19 [INFO ] [deepseek_web]   Deleted: 0043_9430815418974436867042.jpg
+2026-10-19 15:43:24 [INFO ] [deepseek_web] [44/50] 搞怪骑行滑雪面罩
+2026-10-19 15:43:24 [INFO ] [deepseek_web]   Downloaded: 0044_6740335166633117305314.jpg
+2026-10-19 15:43:24 [INFO ] [deepseek_web]   Prefetching next image (45/50)
+2026-10-19 15:43:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:43:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:43:55 [INFO ] [deepseek_web]   Response: 3D立体老人面部印花 横向一字形眼部镂空 颈部堆叠褶皱肌理 套头式护颈面罩 中性 常规版型 全包围连体设计 骑行滑雪
+2026-10-19 15:43:55 [INFO ] [deepseek_web]   Deleted: 0044_6740335166633117305314.jpg
+2026-10-19 15:44:00 [INFO ] [deepseek_web] [45/50] 搞怪滑雪面罩
+2026-10-19 15:44:00 [INFO ] [deepseek_web]   Downloaded: 0045_2320450335704851888941.jpg
+2026-10-19 15:44:00 [INFO ] [deepseek_web]   Prefetching next image (46/50)
+2026-10-19 15:44:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:44:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:44:30 [INFO ] [deepseek_web]   Response: 3D立体人物面部印花 蜘蛛网图案 横向一字形眼部镂空 颈部堆叠褶皱肌理 连体套头护颈面罩 中性 常规版型 全包围结构 滑雪
+2026-10-19 15:44:30 [INFO ] [deepseek_web]   Deleted: 0045_2320450335704851888941.jpg
+2026-10-19 15:44:35 [INFO ] [deepseek_web] [46/50] 圣诞节搞怪滑雪面罩
+2026-10-19 15:44:35 [INFO ] [deepseek_web]   Downloaded: 0046_8560943551285213735369.jpg
+2026-10-19 15:44:35 [INFO ] [deepseek_web]   Prefetching next image (47/50)
+2026-10-19 15:44:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:44:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:45:04 [INFO ] [deepseek_web]   Response: 3D立体圣诞老人面部印花 横向一字形眼部镂空 颈部褶皱拼接结构 全包围套头护颈面罩 中性 常规版型 冬季滑雪骑行
+2026-10-19 15:45:04 [INFO ] [deepseek_web]   Deleted: 0046_8560943551285213735369.jpg
+2026-10-19 15:45:09 [INFO ] [deepseek_web] [47/50] 动物印花搞怪面罩
+2026-10-19 15:45:09 [INFO ] [deepseek_web]   Downloaded: 0047_3531112443151615771314.jpg
+2026-10-19 15:45:09 [INFO ] [deepseek_web]   Prefetching next image (48/50)
+2026-10-19 15:45:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:45:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:45:38 [INFO ] [deepseek_web]   Response: 3D立体动物面部印花 横向一字形眼部镂空 连体全包围结构 套头护颈面罩 中性 常规版型 面部全覆盖设计
+2026-10-19 15:45:38 [INFO ] [deepseek_web]   Deleted: 0047_3531112443151615771314.jpg
+2026-10-19 15:45:43 [INFO ] [deepseek_web] [48/50] 印花面罩头套
+2026-10-19 15:45:43 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-19 15:45:48 [INFO ] [deepseek_web] [49/50] 印花头套面具
+2026-10-19 15:45:50 [INFO ] [deepseek_web]   Downloaded: 0049_1230548471744794219710.jpg
+2026-10-19 15:45:50 [INFO ] [deepseek_web]   Prefetching next image (50/50)
+2026-10-19 15:45:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:46:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:46:19 [INFO ] [deepseek_web]   Response: 3D立体女性面部印花 横向一字形眼部镂空 颈部堆叠褶皱纹理 套头护颈面罩 中性 常规版型 全包围连体设计 滑雪
+2026-10-19 15:46:19 [INFO ] [deepseek_web]   Deleted: 0049_1230548471744794219710.jpg
+2026-10-19 15:46:24 [INFO ] [deepseek_web] [50/50] 印花头套面具
+2026-10-19 15:46:24 [INFO ] [deepseek_web]   Downloaded: 0050_4441108453874868530285.jpg
+2026-10-19 15:46:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-19 15:46:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-19 15:46:54 [INFO ] [deepseek_web]   Response: 3D立体男性面部印花 吐舌搞怪表情图案 横向一字形眼部镂空 颈部斑点纹理 全包围套头护颈面罩 中性 常规版型 户外滑雪
+2026-10-19 15:46:54 [INFO ] [deepseek_web]   Deleted: 0050_4441108453874868530285.jpg
+2026-10-19 15:46:54 [INFO ] [deepseek_web] 
+2026-10-19 15:46:54 [INFO ] [deepseek_web] Retry round 1: 5 failed item(s)
+2026-10-19 15:46:59 [INFO ] [deepseek_web]   Retry [23]: 圣诞搞怪印花面罩头套
+2026-10-19 15:47:20 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-19 15:47:38 [INFO ] [deepseek_web]     OK: 3D立体人物面部印花 吐舌搞怪表情图案 波点图案发带 横向一字形眼部镂空 颈部堆叠褶皱结构 连体套头护颈面罩 中性 常规版型 全包围设计 滑雪骑行
+2026-10-19 15:47:41 [INFO ] [deepseek_web]   Retry [26]: 动物头套防晒面具
+2026-10-19 15:47:59 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-19 15:48:20 [INFO ] [deepseek_web]     OK: 3D立体动物面部印花 横向一字形眼部镂空 连体全包围护颈结构 套头式面罩 中性 常规版型 防晒 户外骑行
+2026-10-19 15:48:23 [INFO ] [deepseek_web]   Retry [28]: 防晒面具头套
+2026-10-19 15:48:42 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-19 15:49:01 [INFO ] [deepseek_web]     OK: 3D立体动物面部印花 横向一字形眼部镂空 颈部堆叠褶皱结构 连体全包围护颈 套头面罩 中性 常规版型 防晒
+2026-10-19 15:49:04 [INFO ] [deepseek_web]   Retry [31]: 趣味搞怪骑行滑雪面罩
+2026-10-19 15:49:21 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-19 15:49:40 [INFO ] [deepseek_web]     OK: 3D立体面部印花 夸张搞怪表情图案 横向一字形眼部镂空 颈部堆叠褶皱结构 套头护颈面罩 中性 常规版型 全包围连体设计 冬季滑雪骑行
+2026-10-19 15:49:43 [INFO ] [deepseek_web]   Retry [48]: 印花面罩头套
+2026-10-19 15:50:00 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-19 15:50:18 [INFO ] [deepseek_web]     OK: 3D立体人脸印花 横向一字形眼部镂空 颈部堆叠褶皱结构 套头式护颈面罩 中性 常规版型 全包围连体设计 户外滑雪骑行
+2026-10-19 15:50:22 [INFO ] [deepseek_web] ==================================================
+2026-10-19 15:50:22 [INFO ] [deepseek_web] Done: 50 success, 0 failed → optimize_title
+2026-10-19 15:50:23 [INFO ] [title_workflow] Optimization complete: 50 titles
+2026-10-19 15:50:27 [INFO ] [title_workflow] Written 50 optimized titles to column H (8)
+2026-10-19 15:50:27 [INFO ] [title_workflow] Done: 10.14v1.xlsx
+2026-10-19 15:50:28 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-19 15:50:28 [INFO ] [jenkins] 
+2026-10-19 15:50:28 [INFO ] [jenkins] ==================================================
+2026-10-19 15:50:28 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-19 15:50:28 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-19 15:50:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-19 15:50:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-19 15:50:28 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

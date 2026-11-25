@@ -1,0 +1,1156 @@
+2026-07-28 16:48:11 [INFO ] [jenkins] ==================================================
+2026-07-28 16:48:11 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-28 16:48:11 [INFO ] [jenkins] ==================================================
+2026-07-28 16:48:11 [INFO ] [jenkins] 
+2026-07-28 16:48:11 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-28 16:48:11 [INFO ] [jenkins] ------------------------------
+2026-07-28 16:48:11 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-28 16:48:11 [INFO ] [jenkins] 
+2026-07-28 16:48:11 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-28 16:48:11 [INFO ] [jenkins] ------------------------------
+2026-07-28 16:48:11 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-28 16:48:11 [INFO ] [preprocess] [product_20260727081827928.xlsx]
+2026-07-28 16:48:13 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 16:51:08 [INFO ] [jenkins] ==================================================
+2026-07-28 16:51:08 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-28 16:51:08 [INFO ] [jenkins] ==================================================
+2026-07-28 16:51:08 [INFO ] [jenkins] 
+2026-07-28 16:51:08 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-28 16:51:08 [INFO ] [jenkins] ------------------------------
+2026-07-28 16:51:08 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-28 16:51:08 [INFO ] [jenkins] 
+2026-07-28 16:51:08 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-28 16:51:08 [INFO ] [jenkins] ------------------------------
+2026-07-28 16:51:09 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-28 16:51:09 [INFO ] [preprocess] [product_20260727081827928.xlsx]
+2026-07-28 16:51:10 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:58:54 [INFO ] [jenkins] ==================================================
+2026-07-28 18:58:54 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-28 18:58:54 [INFO ] [jenkins] ==================================================
+2026-07-28 18:58:54 [INFO ] [jenkins] 
+2026-07-28 18:58:54 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-28 18:58:54 [INFO ] [jenkins] ------------------------------
+2026-07-28 18:58:54 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-28 18:58:54 [INFO ] [jenkins] 
+2026-07-28 18:58:54 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-28 18:58:54 [INFO ] [jenkins] ------------------------------
+2026-07-28 18:58:55 [INFO ] [preprocess] Preprocessing 6 file(s) with 1 step(s)
+2026-07-28 18:58:55 [INFO ] [preprocess] [product_20260727081827928.xlsx]
+2026-07-28 18:58:56 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:58:56 [INFO ] [preprocess] [product_20260727081844991.xlsx]
+2026-07-28 18:58:57 [INFO ] [preprocess]   [product_20260727081844991.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:58:58 [INFO ] [preprocess] [product_20260727082103879.xlsx]
+2026-07-28 18:58:59 [INFO ] [preprocess]   [product_20260727082103879.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:59:00 [INFO ] [preprocess] [product_20260727082300343.xlsx]
+2026-07-28 18:59:00 [INFO ] [preprocess]   [product_20260727082300343.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:59:00 [INFO ] [preprocess] [product_20260727082449674.xlsx]
+2026-07-28 18:59:01 [INFO ] [preprocess]   [product_20260727082449674.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:59:02 [INFO ] [preprocess] [product_20260727082531280.xlsx]
+2026-07-28 18:59:03 [INFO ] [preprocess]   [product_20260727082531280.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 18:59:03 [INFO ] [preprocess] Preprocessing complete
+2026-07-28 18:59:03 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-07-28 18:59:03 [INFO ] [jenkins] 
+2026-07-28 18:59:03 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-07-28 18:59:03 [INFO ] [jenkins] ------------------------------
+2026-07-28 18:59:04 [INFO ] [main] Log file: 20260728_91ac76a9.log
+2026-07-28 18:59:04 [INFO ] [main] Found 6 file(s):
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727081827928.xlsx
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727081844991.xlsx
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727082103879.xlsx
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727082300343.xlsx
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727082449674.xlsx
+2026-07-28 18:59:04 [INFO ] [main]   product_20260727082531280.xlsx
+2026-07-28 18:59:04 [INFO ] [main] Output: 7.20v2.xlsx
+2026-07-28 18:59:04 [INFO ] [main] ==================================================
+2026-07-28 18:59:11 [INFO ] [main] Merged 6 files, 10369 images total
+2026-07-28 18:59:11 [INFO ] [main] Deleted 6 source file(s)
+2026-07-28 18:59:14 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-28 18:59:14 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-28 18:59:17 [INFO ] [pipeline]   Sheet [Sheet0_2]: 867 rows, 2090 images
+2026-07-28 18:59:17 [INFO ] [pipeline]   Sheet [Sheet0_3]: 745 rows, 1678 images
+2026-07-28 18:59:17 [INFO ] [pipeline]   Sheet [Sheet0_4]: 19 rows, 70 images
+2026-07-28 18:59:17 [INFO ] [pipeline]   Sheet [Sheet0_5]: 982 rows, 2261 images
+2026-07-28 18:59:17 [INFO ] [pipeline]   Sheet [Sheet0_6]: 824 rows, 2081 images
+2026-07-28 18:59:17 [INFO ] [pipeline]   Merged 6 sheets -> 1, 3437 data rows, 8180 images
+2026-07-28 18:59:17 [INFO ] [pipeline] [2/12] validate
+2026-07-28 18:59:17 [INFO ] [pipeline]   Validated: 4361 rows, 27 cols (expect ~32)
+2026-07-28 18:59:17 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-28 18:59:18 [INFO ] [pipeline]   Backed up 10369 images
+2026-07-28 18:59:18 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-28 18:59:18 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-28 18:59:18 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-28 18:59:18 [INFO ] [pipeline]   Restored 10369 images with adjusted anchors
+2026-07-28 18:59:18 [INFO ] [pipeline] [4/12] fill_id
+2026-07-28 18:59:18 [INFO ] [pipeline]   Column 2: 4361 random IDs (date: bfzgbz)
+2026-07-28 18:59:18 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-28 18:59:18 [INFO ] [pipeline]   Column 3: 4361 cells filled
+2026-07-28 18:59:18 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-28 18:59:18 [INFO ] [pipeline]   Column 10: 4146 cells mapped, 203 rows skipped (col A has fill)
+2026-07-28 18:59:18 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-28 18:59:18 [INFO ] [pipeline]   Column 11: 4124 mapped, 203 cleared (col A has fill), 34 no match
+2026-07-28 18:59:18 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-28 18:59:18 [INFO ] [pipeline]   Mirror copy: 24595 cells written
+2026-07-28 18:59:18 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-28 18:59:18 [INFO ] [pipeline]   Column 44: 4361 cells copied from col 12
+2026-07-28 18:59:18 [INFO ] [pipeline] [10/12] calc_price
+2026-07-28 18:59:18 [INFO ] [pipeline]   Columns 45-48: 4361 rows calculated
+2026-07-28 18:59:18 [INFO ] [pipeline] [11/12] format_cells
+2026-07-28 18:59:51 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-28 18:59:51 [INFO ] [pipeline]   Formatted 4361 rows: h=50, align=left/center
+2026-07-28 18:59:51 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-28 18:59:51 [INFO ] [pipeline] [12/12] finalize
+2026-07-28 18:59:51 [INFO ] [pipeline]   Done: 4361 rows x 48 cols (target: 48)
+2026-07-28 18:59:51 [INFO ] [pipeline] Pipeline complete
+2026-07-28 18:59:55 [INFO ] [main] Size: 4361 rows x 48 cols
+2026-07-28 18:59:55 [INFO ] [main] ==================================================
+2026-07-28 18:59:55 [INFO ] [main] Done: 7.20v2.xlsx
+2026-07-28 18:59:56 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-07-28 18:59:56 [INFO ] [jenkins] 
+2026-07-28 18:59:56 [INFO ] [jenkins] [4/4] Color re-processing
+2026-07-28 18:59:56 [INFO ] [jenkins] ------------------------------
+2026-07-28 18:59:57 [INFO ] [color_size_main] Source: 7.20v1.xlsx
+2026-07-28 18:59:59 [INFO ] [color_size_main] Extracted: 3109 data lines + 156 separators → check_.txt
+2026-07-28 18:59:59 [INFO ] [color_size_main] Running: process.py
+2026-07-28 18:59:59 [INFO ] [color_size_deal] Groups: 156, lines: 3109 (file: 3265)
+2026-07-28 18:59:59 [INFO ] [color_size_deal] Prefixes: {'01': 246, '02': 108, '03': 108, '04': 54, '05': 54, '06': 54, '07': 54}
+2026-07-28 18:59:59 [INFO ] [color_size_deal] Done.
+2026-07-28 18:59:59 [INFO ] [color_size_main] Processing write-back: 3265 lines
+2026-07-28 19:00:05 [INFO ] [color_size_main] Write-back: 156 written, 3109 unchanged → 7.20v1.xlsx
+2026-07-28 19:00:05 [INFO ] [color_size_main] Done.
+2026-07-28 19:00:05 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-07-28 19:00:05 [INFO ] [jenkins] 
+2026-07-28 19:00:05 [INFO ] [jenkins] ==================================================
+2026-07-28 19:00:05 [INFO ] [jenkins] All 4 steps completed successfully
+2026-07-28 19:00:05 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-28 19:00:05 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-28 19:00:05 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-28 19:00:05 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-28 19:16:17 [INFO ] [jenkins] ==================================================
+2026-07-28 19:16:17 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-28 19:16:17 [INFO ] [jenkins] ==================================================
+2026-07-28 19:16:17 [INFO ] [jenkins] 
+2026-07-28 19:16:17 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-28 19:16:17 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:16:18 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-28 19:16:18 [INFO ] [jenkins] 
+2026-07-28 19:16:18 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-28 19:16:18 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:16:18 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-28 19:16:18 [INFO ] [preprocess] [product_20260727081827928.xlsx]
+2026-07-28 19:16:19 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:20 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Dedup: 39 filled rows, 19 deleted (sheet rebuilt)
+2026-07-28 19:16:20 [INFO ] [preprocess] [product_20260727081844991.xlsx]
+2026-07-28 19:16:22 [INFO ] [preprocess]   [product_20260727081844991.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:22 [INFO ] [preprocess]   [product_20260727081844991.xlsx] Dedup: 40 filled rows, 2 deleted (sheet rebuilt)
+2026-07-28 19:16:23 [INFO ] [preprocess] [product_20260727082103879.xlsx]
+2026-07-28 19:16:23 [INFO ] [preprocess]   [product_20260727082103879.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:24 [INFO ] [preprocess]   [product_20260727082103879.xlsx] Dedup: 42 filled rows, 14 deleted (sheet rebuilt)
+2026-07-28 19:16:24 [INFO ] [preprocess] [product_20260727082300343.xlsx]
+2026-07-28 19:16:24 [INFO ] [preprocess]   [product_20260727082300343.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:24 [INFO ] [preprocess]   [product_20260727082300343.xlsx] No duplicate filled rows to remove
+2026-07-28 19:16:24 [INFO ] [preprocess] [product_20260727082449674.xlsx]
+2026-07-28 19:16:26 [INFO ] [preprocess]   [product_20260727082449674.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:26 [INFO ] [preprocess]   [product_20260727082449674.xlsx] Dedup: 40 filled rows, 1 deleted (sheet rebuilt)
+2026-07-28 19:16:27 [INFO ] [preprocess] [product_20260727082531280.xlsx]
+2026-07-28 19:16:28 [INFO ] [preprocess]   [product_20260727082531280.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:16:28 [INFO ] [preprocess]   [product_20260727082531280.xlsx] Dedup: 40 filled rows, 3 deleted (sheet rebuilt)
+2026-07-28 19:16:29 [INFO ] [preprocess] Preprocessing complete
+2026-07-28 19:16:29 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-07-28 19:16:29 [INFO ] [jenkins] 
+2026-07-28 19:16:29 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-07-28 19:16:29 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:16:30 [INFO ] [main] Log file: 20260728_91ac76a9.log
+2026-07-28 19:16:30 [INFO ] [main] Found 6 file(s):
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727081827928.xlsx
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727081844991.xlsx
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727082103879.xlsx
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727082300343.xlsx
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727082449674.xlsx
+2026-07-28 19:16:30 [INFO ] [main]   product_20260727082531280.xlsx
+2026-07-28 19:16:30 [INFO ] [main] Output: 7.21v1.xlsx
+2026-07-28 19:16:30 [INFO ] [main] ==================================================
+2026-07-28 19:16:37 [INFO ] [main] Merged 6 files, 10065 images total
+2026-07-28 19:16:37 [INFO ] [main] Deleted 6 source file(s)
+2026-07-28 19:16:39 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-28 19:16:39 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-28 19:16:43 [INFO ] [pipeline]   Sheet [Sheet0_2]: 865 rows, 2070 images
+2026-07-28 19:16:43 [INFO ] [pipeline]   Sheet [Sheet0_3]: 731 rows, 1622 images
+2026-07-28 19:16:43 [INFO ] [pipeline]   Sheet [Sheet0_4]: 19 rows, 70 images
+2026-07-28 19:16:43 [INFO ] [pipeline]   Sheet [Sheet0_5]: 981 rows, 2253 images
+2026-07-28 19:16:43 [INFO ] [pipeline]   Sheet [Sheet0_6]: 821 rows, 2051 images
+2026-07-28 19:16:43 [INFO ] [pipeline]   Merged 6 sheets -> 1, 3417 data rows, 8066 images
+2026-07-28 19:16:43 [INFO ] [pipeline] [2/12] validate
+2026-07-28 19:16:43 [INFO ] [pipeline]   Validated: 4322 rows, 27 cols (expect ~32)
+2026-07-28 19:16:43 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-28 19:16:44 [INFO ] [pipeline]   Backed up 10065 images
+2026-07-28 19:16:44 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-28 19:16:44 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-28 19:16:44 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-28 19:16:44 [INFO ] [pipeline]   Restored 10065 images with adjusted anchors
+2026-07-28 19:16:44 [INFO ] [pipeline] [4/12] fill_id
+2026-07-28 19:16:44 [INFO ] [pipeline]   Column 2: 4322 random IDs (date: bfzgba)
+2026-07-28 19:16:44 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-28 19:16:44 [INFO ] [pipeline]   Column 3: 4322 cells filled
+2026-07-28 19:16:44 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-28 19:16:44 [INFO ] [pipeline]   Column 10: 4146 cells mapped, 164 rows skipped (col A has fill)
+2026-07-28 19:16:44 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-28 19:16:44 [INFO ] [pipeline]   Column 11: 4124 mapped, 164 cleared (col A has fill), 34 no match
+2026-07-28 19:16:44 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-28 19:16:44 [INFO ] [pipeline]   Mirror copy: 24330 cells written
+2026-07-28 19:16:44 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-28 19:16:44 [INFO ] [pipeline]   Column 44: 4322 cells copied from col 12
+2026-07-28 19:16:44 [INFO ] [pipeline] [10/12] calc_price
+2026-07-28 19:16:44 [INFO ] [pipeline]   Columns 45-48: 4322 rows calculated
+2026-07-28 19:16:44 [INFO ] [pipeline] [11/12] format_cells
+2026-07-28 19:17:14 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-28 19:17:14 [INFO ] [pipeline]   Formatted 4322 rows: h=50, align=left/center
+2026-07-28 19:17:14 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-28 19:17:14 [INFO ] [pipeline] [12/12] finalize
+2026-07-28 19:17:14 [INFO ] [pipeline]   Done: 4322 rows x 48 cols (target: 48)
+2026-07-28 19:17:14 [INFO ] [pipeline] Pipeline complete
+2026-07-28 19:17:19 [INFO ] [main] Size: 4322 rows x 48 cols
+2026-07-28 19:17:19 [INFO ] [main] ==================================================
+2026-07-28 19:17:19 [INFO ] [main] Done: 7.21v1.xlsx
+2026-07-28 19:17:19 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-07-28 19:17:19 [INFO ] [jenkins] 
+2026-07-28 19:17:19 [INFO ] [jenkins] [4/4] Color re-processing
+2026-07-28 19:17:19 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:17:20 [INFO ] [color_size_main] Source: 7.21v1.xlsx
+2026-07-28 19:17:24 [INFO ] [color_size_main] Extracted: 4146 data lines + 176 separators → check_.txt
+2026-07-28 19:17:24 [INFO ] [color_size_main] Running: process.py
+2026-07-28 19:17:25 [INFO ] [color_size_deal] Groups: 164, lines: 4146 (file: 4322)
+2026-07-28 19:17:25 [INFO ] [color_size_deal] Prefixes: {'01': 214, '02': 190}
+2026-07-28 19:17:25 [INFO ] [color_size_deal] Done.
+2026-07-28 19:17:25 [INFO ] [color_size_main] Processing write-back: 4322 lines
+2026-07-28 19:17:34 [INFO ] [color_size_main] Write-back: 580 written, 3742 unchanged → 7.21v1.xlsx
+2026-07-28 19:17:34 [INFO ] [color_size_main] Done.
+2026-07-28 19:17:34 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-07-28 19:17:34 [INFO ] [jenkins] 
+2026-07-28 19:17:34 [INFO ] [jenkins] ==================================================
+2026-07-28 19:17:34 [INFO ] [jenkins] All 4 steps completed successfully
+2026-07-28 19:17:34 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-28 19:17:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-28 19:17:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-28 19:17:34 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-28 19:23:33 [INFO ] [jenkins] ==================================================
+2026-07-28 19:23:33 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-07-28 19:23:33 [INFO ] [jenkins] ==================================================
+2026-07-28 19:23:33 [INFO ] [jenkins] 
+2026-07-28 19:23:33 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-07-28 19:23:33 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:23:33 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-07-28 19:23:33 [INFO ] [jenkins] 
+2026-07-28 19:23:33 [INFO ] [jenkins] [2/4] Preprocess
+2026-07-28 19:23:33 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:23:34 [INFO ] [preprocess] Preprocessing 6 file(s) with 2 step(s)
+2026-07-28 19:23:34 [INFO ] [preprocess] [product_20260727081827928.xlsx]
+2026-07-28 19:23:35 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:35 [INFO ] [preprocess]   [product_20260727081827928.xlsx] Dedup: 39 filled rows, 30 deleted (sheet rebuilt)
+2026-07-28 19:23:36 [INFO ] [preprocess] [product_20260727081844991.xlsx]
+2026-07-28 19:23:37 [INFO ] [preprocess]   [product_20260727081844991.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:38 [INFO ] [preprocess]   [product_20260727081844991.xlsx] Dedup: 40 filled rows, 52 deleted (sheet rebuilt)
+2026-07-28 19:23:38 [INFO ] [preprocess] [product_20260727082103879.xlsx]
+2026-07-28 19:23:39 [INFO ] [preprocess]   [product_20260727082103879.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:40 [INFO ] [preprocess]   [product_20260727082103879.xlsx] Dedup: 42 filled rows, 40 deleted (sheet rebuilt)
+2026-07-28 19:23:40 [INFO ] [preprocess] [product_20260727082300343.xlsx]
+2026-07-28 19:23:40 [INFO ] [preprocess]   [product_20260727082300343.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:40 [INFO ] [preprocess]   [product_20260727082300343.xlsx] No duplicate filled rows to remove
+2026-07-28 19:23:40 [INFO ] [preprocess] [product_20260727082449674.xlsx]
+2026-07-28 19:23:41 [INFO ] [preprocess]   [product_20260727082449674.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:42 [INFO ] [preprocess]   [product_20260727082449674.xlsx] Dedup: 40 filled rows, 29 deleted (sheet rebuilt)
+2026-07-28 19:23:42 [INFO ] [preprocess] [product_20260727082531280.xlsx]
+2026-07-28 19:23:43 [INFO ] [preprocess]   [product_20260727082531280.xlsx] Sheet [Sheet0]: header row removed (sheet rebuilt)
+2026-07-28 19:23:44 [INFO ] [preprocess]   [product_20260727082531280.xlsx] Dedup: 40 filled rows, 36 deleted (sheet rebuilt)
+2026-07-28 19:23:44 [INFO ] [preprocess] Preprocessing complete
+2026-07-28 19:23:45 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-07-28 19:23:45 [INFO ] [jenkins] 
+2026-07-28 19:23:45 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-07-28 19:23:45 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:23:45 [INFO ] [main] Log file: 20260728_91ac76a9.log
+2026-07-28 19:23:45 [INFO ] [main] Found 6 file(s):
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727081827928.xlsx
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727081844991.xlsx
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727082103879.xlsx
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727082300343.xlsx
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727082449674.xlsx
+2026-07-28 19:23:45 [INFO ] [main]   product_20260727082531280.xlsx
+2026-07-28 19:23:45 [INFO ] [main] Output: 7.21v1.xlsx
+2026-07-28 19:23:45 [INFO ] [main] ==================================================
+2026-07-28 19:23:52 [INFO ] [main] Merged 6 files, 9423 images total
+2026-07-28 19:23:52 [INFO ] [main] Deleted 6 source file(s)
+2026-07-28 19:23:54 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-07-28 19:23:54 [INFO ] [pipeline] [1/12] merge_sheets
+2026-07-28 19:23:57 [INFO ] [pipeline]   Sheet [Sheet0_2]: 815 rows, 1877 images
+2026-07-28 19:23:57 [INFO ] [pipeline]   Sheet [Sheet0_3]: 705 rows, 1538 images
+2026-07-28 19:23:57 [INFO ] [pipeline]   Sheet [Sheet0_4]: 19 rows, 70 images
+2026-07-28 19:23:57 [INFO ] [pipeline]   Sheet [Sheet0_5]: 953 rows, 2132 images
+2026-07-28 19:23:57 [INFO ] [pipeline]   Sheet [Sheet0_6]: 788 rows, 1860 images
+2026-07-28 19:23:57 [INFO ] [pipeline]   Merged 6 sheets -> 1, 3280 data rows, 7477 images
+2026-07-28 19:23:57 [INFO ] [pipeline] [2/12] validate
+2026-07-28 19:23:57 [INFO ] [pipeline]   Validated: 4174 rows, 27 cols (expect ~32)
+2026-07-28 19:23:57 [INFO ] [pipeline] [3/12] insert_columns
+2026-07-28 19:23:58 [INFO ] [pipeline]   Backed up 9423 images
+2026-07-28 19:23:58 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-28 19:23:58 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-28 19:23:58 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-28 19:23:58 [INFO ] [pipeline]   Restored 9423 images with adjusted anchors
+2026-07-28 19:23:58 [INFO ] [pipeline] [4/12] fill_id
+2026-07-28 19:23:58 [INFO ] [pipeline]   Column 2: 4174 random IDs (date: bfzgba)
+2026-07-28 19:23:58 [INFO ] [pipeline] [5/12] fill_col3
+2026-07-28 19:23:58 [INFO ] [pipeline]   Column 3: 4174 cells filled
+2026-07-28 19:23:58 [INFO ] [pipeline] [6/12] fill_col10
+2026-07-28 19:23:58 [INFO ] [pipeline]   Column 10: 4031 cells mapped, 131 rows skipped (col A has fill)
+2026-07-28 19:23:58 [INFO ] [pipeline] [7/12] size_mapping
+2026-07-28 19:23:58 [INFO ] [pipeline]   Column 11: 4009 mapped, 131 cleared (col A has fill), 34 no match
+2026-07-28 19:23:58 [INFO ] [pipeline] [8/12] copy_mirror
+2026-07-28 19:23:58 [INFO ] [pipeline]   Mirror copy: 23367 cells written
+2026-07-28 19:23:58 [INFO ] [pipeline] [9/12] fill_col44
+2026-07-28 19:23:58 [INFO ] [pipeline]   Column 44: 4174 cells copied from col 12
+2026-07-28 19:23:58 [INFO ] [pipeline] [10/12] calc_price
+2026-07-28 19:23:58 [INFO ] [pipeline]   Columns 45-48: 4174 rows calculated
+2026-07-28 19:23:58 [INFO ] [pipeline] [11/12] format_cells
+2026-07-28 19:24:31 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-28 19:24:31 [INFO ] [pipeline]   Formatted 4174 rows: h=50, align=left/center
+2026-07-28 19:24:31 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-28 19:24:31 [INFO ] [pipeline] [12/12] finalize
+2026-07-28 19:24:31 [INFO ] [pipeline]   Done: 4174 rows x 48 cols (target: 48)
+2026-07-28 19:24:31 [INFO ] [pipeline] Pipeline complete
+2026-07-28 19:24:36 [INFO ] [main] Size: 4174 rows x 48 cols
+2026-07-28 19:24:36 [INFO ] [main] ==================================================
+2026-07-28 19:24:36 [INFO ] [main] Done: 7.21v1.xlsx
+2026-07-28 19:24:37 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-07-28 19:24:37 [INFO ] [jenkins] 
+2026-07-28 19:24:37 [INFO ] [jenkins] [4/4] Color re-processing
+2026-07-28 19:24:37 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:24:37 [INFO ] [color_size_main] Source: 7.21v1.xlsx
+2026-07-28 19:24:41 [INFO ] [color_size_main] Extracted: 4031 data lines + 143 separators → check_.txt
+2026-07-28 19:24:41 [INFO ] [color_size_main] Running: process.py
+2026-07-28 19:24:42 [INFO ] [color_size_deal] Groups: 131, lines: 4031 (file: 4174)
+2026-07-28 19:24:42 [INFO ] [color_size_deal] Prefixes: {'01': 214, '02': 190}
+2026-07-28 19:24:42 [INFO ] [color_size_deal] Done.
+2026-07-28 19:24:42 [INFO ] [color_size_main] Processing write-back: 4174 lines
+2026-07-28 19:24:51 [INFO ] [color_size_main] Write-back: 547 written, 3627 unchanged → 7.21v1.xlsx
+2026-07-28 19:24:51 [INFO ] [color_size_main] Done.
+2026-07-28 19:24:51 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-07-28 19:24:51 [INFO ] [jenkins] 
+2026-07-28 19:24:51 [INFO ] [jenkins] ==================================================
+2026-07-28 19:24:51 [INFO ] [jenkins] All 4 steps completed successfully
+2026-07-28 19:24:51 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-28 19:24:51 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-28 19:24:51 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-28 19:24:51 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-07-28 19:35:24 [INFO ] [jenkins] ==================================================
+2026-07-28 19:35:24 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-07-28 19:35:24 [INFO ] [jenkins] ==================================================
+2026-07-28 19:35:24 [INFO ] [jenkins] 
+2026-07-28 19:35:24 [INFO ] [jenkins] [1/1] Title optimization
+2026-07-28 19:35:24 [INFO ] [jenkins] ------------------------------
+2026-07-28 19:35:25 [INFO ] [title_workflow] Source: 7.21v1.xlsx
+2026-07-28 19:35:28 [INFO ] [title_workflow] Extracted 131 titles + 131 links
+2026-07-28 19:35:28 [INFO ] [title_workflow] Written: origin_title (131) + origin_link (131)
+2026-07-28 19:35:28 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-07-28 19:35:28 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-07-28 19:35:29 [INFO ] [deepseek_web] Opening DeepSeek web (131 titles)...
+2026-07-28 19:35:29 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-07-28 19:35:31 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-07-28 19:35:33 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-07-28 19:35:33 [INFO ] [deepseek_web] [1/131] 女士无帽马甲毛绒口袋拉链毛绒外套抓绒外套
+2026-07-28 19:35:37 [INFO ] [deepseek_web]   Downloaded: 6281203194571072797206.jpg
+2026-07-28 19:35:37 [INFO ] [deepseek_web]   Switched to vision mode
+2026-07-28 19:35:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:35:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:36:09 [INFO ] [deepseek_web]   Response: 女士毛绒马甲 立领拉链无袖开衫 仿毛绒抓绒外套 双侧口袋设计 罗纹下摆 宽松休闲款 秋冬保暖背心
+2026-07-28 19:36:09 [INFO ] [deepseek_web]   Deleted: 6281203194571072797206.jpg
+2026-07-28 19:36:14 [INFO ] [deepseek_web] [2/131] 女士反吹风羊羔毛格子时尚休闲宽松外套
+2026-07-28 19:36:18 [INFO ] [deepseek_web]   Downloaded: 6960433210952181632393.jpg
+2026-07-28 19:36:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:36:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:36:50 [INFO ] [deepseek_web]   Response: 女士羊羔毛格子外套 立领拉链长袖开衫 短款宽松版型 仿羊羔绒拼接图案 休闲秋冬保暖夹克
+2026-07-28 19:36:50 [INFO ] [deepseek_web]   Deleted: 6960433210952181632393.jpg
+2026-07-28 19:36:55 [INFO ] [deepseek_web] [3/131] 女士休闲马甲夹克无袖圆领优雅风仿皮草毛绒外套
+2026-07-28 19:36:59 [INFO ] [deepseek_web]   Downloaded: 4351130257401011356323.jpg
+2026-07-28 19:36:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:37:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:37:30 [INFO ] [deepseek_web]   Response: 女士仿皮草毛绒马甲 无袖圆领开衫 麻花绞花纹理 前侧贴袋 宽松休闲长款背心 秋冬保暖外套
+2026-07-28 19:37:30 [INFO ] [deepseek_web]   Deleted: 4351130257401011356323.jpg
+2026-07-28 19:37:35 [INFO ] [deepseek_web] [4/131] 女士纽扣毛毛外套宽松绒衫抓绒外套1
+2026-07-28 19:37:38 [INFO ] [deepseek_web]   Downloaded: 5020457220293098421224.jpg
+2026-07-28 19:37:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:37:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:38:09 [INFO ] [deepseek_web]   Response: 女士羊羔毛抓绒外套 立领长袖纽扣开衫 宽松版型 纯色纹理毛绒面料 休闲秋冬保暖夹克
+2026-07-28 19:38:09 [INFO ] [deepseek_web]   Deleted: 5020457220293098421224.jpg
+2026-07-28 19:38:14 [INFO ] [deepseek_web] [5/131] 女士冬季羊毛夹克拉链上拉链上立领与口袋大衣
+2026-07-28 19:38:17 [INFO ] [deepseek_web]   Downloaded: 9260745370005582291834.jpg
+2026-07-28 19:38:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:38:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:38:48 [INFO ] [deepseek_web]   Response: 女士毛绒夹克 立领全拉链长袖外套 麻花绞花纹理 斜插侧口袋 宽松直筒版型 纯色秋冬保暖开衫
+2026-07-28 19:38:48 [INFO ] [deepseek_web]   Deleted: 9260745370005582291834.jpg
+2026-07-28 19:38:53 [INFO ] [deepseek_web] [6/131] 女士秋冬季拉链长袖翻领休闲纯色外套
+2026-07-28 19:38:56 [INFO ] [deepseek_web]   Downloaded: 5541033029388213976299.jpg
+2026-07-28 19:38:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:39:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:39:27 [INFO ] [deepseek_web]   Response: 女士亮面棉服羽绒外套 大翻领仿毛领长袖 斜拉链闭合 同色系腰带收腰 侧拉链口袋 纯色休闲冬季保暖夹克
+2026-07-28 19:39:27 [INFO ] [deepseek_web]   Deleted: 5541033029388213976299.jpg
+2026-07-28 19:39:32 [INFO ] [deepseek_web] [7/131] 秋冬宽松毛绒拉链连帽带胸前口袋外套女
+2026-07-28 19:39:35 [INFO ] [deepseek_web]   Downloaded: 1541059087831321422554.jpg
+2026-07-28 19:39:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:39:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:40:06 [INFO ] [deepseek_web]   Response: 女士毛绒连帽外套 抽绳兜帽全拉链长袖开衫 左胸贴袋与侧插袋 罗纹袖口下摆 宽松版型 纯色休闲秋冬保暖卫衣夹克
+2026-07-28 19:40:06 [INFO ] [deepseek_web]   Deleted: 1541059087831321422554.jpg
+2026-07-28 19:40:11 [INFO ] [deepseek_web] [8/131] 新款开衫纽扣翻领外套纯色开衫卫衣 法莱绒外套
+2026-07-28 19:40:13 [INFO ] [deepseek_web]   Downloaded: 7970340125061717073778.jpg
+2026-07-28 19:40:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:40:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:40:44 [INFO ] [deepseek_web]   Response: 女士法莱绒翻领外套 长袖单排纽扣开衫 纯色落肩宽松版型 休闲秋冬保暖上衣
+2026-07-28 19:40:44 [INFO ] [deepseek_web]   Deleted: 7970340125061717073778.jpg
+2026-07-28 19:40:49 [INFO ] [deepseek_web] [9/131] 女士休闲翻领纯色拼色口袋长袖抓绒外套
+2026-07-28 19:40:53 [INFO ] [deepseek_web]   Downloaded: 6910558573221717648959.jpg
+2026-07-28 19:40:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:41:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:41:24 [INFO ] [deepseek_web]   Response: 女士抓绒中长款外套 翻领全拉链长袖开衫 纯色衣身撞色口袋 拼色纽扣细节 宽松直筒版型 休闲秋冬保暖夹克
+2026-07-28 19:41:24 [INFO ] [deepseek_web]   Deleted: 6910558573221717648959.jpg
+2026-07-28 19:41:29 [INFO ] [deepseek_web] [10/131] 女士冬季纯色翻领保暖毛毛外套皮草大衣
+2026-07-28 19:41:32 [INFO ] [deepseek_web]   Downloaded: 3000420506952274875673.jpg
+2026-07-28 19:41:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:41:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:42:04 [INFO ] [deepseek_web]   Response: 女士仿皮草中长款大衣 大翻领长袖开衫 纯色毛绒质感 无扣宽松直筒版型 休闲秋冬保暖外套
+2026-07-28 19:42:04 [INFO ] [deepseek_web]   Deleted: 3000420506952274875673.jpg
+2026-07-28 19:42:09 [INFO ] [deepseek_web] [11/131] 秋冬都市休闲女式时尚潮流长款格子外套
+2026-07-28 19:42:11 [INFO ] [deepseek_web]   Downloaded: 4201220010111819211504.jpg
+2026-07-28 19:42:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:42:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:42:42 [INFO ] [deepseek_web]   Response: 女士长款格子衬衫外套 翻领长袖单排纽扣开衫 左胸翻盖贴袋 宽松直筒版型 休闲秋冬保暖夹克
+2026-07-28 19:42:42 [INFO ] [deepseek_web]   Deleted: 4201220010111819211504.jpg
+2026-07-28 19:42:47 [INFO ] [deepseek_web] [12/131] 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋
+2026-07-28 19:42:51 [INFO ] [deepseek_web]   Downloaded: 1880741427034962275030.jpg
+2026-07-28 19:42:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:43:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:43:22 [INFO ] [deepseek_web]   Response: 女士毛绒内里连帽卫衣 抽绳兜帽全拉链开衫 圣诞红酒杯图案印花 前置袋鼠口袋 罗纹袖口下摆 宽松版型 休闲秋冬保暖外套
+2026-07-28 19:43:22 [INFO ] [deepseek_web]   Deleted: 1880741427034962275030.jpg
+2026-07-28 19:43:27 [INFO ] [deepseek_web] [13/131] 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋
+2026-07-28 19:43:32 [INFO ] [deepseek_web]   Downloaded: 6400545586175264129672.jpg
+2026-07-28 19:43:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:43:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:44:03 [INFO ] [deepseek_web]   Response: 女士毛绒内里连帽卫衣 抽绳兜帽全拉链开衫 圣诞红酒杯趣味图案印花 前置袋鼠口袋 罗纹袖口下摆 宽松版型 休闲秋冬保暖外套
+2026-07-28 19:44:03 [INFO ] [deepseek_web]   Deleted: 6400545586175264129672.jpg
+2026-07-28 19:44:08 [INFO ] [deepseek_web] [14/131] 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋
+2026-07-28 19:44:11 [INFO ] [deepseek_web]   Downloaded: 1270418077044572076370.jpg
+2026-07-28 19:44:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:44:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:44:42 [INFO ] [deepseek_web]   Response: 女士毛绒内里连帽卫衣 抽绳兜帽全拉链开衫 圣诞快乐字母刺绣 前置袋鼠口袋 罗纹袖口下摆 宽松版型 休闲秋冬保暖外套
+2026-07-28 19:44:42 [INFO ] [deepseek_web]   Deleted: 1270418077044572076370.jpg
+2026-07-28 19:44:47 [INFO ] [deepseek_web] [15/131] 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋
+2026-07-28 19:44:49 [INFO ] [deepseek_web]   Downloaded: 1630402107364320446902.jpg
+2026-07-28 19:44:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:45:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:45:20 [INFO ] [deepseek_web]   Response: 女士毛绒内里连帽卫衣 抽绳兜帽全拉链开衫 圣诞驯鹿图案印花 前置袋鼠口袋 罗纹袖口下摆 宽松版型 休闲秋冬保暖外套
+2026-07-28 19:45:20 [INFO ] [deepseek_web]   Deleted: 1630402107364320446902.jpg
+2026-07-28 19:45:25 [INFO ] [deepseek_web] [16/131] 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋
+2026-07-28 19:45:28 [INFO ] [deepseek_web]   Downloaded: 2300344182834142865919.jpg
+2026-07-28 19:45:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:45:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:45:59 [INFO ] [deepseek_web]   Response: 女士毛绒内里连帽卫衣 抽绳兜帽全拉链开衫 红酒杯图案印花 前置袋鼠口袋 罗纹袖口下摆 宽松版型 休闲秋冬保暖外套
+2026-07-28 19:45:59 [INFO ] [deepseek_web]   Deleted: 2300344182834142865919.jpg
+2026-07-28 19:46:04 [INFO ] [deepseek_web] [17/131] 女士冬季圣诞节健康布加绒情侣连帽开衫
+2026-07-28 19:46:07 [INFO ] [deepseek_web]   Downloaded: 3521021433094456571780.jpg
+2026-07-28 19:46:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:46:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:46:38 [INFO ] [deepseek_web]   Response: 女士长款毛绒连帽开衫 大翻领毛领长袖 前开襟无扣设计 袖口下摆白色仿毛皮拼接 红酒杯刺绣图案 直筒宽松版型 冬季休闲保暖外套
+2026-07-28 19:46:38 [INFO ] [deepseek_web]   Deleted: 3521021433094456571780.jpg
+2026-07-28 19:46:43 [INFO ] [deepseek_web] [18/131] 女士休闲纯色连帽羊毛牛角皮对扣加绒羊羔毛抓绒外套
+2026-07-28 19:46:45 [INFO ] [deepseek_web]   Downloaded: 8590431353832717458706.jpg
+2026-07-28 19:46:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:47:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:47:16 [INFO ] [deepseek_web]   Response: 女士羊羔毛内里连帽外套 牛角扣搭扣开襟 纯色长袖中长款 前置斜插口袋 袖口纽扣装饰 宽松休闲冬季保暖夹克
+2026-07-28 19:47:16 [INFO ] [deepseek_web]   Deleted: 8590431353832717458706.jpg
+2026-07-28 19:47:21 [INFO ] [deepseek_web] [19/131] 抽绳加绒毛领女士修身棉衣外套
+2026-07-28 19:47:23 [INFO ] [deepseek_web]   Downloaded: 7660447314772320475690.jpg
+2026-07-28 19:47:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:47:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:47:54 [INFO ] [deepseek_web]   Response: 女士加绒连帽棉服外套 可拆卸仿毛领 抽绳连帽 前开襟按扣闭合 腰部抽绳收腰 翻盖大口袋设计 中长款宽松版型 纯色冬季保暖夹克
+2026-07-28 19:47:54 [INFO ] [deepseek_web]   Deleted: 7660447314772320475690.jpg
+2026-07-28 19:47:59 [INFO ] [deepseek_web] [20/131] 女士宽松毛绒套头口袋纯色卫衣外套
+2026-07-28 19:48:02 [INFO ] [deepseek_web]   Downloaded: 0921123593751419862433.jpg
+2026-07-28 19:48:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:48:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:48:33 [INFO ] [deepseek_web]   Response: 女士毛绒立领开衫外套 长袖全拉链闭合 下摆抽绳设计 宽松落肩版型 纯色颗粒绒质感 休闲秋冬保暖夹克
+2026-07-28 19:48:33 [INFO ] [deepseek_web]   Deleted: 0921123593751419862433.jpg
+2026-07-28 19:48:38 [INFO ] [deepseek_web] [21/131] 女士机车麂皮绒羊羔毛外套女翻领皮毛棉衣大衣秋冬女装外套
+2026-07-28 19:48:40 [INFO ] [deepseek_web]   Downloaded: 5500439413733421419954.jpg
+2026-07-28 19:48:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:48:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:49:11 [INFO ] [deepseek_web]   Response: 女士麂皮绒羊羔毛机车夹克 大翻领长袖 斜拉链闭合 袖口金属调节扣 下摆带搭扣腰带 侧插口袋 宽松版型 秋冬保暖外套
+2026-07-28 19:49:11 [INFO ] [deepseek_web]   Deleted: 5500439413733421419954.jpg
+2026-07-28 19:49:16 [INFO ] [deepseek_web] [22/131] 冬季女士连帽风衣翻领纽扣大衣外套
+2026-07-28 19:49:18 [INFO ] [deepseek_web]   Downloaded: 8551056487071013616295.jpg
+2026-07-28 19:49:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:49:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:49:49 [INFO ] [deepseek_web]   Response: 女士连帽绗缝棉服外套 可拆卸仿毛领 翻领连帽设计 前门襟按扣与拉链闭合 斜插拉链口袋 罗纹针织袖口 腰部收腰剪裁 中长款修身版型 秋冬保暖夹克
+2026-07-28 19:49:49 [INFO ] [deepseek_web]   Deleted: 8551056487071013616295.jpg
+2026-07-28 19:49:54 [INFO ] [deepseek_web] [23/131] 2025秋冬新款纽扣毛毛外套翻领纽扣宽松保暖绒衫
+2026-07-28 19:49:57 [INFO ] [deepseek_web]   Downloaded: 7080942012393717204922.jpg
+2026-07-28 19:49:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:50:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:50:28 [INFO ] [deepseek_web]   Response: 女士半高领毛绒外套 长袖单排纽扣开衫 落肩设计 双侧斜插口袋 宽松直筒版型 纯色休闲秋冬保暖上衣
+2026-07-28 19:50:28 [INFO ] [deepseek_web]   Deleted: 7080942012393717204922.jpg
+2026-07-28 19:50:33 [INFO ] [deepseek_web] [24/131] 跨境欧美风女款纯色连帽拉链开衫提花绒休闲女外套
+2026-07-28 19:50:37 [INFO ] [deepseek_web]   Downloaded: 0360531026803458406339.jpg
+2026-07-28 19:50:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:50:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:51:08 [INFO ] [deepseek_web]   Response: 女士提花绒连帽开衫外套 连帽全拉链长袖 绞花纹理图案 罗纹袖口下摆 宽松落肩版型 纯色休闲秋冬保暖上衣
+2026-07-28 19:51:08 [INFO ] [deepseek_web]   Deleted: 0360531026803458406339.jpg
+2026-07-28 19:51:13 [INFO ] [deepseek_web] [25/131] 女士纯色纽扣休闲抓绒长袖口袋外套
+2026-07-28 19:51:18 [INFO ] [deepseek_web]   Downloaded: 3080431221402920044594.jpg
+2026-07-28 19:51:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:51:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:51:49 [INFO ] [deepseek_web]   Response: 女士抓绒翻领外套 长袖单排纽扣开衫 前置宽大贴袋 落肩宽松版型 纯色休闲秋冬保暖夹克
+2026-07-28 19:51:49 [INFO ] [deepseek_web]   Deleted: 3080431221402920044594.jpg
+2026-07-28 19:51:54 [INFO ] [deepseek_web] [26/131] 2025新款双面绒翻领短款外套毛呢外套冬季
+2026-07-28 19:51:58 [INFO ] [deepseek_web]   Downloaded: 4480407431582735344170.jpg
+2026-07-28 19:51:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:52:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:52:29 [INFO ] [deepseek_web]   Response: 女士双面绒短款外套 翻领长袖单排纽扣开衫 麻花绞花纹理 落肩宽松版型 纯色休闲秋冬保暖夹克
+2026-07-28 19:52:29 [INFO ] [deepseek_web]   Deleted: 4480407431582735344170.jpg
+2026-07-28 19:52:34 [INFO ] [deepseek_web] [27/131] 时尚宽松休闲街头风纯色立领暗扣外套
+2026-07-28 19:52:36 [INFO ] [deepseek_web]   Downloaded: 5800942376314194815461.jpg
+2026-07-28 19:52:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:52:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:53:07 [INFO ] [deepseek_web]   Response: 女士立领抓绒外套 长袖暗扣开衫 前置方形贴袋 落肩袖宽松版型 纯色休闲秋冬保暖夹克
+2026-07-28 19:53:07 [INFO ] [deepseek_web]   Deleted: 5800942376314194815461.jpg
+2026-07-28 19:53:12 [INFO ] [deepseek_web] [28/131] 跨境外贸女装欧美宽松长款加绒棉衣牛仔外套
+2026-07-28 19:53:16 [INFO ] [deepseek_web]   Downloaded: 6441025071615863832038.jpg
+2026-07-28 19:53:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:53:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:53:47 [INFO ] [deepseek_web]   Response: 女士长款加绒牛仔外套 翻领羊羔毛领 长袖单排按扣开衫 双胸带盖贴袋与侧插袋 宽松直筒版型 冬季休闲保暖大衣
+2026-07-28 19:53:47 [INFO ] [deepseek_web]   Deleted: 6441025071615863832038.jpg
+2026-07-28 19:53:52 [INFO ] [deepseek_web] [29/131] 女士休闲纯色翻领口袋抓绒外套2
+2026-07-28 19:53:58 [INFO ] [deepseek_web]   Downloaded: 9040717188314317677993.jpg
+2026-07-28 19:53:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:54:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:54:29 [INFO ] [deepseek_web]   Response: 女士抓绒翻领开衫外套 长袖全拉链闭合 前置斜插口袋 罗纹袖口下摆 落肩宽松版型 纯色休闲运动保暖上衣
+2026-07-28 19:54:29 [INFO ] [deepseek_web]   Deleted: 9040717188314317677993.jpg
+2026-07-28 19:54:34 [INFO ] [deepseek_web] [30/131] 女士拉链秋冬保暖连帽休闲纯色复合抓绒外套2
+2026-07-28 19:54:39 [INFO ] [deepseek_web]   Downloaded: 9491042509289918656710.jpg
+2026-07-28 19:54:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:54:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:55:10 [INFO ] [deepseek_web]   Response: 女士复合抓绒连帽外套 连帽全拉链开衫 长袖纯色卫衣 落肩宽松版型 前置斜插口袋 休闲秋冬保暖上衣
+2026-07-28 19:55:10 [INFO ] [deepseek_web]   Deleted: 9491042509289918656710.jpg
+2026-07-28 19:55:15 [INFO ] [deepseek_web] [31/131] 女士加绒秋冬保暖连帽休闲纯色复合抓绒无帽卫衣2
+2026-07-28 19:55:17 [INFO ] [deepseek_web]   Downloaded: 9850404505252120876128.jpg
+2026-07-28 19:55:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:55:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:55:48 [INFO ] [deepseek_web]   Response: 女士圆领套头卫衣 长袖纯色复合抓绒上衣 袖口露毛绒细节 落肩宽松版型 无帽休闲秋冬保暖打底衫
+2026-07-28 19:55:48 [INFO ] [deepseek_web]   Deleted: 9850404505252120876128.jpg
+2026-07-28 19:55:53 [INFO ] [deepseek_web] [32/131] 女士休闲格纹印花卫衣纽扣宽松外套
+2026-07-28 19:55:55 [INFO ] [deepseek_web]   Downloaded: 4031200037961533631009.jpg
+2026-07-28 19:55:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:56:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:56:26 [INFO ] [deepseek_web]   Response: 女士连帽格子衬衫外套 拼接连帽抽绳设计 长袖单排纽扣开衫 左胸单贴袋 宽松落肩版型 休闲秋冬保暖上衣
+2026-07-28 19:56:26 [INFO ] [deepseek_web]   Deleted: 4031200037961533631009.jpg
+2026-07-28 19:56:31 [INFO ] [deepseek_web] [33/131] 女士冬季双面毛绒抽绳连帽拉链开衫抓绒外套
+2026-07-28 19:56:34 [INFO ] [deepseek_web]   Downloaded: 7740427554672611995255.jpg
+2026-07-28 19:56:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:56:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:57:05 [INFO ] [deepseek_web]   Response: 女士双面毛绒连帽外套 抽绳兜帽全拉链开衫 绞花纹理图案 前置斜插口袋 宽松版型 休闲秋冬保暖上衣
+2026-07-28 19:57:05 [INFO ] [deepseek_web]   Deleted: 7740427554672611995255.jpg
+2026-07-28 19:57:10 [INFO ] [deepseek_web] [34/131] 女士长袖拉链口袋加厚外套夹克
+2026-07-28 19:57:13 [INFO ] [deepseek_web]   Downloaded: 1710627114924079653618.jpg
+2026-07-28 19:57:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:57:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:57:44 [INFO ] [deepseek_web]   Response: 女士加绒连帽中长款外套 抽绳连帽 前门襟拉链与按扣闭合 翻盖按扣贴袋 罗纹袖口 纯色宽松冬季保暖夹克
+2026-07-28 19:57:44 [INFO ] [deepseek_web]   Deleted: 1710627114924079653618.jpg
+2026-07-28 19:57:49 [INFO ] [deepseek_web] [35/131] 女士宽松金丝绒弹力口袋长袖外套
+2026-07-28 19:57:53 [INFO ] [deepseek_web]   Downloaded: 3941105222201020874254.jpg
+2026-07-28 19:57:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:58:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:58:24 [INFO ] [deepseek_web]   Response: 女士金丝绒翻领外套 长袖无扣开衫设计 前置贴袋 中长款宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 19:58:24 [INFO ] [deepseek_web]   Deleted: 3941105222201020874254.jpg
+2026-07-28 19:58:29 [INFO ] [deepseek_web] [36/131] 女士摇粒绒外套运动休闲卫衣夹克
+2026-07-28 19:58:31 [INFO ] [deepseek_web]   Downloaded: 4900315510741854674666.jpg
+2026-07-28 19:58:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:58:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 19:59:02 [INFO ] [deepseek_web]   Response: 女士摇粒绒短款外套 翻领长袖按扣开衫 左胸拉链贴袋与侧插袋 宽松落肩版型 纯色休闲运动保暖夹克
+2026-07-28 19:59:02 [INFO ] [deepseek_web]   Deleted: 4900315510741854674666.jpg
+2026-07-28 19:59:07 [INFO ] [deepseek_web] [37/131] 女士立领抽绳收腰拉链毛绒外套夹克
+2026-07-28 19:59:31 [INFO ] [deepseek_web]   Downloaded: 6950348094432218416668.jpg
+2026-07-28 19:59:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 19:59:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:00:02 [INFO ] [deepseek_web]   Response: 女士立领毛绒外套 长袖全拉链开衫 腰部抽绳收腰设计 前置斜插口袋 罗纹针织袖口 纯色休闲秋冬保暖夹克
+2026-07-28 20:00:02 [INFO ] [deepseek_web]   Deleted: 6950348094432218416668.jpg
+2026-07-28 20:00:07 [INFO ] [deepseek_web] [38/131] 法兰绒加厚V领保暖单件上衣秋冬款女士珊瑚绒加绒家居服开衫睡衣
+2026-07-28 20:00:10 [INFO ] [deepseek_web]   Downloaded: 5371126076721517495963.jpg
+2026-07-28 20:00:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:00:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:00:41 [INFO ] [deepseek_web]   Response: 女士珊瑚绒V领家居开衫 长袖单排纽扣上衣 前置双贴袋 毛绒柔软质感 宽松版型 秋冬保暖休闲居家服
+2026-07-28 20:00:41 [INFO ] [deepseek_web]   Deleted: 5371126076721517495963.jpg
+2026-07-28 20:00:46 [INFO ] [deepseek_web] [39/131] 冬季女式复古黑色民族风毛绒面饰边麂皮绒长款大衣
+2026-07-28 20:00:48 [INFO ] [deepseek_web]   Downloaded: 1620313347902421353401.jpg
+2026-07-28 20:00:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:01:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:01:19 [INFO ] [deepseek_web]   Response: 女士麂皮绒长款大衣 大翻领长袖 衣襟袖口下摆毛绒饰边 前腰打结闭合 宽松A字版型 纯色冬季保暖外套
+2026-07-28 20:01:19 [INFO ] [deepseek_web]   Deleted: 1620313347902421353401.jpg
+2026-07-28 20:01:24 [INFO ] [deepseek_web] [40/131] 仿狐狸毛皮马甲女修身显瘦款时尚纯色外套潮仿皮草
+2026-07-28 20:01:25 [INFO ] [deepseek_web]   Downloaded: 3230142232061719963191.jpg
+2026-07-28 20:01:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:01:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:01:56 [INFO ] [deepseek_web]   Response: 女士仿狐狸毛皮草马甲 大翻领无袖设计 皮革拼接前襟 腰部同材质搭扣腰带收腰 中长款修身版型 纯色秋冬保暖背心
+2026-07-28 20:01:56 [INFO ] [deepseek_web]   Deleted: 3230142232061719963191.jpg
+2026-07-28 20:02:01 [INFO ] [deepseek_web] [41/131] 加绒加厚中长款羊羔绒卫衣女秋冬刺绣字母拉链外套
+2026-07-28 20:02:03 [INFO ] [deepseek_web]   Downloaded: 1561202163081321848519.jpg
+2026-07-28 20:02:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:02:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:02:35 [INFO ] [deepseek_web]   Response: 女士加绒羊羔毛中长款连帽外套 抽绳兜帽全拉链开衫 袖部褶皱设计 前置斜插口袋 罗纹袖口 纯色宽松秋冬保暖卫衣夹克
+2026-07-28 20:02:35 [INFO ] [deepseek_web]   Deleted: 1561202163081321848519.jpg
+2026-07-28 20:02:40 [INFO ] [deepseek_web] [42/131] 女士休闲摇粒绒外套保暖内胆开衫上衣
+2026-07-28 20:02:42 [INFO ] [deepseek_web]   Downloaded: 7371110224216820371815.jpg
+2026-07-28 20:02:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:02:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:03:13 [INFO ] [deepseek_web]   Response: 女士摇粒绒立领开衫外套 长袖按扣闭合 拼色菱格纹门襟 侧边斜插口袋 宽松直筒版型 纯色休闲保暖上衣
+2026-07-28 20:03:13 [INFO ] [deepseek_web]   Deleted: 7371110224216820371815.jpg
+2026-07-28 20:03:18 [INFO ] [deepseek_web] [43/131] 女士反吹风羊羔毛格子时尚休闲宽松外套
+2026-07-28 20:03:20 [INFO ] [deepseek_web]   Downloaded: 5771051524847413089432.jpg
+2026-07-28 20:03:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:03:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:03:51 [INFO ] [deepseek_web]   Response: 女士羊羔毛格子夹克 立领长袖全拉链开衫 短款宽松版型 仿羊羔绒拼接图案 休闲秋冬保暖外套
+2026-07-28 20:03:51 [INFO ] [deepseek_web]   Deleted: 5771051524847413089432.jpg
+2026-07-28 20:03:56 [INFO ] [deepseek_web] [44/131] 休闲长款纯色连帽卫衣加厚保暖外套
+2026-07-28 20:03:58 [INFO ] [deepseek_web]   Downloaded: 3330255117497211380913.jpg
+2026-07-28 20:03:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:04:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:04:29 [INFO ] [deepseek_web]   Response: 女士毛绒连帽开衫外套 全拉链长袖卫衣 前置袋鼠口袋 罗纹袖口下摆 宽松落肩版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:04:29 [INFO ] [deepseek_web]   Deleted: 3330255117497211380913.jpg
+2026-07-28 20:04:34 [INFO ] [deepseek_web] [45/131] 女士冬季外套摇粒绒内衬保暖插肩袖夹克拉链口袋连帽衫
+2026-07-28 20:04:36 [INFO ] [deepseek_web]   Downloaded: 2640930542533114473618.jpg
+2026-07-28 20:04:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:04:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:05:07 [INFO ] [deepseek_web]   Response: 女士摇粒绒内衬连帽外套 全拉链长袖开衫 插肩袖设计 拼接毛绒门襟与袖口 前置斜插口袋 宽松版型 休闲秋冬保暖夹克
+2026-07-28 20:05:07 [INFO ] [deepseek_web]   Deleted: 2640930542533114473618.jpg
+2026-07-28 20:05:12 [INFO ] [deepseek_web] [46/131] 抽绳加绒毛领女士修身棉衣外套
+2026-07-28 20:05:14 [INFO ] [deepseek_web]   Downloaded: 9230354215582463969540.jpg
+2026-07-28 20:05:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:05:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:05:45 [INFO ] [deepseek_web]   Response: 女士加绒毛领连帽棉服外套 仿毛皮兜帽 前开襟按扣与拉链闭合 腰部抽绳收腰 中长款修身版型 纯色冬季保暖夹克
+2026-07-28 20:05:45 [INFO ] [deepseek_web]   Deleted: 9230354215582463969540.jpg
+2026-07-28 20:05:50 [INFO ] [deepseek_web] [47/131] 女士复古时尚印花法兰绒立领外套
+2026-07-28 20:05:52 [INFO ] [deepseek_web]   Downloaded: 0480503579532816427343.jpg
+2026-07-28 20:05:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:06:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:06:23 [INFO ] [deepseek_web]   Response: 女士法兰绒立领外套 长袖单排纽扣开衫 花卉与和平标志拼接图案印花 纯色衣身 宽松直筒版型 休闲秋冬保暖夹克
+2026-07-28 20:06:23 [INFO ] [deepseek_web]   Deleted: 0480503579532816427343.jpg
+2026-07-28 20:06:28 [INFO ] [deepseek_web] [48/131] 女士复古时尚印花法兰绒立领外套
+2026-07-28 20:06:32 [INFO ] [deepseek_web]   Downloaded: 0490456331662810056832.jpg
+2026-07-28 20:06:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:06:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:07:03 [INFO ] [deepseek_web]   Response: 女士法兰绒立领外套 长袖单排纽扣开衫 太阳放射状图案刺绣 纯色衣身 宽松直筒版型 休闲秋冬保暖夹克
+2026-07-28 20:07:03 [INFO ] [deepseek_web]   Deleted: 0490456331662810056832.jpg
+2026-07-28 20:07:08 [INFO ] [deepseek_web] [49/131] 女士宽松毛绒印染拉链连帽外外套
+2026-07-28 20:07:14 [INFO ] [deepseek_web]   Downloaded: 8200429511301461668637.jpg
+2026-07-28 20:07:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:07:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:07:45 [INFO ] [deepseek_web]   Response: 女士加绒连帽格子外套 抽绳兜帽全拉链开衫 长袖宽松版型 罗纹袖口下摆 休闲秋冬保暖卫衣夹克
+2026-07-28 20:07:45 [INFO ] [deepseek_web]   Deleted: 8200429511301461668637.jpg
+2026-07-28 20:07:50 [INFO ] [deepseek_web] [50/131] 女士秋冬纯色无袖背心休闲马夹夹克带口袋外套
+2026-07-28 20:07:53 [INFO ] [deepseek_web]   Downloaded: 0790328168371893868628.jpg
+2026-07-28 20:07:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:08:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:08:24 [INFO ] [deepseek_web]   Response: 女士羊羔毛无袖马甲 翻领按扣开衫 拼接材质门襟与侧边 侧边系带细节 前置斜插口袋 休闲秋冬保暖背心
+2026-07-28 20:08:24 [INFO ] [deepseek_web]   Deleted: 0790328168371893868628.jpg
+2026-07-28 20:08:29 [INFO ] [deepseek_web] [51/131] 女士秋冬保暖宽松口袋连帽拉链开衫长袖毛绒外套
+2026-07-28 20:08:33 [INFO ] [deepseek_web]   Downloaded: 9510446507093161198798.jpg
+2026-07-28 20:08:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:08:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:09:04 [INFO ] [deepseek_web]   Response: 女士毛绒连帽外套 抽绳兜帽全拉链开衫 长袖宽松落肩版型 前置斜插口袋 纯色肌理面料 休闲秋冬保暖上衣
+2026-07-28 20:09:04 [INFO ] [deepseek_web]   Deleted: 9510446507093161198798.jpg
+2026-07-28 20:09:09 [INFO ] [deepseek_web] [52/131] 女士秋冬开衫拉链宽松口袋外套双面毛绒马甲上衣
+2026-07-28 20:09:12 [INFO ] [deepseek_web]   Downloaded: 1990451105043215073798.jpg
+2026-07-28 20:09:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:09:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:09:44 [INFO ] [deepseek_web]   Response: 女士双面毛绒立领马甲 无袖全拉链开衫 前置大贴袋 宽松版型 纯色肌理面料 秋冬保暖背心
+2026-07-28 20:09:44 [INFO ] [deepseek_web]   Deleted: 1990451105043215073798.jpg
+2026-07-28 20:09:49 [INFO ] [deepseek_web] [53/131] 2025新款秋冬加绒户外抓绒衣女双面绒外套手抓绒开衫保暖上衣
+2026-07-28 20:09:51 [INFO ] [deepseek_web]   Downloaded: 5720413006172210020566.jpg
+2026-07-28 20:09:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:10:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:10:22 [INFO ] [deepseek_web]   Response: 女士双面绒中长款外套 立领半拉链开衫 长袖宽松版型 纯色毛绒质感 户外休闲保暖抓绒上衣
+2026-07-28 20:10:22 [INFO ] [deepseek_web]   Deleted: 5720413006172210020566.jpg
+2026-07-28 20:10:27 [INFO ] [deepseek_web] [54/131] 女士时尚拼色抓绒外套
+2026-07-28 20:10:30 [INFO ] [deepseek_web]   Downloaded: 4161104460198110386203.jpg
+2026-07-28 20:10:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:10:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:11:01 [INFO ] [deepseek_web]   Response: 女士拼色格子连帽外套 长袖无扣开衫设计 羊羔毛内里与镶边 宽松直筒版型 休闲抓绒秋冬保暖上衣
+2026-07-28 20:11:01 [INFO ] [deepseek_web]   Deleted: 4161104460198110386203.jpg
+2026-07-28 20:11:06 [INFO ] [deepseek_web] [55/131] 2025跨境热卖秋冬宽松毛绒连帽外套女
+2026-07-28 20:11:08 [INFO ] [deepseek_web]   Downloaded: 8541207361301319285695.jpg
+2026-07-28 20:11:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:11:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:11:39 [INFO ] [deepseek_web]   Response: 女士毛绒连帽外套 抽绳兜帽全拉链开衫 长袖宽松版型 压花纹理图案 前置拉链口袋 休闲保暖秋冬夹克
+2026-07-28 20:11:39 [INFO ] [deepseek_web]   Deleted: 8541207361301319285695.jpg
+2026-07-28 20:11:44 [INFO ] [deepseek_web] [56/131] 女士休闲拼色抽绳连帽拉链长袖保暖外套
+2026-07-28 20:11:46 [INFO ] [deepseek_web]   Downloaded: 8290802540221115878244.jpg
+2026-07-28 20:11:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:12:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:12:17 [INFO ] [deepseek_web]   Response: 女士中长款毛绒连帽外套 拼色抽绳兜帽全拉链开衫 绞花纹理图案 前置斜插口袋 宽松版型 休闲秋冬保暖夹克
+2026-07-28 20:12:17 [INFO ] [deepseek_web]   Deleted: 8290802540221115878244.jpg
+2026-07-28 20:12:22 [INFO ] [deepseek_web] [57/131] 女士格子口袋纽扣毛呢外套夹克优雅长袖外套
+2026-07-28 20:12:25 [INFO ] [deepseek_web]   Downloaded: 5040504599762529417652.jpg
+2026-07-28 20:12:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:12:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:12:56 [INFO ] [deepseek_web]   Response: 女士短款毛绒格子外套 翻领长袖单排纽扣开衫 双胸贴袋 宽松落肩版型 休闲秋冬保暖夹克
+2026-07-28 20:12:56 [INFO ] [deepseek_web]   Deleted: 5040504599762529417652.jpg
+2026-07-28 20:13:01 [INFO ] [deepseek_web] [58/131] 女式秋冬宽松拉链长款开衫连帽卫衣外套
+2026-07-28 20:13:04 [INFO ] [deepseek_web]   Downloaded: 6390405260212179002760.jpg
+2026-07-28 20:13:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:13:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:13:35 [INFO ] [deepseek_web]   Response: 女士长款连帽卫衣外套 抽绳兜帽全拉链开衫 长袖宽松版型 前置斜插口袋 纯色休闲秋冬保暖夹克
+2026-07-28 20:13:35 [INFO ] [deepseek_web]   Deleted: 6390405260212179002760.jpg
+2026-07-28 20:13:40 [INFO ] [deepseek_web] [59/131] 女士秋冬季羊毛夹克舒适羊毛衫拉链长袖外套
+2026-07-28 20:13:42 [INFO ] [deepseek_web]   Downloaded: 5850438183982613651108.jpg
+2026-07-28 20:13:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:13:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:14:13 [INFO ] [deepseek_web]   Response: 女士立领短款抓绒外套 长袖全拉链开衫 下摆抽绳设计 前置斜插口袋 宽松版型 纯色运动休闲保暖夹克
+2026-07-28 20:14:13 [INFO ] [deepseek_web]   Deleted: 5850438183982613651108.jpg
+2026-07-28 20:14:18 [INFO ] [deepseek_web] [60/131] 女士秋冬纯色双面毛绒连帽纽扣开衫休闲马甲
+2026-07-28 20:14:21 [INFO ] [deepseek_web]   Downloaded: 8800507543722916887961.jpg
+2026-07-28 20:14:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:14:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:14:52 [INFO ] [deepseek_web]   Response: 女士双面毛绒连帽马甲 无袖单排纽扣开衫 中长款宽松版型 绞花纹理图案 纯色休闲秋冬保暖背心
+2026-07-28 20:14:52 [INFO ] [deepseek_web]   Deleted: 8800507543722916887961.jpg
+2026-07-28 20:14:57 [INFO ] [deepseek_web] [61/131] 女士冬季毛绒拉链外套
+2026-07-28 20:14:59 [INFO ] [deepseek_web]   Downloaded: 4651053406102425913231.jpg
+2026-07-28 20:14:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:15:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:15:30 [INFO ] [deepseek_web]   Response: 女士毛绒连帽外套 抽绳兜帽全拉链开衫 长袖宽松版型 肌理压花图案 前置斜插口袋 罗纹袖口下摆 休闲秋冬保暖夹克
+2026-07-28 20:15:30 [INFO ] [deepseek_web]   Deleted: 4651053406102425913231.jpg
+2026-07-28 20:15:35 [INFO ] [deepseek_web] [62/131] 女士毛绒格子外套
+2026-07-28 20:15:59 [INFO ] [deepseek_web]   Downloaded: 1080255335021310730694.jpg
+2026-07-28 20:15:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:16:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:16:30 [INFO ] [deepseek_web]   Response: 女士毛绒连帽格子外套 抽绳兜帽全拉链开衫 长袖宽松版型 前置斜插口袋 罗纹袖口下摆 休闲秋冬保暖卫衣夹克
+2026-07-28 20:16:30 [INFO ] [deepseek_web]   Deleted: 1080255335021310730694.jpg
+2026-07-28 20:16:35 [INFO ] [deepseek_web] [63/131] 女士保暖开衫百搭针织衫宽松秋冬新款外套
+2026-07-28 20:16:38 [INFO ] [deepseek_web]   Downloaded: 5920931387833720055710.jpg
+2026-07-28 20:16:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:16:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:17:09 [INFO ] [deepseek_web]   Response: 女士针织开衫外套 大V领长袖无扣设计 前置双贴袋 落肩宽松版型 纯色罗纹包边 休闲百搭秋冬保暖上衣
+2026-07-28 20:17:09 [INFO ] [deepseek_web]   Deleted: 5920931387833720055710.jpg
+2026-07-28 20:17:14 [INFO ] [deepseek_web] [64/131] 毛衣女外套秋冬新款宽松短款泡泡袖爱心扣针织开衫
+2026-07-28 20:17:18 [INFO ] [deepseek_web]   Downloaded: 8990951099003892516011.jpg
+2026-07-28 20:17:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:17:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:17:49 [INFO ] [deepseek_web]   Response: 女士短款针织开衫 半高领泡泡袖单排爱心纽扣 表面提花纹理 罗纹下摆与袖口 宽松版型 纯色秋冬保暖毛衣外套
+2026-07-28 20:17:49 [INFO ] [deepseek_web]   Deleted: 8990951099003892516011.jpg
+2026-07-28 20:17:54 [INFO ] [deepseek_web] [65/131] 长毛仿皮草外套LED灯水洗毛短款外套
+2026-07-28 20:17:57 [INFO ] [deepseek_web]   Downloaded: 6500410218722511784148.jpg
+2026-07-28 20:17:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:18:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:18:28 [INFO ] [deepseek_web]   Response: 女士长毛仿皮草发光外套 短款LED光点装饰 大V领无袖设计 纯白色长毛绒质感 宽松版型 派对演出时尚保暖上衣
+2026-07-28 20:18:28 [INFO ] [deepseek_web]   Deleted: 6500410218722511784148.jpg
+2026-07-28 20:18:33 [INFO ] [deepseek_web] [66/131] 羊羔毛秋冬新款学生宽松连帽卫衣女小熊耳朵可爱拉链开衫外套
+2026-07-28 20:18:36 [INFO ] [deepseek_web]   Downloaded: 8461056187443010034412.jpg
+2026-07-28 20:18:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:18:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:19:07 [INFO ] [deepseek_web]   Response: 女士羊羔毛连帽卫衣外套 小熊耳朵抽绳兜帽 全拉链长袖开衫 前置袋鼠口袋 罗纹袖口下摆 宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:19:07 [INFO ] [deepseek_web]   Deleted: 8461056187443010034412.jpg
+2026-07-28 20:19:12 [INFO ] [deepseek_web] [67/131] 女士秋冬款纯色中长款内里加绒拉链外套
+2026-07-28 20:19:14 [INFO ] [deepseek_web]   Downloaded: 8661109216989742546689.jpg
+2026-07-28 20:19:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:19:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:19:45 [INFO ] [deepseek_web]   Response: 女士中长款加绒连帽外套 抽绳兜帽全拉链开衫 长袖宽松版型 前置斜插口袋 纯色休闲秋冬保暖卫衣夹克
+2026-07-28 20:19:45 [INFO ] [deepseek_web]   Deleted: 8661109216989742546689.jpg
+2026-07-28 20:19:50 [INFO ] [deepseek_web] [68/131] 女士秋冬纯色无袖背心休闲马夹夹克带口袋外套
+2026-07-28 20:19:53 [INFO ] [deepseek_web]   Downloaded: 8030452187512257209197.jpg
+2026-07-28 20:19:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:20:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:20:24 [INFO ] [deepseek_web]   Response: 女士立领短款马甲 无袖按扣开衫 前置大贴袋 侧边抽绳细节 宽松版型 纯色肌理面料 秋冬休闲保暖背心
+2026-07-28 20:20:24 [INFO ] [deepseek_web]   Deleted: 8030452187512257209197.jpg
+2026-07-28 20:20:29 [INFO ] [deepseek_web] [69/131] 女士格子衬衫印花连帽口袋休闲衬衣外套
+2026-07-28 20:20:32 [INFO ] [deepseek_web]   Downloaded: 9230939012281718148743.jpg
+2026-07-28 20:20:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:20:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:21:03 [INFO ] [deepseek_web]   Response: 女士连帽格子衬衫外套 拼接连帽抽绳设计 长袖单排纽扣开衫 左胸贴袋与斜插口袋 宽松落肩版型 休闲秋季衬衣夹克
+2026-07-28 20:21:03 [INFO ] [deepseek_web]   Deleted: 9230939012281718148743.jpg
+2026-07-28 20:21:08 [INFO ] [deepseek_web] [70/131] 女士复古豹纹原宿嘻哈风宽松保暖连帽棉服外套
+2026-07-28 20:21:10 [INFO ] [deepseek_web]   Downloaded: 9320342505732538002102.jpg
+2026-07-28 20:21:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:21:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:21:41 [INFO ] [deepseek_web]   Response: 女士豹纹毛绒连帽外套 全拉链长袖开衫 连帽设计 前置斜插口袋 宽松落肩版型 休闲秋冬保暖夹克
+2026-07-28 20:21:41 [INFO ] [deepseek_web]   Deleted: 9320342505732538002102.jpg
+2026-07-28 20:21:47 [INFO ] [deepseek_web] [71/131] 女士纯色冬季休闲时尚纽扣毛绒带口袋外套上衣
+2026-07-28 20:21:49 [INFO ] [deepseek_web]   Downloaded: 5480922022444374356437.jpg
+2026-07-28 20:21:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:22:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:22:20 [INFO ] [deepseek_web]   Response: 女士毛绒翻领外套 长袖双排纽扣开衫 前置侧插口袋 宽松直筒版型 纯色休闲秋冬保暖夹克
+2026-07-28 20:22:20 [INFO ] [deepseek_web]   Deleted: 5480922022444374356437.jpg
+2026-07-28 20:22:25 [INFO ] [deepseek_web] [72/131] 女士加绒拉链卫衣保暖衫连帽长袖外套抓绒外套
+2026-07-28 20:22:28 [INFO ] [deepseek_web]   Downloaded: 1800420365399339243425.jpg
+2026-07-28 20:22:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:22:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:22:59 [INFO ] [deepseek_web]   Response: 女士加绒连帽抓绒外套 抽绳兜帽全拉链开衫 长袖宽松版型 拼色拉链与抽绳细节 前置斜插口袋 罗纹袖口下摆 休闲秋冬保暖卫衣夹克
+2026-07-28 20:22:59 [INFO ] [deepseek_web]   Deleted: 1800420365399339243425.jpg
+2026-07-28 20:23:04 [INFO ] [deepseek_web] [73/131] 女士冬季纯色宽松毛绒连帽衫长袖纽扣保暖外套
+2026-07-28 20:23:28 [INFO ] [deepseek_web]   Downloaded: 5691015547292719350901.jpg
+2026-07-28 20:23:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:23:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:23:59 [INFO ] [deepseek_web]   Response: 女士中长款毛绒连帽外套 抽绳兜帽单排纽扣开衫 绞花纹理图案 宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:23:59 [INFO ] [deepseek_web]   Deleted: 5691015547292719350901.jpg
+2026-07-28 20:24:04 [INFO ] [deepseek_web] [74/131] 女士毛绒绒夹克冬季保暖毛绒带帽长袖外套
+2026-07-28 20:24:08 [INFO ] [deepseek_web]   Downloaded: 5140335299021811896166.jpg
+2026-07-28 20:24:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:24:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:24:39 [INFO ] [deepseek_web]   Response: 女士毛绒连帽夹克 抽绳兜帽全拉链开衫 长袖纯色外套 前置斜插口袋 常规版型 秋冬保暖休闲上衣
+2026-07-28 20:24:39 [INFO ] [deepseek_web]   Deleted: 5140335299021811896166.jpg
+2026-07-28 20:24:44 [INFO ] [deepseek_web] [75/131] 2025秋冬欧美女装纯色长袖连帽宽松毛绒绒外套
+2026-07-28 20:24:47 [INFO ] [deepseek_web]   Downloaded: 8030452575322699271803.jpg
+2026-07-28 20:24:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:25:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:25:18 [INFO ] [deepseek_web]   Response: 女士中长款毛绒连帽外套 连帽开襟长袖 灯笼袖设计 绞花纹理图案 宽松直筒版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:25:18 [INFO ] [deepseek_web]   Deleted: 8030452575322699271803.jpg
+2026-07-28 20:25:23 [INFO ] [deepseek_web] [76/131] 外套女冬季加绒加厚双面珊瑚绒立领保暖卫衣气质开衫拉链抓绒上衣
+2026-07-28 20:25:30 [INFO ] [deepseek_web]   Downloaded: 5691058105831617027539.jpg
+2026-07-28 20:25:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:25:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:26:01 [INFO ] [deepseek_web]   Response: 女士短款双面珊瑚绒抓绒外套 立领全拉链开衫 领口抽绳细节 长袖宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:26:01 [INFO ] [deepseek_web]   Deleted: 5691058105831617027539.jpg
+2026-07-28 20:26:06 [INFO ] [deepseek_web] [77/131] 女士超大谷仓夹克钮扣帆布夹克灯芯绒翻领秋季时尚2024新潮外套
+2026-07-28 20:26:08 [INFO ] [deepseek_web]   Downloaded: 9040721136751178884778.jpg
+2026-07-28 20:26:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:26:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:26:39 [INFO ] [deepseek_web]   Response: 女士宽松帆布谷仓夹克 拼色翻领长袖 拉链与按扣闭合 前置翻盖口袋 大廓形落肩版型 休闲秋季工装外套
+2026-07-28 20:26:39 [INFO ] [deepseek_web]   Deleted: 9040721136751178884778.jpg
+2026-07-28 20:26:44 [INFO ] [deepseek_web] [78/131] 女士双面抓绒夹克加厚拉链长袖连帽羊毛大衣冬季外套带口袋
+2026-07-28 20:26:46 [INFO ] [deepseek_web]   Downloaded: 1250601014272646844415.jpg
+2026-07-28 20:26:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:27:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:27:17 [INFO ] [deepseek_web]   Response: 女士双面抓绒连帽外套 连帽全拉链长袖开衫 宽松直筒版型 前置斜插口袋 纯色休闲秋冬保暖夹克
+2026-07-28 20:27:17 [INFO ] [deepseek_web]   Deleted: 1250601014272646844415.jpg
+2026-07-28 20:27:22 [INFO ] [deepseek_web] [79/131] 女士休闲纯色双面摇粒绒抓绒夹克外套
+2026-07-28 20:27:26 [INFO ] [deepseek_web]   Downloaded: 1960159393955010965863.jpg
+2026-07-28 20:27:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:27:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:27:57 [INFO ] [deepseek_web]   Response: 女士双面摇粒绒短款夹克 棒球领全拉链长袖开衫 罗纹领口袖口下摆 纯色休闲秋冬保暖外套
+2026-07-28 20:27:57 [INFO ] [deepseek_web]   Deleted: 1960159393955010965863.jpg
+2026-07-28 20:28:02 [INFO ] [deepseek_web] [80/131] 女士冬季抓绒衣卫衣加绒加厚摇粒绒开衫运动大码保暖防风长袖外套
+2026-07-28 20:28:04 [INFO ] [deepseek_web]   Downloaded: 0490433311882253864623.jpg
+2026-07-28 20:28:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:28:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:28:35 [INFO ] [deepseek_web]   Response: 女士摇粒绒立领外套 长袖全拉链开衫 松紧袖口 直筒修身版型 纯色加厚保暖抓绒运动夹克
+2026-07-28 20:28:35 [INFO ] [deepseek_web]   Deleted: 0490433311882253864623.jpg
+2026-07-28 20:28:40 [INFO ] [deepseek_web] [81/131] 女士中长款纯色连帽加绒外套（常规码）
+2026-07-28 20:28:42 [INFO ] [deepseek_web]   Downloaded: 6531122506069929976341.jpg
+2026-07-28 20:28:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:28:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:29:14 [INFO ] [deepseek_web]   Response: 女士中长款加绒连帽外套 连帽全拉链开衫 长袖宽松版型 前置袋鼠口袋 纯色休闲秋冬保暖卫衣夹克
+2026-07-28 20:29:14 [INFO ] [deepseek_web]   Deleted: 6531122506069929976341.jpg
+2026-07-28 20:29:19 [INFO ] [deepseek_web] [82/131] 女士中长款纯色连帽加绒外套（大码款）
+2026-07-28 20:29:22 [INFO ] [deepseek_web]   Downloaded: 9211125450801010403996.jpg
+2026-07-28 20:29:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:29:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:29:54 [INFO ] [deepseek_web]   Response: 女士中长款纯色连帽加绒外套 大码宽松版型 连帽全拉链长袖开衫 前置袋鼠口袋 休闲秋冬保暖卫衣夹克
+2026-07-28 20:29:54 [INFO ] [deepseek_web]   Deleted: 9211125450801010403996.jpg
+2026-07-28 20:29:59 [INFO ] [deepseek_web] [83/131] 女士长袖口袋纯色貂皮小兔毛皮草外套
+2026-07-28 20:30:01 [INFO ] [deepseek_web]   Downloaded: 5510351597003161469850.jpg
+2026-07-28 20:30:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:30:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:30:32 [INFO ] [deepseek_web]   Response: 女士仿兔毛皮草短款外套 连帽全拉链长袖开衫 罗纹袖口下摆 纯色宽松版型 秋冬保暖休闲夹克
+2026-07-28 20:30:32 [INFO ] [deepseek_web]   Deleted: 5510351597003161469850.jpg
+2026-07-28 20:30:37 [INFO ] [deepseek_web] [84/131] 女士休闲短款女装格子口袋拉链毛呢外套
+2026-07-28 20:30:40 [INFO ] [deepseek_web]   Downloaded: 9841101131667415350669.jpg
+2026-07-28 20:30:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:30:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:31:11 [INFO ] [deepseek_web]   Response: 女士短款格子毛呢外套 翻领长袖全拉链开衫 双胸翻盖贴袋 宽松落肩版型 休闲秋冬保暖夹克
+2026-07-28 20:31:11 [INFO ] [deepseek_web]   Deleted: 9841101131667415350669.jpg
+2026-07-28 20:31:16 [INFO ] [deepseek_web] [85/131] 女士中长款英伦风过膝大衣
+2026-07-28 20:31:18 [INFO ] [deepseek_web]   Downloaded: 6291041347136015497388.jpg
+2026-07-28 20:31:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:31:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:31:49 [INFO ] [deepseek_web]   Response: 女士中长款双排扣风衣 大翻领长袖 过膝版型 同色系腰带收腰 袖口金属搭扣袢带 侧插口袋 休闲通勤纯色外套
+2026-07-28 20:31:49 [INFO ] [deepseek_web]   Deleted: 6291041347136015497388.jpg
+2026-07-28 20:31:54 [INFO ] [deepseek_web] [86/131] 女士秋冬季纯色休闲个性街头卫衣拉链连帽长款卫衣外套
+2026-07-28 20:31:57 [INFO ] [deepseek_web]   Downloaded: 3000225080531412366513.jpg
+2026-07-28 20:31:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:32:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:32:28 [INFO ] [deepseek_web]   Response: 女士中长款连帽卫衣外套 抽绳兜帽全拉链开衫 长袖宽松Oversize版型 前置斜插口袋 纯色休闲街头风秋冬保暖夹克
+2026-07-28 20:32:28 [INFO ] [deepseek_web]   Deleted: 3000225080531412366513.jpg
+2026-07-28 20:32:33 [INFO ] [deepseek_web] [87/131] 女士纯色仿皮草马甲背心外套
+2026-07-28 20:32:37 [INFO ] [deepseek_web]   Downloaded: 4350403548822817751086.jpg
+2026-07-28 20:32:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:32:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:33:08 [INFO ] [deepseek_web]   Response: 女士仿皮草无袖马甲 大V领短款开襟设计 长毛绒质感 纯色宽松版型 休闲秋冬保暖背心
+2026-07-28 20:33:08 [INFO ] [deepseek_web]   Deleted: 4350403548822817751086.jpg
+2026-07-28 20:33:13 [INFO ] [deepseek_web] [88/131] 女士加绒加厚长袖毛领牛仔纯色破洞做旧夹克外套
+2026-07-28 20:33:17 [INFO ] [deepseek_web]   Downloaded: 4501153412121620817061.jpg
+2026-07-28 20:33:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:33:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:33:48 [INFO ] [deepseek_web]   Response: 女士加绒连帽牛仔外套 可拆卸仿毛领 抽绳兜帽按扣闭合 长袖做旧破洞设计 前置侧插口袋 宽松版型 秋冬保暖夹克
+2026-07-28 20:33:48 [INFO ] [deepseek_web]   Deleted: 4501153412121620817061.jpg
+2026-07-28 20:33:53 [INFO ] [deepseek_web] [89/131] 秋冬加绒夹克户外登山服连帽外套
+2026-07-28 20:33:58 [INFO ] [deepseek_web]   Downloaded: 3060607519984771025318.jpg
+2026-07-28 20:33:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:34:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:34:29 [INFO ] [deepseek_web]   Response: 女士中长款加绒连帽夹克 抽绳兜帽前门襟拉链与按扣闭合 翻盖按扣贴袋 纯色宽松版型 秋冬户外登山保暖外套
+2026-07-28 20:34:29 [INFO ] [deepseek_web]   Deleted: 3060607519984771025318.jpg
+2026-07-28 20:34:34 [INFO ] [deepseek_web] [90/131] 新款开衫纽扣翻领外套纯色开衫卫衣 法莱绒外套
+2026-07-28 20:34:36 [INFO ] [deepseek_web]   Downloaded: 5540715054062720366380.jpg
+2026-07-28 20:34:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:34:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:35:07 [INFO ] [deepseek_web]   Response: 女士法莱绒翻领开衫外套 长袖单排纽扣门襟 落肩宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:35:07 [INFO ] [deepseek_web]   Deleted: 5540715054062720366380.jpg
+2026-07-28 20:35:12 [INFO ] [deepseek_web] [91/131] 纯色夹克上衣开衫宽松灯芯绒外套
+2026-07-28 20:35:15 [INFO ] [deepseek_web]   Downloaded: 4960516249493655377257.jpg
+2026-07-28 20:35:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:35:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:35:46 [INFO ] [deepseek_web]   Response: 女士灯芯绒翻领夹克外套 长袖单排纽扣开衫 双胸贴袋 落肩宽松版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:35:46 [INFO ] [deepseek_web]   Deleted: 4960516249493655377257.jpg
+2026-07-28 20:35:51 [INFO ] [deepseek_web] [92/131] 拉链高领保暖女上衣 毛衣
+2026-07-28 20:36:17 [INFO ] [deepseek_web]   Downloaded: 4210438358372715595086.jpg
+2026-07-28 20:36:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:36:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:36:48 [INFO ] [deepseek_web]   Response: 女士羊羔毛高领套头衫 长袖纯色上衣 左胸拉链贴袋 宽松落肩版型 休闲秋冬保暖抓绒卫衣
+2026-07-28 20:36:48 [INFO ] [deepseek_web]   Deleted: 4210438358372715595086.jpg
+2026-07-28 20:36:53 [INFO ] [deepseek_web] [93/131] 女士纯色复古麂皮绒连帽外套 秋冬女士长袖口袋宽松毛绒卫衣
+2026-07-28 20:36:57 [INFO ] [deepseek_web]   Downloaded: 1941034512024996924013.jpg
+2026-07-28 20:36:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:37:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:37:28 [INFO ] [deepseek_web]   Response: 女士中长款麂皮绒连帽外套 抽绳兜帽单排纽扣开衫 羊羔毛内里与包边 前置双贴袋 宽松落肩版型 纯色休闲秋冬保暖夹克
+2026-07-28 20:37:28 [INFO ] [deepseek_web]   Deleted: 1941034512024996924013.jpg
+2026-07-28 20:37:33 [INFO ] [deepseek_web] [94/131] 女士毛绒外套舒适休闲保暖西装领双排扣中长款大衣
+2026-07-28 20:37:36 [INFO ] [deepseek_web]   Downloaded: 7230736387953616749619.jpg
+2026-07-28 20:37:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:37:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:38:07 [INFO ] [deepseek_web]   Response: 女士中长款毛绒大衣 西装领双排纽扣开衫 绞花纹理图案 长袖落肩版型 纯色休闲秋冬保暖外套
+2026-07-28 20:38:07 [INFO ] [deepseek_web]   Deleted: 7230736387953616749619.jpg
+2026-07-28 20:38:12 [INFO ] [deepseek_web] [95/131] 毛绒女装外套亚马逊长袖格子连帽拉链带口袋宽松外套
+2026-07-28 20:38:15 [INFO ] [deepseek_web]   Downloaded: 3320335355171839022929.jpg
+2026-07-28 20:38:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:38:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:38:46 [INFO ] [deepseek_web]   Response: 女士毛绒格子翻领外套 长袖全拉链开衫 前置翻盖贴袋 宽松版型 休闲秋冬保暖夹克
+2026-07-28 20:38:46 [INFO ] [deepseek_web]   Deleted: 3320335355171839022929.jpg
+2026-07-28 20:38:51 [INFO ] [deepseek_web] [96/131] 女士纯色宽松外套冬季保暖抓绒连帽口袋上衣外套
+2026-07-28 20:38:58 [INFO ] [deepseek_web]   Downloaded: 4040449008803229117390.jpg
+2026-07-28 20:38:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:39:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:39:29 [INFO ] [deepseek_web]   Response: 女士中长款抓绒连帽外套 无扣开襟设计 绞花纹理图案 长袖宽松版型 前置斜插口袋 纯色休闲秋冬保暖上衣
+2026-07-28 20:39:29 [INFO ] [deepseek_web]   Deleted: 4040449008803229117390.jpg
+2026-07-28 20:39:34 [INFO ] [deepseek_web] [97/131] 新款时尚女式毛绒外套带帽拼接仿毛皮草
+2026-07-28 20:39:39 [INFO ] [deepseek_web]   Downloaded: 4581020322834522610432.jpg
+2026-07-28 20:39:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:39:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:40:10 [INFO ] [deepseek_web]   Response: 女士仿皮草短款外套 大翻领长袖开衫 分段拼接毛绒设计 纯色宽松版型 秋冬保暖休闲夹克
+2026-07-28 20:40:10 [INFO ] [deepseek_web]   Deleted: 4581020322834522610432.jpg
+2026-07-28 20:40:15 [INFO ] [deepseek_web] [98/131] 新款时尚纯色女式毛绒外套带帽拼接仿毛皮草
+2026-07-28 20:40:17 [INFO ] [deepseek_web]   Downloaded: 4031149161934914660062.jpg
+2026-07-28 20:40:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:40:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:40:48 [INFO ] [deepseek_web]   Response: 女士仿皮草短款外套 大翻领长袖开衫 分段拼接毛绒设计 纯色宽松版型 秋冬保暖休闲夹克
+2026-07-28 20:40:48 [INFO ] [deepseek_web]   Deleted: 4031149161934914660062.jpg
+2026-07-28 20:40:53 [INFO ] [deepseek_web] [99/131] 女士抓绒外套2
+2026-07-28 20:40:57 [INFO ] [deepseek_web]   Downloaded: 9360357444382298005198.jpg
+2026-07-28 20:40:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:41:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:41:28 [INFO ] [deepseek_web]   Response: 女士短款抓绒外套 翻领长袖全拉链开衫 罗纹袖口下摆 宽松落肩版型 纯色休闲秋冬保暖夹克
+2026-07-28 20:41:28 [INFO ] [deepseek_web]   Deleted: 9360357444382298005198.jpg
+2026-07-28 20:41:33 [INFO ] [deepseek_web] [100/131] 女装冬季外套保暖外套宽松大领仿毛皮大衣
+2026-07-28 20:41:35 [INFO ] [deepseek_web]   Downloaded: 2061048264941111534531.jpg
+2026-07-28 20:41:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:41:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:42:06 [INFO ] [deepseek_web]   Response: 女士仿毛皮宽松大衣 大翻领长袖无扣开衫 纯色毛绒质感 中长款直筒版型 休闲秋冬保暖外套
+2026-07-28 20:42:06 [INFO ] [deepseek_web]   Deleted: 2061048264941111534531.jpg
+2026-07-28 20:42:11 [INFO ] [deepseek_web] [101/131] 长袖拉链休闲宽松卫衣毛绒衫连帽外套
+2026-07-28 20:42:14 [INFO ] [deepseek_web]   Downloaded: 4001030204639249877751.jpg
+2026-07-28 20:42:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:42:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:42:45 [INFO ] [deepseek_web]   Response: 女士毛绒连帽外套 抽绳兜帽全拉链开衫 长袖宽松版型 前置斜插口袋 纯色休闲秋冬保暖卫衣夹克
+2026-07-28 20:42:45 [INFO ] [deepseek_web]   Deleted: 4001030204639249877751.jpg
+2026-07-28 20:42:50 [INFO ] [deepseek_web] [102/131] 女士冬季连帽外套
+2026-07-28 20:42:55 [INFO ] [deepseek_web]   Downloaded: 7990942501282611180481.jpg
+2026-07-28 20:42:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:43:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:43:26 [INFO ] [deepseek_web]   Response: 女士拼色毛绒连帽外套 抽绳兜帽全拉链长袖开衫 罗纹袖口 宽松直筒版型 秋冬保暖休闲夹克
+2026-07-28 20:43:26 [INFO ] [deepseek_web]   Deleted: 7990942501282611180481.jpg
+2026-07-28 20:43:31 [INFO ] [deepseek_web] [103/131] 秋冬女装复古纯色纽扣立领毛呢外套
+2026-07-28 20:43:33 [INFO ] [deepseek_web]   Downloaded: 6411157395291915478713.jpg
+2026-07-28 20:43:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:43:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:44:04 [INFO ] [deepseek_web]   Response: 女士立领毛呢中长款外套 单排纽扣开衫 长袖直筒版型 前置斜插口袋 纯色秋冬休闲保暖大衣
+2026-07-28 20:44:04 [INFO ] [deepseek_web]   Deleted: 6411157395291915478713.jpg
+2026-07-28 20:44:09 [INFO ] [deepseek_web] [104/131] 女士秋冬圣诞节圣诞树印花休闲圆领领开衫长袖外套上衣
+2026-07-28 20:44:13 [INFO ] [deepseek_web]   Downloaded: 1751046120038619029804.jpg
+2026-07-28 20:44:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:44:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:44:44 [INFO ] [deepseek_web]   Response: 女士圆领针织开衫外套 单排纽扣长袖 圣诞树图案印花 宽松落肩版型 休闲秋冬保暖上衣
+2026-07-28 20:44:44 [INFO ] [deepseek_web]   Deleted: 1751046120038619029804.jpg
+2026-07-28 20:44:49 [INFO ] [deepseek_web] [105/131] 女士纯色长绒摇粒绒毛毛茄克外套立领保暖夹克拉链开衫
+2026-07-28 20:44:50 [INFO ] [deepseek_web]   Downloaded: 2060320343133613868809.jpg
+2026-07-28 20:44:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:45:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:45:22 [INFO ] [deepseek_web]   Response: 女士长绒摇粒绒立领外套 全拉链长袖开衫 纯色毛绒质感 宽松落肩版型 秋冬保暖休闲夹克
+2026-07-28 20:45:22 [INFO ] [deepseek_web]   Deleted: 2060320343133613868809.jpg
+2026-07-28 20:45:27 [INFO ] [deepseek_web] [106/131] 女士轻质绗缝夹克单排扣长袖保暖大码外套
+2026-07-28 20:45:30 [INFO ] [deepseek_web]   Downloaded: 3720523543104635852354.jpg
+2026-07-28 20:45:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:45:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:46:01 [INFO ] [deepseek_web]   Response: 女士轻质绗缝夹克 无领单排按扣开衫 长袖宽松大码版型 前置贴袋 纯色菱格纹保暖外套
+2026-07-28 20:46:01 [INFO ] [deepseek_web]   Deleted: 3720523543104635852354.jpg
+2026-07-28 20:46:06 [INFO ] [deepseek_web] [107/131] 女士纯色羊毛夹克外套简约全拉链短外套 保暖轻便豌豆大衣休闲外套
+2026-07-28 20:46:08 [INFO ] [deepseek_web]   Downloaded: 0480453200002995871113.jpg
+2026-07-28 20:46:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:46:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:46:39 [INFO ] [deepseek_web]   Response: 女士抓绒立领外套 全拉链长袖开衫 提花纹理图案 纯色短款版型 休闲保暖秋冬夹克
+2026-07-28 20:46:39 [INFO ] [deepseek_web]   Deleted: 0480453200002995871113.jpg
+2026-07-28 20:46:44 [INFO ] [deepseek_web] [108/131] 女士纯色秋冬季保暖毛绒拉链口袋长袖连帽抓绒外套
+2026-07-28 20:46:48 [INFO ] [deepseek_web]   Downloaded: 7781053218123911536635.jpg
+2026-07-28 20:46:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:47:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:47:19 [INFO ] [deepseek_web]   Response: 女士中长款毛绒连帽外套 连帽开襟设计 绞花纹理图案 长袖宽松版型 前置斜插口袋 纯色秋冬保暖抓绒上衣
+2026-07-28 20:47:19 [INFO ] [deepseek_web]   Deleted: 7781053218123911536635.jpg
+2026-07-28 20:47:24 [INFO ] [deepseek_web] [109/131] 女士时尚圣诞节印花拉链长袖口袋抽绳休闲运动连帽卫衣（三）（加绒）
+2026-07-28 20:47:27 [INFO ] [deepseek_web]   Downloaded: 1011058196378611233486.jpg
+2026-07-28 20:47:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:47:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:47:58 [INFO ] [deepseek_web]   Response: 女士加绒连帽卫衣外套 抽绳兜帽全拉链开衫 圣诞树金色印花 前置袋鼠口袋 长袖宽松版型 休闲秋冬保暖运动上衣
+2026-07-28 20:47:58 [INFO ] [deepseek_web]   Deleted: 1011058196378611233486.jpg
+2026-07-28 20:48:03 [INFO ] [deepseek_web] [110/131] 女士时尚圣诞节印花拉链长袖口袋抽绳休闲运动连帽卫衣（五）（加绒）
+2026-07-28 20:48:05 [INFO ] [deepseek_web]   Downloaded: 2951055145348617895702.jpg
+2026-07-28 20:48:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:48:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:48:37 [INFO ] [deepseek_web]   Response: 女士加绒连帽卫衣外套 抽绳兜帽全拉链开衫 圣诞驯鹿图案印花 前置袋鼠口袋 长袖宽松版型 休闲秋冬保暖运动上衣
+2026-07-28 20:48:37 [INFO ] [deepseek_web]   Deleted: 2951055145348617895702.jpg
+2026-07-28 20:48:42 [INFO ] [deepseek_web] [111/131] 女士宽松款舒适冬季毛绒拉链连帽外套
+2026-07-28 20:48:45 [INFO ] [deepseek_web]   Downloaded: 5670910194494814466643.jpg
+2026-07-28 20:48:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:49:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:49:16 [INFO ] [deepseek_web]   Response: 女士宽松款毛绒连帽外套 拼色连帽抽绳设计 全拉链长袖开衫 前置斜插口袋 纯色休闲冬季保暖夹克
+2026-07-28 20:49:16 [INFO ] [deepseek_web]   Deleted: 5670910194494814466643.jpg
+2026-07-28 20:49:21 [INFO ] [deepseek_web] [112/131] 秋冬新品西服领长款女士仿皮草外套上衣毛绒大衣
+2026-07-28 20:49:23 [INFO ] [deepseek_web]   Downloaded: 2080234159761850208624.jpg
+2026-07-28 20:49:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:49:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:49:54 [INFO ] [deepseek_web]   Response: 女士长款仿皮草大衣 西装领长袖开衫 仿狐狸毛质感 纯色宽松直筒版型 秋冬保暖休闲外套
+2026-07-28 20:49:54 [INFO ] [deepseek_web]   Deleted: 2080234159761850208624.jpg
+2026-07-28 20:49:59 [INFO ] [deepseek_web] [113/131] 女士仿皮草外套人造毛皮大衣中长款
+2026-07-28 20:50:02 [INFO ] [deepseek_web]   Downloaded: 2861030330726512974587.jpg
+2026-07-28 20:50:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:50:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:50:34 [INFO ] [deepseek_web]   Response: 女士中长款仿皮草大衣 立领长袖开衫 纯色毛绒质感 宽松直筒版型 秋冬保暖休闲外套
+2026-07-28 20:50:34 [INFO ] [deepseek_web]   Deleted: 2861030330726512974587.jpg
+2026-07-28 20:50:39 [INFO ] [deepseek_web] [114/131] 女士口袋印花纽扣毛绒呢子外套
+2026-07-28 20:50:43 [INFO ] [deepseek_web]   Downloaded: 2661145397951515009890.jpg
+2026-07-28 20:50:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:50:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:51:14 [INFO ] [deepseek_web]   Response: 女士中长款毛绒呢子大衣 翻领单排纽扣开衫 前置双贴袋 长袖宽松版型 纯色秋冬保暖外套
+2026-07-28 20:51:14 [INFO ] [deepseek_web]   Deleted: 2661145397951515009890.jpg
+2026-07-28 20:51:19 [INFO ] [deepseek_web] [115/131] 女士纯色时尚休闲纯色格纹连帽呢大衣腰带双排扣长款外套
+2026-07-28 20:51:22 [INFO ] [deepseek_web]   Downloaded: 8411050098984540277739.jpg
+2026-07-28 20:51:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:51:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:51:53 [INFO ] [deepseek_web]   Response: 女士连帽中长款呢大衣 格纹内里兜帽 大翻领双排扣开衫 同色系腰带收腰 袖口纽扣袢带 侧边斜插口袋 纯色休闲秋冬保暖外套
+2026-07-28 20:51:53 [INFO ] [deepseek_web]   Deleted: 8411050098984540277739.jpg
+2026-07-28 20:51:58 [INFO ] [deepseek_web] [116/131] 女士秋冬休闲纯色侧开叉连帽抓绒纽扣开衫外套带口袋家居服外套
+2026-07-28 20:52:03 [INFO ] [deepseek_web]   Downloaded: 1020751365118617291182.jpg
+2026-07-28 20:52:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:52:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:52:34 [INFO ] [deepseek_web]   Response: 女士中长款抓绒连帽开衫 连帽单排纽扣门襟 长袖宽松版型 前置斜插口袋 侧边弧形开叉 纯色休闲秋冬家居保暖外套
+2026-07-28 20:52:34 [INFO ] [deepseek_web]   Deleted: 1020751365118617291182.jpg
+2026-07-28 20:52:39 [INFO ] [deepseek_web] [117/131] 女式V领短款 仿皮草外套马甲上衣人造毛皮背心
+2026-07-28 20:52:43 [INFO ] [deepseek_web]   Downloaded: 3990253145912017608480.jpg
+2026-07-28 20:52:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:52:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:53:14 [INFO ] [deepseek_web]   Response: 女士V领短款仿皮草马甲 无袖开襟设计 长毛绒质感 纯色宽松版型 休闲秋冬保暖背心
+2026-07-28 20:53:14 [INFO ] [deepseek_web]   Deleted: 3990253145912017608480.jpg
+2026-07-28 20:53:19 [INFO ] [deepseek_web] [118/131] 女士休闲保暖口袋拉链连帽大衣外套夹克开衫外套
+2026-07-28 20:53:21 [INFO ] [deepseek_web]   Downloaded: 3841011447697019867253.jpg
+2026-07-28 20:53:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:53:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:53:53 [INFO ] [deepseek_web]   Response: 女士长款加绒连帽开衫外套 抽绳兜帽全拉链开衫 长袖宽松版型 前置斜插口袋 纯色休闲秋冬保暖大衣
+2026-07-28 20:53:53 [INFO ] [deepseek_web]   Deleted: 3841011447697019867253.jpg
+2026-07-28 20:53:58 [INFO ] [deepseek_web] [119/131] 女式卫衣亚马逊女装豹纹连帽卫衣女加绒休闲时尚外套
+2026-07-28 20:54:00 [INFO ] [deepseek_web]   Downloaded: 8070949186957462689228.jpg
+2026-07-28 20:54:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:54:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:54:31 [INFO ] [deepseek_web]   Response: 女士加绒连帽卫衣外套 豹纹内里连帽长袖 前开襟按扣闭合 侧边斜插口袋 中长款修身版型 纯色休闲秋冬保暖上衣
+2026-07-28 20:54:31 [INFO ] [deepseek_web]   Deleted: 8070949186957462689228.jpg
+2026-07-28 20:54:36 [INFO ] [deepseek_web] [120/131] 女士休闲印花卫衣纽扣仿毛衣外套
+2026-07-28 20:54:39 [INFO ] [deepseek_web]   Downloaded: 2010450015193010004663.jpg
+2026-07-28 20:54:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:54:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:55:10 [INFO ] [deepseek_web]   Response: 女士连帽印花卫衣外套 抽绳兜帽单排纽扣开衫 风景与卡通动物图案 长袖宽松版型 罗纹袖口下摆 休闲秋冬保暖上衣
+2026-07-28 20:55:10 [INFO ] [deepseek_web]   Deleted: 2010450015193010004663.jpg
+2026-07-28 20:55:15 [INFO ] [deepseek_web] [121/131] 女士2024毛绒连帽纽扣口袋开衫休闲外套
+2026-07-28 20:55:18 [INFO ] [deepseek_web]   Downloaded: 0910312247592818806501.jpg
+2026-07-28 20:55:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:55:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:55:50 [INFO ] [deepseek_web]   Response: 女士毛绒连帽开衫外套 连帽单排纽扣门襟 长袖宽松版型 前置双贴袋 纯色休闲秋冬保暖上衣
+2026-07-28 20:55:50 [INFO ] [deepseek_web]   Deleted: 0910312247592818806501.jpg
+2026-07-28 20:55:55 [INFO ] [deepseek_web] [122/131] 女士中长款英伦风过膝大衣
+2026-07-28 20:55:59 [INFO ] [deepseek_web]   Downloaded: 1720331592123711025502.jpg
+2026-07-28 20:55:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:56:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:56:30 [INFO ] [deepseek_web]   Response: 女士中长款双排扣风衣 大翻领长袖 过膝直筒版型 同色系腰带收腰 袖口金属搭扣袢带 肩章与斜插口袋 纯色休闲通勤外套
+2026-07-28 20:56:30 [INFO ] [deepseek_web]   Deleted: 1720331592123711025502.jpg
+2026-07-28 20:56:35 [INFO ] [deepseek_web] [123/131] 女士2024年时尚简约拼接长款两面穿长袖连帽棉衣外套大衣
+2026-07-28 20:56:40 [INFO ] [deepseek_web]   Downloaded: 9899045117287717391402.jpg
+2026-07-28 20:56:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:56:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:57:11 [INFO ] [deepseek_web]   Response: 女士中长款两面穿绗缝棉服外套 大翻领羊羔毛拼接 无扣开襟设计 长袖宽松版型 侧边斜插口袋 纯色休闲秋冬保暖大衣
+2026-07-28 20:57:11 [INFO ] [deepseek_web]   Deleted: 9899045117287717391402.jpg
+2026-07-28 20:57:16 [INFO ] [deepseek_web] [124/131] 女士2024秋冬亚马逊ebay外贸格子外套纽扣纯色连帽外套
+2026-07-28 20:57:21 [INFO ] [deepseek_web]   Downloaded: 2270410307654112684169.jpg
+2026-07-28 20:57:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:57:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:57:52 [INFO ] [deepseek_web]   Response: 女士连帽格子外套 细格纹连帽设计 单排纽扣开衫 羊羔毛内里 前置斜插口袋 侧边弧形开叉 宽松版型 秋冬保暖休闲夹克
+2026-07-28 20:57:52 [INFO ] [deepseek_web]   Deleted: 2270410307654112684169.jpg
+2026-07-28 20:57:57 [INFO ] [deepseek_web] [125/131] 女士连帽卫衣绒衫侧边口袋毛绒外套
+2026-07-28 20:58:00 [INFO ] [deepseek_web]   Downloaded: 1120243353844156422998.jpg
+2026-07-28 20:58:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:58:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:58:31 [INFO ] [deepseek_web]   Response: 女士毛绒连帽卫衣 连帽全拉链开衫 长袖修身版型 前置斜插口袋 纯色秋冬保暖休闲外套
+2026-07-28 20:58:31 [INFO ] [deepseek_web]   Deleted: 1120243353844156422998.jpg
+2026-07-28 20:58:36 [INFO ] [deepseek_web] [126/131] 女士连帽毛衣外套冬季保暖羊毛开衫外套
+2026-07-28 20:58:38 [INFO ] [deepseek_web]   Downloaded: 5101041067234760634857.jpg
+2026-07-28 20:58:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:58:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:59:09 [INFO ] [deepseek_web]   Response: 女士毛绒连帽开衫外套 连帽无扣开襟设计 长袖宽松茧型版型 罗纹针织袖口 纯色秋冬保暖披风外套
+2026-07-28 20:59:09 [INFO ] [deepseek_web]   Deleted: 5101041067234760634857.jpg
+2026-07-28 20:59:14 [INFO ] [deepseek_web] [127/131] 女士冬衣街头日常出门穿秋冬长款外套宽松合身保暖现代时尚休闲外套
+2026-07-28 20:59:17 [INFO ] [deepseek_web]   Downloaded: 8291134330991211379009.jpg
+2026-07-28 20:59:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 20:59:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 20:59:48 [INFO ] [deepseek_web]   Response: 女士长款毛绒大衣 翻领单排纽扣开衫 绞花纹理图案 长袖宽松版型 侧边斜插口袋 纯色秋冬保暖休闲外套
+2026-07-28 20:59:48 [INFO ] [deepseek_web]   Deleted: 8291134330991211379009.jpg
+2026-07-28 20:59:53 [INFO ] [deepseek_web] [128/131] 女士格纹短夹克长袖纽扣式加绒连帽夹克保暖外套
+2026-07-28 20:59:57 [INFO ] [deepseek_web]   Downloaded: 9810426405231179635750.jpg
+2026-07-28 20:59:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 21:00:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 21:00:28 [INFO ] [deepseek_web]   Response: 女士加绒连帽格纹短夹克 羊羔毛拼接翻领 长袖按扣开衫 双胸翻盖贴袋 宽松版型 秋冬保暖休闲外套
+2026-07-28 21:00:28 [INFO ] [deepseek_web]   Deleted: 9810426405231179635750.jpg
+2026-07-28 21:00:33 [INFO ] [deepseek_web] [129/131] 外套仿兔毛大衣宽松翻领外套厚实保暖
+2026-07-28 21:00:35 [INFO ] [deepseek_web]   Downloaded: 0171052009051114030513.jpg
+2026-07-28 21:00:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 21:00:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 21:01:06 [INFO ] [deepseek_web]   Response: 女士中长款仿兔毛大衣 大翻领单排单扣开衫 长袖宽松版型 侧边斜插口袋 纯色秋冬保暖外套
+2026-07-28 21:01:06 [INFO ] [deepseek_web]   Deleted: 0171052009051114030513.jpg
+2026-07-28 21:01:11 [INFO ] [deepseek_web] [130/131] 复古豹纹原宿嘻哈风宽松加绒加厚连帽棉袄棉服
+2026-07-28 21:01:14 [INFO ] [deepseek_web]   Downloaded: 4650523088162512842673.jpg
+2026-07-28 21:01:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 21:01:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 21:01:45 [INFO ] [deepseek_web]   Response: 女士豹纹连帽棉服外套 全拉链长袖开衫 绗缝加绒内里 前置斜插口袋 宽松版型 秋冬保暖休闲夹克
+2026-07-28 21:01:45 [INFO ] [deepseek_web]   Deleted: 4650523088162512842673.jpg
+2026-07-28 21:01:50 [INFO ] [deepseek_web] [131/131] 女式双面羊毛大衣秋冬纯色修身立领大衣
+2026-07-28 21:01:52 [INFO ] [deepseek_web]   Downloaded: 6400416404202920958537.jpg
+2026-07-28 21:01:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-07-28 21:02:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-07-28 21:02:23 [INFO ] [deepseek_web]   Response: 女士双面抓绒立领夹克 长袖全拉链开衫 拉链头撞色细节 前置斜插口袋 纯色修身版型 秋冬保暖休闲外套
+2026-07-28 21:02:23 [INFO ] [deepseek_web]   Deleted: 6400416404202920958537.jpg
+2026-07-28 21:02:23 [INFO ] [deepseek_web] ==================================================
+2026-07-28 21:02:23 [INFO ] [deepseek_web] Done: 131 success, 0 failed → optimize_title
+2026-07-28 21:02:24 [INFO ] [title_workflow] Optimization complete: 131 titles
+2026-07-28 21:02:33 [INFO ] [title_workflow] Written 131 optimized titles to column H (8)
+2026-07-28 21:02:33 [INFO ] [title_workflow] Done: 7.21v1.xlsx
+2026-07-28 21:02:33 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-07-28 21:02:33 [INFO ] [jenkins] 
+2026-07-28 21:02:33 [INFO ] [jenkins] ==================================================
+2026-07-28 21:02:33 [INFO ] [jenkins] All 1 steps completed successfully
+2026-07-28 21:02:33 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-07-28 21:02:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-07-28 21:02:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-07-28 21:02:33 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

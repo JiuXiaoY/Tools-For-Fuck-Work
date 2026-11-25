@@ -1,0 +1,1444 @@
+2026-08-26 17:49:23 [INFO ] [jenkins] ==================================================
+2026-08-26 17:49:23 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-26 17:49:23 [INFO ] [jenkins] ==================================================
+2026-08-26 17:49:23 [INFO ] [jenkins] 
+2026-08-26 17:49:23 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-26 17:49:23 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:49:23 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-26 17:49:23 [INFO ] [jenkins] 
+2026-08-26 17:49:23 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-26 17:49:23 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:49:23 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-26 17:49:23 [INFO ] [preprocess] [king1.xlsx]
+2026-08-26 17:49:24 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:49:24 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:49:24 [INFO ] [preprocess]   [king1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:49:24 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:49:24 [INFO ] [preprocess]   [king1.xlsx] Dedup: 23 filled rows, 7 deleted
+2026-08-26 17:49:24 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:49:25 [INFO ] [preprocess] [king2.xlsx]
+2026-08-26 17:49:25 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:49:25 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:49:25 [INFO ] [preprocess]   [king2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:49:25 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:49:26 [INFO ] [preprocess]   [king2.xlsx] Dedup: 25 filled rows, 6 deleted
+2026-08-26 17:49:26 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:49:26 [INFO ] [preprocess] [king3.xlsx]
+2026-08-26 17:49:27 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:49:27 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:49:27 [INFO ] [preprocess]   [king3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:49:27 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:49:27 [INFO ] [preprocess]   [king3.xlsx] No duplicate filled rows to remove
+2026-08-26 17:49:27 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:49:28 [INFO ] [preprocess] [king4.xlsx]
+2026-08-26 17:49:28 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:49:28 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:49:28 [INFO ] [preprocess]   [king4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:49:28 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:49:28 [INFO ] [preprocess]   [king4.xlsx] Dedup: 19 filled rows, 3 deleted
+2026-08-26 17:49:28 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:49:29 [INFO ] [preprocess] Preprocessing complete
+2026-08-26 17:49:29 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-26 17:49:29 [INFO ] [jenkins] 
+2026-08-26 17:49:29 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-26 17:49:29 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:49:29 [INFO ] [main] Log file: 20260826_fb3470ed.log
+2026-08-26 17:49:29 [INFO ] [main] Found 4 file(s):
+2026-08-26 17:49:29 [INFO ] [main]   king1.xlsx
+2026-08-26 17:49:29 [INFO ] [main]   king2.xlsx
+2026-08-26 17:49:29 [INFO ] [main]   king3.xlsx
+2026-08-26 17:49:29 [INFO ] [main]   king4.xlsx
+2026-08-26 17:49:29 [INFO ] [main] Output: 8.25v1.xlsx
+2026-08-26 17:49:29 [INFO ] [main] ==================================================
+2026-08-26 17:49:33 [INFO ] [main] Merged 4 files, 5313 images total
+2026-08-26 17:49:34 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-26 17:49:34 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-26 17:49:36 [INFO ] [pipeline]   Sheet [Sheet0_2]: 793 rows, 1627 images
+2026-08-26 17:49:36 [INFO ] [pipeline]   Sheet [Sheet0_3]: 673 rows, 1482 images
+2026-08-26 17:49:36 [INFO ] [pipeline]   Sheet [Sheet0_4]: 584 rows, 1144 images
+2026-08-26 17:49:36 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2050 data rows, 4253 images
+2026-08-26 17:49:36 [INFO ] [pipeline] [2/12] validate
+2026-08-26 17:49:36 [INFO ] [pipeline]   Validated: 2528 rows, 27 cols (expect ~32)
+2026-08-26 17:49:36 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-26 17:49:36 [INFO ] [pipeline]   Backed up 5313 images
+2026-08-26 17:49:36 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-26 17:49:36 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-26 17:49:36 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-26 17:49:36 [INFO ] [pipeline]   Restored 5313 images with adjusted anchors
+2026-08-26 17:49:36 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-26 17:49:36 [INFO ] [pipeline]   Column 2: 2528 IDs generated
+2026-08-26 17:49:36 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-26 17:49:36 [INFO ] [pipeline]   Column 3: 2528 cells filled
+2026-08-26 17:49:36 [INFO ] [pipeline] [6/12] map_colors
+2026-08-26 17:49:36 [INFO ] [pipeline]   Column 10: 2412 cells mapped, 88 rows skipped (col A has fill), 28 no match (recorded)
+2026-08-26 17:49:36 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-26 17:49:36 [INFO ] [pipeline]   Column 11: 2434 mapped, 88 cleared (col A has fill), 6 no match (recorded)
+2026-08-26 17:49:36 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-26 17:49:36 [INFO ] [pipeline]   Mirror copy: 13713 cells written
+2026-08-26 17:49:36 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-26 17:49:36 [INFO ] [pipeline]   Column 44: 2528 cells copied from col 12
+2026-08-26 17:49:36 [INFO ] [pipeline] [10/12] calc_price
+2026-08-26 17:49:36 [INFO ] [pipeline]   Columns 45-48: 2528 rows calculated
+2026-08-26 17:49:36 [INFO ] [pipeline] [11/12] format_cells
+2026-08-26 17:49:37 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-26 17:49:37 [INFO ] [pipeline]   Formatted 2528 rows: h=50, align=left/center
+2026-08-26 17:49:37 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-26 17:49:37 [INFO ] [pipeline] [12/12] finalize
+2026-08-26 17:49:37 [INFO ] [pipeline]   Done: 2528 rows x 48 cols (target: 48)
+2026-08-26 17:49:37 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:49:39 [INFO ] [main] Size: 2528 rows x 48 cols
+2026-08-26 17:49:39 [INFO ] [main] ==================================================
+2026-08-26 17:49:39 [INFO ] [main] Done: 8.25v1.xlsx
+2026-08-26 17:49:39 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-26 17:49:39 [INFO ] [jenkins] 
+2026-08-26 17:49:39 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-26 17:49:39 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:49:40 [INFO ] [color_size_main] Source: 8.25v1.xlsx
+2026-08-26 17:49:42 [INFO ] [color_size_main] Extracted: 2412 data lines + 116 separators → check_.txt
+2026-08-26 17:49:42 [INFO ] [color_size_main] Running: process.py
+2026-08-26 17:49:42 [INFO ] [color_size_deal] Groups: 89, lines: 2412 (file: 2528)
+2026-08-26 17:49:42 [INFO ] [color_size_deal] Prefixes: {'01': 8}
+2026-08-26 17:49:42 [INFO ] [color_size_deal] Done.
+2026-08-26 17:49:42 [INFO ] [color_size_main] Processing write-back: 2528 lines
+2026-08-26 17:49:46 [INFO ] [color_size_main] Write-back: 124 written, 2404 unchanged → 8.25v1.xlsx
+2026-08-26 17:49:46 [INFO ] [color_size_main] Done.
+2026-08-26 17:49:47 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-26 17:49:47 [INFO ] [jenkins] 
+2026-08-26 17:49:47 [INFO ] [jenkins] ==================================================
+2026-08-26 17:49:47 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-26 17:49:47 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-26 17:49:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-26 17:49:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-26 17:49:47 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-26 17:52:40 [INFO ] [jenkins] ==================================================
+2026-08-26 17:52:40 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-08-26 17:52:40 [INFO ] [jenkins] ==================================================
+2026-08-26 17:52:40 [INFO ] [jenkins] 
+2026-08-26 17:52:40 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-08-26 17:52:40 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:52:40 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-08-26 17:52:40 [INFO ] [jenkins] 
+2026-08-26 17:52:40 [INFO ] [jenkins] [2/4] Preprocess
+2026-08-26 17:52:40 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:52:40 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-08-26 17:52:40 [INFO ] [preprocess] [king1.xlsx]
+2026-08-26 17:52:40 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:52:40 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:52:41 [INFO ] [preprocess]   [king1.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:52:41 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:52:41 [INFO ] [preprocess]   [king1.xlsx] Dedup: 23 filled rows, 7 deleted
+2026-08-26 17:52:41 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:52:41 [INFO ] [preprocess] [king2.xlsx]
+2026-08-26 17:52:42 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:52:42 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:52:42 [INFO ] [preprocess]   [king2.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:52:42 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:52:42 [INFO ] [preprocess]   [king2.xlsx] Dedup: 25 filled rows, 6 deleted
+2026-08-26 17:52:42 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:52:43 [INFO ] [preprocess] [king3.xlsx]
+2026-08-26 17:52:43 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:52:43 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:52:44 [INFO ] [preprocess]   [king3.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:52:44 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:52:44 [INFO ] [preprocess]   [king3.xlsx] No duplicate filled rows to remove
+2026-08-26 17:52:44 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:52:44 [INFO ] [preprocess] [king4.xlsx]
+2026-08-26 17:52:44 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-08-26 17:52:44 [INFO ] [pipeline] [1/2] remove_header
+2026-08-26 17:52:45 [INFO ] [preprocess]   [king4.xlsx] Sheet [Sheet0]: header row removed
+2026-08-26 17:52:45 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-08-26 17:52:45 [INFO ] [preprocess]   [king4.xlsx] Dedup: 19 filled rows, 3 deleted
+2026-08-26 17:52:45 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:52:45 [INFO ] [preprocess] Preprocessing complete
+2026-08-26 17:52:45 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-08-26 17:52:45 [INFO ] [jenkins] 
+2026-08-26 17:52:45 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-08-26 17:52:45 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:52:46 [INFO ] [main] Log file: 20260826_fb3470ed.log
+2026-08-26 17:52:46 [INFO ] [main] Found 4 file(s):
+2026-08-26 17:52:46 [INFO ] [main]   king1.xlsx
+2026-08-26 17:52:46 [INFO ] [main]   king2.xlsx
+2026-08-26 17:52:46 [INFO ] [main]   king3.xlsx
+2026-08-26 17:52:46 [INFO ] [main]   king4.xlsx
+2026-08-26 17:52:46 [INFO ] [main] Output: 8.25v1.xlsx
+2026-08-26 17:52:46 [INFO ] [main] ==================================================
+2026-08-26 17:52:49 [INFO ] [main] Merged 4 files, 5313 images total
+2026-08-26 17:52:49 [INFO ] [main] Deleted 4 source file(s)
+2026-08-26 17:52:51 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-08-26 17:52:51 [INFO ] [pipeline] [1/12] merge_sheets
+2026-08-26 17:52:52 [INFO ] [pipeline]   Sheet [Sheet0_2]: 793 rows, 1627 images
+2026-08-26 17:52:52 [INFO ] [pipeline]   Sheet [Sheet0_3]: 673 rows, 1482 images
+2026-08-26 17:52:52 [INFO ] [pipeline]   Sheet [Sheet0_4]: 584 rows, 1144 images
+2026-08-26 17:52:52 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2050 data rows, 4253 images
+2026-08-26 17:52:52 [INFO ] [pipeline] [2/12] validate
+2026-08-26 17:52:52 [INFO ] [pipeline]   Validated: 2528 rows, 27 cols (expect ~32)
+2026-08-26 17:52:52 [INFO ] [pipeline] [3/12] insert_columns
+2026-08-26 17:52:53 [INFO ] [pipeline]   Backed up 5313 images
+2026-08-26 17:52:53 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-08-26 17:52:53 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-08-26 17:52:53 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-08-26 17:52:53 [INFO ] [pipeline]   Restored 5313 images with adjusted anchors
+2026-08-26 17:52:53 [INFO ] [pipeline] [4/12] assign_ids
+2026-08-26 17:52:53 [INFO ] [pipeline]   Column 2: 2528 IDs generated
+2026-08-26 17:52:53 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-08-26 17:52:53 [INFO ] [pipeline]   Column 3: 2528 cells filled
+2026-08-26 17:52:53 [INFO ] [pipeline] [6/12] map_colors
+2026-08-26 17:52:53 [INFO ] [pipeline]   Column 10: 2412 cells mapped, 88 rows skipped (col A has fill), 28 no match (recorded)
+2026-08-26 17:52:53 [INFO ] [pipeline] [7/12] size_mapping
+2026-08-26 17:52:53 [INFO ] [pipeline]   Column 11: 2434 mapped, 88 cleared (col A has fill), 6 no match (recorded)
+2026-08-26 17:52:53 [INFO ] [pipeline] [8/12] copy_mirror
+2026-08-26 17:52:53 [INFO ] [pipeline]   Mirror copy: 13713 cells written
+2026-08-26 17:52:53 [INFO ] [pipeline] [9/12] mirror_category
+2026-08-26 17:52:53 [INFO ] [pipeline]   Column 44: 2528 cells copied from col 12
+2026-08-26 17:52:53 [INFO ] [pipeline] [10/12] calc_price
+2026-08-26 17:52:53 [INFO ] [pipeline]   Columns 45-48: 2528 rows calculated
+2026-08-26 17:52:53 [INFO ] [pipeline] [11/12] format_cells
+2026-08-26 17:52:54 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-08-26 17:52:54 [INFO ] [pipeline]   Formatted 2528 rows: h=50, align=left/center
+2026-08-26 17:52:54 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-08-26 17:52:54 [INFO ] [pipeline] [12/12] finalize
+2026-08-26 17:52:54 [INFO ] [pipeline]   Done: 2528 rows x 48 cols (target: 48)
+2026-08-26 17:52:54 [INFO ] [pipeline] Pipeline complete
+2026-08-26 17:52:56 [INFO ] [main] Size: 2528 rows x 48 cols
+2026-08-26 17:52:56 [INFO ] [main] ==================================================
+2026-08-26 17:52:56 [INFO ] [main] Done: 8.25v1.xlsx
+2026-08-26 17:52:56 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-08-26 17:52:56 [INFO ] [jenkins] 
+2026-08-26 17:52:56 [INFO ] [jenkins] [4/4] Color re-processing
+2026-08-26 17:52:56 [INFO ] [jenkins] ------------------------------
+2026-08-26 17:52:56 [INFO ] [color_size_main] Source: 8.25v1.xlsx
+2026-08-26 17:52:58 [INFO ] [color_size_main] Extracted: 2412 data lines + 116 separators → check_.txt
+2026-08-26 17:52:58 [INFO ] [color_size_main] Running: process.py
+2026-08-26 17:52:59 [INFO ] [color_size_deal] Groups: 89, lines: 2412 (file: 2528)
+2026-08-26 17:52:59 [INFO ] [color_size_deal] Prefixes: {'01': 8}
+2026-08-26 17:52:59 [INFO ] [color_size_deal] Done.
+2026-08-26 17:52:59 [INFO ] [color_size_main] Processing write-back: 2528 lines
+2026-08-26 17:53:03 [INFO ] [color_size_main] Write-back: 124 written, 2404 unchanged → 8.25v1.xlsx
+2026-08-26 17:53:03 [INFO ] [color_size_main] Done.
+2026-08-26 17:53:03 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-08-26 17:53:03 [INFO ] [jenkins] 
+2026-08-26 17:53:03 [INFO ] [jenkins] ==================================================
+2026-08-26 17:53:03 [INFO ] [jenkins] All 4 steps completed successfully
+2026-08-26 17:53:03 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-26 17:53:03 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-26 17:53:03 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-26 17:53:03 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-26 18:51:16 [ERROR] [color_size_main] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\8.25v1.xlsx
+2026-08-26 18:51:25 [INFO ] [color_size_deal] Groups: 1, lines: 150 (file: 151)
+2026-08-26 18:51:25 [INFO ] [color_size_deal] Prefixes: {'01': 24, '02': 24, '03': 24, '04': 24, '05': 5}
+2026-08-26 18:51:25 [INFO ] [color_size_deal] Done.
+2026-08-26 18:54:00 [INFO ] [color_size_deal] Groups: 1, lines: 150 (file: 151)
+2026-08-26 18:54:00 [INFO ] [color_size_deal] Prefixes: {'01': 24, '02': 24, '03': 24, '04': 24, '05': 5}
+2026-08-26 18:54:00 [INFO ] [color_size_deal] Done.
+2026-08-26 19:13:45 [INFO ] [jenkins] ==================================================
+2026-08-26 19:13:45 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-26 19:13:45 [INFO ] [jenkins] ==================================================
+2026-08-26 19:13:45 [INFO ] [jenkins] 
+2026-08-26 19:13:45 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-26 19:13:45 [INFO ] [jenkins] ------------------------------
+2026-08-26 19:13:46 [INFO ] [title_workflow] Source: 8.25v1.xlsx
+2026-08-26 19:13:47 [INFO ] [title_workflow] Extracted 78 titles + 78 links
+2026-08-26 19:13:47 [INFO ] [title_workflow] Written: origin_title (78) + origin_link (78)
+2026-08-26 19:13:47 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-26 19:13:47 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-26 19:13:48 [INFO ] [deepseek_web] Opening DeepSeek web (78 titles)...
+2026-08-26 19:13:48 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-26 19:13:51 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-26 19:13:53 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-26 19:13:53 [INFO ] [deepseek_web] [1/78] 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁
+2026-08-26 19:13:56 [INFO ] [deepseek_web]   Downloaded: 0001_6720311149251524047876.jpg
+2026-08-26 19:13:56 [INFO ] [deepseek_web]   Prefetching next image (2/78)
+2026-08-26 19:13:56 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-26 19:13:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:14:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:14:32 [INFO ] [deepseek_web]   Response: 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁，连帽冲锋衣外套，儿童常规版型，防风防水面料，撞色拼接，长袖，连帽带帽檐，隐藏式门襟按扣，胸前假口袋
+2026-08-26 19:14:32 [INFO ] [deepseek_web]   Deleted: 0001_6720311149251524047876.jpg
+2026-08-26 19:14:37 [INFO ] [deepseek_web] [2/78] 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套
+2026-08-26 19:14:37 [INFO ] [deepseek_web]   Downloaded: 0002_9670220513161333512093.jpg
+2026-08-26 19:14:37 [INFO ] [deepseek_web]   Prefetching next image (3/78)
+2026-08-26 19:14:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:14:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:15:07 [INFO ] [deepseek_web]   Response: 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套，儿童连帽冲锋衣，男女大童拉链夹克，常规版型，防水透气面料，加厚保暖内衬，连帽带内衬，长袖，全开襟拉
+2026-08-26 19:15:07 [INFO ] [deepseek_web]   Deleted: 0002_9670220513161333512093.jpg
+2026-08-26 19:15:12 [INFO ] [deepseek_web] [3/78] 鲨鱼皮软壳保暖防风三合一男户外透气外套冲锋衣春秋
+2026-08-26 19:15:12 [INFO ] [deepseek_web]   Downloaded: 0003_8531029502812519802271.jpg
+2026-08-26 19:15:12 [INFO ] [deepseek_web]   Prefetching next image (4/78)
+2026-08-26 19:15:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:15:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:15:41 [INFO ] [deepseek_web]   Response: 鲨鱼皮软壳保暖防风三合一男户外透气外套冲锋衣春秋，男士迷彩拼接连帽软壳冲锋衣，常规版型长袖，保暖抓绒内里，防风透气面料，全开襟双向拉链，胸前对称竖拉链口袋，臂部
+2026-08-26 19:15:41 [INFO ] [deepseek_web]   Deleted: 0003_8531029502812519802271.jpg
+2026-08-26 19:15:46 [INFO ] [deepseek_web] [4/78] 美式工装外套男女春秋季国潮宽松冲锋衣情侣男夹克
+2026-08-26 19:15:46 [INFO ] [deepseek_web]   Downloaded: 0004_5391016206572221021474.jpg
+2026-08-26 19:15:46 [INFO ] [deepseek_web]   Prefetching next image (5/78)
+2026-08-26 19:15:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:15:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:16:15 [INFO ] [deepseek_web]   Response: 美式工装外套男女春秋季国潮宽松冲锋衣情侣男夹克，男女同款翻领长袖夹克，宽松版型，挺括防风面料，内衬，纯色外观，全开襟拉链门襟，领口按扣，袖口松紧收口，下摆松紧收
+2026-08-26 19:16:15 [INFO ] [deepseek_web]   Deleted: 0004_5391016206572221021474.jpg
+2026-08-26 19:16:20 [INFO ] [deepseek_web] [5/78] 户外冲锋衣男女登山服三合一抓绒内胆可拆卸防水防风外套
+2026-08-26 19:16:20 [INFO ] [deepseek_web]   Downloaded: 0005_1571158041445188996456.jpg
+2026-08-26 19:16:20 [INFO ] [deepseek_web]   Prefetching next image (6/78)
+2026-08-26 19:16:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:16:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:16:49 [INFO ] [deepseek_web]   Response: 户外冲锋衣男女登山服三合一抓绒内胆可拆卸防水防风外套，男女同款常规宽松版型连帽冲锋衣，防风防水梭织面料配可拆卸抓绒内胆，连帽带抽绳，长袖，多色拼色设计，主拉链门
+2026-08-26 19:16:49 [INFO ] [deepseek_web]   Deleted: 0005_1571158041445188996456.jpg
+2026-08-26 19:16:54 [INFO ] [deepseek_web] [6/78] 男士春秋冲锋衣外套休闲夹克
+2026-08-26 19:16:54 [INFO ] [deepseek_web]   Downloaded: 0006_5140344452223815252301.jpg
+2026-08-26 19:16:54 [INFO ] [deepseek_web]   Prefetching next image (7/78)
+2026-08-26 19:16:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:17:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:17:23 [INFO ] [deepseek_web]   Response: 男士春秋冲锋衣外套休闲夹克，男士立领纯色长袖外套，常规宽松版型，轻薄防风面料搭配透气网眼里衬，全开拉链门襟，两侧斜插口袋，袖口松紧收口，适合春秋季户外通勤休闲。
+2026-08-26 19:17:23 [INFO ] [deepseek_web]   Deleted: 0006_5140344452223815252301.jpg
+2026-08-26 19:17:28 [INFO ] [deepseek_web] [7/78] 春秋百搭休闲夹克衫户外运动登山服夹克外套耐磨冲锋衣男薄款工装新款防风防泼水休闲登山外套情侣款
+2026-08-26 19:17:28 [INFO ] [deepseek_web]   Downloaded: 0007_6681115087781229418734.jpg
+2026-08-26 19:17:28 [INFO ] [deepseek_web]   Prefetching next image (8/78)
+2026-08-26 19:17:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:17:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:17:57 [INFO ] [deepseek_web]   Response: 春秋百搭休闲夹克衫户外运动登山服夹克外套耐磨冲锋衣男薄款工装新款防风防泼水休闲登山外套情侣款，男女同款连帽冲锋衣，宽松版型长袖，防风防泼水梭织面料配网眼里衬，连
+2026-08-26 19:17:57 [INFO ] [deepseek_web]   Deleted: 0007_6681115087781229418734.jpg
+2026-08-26 19:18:02 [INFO ] [deepseek_web] [8/78] 男士户外工装夹克冲锋衣透气防风中性风撞色运动连帽休闲夹克外套
+2026-08-26 19:18:02 [INFO ] [deepseek_web]   Downloaded: 0008_6411108564502963909560.jpg
+2026-08-26 19:18:02 [INFO ] [deepseek_web]   Prefetching next image (9/78)
+2026-08-26 19:18:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:18:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:18:32 [INFO ] [deepseek_web]   Response: 男士户外工装夹克冲锋衣透气防风中性风撞色运动连帽休闲夹克外套，中性风休闲宽松版型连帽长袖夹克，防风透气面料，撞色连帽与内里，全开襟拉链门襟配按扣，领口抽绳，两侧
+2026-08-26 19:18:32 [INFO ] [deepseek_web]   Deleted: 0008_6411108564502963909560.jpg
+2026-08-26 19:18:37 [INFO ] [deepseek_web] [9/78] 软壳鲨鱼皮冲锋衣加绒加厚防风防水保暖迷彩服登山服男外套胸前可佩戴工具
+2026-08-26 19:18:37 [INFO ] [deepseek_web]   Downloaded: 0009_2510535249123412905311.jpg
+2026-08-26 19:18:37 [INFO ] [deepseek_web]   Prefetching next image (10/78)
+2026-08-26 19:18:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:18:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:19:06 [INFO ] [deepseek_web]   Response: 软壳鲨鱼皮冲锋衣加绒加厚防风防水保暖迷彩服登山服男外套胸前可佩戴工具，男士常规宽松版型连帽软壳冲锋衣，长袖，防风防水耐磨梭织面料，加绒加厚保暖内里，领口抽绳及连
+2026-08-26 19:19:06 [INFO ] [deepseek_web]   Deleted: 0009_2510535249123412905311.jpg
+2026-08-26 19:19:11 [INFO ] [deepseek_web] [10/78] 冲锋衣外套男女同款工装风夹克秋冬保暖户外登山旅行外套
+2026-08-26 19:19:11 [INFO ] [deepseek_web]   Downloaded: 0010_0561048278008113893520.jpg
+2026-08-26 19:19:11 [INFO ] [deepseek_web]   Prefetching next image (11/78)
+2026-08-26 19:19:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:19:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:19:40 [INFO ] [deepseek_web]   Response: 冲锋衣外套男女同款工装风夹克秋冬保暖户外登山旅行外套，男女同款宽松版型，连帽立领带抽绳，长袖，防风防水梭织面料配抓绒保暖内里，全开襟拉链门襟，胸前及下摆翻盖按扣
+2026-08-26 19:19:40 [INFO ] [deepseek_web]   Deleted: 0010_0561048278008113893520.jpg
+2026-08-26 19:19:45 [INFO ] [deepseek_web] [11/78] 男士户外徒步防水夹克外套透气冲锋衣夹克双线格四面弹
+2026-08-26 19:19:45 [INFO ] [deepseek_web]   Downloaded: 0011_6460328422641052209082.jpg
+2026-08-26 19:19:45 [INFO ] [deepseek_web]   Prefetching next image (12/78)
+2026-08-26 19:19:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:19:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:20:14 [INFO ] [deepseek_web]   Response: 男士户外徒步防水夹克外套透气冲锋衣夹克双线格四面弹，男士常规宽松版型连帽冲锋衣，轻便防水透气梭织面料配网眼里衬，连帽带抽绳长袖，魔术贴调节袖口下摆抽绳，全开襟拉
+2026-08-26 19:20:14 [INFO ] [deepseek_web]   Deleted: 0011_6460328422641052209082.jpg
+2026-08-26 19:20:19 [INFO ] [deepseek_web] [12/78] 秋季大码潮男外套男连帽上衣宽松休闲夹克外套男士户外防风冲锋衣
+2026-08-26 19:20:19 [INFO ] [deepseek_web]   Downloaded: 0012_6320423012066248363184.jpg
+2026-08-26 19:20:19 [INFO ] [deepseek_web]   Prefetching next image (13/78)
+2026-08-26 19:20:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:20:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:20:48 [INFO ] [deepseek_web]   Response: 秋季大码潮男外套男连帽上衣宽松休闲夹克外套男士户外防风冲锋衣，男士宽松版型连帽冲锋衣，防风防泼水梭织面料，长袖，连帽带抽绳，全开襟主拉链，胸前斜向拉链口袋，下摆
+2026-08-26 19:20:48 [INFO ] [deepseek_web]   Deleted: 0012_6320423012066248363184.jpg
+2026-08-26 19:20:53 [INFO ] [deepseek_web] [13/78] 男士春秋冲锋衣适合户外登山场景长袖夹克外套
+2026-08-26 19:20:53 [INFO ] [deepseek_web]   Downloaded: 0013_5691003481628721376146.jpg
+2026-08-26 19:20:53 [INFO ] [deepseek_web]   Prefetching next image (14/78)
+2026-08-26 19:20:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:21:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:21:22 [INFO ] [deepseek_web]   Response: 男士春秋冲锋衣适合户外登山场景长袖夹克外套，男士半拉链套头连帽冲锋衣，宽松版型长袖，防风防泼水梭织面料，连帽带抽绳，魔术贴调节袖口，下摆抽绳，胸前翻盖大口袋带英
+2026-08-26 19:21:22 [INFO ] [deepseek_web]   Deleted: 0013_5691003481628721376146.jpg
+2026-08-26 19:21:27 [INFO ] [deepseek_web] [14/78] 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣
+2026-08-26 19:21:27 [INFO ] [deepseek_web]   Downloaded: 0014_1040431117862640411551.jpg
+2026-08-26 19:21:27 [INFO ] [deepseek_web]   Prefetching next image (15/78)
+2026-08-26 19:21:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:21:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:21:56 [INFO ] [deepseek_web]   Response: 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣，男士灰白迷彩图案加厚连帽冲锋衣，宽松版型长袖，防风面料，领口抽绳，袖口魔术贴调节带标签，隐藏式拉链门襟配按扣，
+2026-08-26 19:21:56 [INFO ] [deepseek_web]   Deleted: 0014_1040431117862640411551.jpg
+2026-08-26 19:22:01 [INFO ] [deepseek_web] [15/78] 男士户外冲锋衣登山服质感运动郊游潮流休闲外套
+2026-08-26 19:22:01 [INFO ] [deepseek_web]   Downloaded: 0015_2100350175382012300655.jpg
+2026-08-26 19:22:01 [INFO ] [deepseek_web]   Prefetching next image (16/78)
+2026-08-26 19:22:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:22:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:22:31 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣登山服质感运动郊游潮流休闲外套，男士连帽冲锋衣，常规版型长袖，防风防水梭织面料，暗纹植物树叶印花，连帽带抽绳，全开襟拉链门襟，胸前垂直拉链口袋，两
+2026-08-26 19:22:31 [INFO ] [deepseek_web]   Deleted: 0015_2100350175382012300655.jpg
+2026-08-26 19:22:36 [INFO ] [deepseek_web] [16/78] 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣
+2026-08-26 19:22:36 [INFO ] [deepseek_web]   Downloaded: 0016_5460821486661360446053.jpg
+2026-08-26 19:22:36 [INFO ] [deepseek_web]   Prefetching next image (17/78)
+2026-08-26 19:22:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:22:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:23:05 [INFO ] [deepseek_web]   Response: 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣，男士宽松版型连帽长袖冲锋衣，纯色防风梭织面料，连帽及领口抽绳，隐藏式按扣门襟，胸前双竖向拉链口袋，下摆双侧翻盖
+2026-08-26 19:23:05 [INFO ] [deepseek_web]   Deleted: 0016_5460821486661360446053.jpg
+2026-08-26 19:23:10 [INFO ] [deepseek_web] [17/78] 男士秋冬新款三合一可拆卸冲锋衣夹克
+2026-08-26 19:23:10 [INFO ] [deepseek_web]   Downloaded: 0017_4710302542563413770179.jpg
+2026-08-26 19:23:10 [INFO ] [deepseek_web]   Prefetching next image (18/78)
+2026-08-26 19:23:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:23:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:23:39 [INFO ] [deepseek_web]   Response: 男士秋冬新款三合一可拆卸冲锋衣夹克，男士常规宽松版型连帽冲锋衣，防风防水梭织面料配可拆卸抓绒内胆，纯色长袖，连帽带抽绳，全开襟主拉链，两侧斜插拉链口袋，松紧收口
+2026-08-26 19:23:39 [INFO ] [deepseek_web]   Deleted: 0017_4710302542563413770179.jpg
+2026-08-26 19:23:44 [INFO ] [deepseek_web] [18/78] 秋冬季男童冲锋衣卡通迷彩渐变印花中大童韩版加绒户外运动冲锋衣外套(3-14Y)
+2026-08-26 19:23:44 [INFO ] [deepseek_web]   Downloaded: 0018_6110417547774153177057.jpg
+2026-08-26 19:23:44 [INFO ] [deepseek_web]   Prefetching next image (19/78)
+2026-08-26 19:23:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:23:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:24:13 [INFO ] [deepseek_web]   Response: 秋冬季男童冲锋衣卡通迷彩渐变印花中大童韩版加绒户外运动冲锋衣外套(3-14Y)，男童中大童常规版型连帽冲锋衣，外层防风梭织面料配黑色加绒内里，长袖全开襟拉链，连
+2026-08-26 19:24:13 [INFO ] [deepseek_web]   Deleted: 0018_6110417547774153177057.jpg
+2026-08-26 19:24:18 [INFO ] [deepseek_web] [19/78] 男士冲锋衣夹克
+2026-08-26 19:24:18 [INFO ] [deepseek_web]   Downloaded: 0019_8070154442986431875531.jpg
+2026-08-26 19:24:18 [INFO ] [deepseek_web]   Prefetching next image (20/78)
+2026-08-26 19:24:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:24:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:24:47 [INFO ] [deepseek_web]   Response: 男士冲锋衣夹克，男士常规宽松版型连帽长袖冲锋衣，纯色防风防水梭织面料，全开襟拉链门襟，领口抽绳，胸前两侧斜插拉链口袋，魔术贴调节袖口，户外运动休闲风格。
+2026-08-26 19:24:47 [INFO ] [deepseek_web]   Deleted: 0019_8070154442986431875531.jpg
+2026-08-26 19:24:52 [INFO ] [deepseek_web] [20/78] 男士防风运动登山服宽松冲锋衣外套
+2026-08-26 19:24:52 [INFO ] [deepseek_web]   Downloaded: 0020_9850215261637384535707.jpg
+2026-08-26 19:24:52 [INFO ] [deepseek_web]   Prefetching next image (21/78)
+2026-08-26 19:24:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:25:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:25:21 [INFO ] [deepseek_web]   Response: 男士防风运动登山服宽松冲锋衣外套，男士常规宽松版型连帽冲锋衣，撞色拼接设计，梭织防风防水面料，长袖全开襟拉链，领口抽绳，两侧斜插拉链口袋，魔术贴袖口，左臂Log
+2026-08-26 19:25:21 [INFO ] [deepseek_web]   Deleted: 0020_9850215261637384535707.jpg
+2026-08-26 19:25:26 [INFO ] [deepseek_web] [21/78] 秋冬季摇粒绒外套男双面绒冲锋衣内胆加厚保暖
+2026-08-26 19:25:26 [INFO ] [deepseek_web]   Downloaded: 0021_2870429516194213885046.jpg
+2026-08-26 19:25:26 [INFO ] [deepseek_web]   Prefetching next image (22/78)
+2026-08-26 19:25:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:25:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:25:56 [INFO ] [deepseek_web]   Response: 秋冬季摇粒绒外套男双面绒冲锋衣内胆加厚保暖，男士立领开衫夹克，摇粒绒材质，常规版型长袖，全开襟拉链门襟，两侧斜插口袋，松紧袖口，纯色设计，休闲户外通勤场景。
+2026-08-26 19:25:56 [INFO ] [deepseek_web]   Deleted: 0021_2870429516194213885046.jpg
+2026-08-26 19:26:01 [INFO ] [deepseek_web] [22/78] 男士秋冬加绒摇粒绒冲锋衣休闲宽松户外防风防寒保暖外套夹克
+2026-08-26 19:26:01 [INFO ] [deepseek_web]   Downloaded: 0022_7300501082338013832012.jpg
+2026-08-26 19:26:01 [INFO ] [deepseek_web]   Prefetching next image (23/78)
+2026-08-26 19:26:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:26:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:26:30 [INFO ] [deepseek_web]   Response: 男士秋冬加绒摇粒绒冲锋衣休闲宽松户外防风防寒保暖外套夹克，男士常规宽松版型连帽冲锋衣，长袖全开襟拉链门襟，撞色拉链头，连帽带抽绳，胸前双竖拉链口袋，两侧斜插拉链
+2026-08-26 19:26:30 [INFO ] [deepseek_web]   Deleted: 0022_7300501082338013832012.jpg
+2026-08-26 19:26:35 [INFO ] [deepseek_web] [23/78] 男士冲锋衣加绒加厚户外登山跑步休闲男款时尚保暖外套
+2026-08-26 19:26:35 [INFO ] [deepseek_web]   Downloaded: 0023_4250256411563171884922.jpg
+2026-08-26 19:26:35 [INFO ] [deepseek_web]   Prefetching next image (24/78)
+2026-08-26 19:26:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:26:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:27:04 [INFO ] [deepseek_web]   Response: 男士冲锋衣加绒加厚户外登山跑步休闲男款时尚保暖外套，男士常规宽松版型连帽冲锋衣夹克，防风防泼水梭织面料配加绒加厚内里，长袖，全开襟拉链门襟，连帽，左胸纵向拉链口
+2026-08-26 19:27:04 [INFO ] [deepseek_web]   Deleted: 0023_4250256411563171884922.jpg
+2026-08-26 19:27:09 [INFO ] [deepseek_web] [24/78] 春秋季男装夹克外套男纯色户外连帽冲锋衣男潮登山服
+2026-08-26 19:27:09 [INFO ] [deepseek_web]   Downloaded: 0024_6010351307067216086652.jpg
+2026-08-26 19:27:09 [INFO ] [deepseek_web]   Prefetching next image (25/78)
+2026-08-26 19:27:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:27:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:27:38 [INFO ] [deepseek_web]   Response: 春秋季男装夹克外套男纯色户外连帽冲锋衣男潮登山服，男士常规版型长袖连帽冲锋衣，防风防水梭织面料，纯色设计，全开襟拉链门襟带按扣，连帽配抽绳，胸前拉链口袋，下摆翻
+2026-08-26 19:27:38 [INFO ] [deepseek_web]   Deleted: 0024_6010351307067216086652.jpg
+2026-08-26 19:27:43 [INFO ] [deepseek_web] [25/78] 男士连帽纯色冲锋衣夹克青年户外休闲开衫外套男
+2026-08-26 19:27:43 [INFO ] [deepseek_web]   Downloaded: 0025_2740248403507416334166.jpg
+2026-08-26 19:27:43 [INFO ] [deepseek_web]   Prefetching next image (26/78)
+2026-08-26 19:27:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:27:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:28:12 [INFO ] [deepseek_web]   Response: 男士连帽纯色冲锋衣夹克青年户外休闲开衫外套男，青年男士常规宽松版型连帽冲锋衣，防风梭织面料，长袖，全开襟撞色拉链，连帽带抽绳，两侧斜插拉链口袋，魔术贴调节袖口，
+2026-08-26 19:28:12 [INFO ] [deepseek_web]   Deleted: 0025_2740248403507416334166.jpg
+2026-08-26 19:28:17 [INFO ] [deepseek_web] [26/78] 网眼连帽单衣青年情侣轻量休闲冲锋衣
+2026-08-26 19:28:17 [INFO ] [deepseek_web]   Downloaded: 0026_4930816182771915377412.jpg
+2026-08-26 19:28:17 [INFO ] [deepseek_web]   Prefetching next image (27/78)
+2026-08-26 19:28:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:28:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:28:46 [INFO ] [deepseek_web]   Response: 网眼连帽单衣青年情侣轻量休闲冲锋衣，男女同款常规版型连帽长袖夹克，轻量透气网格梭织面料，全开襟拉链门襟，连帽带抽绳，左胸拉链口袋，两侧斜插拉链口袋，领口及帽檐透
+2026-08-26 19:28:46 [INFO ] [deepseek_web]   Deleted: 0026_4930816182771915377412.jpg
+2026-08-26 19:28:51 [INFO ] [deepseek_web] [27/78] 男士假两件宽松连帽夹克大码休闲户外冲锋衣开衫外套
+2026-08-26 19:28:51 [INFO ] [deepseek_web]   Downloaded: 0027_0391012515638268589515.jpg
+2026-08-26 19:28:51 [INFO ] [deepseek_web]   Prefetching next image (28/78)
+2026-08-26 19:28:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:29:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:29:20 [INFO ] [deepseek_web]   Response: 男士假两件宽松连帽夹克大码休闲户外冲锋衣开衫外套，男士宽松大码版型连帽冲锋衣，防风梭织面料，假两件撞色连帽设计，长袖，全开襟主拉链，两侧斜插拉链口袋，左胸拉链口
+2026-08-26 19:29:20 [INFO ] [deepseek_web]   Deleted: 0027_0391012515638268589515.jpg
+2026-08-26 19:29:25 [INFO ] [deepseek_web] [28/78] 男女通用防水防风冲锋衣
+2026-08-26 19:29:25 [INFO ] [deepseek_web]   Downloaded: 0028_0020506169752674849006.jpg
+2026-08-26 19:29:25 [INFO ] [deepseek_web]   Prefetching next image (29/78)
+2026-08-26 19:29:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:29:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:29:55 [INFO ] [deepseek_web]   Response: 男女通用防水防风冲锋衣，男女通用宽松版型连帽冲锋衣，防水防风梭织面料，长袖，拉链加按扣双门襟，大翻盖按扣口袋，左胸拉链口袋，左臂贴标，袖口魔术贴调节，下摆抽绳，
+2026-08-26 19:29:55 [INFO ] [deepseek_web]   Deleted: 0028_0020506169752674849006.jpg
+2026-08-26 19:30:00 [INFO ] [deepseek_web] [29/78] 男士立领薄款冲锋衣防风防水风衣外套夹克
+2026-08-26 19:30:00 [INFO ] [deepseek_web]   Downloaded: 0029_9160433533932617674601.jpg
+2026-08-26 19:30:00 [INFO ] [deepseek_web]   Prefetching next image (30/78)
+2026-08-26 19:30:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:30:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:30:29 [INFO ] [deepseek_web]   Response: 男士立领薄款冲锋衣防风防水风衣外套夹克，男士立领长袖薄款冲锋衣，防风防水梭织面料，纯色设计，全开襟拉链门襟带荧光撞色拉链头，两侧斜插拉链口袋，松紧收口袖口，户外
+2026-08-26 19:30:29 [INFO ] [deepseek_web]   Deleted: 0029_9160433533932617674601.jpg
+2026-08-26 19:30:34 [INFO ] [deepseek_web] [30/78] 秋冬薄款立领冲锋衣防水登山户外连帽夹克外套
+2026-08-26 19:30:34 [INFO ] [deepseek_web]   Downloaded: 0030_1720318513881819629252.jpg
+2026-08-26 19:30:34 [INFO ] [deepseek_web]   Prefetching next image (31/78)
+2026-08-26 19:30:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:30:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:31:03 [INFO ] [deepseek_web]   Response: 秋冬薄款立领冲锋衣防水登山户外连帽夹克外套，男士常规版型连帽拼色长袖冲锋衣，防风防水梭织面料，全开襟主拉链，两侧斜插口袋，松紧收口袖口，上下撞色拼接设计，户外登
+2026-08-26 19:31:03 [INFO ] [deepseek_web]   Deleted: 0030_1720318513881819629252.jpg
+2026-08-26 19:31:08 [INFO ] [deepseek_web] [31/78] 男士休闲户外防风防雨单层冲锋衣
+2026-08-26 19:31:08 [INFO ] [deepseek_web]   Downloaded: 0031_1831044539617419883901.jpg
+2026-08-26 19:31:08 [INFO ] [deepseek_web]   Prefetching next image (32/78)
+2026-08-26 19:31:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:31:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:31:37 [INFO ] [deepseek_web]   Response: 男士休闲户外防风防雨单层冲锋衣，男士常规版型连帽长袖冲锋衣，防风防雨梭织面料，纯色设计，撞色全开襟拉链，连帽带抽绳领口抽绳，两侧斜插拉链口袋，松紧加魔术贴调节袖
+2026-08-26 19:31:37 [INFO ] [deepseek_web]   Deleted: 0031_1831044539617419883901.jpg
+2026-08-26 19:31:42 [INFO ] [deepseek_web] [32/78] 男士运动防水休闲冲锋衣
+2026-08-26 19:31:42 [INFO ] [deepseek_web]   Downloaded: 0032_1811112084428669395775.jpg
+2026-08-26 19:31:42 [INFO ] [deepseek_web]   Prefetching next image (33/78)
+2026-08-26 19:31:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:31:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:32:11 [INFO ] [deepseek_web]   Response: 男士运动防水休闲冲锋衣，男士常规版型连帽长袖冲锋衣，防水防风梭织面料，纯色设计，全开襟主拉链门襟，连帽带抽绳及领口抽绳，胸前横向拼接缝线，左胸隐藏式拉链口袋，两
+2026-08-26 19:32:11 [INFO ] [deepseek_web]   Deleted: 0032_1811112084428669395775.jpg
+2026-08-26 19:32:16 [INFO ] [deepseek_web] [33/78] 男士户外加绒防风防水冲锋衣
+2026-08-26 19:32:16 [INFO ] [deepseek_web]   Downloaded: 0033_6991027181253859891298.jpg
+2026-08-26 19:32:16 [INFO ] [deepseek_web]   Prefetching next image (34/78)
+2026-08-26 19:32:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:32:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:32:45 [INFO ] [deepseek_web]   Response: 男士户外加绒防风防水冲锋衣，男士宽松版型连帽长袖加厚保暖外套，防风防水梭织面料配加绒内里，连帽带抽绳高领，按扣门襟，两侧斜插口袋，松紧收口袖口，下摆抽绳，纯色设
+2026-08-26 19:32:45 [INFO ] [deepseek_web]   Deleted: 0033_6991027181253859891298.jpg
+2026-08-26 19:32:50 [INFO ] [deepseek_web] [34/78] 男士宽松休闲百搭冲锋衣
+2026-08-26 19:32:50 [INFO ] [deepseek_web]   Downloaded: 0034_1190210412821415814578.jpg
+2026-08-26 19:32:50 [INFO ] [deepseek_web]   Prefetching next image (35/78)
+2026-08-26 19:32:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:33:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:33:20 [INFO ] [deepseek_web]   Response: 男士宽松休闲百搭冲锋衣，男士宽松版型连帽长袖冲锋衣，撞色拼接设计，防风防泼水梭织面料，全开襟拉链门襟带按扣，连帽带抽绳，两侧斜插口袋，魔术贴调节袖口，户外休闲通
+2026-08-26 19:33:20 [INFO ] [deepseek_web]   Deleted: 0034_1190210412821415814578.jpg
+2026-08-26 19:33:25 [INFO ] [deepseek_web] [35/78] 男士休闲宽松防水连帽冲锋衣
+2026-08-26 19:33:25 [INFO ] [deepseek_web]   Downloaded: 0035_2430256206451799134329.jpg
+2026-08-26 19:33:25 [INFO ] [deepseek_web]   Prefetching next image (36/78)
+2026-08-26 19:33:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:33:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:33:54 [INFO ] [deepseek_web]   Response: 男士休闲宽松防水连帽冲锋衣，男士连帽长袖冲锋衣，宽松版型，防水防风面料，纯色设计，全开襟拉链门襟，领口按扣及抽绳，两侧斜插拉链口袋，魔术贴调节袖口，左胸字母印花
+2026-08-26 19:33:54 [INFO ] [deepseek_web]   Deleted: 0035_2430256206451799134329.jpg
+2026-08-26 19:33:59 [INFO ] [deepseek_web] [36/78] 男士户外潮流宽松透气薄款连帽冲锋衣
+2026-08-26 19:33:59 [INFO ] [deepseek_web]   Downloaded: 0036_5270752025871113600464.jpg
+2026-08-26 19:33:59 [INFO ] [deepseek_web]   Prefetching next image (37/78)
+2026-08-26 19:33:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:34:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:34:29 [INFO ] [deepseek_web]   Response: 男士户外潮流宽松透气薄款连帽冲锋衣，男士宽松版型长袖连帽冲锋衣，轻薄防风透气梭织面料，全开襟拉链，领口抽绳，胸前双竖向拉链口袋，魔术贴袖口，左胸标签，袖口挂环，
+2026-08-26 19:34:29 [INFO ] [deepseek_web]   Deleted: 0036_5270752025871113600464.jpg
+2026-08-26 19:34:34 [INFO ] [deepseek_web] [37/78] 男士防风防水户外冲锋衣
+2026-08-26 19:34:34 [INFO ] [deepseek_web]   Downloaded: 0037_6050956583716112113293.jpg
+2026-08-26 19:34:34 [INFO ] [deepseek_web]   Prefetching next image (38/78)
+2026-08-26 19:34:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:34:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:35:03 [INFO ] [deepseek_web]   Response: 男士防风防水户外冲锋衣，男士常规版型连帽长袖夹克，纯色防风防水梭织面料，隐藏式按扣门襟，胸前翻盖口袋，侧缝斜插口袋，左臂拉链口袋，魔术贴调节袖口，肩部拼接缝线，
+2026-08-26 19:35:03 [INFO ] [deepseek_web]   Deleted: 0037_6050956583716112113293.jpg
+2026-08-26 19:35:08 [INFO ] [deepseek_web] [38/78] 儿童冲锋衣防风外套童露营单层风衣
+2026-08-26 19:35:08 [INFO ] [deepseek_web]   Downloaded: 0038_8141047099315980217674.jpg
+2026-08-26 19:35:08 [INFO ] [deepseek_web]   Prefetching next image (39/78)
+2026-08-26 19:35:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:35:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:35:37 [INFO ] [deepseek_web]   Response: 儿童冲锋衣防风外套童露营单层风衣，儿童常规版型连帽单层冲锋衣，防风防泼水梭织面料，撞色拼接设计，长袖全开襟拉链，连帽带抽绳，帽子前侧条纹装饰，胸前撞色拉链口袋，
+2026-08-26 19:35:37 [INFO ] [deepseek_web]   Deleted: 0038_8141047099315980217674.jpg
+2026-08-26 19:35:42 [INFO ] [deepseek_web] [39/78] 男士纯色拉链设计冲锋衣透气防风户外连帽夹克
+2026-08-26 19:35:42 [INFO ] [deepseek_web]   Downloaded: 0039_0400321537753718601501.jpg
+2026-08-26 19:35:42 [INFO ] [deepseek_web]   Prefetching next image (40/78)
+2026-08-26 19:35:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:35:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:36:11 [INFO ] [deepseek_web]   Response: 男士纯色拉链设计冲锋衣透气防风户外连帽夹克，男士常规版型连帽冲锋衣，防风透气软壳面料，纯色长袖，全开襟拉链，连帽带抽绳，胸前两侧拉链口袋，左臂拉链口袋带魔术贴，
+2026-08-26 19:36:11 [INFO ] [deepseek_web]   Deleted: 0039_0400321537753718601501.jpg
+2026-08-26 19:36:16 [INFO ] [deepseek_web] [40/78] 男士防风撞色设计冲锋衣户外露营休闲夹克外套
+2026-08-26 19:36:16 [INFO ] [deepseek_web]   Downloaded: 0040_7150159334051112979367.jpg
+2026-08-26 19:36:16 [INFO ] [deepseek_web]   Prefetching next image (41/78)
+2026-08-26 19:36:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:36:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:36:45 [INFO ] [deepseek_web]   Response: 男士防风撞色设计冲锋衣户外露营休闲夹克外套，男士宽松版型连帽拼色冲锋衣，防风梭织面料，长袖，全开襟主拉链，连帽领口抽绳，左右双侧胸前斜拉链撞色包边口袋，魔术贴调
+2026-08-26 19:36:45 [INFO ] [deepseek_web]   Deleted: 0040_7150159334051112979367.jpg
+2026-08-26 19:36:50 [INFO ] [deepseek_web] [41/78] 情侣款连帽软壳单层冲锋衣外套春秋男女户外防风旅行登山服
+2026-08-26 19:36:50 [INFO ] [deepseek_web]   Downloaded: 0041_2081105041937610924500.jpg
+2026-08-26 19:36:50 [INFO ] [deepseek_web]   Prefetching next image (42/78)
+2026-08-26 19:36:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:37:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:37:20 [INFO ] [deepseek_web]   Response: 情侣款连帽软壳单层冲锋衣外套春秋男女户外防风旅行登山服，情侣款男女通用常规版型连帽长袖软壳冲锋衣，单层防风防泼水透气面料，纯色设计，领口及连帽带抽绳调节，领口两
+2026-08-26 19:37:20 [INFO ] [deepseek_web]   Deleted: 0041_2081105041937610924500.jpg
+2026-08-26 19:37:25 [INFO ] [deepseek_web] [42/78] 男士春秋冲锋衣薄款外套防风防泼水登山服
+2026-08-26 19:37:25 [INFO ] [deepseek_web]   Downloaded: 0042_3021052548928590938365.jpg
+2026-08-26 19:37:25 [INFO ] [deepseek_web]   Prefetching next image (43/78)
+2026-08-26 19:37:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:37:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:37:54 [INFO ] [deepseek_web]   Response: 男士春秋冲锋衣薄款外套防风防泼水登山服，男士宽松版型连帽长袖冲锋衣，梭织防风防泼水面料，全开襟拉链门襟配按扣，连帽带抽绳，胸前几何轮廓拉链口袋，两侧斜插拉链口袋
+2026-08-26 19:37:54 [INFO ] [deepseek_web]   Deleted: 0042_3021052548928590938365.jpg
+2026-08-26 19:37:59 [INFO ] [deepseek_web] [43/78] 新款情侣冲锋衣户外单层风衣外套男薄款透气防风防水夹克
+2026-08-26 19:37:59 [INFO ] [deepseek_web]   Downloaded: 0043_3860302130121313065257.jpg
+2026-08-26 19:37:59 [INFO ] [deepseek_web]   Prefetching next image (44/78)
+2026-08-26 19:37:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:38:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:38:28 [INFO ] [deepseek_web]   Response: 新款情侣冲锋衣户外单层风衣外套男薄款透气防风防水夹克，男女同款常规宽松版型连帽长袖冲锋衣，薄款单层防风防水梭织面料配网眼透气内衬，领口连帽抽绳，隐藏式拉链门襟带
+2026-08-26 19:38:28 [INFO ] [deepseek_web]   Deleted: 0043_3860302130121313065257.jpg
+2026-08-26 19:38:33 [INFO ] [deepseek_web] [44/78] 男士薄款防风防水夹克外套拼色防水登山服冲锋衣
+2026-08-26 19:38:33 [INFO ] [deepseek_web]   Downloaded: 0044_9320249200544116301521.jpg
+2026-08-26 19:38:33 [INFO ] [deepseek_web]   Prefetching next image (45/78)
+2026-08-26 19:38:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:38:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:39:02 [INFO ] [deepseek_web]   Response: 男士薄款防风防水夹克外套拼色防水登山服冲锋衣，男士常规版型连帽长袖冲锋衣，薄款防风防水梭织面料配网眼透气内衬，连帽带抽绳，撞色主拉链门襟，两侧斜插拉链口袋，魔术
+2026-08-26 19:39:02 [INFO ] [deepseek_web]   Deleted: 0044_9320249200544116301521.jpg
+2026-08-26 19:39:07 [INFO ] [deepseek_web] [45/78] 软壳冲锋衣上衣男夹克男工装宽松机能冲锋衣外套男
+2026-08-26 19:39:07 [INFO ] [deepseek_web]   Downloaded: 0045_0471031489146714639012.jpg
+2026-08-26 19:39:07 [INFO ] [deepseek_web]   Prefetching next image (46/78)
+2026-08-26 19:39:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:39:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:39:36 [INFO ] [deepseek_web]   Response: 软壳冲锋衣上衣男夹克男工装宽松机能冲锋衣外套男，男士宽松版型连帽软壳冲锋衣，防风防泼水耐磨面料，纯色设计，长袖全开襟拉链门襟，连帽带抽绳，胸前双翻盖魔术贴口袋，
+2026-08-26 19:39:36 [INFO ] [deepseek_web]   Deleted: 0045_0471031489146714639012.jpg
+2026-08-26 19:39:41 [INFO ] [deepseek_web] [46/78] 秋冬男装英伦夹克外套大码户外时尚男士冲锋衣
+2026-08-26 19:39:41 [INFO ] [deepseek_web]   Downloaded: 0046_5160426579142210062001.jpg
+2026-08-26 19:39:41 [INFO ] [deepseek_web]   Prefetching next image (47/78)
+2026-08-26 19:39:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:39:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:40:10 [INFO ] [deepseek_web]   Response: 秋冬男装英伦夹克外套大码户外时尚男士冲锋衣，男士大码宽松版型立领冲锋衣夹克，长袖，纯色设计，防风防泼水梭织面料，全开襟主拉链，两侧斜插口袋，松紧收口袖口，下摆抽
+2026-08-26 19:40:10 [INFO ] [deepseek_web]   Deleted: 0046_5160426579142210062001.jpg
+2026-08-26 19:40:15 [INFO ] [deepseek_web] [47/78] 百搭上衣男士连帽休闲防水户外外套冲锋衣夹克
+2026-08-26 19:40:15 [INFO ] [deepseek_web]   Downloaded: 0047_2691051255597516939883.jpg
+2026-08-26 19:40:15 [INFO ] [deepseek_web]   Prefetching next image (48/78)
+2026-08-26 19:40:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:40:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:40:45 [INFO ] [deepseek_web]   Response: 百搭上衣男士连帽休闲防水户外外套冲锋衣夹克，男士常规宽松版型连帽冲锋衣夹克，防水防风梭织面料，长袖，全开襟拉链门襟，连帽领口抽绳，胸前横向拉链口袋带挂环，两侧斜
+2026-08-26 19:40:45 [INFO ] [deepseek_web]   Deleted: 0047_2691051255597516939883.jpg
+2026-08-26 19:40:50 [INFO ] [deepseek_web] [48/78] 抓绒衣男外套上衣户外冲锋衣内胆秋冬季加厚保暖
+2026-08-26 19:40:50 [INFO ] [deepseek_web]   Downloaded: 0048_8270914291793885486707.jpg
+2026-08-26 19:40:50 [INFO ] [deepseek_web]   Prefetching next image (49/78)
+2026-08-26 19:40:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:41:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:41:19 [INFO ] [deepseek_web]   Response: 抓绒衣男外套上衣户外冲锋衣内胆秋冬季加厚保暖，男士宽松版型立领长袖抓绒外套，外层摇粒绒面料配加厚保暖内里，全开襟拉链门襟，左胸拉链口袋，两侧斜插口袋，松紧收口袖
+2026-08-26 19:41:19 [INFO ] [deepseek_web]   Deleted: 0048_8270914291793885486707.jpg
+2026-08-26 19:41:24 [INFO ] [deepseek_web] [49/78] 立领夹克男薄款男士修身户外休闲冲锋衣外套
+2026-08-26 19:41:24 [INFO ] [deepseek_web]   Downloaded: 0049_8170233079452421326825.jpg
+2026-08-26 19:41:24 [INFO ] [deepseek_web]   Prefetching next image (50/78)
+2026-08-26 19:41:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:41:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:41:53 [INFO ] [deepseek_web]   Response: 立领夹克男薄款男士修身户外休闲冲锋衣外套，男士立领长袖冲锋衣，修身版型，薄款防风梭织面料，撞色领口带按扣，全开襟主拉链，下摆双侧翻盖按扣口袋及侧缝插袋，左胸圆形
+2026-08-26 19:41:53 [INFO ] [deepseek_web]   Deleted: 0049_8170233079452421326825.jpg
+2026-08-26 19:41:58 [INFO ] [deepseek_web] [50/78] 秋冬户外加厚冲锋衣男女情侣登山服时尚拼色男士外套
+2026-08-26 19:41:58 [INFO ] [deepseek_web]   Downloaded: 0050_7370245036701920618013.jpg
+2026-08-26 19:41:58 [INFO ] [deepseek_web]   Prefetching next image (51/78)
+2026-08-26 19:41:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:42:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:42:27 [INFO ] [deepseek_web]   Response: 秋冬户外加厚冲锋衣男女情侣登山服时尚拼色男士外套，男女情侣款常规版型立领长袖冲锋衣，加厚防风梭织面料，全开襟主拉链，肩部撞色拼接设计，两侧斜插拉链口袋，松紧收口
+2026-08-26 19:42:27 [INFO ] [deepseek_web]   Deleted: 0050_7370245036701920618013.jpg
+2026-08-26 19:42:32 [INFO ] [deepseek_web] [51/78] 夹棉儿童加绒加厚冲锋衣冬季连帽拉链棉衣3-14Years
+2026-08-26 19:42:32 [INFO ] [deepseek_web]   Downloaded: 0051_3220445097123019848717.jpg
+2026-08-26 19:42:32 [INFO ] [deepseek_web]   Prefetching next image (52/78)
+2026-08-26 19:42:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:42:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:43:01 [INFO ] [deepseek_web]   Response: 夹棉儿童加绒加厚冲锋衣冬季连帽拉链棉衣3-14Years，儿童常规版型连帽长袖冲锋衣，加绒加厚保暖防风梭织面料，全开襟拉链门襟，松紧收口袖口，左胸英文印花，两侧
+2026-08-26 19:43:01 [INFO ] [deepseek_web]   Deleted: 0051_3220445097123019848717.jpg
+2026-08-26 19:43:06 [INFO ] [deepseek_web] [52/78] 秋冬新款户外旅行防风防水情侣三合一冲锋衣
+2026-08-26 19:43:06 [INFO ] [deepseek_web]   Downloaded: 0052_5561128441771011682379.jpg
+2026-08-26 19:43:06 [INFO ] [deepseek_web]   Prefetching next image (53/78)
+2026-08-26 19:43:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:43:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:43:36 [INFO ] [deepseek_web]   Response: 秋冬新款户外旅行防风防水情侣三合一冲锋衣，男女同款常规宽松版型连帽长袖冲锋衣，防风防水梭织面料配可拆卸加绒内胆，纯色全开襟主拉链配按扣门襟，胸前拉链口袋及两侧斜
+2026-08-26 19:43:36 [INFO ] [deepseek_web]   Deleted: 0052_5561128441771011682379.jpg
+2026-08-26 19:43:41 [INFO ] [deepseek_web] [53/78] 秋季新款宽松休闲夹克男拼色时尚冲锋衣户外男士外套
+2026-08-26 19:43:41 [INFO ] [deepseek_web]   Downloaded: 0053_0131109238667713240396.jpg
+2026-08-26 19:43:41 [INFO ] [deepseek_web]   Prefetching next image (54/78)
+2026-08-26 19:43:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:43:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:44:16 [INFO ] [deepseek_web]   Response: 秋季新款宽松休闲夹克男拼色时尚冲锋衣户外男士外套，男士宽松版型连帽冲锋衣夹克，防风防泼水梭织面料，长袖，拼色设计，全开襟主拉链，两侧斜插拉链口袋，连帽领口及下摆
+2026-08-26 19:44:16 [INFO ] [deepseek_web]   Deleted: 0053_0131109238667713240396.jpg
+2026-08-26 19:44:21 [INFO ] [deepseek_web] [54/78] 爆款休闲棒球服加厚棉衣 外套春秋冲锋衣美式飞行休闲棉服夹
+2026-08-26 19:44:21 [INFO ] [deepseek_web]   Downloaded: 0054_3390519170072011568542.jpg
+2026-08-26 19:44:21 [INFO ] [deepseek_web]   Prefetching next image (55/78)
+2026-08-26 19:44:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:44:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:44:51 [INFO ] [deepseek_web]   Response: 男士休闲棒球服加厚棉衣外套春秋冲锋衣美式飞行休闲棉服夹克，男士立领纯色长袖外套，常规版型，外层防风梭织面料，内里加绒加厚抓绒，全开襟拉链门襟，两侧斜插拉链口袋，
+2026-08-26 19:44:51 [INFO ] [deepseek_web]   Deleted: 0054_3390519170072011568542.jpg
+2026-08-26 19:44:56 [INFO ] [deepseek_web] [55/78] 男士防连帽工作服夹克防水外套团建爬山户外机能冲锋衣
+2026-08-26 19:44:56 [INFO ] [deepseek_web]   Downloaded: 0055_2020457464373134532370.jpg
+2026-08-26 19:44:56 [INFO ] [deepseek_web]   Prefetching next image (56/78)
+2026-08-26 19:44:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:45:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:45:25 [INFO ] [deepseek_web]   Response: 男士防连帽工作服夹克防水外套团建爬山户外机能冲锋衣，男士宽松版型长袖连帽冲锋衣，防水防风梭织面料，连帽及领口抽绳，隐藏式拉链门襟带按扣，胸前双侧翻盖拉链大口袋，
+2026-08-26 19:45:25 [INFO ] [deepseek_web]   Deleted: 0055_2020457464373134532370.jpg
+2026-08-26 19:45:30 [INFO ] [deepseek_web] [56/78] 男士休闲夹克秋季薄款户外防风多口袋冲锋衣
+2026-08-26 19:45:30 [INFO ] [deepseek_web]   Downloaded: 0056_7751110369017614337555.jpg
+2026-08-26 19:45:30 [INFO ] [deepseek_web]   Prefetching next image (57/78)
+2026-08-26 19:45:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:45:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:45:59 [INFO ] [deepseek_web]   Response: 男士休闲夹克秋季薄款户外防风多口袋冲锋衣，男士常规版型连帽长袖冲锋衣，防风耐磨梭织面料，多口袋工装设计，全开襟拉链门襟配按扣，连帽带抽绳，胸前垂直拉链口袋，下摆
+2026-08-26 19:45:59 [INFO ] [deepseek_web]   Deleted: 0056_7751110369017614337555.jpg
+2026-08-26 19:46:04 [INFO ] [deepseek_web] [57/78] 男士新款三合一两件套冲锋衣外套休闲百搭潮流冲锋衣外套
+2026-08-26 19:46:04 [INFO ] [deepseek_web]   Downloaded: 0057_3990231032091488158298.jpg
+2026-08-26 19:46:04 [INFO ] [deepseek_web]   Prefetching next image (58/78)
+2026-08-26 19:46:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:46:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:46:33 [INFO ] [deepseek_web]   Response: 男士新款三合一两件套冲锋衣外套休闲百搭潮流冲锋衣外套，男士常规宽松版型连帽冲锋衣，三合一两件套结构，防风防水梭织面料，长袖，高领，全开襟主拉链配按扣门襟，连帽带
+2026-08-26 19:46:33 [INFO ] [deepseek_web]   Deleted: 0057_3990231032091488158298.jpg
+2026-08-26 19:46:38 [INFO ] [deepseek_web] [58/78] 男士休闲夹克户外防泼水冲锋衣运动休闲外套
+2026-08-26 19:46:38 [INFO ] [deepseek_web]   Downloaded: 0058_2480959249704210132423.jpg
+2026-08-26 19:46:38 [INFO ] [deepseek_web]   Prefetching next image (59/78)
+2026-08-26 19:46:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:46:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:47:08 [INFO ] [deepseek_web]   Response: 男士休闲夹克户外防泼水冲锋衣运动休闲外套，男士常规版型连帽长袖冲锋衣，防泼水梭织面料，纯色设计，全开襟主拉链，连帽领口抽绳，胸前双竖向拉链口袋配撞色条，魔术贴调
+2026-08-26 19:47:08 [INFO ] [deepseek_web]   Deleted: 0058_2480959249704210132423.jpg
+2026-08-26 19:47:13 [INFO ] [deepseek_web] [59/78] 男士摇粒绒户外保暖抓绒冲锋衣连帽外套抓绒卫衣
+2026-08-26 19:47:13 [INFO ] [deepseek_web]   Downloaded: 0059_5710937112584798214286.jpg
+2026-08-26 19:47:13 [INFO ] [deepseek_web]   Prefetching next image (60/78)
+2026-08-26 19:47:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:47:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:47:43 [INFO ] [deepseek_web]   Response: 男士摇粒绒户外保暖抓绒冲锋衣连帽外套抓绒卫衣，男士连帽抓绒冲锋衣，摇粒绒保暖面料，常规版型长袖，纯色设计，全开襟拉链，左胸拉链口袋，右臂拉链口袋及魔术贴贴片，两
+2026-08-26 19:47:43 [INFO ] [deepseek_web]   Deleted: 0059_5710937112584798214286.jpg
+2026-08-26 19:47:48 [INFO ] [deepseek_web] [60/78] 男士冲锋衣三合一休闲夹克（帽子可拆卸）
+2026-08-26 19:47:48 [INFO ] [deepseek_web]   Downloaded: 0060_5310332291763769912273.jpg
+2026-08-26 19:47:48 [INFO ] [deepseek_web]   Prefetching next image (61/78)
+2026-08-26 19:47:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:47:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:48:17 [INFO ] [deepseek_web]   Response: 男士冲锋衣三合一休闲夹克（帽子可拆卸），男士常规宽松版型连帽冲锋衣，防风防水梭织面料配可拆卸抓绒内胆，撞色拼接设计，长袖，连帽可拆卸，全开襟拉链带按扣防风门襟，
+2026-08-26 19:48:17 [INFO ] [deepseek_web]   Deleted: 0060_5310332291763769912273.jpg
+2026-08-26 19:48:22 [INFO ] [deepseek_web] [61/78] 男士外套秋冬户外休闲软壳冲锋衣
+2026-08-26 19:48:22 [INFO ] [deepseek_web]   Downloaded: 0061_8150810596594338394133.jpg
+2026-08-26 19:48:22 [INFO ] [deepseek_web]   Prefetching next image (62/78)
+2026-08-26 19:48:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:48:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:48:51 [INFO ] [deepseek_web]   Response: 男士外套秋冬户外休闲软壳冲锋衣，男士常规版型连帽长袖软壳冲锋衣，防风防泼水梭织面料，纯色设计，全开襟拉链门襟，领口抽绳，胸前双侧竖向拉链口袋，左臂拉链口袋及魔术
+2026-08-26 19:48:51 [INFO ] [deepseek_web]   Deleted: 0061_8150810596594338394133.jpg
+2026-08-26 19:48:56 [INFO ] [deepseek_web] [62/78] 工装外套时尚男士连帽休闲运动夹克山系冲锋衣
+2026-08-26 19:48:56 [INFO ] [deepseek_web]   Downloaded: 0062_7270153395401291510059.jpg
+2026-08-26 19:48:56 [INFO ] [deepseek_web]   Prefetching next image (63/78)
+2026-08-26 19:48:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:49:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:49:25 [INFO ] [deepseek_web]   Response: 工装外套时尚男士连帽休闲运动夹克山系冲锋衣，男士连帽长袖冲锋衣，宽松版型，防风耐磨梭织面料，全开襟拉链门襟带按扣，连帽领口抽绳，胸前双拉链口袋，下摆翻盖按扣口袋
+2026-08-26 19:49:25 [INFO ] [deepseek_web]   Deleted: 0062_7270153395401291510059.jpg
+2026-08-26 19:49:30 [INFO ] [deepseek_web] [63/78] 男女同款户外登山服情侣款三合一冲锋衣山系防水防风男女休闲抓绒衣外套
+2026-08-26 19:49:30 [INFO ] [deepseek_web]   Downloaded: 0063_0750929179225214421812.jpg
+2026-08-26 19:49:30 [INFO ] [deepseek_web]   Prefetching next image (64/78)
+2026-08-26 19:49:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:49:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:49:59 [INFO ] [deepseek_web]   Response: 男女同款户外登山服情侣款三合一冲锋衣山系防水防风男女休闲抓绒衣外套，男女同款常规宽松版型连帽冲锋衣，外层防风防水梭织面料配可拆卸抓绒内胆，纯色长袖，全开襟主拉链
+2026-08-26 19:49:59 [INFO ] [deepseek_web]   Deleted: 0063_0750929179225214421812.jpg
+2026-08-26 19:50:04 [INFO ] [deepseek_web] [64/78] 工装连帽冲锋衣男士宽松大码半拉链休闲夹克
+2026-08-26 19:50:04 [INFO ] [deepseek_web]   Downloaded: 0064_8870342325882035219288.jpg
+2026-08-26 19:50:04 [INFO ] [deepseek_web]   Prefetching next image (65/78)
+2026-08-26 19:50:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:50:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:50:34 [INFO ] [deepseek_web]   Response: 工装连帽冲锋衣男士宽松大码半拉链休闲夹克，男士宽松大码版型连帽长袖冲锋衣，防风防泼水梭织面料，半拉链门襟，连帽领口抽绳，胸前大翻盖口袋，两侧斜插口袋，松紧收口袖
+2026-08-26 19:50:34 [INFO ] [deepseek_web]   Deleted: 0064_8870342325882035219288.jpg
+2026-08-26 19:50:39 [INFO ] [deepseek_web] [65/78] 加大加肥男士美式复古棕色翻领夹克外套男麂皮绒情侣冲锋衣外套
+2026-08-26 19:50:39 [INFO ] [deepseek_web]   Downloaded: 0065_2921124219916513158827.jpg
+2026-08-26 19:50:39 [INFO ] [deepseek_web]   Prefetching next image (66/78)
+2026-08-26 19:50:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:50:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:51:09 [INFO ] [deepseek_web]   Response: 加大加肥男士美式复古棕色翻领夹克外套男麂皮绒情侣冲锋衣外套，男士大码宽松版型翻领长袖夹克，麂皮绒面料，纯色设计，全开襟金属拉链，两侧斜插口袋，罗纹松紧袖口和下摆
+2026-08-26 19:51:09 [INFO ] [deepseek_web]   Deleted: 0065_2921124219916513158827.jpg
+2026-08-26 19:51:14 [INFO ] [deepseek_web] [66/78] 男士二蛙服长袖户外宽松弹力透气冲锋衣战术服
+2026-08-26 19:51:14 [INFO ] [deepseek_web]   Downloaded: 0066_9400723389163311383971.jpg
+2026-08-26 19:51:14 [INFO ] [deepseek_web]   Prefetching next image (67/78)
+2026-08-26 19:51:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:51:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:51:43 [INFO ] [deepseek_web]   Response: 男士二蛙服长袖户外宽松弹力透气冲锋衣战术服，男士连帽长袖战术蛙服，宽松版型，弹力透气针织面料，黑绿迷彩拼接设计，半拉链门襟，连帽带抽绳，肩部战术魔术贴区域，左臂
+2026-08-26 19:51:43 [INFO ] [deepseek_web]   Deleted: 0066_9400723389163311383971.jpg
+2026-08-26 19:51:48 [INFO ] [deepseek_web] [67/78] 冲锋衣男山系夹克外套男户外登山服冲锋衣男女潮休闲外套夹
+2026-08-26 19:51:48 [INFO ] [deepseek_web]   Downloaded: 0067_7260401469762618027879.jpg
+2026-08-26 19:51:48 [INFO ] [deepseek_web]   Prefetching next image (68/78)
+2026-08-26 19:51:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:51:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:52:17 [INFO ] [deepseek_web]   Response: 冲锋衣男山系夹克外套男户外登山服冲锋衣男女潮休闲外套夹，男士情侣款连帽冲锋衣，宽松版型长袖，防风防水梭织面料，全开襟撞色拉链，领口抽绳，胸前竖向拉链口袋，两侧斜
+2026-08-26 19:52:17 [INFO ] [deepseek_web]   Deleted: 0067_7260401469762618027879.jpg
+2026-08-26 19:52:22 [INFO ] [deepseek_web] [68/78] 春秋季新款情侣装休闲宽松工装连帽冲锋衣外套时尚百搭夹克男
+2026-08-26 19:52:22 [INFO ] [deepseek_web]   Downloaded: 0068_4090333077995514718769.jpg
+2026-08-26 19:52:22 [INFO ] [deepseek_web]   Prefetching next image (69/78)
+2026-08-26 19:52:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:52:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:52:51 [INFO ] [deepseek_web]   Response: 春秋季新款情侣装休闲宽松工装连帽冲锋衣外套时尚百搭夹克男，男女同款宽松版型连帽长袖冲锋衣，防风防泼水梭织面料，连帽带抽绳，全开襟拉链配防风门襟，胸前翻盖按扣口袋
+2026-08-26 19:52:51 [INFO ] [deepseek_web]   Deleted: 0068_4090333077995514718769.jpg
+2026-08-26 19:52:56 [INFO ] [deepseek_web] [69/78] 男女同款立领纯色宽松冲锋衣夹克外套
+2026-08-26 19:52:56 [INFO ] [deepseek_web]   Downloaded: 0069_2620746410333116707798.jpg
+2026-08-26 19:52:56 [INFO ] [deepseek_web]   Prefetching next image (70/78)
+2026-08-26 19:52:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:53:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:53:25 [INFO ] [deepseek_web]   Response: 男女同款立领纯色宽松冲锋衣夹克外套，男女同款立领长袖冲锋衣，宽松版型，防风防泼水梭织面料，纯色设计，全开襟拉链门襟，两侧斜插拉链口袋，松紧收口袖口及下摆，户外休
+2026-08-26 19:53:25 [INFO ] [deepseek_web]   Deleted: 0069_2620746410333116707798.jpg
+2026-08-26 19:53:30 [INFO ] [deepseek_web] [70/78] 男女同款三合一两件套加绒户外冲锋衣
+2026-08-26 19:53:30 [INFO ] [deepseek_web]   Downloaded: 0070_4600908278633916253028.jpg
+2026-08-26 19:53:30 [INFO ] [deepseek_web]   Prefetching next image (71/78)
+2026-08-26 19:53:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:53:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:53:59 [INFO ] [deepseek_web]   Response: 男女同款三合一两件套加绒户外冲锋衣，男女同款常规宽松版型连帽长袖冲锋衣，可拆卸三合一两件套结构，外层防风防水梭织面料，内层加绒保暖内胆，全开襟双拉链门襟，连帽带
+2026-08-26 19:53:59 [INFO ] [deepseek_web]   Deleted: 0070_4600908278633916253028.jpg
+2026-08-26 19:54:04 [INFO ] [deepseek_web] [71/78] 男士户外冲锋衣
+2026-08-26 19:54:04 [INFO ] [deepseek_web]   Downloaded: 0071_0960418517762619009889.jpg
+2026-08-26 19:54:04 [INFO ] [deepseek_web]   Prefetching next image (72/78)
+2026-08-26 19:54:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:54:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:54:33 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣，男士常规版型连帽长袖梭织冲锋衣，防风防水面料，撞色拼接设计，全开襟拉链门襟带按扣，领口抽绳，两侧斜插拉链口袋，魔术贴调节袖口，户外登山休闲风格。
+2026-08-26 19:54:33 [INFO ] [deepseek_web]   Deleted: 0071_0960418517762619009889.jpg
+2026-08-26 19:54:38 [INFO ] [deepseek_web] [72/78] 男士冲锋衣夹克
+2026-08-26 19:54:38 [INFO ] [deepseek_web]   Downloaded: 0072_2250447200532918223100.jpg
+2026-08-26 19:54:38 [INFO ] [deepseek_web]   Prefetching next image (73/78)
+2026-08-26 19:54:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:54:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:55:08 [INFO ] [deepseek_web]   Response: 男士冲锋衣夹克，男士常规版型长袖连帽冲锋衣，防风防水梭织面料配网眼内衬，纯色撞色拉链设计，全开襟主拉链，领口抽绳，胸前双侧斜插拉链口袋，魔术贴袖口调节，肩部拼接
+2026-08-26 19:55:08 [INFO ] [deepseek_web]   Deleted: 0072_2250447200532918223100.jpg
+2026-08-26 19:55:13 [INFO ] [deepseek_web] [73/78] 男士户外冲锋衣夹克
+2026-08-26 19:55:13 [INFO ] [deepseek_web]   Downloaded: 0073_2881055466054711540085.jpg
+2026-08-26 19:55:13 [INFO ] [deepseek_web]   Prefetching next image (74/78)
+2026-08-26 19:55:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:55:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:55:42 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣夹克，男士常规版型立领长袖冲锋衣，耐磨梭织面料，全开襟拉链门襟，胸前及腰部多排织带快拆插扣，两侧插袋，左臂魔术贴，袖口魔术贴调节，立领保暖内衬，户
+2026-08-26 19:55:42 [INFO ] [deepseek_web]   Deleted: 0073_2881055466054711540085.jpg
+2026-08-26 19:55:47 [INFO ] [deepseek_web] [74/78] 男士秋季新款连帽拉链冲锋衣外套
+2026-08-26 19:55:47 [INFO ] [deepseek_web]   Downloaded: 0074_7310446262391512436331.jpg
+2026-08-26 19:55:47 [INFO ] [deepseek_web]   Prefetching next image (75/78)
+2026-08-26 19:55:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:55:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:56:16 [INFO ] [deepseek_web]   Response: 男士秋季新款连帽拉链冲锋衣外套，男士常规宽松版型连帽长袖冲锋衣，防风防泼水梭织面料，纯色撞色拉链设计，挺括帽檐，全开襟主拉链，左胸竖向拉链口袋，两侧斜插口袋，下
+2026-08-26 19:56:16 [INFO ] [deepseek_web]   Deleted: 0074_7310446262391512436331.jpg
+2026-08-26 19:56:21 [INFO ] [deepseek_web] [75/78] 情侣同款冲锋衣休闲纯色夹克外套
+2026-08-26 19:56:21 [INFO ] [deepseek_web]   Downloaded: 0075_7420342024356631297662.jpg
+2026-08-26 19:56:21 [INFO ] [deepseek_web]   Prefetching next image (76/78)
+2026-08-26 19:56:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:56:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:56:50 [INFO ] [deepseek_web]   Response: 情侣同款冲锋衣休闲纯色夹克外套，男女通用连帽长袖冲锋衣，常规版型，纯色防风防水梭织面料配网眼透气内衬，全开襟拉链门襟带按扣，领口抽绳，左胸拉链口袋，两侧斜插拉链
+2026-08-26 19:56:50 [INFO ] [deepseek_web]   Deleted: 0075_7420342024356631297662.jpg
+2026-08-26 19:56:55 [INFO ] [deepseek_web] [76/78] 男童外套春秋儿童冲锋衣中大童春装男孩防风户外童装 6-15岁
+2026-08-26 19:56:55 [INFO ] [deepseek_web]   Downloaded: 0076_8201000055063757171877.jpg
+2026-08-26 19:56:55 [INFO ] [deepseek_web]   Prefetching next image (77/78)
+2026-08-26 19:56:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:57:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:57:24 [INFO ] [deepseek_web]   Response: 男童外套春秋儿童冲锋衣中大童春装男孩防风户外童装 6-15岁，男童中大童常规宽松版型连帽单层冲锋衣，春秋季梭织防风防泼水面料，撞色拼接设计，全开襟拉链带按扣防风
+2026-08-26 19:57:24 [INFO ] [deepseek_web]   Deleted: 0076_8201000055063757171877.jpg
+2026-08-26 19:57:29 [INFO ] [deepseek_web] [77/78] 男士冲锋衣纯色防风外套
+2026-08-26 19:57:29 [INFO ] [deepseek_web]   Downloaded: 0077_2650846292173859879546.jpg
+2026-08-26 19:57:29 [INFO ] [deepseek_web]   Prefetching next image (78/78)
+2026-08-26 19:57:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:57:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:57:58 [INFO ] [deepseek_web]   Response: 男士冲锋衣纯色防风外套，男士连帽冲锋衣，常规版型长袖，防风防水梭织面料，纯色设计，全开襟撞色拉链门襟，连帽带抽绳，胸前双侧斜拉链口袋，魔术贴调节袖口，肩部拼接缝
+2026-08-26 19:57:58 [INFO ] [deepseek_web]   Deleted: 0077_2650846292173859879546.jpg
+2026-08-26 19:58:03 [INFO ] [deepseek_web] [78/78] 男士防水冲锋衣连帽拉链纯色休闲夹克
+2026-08-26 19:58:03 [INFO ] [deepseek_web]   Downloaded: 0078_5420257499641914516760.jpg
+2026-08-26 19:58:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 19:58:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 19:58:33 [INFO ] [deepseek_web]   Response: 男士防水冲锋衣连帽拉链纯色休闲夹克，男士常规版型连帽加绒软壳冲锋衣，防风防水梭织面料配抓绒内里，全开襟主拉链，胸前双竖拉链口袋，两侧斜插拉链口袋，魔术贴调节袖口
+2026-08-26 19:58:33 [INFO ] [deepseek_web]   Deleted: 0078_5420257499641914516760.jpg
+2026-08-26 19:58:33 [INFO ] [deepseek_web] ==================================================
+2026-08-26 19:58:33 [INFO ] [deepseek_web] Done: 78 success, 0 failed → optimize_title
+2026-08-26 19:58:33 [INFO ] [title_workflow] Optimization complete: 78 titles
+2026-08-26 19:58:38 [INFO ] [title_workflow] Written 78 optimized titles to column H (8)
+2026-08-26 19:58:38 [INFO ] [title_workflow] Done: 8.25v1.xlsx
+2026-08-26 19:58:38 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-26 19:58:38 [INFO ] [jenkins] 
+2026-08-26 19:58:38 [INFO ] [jenkins] ==================================================
+2026-08-26 19:58:38 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-26 19:58:38 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-26 19:58:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-26 19:58:38 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-26 19:58:38 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-08-26 20:00:11 [INFO ] [jenkins] ==================================================
+2026-08-26 20:00:11 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-26 20:00:11 [INFO ] [jenkins] ==================================================
+2026-08-26 20:00:11 [INFO ] [jenkins] 
+2026-08-26 20:00:11 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-26 20:00:11 [INFO ] [jenkins] ------------------------------
+2026-08-26 20:00:11 [INFO ] [title_workflow] Source: 8.25v1.xlsx
+2026-08-26 20:00:13 [INFO ] [title_workflow] Extracted 78 titles + 78 links
+2026-08-26 20:00:13 [INFO ] [title_workflow] Written: origin_title (78) + origin_link (78)
+2026-08-26 20:00:13 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-26 20:00:13 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-26 20:00:13 [INFO ] [deepseek_web] Opening DeepSeek web (78 titles)...
+2026-08-26 20:00:13 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-26 20:00:15 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-26 20:00:17 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-26 20:00:17 [INFO ] [deepseek_web] [1/78] 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁
+2026-08-26 20:00:19 [INFO ] [deepseek_web]   Downloaded: 0001_6720311149251524047876.jpg
+2026-08-26 20:00:19 [INFO ] [deepseek_web]   Prefetching next image (2/78)
+2026-08-26 20:00:19 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-26 20:00:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:00:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:00:49 [INFO ] [deepseek_web]   Response: 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁 连帽长袖松紧袖口 门襟按扣 前胸装饰拉链 撞色拼接 防水面料 宽松常规版型 户外休闲运动防风
+2026-08-26 20:00:49 [INFO ] [deepseek_web]   Deleted: 0001_6720311149251524047876.jpg
+2026-08-26 20:00:54 [INFO ] [deepseek_web] [2/78] 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套
+2026-08-26 20:00:54 [INFO ] [deepseek_web]   Downloaded: 0002_9670220513161333512093.jpg
+2026-08-26 20:00:54 [INFO ] [deepseek_web]   Prefetching next image (3/78)
+2026-08-26 20:00:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:00:57 [INFO ] [deepseek_web]   Deleted: 0002_9670220513161333512093.jpg
+2026-08-26 20:01:34 [INFO ] [jenkins] ==================================================
+2026-08-26 20:01:34 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-26 20:01:34 [INFO ] [jenkins] ==================================================
+2026-08-26 20:01:34 [INFO ] [jenkins] 
+2026-08-26 20:01:34 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-26 20:01:34 [INFO ] [jenkins] ------------------------------
+2026-08-26 20:01:34 [INFO ] [title_workflow] Source: 8.25v1.xlsx
+2026-08-26 20:01:36 [INFO ] [title_workflow] Extracted 78 titles + 78 links
+2026-08-26 20:01:36 [INFO ] [title_workflow] Written: origin_title (78) + origin_link (78)
+2026-08-26 20:01:36 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-26 20:01:36 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-26 20:01:36 [INFO ] [deepseek_web] Opening DeepSeek web (78 titles)...
+2026-08-26 20:01:36 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-26 20:01:39 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-26 20:01:42 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-26 20:01:42 [INFO ] [deepseek_web] [1/78] 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁
+2026-08-26 20:01:43 [INFO ] [deepseek_web]   Downloaded: 0001_6720311149251524047876.jpg
+2026-08-26 20:01:43 [INFO ] [deepseek_web]   Prefetching next image (2/78)
+2026-08-26 20:01:43 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-26 20:01:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:01:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:02:13 [INFO ] [deepseek_web]   Response: 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁 连帽长袖撞色拼接按扣门襟胸前拉链假口袋松紧袖口刺绣logo防水防风面料户外运动常规版型
+2026-08-26 20:02:13 [INFO ] [deepseek_web]   Deleted: 0001_6720311149251524047876.jpg
+2026-08-26 20:02:18 [INFO ] [deepseek_web] [2/78] 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套
+2026-08-26 20:02:18 [INFO ] [deepseek_web]   Downloaded: 0002_9670220513161333512093.jpg
+2026-08-26 20:02:18 [INFO ] [deepseek_web]   Prefetching next image (3/78)
+2026-08-26 20:02:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:02:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:02:47 [INFO ] [deepseek_web]   Response: 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套连帽无抽绳全拉链门襟胸前盾形刺绣徽章侧缝隐形插袋松紧袖口常规版型光滑防风防泼水面料户外运动休闲校园风
+2026-08-26 20:02:47 [INFO ] [deepseek_web]   Deleted: 0002_9670220513161333512093.jpg
+2026-08-26 20:02:52 [INFO ] [deepseek_web] [3/78] 鲨鱼皮软壳保暖防风三合一男户外透气外套冲锋衣春秋
+2026-08-26 20:02:52 [INFO ] [deepseek_web]   Downloaded: 0003_8531029502812519802271.jpg
+2026-08-26 20:02:52 [INFO ] [deepseek_web]   Prefetching next image (4/78)
+2026-08-26 20:02:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:03:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:03:19 [INFO ] [deepseek_web]   Deleted: 0003_8531029502812519802271.jpg
+2026-08-26 20:04:09 [INFO ] [jenkins] ==================================================
+2026-08-26 20:04:09 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-08-26 20:04:09 [INFO ] [jenkins] ==================================================
+2026-08-26 20:04:09 [INFO ] [jenkins] 
+2026-08-26 20:04:09 [INFO ] [jenkins] [1/1] Title optimization
+2026-08-26 20:04:09 [INFO ] [jenkins] ------------------------------
+2026-08-26 20:04:09 [INFO ] [title_workflow] Source: 8.25v1.xlsx
+2026-08-26 20:04:11 [INFO ] [title_workflow] Extracted 78 titles + 78 links
+2026-08-26 20:04:11 [INFO ] [title_workflow] Written: origin_title (78) + origin_link (78)
+2026-08-26 20:04:11 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-08-26 20:04:11 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-08-26 20:04:11 [INFO ] [deepseek_web] Opening DeepSeek web (78 titles)...
+2026-08-26 20:04:11 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-08-26 20:04:13 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-08-26 20:04:15 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-08-26 20:04:15 [INFO ] [deepseek_web] [1/78] 儿童防水拉链假口袋外套儿童夹克撞色登山冲锋衣外套 3-12岁
+2026-08-26 20:04:18 [INFO ] [deepseek_web]   Downloaded: 0001_6720311149251524047876.jpg
+2026-08-26 20:04:18 [INFO ] [deepseek_web]   Prefetching next image (2/78)
+2026-08-26 20:04:18 [INFO ] [deepseek_web]   Switched to vision mode
+2026-08-26 20:04:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:04:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:04:48 [INFO ] [deepseek_web]   Response: 儿童 3-12岁 冲锋衣外套 防水面料 常规版型 连帽长袖 门襟按扣 胸前拉链假口袋 松紧袖口 撞色拼接 户外登山徒步 防风
+2026-08-26 20:04:48 [INFO ] [deepseek_web]   Deleted: 0001_6720311149251524047876.jpg
+2026-08-26 20:04:53 [INFO ] [deepseek_web] [2/78] 男女大童户外防水透气保暖加厚长袖冲锋衣外套校服拉链衫夹克外套
+2026-08-26 20:04:53 [INFO ] [deepseek_web]   Downloaded: 0002_9670220513161333512093.jpg
+2026-08-26 20:04:53 [INFO ] [deepseek_web]   Prefetching next image (3/78)
+2026-08-26 20:04:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:05:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:05:22 [INFO ] [deepseek_web]   Response: 男女大童 连帽长袖冲锋衣外套 户外拉链夹克衫 防水透气 加厚保暖 常规版型 门襟拉链 侧缝口袋 松紧袖口 左胸盾牌徽章 校园日常 防风
+2026-08-26 20:05:22 [INFO ] [deepseek_web]   Deleted: 0002_9670220513161333512093.jpg
+2026-08-26 20:05:27 [INFO ] [deepseek_web] [3/78] 鲨鱼皮软壳保暖防风三合一男户外透气外套冲锋衣春秋
+2026-08-26 20:05:27 [INFO ] [deepseek_web]   Downloaded: 0003_8531029502812519802271.jpg
+2026-08-26 20:05:27 [INFO ] [deepseek_web]   Prefetching next image (4/78)
+2026-08-26 20:05:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:05:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:05:56 [INFO ] [deepseek_web]   Response: 男士 春秋季 户外战术冲锋衣 鲨鱼皮软壳 三合一 抓绒内里 防风保暖透气 常规版型 连帽长袖 主拉链门襟 胸前双拉链口袋 手臂魔术贴及拉链口袋 魔术贴调节袖口 
+2026-08-26 20:05:56 [INFO ] [deepseek_web]   Deleted: 0003_8531029502812519802271.jpg
+2026-08-26 20:06:01 [INFO ] [deepseek_web] [4/78] 美式工装外套男女春秋季国潮宽松冲锋衣情侣男夹克
+2026-08-26 20:06:01 [INFO ] [deepseek_web]   Downloaded: 0004_5391016206572221021474.jpg
+2026-08-26 20:06:01 [INFO ] [deepseek_web]   Prefetching next image (5/78)
+2026-08-26 20:06:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:06:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:06:31 [INFO ] [deepseek_web]   Response: 男女宽松春秋季美式国潮工装冲锋衣夹克外套 情侣款 立领长袖主拉链门襟领口按扣左侧贴标侧插口袋松紧袖口松紧下摆撞色拼接防风
+2026-08-26 20:06:31 [INFO ] [deepseek_web]   Deleted: 0004_5391016206572221021474.jpg
+2026-08-26 20:06:36 [INFO ] [deepseek_web] [5/78] 户外冲锋衣男女登山服三合一抓绒内胆可拆卸防水防风外套
+2026-08-26 20:06:36 [INFO ] [deepseek_web]   Downloaded: 0005_1571158041445188996456.jpg
+2026-08-26 20:06:36 [INFO ] [deepseek_web]   Prefetching next image (6/78)
+2026-08-26 20:06:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:06:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:07:05 [INFO ] [deepseek_web]   Response: 男女常规户外冲锋衣登山服 三合一抓绒内胆可拆卸 防水防风 连帽长袖 主拉链按扣门襟 撞色拼接 胸前及侧边拉链口袋 魔术贴袖口 多口袋设计 登山徒步露营 保暖防风
+2026-08-26 20:07:05 [INFO ] [deepseek_web]   Deleted: 0005_1571158041445188996456.jpg
+2026-08-26 20:07:10 [INFO ] [deepseek_web] [6/78] 男士春秋冲锋衣外套休闲夹克
+2026-08-26 20:07:10 [INFO ] [deepseek_web]   Downloaded: 0006_5140344452223815252301.jpg
+2026-08-26 20:07:10 [INFO ] [deepseek_web]   Prefetching next image (7/78)
+2026-08-26 20:07:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:07:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:07:39 [INFO ] [deepseek_web]   Response: 男士春秋冲锋衣休闲夹克 防风防泼水面料 网眼透气内衬 常规版型 立领长袖 主拉链门襟 侧插口袋 日常通勤户外
+2026-08-26 20:07:39 [INFO ] [deepseek_web]   Deleted: 0006_5140344452223815252301.jpg
+2026-08-26 20:07:44 [INFO ] [deepseek_web] [7/78] 春秋百搭休闲夹克衫户外运动登山服夹克外套耐磨冲锋衣男薄款工装新款防风防泼水休闲登山外套情侣款
+2026-08-26 20:07:44 [INFO ] [deepseek_web]   Downloaded: 0007_6681115087781229418734.jpg
+2026-08-26 20:07:44 [INFO ] [deepseek_web]   Prefetching next image (8/78)
+2026-08-26 20:07:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:07:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:08:13 [INFO ] [deepseek_web]   Response: 男女情侣款 春秋薄款 冲锋衣外套 户外登山服 防风防泼水 耐磨 宽松版型 连帽长袖 主拉链门襟 胸前双拉链口袋 侧边插袋 魔术贴袖口 下摆抽绳 工装风格 户外休
+2026-08-26 20:08:13 [INFO ] [deepseek_web]   Deleted: 0007_6681115087781229418734.jpg
+2026-08-26 20:08:18 [INFO ] [deepseek_web] [8/78] 男士户外工装夹克冲锋衣透气防风中性风撞色运动连帽休闲夹克外套
+2026-08-26 20:08:18 [INFO ] [deepseek_web]   Downloaded: 0008_6411108564502963909560.jpg
+2026-08-26 20:08:18 [INFO ] [deepseek_web]   Prefetching next image (9/78)
+2026-08-26 20:08:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:08:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:08:47 [INFO ] [deepseek_web]   Response: 男士中性风 连帽长袖冲锋衣 户外工装运动休闲夹克外套 撞色设计 防风透气 常规版型 主拉链按扣门襟 侧插口袋 魔术贴袖口
+2026-08-26 20:08:47 [INFO ] [deepseek_web]   Deleted: 0008_6411108564502963909560.jpg
+2026-08-26 20:08:52 [INFO ] [deepseek_web] [9/78] 软壳鲨鱼皮冲锋衣加绒加厚防风防水保暖迷彩服登山服男外套胸前可佩戴工具
+2026-08-26 20:08:52 [INFO ] [deepseek_web]   Downloaded: 0009_2510535249123412905311.jpg
+2026-08-26 20:08:52 [INFO ] [deepseek_web]   Prefetching next image (10/78)
+2026-08-26 20:08:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:09:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:09:21 [INFO ] [deepseek_web]   Response: 男士 连帽软壳冲锋衣 登山外套 鲨鱼皮面料 加绒加厚 防风防水保暖 常规版型 长袖 主拉链门襟 领口抽绳 胸前双拉链口袋 胸前工具挂载横条 魔术贴袖口 纯色设计
+2026-08-26 20:09:21 [INFO ] [deepseek_web]   Deleted: 0009_2510535249123412905311.jpg
+2026-08-26 20:09:26 [INFO ] [deepseek_web] [10/78] 冲锋衣外套男女同款工装风夹克秋冬保暖户外登山旅行外套
+2026-08-26 20:09:26 [INFO ] [deepseek_web]   Downloaded: 0010_0561048278008113893520.jpg
+2026-08-26 20:09:26 [INFO ] [deepseek_web]   Prefetching next image (11/78)
+2026-08-26 20:09:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:09:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:09:55 [INFO ] [deepseek_web]   Response: 男女同款冲锋衣外套 工装风连帽夹克 秋冬加绒保暖 防风防水面料 常规宽松版型 主拉链门襟 高领抽绳 双胸前翻盖口袋 袖部魔术贴口袋 魔术贴调节袖口 户外登山旅行
+2026-08-26 20:09:55 [INFO ] [deepseek_web]   Deleted: 0010_0561048278008113893520.jpg
+2026-08-26 20:10:00 [INFO ] [deepseek_web] [11/78] 男士户外徒步防水夹克外套透气冲锋衣夹克双线格四面弹
+2026-08-26 20:10:00 [INFO ] [deepseek_web]   Downloaded: 0011_6460328422641052209082.jpg
+2026-08-26 20:10:00 [INFO ] [deepseek_web]   Prefetching next image (12/78)
+2026-08-26 20:10:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:10:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:10:30 [INFO ] [deepseek_web]   Response: 男士连帽冲锋衣夹克 户外徒步登山服 防水透气面料 双线格四面弹 常规版型 长袖主拉链门襟 撞色拉链 胸前拉链口袋 侧插口袋 魔术贴袖口 下摆抽绳
+2026-08-26 20:10:30 [INFO ] [deepseek_web]   Deleted: 0011_6460328422641052209082.jpg
+2026-08-26 20:10:35 [INFO ] [deepseek_web] [12/78] 秋季大码潮男外套男连帽上衣宽松休闲夹克外套男士户外防风冲锋衣
+2026-08-26 20:10:35 [INFO ] [deepseek_web]   Downloaded: 0012_6320423012066248363184.jpg
+2026-08-26 20:10:35 [INFO ] [deepseek_web]   Prefetching next image (13/78)
+2026-08-26 20:10:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:10:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:11:04 [INFO ] [deepseek_web]   Response: 男士 秋季 大码宽松连帽冲锋衣外套 户外防风休闲工装夹克 主拉链门襟 连帽抽绳 胸侧斜拉链口袋 下摆翻盖按扣口袋 魔术贴袖口 下摆抽绳
+2026-08-26 20:11:04 [INFO ] [deepseek_web]   Deleted: 0012_6320423012066248363184.jpg
+2026-08-26 20:11:09 [INFO ] [deepseek_web] [13/78] 男士春秋冲锋衣适合户外登山场景长袖夹克外套
+2026-08-26 20:11:09 [INFO ] [deepseek_web]   Downloaded: 0013_5691003481628721376146.jpg
+2026-08-26 20:11:09 [INFO ] [deepseek_web]   Prefetching next image (14/78)
+2026-08-26 20:11:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:11:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:11:38 [INFO ] [deepseek_web]   Response: 男士 春秋 冲锋衣 夹克外套 户外登山 宽松版型 连帽抽绳 半拉链门襟 胸前大口袋 字母印花 魔术贴袖口 下摆抽绳 防风防泼水 运动休闲
+2026-08-26 20:11:38 [INFO ] [deepseek_web]   Deleted: 0013_5691003481628721376146.jpg
+2026-08-26 20:11:43 [INFO ] [deepseek_web] [14/78] 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣
+2026-08-26 20:11:43 [INFO ] [deepseek_web]   Downloaded: 0014_1040431117862640411551.jpg
+2026-08-26 20:11:43 [INFO ] [deepseek_web]   Prefetching next image (15/78)
+2026-08-26 20:11:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:11:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:12:12 [INFO ] [deepseek_web]   Response: 男士 秋冬 户外防风冲锋衣 连帽夹克 宽松版型 长袖 灰白迷彩印花 主拉链按扣门襟 领口抽绳 胸前双拉链口袋 下摆翻盖按扣口袋 魔术贴袖口 下摆抽绳 休闲运动登
+2026-08-26 20:12:12 [INFO ] [deepseek_web]   Deleted: 0014_1040431117862640411551.jpg
+2026-08-26 20:12:17 [INFO ] [deepseek_web] [15/78] 男士户外冲锋衣登山服质感运动郊游潮流休闲外套
+2026-08-26 20:12:17 [INFO ] [deepseek_web]   Downloaded: 0015_2100350175382012300655.jpg
+2026-08-26 20:12:17 [INFO ] [deepseek_web]   Prefetching next image (16/78)
+2026-08-26 20:12:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:12:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:12:46 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣登山服 防水防风面料 常规版型 连帽抽绳 长袖主拉链门襟 胸前拉链口袋 袖口魔术贴 下摆抽绳 植物暗纹印花 户外运动郊游休闲
+2026-08-26 20:12:46 [INFO ] [deepseek_web]   Deleted: 0015_2100350175382012300655.jpg
+2026-08-26 20:12:51 [INFO ] [deepseek_web] [16/78] 男士秋冬休闲运动风格户外夹克连帽带口袋防风冲锋衣
+2026-08-26 20:12:51 [INFO ] [deepseek_web]   Downloaded: 0016_5460821486661360446053.jpg
+2026-08-26 20:12:51 [INFO ] [deepseek_web]   Prefetching next image (17/78)
+2026-08-26 20:12:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:13:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:13:21 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣夹克 秋冬休闲运动 防风防水 宽松版型 连帽抽绳 主拉链门襟 胸前双拉链口袋 侧插口袋 下摆抽绳 魔术贴袖口 纯色 户外徒步登山
+2026-08-26 20:13:21 [INFO ] [deepseek_web]   Deleted: 0016_5460821486661360446053.jpg
+2026-08-26 20:13:26 [INFO ] [deepseek_web] [17/78] 男士秋冬新款三合一可拆卸冲锋衣夹克
+2026-08-26 20:13:26 [INFO ] [deepseek_web]   Downloaded: 0017_4710302542563413770179.jpg
+2026-08-26 20:13:26 [INFO ] [deepseek_web]   Prefetching next image (18/78)
+2026-08-26 20:13:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:13:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:13:55 [INFO ] [deepseek_web]   Response: 男士 秋冬 常规版型 三合一可拆卸冲锋衣夹克 抓绒内胆 连帽长袖 主拉链门襟 胸前拉链口袋 侧插口袋 松紧袖口 下摆抽绳 纯色 防风防水保暖 户外登山徒步
+2026-08-26 20:13:55 [INFO ] [deepseek_web]   Deleted: 0017_4710302542563413770179.jpg
+2026-08-26 20:14:00 [INFO ] [deepseek_web] [18/78] 秋冬季男童冲锋衣卡通迷彩渐变印花中大童韩版加绒户外运动冲锋衣外套(3-14Y)
+2026-08-26 20:14:00 [INFO ] [deepseek_web]   Downloaded: 0018_6110417547774153177057.jpg
+2026-08-26 20:14:00 [INFO ] [deepseek_web]   Prefetching next image (19/78)
+2026-08-26 20:14:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:14:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:14:29 [INFO ] [deepseek_web]   Response: 中大童男童 3-14岁 秋冬户外运动冲锋衣外套 加绒保暖 防风防水 宽松版型 连帽长袖 主拉链门襟 松紧袖口 下摆松紧 蓝青裂纹迷彩印花 胸袖英文字母刺绣 休闲
+2026-08-26 20:14:29 [INFO ] [deepseek_web]   Deleted: 0018_6110417547774153177057.jpg
+2026-08-26 20:14:34 [INFO ] [deepseek_web] [19/78] 男士冲锋衣夹克
+2026-08-26 20:14:34 [INFO ] [deepseek_web]   Downloaded: 0019_8070154442986431875531.jpg
+2026-08-26 20:14:34 [INFO ] [deepseek_web]   Prefetching next image (20/78)
+2026-08-26 20:14:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:14:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:15:03 [INFO ] [deepseek_web]   Response: 男士连帽冲锋衣夹克 防风防水面料 常规版型 长袖 主拉链门襟 胸前双拉链口袋 侧边斜插口袋 魔术贴袖口 纯色 户外运动 登山徒步 休闲
+2026-08-26 20:15:03 [INFO ] [deepseek_web]   Deleted: 0019_8070154442986431875531.jpg
+2026-08-26 20:15:08 [INFO ] [deepseek_web] [20/78] 男士防风运动登山服宽松冲锋衣外套
+2026-08-26 20:15:08 [INFO ] [deepseek_web]   Downloaded: 0020_9850215261637384535707.jpg
+2026-08-26 20:15:08 [INFO ] [deepseek_web]   Prefetching next image (21/78)
+2026-08-26 20:15:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:15:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:15:37 [INFO ] [deepseek_web]   Response: 男士 宽松冲锋衣外套 防风防水 运动登山 连帽长袖 撞色拼接 主拉链门襟 两侧斜插拉链口袋 领口抽绳 袖口魔术贴调节 左袖字母印花 户外休闲
+2026-08-26 20:15:37 [INFO ] [deepseek_web]   Deleted: 0020_9850215261637384535707.jpg
+2026-08-26 20:15:42 [INFO ] [deepseek_web] [21/78] 秋冬季摇粒绒外套男双面绒冲锋衣内胆加厚保暖
+2026-08-26 20:15:42 [INFO ] [deepseek_web]   Downloaded: 0021_2870429516194213885046.jpg
+2026-08-26 20:15:42 [INFO ] [deepseek_web]   Prefetching next image (22/78)
+2026-08-26 20:15:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:15:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:16:11 [INFO ] [deepseek_web]   Response: 男士 秋冬季 摇粒绒外套 双面绒 冲锋衣内胆 加厚保暖 常规版型 立领长袖 主拉链门襟 侧插口袋 松紧袖口 纯色 休闲户外
+2026-08-26 20:16:11 [INFO ] [deepseek_web]   Deleted: 0021_2870429516194213885046.jpg
+2026-08-26 20:16:16 [INFO ] [deepseek_web] [22/78] 男士秋冬加绒摇粒绒冲锋衣休闲宽松户外防风防寒保暖外套夹克
+2026-08-26 20:16:16 [INFO ] [deepseek_web]   Downloaded: 0022_7300501082338013832012.jpg
+2026-08-26 20:16:16 [INFO ] [deepseek_web]   Prefetching next image (23/78)
+2026-08-26 20:16:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:16:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:16:46 [INFO ] [deepseek_web]   Response: 男士 秋冬 加绒摇粒绒 连帽冲锋衣夹克 宽松版型 户外休闲 防风防寒保暖 主拉链门襟 胸前双拉链口袋 侧边拉链口袋 魔术贴袖口 纯色
+2026-08-26 20:16:46 [INFO ] [deepseek_web]   Deleted: 0022_7300501082338013832012.jpg
+2026-08-26 20:16:51 [INFO ] [deepseek_web] [23/78] 男士冲锋衣加绒加厚户外登山跑步休闲男款时尚保暖外套
+2026-08-26 20:16:51 [INFO ] [deepseek_web]   Downloaded: 0023_4250256411563171884922.jpg
+2026-08-26 20:16:51 [INFO ] [deepseek_web]   Prefetching next image (24/78)
+2026-08-26 20:16:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:17:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:17:23 [INFO ] [deepseek_web]   Response: 男士加绒加厚冲锋衣外套 连帽抽绳 防风保暖 常规版型 长袖主拉链门襟 胸前拉链口袋 侧边斜插口袋 常规袖口 户外登山跑步休闲
+2026-08-26 20:17:23 [INFO ] [deepseek_web]   Deleted: 0023_4250256411563171884922.jpg
+2026-08-26 20:17:28 [INFO ] [deepseek_web] [24/78] 春秋季男装夹克外套男纯色户外连帽冲锋衣男潮登山服
+2026-08-26 20:17:28 [INFO ] [deepseek_web]   Downloaded: 0024_6010351307067216086652.jpg
+2026-08-26 20:17:28 [INFO ] [deepseek_web]   Prefetching next image (25/78)
+2026-08-26 20:17:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:17:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:17:57 [INFO ] [deepseek_web]   Response: 男士春秋季连帽冲锋衣夹克 防风防泼水 纯色 常规版型 主拉链按扣门襟 连帽抽绳领 胸前拉链口袋 翻盖按扣口袋 左臂袖标 魔术贴袖口 户外登山徒步运动
+2026-08-26 20:17:57 [INFO ] [deepseek_web]   Deleted: 0024_6010351307067216086652.jpg
+2026-08-26 20:18:02 [INFO ] [deepseek_web] [25/78] 男士连帽纯色冲锋衣夹克青年户外休闲开衫外套男
+2026-08-26 20:18:02 [INFO ] [deepseek_web]   Downloaded: 0025_2740248403507416334166.jpg
+2026-08-26 20:18:02 [INFO ] [deepseek_web]   Prefetching next image (26/78)
+2026-08-26 20:18:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:18:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:18:31 [INFO ] [deepseek_web]   Response: 男士 连帽冲锋衣夹克 青年休闲 户外通勤 纯色 撞色明线 主拉链门襟 领口抽绳 侧边拉链口袋 魔术贴袖口 下摆抽绳 常规版型 长袖 防风防水
+2026-08-26 20:18:31 [INFO ] [deepseek_web]   Deleted: 0025_2740248403507416334166.jpg
+2026-08-26 20:18:36 [INFO ] [deepseek_web] [26/78] 网眼连帽单衣青年情侣轻量休闲冲锋衣
+2026-08-26 20:18:36 [INFO ] [deepseek_web]   Downloaded: 0026_4930816182771915377412.jpg
+2026-08-26 20:18:36 [INFO ] [deepseek_web]   Prefetching next image (27/78)
+2026-08-26 20:18:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:18:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:19:08 [INFO ] [deepseek_web]   Response: 网眼轻量连帽单衣冲锋衣 透气面料 常规版型 纯色 连帽领口抽绳 主拉链门襟 领口透气冲孔 左侧胸前拉链口袋 侧边插袋 松紧袖口 户外运动徒步登山 春秋单衣
+2026-08-26 20:19:08 [INFO ] [deepseek_web]   Deleted: 0026_4930816182771915377412.jpg
+2026-08-26 20:19:13 [INFO ] [deepseek_web] [27/78] 男士假两件宽松连帽夹克大码休闲户外冲锋衣开衫外套
+2026-08-26 20:19:13 [INFO ] [deepseek_web]   Downloaded: 0027_0391012515638268589515.jpg
+2026-08-26 20:19:13 [INFO ] [deepseek_web]   Prefetching next image (28/78)
+2026-08-26 20:19:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:19:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:19:42 [INFO ] [deepseek_web]   Response: 男士 大码 宽松 假两件 连帽冲锋衣夹克 开衫外套 长袖 主拉链按扣门襟 双侧胸前拉链口袋 侧缝拉链口袋 左臂拉链口袋 松紧袖口 松紧下摆 户外休闲
+2026-08-26 20:19:42 [INFO ] [deepseek_web]   Deleted: 0027_0391012515638268589515.jpg
+2026-08-26 20:19:47 [INFO ] [deepseek_web] [28/78] 男女通用防水防风冲锋衣
+2026-08-26 20:19:47 [INFO ] [deepseek_web]   Downloaded: 0028_0020506169752674849006.jpg
+2026-08-26 20:19:47 [INFO ] [deepseek_web]   Prefetching next image (29/78)
+2026-08-26 20:19:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:19:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:20:17 [INFO ] [deepseek_web]   Response: 男女通用连帽冲锋衣外套 防水防风面料 宽松版型 长袖 主拉链按扣门襟 连帽抽绳 领口黑色撞色内衬 左胸按扣拉链口袋 两侧斜插拉链口袋 左袖装饰口袋 魔术贴袖口 
+2026-08-26 20:20:17 [INFO ] [deepseek_web]   Deleted: 0028_0020506169752674849006.jpg
+2026-08-26 20:20:22 [INFO ] [deepseek_web] [29/78] 男士立领薄款冲锋衣防风防水风衣外套夹克
+2026-08-26 20:20:22 [INFO ] [deepseek_web]   Downloaded: 0029_9160433533932617674601.jpg
+2026-08-26 20:20:22 [INFO ] [deepseek_web]   Prefetching next image (30/78)
+2026-08-26 20:20:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:20:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:20:51 [INFO ] [deepseek_web]   Response: 男士立领薄款冲锋衣 防风防水 风衣夹克外套 纯色常规版型 长袖主拉链门襟 侧边拉链口袋 松紧袖口 户外休闲
+2026-08-26 20:20:51 [INFO ] [deepseek_web]   Deleted: 0029_9160433533932617674601.jpg
+2026-08-26 20:20:56 [INFO ] [deepseek_web] [30/78] 秋冬薄款立领冲锋衣防水登山户外连帽夹克外套
+2026-08-26 20:20:56 [INFO ] [deepseek_web]   Downloaded: 0030_1720318513881819629252.jpg
+2026-08-26 20:20:56 [INFO ] [deepseek_web]   Prefetching next image (31/78)
+2026-08-26 20:20:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:21:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:21:25 [INFO ] [deepseek_web]   Response: 男士 秋冬薄款 连帽长袖 冲锋衣夹克外套 防风防水面料 撞色拼接 主拉链门襟 侧缝插袋 松紧袖口 常规版型 户外登山徒步 休闲运动
+2026-08-26 20:21:25 [INFO ] [deepseek_web]   Deleted: 0030_1720318513881819629252.jpg
+2026-08-26 20:21:30 [INFO ] [deepseek_web] [31/78] 男士休闲户外防风防雨单层冲锋衣
+2026-08-26 20:21:30 [INFO ] [deepseek_web]   Downloaded: 0031_1831044539617419883901.jpg
+2026-08-26 20:21:30 [INFO ] [deepseek_web]   Prefetching next image (32/78)
+2026-08-26 20:21:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:21:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:21:59 [INFO ] [deepseek_web]   Response: 男士 单层冲锋衣 休闲户外 防风防雨 常规版型 连帽领抽绳 长袖主拉链门襟 左右胸前拉链口袋 松紧魔术贴袖口 纯色撞色细节 徒步登山
+2026-08-26 20:21:59 [INFO ] [deepseek_web]   Deleted: 0031_1831044539617419883901.jpg
+2026-08-26 20:22:04 [INFO ] [deepseek_web] [32/78] 男士运动防水休闲冲锋衣
+2026-08-26 20:22:04 [INFO ] [deepseek_web]   Downloaded: 0032_1811112084428669395775.jpg
+2026-08-26 20:22:04 [INFO ] [deepseek_web]   Prefetching next image (33/78)
+2026-08-26 20:22:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:22:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:22:33 [INFO ] [deepseek_web]   Response: 男士冲锋衣 运动休闲 防水防风 常规版型 连帽抽绳 长袖 主拉链门襟 胸前横向缝线 侧缝拉链口袋 魔术贴袖口 纯色 户外徒步
+2026-08-26 20:22:33 [INFO ] [deepseek_web]   Deleted: 0032_1811112084428669395775.jpg
+2026-08-26 20:22:38 [INFO ] [deepseek_web] [33/78] 男士户外加绒防风防水冲锋衣
+2026-08-26 20:22:38 [INFO ] [deepseek_web]   Downloaded: 0033_6991027181253859891298.jpg
+2026-08-26 20:22:38 [INFO ] [deepseek_web]   Prefetching next image (34/78)
+2026-08-26 20:22:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:22:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:23:07 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣 加绒保暖 防风防水 宽松版型 连帽长袖 领口抽绳 主拉链按扣门襟 胸前按扣口袋 侧缝插袋 魔术贴袖口 下摆抽绳 户外登山徒步
+2026-08-26 20:23:07 [INFO ] [deepseek_web]   Deleted: 0033_6991027181253859891298.jpg
+2026-08-26 20:23:12 [INFO ] [deepseek_web] [34/78] 男士宽松休闲百搭冲锋衣
+2026-08-26 20:23:12 [INFO ] [deepseek_web]   Downloaded: 0034_1190210412821415814578.jpg
+2026-08-26 20:23:12 [INFO ] [deepseek_web]   Prefetching next image (35/78)
+2026-08-26 20:23:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:23:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:23:42 [INFO ] [deepseek_web]   Response: 男士宽松版型冲锋衣 连帽长袖 主拉链按扣门襟 撞色拼接 侧边插袋 魔术贴袖口 防风防水 户外休闲登山
+2026-08-26 20:23:42 [INFO ] [deepseek_web]   Deleted: 0034_1190210412821415814578.jpg
+2026-08-26 20:23:47 [INFO ] [deepseek_web] [35/78] 男士休闲宽松防水连帽冲锋衣
+2026-08-26 20:23:47 [INFO ] [deepseek_web]   Downloaded: 0035_2430256206451799134329.jpg
+2026-08-26 20:23:47 [INFO ] [deepseek_web]   Prefetching next image (36/78)
+2026-08-26 20:23:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:23:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:24:16 [INFO ] [deepseek_web]   Response: 男士冲锋衣 休闲户外 宽松版型 防水防风面料 连帽长袖 主拉链门襟 领口按扣 胸前拉链口袋 两侧斜插口袋 魔术贴袖口 字母印花 纯色
+2026-08-26 20:24:16 [INFO ] [deepseek_web]   Deleted: 0035_2430256206451799134329.jpg
+2026-08-26 20:24:21 [INFO ] [deepseek_web] [36/78] 男士户外潮流宽松透气薄款连帽冲锋衣
+2026-08-26 20:24:21 [INFO ] [deepseek_web]   Downloaded: 0036_5270752025871113600464.jpg
+2026-08-26 20:24:21 [INFO ] [deepseek_web]   Prefetching next image (37/78)
+2026-08-26 20:24:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:24:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:24:50 [INFO ] [deepseek_web]   Response: 男士 宽松薄款连帽冲锋衣 户外休闲运动 透气防风防水 纯色撞色设计 主拉链门襟 领口抽绳 胸前双拉链口袋 领口贴标 魔术贴袖口 袖口挂环 登山徒步
+2026-08-26 20:24:50 [INFO ] [deepseek_web]   Deleted: 0036_5270752025871113600464.jpg
+2026-08-26 20:24:55 [INFO ] [deepseek_web] [37/78] 男士防风防水户外冲锋衣
+2026-08-26 20:24:55 [INFO ] [deepseek_web]   Downloaded: 0037_6050956583716112113293.jpg
+2026-08-26 20:24:55 [INFO ] [deepseek_web]   Prefetching next image (38/78)
+2026-08-26 20:24:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:25:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:25:24 [INFO ] [deepseek_web]   Response: 男士 常规版型 连帽长袖冲锋衣 防风防水 纯色 主拉链门襟 领口魔术贴 胸前斜拉链口袋 侧缝口袋 魔术贴袖口 户外登山徒步 休闲
+2026-08-26 20:25:24 [INFO ] [deepseek_web]   Deleted: 0037_6050956583716112113293.jpg
+2026-08-26 20:25:29 [INFO ] [deepseek_web] [38/78] 儿童冲锋衣防风外套童露营单层风衣
+2026-08-26 20:25:29 [INFO ] [deepseek_web]   Downloaded: 0038_8141047099315980217674.jpg
+2026-08-26 20:25:29 [INFO ] [deepseek_web]   Prefetching next image (39/78)
+2026-08-26 20:25:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:25:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:25:58 [INFO ] [deepseek_web]   Response: 儿童冲锋衣 单层风衣 防风防水 宽松版型 连帽长袖 撞色拼接 帽部条纹印花 主拉链门襟 胸前撞色拉链口袋 两侧拉链口袋 魔术贴袖口 户外露营徒步
+2026-08-26 20:25:58 [INFO ] [deepseek_web]   Deleted: 0038_8141047099315980217674.jpg
+2026-08-26 20:26:03 [INFO ] [deepseek_web] [39/78] 男士纯色拉链设计冲锋衣透气防风户外连帽夹克
+2026-08-26 20:26:03 [INFO ] [deepseek_web]   Downloaded: 0039_0400321537753718601501.jpg
+2026-08-26 20:26:03 [INFO ] [deepseek_web]   Prefetching next image (40/78)
+2026-08-26 20:26:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:26:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:26:33 [INFO ] [deepseek_web]   Response: 男士 连帽长袖冲锋衣夹克 纯色 常规版型 主拉链门襟 领口抽绳 胸前及袖部拉链口袋 侧缝拉链口袋 魔术贴袖口 下摆抽绳 透气防风 户外战术登山徒步
+2026-08-26 20:26:33 [INFO ] [deepseek_web]   Deleted: 0039_0400321537753718601501.jpg
+2026-08-26 20:26:38 [INFO ] [deepseek_web] [40/78] 男士防风撞色设计冲锋衣户外露营休闲夹克外套
+2026-08-26 20:26:38 [INFO ] [deepseek_web]   Downloaded: 0040_7150159334051112979367.jpg
+2026-08-26 20:26:38 [INFO ] [deepseek_web]   Prefetching next image (41/78)
+2026-08-26 20:26:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:26:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:27:07 [INFO ] [deepseek_web]   Response: 男士冲锋衣连帽夹克外套 防风防水面料 常规版型 长袖 连帽抽绳 主拉链门襟 撞色拼接 胸前斜拉链口袋 侧边口袋 魔术贴袖口 下摆抽绳 多口袋设计 户外露营休闲
+2026-08-26 20:27:07 [INFO ] [deepseek_web]   Deleted: 0040_7150159334051112979367.jpg
+2026-08-26 20:27:12 [INFO ] [deepseek_web] [41/78] 情侣款连帽软壳单层冲锋衣外套春秋男女户外防风旅行登山服
+2026-08-26 20:27:12 [INFO ] [deepseek_web]   Downloaded: 0041_2081105041937610924500.jpg
+2026-08-26 20:27:12 [INFO ] [deepseek_web]   Prefetching next image (42/78)
+2026-08-26 20:27:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:27:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:27:41 [INFO ] [deepseek_web]   Response: 情侣款 男女春秋 连帽软壳单层冲锋衣外套 户外防风旅行登山服 常规版型 纯色 连帽长袖 主拉链门襟 领口透气冲孔 胸前斜拉链口袋
+2026-08-26 20:27:41 [INFO ] [deepseek_web]   Deleted: 0041_2081105041937610924500.jpg
+2026-08-26 20:27:46 [INFO ] [deepseek_web] [42/78] 男士春秋冲锋衣薄款外套防风防泼水登山服
+2026-08-26 20:27:46 [INFO ] [deepseek_web]   Downloaded: 0042_3021052548928590938365.jpg
+2026-08-26 20:27:46 [INFO ] [deepseek_web]   Prefetching next image (43/78)
+2026-08-26 20:27:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:27:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:28:15 [INFO ] [deepseek_web]   Response: 男士 春秋薄款冲锋衣外套 防风防泼水 登山服 宽松版型 连帽长袖 主拉链门襟 胸前几何框线口袋 侧边拉链口袋 魔术贴袖口 下摆抽绳 多口袋设计 户外休闲
+2026-08-26 20:28:15 [INFO ] [deepseek_web]   Deleted: 0042_3021052548928590938365.jpg
+2026-08-26 20:28:20 [INFO ] [deepseek_web] [43/78] 新款情侣冲锋衣户外单层风衣外套男薄款透气防风防水夹克
+2026-08-26 20:28:20 [INFO ] [deepseek_web]   Downloaded: 0043_3860302130121313065257.jpg
+2026-08-26 20:28:20 [INFO ] [deepseek_web]   Prefetching next image (44/78)
+2026-08-26 20:28:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:28:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:28:49 [INFO ] [deepseek_web]   Response: 男女同款 情侣款 冲锋衣夹克外套 单层 薄款 常规版型 连帽抽绳 主拉链门襟 网眼内衬 防风防水透气 胸前斜拉链口袋 下摆翻盖口袋 左臂徽章贴布 魔术贴袖口 多
+2026-08-26 20:28:49 [INFO ] [deepseek_web]   Deleted: 0043_3860302130121313065257.jpg
+2026-08-26 20:28:54 [INFO ] [deepseek_web] [44/78] 男士薄款防风防水夹克外套拼色防水登山服冲锋衣
+2026-08-26 20:28:54 [INFO ] [deepseek_web]   Downloaded: 0044_9320249200544116301521.jpg
+2026-08-26 20:28:54 [INFO ] [deepseek_web]   Prefetching next image (45/78)
+2026-08-26 20:28:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:29:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:29:23 [INFO ] [deepseek_web]   Response: 男士薄款冲锋衣夹克外套 防风防水面料 网眼透气内衬 常规版型 连帽长袖 主拉链门襟 撞色拉链细节 侧边插袋 魔术贴袖口 户外登山徒步 休闲运动
+2026-08-26 20:29:23 [INFO ] [deepseek_web]   Deleted: 0044_9320249200544116301521.jpg
+2026-08-26 20:29:28 [INFO ] [deepseek_web] [45/78] 软壳冲锋衣上衣男夹克男工装宽松机能冲锋衣外套男
+2026-08-26 20:29:28 [INFO ] [deepseek_web]   Downloaded: 0045_0471031489146714639012.jpg
+2026-08-26 20:29:28 [INFO ] [deepseek_web]   Prefetching next image (46/78)
+2026-08-26 20:29:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:29:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:29:58 [INFO ] [deepseek_web]   Response: 男士 软壳冲锋衣夹克 工装机能 宽松版型 连帽长袖 主拉链门襟 领口抓绒内里 胸前翻盖按扣口袋 侧边口袋 臂部拉链口袋 魔术贴袖口 下摆抽绳 防风耐磨 户外登山
+2026-08-26 20:29:58 [INFO ] [deepseek_web]   Deleted: 0045_0471031489146714639012.jpg
+2026-08-26 20:30:03 [INFO ] [deepseek_web] [46/78] 秋冬男装英伦夹克外套大码户外时尚男士冲锋衣
+2026-08-26 20:30:03 [INFO ] [deepseek_web]   Downloaded: 0046_5160426579142210062001.jpg
+2026-08-26 20:30:03 [INFO ] [deepseek_web]   Prefetching next image (47/78)
+2026-08-26 20:30:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:30:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:30:32 [INFO ] [deepseek_web]   Response: 男士秋冬大码宽松冲锋衣夹克外套 立领长袖 纯色 主拉链门襟 侧边拉链口袋 松紧袖口 下摆抽绳 防风防泼水 户外休闲登山
+2026-08-26 20:30:32 [INFO ] [deepseek_web]   Deleted: 0046_5160426579142210062001.jpg
+2026-08-26 20:30:37 [INFO ] [deepseek_web] [47/78] 百搭上衣男士连帽休闲防水户外外套冲锋衣夹克
+2026-08-26 20:30:37 [INFO ] [deepseek_web]   Downloaded: 0047_2691051255597516939883.jpg
+2026-08-26 20:30:37 [INFO ] [deepseek_web]   Prefetching next image (48/78)
+2026-08-26 20:30:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:30:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:31:06 [INFO ] [deepseek_web]   Response: 男士 连帽冲锋衣夹克 户外休闲 防水防风面料 常规版型 主拉链门襟 领口抽绳 胸前拉链口袋 D型挂环 侧插口袋 松紧袖口 下摆抽绳 黑色撞色细节 多口袋设计 登
+2026-08-26 20:31:06 [INFO ] [deepseek_web]   Deleted: 0047_2691051255597516939883.jpg
+2026-08-26 20:31:11 [INFO ] [deepseek_web] [48/78] 抓绒衣男外套上衣户外冲锋衣内胆秋冬季加厚保暖
+2026-08-26 20:31:11 [INFO ] [deepseek_web]   Downloaded: 0048_8270914291793885486707.jpg
+2026-08-26 20:31:11 [INFO ] [deepseek_web]   Prefetching next image (49/78)
+2026-08-26 20:31:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:31:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:31:40 [INFO ] [deepseek_web]   Response: 男士 秋冬季 加厚保暖抓绒衣外套 冲锋衣内胆 双面绒 宽松版型 立领长袖 主拉链门襟 胸前拉链口袋 侧插口袋 松紧袖口 纯色 户外休闲
+2026-08-26 20:31:40 [INFO ] [deepseek_web]   Deleted: 0048_8270914291793885486707.jpg
+2026-08-26 20:31:45 [INFO ] [deepseek_web] [49/78] 立领夹克男薄款男士修身户外休闲冲锋衣外套
+2026-08-26 20:31:45 [INFO ] [deepseek_web]   Downloaded: 0049_8170233079452421326825.jpg
+2026-08-26 20:31:45 [INFO ] [deepseek_web]   Prefetching next image (50/78)
+2026-08-26 20:31:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:31:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:32:14 [INFO ] [deepseek_web]   Response: 男士 宽松版型 立领夹克冲锋衣外套 薄款 户外休闲 长袖 主拉链按扣门襟 撞色内领 左胸贴标 下摆翻盖口袋 袖口按扣 防风
+2026-08-26 20:32:14 [INFO ] [deepseek_web]   Deleted: 0049_8170233079452421326825.jpg
+2026-08-26 20:32:19 [INFO ] [deepseek_web] [50/78] 秋冬户外加厚冲锋衣男女情侣登山服时尚拼色男士外套
+2026-08-26 20:32:19 [INFO ] [deepseek_web]   Downloaded: 0050_7370245036701920618013.jpg
+2026-08-26 20:32:19 [INFO ] [deepseek_web]   Prefetching next image (51/78)
+2026-08-26 20:32:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:32:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:32:48 [INFO ] [deepseek_web]   Response: 男士情侣款 秋冬拼色立领冲锋衣夹克 登山服 防风防泼水 常规版型 长袖 主拉链门襟 两侧斜插拉链口袋 松紧袖口 户外休闲运动
+2026-08-26 20:32:48 [INFO ] [deepseek_web]   Deleted: 0050_7370245036701920618013.jpg
+2026-08-26 20:32:53 [INFO ] [deepseek_web] [51/78] 夹棉儿童加绒加厚冲锋衣冬季连帽拉链棉衣3-14Years
+2026-08-26 20:32:53 [INFO ] [deepseek_web]   Downloaded: 0051_3220445097123019848717.jpg
+2026-08-26 20:32:53 [INFO ] [deepseek_web]   Prefetching next image (52/78)
+2026-08-26 20:32:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:33:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:33:23 [INFO ] [deepseek_web]   Response: 儿童 3-14岁 连帽冲锋衣 夹棉加绒加厚 防风防水面料 冬季保暖 常规版型 长袖 主拉链门襟 松紧袖口 松紧下摆 胸前字母印花 户外休闲运动
+2026-08-26 20:33:23 [INFO ] [deepseek_web]   Deleted: 0051_3220445097123019848717.jpg
+2026-08-26 20:33:28 [INFO ] [deepseek_web] [52/78] 秋冬新款户外旅行防风防水情侣三合一冲锋衣
+2026-08-26 20:33:28 [INFO ] [deepseek_web]   Downloaded: 0052_5561128441771011682379.jpg
+2026-08-26 20:33:28 [INFO ] [deepseek_web]   Prefetching next image (53/78)
+2026-08-26 20:33:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:33:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:33:57 [INFO ] [deepseek_web]   Response: 男女情侣款 秋冬三合一冲锋衣 户外旅行登山 防风防水 常规版型 连帽抽绳 主拉链按扣门襟 胸前拉链口袋 侧缝拉链口袋 魔术贴袖口 下摆抽绳 多口袋设计
+2026-08-26 20:33:57 [INFO ] [deepseek_web]   Deleted: 0052_5561128441771011682379.jpg
+2026-08-26 20:34:02 [INFO ] [deepseek_web] [53/78] 秋季新款宽松休闲夹克男拼色时尚冲锋衣户外男士外套
+2026-08-26 20:34:02 [INFO ] [deepseek_web]   Downloaded: 0053_0131109238667713240396.jpg
+2026-08-26 20:34:02 [INFO ] [deepseek_web]   Prefetching next image (54/78)
+2026-08-26 20:34:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:34:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:34:31 [INFO ] [deepseek_web]   Response: 男士 秋季 宽松休闲夹克 冲锋衣外套 拼色 连帽抽绳 主拉链门襟 胸前斜拉链口袋 松紧袖口 下摆抽绳 防风防泼水 户外运动
+2026-08-26 20:34:31 [INFO ] [deepseek_web]   Deleted: 0053_0131109238667713240396.jpg
+2026-08-26 20:34:36 [INFO ] [deepseek_web] [54/78] 爆款休闲棒球服加厚棉衣 外套春秋冲锋衣美式飞行休闲棉服夹
+2026-08-26 20:34:36 [INFO ] [deepseek_web]   Downloaded: 0054_3390519170072011568542.jpg
+2026-08-26 20:34:36 [INFO ] [deepseek_web]   Prefetching next image (55/78)
+2026-08-26 20:34:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:34:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:35:05 [INFO ] [deepseek_web]   Response: 男士 加绒加厚 休闲棉服 冲锋衣外套 防风防泼水 常规版型 立领长袖 主拉链门襟 侧插拉链口袋 下摆抽绳 户外休闲 纯色
+2026-08-26 20:35:05 [INFO ] [deepseek_web]   Deleted: 0054_3390519170072011568542.jpg
+2026-08-26 20:35:10 [INFO ] [deepseek_web] [55/78] 男士防连帽工作服夹克防水外套团建爬山户外机能冲锋衣
+2026-08-26 20:35:10 [INFO ] [deepseek_web]   Downloaded: 0055_2020457464373134532370.jpg
+2026-08-26 20:35:10 [INFO ] [deepseek_web]   Prefetching next image (56/78)
+2026-08-26 20:35:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:35:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:35:40 [INFO ] [deepseek_web]   Response: 男士 连帽冲锋衣夹克 户外机能工装风 防水防风面料 宽松版型 长袖 主拉链按扣门襟 连帽抽绳 胸前翻盖拉链口袋 左臂拉链口袋 D型挂环 魔术贴袖口 多口袋设计 
+2026-08-26 20:35:40 [INFO ] [deepseek_web]   Deleted: 0055_2020457464373134532370.jpg
+2026-08-26 20:35:45 [INFO ] [deepseek_web] [56/78] 男士休闲夹克秋季薄款户外防风多口袋冲锋衣
+2026-08-26 20:35:45 [INFO ] [deepseek_web]   Downloaded: 0056_7751110369017614337555.jpg
+2026-08-26 20:35:45 [INFO ] [deepseek_web]   Prefetching next image (57/78)
+2026-08-26 20:35:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:35:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:36:16 [INFO ] [deepseek_web]   Response: 男士 秋季薄款 连帽冲锋衣夹克 户外休闲 防风面料 主拉链按扣门襟 多口袋设计 胸前拉链口袋 下摆翻盖按扣口袋 侧边插袋 左臂贴标 按扣袖口 常规版型 纯色
+2026-08-26 20:36:16 [INFO ] [deepseek_web]   Deleted: 0056_7751110369017614337555.jpg
+2026-08-26 20:36:21 [INFO ] [deepseek_web] [57/78] 男士新款三合一两件套冲锋衣外套休闲百搭潮流冲锋衣外套
+2026-08-26 20:36:21 [INFO ] [deepseek_web]   Downloaded: 0057_3990231032091488158298.jpg
+2026-08-26 20:36:21 [INFO ] [deepseek_web]   Prefetching next image (58/78)
+2026-08-26 20:36:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:36:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:36:50 [INFO ] [deepseek_web]   Response: 男士 三合一两件套 连帽冲锋衣外套 常规版型 防风防水 主拉链按扣门襟 连帽抽绳 胸前横向拉链口袋 两侧斜插拉链口袋 魔术贴袖口 黑色撞色拉链绳 户外登山休闲旅
+2026-08-26 20:36:50 [INFO ] [deepseek_web]   Deleted: 0057_3990231032091488158298.jpg
+2026-08-26 20:36:55 [INFO ] [deepseek_web] [58/78] 男士休闲夹克户外防泼水冲锋衣运动休闲外套
+2026-08-26 20:36:55 [INFO ] [deepseek_web]   Downloaded: 0058_2480959249704210132423.jpg
+2026-08-26 20:36:55 [INFO ] [deepseek_web]   Prefetching next image (59/78)
+2026-08-26 20:36:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:37:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:37:24 [INFO ] [deepseek_web]   Response: 男士 冲锋衣外套 运动休闲 户外防泼水 常规版型 连帽长袖 主拉链门襟 领口抽绳 胸前双拉链口袋 魔术贴袖口 下摆抽绳 纯色 防风
+2026-08-26 20:37:24 [INFO ] [deepseek_web]   Deleted: 0058_2480959249704210132423.jpg
+2026-08-26 20:37:29 [INFO ] [deepseek_web] [59/78] 男士摇粒绒户外保暖抓绒冲锋衣连帽外套抓绒卫衣
+2026-08-26 20:37:29 [INFO ] [deepseek_web]   Downloaded: 0059_5710937112584798214286.jpg
+2026-08-26 20:37:29 [INFO ] [deepseek_web]   Prefetching next image (60/78)
+2026-08-26 20:37:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:37:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:37:58 [INFO ] [deepseek_web]   Response: 男士 连帽抓绒外套 摇粒绒冲锋衣 户外保暖 常规版型 长袖 主拉链门襟 胸前双斜拉链口袋 袖部拉链口袋 多口袋设计 纯色 休闲运动
+2026-08-26 20:37:58 [INFO ] [deepseek_web]   Deleted: 0059_5710937112584798214286.jpg
+2026-08-26 20:38:03 [INFO ] [deepseek_web] [60/78] 男士冲锋衣三合一休闲夹克（帽子可拆卸）
+2026-08-26 20:38:03 [INFO ] [deepseek_web]   Downloaded: 0060_5310332291763769912273.jpg
+2026-08-26 20:38:03 [INFO ] [deepseek_web]   Prefetching next image (61/78)
+2026-08-26 20:38:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:38:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:38:32 [INFO ] [deepseek_web]   Response: 男士 三合一冲锋衣 休闲夹克 连帽可拆卸 抓绒内胆 常规版型 撞色拼接 主拉链按扣门襟 胸前双拉链口袋 下摆翻盖口袋 魔术贴袖口 防风防水 户外登山徒步旅行
+2026-08-26 20:38:32 [INFO ] [deepseek_web]   Deleted: 0060_5310332291763769912273.jpg
+2026-08-26 20:38:37 [INFO ] [deepseek_web] [61/78] 男士外套秋冬户外休闲软壳冲锋衣
+2026-08-26 20:38:37 [INFO ] [deepseek_web]   Downloaded: 0061_8150810596594338394133.jpg
+2026-08-26 20:38:37 [INFO ] [deepseek_web]   Prefetching next image (62/78)
+2026-08-26 20:38:37 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:38:48 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:39:06 [INFO ] [deepseek_web]   Response: 男士 秋冬 软壳冲锋衣 户外休闲 常规版型 连帽长袖 纯色 主拉链门襟 胸前双拉链口袋 臂部拉链口袋 魔术贴袖口 下摆抽绳 多口袋设计 防风防泼水 登山徒步
+2026-08-26 20:39:06 [INFO ] [deepseek_web]   Deleted: 0061_8150810596594338394133.jpg
+2026-08-26 20:39:11 [INFO ] [deepseek_web] [62/78] 工装外套时尚男士连帽休闲运动夹克山系冲锋衣
+2026-08-26 20:39:11 [INFO ] [deepseek_web]   Downloaded: 0062_7270153395401291510059.jpg
+2026-08-26 20:39:11 [INFO ] [deepseek_web]   Prefetching next image (63/78)
+2026-08-26 20:39:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:39:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:39:41 [INFO ] [deepseek_web]   Response: 男士 山系连帽冲锋衣工装夹克 户外休闲运动 防风防泼水 宽松版型 长袖 主拉链按扣门襟 连帽抽绳 胸前斜拉链口袋 下摆翻盖按扣口袋 左臂魔术贴贴标 D型挂环 松
+2026-08-26 20:39:41 [INFO ] [deepseek_web]   Deleted: 0062_7270153395401291510059.jpg
+2026-08-26 20:39:46 [INFO ] [deepseek_web] [63/78] 男女同款户外登山服情侣款三合一冲锋衣山系防水防风男女休闲抓绒衣外套
+2026-08-26 20:39:46 [INFO ] [deepseek_web]   Downloaded: 0063_0750929179225214421812.jpg
+2026-08-26 20:39:46 [INFO ] [deepseek_web]   Prefetching next image (64/78)
+2026-08-26 20:39:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:39:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:40:16 [INFO ] [deepseek_web]   Response: 男女同款 情侣款 三合一冲锋衣外套 户外登山服 抓绒内胆 防水防风 保暖 常规版型 连帽长袖 主拉链门襟 胸前双拉链口袋 侧缝口袋 魔术贴袖口 户外休闲徒步
+2026-08-26 20:40:16 [INFO ] [deepseek_web]   Deleted: 0063_0750929179225214421812.jpg
+2026-08-26 20:40:21 [INFO ] [deepseek_web] [64/78] 工装连帽冲锋衣男士宽松大码半拉链休闲夹克
+2026-08-26 20:40:21 [INFO ] [deepseek_web]   Downloaded: 0064_8870342325882035219288.jpg
+2026-08-26 20:40:21 [INFO ] [deepseek_web]   Prefetching next image (65/78)
+2026-08-26 20:40:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:40:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:40:50 [INFO ] [deepseek_web]   Response: 男士 宽松大码 连帽冲锋衣夹克 工装休闲 户外露营 防风防泼水 半拉链门襟 连帽抽绳 胸前大翻盖口袋 侧缝插袋 松紧袖口 下摆抽绳
+2026-08-26 20:40:50 [INFO ] [deepseek_web]   Deleted: 0064_8870342325882035219288.jpg
+2026-08-26 20:40:55 [INFO ] [deepseek_web] [65/78] 加大加肥男士美式复古棕色翻领夹克外套男麂皮绒情侣冲锋衣外套
+2026-08-26 20:40:55 [INFO ] [deepseek_web]   Downloaded: 0065_2921124219916513158827.jpg
+2026-08-26 20:40:55 [INFO ] [deepseek_web]   Prefetching next image (66/78)
+2026-08-26 20:40:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:41:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:41:27 [INFO ] [deepseek_web]   Response: 男士 加大加肥 麂皮绒翻领夹克 情侣款 美式复古休闲风 纯色 长袖 主拉链门襟 两侧斜插口袋 罗纹松紧袖口 罗纹松紧下摆
+2026-08-26 20:41:27 [INFO ] [deepseek_web]   Deleted: 0065_2921124219916513158827.jpg
+2026-08-26 20:41:32 [INFO ] [deepseek_web] [66/78] 男士二蛙服长袖户外宽松弹力透气冲锋衣战术服
+2026-08-26 20:41:32 [INFO ] [deepseek_web]   Downloaded: 0066_9400723389163311383971.jpg
+2026-08-26 20:41:32 [INFO ] [deepseek_web]   Prefetching next image (67/78)
+2026-08-26 20:41:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:41:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:42:01 [INFO ] [deepseek_web]   Response: 男士 战术服 二蛙服 冲锋衣 宽松版型 长袖 连帽 半拉链门襟 弹力透气面料 迷彩拼接设计 袖部魔术贴 臂部拉链口袋 罗纹袖口 户外战术休闲
+2026-08-26 20:42:01 [INFO ] [deepseek_web]   Deleted: 0066_9400723389163311383971.jpg
+2026-08-26 20:42:06 [INFO ] [deepseek_web] [67/78] 冲锋衣男山系夹克外套男户外登山服冲锋衣男女潮休闲外套夹
+2026-08-26 20:42:06 [INFO ] [deepseek_web]   Downloaded: 0067_7260401469762618027879.jpg
+2026-08-26 20:42:06 [INFO ] [deepseek_web]   Prefetching next image (68/78)
+2026-08-26 20:42:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:42:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:42:35 [INFO ] [deepseek_web]   Response: 男女同款 情侣款 连帽冲锋衣夹克 户外登山休闲 山系风格 宽松版型 防风防泼水 主拉链门襟 撞色拉链设计 连帽抽绳 胸前拉链口袋 侧缝拉链口袋 魔术贴袖口 下摆
+2026-08-26 20:42:35 [INFO ] [deepseek_web]   Deleted: 0067_7260401469762618027879.jpg
+2026-08-26 20:42:40 [INFO ] [deepseek_web] [68/78] 春秋季新款情侣装休闲宽松工装连帽冲锋衣外套时尚百搭夹克男
+2026-08-26 20:42:40 [INFO ] [deepseek_web]   Downloaded: 0068_4090333077995514718769.jpg
+2026-08-26 20:42:40 [INFO ] [deepseek_web]   Prefetching next image (69/78)
+2026-08-26 20:42:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:42:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:43:10 [INFO ] [deepseek_web]   Response: 男女同款情侣装 春秋季 连帽冲锋衣夹克外套 宽松版型 工装风格 防风防泼水 主拉链按扣门襟 连帽抽绳 胸前翻盖按扣口袋 侧插口袋 魔术贴袖口 下摆抽绳 左臂圆形
+2026-08-26 20:43:10 [INFO ] [deepseek_web]   Deleted: 0068_4090333077995514718769.jpg
+2026-08-26 20:43:15 [INFO ] [deepseek_web] [69/78] 男女同款立领纯色宽松冲锋衣夹克外套
+2026-08-26 20:43:15 [INFO ] [deepseek_web]   Downloaded: 0069_2620746410333116707798.jpg
+2026-08-26 20:43:15 [INFO ] [deepseek_web]   Prefetching next image (70/78)
+2026-08-26 20:43:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:43:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:43:44 [INFO ] [deepseek_web]   Response: 男女同款 宽松 冲锋衣夹克外套 立领长袖 主拉链门襟 纯色 防风防泼水 侧缝插袋 松紧袖口 松紧下摆 户外休闲
+2026-08-26 20:43:44 [INFO ] [deepseek_web]   Deleted: 0069_2620746410333116707798.jpg
+2026-08-26 20:43:49 [INFO ] [deepseek_web] [70/78] 男女同款三合一两件套加绒户外冲锋衣
+2026-08-26 20:43:49 [INFO ] [deepseek_web]   Downloaded: 0070_4600908278633916253028.jpg
+2026-08-26 20:43:49 [INFO ] [deepseek_web]   Prefetching next image (71/78)
+2026-08-26 20:43:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:44:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:44:18 [INFO ] [deepseek_web]   Response: 男女同款 三合一两件套 加绒户外冲锋衣 连帽长袖 主拉链门襟 胸前双拉链口袋 魔术贴袖口 下摆抽绳 黑色方块贴标 宽松版型 防风防水保暖 户外登山休闲通勤
+2026-08-26 20:44:18 [INFO ] [deepseek_web]   Deleted: 0070_4600908278633916253028.jpg
+2026-08-26 20:44:23 [INFO ] [deepseek_web] [71/78] 男士户外冲锋衣
+2026-08-26 20:44:23 [INFO ] [deepseek_web]   Downloaded: 0071_0960418517762619009889.jpg
+2026-08-26 20:44:23 [INFO ] [deepseek_web]   Prefetching next image (72/78)
+2026-08-26 20:44:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:44:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:44:52 [INFO ] [deepseek_web]   Response: 男士户外冲锋衣 常规版型 连帽长袖 肩部撞色拼接 主拉链按扣门襟 领口抽绳 两侧斜插拉链口袋 魔术贴袖口 下摆抽绳 防风防水面料 户外登山徒步休闲
+2026-08-26 20:44:52 [INFO ] [deepseek_web]   Deleted: 0071_0960418517762619009889.jpg
+2026-08-26 20:44:57 [INFO ] [deepseek_web] [72/78] 男士冲锋衣夹克
+2026-08-26 20:44:57 [INFO ] [deepseek_web]   Downloaded: 0072_2250447200532918223100.jpg
+2026-08-26 20:44:57 [INFO ] [deepseek_web]   Prefetching next image (73/78)
+2026-08-26 20:44:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:45:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:45:27 [INFO ] [deepseek_web]   Response: 男士 冲锋衣夹克 常规版型 防风防水面料 连帽抽绳 长袖 主拉链门襟 两侧斜插拉链口袋 魔术贴袖口 纯色 户外徒步露营休闲
+2026-08-26 20:45:27 [INFO ] [deepseek_web]   Deleted: 0072_2250447200532918223100.jpg
+2026-08-26 20:45:32 [INFO ] [deepseek_web] [73/78] 男士户外冲锋衣夹克
+2026-08-26 20:45:32 [INFO ] [deepseek_web]   Downloaded: 0073_2881055466054711540085.jpg
+2026-08-26 20:45:32 [INFO ] [deepseek_web]   Prefetching next image (74/78)
+2026-08-26 20:45:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:45:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:46:01 [INFO ] [deepseek_web]   Response: 男士 常规版型 冲锋衣夹克 户外战术工装风 防刮耐磨面料 防风防水 高立领 长袖 主拉链门襟 前襟多条战术织带插扣 翻盖大口袋 左臂魔术贴贴布区 魔术贴袖口 纯
+2026-08-26 20:46:01 [INFO ] [deepseek_web]   Deleted: 0073_2881055466054711540085.jpg
+2026-08-26 20:46:06 [INFO ] [deepseek_web] [74/78] 男士秋季新款连帽拉链冲锋衣外套
+2026-08-26 20:46:06 [INFO ] [deepseek_web]   Downloaded: 0074_7310446262391512436331.jpg
+2026-08-26 20:46:06 [INFO ] [deepseek_web]   Prefetching next image (75/78)
+2026-08-26 20:46:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:46:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:46:37 [INFO ] [deepseek_web]   Response: 男士 秋季 连帽拉链冲锋衣外套 防风防泼水面料 宽松版型 撞色拉链 主拉链门襟 连帽抽绳 胸前拉链口袋 侧缝斜插口袋 魔术贴袖口 下摆抽绳 多口袋设计 户外登山
+2026-08-26 20:46:37 [INFO ] [deepseek_web]   Deleted: 0074_7310446262391512436331.jpg
+2026-08-26 20:46:42 [INFO ] [deepseek_web] [75/78] 情侣同款冲锋衣休闲纯色夹克外套
+2026-08-26 20:46:42 [INFO ] [deepseek_web]   Downloaded: 0075_7420342024356631297662.jpg
+2026-08-26 20:46:42 [INFO ] [deepseek_web]   Prefetching next image (76/78)
+2026-08-26 20:46:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:46:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:47:11 [INFO ] [deepseek_web]   Response: 男女同款连帽冲锋衣夹克外套 常规版型 防风防水面料 纯色撞色内里 长袖主拉链按扣门襟 领口抽绳 胸前斜拉链口袋 两侧插袋 魔术贴袖口 户外登山徒步休闲
+2026-08-26 20:47:11 [INFO ] [deepseek_web]   Deleted: 0075_7420342024356631297662.jpg
+2026-08-26 20:47:16 [INFO ] [deepseek_web] [76/78] 男童外套春秋儿童冲锋衣中大童春装男孩防风户外童装 6-15岁
+2026-08-26 20:47:16 [INFO ] [deepseek_web]   Downloaded: 0076_8201000055063757171877.jpg
+2026-08-26 20:47:16 [INFO ] [deepseek_web]   Prefetching next image (77/78)
+2026-08-26 20:47:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:47:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:47:45 [INFO ] [deepseek_web]   Response: 儿童中大童男童 春秋防风冲锋衣外套 宽松版型 连帽长袖 主拉链按扣门襟 撞色拼接 两侧拉链口袋 字母印花 松紧袖口 户外运动
+2026-08-26 20:47:45 [INFO ] [deepseek_web]   Deleted: 0076_8201000055063757171877.jpg
+2026-08-26 20:47:50 [INFO ] [deepseek_web] [77/78] 男士冲锋衣纯色防风外套
+2026-08-26 20:47:50 [INFO ] [deepseek_web]   Downloaded: 0077_2650846292173859879546.jpg
+2026-08-26 20:47:50 [INFO ] [deepseek_web]   Prefetching next image (78/78)
+2026-08-26 20:47:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:48:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:48:19 [INFO ] [deepseek_web]   Response: 男士 冲锋衣 纯色 防风外套 常规版型 连帽长袖 主拉链门襟 胸前分割缝线 两侧斜插拉链口袋 魔术贴袖口 防泼水 透气 户外休闲 徒步旅行
+2026-08-26 20:48:19 [INFO ] [deepseek_web]   Deleted: 0077_2650846292173859879546.jpg
+2026-08-26 20:48:24 [INFO ] [deepseek_web] [78/78] 男士防水冲锋衣连帽拉链纯色休闲夹克
+2026-08-26 20:48:24 [INFO ] [deepseek_web]   Downloaded: 0078_5420257499641914516760.jpg
+2026-08-26 20:48:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-08-26 20:48:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-08-26 20:48:54 [INFO ] [deepseek_web]   Response: 男士冲锋衣休闲夹克 防风防水面料 抓绒内衬 常规版型 连帽长袖 主拉链门襟 领口抽绳 胸前双拉链口袋 侧边插袋 魔术贴袖口 纯色 户外徒步露营 保暖
+2026-08-26 20:48:54 [INFO ] [deepseek_web]   Deleted: 0078_5420257499641914516760.jpg
+2026-08-26 20:48:54 [INFO ] [deepseek_web] ==================================================
+2026-08-26 20:48:54 [INFO ] [deepseek_web] Done: 78 success, 0 failed → optimize_title
+2026-08-26 20:48:54 [INFO ] [title_workflow] Optimization complete: 78 titles
+2026-08-26 20:48:58 [INFO ] [title_workflow] Written 78 optimized titles to column H (8)
+2026-08-26 20:48:58 [INFO ] [title_workflow] Done: 8.25v1.xlsx
+2026-08-26 20:48:58 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-08-26 20:48:58 [INFO ] [jenkins] 
+2026-08-26 20:48:58 [INFO ] [jenkins] ==================================================
+2026-08-26 20:48:58 [INFO ] [jenkins] All 1 steps completed successfully
+2026-08-26 20:48:58 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-08-26 20:48:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-08-26 20:48:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-08-26 20:48:58 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

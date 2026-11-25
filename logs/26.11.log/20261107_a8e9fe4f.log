@@ -1,0 +1,609 @@
+2026-11-07 09:26:37 [INFO ] [jenkins] ==================================================
+2026-11-07 09:26:37 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-11-07 09:26:37 [INFO ] [jenkins] ==================================================
+2026-11-07 09:26:37 [INFO ] [jenkins] 
+2026-11-07 09:26:37 [INFO ] [jenkins] [1/1] Title optimization
+2026-11-07 09:26:37 [INFO ] [jenkins] ------------------------------
+2026-11-07 09:26:37 [INFO ] [title_workflow] Source: 11.2v1.xlsx
+2026-11-07 09:26:38 [INFO ] [title_workflow] Extracted 74 titles + 74 links
+2026-11-07 09:26:38 [INFO ] [title_workflow] Written: origin_title (74) + origin_link (74)
+2026-11-07 09:26:38 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-11-07 09:26:38 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-11-07 09:26:39 [INFO ] [deepseek_web] Opening DeepSeek web (74 titles)...
+2026-11-07 09:26:39 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-11-07 09:26:42 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-11-07 09:26:45 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-11-07 09:26:45 [INFO ] [deepseek_web] [1/74] 女士圣诞节半身裙
+2026-11-07 09:26:47 [INFO ] [deepseek_web]   Downloaded: 0001_7240111466982618963112.jpg
+2026-11-07 09:26:47 [INFO ] [deepseek_web]   Prefetching next image (2/74)
+2026-11-07 09:26:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:26:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:27:17 [INFO ] [deepseek_web]   Response: 女士圣诞节半身裙 节日派对蓬蓬裙 高腰A字短裙 女士薄纱短裙 带蝴蝶结半身裙 毛边装饰网纱裙 圣诞节派对裙 节日装扮半身裙 秋冬网纱短裙 立体装饰半身裙 圣诞主
+2026-11-07 09:27:17 [INFO ] [deepseek_web]   Deleted: 0001_7240111466982618963112.jpg
+2026-11-07 09:27:22 [INFO ] [deepseek_web] [2/74] 新款肚皮舞臀巾性感亮片包臀短裙三角巾半身裙
+2026-11-07 09:27:22 [INFO ] [deepseek_web]   Downloaded: 0002_1011014407134617504891.jpg
+2026-11-07 09:27:22 [INFO ] [deepseek_web]   Prefetching next image (3/74)
+2026-11-07 09:27:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:27:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:27:51 [INFO ] [deepseek_web]   Response: 女士肚皮舞臀巾 性感包臀短裙 大亮片半身裙 系带三角巾半身裙 不规则下摆包臀裙 舞台表演短裙 派对装扮裙 狂欢节舞蹈短裙 亮片腰链裙 性感亮片短裙
+2026-11-07 09:27:51 [INFO ] [deepseek_web]   Deleted: 0002_1011014407134617504891.jpg
+2026-11-07 09:27:56 [INFO ] [deepseek_web] [3/74] 舞蹈腰饰 亮片流苏表演半身裙
+2026-11-07 09:27:56 [INFO ] [deepseek_web]   Downloaded: 0003_2741025578555481803898.jpg
+2026-11-07 09:27:56 [INFO ] [deepseek_web]   Prefetching next image (4/74)
+2026-11-07 09:27:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:28:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:28:25 [INFO ] [deepseek_web]   Response: 女士肚皮舞腰饰半身裙 亮片流苏表演短裙 不规则下摆包臀裙 系带舞蹈半身裙 亮片网纱舞台装 派对装扮裙 狂欢节表演服 斜边流苏腰饰裙 女士舞蹈短裙 亮片包臀半身裙
+2026-11-07 09:28:25 [INFO ] [deepseek_web]   Deleted: 0003_2741025578555481803898.jpg
+2026-11-07 09:28:30 [INFO ] [deepseek_web] [4/74] 新款肚皮舞腰链臀巾裙性感亮片演出服半身裙
+2026-11-07 09:28:30 [INFO ] [deepseek_web]   Downloaded: 0004_0921138152161059898726.jpg
+2026-11-07 09:28:30 [INFO ] [deepseek_web]   Prefetching next image (5/74)
+2026-11-07 09:28:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:28:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:28:59 [INFO ] [deepseek_web]   Response: 女士肚皮舞腰链臀巾裙 亮片半身裙 性感包臀短裙 系带舞蹈演出服 不规则下摆短裙 亮片网纱表演裙 派对装扮半身裙 三角巾演出短裙 狂欢节舞台短裙
+2026-11-07 09:28:59 [INFO ] [deepseek_web]   Deleted: 0004_0921138152161059898726.jpg
+2026-11-07 09:29:04 [INFO ] [deepseek_web] [5/74] 女式舞台羽毛半身裙
+2026-11-07 09:29:04 [INFO ] [deepseek_web]   Downloaded: 0005_7161112533637182250373.jpg
+2026-11-07 09:29:04 [INFO ] [deepseek_web]   Prefetching next image (6/74)
+2026-11-07 09:29:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:29:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:29:33 [INFO ] [deepseek_web]   Response: 女士羽毛半身裙 舞台表演短裙 包臀短裙 蓬蓬羽毛短裙 高腰舞蹈演出服 派对狂欢装扮裙 仿羽毛毛绒半身裙 夜店表演短裙 摄影写真裙 女士短款包臀裙
+2026-11-07 09:29:33 [INFO ] [deepseek_web]   Deleted: 0005_7161112533637182250373.jpg
+2026-11-07 09:29:38 [INFO ] [deepseek_web] [6/74] 女士高腰不规则半身裙
+2026-11-07 09:29:38 [INFO ] [deepseek_web]   Downloaded: 0006_5490245324951816575951.jpg
+2026-11-07 09:29:38 [INFO ] [deepseek_web]   Prefetching next image (7/74)
+2026-11-07 09:29:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:29:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:30:07 [INFO ] [deepseek_web]   Response: 女士高腰不规则半身裙 网纱蛋糕裙 多层拼接蓬蓬裙 不规则下摆中长裙 纯色薄纱半身裙 派对舞台表演裙 女士A字网纱裙 节日舞蹈演出半身裙 高腰A字纱裙 多层网纱短
+2026-11-07 09:30:07 [INFO ] [deepseek_web]   Deleted: 0006_5490245324951816575951.jpg
+2026-11-07 09:30:12 [INFO ] [deepseek_web] [7/74] 女士皮革迷你短裙
+2026-11-07 09:30:12 [INFO ] [deepseek_web]   Downloaded: 0007_7450329525782432975470.jpg
+2026-11-07 09:30:12 [INFO ] [deepseek_web]   Prefetching next image (8/74)
+2026-11-07 09:30:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:30:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:30:42 [INFO ] [deepseek_web]   Response: 女士高腰PU皮迷你短裙 仿皮包臀半身裙 侧拉链开叉短裙 鳄鱼纹压花皮裙 秋冬动物纹理短裙 修身一步裙 高腰A字皮短裙 侧开叉半身裙 女士短款皮裙
+2026-11-07 09:30:42 [INFO ] [deepseek_web]   Deleted: 0007_7450329525782432975470.jpg
+2026-11-07 09:30:47 [INFO ] [deepseek_web] [8/74] 拼接蕾丝mini皮裙
+2026-11-07 09:30:47 [INFO ] [deepseek_web]   Downloaded: 0008_8493101900820143343243.jpg
+2026-11-07 09:30:47 [INFO ] [deepseek_web]   Prefetching next image (9/74)
+2026-11-07 09:30:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:30:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:31:16 [INFO ] [deepseek_web]   Response: 女士拼接蕾丝迷你皮裙 高腰PU皮包臀短裙 仿皮蕾丝花边半身裙 修身一步裙 性感派对短裙 秋冬高腰半身裙 纯色蕾丝拼接皮裙 女士短款包臀裙 高腰PU皮短裙
+2026-11-07 09:31:16 [INFO ] [deepseek_web]   Deleted: 0008_8493101900820143343243.jpg
+2026-11-07 09:31:21 [INFO ] [deepseek_web] [9/74] 蛋糕裙mini皮裙
+2026-11-07 09:31:21 [INFO ] [deepseek_web]   Downloaded: 0009_3731027004921570358853.jpg
+2026-11-07 09:31:21 [INFO ] [deepseek_web]   Prefetching next image (10/74)
+2026-11-07 09:31:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:31:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:31:50 [INFO ] [deepseek_web]   Response: 女士高腰蛋糕裙mini皮裙 多层拼接荷叶边半身裙 PU仿皮短裙 系带抽绳A字裙 辣妹派对迷你裙 蓬蓬包臀半身裙 百褶不规则短裙 女士皮短裙 荷叶边蓬蓬裙
+2026-11-07 09:31:50 [INFO ] [deepseek_web]   Deleted: 0009_3731027004921570358853.jpg
+2026-11-07 09:31:55 [INFO ] [deepseek_web] [10/74] PU皮革半身裙
+2026-11-07 09:31:55 [INFO ] [deepseek_web]   Downloaded: 0010_5861032266681614261198.jpg
+2026-11-07 09:31:55 [INFO ] [deepseek_web]   Prefetching next image (11/74)
+2026-11-07 09:31:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:32:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:32:24 [INFO ] [deepseek_web]   Response: 女士PU皮革半身裙 高腰包臀短裙 不对称下摆半身裙 斜向抽褶皮短裙 围裹式仿皮迷你裙 秋冬纯色半身裙 修身包臀皮裙 交叉褶皱短裙 女士派对迷你裙 斜裁设计半身裙
+2026-11-07 09:32:24 [INFO ] [deepseek_web]   Deleted: 0010_5861032266681614261198.jpg
+2026-11-07 09:32:29 [INFO ] [deepseek_web] [11/74] PU皮A字半裙
+2026-11-07 09:32:29 [INFO ] [deepseek_web]   Downloaded: 0011_8711042490702028721077.jpg
+2026-11-07 09:32:29 [INFO ] [deepseek_web]   Prefetching next image (12/74)
+2026-11-07 09:32:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:32:40 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:32:58 [INFO ] [deepseek_web]   Response: 女士PU皮A字半身裙 高腰A字短裙 拼接百褶半身裙 不规则下摆皮短裙 交叉拼接包臀裙 秋冬仿皮迷你裙 纯色伞裙 女士百褶皮裙 高腰蓬蓬短裙 派对A字半裙
+2026-11-07 09:32:58 [INFO ] [deepseek_web]   Deleted: 0011_8711042490702028721077.jpg
+2026-11-07 09:33:03 [INFO ] [deepseek_web] [12/74] 女士亮片mini短裙
+2026-11-07 09:33:03 [INFO ] [deepseek_web]   Downloaded: 0012_6230448101724713861480.jpg
+2026-11-07 09:33:03 [INFO ] [deepseek_web]   Prefetching next image (13/74)
+2026-11-07 09:33:03 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:33:14 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:33:33 [INFO ] [deepseek_web]   Response: 女士亮片mini短裙 高腰包臀短裙 A字半身裙 带蝴蝶结亮片裙 大圆片迷你裙 夜店派对半身裙 舞台表演短裙 狂欢节舞蹈短裙 闪亮亮片裙 修身包臀迷你裙
+2026-11-07 09:33:33 [INFO ] [deepseek_web]   Deleted: 0012_6230448101724713861480.jpg
+2026-11-07 09:33:38 [INFO ] [deepseek_web] [13/74] 女士亮皮纯色短裙漆皮舞台夜店开衩隐形拉链包臀裙
+2026-11-07 09:33:38 [INFO ] [deepseek_web]   Downloaded: 0013_3900429078973310001912.jpg
+2026-11-07 09:33:38 [INFO ] [deepseek_web]   Prefetching next image (14/74)
+2026-11-07 09:33:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:33:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:34:07 [INFO ] [deepseek_web]   Response: 女士亮皮包臀短裙 高腰修身迷你半身裙 漆皮亮面短裙 侧开衩包臀裙 隐形拉链半身裙 纯色反光短裙 舞台表演包臀裙 夜店派对半身裙 舞蹈演出迷你裙
+2026-11-07 09:34:07 [INFO ] [deepseek_web]   Deleted: 0013_3900429078973310001912.jpg
+2026-11-07 09:34:12 [INFO ] [deepseek_web] [14/74] 亮闪闪珠片性感辣妹裙短裙宴会裙包臀裙
+2026-11-07 09:34:12 [INFO ] [deepseek_web]   Downloaded: 0014_1330942395344089799490.jpg
+2026-11-07 09:34:12 [INFO ] [deepseek_web]   Prefetching next image (15/74)
+2026-11-07 09:34:12 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:34:23 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:34:41 [INFO ] [deepseek_web]   Response: 女士亮片包臀短裙 性感修身迷你裙 高腰包臀半身裙 派对宴会短裙 亮闪闪珠片裙 夜店舞台表演裙 纯色全亮片半身裙 辣妹修身短裙 女士短款半身裙
+2026-11-07 09:34:41 [INFO ] [deepseek_web]   Deleted: 0014_1330942395344089799490.jpg
+2026-11-07 09:34:46 [INFO ] [deepseek_web] [15/74] 女式亮片裙弹力紧身闪光夜派对迷你裙
+2026-11-07 09:34:46 [INFO ] [deepseek_web]   Downloaded: 0015_7440911524842431378912.jpg
+2026-11-07 09:34:46 [INFO ] [deepseek_web]   Prefetching next image (16/74)
+2026-11-07 09:34:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:34:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:35:15 [INFO ] [deepseek_web]   Response: 女士亮片迷你裙 闪光包臀短裙 高腰修身半身裙 松紧腰弹力紧身裙 大亮片珠片半身裙 夜店派对迷你半身裙 舞台表演包臀裙 辣妹闪光短裙 女士派对半身裙
+2026-11-07 09:35:15 [INFO ] [deepseek_web]   Deleted: 0015_7440911524842431378912.jpg
+2026-11-07 09:35:20 [INFO ] [deepseek_web] [16/74] 女士不违规半身裙子
+2026-11-07 09:35:20 [INFO ] [deepseek_web]   Downloaded: 0016_4351118167181450512057.jpg
+2026-11-07 09:35:20 [INFO ] [deepseek_web]   Prefetching next image (17/74)
+2026-11-07 09:35:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:35:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:35:49 [INFO ] [deepseek_web]   Response: 女士不规则半身裙 高腰A字纱裙 前短后长燕尾裙 多层荷叶边蓬蓬裙 网纱拼接半身裙 纯色薄纱中长裙 舞台派对演出裙 不规则下摆长裙 舞蹈表演半身裙
+2026-11-07 09:35:49 [INFO ] [deepseek_web]   Deleted: 0016_4351118167181450512057.jpg
+2026-11-07 09:35:54 [INFO ] [deepseek_web] [17/74] 女士亮片狂欢节及膝半身裙
+2026-11-07 09:35:54 [INFO ] [deepseek_web]   Downloaded: 0017_1980520385282410080810.jpg
+2026-11-07 09:35:54 [INFO ] [deepseek_web]   Prefetching next image (18/74)
+2026-11-07 09:35:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:36:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:36:23 [INFO ] [deepseek_web]   Response: 女士亮片狂欢节及膝半身裙 A字中长款半身裙 高腰松紧腰伞裙 纯色全亮片珠片裙 舞台表演派对裙 闪亮亮片中长裙 节日宴会半身裙 女士及膝A字裙 闪片蓬蓬半身裙
+2026-11-07 09:36:23 [INFO ] [deepseek_web]   Deleted: 0017_1980520385282410080810.jpg
+2026-11-07 09:36:28 [INFO ] [deepseek_web] [18/74] 女士纯色亮片半身裙
+2026-11-07 09:36:28 [INFO ] [deepseek_web]   Downloaded: 0018_5650513203083813269182.jpg
+2026-11-07 09:36:28 [INFO ] [deepseek_web]   Prefetching next image (19/74)
+2026-11-07 09:36:28 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:36:39 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:36:57 [INFO ] [deepseek_web]   Response: 女士纯色亮片半身裙 高腰A字中长裙 亮片流苏半身裙 侧开衩包臀长裙 串珠流苏半身裙 全亮片珠片裙 派对晚宴半身裙 舞台表演裙 女士中长款半身裙 夜店派对裙
+2026-11-07 09:36:57 [INFO ] [deepseek_web]   Deleted: 0018_5650513203083813269182.jpg
+2026-11-07 09:37:02 [INFO ] [deepseek_web] [19/74] 女士纯色半身裙
+2026-11-07 09:37:02 [INFO ] [deepseek_web]   Downloaded: 0019_0750401203612810210396.jpg
+2026-11-07 09:37:02 [INFO ] [deepseek_web]   Prefetching next image (20/74)
+2026-11-07 09:37:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:37:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:37:31 [INFO ] [deepseek_web]   Response: 女士纯色半身裙 高腰A字蓬蓬裙 短款迷你裙 多层网纱裙 毛绒边半身裙 圣诞节派对裙 节日狂欢装扮裙 纯色薄纱短裙 芭蕾风Tutu裙 舞台表演半身裙 舞蹈演出短裙
+2026-11-07 09:37:31 [INFO ] [deepseek_web]   Deleted: 0019_0750401203612810210396.jpg
+2026-11-07 09:37:36 [INFO ] [deepseek_web] [20/74] 女士半身裙
+2026-11-07 09:37:36 [INFO ] [deepseek_web]   Downloaded: 0020_9701101228251214146756.jpg
+2026-11-07 09:37:36 [INFO ] [deepseek_web]   Prefetching next image (21/74)
+2026-11-07 09:37:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:37:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:38:05 [INFO ] [deepseek_web]   Response: 女士半身裙 高腰A字蓬蓬裙 双层毛边网纱短裙 纯色薄纱Tutu裙 秋冬季圣诞节派对半身裙 节日狂欢装扮裙 舞台表演短裙 女士舞蹈演出裙 蓬蓬纱裙
+2026-11-07 09:38:05 [INFO ] [deepseek_web]   Deleted: 0020_9701101228251214146756.jpg
+2026-11-07 09:38:10 [INFO ] [deepseek_web] [21/74] 女士彩色毛球半身裙
+2026-11-07 09:38:10 [INFO ] [deepseek_web]   Downloaded: 0021_0391126427607386996387.jpg
+2026-11-07 09:38:10 [INFO ] [deepseek_web]   Prefetching next image (22/74)
+2026-11-07 09:38:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:38:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:38:40 [INFO ] [deepseek_web]   Response: 女士彩色毛球半身裙 高腰A字蓬蓬裙 松紧腰网纱短裙 多层薄纱A字裙 彩色毛球装饰裙 秋冬季派对半身裙 舞台表演纱裙 女士中长款Tutu裙 网纱百褶半身裙 节日狂
+2026-11-07 09:38:40 [INFO ] [deepseek_web]   Deleted: 0021_0391126427607386996387.jpg
+2026-11-07 09:38:45 [INFO ] [deepseek_web] [22/74] 狂欢节炫彩金属包臀裙 时尚优雅女半身裙皮裙
+2026-11-07 09:38:45 [INFO ] [deepseek_web]   Downloaded: 0022_4500322080404344173828.jpg
+2026-11-07 09:38:45 [INFO ] [deepseek_web]   Prefetching next image (23/74)
+2026-11-07 09:38:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:38:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:39:14 [INFO ] [deepseek_web]   Response: 女士金属光泽包臀短裙 高腰修身半身裙 亮面PU皮包臀裙 狂欢节派对短裙 纯色反光迷你皮裙 夜店舞台表演一步裙
+2026-11-07 09:39:14 [INFO ] [deepseek_web]   Deleted: 0022_4500322080404344173828.jpg
+2026-11-07 09:39:19 [INFO ] [deepseek_web] [23/74] 超蓬加长款tutu裙
+2026-11-07 09:39:19 [INFO ] [deepseek_web]   Downloaded: 0023_7571029441611810562872.jpg
+2026-11-07 09:39:19 [INFO ] [deepseek_web]   Prefetching next image (24/74)
+2026-11-07 09:39:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:39:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:39:48 [INFO ] [deepseek_web]   Response: 女士超蓬tutu裙 加长款网纱半身裙 高腰A字蓬蓬裙 多层薄纱中长裙 带灯发光半身裙 纯色百褶纱裙 派对狂欢节装扮裙 舞台表演演出服 芭蕾风舞蹈半身裙
+2026-11-07 09:39:48 [INFO ] [deepseek_web]   Deleted: 0023_7571029441611810562872.jpg
+2026-11-07 09:39:53 [INFO ] [deepseek_web] [24/74] LED 发光网纱短裙
+2026-11-07 09:39:53 [INFO ] [deepseek_web]   Downloaded: 0024_3871114177601420497371.jpg
+2026-11-07 09:39:53 [INFO ] [deepseek_web]   Prefetching next image (25/74)
+2026-11-07 09:39:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:40:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:40:22 [INFO ] [deepseek_web]   Response: 女士LED发光网纱短裙 高腰A字蓬蓬裙 多层薄纱半身裙 带灯发光Tutu裙 夜光派对舞台演出裙 纯色百褶纱裙 节日狂欢舞蹈短裙 夜店派对半身裙 女士发光迷你裙
+2026-11-07 09:40:22 [INFO ] [deepseek_web]   Deleted: 0024_3871114177601420497371.jpg
+2026-11-07 09:40:27 [INFO ] [deepseek_web] [25/74] 女士网纱半身裙
+2026-11-07 09:40:27 [INFO ] [deepseek_web]   Downloaded: 0025_9210352026842814995440.jpg
+2026-11-07 09:40:27 [INFO ] [deepseek_web]   Prefetching next image (26/74)
+2026-11-07 09:40:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:40:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:40:56 [INFO ] [deepseek_web]   Response: 女士网纱半身裙 高腰A字蓬蓬裙 多层百褶纱裙 纯色薄纱Tutu裙 春夏派对短裙 舞台表演舞蹈裙 节日狂欢迷你裙 蓬蓬半身裙
+2026-11-07 09:40:56 [INFO ] [deepseek_web]   Deleted: 0025_9210352026842814995440.jpg
+2026-11-07 09:41:01 [INFO ] [deepseek_web] [26/74] 女士小鹿纹低腰短裙
+2026-11-07 09:41:01 [INFO ] [deepseek_web]   Downloaded: 0026_1040336022872649368397.jpg
+2026-11-07 09:41:01 [INFO ] [deepseek_web]   Prefetching next image (27/74)
+2026-11-07 09:41:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:41:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:41:30 [INFO ] [deepseek_web]   Response: 女士小鹿纹低腰短裙 包臀半身裙 修身迷你裙 侧开叉超短裙 动物斑点印花半身裙 圣诞派对包臀裙 毛绒质感短裙 女士性感辣妹半身裙 夜店舞台表演裙
+2026-11-07 09:41:30 [INFO ] [deepseek_web]   Deleted: 0026_1040336022872649368397.jpg
+2026-11-07 09:41:35 [INFO ] [deepseek_web] [27/74] 女士狂欢节网半身裙2
+2026-11-07 09:41:35 [INFO ] [deepseek_web]   Downloaded: 0027_9740459256773713232412.jpg
+2026-11-07 09:41:35 [INFO ] [deepseek_web]   Prefetching next image (28/74)
+2026-11-07 09:41:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:41:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:42:05 [INFO ] [deepseek_web]   Response: 女士狂欢节网纱半身裙 高腰A字不规则半身裙 前短后长燕尾裙 多层薄纱亮片裙 星空闪亮网纱裙 派对舞台表演半身裙 节日狂欢装扮裙 舞蹈演出服 女士中长款纱裙
+2026-11-07 09:42:05 [INFO ] [deepseek_web]   Deleted: 0027_9740459256773713232412.jpg
+2026-11-07 09:42:10 [INFO ] [deepseek_web] [28/74] 女士欧美跨境街头时尚性感亮片半身包臀裙辣妹夜店拼色高腰显瘦短裙子半身裙
+2026-11-07 09:42:10 [INFO ] [deepseek_web]   Downloaded: 0028_9670321206411388502683.jpg
+2026-11-07 09:42:10 [INFO ] [deepseek_web]   Prefetching next image (29/74)
+2026-11-07 09:42:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:42:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:42:39 [INFO ] [deepseek_web]   Response: 女士亮片半身裙 高腰包臀短裙 修身迷你半身裙 全亮片珠片裙 渐变闪亮短裙 夜店派对包臀裙 舞台表演半身裙 紧身一步裙 舞蹈演出短裙
+2026-11-07 09:42:39 [INFO ] [deepseek_web]   Deleted: 0028_9670321206411388502683.jpg
+2026-11-07 09:42:44 [INFO ] [deepseek_web] [29/74] 女式短款褶皱下摆紧身亮片珠片铅笔迷你裙短裙
+2026-11-07 09:42:44 [INFO ] [deepseek_web]   Downloaded: 0029_9680240167981022591969.jpg
+2026-11-07 09:42:44 [INFO ] [deepseek_web]   Prefetching next image (30/74)
+2026-11-07 09:42:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:42:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:43:13 [INFO ] [deepseek_web]   Response: 女士亮片迷你裙 高腰包臀短裙 褶皱交叉下摆半身裙 全亮片珠片铅笔裙 修身一步裙 夜店派对半身裙 舞台表演短裙 辣妹闪光包臀裙 不规则紧身短裙
+2026-11-07 09:43:13 [INFO ] [deepseek_web]   Deleted: 0029_9680240167981022591969.jpg
+2026-11-07 09:43:18 [INFO ] [deepseek_web] [30/74] 女士多层抽绳半身裙
+2026-11-07 09:43:18 [INFO ] [deepseek_web]   Downloaded: 0030_6940326012782111655437.jpg
+2026-11-07 09:43:18 [INFO ] [deepseek_web]   Prefetching next image (31/74)
+2026-11-07 09:43:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:43:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:43:47 [INFO ] [deepseek_web]   Response: 女士多层抽绳半身裙 高腰A字长裙 前短后长燕尾裙 不规则下摆半身裙 多层荷叶边裙 抽绳褶皱半身裙 纯色垂坠感长裙 春夏度假沙滩裙 派对晚宴礼服裙 仙女不规则半身
+2026-11-07 09:43:47 [INFO ] [deepseek_web]   Deleted: 0030_6940326012782111655437.jpg
+2026-11-07 09:43:52 [INFO ] [deepseek_web] [31/74] 女士不规则蓬蓬半身裙
+2026-11-07 09:43:52 [INFO ] [deepseek_web]   Downloaded: 0031_4141113279111187148073.jpg
+2026-11-07 09:43:52 [INFO ] [deepseek_web]   Prefetching next image (32/74)
+2026-11-07 09:43:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:44:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:44:21 [INFO ] [deepseek_web]   Response: 女士不规则蓬蓬半身裙 高腰A字纱裙 多层薄纱网纱裙 前短后长不规则半身裙 春夏派对舞台表演短裙 狂欢节节日装扮半身裙 星空星星印花网纱裙 闪亮亮片点缀纱裙 舞蹈
+2026-11-07 09:44:21 [INFO ] [deepseek_web]   Deleted: 0031_4141113279111187148073.jpg
+2026-11-07 09:44:26 [INFO ] [deepseek_web] [32/74] 女士狂欢节亮片短裙半身裙
+2026-11-07 09:44:26 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-07 09:44:31 [INFO ] [deepseek_web] [33/74] 女士大码短裙
+2026-11-07 09:44:33 [INFO ] [deepseek_web]   Downloaded: 0033_9661020470346815057129.jpg
+2026-11-07 09:44:33 [INFO ] [deepseek_web]   Prefetching next image (34/74)
+2026-11-07 09:44:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:44:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:45:02 [INFO ] [deepseek_web]   Response: 女士大码短裙 高腰包臀半身裙 紧身修身迷你裙 横向抽褶褶皱短裙 弹力一步裙 纯色打底半身裙 夜店派对包臀裙 无痕内搭短裙 褶皱修身裙 女士迷你半身裙
+2026-11-07 09:45:02 [INFO ] [deepseek_web]   Deleted: 0033_9661020470346815057129.jpg
+2026-11-07 09:45:07 [INFO ] [deepseek_web] [34/74] 女士两层飘带网纱TUTU半身裙狂欢节节日派对舞蹈表演裙芭蕾舞裙蓬蓬裙
+2026-11-07 09:45:07 [INFO ] [deepseek_web]   Downloaded: 0034_3910541244783013679307.jpg
+2026-11-07 09:45:07 [INFO ] [deepseek_web]   Prefetching next image (35/74)
+2026-11-07 09:45:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:45:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:45:37 [INFO ] [deepseek_web]   Response: 女士两层网纱TUTU半身裙 高腰A字蓬蓬裙 短款芭蕾舞裙 多层薄纱百褶短裙 缎带包边纱裙 狂欢节派对装扮裙 舞台舞蹈表演半身裙 女士节日演出裙 Tutu芭蕾短裙
+2026-11-07 09:45:37 [INFO ] [deepseek_web]   Deleted: 0034_3910541244783013679307.jpg
+2026-11-07 09:45:42 [INFO ] [deepseek_web] [35/74] 半身裙
+2026-11-07 09:45:42 [INFO ] [deepseek_web]   Downloaded: 0035_9820206416891914149900.jpg
+2026-11-07 09:45:42 [INFO ] [deepseek_web]   Prefetching next image (36/74)
+2026-11-07 09:45:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:45:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:46:11 [INFO ] [deepseek_web]   Response: 女士网纱TUTU半身裙 高腰A字蓬蓬裙 短款迷你裙 松紧腰纱裙 多层薄纱半身裙 星星图案短裙 亮片网纱裙 芭蕾风舞蹈裙 派对舞台表演半身裙 节日狂欢装扮裙 女士
+2026-11-07 09:46:11 [INFO ] [deepseek_web]   Deleted: 0035_9820206416891914149900.jpg
+2026-11-07 09:46:16 [INFO ] [deepseek_web] [36/74] 女士网纱半身裙蓬蓬裙tutu裙
+2026-11-07 09:46:16 [INFO ] [deepseek_web]   Downloaded: 0036_2630148411601721466115.jpg
+2026-11-07 09:46:16 [INFO ] [deepseek_web]   Prefetching next image (37/74)
+2026-11-07 09:46:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:46:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:46:45 [INFO ] [deepseek_web]   Response: 女士网纱半身裙 高腰A字蓬蓬裙 长款Tutu裙 多层拼接纱裙 缎带包边半身长裙 松紧腰大摆伞裙 纯色薄纱半身裙 春秋派对礼服裙 舞台表演半身裙 芭蕾风舞蹈裙 复
+2026-11-07 09:46:45 [INFO ] [deepseek_web]   Deleted: 0036_2630148411601721466115.jpg
+2026-11-07 09:46:50 [INFO ] [deepseek_web] [37/74] 女士网纱Led蓬蓬裙
+2026-11-07 09:46:50 [INFO ] [deepseek_web]   Downloaded: 0037_4140404521202816327591.jpg
+2026-11-07 09:46:50 [INFO ] [deepseek_web]   Prefetching next image (38/74)
+2026-11-07 09:46:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:47:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:47:19 [INFO ] [deepseek_web]   Response: 女士网纱LED发光蓬蓬裙 高腰A字半身短裙 多层薄纱Tutu裙 蝴蝶结绑带纱裙 派对发光半身裙 带灯舞台表演裙 节日狂欢装扮裙 纯色网纱百褶短裙 舞蹈演出服 女
+2026-11-07 09:47:19 [INFO ] [deepseek_web]   Deleted: 0037_4140404521202816327591.jpg
+2026-11-07 09:47:24 [INFO ] [deepseek_web] [38/74] 狂欢节女士半身裙
+2026-11-07 09:47:24 [INFO ] [deepseek_web]   Downloaded: 0038_6501112060591119131558.jpg
+2026-11-07 09:47:24 [INFO ] [deepseek_web]   Prefetching next image (39/74)
+2026-11-07 09:47:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:47:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:47:53 [INFO ] [deepseek_web]   Response: 女士狂欢节半身裙 高腰A字蓬蓬裙 多层网纱Tutu裙 毛绒边装饰短裙 秋冬季节日派对半身裙 舞台表演舞蹈裙 蝴蝶结薄纱半身裙 纯色派对蓬蓬裙
+2026-11-07 09:47:53 [INFO ] [deepseek_web]   Deleted: 0038_6501112060591119131558.jpg
+2026-11-07 09:47:58 [INFO ] [deepseek_web] [39/74] 圣诞节女士半身裙
+2026-11-07 09:47:58 [INFO ] [deepseek_web]   Downloaded: 0039_9770404328962618279875.jpg
+2026-11-07 09:47:58 [INFO ] [deepseek_web]   Prefetching next image (40/74)
+2026-11-07 09:47:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:48:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:48:27 [INFO ] [deepseek_web]   Response: 女士圣诞节半身裙 网纱半身裙 高腰A字中长裙 蓬蓬裙 松紧腰蝴蝶结半身裙 秋冬季节日派对裙 圣诞节装扮裙 舞台表演半身裙 波点网纱裙 小鹿印花薄纱裙 多层纱裙 
+2026-11-07 09:48:27 [INFO ] [deepseek_web]   Deleted: 0039_9770404328962618279875.jpg
+2026-11-07 09:48:32 [INFO ] [deepseek_web] [40/74] 狂欢节女士半身裙
+2026-11-07 09:48:32 [INFO ] [deepseek_web]   Downloaded: 0040_3951121561591242206821.jpg
+2026-11-07 09:48:32 [INFO ] [deepseek_web]   Prefetching next image (41/74)
+2026-11-07 09:48:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:48:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:49:01 [INFO ] [deepseek_web]   Response: 女士狂欢节半身裙 高腰A字蓬蓬裙 多层拼接网纱裙 不规则下摆半身裙 彩色毛球装饰中长裙 系带蝴蝶结薄纱裙 派对舞台表演半身裙 节日舞蹈演出服 女士百褶伞裙
+2026-11-07 09:49:01 [INFO ] [deepseek_web]   Deleted: 0040_3951121561591242206821.jpg
+2026-11-07 09:49:06 [INFO ] [deepseek_web] [41/74] 狂欢节女士半身裙
+2026-11-07 09:49:06 [INFO ] [deepseek_web]   Downloaded: 0041_0870321429472115583721.jpg
+2026-11-07 09:49:06 [INFO ] [deepseek_web]   Prefetching next image (42/74)
+2026-11-07 09:49:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:49:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:52:33 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-07 09:52:33 [INFO ] [deepseek_web]   Deleted: 0041_0870321429472115583721.jpg
+2026-11-07 09:52:38 [INFO ] [deepseek_web] [42/74] 狂欢节女士半身裙
+2026-11-07 09:52:44 [INFO ] [deepseek_web]   Downloaded: 0042_0480347020032317181748.jpg
+2026-11-07 09:52:44 [INFO ] [deepseek_web]   Prefetching next image (43/74)
+2026-11-07 09:52:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:52:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:56:11 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-07 09:56:11 [INFO ] [deepseek_web]   Deleted: 0042_0480347020032317181748.jpg
+2026-11-07 09:56:16 [INFO ] [deepseek_web] [43/74] 女士美式甜辣裙子金属亮片半身裙个性穿搭迷你半身裙
+2026-11-07 09:56:17 [INFO ] [deepseek_web]   Downloaded: 0043_7251105489581173554154.jpg
+2026-11-07 09:56:17 [INFO ] [deepseek_web]   Prefetching next image (44/74)
+2026-11-07 09:56:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 09:56:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 09:59:43 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-07 09:59:43 [INFO ] [deepseek_web]   Deleted: 0043_7251105489581173554154.jpg
+2026-11-07 09:59:48 [INFO ] [deepseek_web] [44/74] 女士网纱Led蓬蓬裙
+2026-11-07 09:59:51 [INFO ] [deepseek_web]   Downloaded: 0044_4040748167478552269109.jpg
+2026-11-07 09:59:51 [INFO ] [deepseek_web]   Prefetching next image (45/74)
+2026-11-07 09:59:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:00:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:03:17 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-11-07 10:03:17 [INFO ] [deepseek_web]   Deleted: 0044_4040748167478552269109.jpg
+2026-11-07 10:03:22 [INFO ] [deepseek_web] [45/74] 女士时尚印花高腰 A 字长款半身裙
+2026-11-07 10:03:23 [INFO ] [deepseek_web]   Downloaded: 0045_7581047453899414213112.jpg
+2026-11-07 10:03:23 [INFO ] [deepseek_web]   Prefetching next image (46/74)
+2026-11-07 10:03:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:03:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:05:12 [INFO ] [deepseek_web]   Response: 女士狂欢节半身裙 高腰A字蓬蓬裙 不规则下摆网纱裙 系带蝴蝶结半身裙 多层薄纱Tutu裙 LED带灯发光裙 亮片点缀网纱中长裙 节日派对装扮裙 舞台表演舞蹈裙 
+2026-11-07 10:05:12 [INFO ] [deepseek_web]   Deleted: 0045_7581047453899414213112.jpg
+2026-11-07 10:05:17 [INFO ] [deepseek_web] [46/74] 女不规则亮片半身裙子
+2026-11-07 10:05:17 [INFO ] [deepseek_web]   Downloaded: 0046_0300359433933023758150.jpg
+2026-11-07 10:05:17 [INFO ] [deepseek_web]   Prefetching next image (47/74)
+2026-11-07 10:05:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:05:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:05:46 [INFO ] [deepseek_web]   Response: 女士不规则亮片半身裙 高腰A字网纱裙 前短后长不规则半身裙 多层拼接蛋糕裙 星空闪粉Tutu蓬蓬裙 春夏度假派对纱裙 舞台表演半身长裙 仙女风薄纱百褶裙 松紧腰
+2026-11-07 10:05:46 [INFO ] [deepseek_web]   Deleted: 0046_0300359433933023758150.jpg
+2026-11-07 10:05:51 [INFO ] [deepseek_web] [47/74] 女士狂欢节半身裙
+2026-11-07 10:05:51 [INFO ] [deepseek_web]   Downloaded: 0047_5011037234321099440266.jpg
+2026-11-07 10:05:51 [INFO ] [deepseek_web]   Prefetching next image (48/74)
+2026-11-07 10:05:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:06:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:06:20 [INFO ] [deepseek_web]   Response: 女士狂欢节半身裙 高腰A字蓬蓬裙 网纱中长半身裙 松紧腰毛边纱裙 秋冬节日派对裙 多层薄纱Tutu裙 舞台表演舞蹈裙 纯色百褶伞裙 节日狂欢装扮半身裙 女士中长
+2026-11-07 10:06:20 [INFO ] [deepseek_web]   Deleted: 0047_5011037234321099440266.jpg
+2026-11-07 10:06:25 [INFO ] [deepseek_web] [48/74] 女士漆皮松紧腰鱼尾裙
+2026-11-07 10:06:25 [INFO ] [deepseek_web]   Downloaded: 0048_8251122503807256668092.jpg
+2026-11-07 10:06:25 [INFO ] [deepseek_web]   Prefetching next image (49/74)
+2026-11-07 10:06:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:06:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:06:54 [INFO ] [deepseek_web]   Response: 女士漆皮鱼尾半身裙 高腰包臀迷你短裙 松紧腰抽褶半身裙 亮面反光PU皮裙 鱼尾荷叶边短裙 修身一步裙 派对夜店舞台表演裙 女士紧身包臀裙 金属光泽鱼尾裙
+2026-11-07 10:06:54 [INFO ] [deepseek_web]   Deleted: 0048_8251122503807256668092.jpg
+2026-11-07 10:06:59 [INFO ] [deepseek_web] [49/74] 狂欢节情趣内衣女士烫金紧身短裙
+2026-11-07 10:06:59 [INFO ] [deepseek_web]   Downloaded: 0049_9070428597203011353148.jpg
+2026-11-07 10:06:59 [INFO ] [deepseek_web]   Prefetching next image (50/74)
+2026-11-07 10:06:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:07:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:07:28 [INFO ] [deepseek_web]   Response: 女士烫金紧身迷你短裙 金属光泽包臀半身裙 高腰侧开衩超短裙 松紧腰修身一步裙 亮面仿皮派对裙 夜店舞台表演包臀裙 狂欢节装扮短裙 女士性感紧身半身裙 闪亮亮面迷
+2026-11-07 10:07:28 [INFO ] [deepseek_web]   Deleted: 0049_9070428597203011353148.jpg
+2026-11-07 10:07:33 [INFO ] [deepseek_web] [50/74] 闪亮高腰紧身铅笔裙
+2026-11-07 10:07:33 [INFO ] [deepseek_web]   Downloaded: 0050_0601030593485819072764.jpg
+2026-11-07 10:07:33 [INFO ] [deepseek_web]   Prefetching next image (51/74)
+2026-11-07 10:07:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:07:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:08:02 [INFO ] [deepseek_web]   Response: 女士亮片半身裙 高腰铅笔裙 修身包臀长裙 紧身一步裙 侧开叉半身裙 中长款包臀裙 秋冬派对半身裙 晚宴礼服裙 全亮片珠片裙 闪光亮片裙 夜店舞台表演裙 高腰开叉
+2026-11-07 10:08:02 [INFO ] [deepseek_web]   Deleted: 0050_0601030593485819072764.jpg
+2026-11-07 10:08:07 [INFO ] [deepseek_web] [51/74] 修身包臀亮片长裙
+2026-11-07 10:08:07 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-07 10:08:12 [INFO ] [deepseek_web] [52/74] 包臀长裙开叉亮片裙
+2026-11-07 10:08:15 [INFO ] [deepseek_web]   Downloaded: 0052_6990413252683013435717.jpg
+2026-11-07 10:08:15 [INFO ] [deepseek_web]   Prefetching next image (53/74)
+2026-11-07 10:08:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:08:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:08:44 [INFO ] [deepseek_web]   Response: 女士亮片包臀裙 高腰修身半身裙 紧身铅笔裙 侧开叉中长裙 一步裙 秋冬派对半身裙 晚宴礼服裙 全亮片珠片裙 闪光亮片半身裙 夜店舞台表演裙 高腰开叉包臀长裙
+2026-11-07 10:08:44 [INFO ] [deepseek_web]   Deleted: 0052_6990413252683013435717.jpg
+2026-11-07 10:08:49 [INFO ] [deepseek_web] [53/74] 亮片时尚超短裙带防走
+2026-11-07 10:08:49 [INFO ] [deepseek_web]   Downloaded: 0053_1021111317961214352747.jpg
+2026-11-07 10:08:49 [INFO ] [deepseek_web]   Prefetching next image (54/74)
+2026-11-07 10:08:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:09:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:09:18 [INFO ] [deepseek_web]   Response: 女士亮片迷你短裙 高腰包臀半身裙 紧身一步裙 大圆片亮片短裙 防走光内衬短裙 春夏派对半身裙 夜店舞台表演裙 全亮片珠片裙 修身包臀短裙 辣妹闪光迷你裙
+2026-11-07 10:09:18 [INFO ] [deepseek_web]   Deleted: 0053_1021111317961214352747.jpg
+2026-11-07 10:09:23 [INFO ] [deepseek_web] [54/74] 亮片时尚包臀裙
+2026-11-07 10:09:23 [INFO ] [deepseek_web]   Downloaded: 0054_3790442249033318813091.jpg
+2026-11-07 10:09:23 [INFO ] [deepseek_web]   Prefetching next image (55/74)
+2026-11-07 10:09:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:09:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:09:52 [INFO ] [deepseek_web]   Response: 女士亮片包臀短裙 高腰紧身迷你裙 修身一步裙 横向抽褶半身裙 防走光内衬短裙 全亮片珠片裙 闪亮闪光短裙 秋冬派对半身裙 夜店舞台表演裙 辣妹晚宴短裙
+2026-11-07 10:09:52 [INFO ] [deepseek_web]   Deleted: 0054_3790442249033318813091.jpg
+2026-11-07 10:09:57 [INFO ] [deepseek_web] [55/74] 动物纹亮片超短裙女复古性感辣妹修身小众包臀裙狂欢节裙子
+2026-11-07 10:09:57 [INFO ] [deepseek_web]   Downloaded: 0055_0700303336331942434453.jpg
+2026-11-07 10:09:57 [INFO ] [deepseek_web]   Prefetching next image (56/74)
+2026-11-07 10:09:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:10:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:10:26 [INFO ] [deepseek_web]   Response: 女士动物纹亮片半身裙 高腰包臀超短裙 紧身修身迷你裙 斜向抽褶包臀裙 全亮片珠片短裙 派对夜店舞台表演裙 狂欢节辣妹装扮短裙 复古动物纹半身裙 女士性感包臀迷你
+2026-11-07 10:10:26 [INFO ] [deepseek_web]   Deleted: 0055_0700303336331942434453.jpg
+2026-11-07 10:10:31 [INFO ] [deepseek_web] [56/74] 亮片时尚超短裙女
+2026-11-07 10:10:31 [INFO ] [deepseek_web]   Downloaded: 0056_2421116234201218023089.jpg
+2026-11-07 10:10:31 [INFO ] [deepseek_web]   Prefetching next image (57/74)
+2026-11-07 10:10:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:10:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:11:01 [INFO ] [deepseek_web]   Response: 女士亮片超短裙 高腰包臀半身裙 紧身修身迷你裙 方形亮片装饰短裙 全亮片珠片裙 夜店派对舞台表演裙 辣妹闪光一步裙 狂欢节装扮半身裙 女士性感包臀短裙
+2026-11-07 10:11:01 [INFO ] [deepseek_web]   Deleted: 0056_2421116234201218023089.jpg
+2026-11-07 10:11:06 [INFO ] [deepseek_web] [57/74] 女士百褶A字短裙网纱裙半身裙演出裙子蓬蓬纱裙tutu裙公主裙
+2026-11-07 10:11:06 [INFO ] [deepseek_web]   Downloaded: 0057_4390437555021711058770.jpg
+2026-11-07 10:11:06 [INFO ] [deepseek_web]   Prefetching next image (58/74)
+2026-11-07 10:11:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:11:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:11:35 [INFO ] [deepseek_web]   Response: 女士百褶A字短裙 高腰网纱Tutu半身裙 松紧腰蓬蓬纱裙 双层薄纱百褶短裙 春夏派对演出裙 舞台表演舞蹈裙 纯色多层网纱半身裙 芭蕾风公主裙 女士迷你蓬蓬短裙
+2026-11-07 10:11:35 [INFO ] [deepseek_web]   Deleted: 0057_4390437555021711058770.jpg
+2026-11-07 10:11:40 [INFO ] [deepseek_web] [58/74] 女士短裙半身裙舞蹈演出裙亮片细闪啦啦队蓬蓬纱裙公主裙
+2026-11-07 10:11:40 [INFO ] [deepseek_web]   Downloaded: 0058_0300508562581916259204.jpg
+2026-11-07 10:11:40 [INFO ] [deepseek_web]   Prefetching next image (59/74)
+2026-11-07 10:11:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:11:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:12:09 [INFO ] [deepseek_web]   Response: 女士亮面百褶短裙 高腰A字蓬蓬半身裙 松紧腰金属光泽短裙 全息细闪亮片裙 反光亮面舞蹈裙 啦啦队表演短裙 派对狂欢装扮裙 公主风百褶半身裙 舞台演出服
+2026-11-07 10:12:09 [INFO ] [deepseek_web]   Deleted: 0058_0300508562581916259204.jpg
+2026-11-07 10:12:14 [INFO ] [deepseek_web] [59/74] 女士亮片半身裙百褶裙半身裙
+2026-11-07 10:12:14 [INFO ] [deepseek_web]   Downloaded: 0059_8440942465481159387731.jpg
+2026-11-07 10:12:14 [INFO ] [deepseek_web]   Prefetching next image (60/74)
+2026-11-07 10:12:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:12:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:12:43 [INFO ] [deepseek_web]   Response: 女士亮片半身裙 高腰A字百褶短裙 全亮片珠片半身裙 修身微蓬短裙 派对舞台表演裙 夜店狂欢节装扮裙 闪光亮片舞蹈裙 纯色百褶半身裙
+2026-11-07 10:12:43 [INFO ] [deepseek_web]   Deleted: 0059_8440942465481159387731.jpg
+2026-11-07 10:12:48 [INFO ] [deepseek_web] [60/74] 女士松紧腰带狂欢节性感舞台纯色表演服百褶裙
+2026-11-07 10:12:48 [INFO ] [deepseek_web]   Downloaded: 0060_7540519129211720214507.jpg
+2026-11-07 10:12:48 [INFO ] [deepseek_web]   Prefetching next image (61/74)
+2026-11-07 10:12:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:12:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:13:05 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:13:05 [INFO ] [hotwords_fashion]   第 1/5 页: 0 条
+2026-11-07 10:13:05 [INFO ] [hotwords_fashion]   已到最后一页(不足 200 条),提前结束
+2026-11-07 10:13:05 [INFO ] [hotwords_fashion] 第 1 次请求成功: 0 条
+2026-11-07 10:13:05 [INFO ] [hotwords_fashion] 未获取到任何数据。
+2026-11-07 10:13:17 [INFO ] [deepseek_web]   Response: 女士金属光泽半身裙 高腰A字百褶短裙 松紧腰修身半身裙 纯色亮面舞台表演裙 狂欢节派对短裙 夜店舞蹈演出服 蓬蓬百褶半身裙 金属感亮面短裙 女士纯色迷你裙
+2026-11-07 10:13:17 [INFO ] [deepseek_web]   Deleted: 0060_7540519129211720214507.jpg
+2026-11-07 10:13:22 [INFO ] [deepseek_web] [61/74] 女士松紧腰带狂欢节性感舞台纯色表演服百褶裙 半身裙
+2026-11-07 10:13:22 [INFO ] [deepseek_web]   Downloaded: 0061_5640912363842210460542.jpg
+2026-11-07 10:13:22 [INFO ] [deepseek_web]   Prefetching next image (62/74)
+2026-11-07 10:13:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:13:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:13:51 [INFO ] [deepseek_web]   Response: 女士松紧腰带百褶半身裙 金属光泽亮面短裙 高腰A字蓬蓬伞裙 狂欢节派对舞台表演裙 亮面仿皮百褶短裙 舞蹈演出服 纯色A字半身裙
+2026-11-07 10:13:51 [INFO ] [deepseek_web]   Deleted: 0061_5640912363842210460542.jpg
+2026-11-07 10:13:56 [INFO ] [deepseek_web] [62/74] 女士亮片狂欢节及膝半身裙
+2026-11-07 10:13:56 [INFO ] [deepseek_web]   Downloaded: 0062_8551051564701113218531.jpg
+2026-11-07 10:13:56 [INFO ] [deepseek_web]   Prefetching next image (63/74)
+2026-11-07 10:13:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:14:03 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:14:04 [INFO ] [hotwords_fashion]   第 1/5 页: 0 条
+2026-11-07 10:14:04 [INFO ] [hotwords_fashion]   已到最后一页(不足 200 条),提前结束
+2026-11-07 10:14:04 [INFO ] [hotwords_fashion] 第 1 次请求成功: 0 条
+2026-11-07 10:14:04 [INFO ] [hotwords_fashion] 未获取到任何数据。
+2026-11-07 10:14:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:14:26 [INFO ] [deepseek_web]   Response: 女士亮片及膝半身裙 高腰A字百褶裙 松紧腰中长款半身裙 狂欢节派对舞台表演裙 全亮片珠片闪光裙 亮片百褶伞裙 节日舞蹈演出半身裙
+2026-11-07 10:14:26 [INFO ] [deepseek_web]   Deleted: 0062_8551051564701113218531.jpg
+2026-11-07 10:14:31 [INFO ] [deepseek_web] [63/74] 女士亮片半身裙百褶裙半身裙
+2026-11-07 10:14:31 [INFO ] [deepseek_web]   Downloaded: 0063_2120201241639084821025.jpg
+2026-11-07 10:14:31 [INFO ] [deepseek_web]   Prefetching next image (64/74)
+2026-11-07 10:14:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:14:35 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:14:40 [WARNING] [hotwords_fashion] 请求失败(第 1/5 次): ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-11-07 10:14:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:14:43 [INFO ] [hotwords_fashion]   第 1/5 页: 0 条
+2026-11-07 10:14:43 [INFO ] [hotwords_fashion]   已到最后一页(不足 200 条),提前结束
+2026-11-07 10:14:43 [INFO ] [hotwords_fashion] 第 2 次请求成功: 0 条
+2026-11-07 10:14:43 [INFO ] [hotwords_fashion] 未获取到任何数据。
+2026-11-07 10:15:00 [INFO ] [deepseek_web]   Response: 女士亮片半身裙 高腰A字百褶短裙 松紧腰修身伞裙 全亮片珠片闪光裙 派对舞台表演半身裙 夜店狂欢节舞蹈裙 亮片百褶半身裙
+2026-11-07 10:15:00 [INFO ] [deepseek_web]   Deleted: 0063_2120201241639084821025.jpg
+2026-11-07 10:15:05 [INFO ] [deepseek_web] [64/74] 狂欢节女士亮片半身裙
+2026-11-07 10:15:05 [INFO ] [deepseek_web]   Downloaded: 0064_5911215374302882140619.jpg
+2026-11-07 10:15:05 [INFO ] [deepseek_web]   Prefetching next image (65/74)
+2026-11-07 10:15:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:15:11 [INFO ] [hotwords_fashion] === 1/2 采集: country=fr category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:15:12 [INFO ] [hotwords_fashion]   第 1/5 页: 0 条
+2026-11-07 10:15:12 [INFO ] [hotwords_fashion]   已到最后一页(不足 200 条),提前结束
+2026-11-07 10:15:12 [INFO ] [hotwords_fashion] 第 1 次请求成功: 0 条
+2026-11-07 10:15:12 [INFO ] [hotwords_fashion] 未获取到任何数据。
+2026-11-07 10:15:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:15:34 [INFO ] [deepseek_web]   Response: 女士狂欢节亮片半身裙 高腰亮片迷你短裙 松紧腰包臀A字裙 抽褶百褶亮片裙 闪片珠片半身裙 派对夜店舞台表演裙 节日装扮短裙 女士修身半身裙
+2026-11-07 10:15:34 [INFO ] [deepseek_web]   Deleted: 0064_5911215374302882140619.jpg
+2026-11-07 10:15:39 [INFO ] [deepseek_web] [65/74] 女士网纱Led蓬蓬裙
+2026-11-07 10:15:39 [INFO ] [deepseek_web]   Downloaded: 0065_3440429238523519994834.jpg
+2026-11-07 10:15:39 [INFO ] [deepseek_web]   Prefetching next image (66/74)
+2026-11-07 10:15:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:15:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:16:08 [INFO ] [deepseek_web]   Response: 女士网纱LED发光蓬蓬裙 高腰A字半身裙 多层薄纱Tutu裙 蝴蝶结绑带纱裙 派对发光半身裙 带灯舞台表演裙 节日狂欢装扮裙 纯色网纱百褶短裙 舞蹈演出服 女士
+2026-11-07 10:16:08 [INFO ] [deepseek_web]   Deleted: 0065_3440429238523519994834.jpg
+2026-11-07 10:16:13 [INFO ] [deepseek_web] [66/74] 女士亮片网纱半身裙
+2026-11-07 10:16:13 [INFO ] [deepseek_web]   Downloaded: 0066_3000512376423920568160.jpg
+2026-11-07 10:16:13 [INFO ] [deepseek_web]   Prefetching next image (67/74)
+2026-11-07 10:16:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:16:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:16:42 [INFO ] [deepseek_web]   Response: 女士亮片网纱半身裙 高腰A字蓬蓬裙 不规则下摆半身裙 前短后长燕尾裙 多层薄纱星空裙 星星印花纱裙 舞台表演半身裙 派对晚宴裙 舞蹈演出服 节日狂欢装扮裙 百褶
+2026-11-07 10:16:42 [INFO ] [deepseek_web]   Deleted: 0066_3000512376423920568160.jpg
+2026-11-07 10:16:47 [INFO ] [deepseek_web] [67/74] 多层网纱半身裙系罩裙
+2026-11-07 10:16:47 [INFO ] [deepseek_web]   Downloaded: 0067_0910441306223255166515.jpg
+2026-11-07 10:16:47 [INFO ] [deepseek_web]   Prefetching next image (68/74)
+2026-11-07 10:16:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:16:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:17:17 [INFO ] [deepseek_web]   Response: 女士多层网纱半身裙 高腰A字不规则半身裙 前短后长燕尾裙 系带绑带罩裙 亮片星空薄纱裙 狂欢节派对舞台表演裙 哥特风舞蹈演出服 女士拼接网纱长裙
+2026-11-07 10:17:17 [INFO ] [deepseek_web]   Deleted: 0067_0910441306223255166515.jpg
+2026-11-07 10:17:22 [INFO ] [deepseek_web] [68/74] 女士狂欢节tutu裙
+2026-11-07 10:17:22 [INFO ] [deepseek_web]   Downloaded: 0068_0390958433107912561480.jpg
+2026-11-07 10:17:22 [INFO ] [deepseek_web]   Prefetching next image (69/74)
+2026-11-07 10:17:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:17:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:17:51 [INFO ] [deepseek_web]   Response: 女士狂欢节Tutu半身裙 高腰A字蓬蓬裙 多层网纱短裙 系带百褶纱裙 派对舞台表演裙 舞蹈演出半身裙 女士迷你蓬蓬裙 节日派对短裙
+2026-11-07 10:17:51 [INFO ] [deepseek_web]   Deleted: 0068_0390958433107912561480.jpg
+2026-11-07 10:17:56 [INFO ] [deepseek_web] [69/74] 女士麋鹿半身裙
+2026-11-07 10:17:56 [INFO ] [deepseek_web]   Downloaded: 0069_8840753081897972645365.jpg
+2026-11-07 10:17:56 [INFO ] [deepseek_web]   Prefetching next image (70/74)
+2026-11-07 10:17:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:18:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:18:25 [INFO ] [deepseek_web]   Response: 女士麋鹿半身裙 毛绒包臀短裙 高腰修身迷你裙 仿皮草半身裙 动物纹短裙 秋冬保暖包臀裙 圣诞派对装扮裙 狂欢节舞台表演裙 紧身辣妹短裙 松紧腰半身裙
+2026-11-07 10:18:25 [INFO ] [deepseek_web]   Deleted: 0069_8840753081897972645365.jpg
+2026-11-07 10:18:30 [INFO ] [deepseek_web] [70/74] 麋鹿网纱半身裙
+2026-11-07 10:18:30 [INFO ] [deepseek_web]   Downloaded: 0070_0990444199473320332926.jpg
+2026-11-07 10:18:30 [INFO ] [deepseek_web]   Prefetching next image (71/74)
+2026-11-07 10:18:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:18:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:18:59 [INFO ] [deepseek_web]   Response: 女士麋鹿网纱半身裙 高腰A字中长裙 蝴蝶结装饰半身裙 松紧腰薄纱裙 春夏秋季半身裙 动物斑点印花纱裙 复古风A字裙 女士中长款纱裙 飘逸伞裙
+2026-11-07 10:18:59 [INFO ] [deepseek_web]   Deleted: 0070_0990444199473320332926.jpg
+2026-11-07 10:19:04 [INFO ] [deepseek_web] [71/74] 女士亮片半身裙
+2026-11-07 10:19:04 [INFO ] [deepseek_web]   Downloaded: 0071_3341037423311062201435.jpg
+2026-11-07 10:19:04 [INFO ] [deepseek_web]   Prefetching next image (72/74)
+2026-11-07 10:19:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:19:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:19:33 [INFO ] [deepseek_web]   Response: 女士亮片流苏半身裙 高腰修身包臀短裙 珠串流苏装饰迷你裙 夜店派对舞台表演裙 闪亮全亮片珠片短裙 性感紧身一步裙 狂欢节舞蹈演出服 女士包臀半身短裙
+2026-11-07 10:19:33 [INFO ] [deepseek_web]   Deleted: 0071_3341037423311062201435.jpg
+2026-11-07 10:19:38 [INFO ] [deepseek_web] [72/74] YT514女士性感舞台纯色表演服百褶裙
+2026-11-07 10:19:38 [INFO ] [deepseek_web]   Downloaded: 0072_1970352558593455565986.jpg
+2026-11-07 10:19:38 [INFO ] [deepseek_web]   Prefetching next image (73/74)
+2026-11-07 10:19:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:19:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:20:08 [INFO ] [deepseek_web]   Response: 女士金属光泽百褶半身裙 高腰A字短裙 修身蓬蓬裙 宽腰封PU皮短裙 秋冬派对舞台表演裙 狂欢节舞蹈演出服 金属感反光半身裙 纯色亮面百褶裙 高腰伞裙 女士迷你短
+2026-11-07 10:20:08 [INFO ] [deepseek_web]   Deleted: 0072_1970352558593455565986.jpg
+2026-11-07 10:20:13 [INFO ] [deepseek_web] [73/74] 女士狂欢节闪闪亮片印花休闲橡筋双层运动裤裙
+2026-11-07 10:20:13 [INFO ] [deepseek_web]   Downloaded: 0073_0750147161095711511949.jpg
+2026-11-07 10:20:13 [INFO ] [deepseek_web]   Prefetching next image (74/74)
+2026-11-07 10:20:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:20:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:20:42 [INFO ] [deepseek_web]   Response: 女士狂欢节亮片半身裙 高腰A字包臀短裙 松紧腰双层亮片裤裙 侧开叉不规则短裙 派对舞台表演迷你裙 闪亮珠片舞蹈演出服 纯色修身亮片裙
+2026-11-07 10:20:42 [INFO ] [deepseek_web]   Deleted: 0073_0750147161095711511949.jpg
+2026-11-07 10:20:47 [INFO ] [deepseek_web] [74/74] 女士狂欢节印花休闲裤裙半身裙
+2026-11-07 10:20:47 [INFO ] [deepseek_web]   Downloaded: 0074_1340453389354719697234.jpg
+2026-11-07 10:20:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-11-07 10:20:53 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:20:53 [INFO ] [hotwords_fashion]   第 1/5 页: 0 条
+2026-11-07 10:20:53 [INFO ] [hotwords_fashion]   已到最后一页(不足 200 条),提前结束
+2026-11-07 10:20:53 [INFO ] [hotwords_fashion] 第 1 次请求成功: 0 条
+2026-11-07 10:20:53 [INFO ] [hotwords_fashion] 未获取到任何数据。
+2026-11-07 10:20:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-11-07 10:21:16 [INFO ] [deepseek_web]   Response: 女士狂欢节印花裤裙 高腰A字半身裙 防走光内衬裙裤 侧开叉短裙 春夏派对舞台表演裙 休闲度假短裙 亮片印花半身裙 面具唇印图案裙裤 不规则下摆运动短裙 女士防走
+2026-11-07 10:21:16 [INFO ] [deepseek_web]   Deleted: 0074_1340453389354719697234.jpg
+2026-11-07 10:21:16 [INFO ] [deepseek_web] 
+2026-11-07 10:21:16 [INFO ] [deepseek_web] Retry round 1: 6 failed item(s)
+2026-11-07 10:21:21 [INFO ] [deepseek_web]   Retry [32]: 女士狂欢节亮片短裙半身裙
+2026-11-07 10:21:40 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:21:58 [INFO ] [deepseek_web]     OK: 女士亮片短裙 狂欢节亮片半身裙 高腰包臀迷你裙 大亮片包臀短裙 亮片迷你半身裙 珠片修身短裙 派对舞台表演裙 夜店狂欢节短裙 亮片舞蹈演出裙 松紧腰包臀半身裙
+2026-11-07 10:22:01 [INFO ] [deepseek_web]   Retry [41]: 狂欢节女士半身裙
+2026-11-07 10:22:19 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:22:37 [INFO ] [deepseek_web]     OK: 女士狂欢节半身裙 高腰网纱蓬蓬裙 中长款A字纱裙 松紧腰薄纱半身裙 蝴蝶结系带裙 多层拼接Tutu裙 LED带灯发光裙 亮片星空网纱裙 节日派对表演裙 舞台舞蹈
+2026-11-07 10:22:40 [INFO ] [deepseek_web]   Retry [42]: 狂欢节女士半身裙
+2026-11-07 10:22:57 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:23:16 [INFO ] [deepseek_web]     OK: 女士狂欢节半身裙 多层网纱半身裙 高腰A字蓬蓬裙 不规则下摆纱裙 豹纹印花腰头裙 松紧腰中长裙 派对舞台表演裙 节日舞蹈演出服 百褶Tutu裙
+2026-11-07 10:23:19 [INFO ] [deepseek_web]   Retry [43]: 女士美式甜辣裙子金属亮片半身裙个性穿搭迷你半身裙
+2026-11-07 10:23:36 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:23:54 [INFO ] [deepseek_web]     OK: 女士美式甜辣半身裙 金属亮片迷你裙 水钻网格包臀裙 细带设计超短裙 低腰修身半身短裙 夜店派对辣妹裙 舞台表演包臀裙 个性穿搭迷你短裙 性感修身半身裙
+2026-11-07 10:23:57 [INFO ] [deepseek_web]   Retry [44]: 女士网纱Led蓬蓬裙
+2026-11-07 10:24:14 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:24:32 [INFO ] [deepseek_web]     OK: 女士LED发光蓬蓬裙 高腰A字网纱半身裙 多层薄纱Tutu裙 中长款百褶纱裙 缎带蝴蝶结蓬蓬裙 派对舞台表演半身裙 节日狂欢装扮裙 舞蹈演出服 带灯发光半身裙 
+2026-11-07 10:24:35 [INFO ] [deepseek_web]   Retry [51]: 修身包臀亮片长裙
+2026-11-07 10:24:54 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-11-07 10:25:12 [INFO ] [deepseek_web]     OK: 女士亮片半身裙 修身包臀长裙 高腰铅笔裙 紧身一步裙 中长款包臀半身裙 秋冬派对半身裙 晚宴礼服裙 全亮片珠片裙 大圆片亮片半身裙 夜店舞台表演裙 亮片中长裙 
+2026-11-07 10:25:15 [INFO ] [deepseek_web] ==================================================
+2026-11-07 10:25:15 [INFO ] [deepseek_web] Done: 74 success, 0 failed → optimize_title
+2026-11-07 10:25:16 [INFO ] [title_workflow] Optimization complete: 74 titles
+2026-11-07 10:25:19 [INFO ] [title_workflow] Written 74 optimized titles to column H (8)
+2026-11-07 10:25:19 [INFO ] [title_workflow] Done: 11.2v1.xlsx
+2026-11-07 10:25:20 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-11-07 10:25:20 [INFO ] [jenkins] 
+2026-11-07 10:25:20 [INFO ] [jenkins] ==================================================
+2026-11-07 10:25:20 [INFO ] [jenkins] All 1 steps completed successfully
+2026-11-07 10:25:20 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-11-07 10:25:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-11-07 10:25:20 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-11-07 10:25:20 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-11-07 10:31:46 [INFO ] [hotwords_fashion] === 1/2 采集: country=de category=(all) pages=5 (不带搜索词,按涨幅降序) ===
+2026-11-07 10:31:46 [INFO ] [hotwords_fashion]   第 1/5 页: 200 条
+2026-11-07 10:31:49 [INFO ] [hotwords_fashion]   第 2/5 页: 200 条
+2026-11-07 10:31:51 [INFO ] [hotwords_fashion]   第 3/5 页: 200 条
+2026-11-07 10:31:53 [INFO ] [hotwords_fashion]   第 4/5 页: 200 条
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   第 5/5 页: 200 条
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 第 1 次请求成功: 1000 条
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 原始数据已留存(清洗前): D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261107.txt (1000 条)
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] === 2/2 清洗: 品类词根+属性词根(强弱)+黑名单+品牌表 ===
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 词根表: 品类 49 / 强属性 32 / 弱属性 89 / 黑名单 88 / 品牌 200
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] === 报告 ===
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 采集原始: 1000 条 → D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\raw\de\hotwords_20261107.txt
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 清洗命中: 品类 23 / 属性 8(过滤前)
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 清洗丢弃: 969 条(黑名单 126 / 无关 843)
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 最终保留: 31 条(经 --top/--min-fluc/--keep-drop 过滤)
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 结果文件: D:\FW20260325\besskyproject\dealExcel_refactoring\tools\needToCollect\fashion_filter\result\de\hotwords_fashion_20261107.txt
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion] 保留示例(Top10):
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   kindersofa cord	172858	属性:cord
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   call of duty hoodie	155163	品类:hoodie
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   gelber maleranzug	154451	品类:anzug;属性:gelb
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   record of lodoss war	145273	属性:cord
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   harry kane trikot kinder	139895	品类:trikot;属性:kinder
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   thermogummistiefel kinder	136915	属性:thermo
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   regenmantel transparent	134889	品类:mantel
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   maleranzug gelb	133878	品类:anzug;属性:gelb
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   dexter shirt	129913	品类:shirt
+2026-11-07 10:31:55 [INFO ] [hotwords_fashion]   skechers slip on	127982	品类:slip

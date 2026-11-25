@@ -1,0 +1,302 @@
+2026-10-14 10:29:38 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-14 10:29:38 [INFO ] [hotwords] 
+2026-10-14 10:29:38 [INFO ] [hotwords] [  1/2] halloween
+2026-10-14 10:29:38 [INFO ] [hotwords]   fluctuation: 13 words
+2026-10-14 10:29:44 [WARNING] [hotwords]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-14 10:29:46 [INFO ] [hotwords] [  2/2] robe
+2026-10-14 10:29:46 [INFO ] [hotwords]   fluctuation: 1 words
+2026-10-14 10:29:47 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-14 10:29:47 [INFO ] [hotwords]   → total 214 words
+2026-10-14 10:29:49 [INFO ] [hotwords] 
+2026-10-14 10:29:49 [INFO ] [hotwords] Retry round 1: 1 failed keyword(s)
+2026-10-14 10:29:52 [INFO ] [hotwords]   Retrying: halloween
+2026-10-14 10:29:53 [INFO ] [hotwords]     fluctuation: 13 words
+2026-10-14 10:29:54 [INFO ] [hotwords]     new_rank: 200 words
+2026-10-14 10:29:54 [INFO ] [hotwords]     → OK
+2026-10-14 10:29:56 [INFO ] [hotwords] All keywords collected successfully
+2026-10-14 10:29:56 [INFO ] [hotwords] 
+2026-10-14 10:29:56 [INFO ] [hotwords] Combining: 27 fluctuation + 400 new_rank = 427 total
+2026-10-14 10:29:56 [INFO ] [hotwords] 
+2026-10-14 10:29:56 [INFO ] [hotwords] Cleaning...
+2026-10-14 10:29:56 [INFO ] [hotwords]   strip_whitespace: 427 → 427 (0 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords]   normalize_case: 427 → 427 (0 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords]   drop_single_word: 427 → 424 (3 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords]   drop_brands: 424 → 423 (1 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords]   drop_reordered: 423 → 415 (8 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords]   deduplicate: 415 → 399 (16 removed)
+2026-10-14 10:29:56 [INFO ] [hotwords] homme=10     femme=106    other=283  
+2026-10-14 10:29:56 [INFO ] [hotwords] Saved 399 words (raw: 427, errors: 1) → 20261014_102938_fr.txt
+2026-10-14 10:29:56 [INFO ] [hotwords] ==================================================
+2026-10-14 10:29:56 [INFO ] [hotwords] Done.
+2026-10-14 14:26:48 [INFO ] [jenkins] ==================================================
+2026-10-14 14:26:48 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-14 14:26:48 [INFO ] [jenkins] ==================================================
+2026-10-14 14:26:48 [INFO ] [jenkins] 
+2026-10-14 14:26:48 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-14 14:26:48 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:26:48 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-14 14:26:48 [INFO ] [jenkins] 
+2026-10-14 14:26:48 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-14 14:26:48 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:26:48 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-10-14 14:26:48 [INFO ] [preprocess] [product_20261014115512576.xlsx]
+2026-10-14 14:26:48 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-14 14:26:48 [INFO ] [pipeline] [1/1] remove_header
+2026-10-14 14:26:49 [INFO ] [preprocess]   [product_20261014115512576.xlsx] Sheet [Sheet0]: header row removed
+2026-10-14 14:26:49 [INFO ] [pipeline] Pipeline complete
+2026-10-14 14:26:49 [INFO ] [preprocess] Preprocessing complete
+2026-10-14 14:26:49 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-14 14:26:49 [INFO ] [jenkins] 
+2026-10-14 14:26:49 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-14 14:26:49 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:26:50 [INFO ] [main] Log file: 20261014_dd878fb9.log
+2026-10-14 14:26:50 [INFO ] [main] Found 1 file(s):
+2026-10-14 14:26:50 [INFO ] [main]   product_20261014115512576.xlsx
+2026-10-14 14:26:50 [INFO ] [main] Output: 10.9v1_de.xlsx
+2026-10-14 14:26:50 [INFO ] [main] ==================================================
+2026-10-14 14:26:50 [INFO ] [main] Single file, copied
+2026-10-14 14:26:50 [INFO ] [main] Deleted 1 source file(s)
+2026-10-14 14:26:50 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-14 14:26:50 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-14 14:26:50 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-10-14 14:26:50 [INFO ] [pipeline] [2/12] validate
+2026-10-14 14:26:50 [INFO ] [pipeline]   Validated: 135 rows, 27 cols (expect ~32)
+2026-10-14 14:26:50 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-14 14:26:50 [INFO ] [pipeline]   Backed up 944 images
+2026-10-14 14:26:50 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-14 14:26:50 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-14 14:26:50 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-14 14:26:50 [INFO ] [pipeline]   Restored 944 images with adjusted anchors
+2026-10-14 14:26:50 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-14 14:26:50 [INFO ] [pipeline]   Column 2: 135 IDs generated
+2026-10-14 14:26:50 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-14 14:26:50 [INFO ] [pipeline]   Column 3: 135 cells filled
+2026-10-14 14:26:50 [INFO ] [pipeline] [6/12] map_colors
+2026-10-14 14:26:50 [INFO ] [pipeline]   Colors J -> K: 124 cells mapped, 11 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-14 14:26:50 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-14 14:26:50 [INFO ] [pipeline]   Size column L: 124 mapped, 11 cleared (col A has fill), 0 no match (recorded)
+2026-10-14 14:26:50 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-14 14:26:50 [INFO ] [pipeline]   Mirror copy: 809 cells written
+2026-10-14 14:26:50 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-14 14:26:50 [INFO ] [pipeline]   Price source M -> AS: 135 cells copied
+2026-10-14 14:26:50 [INFO ] [pipeline] [10/12] calc_price
+2026-10-14 14:26:50 [INFO ] [pipeline]   Price columns AT-AW: 135 rows calculated
+2026-10-14 14:26:50 [INFO ] [pipeline] [11/12] format_cells
+2026-10-14 14:26:50 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-14 14:26:50 [INFO ] [pipeline]   Formatted 135 rows: h=50, align=left/center
+2026-10-14 14:26:50 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-14 14:26:50 [INFO ] [pipeline] [12/12] finalize
+2026-10-14 14:26:50 [INFO ] [pipeline]   Done: 135 rows x 49 cols (target: 49)
+2026-10-14 14:26:50 [INFO ] [pipeline] Pipeline complete
+2026-10-14 14:26:50 [INFO ] [main] Size: 135 rows x 49 cols
+2026-10-14 14:26:50 [INFO ] [main] ==================================================
+2026-10-14 14:26:50 [INFO ] [main] Done: 10.9v1_de.xlsx
+2026-10-14 14:26:50 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-14 14:26:50 [INFO ] [jenkins] 
+2026-10-14 14:26:50 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-14 14:26:50 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:26:51 [INFO ] [color_size_main] Source: 10.9v1_de.xlsx
+2026-10-14 14:26:51 [INFO ] [color_size_main] Extracted: 124 data lines + 11 separators → check_.txt
+2026-10-14 14:26:51 [INFO ] [color_size_main] Running: process.py
+2026-10-14 14:26:52 [INFO ] [color_size_deal] Groups: 11, lines: 124 (file: 135)
+2026-10-14 14:26:52 [INFO ] [color_size_deal] Prefixes: {'01': 14, '02': 6, '03': 5, '04': 4, '05': 4, '06': 4, '07': 3, '08': 2, '09': 2, '10': 2, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1}
+2026-10-14 14:26:52 [INFO ] [color_size_deal] Done.
+2026-10-14 14:26:52 [INFO ] [color_size_main] Processing write-back: 135 lines
+2026-10-14 14:26:53 [INFO ] [color_size_main] Write-back: 65 written, 70 unchanged → 10.9v1_de.xlsx
+2026-10-14 14:26:53 [INFO ] [color_size_main] Done.
+2026-10-14 14:26:53 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-14 14:26:53 [INFO ] [jenkins] 
+2026-10-14 14:26:53 [INFO ] [jenkins] ==================================================
+2026-10-14 14:26:53 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-14 14:26:53 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-14 14:26:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-14 14:26:53 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-14 14:26:53 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-14 14:27:22 [INFO ] [jenkins] ==================================================
+2026-10-14 14:27:22 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-14 14:27:22 [INFO ] [jenkins] ==================================================
+2026-10-14 14:27:22 [INFO ] [jenkins] 
+2026-10-14 14:27:22 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-14 14:27:22 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:27:22 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-14 14:27:22 [INFO ] [jenkins] 
+2026-10-14 14:27:22 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-14 14:27:22 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:27:23 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-10-14 14:27:23 [INFO ] [preprocess] [product_20261014115512576.xlsx]
+2026-10-14 14:27:23 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-14 14:27:23 [INFO ] [pipeline] [1/1] remove_header
+2026-10-14 14:27:24 [INFO ] [preprocess]   [product_20261014115512576.xlsx] Sheet [Sheet0]: header row removed
+2026-10-14 14:27:24 [INFO ] [pipeline] Pipeline complete
+2026-10-14 14:27:24 [INFO ] [preprocess] Preprocessing complete
+2026-10-14 14:27:24 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-14 14:27:24 [INFO ] [jenkins] 
+2026-10-14 14:27:24 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-14 14:27:24 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:27:24 [INFO ] [main] Log file: 20261014_dd878fb9.log
+2026-10-14 14:27:24 [INFO ] [main] Found 1 file(s):
+2026-10-14 14:27:24 [INFO ] [main]   product_20261014115512576.xlsx
+2026-10-14 14:27:24 [INFO ] [main] Output: 10.9v1_fr.xlsx
+2026-10-14 14:27:24 [INFO ] [main] ==================================================
+2026-10-14 14:27:24 [INFO ] [main] Single file, copied
+2026-10-14 14:27:24 [INFO ] [main] Deleted 1 source file(s)
+2026-10-14 14:27:24 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-14 14:27:24 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-14 14:27:24 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-10-14 14:27:24 [INFO ] [pipeline] [2/12] validate
+2026-10-14 14:27:24 [INFO ] [pipeline]   Validated: 135 rows, 27 cols (expect ~32)
+2026-10-14 14:27:24 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-14 14:27:24 [INFO ] [pipeline]   Backed up 944 images
+2026-10-14 14:27:24 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-14 14:27:24 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-14 14:27:24 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-14 14:27:24 [INFO ] [pipeline]   Restored 944 images with adjusted anchors
+2026-10-14 14:27:24 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-14 14:27:25 [INFO ] [pipeline]   Column 2: 135 IDs generated
+2026-10-14 14:27:25 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-14 14:27:25 [INFO ] [pipeline]   Column 3: 135 cells filled
+2026-10-14 14:27:25 [INFO ] [pipeline] [6/12] map_colors
+2026-10-14 14:27:25 [INFO ] [pipeline]   Colors J -> K: 124 cells mapped, 11 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-14 14:27:25 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-14 14:27:25 [INFO ] [pipeline]   Size column L: 124 mapped, 11 cleared (col A has fill), 0 no match (recorded)
+2026-10-14 14:27:25 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-14 14:27:25 [INFO ] [pipeline]   Mirror copy: 809 cells written
+2026-10-14 14:27:25 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-14 14:27:25 [INFO ] [pipeline]   Price source M -> AS: 135 cells copied
+2026-10-14 14:27:25 [INFO ] [pipeline] [10/12] calc_price
+2026-10-14 14:27:25 [INFO ] [pipeline]   Price columns AT-AW: 135 rows calculated
+2026-10-14 14:27:25 [INFO ] [pipeline] [11/12] format_cells
+2026-10-14 14:27:25 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-14 14:27:25 [INFO ] [pipeline]   Formatted 135 rows: h=50, align=left/center
+2026-10-14 14:27:25 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-14 14:27:25 [INFO ] [pipeline] [12/12] finalize
+2026-10-14 14:27:25 [INFO ] [pipeline]   Done: 135 rows x 49 cols (target: 49)
+2026-10-14 14:27:25 [INFO ] [pipeline] Pipeline complete
+2026-10-14 14:27:25 [INFO ] [main] Size: 135 rows x 49 cols
+2026-10-14 14:27:25 [INFO ] [main] ==================================================
+2026-10-14 14:27:25 [INFO ] [main] Done: 10.9v1_fr.xlsx
+2026-10-14 14:27:25 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-14 14:27:25 [INFO ] [jenkins] 
+2026-10-14 14:27:25 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-14 14:27:25 [INFO ] [jenkins] ------------------------------
+2026-10-14 14:27:25 [INFO ] [color_size_main] Source: 10.9v1_fr.xlsx
+2026-10-14 14:27:25 [INFO ] [color_size_main] Extracted: 124 data lines + 11 separators → check_.txt
+2026-10-14 14:27:25 [INFO ] [color_size_main] Running: process.py
+2026-10-14 14:27:26 [INFO ] [color_size_deal] Groups: 11, lines: 124 (file: 135)
+2026-10-14 14:27:26 [INFO ] [color_size_deal] Prefixes: {'01': 14, '02': 6, '03': 5, '04': 4, '05': 4, '06': 4, '07': 3, '08': 2, '09': 2, '10': 2, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1}
+2026-10-14 14:27:26 [INFO ] [color_size_deal] Done.
+2026-10-14 14:27:26 [INFO ] [color_size_main] Processing write-back: 135 lines
+2026-10-14 14:27:26 [INFO ] [color_size_main] Write-back: 65 written, 70 unchanged → 10.9v1_fr.xlsx
+2026-10-14 14:27:26 [INFO ] [color_size_main] Done.
+2026-10-14 14:27:26 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-14 14:27:26 [INFO ] [jenkins] 
+2026-10-14 14:27:26 [INFO ] [jenkins] ==================================================
+2026-10-14 14:27:26 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-14 14:27:26 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-14 14:27:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-14 14:27:26 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-14 14:27:26 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-14 17:58:36 [INFO ] [jenkins] ==================================================
+2026-10-14 17:58:36 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-14 17:58:36 [INFO ] [jenkins] ==================================================
+2026-10-14 17:58:36 [INFO ] [jenkins] 
+2026-10-14 17:58:36 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-14 17:58:36 [INFO ] [jenkins] ------------------------------
+2026-10-14 17:58:37 [INFO ] [title_workflow] Source: 10.9v1.xlsx
+2026-10-14 17:58:37 [INFO ] [title_workflow] Extracted 11 titles + 11 links
+2026-10-14 17:58:37 [INFO ] [title_workflow] Written: origin_title (11) + origin_link (11)
+2026-10-14 17:58:37 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-14 17:58:37 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-14 17:58:37 [INFO ] [deepseek_web] Opening DeepSeek web (11 titles)...
+2026-10-14 17:58:37 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-14 17:58:43 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-14 17:58:45 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-14 17:58:45 [INFO ] [deepseek_web] [1/11] 滑雪3D暴躁老头面具
+2026-10-14 17:58:48 [INFO ] [deepseek_web]   Downloaded: 0001_3720611117854510061329.jpg
+2026-10-14 17:58:48 [INFO ] [deepseek_web]   Prefetching next image (2/11)
+2026-10-14 17:58:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 17:58:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 17:59:25 [INFO ] [deepseek_web]   Response: 3D立体夸张人脸印花 佩斯利腰果花图案 全包裹式护颈结构 滑雪头套 男士 修身版型 套头式露眼剪裁 保暖防风 滑雪
+2026-10-14 17:59:25 [INFO ] [deepseek_web]   Deleted: 0001_3720611117854510061329.jpg
+2026-10-14 17:59:30 [INFO ] [deepseek_web] [2/11] 男士万圣节面具
+2026-10-14 17:59:30 [INFO ] [deepseek_web]   Downloaded: 0002_5440357489533549208996.jpg
+2026-10-14 17:59:30 [INFO ] [deepseek_web]   Prefetching next image (3/11)
+2026-10-14 17:59:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 17:59:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:00:03 [INFO ] [deepseek_web]   Response: 火焰恶魔图案 3D立体鬼脸 全包护颈设计 露齿咧嘴造型 全脸头套 男士 常规版型 套头式结构 皱纹纹理 万圣节派对
+2026-10-14 18:00:03 [INFO ] [deepseek_web]   Deleted: 0002_5440357489533549208996.jpg
+2026-10-14 18:00:08 [INFO ] [deepseek_web] [3/11] 冬季搞怪滑雪面罩
+2026-10-14 18:00:08 [INFO ] [deepseek_web]   Downloaded: 0003_5251025317781210903523.jpg
+2026-10-14 18:00:08 [INFO ] [deepseek_web]   Prefetching next image (4/11)
+2026-10-14 18:00:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:00:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:00:44 [INFO ] [deepseek_web]   Response: 3D立体人脸印花 佩斯利图案拼接 露眼孔剪裁 夸张搞怪表情 立体嘴部造型 滑雪头套 男士 常规版型 全包套头结构 护颈结构 冬季户外适用
+2026-10-14 18:00:44 [INFO ] [deepseek_web]   Deleted: 0003_5251025317781210903523.jpg
+2026-10-14 18:00:49 [INFO ] [deepseek_web] [4/11] 搞怪网纱面具面罩头套
+2026-10-14 18:00:49 [INFO ] [deepseek_web]   Downloaded: 0004_3091018362145489606699.jpg
+2026-10-14 18:00:49 [INFO ] [deepseek_web]   Prefetching next image (5/11)
+2026-10-14 18:00:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:01:00 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:01:22 [INFO ] [deepseek_web]   Response: 万圣节主题印花 3D立体图案 网纱镂空拼接 露眼孔剪裁 全包裹套头结构 面罩头套 中性 常规版型 护颈结构
+2026-10-14 18:01:22 [INFO ] [deepseek_web]   Deleted: 0004_3091018362145489606699.jpg
+2026-10-14 18:01:27 [INFO ] [deepseek_web] [5/11] 万圣钩织毛线章鱼帽
+2026-10-14 18:01:27 [INFO ] [deepseek_web]   Downloaded: 0005_2270441302845117016152.jpg
+2026-10-14 18:01:27 [INFO ] [deepseek_web]   Prefetching next image (6/11)
+2026-10-14 18:01:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:01:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:01:56 [INFO ] [deepseek_web]   Response: 钩编毛线结构 立体章鱼触手造型 露眼孔剪裁 全包裹护颈结构 万圣节角色扮演 钩编毛线头套 中性 常规版型 套头式结构 派对装扮
+2026-10-14 18:01:56 [INFO ] [deepseek_web]   Deleted: 0005_2270441302845117016152.jpg
+2026-10-14 18:02:01 [INFO ] [deepseek_web] [6/11] 趣味搞怪骑行滑雪面罩
+2026-10-14 18:02:01 [INFO ] [deepseek_web]   Downloaded: 0006_2090733349834613158668.jpg
+2026-10-14 18:02:01 [INFO ] [deepseek_web]   Prefetching next image (7/11)
+2026-10-14 18:02:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:02:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:02:35 [INFO ] [deepseek_web]   Response: 3D立体人脸印花 夸张张嘴表情 全包裹护颈结构 滑雪头套 中性 常规版型 套头式结构 露眼孔剪裁 中心拼接缝线 骑行滑雪
+2026-10-14 18:02:35 [INFO ] [deepseek_web]   Deleted: 0006_2090733349834613158668.jpg
+2026-10-14 18:02:40 [INFO ] [deepseek_web] [7/11] 户外趣味滑雪面具
+2026-10-14 18:02:40 [INFO ] [deepseek_web]   Downloaded: 0007_2510313433412319277342.jpg
+2026-10-14 18:02:40 [INFO ] [deepseek_web]   Prefetching next image (8/11)
+2026-10-14 18:02:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:02:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:03:10 [INFO ] [deepseek_web]   Response: 立体大猩猩面部造型 露齿嘴部造型 横向眼罩式眼孔剪裁 全包裹护颈结构 毛绒动物滑雪面罩头套 中性 常规版型 套头式结构
+2026-10-14 18:03:10 [INFO ] [deepseek_web]   Deleted: 0007_2510313433412319277342.jpg
+2026-10-14 18:03:15 [INFO ] [deepseek_web] [8/11] 冬季搞怪骑行滑雪面罩
+2026-10-14 18:03:15 [INFO ] [deepseek_web]   Downloaded: 0008_8650335272943110027147.jpg
+2026-10-14 18:03:15 [INFO ] [deepseek_web]   Prefetching next image (9/11)
+2026-10-14 18:03:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:03:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:03:48 [INFO ] [deepseek_web]   Response: 趣味主题图案印花 3D立体嘴部造型 露眼孔剪裁 滑雪面罩头套 中性 常规版型 全包裹护颈结构 套头式结构 冬季骑行滑雪适用
+2026-10-14 18:03:48 [INFO ] [deepseek_web]   Deleted: 0008_8650335272943110027147.jpg
+2026-10-14 18:03:53 [INFO ] [deepseek_web] [9/11] 搞怪滑雪面罩
+2026-10-14 18:03:53 [INFO ] [deepseek_web]   Downloaded: 0009_2320450335704851888941.jpg
+2026-10-14 18:03:53 [INFO ] [deepseek_web]   Prefetching next image (10/11)
+2026-10-14 18:03:53 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:04:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:04:22 [INFO ] [deepseek_web]   Response: 万圣节主题印花 蜘蛛网南瓜图案 加厚多层护颈 全包裹式滑雪面罩 中性 常规版型 套头式结构 露眼孔剪裁
+2026-10-14 18:04:22 [INFO ] [deepseek_web]   Deleted: 0009_2320450335704851888941.jpg
+2026-10-14 18:04:27 [INFO ] [deepseek_web] [10/11] 搞怪滑雪面罩
+2026-10-14 18:04:27 [INFO ] [deepseek_web]   Downloaded: 0010_9000309464032737464951.jpg
+2026-10-14 18:04:27 [INFO ] [deepseek_web]   Prefetching next image (11/11)
+2026-10-14 18:04:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:04:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:04:56 [INFO ] [deepseek_web]   Response: 3D立体人脸印花 夸张露齿大笑表情 写实皱纹纹理 全包裹护颈结构 滑雪面罩头套 男士 常规版型 套头式结构 露眼孔剪裁
+2026-10-14 18:04:56 [INFO ] [deepseek_web]   Deleted: 0010_9000309464032737464951.jpg
+2026-10-14 18:05:01 [INFO ] [deepseek_web] [11/11] 动物印花搞怪面罩
+2026-10-14 18:05:01 [INFO ] [deepseek_web]   Downloaded: 0011_3531112443151615771314.jpg
+2026-10-14 18:05:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-14 18:05:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-14 18:05:31 [INFO ] [deepseek_web]   Response: 3D立体动物脸部印花 逼真动物毛皮纹理 搞怪动物表情图案 全包裹护颈结构 连帽面罩头套 中性 常规版型 套头式结构 露眼孔剪裁
+2026-10-14 18:05:31 [INFO ] [deepseek_web]   Deleted: 0011_3531112443151615771314.jpg
+2026-10-14 18:05:31 [INFO ] [deepseek_web] ==================================================
+2026-10-14 18:05:31 [INFO ] [deepseek_web] Done: 11 success, 0 failed → optimize_title
+2026-10-14 18:05:32 [INFO ] [title_workflow] Optimization complete: 11 titles
+2026-10-14 18:05:32 [INFO ] [title_workflow] Written 11 optimized titles to column H (8)
+2026-10-14 18:05:32 [INFO ] [title_workflow] Done: 10.9v1.xlsx
+2026-10-14 18:05:32 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-14 18:05:32 [INFO ] [jenkins] 
+2026-10-14 18:05:32 [INFO ] [jenkins] ==================================================
+2026-10-14 18:05:32 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-14 18:05:32 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-14 18:05:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-14 18:05:32 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-14 18:05:32 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

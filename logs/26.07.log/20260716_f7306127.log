@@ -1,0 +1,331 @@
+2026-07-16 14:19:54 [INFO ] [main] Log file: 20260716_f7306127.log
+2026-07-16 14:19:54 [INFO ] [main] Found 4 file(s):
+2026-07-16 14:19:54 [INFO ] [main]   pifeng.xlsx
+2026-07-16 14:19:54 [INFO ] [main]   product_20260716114931666.xlsx
+2026-07-16 14:19:54 [INFO ] [main]   product_20260716115031336.xlsx
+2026-07-16 14:19:54 [INFO ] [main]   product_20260716115227727.xlsx
+2026-07-16 14:19:54 [INFO ] [main] Processing...
+2026-07-16 14:19:54 [INFO ] [main] ==================================================
+2026-07-16 14:20:06 [INFO ] [main] Merged 4 files, 4996 images total
+2026-07-16 14:20:08 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-16 14:20:08 [INFO ] [pipeline] [1/13] delete_header
+2026-07-16 14:20:08 [INFO ] [pipeline]   Sheet [Sheet0]: row 1 has fill, skip
+2026-07-16 14:20:08 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-16 14:20:08 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-16 14:20:08 [INFO ] [pipeline]   Sheet [Sheet0_4]: header row removed, images adjusted
+2026-07-16 14:20:08 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-16 14:20:16 [INFO ] [pipeline]   Sheet [Sheet0_2]: 239 rows, 415 images
+2026-07-16 14:20:16 [INFO ] [pipeline]   Sheet [Sheet0_3]: 790 rows, 1780 images
+2026-07-16 14:20:16 [INFO ] [pipeline]   Sheet [Sheet0_4]: 971 rows, 2152 images
+2026-07-16 14:20:16 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2000 data rows, 4347 images
+2026-07-16 14:20:16 [INFO ] [pipeline] [3/13] validate
+2026-07-16 14:20:16 [INFO ] [pipeline]   Validated: 2422 rows, 48 cols (expect ~32)
+2026-07-16 14:20:16 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-16 14:20:16 [INFO ] [pipeline]   Backed up 4996 images
+2026-07-16 14:20:16 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-16 14:20:16 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-16 14:20:16 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-16 14:20:16 [INFO ] [pipeline]   Restored 4996 images with adjusted anchors
+2026-07-16 14:20:16 [INFO ] [pipeline] [5/13] fill_id
+2026-07-16 14:20:16 [INFO ] [pipeline]   Column 2: 2422 random IDs (date: bfzgaz)
+2026-07-16 14:20:16 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-16 14:20:16 [INFO ] [pipeline]   Column 3: 2422 cells filled
+2026-07-16 14:20:16 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-16 14:20:16 [INFO ] [pipeline]   Column 10: 1898 cells mapped, 89 rows skipped (col A has fill)
+2026-07-16 14:20:16 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-16 14:20:16 [INFO ] [pipeline]   Column 11: 1916 mapped, 89 cleared (col A has fill), 416 no match
+2026-07-16 14:20:16 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-16 14:20:17 [INFO ] [pipeline]   Mirror copy: 13686 cells written
+2026-07-16 14:20:17 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-16 14:20:17 [INFO ] [pipeline]   Column 44: 2000 cells copied from col 12
+2026-07-16 14:20:17 [INFO ] [pipeline] [11/13] calc_price
+2026-07-16 14:20:17 [INFO ] [pipeline]   Columns 45-48: 2000 rows calculated
+2026-07-16 14:20:17 [INFO ] [pipeline] [12/13] format_cells
+2026-07-16 14:20:30 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-16 14:20:30 [INFO ] [pipeline]   Formatted 2422 rows: h=50, align=left/center
+2026-07-16 14:20:30 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-16 14:20:30 [INFO ] [pipeline] [13/13] finalize
+2026-07-16 14:20:30 [INFO ] [pipeline]   Done: 2422 rows x 64 cols (target: 48)
+2026-07-16 14:20:30 [INFO ] [pipeline] Pipeline complete
+2026-07-16 14:20:33 [INFO ] [main] Output: 54c9dbd8d4ac455698b73c35e40fda51.xlsx
+2026-07-16 14:20:33 [INFO ] [main] Size: 2422 rows x 64 cols
+2026-07-16 14:20:33 [INFO ] [main] ==================================================
+2026-07-16 14:20:33 [INFO ] [main] Done. Output: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs
+2026-07-16 14:23:43 [INFO ] [main] Log file: 20260716_f7306127.log
+2026-07-16 14:23:43 [INFO ] [main] Found 4 file(s):
+2026-07-16 14:23:43 [INFO ] [main]   product_20260713060129396.xlsx
+2026-07-16 14:23:43 [INFO ] [main]   product_20260716114931666.xlsx
+2026-07-16 14:23:43 [INFO ] [main]   product_20260716115031336.xlsx
+2026-07-16 14:23:43 [INFO ] [main]   product_20260716115227727.xlsx
+2026-07-16 14:23:43 [INFO ] [main] Processing...
+2026-07-16 14:23:43 [INFO ] [main] ==================================================
+2026-07-16 14:23:53 [INFO ] [main] Merged 4 files, 4996 images total
+2026-07-16 14:23:54 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-16 14:23:54 [INFO ] [pipeline] [1/13] delete_header
+2026-07-16 14:23:54 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-16 14:23:54 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-16 14:23:54 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-16 14:23:54 [INFO ] [pipeline]   Sheet [Sheet0_4]: header row removed, images adjusted
+2026-07-16 14:23:54 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-16 14:24:02 [INFO ] [pipeline]   Sheet [Sheet0_2]: 239 rows, 415 images
+2026-07-16 14:24:02 [INFO ] [pipeline]   Sheet [Sheet0_3]: 790 rows, 1780 images
+2026-07-16 14:24:02 [INFO ] [pipeline]   Sheet [Sheet0_4]: 971 rows, 2152 images
+2026-07-16 14:24:02 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2000 data rows, 4347 images
+2026-07-16 14:24:02 [INFO ] [pipeline] [3/13] validate
+2026-07-16 14:24:02 [INFO ] [pipeline]   Validated: 2421 rows, 27 cols (expect ~32)
+2026-07-16 14:24:02 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-16 14:24:03 [INFO ] [pipeline]   Backed up 4996 images
+2026-07-16 14:24:03 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-16 14:24:03 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-16 14:24:03 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-16 14:24:03 [INFO ] [pipeline]   Restored 4996 images with adjusted anchors
+2026-07-16 14:24:03 [INFO ] [pipeline] [5/13] fill_id
+2026-07-16 14:24:03 [INFO ] [pipeline]   Column 2: 2421 random IDs (date: bfzgac)
+2026-07-16 14:24:03 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-16 14:24:03 [INFO ] [pipeline]   Column 3: 2421 cells filled
+2026-07-16 14:24:03 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-16 14:24:03 [INFO ] [pipeline]   Column 10: 2314 cells mapped, 89 rows skipped (col A has fill)
+2026-07-16 14:24:03 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-16 14:24:03 [INFO ] [pipeline]   Column 11: 2332 mapped, 89 cleared (col A has fill), 0 no match
+2026-07-16 14:24:03 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-16 14:24:03 [INFO ] [pipeline]   Mirror copy: 12849 cells written
+2026-07-16 14:24:03 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-16 14:24:03 [INFO ] [pipeline]   Column 44: 2421 cells copied from col 12
+2026-07-16 14:24:03 [INFO ] [pipeline] [11/13] calc_price
+2026-07-16 14:24:03 [INFO ] [pipeline]   Columns 45-48: 2421 rows calculated
+2026-07-16 14:24:03 [INFO ] [pipeline] [12/13] format_cells
+2026-07-16 14:24:13 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-16 14:24:13 [INFO ] [pipeline]   Formatted 2421 rows: h=50, align=left/center
+2026-07-16 14:24:13 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-16 14:24:13 [INFO ] [pipeline] [13/13] finalize
+2026-07-16 14:24:13 [INFO ] [pipeline]   Done: 2421 rows x 48 cols (target: 48)
+2026-07-16 14:24:13 [INFO ] [pipeline] Pipeline complete
+2026-07-16 14:24:15 [INFO ] [main] Output: e24f0f676d3e41bf9c5dc66952c453bd.xlsx
+2026-07-16 14:24:15 [INFO ] [main] Size: 2421 rows x 48 cols
+2026-07-16 14:24:15 [INFO ] [main] ==================================================
+2026-07-16 14:24:15 [INFO ] [main] Done. Output: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs
+2026-07-16 17:27:38 [INFO ] [title_optimize] Processing 7 title(s)...
+2026-07-16 17:27:38 [INFO ] [title_optimize] [1/7] com/afsd/8272/2560419266841863525776.jpg
+2026-07-16 17:27:43 [INFO ] [title_optimize]   Downloaded: 2560419266841863525776.jpg
+2026-07-16 17:28:05 [INFO ] [title_optimize]   Optimized: 春秋欧美男士双排扣翻领肩章短款修身帅气英伦风休闲时尚外套
+2026-07-16 17:28:05 [INFO ] [title_optimize]   Deleted: 2560419266841863525776.jpg
+2026-07-16 17:28:05 [INFO ] [title_optimize] [2/7] com/afsd/7683/9681110046543102876912.jpg
+2026-07-16 17:28:10 [ERROR] [title_optimize]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-07-16 17:28:10 [INFO ] [title_optimize] [3/7] com/afsd/7683/9731105101971112878021.jpg
+2026-07-16 17:28:17 [INFO ] [title_optimize]   Downloaded: 9731105101971112878021.jpg
+2026-07-16 17:28:20 [ERROR] [title_optimize]   FAILED: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}
+2026-07-16 17:28:20 [INFO ] [title_optimize]   Deleted: 9731105101971112878021.jpg
+2026-07-16 17:28:20 [INFO ] [title_optimize] [4/7] com/afsd/7683/6981108550521115617316.jpg
+2026-07-16 17:28:23 [INFO ] [title_optimize]   Downloaded: 6981108550521115617316.jpg
+2026-07-16 17:28:27 [ERROR] [title_optimize]   FAILED: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}
+2026-07-16 17:28:27 [INFO ] [title_optimize]   Deleted: 6981108550521115617316.jpg
+2026-07-16 17:28:27 [INFO ] [title_optimize] [5/7] com/afsd/8285/9220613500353313577017.jpg
+2026-07-16 17:28:31 [INFO ] [title_optimize]   Downloaded: 9220613500353313577017.jpg
+2026-07-16 17:28:33 [ERROR] [title_optimize]   FAILED: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}
+2026-07-16 17:28:33 [INFO ] [title_optimize]   Deleted: 9220613500353313577017.jpg
+2026-07-16 17:28:33 [INFO ] [title_optimize] [6/7] com/afsd/8285/9290626493283399500052.jpg
+2026-07-16 17:28:40 [INFO ] [title_optimize]   Downloaded: 9290626493283399500052.jpg
+2026-07-16 17:28:45 [ERROR] [title_optimize]   FAILED: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}
+2026-07-16 17:28:45 [INFO ] [title_optimize]   Deleted: 9290626493283399500052.jpg
+2026-07-16 17:28:45 [INFO ] [title_optimize] [7/7] com/afsd/8294/0390639222283216287849.jpg
+2026-07-16 17:28:47 [INFO ] [title_optimize]   Downloaded: 0390639222283216287849.jpg
+2026-07-16 17:28:51 [ERROR] [title_optimize]   FAILED: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your project has been denied access. Please contact support.', 'status': 'PERMISSION_DENIED'}}
+2026-07-16 17:28:51 [INFO ] [title_optimize]   Deleted: 0390639222283216287849.jpg
+2026-07-16 17:28:51 [INFO ] [title_optimize] ==================================================
+2026-07-16 17:28:51 [INFO ] [title_optimize] Done: 1 success, 6 errors → optimize_title
+2026-07-16 17:43:51 [INFO ] [main] Log file: 20260716_f7306127.log
+2026-07-16 17:43:51 [INFO ] [main] Found 4 file(s):
+2026-07-16 17:43:51 [INFO ] [main]   product_20260716115553265.xlsx
+2026-07-16 17:43:51 [INFO ] [main]   product_20260716115653061.xlsx
+2026-07-16 17:43:51 [INFO ] [main]   product_20260716115712741.xlsx
+2026-07-16 17:43:51 [INFO ] [main]   product_20260716115906228.xlsx
+2026-07-16 17:43:51 [INFO ] [main] Processing...
+2026-07-16 17:43:51 [INFO ] [main] ==================================================
+2026-07-16 17:44:02 [INFO ] [main] Merged 4 files, 5789 images total
+2026-07-16 17:44:03 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-16 17:44:03 [INFO ] [pipeline] [1/13] delete_header
+2026-07-16 17:44:03 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-16 17:44:03 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-16 17:44:03 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-16 17:44:03 [INFO ] [pipeline]   Sheet [Sheet0_4]: header row removed, images adjusted
+2026-07-16 17:44:03 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-16 17:44:11 [INFO ] [pipeline]   Sheet [Sheet0_2]: 616 rows, 1397 images
+2026-07-16 17:44:11 [INFO ] [pipeline]   Sheet [Sheet0_3]: 403 rows, 958 images
+2026-07-16 17:44:11 [INFO ] [pipeline]   Sheet [Sheet0_4]: 858 rows, 1761 images
+2026-07-16 17:44:11 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1877 data rows, 4116 images
+2026-07-16 17:44:11 [INFO ] [pipeline] [3/13] validate
+2026-07-16 17:44:11 [INFO ] [pipeline]   Validated: 2717 rows, 27 cols (expect ~32)
+2026-07-16 17:44:11 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-16 17:44:11 [INFO ] [pipeline]   Backed up 5789 images
+2026-07-16 17:44:11 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-16 17:44:11 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-16 17:44:11 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-16 17:44:11 [INFO ] [pipeline]   Restored 5789 images with adjusted anchors
+2026-07-16 17:44:11 [INFO ] [pipeline] [5/13] fill_id
+2026-07-16 17:44:11 [INFO ] [pipeline]   Column 2: 2717 random IDs (date: bfzgac)
+2026-07-16 17:44:11 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-16 17:44:11 [INFO ] [pipeline]   Column 3: 2717 cells filled
+2026-07-16 17:44:11 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-16 17:44:11 [INFO ] [pipeline]   Column 10: 2582 cells mapped, 95 rows skipped (col A has fill)
+2026-07-16 17:44:11 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-16 17:44:11 [INFO ] [pipeline]   Column 11: 2583 mapped, 95 cleared (col A has fill), 39 no match
+2026-07-16 17:44:11 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-16 17:44:12 [INFO ] [pipeline]   Mirror copy: 13368 cells written
+2026-07-16 17:44:12 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-16 17:44:12 [INFO ] [pipeline]   Column 44: 2717 cells copied from col 12
+2026-07-16 17:44:12 [INFO ] [pipeline] [11/13] calc_price
+2026-07-16 17:44:12 [INFO ] [pipeline]   Columns 45-48: 2717 rows calculated
+2026-07-16 17:44:12 [INFO ] [pipeline] [12/13] format_cells
+2026-07-16 17:44:25 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-16 17:44:25 [INFO ] [pipeline]   Formatted 2717 rows: h=50, align=left/center
+2026-07-16 17:44:25 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-16 17:44:25 [INFO ] [pipeline] [13/13] finalize
+2026-07-16 17:44:25 [INFO ] [pipeline]   Done: 2717 rows x 48 cols (target: 48)
+2026-07-16 17:44:25 [INFO ] [pipeline] Pipeline complete
+2026-07-16 17:44:27 [INFO ] [main] Output: ce52c2d68f784766aae3dc8b41e5f9cb.xlsx
+2026-07-16 17:44:27 [INFO ] [main] Size: 2717 rows x 48 cols
+2026-07-16 17:44:27 [INFO ] [main] ==================================================
+2026-07-16 17:44:27 [INFO ] [main] Done. Output: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs
+2026-07-16 17:59:01 [INFO ] [main] Log file: 20260716_f7306127.log
+2026-07-16 17:59:01 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-07-16 17:59:49 [INFO ] [main] Log file: 20260716_f7306127.log
+2026-07-16 17:59:49 [INFO ] [main] Found 4 file(s):
+2026-07-16 17:59:49 [INFO ] [main]   product_20260716115553265.xlsx
+2026-07-16 17:59:49 [INFO ] [main]   product_20260716115653061.xlsx
+2026-07-16 17:59:49 [INFO ] [main]   product_20260716115712741.xlsx
+2026-07-16 17:59:49 [INFO ] [main]   product_20260716115906228.xlsx
+2026-07-16 17:59:49 [INFO ] [main] Output: 7.14v1.xlsx
+2026-07-16 17:59:49 [INFO ] [main] ==================================================
+2026-07-16 17:59:59 [INFO ] [main] Merged 4 files, 5789 images total
+2026-07-16 18:00:00 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-16 18:00:00 [INFO ] [pipeline] [1/13] delete_header
+2026-07-16 18:00:00 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-16 18:00:00 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-16 18:00:00 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-16 18:00:00 [INFO ] [pipeline]   Sheet [Sheet0_4]: header row removed, images adjusted
+2026-07-16 18:00:00 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-16 18:00:08 [INFO ] [pipeline]   Sheet [Sheet0_2]: 616 rows, 1397 images
+2026-07-16 18:00:08 [INFO ] [pipeline]   Sheet [Sheet0_3]: 403 rows, 958 images
+2026-07-16 18:00:08 [INFO ] [pipeline]   Sheet [Sheet0_4]: 858 rows, 1761 images
+2026-07-16 18:00:08 [INFO ] [pipeline]   Merged 4 sheets -> 1, 1877 data rows, 4116 images
+2026-07-16 18:00:08 [INFO ] [pipeline] [3/13] validate
+2026-07-16 18:00:08 [INFO ] [pipeline]   Validated: 2717 rows, 27 cols (expect ~32)
+2026-07-16 18:00:08 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-16 18:00:09 [INFO ] [pipeline]   Backed up 5789 images
+2026-07-16 18:00:09 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-16 18:00:09 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-16 18:00:09 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-16 18:00:09 [INFO ] [pipeline]   Restored 5789 images with adjusted anchors
+2026-07-16 18:00:09 [INFO ] [pipeline] [5/13] fill_id
+2026-07-16 18:00:09 [INFO ] [pipeline]   Column 2: 2717 random IDs (date: bfzgad)
+2026-07-16 18:00:09 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-16 18:00:09 [INFO ] [pipeline]   Column 3: 2717 cells filled
+2026-07-16 18:00:09 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-16 18:00:09 [INFO ] [pipeline]   Column 10: 2582 cells mapped, 95 rows skipped (col A has fill)
+2026-07-16 18:00:09 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-16 18:00:09 [INFO ] [pipeline]   Column 11: 2583 mapped, 95 cleared (col A has fill), 39 no match
+2026-07-16 18:00:09 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-16 18:00:09 [INFO ] [pipeline]   Mirror copy: 13368 cells written
+2026-07-16 18:00:09 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-16 18:00:09 [INFO ] [pipeline]   Column 44: 2717 cells copied from col 12
+2026-07-16 18:00:09 [INFO ] [pipeline] [11/13] calc_price
+2026-07-16 18:00:09 [INFO ] [pipeline]   Columns 45-48: 2717 rows calculated
+2026-07-16 18:00:09 [INFO ] [pipeline] [12/13] format_cells
+2026-07-16 18:00:21 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-16 18:00:21 [INFO ] [pipeline]   Formatted 2717 rows: h=50, align=left/center
+2026-07-16 18:00:21 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-16 18:00:21 [INFO ] [pipeline] [13/13] finalize
+2026-07-16 18:00:21 [INFO ] [pipeline]   Done: 2717 rows x 48 cols (target: 48)
+2026-07-16 18:00:21 [INFO ] [pipeline] Pipeline complete
+2026-07-16 18:00:24 [INFO ] [main] Size: 2717 rows x 48 cols
+2026-07-16 18:00:24 [INFO ] [main] ==================================================
+2026-07-16 18:00:24 [INFO ] [main] Done: 7.14v1.xlsx
+2026-07-16 19:20:56 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:20:56 [INFO ] [color_size_deal] Written 2332 lines
+2026-07-16 19:20:56 [INFO ] [color_size_deal] Prefixes: {'01': 159, '02': 96, '03': 46, '04': 6}
+2026-07-16 19:20:56 [INFO ] [color_size_deal] Done.
+2026-07-16 19:23:49 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:23:49 [INFO ] [color_size_deal] Written 2332 lines
+2026-07-16 19:23:49 [INFO ] [color_size_deal] Prefixes: {'01': 153, '02': 90, '03': 46, '04': 6}
+2026-07-16 19:23:49 [INFO ] [color_size_deal] Done.
+2026-07-16 19:26:51 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:26:51 [INFO ] [color_size_deal] Written 2332 lines
+2026-07-16 19:26:51 [INFO ] [color_size_deal] Prefixes: {'01': 153, '02': 90, '03': 46, '04': 6}
+2026-07-16 19:26:51 [INFO ] [color_size_deal] Done.
+2026-07-16 19:27:42 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:31:31 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:33:31 [INFO ] [color_size_deal] Loaded 86 groups, 2332 lines
+2026-07-16 19:34:19 [INFO ] [color_size_deal] Loaded 4 groups, 15 lines
+2026-07-16 19:35:50 [INFO ] [color_size_deal] Groups: 86, lines: 2332 (file: 2420)
+2026-07-16 19:35:50 [INFO ] [color_size_deal] Prefixes: {'01': 153, '02': 90, '03': 46, '04': 6}
+2026-07-16 19:35:50 [INFO ] [color_size_deal] Done.
+2026-07-16 20:20:07 [INFO ] [title_optimize] Model: deepseek (deepseek-chat)
+2026-07-16 20:20:07 [INFO ] [title_optimize] Processing 7 title(s)...
+2026-07-16 20:20:07 [INFO ] [title_optimize] [1/7] 6.imgsapp.com/afsd/8272/2560419266841863525776.jpg
+2026-07-16 20:20:10 [INFO ] [title_optimize]   Downloaded: 2560419266841863525776.jpg
+2026-07-16 20:20:13 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 507267', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:16 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 507267', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:19 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 507267', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:19 [INFO ] [title_optimize]   Deleted: 2560419266841863525776.jpg
+2026-07-16 20:20:20 [INFO ] [title_optimize] [2/7] j.imgsapp.com/afsd/7683/9681110046543102876912.jpg
+2026-07-16 20:20:29 [INFO ] [title_optimize]   Downloaded: 9681110046543102876912.jpg
+2026-07-16 20:20:29 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 625462', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:33 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 625462', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:36 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 625462', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:36 [INFO ] [title_optimize]   Deleted: 9681110046543102876912.jpg
+2026-07-16 20:20:37 [INFO ] [title_optimize] [3/7] g.imgsapp.com/afsd/7683/9731105101971112878021.jpg
+2026-07-16 20:20:40 [INFO ] [title_optimize]   Downloaded: 9731105101971112878021.jpg
+2026-07-16 20:20:41 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 586492', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:44 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 586492', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:47 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 586492', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:47 [INFO ] [title_optimize]   Deleted: 9731105101971112878021.jpg
+2026-07-16 20:20:48 [INFO ] [title_optimize] [4/7] c.imgsapp.com/afsd/7683/6981108550521115617316.jpg
+2026-07-16 20:20:51 [INFO ] [title_optimize]   Downloaded: 6981108550521115617316.jpg
+2026-07-16 20:20:51 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 629050', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:54 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 629050', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:57 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 629050', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:20:57 [INFO ] [title_optimize]   Deleted: 6981108550521115617316.jpg
+2026-07-16 20:20:58 [INFO ] [title_optimize] [5/7] c.imgsapp.com/afsd/8285/9220613500353313577017.jpg
+2026-07-16 20:21:00 [INFO ] [title_optimize]   Downloaded: 9220613500353313577017.jpg
+2026-07-16 20:21:01 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 240239', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:04 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 240239', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:07 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 240239', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:07 [INFO ] [title_optimize]   Deleted: 9220613500353313577017.jpg
+2026-07-16 20:21:08 [INFO ] [title_optimize] [6/7] 4.imgsapp.com/afsd/8285/9290626493283399500052.jpg
+2026-07-16 20:21:10 [INFO ] [title_optimize]   Downloaded: 9290626493283399500052.jpg
+2026-07-16 20:21:10 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 553477', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:13 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 553477', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:16 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 553477', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:16 [INFO ] [title_optimize]   Deleted: 9290626493283399500052.jpg
+2026-07-16 20:21:17 [INFO ] [title_optimize] [7/7] i.imgsapp.com/afsd/8294/0390639222283216287849.jpg
+2026-07-16 20:21:19 [INFO ] [title_optimize]   Downloaded: 0390639222283216287849.jpg
+2026-07-16 20:21:19 [WARNING] [title_optimize]   Attempt 1/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 253755', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:22 [WARNING] [title_optimize]   Attempt 2/3: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 253755', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:25 [ERROR] [title_optimize]   FAILED: Error code: 400 - {'error': {'message': 'Failed to deserialize the JSON body into the target type: messages[1]: unknown variant `image_url`, expected `text` at line 1 column 253755', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-16 20:21:25 [INFO ] [title_optimize]   Deleted: 0390639222283216287849.jpg
+2026-07-16 20:21:25 [INFO ] [title_optimize] ==================================================
+2026-07-16 20:21:25 [INFO ] [title_optimize] Done: 0 success, 7 errors → optimize_title
+2026-07-16 20:30:25 [INFO ] [title_optimize] Model: deepseek (deepseek-v4-pro) — text-only mode
+2026-07-16 20:30:25 [INFO ] [title_optimize] Processing 7 title(s)...
+2026-07-16 20:30:25 [INFO ] [title_optimize] [1/7] 休闲时尚外套
+2026-07-16 20:30:29 [WARNING] [title_optimize]   Attempt 1/3: name 'results' is not defined
+2026-07-16 20:30:35 [WARNING] [title_optimize]   Attempt 2/3: name 'results' is not defined
+2026-07-16 20:30:41 [ERROR] [title_optimize]   FAILED: name 'results' is not defined
+2026-07-16 20:30:49 [INFO ] [title_optimize] Model: deepseek (deepseek-v4-pro) — text-only mode
+2026-07-16 20:30:49 [INFO ] [title_optimize] Processing 7 title(s)...
+2026-07-16 20:30:49 [INFO ] [title_optimize] [1/7] 休闲时尚外套
+2026-07-16 20:30:52 [INFO ] [title_optimize]   Optimized: 2024春秋新款韩版宽松百搭女休闲时尚外套
+2026-07-16 20:30:53 [INFO ] [title_optimize] [2/7] 男士休闲拼色防晒衣外套
+2026-07-16 20:30:56 [INFO ] [title_optimize]   Optimized: 2024新款夏季轻薄透气UPF50+户外运动男士休闲拼色防晒衣外套
+2026-07-16 20:30:57 [INFO ] [title_optimize] [3/7] 男士休闲防晒衣外套
+2026-07-16 20:30:59 [INFO ] [title_optimize]   Optimized: 夏季户外轻薄透气UPF50+男士休闲防晒衣外套
+2026-07-16 20:31:00 [INFO ] [title_optimize] [4/7] 男士纯色休闲防晒衣外套
+2026-07-16 20:31:03 [INFO ] [title_optimize]   Optimized: 夏季轻薄透气男士纯色休闲防晒衣外套
+2026-07-16 20:31:04 [INFO ] [title_optimize] [5/7] 男士休闲外套宽松加厚双层上衣
+2026-07-16 20:31:08 [INFO ] [title_optimize]   Optimized: 冬季潮流百搭男士休闲外套宽松加厚双层上衣
+2026-07-16 20:31:09 [INFO ] [title_optimize] [6/7] 男士立领夹克男外套工装外套男休闲户外外套
+2026-07-16 20:31:13 [INFO ] [title_optimize]   Optimized: 春秋季新款纯棉潮牌男士立领夹克男外套工装外套男休闲户外外套
+2026-07-16 20:31:14 [INFO ] [title_optimize] [7/7] 男士立领夹克外套美式夹克外穿
+2026-07-16 20:31:22 [INFO ] [title_optimize]   Optimized: 春秋季美式复古男士立领夹克外套美式夹克外穿
+2026-07-16 20:31:22 [INFO ] [title_optimize] ==================================================
+2026-07-16 20:31:22 [INFO ] [title_optimize] Done: 7 success, 0 errors → optimize_title

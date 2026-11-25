@@ -1,0 +1,73 @@
+2026-10-21 11:38:45 [INFO ] [hotwords] Loop mode: 2 keywords  country=de  category=(all)  mode=fluctuation
+2026-10-21 11:38:45 [INFO ] [hotwords] 
+2026-10-21 11:38:45 [INFO ] [hotwords] [  1/2] kleid
+2026-10-21 11:38:46 [INFO ] [hotwords]   fluctuation: 12 words
+2026-10-21 11:38:46 [INFO ] [hotwords]   → total 12 words
+2026-10-21 11:38:48 [INFO ] [hotwords] [  2/2] halloween
+2026-10-21 11:38:48 [INFO ] [hotwords]   fluctuation: 30 words
+2026-10-21 11:38:48 [INFO ] [hotwords]   → total 42 words
+2026-10-21 11:38:50 [INFO ] [hotwords] All keywords collected successfully
+2026-10-21 11:38:50 [INFO ] [hotwords] 
+2026-10-21 11:38:50 [INFO ] [hotwords] Combining: 42 fluctuation + 0 new_rank = 42 total
+2026-10-21 11:38:50 [INFO ] [hotwords] 
+2026-10-21 11:38:50 [INFO ] [hotwords] Cleaning...
+2026-10-21 11:38:50 [INFO ] [hotwords]   strip_whitespace: 42 → 42 (0 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords]   normalize_case: 42 → 42 (0 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords]   drop_single_word: 42 → 42 (0 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords]   drop_brands: 42 → 41 (1 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords]   drop_reordered: 41 → 41 (0 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords]   deduplicate: 41 → 41 (0 removed)
+2026-10-21 11:38:50 [INFO ] [hotwords] herren=5      damen=5      other=31   
+2026-10-21 11:38:50 [INFO ] [hotwords] Saved 41 words (raw: 42, errors: 0) → 20261021_113845_de.txt
+2026-10-21 11:38:50 [INFO ] [hotwords] ==================================================
+2026-10-21 11:38:50 [INFO ] [hotwords] Done.
+2026-10-21 11:46:01 [INFO ] [hotwords] Loop mode: 2 keywords  country=de  category=(all)  mode=dual
+2026-10-21 11:46:01 [INFO ] [hotwords] 
+2026-10-21 11:46:01 [INFO ] [hotwords] [  1/2] kleid
+2026-10-21 11:46:01 [INFO ] [hotwords]   fluctuation: 12 words
+2026-10-21 11:46:02 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-21 11:46:02 [INFO ] [hotwords]   → total 212 words
+2026-10-21 11:46:04 [INFO ] [hotwords] [  2/2] halloween
+2026-10-21 11:46:05 [INFO ] [hotwords]   fluctuation: 30 words
+2026-10-21 11:46:06 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-21 11:46:06 [INFO ] [hotwords]   → total 442 words
+2026-10-21 11:46:08 [INFO ] [hotwords] All keywords collected successfully
+2026-10-21 11:46:08 [INFO ] [hotwords] 
+2026-10-21 11:46:08 [INFO ] [hotwords] Combining: 42 fluctuation + 400 new_rank = 442 total
+2026-10-21 11:46:08 [INFO ] [hotwords] 
+2026-10-21 11:46:08 [INFO ] [hotwords] Cleaning...
+2026-10-21 11:46:08 [INFO ] [hotwords]   strip_whitespace: 442 → 442 (0 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords]   normalize_case: 442 → 442 (0 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords]   drop_single_word: 442 → 399 (43 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords]   drop_brands: 399 → 390 (9 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords]   drop_reordered: 390 → 367 (23 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords]   deduplicate: 367 → 366 (1 removed)
+2026-10-21 11:46:08 [INFO ] [hotwords] herren=17     damen=73     other=276  
+2026-10-21 11:46:08 [INFO ] [hotwords] Saved 366 words (raw: 442, errors: 0) → 20261021_114601_de.txt
+2026-10-21 11:46:08 [INFO ] [hotwords] ==================================================
+2026-10-21 11:46:08 [INFO ] [hotwords] Done.
+2026-10-21 16:34:17 [INFO ] [hotwords] Loop mode: 2 keywords  country=fr  category=(all)  mode=dual
+2026-10-21 16:34:17 [INFO ] [hotwords] 
+2026-10-21 16:34:17 [INFO ] [hotwords] [  1/2] robe
+2026-10-21 16:34:17 [INFO ] [hotwords]   fluctuation: 3 words
+2026-10-21 16:34:18 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-21 16:34:18 [INFO ] [hotwords]   → total 203 words
+2026-10-21 16:34:20 [INFO ] [hotwords] [  2/2] halloween
+2026-10-21 16:34:21 [INFO ] [hotwords]   fluctuation: 51 words
+2026-10-21 16:34:22 [INFO ] [hotwords]   new_rank: 200 words
+2026-10-21 16:34:22 [INFO ] [hotwords]   → total 454 words
+2026-10-21 16:34:24 [INFO ] [hotwords] All keywords collected successfully
+2026-10-21 16:34:24 [INFO ] [hotwords] 
+2026-10-21 16:34:24 [INFO ] [hotwords] Combining: 54 fluctuation + 400 new_rank = 454 total
+2026-10-21 16:34:24 [INFO ] [hotwords] 
+2026-10-21 16:34:24 [INFO ] [hotwords] Cleaning...
+2026-10-21 16:34:24 [INFO ] [hotwords]   strip_whitespace: 454 → 454 (0 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords]   normalize_case: 454 → 454 (0 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords]   drop_single_word: 454 → 450 (4 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords]   drop_brands: 450 → 447 (3 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords]   drop_reordered: 447 → 441 (6 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords]   deduplicate: 441 → 437 (4 removed)
+2026-10-21 16:34:24 [INFO ] [hotwords] homme=13     femme=111    other=313  
+2026-10-21 16:34:24 [INFO ] [hotwords] Saved 437 words (raw: 454, errors: 0) → 20261021_163417_fr.txt
+2026-10-21 16:34:24 [INFO ] [hotwords] ==================================================
+2026-10-21 16:34:24 [INFO ] [hotwords] Done.

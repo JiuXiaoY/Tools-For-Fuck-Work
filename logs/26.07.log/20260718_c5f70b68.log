@@ -1,0 +1,101 @@
+2026-07-18 10:22:39 [INFO ] [main] Log file: 20260718_c5f70b68.log
+2026-07-18 10:22:39 [INFO ] [main] Found 5 file(s):
+2026-07-18 10:22:39 [INFO ] [main]   product_20260718100643342.xlsx
+2026-07-18 10:22:39 [INFO ] [main]   product_20260718100801809.xlsx
+2026-07-18 10:22:39 [INFO ] [main]   product_20260718100901395.xlsx
+2026-07-18 10:22:39 [INFO ] [main]   product_20260718101230772.xlsx
+2026-07-18 10:22:39 [INFO ] [main]   product_20260718101322939.xlsx
+2026-07-18 10:22:39 [INFO ] [main] Output: 7.15v1.xlsx
+2026-07-18 10:22:39 [INFO ] [main] ==================================================
+2026-07-18 10:22:51 [INFO ] [main] Merged 5 files, 6043 images total
+2026-07-18 10:22:52 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-18 10:22:52 [INFO ] [pipeline] [1/13] delete_header
+2026-07-18 10:22:53 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-18 10:22:53 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-18 10:22:53 [INFO ] [pipeline]   Sheet [Sheet0_3]: header row removed, images adjusted
+2026-07-18 10:22:53 [INFO ] [pipeline]   Sheet [Sheet0_4]: header row removed, images adjusted
+2026-07-18 10:22:53 [INFO ] [pipeline]   Sheet [Sheet0_5]: header row removed, images adjusted
+2026-07-18 10:22:53 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-18 10:23:03 [INFO ] [pipeline]   Sheet [Sheet0_2]: 389 rows, 779 images
+2026-07-18 10:23:03 [INFO ] [pipeline]   Sheet [Sheet0_3]: 357 rows, 781 images
+2026-07-18 10:23:03 [INFO ] [pipeline]   Sheet [Sheet0_4]: 976 rows, 2044 images
+2026-07-18 10:23:03 [INFO ] [pipeline]   Sheet [Sheet0_5]: 916 rows, 1883 images
+2026-07-18 10:23:03 [INFO ] [pipeline]   Merged 5 sheets -> 1, 2638 data rows, 5487 images
+2026-07-18 10:23:03 [INFO ] [pipeline] [3/13] validate
+2026-07-18 10:23:03 [INFO ] [pipeline]   Validated: 2924 rows, 27 cols (expect ~32)
+2026-07-18 10:23:03 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-18 10:23:04 [INFO ] [pipeline]   Backed up 6043 images
+2026-07-18 10:23:04 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-18 10:23:04 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-18 10:23:04 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-18 10:23:04 [INFO ] [pipeline]   Restored 6043 images with adjusted anchors
+2026-07-18 10:23:04 [INFO ] [pipeline] [5/13] fill_id
+2026-07-18 10:23:04 [INFO ] [pipeline]   Column 2: 2924 random IDs (date: bfzgae)
+2026-07-18 10:23:04 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-18 10:23:04 [INFO ] [pipeline]   Column 3: 2924 cells filled
+2026-07-18 10:23:04 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-18 10:23:04 [INFO ] [pipeline]   Column 10: 2835 cells mapped, 89 rows skipped (col A has fill)
+2026-07-18 10:23:04 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-18 10:23:04 [INFO ] [pipeline]   Column 11: 2835 mapped, 89 cleared (col A has fill), 0 no match
+2026-07-18 10:23:04 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-18 10:23:04 [INFO ] [pipeline]   Mirror copy: 16080 cells written
+2026-07-18 10:23:04 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-18 10:23:04 [INFO ] [pipeline]   Column 44: 2924 cells copied from col 12
+2026-07-18 10:23:04 [INFO ] [pipeline] [11/13] calc_price
+2026-07-18 10:23:04 [INFO ] [pipeline]   Columns 45-48: 2924 rows calculated
+2026-07-18 10:23:04 [INFO ] [pipeline] [12/13] format_cells
+2026-07-18 10:23:18 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-18 10:23:18 [INFO ] [pipeline]   Formatted 2924 rows: h=50, align=left/center
+2026-07-18 10:23:18 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-18 10:23:18 [INFO ] [pipeline] [13/13] finalize
+2026-07-18 10:23:18 [INFO ] [pipeline]   Done: 2924 rows x 48 cols (target: 48)
+2026-07-18 10:23:18 [INFO ] [pipeline] Pipeline complete
+2026-07-18 10:23:21 [INFO ] [main] Size: 2924 rows x 48 cols
+2026-07-18 10:23:21 [INFO ] [main] ==================================================
+2026-07-18 10:23:21 [INFO ] [main] Done: 7.15v1.xlsx
+2026-07-18 11:42:40 [INFO ] [main] Log file: 20260718_c5f70b68.log
+2026-07-18 11:42:40 [INFO ] [main] Found 2 file(s):
+2026-07-18 11:42:40 [INFO ] [main]   text.xlsx
+2026-07-18 11:42:40 [INFO ] [main]   text2.xlsx
+2026-07-18 11:42:40 [INFO ] [main] Output: 7.20v1.xlsx
+2026-07-18 11:42:40 [INFO ] [main] ==================================================
+2026-07-18 11:42:41 [INFO ] [main] Merged 2 files, 306 images total
+2026-07-18 11:42:41 [INFO ] [pipeline] Starting pipeline: 13 step(s)
+2026-07-18 11:42:41 [INFO ] [pipeline] [1/13] delete_header
+2026-07-18 11:42:41 [INFO ] [pipeline]   Sheet [Sheet0]: header row removed, images adjusted
+2026-07-18 11:42:41 [INFO ] [pipeline]   Sheet [Sheet0_2]: header row removed, images adjusted
+2026-07-18 11:42:41 [INFO ] [pipeline] [2/13] merge_sheets
+2026-07-18 11:42:41 [INFO ] [pipeline]   Sheet [Sheet0_2]: 93 rows, 153 images
+2026-07-18 11:42:41 [INFO ] [pipeline]   Merged 2 sheets -> 1, 93 data rows, 153 images
+2026-07-18 11:42:41 [INFO ] [pipeline] [3/13] validate
+2026-07-18 11:42:41 [INFO ] [pipeline]   Validated: 183 rows, 27 cols (expect ~32), 3 consecutive-header rows removed
+2026-07-18 11:42:41 [INFO ] [pipeline] [4/13] insert_columns
+2026-07-18 11:42:41 [INFO ] [pipeline]   Backed up 306 images
+2026-07-18 11:42:41 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-07-18 11:42:41 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-07-18 11:42:41 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-07-18 11:42:41 [INFO ] [pipeline]   Restored 306 images with adjusted anchors
+2026-07-18 11:42:41 [INFO ] [pipeline] [5/13] fill_id
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 2: 183 random IDs (date: bfzgbz)
+2026-07-18 11:42:41 [INFO ] [pipeline] [6/13] fill_col3
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 3: 183 cells filled
+2026-07-18 11:42:41 [INFO ] [pipeline] [7/13] fill_col10
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 10: 176 cells mapped, 7 rows skipped (col A has fill)
+2026-07-18 11:42:41 [INFO ] [pipeline] [8/13] size_mapping
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 11: 176 mapped, 7 cleared (col A has fill), 0 no match
+2026-07-18 11:42:41 [INFO ] [pipeline] [9/13] copy_mirror
+2026-07-18 11:42:41 [INFO ] [pipeline]   Mirror copy: 1169 cells written
+2026-07-18 11:42:41 [INFO ] [pipeline] [10/13] fill_col44
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 44: 183 cells copied from col 12
+2026-07-18 11:42:41 [INFO ] [pipeline] [11/13] calc_price
+2026-07-18 11:42:41 [INFO ] [pipeline]   Columns 45-48: 183 rows calculated
+2026-07-18 11:42:41 [INFO ] [pipeline] [12/13] format_cells
+2026-07-18 11:42:41 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-07-18 11:42:41 [INFO ] [pipeline]   Formatted 183 rows: h=50, align=left/center
+2026-07-18 11:42:41 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-07-18 11:42:41 [INFO ] [pipeline] [13/13] finalize
+2026-07-18 11:42:41 [INFO ] [pipeline]   Done: 183 rows x 48 cols (target: 48)
+2026-07-18 11:42:41 [INFO ] [pipeline] Pipeline complete
+2026-07-18 11:42:42 [INFO ] [main] Size: 183 rows x 48 cols
+2026-07-18 11:42:42 [INFO ] [main] ==================================================
+2026-07-18 11:42:42 [INFO ] [main] Done: 7.20v1.xlsx

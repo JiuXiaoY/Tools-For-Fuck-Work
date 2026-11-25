@@ -1,0 +1,1132 @@
+2026-09-10 11:18:46 [INFO ] [jenkins] ==================================================
+2026-09-10 11:18:46 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-10 11:18:46 [INFO ] [jenkins] ==================================================
+2026-09-10 11:18:46 [INFO ] [jenkins] 
+2026-09-10 11:18:46 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-10 11:18:46 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:18:47 [ERROR] [title_workflow] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\9.2v1.xlsx
+2026-09-10 11:18:47 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-10 11:18:47 [INFO ] [jenkins] 
+2026-09-10 11:18:47 [INFO ] [jenkins] ==================================================
+2026-09-10 11:18:47 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-10 11:18:47 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 11:18:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 11:18:47 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 11:18:47 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 11:19:08 [INFO ] [jenkins] ==================================================
+2026-09-10 11:19:08 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 11:19:08 [INFO ] [jenkins] ==================================================
+2026-09-10 11:19:08 [INFO ] [jenkins] 
+2026-09-10 11:19:08 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 11:19:08 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:19:08 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 11:19:08 [INFO ] [jenkins] 
+2026-09-10 11:19:08 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 11:19:08 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:19:08 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-09-10 11:19:08 [INFO ] [preprocess] [suit1.xlsx]
+2026-09-10 11:19:09 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:19:09 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:19:14 [INFO ] [preprocess]   [suit1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:19:14 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:19:14 [INFO ] [preprocess]   [suit1.xlsx] No duplicate filled rows to remove
+2026-09-10 11:19:14 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:19:16 [INFO ] [preprocess] [suit2.xlsx]
+2026-09-10 11:19:16 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:19:16 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:19:20 [INFO ] [preprocess]   [suit2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:19:20 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:19:20 [INFO ] [preprocess]   [suit2.xlsx] No duplicate filled rows to remove
+2026-09-10 11:19:20 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:19:21 [INFO ] [preprocess] [suit3.xlsx]
+2026-09-10 11:19:22 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:19:22 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:19:25 [INFO ] [preprocess]   [suit3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:19:25 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:19:25 [INFO ] [preprocess]   [suit3.xlsx] No duplicate filled rows to remove
+2026-09-10 11:19:25 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:19:26 [INFO ] [preprocess] [suit4.xlsx]
+2026-09-10 11:19:26 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:19:26 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:19:30 [INFO ] [preprocess]   [suit4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:19:30 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:19:34 [INFO ] [preprocess]   [suit4.xlsx] Dedup: 22 filled rows, 1 deleted
+2026-09-10 11:19:34 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:19:35 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 11:19:35 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 11:19:35 [INFO ] [jenkins] 
+2026-09-10 11:19:35 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 11:19:35 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:19:35 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 11:19:35 [INFO ] [main] Found 4 file(s):
+2026-09-10 11:19:35 [INFO ] [main]   suit1.xlsx
+2026-09-10 11:19:35 [INFO ] [main]   suit2.xlsx
+2026-09-10 11:19:35 [INFO ] [main]   suit3.xlsx
+2026-09-10 11:19:35 [INFO ] [main]   suit4.xlsx
+2026-09-10 11:19:35 [INFO ] [main] Output: 9.2v1_de.xlsx
+2026-09-10 11:19:35 [INFO ] [main] ==================================================
+2026-09-10 11:19:51 [INFO ] [main] Merged 4 files, 8502 images total
+2026-09-10 11:19:51 [INFO ] [main] Deleted 4 source file(s)
+2026-09-10 11:19:54 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 11:19:54 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 11:20:07 [INFO ] [pipeline]   Sheet [Sheet0_2]: 903 rows, 2079 images
+2026-09-10 11:20:07 [INFO ] [pipeline]   Sheet [Sheet0_3]: 908 rows, 1855 images
+2026-09-10 11:20:07 [INFO ] [pipeline]   Sheet [Sheet0_4]: 902 rows, 1824 images
+2026-09-10 11:20:07 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2713 data rows, 5758 images
+2026-09-10 11:20:07 [INFO ] [pipeline] [2/12] validate
+2026-09-10 11:20:07 [INFO ] [pipeline]   Validated: 4026 rows, 27 cols (expect ~32)
+2026-09-10 11:20:07 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 11:20:08 [INFO ] [pipeline]   Backed up 8502 images
+2026-09-10 11:20:08 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-10 11:20:08 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-10 11:20:08 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-10 11:20:08 [INFO ] [pipeline]   Restored 8502 images with adjusted anchors
+2026-09-10 11:20:08 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 11:20:08 [INFO ] [pipeline]   Column 2: 4026 IDs generated
+2026-09-10 11:20:08 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 11:20:08 [INFO ] [pipeline]   Column 3: 4026 cells filled
+2026-09-10 11:20:08 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 11:20:08 [INFO ] [pipeline]   Column 10: 3946 cells mapped, 75 rows skipped (col A has fill), 5 no match (recorded)
+2026-09-10 11:20:08 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 11:20:08 [INFO ] [pipeline]   Column 11: 3951 mapped, 75 cleared (col A has fill), 0 no match (recorded)
+2026-09-10 11:20:08 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 11:20:08 [INFO ] [pipeline]   Mirror copy: 23561 cells written
+2026-09-10 11:20:08 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 11:20:08 [INFO ] [pipeline]   Column 44: 4026 cells copied from col 12
+2026-09-10 11:20:08 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 11:20:08 [INFO ] [pipeline]   Columns 45-48: 4026 rows calculated
+2026-09-10 11:20:08 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 11:20:09 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 11:20:09 [INFO ] [pipeline]   Formatted 4026 rows: h=50, align=left/center
+2026-09-10 11:20:09 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-10 11:20:09 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 11:20:09 [INFO ] [pipeline]   Done: 4026 rows x 48 cols (target: 48)
+2026-09-10 11:20:09 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:20:13 [INFO ] [main] Size: 4026 rows x 48 cols
+2026-09-10 11:20:13 [INFO ] [main] ==================================================
+2026-09-10 11:20:13 [INFO ] [main] Done: 9.2v1_de.xlsx
+2026-09-10 11:20:14 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 11:20:14 [INFO ] [jenkins] 
+2026-09-10 11:20:14 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 11:20:14 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:20:14 [ERROR] [color_size_main] Source not found: D:\FW20260325\besskyproject\dealExcel_refactoring\outputs\9.2v1.xlsx
+2026-09-10 11:20:14 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 11:20:14 [INFO ] [jenkins] 
+2026-09-10 11:20:14 [INFO ] [jenkins] ==================================================
+2026-09-10 11:20:14 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 11:20:14 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 11:20:14 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 11:20:14 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 11:20:14 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 11:26:37 [INFO ] [jenkins] ==================================================
+2026-09-10 11:26:37 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 11:26:37 [INFO ] [jenkins] ==================================================
+2026-09-10 11:26:37 [INFO ] [jenkins] 
+2026-09-10 11:26:37 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 11:26:37 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:26:37 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 11:26:37 [INFO ] [jenkins] 
+2026-09-10 11:26:37 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 11:26:37 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:26:38 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-09-10 11:26:38 [INFO ] [preprocess] [suit1.xlsx]
+2026-09-10 11:26:38 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:26:38 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:26:43 [INFO ] [preprocess]   [suit1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:26:43 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:26:43 [INFO ] [preprocess]   [suit1.xlsx] No duplicate filled rows to remove
+2026-09-10 11:26:43 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:26:45 [INFO ] [preprocess] [suit2.xlsx]
+2026-09-10 11:26:46 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:26:46 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:26:49 [INFO ] [preprocess]   [suit2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:26:49 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:26:49 [INFO ] [preprocess]   [suit2.xlsx] No duplicate filled rows to remove
+2026-09-10 11:26:49 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:26:50 [INFO ] [preprocess] [suit3.xlsx]
+2026-09-10 11:26:51 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:26:51 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:26:54 [INFO ] [preprocess]   [suit3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:26:54 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:26:54 [INFO ] [preprocess]   [suit3.xlsx] No duplicate filled rows to remove
+2026-09-10 11:26:54 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:26:55 [INFO ] [preprocess] [suit4.xlsx]
+2026-09-10 11:26:55 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 11:26:55 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 11:27:00 [INFO ] [preprocess]   [suit4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 11:27:00 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 11:27:03 [INFO ] [preprocess]   [suit4.xlsx] Dedup: 22 filled rows, 1 deleted
+2026-09-10 11:27:03 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:27:04 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 11:27:04 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 11:27:04 [INFO ] [jenkins] 
+2026-09-10 11:27:04 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 11:27:04 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:27:04 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 11:27:04 [INFO ] [main] Found 4 file(s):
+2026-09-10 11:27:04 [INFO ] [main]   suit1.xlsx
+2026-09-10 11:27:04 [INFO ] [main]   suit2.xlsx
+2026-09-10 11:27:04 [INFO ] [main]   suit3.xlsx
+2026-09-10 11:27:04 [INFO ] [main]   suit4.xlsx
+2026-09-10 11:27:04 [INFO ] [main] Output: 9.2v1_de.xlsx
+2026-09-10 11:27:04 [INFO ] [main] ==================================================
+2026-09-10 11:27:22 [INFO ] [main] Merged 4 files, 8502 images total
+2026-09-10 11:27:22 [INFO ] [main] Deleted 4 source file(s)
+2026-09-10 11:27:24 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 11:27:24 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 11:27:38 [INFO ] [pipeline]   Sheet [Sheet0_2]: 903 rows, 2079 images
+2026-09-10 11:27:38 [INFO ] [pipeline]   Sheet [Sheet0_3]: 908 rows, 1855 images
+2026-09-10 11:27:38 [INFO ] [pipeline]   Sheet [Sheet0_4]: 902 rows, 1824 images
+2026-09-10 11:27:38 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2713 data rows, 5758 images
+2026-09-10 11:27:38 [INFO ] [pipeline] [2/12] validate
+2026-09-10 11:27:38 [INFO ] [pipeline]   Validated: 4026 rows, 27 cols (expect ~32)
+2026-09-10 11:27:38 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 11:27:39 [INFO ] [pipeline]   Backed up 8502 images
+2026-09-10 11:27:39 [INFO ] [pipeline]   Inserted 5 col(s) at position 2
+2026-09-10 11:27:39 [INFO ] [pipeline]   Inserted 1 col(s) at position 10
+2026-09-10 11:27:39 [INFO ] [pipeline]   Inserted 10 col(s) at position 14
+2026-09-10 11:27:39 [INFO ] [pipeline]   Restored 8502 images with adjusted anchors
+2026-09-10 11:27:39 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 11:27:39 [INFO ] [pipeline]   Column 2: 4026 IDs generated
+2026-09-10 11:27:39 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 11:27:39 [INFO ] [pipeline]   Column 3: 4026 cells filled
+2026-09-10 11:27:39 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 11:27:39 [INFO ] [pipeline]   Column 10: 3946 cells mapped, 75 rows skipped (col A has fill), 5 no match (recorded)
+2026-09-10 11:27:39 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 11:27:39 [INFO ] [pipeline]   Column 11: 3951 mapped, 75 cleared (col A has fill), 0 no match (recorded)
+2026-09-10 11:27:39 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 11:27:39 [INFO ] [pipeline]   Mirror copy: 23561 cells written
+2026-09-10 11:27:39 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 11:27:39 [INFO ] [pipeline]   Column 44: 4026 cells copied from col 12
+2026-09-10 11:27:39 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 11:27:39 [INFO ] [pipeline]   Columns 45-48: 4026 rows calculated
+2026-09-10 11:27:39 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 11:27:40 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 11:27:40 [INFO ] [pipeline]   Formatted 4026 rows: h=50, align=left/center
+2026-09-10 11:27:40 [INFO ] [pipeline]   Column 5: =LEN(D) formula applied
+2026-09-10 11:27:40 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 11:27:40 [INFO ] [pipeline]   Done: 4026 rows x 48 cols (target: 48)
+2026-09-10 11:27:40 [INFO ] [pipeline] Pipeline complete
+2026-09-10 11:27:44 [INFO ] [main] Size: 4026 rows x 48 cols
+2026-09-10 11:27:44 [INFO ] [main] ==================================================
+2026-09-10 11:27:44 [INFO ] [main] Done: 9.2v1_de.xlsx
+2026-09-10 11:27:45 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 11:27:45 [INFO ] [jenkins] 
+2026-09-10 11:27:45 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 11:27:45 [INFO ] [jenkins] ------------------------------
+2026-09-10 11:27:45 [INFO ] [color_size_main] Source: 9.2v1_de.xlsx
+2026-09-10 11:27:49 [INFO ] [color_size_main] Extracted: 3946 data lines + 80 separators → check_.txt
+2026-09-10 11:27:49 [INFO ] [color_size_main] Running: process.py
+2026-09-10 11:27:49 [INFO ] [color_size_deal] Groups: 75, lines: 3946 (file: 4026)
+2026-09-10 11:27:49 [INFO ] [color_size_deal] Prefixes: {'01': 191, '02': 103, '03': 69, '04': 48, '05': 42, '06': 36, '07': 30, '08': 30, '09': 30, '10': 30, '11': 30, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6, '22': 6}
+2026-09-10 11:27:49 [INFO ] [color_size_deal] Done.
+2026-09-10 11:27:49 [INFO ] [color_size_main] Processing write-back: 4026 lines
+2026-09-10 11:27:58 [INFO ] [color_size_main] Write-back: 785 written, 3241 unchanged → 9.2v1_de.xlsx
+2026-09-10 11:27:58 [INFO ] [color_size_main] Done.
+2026-09-10 11:27:58 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 11:27:58 [INFO ] [jenkins] 
+2026-09-10 11:27:58 [INFO ] [jenkins] ==================================================
+2026-09-10 11:27:58 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 11:27:58 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 11:27:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 11:27:58 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 11:27:58 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 14:49:42 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 14:49:42 [INFO ] [main] Found 1 file(s):
+2026-09-10 14:49:42 [INFO ] [main]   synth49.xlsx
+2026-09-10 14:49:42 [INFO ] [main] Output: 9.2v1_de.xlsx
+2026-09-10 14:49:42 [INFO ] [main] ==================================================
+2026-09-10 14:49:42 [INFO ] [main] Single file, copied
+2026-09-10 14:49:42 [INFO ] [main] Deleted 1 source file(s)
+2026-09-10 14:49:42 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 14:49:42 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 14:49:42 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-09-10 14:49:42 [INFO ] [pipeline] [2/12] validate
+2026-09-10 14:49:42 [INFO ] [pipeline]   Validated: 3 rows, 32 cols (expect ~32)
+2026-09-10 14:49:42 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 14:49:42 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-10 14:49:42 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-10 14:49:42 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-10 14:49:42 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column 2: 3 IDs generated
+2026-09-10 14:49:42 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column 3: 3 cells filled
+2026-09-10 14:49:42 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column 11: 2 cells mapped, 1 rows skipped (col A has fill), 0 no match (recorded)
+2026-09-10 14:49:42 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column 12: 2 mapped, 1 cleared (col A has fill), 0 no match (recorded)
+2026-09-10 14:49:42 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 14:49:42 [INFO ] [pipeline]   Mirror copy: 27 cells written
+2026-09-10 14:49:42 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column 45: 3 cells copied from col 13
+2026-09-10 14:49:42 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 14:49:42 [INFO ] [pipeline]   No JPY-anchored prices found, price columns skipped
+2026-09-10 14:49:42 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 14:49:42 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 14:49:42 [INFO ] [pipeline]   Formatted 3 rows: h=50, align=left/center
+2026-09-10 14:49:42 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-10 14:49:42 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 14:49:42 [INFO ] [pipeline]   Done: 3 rows x 49 cols (target: 49)
+2026-09-10 14:49:42 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:49:42 [INFO ] [main] Size: 3 rows x 49 cols
+2026-09-10 14:49:42 [INFO ] [main] ==================================================
+2026-09-10 14:49:42 [INFO ] [main] Done: 9.2v1_de.xlsx
+2026-09-10 14:51:59 [INFO ] [jenkins] ==================================================
+2026-09-10 14:51:59 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 14:51:59 [INFO ] [jenkins] ==================================================
+2026-09-10 14:51:59 [INFO ] [jenkins] 
+2026-09-10 14:51:59 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 14:51:59 [INFO ] [jenkins] ------------------------------
+2026-09-10 14:51:59 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 14:51:59 [INFO ] [jenkins] 
+2026-09-10 14:51:59 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 14:51:59 [INFO ] [jenkins] ------------------------------
+2026-09-10 14:51:59 [INFO ] [preprocess] Preprocessing 4 file(s) with 2 step(s)
+2026-09-10 14:51:59 [INFO ] [preprocess] [suit1.xlsx]
+2026-09-10 14:52:00 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 14:52:00 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 14:52:04 [INFO ] [preprocess]   [suit1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 14:52:04 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 14:52:04 [INFO ] [preprocess]   [suit1.xlsx] No duplicate filled rows to remove
+2026-09-10 14:52:04 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:52:05 [INFO ] [preprocess] [suit2.xlsx]
+2026-09-10 14:52:06 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 14:52:06 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 14:52:09 [INFO ] [preprocess]   [suit2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 14:52:09 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 14:52:09 [INFO ] [preprocess]   [suit2.xlsx] No duplicate filled rows to remove
+2026-09-10 14:52:09 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:52:10 [INFO ] [preprocess] [suit3.xlsx]
+2026-09-10 14:52:10 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 14:52:10 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 14:52:13 [INFO ] [preprocess]   [suit3.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 14:52:13 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 14:52:13 [INFO ] [preprocess]   [suit3.xlsx] No duplicate filled rows to remove
+2026-09-10 14:52:13 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:52:14 [INFO ] [preprocess] [suit4.xlsx]
+2026-09-10 14:52:15 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 14:52:15 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 14:52:18 [INFO ] [preprocess]   [suit4.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 14:52:18 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 14:52:21 [INFO ] [preprocess]   [suit4.xlsx] Dedup: 22 filled rows, 1 deleted
+2026-09-10 14:52:21 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:52:22 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 14:52:22 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 14:52:22 [INFO ] [jenkins] 
+2026-09-10 14:52:22 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 14:52:22 [INFO ] [jenkins] ------------------------------
+2026-09-10 14:52:22 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 14:52:22 [INFO ] [main] Found 4 file(s):
+2026-09-10 14:52:22 [INFO ] [main]   suit1.xlsx
+2026-09-10 14:52:22 [INFO ] [main]   suit2.xlsx
+2026-09-10 14:52:22 [INFO ] [main]   suit3.xlsx
+2026-09-10 14:52:22 [INFO ] [main]   suit4.xlsx
+2026-09-10 14:52:22 [INFO ] [main] Output: 9.2v1_de.xlsx
+2026-09-10 14:52:22 [INFO ] [main] ==================================================
+2026-09-10 14:52:36 [INFO ] [main] Merged 4 files, 8502 images total
+2026-09-10 14:52:36 [INFO ] [main] Deleted 4 source file(s)
+2026-09-10 14:52:39 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 14:52:39 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 14:52:50 [INFO ] [pipeline]   Sheet [Sheet0_2]: 903 rows, 2079 images
+2026-09-10 14:52:50 [INFO ] [pipeline]   Sheet [Sheet0_3]: 908 rows, 1855 images
+2026-09-10 14:52:50 [INFO ] [pipeline]   Sheet [Sheet0_4]: 902 rows, 1824 images
+2026-09-10 14:52:50 [INFO ] [pipeline]   Merged 4 sheets -> 1, 2713 data rows, 5758 images
+2026-09-10 14:52:50 [INFO ] [pipeline] [2/12] validate
+2026-09-10 14:52:50 [INFO ] [pipeline]   Validated: 4026 rows, 27 cols (expect ~32)
+2026-09-10 14:52:50 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 14:52:51 [INFO ] [pipeline]   Backed up 8502 images
+2026-09-10 14:52:51 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-10 14:52:51 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-10 14:52:51 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-10 14:52:51 [INFO ] [pipeline]   Restored 8502 images with adjusted anchors
+2026-09-10 14:52:51 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 14:52:51 [INFO ] [pipeline]   Column 2: 4026 IDs generated
+2026-09-10 14:52:51 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 14:52:51 [INFO ] [pipeline]   Column 3: 4026 cells filled
+2026-09-10 14:52:51 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 14:52:51 [INFO ] [pipeline]   Column 11: 3946 cells mapped, 75 rows skipped (col A has fill), 5 no match (recorded)
+2026-09-10 14:52:51 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 14:52:51 [INFO ] [pipeline]   Column 12: 3951 mapped, 75 cleared (col A has fill), 0 no match (recorded)
+2026-09-10 14:52:51 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 14:52:51 [INFO ] [pipeline]   Mirror copy: 23561 cells written
+2026-09-10 14:52:51 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 14:52:51 [INFO ] [pipeline]   Column 45: 4026 cells copied from col 13
+2026-09-10 14:52:51 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 14:52:51 [INFO ] [pipeline]   Columns 46-49: 4026 rows calculated
+2026-09-10 14:52:51 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 14:52:52 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 14:52:52 [INFO ] [pipeline]   Formatted 4026 rows: h=50, align=left/center
+2026-09-10 14:52:52 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-10 14:52:52 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 14:52:52 [INFO ] [pipeline]   Done: 4026 rows x 49 cols (target: 49)
+2026-09-10 14:52:52 [INFO ] [pipeline] Pipeline complete
+2026-09-10 14:52:56 [INFO ] [main] Size: 4026 rows x 49 cols
+2026-09-10 14:52:56 [INFO ] [main] ==================================================
+2026-09-10 14:52:56 [INFO ] [main] Done: 9.2v1_de.xlsx
+2026-09-10 14:52:57 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 14:52:57 [INFO ] [jenkins] 
+2026-09-10 14:52:57 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 14:52:57 [INFO ] [jenkins] ------------------------------
+2026-09-10 14:52:57 [INFO ] [color_size_main] Source: 9.2v1_de.xlsx
+2026-09-10 14:53:01 [INFO ] [color_size_main] Extracted: 3946 data lines + 80 separators → check_.txt
+2026-09-10 14:53:01 [INFO ] [color_size_main] Running: process.py
+2026-09-10 14:53:01 [INFO ] [color_size_deal] Groups: 75, lines: 3946 (file: 4026)
+2026-09-10 14:53:01 [INFO ] [color_size_deal] Prefixes: {'01': 191, '02': 103, '03': 69, '04': 48, '05': 42, '06': 36, '07': 30, '08': 30, '09': 30, '10': 30, '11': 30, '12': 6, '13': 6, '14': 6, '15': 6, '16': 6, '17': 6, '18': 6, '19': 6, '20': 6, '21': 6, '22': 6}
+2026-09-10 14:53:01 [INFO ] [color_size_deal] Done.
+2026-09-10 14:53:01 [INFO ] [color_size_main] Processing write-back: 4026 lines
+2026-09-10 14:53:09 [INFO ] [color_size_main] Write-back: 785 written, 3241 unchanged → 9.2v1_de.xlsx
+2026-09-10 14:53:09 [INFO ] [color_size_main] Done.
+2026-09-10 14:53:10 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 14:53:10 [INFO ] [jenkins] 
+2026-09-10 14:53:10 [INFO ] [jenkins] ==================================================
+2026-09-10 14:53:10 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 14:53:10 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 14:53:10 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 14:53:10 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 14:53:10 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 15:47:01 [INFO ] [jenkins] ==================================================
+2026-09-10 15:47:01 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 15:47:01 [INFO ] [jenkins] ==================================================
+2026-09-10 15:47:01 [INFO ] [jenkins] 
+2026-09-10 15:47:01 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 15:47:01 [INFO ] [jenkins] ------------------------------
+2026-09-10 15:47:01 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 15:47:01 [INFO ] [jenkins] 
+2026-09-10 15:47:01 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 15:47:01 [INFO ] [jenkins] ------------------------------
+2026-09-10 15:47:01 [INFO ] [preprocess] Preprocessing 2 file(s) with 2 step(s)
+2026-09-10 15:47:01 [INFO ] [preprocess] [top1.xlsx]
+2026-09-10 15:47:01 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 15:47:01 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 15:47:06 [INFO ] [preprocess]   [top1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 15:47:06 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 15:47:06 [INFO ] [preprocess]   [top1.xlsx] No duplicate filled rows to remove
+2026-09-10 15:47:06 [INFO ] [pipeline] Pipeline complete
+2026-09-10 15:47:06 [INFO ] [preprocess] [top2.xlsx]
+2026-09-10 15:47:07 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 15:47:07 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 15:47:13 [INFO ] [preprocess]   [top2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 15:47:13 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 15:47:19 [INFO ] [preprocess]   [top2.xlsx] Dedup: 29 filled rows, 1 deleted
+2026-09-10 15:47:19 [INFO ] [pipeline] Pipeline complete
+2026-09-10 15:47:19 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 15:47:20 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 15:47:20 [INFO ] [jenkins] 
+2026-09-10 15:47:20 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 15:47:20 [INFO ] [jenkins] ------------------------------
+2026-09-10 15:47:20 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 15:47:20 [INFO ] [main] Found 2 file(s):
+2026-09-10 15:47:20 [INFO ] [main]   top1.xlsx
+2026-09-10 15:47:20 [INFO ] [main]   top2.xlsx
+2026-09-10 15:47:20 [INFO ] [main] Output: 9.3v1_de.xlsx
+2026-09-10 15:47:20 [INFO ] [main] ==================================================
+2026-09-10 15:47:28 [INFO ] [main] Merged 2 files, 2784 images total
+2026-09-10 15:47:28 [INFO ] [main] Deleted 2 source file(s)
+2026-09-10 15:47:30 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 15:47:30 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 15:47:39 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1763 rows, 1571 images
+2026-09-10 15:47:39 [INFO ] [pipeline]   Merged 2 sheets -> 1, 1763 data rows, 1571 images
+2026-09-10 15:47:39 [INFO ] [pipeline] [2/12] validate
+2026-09-10 15:47:39 [INFO ] [pipeline]   Validated: 3027 rows, 27 cols (expect ~32)
+2026-09-10 15:47:39 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 15:47:39 [INFO ] [pipeline]   Backed up 2784 images
+2026-09-10 15:47:39 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-10 15:47:39 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-10 15:47:39 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-10 15:47:39 [INFO ] [pipeline]   Restored 2784 images with adjusted anchors
+2026-09-10 15:47:39 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 15:47:39 [INFO ] [pipeline]   Column 2: 3027 IDs generated
+2026-09-10 15:47:39 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 15:47:39 [INFO ] [pipeline]   Column 3: 3027 cells filled
+2026-09-10 15:47:39 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 15:47:40 [INFO ] [pipeline]   Column 11: 2965 cells mapped, 55 rows skipped (col A has fill), 7 no match (recorded)
+2026-09-10 15:47:40 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 15:47:40 [INFO ] [pipeline]   Column 12: 2924 mapped, 55 cleared (col A has fill), 48 no match (recorded)
+2026-09-10 15:47:40 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 15:47:40 [INFO ] [pipeline]   Mirror copy: 15190 cells written
+2026-09-10 15:47:40 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 15:47:40 [INFO ] [pipeline]   Column 45: 3027 cells copied from col 13
+2026-09-10 15:47:40 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 15:47:40 [INFO ] [pipeline]   Columns 46-49: 3027 rows calculated
+2026-09-10 15:47:40 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 15:47:40 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 15:47:40 [INFO ] [pipeline]   Formatted 3027 rows: h=50, align=left/center
+2026-09-10 15:47:40 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-10 15:47:40 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 15:47:40 [INFO ] [pipeline]   Done: 3027 rows x 49 cols (target: 49)
+2026-09-10 15:47:40 [INFO ] [pipeline] Pipeline complete
+2026-09-10 15:47:42 [INFO ] [main] Size: 3027 rows x 49 cols
+2026-09-10 15:47:42 [INFO ] [main] ==================================================
+2026-09-10 15:47:42 [INFO ] [main] Done: 9.3v1_de.xlsx
+2026-09-10 15:47:43 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 15:47:43 [INFO ] [jenkins] 
+2026-09-10 15:47:43 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 15:47:43 [INFO ] [jenkins] ------------------------------
+2026-09-10 15:47:43 [INFO ] [color_size_main] Source: 9.3v1_de.xlsx
+2026-09-10 15:47:44 [INFO ] [color_size_main] Extracted: 2965 data lines + 62 separators → check_.txt
+2026-09-10 15:47:44 [INFO ] [color_size_main] Running: process.py
+2026-09-10 15:47:44 [INFO ] [color_size_deal] Groups: 56, lines: 2965 (file: 3027)
+2026-09-10 15:47:44 [INFO ] [color_size_deal] Prefixes: {'01': 294, '02': 210, '03': 155, '04': 80, '05': 73, '06': 57, '07': 57, '08': 21, '09': 15, '10': 7}
+2026-09-10 15:47:44 [INFO ] [color_size_deal] Done.
+2026-09-10 15:47:44 [INFO ] [color_size_main] Processing write-back: 3027 lines
+2026-09-10 15:47:48 [INFO ] [color_size_main] Write-back: 1031 written, 1996 unchanged → 9.3v1_de.xlsx
+2026-09-10 15:47:48 [INFO ] [color_size_main] Done.
+2026-09-10 15:47:48 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 15:47:48 [INFO ] [jenkins] 
+2026-09-10 15:47:48 [INFO ] [jenkins] ==================================================
+2026-09-10 15:47:48 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 15:47:48 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 15:47:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 15:47:48 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 15:47:48 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 16:30:27 [INFO ] [jenkins] ==================================================
+2026-09-10 16:30:27 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 16:30:27 [INFO ] [jenkins] ==================================================
+2026-09-10 16:30:27 [INFO ] [jenkins] 
+2026-09-10 16:30:27 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 16:30:27 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:30:27 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 16:30:27 [INFO ] [jenkins] 
+2026-09-10 16:30:27 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 16:30:27 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:30:28 [INFO ] [preprocess] No .xlsx files in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx — nothing to preprocess
+2026-09-10 16:30:28 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 16:30:28 [INFO ] [jenkins] 
+2026-09-10 16:30:28 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 16:30:28 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:30:28 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 16:30:28 [WARNING] [main] No .xlsx files found in D:\FW20260325\besskyproject\dealExcel_refactoring\public\xls_xlsx
+2026-09-10 16:30:28 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 16:30:28 [INFO ] [jenkins] 
+2026-09-10 16:30:28 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 16:30:28 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:30:28 [INFO ] [color_size_main] Source: 9.3v1_de.xlsx
+2026-09-10 16:30:30 [INFO ] [color_size_main] Extracted: 2965 data lines + 62 separators → check_.txt
+2026-09-10 16:30:30 [INFO ] [color_size_main] Running: process.py
+2026-09-10 16:30:30 [INFO ] [color_size_deal] Groups: 56, lines: 2965 (file: 3027)
+2026-09-10 16:30:30 [INFO ] [color_size_deal] Prefixes: {'01': 294, '02': 210, '03': 155, '04': 80, '05': 73, '06': 57, '07': 57, '08': 21, '09': 15, '10': 7}
+2026-09-10 16:30:30 [INFO ] [color_size_deal] Done.
+2026-09-10 16:30:30 [INFO ] [color_size_main] Processing write-back: 3027 lines
+2026-09-10 16:30:34 [INFO ] [color_size_main] Write-back: 62 written, 2965 unchanged → 9.3v1_de.xlsx
+2026-09-10 16:30:34 [INFO ] [color_size_main] Done.
+2026-09-10 16:30:34 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 16:30:34 [INFO ] [jenkins] 
+2026-09-10 16:30:34 [INFO ] [jenkins] ==================================================
+2026-09-10 16:30:34 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 16:30:34 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 16:30:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 16:30:34 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 16:30:34 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 16:33:28 [INFO ] [jenkins] ==================================================
+2026-09-10 16:33:28 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 16:33:28 [INFO ] [jenkins] ==================================================
+2026-09-10 16:33:28 [INFO ] [jenkins] 
+2026-09-10 16:33:28 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 16:33:28 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:33:28 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 16:33:28 [INFO ] [jenkins] 
+2026-09-10 16:33:28 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 16:33:28 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:33:28 [INFO ] [preprocess] Preprocessing 2 file(s) with 2 step(s)
+2026-09-10 16:33:28 [INFO ] [preprocess] [top1.xlsx]
+2026-09-10 16:33:29 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 16:33:29 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 16:33:33 [INFO ] [preprocess]   [top1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 16:33:33 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 16:33:33 [INFO ] [preprocess]   [top1.xlsx] No duplicate filled rows to remove
+2026-09-10 16:33:33 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:33:33 [INFO ] [preprocess] [top2.xlsx]
+2026-09-10 16:33:34 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 16:33:34 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 16:33:40 [INFO ] [preprocess]   [top2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 16:33:40 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 16:33:46 [INFO ] [preprocess]   [top2.xlsx] Dedup: 29 filled rows, 1 deleted
+2026-09-10 16:33:46 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:33:46 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 16:33:47 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 16:33:47 [INFO ] [jenkins] 
+2026-09-10 16:33:47 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 16:33:47 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:33:47 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 16:33:47 [INFO ] [main] Found 2 file(s):
+2026-09-10 16:33:47 [INFO ] [main]   top1.xlsx
+2026-09-10 16:33:47 [INFO ] [main]   top2.xlsx
+2026-09-10 16:33:47 [INFO ] [main] Output: 9.3v1_fr.xlsx
+2026-09-10 16:33:47 [INFO ] [main] ==================================================
+2026-09-10 16:33:55 [INFO ] [main] Merged 2 files, 2784 images total
+2026-09-10 16:33:55 [INFO ] [main] Deleted 2 source file(s)
+2026-09-10 16:33:56 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 16:33:56 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 16:34:06 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1763 rows, 1571 images
+2026-09-10 16:34:06 [INFO ] [pipeline]   Merged 2 sheets -> 1, 1763 data rows, 1571 images
+2026-09-10 16:34:06 [INFO ] [pipeline] [2/12] validate
+2026-09-10 16:34:06 [INFO ] [pipeline]   Validated: 3027 rows, 27 cols (expect ~32)
+2026-09-10 16:34:06 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 16:34:07 [INFO ] [pipeline]   Backed up 2784 images
+2026-09-10 16:34:07 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-10 16:34:07 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-10 16:34:07 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-10 16:34:07 [INFO ] [pipeline]   Restored 2784 images with adjusted anchors
+2026-09-10 16:34:07 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 16:34:07 [INFO ] [pipeline]   Column 2: 3027 IDs generated
+2026-09-10 16:34:07 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 16:34:07 [INFO ] [pipeline]   Column 3: 3027 cells filled
+2026-09-10 16:34:07 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 16:34:07 [INFO ] [pipeline]   Column 11: 2965 cells mapped, 55 rows skipped (col A has fill), 7 no match (recorded)
+2026-09-10 16:34:07 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 16:34:07 [INFO ] [pipeline]   Column 12: 2924 mapped, 55 cleared (col A has fill), 48 no match (recorded)
+2026-09-10 16:34:07 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 16:34:07 [INFO ] [pipeline]   Mirror copy: 15190 cells written
+2026-09-10 16:34:07 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 16:34:07 [INFO ] [pipeline]   Column 45: 3027 cells copied from col 13
+2026-09-10 16:34:07 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 16:34:07 [INFO ] [pipeline]   Columns 46-49: 3027 rows calculated
+2026-09-10 16:34:07 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 16:34:08 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 16:34:08 [INFO ] [pipeline]   Formatted 3027 rows: h=50, align=left/center
+2026-09-10 16:34:08 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-10 16:34:08 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 16:34:08 [INFO ] [pipeline]   Done: 3027 rows x 49 cols (target: 49)
+2026-09-10 16:34:08 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:34:10 [INFO ] [main] Size: 3027 rows x 49 cols
+2026-09-10 16:34:10 [INFO ] [main] ==================================================
+2026-09-10 16:34:10 [INFO ] [main] Done: 9.3v1_fr.xlsx
+2026-09-10 16:34:10 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 16:34:10 [INFO ] [jenkins] 
+2026-09-10 16:34:10 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 16:34:10 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:34:10 [INFO ] [color_size_main] Source: 9.3v1_fr.xlsx
+2026-09-10 16:34:12 [INFO ] [color_size_main] Extracted: 2965 data lines + 62 separators → check_.txt
+2026-09-10 16:34:12 [INFO ] [color_size_main] Running: process.py
+2026-09-10 16:34:12 [INFO ] [color_size_deal] Groups: 56, lines: 2965 (file: 3027)
+2026-09-10 16:34:12 [INFO ] [color_size_deal] Prefixes: {'01': 293, '02': 210, '03': 155, '04': 80, '05': 73, '06': 57, '07': 57, '08': 21, '09': 15, '10': 7}
+2026-09-10 16:34:12 [INFO ] [color_size_deal] Done.
+2026-09-10 16:34:12 [INFO ] [color_size_main] Processing write-back: 3027 lines
+2026-09-10 16:34:15 [INFO ] [color_size_main] Write-back: 1030 written, 1997 unchanged → 9.3v1_fr.xlsx
+2026-09-10 16:34:15 [INFO ] [color_size_main] Done.
+2026-09-10 16:34:16 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 16:34:16 [INFO ] [jenkins] 
+2026-09-10 16:34:16 [INFO ] [jenkins] ==================================================
+2026-09-10 16:34:16 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 16:34:16 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 16:34:16 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 16:34:16 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 16:34:16 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 16:34:31 [INFO ] [jenkins] ==================================================
+2026-09-10 16:34:31 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-09-10 16:34:31 [INFO ] [jenkins] ==================================================
+2026-09-10 16:34:31 [INFO ] [jenkins] 
+2026-09-10 16:34:31 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-09-10 16:34:31 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:34:31 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-09-10 16:34:31 [INFO ] [jenkins] 
+2026-09-10 16:34:31 [INFO ] [jenkins] [2/4] Preprocess
+2026-09-10 16:34:31 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:34:31 [INFO ] [preprocess] Preprocessing 2 file(s) with 2 step(s)
+2026-09-10 16:34:31 [INFO ] [preprocess] [top1.xlsx]
+2026-09-10 16:34:32 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 16:34:32 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 16:34:36 [INFO ] [preprocess]   [top1.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 16:34:36 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 16:34:36 [INFO ] [preprocess]   [top1.xlsx] No duplicate filled rows to remove
+2026-09-10 16:34:36 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:34:37 [INFO ] [preprocess] [top2.xlsx]
+2026-09-10 16:34:37 [INFO ] [pipeline] Starting pipeline: 2 step(s)
+2026-09-10 16:34:37 [INFO ] [pipeline] [1/2] remove_header
+2026-09-10 16:34:43 [INFO ] [preprocess]   [top2.xlsx] Sheet [Sheet0]: header row removed
+2026-09-10 16:34:43 [INFO ] [pipeline] [2/2] dedup_filled_rows
+2026-09-10 16:34:49 [INFO ] [preprocess]   [top2.xlsx] Dedup: 29 filled rows, 1 deleted
+2026-09-10 16:34:49 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:34:50 [INFO ] [preprocess] Preprocessing complete
+2026-09-10 16:34:50 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-09-10 16:34:50 [INFO ] [jenkins] 
+2026-09-10 16:34:50 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-09-10 16:34:50 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:34:50 [INFO ] [main] Log file: 20260910_9162ece8.log
+2026-09-10 16:34:50 [INFO ] [main] Found 2 file(s):
+2026-09-10 16:34:50 [INFO ] [main]   top1.xlsx
+2026-09-10 16:34:50 [INFO ] [main]   top2.xlsx
+2026-09-10 16:34:50 [INFO ] [main] Output: 9.3v1_de.xlsx
+2026-09-10 16:34:50 [INFO ] [main] ==================================================
+2026-09-10 16:34:58 [INFO ] [main] Merged 2 files, 2784 images total
+2026-09-10 16:34:58 [INFO ] [main] Deleted 2 source file(s)
+2026-09-10 16:34:59 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-09-10 16:34:59 [INFO ] [pipeline] [1/12] merge_sheets
+2026-09-10 16:35:08 [INFO ] [pipeline]   Sheet [Sheet0_2]: 1763 rows, 1571 images
+2026-09-10 16:35:08 [INFO ] [pipeline]   Merged 2 sheets -> 1, 1763 data rows, 1571 images
+2026-09-10 16:35:08 [INFO ] [pipeline] [2/12] validate
+2026-09-10 16:35:08 [INFO ] [pipeline]   Validated: 3027 rows, 27 cols (expect ~32)
+2026-09-10 16:35:08 [INFO ] [pipeline] [3/12] insert_columns
+2026-09-10 16:35:09 [INFO ] [pipeline]   Backed up 2784 images
+2026-09-10 16:35:09 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-09-10 16:35:09 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-09-10 16:35:09 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-09-10 16:35:09 [INFO ] [pipeline]   Restored 2784 images with adjusted anchors
+2026-09-10 16:35:09 [INFO ] [pipeline] [4/12] assign_ids
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column 2: 3027 IDs generated
+2026-09-10 16:35:09 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column 3: 3027 cells filled
+2026-09-10 16:35:09 [INFO ] [pipeline] [6/12] map_colors
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column 11: 2965 cells mapped, 55 rows skipped (col A has fill), 7 no match (recorded)
+2026-09-10 16:35:09 [INFO ] [pipeline] [7/12] size_mapping
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column 12: 2924 mapped, 55 cleared (col A has fill), 48 no match (recorded)
+2026-09-10 16:35:09 [INFO ] [pipeline] [8/12] copy_mirror
+2026-09-10 16:35:09 [INFO ] [pipeline]   Mirror copy: 15190 cells written
+2026-09-10 16:35:09 [INFO ] [pipeline] [9/12] mirror_category
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column 45: 3027 cells copied from col 13
+2026-09-10 16:35:09 [INFO ] [pipeline] [10/12] calc_price
+2026-09-10 16:35:09 [INFO ] [pipeline]   Columns 46-49: 3027 rows calculated
+2026-09-10 16:35:09 [INFO ] [pipeline] [11/12] format_cells
+2026-09-10 16:35:09 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-09-10 16:35:09 [INFO ] [pipeline]   Formatted 3027 rows: h=50, align=left/center
+2026-09-10 16:35:09 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-09-10 16:35:09 [INFO ] [pipeline] [12/12] finalize
+2026-09-10 16:35:09 [INFO ] [pipeline]   Done: 3027 rows x 49 cols (target: 49)
+2026-09-10 16:35:09 [INFO ] [pipeline] Pipeline complete
+2026-09-10 16:35:11 [INFO ] [main] Size: 3027 rows x 49 cols
+2026-09-10 16:35:11 [INFO ] [main] ==================================================
+2026-09-10 16:35:11 [INFO ] [main] Done: 9.3v1_de.xlsx
+2026-09-10 16:35:12 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-09-10 16:35:12 [INFO ] [jenkins] 
+2026-09-10 16:35:12 [INFO ] [jenkins] [4/4] Color re-processing
+2026-09-10 16:35:12 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:35:12 [INFO ] [color_size_main] Source: 9.3v1_de.xlsx
+2026-09-10 16:35:13 [INFO ] [color_size_main] Extracted: 2965 data lines + 62 separators → check_.txt
+2026-09-10 16:35:13 [INFO ] [color_size_main] Running: process.py
+2026-09-10 16:35:13 [INFO ] [color_size_deal] Groups: 56, lines: 2965 (file: 3027)
+2026-09-10 16:35:13 [INFO ] [color_size_deal] Prefixes: {'01': 294, '02': 210, '03': 155, '04': 80, '05': 73, '06': 57, '07': 57, '08': 21, '09': 15, '10': 7}
+2026-09-10 16:35:13 [INFO ] [color_size_deal] Done.
+2026-09-10 16:35:13 [INFO ] [color_size_main] Processing write-back: 3027 lines
+2026-09-10 16:35:17 [INFO ] [color_size_main] Write-back: 1031 written, 1996 unchanged → 9.3v1_de.xlsx
+2026-09-10 16:35:17 [INFO ] [color_size_main] Done.
+2026-09-10 16:35:17 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-09-10 16:35:17 [INFO ] [jenkins] 
+2026-09-10 16:35:17 [INFO ] [jenkins] ==================================================
+2026-09-10 16:35:17 [INFO ] [jenkins] All 4 steps completed successfully
+2026-09-10 16:35:17 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 16:35:17 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 16:35:17 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 16:35:17 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-09-10 16:47:06 [INFO ] [jenkins] ==================================================
+2026-09-10 16:47:06 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-09-10 16:47:06 [INFO ] [jenkins] ==================================================
+2026-09-10 16:47:06 [INFO ] [jenkins] 
+2026-09-10 16:47:06 [INFO ] [jenkins] [1/1] Title optimization
+2026-09-10 16:47:06 [INFO ] [jenkins] ------------------------------
+2026-09-10 16:47:06 [INFO ] [title_workflow] Source: 9.3v1.xlsx
+2026-09-10 16:47:07 [INFO ] [title_workflow] Extracted 55 titles + 55 links
+2026-09-10 16:47:07 [INFO ] [title_workflow] Written: origin_title (55) + origin_link (55)
+2026-09-10 16:47:07 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-09-10 16:47:07 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-09-10 16:47:09 [INFO ] [deepseek_web] Opening DeepSeek web (55 titles)...
+2026-09-10 16:47:09 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-09-10 16:47:18 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-09-10 16:47:20 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-09-10 16:47:20 [INFO ] [deepseek_web] [1/55] 男士短款修身款风衣毛呢外套
+2026-09-10 16:47:23 [INFO ] [deepseek_web]   Downloaded: 0001_1150432100742558105260.jpg
+2026-09-10 16:47:23 [INFO ] [deepseek_web]   Prefetching next image (2/55)
+2026-09-10 16:47:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:47:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:47:57 [INFO ] [deepseek_web]   Response: 西装领 单排扣三粒扣 双侧侧插口袋 中长款 直下摆 无帽设计 毛呢外套 男士 修身版型 长袖 纯色 日常通勤 秋冬
+2026-09-10 16:47:57 [INFO ] [deepseek_web]   Deleted: 0001_1150432100742558105260.jpg
+2026-09-10 16:48:02 [INFO ] [deepseek_web] [2/55] 男士牛仔衬衫双线撞色春秋款带口袋长袖开衫衬衣外套
+2026-09-10 16:48:02 [INFO ] [deepseek_web]   Downloaded: 0002_7311112510629017999249.jpg
+2026-09-10 16:48:02 [INFO ] [deepseek_web]   Prefetching next image (3/55)
+2026-09-10 16:48:02 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:48:13 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:48:41 [INFO ] [deepseek_web]   Response: 单侧胸前贴袋 撞色双线明线 标准衬衫领 单排扣门襟 纽扣袖口 直下摆 纯色 牛仔衬衫外套 男士 常规版型 长袖
+2026-09-10 16:48:41 [INFO ] [deepseek_web]   Deleted: 0002_7311112510629017999249.jpg
+2026-09-10 16:48:46 [INFO ] [deepseek_web] [3/55] 男士刺绣印花多色格子啤酒节上衣立领衬衫
+2026-09-10 16:48:46 [INFO ] [deepseek_web]   Downloaded: 0003_8291032033637819941419.jpg
+2026-09-10 16:48:46 [INFO ] [deepseek_web]   Prefetching next image (4/55)
+2026-09-10 16:48:46 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:48:57 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:49:15 [INFO ] [deepseek_web]   Response: 对称胸前刺绣 传统格纹图案 标准衬衫领 男士长袖衬衫 常规版型 单排纽扣门襟 纽扣式袖口 啤酒节传统服饰
+2026-09-10 16:49:15 [INFO ] [deepseek_web]   Deleted: 0003_8291032033637819941419.jpg
+2026-09-10 16:49:20 [INFO ] [deepseek_web] [4/55] 男士衬衫四面弹力衬衣免烫抗皱
+2026-09-10 16:49:20 [INFO ] [deepseek_web]   Downloaded: 0004_8281109093286718756285.jpg
+2026-09-10 16:49:20 [INFO ] [deepseek_web]   Prefetching next image (5/55)
+2026-09-10 16:49:20 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:49:31 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:49:49 [INFO ] [deepseek_web]   Response: 尖领 单排纽扣门襟 纽扣式袖口 弧形下摆 胸前无口袋 纯色 男士长袖衬衫 修身版型 四面弹力 免烫抗皱 商务通勤
+2026-09-10 16:49:49 [INFO ] [deepseek_web]   Deleted: 0004_8281109093286718756285.jpg
+2026-09-10 16:49:54 [INFO ] [deepseek_web] [5/55] 男士衬衫
+2026-09-10 16:49:54 [INFO ] [deepseek_web]   Downloaded: 0005_8740216423041915616957.jpg
+2026-09-10 16:49:54 [INFO ] [deepseek_web]   Prefetching next image (6/55)
+2026-09-10 16:49:54 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:50:05 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:50:32 [INFO ] [deepseek_web]   Response: 标准衬衫领 单排纽扣门襟设计 纽扣式袖口 男士长袖衬衫 修身版型剪裁 弧形下摆设计 胸前无口袋设计 纯色
+2026-09-10 16:50:32 [INFO ] [deepseek_web]   Deleted: 0005_8740216423041915616957.jpg
+2026-09-10 16:50:37 [INFO ] [deepseek_web] [6/55] 男士嬉皮士复古花朵印花衬衫
+2026-09-10 16:50:37 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:50:42 [INFO ] [deepseek_web] [7/55] 男士秋季新款翻领休闲外套中长款风衣
+2026-09-10 16:50:44 [INFO ] [deepseek_web]   Downloaded: 0007_5160400435522614855635.jpg
+2026-09-10 16:50:44 [INFO ] [deepseek_web]   Prefetching next image (8/55)
+2026-09-10 16:50:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:50:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:51:13 [INFO ] [deepseek_web]   Response: 插肩袖设计 双侧斜插口袋 单排纽扣门襟 翻领 纽扣袖口 直下摆 中长款 纯色 无帽设计 风衣外套 男士 常规版型 长袖
+2026-09-10 16:51:13 [INFO ] [deepseek_web]   Deleted: 0007_5160400435522614855635.jpg
+2026-09-10 16:51:18 [INFO ] [deepseek_web] [8/55] 男士棒球服飞行员夹克
+2026-09-10 16:51:18 [INFO ] [deepseek_web]   Downloaded: 0008_3280427123292918592186.jpg
+2026-09-10 16:51:18 [INFO ] [deepseek_web]   Prefetching next image (9/55)
+2026-09-10 16:51:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:51:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:51:47 [INFO ] [deepseek_web]   Response: 螺纹棒球领 斜向拼接剪裁 两侧斜插口袋 全拉链门襟 螺纹袖口 螺纹下摆 纯色 男士飞行员夹克 常规版型 长袖
+2026-09-10 16:51:47 [INFO ] [deepseek_web]   Deleted: 0008_3280427123292918592186.jpg
+2026-09-10 16:51:52 [INFO ] [deepseek_web] [9/55] 男士立领夹克休闲韩版外套
+2026-09-10 16:51:52 [INFO ] [deepseek_web]   Downloaded: 0009_2940507372271010055172.jpg
+2026-09-10 16:51:52 [INFO ] [deepseek_web]   Prefetching next image (10/55)
+2026-09-10 16:51:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:52:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:52:21 [INFO ] [deepseek_web]   Response: 领口按扣固定带 双侧拉链口袋 撞色内衬拼接 罗纹袖口 罗纹下摆 男士立领飞行员夹克 常规版型 长袖 全拉链门襟 纯色
+2026-09-10 16:52:21 [INFO ] [deepseek_web]   Deleted: 0009_2940507372271010055172.jpg
+2026-09-10 16:52:26 [INFO ] [deepseek_web] [10/55] 男士长袖衬衫翻领男装衬衣
+2026-09-10 16:52:26 [INFO ] [deepseek_web]   Downloaded: 0010_8430331136741371907726.jpg
+2026-09-10 16:52:26 [INFO ] [deepseek_web]   Prefetching next image (11/55)
+2026-09-10 16:52:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:52:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:52:56 [INFO ] [deepseek_web]   Response: 单侧胸前贴袋设计 纽扣式衬衫领 纽扣式袖口 单排纽扣门襟 男士长袖衬衫 常规版型剪裁 弧形下摆设计 纯色图案
+2026-09-10 16:52:56 [INFO ] [deepseek_web]   Deleted: 0010_8430331136741371907726.jpg
+2026-09-10 16:53:01 [INFO ] [deepseek_web] [11/55] 男士纽扣棉麻衬衫穆斯林长袍（不要成分标）
+2026-09-10 16:53:01 [INFO ] [deepseek_web]   Downloaded: 0011_2231047269525520236565.jpg
+2026-09-10 16:53:01 [INFO ] [deepseek_web]   Prefetching next image (12/55)
+2026-09-10 16:53:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:53:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:53:31 [INFO ] [deepseek_web]   Response: 立领 胸前垂直褶饰 半开纽扣门襟 弧形下摆 侧开衩 纽扣式袖口 男士穆斯林长袍 宽松版型 长袖 过膝长款 纯色
+2026-09-10 16:53:31 [INFO ] [deepseek_web]   Deleted: 0011_2231047269525520236565.jpg
+2026-09-10 16:53:36 [INFO ] [deepseek_web] [12/55] 男士西服商务正装男两扣小西装外套
+2026-09-10 16:53:36 [INFO ] [deepseek_web]   Downloaded: 0012_8770436209203212469910.jpg
+2026-09-10 16:53:36 [INFO ] [deepseek_web]   Prefetching next image (13/55)
+2026-09-10 16:53:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:53:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:54:06 [INFO ] [deepseek_web]   Response: 平驳领 单排两粒扣门襟 左胸嵌线口袋 双侧翻盖口袋 男士单件西装外套 常规版型 长袖 袖口纽扣 纯色 商务正装
+2026-09-10 16:54:06 [INFO ] [deepseek_web]   Deleted: 0012_8770436209203212469910.jpg
+2026-09-10 16:54:11 [INFO ] [deepseek_web] [13/55] 男士加拿大国旗印花长袖华夫格T恤
+2026-09-10 16:54:11 [INFO ] [deepseek_web]   Downloaded: 0013_1380330125751415158379.jpg
+2026-09-10 16:54:11 [INFO ] [deepseek_web]   Prefetching next image (14/55)
+2026-09-10 16:54:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:54:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:54:40 [INFO ] [deepseek_web]   Response: 胸前字母印花 枫叶图案 左袖国旗贴章 华夫格纹理 圆领 长袖 套头设计 男士华夫格长袖T恤 常规版型
+2026-09-10 16:54:40 [INFO ] [deepseek_web]   Deleted: 0013_1380330125751415158379.jpg
+2026-09-10 16:54:45 [INFO ] [deepseek_web] [14/55] 男士长袖翻领假口袋商务休闲西装外套
+2026-09-10 16:54:45 [INFO ] [deepseek_web]   Downloaded: 0014_6770456100462814385930.jpg
+2026-09-10 16:54:45 [INFO ] [deepseek_web]   Prefetching next image (15/55)
+2026-09-10 16:54:45 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:54:56 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:55:14 [INFO ] [deepseek_web]   Response: 平驳领 左胸嵌线口袋 双侧翻盖口袋 单排两粒扣门襟 纽扣式袖口 弧形下摆 男士西装外套 常规版型 长袖 纯色
+2026-09-10 16:55:14 [INFO ] [deepseek_web]   Deleted: 0014_6770456100462814385930.jpg
+2026-09-10 16:55:19 [INFO ] [deepseek_web] [15/55] 男士秋冬纯色长袖立领风衣外套
+2026-09-10 16:55:19 [INFO ] [deepseek_web]   Downloaded: 0015_0540236559372447547848.jpg
+2026-09-10 16:55:19 [INFO ] [deepseek_web]   Prefetching next image (16/55)
+2026-09-10 16:55:19 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:55:30 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:55:53 [INFO ] [deepseek_web]   Response: 立领 单排三粒扣门襟 双侧斜插口袋 弧形下摆设计 无帽设计 中长款 纯色 男士风衣外套 修身版型 长袖 纽扣式袖口
+2026-09-10 16:55:53 [INFO ] [deepseek_web]   Deleted: 0015_0540236559372447547848.jpg
+2026-09-10 16:55:58 [INFO ] [deepseek_web] [16/55] 男士连帽冲锋衣夹克外套
+2026-09-10 16:55:58 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:56:03 [INFO ] [deepseek_web] [17/55] 外贸时尚休闲西装外套男士修身商务西服外套男一粒扣小西装男
+2026-09-10 16:56:08 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:56:13 [INFO ] [deepseek_web] [18/55] 中世纪男式冲浪外套亚麻连帽束腰外衣伦法尔角LARP游骑兵角色扮演
+2026-09-10 16:56:19 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:56:24 [INFO ] [deepseek_web] [19/55] 男士男女装圆领条纹长袖T恤
+2026-09-10 16:56:29 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:56:34 [INFO ] [deepseek_web] [20/55] 四面弹力衬衣男士衬衫免烫抗皱亚马逊外贸简约商务薄款衬衫男
+2026-09-10 16:56:35 [INFO ] [deepseek_web]   Downloaded: 0020_6811112596332510815105.jpg
+2026-09-10 16:56:35 [INFO ] [deepseek_web]   Prefetching next image (21/55)
+2026-09-10 16:56:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:56:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:57:05 [INFO ] [deepseek_web]   Response: 尖领 单排纽扣门襟 纽扣式袖口 弧形下摆 胸前无口袋 纯色 男士长袖衬衫 修身版型 四面弹力 免烫抗皱 薄款 商务
+2026-09-10 16:57:05 [INFO ] [deepseek_web]   Deleted: 0020_6811112596332510815105.jpg
+2026-09-10 16:57:10 [INFO ] [deepseek_web] [21/55] 男士中世纪牧师服
+2026-09-10 16:57:10 [INFO ] [deepseek_web]   Downloaded: 0021_7430228003371079035885.jpg
+2026-09-10 16:57:10 [INFO ] [deepseek_web]   Prefetching next image (22/55)
+2026-09-10 16:57:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:57:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:57:39 [INFO ] [deepseek_web]   Response: 立领 单排多粒扣门襟 无口袋设计 平直下摆 纯色 直筒剪裁 无帽设计 男士中世纪牧师长袍 宽松版型 长袖 过膝长款
+2026-09-10 16:57:39 [INFO ] [deepseek_web]   Deleted: 0021_7430228003371079035885.jpg
+2026-09-10 16:57:44 [INFO ] [deepseek_web] [22/55] 男士西部印花流苏衬衫
+2026-09-10 16:57:44 [INFO ] [deepseek_web]   Downloaded: 0022_6030420507312620068892.jpg
+2026-09-10 16:57:44 [INFO ] [deepseek_web]   Prefetching next image (23/55)
+2026-09-10 16:57:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:57:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:58:13 [INFO ] [deepseek_web]   Response: 肩部流苏装饰 菱形格纹拼接 肘部贴片拼接 翻领 单排纽扣门襟 长袖 弧形下摆 男士西部风格衬衫 常规版型
+2026-09-10 16:58:13 [INFO ] [deepseek_web]   Deleted: 0022_6030420507312620068892.jpg
+2026-09-10 16:58:18 [INFO ] [deepseek_web] [23/55] 男士士商务休闲西装薄款西服上衣外套
+2026-09-10 16:58:18 [INFO ] [deepseek_web]   Downloaded: 0023_4790751212821926002169.jpg
+2026-09-10 16:58:18 [INFO ] [deepseek_web]   Prefetching next image (24/55)
+2026-09-10 16:58:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:58:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:58:48 [INFO ] [deepseek_web]   Response: 肌理面料 平驳领 单排两粒扣门襟 左胸嵌线口袋 双侧翻盖口袋 弧形下摆 长袖 男士西装外套 常规版型 薄款 纯色
+2026-09-10 16:58:48 [INFO ] [deepseek_web]   Deleted: 0023_4790751212821926002169.jpg
+2026-09-10 16:58:53 [INFO ] [deepseek_web] [24/55] 男士防风防晒透气户外轻薄透气登山服外套
+2026-09-10 16:58:53 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 16:58:58 [INFO ] [deepseek_web] [25/55] 男士中世纪北欧神话中长款带帽开衫酷炫摩托夹克外套
+2026-09-10 16:58:59 [INFO ] [deepseek_web]   Downloaded: 0025_7330254334191857653752.jpg
+2026-09-10 16:58:59 [INFO ] [deepseek_web]   Prefetching next image (26/55)
+2026-09-10 16:58:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:59:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 16:59:29 [INFO ] [deepseek_web]   Response: 背部乌鸦图腾印花 袖口编织纹饰边 下摆编织纹饰边 连帽 斜插口袋 无扣开襟 中长款 男士开衫夹克 常规版型 长袖
+2026-09-10 16:59:29 [INFO ] [deepseek_web]   Deleted: 0025_7330254334191857653752.jpg
+2026-09-10 16:59:34 [INFO ] [deepseek_web] [26/55] 男士维京文化中世纪北欧神话圆领长袖T恤
+2026-09-10 16:59:34 [INFO ] [deepseek_web]   Downloaded: 0026_1091023439567318587168.jpg
+2026-09-10 16:59:34 [INFO ] [deepseek_web]   Prefetching next image (27/55)
+2026-09-10 16:59:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 16:59:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:00:04 [INFO ] [deepseek_web]   Response: 胸前狼头图案印花 左袖维京符文印花 圆领无帽套头 男士长袖T恤 常规版型 直筒下摆 无口袋 纯色底 维京文化主题
+2026-09-10 17:00:04 [INFO ] [deepseek_web]   Deleted: 0026_1091023439567318587168.jpg
+2026-09-10 17:00:09 [INFO ] [deepseek_web] [27/55] 男士中世纪北欧神话维京夹克外套
+2026-09-10 17:00:09 [INFO ] [deepseek_web]   Downloaded: 0027_4620257137111868966773.jpg
+2026-09-10 17:00:09 [INFO ] [deepseek_web]   Prefetching next image (28/55)
+2026-09-10 17:00:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:00:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:00:38 [INFO ] [deepseek_web]   Response: 胸前骷髅斧头印花 袖子绳结纹饰 罗纹袖口 罗纹下摆 立领 全拉链门襟 斜插口袋 男士夹克外套 常规版型 长袖 维京风格
+2026-09-10 17:00:38 [INFO ] [deepseek_web]   Deleted: 0027_4620257137111868966773.jpg
+2026-09-10 17:00:43 [INFO ] [deepseek_web] [28/55] 男士复古民族印花双口袋长袖翻领衬衫
+2026-09-10 17:00:43 [INFO ] [deepseek_web]   Downloaded: 0028_1320424465212417204138.jpg
+2026-09-10 17:00:43 [INFO ] [deepseek_web]   Prefetching next image (29/55)
+2026-09-10 17:00:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:00:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:01:12 [INFO ] [deepseek_web]   Response: 几何图案印花 双胸袋带盖 口袋几何印花 袖部几何印花 撞色设计 男士常规版型长袖衬衫 翻领 单排纽扣门襟 纽扣袖口 弧形下摆
+2026-09-10 17:01:12 [INFO ] [deepseek_web]   Deleted: 0028_1320424465212417204138.jpg
+2026-09-10 17:01:17 [INFO ] [deepseek_web] [29/55] 男士时尚西部风格印花宽松长袖衬衫
+2026-09-10 17:01:17 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:01:22 [INFO ] [deepseek_web] [30/55] 新款亮片西装外套欧美男士夜店演出外套宴会演出礼服多色
+2026-09-10 17:01:27 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:01:32 [INFO ] [deepseek_web] [31/55] 跨境外贸男士新款圆领套头长袖上衣个性骷髅厂家直销速卖通亚马逊
+2026-09-10 17:01:37 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:01:42 [INFO ] [deepseek_web] [32/55] 秋冬款外套男士春秋季潮流痞帅牛仔工装夹克宽松休闲男装上衣冬季
+2026-09-10 17:01:44 [INFO ] [deepseek_web]   Downloaded: 0032_7460145359381514069327.jpg
+2026-09-10 17:01:44 [INFO ] [deepseek_web]   Prefetching next image (33/55)
+2026-09-10 17:01:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:01:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:02:13 [INFO ] [deepseek_web]   Response: 破洞磨烂做旧 胸前双翻盖口袋 袖部破洞贴片 翻领 单排纽扣门襟 纽扣式袖口 下摆纽扣调节 男士牛仔夹克外套 常规版型 长袖
+2026-09-10 17:02:13 [INFO ] [deepseek_web]   Deleted: 0032_7460145359381514069327.jpg
+2026-09-10 17:02:18 [INFO ] [deepseek_web] [33/55] 春秋季青年华夫格拉链口袋翻领修身开衫男士夹克
+2026-09-10 17:02:18 [INFO ] [deepseek_web]   Downloaded: 0033_4840915059292124005545.jpg
+2026-09-10 17:02:18 [INFO ] [deepseek_web]   Prefetching next image (34/55)
+2026-09-10 17:02:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:02:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:02:47 [INFO ] [deepseek_web]   Response: 华夫格纹理 双侧拉链口袋 翻领 全拉链门襟 修身版型 长袖 直下摆 无帽设计 纯色 男士全拉链开衫夹克外套
+2026-09-10 17:02:47 [INFO ] [deepseek_web]   Deleted: 0033_4840915059292124005545.jpg
+2026-09-10 17:02:52 [INFO ] [deepseek_web] [34/55] 新款春秋立领二粒扣小西装男士跨境纯色大码时尚休闲外套
+2026-09-10 17:02:52 [INFO ] [deepseek_web]   Downloaded: 0034_8010908327523056672252.jpg
+2026-09-10 17:02:52 [INFO ] [deepseek_web]   Prefetching next image (35/55)
+2026-09-10 17:02:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:03:03 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:03:21 [INFO ] [deepseek_web]   Response: 前胸横向拼接剪裁 双侧嵌线口袋 立领 单排两粒扣门襟 长袖 弧形下摆 纯色 男士单件西装外套 常规版型 无帽设计
+2026-09-10 17:03:21 [INFO ] [deepseek_web]   Deleted: 0034_8010908327523056672252.jpg
+2026-09-10 17:03:26 [INFO ] [deepseek_web] [35/55] 男士衬衫男春秋季宽松休闲春秋款工装衬衣长袖外套潮
+2026-09-10 17:03:26 [INFO ] [deepseek_web]   Downloaded: 0035_6090200560107311450808.jpg
+2026-09-10 17:03:26 [INFO ] [deepseek_web]   Prefetching next image (36/55)
+2026-09-10 17:03:26 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:03:37 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:06:53 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-09-10 17:06:53 [INFO ] [deepseek_web]   Deleted: 0035_6090200560107311450808.jpg
+2026-09-10 17:06:58 [INFO ] [deepseek_web] [36/55] 飞行夹克男秋春季新款韩版棒球服立领外套中青年时尚男装跨境上衣
+2026-09-10 17:06:59 [INFO ] [deepseek_web]   Downloaded: 0036_9660407373354419246600.jpg
+2026-09-10 17:06:59 [INFO ] [deepseek_web]   Prefetching next image (37/55)
+2026-09-10 17:06:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:07:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:07:29 [INFO ] [deepseek_web]   Response: 暗纹图案 单侧拉链口袋 罗纹棒球领 男士飞行员夹克 罗纹袖口 罗纹下摆 全拉链门襟 无帽设计 常规版型 长袖
+2026-09-10 17:07:29 [INFO ] [deepseek_web]   Deleted: 0036_9660407373354419246600.jpg
+2026-09-10 17:07:34 [INFO ] [deepseek_web] [37/55] 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-09-10 17:07:34 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:07:39 [INFO ] [deepseek_web] [38/55] 男士圣诞节绒毛边开衫
+2026-09-10 17:07:42 [INFO ] [deepseek_web]   Downloaded: 0038_5060935261894514566167.jpg
+2026-09-10 17:07:42 [INFO ] [deepseek_web]   Prefetching next image (39/55)
+2026-09-10 17:07:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:07:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:08:11 [INFO ] [deepseek_web]   Response: 连帽毛绒饰边 门襟编织纹饰带 袖口毛绒饰边 下摆毛绒饰边 双侧斜插口袋 男士连帽长款开衫外套 宽松版型 长袖 无扣开襟 中长款
+2026-09-10 17:08:11 [INFO ] [deepseek_web]   Deleted: 0038_5060935261894514566167.jpg
+2026-09-10 17:08:16 [INFO ] [deepseek_web] [39/55] 男士春秋季休闲连帽外套街头潮流棒球服刺绣上衣夹克
+2026-09-10 17:08:16 [INFO ] [deepseek_web]   Downloaded: 0039_4560202327961411496040.jpg
+2026-09-10 17:08:16 [INFO ] [deepseek_web]   Prefetching next image (40/55)
+2026-09-10 17:08:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:08:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:08:45 [INFO ] [deepseek_web]   Response: 胸前字母刺绣 帽子抽绳 罗纹袖口条纹 罗纹下摆条纹 按扣门襟 双侧斜插口袋 连帽设计 男士连帽开衫夹克外套 宽松版型 长袖
+2026-09-10 17:08:45 [INFO ] [deepseek_web]   Deleted: 0039_4560202327961411496040.jpg
+2026-09-10 17:08:50 [INFO ] [deepseek_web] [40/55] 男士冬季欧码风衣
+2026-09-10 17:08:50 [INFO ] [deepseek_web]   Downloaded: 0040_1940359341551078789949.jpg
+2026-09-10 17:08:50 [INFO ] [deepseek_web]   Prefetching next image (41/55)
+2026-09-10 17:08:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:09:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:09:19 [INFO ] [deepseek_web]   Response: 平驳领 单排三粒扣门襟 双侧斜插口袋 中长款 无帽设计 直下摆 纯色 男士风衣外套 常规版型 长袖
+2026-09-10 17:09:19 [INFO ] [deepseek_web]   Deleted: 0040_1940359341551078789949.jpg
+2026-09-10 17:09:24 [INFO ] [deepseek_web] [41/55] 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:09:24 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:09:29 [INFO ] [deepseek_web] [42/55] 男士灯芯绒纯色西装外套
+2026-09-10 17:09:33 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:09:38 [INFO ] [deepseek_web] [43/55] 男士冬季纯色大衣
+2026-09-10 17:09:40 [INFO ] [deepseek_web]   Downloaded: 0043_6220849492452610027254.jpg
+2026-09-10 17:09:40 [INFO ] [deepseek_web]   Prefetching next image (44/55)
+2026-09-10 17:09:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:09:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:10:09 [INFO ] [deepseek_web]   Response: 毛绒领边 毛绒袖口 毛绒下摆 无扣开襟 双侧斜插口袋 中长款 无帽设计 纯色 男士毛绒边大衣 常规版型 长袖 冬季
+2026-09-10 17:10:09 [INFO ] [deepseek_web]   Deleted: 0043_6220849492452610027254.jpg
+2026-09-10 17:10:14 [INFO ] [deepseek_web] [44/55] 男士啤酒节拼色翻领长袖格子衬衫
+2026-09-10 17:10:14 [INFO ] [deepseek_web]   Downloaded: 0044_2540739399737983959309.jpg
+2026-09-10 17:10:14 [INFO ] [deepseek_web]   Prefetching next image (45/55)
+2026-09-10 17:10:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:10:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:10:44 [INFO ] [deepseek_web]   Response: 格纹图案 领口撞色拼接 袖口撞色拼接 男士长袖格子衬衫 左胸单侧贴袋 翻领 单排纽扣门襟 常规版型 啤酒节
+2026-09-10 17:10:44 [INFO ] [deepseek_web]   Deleted: 0044_2540739399737983959309.jpg
+2026-09-10 17:10:49 [INFO ] [deepseek_web] [45/55] 男士户外薄款外套
+2026-09-10 17:10:49 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:10:54 [INFO ] [deepseek_web] [46/55] 男士啤酒节麂皮绒休闲外套
+2026-09-10 17:10:56 [INFO ] [deepseek_web]   Downloaded: 0046_9600443416962911596625.jpg
+2026-09-10 17:10:56 [INFO ] [deepseek_web]   Prefetching next image (47/55)
+2026-09-10 17:10:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:11:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:11:25 [INFO ] [deepseek_web]   Response: 立领 单排多粒扣门襟 左胸嵌线口袋 男士啤酒节夹克外套 常规版型 长袖 中长款 无帽设计 纯色 双侧翻盖口袋 袖口纽扣 麂皮绒
+2026-09-10 17:11:25 [INFO ] [deepseek_web]   Deleted: 0046_9600443416962911596625.jpg
+2026-09-10 17:11:30 [INFO ] [deepseek_web] [47/55] 男士时尚休闲拼色拉链口袋长袖外套上衣冲锋衣
+2026-09-10 17:11:30 [INFO ] [deepseek_web]   Downloaded: 0047_4230239287187913935238.jpg
+2026-09-10 17:11:30 [INFO ] [deepseek_web]   Prefetching next image (48/55)
+2026-09-10 17:11:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:11:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:11:59 [INFO ] [deepseek_web]   Response: 撞色拼接设计 斜向拉链口袋 可调抽绳连帽 全拉链门襟 弹性袖口 直筒下摆 男士冲锋衣外套 常规版型 长袖 高领
+2026-09-10 17:11:59 [INFO ] [deepseek_web]   Deleted: 0047_4230239287187913935238.jpg
+2026-09-10 17:12:04 [INFO ] [deepseek_web] [48/55] 男士多毛胸部T恤3D打印趣味圆领图案短袖T恤
+2026-09-10 17:12:04 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:12:09 [INFO ] [deepseek_web] [49/55] 男士中世纪复古维京中长款印花连帽开衫
+2026-09-10 17:12:11 [INFO ] [deepseek_web]   Downloaded: 0049_3060717173525116767846.jpg
+2026-09-10 17:12:11 [INFO ] [deepseek_web]   Prefetching next image (50/55)
+2026-09-10 17:12:11 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:12:22 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:12:42 [INFO ] [deepseek_web]   Response: 背部月亮枯树奇幻印花图案 双侧斜插口袋 中长款设计 直筒下摆 男士连帽开衫外套 常规版型 全拉链门襟 长袖
+2026-09-10 17:12:42 [INFO ] [deepseek_web]   Deleted: 0049_3060717173525116767846.jpg
+2026-09-10 17:12:47 [INFO ] [deepseek_web] [50/55] 男士纯色长袖仿棉麻口袋西装外套
+2026-09-10 17:12:47 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:12:52 [INFO ] [deepseek_web] [51/55] 男士圣诞节无拉链无纽扣3d印花健康布开衫真实毛边披风
+2026-09-10 17:12:55 [INFO ] [deepseek_web]   Downloaded: 0051_8410629113933419041267.jpg
+2026-09-10 17:12:55 [INFO ] [deepseek_web]   Prefetching next image (52/55)
+2026-09-10 17:12:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:13:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:13:24 [INFO ] [deepseek_web]   Response: 毛绒领口饰边 毛绒门襟饰边 毛绒袖口饰边 几何图案印花 无拉链无纽扣开襟 连帽设计 中长款 男士开衫外套 常规版型 长袖
+2026-09-10 17:13:24 [INFO ] [deepseek_web]   Deleted: 0051_8410629113933419041267.jpg
+2026-09-10 17:13:29 [INFO ] [deepseek_web] [52/55] 男士冬季正面3d印花真实毛边开衫无拉链无纽扣披风
+2026-09-10 17:13:29 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:13:34 [INFO ] [deepseek_web] [53/55] 万圣节男士印花休闲派对西装外套
+2026-09-10 17:13:36 [INFO ] [deepseek_web]   Downloaded: 0053_8970858233531711470911.jpg
+2026-09-10 17:13:36 [INFO ] [deepseek_web]   Prefetching next image (54/55)
+2026-09-10 17:13:36 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-09-10 17:13:47 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-09-10 17:14:05 [INFO ] [deepseek_web]   Response: 满版骷髅印花 花卉图案 左胸嵌线口袋 男士西装外套 常规版型 平驳领 单排一粒扣门襟 双侧翻盖口袋 长袖 袖口纽扣
+2026-09-10 17:14:05 [INFO ] [deepseek_web]   Deleted: 0053_8970858233531711470911.jpg
+2026-09-10 17:14:10 [INFO ] [deepseek_web] [54/55] 男士休闲宽松纯色西装领单排扣长袖衬衫上衣
+2026-09-10 17:14:10 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:14:15 [INFO ] [deepseek_web] [55/55] 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:14:20 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:14:20 [INFO ] [deepseek_web] 
+2026-09-10 17:14:20 [INFO ] [deepseek_web] Retry round 1: 19 failed item(s)
+2026-09-10 17:14:25 [INFO ] [deepseek_web]   Retry [6]: 男士嬉皮士复古花朵印花衬衫
+2026-09-10 17:14:44 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:15:02 [INFO ] [deepseek_web]     OK: 满版复古花卉图案 提花纹理 单排纽扣门襟 男士长袖衬衫 修身版型 翻领 纽扣式袖口 弧形下摆 无胸袋设计
+2026-09-10 17:15:05 [INFO ] [deepseek_web]   Retry [16]: 男士连帽冲锋衣夹克外套
+2026-09-10 17:15:23 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:15:41 [INFO ] [deepseek_web]     OK: 几何迷彩印花 可调节连帽抽绳 双侧拉链口袋 全拉链门襟 袖口调节设计 男士连帽冲锋衣夹克 常规版型 长袖 直下摆
+2026-09-10 17:15:44 [INFO ] [deepseek_web]   Retry [17]: 外贸时尚休闲西装外套男士修身商务西服外套男一粒扣小西装男
+2026-09-10 17:16:02 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:16:20 [INFO ] [deepseek_web]     OK: 平驳领 单排一粒扣门襟 左胸嵌线口袋 双侧嵌线口袋 弧形下摆 袖口纽扣 男士西装外套 修身版型 长袖 纯色 商务正装
+2026-09-10 17:16:23 [INFO ] [deepseek_web]   Retry [18]: 中世纪男式冲浪外套亚麻连帽束腰外衣伦法尔角LARP游骑兵角色扮演
+2026-09-10 17:16:28 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:16:31 [INFO ] [deepseek_web]   Retry [19]: 男士男女装圆领条纹长袖T恤
+2026-09-10 17:16:36 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:16:39 [INFO ] [deepseek_web]   Retry [24]: 男士防风防晒透气户外轻薄透气登山服外套
+2026-09-10 17:16:44 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:16:47 [INFO ] [deepseek_web]   Retry [29]: 男士时尚西部风格印花宽松长袖衬衫
+2026-09-10 17:17:04 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:17:23 [INFO ] [deepseek_web]     OK: 西部风格刺绣拼接 胸前弧形装饰线 袖口撞色拼接 翻领 单排纽扣门襟 弧形下摆 男士长袖衬衫 常规版型
+2026-09-10 17:17:26 [INFO ] [deepseek_web]   Retry [30]: 新款亮片西装外套欧美男士夜店演出外套宴会演出礼服多色
+2026-09-10 17:17:44 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:18:03 [INFO ] [deepseek_web]     OK: 满版亮片装饰 缎面平驳领拼接 单排一粒扣门襟 男士西装外套 修身版型 长袖 左胸嵌线口袋 双侧翻盖口袋 袖口纽扣
+2026-09-10 17:18:06 [INFO ] [deepseek_web]   Retry [31]: 跨境外贸男士新款圆领套头长袖上衣个性骷髅厂家直销速卖通亚马逊
+2026-09-10 17:18:27 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:18:45 [INFO ] [deepseek_web]     OK: 满版骷髅图案印花 3D立体骨骼图案 圆领套头设计 男士长袖T恤 常规版型 无帽设计 套头无开襟 直筒下摆 无口袋
+2026-09-10 17:18:48 [INFO ] [deepseek_web]   Retry [35]: 男士衬衫男春秋季宽松休闲春秋款工装衬衣长袖外套潮
+2026-09-10 17:19:06 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:19:27 [INFO ] [deepseek_web]     OK: 胸前双翻盖口袋 双侧斜插口袋 弧形下摆 男士工装长袖衬衫 宽松版型 翻领 单排纽扣门襟 长袖 袖口纽扣 纯色
+2026-09-10 17:19:30 [INFO ] [deepseek_web]   Retry [37]: 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-09-10 17:19:35 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:19:38 [INFO ] [deepseek_web]   Retry [41]: 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:19:43 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:19:46 [INFO ] [deepseek_web]   Retry [42]: 男士灯芯绒纯色西装外套
+2026-09-10 17:20:04 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:20:26 [INFO ] [deepseek_web]     OK: 灯芯绒竖条纹纹理 平驳领 单排两粒扣门襟 双侧翻盖口袋 弧形下摆 无胸袋 无帽 男士单件西装外套 常规版型 长袖
+2026-09-10 17:20:29 [INFO ] [deepseek_web]   Retry [45]: 男士户外薄款外套
+2026-09-10 17:20:34 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:20:37 [INFO ] [deepseek_web]   Retry [48]: 男士多毛胸部T恤3D打印趣味圆领图案短袖T恤
+2026-09-10 17:20:41 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:20:44 [INFO ] [deepseek_web]   Retry [50]: 男士纯色长袖仿棉麻口袋西装外套
+2026-09-10 17:20:49 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:20:52 [INFO ] [deepseek_web]   Retry [52]: 男士冬季正面3d印花真实毛边开衫无拉链无纽扣披风
+2026-09-10 17:21:11 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:21:34 [INFO ] [deepseek_web]     OK: 正面立体雪花鹿图案印花 领口门襟袖口下摆毛绒饰边 无拉链无纽扣开襟 男士宽松版型连帽开衫外套 双侧斜插口袋 长袖 中长款
+2026-09-10 17:21:37 [INFO ] [deepseek_web]   Retry [54]: 男士休闲宽松纯色西装领单排扣长袖衬衫上衣
+2026-09-10 17:21:57 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:22:15 [INFO ] [deepseek_web]     OK: 平驳领 单排三粒扣门襟 左胸贴袋 无下口袋 无帽设计 纯色 男士休闲西装外套 宽松版型 长袖 直下摆 袖口纽扣
+2026-09-10 17:22:18 [INFO ] [deepseek_web]   Retry [55]: 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:22:23 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:22:26 [INFO ] [deepseek_web] 
+2026-09-10 17:22:26 [INFO ] [deepseek_web] Retry round 2: 9 failed item(s)
+2026-09-10 17:22:31 [INFO ] [deepseek_web]   Retry [18]: 中世纪男式冲浪外套亚麻连帽束腰外衣伦法尔角LARP游骑兵角色扮演
+2026-09-10 17:22:51 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:23:14 [INFO ] [deepseek_web]     OK: 前开衩设计 腰带束腰 斜挎带 连帽设计 袖部拼接条纹 长款过膝 男士中世纪束腰外衣 常规版型 长袖 亚麻材质 角色扮演
+2026-09-10 17:23:17 [INFO ] [deepseek_web]   Retry [19]: 男士男女装圆领条纹长袖T恤
+2026-09-10 17:23:34 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:23:59 [INFO ] [deepseek_web]     OK: 细横条纹图案 罗纹圆领 套头无帽设计 无拉链 无纽扣 无开襟 无口袋 无装饰 直筒下摆 男士长袖T恤 常规版型
+2026-09-10 17:24:02 [INFO ] [deepseek_web]   Retry [24]: 男士防风防晒透气户外轻薄透气登山服外套
+2026-09-10 17:24:20 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:24:38 [INFO ] [deepseek_web]     OK: 肩部拼接剪裁 双侧斜向拉链口袋 松紧袖口 立领 无帽设计 纯色 男士户外登山夹克 常规版型 长袖 全拉链门襟 轻薄 防风 防晒 透气
+2026-09-10 17:24:41 [INFO ] [deepseek_web]   Retry [37]: 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-09-10 17:24:46 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:24:49 [INFO ] [deepseek_web]   Retry [41]: 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:24:54 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:24:57 [INFO ] [deepseek_web]   Retry [45]: 男士户外薄款外套
+2026-09-10 17:25:16 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:25:35 [INFO ] [deepseek_web]     OK: 胸前双翻盖口袋 单排纽扣门襟 翻领 袖口纽扣 下摆纽扣 无帽设计 男士工装夹克外套 常规版型 长袖 薄款 户外
+2026-09-10 17:25:38 [INFO ] [deepseek_web]   Retry [48]: 男士多毛胸部T恤3D打印趣味圆领图案短袖T恤
+2026-09-10 17:25:56 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:26:14 [INFO ] [deepseek_web]     OK: 3D立体胸部毛发印花 V形背带式印花 底部鸡头图案印花 男士短袖T恤 常规版型 圆领 套头无开襟 无帽 直筒下摆
+2026-09-10 17:26:17 [INFO ] [deepseek_web]   Retry [50]: 男士纯色长袖仿棉麻口袋西装外套
+2026-09-10 17:26:35 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:26:53 [INFO ] [deepseek_web]     OK: 肌理面料 平驳领 左胸嵌线口袋 单排两粒扣门襟 纽扣式袖口 长袖 无帽设计 直下摆 纯色 男士仿棉麻西装外套 常规版型
+2026-09-10 17:26:56 [INFO ] [deepseek_web]   Retry [55]: 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:27:01 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:27:04 [INFO ] [deepseek_web] 
+2026-09-10 17:27:04 [INFO ] [deepseek_web] Retry round 3: 3 failed item(s)
+2026-09-10 17:27:09 [INFO ] [deepseek_web]   Retry [37]: 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫
+2026-09-10 17:27:29 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:27:47 [INFO ] [deepseek_web]     OK: 西部风格刺绣图案 胸前弧形拼接 箭头装饰图案 翻领 单排纽扣门襟 纽扣式袖口 弧形下摆 男士长袖衬衫 常规版型
+2026-09-10 17:27:50 [INFO ] [deepseek_web]   Retry [41]: 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:27:55 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:27:58 [INFO ] [deepseek_web]   Retry [55]: 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:28:03 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:28:06 [INFO ] [deepseek_web] 
+2026-09-10 17:28:06 [INFO ] [deepseek_web] Retry round 4: 2 failed item(s)
+2026-09-10 17:28:11 [INFO ] [deepseek_web]   Retry [41]: 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:28:16 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:28:19 [INFO ] [deepseek_web]   Retry [55]: 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:28:24 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:28:27 [INFO ] [deepseek_web] 
+2026-09-10 17:28:27 [INFO ] [deepseek_web] Retry round 5: 2 failed item(s)
+2026-09-10 17:28:32 [INFO ] [deepseek_web]   Retry [41]: 男装春秋季灯芯绒口袋拼接设计感外套
+2026-09-10 17:28:54 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-09-10 17:29:12 [INFO ] [deepseek_web]     OK: 灯芯绒竖条纹纹理 左胸贴袋 双侧翻盖口袋 平驳领 单排两粒扣门襟 袖口纽扣 无帽设计 男士西装外套 常规版型 长袖
+2026-09-10 17:29:15 [INFO ] [deepseek_web]   Retry [55]: 男士狂欢节70年代花卉印花嘻哈长袖衬衫
+2026-09-10 17:29:20 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-09-10 17:29:23 [WARNING] [deepseek_web] Gave up on 1 items after 5 rounds
+2026-09-10 17:29:24 [INFO ] [deepseek_web] ==================================================
+2026-09-10 17:29:24 [INFO ] [deepseek_web] Done: 54 success, 1 failed → optimize_title
+2026-09-10 17:29:24 [WARNING] [deepseek_web] Unresolved: 1 [FAILED] placeholders in output
+2026-09-10 17:29:24 [INFO ] [title_workflow] Optimization complete: 55 titles
+2026-09-10 17:29:29 [INFO ] [title_workflow] Written 55 optimized titles to column H (8)
+2026-09-10 17:29:29 [INFO ] [title_workflow] Done: 9.3v1.xlsx
+2026-09-10 17:29:29 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-09-10 17:29:29 [INFO ] [jenkins] 
+2026-09-10 17:29:29 [INFO ] [jenkins] ==================================================
+2026-09-10 17:29:29 [INFO ] [jenkins] All 1 steps completed successfully
+2026-09-10 17:29:29 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-09-10 17:29:29 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-09-10 17:29:29 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-09-10 17:29:29 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt

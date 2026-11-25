@@ -1,0 +1,849 @@
+2026-10-28 08:57:04 [INFO ] [jenkins] ==================================================
+2026-10-28 08:57:04 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-28 08:57:04 [INFO ] [jenkins] ==================================================
+2026-10-28 08:57:04 [INFO ] [jenkins] 
+2026-10-28 08:57:04 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-28 08:57:04 [INFO ] [jenkins] ------------------------------
+2026-10-28 08:57:04 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-28 08:57:04 [INFO ] [jenkins] 
+2026-10-28 08:57:04 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-28 08:57:04 [INFO ] [jenkins] ------------------------------
+2026-10-28 08:57:05 [INFO ] [preprocess] Preprocessing 1 file(s) with 1 step(s)
+2026-10-28 08:57:05 [INFO ] [preprocess] [product_20261027032343829.xlsx]
+2026-10-28 08:57:05 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-28 08:57:05 [INFO ] [pipeline] [1/1] remove_header
+2026-10-28 08:57:06 [INFO ] [preprocess]   [product_20261027032343829.xlsx] Sheet [Sheet0]: header row removed
+2026-10-28 08:57:06 [INFO ] [pipeline] Pipeline complete
+2026-10-28 08:57:06 [INFO ] [preprocess] Preprocessing complete
+2026-10-28 08:57:06 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-28 08:57:06 [INFO ] [jenkins] 
+2026-10-28 08:57:06 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-28 08:57:06 [INFO ] [jenkins] ------------------------------
+2026-10-28 08:57:07 [INFO ] [main] Log file: 20261028_9549945e.log
+2026-10-28 08:57:07 [INFO ] [main] Found 1 file(s):
+2026-10-28 08:57:07 [INFO ] [main]   product_20261027032343829.xlsx
+2026-10-28 08:57:07 [INFO ] [main] Output: 10.24v1_de.xlsx
+2026-10-28 08:57:07 [INFO ] [main] ==================================================
+2026-10-28 08:57:07 [INFO ] [main] Single file, copied
+2026-10-28 08:57:07 [INFO ] [main] Deleted 1 source file(s)
+2026-10-28 08:57:07 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-28 08:57:07 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-28 08:57:07 [INFO ] [pipeline]   Single sheet, nothing to merge
+2026-10-28 08:57:07 [INFO ] [pipeline] [2/12] validate
+2026-10-28 08:57:07 [INFO ] [pipeline]   Validated: 219 rows, 27 cols (expect ~32)
+2026-10-28 08:57:07 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-28 08:57:07 [INFO ] [pipeline]   Backed up 433 images
+2026-10-28 08:57:07 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-28 08:57:07 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-28 08:57:07 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-28 08:57:07 [INFO ] [pipeline]   Restored 433 images with adjusted anchors
+2026-10-28 08:57:07 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-28 08:57:07 [INFO ] [pipeline]   Column 2: 219 IDs generated
+2026-10-28 08:57:07 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-28 08:57:07 [INFO ] [pipeline]   Column 3: 219 cells filled
+2026-10-28 08:57:07 [INFO ] [pipeline] [6/12] map_colors
+2026-10-28 08:57:07 [INFO ] [pipeline]   Colors J -> K: 218 cells mapped, 1 rows skipped (col A has fill), 0 no match (recorded)
+2026-10-28 08:57:07 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-28 08:57:07 [INFO ] [pipeline]   Size column L: 168 mapped, 1 cleared (col A has fill), 50 no match (recorded)
+2026-10-28 08:57:07 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-28 08:57:07 [INFO ] [pipeline]   Mirror copy: 1124 cells written
+2026-10-28 08:57:07 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-28 08:57:07 [INFO ] [pipeline]   Price source M -> AS: 219 cells copied
+2026-10-28 08:57:07 [INFO ] [pipeline] [10/12] calc_price
+2026-10-28 08:57:07 [INFO ] [pipeline]   Price columns AT-AW: 219 rows calculated
+2026-10-28 08:57:07 [INFO ] [pipeline] [11/12] format_cells
+2026-10-28 08:57:07 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-28 08:57:07 [INFO ] [pipeline]   Formatted 219 rows: h=50, align=left/center
+2026-10-28 08:57:07 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-28 08:57:07 [INFO ] [pipeline] [12/12] finalize
+2026-10-28 08:57:07 [INFO ] [pipeline]   Done: 219 rows x 49 cols (target: 49)
+2026-10-28 08:57:07 [INFO ] [pipeline] Pipeline complete
+2026-10-28 08:57:07 [INFO ] [main] Size: 219 rows x 49 cols
+2026-10-28 08:57:07 [INFO ] [main] ==================================================
+2026-10-28 08:57:07 [INFO ] [main] Done: 10.24v1_de.xlsx
+2026-10-28 08:57:07 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-28 08:57:07 [INFO ] [jenkins] 
+2026-10-28 08:57:07 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-28 08:57:07 [INFO ] [jenkins] ------------------------------
+2026-10-28 08:57:08 [INFO ] [color_size_main] Source: 10.24v1_de.xlsx
+2026-10-28 08:57:08 [INFO ] [color_size_main] Extracted: 218 data lines + 1 separators → check_.txt
+2026-10-28 08:57:08 [INFO ] [color_size_main] Running: process.py
+2026-10-28 08:57:09 [INFO ] [color_size_deal] Groups: 1, lines: 218 (file: 219)
+2026-10-28 08:57:09 [INFO ] [color_size_deal] Prefixes: {'01': 34, '02': 34, '03': 34, '04': 25, '05': 10, '06': 10, '07': 10, '08': 10, '09': 10, '10': 5}
+2026-10-28 08:57:09 [INFO ] [color_size_deal] Done.
+2026-10-28 08:57:09 [INFO ] [color_size_main] Processing write-back: 219 lines
+2026-10-28 08:57:09 [INFO ] [color_size_main] Write-back: 183 written, 36 unchanged → 10.24v1_de.xlsx
+2026-10-28 08:57:09 [INFO ] [color_size_main] Done.
+2026-10-28 08:57:09 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-28 08:57:09 [INFO ] [jenkins] 
+2026-10-28 08:57:09 [INFO ] [jenkins] ==================================================
+2026-10-28 08:57:09 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-28 08:57:09 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-28 08:57:09 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-28 08:57:09 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-28 08:57:09 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-28 15:45:01 [INFO ] [jenkins] ==================================================
+2026-10-28 15:45:01 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-28 15:45:01 [INFO ] [jenkins] ==================================================
+2026-10-28 15:45:01 [INFO ] [jenkins] 
+2026-10-28 15:45:01 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-28 15:45:01 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:45:01 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-28 15:45:01 [INFO ] [jenkins] 
+2026-10-28 15:45:01 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-28 15:45:01 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:45:01 [INFO ] [preprocess] Preprocessing 2 file(s) with 1 step(s)
+2026-10-28 15:45:01 [INFO ] [preprocess] [product_20261007094422810.xlsx]
+2026-10-28 15:45:02 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-28 15:45:02 [INFO ] [pipeline] [1/1] remove_header
+2026-10-28 15:45:04 [INFO ] [preprocess]   [product_20261007094422810.xlsx] Sheet [Sheet0]: header row removed
+2026-10-28 15:45:04 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:45:05 [INFO ] [preprocess] [product_20261007094524007.xlsx]
+2026-10-28 15:45:06 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-28 15:45:06 [INFO ] [pipeline] [1/1] remove_header
+2026-10-28 15:45:08 [INFO ] [preprocess]   [product_20261007094524007.xlsx] Sheet [Sheet0]: header row removed
+2026-10-28 15:45:08 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:45:09 [INFO ] [preprocess] Preprocessing complete
+2026-10-28 15:45:09 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-28 15:45:09 [INFO ] [jenkins] 
+2026-10-28 15:45:09 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-28 15:45:09 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:45:10 [INFO ] [main] Log file: 20261028_9549945e.log
+2026-10-28 15:45:10 [INFO ] [main] Found 2 file(s):
+2026-10-28 15:45:10 [INFO ] [main]   product_20261007094422810.xlsx
+2026-10-28 15:45:10 [INFO ] [main]   product_20261007094524007.xlsx
+2026-10-28 15:45:10 [INFO ] [main] Output: 10.24v1_de.xlsx
+2026-10-28 15:45:10 [INFO ] [main] ==================================================
+2026-10-28 15:45:14 [INFO ] [main] Merged 2 files, 4830 images total
+2026-10-28 15:45:14 [INFO ] [main] Deleted 2 source file(s)
+2026-10-28 15:45:16 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-28 15:45:16 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-28 15:45:18 [INFO ] [pipeline]   Sheet [Sheet0_2]: 428 rows, 2424 images
+2026-10-28 15:45:18 [INFO ] [pipeline]   Merged 2 sheets -> 1, 428 data rows, 2424 images
+2026-10-28 15:45:18 [INFO ] [pipeline] [2/12] validate
+2026-10-28 15:45:18 [INFO ] [pipeline]   Validated: 847 rows, 27 cols (expect ~32)
+2026-10-28 15:45:18 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-28 15:45:18 [INFO ] [pipeline]   Backed up 4830 images
+2026-10-28 15:45:18 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-28 15:45:18 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-28 15:45:18 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-28 15:45:18 [INFO ] [pipeline]   Restored 4830 images with adjusted anchors
+2026-10-28 15:45:18 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-28 15:45:18 [INFO ] [pipeline]   Column 2: 847 IDs generated
+2026-10-28 15:45:18 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-28 15:45:18 [INFO ] [pipeline]   Column 3: 847 cells filled
+2026-10-28 15:45:18 [INFO ] [pipeline] [6/12] map_colors
+2026-10-28 15:45:18 [INFO ] [pipeline]   Colors J -> K: 760 cells mapped, 79 rows skipped (col A has fill), 8 no match (recorded)
+2026-10-28 15:45:18 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-28 15:45:18 [INFO ] [pipeline]   Size column L: 747 mapped, 79 cleared (col A has fill), 21 no match (recorded)
+2026-10-28 15:45:18 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-28 15:45:18 [INFO ] [pipeline]   Mirror copy: 4754 cells written
+2026-10-28 15:45:18 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-28 15:45:18 [INFO ] [pipeline]   Price source M -> AS: 847 cells copied
+2026-10-28 15:45:18 [INFO ] [pipeline] [10/12] calc_price
+2026-10-28 15:45:18 [INFO ] [pipeline]   Price columns AT-AW: 847 rows calculated
+2026-10-28 15:45:18 [INFO ] [pipeline] [11/12] format_cells
+2026-10-28 15:45:19 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-28 15:45:19 [INFO ] [pipeline]   Formatted 847 rows: h=50, align=left/center
+2026-10-28 15:45:19 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-28 15:45:19 [INFO ] [pipeline] [12/12] finalize
+2026-10-28 15:45:19 [INFO ] [pipeline]   Done: 847 rows x 49 cols (target: 49)
+2026-10-28 15:45:19 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:45:22 [INFO ] [main] Size: 847 rows x 49 cols
+2026-10-28 15:45:22 [INFO ] [main] ==================================================
+2026-10-28 15:45:22 [INFO ] [main] Done: 10.24v1_de.xlsx
+2026-10-28 15:45:22 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-28 15:45:22 [INFO ] [jenkins] 
+2026-10-28 15:45:22 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-28 15:45:22 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:45:22 [INFO ] [color_size_main] Source: 10.24v1_de.xlsx
+2026-10-28 15:45:24 [INFO ] [color_size_main] Extracted: 760 data lines + 87 separators → check_.txt
+2026-10-28 15:45:24 [INFO ] [color_size_main] Running: process.py
+2026-10-28 15:45:24 [INFO ] [color_size_deal] Groups: 80, lines: 760 (file: 847)
+2026-10-28 15:45:24 [INFO ] [color_size_deal] Prefixes: {'01': 92, '02': 39, '03': 26, '04': 15, '05': 8, '06': 8, '07': 8, '08': 2}
+2026-10-28 15:45:24 [INFO ] [color_size_deal] Done.
+2026-10-28 15:45:25 [INFO ] [color_size_main] Processing write-back: 847 lines
+2026-10-28 15:45:28 [INFO ] [color_size_main] Write-back: 285 written, 562 unchanged → 10.24v1_de.xlsx
+2026-10-28 15:45:28 [INFO ] [color_size_main] Done.
+2026-10-28 15:45:28 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-28 15:45:28 [INFO ] [jenkins] 
+2026-10-28 15:45:28 [INFO ] [jenkins] ==================================================
+2026-10-28 15:45:28 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-28 15:45:28 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-28 15:45:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-28 15:45:28 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-28 15:45:28 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-28 15:46:38 [INFO ] [jenkins] ==================================================
+2026-10-28 15:46:38 [INFO ] [jenkins] Jenkins pipeline — 4 steps
+2026-10-28 15:46:38 [INFO ] [jenkins] ==================================================
+2026-10-28 15:46:38 [INFO ] [jenkins] 
+2026-10-28 15:46:38 [INFO ] [jenkins] [1/4] xls → xlsx
+2026-10-28 15:46:38 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:46:39 [INFO ] [jenkins] [1/4] xls → xlsx OK
+2026-10-28 15:46:39 [INFO ] [jenkins] 
+2026-10-28 15:46:39 [INFO ] [jenkins] [2/4] Preprocess
+2026-10-28 15:46:39 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:46:39 [INFO ] [preprocess] Preprocessing 2 file(s) with 1 step(s)
+2026-10-28 15:46:39 [INFO ] [preprocess] [product_20261007094422810.xlsx]
+2026-10-28 15:46:40 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-28 15:46:40 [INFO ] [pipeline] [1/1] remove_header
+2026-10-28 15:46:42 [INFO ] [preprocess]   [product_20261007094422810.xlsx] Sheet [Sheet0]: header row removed
+2026-10-28 15:46:42 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:46:43 [INFO ] [preprocess] [product_20261007094524007.xlsx]
+2026-10-28 15:46:44 [INFO ] [pipeline] Starting pipeline: 1 step(s)
+2026-10-28 15:46:44 [INFO ] [pipeline] [1/1] remove_header
+2026-10-28 15:46:46 [INFO ] [preprocess]   [product_20261007094524007.xlsx] Sheet [Sheet0]: header row removed
+2026-10-28 15:46:46 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:46:47 [INFO ] [preprocess] Preprocessing complete
+2026-10-28 15:46:47 [INFO ] [jenkins] [2/4] Preprocess OK
+2026-10-28 15:46:47 [INFO ] [jenkins] 
+2026-10-28 15:46:47 [INFO ] [jenkins] [3/4] Excel pipeline
+2026-10-28 15:46:47 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:46:48 [INFO ] [main] Log file: 20261028_9549945e.log
+2026-10-28 15:46:48 [INFO ] [main] Found 2 file(s):
+2026-10-28 15:46:48 [INFO ] [main]   product_20261007094422810.xlsx
+2026-10-28 15:46:48 [INFO ] [main]   product_20261007094524007.xlsx
+2026-10-28 15:46:48 [INFO ] [main] Output: 10.24v1_fr.xlsx
+2026-10-28 15:46:48 [INFO ] [main] ==================================================
+2026-10-28 15:46:53 [INFO ] [main] Merged 2 files, 4830 images total
+2026-10-28 15:46:53 [INFO ] [main] Deleted 2 source file(s)
+2026-10-28 15:46:55 [INFO ] [pipeline] Starting pipeline: 12 step(s)
+2026-10-28 15:46:55 [INFO ] [pipeline] [1/12] merge_sheets
+2026-10-28 15:46:58 [INFO ] [pipeline]   Sheet [Sheet0_2]: 428 rows, 2424 images
+2026-10-28 15:46:58 [INFO ] [pipeline]   Merged 2 sheets -> 1, 428 data rows, 2424 images
+2026-10-28 15:46:58 [INFO ] [pipeline] [2/12] validate
+2026-10-28 15:46:58 [INFO ] [pipeline]   Validated: 847 rows, 27 cols (expect ~32)
+2026-10-28 15:46:58 [INFO ] [pipeline] [3/12] insert_columns
+2026-10-28 15:46:58 [INFO ] [pipeline]   Backed up 4830 images
+2026-10-28 15:46:58 [INFO ] [pipeline]   Inserted 6 col(s) at position 2
+2026-10-28 15:46:58 [INFO ] [pipeline]   Inserted 1 col(s) at position 11
+2026-10-28 15:46:58 [INFO ] [pipeline]   Inserted 10 col(s) at position 15
+2026-10-28 15:46:58 [INFO ] [pipeline]   Restored 4830 images with adjusted anchors
+2026-10-28 15:46:58 [INFO ] [pipeline] [4/12] assign_ids
+2026-10-28 15:46:58 [INFO ] [pipeline]   Column 2: 847 IDs generated
+2026-10-28 15:46:58 [INFO ] [pipeline] [5/12] cascade_identifier
+2026-10-28 15:46:58 [INFO ] [pipeline]   Column 3: 847 cells filled
+2026-10-28 15:46:58 [INFO ] [pipeline] [6/12] map_colors
+2026-10-28 15:46:58 [INFO ] [pipeline]   Colors J -> K: 766 cells mapped, 79 rows skipped (col A has fill), 2 no match (recorded)
+2026-10-28 15:46:58 [INFO ] [pipeline] [7/12] size_mapping
+2026-10-28 15:46:58 [INFO ] [pipeline]   Size column L: 747 mapped, 79 cleared (col A has fill), 21 no match (recorded)
+2026-10-28 15:46:58 [INFO ] [pipeline] [8/12] copy_mirror
+2026-10-28 15:46:58 [INFO ] [pipeline]   Mirror copy: 4754 cells written
+2026-10-28 15:46:58 [INFO ] [pipeline] [9/12] mirror_category
+2026-10-28 15:46:58 [INFO ] [pipeline]   Price source M -> AS: 847 cells copied
+2026-10-28 15:46:58 [INFO ] [pipeline] [10/12] calc_price
+2026-10-28 15:46:58 [INFO ] [pipeline]   Price columns AT-AW: 847 rows calculated
+2026-10-28 15:46:58 [INFO ] [pipeline] [11/12] format_cells
+2026-10-28 15:46:58 [INFO ] [pipeline]   Col 1-3 width=17.75, col 4 width=100.0
+2026-10-28 15:46:58 [INFO ] [pipeline]   Formatted 847 rows: h=50, align=left/center
+2026-10-28 15:46:58 [INFO ] [pipeline]   Column F: =LEN(D) formula applied
+2026-10-28 15:46:58 [INFO ] [pipeline] [12/12] finalize
+2026-10-28 15:46:58 [INFO ] [pipeline]   Done: 847 rows x 49 cols (target: 49)
+2026-10-28 15:46:58 [INFO ] [pipeline] Pipeline complete
+2026-10-28 15:47:01 [INFO ] [main] Size: 847 rows x 49 cols
+2026-10-28 15:47:01 [INFO ] [main] ==================================================
+2026-10-28 15:47:01 [INFO ] [main] Done: 10.24v1_fr.xlsx
+2026-10-28 15:47:01 [INFO ] [jenkins] [3/4] Excel pipeline OK
+2026-10-28 15:47:01 [INFO ] [jenkins] 
+2026-10-28 15:47:01 [INFO ] [jenkins] [4/4] Color re-processing
+2026-10-28 15:47:01 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:47:02 [INFO ] [color_size_main] Source: 10.24v1_fr.xlsx
+2026-10-28 15:47:03 [INFO ] [color_size_main] Extracted: 766 data lines + 81 separators → check_.txt
+2026-10-28 15:47:03 [INFO ] [color_size_main] Running: process.py
+2026-10-28 15:47:04 [INFO ] [color_size_deal] Groups: 80, lines: 766 (file: 847)
+2026-10-28 15:47:04 [INFO ] [color_size_deal] Prefixes: {'01': 92, '02': 39, '03': 26, '04': 15, '05': 8, '06': 8, '07': 8, '08': 2}
+2026-10-28 15:47:04 [INFO ] [color_size_deal] Done.
+2026-10-28 15:47:04 [INFO ] [color_size_main] Processing write-back: 847 lines
+2026-10-28 15:47:07 [INFO ] [color_size_main] Write-back: 279 written, 568 unchanged → 10.24v1_fr.xlsx
+2026-10-28 15:47:07 [INFO ] [color_size_main] Done.
+2026-10-28 15:47:08 [INFO ] [jenkins] [4/4] Color re-processing OK
+2026-10-28 15:47:08 [INFO ] [jenkins] 
+2026-10-28 15:47:08 [INFO ] [jenkins] ==================================================
+2026-10-28 15:47:08 [INFO ] [jenkins] All 4 steps completed successfully
+2026-10-28 15:47:08 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-28 15:47:08 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-28 15:47:08 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-28 15:47:08 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
+2026-10-28 15:56:32 [INFO ] [jenkins] ==================================================
+2026-10-28 15:56:32 [INFO ] [jenkins] Jenkins pipeline — 1 steps
+2026-10-28 15:56:32 [INFO ] [jenkins] ==================================================
+2026-10-28 15:56:32 [INFO ] [jenkins] 
+2026-10-28 15:56:32 [INFO ] [jenkins] [1/1] Title optimization
+2026-10-28 15:56:32 [INFO ] [jenkins] ------------------------------
+2026-10-28 15:56:33 [INFO ] [title_workflow] Source: 10.24v1.xlsx
+2026-10-28 15:56:34 [INFO ] [title_workflow] Extracted 79 titles + 79 links
+2026-10-28 15:56:34 [INFO ] [title_workflow] Written: origin_title (79) + origin_link (79)
+2026-10-28 15:56:34 [INFO ] [title_workflow] optimize_title empty or outdated, running optimization...
+2026-10-28 15:56:34 [INFO ] [title_workflow] Running: deepseek_web.py
+2026-10-28 15:56:35 [INFO ] [deepseek_web] Opening DeepSeek web (79 titles)...
+2026-10-28 15:56:35 [INFO ] [deepseek_web] Browser state: deepseek_state.json
+2026-10-28 15:56:47 [INFO ] [deepseek_web] Opened https://chat.deepseek.com/
+2026-10-28 15:56:49 [INFO ] [deepseek_web] DeepSeek chat ready
+2026-10-28 15:56:49 [INFO ] [deepseek_web] [1/79] 冬季防寒针织手套保暖加绒加厚全指手套
+2026-10-28 15:56:59 [INFO ] [deepseek_web]   Downloaded: 0001_2140810296823013211011.jpg
+2026-10-28 15:56:59 [INFO ] [deepseek_web]   Prefetching next image (2/79)
+2026-10-28 15:56:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 15:57:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 15:57:34 [INFO ] [deepseek_web]   Response: 触屏指尖 混色针织纹理 罗纹收口袖口 全指手套结构 加绒加厚内里 保暖防寒针织手套 中性 常规版型 冬季户外
+2026-10-28 15:57:34 [INFO ] [deepseek_web]   Deleted: 0001_2140810296823013211011.jpg
+2026-10-28 15:57:39 [INFO ] [deepseek_web] [2/79] ST623女式针织毛线露指手套半指短款保暖手套
+2026-10-28 15:57:39 [INFO ] [deepseek_web]   Downloaded: 0002_3511127167835711374794.jpg
+2026-10-28 15:57:39 [INFO ] [deepseek_web]   Prefetching next image (3/79)
+2026-10-28 15:57:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 15:57:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 15:58:08 [INFO ] [deepseek_web]   Response: 仿皮草边缘拼接 半指开口结构 罗纹针织纹理 露指针织手套 女士 常规版型 短款 保暖 ST623
+2026-10-28 15:58:08 [INFO ] [deepseek_web]   Deleted: 0002_3511127167835711374794.jpg
+2026-10-28 15:58:13 [INFO ] [deepseek_web] [3/79] A1015小猫触屏手套  冬季触屏防寒保暖加厚针织毛线绒毛成人女手套   （单层）
+2026-10-28 15:58:13 [INFO ] [deepseek_web]   Downloaded: 0003_4130432380268114439691.jpg
+2026-10-28 15:58:13 [INFO ] [deepseek_web]   Prefetching next image (4/79)
+2026-10-28 15:58:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 15:58:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 15:58:55 [INFO ] [deepseek_web]   Response: 雪花图案 小猫印花 心形触屏指尖 罗纹收口 单层结构 全指针织毛线手套 成人女士 常规版型 防寒保暖 A1015
+2026-10-28 15:58:55 [INFO ] [deepseek_web]   Deleted: 0003_4130432380268114439691.jpg
+2026-10-28 15:59:00 [INFO ] [deepseek_web] [4/79] 男士冬季户外骑行摇粒绒加绒加厚保暖翻盖可露指触屏手套
+2026-10-28 15:59:00 [INFO ] [deepseek_web]   Downloaded: 0004_6471059230535421210422.jpg
+2026-10-28 15:59:00 [INFO ] [deepseek_web]   Prefetching next image (5/79)
+2026-10-28 15:59:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 15:59:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 15:59:30 [INFO ] [deepseek_web]   Response: 翻盖露指结构 掌面防滑印花 手背网眼拼接 触屏翻盖半指手套 男士 常规版型 罗纹收口 摇粒绒内里 加厚保暖 户外骑行
+2026-10-28 15:59:30 [INFO ] [deepseek_web]   Deleted: 0004_6471059230535421210422.jpg
+2026-10-28 15:59:35 [INFO ] [deepseek_web] [5/79] 女冬季保暖纯色手套
+2026-10-28 15:59:35 [INFO ] [deepseek_web]   Downloaded: 0005_8790921550443121014205.jpg
+2026-10-28 15:59:35 [INFO ] [deepseek_web]   Prefetching next image (6/79)
+2026-10-28 15:59:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 15:59:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:00:05 [INFO ] [deepseek_web]   Response: 长款护腕袖套 半指露指开口 罗纹针织纹理 上下双端收口 纯色保暖无指针织手套 女士 常规版型 冬季防寒
+2026-10-28 16:00:05 [INFO ] [deepseek_web]   Deleted: 0005_8790921550443121014205.jpg
+2026-10-28 16:00:10 [INFO ] [deepseek_web] [6/79] 2双男女秋冬拼色胶印触屏保暖手套
+2026-10-28 16:00:10 [INFO ] [deepseek_web]   Downloaded: 0006_7700420354671948331150.jpg
+2026-10-28 16:00:10 [INFO ] [deepseek_web]   Prefetching next image (7/79)
+2026-10-28 16:00:10 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:00:21 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:00:39 [INFO ] [deepseek_web]   Response: 几何图案胶印 触屏指尖结构 双色拼接设计 罗纹收口 全指针织触屏手套 中性 常规版型 2双装 秋冬保暖
+2026-10-28 16:00:39 [INFO ] [deepseek_web]   Deleted: 0006_7700420354671948331150.jpg
+2026-10-28 16:00:44 [INFO ] [deepseek_web] [7/79] 女士毛线手套秋冬户外保暖加厚猫印花可爱印花手套
+2026-10-28 16:00:44 [INFO ] [deepseek_web]   Downloaded: 0007_0000410547231847047937.jpg
+2026-10-28 16:00:44 [INFO ] [deepseek_web]   Prefetching next image (8/79)
+2026-10-28 16:00:44 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:00:55 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:01:13 [INFO ] [deepseek_web]   Response: 掌面猫剪影印花 指尖图案点缀 罗纹针织面料 罗纹腕部收口 全指保暖毛线手套 女士 常规版型 秋冬户外防寒
+2026-10-28 16:01:13 [INFO ] [deepseek_web]   Deleted: 0007_0000410547231847047937.jpg
+2026-10-28 16:01:18 [INFO ] [deepseek_web] [8/79] 冬季加绒加厚保暖手套女士时尚运动手套
+2026-10-28 16:01:18 [INFO ] [deepseek_web]   Downloaded: 0008_0661014014622683401488.jpg
+2026-10-28 16:01:18 [INFO ] [deepseek_web]   Prefetching next image (9/79)
+2026-10-28 16:01:18 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:01:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:01:47 [INFO ] [deepseek_web]   Response: 手背抽褶结构 腕部装饰搭扣 毛绒拼接腕口 触屏指尖拼接 全指保暖运动手套 女士 常规版型 加绒加厚 防寒保暖 户外
+2026-10-28 16:01:47 [INFO ] [deepseek_web]   Deleted: 0008_0661014014622683401488.jpg
+2026-10-28 16:01:52 [INFO ] [deepseek_web] [9/79] 男士冬季户外骑行麂皮绒手套防风加厚加棉绒面保暖手套
+2026-10-28 16:01:52 [INFO ] [deepseek_web]   Downloaded: 0009_1050348162861671869123.jpg
+2026-10-28 16:01:52 [INFO ] [deepseek_web]   Prefetching next image (10/79)
+2026-10-28 16:01:52 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:02:04 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:02:22 [INFO ] [deepseek_web]   Response: 手背压花标志 指关节立体压线 腕部松紧抽褶 冬季全指骑行手套 男士 常规版型 麂皮绒面 加厚加棉 防风保暖
+2026-10-28 16:02:22 [INFO ] [deepseek_web]   Deleted: 0009_1050348162861671869123.jpg
+2026-10-28 16:02:27 [INFO ] [deepseek_web] [10/79] 情侣冬季骑行防风毛线手套男女保暖加厚纯色可触屏防寒针织手套
+2026-10-28 16:02:27 [INFO ] [deepseek_web]   Downloaded: 0010_9680431015942016861270.jpg
+2026-10-28 16:02:27 [INFO ] [deepseek_web]   Prefetching next image (11/79)
+2026-10-28 16:02:27 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:02:38 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:02:56 [INFO ] [deepseek_web]   Response: 纯色表面 毛绒针织纹理 指尖触屏圆点 全指针织手套 中性 常规版型 罗纹收口 加厚保暖 防风防寒 冬季骑行
+2026-10-28 16:02:56 [INFO ] [deepseek_web]   Deleted: 0010_9680431015942016861270.jpg
+2026-10-28 16:03:01 [INFO ] [deepseek_web] [11/79] 冬季针织手套菠萝花五指手套保暖触屏手套女户外防寒手套
+2026-10-28 16:03:01 [INFO ] [deepseek_web]   Downloaded: 0011_9600220070801699119343.jpg
+2026-10-28 16:03:01 [INFO ] [deepseek_web]   Prefetching next image (12/79)
+2026-10-28 16:03:01 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:03:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:03:30 [INFO ] [deepseek_web]   Response: 立体交叉编织 触屏指尖拼接 罗纹收口腕部 全指针织保暖手套 女士 常规版型 冬季户外防寒
+2026-10-28 16:03:30 [INFO ] [deepseek_web]   Deleted: 0011_9600220070801699119343.jpg
+2026-10-28 16:03:35 [INFO ] [deepseek_web] [12/79] 男女防寒保暖五指手套秋冬季户外骑行防滑可触屏针织提花毛线手套
+2026-10-28 16:03:35 [INFO ] [deepseek_web]   Downloaded: 0012_2301059210776372195418.jpg
+2026-10-28 16:03:35 [INFO ] [deepseek_web]   Prefetching next image (13/79)
+2026-10-28 16:03:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:03:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:04:04 [INFO ] [deepseek_web]   Response: 提花网格结构 触屏指尖拼接 罗纹收口腕部 全指针织手套 中性 常规版型 防滑防寒保暖 秋冬季户外骑行
+2026-10-28 16:04:04 [INFO ] [deepseek_web]   Deleted: 0012_2301059210776372195418.jpg
+2026-10-28 16:04:09 [INFO ] [deepseek_web] [13/79] 针织手套冬季加绒毛线户外防风防寒保暖手套
+2026-10-28 16:04:09 [INFO ] [deepseek_web]   Downloaded: 0013_3561113550666279447470.jpg
+2026-10-28 16:04:09 [INFO ] [deepseek_web]   Prefetching next image (14/79)
+2026-10-28 16:04:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:04:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:04:38 [INFO ] [deepseek_web]   Response: 加长罗纹腕部收口 竖条纹针织肌理 纯色无图案表面 全指保暖毛线手套 中性 常规版型 加绒内里 户外防风防寒
+2026-10-28 16:04:38 [INFO ] [deepseek_web]   Deleted: 0013_3561113550666279447470.jpg
+2026-10-28 16:04:43 [INFO ] [deepseek_web] [14/79] Golove fashion冬季触屏滑雪防水加厚加绒保暖防风防寒户外情侣骑行手套
+2026-10-28 16:04:43 [INFO ] [deepseek_web]   Downloaded: 0014_2020414281761884756845.jpg
+2026-10-28 16:04:43 [INFO ] [deepseek_web]   Prefetching next image (15/79)
+2026-10-28 16:04:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:04:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:05:12 [INFO ] [deepseek_web]   Response: 手背斜向拼接 掌面防滑纹理 腕部魔术贴调节带 挂扣连接结构 全指滑雪手套 中性 常规版型 触屏指尖设计 加绒内里 防水防风 防寒保暖 户外骑行 Golove f
+2026-10-28 16:05:12 [INFO ] [deepseek_web]   Deleted: 0014_2020414281761884756845.jpg
+2026-10-28 16:05:17 [INFO ] [deepseek_web] [15/79] 运动加绒保暖男女防滑触屏滑雪自行车骑行防寒户外手套
+2026-10-28 16:05:17 [INFO ] [deepseek_web]   Downloaded: 0015_0630323555071142460313.jpg
+2026-10-28 16:05:17 [INFO ] [deepseek_web]   Prefetching next image (16/79)
+2026-10-28 16:05:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:05:29 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:05:47 [INFO ] [deepseek_web]   Response: 触屏指尖标志 掌面几何防滑印花 双联挂扣结构 全指运动手套 中性 常规版型 罗纹腕部收口 加绒保暖 防滑防寒 户外骑行
+2026-10-28 16:05:47 [INFO ] [deepseek_web]   Deleted: 0015_0630323555071142460313.jpg
+2026-10-28 16:05:52 [INFO ] [deepseek_web] [16/79] 秋冬季羊毛半指手套针织纯色保暖男女手套
+2026-10-28 16:05:52 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-28 16:05:57 [INFO ] [deepseek_web] [17/79] ST-25朋克哥特式摇滚长臂保暖露指手套
+2026-10-28 16:06:00 [INFO ] [deepseek_web]   Downloaded: 0017_6320410253326521423594.jpg
+2026-10-28 16:06:00 [INFO ] [deepseek_web]   Prefetching next image (18/79)
+2026-10-28 16:06:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:06:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:06:29 [INFO ] [deepseek_web]   Response: 横向条纹图案 金属圆环装饰 加长护臂结构 罗纹针织面料 长款露指手套 中性 常规版型 五指开口设计 保暖 ST-25
+2026-10-28 16:06:29 [INFO ] [deepseek_web]   Deleted: 0017_6320410253326521423594.jpg
+2026-10-28 16:06:34 [INFO ] [deepseek_web] [18/79] 复古撞色提花针织手套保暖手套手套
+2026-10-28 16:06:34 [INFO ] [deepseek_web]   Downloaded: 0018_8430554259301949825417.jpg
+2026-10-28 16:06:34 [INFO ] [deepseek_web]   Prefetching next image (19/79)
+2026-10-28 16:06:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:06:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:07:03 [INFO ] [deepseek_web]   Response: 复古花卉提花图案 多段撞色拼接设计 加长罗纹针织腕口 全指保暖针织手套 中性 常规版型 五指分指结构 保暖
+2026-10-28 16:07:03 [INFO ] [deepseek_web]   Deleted: 0018_8430554259301949825417.jpg
+2026-10-28 16:07:08 [INFO ] [deepseek_web] [19/79] 可触屏手套女冬季加绒加厚防寒骑行保暖毛线针织手套
+2026-10-28 16:07:08 [INFO ] [deepseek_web]   Downloaded: 0019_9190926040304215651690.jpg
+2026-10-28 16:07:08 [INFO ] [deepseek_web]   Prefetching next image (20/79)
+2026-10-28 16:07:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:07:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:07:37 [INFO ] [deepseek_web]   Response: 几何菱形提花图案 触屏指尖拼接 罗纹针织腕部收口 全指保暖毛线手套 女士 常规版型 加绒加厚内里 冬季骑行防寒
+2026-10-28 16:07:37 [INFO ] [deepseek_web]   Deleted: 0019_9190926040304215651690.jpg
+2026-10-28 16:07:42 [INFO ] [deepseek_web] [20/79] 日式新玉米纹加厚针织手套男羊毛混纺户外保暖手套女触屏冬季手套
+2026-10-28 16:07:42 [INFO ] [deepseek_web]   Downloaded: 0020_4940410425631589976845.jpg
+2026-10-28 16:07:42 [INFO ] [deepseek_web]   Prefetching next image (21/79)
+2026-10-28 16:07:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:07:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:08:12 [INFO ] [deepseek_web]   Response: 玉米纹针织肌理 纯色针织表面 罗纹腕部收口 全指结构 保暖针织手套 中性 常规版型 羊毛混纺 触屏功能 加厚 户外保暖
+2026-10-28 16:08:12 [INFO ] [deepseek_web]   Deleted: 0020_4940410425631589976845.jpg
+2026-10-28 16:08:17 [INFO ] [deepseek_web] [21/79] 男士冬季户外滑雪连指手套加厚防水拉链保暖男女款保护手套
+2026-10-28 16:08:17 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-28 16:08:22 [INFO ] [deepseek_web] [22/79] 男士冬季保暖手套户外骑行运动防滑防风加绒加厚触屏手套
+2026-10-28 16:08:30 [INFO ] [deepseek_web]   Downloaded: 0022_9020952063092417370327.jpg
+2026-10-28 16:08:30 [INFO ] [deepseek_web]   Prefetching next image (23/79)
+2026-10-28 16:08:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:08:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:08:59 [INFO ] [deepseek_web]   Response: 手背弧形缝线装饰 掌面点阵防滑纹理 条纹拼接罗纹腕口 仿麂皮绒面料 全指触屏手套 男士 常规版型 加绒加厚 防风保暖 户外骑行防滑
+2026-10-28 16:08:59 [INFO ] [deepseek_web]   Deleted: 0022_9020952063092417370327.jpg
+2026-10-28 16:09:04 [INFO ] [deepseek_web] [23/79] 冬季保暖肤感手套加绒加厚防风防水户外骑行滑雪防滑触屏手套
+2026-10-28 16:09:04 [INFO ] [deepseek_web]   Downloaded: 0023_3521100005508221375537.jpg
+2026-10-28 16:09:04 [INFO ] [deepseek_web]   Prefetching next image (24/79)
+2026-10-28 16:09:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:09:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:12:31 [ERROR] [deepseek_web]   FAILED: No new assistant response found
+2026-10-28 16:12:31 [INFO ] [deepseek_web]   Deleted: 0023_3521100005508221375537.jpg
+2026-10-28 16:12:36 [INFO ] [deepseek_web] [24/79] 冬季男女通用户外手套滑雪加绒新防滑防水触屏保暖手套
+2026-10-28 16:12:39 [INFO ] [deepseek_web]   Downloaded: 0024_7350418403059419188383.jpg
+2026-10-28 16:12:39 [INFO ] [deepseek_web]   Prefetching next image (25/79)
+2026-10-28 16:12:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:12:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:13:08 [INFO ] [deepseek_web]   Response: 圆形徽章贴饰 腕部魔术贴调节带 指尖加固拼接 全指户外滑雪手套 中性 常规版型 掌面防滑纹理 触屏功能设计 双层防风腕口 加绒保暖内里 防水防寒
+2026-10-28 16:13:08 [INFO ] [deepseek_web]   Deleted: 0024_7350418403059419188383.jpg
+2026-10-28 16:13:13 [INFO ] [deepseek_web] [25/79] 男女士针织毛线手套 冬季骑行防寒保暖加绒加厚手套
+2026-10-28 16:13:13 [INFO ] [deepseek_web]   Downloaded: 0025_8170953029742719433940.jpg
+2026-10-28 16:13:13 [INFO ] [deepseek_web]   Prefetching next image (26/79)
+2026-10-28 16:13:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:13:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:13:42 [INFO ] [deepseek_web]   Response: 竖条纹针织肌理 加长罗纹腕口 纯色针织表面 全指针织毛线手套 中性 常规版型 加绒加厚 防寒保暖 冬季骑行
+2026-10-28 16:13:42 [INFO ] [deepseek_web]   Deleted: 0025_8170953029742719433940.jpg
+2026-10-28 16:13:47 [INFO ] [deepseek_web] [26/79] 女士冬季保暖手套Cosplay猫爪覆盖连指手套cosplay表演猫咪手套
+2026-10-28 16:13:47 [INFO ] [deepseek_web]   Downloaded: 0026_5810859561214114667227.jpg
+2026-10-28 16:13:47 [INFO ] [deepseek_web]   Prefetching next image (27/79)
+2026-10-28 16:13:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:13:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:14:16 [INFO ] [deepseek_web]   Response: 猫爪肉垫拼接 长毛绒面料 侧边连接扣环 Cosplay连指手套 女士 常规版型 连指包裹设计 保暖 表演
+2026-10-28 16:14:16 [INFO ] [deepseek_web]   Deleted: 0026_5810859561214114667227.jpg
+2026-10-28 16:14:21 [INFO ] [deepseek_web] [27/79] 翻盖手套女 珊瑚绒保暖男手套 电脑半指翻盖露指软绵绵针织手套
+2026-10-28 16:14:21 [INFO ] [deepseek_web]   Downloaded: 0027_4480256204352132033167.jpg
+2026-10-28 16:14:21 [INFO ] [deepseek_web]   Prefetching next image (28/79)
+2026-10-28 16:14:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:14:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:14:55 [INFO ] [deepseek_web]   Response: 珊瑚绒表面 单粒纽扣固定 半指露指内层 翻盖半指针织手套 中性 常规版型 纯色无图案 腕部松紧收口 保暖 冬季
+2026-10-28 16:14:55 [INFO ] [deepseek_web]   Deleted: 0027_4480256204352132033167.jpg
+2026-10-28 16:15:00 [INFO ] [deepseek_web] [28/79] 秋冬毛线手套女士毛毛短款假袖子菱形针织保暖露指手臂套
+2026-10-28 16:15:00 [INFO ] [deepseek_web]   Downloaded: 0028_5590343350661445834824.jpg
+2026-10-28 16:15:00 [INFO ] [deepseek_web]   Prefetching next image (29/79)
+2026-10-28 16:15:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:15:12 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:15:30 [INFO ] [deepseek_web]   Response: 仿皮草毛边拼接 菱形麻花针织纹理 长款护臂结构 罗纹针织收口 露指手臂套 女士 常规版型 无指结构 保暖
+2026-10-28 16:15:30 [INFO ] [deepseek_web]   Deleted: 0028_5590343350661445834824.jpg
+2026-10-28 16:15:35 [INFO ] [deepseek_web] [29/79] 秋冬毛线手套女士毛毛短款假袖子菱形针织保暖露指手臂套
+2026-10-28 16:15:35 [INFO ] [deepseek_web]   Downloaded: 0029_7400420557441620982881.jpg
+2026-10-28 16:15:35 [INFO ] [deepseek_web]   Prefetching next image (30/79)
+2026-10-28 16:15:35 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:15:46 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:16:04 [INFO ] [deepseek_web]   Response: 菱形麻花针织纹理 加长护臂结构 上下双端罗纹收口 纯色表面 长款露指手臂套 女士 常规版型 无指结构 秋冬保暖
+2026-10-28 16:16:04 [INFO ] [deepseek_web]   Deleted: 0029_7400420557441620982881.jpg
+2026-10-28 16:16:09 [INFO ] [deepseek_web] [30/79] 男女羽绒棉保暖摩托车骑行防水防寒加绒加厚户外滑雪手套
+2026-10-28 16:16:09 [INFO ] [deepseek_web]   Downloaded: 0030_2091034535362910453786.jpg
+2026-10-28 16:16:09 [INFO ] [deepseek_web]   Prefetching next image (31/79)
+2026-10-28 16:16:09 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:16:20 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:16:38 [INFO ] [deepseek_web]   Response: 腕部魔术贴调节带 掌面点阵防滑纹理 手背横向绗缝拼接 全指户外滑雪手套 中性 常规版型 加长护腕 防水防滑 加绒保暖 户外骑行
+2026-10-28 16:16:38 [INFO ] [deepseek_web]   Deleted: 0030_2091034535362910453786.jpg
+2026-10-28 16:16:43 [INFO ] [deepseek_web] [31/79] 户外滑雪手套触屏秋冬男女防风防水骑行手套抓绒拉链防寒保暖手套
+2026-10-28 16:16:43 [INFO ] [deepseek_web]   Downloaded: 0031_3070730286393494857883.jpg
+2026-10-28 16:16:43 [INFO ] [deepseek_web]   Prefetching next image (32/79)
+2026-10-28 16:16:43 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:16:54 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:17:12 [INFO ] [deepseek_web]   Response: 手背纵向拉链 指关节横向缝线 手背字母印花 掌面点阵防滑纹理 触屏指尖设计 双联防丢挂扣 全指户外滑雪手套 中性 常规版型 防风防水 加绒保暖
+2026-10-28 16:17:12 [INFO ] [deepseek_web]   Deleted: 0031_3070730286393494857883.jpg
+2026-10-28 16:17:17 [INFO ] [deepseek_web] [32/79] 男女秋冬拼色胶印触屏保暖手套
+2026-10-28 16:17:17 [INFO ] [deepseek_web]   Downloaded: 0032_0630918027536011697026.jpg
+2026-10-28 16:17:17 [INFO ] [deepseek_web]   Prefetching next image (33/79)
+2026-10-28 16:17:17 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:17:28 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:17:46 [INFO ] [deepseek_web]   Response: 拼色横向条纹 掌面点阵防滑印花 触屏指尖拼接设计 全指触屏针织手套 中性 常规版型 罗纹腕部收口 加厚保暖 秋冬户外骑行
+2026-10-28 16:17:46 [INFO ] [deepseek_web]   Deleted: 0032_0630918027536011697026.jpg
+2026-10-28 16:17:51 [INFO ] [deepseek_web] [33/79] 女式无指手套半指手套冬季弹力针织无指手套中性款保暖露指手套
+2026-10-28 16:17:51 [INFO ] [deepseek_web]   Downloaded: 0033_8520503102591910603191.jpg
+2026-10-28 16:17:51 [INFO ] [deepseek_web]   Prefetching next image (34/79)
+2026-10-28 16:17:51 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:18:02 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:18:20 [INFO ] [deepseek_web]   Response: 镂空花边装饰 罗纹针织肌理 加长护腕结构 半指针织手套 女士 常规版型 罗纹收口腕部 弹力针织面料 保暖 冬季
+2026-10-28 16:18:20 [INFO ] [deepseek_web]   Deleted: 0033_8520503102591910603191.jpg
+2026-10-28 16:18:25 [INFO ] [deepseek_web] [34/79] 男女冬季保暖手套加绒加厚毛线针织骑行东北防寒冬天触屏棉手套
+2026-10-28 16:18:25 [INFO ] [deepseek_web]   Downloaded: 0034_6460450181131489436190.jpg
+2026-10-28 16:18:25 [INFO ] [deepseek_web]   Prefetching next image (35/79)
+2026-10-28 16:18:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:18:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:18:55 [INFO ] [deepseek_web]   Response: 腕部皮质雪花标签 毛绒内里翻折展示 针织纹理表面 全指针织手套 中性 常规版型 罗纹腕口 触屏功能 加绒加厚 冬季骑行防寒
+2026-10-28 16:18:55 [INFO ] [deepseek_web]   Deleted: 0034_6460450181131489436190.jpg
+2026-10-28 16:19:00 [INFO ] [deepseek_web] [35/79] 滑雪手套防风防水保暖耐磨加厚
+2026-10-28 16:19:00 [INFO ] [deepseek_web]   Downloaded: 0035_2871108590701218369823.jpg
+2026-10-28 16:19:00 [INFO ] [deepseek_web]   Prefetching next image (36/79)
+2026-10-28 16:19:00 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:19:11 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:19:29 [INFO ] [deepseek_web]   Response: 三指分指结构 掌心横向绗缝纹理 手背字母印花 腕部魔术贴调节带 防丢挂绳 滑雪手套 中性 常规版型 防水防风 耐磨加厚 保暖 户外滑雪
+2026-10-28 16:19:29 [INFO ] [deepseek_web]   Deleted: 0035_2871108590701218369823.jpg
+2026-10-28 16:19:34 [INFO ] [deepseek_web] [36/79] 女士防寒触屏分指保暖户外骑行手套
+2026-10-28 16:19:34 [INFO ] [deepseek_web]   Downloaded: 0036_5740345376551217776187.jpg
+2026-10-28 16:19:34 [INFO ] [deepseek_web]   Prefetching next image (37/79)
+2026-10-28 16:19:34 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:19:45 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:20:03 [INFO ] [deepseek_web]   Response: 横向条纹图案 纯色拼接指尖 纯色加长罗纹腕口 全指保暖手套 女士 常规版型 分指结构 罗纹收口 触屏功能 防寒保暖 户外骑行
+2026-10-28 16:20:03 [INFO ] [deepseek_web]   Deleted: 0036_5740345376551217776187.jpg
+2026-10-28 16:20:08 [INFO ] [deepseek_web] [37/79] 成人加长款翻边保暖手套
+2026-10-28 16:20:08 [INFO ] [deepseek_web]   Downloaded: 0037_3311054285765674961929.jpg
+2026-10-28 16:20:08 [INFO ] [deepseek_web]   Prefetching next image (38/79)
+2026-10-28 16:20:08 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:20:19 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:20:37 [INFO ] [deepseek_web]   Response: 纯色表面 绞花针织纹理 翻边罗纹腕口 触屏指尖拼接 侧边标志刺绣 全指针织毛线手套 中性 常规版型 保暖防寒
+2026-10-28 16:20:37 [INFO ] [deepseek_web]   Deleted: 0037_3311054285765674961929.jpg
+2026-10-28 16:20:42 [INFO ] [deepseek_web] [38/79] 雪花圣诞手套秋冬季女保暖可爱五指可触屏冬天防寒骑行保暖
+2026-10-28 16:20:42 [INFO ] [deepseek_web]   Downloaded: 0038_3381125340521520565652.jpg
+2026-10-28 16:20:42 [INFO ] [deepseek_web]   Prefetching next image (39/79)
+2026-10-28 16:20:42 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:20:53 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:21:11 [INFO ] [deepseek_web]   Response: 雪花印花 圣诞树图案 翻边拼接腕口 毛绒针织表面 全指针织手套 女士 常规版型 触屏功能 保暖防寒 冬季骑行
+2026-10-28 16:21:11 [INFO ] [deepseek_web]   Deleted: 0038_3381125340521520565652.jpg
+2026-10-28 16:21:16 [INFO ] [deepseek_web] [39/79] 运动手套 男女保暖防水滑雪手套
+2026-10-28 16:21:16 [INFO ] [deepseek_web]   Downloaded: 0039_0980247281081090945068.jpg
+2026-10-28 16:21:16 [INFO ] [deepseek_web]   Prefetching next image (40/79)
+2026-10-28 16:21:16 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:21:27 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:21:45 [INFO ] [deepseek_web]   Response: 几何线条拼接 运动字母印花 指尖材质拼接 魔术贴腕口 全指滑雪手套 中性 常规版型 户外骑行 防风防水 加厚保暖
+2026-10-28 16:21:45 [INFO ] [deepseek_web]   Deleted: 0039_0980247281081090945068.jpg
+2026-10-28 16:21:50 [INFO ] [deepseek_web] [40/79] NO 儿童保暖防水滑雪手套 2-5岁
+2026-10-28 16:21:50 [INFO ] [deepseek_web]   Downloaded: 0040_9390852039986514412317.jpg
+2026-10-28 16:21:50 [INFO ] [deepseek_web]   Prefetching next image (41/79)
+2026-10-28 16:21:50 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:22:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:22:19 [INFO ] [deepseek_web]   Response: 手背弧形线条拼接 指缝撞色拼接 侧边防丢挂扣 儿童全指滑雪手套 中性 常规版型 松紧收口腕部 防水 保暖 冬季户外
+2026-10-28 16:22:19 [INFO ] [deepseek_web]   Deleted: 0040_9390852039986514412317.jpg
+2026-10-28 16:22:24 [INFO ] [deepseek_web] [41/79] NO 儿童防风防水滑雪保暖手套 11-16岁
+2026-10-28 16:22:24 [INFO ] [deepseek_web]   Downloaded: 0041_8990416178781843410946.jpg
+2026-10-28 16:22:24 [INFO ] [deepseek_web]   Prefetching next image (42/79)
+2026-10-28 16:22:25 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:22:36 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:22:54 [INFO ] [deepseek_web]   Response: 手背几何拼接 指关节缝线装饰 腕部调节扣带 侧边防丢挂扣 全指儿童滑雪手套 中性 常规版型 防风防水 透气保暖 滑雪
+2026-10-28 16:22:54 [INFO ] [deepseek_web]   Deleted: 0041_8990416178781843410946.jpg
+2026-10-28 16:22:59 [INFO ] [deepseek_web] [42/79] 成人男女冬季保暖滑雪骑行手套 (one size)
+2026-10-28 16:22:59 [INFO ] [deepseek_web]   Downloaded: 0042_5241026582581319956716.jpg
+2026-10-28 16:22:59 [INFO ] [deepseek_web]   Prefetching next image (43/79)
+2026-10-28 16:22:59 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:23:10 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:23:28 [INFO ] [deepseek_web]   Response: 圆形徽章贴饰 腕部魔术贴调节带 掌面斜纹防滑纹理 撞色拼接手背 全指滑雪手套 中性 常规版型 松紧收口腕部 防水 透气 保暖 滑雪骑行
+2026-10-28 16:23:28 [INFO ] [deepseek_web]   Deleted: 0042_5241026582581319956716.jpg
+2026-10-28 16:23:33 [INFO ] [deepseek_web] [43/79] 可爱卡皮巴拉毛绒手套冬季加绒保暖挂脖骑行学生全包连指
+2026-10-28 16:23:33 [INFO ] [deepseek_web]   Downloaded: 0043_8711117384061159743023.jpg
+2026-10-28 16:23:33 [INFO ] [deepseek_web]   Prefetching next image (44/79)
+2026-10-28 16:23:33 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:23:44 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:24:02 [INFO ] [deepseek_web]   Response: 动物面部贴布装饰 立体耳朵设计 长毛绒表面 侧边挂绳扣 连指手套 中性 常规版型 加绒保暖 冬季骑行
+2026-10-28 16:24:02 [INFO ] [deepseek_web]   Deleted: 0043_8711117384061159743023.jpg
+2026-10-28 16:24:07 [INFO ] [deepseek_web] [44/79] Xuelunzi 女士冬季保暖防寒可触屏防泼水面料滑雪手套
+2026-10-28 16:24:07 [INFO ] [deepseek_web]   Downloaded: 0044_2520200040441220249206.jpg
+2026-10-28 16:24:07 [INFO ] [deepseek_web]   Prefetching next image (45/79)
+2026-10-28 16:24:07 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:24:18 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:24:36 [INFO ] [deepseek_web]   Response: 斜向拼接设计 腕部字母绑带 腕口松紧抽褶 全指滑雪手套 女士 常规版型 触屏指尖 防泼水 保暖防寒 户外 Xuelunzi
+2026-10-28 16:24:36 [INFO ] [deepseek_web]   Deleted: 0044_2520200040441220249206.jpg
+2026-10-28 16:24:41 [INFO ] [deepseek_web] [45/79] 可触屏仿皮手套 冬季保暖防风防寒户外骑行开车分指手套
+2026-10-28 16:24:41 [INFO ] [deepseek_web]   Downloaded: 0045_9290915284324268224477.jpg
+2026-10-28 16:24:41 [INFO ] [deepseek_web]   Prefetching next image (46/79)
+2026-10-28 16:24:41 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:24:52 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:25:10 [INFO ] [deepseek_web]   Response: 三粒纽扣装饰 仿皮材质表面 手背弧形缝线拼接 全指触屏手套 女士 常规版型 全指结构 触屏功能 加绒内里 防风保暖 户外骑行
+2026-10-28 16:25:10 [INFO ] [deepseek_web]   Deleted: 0045_9290915284324268224477.jpg
+2026-10-28 16:25:15 [INFO ] [deepseek_web] [46/79] 冬季保暖手套户外骑行加厚防寒防风防水触屏骑行手套
+2026-10-28 16:25:15 [INFO ] [deepseek_web]   Downloaded: 0046_2310442555813019639105.jpg
+2026-10-28 16:25:15 [INFO ] [deepseek_web]   Prefetching next image (47/79)
+2026-10-28 16:25:15 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:25:26 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:25:44 [INFO ] [deepseek_web]   Response: 掌心斜向防滑条纹 手背弧形缝线拼接 加长罗纹收口 全指触屏手套 中性 常规版型 侧边挂扣结构 防水防风 加厚保暖 户外骑行
+2026-10-28 16:25:44 [INFO ] [deepseek_web]   Deleted: 0046_2310442555813019639105.jpg
+2026-10-28 16:25:49 [INFO ] [deepseek_web] [47/79] 毛线针织触屏手套男冬季加绒加厚户外防寒保暖手套
+2026-10-28 16:25:49 [INFO ] [deepseek_web]   Downloaded: 0047_0510419510832640742149.jpg
+2026-10-28 16:25:49 [INFO ] [deepseek_web]   Prefetching next image (48/79)
+2026-10-28 16:25:49 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:26:01 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:26:19 [INFO ] [deepseek_web]   Response: 竖条纹针织肌理 方形贴布标签 加长罗纹腕口 全指触屏针织手套 中性 常规版型 加绒加厚 防寒保暖 户外骑行
+2026-10-28 16:26:19 [INFO ] [deepseek_web]   Deleted: 0047_0510419510832640742149.jpg
+2026-10-28 16:26:24 [INFO ] [deepseek_web] [48/79] 加厚半指手套秋冬季加绒针织防寒保暖半截写字毛线漏指手套
+2026-10-28 16:26:24 [INFO ] [deepseek_web]   Downloaded: 0048_9450421188192211640384.jpg
+2026-10-28 16:26:24 [INFO ] [deepseek_web]   Prefetching next image (49/79)
+2026-10-28 16:26:24 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:26:35 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:26:53 [INFO ] [deepseek_web]   Response: 单粒纽扣翻盖 腕部方形贴片 顶部挂环设计 触屏指尖拼接 翻盖半指毛线手套 中性 常规版型 罗纹针织表面 加绒保暖内里 冬季书写防寒
+2026-10-28 16:26:53 [INFO ] [deepseek_web]   Deleted: 0048_9450421188192211640384.jpg
+2026-10-28 16:26:58 [INFO ] [deepseek_web] [49/79] 毛绒手套仿兔毛绒毛挂脖连指冬季手套保暖包指手套女
+2026-10-28 16:26:58 [INFO ] [deepseek_web]   Downloaded: 0049_4580418432771021354108.jpg
+2026-10-28 16:26:58 [INFO ] [deepseek_web]   Prefetching next image (50/79)
+2026-10-28 16:26:58 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:27:09 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:27:27 [INFO ] [deepseek_web]   Response: 仿兔毛长毛绒表面 罗纹针织拼接腕口 金属按扣连接结构 挂脖绳设计 连指毛绒手套 女士 常规版型 全包连指结构 保暖 冬季
+2026-10-28 16:27:27 [INFO ] [deepseek_web]   Deleted: 0049_4580418432771021354108.jpg
+2026-10-28 16:27:32 [INFO ] [deepseek_web] [50/79] 新款秋冬季保暖手套户外运动自行车骑行手套防风防水触屏滑雪手套
+2026-10-28 16:27:32 [INFO ] [deepseek_web]   Downloaded: 0050_7980918163343221380818.jpg
+2026-10-28 16:27:32 [INFO ] [deepseek_web]   Prefetching next image (51/79)
+2026-10-28 16:27:32 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:27:43 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:28:01 [INFO ] [deepseek_web]   Response: 手背标志印花 腕部侧边拉链 指尖触屏拼接 掌面菱形网格防滑纹理 双联挂扣结构 全指运动手套 中性 常规版型 弹性收口腕部 防风防水 加绒保暖 触屏功能 户外骑行
+2026-10-28 16:28:01 [INFO ] [deepseek_web]   Deleted: 0050_7980918163343221380818.jpg
+2026-10-28 16:28:06 [INFO ] [deepseek_web] [51/79] 秋冬季户外骑行可调节按扣加绒防风寒硅胶点防滑保暖全指触屏手套
+2026-10-28 16:28:06 [INFO ] [deepseek_web]   Downloaded: 0051_4590407400098215078257.jpg
+2026-10-28 16:28:06 [INFO ] [deepseek_web]   Prefetching next image (52/79)
+2026-10-28 16:28:06 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:28:17 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:28:35 [INFO ] [deepseek_web]   Response: 横向拉链 字母印花 斜向硅胶防滑纹理 触屏指尖拼接 双联按扣结构 全指运动手套 中性 常规版型 罗纹收口 触屏功能 防风保暖 加绒 户外骑行
+2026-10-28 16:28:35 [INFO ] [deepseek_web]   Deleted: 0051_4590407400098215078257.jpg
+2026-10-28 16:28:40 [INFO ] [deepseek_web] [52/79] 冬天户外保暖手套男款运动骑行防风防水加绒保暖触屏防滑女款手套
+2026-10-28 16:28:40 [INFO ] [deepseek_web]   Downloaded: 0052_1920444335901313009689.jpg
+2026-10-28 16:28:40 [INFO ] [deepseek_web]   Prefetching next image (53/79)
+2026-10-28 16:28:40 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:28:51 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:29:09 [INFO ] [deepseek_web]   Response: 撞色拼接手背 字母印花 腕口翻边拼接 掌面点阵防滑纹理 全指骑行手套 中性 常规版型 松紧收口腕部 触屏功能 防滑 防风防水 加绒保暖 户外骑行
+2026-10-28 16:29:09 [INFO ] [deepseek_web]   Deleted: 0052_1920444335901313009689.jpg
+2026-10-28 16:29:14 [INFO ] [deepseek_web] [53/79] 秋冬季保暖时尚针织刺绣爱心时尚保暖拼接绣花手套
+2026-10-28 16:29:14 [INFO ] [deepseek_web]   Downloaded: 0053_2590240006702488520636.jpg
+2026-10-28 16:29:14 [INFO ] [deepseek_web]   Prefetching next image (54/79)
+2026-10-28 16:29:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:29:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:29:43 [INFO ] [deepseek_web]   Response: 爱心刺绣 拼接结构 毛绒边缘 加长护腕 半指针织手套 女士 常规版型 露指结构 保暖
+2026-10-28 16:29:43 [INFO ] [deepseek_web]   Deleted: 0053_2590240006702488520636.jpg
+2026-10-28 16:29:48 [INFO ] [deepseek_web] [54/79] 冬季针织手套全指触屏小鹿提花手套亚马逊保暖女款户外玩手机手套
+2026-10-28 16:29:48 [INFO ] [deepseek_web]   Downloaded: 0054_6170434340931313540729.jpg
+2026-10-28 16:29:48 [INFO ] [deepseek_web]   Prefetching next image (55/79)
+2026-10-28 16:29:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:29:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:30:17 [INFO ] [deepseek_web]   Response: 小鹿提花图案 几何纹理边框 撞色指尖拼接 罗纹收口腕部 全指结构 全指针织手套 女士 常规版型 触屏功能 冬季保暖
+2026-10-28 16:30:17 [INFO ] [deepseek_web]   Deleted: 0054_6170434340931313540729.jpg
+2026-10-28 16:30:22 [INFO ] [deepseek_web] [55/79] 秋冬德绒男女成人三线手套保暖加绒户外运动骑行分指手套厂家批发
+2026-10-28 16:30:22 [INFO ] [deepseek_web]   Downloaded: 0055_8120444433081416866993.jpg
+2026-10-28 16:30:22 [INFO ] [deepseek_web]   Prefetching next image (56/79)
+2026-10-28 16:30:23 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:30:34 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:30:52 [INFO ] [deepseek_web]   Response: 三线缝线装饰 腕部方形标签 指尖异色拼接 全指保暖手套 中性 常规版型 直筒腕口 德绒面料 加绒内里 保暖 户外骑行
+2026-10-28 16:30:52 [INFO ] [deepseek_web]   Deleted: 0055_8120444433081416866993.jpg
+2026-10-28 16:30:57 [INFO ] [deepseek_web] [56/79] 半指手套女士冬天学生写字办公保暖手套针织毛线露指麻花翻盖手套
+2026-10-28 16:30:57 [INFO ] [deepseek_web]   Downloaded: 0056_6780300042998812674513.jpg
+2026-10-28 16:30:57 [INFO ] [deepseek_web]   Prefetching next image (57/79)
+2026-10-28 16:30:57 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:31:08 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:31:26 [INFO ] [deepseek_web]   Response: 麻花针织纹理 方形鹿图案贴标 单粒纽扣翻盖 露指内层结构 翻盖半指毛线手套 女士 常规版型 罗纹腕口 保暖 冬季
+2026-10-28 16:31:26 [INFO ] [deepseek_web]   Deleted: 0056_6780300042998812674513.jpg
+2026-10-28 16:31:31 [INFO ] [deepseek_web] [57/79] USB电热发热手套冬季户外运动滑雪保暖手套防水防滑骑行手套触屏
+2026-10-28 16:31:31 [INFO ] [deepseek_web]   Downloaded: 0057_5530552155382513945663.jpg
+2026-10-28 16:31:31 [INFO ] [deepseek_web]   Prefetching next image (58/79)
+2026-10-28 16:31:31 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:31:42 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:32:00 [INFO ] [deepseek_web]   Response: 手背纵向拉链 掌面点阵防滑纹理 内置USB发热接口 全指电热手套 中性 常规版型 腕部松紧收口 触屏功能 防水防滑 加绒保暖 户外滑雪骑行
+2026-10-28 16:32:00 [INFO ] [deepseek_web]   Deleted: 0057_5530552155382513945663.jpg
+2026-10-28 16:32:05 [INFO ] [deepseek_web] [58/79] 女生秋冬季休闲糖果色纯色保暖毛绒手套
+2026-10-28 16:32:05 [INFO ] [deepseek_web]   Downloaded: 0058_7061028448632919251464.jpg
+2026-10-28 16:32:05 [INFO ] [deepseek_web]   Prefetching next image (59/79)
+2026-10-28 16:32:05 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:32:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:32:34 [INFO ] [deepseek_web]   Response: 长毛绒表面 撞色波点装饰边 纯色主体设计 全指毛绒手套 女士 常规版型 全指结构 保暖 秋冬季
+2026-10-28 16:32:34 [INFO ] [deepseek_web]   Deleted: 0058_7061028448632919251464.jpg
+2026-10-28 16:32:39 [INFO ] [deepseek_web] [59/79] 女士时尚字母保暖防风全掌触屏滑雪手套
+2026-10-28 16:32:39 [INFO ] [deepseek_web]   Downloaded: 0059_0480922149883222882912.jpg
+2026-10-28 16:32:39 [INFO ] [deepseek_web]   Prefetching next image (60/79)
+2026-10-28 16:32:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:32:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:33:08 [INFO ] [deepseek_web]   Response: 字母印花 手指撞色线条拼接 腕部魔术贴调节带 腕侧拉链 全指滑雪手套 女士 常规版型 加长罗纹腕口 全掌触屏 防风保暖
+2026-10-28 16:33:08 [INFO ] [deepseek_web]   Deleted: 0059_0480922149883222882912.jpg
+2026-10-28 16:33:13 [INFO ] [deepseek_web] [60/79] 男女同款冬季手套滑雪内胆手套防寒户外骑车登山防风防滑保暖触屏手套
+2026-10-28 16:33:13 [INFO ] [deepseek_web]   Downloaded: 0060_9550335334842619658899.jpg
+2026-10-28 16:33:13 [INFO ] [deepseek_web]   Prefetching next image (61/79)
+2026-10-28 16:33:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:33:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:33:42 [INFO ] [deepseek_web]   Response: 平滑纯色表面 直筒平整腕口 轻薄贴合剪裁 全指滑雪内胆手套 中性 修身版型 触屏功能 防风防滑 保暖 户外滑雪骑行
+2026-10-28 16:33:42 [INFO ] [deepseek_web]   Deleted: 0060_9550335334842619658899.jpg
+2026-10-28 16:33:47 [INFO ] [deepseek_web] [61/79] 成人滑雪单板滑雪雪地防水防风卡通加绒加厚保暖手套
+2026-10-28 16:33:47 [INFO ] [deepseek_web]   Downloaded: 0061_7181039323739010935736.jpg
+2026-10-28 16:33:47 [INFO ] [deepseek_web]   Prefetching next image (62/79)
+2026-10-28 16:33:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:33:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:34:17 [INFO ] [deepseek_web]   Response: 雪花图案贴饰 手背撞色拼接 腕部魔术贴调节带 防丢挂绳 全指滑雪手套 中性 常规版型 五指分指结构 加绒加厚内里 防水防风 保暖
+2026-10-28 16:34:17 [INFO ] [deepseek_web]   Deleted: 0061_7181039323739010935736.jpg
+2026-10-28 16:34:22 [INFO ] [deepseek_web] [62/79] 女士秋冬手套休闲舒适加长针织羊毛保暖触屏手套
+2026-10-28 16:34:22 [INFO ] [deepseek_web]   Downloaded: 0062_8441051385822920427531.jpg
+2026-10-28 16:34:22 [INFO ] [deepseek_web]   Prefetching next image (63/79)
+2026-10-28 16:34:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:34:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:34:51 [INFO ] [deepseek_web]   Response: 加长护腕结构 腕部方形贴片 罗纹收口腕口 竖条纹针织肌理 针织触屏手套 女士 常规版型 羊毛混纺 触屏功能 保暖 秋冬
+2026-10-28 16:34:51 [INFO ] [deepseek_web]   Deleted: 0062_8441051385822920427531.jpg
+2026-10-28 16:34:56 [INFO ] [deepseek_web] [63/79] 手套糖果男女通用手套保暖五指成人针织手套
+2026-10-28 16:34:56 [INFO ] [deepseek_web]   Downloaded: 0063_4590604458772726987255.jpg
+2026-10-28 16:34:56 [INFO ] [deepseek_web]   Prefetching next image (64/79)
+2026-10-28 16:34:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:35:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:35:25 [INFO ] [deepseek_web]   Response: 竖条纹针织肌理 纯色表面 罗纹收口腕部 全指结构 针织保暖手套 中性 常规版型 成人款 保暖
+2026-10-28 16:35:25 [INFO ] [deepseek_web]   Deleted: 0063_4590604458772726987255.jpg
+2026-10-28 16:35:30 [INFO ] [deepseek_web] [64/79] 冬季可爱兔子卡通半指手套女触屏学生写字露指骑行防寒保暖针织手套
+2026-10-28 16:35:30 [INFO ] [deepseek_web]   Downloaded: 0064_5900939503286211679163.jpg
+2026-10-28 16:35:30 [INFO ] [deepseek_web]   Prefetching next image (65/79)
+2026-10-28 16:35:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:35:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:35:59 [INFO ] [deepseek_web]   Response: 兔子提花图案 胡萝卜图案装饰 立体眼睛设计 半指露指手套 女士 常规版型 五指分指结构 罗纹针织腕口 触屏功能 防寒保暖 冬季书写
+2026-10-28 16:35:59 [INFO ] [deepseek_web]   Deleted: 0064_5900939503286211679163.jpg
+2026-10-28 16:36:04 [INFO ] [deepseek_web] [65/79] 冬季保暖手套
+2026-10-28 16:36:04 [ERROR] [deepseek_web]   FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-28 16:36:09 [INFO ] [deepseek_web] [66/79] 圣诞保暖加绒成人手套
+2026-10-28 16:36:13 [INFO ] [deepseek_web]   Downloaded: 0066_2030939443387914058440.jpg
+2026-10-28 16:36:13 [INFO ] [deepseek_web]   Prefetching next image (67/79)
+2026-10-28 16:36:14 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:36:25 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:36:43 [INFO ] [deepseek_web]   Response: 立体毛球装饰 节日主题贴布绣 字母印花拼接 罗纹针织腕口 连指毛线手套 女士 常规版型 全包连指结构 加绒保暖
+2026-10-28 16:36:43 [INFO ] [deepseek_web]   Deleted: 0066_2030939443387914058440.jpg
+2026-10-28 16:36:48 [INFO ] [deepseek_web] [67/79] 圣诞保暖加绒儿童手套
+2026-10-28 16:36:48 [INFO ] [deepseek_web]   Downloaded: 0067_8871001215601113236579.jpg
+2026-10-28 16:36:48 [INFO ] [deepseek_web]   Prefetching next image (68/79)
+2026-10-28 16:36:48 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:36:59 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:37:17 [INFO ] [deepseek_web]   Response: 立体毛球装饰 节日主题贴布绣 字母印花拼接 罗纹针织腕口 儿童连指手套 中性 常规版型 全包连指结构 加绒保暖
+2026-10-28 16:37:17 [INFO ] [deepseek_web]   Deleted: 0067_8871001215601113236579.jpg
+2026-10-28 16:37:22 [INFO ] [deepseek_web] [68/79] 秋儿童手套学生可爱女毛绒防寒毛线指尖小熊猫针织保暖触屏冬季手套
+2026-10-28 16:37:22 [INFO ] [deepseek_web]   Downloaded: 0068_1340411383067818115253.jpg
+2026-10-28 16:37:22 [INFO ] [deepseek_web]   Prefetching next image (69/79)
+2026-10-28 16:37:22 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:37:33 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:37:51 [INFO ] [deepseek_web]   Response: 字母印花 指尖卡通图案拼接 毛绒针织肌理 罗纹收口腕口 全指触屏针织手套 中性 常规版型 加厚保暖 触屏功能
+2026-10-28 16:37:51 [INFO ] [deepseek_web]   Deleted: 0068_1340411383067818115253.jpg
+2026-10-28 16:37:56 [INFO ] [deepseek_web] [69/79] 冬季学生儿童半指翻盖卡通毛绒秋冬季加绒加厚保暖手套
+2026-10-28 16:37:56 [INFO ] [deepseek_web]   Downloaded: 0069_1480318456662620620433.jpg
+2026-10-28 16:37:56 [INFO ] [deepseek_web]   Prefetching next image (70/79)
+2026-10-28 16:37:56 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:38:07 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:38:25 [INFO ] [deepseek_web]   Response: 毛绒针织肌理 立体动物五官装饰 半指露指结构 罗纹收口腕部 纯色表面 毛绒半指手套 中性 常规版型 加绒加厚 保暖
+2026-10-28 16:38:25 [INFO ] [deepseek_web]   Deleted: 0069_1480318456662620620433.jpg
+2026-10-28 16:38:30 [INFO ] [deepseek_web] [70/79] 秋冬手套女士骑行户外针织羊毛兔毛腕口加绒加厚保暖触屏羊绒手套
+2026-10-28 16:38:30 [INFO ] [deepseek_web]   Downloaded: 0070_9690357136163214873828.jpg
+2026-10-28 16:38:30 [INFO ] [deepseek_web]   Prefetching next image (71/79)
+2026-10-28 16:38:30 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:38:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:38:59 [INFO ] [deepseek_web]   Response: 仿兔毛毛绒翻折腕口 腕侧方形贴标 手背弧形缝线拼接 全指触屏手套 女士 常规版型 仿麂皮绒面 触屏功能 加绒加厚 保暖 户外骑行
+2026-10-28 16:38:59 [INFO ] [deepseek_web]   Deleted: 0070_9690357136163214873828.jpg
+2026-10-28 16:39:04 [INFO ] [deepseek_web] [71/79] 半指保暖针织手套成人加厚骑行露指户外提花手套
+2026-10-28 16:39:04 [INFO ] [deepseek_web]   Downloaded: 0071_8940430454601327833800.jpg
+2026-10-28 16:39:04 [INFO ] [deepseek_web]   Prefetching next image (72/79)
+2026-10-28 16:39:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:39:16 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:39:34 [INFO ] [deepseek_web]   Response: 腕部方形贴标 毛绒内里结构 罗纹针织肌理 露指开口结构 成人半指针织手套 中性 常规版型 加厚保暖 户外骑行
+2026-10-28 16:39:34 [INFO ] [deepseek_web]   Deleted: 0071_8940430454601327833800.jpg
+2026-10-28 16:39:39 [INFO ] [deepseek_web] [72/79] 男女士冬季保暖手套针织手套可触屏
+2026-10-28 16:39:39 [INFO ] [deepseek_web]   Downloaded: 0072_7890324033991810350932.jpg
+2026-10-28 16:39:39 [INFO ] [deepseek_web]   Prefetching next image (73/79)
+2026-10-28 16:39:39 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:39:50 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:40:08 [INFO ] [deepseek_web]   Response: 雪花图案提花设计 指尖触屏拼接结构 横向几何提花装饰边框 罗纹收口腕部 全指针织手套 中性 常规版型 保暖 冬季
+2026-10-28 16:40:08 [INFO ] [deepseek_web]   Deleted: 0072_7890324033991810350932.jpg
+2026-10-28 16:40:13 [INFO ] [deepseek_web] [73/79] 真皮手套女士羊皮手套冬季保暖手套海宁皮手套批发秋冬电动车手套
+2026-10-28 16:40:13 [INFO ] [deepseek_web]   Downloaded: 0073_1510812538392114971475.jpg
+2026-10-28 16:40:13 [INFO ] [deepseek_web]   Prefetching next image (74/79)
+2026-10-28 16:40:13 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:40:24 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:40:42 [INFO ] [deepseek_web]   Response: 蝴蝶结装饰 手背弧形缝线拼接 羊皮材质表面 直筒平整腕口 全指皮手套 女士 常规版型 五指分指结构 保暖 冬季骑行
+2026-10-28 16:40:42 [INFO ] [deepseek_web]   Deleted: 0073_1510812538392114971475.jpg
+2026-10-28 16:40:47 [INFO ] [deepseek_web] [74/79] 男女Q803户外徒步滑雪防滑可触屏防风防水加绒保暖手套
+2026-10-28 16:40:47 [INFO ] [deepseek_web]   Downloaded: 0074_5371125389001293976325.jpg
+2026-10-28 16:40:47 [INFO ] [deepseek_web]   Prefetching next image (75/79)
+2026-10-28 16:40:47 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:40:58 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:41:16 [INFO ] [deepseek_web]   Response: 手背竖向拉链 掌面几何网格防滑纹理 双联挂扣结构 触屏指尖拼接 全指户外运动手套 中性 常规版型 加绒内里 防风防水 保暖 户外徒步滑雪 Q803
+2026-10-28 16:41:16 [INFO ] [deepseek_web]   Deleted: 0074_5371125389001293976325.jpg
+2026-10-28 16:41:21 [INFO ] [deepseek_web] [75/79] 情侣款冬季针织男士保暖加绒骑行毛线手套 黑色
+2026-10-28 16:41:21 [INFO ] [deepseek_web]   Downloaded: 0075_6491145141426519577957.jpg
+2026-10-28 16:41:21 [INFO ] [deepseek_web]   Prefetching next image (76/79)
+2026-10-28 16:41:21 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:41:32 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:41:50 [INFO ] [deepseek_web]   Response: 掌心斜向防滑纹理 指关节横向针织肌理 腕部矩形反光标签 全指针织毛线手套 中性 常规版型 罗纹收口腕部 加绒保暖 防滑 冬季骑行
+2026-10-28 16:41:50 [INFO ] [deepseek_web]   Deleted: 0075_6491145141426519577957.jpg
+2026-10-28 16:41:55 [INFO ] [deepseek_web] [76/79] 女士纯色长款半指手套针织手套写字开车办公触屏保暖防寒针织手套
+2026-10-28 16:41:55 [INFO ] [deepseek_web]   Downloaded: 0076_0430449273342319960322.jpg
+2026-10-28 16:41:55 [INFO ] [deepseek_web]   Prefetching next image (77/79)
+2026-10-28 16:41:55 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:42:06 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:42:24 [INFO ] [deepseek_web]   Response: 长款护腕结构 毛绒针织表面 罗纹收口腕部 露指开口结构 纯色表面 半指毛绒针织手套 女士 常规版型 触屏功能 保暖
+2026-10-28 16:42:24 [INFO ] [deepseek_web]   Deleted: 0076_0430449273342319960322.jpg
+2026-10-28 16:42:29 [INFO ] [deepseek_web] [77/79] 女士新款双层波浪手套加绒加厚北极绒提花针织保暖冬季骑行滑雪手套
+2026-10-28 16:42:29 [INFO ] [deepseek_web]   Downloaded: 0077_1320927589445719596889.jpg
+2026-10-28 16:42:29 [INFO ] [deepseek_web]   Prefetching next image (78/79)
+2026-10-28 16:42:29 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:42:41 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:42:59 [INFO ] [deepseek_web]   Response: 波浪形针织纹理 翻盖折叠设计 指尖触屏拼接 双层针织手套 女士 常规版型 全指结构 罗纹翻边腕口 加绒加厚 保暖 冬季骑行
+2026-10-28 16:42:59 [INFO ] [deepseek_web]   Deleted: 0077_1320927589445719596889.jpg
+2026-10-28 16:43:04 [INFO ] [deepseek_web] [78/79] 糖果色露指翻盖半指手套针织触屏保暖手套两用双层加厚防寒秋冬季手套
+2026-10-28 16:43:04 [INFO ] [deepseek_web]   Downloaded: 0078_2100442054441712440996.jpg
+2026-10-28 16:43:04 [INFO ] [deepseek_web]   Prefetching next image (79/79)
+2026-10-28 16:43:04 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:43:15 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:43:33 [INFO ] [deepseek_web]   Response: 单粒纽扣固定 竖条纹针织肌理 腕部方形标签 双层针织构造 翻盖两用针织手套 女士 常规版型 露指开口结构 触屏功能 加厚保暖 秋冬
+2026-10-28 16:43:33 [INFO ] [deepseek_web]   Deleted: 0078_2100442054441712440996.jpg
+2026-10-28 16:43:38 [INFO ] [deepseek_web] [79/79] 女士冬季纯色保暖防寒德绒针织手套
+2026-10-28 16:43:38 [INFO ] [deepseek_web]   Downloaded: 0079_6961054554751015234639.jpg
+2026-10-28 16:43:38 [INFO ] [deepseek_web]   Image uploaded, waiting 3s for processing...
+2026-10-28 16:43:49 [INFO ] [deepseek_web]   Prompt sent, waiting for response...
+2026-10-28 16:44:07 [INFO ] [deepseek_web]   Response: 纯色表面 竖条纹针织肌理 加长罗纹腕口 腕部方形小标 全指针织手套 女士 常规版型 德绒面料 保暖防寒 冬季
+2026-10-28 16:44:07 [INFO ] [deepseek_web]   Deleted: 0079_6961054554751015234639.jpg
+2026-10-28 16:44:07 [INFO ] [deepseek_web] 
+2026-10-28 16:44:07 [INFO ] [deepseek_web] Retry round 1: 4 failed item(s)
+2026-10-28 16:44:12 [INFO ] [deepseek_web]   Retry [16]: 秋冬季羊毛半指手套针织纯色保暖男女手套
+2026-10-28 16:44:37 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-28 16:44:55 [INFO ] [deepseek_web]     OK: 露指开口结构 罗纹针织腕口 纯色针织表面 五指分指结构 半指针织手套 中性 常规版型 羊毛 保暖 秋冬 成人款
+2026-10-28 16:44:58 [INFO ] [deepseek_web]   Retry [21]: 男士冬季户外滑雪连指手套加厚防水拉链保暖男女款保护手套
+2026-10-28 16:45:22 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-28 16:45:40 [INFO ] [deepseek_web]     OK: 侧边拉链 腕部魔术贴调节带 手背弧形拼接缝线装饰 连指滑雪手套 中性 常规版型 加厚 防水 保暖 冬季户外滑雪
+2026-10-28 16:45:43 [INFO ] [deepseek_web]   Retry [23]: 冬季保暖肤感手套加绒加厚防风防水户外骑行滑雪防滑触屏手套
+2026-10-28 16:46:07 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-28 16:46:25 [INFO ] [deepseek_web]     OK: 手背斜纹肌理 掌面防滑贴片 双联挂扣结构 腕部松紧收口 全指运动手套 中性 常规版型 触屏功能 防滑 防风防水 加绒加厚 保暖 户外骑行滑雪
+2026-10-28 16:46:28 [INFO ] [deepseek_web]   Retry [65]: 冬季保暖手套
+2026-10-28 16:46:33 [WARNING] [deepseek_web]     FAILED: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2026-10-28 16:46:36 [INFO ] [deepseek_web] 
+2026-10-28 16:46:36 [INFO ] [deepseek_web] Retry round 2: 1 failed item(s)
+2026-10-28 16:46:41 [INFO ] [deepseek_web]   Retry [65]: 冬季保暖手套
+2026-10-28 16:47:06 [INFO ] [deepseek_web]     Prompt sent, waiting...
+2026-10-28 16:47:24 [INFO ] [deepseek_web]     OK: 手背绞花针织肌理 掌面竖条纹针织肌理 腕部方形小标签 罗纹收口腕部 全指针织手套 中性 常规版型 五指分指结构 保暖
+2026-10-28 16:47:28 [INFO ] [deepseek_web] ==================================================
+2026-10-28 16:47:28 [INFO ] [deepseek_web] Done: 79 success, 0 failed → optimize_title
+2026-10-28 16:47:28 [INFO ] [title_workflow] Optimization complete: 79 titles
+2026-10-28 16:47:32 [INFO ] [title_workflow] Written 79 optimized titles to column H (8)
+2026-10-28 16:47:32 [INFO ] [title_workflow] Done: 10.24v1.xlsx
+2026-10-28 16:47:33 [INFO ] [jenkins] [1/1] Title optimization OK
+2026-10-28 16:47:33 [INFO ] [jenkins] 
+2026-10-28 16:47:33 [INFO ] [jenkins] ==================================================
+2026-10-28 16:47:33 [INFO ] [jenkins] All 1 steps completed successfully
+2026-10-28 16:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\optimize_title
+2026-10-28 16:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_link
+2026-10-28 16:47:33 [INFO ] [jenkins] Cleared: tools\title_optimize\origin_title
+2026-10-28 16:47:33 [INFO ] [jenkins] Cleared: tools\color_size_deal\check_.txt
