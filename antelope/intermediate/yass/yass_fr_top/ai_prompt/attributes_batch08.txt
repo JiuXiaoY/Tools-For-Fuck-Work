@@ -1,0 +1,57 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士高级感撞色包边拼色格纹衬衣弹力翻长袖衬衫 领口内侧格纹拼接 袖口内侧格纹拼接 门襟内侧撞色包边 男士长袖衬衫 修身版型 翻领 单排纽扣门襟 纽扣袖口 弹力 标准衣长
+2. 男士宽松复古刺绣抽绳长袖衬衫亚麻立领上衣 V形领口交叉系带 领口边缘刺绣装饰 无胸袋设计 男士套头长袖衬衫 宽松版型 长袖 套头设计 常规袖口
+3. 男士简约格子翻领口袋纽扣长袖衬衫 细格纹印花 左胸贴袋 领后挂环 标准肩线 男士长袖衬衫 宽松版型 翻领 单排纽扣门襟 纽扣袖口 常规衣长
+4. 男士灯芯绒长袖衬衫 双胸翻盖纽扣口袋 灯芯绒竖条纹肌理 单排纽扣门襟 男士长袖衬衫 常规版型 翻领 纽扣袖口 常规衣长
+5. 男士西部风3d印花长袖衬衫 肩部撞色拼接 星形图案 箭头装饰 3D印花 男士长袖衬衫 常规版型 翻领 单排纽扣门襟 纽扣袖口 西部风格
+6. 跨境3d印花图腾复古哥特男式衬衫户外街头秋冬翻边长袖衬衫 3D浮雕纹理 波浪流线图案 同色系渐变效果 无胸袋设计 男士长袖衬衫 常规版型 翻领 单排纽扣门襟 纽扣袖口 哥特复古风格 派对
+7. 2026 秋季新款 港风外景大码翻领长袖衬衫 大理石纹理图案 左胸单贴袋 落肩袖 男士长袖衬衫 宽松版型 翻领 单排纽扣门襟 纽扣袖口 标准衣长
+8. 2026男士纯色休闲宽松大码长袖衬衫 双胸翻盖贴袋 前胸竖向细褶 男士长袖衬衫 宽松版型 翻领 单排纽扣门襟 纽扣袖口 纯色外观 常规衣长
+9. 男士长袖衬衫时尚潮流衬衫拼色春秋装拼接衬衫 灯芯绒竖条纹面料 双胸贴袋 领口撞色拼接 口袋撞色拼接 男士长袖衬衫 宽松版型 翻领 单排纽扣门襟 纽扣袖口
+10. 男士3d印花长袖衬衫狂欢节中世纪衬衫西部牛仔骑士衬衫 肩部拼接卷草纹印花 袖子卷草纹印花 西部牛仔风格 男士长袖衬衫 修身版型 翻领 单排纽扣门襟 纽扣袖口 狂欢节派对
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à patte, 2.Col à revers, 3.Col boutonné, 4.Col boutonné caché, 5.Col camp, 6.Col cassé, 7.Col châle, 8.Col club, 9.Col cranté, 10.Col cutaway, 11.Col étalé, 12.Col extrême cutaway, 13.Col mao, 14.Col marin, 15.Col montant, 16.Col œillet, 17.Col officier, 18.Col peter pan, 19.Col plat, 20.Col point, 21.Col polo, 22.Col rabattu, 23.Col rond, 24.Col semi-cutaway, 25.Col spearpoint, 26.Col tailleur, 27.Col une pièce, 28.Col volant, 29.Sans col
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Professionnel d'affaires, 7.Robe, 8.Thème, 9.Utilité professionnelle
+Style: 1.Bohème, 2.Bon chic bon genre, 3.Classique, 4.Glamour, 5.Guayabera, 6.Hawaïen, 7.Militaire, 8.Minimaliste, 9.Moderne, 10.Occidental, 11.Punk, 12.Rétro, 13.Robe de soirée, 14.Robe veste, 15.Style urbain décontracté, 16.T-shirt, 17.Vintage
+Nom du type d'article: 1.Blouse, 2.Brosses médicales, 3.Caraco, 4.Chemise, 5.Chemise de soirée, 6.Chemise à bouton bas, 7.Chemise à bouton longue formelle pour bébés et bambins, 8.Chemise de brosse médicale, 9.Chemise de golf, 10.Chemise de randonnée, 11.Chemise Henley, 12.Chemise longue à bouton d'utilité professionnelle, 13.Débardeur pour bébés et bambins, 14.Ensemble de t-shirt pour bébés et bambins, 15.Maillot de bowling, 16.Maillot de skate, 17.Maillot de smoking, 18.Maillot de tennis, 19.Maillot de tunique, 20.Maillot de yoga, 21.Polo, 22.T-shirt, 23.T-shirt d'utilité professionnelle, 24.T-shirt de service médical, 25.Tablier d'utilité professionnelle, 26.Tricot, 27.Tunique d'allaitement, 28.Veste, 29.Veste tendance
+Description de la longueur de l'article: 1.Longueur extra courte, 2.Longueur courte, 3.Longueur standard, 4.Grande longueur, 5.Longueur extra longue
+Thème: 1.Alphabet, 2.Animal, 3.Animé, 4.Arbre, 5.Arc-en-ciel, 6.Bande dessinée, 7.Caricature, 8.Crâne, 9.Drôle, 10.École, 11.Émission de télévision, 12.Espace, 13.Famille, 14.Fantaisie, 15.Fierté, 16.Film, 17.Floral, 18.Hippie, 19.Horreur, 20.Jeu, 21.Marbre, 22.Mascottes, 23.Médical et santé, 24.Militaire, 25.Montagne, 26.Mot et citation, 27.Musique, 28.Nautique, 29.Nourriture, 30.Patriotique, 31.Politique, 32.Religieux, 33.Santé mentale, 34.Science-fiction, 35.Sport, 36.Super-héro, 37.Tie-dye, 38.Vacances, 39.Voiture, 40.Y2K
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Classique, 5.Coupe athlétique, 6.Coupe décontractée, 7.Coupe moderne, 8.Coupe surdimensionnée, 9.Décontractée, 10.Droite, 11.Fluide, 12.Maigre, 13.Régulier, 14.Serrée, 15.Slim, 16.Stretch, 17.Sur mesure, 18.Surdimensionnée
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Art martial mixte, 5.Athlétisme, 6.Badminton, 7.Baseball, 8.Basketball, 9.Billard, 10.Bowling, 11.Boxe, 12.Camping, 13.Camping et randonnée, 14.Canoë, 15.Chasse, 16.Cheerleading, 17.Course à pied, 18.Cricket, 19.Crosse, 20.Culturisme, 21.Cyclisme, 22.Danse, 23.Disc golf, 24.Dodgeball, 25.Échecs, 26.Entraînement et formation, 27.Escalade, 28.Exercice et remise en forme, 29.Football américain, 30.Golf, 31.Gymnastique, 32.Haltérophilie, 33.Hippique, 34.Hockey, 35.Hockey sur gazon, 36.Hockey sur glace, 37.Kayak, 38.Lutte, 39.Marche à pied, 40.Motocross, 41.Motoneige, 42.Muay-thaï, 43.Natation, 44.Navigation à voile, 45.Navigation de plaisance, 46.Paddleboard, 47.Paintball, 48.Patinage à roulette, 49.Patinage sur glace, 50.Pêche, 51.Pickleball, 52.Pilates, 53.Planche à voile, 54.Plongeon, 55.Polo, 56.Quidditch, 57.Rafting, 58.Randonnée en raquette, 59.Randonnée pédestre, 60.Raquetball, 61.Règles de football australiennes, 62.Roller hockey, 63.Rugby, 64.Skateboard, 65.Ski nautique, 66.Ski neige, 67.Snorkeling, 68.Snowboard, 69.Soccer, 70.Softball, 71.Sport mécanique, 72.Sport nautique, 73.Squash, 74.Style de vie en extérieur, 75.Surf, 76.T-ball, 77.Tennis, 78.Tennis de table, 79.Tir à l'arc, 80.Trekking, 81.Triathlon, 82.Voile, 83.Volleyball, 84.Wakeboard, 85.Water-polo, 86.Wiffle ball, 87.Yoga
+Style de col2: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col cheminée, 12.Col choker, 13.Col cranté, 14.Col enveloppe, 15.Col festonné, 16.Col keyhole, 17.Col mock, 18.Col noué, 19.Col rond, 20.Col roulé, 21.Col surplice, 22.Col V, 23.Décolleté en cœur, 24.Dos nu, 25.Encolure dégagée, 26.Encolure plongeante, 27.Henley, 28.Ras du cou
+Style du haut: 1.À capuche, 2.A-line, 3.Asymétrique, 4.Blouson, 5.Bralette, 6.Bustier, 7.Cache-cœur, 8.Caftan, 9.Camisole, 10.Cape, 11.Carré, 12.Péplum, 13.Poncho, 14.Pull, 15.Superposé, 16.Tube
+Type de forme de chemise: 1.Blouse, 2.Débardeur, 3.Haut court, 4.Haut paysan, 5.Maillot de smoking, 6.Maillot de sport, 7.Polo, 8.T-shirt
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche papillon, 16.Manche poète, 17.Manche raglan, 18.Manche tulipe, 19.Manche volantée, 20.Mancheron, 21.Manchette
+Type de fermeture: 1.À enfiler, 2.Agraphe, 3.Basculer, 4.Boucle, 5.Bouton, 6.Bouton-pression, 7.Cordon de serrage, 8.Double anneau, 9.Fermeture éclair, 10.Magnétique, 11.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Style de vie:
+Style:
+Nom du type d'article:
+Description de la longueur de l'article:
+Thème:
+Type de coupe:
+Type de tissage:
+Motif:
+Type de sport:
+Style de col2:
+Style du haut:
+Type de forme de chemise:
+Description de la longueur des manches:
+Type de manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...

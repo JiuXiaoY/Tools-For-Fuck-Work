@@ -1,0 +1,43 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士长袖健身长裤裤透气运动紧身套装 渐变波点印花 斜向条带图案 插肩袖结构 长袖运动上衣紧身裤两件套 男士 修身版型 圆领 套头结构 上衣长裤同款图案
+2. 冬季男士连帽圆点卫衣卫裤运动休闲健身套装 渐变波点印花 胸肩拼接 带口袋 连帽全拉链卫衣束脚长裤两件套 男士 修身版型 抽绳帽口 长袖 抽绳松紧裤腰
+3. 男士秋冬季时尚休闲运动透气网格长袖卫衣套装 迷彩拼接衣袖 领口迷彩图案 带口袋 全拉链夹克直筒长裤两件套 男士 常规版型 抽绳松紧腰 长袖
+4. 男士春秋季美式休闲简约仿麂皮翻领带口袋工装夹克套装 带口袋 按扣前襟 抽绳松紧腰 翻领夹克束脚长裤两件套 男士 常规版型 磨砂表面 长袖 纯色
+5. 秋冬万圣节南瓜灯男士3D套装 万圣节南瓜灯印花 猫咪蝙蝠城堡图案 上下装全身满印 连帽卫衣长裤两件套 男士 常规版型 套头连帽 长袖 抽绳束脚裤
+6. 男士万圣节印花套装 3D肌肉躯干印花 交叉背带南瓜扣装饰 万圣节缝线图案 短袖上衣短裤两件套 男士 常规版型 圆领短袖 抽绳松紧腰
+7. 男士夹克万圣节氛围卫衣男士休闲套装 眼睛月亮蛇形藤蔓印花 南瓜图案装饰 立领全拉链长袖开衫 抽绳松紧腰束脚长裤 男士夹克长裤两件套 常规版型
+8. 男士夹克万圣节氛围卫衣男士休闲套装 幽灵印花 骷髅头印花 蝙蝠印花 月亮星星印花 交叉蕾丝印花 男士立领全拉链夹克长裤两件套 常规版型 长袖 抽绳松紧腰 束脚长裤
+9. 男士印花套装 飞溅印花 字母印花 上下装同款印花 连帽套头卫衣束脚裤两件套 男士 常规版型 长袖 抽绳连帽 带口袋 松紧抽绳腰 束脚裤
+10. 男士连帽卫衣印花套装 飞溅印花 字母印花 带口袋 连帽套头卫衣长裤两件套 男士 常规版型 长袖 抽绳帽 松紧抽绳腰 束脚长裤
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée
+Style: 1.Bohémien, 2.Classique, 3.Contemporain, 4.Glamour, 5.Médiéval, 6.Sportif, 7.Victorien, 8.Vintage
+Format spécial: 1.Bébé, 2.Bébé – fille, 3.Bébé – garçon, 4.De grande taille, 5.Filles rondes, 6.Filles sveltes, 7.Garçons costauds, 8.Garçons sveltes, 9.Grand, 10.Grand, 11.Grandes filles, 12.Grands garçons, 13.Petite, 14.Petites filles, 15.Petits garçons, 16.Standard, 17.Taille plus, 18.Taille plus élancée, 19.Taille plus petite, 20.Tout-petit – fille, 21.Tout-petit – garçon
+Type de coupe: 1.Ajusté, 2.Athlétique, 3.Carré, 4.Décontractée, 5.Droit, 6.Fluide, 7.Lâche, 8.Régulière, 9.Serrée, 10.Skinny, 11.Slim, 12.Sur mesure, 13.Surdimensionnée
+Description de la poche: 1.Poche à rabat, 2.Poche couture, 3.Poche fendue, 4.Poche inclinée, 5.Poche kangourou, 6.Poche monnaie, 7.Poche passepoilée, 8.Poche raglan, 9.Poche utilitaire
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche chauves-souris, 4.Manche cloche, 5.Manche dolman, 6.Manche épaule dénudée, 7.Manche évêque, 8.Manche fendue, 9.Manche flutter, 10.Manche froncée, 11.Manche kimono, 12.Manche lanterne, 13.Manche raglan, 14.Manche tulipe, 15.Manche volantée, 16.Mancheron, 17.Manches retroussables, 18.Manchette
+Classe de poids du tissu d'habillement: 1.Léger, 2.Poids lourd (336-403 GSM), 3.Poids moyen (201-267 GSM)
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de vie:
+Style:
+Format spécial:
+Type de coupe:
+Description de la poche:
+Type de tissage:
+Description de la longueur des manches:
+Type de manches:
+Classe de poids du tissu d'habillement:
+1: <选项编号>
+2: <选项编号>
+...

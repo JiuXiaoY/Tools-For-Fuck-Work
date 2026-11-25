@@ -1,0 +1,50 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士加绒长袖T恤 宽松休闲打底衫 圆领套头卫衣 拼接缝线长袖上衣 冬季保暖加绒T恤 纯色加绒保暖打底衫 男士无帽卫衣 内搭保暖秋衣 套头打底长袖 秋冬加厚长袖T恤
+2. 男士高领长袖T恤 修身打底衫 堆堆领套头衫 秋冬保暖长袖上衣 纯色高领T恤 男士堆堆领打底长袖 冬季保暖内搭秋衣 修身套头长袖衫 纯色基础款上衣
+3. 男士长袖T恤打底衫 宽松休闲针织上衣 亨利领半开襟套头衫 立领带纽扣长袖衫 秋冬保暖打底衫 罗纹纯色长袖T恤 竖条纹肌理套头衫 男士长袖亨利衫 休闲套头针织衫
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à patte, 2.Col à revers, 3.Col boutonné, 4.Col boutonné caché, 5.Col camp, 6.Col cassé, 7.Col châle, 8.Col club, 9.Col cranté, 10.Col cutaway, 11.Col étalé, 12.Col extrême cutaway, 13.Col mao, 14.Col marin, 15.Col montant, 16.Col œillet, 17.Col officier, 18.Col peter pan, 19.Col plat, 20.Col point, 21.Col polo, 22.Col rabattu, 23.Col rond, 24.Col semi-cutaway, 25.Col spearpoint, 26.Col tailleur, 27.Col une pièce, 28.Col volant, 29.Sans col
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Professionnel d'affaires, 7.Robe, 8.Thème, 9.Utilité professionnelle
+Style: 1.Bohème, 2.Bon chic bon genre, 3.Classique, 4.Glamour, 5.Guayabera, 6.Hawaïen, 7.Militaire, 8.Minimaliste, 9.Moderne, 10.Occidental, 11.Punk, 12.Rétro, 13.Robe de soirée, 14.Robe veste, 15.Style urbain décontracté, 16.T-shirt, 17.Vintage
+Nom du type d'article: 1.Blouse, 2.Brosses médicales, 3.Caraco, 4.Chemise, 5.Chemise de soirée, 6.Chemise à bouton bas, 7.Chemise à bouton longue formelle pour bébés et bambins, 8.Chemise de brosse médicale, 9.Chemise de golf, 10.Chemise de randonnée, 11.Chemise Henley, 12.Chemise longue à bouton d'utilité professionnelle, 13.Débardeur pour bébés et bambins, 14.Ensemble de t-shirt pour bébés et bambins, 15.Maillot de bowling, 16.Maillot de skate, 17.Maillot de smoking, 18.Maillot de tennis, 19.Maillot de tunique, 20.Maillot de yoga, 21.Polo, 22.T-shirt, 23.T-shirt d'utilité professionnelle, 24.T-shirt de service médical, 25.Tablier d'utilité professionnelle, 26.Tricot, 27.Tunique d'allaitement, 28.Veste, 29.Veste tendance
+Description de la longueur de l'article: 1.Longueur extra courte, 2.Longueur courte, 3.Longueur standard, 4.Grande longueur, 5.Longueur extra longue
+Thème: 1.Alphabet, 2.Animal, 3.Animé, 4.Arbre, 5.Arc-en-ciel, 6.Bande dessinée, 7.Caricature, 8.Crâne, 9.Drôle, 10.École, 11.Émission de télévision, 12.Espace, 13.Famille, 14.Fantaisie, 15.Fierté, 16.Film, 17.Floral, 18.Hippie, 19.Horreur, 20.Jeu, 21.Marbre, 22.Mascottes, 23.Médical et santé, 24.Militaire, 25.Montagne, 26.Mot et citation, 27.Musique, 28.Nautique, 29.Nourriture, 30.Patriotique, 31.Politique, 32.Religieux, 33.Santé mentale, 34.Science-fiction, 35.Sport, 36.Super-héro, 37.Tie-dye, 38.Vacances, 39.Voiture, 40.Y2K
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Classique, 5.Coupe athlétique, 6.Coupe décontractée, 7.Coupe moderne, 8.Coupe surdimensionnée, 9.Décontractée, 10.Droite, 11.Fluide, 12.Maigre, 13.Régulier, 14.Serrée, 15.Slim, 16.Stretch, 17.Sur mesure, 18.Surdimensionnée
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Art martial mixte, 5.Athlétisme, 6.Badminton, 7.Baseball, 8.Basketball, 9.Billard, 10.Bowling, 11.Boxe, 12.Camping, 13.Camping et randonnée, 14.Canoë, 15.Chasse, 16.Cheerleading, 17.Course à pied, 18.Cricket, 19.Crosse, 20.Culturisme, 21.Cyclisme, 22.Danse, 23.Disc golf, 24.Dodgeball, 25.Échecs, 26.Entraînement et formation, 27.Escalade, 28.Exercice et remise en forme, 29.Football américain, 30.Golf, 31.Gymnastique, 32.Haltérophilie, 33.Hippique, 34.Hockey, 35.Hockey sur gazon, 36.Hockey sur glace, 37.Kayak, 38.Lutte, 39.Marche à pied, 40.Motocross, 41.Motoneige, 42.Muay-thaï, 43.Natation, 44.Navigation à voile, 45.Navigation de plaisance, 46.Paddleboard, 47.Paintball, 48.Patinage à roulette, 49.Patinage sur glace, 50.Pêche, 51.Pickleball, 52.Pilates, 53.Planche à voile, 54.Plongeon, 55.Polo, 56.Quidditch, 57.Rafting, 58.Randonnée en raquette, 59.Randonnée pédestre, 60.Raquetball, 61.Règles de football australiennes, 62.Roller hockey, 63.Rugby, 64.Skateboard, 65.Ski nautique, 66.Ski neige, 67.Snorkeling, 68.Snowboard, 69.Soccer, 70.Softball, 71.Sport mécanique, 72.Sport nautique, 73.Squash, 74.Style de vie en extérieur, 75.Surf, 76.T-ball, 77.Tennis, 78.Tennis de table, 79.Tir à l'arc, 80.Trekking, 81.Triathlon, 82.Voile, 83.Volleyball, 84.Wakeboard, 85.Water-polo, 86.Wiffle ball, 87.Yoga
+Style de col2: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col cheminée, 12.Col choker, 13.Col cranté, 14.Col enveloppe, 15.Col festonné, 16.Col keyhole, 17.Col mock, 18.Col noué, 19.Col rond, 20.Col roulé, 21.Col surplice, 22.Col V, 23.Décolleté en cœur, 24.Dos nu, 25.Encolure dégagée, 26.Encolure plongeante, 27.Henley, 28.Ras du cou
+Style du haut: 1.À capuche, 2.A-line, 3.Asymétrique, 4.Blouson, 5.Bralette, 6.Bustier, 7.Cache-cœur, 8.Caftan, 9.Camisole, 10.Cape, 11.Carré, 12.Péplum, 13.Poncho, 14.Pull, 15.Superposé, 16.Tube
+Type de forme de chemise: 1.Blouse, 2.Débardeur, 3.Haut court, 4.Haut paysan, 5.Maillot de smoking, 6.Maillot de sport, 7.Polo, 8.T-shirt
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche papillon, 16.Manche poète, 17.Manche raglan, 18.Manche tulipe, 19.Manche volantée, 20.Mancheron, 21.Manchette
+Type de fermeture: 1.À enfiler, 2.Agraphe, 3.Basculer, 4.Boucle, 5.Bouton, 6.Bouton-pression, 7.Cordon de serrage, 8.Double anneau, 9.Fermeture éclair, 10.Magnétique, 11.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Style de vie:
+Style:
+Nom du type d'article:
+Description de la longueur de l'article:
+Thème:
+Type de coupe:
+Type de tissage:
+Motif:
+Type de sport:
+Style de col2:
+Style du haut:
+Type de forme de chemise:
+Description de la longueur des manches:
+Type de manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...
