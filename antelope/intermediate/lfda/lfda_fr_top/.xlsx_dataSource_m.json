@@ -1,0 +1,3844 @@
+{
+  "data": {
+    "group_1": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Taille plus"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_2": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_3": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_4": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "Tricot"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Montagne"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "À col haut"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Fermeture éclair"
+      ]
+    },
+    "group_5": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Rétro"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Taille plus"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Coupe surdimensionnée"
+      ],
+      "83": [
+        "Sergé"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "À col haut"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Fermeture éclair"
+      ]
+    },
+    "group_6": {
+      "17": [
+        "Col à patte"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Rétro"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Sergé"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "Polo"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_7": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Moderne"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Serrée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "À col haut"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "Maillot de sport"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manche raglan"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_8": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Régulier"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_9": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Col mock"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_10": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Rétro"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Sergé"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_11": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Extensible"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Moderne"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Serrée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "Maillot de sport"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manche raglan"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_12": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Extensible"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Moderne"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Serrée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Exercice et remise en forme"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "Maillot de sport"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manche raglan"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_13": {
+      "17": [
+        "Col boutonné"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Rétro"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Satin"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Col V"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_14": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Col mock"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_15": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Col mock"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_16": {
+      "17": [
+        "Col rabattu"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Classique"
+      ],
+      "73": [
+        "Tricot"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Avec col"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_17": {
+      "17": [
+        "Col à patte"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Rétro"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Sergé"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_18": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Régulier"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manche raglan"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_19": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_20": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Régulier"
+      ],
+      "83": [
+        "Jacquard"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    },
+    "group_21": {
+      "17": [
+        "Col rond"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Ras du cou"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_22": {
+      "17": [
+        "Col montant"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Confort"
+      ],
+      "53": [
+        "Minimaliste"
+      ],
+      "73": [
+        "T-shirt"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Slim"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "Uni"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Col roulé"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "À enfiler"
+      ]
+    },
+    "group_23": {
+      "17": [
+        "Col à patte"
+      ],
+      "19": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "20": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "40": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "Thermique"
+      ],
+      "52": [
+        "Décontracté"
+      ],
+      "53": [
+        "Style urbain décontracté"
+      ],
+      "73": [
+        "Chemise Henley"
+      ],
+      "75": [
+        "Standard"
+      ],
+      "80": [
+        "Sport"
+      ],
+      "81": [
+        "Décontractée"
+      ],
+      "83": [
+        "Plaine"
+      ],
+      "86": [
+        "À rayure"
+      ],
+      "90": [
+        "Style de vie en extérieur"
+      ],
+      "105": [
+        "Henley"
+      ],
+      "110": [
+        "Pull"
+      ],
+      "117": [
+        "T-shirt"
+      ],
+      "120": [
+        "Manches longues"
+      ],
+      "121": [
+        "Manchette"
+      ],
+      "122": [
+        "Bouton"
+      ]
+    }
+  },
+  "placeholder": "dataTemp"
+}

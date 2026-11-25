@@ -1,0 +1,59 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士紧身长袖T恤 高弹运动打底衫 修身插肩袖紧身衣 秋冬加绒保暖长袖上衣 圆领纯色健身服 男士高弹训练服 加绒打底衫 冬季运动紧身衣 插肩袖长袖套头衫
+2. 男士紧身长袖T恤 运动打底衫 高弹修身健身服 插肩袖圆领套头衫 秋冬加绒保暖打底衫 冬季保暖运动长袖 纯色高弹训练服 男士加绒紧身衣 运动保暖长袖上衣 修身健身打底衫
+3. 男士金丝绒长袖T恤 休闲修身打底衫 V领带纽扣套头衫 秋季保暖长袖上衣 纯色丝绒打底T恤 男士V领长袖T恤 男装休闲打底衫 丝绒亨利衫 长袖套头上衣
+4. 男士半高领长袖T恤 修身打底衫 纯色套头立领上衣 春秋保暖打底衫 秋冬薄绒保暖内衣 磨毛长袖秋衣 男士可外穿内搭T恤 半高领修身保暖上衣 套头内穿秋衣
+5. 男士半高领打底衫 修身长袖T恤 中领套头衫 无痕内搭秋衣 秋冬加绒保暖打底衫 雪花绒纯色长袖上衣 男士保暖内衣 春秋薄绒秋衣 中高领套头上衣 男士休闲打底长袖
+6. 男士假两件针织衫毛衣 假两件衬衫领套头衫 修身休闲长袖打底衫 罗纹针织套头毛衣 冬季加绒保暖内搭 秋冬保暖针织衫 纯色拼接衬衫领上衣 男士加绒打底毛衣 假两件长袖外穿毛衣
+7. 男士灯芯绒长袖T恤 休闲修身打底衫 半开襟纽扣套头衫 亨利衫 纯色条绒上衣 拼接领口打底T恤 秋冬保暖长袖上衣 男士休闲套头衫 灯芯绒打底长袖 男士长袖上衣 秋季内搭打底衫
+8. 男女同款长袖T恤 德绒打底衫 圆领套头衫 插肩袖拼接上衣 秋季保暖打底长袖 秋冬德绒保暖内衣 双色拼接长袖T恤 男女休闲打底衫 套头长袖秋衣 插肩袖打底上衣 德绒保暖长袖T恤
+9. 男士长袖T恤 加绒打底衫 圆领套头卫衣 宽松休闲长袖上衣 拼接缝线套头衫 秋冬加绒保暖打底衫 纯色加绒长袖T恤 无帽套头卫衣 冬季保暖内搭上衣 男士宽松打底长袖
+10. 男士长袖T恤打底衫 立领半开襟套头衫 亨利领带纽扣休闲长袖上衣 肌理感混纺针织套头衫 秋冬加绒保暖打底衫 男士花纱纯色长袖上衣 休闲套头打底衫 男装保暖长袖秋衣 肌理面料套头针织衫
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à patte, 2.Col à revers, 3.Col boutonné, 4.Col boutonné caché, 5.Col camp, 6.Col cassé, 7.Col châle, 8.Col club, 9.Col convertible, 10.Col côtelé, 11.Col cranté, 12.Col cutaway, 13.Col en maille plate, 14.Col étalé, 15.Col extrême cutaway, 16.Col Johnny, 17.Col mao, 18.Col marin, 19.Col montant, 20.Col œillet, 21.Col officier, 22.Col peter pan, 23.Col plat, 24.Col point, 25.Col polo, 26.Col rabattu, 27.Col rond, 28.Col semi-cutaway, 29.Col spearpoint, 30.Col tailleur, 31.Col une pièce, 32.Col volant, 33.Sans col
+Caractéristiques spéciales: 1.Absorbante, 2.Brille dans le noir, 3.Convertible, 4.Diaphane, 5.Évacuation de l'humidité, 6.Extensible, 7.Haute visibilité, 8.Hypoallergénique, 9.Imperméable, 10.Légère, 11.Poids lourd, 12.Protection solaire, 13.Réglable, 14.Rembourrage amovible, 15.Rembourrée, 16.Résistant à la bouloche, 17.Résistant à la décoloration, 18.Résistant au rétrécissement, 19.Résistant aux flammes, 20.Résistant aux odeurs, 21.Résistant aux taches, 22.Respirable, 23.Réversible, 24.Sans couture, 25.Sans ride, 26.Scintillante, 27.Séchage rapide, 28.Séparation, 29.Thermique
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Professionnel d'affaires, 7.Robe, 8.Thème, 9.Utilité professionnelle
+Style: 1.Bohème, 2.Bon chic bon genre, 3.Classique, 4.Glamour, 5.Guayabera, 6.Hawaïen, 7.Militaire, 8.Minimaliste, 9.Moderne, 10.Occidental, 11.Punk, 12.Rétro, 13.Robe de soirée, 14.Robe veste, 15.Style urbain décontracté, 16.T-shirt, 17.Vintage
+Nom du type d'article: 1.Blouse, 2.Brosses médicales, 3.Caraco, 4.Chemise, 5.Chemise de soirée, 6.Chemise à bouton bas, 7.Chemise à bouton longue formelle pour bébés et bambins, 8.Chemise de brosse médicale, 9.Chemise de golf, 10.Chemise de randonnée, 11.Chemise Henley, 12.Chemise longue à bouton d'utilité professionnelle, 13.Débardeur pour bébés et bambins, 14.Ensemble de t-shirt pour bébés et bambins, 15.Maillot de bowling, 16.Maillot de skate, 17.Maillot de smoking, 18.Maillot de tennis, 19.Maillot de tunique, 20.Maillot de yoga, 21.Polo, 22.T-shirt, 23.T-shirt d'utilité professionnelle, 24.T-shirt de service médical, 25.Tablier d'utilité professionnelle, 26.Tricot, 27.Tunique d'allaitement, 28.Veste, 29.Veste tendance
+Format spécial: 1.Bébé, 2.Bébé – fille, 3.Bébé – garçon, 4.De grande taille, 5.Filles rondes, 6.Filles sveltes, 7.Garçons costauds, 8.Garçons sveltes, 9.Grand, 10.Grand, 11.Grandes filles, 12.Grands garçons, 13.Petite, 14.Petites filles, 15.Petits garçons, 16.Standard, 17.Taille plus, 18.Taille plus élancée, 19.Taille plus petite, 20.Tout-petit – fille, 21.Tout-petit – garçon
+Thème: 1.Alphabet, 2.Animal, 3.Animé, 4.Arbre, 5.Arc-en-ciel, 6.Bande dessinée, 7.Caricature, 8.Crâne, 9.Drôle, 10.École, 11.Émission de télévision, 12.Espace, 13.Famille, 14.Fantaisie, 15.Fierté, 16.Film, 17.Floral, 18.Hippie, 19.Horreur, 20.Jeu, 21.Marbre, 22.Mascottes, 23.Médical et santé, 24.Militaire, 25.Montagne, 26.Mot et citation, 27.Musique, 28.Nautique, 29.Nourriture, 30.Patriotique, 31.Politique, 32.Religieux, 33.Santé mentale, 34.Science-fiction, 35.Sport, 36.Super-héro, 37.Tie-dye, 38.Vacances, 39.Voiture, 40.Y2K
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Classique, 5.Coupe athlétique, 6.Coupe décontractée, 7.Coupe moderne, 8.Coupe surdimensionnée, 9.Décontractée, 10.Droite, 11.Fluide, 12.Maigre, 13.Régulier, 14.Serrée, 15.Slim, 16.Stretch, 17.Sur mesure, 18.Surdimensionnée
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Art martial mixte, 5.Athlétisme, 6.Badminton, 7.Baseball, 8.Basketball, 9.Billard, 10.Bowling, 11.Boxe, 12.Camping, 13.Camping et randonnée, 14.Canoë, 15.Chasse, 16.Cheerleading, 17.Course à pied, 18.Cricket, 19.Crosse, 20.Culturisme, 21.Cyclisme, 22.Danse, 23.Disc golf, 24.Dodgeball, 25.Échecs, 26.Entraînement et formation, 27.Escalade, 28.Exercice et remise en forme, 29.Football américain, 30.Golf, 31.Gymnastique, 32.Haltérophilie, 33.Hippique, 34.Hockey, 35.Hockey sur gazon, 36.Hockey sur glace, 37.Kayak, 38.Lutte, 39.Marche à pied, 40.Motocross, 41.Motoneige, 42.Muay-thaï, 43.Natation, 44.Navigation à voile, 45.Navigation de plaisance, 46.Paddleboard, 47.Paintball, 48.Patinage à roulette, 49.Patinage sur glace, 50.Pêche, 51.Pickleball, 52.Pilates, 53.Planche à voile, 54.Plongeon, 55.Polo, 56.Quidditch, 57.Rafting, 58.Randonnée en raquette, 59.Randonnée pédestre, 60.Raquetball, 61.Règles de football australiennes, 62.Roller hockey, 63.Rugby, 64.Skateboard, 65.Ski nautique, 66.Ski neige, 67.Snorkeling, 68.Snowboard, 69.Soccer, 70.Softball, 71.Sport mécanique, 72.Sport nautique, 73.Squash, 74.Style de vie en extérieur, 75.Surf, 76.T-ball, 77.Tennis, 78.Tennis de table, 79.Tir à l'arc, 80.Trekking, 81.Triathlon, 82.Voile, 83.Volleyball, 84.Wakeboard, 85.Water-polo, 86.Wiffle ball, 87.Yoga
+Style de col2: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col cheminée, 12.Col choker, 13.Col cranté, 14.Col enveloppe, 15.Col festonné, 16.Col keyhole, 17.Col mock, 18.Col noué, 19.Col roulé, 20.Col surplice, 21.Col V, 22.Décolleté en cœur, 23.Dos nu, 24.Encolure dégagée, 25.Encolure plongeante, 26.Henley, 27.Ras du cou
+Style du haut: 1.À capuche, 2.A-line, 3.Asymétrique, 4.Blouson, 5.Bralette, 6.Bustier, 7.Cache-cœur, 8.Caftan, 9.Camisole, 10.Cape, 11.Carré, 12.Débardeur, 13.Empire, 14.Épaules dénudées, 15.Haut court, 16.Paysan, 17.Péplum, 18.Poncho, 19.Pull, 20.Superposé, 21.Tube, 22.Tunique
+Type de forme de chemise: 1.Blouse, 2.Débardeur, 3.Haut court, 4.Haut paysan, 5.Maillot de smoking, 6.Maillot de sport, 7.Polo, 8.T-shirt
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche papillon, 16.Manche poète, 17.Manche raglan, 18.Manche tulipe, 19.Manche volantée, 20.Mancheron, 21.Manchette
+Type de fermeture: 1.À enfiler, 2.Agraphe, 3.Basculer, 4.Boucle, 5.Bouton, 6.Bouton-pression, 7.Cordon de serrage, 8.Double anneau, 9.Fermeture éclair, 10.Magnétique, 11.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Caractéristiques spéciales:
+Style de vie:
+Style:
+Nom du type d'article:
+Format spécial:
+Thème:
+Type de coupe:
+Type de tissage:
+Motif:
+Type de sport:
+Style de col2:
+Style du haut:
+Type de forme de chemise:
+Description de la longueur des manches:
+Type de manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...

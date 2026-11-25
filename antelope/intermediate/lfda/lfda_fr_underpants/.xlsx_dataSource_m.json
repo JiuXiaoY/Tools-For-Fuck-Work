@@ -1,0 +1,2532 @@
+{
+  "data": {
+    "group_1": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Respirable"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_2": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Slip"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Slips"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Slim"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_3": {
+      "17": [
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Suspensoir"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "Bande de poitrine"
+      ],
+      "73": [
+        "Fantaisie"
+      ],
+      "74": [
+        "Slim"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_4": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Slip haute coupe"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Lingerie"
+      ],
+      "73": [
+        "Sport"
+      ],
+      "74": [
+        "Athlétique"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_5": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Respirable"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Caleçon boxeur"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Slim"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_6": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Trunk"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Boxeur ajusté"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Satin"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_7": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Tanga"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Légère"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Animal"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Imprimé animal"
+      ]
+    },
+    "group_8": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "G-string"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Fantaisie"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_9": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "G-string"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_10": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "G-string"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Sans couture"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_11": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_12": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Respirable"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_13": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "G-string"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Respirable"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_14": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_15": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Satin"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_16": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Ensemble de lingerie"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Slim"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_17": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_18": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_19": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Slip"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Fantaisie"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_20": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Fantaisie"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Géométrique"
+      ]
+    },
+    "group_21": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_22": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_23": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Respirable"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Plaine"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_24": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Caleçon boxeur"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_25": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_26": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Halloween"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Géométrique"
+      ]
+    },
+    "group_27": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Slip"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Camisole"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Slim"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_28": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Boxer briefs"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Caleçon boxeur"
+      ],
+      "73": [
+        "Floral"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "À fleur"
+      ]
+    },
+    "group_29": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Extensible"
+      ],
+      "52": [
+        "Punk"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Satin"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_30": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Slip"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Géométrique"
+      ]
+    },
+    "group_31": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "Tanga"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_32": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "Uni"
+      ]
+    },
+    "group_33": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Floral"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "À fleur"
+      ]
+    },
+    "group_34": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "String"
+      ],
+      "73": [
+        "Géométrique"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Gaze"
+      ],
+      "88": [
+        "Géométrique"
+      ]
+    },
+    "group_35": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "18": [
+        "String"
+      ],
+      "39": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "45": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "46": [
+        "Transparente"
+      ],
+      "52": [
+        "Moderne"
+      ],
+      "67": [
+        "Maillot"
+      ],
+      "73": [
+        "Uni"
+      ],
+      "74": [
+        "Skinny"
+      ],
+      "75": [
+        "Jacquard"
+      ],
+      "88": [
+        "Uni"
+      ]
+    }
+  },
+  "placeholder": "dataTemp"
+}

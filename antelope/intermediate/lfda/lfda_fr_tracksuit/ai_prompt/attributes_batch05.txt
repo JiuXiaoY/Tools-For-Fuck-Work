@@ -1,0 +1,38 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士冬季圣诞3d印花搞怪卫衣套装上衣无口袋
+2. 男士圣诞节印花加绒套装
+3. 男士圣诞节印花加绒套装
+4. 男士仿真丝睡衣套装
+5. 男士圣诞趣味卫衣套装
+6. 圣诞男士毛边西服套装
+7. 男圣诞节搞怪套装
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée
+Style: 1.Bohémien, 2.Classique, 3.Contemporain, 4.Glamour, 5.Médiéval, 6.Sportif, 7.Victorien, 8.Vintage
+Type de coupe: 1.Ajusté, 2.Athlétique, 3.Carré, 4.Décontractée, 5.Droit, 6.Fluide, 7.Lâche, 8.Régulière, 9.Serrée, 10.Skinny, 11.Slim, 12.Sur mesure, 13.Surdimensionnée
+Description de la poche: 1.Poche à rabat, 2.Poche couture, 3.Poche fendue, 4.Poche inclinée, 5.Poche kangourou, 6.Poche monnaie, 7.Poche passepoilée, 8.Poche raglan, 9.Poche utilitaire
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche chauves-souris, 4.Manche cloche, 5.Manche dolman, 6.Manche épaule dénudée, 7.Manche évêque, 8.Manche fendue, 9.Manche flutter, 10.Manche froncée, 11.Manche kimono, 12.Manche lanterne, 13.Manche raglan, 14.Manche tulipe, 15.Manche volantée, 16.Mancheron, 17.Manches retroussables, 18.Manchette
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de vie:
+Style:
+Type de coupe:
+Description de la poche:
+Type de tissage:
+Motif:
+Description de la longueur des manches:
+Type de manches:
+1: <选项编号>
+2: <选项编号>
+...

@@ -1,0 +1,36 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士蕾丝三角裤 低腰高叉透明内裤 超薄细带透视底裤 迷你全包臀丁字裤 男士镂空情趣内裤
+2. 男士透明蕾丝丁字内裤 低腰囊袋丁字裤 性感蕾丝内裤 男士丁字裤 透视蕾丝内裤 低腰男士内裤 蕾丝丁字裤
+3. 男士性感网纱丁字裤 蕾丝透视刺绣内裤 前开洞镂空丁字裤 情趣内裤 花卉花纹男士内裤 透视网纱低腰底裤
+4. 男士低腰丁字裤 菱形网纱内裤 透视网纱丁字裤 囊袋男士内裤 男士网眼丁字裤 性感男士底裤
+5. 男士情趣连体丁字裤 蕾丝连体内裤 带项圈领结 情趣内衣 男士连体内裤 蕾丝丁字裤 男士连体内衣 蕾丝花边内裤 男士性感内裤 连体内裤 包含项圈领结
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de bas: 1.Bikini, 2.Bloomer, 3.Boxer briefs, 4.C-string, 5.Caleçon, 6.Cheeky, 7.G-string, 8.Hipster, 9.Jupe, 10.Lève-fesses, 11.Shorty, 12.Slip, 13.Slip haute coupe, 14.String, 15.Suspensoir, 16.Tanga, 17.Trunk
+Caractéristiques spéciales: 1.Anti-boulochage, 2.Anti-frottement, 3.Anti-fuite, 4.Anti-odeur, 5.Anti-radiation, 6.Antidérapant, 7.Antimicrobienne, 8.Antistatique, 9.Compression, 10.Découpe laser, 11.Déperlante, 12.Évacuation de l'humidité, 13.Extensible, 14.Hypoallergénique, 15.Judas, 16.Légère, 17.Ne remonte pas, 18.Poche, 19.Protection solaire, 20.Résistant à la décoloration, 21.Résistant au rétrécissement, 22.Respirable, 23.Réversible, 24.Sans couture, 25.Sans entrejambe, 26.Sans étiquette, 27.Sans ride, 28.Séchage rapide, 29.Transparente
+Style: 1.Bohème, 2.Classique, 3.Minimaliste, 4.Moderne, 5.Preppy, 6.Punk, 7.Rétro
+Nom du type d'article: 1.À pattes d’éléphant, 2.Bande de poitrine, 3.Boxeur ajusté, 4.Bretelle de soutien-gorge, 5.Brossé, 6.Bustier, 7.Caleçon boxeur, 8.Camisole, 9.Tunique, 10.Cheville, 11.Coquille de protection, 12.Corset, 13.Couche de base, 14.Couche de base inférieure, 15.Couche de base supérieure, 16.Culotte bouffante avec slip complet gainant pour bébés et bambins, 17.Culotte courte pour garçon, 18.Droit, 19.Ensemble de lingerie, 20.Ensemble de sous-vêtement pour bébés et bambins, 21.Extendeur de soutien-gorge, 22.Fuselé, 23.Gaine-culotte de cuisse, 24.Gaine-culotte de taille, 25.Inserteur de soutien-gorge, 26.Jarretière, 27.Jeu de couches de base, 28.Jupon, 29.Jupon, 30.Large, 31.Lingerie, 32.Maillot, 33.Maillot gainant, 34.Négligé, 35.Nuisette, 36.Pantalon, 37.Pétales de poitrine, 38.Porte-jarretière, 39.Sac de lingerie, 40.Slip complet, 41.Slip de doublure de pantalon, 42.Slips, 43.Slips gainants, 44.Sous-vêtement, 45.Sous-vêtement d’entraînement pour bébés et bambins, 46.Sous-vêtement de style bikini, 47.Sous-vêtements de la couche de base, 48.Sous-vêtements hispter, 49.Soutien-gorge auto-adhésif, 50.String, 51.Strings, 52.Taille basse, 53.Très mince
+Thème: 1.Animal, 2.Anime, 3.Arbre, 4.Arc-en-ciel, 5.Argent, 6.Armée, 7.Astronomie, 8.Bande dessinée, 9.Bijoux, 10.Caricature, 11.Crâne, 12.Fantaisie, 13.Film, 14.Floral, 15.Fruit, 16.Géométrique, 17.Halloween, 18.Jeu vidéo, 19.Légume, 20.Marbre, 21.Média, 22.Nautique, 23.Noël, 24.Nourriture et boisson, 25.Oiseau, 26.Plage, 27.Poisson, 28.Religieux, 29.Sport, 30.Super-héro, 31.Tie-dye, 32.Uni, 33.Véhicule, 34.Visage, 35.Voyage
+Type de coupe: 1.Athlétique, 2.Classique, 3.Décontractée, 4.Étendue, 5.Lâche, 6.Moderne, 7.Régulière, 8.Skinny, 9.Slim, 10.Tailored
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de bas:
+Caractéristiques spéciales:
+Style:
+Nom du type d'article:
+Thème:
+Type de coupe:
+Type de tissage:
+Motif:
+1: <选项编号>
+2: <选项编号>
+...
