@@ -1,0 +1,51 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 冬季针织手套菠萝花五指手套保暖触屏手套女户外防寒手套|立体交叉编织 触屏指尖 全指针织手套 女士 保暖 冬季户外防寒
+2. 男女防寒保暖五指手套秋冬季户外骑行防滑可触屏针织提花毛线手套|提花网格图案 触屏指尖 全指针织手套 男女通用 防滑防寒保暖 秋冬户外骑行
+3. 针织手套冬季加绒毛线户外防风防寒保暖手套|竖条纹针织 纯色 全指毛线手套 男女通用 加绒内里 防风防寒 户外
+4. 冬季触屏滑雪防水加厚加绒保暖防风防寒户外情侣骑行手套|掌面防滑 可调节腕带 全指滑雪手套 男女通用 触屏指尖 加绒内里 防水防风 户外骑行
+5. 运动加绒保暖男女防滑触屏滑雪自行车骑行防寒户外手套|触屏指尖 掌面防滑 全指运动手套 男女通用 加绒保暖 防寒 户外滑雪骑行
+6. 秋冬季羊毛半指手套针织纯色保暖男女手套|半指露指 纯色针织手套 男女通用 羊毛 保暖 秋冬
+7. 朋克哥特式摇滚长臂保暖露指手套 |横向条纹 金属圆环 长款护臂 露指针织手套 男女通用 朋克哥特风 保暖
+8. 复古撞色提花针织手套保暖手套手套|复古花卉提花 多段撞色 全指针织手套 男女通用 保暖
+9. 可触屏手套女冬季加绒加厚防寒骑行保暖毛线针织手套|几何菱形提花 触屏指尖 全指毛线手套 女士 加绒加厚 冬季骑行防寒
+10. 日式新玉米纹加厚针织手套男羊毛混纺户外保暖手套女触屏冬季手套|玉米纹针织 纯色 全指手套 男女通用 羊毛混纺 触屏 加厚 户外保暖
+
+【可选值组】（每组只能从该组编号中选择）：
+Emballage: 1.Unité, 2.Case, 3.Palette
+Caractéristiques spéciales: 1.Antidérapante, 2.Antistatique, 3.Bande élastique, 4.Contrôle d'odeur, 5.Coupe-vent, 6.Demi-doigt, 7.Évacuation de l'humidité, 8.Flexible, 9.Légère, 10.Manchette prolongée, 11.Meilleure adhérence, 12.Protection d'articulation, 13.Protection solaire, 14.Réfléchissante, 15.Rembourrée, 16.Repose-poignet, 17.Résistant à l'abrasion, 18.Résistant à l'eau, 19.Résistant à la chaleur, 20.Résistant à la coupure, 21.Respirable, 22.Sangle réglable, 23.Support écran tactile, 24.Thermique
+Style: 1.Classique, 2.Décontracté, 3.Militaires, 4.Moderne, 5.Rétro, 6.Vintage
+Nom de la boutique: 1.Adulte unisexe, 2.Bébé – fille, 3.Bébé – garçon, 4.Bébé unisexe, 5.Fille, 6.Garçon, 7.Jeunesse unisexe, 8.Pour femmes, 9.Pour hommes
+Description de la tranche d'âge: 1.Enfant, 2.Jeunesse, 3.Adulte, 4.Bébé
+Niveau de résistance à l'eau: 1.Étanche, 2.Hydrofuge, 3.Imperméable, 4.Non étanche, 5.Résistant à l’humidité
+Type de coupe: 1.Ample, 2.Décontracté, 3.Extra-petit, 4.Fixé, 5.Large-grand, 6.Moyen-Régulier, 7.S, 8.Semi-fixé
+Conseils d'entretien: 1.Lavage à la main seulement, 2.Lavage en machine, 3.Nettoyage de tache seulement
+Motif: 1.À carreaux, 2.À chevrons, 3.Argyle, 4.Cachemire, 5.Camouflage, 6.Floral, 7.Géométrique, 8.Herringbone, 9.Imprimé animal, 10.Moiré, 11.Pied-de-poule, 12.Plaid, 13.Pois, 14.Rayé, 15.Toile, 16.Uni
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Art martial mixte, 5.Baseball, 6.Basketball, 7.Billard, 8.Bowling, 9.Boxe, 10.Camping et randonnée, 11.Canoë, 12.Chasse, 13.Course à pied, 14.Course automobile, 15.Course de moto, 16.Course de motoneige, 17.Cricket, 18.Crosse, 19.Cyclisme, 20.Dodgeball, 21.Équestre, 22.Escalade, 23.Exercice et remise en forme, 24.Football, 25.Football américain, 26.Force athlétique, 27.Golf, 28.Gymnastique, 29.Haltérophilie, 30.Hockey, 31.Hockey sur gazon, 32.Kayak, 33.Luge, 34.Lutte, 35.Natation, 36.Paintball, 37.Patinage, 38.Pêche, 39.Pêche sous-marine, 40.Pickleball, 41.Planche à roulette, 42.Plongeon, 43.Rafting, 44.Raquetball, 45.Rugby, 46.Ski, 47.Snorkeling, 48.Snowboard, 49.Softball, 50.Squash, 51.Surf, 52.T-Ball, 53.Tennis, 54.Tir à l'arc, 55.Triathlon, 56.Voile, 57.Volley-ball, 58.Wakeboard
+Type de gant: 1.Airsoft, 2.Attrapeur, 3.Billard, 4.Combinaison, 5.Frappeur, 6.Gardien, 7.Gardien de guichet, 8.Golf, 9.Gymnastique, 10.Haltérophilie, 11.Mitaine, 12.Monteur de lignes, 13.Récepteur, 14.Rodéo
+Orientation de la main: 1.Ambidextre, 2.Droite, 3.Gauche
+Type de fermeture: 1.À enfiler, 2.Boucle, 3.Bouton, 4.Bouton-pression, 5.Cordon de serrage, 6.Fermeture éclair, 7.Lacet, 8.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Emballage:
+Caractéristiques spéciales:
+Style:
+Nom de la boutique:
+Description de la tranche d'âge:
+Niveau de résistance à l'eau:
+Type de coupe:
+Conseils d'entretien:
+Motif:
+Type de sport:
+Type de gant:
+Orientation de la main:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...
