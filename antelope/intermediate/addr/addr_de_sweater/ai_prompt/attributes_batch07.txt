@@ -1,0 +1,51 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 水貂绒星星毛衣男秋冬内搭打底衫外穿秋冬针织衫线衣 毛绒星星提花 大小星星图案 落肩设计 罗纹圆领 男士套头针织毛衣 宽松版型 长袖 罗纹袖口 罗纹下摆 无帽设计 常规衣长 秋冬
+2. 秋冬男士针织衫V领修身薄款长袖毛衣 V领设计 罗纹V领边缘 罗纹袖口 罗纹下摆 男士套头针织毛衣 修身版型 长袖 纯色 无帽设计 常规衣长 薄款 细密针织纹理
+3. 男士秋冬时尚纯色扭花长袖高领毛衣 正面大型扭花编织图案 粗针织纹理 翻折高领 男士套头针织毛衣 宽松版型 长袖 罗纹袖口 罗纹下摆 无门襟 无帽设计 常规衣长 纯色 秋冬
+4. 男士秋冬黑白条纹印花圆领户外休闲风格长袖毛衣 斜向粗条纹图案 毛绒表面纹理 落肩设计 男士套头针织毛衣 宽松版型 长袖 罗纹圆领 罗纹袖口 罗纹下摆 无帽设计 常规衣长
+5. 冬季新款男士时尚潮流提花开衫宽松毛衣针织衫 绞花编织纹理 袖部几何提花 下摆横向提花带 V领设计 单排扣门襟 男士开衫针织毛衣 宽松版型 长袖 罗纹袖口 罗纹下摆 无帽设计 常规衣长
+6. 男士复古慵懒风翻领麻花针织衫毛衣外套 翻领设计 单排扣门襟 垂直绞花编织纹理 男士开衫针织毛衣 常规版型 长袖 罗纹袖口 罗纹下摆 无帽设计 纯色 常规衣长
+7. 秋冬季新款男士立领雪花点设计时尚毛衣 雪花点图案 半开襟三粒扣 立领设计 罗纹袖口 罗纹下摆 男士套头针织毛衣 常规版型 长袖 无帽设计 常规衣长
+8. 男士新款日系时尚圆领毛衣针织衫 猫咪图案提花 毛茸茸表面纹理 落肩设计 男士套头针织毛衣 宽松版型 圆领 长袖 罗纹袖口 罗纹下摆 无帽 常规衣长
+9. 男士复古提花针织宽松蓬松毛衣 连帽抽绳设计 全拉链门襟 方格与动物提花图案 罗纹袖口 罗纹下摆 男士连帽针织开衫毛衣 宽松版型 长袖 常规衣长
+10. 冬季新款纯色套头男士休闲毛衣可拆卸围巾针织衫 可拆卸围巾装饰 立领设计 领部纽扣装饰 竖条纹罗纹针织纹理 男士套头针织毛衣 常规版型 长袖 罗纹袖口 罗纹下摆 无帽设计 常规衣长
+
+【可选值组】（每组只能从该组编号中选择）：
+Besondere Eigenschaften: 1.Atmungsaktiv, 2.Dehnbar, 3.Faltenfrei, 4.Farbecht, 5.Hautfreundlich, 6.Leicht, 7.Nahtlos, 8.Pillenresistent, 9.Schnelltrocknend, 10.Schweißabsorbierend, 11.Schwergewicht, 12.Sonnenschutz, 13.Trägerlos, 14.Umkehrbar, 15.Wärmespeicherung, 16.Wetterfest
+Stil: 1.Barock, 2.Böhmisch, 3.Casual, 4.Glam, 5.Grunge, 6.Klassisch, 7.Modern, 8.Preppy, 9.Punk, 10.Retro, 11.Streetwear, 12.viktorianisch, 13.Zeitgenössisch
+Artikeltyp – Name: 1.Kapuzenpullover, 2.Kurzer Pullover, 3.Polo-Pullover, 4.Pullover, 5.Pullover, 6.Pullunder, 7.Skate-Kapuzenpullover, 8.Sonnenanzug, 9.Strickjacke, 10.Sweatshirt
+Sondergröße: 1.Baby, 2.Babys (Jungen), 3.Babys (Mädchen), 4.Groß, 5.Groß, 6.Groß-Übergröße, 7.Große Jungs, 8.Große Mädels, 9.Klein, 10.Klein-Übergröße, 11.Kleine Jungs, 12.Kleine Mädels, 13.Kleinkinder (Jungen), 14.Kleinkinder (Mädchen), 15.Kräftig, 16.Schlanke Jungs, 17.Schlanke Mädels, 18.Stämmige Jungs, 19.Standard, 20.Übergröße, 21.Übergroße Mädels
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Thema: 1.Abenteuer, 2.Alien, 3.Anatomie, 4.Anime, 5.Batik, 6.Botanisch, 7.Cartoon, 8.Charakter, 9.Comic, 10.Fantasie, 11.Feiertag, 12.Film, 13.Gothic, 14.Grafik, 15.Horror, 16.Insekt, 17.Lebensmittel, 18.Marmor, 19.Militär, 20.Monster, 21.Musik, 22.Nautisch, 23.Patriotisch, 24.Regenbogen, 25.Religiös, 26.Romanze, 27.Sport, 28.Steampunk, 29.Superheld, 30.Tier, 31.Tiki, 32.Videospiel, 33.Vogel, 34.Weltraum
+Passform: 1.Angepasst, 2.Athletisch, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Passgenau, 9.Regulär, 10.Skinny, 11.Slim, 12.Übergroß, 13.Weit geschnitten
+Webart: 1.Dobby, 2.Gaze, 3.Jaal, 4.Jacquard, 5.Jamdani, 6.Kabel, 7.Köper, 8.Leinwandbindung, 9.Rippung, 10.Satin, 11.Waffel
+Halsausschnitt: 1.Asymmetrischer Ausschnitt, 2.Carmenausschnitt, 3.Choker-Ausschnitt, 4.Chorhemd-Ausschnitt, 5.Crew Neck, 6.Eckiger Ausschnitt, 7.Henley-Ausschnitt, 8.Herzausschnitt, 9.Jakobsmuschel-Ausschnitt, 10.Juwel-Ausschnitt, 11.Kragen, 12.Mit Kapuze, 13.Mock-Ausschnitt, 14.Notch-Ausschnitt, 15.One Shoulder, 16.Rollkragen, 17.Schluppenkragen, 18.Scoop-Ausschnitt, 19.Split Neck, 20.Stehkragen, 21.Tiefer Ausschnitt, 22.Tropfen-Ausschnitt, 23.U-Ausschnitt, 24.U-Boot-Ausschnitt, 25.V-Ausschnitt, 26.Wasserfall-Ausschnitt
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ballon-Ärmel, 2.Bauschärmel, 3.Bischofsärmel, 4.Cape-Ärmel, 5.Dolman Ärmel, 6.Flatter-Ärmel, 7.Fledermausärmel, 8.Flügelärmel, 9.Geraffte Ärmel, 10.Geteilte Ärmel, 11.Glockenärmel, 12.Hammelblumen-Hülse, 13.Kalte Schulter Ärmel, 14.Kimono Ärmel, 15.Laterne Ärmel, 16.Manschettenärmel, 17.Poet Ärmel, 18.Raglanärmel, 19.Roll-Up-Ärmel, 20.Rüschenärmel, 21.Schmetterling Ärmel, 22.Tulpenärmel
+Pulloverform: 1.Bolero, 2.Pullover, 3.Pullover-Cape, 4.Pullunder, 5.Strickjacke
+Materialgewicht des Bekleidungsstoffs: 1.Leicht, 2.Mittleres Gewicht (201-267 g/m²), 3.Schwer (336-403 g/m²)
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Besondere Eigenschaften:
+Stil:
+Artikeltyp – Name:
+Sondergröße:
+Beschreibung der Artikellänge:
+Thema:
+Passform:
+Webart:
+Halsausschnitt:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Pulloverform:
+Materialgewicht des Bekleidungsstoffs:
+1: <选项编号>
+2: <选项编号>
+...

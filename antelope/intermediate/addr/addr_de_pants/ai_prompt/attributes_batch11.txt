@@ -1,0 +1,53 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士腰部抽绳直筒阔腿宽松长裤运动裤带口袋休闲裤 抽绳松紧腰头 直筒阔腿裤型 带口袋 套穿式无门襟 纯色无图案 男士 宽松版型 运动休闲长裤
+2. 男士加绒休闲裤工装卫裤 带口袋 抽绳松紧腰头 男士 宽松版型 工装卫裤 加绒内里 保暖 休闲运动
+3. 男士纯色带口袋长裤工装裤 带口袋 抽绳松紧腰头 男士 宽松版型 纯色 直筒裤腿
+4. 男士带口袋长裤休闲裤卫裤 带口袋 抽绳松紧腰头 套穿式无门襟 男士 宽松版型 直筒卫裤 纯色 日常休闲适用
+5. 2024秋冬新款男士格子毛呢裤拖地阔腿设计保暖长裤休闲裤 格纹图案 拖地阔腿 抽绳松紧腰头 带口袋 男士 宽松版型 毛呢休闲长裤 直筒裤腿 保暖 冬季休闲
+6. 男修身春秋弹力工装裤宽松软壳冲锋裤耐磨户外（添加魔术贴） 带口袋 膝部立体拼接 腰带环 金属D型扣腰带 男士 修身版型 软壳工装长裤 直筒裤腿 弹力 耐磨 户外
+7. 成人男女同款家庭派对居家屁屁睡裤休闲长裤 抽绳松紧腰头 套穿式无门襟 带口袋 睡裤 中性 宽松版型 直筒裤腿 居家休闲适用 派对适用
+8. 夏薄弹力工作服套装男迷彩短袖冰丝大码宽松休闲小脚裤工装 迷彩印花 松紧腰头 套穿式无门襟 男士 宽松版型 工装长裤
+9. 男士西装裤 腰带环 带口袋 正面纽扣门襟 男士西装长裤 修身版型 直筒裤腿 纯色 商务正装适用
+10. 男士冬季休闲加绒保暖防风羊羔绒训练裤 羊羔绒内里 带口袋 抽绳松紧腰头 男士 宽松版型 加绒训练长裤 直筒裤腿 纯色 防风 保暖 冬季户外运动
+
+【可选值组】（每组只能从该组编号中选择）：
+Besondere Eigenschaften: 1.Abriebfest, 2.Anti-Fading, 3.Anti-Pilling, 4.Antimikrobiell, 5.Antistatisch, 6.Atmungsaktiv, 7.Bauchkontrolle, 8.Chemikalienbeständig, 9.Dehnbar, 10.Einstellbar, 11.Erweiterbar, 12.Fleckenresistent, 13.Geruchlos, 14.Hammerschlaufe, 15.Hemdgreifer, 16.Hochleistungsfähig, 17.Insektensicher, 18.Kniebeugensicher, 19.Knitterfest, 20.Kompression, 21.Konvertierbar, 22.Leichtgewichtig, 23.Lichtbogenbeständig, 24.Nahtlos, 25.Po-Lifting, 26.Reflektierend, 27.Rutschfest, 28.Schnelltrocknend, 29.Schweißableitend, 30.Scrunch Po, 31.Sonnenschutz, 32.Umkehrbar, 33.Verstärktes Knie, 34.Wasserabweisend, 35.Winddicht, 36.Zerrissen, 37.Zwickel
+Lifestyle: 1.Abend, 2.Arbeit, 3.Formell, 4.Komfort, 5.Lässig, 6.Legere Geschäftskleidung
+Stil: 1.Art-Deco, 2.Böhmisch, 3.Boyfriend, 4.Capri, 5.Cargo, 6.Chino, 7.Culotte, 8.Disco, 9.Drop Crotch, 10.Gothic, 11.Harem, 12.Jogger, 13.Jogginghose, 14.Karotte, 15.Klassisch, 16.Matrosenhose, 17.Mittelalterlich, 18.Modern, 19.Palazzo, 20.Punk, 21.Renaissance, 22.Retro, 23.Rustikal, 24.viktorianisch
+Artikeltyp – Name: 1.Anzughose, 2.Arbeitsbekleidungsset, 3.Arbeitshose, 4.Arbeitsschutzanzug, 5.Bodystocking, 6.Freizeithose, 7.Golfhose, 8.Hose, 9.Hosen-Set, 10.Jeans, 11.Khakihose, 12.Klassische Hose, 13.Kochhose, 14.Kompressionshose, 15.Kordhose, 16.Lässige Business-Hose, 17.Lässige Hose, 18.Leggings, 19.Medizinische Berufskleidung - Set, 20.Medizinische Schlupfhose, 21.Jumpsuit, 22.Overalls, 23.Tennishose, 24.Trainingsanzug, 25.Trainingsanzug, 26.Trainingshose, 27.Trainingshose, 28.Wanderhose, 29.Yoga-Hose, 30.Baby- & Kleinkind-Strampelanzug, 31.Baby- & Kleinkind-Ausstattung
+Thema: 1.Alien, 2.Alphabet, 3.Anime, 4.Biker, 5.Blumig, 6.Comic, 7.Dinosaurier, 8.Essen, 9.Fantasie, 10.Feiertag, 11.Film, 12.Herz, 13.Hippie, 14.Horror, 15.Insekten, 16.Katze, 17.Maskottchen, 18.Medizinisch, 19.Militär, 20.Monster, 21.Musik, 22.Patriotisch, 23.Religiös, 24.Schule, 25.Science-Fiction, 26.Sport, 27.Strand, 28.Vogel, 29.Weltraum
+Passform: 1.Angepasst, 2.Athletisch, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Regulär, 9.Schlank, 10.Skinny, 11.Übergangspassung, 12.Übergroß, 13.Weit geschnitten
+Hosenbeinart: 1.Abgeschnitten, 2.Ausgestellt, 3.Bootcut, 4.Gerade, 5.Hosen, 6.Knöchel, 7.Manschetten, 8.Skinny, 9.Steigbügel, 10.Tailliert, 11.Weit
+Webart: 1.Dobby, 2.Gaze, 3.Glatt, 4.Jaal, 5.Jacquard, 6.Jamdani, 7.Köper, 8.Rips, 9.Satin, 10.Waffel, 11.Zopf
+Waschung: 1.Dunkel, 2.Mittel, 3.Schonwaschgang
+Sitz: 1.Mittlere Taille, 2.Hohe Taille, 3.Niedrige Taille
+Muster: 1.Argyle, 2.Buchstabenmuster, 3.Camouflage, 4.Cartoon, 5.Chevron, 6.Einfarbig, 7.Fischgrätenmuster, 8.Früchte, 9.Gebatikt, 10.Geblümt, 11.Geometrisch, 12.Gepunktet, 13.Gestreift, 14.Grafik, 15.Hahnentritt, 16.Herz, 17.Insekten, 18.Kariert, 19.Marmor, 20.Moiré, 21.Paisley, 22.Pflanzen, 23.Schottenmuster, 24.Sterne, 25.Tartan, 26.Tierdruck
+Sportart: 1.American Football, 2.Auto Racing, 3.Badminton, 4.Baseball, 5.Basketball, 6.Bergsteigen, 7.BMX, 8.Bogenschießen, 9.Bowling, 10.Boxen, 11.Cricket, 12.Cyclocross, 13.Eislaufen, 14.Felsklettern, 15.Fischen, 16.Fußball, 17.Gewichtheben, 18.Golf, 19.Gymnastik, 20.Handball, 21.Hockey, 22.Kajakfahren, 23.Kampfkunst, 24.Kanufahren, 25.Kitesurfen, 26.Klettern, 27.Lacrosse, 28.Laufen, 29.Motorschlittenfahren, 30.Mountainbiken, 31.Multi-Sport, 32.Paddel-Boarding, 33.Paintball, 34.Pilates, 35.Racquetball, 36.Radfahren, 37.Rafting, 38.Reiter, 39.Rennen, 40.Ringen, 41.Roller Hockey, 42.Rollschuhlaufen, 43.Rugby, 44.Schnorcheln, 45.Schwimmen, 46.Segeln, 47.Skateboarden, 48.Ski Alpin, 49.Skifahren, 50.Skitourengehen, 51.Snowboarden, 52.Softair, 53.Softball, 54.Squash, 55.Surfen, 56.T-Ball, 57.Tauchen, 58.Tennis, 59.Tischtennis, 60.Triathlon, 61.Volleyball, 62.Wandern, 63.Wasserball, 64.Wasserski, 65.Windsurfen, 66.Yoga
+Verschlussart: 1.D-Ring, 2.Druckknopf, 3.Elastischer Bund, 4.Haken & Öse, 5.Haken & Stange, 6.Klettverschluss, 7.Knopfleiste, 8.Magnetische, 9.Pull On, 10.Reißverschluss, 11.Schnalle, 12.Tunnelzug
+Formtyp der Hose: 1.Cargo, 2.Chinohose, 3.Freizeithose, 4.Gaucho, 5.Harem, 6.Jeans, 7.Jogginghose, 8.Kompression, 9.Konvertibel, 10.Laufhose, 11.Leggings, 12.Palazzo, 13.Reiten, 14.Trainingshose, 15.Yoga-Hose
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Besondere Eigenschaften:
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Thema:
+Passform:
+Hosenbeinart:
+Webart:
+Waschung:
+Sitz:
+Muster:
+Sportart:
+Verschlussart:
+Formtyp der Hose:
+1: <选项编号>
+2: <选项编号>
+...
