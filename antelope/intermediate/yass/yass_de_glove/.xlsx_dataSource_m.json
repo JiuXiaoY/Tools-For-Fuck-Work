@@ -1,0 +1,5131 @@
+{
+  "data": {
+    "group_1": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_2": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_3": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_4": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Rutschfest"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_5": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_6": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_7": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_8": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_9": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wetterbeständig"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_10": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_11": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_12": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_13": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_14": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Klettverschluss"
+      ]
+    },
+    "group_15": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_16": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_17": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerlos"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_18": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_19": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_20": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_21": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Reißverschluss"
+      ]
+    },
+    "group_22": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_23": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_24": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Klettverschluss"
+      ]
+    },
+    "group_25": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_26": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_27": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_28": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerlos"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_29": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerlos"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_30": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_31": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Reißverschluss"
+      ]
+    },
+    "group_32": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_33": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_34": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_35": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Klettverschluss"
+      ]
+    },
+    "group_36": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_37": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_38": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_39": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_40": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_41": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Klettverschluss"
+      ]
+    },
+    "group_42": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_43": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_44": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_45": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_46": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_47": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_48": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_49": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_50": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Reißverschluss"
+      ]
+    },
+    "group_51": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Schnappverschluss"
+      ]
+    },
+    "group_52": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_53": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_54": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_55": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_56": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_57": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Beheizt"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_58": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_59": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_60": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Leicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_61": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_62": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_63": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_64": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_65": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_66": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_67": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_68": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_69": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_70": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_71": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Gefüttert"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_72": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_73": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_74": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Wasserdicht"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Reißverschluss"
+      ]
+    },
+    "group_75": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Rutschfest"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_76": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_77": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    },
+    "group_78": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Touchscreen-kompatibel"
+      ],
+      "54": [
+        "Halbfinger"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Lasche"
+      ]
+    },
+    "group_79": {
+      "17": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "41": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "47": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "48": [
+        "Isoliert"
+      ],
+      "54": [
+        "Fingerhandschuhe"
+      ],
+      "69": [
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp",
+        "dataTemp"
+      ],
+      "84": [
+        "Beidhändig"
+      ],
+      "90": [
+        "Pull-On"
+      ]
+    }
+  },
+  "placeholder": "dataTemp"
+}

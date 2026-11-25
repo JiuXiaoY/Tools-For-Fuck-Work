@@ -1,0 +1,45 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 鱼骨束身衣新款骨衣收腹定型小众设计蝴蝶结胸衣 正面四个蝴蝶结装饰 背面交叉绑带 金属扣眼 鱼骨竖向拼接结构 女士束身胸衣 修身版型 无袖抹胸式 短款 收腰塑形
+2. 宫廷束身衣紧身收腹鱼骨塑身上衣corset纯色蕾丝抹胸 蕾丝花卉图案 心形抹胸领 背面交叉绑带 金属扣眼 鱼骨竖向拼接结构 女士宫廷束身衣 修身版型 无袖短款 收腹塑形
+3. 新款女式短款PU皮质绑带拉链宫廷束身衣 PU亮面材质 正面拉链门襟 背面交叉绑带 女士宫廷束身衣 修身版型 无袖短款 抹胸式 竖向拼接结构 收腰设计
+4. 女士传统欧洲宫廷束身衣收腹束腰绑带十四骨四扣腰夹沙漏腰封 正面四扣门襟 侧面蕾丝拼接 竖向鱼骨支撑 背面交叉绑带 女士宫廷束身腰封 修身版型 无袖短款 沙漏型收腰 收腹塑形
+5. 26钢骨塑形衣古典腰封腰夹收腹束身马甲宫廷束腰短款 正面金属排扣门襟 多根鱼骨支撑 竖向拼接结构 无肩带 纯色 女士宫廷束腰马甲 修身版型 长款 无袖 收腹塑形
+6. 拉链塑身衣收腹紧身胸衣新娘礼服宫廷束腰婚纱束身衣 提花图案 心形抹胸领 正面拉链门襟 顶部丝带系带 荷叶边饰边 波浪弧形下摆 女士宫廷束身衣 修身版型 无袖短款 收腹塑形
+7. 鱼鳞钢骨塑身上衣日字扣皮款cosplay服饰朋克束身衣 挂脖式肩带 正面金属日字扣门襟 侧面交叉绑带 女士PU皮束身衣 修身版型 无袖短款 鱼骨支撑 收腹塑形 朋克风格 角色扮演服饰
+8. 法式宫廷束腰带新款带胶骨后系带绣花收腹束身衣 花卉图案 正面金属排扣门襟 背面交叉系带 鱼骨支撑 弧形边缘 女士宫廷束腰带 修身版型 无袖短款 收腰塑形
+9. 蕾丝束腰带双层贴合鱼骨收腹带哥特风塑身腰封corset 蕾丝花卉图案 正面金属排扣门襟 背面交叉绑带 双层贴合 鱼骨支撑 女士哥特风束腰腰封 修身版型 无袖短款 收腹塑形
+10. 新款哥特式带短袖复古女士马甲塑身上衣 提花图案 心形领口 泡泡短袖 正面金属排扣 竖向拼接 收腰结构 女士宫廷束身马甲 修身版型 短款 塑身上衣
+
+【可选值组】（每组只能从该组编号中选择）：
+Lifestyle: 1.Abend, 2.Formell, 3.Komfort, 4.Lässig, 5.Legere Geschäftskleidung
+Stil: 1.altmodisch, 2.böhmisch, 3.Glamour, 4.Klassisch, 5.Mittelalterlich, 6.Punk, 7.Sportlich, 8.viktorianisch, 9.Zeitgemäß
+Artikeltyp – Name: 1.Ausgestellt, 2.Babydoll-Dessous, 3.Badehose, 4.Baselayer, 5.Baselayer-Hose, 6.Baselayer-Set, 7.Baselayer-Shirt, 8.Baselayer-Unterwäsche, 9.Beschnitten, 10.BH-Einlage, 11.BH-Extender, 12.BH-Träger, 13.Boot-Cut, 14.Boxershorts, 15.Breit, 16.Brust-Blütenblätter, 17.Brustband, 18.Bustier, 19.Camisole, 20.Chemisenkleid, 21.Dessous, 22.Dessous-Set, 23.Dessous-Tasche, 24.G-String, 25.Gerade, 26.Halber Schlupf, 27.Hipster-Höschen, 28.Hose, 29.Knöchel, 30.Korsett, 31.Negligé, 32.Oberschenkel-Shapewear, 33.Petticoat, 34.Retroshorts, 35.Selbstklebender BH, 36.Shapewear Ganzkörper-Body, 37.Shapewear-Unterhose, 38.Eng anliegend, 39.Unterhosen, 40.Slipeinlagen, 41.Slips für Jungen, 42.Strumpfband, 43.Strumpfhaltergürtel, 44.Taillen-Shapewear, 45.Tangahöschen, 46.Tiefschutz, 47.Unterwäsche, 48.Unterwäsche im Bikini-Stil, 49.Voller Schlupf, 50.Zugeschnitten, 51.Baby- & Kleinkind-Trainingsunterwäsche, 52.Baby- & Kleinkind Unterwäsche-Satz, 53.Formwäsche-Slip Baby- & Kleinkind-Bloomers
+Passform: 1.Athletisch, 2.Eng anliegend, 3.Fließend, 4.Gerade, 5.Locker, 6.Maßgeschneidert, 7.Regulär, 8.Relaxed, 9.Schlank, 10.Skinny, 11.Tailliert, 12.Übergroß, 13.Weit geschnitten
+Verschlussart: 1.Bindegürtel, 2.Druckknopf, 3.Haken & Öse, 4.Klettverschluss, 5.Knopfleiste, 6.Kordelzug, 7.Pull On, 8.Reißverschluss, 9.Schnalle
+Materialgewicht des Bekleidungsstoffs: 1.Leicht, 2.Mittleres Gewicht (201-267 g/m²), 3.Schwer (336-403 g/m²)
+Elastizität des Bekleidungsstoffs: 1.Geringe Elastizität, 2.Keine Elastizität, 3.Mittlere Elastizität, 4.Starke Elastizität
+Gelegenheit & Anlass: 1.Abschluss, 2.Abschlussball, 3.Babyparty, 4.Beerdigung, 5.Brautparty, 6.Frauentag, 7.Geburtstag, 8.Hochzeit, 9.Jahrestag, 10.Junggesellenabschied, 11.Junggesellinnenabschied, 12.Klassentreffen, 13.Kommunion, 14.Muttertag, 15.Neues Jahr, 16.Ostern, 17.Quinceañera, 18.Taufe, 19.Unabhängigkeitstag, 20.Valentinstag, 21.Vatertag, 22.Verlobung
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Feiertagstyp: 1.Chanukka, 2.Diwali, 3.Halloween, 4.Kwanzaa, 5.Muttertag, 6.Neujahr, 7.Ostern, 8.Passahfest, 9.St. Patrick's Day, 10.Thanksgiving, 11.Unabhängigkeitstag, 12.Valentinstag, 13.Vatertag, 14.Weihnachten
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Passform:
+Verschlussart:
+Materialgewicht des Bekleidungsstoffs:
+Elastizität des Bekleidungsstoffs:
+Gelegenheit & Anlass:
+Beschreibung der Ärmellänge:
+Feiertagstyp:
+1: <选项编号>
+2: <选项编号>
+...

@@ -1,0 +1,50 @@
+Lifestyle:
+1: 1
+2: 4
+3: 4
+4: 4
+Stil:
+1: 8
+2: 6
+3: 6
+4: 8
+Artikeltyp – Name:
+1: 30
+2: 44
+3: 30
+4: 44
+Passform:
+1: 2
+2: 2
+3: 2
+4: 2
+Verschlussart:
+1: 5
+2: 5
+3: 9
+4: 5
+Materialgewicht des Bekleidungsstoffs:
+1: 2
+2: 1
+3: 2
+4: 1
+Elastizität des Bekleidungsstoffs:
+1: 1
+2: 1
+3: 1
+4: 1
+Gelegenheit & Anlass:
+1: 8
+2: 11
+3: 11
+4: 7
+Beschreibung der Ärmellänge:
+1: 1
+2: 1
+3: 1
+4: 1
+Feiertagstyp:
+1: 12
+2: 3
+3: 3
+4: 12

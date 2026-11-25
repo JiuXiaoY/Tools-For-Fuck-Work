@@ -1,0 +1,39 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 女士宫廷风束身排扣鱼骨新娘礼服打底收腰塑身美体内衣 提花图案 正面金属排扣门襟 竖向拼接结构 无肩带抹胸式 弧形下摆 鱼骨支撑 女士宫廷束身腰封 修身版型 无袖短款 收腰塑形 新娘礼服打底
+2. 女士新品网纱束腰带双层贴合鱼骨收腹带哥特风塑身腰夹腰封corset 蕾丝花卉图案 正面金属排扣门襟 双层贴合结构 鱼骨支撑 竖向拼接结构 女士束腰腰封 修身版型 无袖短款 收腹塑形 哥特风格
+3. 女士复古宫廷束身衣蒸汽朋克链条哥特式紧身胸衣万圣节鱼骨衣 提花图案 心形抹胸领 正面金属搭扣门襟 女士宫廷束身衣 修身版型 无袖短款 抹胸式 鱼骨支撑 收腰结构 侧面交叉绑带 金属扣眼 尖角下摆
+4. 女士短款腰封透气钢骨定型网纱薄款外穿内搭宫廷束腰 网纱拼接 正面金属排扣门襟 竖向鱼骨支撑结构 短款 女士透气束腰腰封 修身版型 无袖 外穿内搭 宫廷风格 塑身
+
+【可选值组】（每组只能从该组编号中选择）：
+Lifestyle: 1.Abend, 2.Formell, 3.Komfort, 4.Lässig, 5.Legere Geschäftskleidung
+Stil: 1.altmodisch, 2.böhmisch, 3.Glamour, 4.Klassisch, 5.Mittelalterlich, 6.Punk, 7.Sportlich, 8.viktorianisch, 9.Zeitgemäß
+Artikeltyp – Name: 1.Ausgestellt, 2.Babydoll-Dessous, 3.Badehose, 4.Baselayer, 5.Baselayer-Hose, 6.Baselayer-Set, 7.Baselayer-Shirt, 8.Baselayer-Unterwäsche, 9.Beschnitten, 10.BH-Einlage, 11.BH-Extender, 12.BH-Träger, 13.Boot-Cut, 14.Boxershorts, 15.Breit, 16.Brust-Blütenblätter, 17.Brustband, 18.Bustier, 19.Camisole, 20.Chemisenkleid, 21.Dessous, 22.Dessous-Set, 23.Dessous-Tasche, 24.G-String, 25.Gerade, 26.Halber Schlupf, 27.Hipster-Höschen, 28.Hose, 29.Knöchel, 30.Korsett, 31.Negligé, 32.Oberschenkel-Shapewear, 33.Petticoat, 34.Retroshorts, 35.Selbstklebender BH, 36.Shapewear Ganzkörper-Body, 37.Shapewear-Unterhose, 38.Eng anliegend, 39.Unterhosen, 40.Slipeinlagen, 41.Slips für Jungen, 42.Strumpfband, 43.Strumpfhaltergürtel, 44.Taillen-Shapewear, 45.Tangahöschen, 46.Tiefschutz, 47.Unterwäsche, 48.Unterwäsche im Bikini-Stil, 49.Voller Schlupf, 50.Zugeschnitten, 51.Baby- & Kleinkind-Trainingsunterwäsche, 52.Baby- & Kleinkind Unterwäsche-Satz, 53.Formwäsche-Slip Baby- & Kleinkind-Bloomers
+Passform: 1.Athletisch, 2.Eng anliegend, 3.Fließend, 4.Gerade, 5.Locker, 6.Maßgeschneidert, 7.Regulär, 8.Relaxed, 9.Schlank, 10.Skinny, 11.Tailliert, 12.Übergroß, 13.Weit geschnitten
+Verschlussart: 1.Bindegürtel, 2.Druckknopf, 3.Haken & Öse, 4.Klettverschluss, 5.Knopfleiste, 6.Kordelzug, 7.Pull On, 8.Reißverschluss, 9.Schnalle
+Materialgewicht des Bekleidungsstoffs: 1.Leicht, 2.Mittleres Gewicht (201-267 g/m²), 3.Schwer (336-403 g/m²)
+Elastizität des Bekleidungsstoffs: 1.Geringe Elastizität, 2.Keine Elastizität, 3.Mittlere Elastizität, 4.Starke Elastizität
+Gelegenheit & Anlass: 1.Abschluss, 2.Abschlussball, 3.Babyparty, 4.Beerdigung, 5.Brautparty, 6.Frauentag, 7.Geburtstag, 8.Hochzeit, 9.Jahrestag, 10.Junggesellenabschied, 11.Junggesellinnenabschied, 12.Klassentreffen, 13.Kommunion, 14.Muttertag, 15.Neues Jahr, 16.Ostern, 17.Quinceañera, 18.Taufe, 19.Unabhängigkeitstag, 20.Valentinstag, 21.Vatertag, 22.Verlobung
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Feiertagstyp: 1.Chanukka, 2.Diwali, 3.Halloween, 4.Kwanzaa, 5.Muttertag, 6.Neujahr, 7.Ostern, 8.Passahfest, 9.St. Patrick's Day, 10.Thanksgiving, 11.Unabhängigkeitstag, 12.Valentinstag, 13.Vatertag, 14.Weihnachten
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Passform:
+Verschlussart:
+Materialgewicht des Bekleidungsstoffs:
+Elastizität des Bekleidungsstoffs:
+Gelegenheit & Anlass:
+Beschreibung der Ärmellänge:
+Feiertagstyp:
+1: <选项编号>
+2: <选项编号>
+...
