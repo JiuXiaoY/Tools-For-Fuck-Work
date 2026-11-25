@@ -1,0 +1,533 @@
+{
+  "settings": {
+    "labelRow": 4,
+    "attributeRow": 5,
+    "dataRow": 7
+  },
+  "compared_files": {
+    "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\addr\\addr_de_hat\\addr_de_hat_completed.json",
+    "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\addr\\addr_de_hat\\addr_de_hat_blank.json"
+  },
+  "summary": {
+    "completed_total": 70,
+    "blank_total": 28,
+    "only_in_completed": 42,
+    "only_in_blank": 0,
+    "duplicate_col_in_completed": [],
+    "duplicate_col_in_blank": []
+  },
+  "by_col": {
+    "only_in_completed": [
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 5,
+        "header": "Übergeordnete SKU",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A1PA6795UKMFR9]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 7,
+        "header": "Artikelname",
+        "attribute": "item_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 12,
+        "header": "Empfohlene Stöbern-Kategorie",
+        "attribute": "recommended_browse_nodes[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 17,
+        "header": "Modellnummer",
+        "attribute": "model_number[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      },
+      {
+        "col": 18,
+        "header": "Modellname",
+        "attribute": "model_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 22,
+        "header": "URL des Hauptbildes",
+        "attribute": "main_product_image_locator[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 23,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_1[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_2[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 25,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_3[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_4[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_5[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_6[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_7[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_8[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 38,
+        "header": "Beschreibung des Produkts",
+        "attribute": "product_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 39,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 40,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#2.value",
+        "matched": false
+      },
+      {
+        "col": 41,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#3.value",
+        "matched": false
+      },
+      {
+        "col": 42,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#4.value",
+        "matched": false
+      },
+      {
+        "col": 43,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#5.value",
+        "matched": false
+      },
+      {
+        "col": 44,
+        "header": "Suchbegriffe",
+        "attribute": "generic_keyword[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 45,
+        "header": "Besondere Eigenschaften",
+        "attribute": "special_feature[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 51,
+        "header": "Stil",
+        "attribute": "style[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 52,
+        "header": "Abteilungsname",
+        "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 53,
+        "header": "Geschlecht",
+        "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 54,
+        "header": "Altersgruppe (Beschreibung)",
+        "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 57,
+        "header": "Bekleidungsgröße",
+        "attribute": "headwear_size[marketplace_id=A1PA6795UKMFR9]#1.size",
+        "matched": true
+      },
+      {
+        "col": 64,
+        "header": "Artikeltyp – Name",
+        "attribute": "item_type_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 67,
+        "header": "Farbzuordnung",
+        "attribute": "color[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 68,
+        "header": "Farbe",
+        "attribute": "color[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 69,
+        "header": "Gelegenheit & Anlass",
+        "attribute": "occasion_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 75,
+        "header": "Thema",
+        "attribute": "theme[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 76,
+        "header": "Passform",
+        "attribute": "fit_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 77,
+        "header": "Webart",
+        "attribute": "weave_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 78,
+        "header": "Pflegehinweise",
+        "attribute": "care_instructions[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 98,
+        "header": "Empfohlene Verw.bereiche für Produkt",
+        "attribute": "recommended_uses_for_product[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 115,
+        "header": "Hutformtyp",
+        "attribute": "hat_form_type[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 124,
+        "header": "Artikelgewicht",
+        "attribute": "item_weight[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      },
+      {
+        "col": 134,
+        "header": "Listenpreis mit Steuern",
+        "attribute": "list_price[marketplace_id=A1PA6795UKMFR9]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 163,
+        "header": "Ihr Preis EUR (Verkaufen bei Amazon, DE)",
+        "attribute": "purchasable_offer[marketplace_id=A1PA6795UKMFR9][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 201,
+        "header": "Paketgewicht des Artikels",
+        "attribute": "item_package_weight[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      }
+    ],
+    "only_in_blank": []
+  },
+  "by_attribute": {
+    "only_in_completed": [
+      {
+        "col": 54,
+        "header": "Altersgruppe (Beschreibung)",
+        "attribute": "age_range_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 39,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 40,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#2.value",
+        "matched": false
+      },
+      {
+        "col": 41,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#3.value",
+        "matched": false
+      },
+      {
+        "col": 42,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#4.value",
+        "matched": false
+      },
+      {
+        "col": 43,
+        "header": "Aufzählungspunkt",
+        "attribute": "bullet_point[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#5.value",
+        "matched": false
+      },
+      {
+        "col": 78,
+        "header": "Pflegehinweise",
+        "attribute": "care_instructions[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 5,
+        "header": "Übergeordnete SKU",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A1PA6795UKMFR9]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 67,
+        "header": "Farbzuordnung",
+        "attribute": "color[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 68,
+        "header": "Farbe",
+        "attribute": "color[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 52,
+        "header": "Abteilungsname",
+        "attribute": "department[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 76,
+        "header": "Passform",
+        "attribute": "fit_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 44,
+        "header": "Suchbegriffe",
+        "attribute": "generic_keyword[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 115,
+        "header": "Hutformtyp",
+        "attribute": "hat_form_type[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 57,
+        "header": "Bekleidungsgröße",
+        "attribute": "headwear_size[marketplace_id=A1PA6795UKMFR9]#1.size",
+        "matched": true
+      },
+      {
+        "col": 7,
+        "header": "Artikelname",
+        "attribute": "item_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 201,
+        "header": "Paketgewicht des Artikels",
+        "attribute": "item_package_weight[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      },
+      {
+        "col": 64,
+        "header": "Artikeltyp – Name",
+        "attribute": "item_type_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 124,
+        "header": "Artikelgewicht",
+        "attribute": "item_weight[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      },
+      {
+        "col": 134,
+        "header": "Listenpreis mit Steuern",
+        "attribute": "list_price[marketplace_id=A1PA6795UKMFR9]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 22,
+        "header": "URL des Hauptbildes",
+        "attribute": "main_product_image_locator[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 18,
+        "header": "Modellname",
+        "attribute": "model_name[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 17,
+        "header": "Modellnummer",
+        "attribute": "model_number[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": false
+      },
+      {
+        "col": 69,
+        "header": "Gelegenheit & Anlass",
+        "attribute": "occasion_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 23,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_1[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_2[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 25,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_3[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_4[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_5[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_6[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_7[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Andere Bild-URL",
+        "attribute": "other_product_image_locator_8[marketplace_id=A1PA6795UKMFR9]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 38,
+        "header": "Beschreibung des Produkts",
+        "attribute": "product_description[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": false
+      },
+      {
+        "col": 163,
+        "header": "Ihr Preis EUR (Verkaufen bei Amazon, DE)",
+        "attribute": "purchasable_offer[marketplace_id=A1PA6795UKMFR9][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 12,
+        "header": "Empfohlene Stöbern-Kategorie",
+        "attribute": "recommended_browse_nodes[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 98,
+        "header": "Empfohlene Verw.bereiche für Produkt",
+        "attribute": "recommended_uses_for_product[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 45,
+        "header": "Besondere Eigenschaften",
+        "attribute": "special_feature[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 51,
+        "header": "Stil",
+        "attribute": "style[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 53,
+        "header": "Geschlecht",
+        "attribute": "target_gender[marketplace_id=A1PA6795UKMFR9]#1.value",
+        "matched": true
+      },
+      {
+        "col": 75,
+        "header": "Thema",
+        "attribute": "theme[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      },
+      {
+        "col": 77,
+        "header": "Webart",
+        "attribute": "weave_type[marketplace_id=A1PA6795UKMFR9][language_tag=de_DE]#1.value",
+        "matched": true
+      }
+    ],
+    "only_in_blank": []
+  }
+}

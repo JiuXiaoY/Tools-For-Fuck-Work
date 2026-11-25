@@ -49,6 +49,12 @@
     "AO": { "value": "Dieses Weihnachtsoberteil für Herren ist nicht nur bequem, sondern besticht auch durch sein einzigartiges festliches Design und lässt sich vielseitig mit verschiedenen Unterteilen kombinieren. Daher eignet es sich perfekt für Freizeit, Partys, Feiern oder besondere Anlässe und ist die ideale Wahl, da es sich nicht auf einen einzigen Stil beschränken lässt.", "file": "", "sequence": false },
     "AU": { "value": "", "file": "de_unknown/de_christmas_shirt.txt", "sequence": false }
   },
+  "addr_de_hat": {
+    "Q":  { "value": "Zsby-0001", "file": "", "sequence": true },
+    "R":  { "value": "mütze herren", "file": "", "sequence": false },
+    "AL": { "value": "Diese Kopfbedeckung trägt sich angenehm und setzt mit ihrem eigenständigen Design einen stilvollen Akzent, der sich leicht mit Jacken und Mänteln kombinieren lässt und sowohl zu Stadtbummeln und Spaziergängen an kühlen Tagen als auch zu geselligen Feiern passt", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "de_Uni/de_hat_Uni.txt", "sequence": false }
+  },
 
 
   "yass_de_pants": {
@@ -187,10 +193,16 @@
 
 
   "lfda_fr_coat": {
-    "S":  { "value": "Imph-0001", "file": "", "sequence": true },
-    "T":  { "value": "Vestes chaudes pour homme", "file": "", "sequence": false },
-    "AN": { "value": "Ce haut allie confort et design unique ; selon le modèle, il peut se porter aussi bien seul qu'en superposition. Il convient aussi bien au quotidien qu'aux sorties entre amis ou aux occasions festives. Associé à un pantalon sobre et à des accessoires raffinés, il permet de créer sans effort une multitude de looks.", "file": "", "sequence": false },
-    "AT": { "value": "", "file": "fr_Adam/fr_coat_Adam.txt", "sequence": false }
+    "S":  { "value": "GSWS-0001", "file": "", "sequence": true },
+    "T":  { "value": "Gilet pour homme", "file": "", "sequence": false },
+    "AN": { "value": "Ce gilet sans manches associe un style soigné à un port confortable et s’accorde aussi bien avec une chemise pour une occasion festive qu’avec une tenue plus décontractée pour une sortie entre amis, tout en apportant une touche de caractère aux tenues du quotidien", "file": "", "sequence": false },
+    "AT": { "value": "", "file": "fr_Adam/fr_vest_Adam.txt", "sequence": false }
+  },
+  "lfda_uk_coat": {
+    "S":  { "value": "GSWS-0001", "file": "", "sequence": true },
+    "T":  { "value": "Men’s waistcoats", "file": "", "sequence": false },
+    "AH": { "value": "Comfortable to wear and easy to style, this sleeveless layer adds character to your outfit, whether you wear it over a shirt for a celebration, pair it with casual pieces for a weekend outing with friends or throw it on over a simple outfit for a day in town", "file": "", "sequence": false },
+    "AN": { "value": "", "file": "uk_Adam/uk_vest_Adam.txt", "sequence": false }
   },
   "lfda_fr_dress": {
     "S":  { "value": "Cxxx-0001", "file": "", "sequence": true },
@@ -231,5 +243,17 @@
     "Q":  { "value": "lingerie homme sexy hot", "file": "", "sequence": false },
     "AM": { "value": "Cette lingerie masculine associe une allure travaillée à un port agréable pour accompagner les moments de détente, les soirées à thème et diverses occasions privées ; facile à intégrer à des tenues variées, elle ajoute une note personnelle et expressive au vestiaire masculin", "file": "", "sequence": false },
     "AS": { "value": "", "file": "fr_Adam/fr_underpants_Adam.txt", "sequence": false }
+  },
+  "lfda_fr_hat": {
+    "Q":  { "value": "Zsby-0001", "file": "", "sequence": true },
+    "R":  { "value": "petit bonnet de noël", "file": "", "sequence": false },
+    "AL": { "value": "Agréable à porter, ce couvre-chef au style soigné apporte une touche de caractère à la tenue et s’associe facilement à une veste ou à un manteau, que ce soit pour une sortie en ville, une balade par temps frais ou un moment festif en famille ou entre amis", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "fr_Uni/fr_hat_Uni.txt", "sequence": false }
+  },
+  "lfda_fr_pants": {
+    "Q":  { "value": "Swnc-0001", "file": "", "sequence": true },
+    "R":  { "value": "pantalon femme", "file": "", "sequence": false },
+    "AL": { "value": "Agréable à porter et facile à assortir, ce vêtement apporte une touche de style à la tenue et accompagne aussi bien les moments de détente à la maison que les sorties décontractées et les occasions festives, selon les pièces avec lesquelles vous le portez", "file": "", "sequence": false },
+    "AR": { "value": "", "file": "fr_Eva/fr_pants_Eva.txt", "sequence": false }
   }
 }

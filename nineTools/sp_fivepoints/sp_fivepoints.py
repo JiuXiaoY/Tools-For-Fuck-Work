@@ -3,8 +3,8 @@
 
 直接运行 main() 即可逐个处理本目录下所有 .md 文件，输出同名 .xlsx。
 根据 Markdown 表头识别语言：
-- 德语或法语：每个产品一行，A~E 为对应语言第 1~5 点。
-- 德法双语：德语整块、空两行、法语整块。
+- 单语：每个产品一行，A~E 为对应语言第 1~5 点。
+- 多语：按表头语言顺序分块，语言块之间空两行。
 
 单个文件处理失败时，报告错误并继续处理其他文件。
 """
@@ -21,6 +21,8 @@ from openpyxl.utils.exceptions import IllegalCharacterError
 
 
 BASE = os.path.dirname(os.path.abspath(__file__))
+LANGUAGES = ("de", "fr", "en")
+LANGUAGE_NAMES = {"de": "德语", "fr": "法语", "en": "英语"}
 PRODUCT_RE = re.compile(r"^##\s*产品\s*(\S+)\s*$")
 ROW_RE = re.compile(r"^\|\s*(\d+)\s*\|")
 
@@ -32,10 +34,14 @@ def language_of(label):
         return "de"
     if "法语" in value or "français" in value or "francais" in value or "french" in value:
         return "fr"
+    if "英语" in value or "anglais" in value or "english" in value:
+        return "en"
     if re.match(r"^de(?:\b|[_:/-])", value):
         return "de"
     if re.match(r"^fr(?:\b|[_:/-])", value):
         return "fr"
+    if re.match(r"^en(?:\b|[_:/-])", value):
+        return "en"
     raise ValueError("无法从表头 %r 判断语言" % label)
 
 
@@ -50,13 +56,13 @@ def header_languages(cells, line_no):
 
 
 def parse_markdown(path):
-    """返回 [(产品号, 德语五点或 None, 法语五点或 None), ...]。"""
+    """返回 [(产品号, 德语五点或 None, 法语五点或 None, 英语五点或 None), ...]。"""
     with io.open(path, "r", encoding="utf-8") as fh:
         lines = fh.read().splitlines()
 
     products = []
     cur_no = None
-    cur_points = {"de": {}, "fr": {}}
+    cur_points = {lang: {} for lang in LANGUAGES}
     cur_languages = None
     seen_numbers = set()
 
@@ -69,10 +75,9 @@ def parse_markdown(path):
                    if any(i not in cur_points[lang] for lang in cur_languages)]
         if missing:
             raise ValueError("产品 %s 缺少第 %s 点" % (cur_no, missing))
-        products.append((
-            cur_no,
-            [cur_points["de"][i] for i in range(1, 6)] if "de" in cur_languages else None,
-            [cur_points["fr"][i] for i in range(1, 6)] if "fr" in cur_languages else None,
+        products.append((cur_no,) + tuple(
+            [cur_points[lang][i] for i in range(1, 6)] if lang in cur_languages else None
+            for lang in LANGUAGES
         ))
 
     for line_no, line in enumerate(lines, start=1):
@@ -84,7 +89,7 @@ def parse_markdown(path):
             if cur_no in seen_numbers:
                 raise ValueError("第 %d 行重复产品号 %s" % (line_no, cur_no))
             seen_numbers.add(cur_no)
-            cur_points = {"de": {}, "fr": {}}
+            cur_points = {lang: {} for lang in LANGUAGES}
             cur_languages = None
             continue
         if cur_no is None or not stripped.startswith("|"):
@@ -125,42 +130,38 @@ def detect_mode(products):
     if not products:
         raise ValueError("没有可导出的产品")
     modes = set()
-    for _no, de, fr in products:
-        if de is not None and fr is not None:
-            modes.add("de&fr")
-        elif de is not None:
-            modes.add("de")
-        elif fr is not None:
-            modes.add("fr")
-        else:
+    for product in products:
+        fields = product[1:]
+        languages = tuple(lang for lang, points in zip(LANGUAGES, fields) if points is not None)
+        if not languages:
             raise ValueError("产品缺少德语和法语五点")
+        modes.add("&".join(languages))
     if len(modes) != 1:
         raise ValueError("同一文件混用了不同的语言模式")
     return modes.pop()
 
 
 def write_xlsx(products, out_path):
-    """单语每个产品一行；双语为德语整块 → 空两行 → 法语整块。"""
+    """单语每个产品一行；多语按语言分块，语言块之间空两行。"""
     mode = detect_mode(products)
     wb = Workbook()
     ws = wb.active
     ws.title = "fivepoints"
 
     n = len(products)
-    fr_start = n + 3 if mode == "de&fr" else 1 if mode == "fr" else None
-    for offset, (_no, de, fr) in enumerate(products):
-        if de is not None:
-            for col, point in enumerate(de, start=1):
-                ws.cell(row=1 + offset, column=col).value = point
-        if fr is not None:
-            for col, point in enumerate(fr, start=1):
-                ws.cell(row=fr_start + offset, column=col).value = point
+    mode_languages = mode.split("&")
+    starts = {lang: 1 + block * (n + 2) for block, lang in enumerate(mode_languages)}
+    for offset, product in enumerate(products):
+        for lang, points in zip(LANGUAGES, product[1:]):
+            if points is not None:
+                for col, point in enumerate(points, start=1):
+                    ws.cell(row=starts[lang] + offset, column=col).value = point
 
     with TemporaryDirectory(dir=os.path.dirname(os.path.abspath(out_path))) as staging_dir:
         staged_path = os.path.join(staging_dir, "fivepoints.xlsx")
         wb.save(staged_path)
         os.replace(staged_path, out_path)
-    return n, fr_start
+    return n, starts
 
 
 def find_inputs():
@@ -200,7 +201,7 @@ def main(argv=None):
         try:
             products = parse_markdown(path)
             mode = detect_mode(products)
-            n, fr_start = write_xlsx(products, out_path)
+            n, block_starts = write_xlsx(products, out_path)
         except (OSError, ValueError, IllegalCharacterError) as exc:
             print("[ERROR] %s: %s" % (path, exc))
             failed = True
@@ -210,10 +211,15 @@ def main(argv=None):
         print("输入: %s" % path)
         print("输出: %s" % out_path)
         print("模式: %s | 产品数: %d" % (mode, n))
-        if mode == "de&fr":
-            print("布局: 德语第 1~%d 行；空两行；法语第 %d~%d 行" % (n, fr_start, fr_start + n - 1))
+        if len(block_starts) > 1:
+            layout = []
+            for lang in mode.split("&"):
+                start = block_starts[lang]
+                layout.append("%s第 %d~%d 行" % (LANGUAGE_NAMES[lang], start, start + n - 1))
+            print("布局: %s（语言块之间空两行）" % "；".join(layout))
         else:
-            print("布局: %s 第 1~%d 行（每行 5 列，无表头）" % (mode, n))
+            lang = mode
+            print("布局: %s 第 1~%d 行（每行 5 列，无表头）" % (LANGUAGE_NAMES[lang], n))
     return int(failed)
 
 

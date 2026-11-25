@@ -24,11 +24,11 @@ BASE = Path(__file__).resolve().parent
 _log = get_logger("jenkins")
 
 STEPS = [
-    # ("xls → xlsx",          BASE / "tools" / "xls2xlsx.py"),
-    # ("Preprocess",           BASE / "preprocess" / "run.py"),
-    # ("Excel pipeline",      BASE / "main.py"),
-    # ("Color re-processing",  BASE / "tools" / "color_size_deal" / "color_reprocess.py"),
-    ("Title optimization",    BASE / "tools" / "title_optimize" / "title_rewrite.py"),
+    ("xls → xlsx",          BASE / "tools" / "xls2xlsx.py"),
+    ("Preprocess",           BASE / "preprocess" / "run.py"),
+    ("Excel pipeline",      BASE / "main.py"),
+    ("Color re-processing",  BASE / "tools" / "color_size_deal" / "color_reprocess.py"),
+    # ("Title optimization",    BASE / "tools" / "title_optimize" / "title_rewrite.py"),
     # ("Export SKU",            BASE / "tools" / "export_sku" / "export_sku.py"),
 ]
 

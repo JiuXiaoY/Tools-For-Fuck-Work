@@ -1,0 +1,485 @@
+{
+  "settings": {
+    "labelRow": 4,
+    "attributeRow": 5,
+    "dataRow": 7
+  },
+  "compared_files": {
+    "completed": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\lfda\\lfda_uk_coat\\lfda_uk_coat_completed.json",
+    "blank": "D:\\FW20260325\\besskyproject\\dealExcel_refactoring\\antelope\\intermediate_tpl\\lfda\\lfda_uk_coat\\lfda_uk_coat_blank.json"
+  },
+  "summary": {
+    "completed_total": 73,
+    "blank_total": 35,
+    "only_in_completed": 38,
+    "only_in_blank": 0,
+    "duplicate_col_in_completed": [],
+    "duplicate_col_in_blank": []
+  },
+  "by_col": {
+    "only_in_completed": [
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 5,
+        "header": "Parent SKU",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A1F83G8C2ARO7P]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 7,
+        "header": "Item Name",
+        "attribute": "item_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 17,
+        "header": "Collar Style",
+        "attribute": "collar_style[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 19,
+        "header": "Model Number",
+        "attribute": "model_number[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      },
+      {
+        "col": 20,
+        "header": "Model Name",
+        "attribute": "model_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "Main Image URL",
+        "attribute": "main_product_image_locator[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 25,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_1[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_2[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_3[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_4[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_5[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_6[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_7[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 32,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_8[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 34,
+        "header": "Product Description",
+        "attribute": "product_description[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 35,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 36,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#2.value",
+        "matched": false
+      },
+      {
+        "col": 37,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#3.value",
+        "matched": false
+      },
+      {
+        "col": 38,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#4.value",
+        "matched": false
+      },
+      {
+        "col": 39,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#5.value",
+        "matched": false
+      },
+      {
+        "col": 40,
+        "header": "Generic Keywords",
+        "attribute": "generic_keyword[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 41,
+        "header": "Special Feature",
+        "attribute": "special_feature[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 47,
+        "header": "Style",
+        "attribute": "style[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 53,
+        "header": "Apparel Size Value",
+        "attribute": "apparel_size[marketplace_id=A1F83G8C2ARO7P]#1.size",
+        "matched": true
+      },
+      {
+        "col": 64,
+        "header": "Item Type Name",
+        "attribute": "item_type_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 67,
+        "header": "Colour Map",
+        "attribute": "color[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 68,
+        "header": "Colour",
+        "attribute": "color[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 72,
+        "header": "Fit Type",
+        "attribute": "fit_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 80,
+        "header": "Weave Type",
+        "attribute": "weave_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 82,
+        "header": "Pattern",
+        "attribute": "pattern[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 86,
+        "header": "Sport Type",
+        "attribute": "sport_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 108,
+        "header": "Sleeve Type",
+        "attribute": "sleeve[marketplace_id=A1F83G8C2ARO7P]#1.type[language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 109,
+        "header": "Closure Type",
+        "attribute": "closure[marketplace_id=A1F83G8C2ARO7P]#1.type[language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 127,
+        "header": "Item Weight",
+        "attribute": "item_weight[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      },
+      {
+        "col": 139,
+        "header": "List Price with Tax",
+        "attribute": "list_price[marketplace_id=A1F83G8C2ARO7P]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 168,
+        "header": "Your Price GBP (Sell on Amazon, UK)",
+        "attribute": "purchasable_offer[marketplace_id=A1F83G8C2ARO7P][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 200,
+        "header": "Item Package Weight",
+        "attribute": "item_package_weight[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      }
+    ],
+    "only_in_blank": []
+  },
+  "by_attribute": {
+    "only_in_completed": [
+      {
+        "col": 53,
+        "header": "Apparel Size Value",
+        "attribute": "apparel_size[marketplace_id=A1F83G8C2ARO7P]#1.size",
+        "matched": true
+      },
+      {
+        "col": 35,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 36,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#2.value",
+        "matched": false
+      },
+      {
+        "col": 37,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#3.value",
+        "matched": false
+      },
+      {
+        "col": 38,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#4.value",
+        "matched": false
+      },
+      {
+        "col": 39,
+        "header": "Bullet Point",
+        "attribute": "bullet_point[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#5.value",
+        "matched": false
+      },
+      {
+        "col": 5,
+        "header": "Parent SKU",
+        "attribute": "child_parent_sku_relationship[marketplace_id=A1F83G8C2ARO7P]#1.parent_sku",
+        "matched": false
+      },
+      {
+        "col": 109,
+        "header": "Closure Type",
+        "attribute": "closure[marketplace_id=A1F83G8C2ARO7P]#1.type[language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 17,
+        "header": "Collar Style",
+        "attribute": "collar_style[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 67,
+        "header": "Colour Map",
+        "attribute": "color[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.standardized_values#1",
+        "matched": true
+      },
+      {
+        "col": 68,
+        "header": "Colour",
+        "attribute": "color[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 1,
+        "header": "SKU",
+        "attribute": "contribution_sku#1.value",
+        "matched": false
+      },
+      {
+        "col": 72,
+        "header": "Fit Type",
+        "attribute": "fit_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 40,
+        "header": "Generic Keywords",
+        "attribute": "generic_keyword[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 7,
+        "header": "Item Name",
+        "attribute": "item_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 200,
+        "header": "Item Package Weight",
+        "attribute": "item_package_weight[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      },
+      {
+        "col": 64,
+        "header": "Item Type Name",
+        "attribute": "item_type_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 127,
+        "header": "Item Weight",
+        "attribute": "item_weight[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      },
+      {
+        "col": 139,
+        "header": "List Price with Tax",
+        "attribute": "list_price[marketplace_id=A1F83G8C2ARO7P]#1.value_with_tax",
+        "matched": false
+      },
+      {
+        "col": 24,
+        "header": "Main Image URL",
+        "attribute": "main_product_image_locator[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 20,
+        "header": "Model Name",
+        "attribute": "model_name[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 19,
+        "header": "Model Number",
+        "attribute": "model_number[marketplace_id=A1F83G8C2ARO7P]#1.value",
+        "matched": false
+      },
+      {
+        "col": 25,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_1[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 26,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_2[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 27,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_3[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 28,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_4[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 29,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_5[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 30,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_6[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 31,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_7[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 32,
+        "header": "Other Image URL",
+        "attribute": "other_product_image_locator_8[marketplace_id=A1F83G8C2ARO7P]#1.media_location",
+        "matched": false
+      },
+      {
+        "col": 82,
+        "header": "Pattern",
+        "attribute": "pattern[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 34,
+        "header": "Product Description",
+        "attribute": "product_description[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": false
+      },
+      {
+        "col": 168,
+        "header": "Your Price GBP (Sell on Amazon, UK)",
+        "attribute": "purchasable_offer[marketplace_id=A1F83G8C2ARO7P][audience=ALL]#1.our_price#1.schedule#1.value_with_tax",
+        "matched": true
+      },
+      {
+        "col": 108,
+        "header": "Sleeve Type",
+        "attribute": "sleeve[marketplace_id=A1F83G8C2ARO7P]#1.type[language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 41,
+        "header": "Special Feature",
+        "attribute": "special_feature[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 86,
+        "header": "Sport Type",
+        "attribute": "sport_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 47,
+        "header": "Style",
+        "attribute": "style[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      },
+      {
+        "col": 80,
+        "header": "Weave Type",
+        "attribute": "weave_type[marketplace_id=A1F83G8C2ARO7P][language_tag=en_GB]#1.value",
+        "matched": true
+      }
+    ],
+    "only_in_blank": []
+  }
+}

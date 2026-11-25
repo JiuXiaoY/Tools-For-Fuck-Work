@@ -43,6 +43,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","Y","Z","AA","AB","AC","AD","AE","AF","AG","BF","BG","BN","BO","IW"] }
   },
+  "addr_de_hat": {
+    "set_values":   { "D": "Eltern" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","FG"] }
+  },
 
 
   "yass_de_coat": {
@@ -168,6 +173,11 @@
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","BE","BF","BI","BJ","FQ"] }
   },
+  "lfda_uk_coat": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","X","Y","Z","AA","AB","AC","AD","AE","AF","AY","AZ","BC","BD","FL"] }
+  },
   "lfda_fr_dress": {
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
@@ -202,5 +212,15 @@
     "set_values":   { "D": "Parent" },
     "row_fill":     { "color": "FFFF00", "columns": null },
     "clear_values": { "columns": ["E","W","X","Y","Z","AA","AB","AC","AD","AE","BD","BE","BH","BI","EO"] }
+  },
+  "lfda_fr_hat": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","FG"] }
+  },
+  "lfda_fr_pants": {
+    "set_values":   { "D": "Parent" },
+    "row_fill":     { "color": "FFFF00", "columns": null },
+    "clear_values": { "columns": ["E","V","W","X","Y","Z","AA","AB","AC","AD","BC","BD","BI","BJ","FQ"] }
   }
 }
