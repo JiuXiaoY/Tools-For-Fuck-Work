@@ -1,0 +1,44 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 女士亮片短款开衫外套|女士亮片短款开衫外套 短款亮片夹克 派对演出外搭 长袖前开襟亮片开衫 舞台表演亮片外衣 亮片短外套 亮片开衫夹克
+
+【可选值组】（每组只能从该组编号中选择）：
+Kragenform: 1.Bandkragen, 2.Bubikragen, 3.Camp-Kragen, 4.Club-Kragen, 5.Flachkragen, 6.Haifischkragen, 7.Kerbkragen, 8.Klappkragen, 9.Mandarinkragen, 10.Matrosenkragen, 11.Ohne Kragen, 12.Portrait Kragen, 13.Punkt-Kragen, 14.Reverskragen, 15.Rundkragen, 16.Rüschenkragen, 17.Schalkragen, 18.Spearpoint-Kragen, 19.Spreizkragen, 20.Stehkragen, 21.Umlegekragen, 22.Umschlagkragen
+Lifestyle: 1.Abend, 2.Club, 3.Formell, 4.Komfort, 5.Lässig, 6.Legere Geschäftskleidung
+Stil: 1.A-Linie Mantel, 2.Auto-Mantel, 3.Caban Mantel, 4.Chesterfield Mantel, 5.Crombie Mantel, 6.Düffelmantel, 7.Kimono Mantel, 8.Kittel Mantel, 9.Kokon-Mantel, 10.Lodenmantel, 11.Mackintosh Mantel, 12.Maxi Mantel, 13.Militärmantel, 14.Paletot Mantel, 15.Parka Mantel, 16.Poncho-Mantel, 17.Seemansjacke, 18.Trench Coat, 19.Umhang Mantel, 20.Wickelmantel
+Beschreibung des Futters: 1.Baumwolle, 2.Baumwollmischung, 3.Daune, 4.Elastan, 5.Flanell, 6.Fleece, 7.Kaschmir, 8.Kunstpelz, 9.Leder, 10.Nylon, 11.Nylon-Mischung, 12.Pelz, 13.Polyester, 14.Polyester-Mischung, 15.Polyurethan (PU), 16.Polyvinylchlorid (PVC), 17.Rayon, 18.Seide, 19.Sherpa, 20.Ungefüttert, 21.Wolle, 22.Wollmischung
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Passform: 1.Angepasst, 2.Boxy, 3.Eng anliegend, 4.Entspannt, 5.Fließend, 6.Gerade, 7.Locker, 8.Regulär, 9.Skinny, 10.Slim, 11.Übergroß
+Beschreibung der Tasche: 1.Aufgesetzte Tasche, 2.Gerade Tasche, 3.Leistentasche, 4.Nahttasche, 5.Pattentasche, 6.Schlitztasche, 7.Schrägtasche, 8.Utility-Tasche
+Webart: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Korb, 5.Oxford, 6.Perle, 7.Plain, 8.Satin, 9.Twill
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Früchte, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentritt, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Sportart: 1.Airsoft, 2.American Football, 3.Autorennsport, 4.Badminton, 5.Baseball, 6.Basketball, 7.Bergsteigen, 8.BMX, 9.Bogenschießen, 10.Bowling, 11.Boxen, 12.Cheerleading, 13.Cyclocross, 14.Eishockey, 15.Eislaufen, 16.Fischen, 17.Fußball, 18.Gewichtheben, 19.Golf, 20.Gymnastik, 21.Jagen, 22.Joggen, 23.Kajakfahren, 24.Kampfkünste, 25.Kitesurfen, 26.Kricket, 27.Lacrosse, 28.Laufen, 29.Mixed Martial Arts, 30.Motorschlittenfahren, 31.Mountain Biking, 32.Paintball, 33.Pferderennen, 34.Racquetball, 35.Radfahren, 36.Ringkampf, 37.Rugby, 38.Schwimmen, 39.Segeln, 40.Skateboarden, 41.Skifahren, 42.Snowboarden, 43.Softball, 44.Squash, 45.Surfen, 46.Tanz, 47.Tennis, 48.Tischtennis, 49.Volleyball, 50.Wakeboarding, 51.Wasserpolo, 52.Wasserski, 53.Yoga
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ballon Ärmel, 2.Bischofsärmel, 3.Dolman-Ärmel, 4.Flatterärmel, 5.Fledermausärmel, 6.Flügelärmel, 7.Geraffte Ärmel, 8.Geteilter Ärmel, 9.Glockenärmel, 10.Hammelblumen-Hülse, 11.Kalter Schulterärmel, 12.Kimono Ärmel, 13.Laterne Ärmel, 14.Manschettenärmel, 15.Puffärmel, 16.Raglanärmel, 17.Roll-Up-Ärmel, 18.Rüschenärmel, 19.Tulpenärmel, 20.Umhang Ärmel
+Verschlussart: 1.Bindegürtel, 2.Doppelring, 3.Druckknopf, 4.Haken & Öse, 5.Haken & Stange, 6.Klettverschluss, 7.Knebel, 8.Knopfleiste, 9.Kordelzug, 10.Magnetisch, 11.Pull-on, 12.Reißverschluss, 13.Schnalle
+Art der Mantel-Silhouette: 1.Anorak, 2.Aviator, 3.Caban, 4.Gesteppt, 5.Kokon, 6.Poncho, 7.Regenmantel, 8.Trenchcoat, 9.Übermantel, 10.Umhang
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Kragenform:
+Lifestyle:
+Stil:
+Beschreibung des Futters:
+Beschreibung der Artikellänge:
+Passform:
+Beschreibung der Tasche:
+Webart:
+Muster:
+Sportart:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Verschlussart:
+Art der Mantel-Silhouette:
+1: <选项编号>
+2: <选项编号>
+...

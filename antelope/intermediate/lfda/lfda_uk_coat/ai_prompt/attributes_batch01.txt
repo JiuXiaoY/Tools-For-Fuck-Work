@@ -1,0 +1,43 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士圣诞节法兰绒保暖宽松大码节日狂欢西装马甲 毛绒拼接边饰 纽扣 带口袋 西装马甲 男士 常规版型 V领 无袖 丝绒质感 保暖 节日派对
+2. 男士舞台演出服小亮片马甲背心影楼拍照主持人歌手司仪马甲 小亮片装饰 V领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 舞台演出 影楼拍照 主持人 歌手 司仪
+3. 男士马甲V领新郎伴郎婚礼礼服马甲啤酒节传统马甲背心外套 刺绣领边 装饰性纽扣 带口袋 西装马甲 男士 修身版型 立领 纽扣 无袖 传统巴伐利亚风格 婚礼 啤酒节
+4. 25新款欧码男士复古拼接翻领男士西装马甲粗花呢人字呢马夹 人字纹拼接 千鸟格拼接 格纹拼接 西装马甲 男士 常规版型 带口袋 翻领 纽扣 无袖 粗花呢
+5. 男士秋冬马甲外套帽子可拆卸纯色加厚宽松背心 可拆卸连帽设计 全拉链门襟 带口袋 横向绗缝工艺 加厚连帽马甲外套 男士 宽松版型设计 无袖 纯色外观 秋冬
+6. 男士复古立领纯色纽扣绑带马甲 皮质搭扣门襟 不对称前襟 西装马甲 男士 常规版型 立领 无袖 纯色 绒面质感 复古风格
+7. 9181#男士时尚休闲纽扣连帽透气无袖紧身弹力贴身健身运动马甲背心坎肩 胸前皮质贴章 半开襟纽扣设计 连帽套头背心 男士 修身版型 无袖 纯色 V领 透气 弹力 健身运动 9181
+8. 男士秋冬印花加绒口袋针织毛线开衫背心毛坎肩马甲 格纹内衬拼接 全拉链门襟 带口袋 针织开衫马甲 男士 常规版型 无袖 针织纹理
+9. 男士西装背心V领马甲修身休闲正式商务礼服 V领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 纯色设计 商务礼服 正式场合
+10. 男士灯芯绒马甲 竖条纹灯芯绒 V领 纽扣 带口袋 马甲背心 男士 常规版型 无袖 纯色 休闲场合
+
+【可选值组】（每组只能从该组编号中选择）：
+Collar Style: 1.Band Collar, 2.Camp Collar, 3.Club Collar, 4.Collarless, 5.Cutaway Collar, 6.Envelope Collar, 7.Flat Collar, 8.Lapel Collar, 9.Mandarin Collar, 10.Notch Collar, 11.Peter Pan Collar, 12.Point Collar, 13.Portrait Collar, 14.Round Collar, 15.Ruffle Collar, 16.Sailor Collar, 17.Shawl Collar, 18.Snap Down Collar, 19.Spearpoint Collar, 20.Spread Collar, 21.Stand Collar, 22.Turn Down Collar
+Special Feature: 1.Abrasion Resistant, 2.Belted, 3.Bleach Resistant, 4.Breathable, 5.Chemical Resistant, 6.Fade Resistant, 7.Flame Resistant, 8.Heated, 9.Heavyweight, 10.Hemline Drawstring, 11.Hooded, 12.Inflatable, 13.Insulated, 14.Lightweight, 15.Moisture Wicking, 16.Packable, 17.Pill-Resistant, 18.Pocketed, 19.Quick Dry, 20.Reflective, 21.Removable Padding, 22.Reversible, 23.Seamless, 24.Stain Resistant, 25.Stretch, 26.Stretch Resistant, 27.Tear-Resistant, 28.Thumb Holes, 29.UV Protection, 30.Vented, 31.Water Resistant, 32.Waterproof, 33.Windproof, 34.Wrinkle Resistant, 35.Zipper Garage
+Style: 1.A-Line Coat, 2.Cape Coat, 3.Car Coat, 4.Chesterfield Coat, 5.Cocoon Coat, 6.Covert Coat, 7.Duffle Coat, 8.Duster Coat, 9.Kimono Coat, 10.Loden Coat, 11.Mackintosh Coat, 12.Maxi Coat, 13.Military Coat, 14.Paletot Coat, 15.Parka Coat, 16.Pea Coat, 17.Poncho Coat, 18.Reefer Coat, 19.Trench Coat, 20.Wrap Coat
+Fit Type: 1.Boxy, 2.Fitted, 3.Flowy, 4.Loose, 5.Oversized, 6.Regular, 7.Relaxed, 8.Skinny, 9.Slim, 10.Snug, 11.Straight
+Weave Type: 1.Basket, 2.Dobby, 3.Gauze, 4.Jacquard, 5.Oxford, 6.Pearl, 7.Plain, 8.Satin, 9.Twill
+Pattern: 1.Animal Print, 2.Argyle, 3.Camouflage, 4.Checkered, 5.Chevron, 6.Floral, 7.Fruits, 8.Geometric, 9.Herringbone, 10.Houndstooth, 11.Moire, 12.Paisley, 13.Plaid, 14.Polka Dots, 15.Solid, 16.Striped, 17.Toile
+Sport Type: 1.Airsoft, 2.American Football, 3.Archery, 4.Auto Racing, 5.Badminton, 6.Baseball, 7.Basketball, 8.BMX, 9.Bowling, 10.Boxing, 11.Cheerleading, 12.Cricket, 13.Cycling, 14.Cyclocross, 15.Dance, 16.Fishing, 17.Football, 18.Golf, 19.Gymnastics, 20.Hockey, 21.Horse Racing, 22.Hunting, 23.Ice Skating, 24.Jogging, 25.Kayaking, 26.Kitesurfing, 27.Lacrosse, 28.Martial Arts, 29.Mixed Martial Arts, 30.Mountain Biking, 31.Mountaineering, 32.Paintball, 33.Racquetball, 34.Rugby, 35.Running, 36.Sailing, 37.Skateboarding, 38.Snow Skiing, 39.Snowboarding, 40.Snowmobiling, 41.Softball, 42.Squash, 43.Surfing, 44.Swimming, 45.Table Tennis, 46.Tennis, 47.Volleyball, 48.Wakeboarding, 49.Water Polo, 50.Water Skiing, 51.Weightlifting, 52.Wrestling, 53.Yoga
+Sleeve Type: 1.Balloon Sleeve, 2.Batwing Sleeve, 3.Bell Sleeve, 4.Bishop Sleeve, 5.Cap Sleeve, 6.Cape Sleeve, 7.Cold Shoulder Sleeve, 8.Cuff Sleeve, 9.Dolman Sleeve, 10.Flutter Sleeve, 11.Gathered Sleeve, 12.Kimono Sleeve, 13.Lantern Sleeve, 14.Leg of Mutton Sleeve, 15.Puff Sleeve, 16.Raglan Sleeve, 17.Roll Up Sleeve, 18.Ruffle Sleeve, 19.Split Sleeve, 20.Tulip Sleeve
+Closure Type: 1.Buckle, 2.Button, 3.Double Ring, 4.Drawstring, 5.Hook & Bar, 6.Hook & Eye, 7.Hook & Loop, 8.Magnetic, 9.Pull On, 10.Snap, 11.Tie, 12.Toggle, 13.Zipper
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Collar Style:
+Special Feature:
+Style:
+Fit Type:
+Weave Type:
+Pattern:
+Sport Type:
+Sleeve Type:
+Closure Type:
+1: <选项编号>
+2: <选项编号>
+...
