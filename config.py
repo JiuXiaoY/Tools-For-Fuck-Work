@@ -1,0 +1,172 @@
+"""All configurable parameters in one place — edit and re-run."""
+
+from __future__ import annotations
+
+import json
+import os
+import re
+from collections.abc import Callable
+from decimal import Decimal
+from dataclasses import dataclass, field
+from pathlib import Path
+
+
+
+def resolve_output_xlsx(out_dir: Path, date_str: str, mapping_country: str) -> Path:
+    """定位 outputs 下的主数据源 xlsx：{date}v{n}_{country}.xlsx，取版本号最大的一个。
+
+    main.py 生成的文件名带国家后缀（如 9.2v1_de.xlsx）；本函数同时兼容旧命名
+    （无后缀，如 9.2v1.xlsx），使历史文件仍可被下游工具读取。
+    都没有时返回 v1 新命名路径（可能不存在，由调用方按原有方式提示）。
+    """
+    def _ver(p: Path) -> int:
+        m = re.search(r"v(\d+)", p.stem)
+        return int(m.group(1)) if m else -1
+
+    new = sorted(out_dir.glob(f"{date_str}v*_{mapping_country}.xlsx"), key=_ver, reverse=True)
+    if new:
+        return new[0]
+    legacy = sorted(out_dir.glob(f"{date_str}v*.xlsx"), key=_ver, reverse=True)
+    if legacy:
+        return legacy[0]
+    return out_dir / f"{date_str}v1_{mapping_country}.xlsx"
+
+
+@dataclass(frozen=True)
+class DelayConfig:
+    request_interval: float = 2.0
+    retry_pause: float = 3.0
+    short_pause: float = 0.5
+    ui_action: float = 1.0
+    page_ready: float = 2.0
+    upload_processing: float = 15.0
+    response_start: float = 15.0
+    between_items: float = 5.0
+    image_retry: float = 1.0
+
+
+@dataclass(frozen=True)
+class DeepSeekSelectors:
+    assistant_message: str = "div.ds-assistant-message-main-content"
+    stop_button: str = "button:has-text('Stop')"
+    ready_input: str = "textarea, [contenteditable]"
+    new_chat: str = "text=New Chat"
+    vision_mode: str = 'div[data-model-type="vision"][role="radio"]'
+    file_input: str = 'input[type="file"]'
+    prompt_input: str = "textarea"
+
+
+@dataclass
+class Config:
+    """Typed configuration for the Excel processing pipeline."""
+
+    # ── column layout ─────────────────────────────────────────────────
+    initial_columns: int = 32
+    final_columns: int = 49          # 49 = 32 + (6+1+10) 插入列；D 后多一列，其余整体右移一位
+
+    col_a:  int = 1
+    col_b:  int = 2
+    col_c:  int = 3
+    source_color_col:     int = 10  # J
+    mapped_color_col:     int = 11  # K
+    size_col:             int = 12  # L
+    price_text_col:       int = 13  # M：复制到价格解析来源列
+    price_source_col:     int = 45  # AS：从文本中提取 JPY 前价格
+    base_price_col:       int = 46  # AT
+    multiplied_price_col: int = 47  # AU
+    subtracted_price_col: int = 48  # AV
+    final_price_col:      int = 49  # AW
+    col_len: int = 6                 # 长度公式列 F：=LEN(D{row})（D 为标题列，位置不变）
+
+    # ── column insertions ─────────────────────────────────────────────
+    # (insert-at-1based, count) executed in order
+    # 前导空列 6（B..G，D 之后多留一列 E）；后两个插入点随之顺延 +1，保证
+    # 所有原始列相对关系不变、统一右移一位
+    column_insertions: list[tuple[int, int]] = field(default_factory=lambda: [
+        (2, 6), (11, 1), (15, 10),
+    ])
+
+    # ── mirror column copy ────────────────────────────────────────────
+    # {source_col: target_col}
+    copy_targets: dict[int, int] = field(default_factory=lambda: {
+        16: 27, 17: 29, 18: 31, 19: 33,
+        20: 35, 21: 37, 22: 39, 23: 41, 24: 43,
+    })
+
+    # ── random ID ─────────────────────────────────────────────────────
+    # Middle 6 digits: YYMMDD date code mapped 0→z,1→a,...,9→i
+    # Set date_override to a specific date string (e.g. "260702") to fix the code;
+    # leave empty to auto-use today''s date.
+    date_override: str = "261123"
+
+    # ── mapping (color/size) ───────────────────────────────────────────
+    # 映射表国家码：de / fr / us ...，对应 data/color_mapping_{code}.json 与 data/size_mapping_{code}.json
+    mapping_country: str = "uk"
+
+    # ── price calculation ─────────────────────────────────────────────
+    price_multiplier: str = "1.3"
+    price_subtract:  str = "6.98"
+    price_add:       str = "6.00"
+    price_calculator: Callable[[Decimal], tuple[Decimal, Decimal, Decimal, Decimal]] | None = None
+
+    # ── formatting ────────────────────────────────────────────────────
+    row_height:    int    = 50
+    cell_h_align:  str    = "left"
+    cell_v_align:  str    = "center"
+    col_width_1_3: float  = 17.75   # 第 1-3 列列宽
+    col_width_4:   float  = 100.0   # 第 4 列列宽
+    col_5_formula: bool   = True    # 是否写长度公式（写到 col_len 列 F，内容 =LEN(D{row})）
+
+    # ── I/O ───────────────────────────────────────────────────────────
+    src_dir:   Path = Path("public/xls_xlsx")
+    out_dir:   Path = Path("outputs")
+
+    # ── pipeline ──────────────────────────────────────────────────────
+    delete_source_after_merge: bool = False                # 合并后是否删除 public/xls_xlsx 源文件
+    pipeline_continue_on_error: bool = False              # 单步骤失败后是否继续执行后续步骤
+    pipeline_checkpoint_every: int = 0                    # 每 N 步保存检查点；0 表示关闭
+
+    # ── retry ─────────────────────────────────────────────────────────
+    retry_max_rounds_deepseek: int = 5                     # DeepSeek 网页端重试轮数
+    delays: DelayConfig = field(default_factory=DelayConfig)
+    deepseek_selectors: DeepSeekSelectors = field(default_factory=DeepSeekSelectors)
+
+    # ── preprocess ────────────────────────────────────────────────────
+    preprocess_dedup_max_gap: int = 500                    # 去重：同 SKU 有色行最大间距，超此值视为新组
+    preprocess_dedup_close_gap: int = -1                    # 去重：两有色锚点行之间夹的行数 ≤ 此值时，删除锚点行及其间所有行
+    preprocess_remove_empty_j: bool = False                 # 是否删除 J 列为空的普通数据行
+
+    _color_mapping_cache: dict[str, str] | None = field(default=None, init=False, repr=False)
+    _size_mapping_cache: dict[str, str] | None = field(default=None, init=False, repr=False)
+
+    @property
+    def color_mapping_path(self) -> Path:
+        return Path(__file__).resolve().parent / "data" / f"color_mapping_{self.mapping_country}.json"
+
+    def load_color_mapping(self) -> dict[str, str]:
+        if self._color_mapping_cache is not None:
+            return self._color_mapping_cache
+        if not self.color_mapping_path.exists():
+            self._color_mapping_cache = {}
+        else:
+            with self.color_mapping_path.open(encoding="utf-8") as f:
+                self._color_mapping_cache = {
+                    str(k): str(v) for k, v in json.load(f).items()
+                }
+        return self._color_mapping_cache
+
+    @property
+    def size_mapping_path(self) -> Path:
+        return Path(__file__).resolve().parent / "data" / f"size_mapping_{self.mapping_country}.json"
+
+    def load_size_mapping(self) -> dict[str, str]:
+        if self._size_mapping_cache is not None:
+            return self._size_mapping_cache
+        if not self.size_mapping_path.exists():
+            self._size_mapping_cache = {}
+        else:
+            with self.size_mapping_path.open(encoding="utf-8") as f:
+                self._size_mapping_cache = {
+                    str(k): str(v) for k, v in json.load(f).items()
+                }
+        return self._size_mapping_cache
