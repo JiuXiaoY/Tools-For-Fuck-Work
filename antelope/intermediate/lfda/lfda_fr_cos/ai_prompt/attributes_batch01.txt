@@ -1,0 +1,45 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 儿童节日连体衣 圣诞精灵cosplay演出服 包含帽子 条纹小丑连体装 秋冬季男女童丝绒派对表演服
+2. 圣诞节成人女性连体衣 包含帽子 圣诞精灵cosplay套装 小丑马戏团演出服 秋冬季毛领丝绒条纹连体装 节日派对角色扮演舞台服
+3. 成人圣诞麋鹿星星披肩斗篷 女士宫廷风丝绒毛领短披风 蝴蝶结毛球冬季保暖披肩 节日派对角色扮演复古外搭
+4. 儿童牧羊人Cos服 包含上衣马甲头巾腰带绑带 圣经角色扮演长袍 圣诞舞台演出服 几何图案节日派对装 秋冬男童万圣节服饰
+5. 男女款圣诞老人套装 包含帽子长袍裤子 秋冬季保暖丝绒刺绣圣诞服 长款毛领腰带节日外套 派对cos演出服
+6. 男士圣诞斗篷 连帽长款披风 宫廷风加厚斗篷 冬季保暖披风 刺绣图案斗篷 复古角色扮演长袍 圣诞派对演出服 成人奇幻披风
+7. 成人狂欢游戏裤 包含背带 大嘴接球裤 宽松条纹长裤 夸张大口袋 派对互动演出服 小丑搞怪裤子 舞台角色扮演装
+8. 女士圣诞精灵cos套装 包含帽子皮带鞋套袜子 成人收腰大摆连衣裙 长袖短裙 娃娃领尖顶帽条纹袜 秋冬季派对演出服 节日角色扮演连体衣
+9. 女士圣诞cos套装 包含帽子手套袜子裙子 圣诞派对连体裙 收腰蓬蓬纱裙 长袖娃娃领 秋冬季演出服 条纹长袜 节日角色扮演服
+10. 儿童雪人cos连体衣 包含纱裙发饰围巾袜子 女童长袖蓬蓬裙演出服 秋冬季节日保暖派对套装 公主网纱裙角色扮演服 条纹长袜圣诞装
+
+【可选值组】（每组只能从该组编号中选择）：
+Emballage: 1.Unité, 2.Case, 3.Palette
+Mot-clé concernant le public ciblé: 1.Adulte unisexe, 2.Enfants unisexes, 3.Femme, 4.Fille, 5.Garçon, 6.Homme
+Public ciblé: 1.Bébés Filles, 2.Bébés Garçons, 3.Couples, 4.Famille, 5.Femmes, 6.Filles, 7.Garçons, 8.Groupe, 9.Hommes, 10.Jeunes Filles, 11.Jeunes Garçons, 12.Unisexes-Adultes, 13.Unisexes-Bébés, 14.Unisexes-Enfants, 15.Unisexes-Jeunesses
+Caractéristiques spéciales: 1.Antistatique, 2.cold_resistant, 3.collapsible, 4.color_changing, 5.Coussinée, 6.Effets sonores, 7.Entièrement doublé, 8.Étanche, 9.Extensible, 10.flame_resistant, 11.Gonflable, 12.Illuminant, 13.Lavable en machine, 14.Légère, 15.lint_free, 16.moldable, 17.Multicouche, 18.reflective, 19.Résistant à l'abrasion, 20.Résistant à la décoloration, 21.Résistant à la ride, 22.Résistant à la tache, 23.Résistant au javel, 24.Résistant au rétrécissement, 25.Résistant aux déchirures, 26.Respirant, 27.Réversible, 28.sandproof, 29.Sans couture, 30.Sans ride, 31.Séchage rapide, 32.see_through, 33.uv_protection, 34.windproof
+Sexe ciblé: 1.Femme, 2.Homme, 3.Unisexe
+Description de la tranche d'âge: 1.Adulte, 2.Bébé, 3.Enfant, 4.Grand enfant, 5.Jeunesse, 6.Nourrisson, 7.Petit enfant, 8.Tout-petit
+Format spécial: 1.Bébé, 2.Bébé – fille, 3.Bébé – garçon, 4.De grande taille, 5.Filles rondes, 6.Filles sveltes, 7.Garçons costauds, 8.Garçons sveltes, 9.Grand, 10.Grand, 11.Grandes filles, 12.Grands garçons, 13.Petite, 14.Petites filles, 15.Petits garçons, 16.Standard, 17.Taille plus, 18.Taille plus élancée, 19.Taille plus petite, 20.Tout-petit – fille, 21.Tout-petit – garçon
+Occasion: 1.Anniversaire, 2.Anniversary, 3.Baptême, 4.Carnaval, 5.Enterrement de Vie de Garçon, 6.Enterrement de Vie de Jeune Fille, 7.Halloween, 8.Jour de l'Indépendance, 9.Jour des Morts, 10.Mardi Gras, 11.Mariage, 12.Mascarade, 13.Noël, 14.Nouvelle Année, 15.Remise des Diplômes, 16.Saint-Valentin
+Style de col: 1.À col haut, 2.À une manche, 3.Avec col, 4.Col asymétrique, 5.Col bateau, 6.Col bénitier, 7.Col bijou, 8.Col carmen, 9.Col carré, 10.Col cheminée, 11.Col choker, 12.Col cranté, 13.Col en U, 14.Col enveloppe, 15.Col festonné, 16.Col illusion, 17.Col keyhole, 18.Col mock, 19.Col noué, 20.Col ras du cou, 21.Col roulé, 22.Col surplice, 23.Col V, 24.Décolleté en cœur, 25.Dos nu, 26.Encolure à capuche, 27.Encolure dégagée, 28.Encolure fendue, 29.Encolure plongeante, 30.Henley
+Type de fermeture: 1.Agrafe, 2.Boucle, 3.Bouton, 4.Bouton-pression, 5.Cordon de serrage, 6.Enfiler, 7.Fermeture éclair, 8.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Emballage:
+Mot-clé concernant le public ciblé:
+Public ciblé:
+Caractéristiques spéciales:
+Sexe ciblé:
+Description de la tranche d'âge:
+Format spécial:
+Occasion:
+Style de col:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...

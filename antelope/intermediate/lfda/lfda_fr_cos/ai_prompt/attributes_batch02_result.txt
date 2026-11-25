@@ -1,0 +1,70 @@
+Emballage:
+1: 1
+2: 1
+3: 1
+4: 1
+5: 1
+6: 1
+Mot-clé concernant le public ciblé:
+1: 4
+2: 3
+3: 3
+4: 5
+5: 3
+6: 4
+Public ciblé:
+1: 6
+2: 5
+3: 5
+4: 7
+5: 5
+6: 6
+Caractéristiques spéciales:
+1: 14
+2: 2
+3: 2
+4: 2
+5: 14
+6: 13
+Sexe ciblé:
+1: 1
+2: 1
+3: 1
+4: 2
+5: 1
+6: 1
+Description de la tranche d'âge:
+1: 3
+2: 1
+3: 1
+4: 3
+5: 1
+6: 3
+Format spécial:
+1: 14
+2: 16
+3: 16
+4: 15
+5: 16
+6: 14
+Occasion:
+1: 13
+2: 13
+3: 4
+4: 13
+5: 4
+6: 12
+Style de col:
+1: 27
+2: 27
+3: 1
+4: 3
+5: 19
+6: 3
+Type de fermeture:
+1: 6
+2: 6
+3: 6
+4: 5
+5: 5
+6: 3

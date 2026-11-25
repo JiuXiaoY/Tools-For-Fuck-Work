@@ -1,0 +1,51 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 圣诞节女童宫廷风连衣裙 儿童丝绒收腰公主裙 长袖毛绒拼接蝴蝶结演出服 秋冬季保暖派对礼服裙 节日圣诞裙
+2. 圣诞节女士连帽连衣裙 宫廷风成人连体衣 秋冬丝绒收腰演出服 圣诞cosplay短裙 毛绒派对服
+3. 成人宫廷风连衣裙 女士翻领前拉链长裙 收腰大摆长袖裙 纯色复古派对礼服裙 秋冬节日连体衣
+4. 女士圣诞宫廷风连体裙 包含帽子 成人披肩收腰短裙 蝴蝶结毛边秋冬季派对演出服 丝绒纯色大摆礼服裙 圣诞cosplay连体衣
+5. 女童圣诞宫廷风连衣裙 包含帽子披肩 儿童收腰大摆连体裙 前短后长燕尾裙摆 秋冬保暖毛边 丝绒派对演出服 节日角色扮演公主裙
+6. 成人圣诞节连体裙 包含帽子披肩 女士丝绒收腰大摆演出服 前短后长燕尾裙 秋冬保暖毛绒拼接派对服 蝴蝶结毛球角色扮演cos服
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à patte, 2.Col à revers, 3.Col boutonné, 4.Col camp, 5.Col cassé, 6.Col châle, 7.Col cranté, 8.Col enveloppe, 9.Col étalé, 10.Col mao, 11.Col marin, 12.Col montant, 13.Col officier, 14.Col peter pan, 15.Col plat, 16.Col point, 17.Col polo, 18.Col rabattu, 19.Col rond, 20.Col tailleur, 21.Col volant, 22.Sans col
+Caractéristiques spéciales: 1.À lacets, 2.Anti-Boulochage, 3.Anti-statique, 4.Brillent dans le noir, 5.Doublée, 6.Élastique, 7.Évacuation de l'humidité, 8.Extensible, 9.Fente latérale, 10.Fermeture Éclair, 11.Gaine intégrée, 12.Imperméable, 13.Jetable, 14.Légère, 15.Non transparent, 16.Noué dans le dos, 17.Poche, 18.Protection UV, 19.Rembourrée, 20.Résistant à la décoloration, 21.Résistant au boulochage, 22.Résistant au javel, 23.Résistant au rétrécissement, 24.Résistant aux taches, 25.Respirable, 26.Réversible, 27.Sangle détachable, 28.Sangle réglable, 29.Sans couture, 30.Sans ride, 31.Séchage rapide, 32.Short intégré, 33.Soutien-gorge, 34.Taille nouée
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De bal, 4.De cocktail, 5.De fête, 6.De plage, 7.De soirée, 8.Décontracté, 9.Habillée, 10.Mariage, 11.Pour sortir le soir, 12.Quotidien
+Style: 1.Ajustée et évasée, 2.Art déco, 3.Asymétrique, 4.Bandage, 5.Blazer, 6.Bohème, 7.Caftan, 8.Champêtre, 9.Chasuble, 10.Chemise, 11.Classique, 12.Crayon, 13.Droite, 14.Fourreau, 15.Kimono, 16.Moderne, 17.Moderne du milieu du siècle, 18.Moulante, 19.Nuisette, 20.Patineuse, 21.Peplum, 22.Portefeuille, 23.Pouf, 24.Pull, 25.Qipao, 26.Rétro, 27.Sirène, 28.Smockée, 29.Swing, 30.T-shirt, 31.Taille empire, 32.Trapèze, 33.Tube, 34.Tutu, 35.Victorienne
+Nom du type d'article: 1.Robe, 2.Robe d'affaires décontractée, 3.Robe de bal, 4.Robe de bal, 5.Robe de baptême, 6.Robe de cocktail, 7.Robe de demoiselle d'honneur, 8.Robe de la mère de la mariée, 9.Robe de mariage, 10.Robe de soirée décontractée, 11.Robe de soirée formelle, 12.Robe de tennis, 13.Robe décontractée, 14.Robe décontractée, 15.Robe formelle, 16.Robe pour occasion spéciale
+Type de bretelles: 1.Épaules dénudées, 2.Sans bretelle, 3.Spaghetti, 4.Tank
+Description de la longueur de l'article: 1.Mini, 2.Longueur de la mi-cuisse, 3.Au-dessus du genou, 4.Longueur du genou, 5.Sous le genou, 6.Asymétrique, 7.Longueur du mollet, 8.Midi, 9.Longueur du mi-mollet, 10.Longueur du thé, 11.Longueur de la cheville, 12.Maxi, 13.Longueur du plancher
+Occasion: 1.Action de Grâce, 2.Anniversaire, 3.Anniversary, 4.Bal d’Anciens Élèves, 5.Baptême, 6.Communion, 7.Dédicace, 8.Divali, 9.Douche Nuptiale, 10.Enterrement de Vie de Garçon, 11.Enterrement de Vie de Jeune Fille, 12.Fête de la Saint-Patrick, 13.Fête des Mères, 14.Fête des Pères, 15.Fête Prénatale, 16.Fiançailles, 17.Funérailles, 18.Halloween, 19.Jour de l'Indépendance, 20.Journée Internationale des Femmes, 21.Lune de miel, 22.Mariage, 23.Naissance, 24.Noël, 25.Nouvelle Année, 26.Pâques, 27.Quinceañera, 28.Remise des Diplômes, 29.Saint-Valentin
+Description de la poche: 1.Poche cachée, 2.Poche cargo, 3.Poche droite, 4.Poche fendue, 5.Poche inclinée, 6.Poche kangourou, 7.Poche passepoilée, 8.Poche sur couture latérale
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Style de col2: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col cheminée, 12.Col choker, 13.Col cranté, 14.Col enveloppe, 15.Col festonné, 16.Col illusion, 17.Col keyhole, 18.Col mock, 19.Col noué, 20.Col ras du cou, 21.Col roulé, 22.Col surplice, 23.Col U, 24.Col V, 25.Décolleté en cœur, 26.Dos nu, 27.Encolure dégagée, 28.Encolure fendue, 29.Encolure plongeante, 30.Henley
+Silhouette du vêtement: 1.Ajustée et évasée, 2.Basque, 3.Blouson, 4.Emballage, 5.Fourreau, 6.Ligne A, 7.Moulante, 8.Princesse, 9.Pull, 10.Sirène, 11.Trapèze, 12.Tube
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche papillon, 16.Manche poète, 17.Manche raglan, 18.Manche tulipe, 19.Manche volantée, 20.Mancheron, 21.Manches retroussables, 22.Manchette
+Type de fermeture: 1.À enfiler, 2.Agrafe, 3.Basculer, 4.Bouton, 5.Bouton-pression, 6.Cordon de serrage, 7.Crochet et barre, 8.Double anneau, 9.Fermeture éclair, 10.Magnétique, 11.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Caractéristiques spéciales:
+Style de vie:
+Style:
+Nom du type d'article:
+Type de bretelles:
+Description de la longueur de l'article:
+Occasion:
+Description de la poche:
+Type de tissage:
+Style de col2:
+Silhouette du vêtement:
+Description de la longueur des manches:
+Type de manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...
