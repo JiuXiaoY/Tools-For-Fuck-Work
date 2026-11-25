@@ -1,0 +1,47 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士四季街头休闲运动带口袋腰间系带纯色梭织工装长裤 带口袋 腰间抽绳 抽绳腰头 纯色梭织 男士 工装长裤 宽松阔腿 休闲街头 长裤款式
+2. 男士休闲裤 正面字母印花 侧边垂直字母印花 斜条纹拼接 弹性抽绳腰头 纯色面料 男士 宽松版型 休闲束脚长裤
+3. 滑雪裤男女款单板双板滑雪裤冬季户外防风防水保暖迷彩滑雪裤 迷彩印花 可调节背带 带口袋 腰部松紧带 男女通用 宽松版型 冬季户外滑雪长裤 防风 防水 保暖
+4. 滑雪裤男女款单板滑雪裤冬季户外防风防水保暖宽松版滑雪裤 高腰松紧腰头 正面纽扣门襟 带口袋 滑雪长裤 男女通用 宽松版型 冬季户外防风防水保暖
+5. 男士纯色休闲带口袋背带裤（斜纹布） 可调节金属扣肩带 带口袋 金属纽扣侧开门襟 男士 工装背带长裤 宽松版型 纯色斜纹布 直筒裤腿
+6. 男士休闲裤 灯芯绒拼接 撞色拼接 带口袋 金属按扣 附腰带 腰部腰带环 男士 工装长裤 宽松版型 直筒裤腿
+7. 男士纯棉反光工装裤耐磨宽松工作裤石油化工汽修工作服裤子 膝盖下方反光条 带口袋 纽扣门襟 男士 工装长裤 宽松版型 腰带环 纯棉 耐磨 反光 汽修工作适用
+8. 男士山系户外机能冲锋裤工装裤秋季运动防水伞兵裤子 可调节抽绳松紧腰 带口袋 山峰刺绣 男士户外运动冲锋工装伞兵长裤 宽松版型 直筒裤腿 防水
+9. 大码情侣款保暖滑雪装备男女 高腰按扣松紧腰头 带口袋 裤腿拼接反光条 加厚保暖内里 户外滑雪长裤 男女通用 宽松版型 束脚工装裤
+10. 防风防泼水保暖加厚单板双板背带滑雪裤 可调节背带 带口袋 膝盖立体拼接 高腰按扣松紧腰头 中性 宽松版型 背带滑雪长裤 束脚 防风 防泼水 保暖 冬季户外滑雪
+
+【可选值组】（每组只能从该组编号中选择）：
+Besondere Eigenschaften: 1.Abriebfest, 2.Anti-Fading, 3.Anti-Pilling, 4.Antimikrobiell, 5.Antistatisch, 6.Atmungsaktiv, 7.Bauchkontrolle, 8.Chemikalienbeständig, 9.Dehnbar, 10.Einstellbar, 11.Erweiterbar, 12.Fleckenresistent, 13.Geruchlos, 14.Hammerschlaufe, 15.Hemdgreifer, 16.Hochleistungsfähig, 17.Insektensicher, 18.Kniebeugensicher, 19.Knitterfest, 20.Kompression, 21.Konvertierbar, 22.Leichtgewichtig, 23.Lichtbogenbeständig, 24.Nahtlos, 25.Po-Lifting, 26.Reflektierend, 27.Rutschfest, 28.Schnelltrocknend, 29.Schweißableitend, 30.Scrunch Po, 31.Sonnenschutz, 32.Umkehrbar, 33.Verstärktes Knie, 34.Wasserabweisend, 35.Winddicht, 36.Zerrissen, 37.Zwickel
+Lifestyle: 1.Abend, 2.Arbeit, 3.Formell, 4.Komfort, 5.Lässig, 6.Legere Geschäftskleidung
+Stil: 1.Art-Deco, 2.Böhmisch, 3.Boyfriend, 4.Capri, 5.Cargo, 6.Chino, 7.Culotte, 8.Disco, 9.Drop Crotch, 10.Gothic, 11.Harem, 12.Jogger, 13.Jogginghose, 14.Karotte, 15.Klassisch, 16.Matrosenhose, 17.Mittelalterlich, 18.Modern, 19.Palazzo, 20.Punk, 21.Renaissance, 22.Retro, 23.Rustikal, 24.viktorianisch
+Artikeltyp – Name: 1.Anzughose, 2.Arbeitsbekleidungsset, 3.Arbeitshose, 4.Arbeitsschutzanzug, 5.Bodystocking, 6.Freizeithose, 7.Golfhose, 8.Hose, 9.Hosen-Set, 10.Jeans, 11.Khakihose, 12.Klassische Hose, 13.Kochhose, 14.Kompressionshose, 15.Kordhose, 16.Lässige Business-Hose, 17.Lässige Hose, 18.Leggings, 19.Medizinische Berufskleidung - Set, 20.Medizinische Schlupfhose, 21.Jumpsuit, 22.Overalls, 23.Tennishose, 24.Trainingsanzug, 25.Trainingsanzug, 26.Trainingshose, 27.Trainingshose, 28.Wanderhose, 29.Yoga-Hose, 30.Baby- & Kleinkind-Strampelanzug, 31.Baby- & Kleinkind-Ausstattung
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Thema: 1.Alien, 2.Alphabet, 3.Anime, 4.Biker, 5.Blumig, 6.Comic, 7.Dinosaurier, 8.Essen, 9.Fantasie, 10.Feiertag, 11.Film, 12.Herz, 13.Hippie, 14.Horror, 15.Insekten, 16.Katze, 17.Maskottchen, 18.Medizinisch, 19.Militär, 20.Monster, 21.Musik, 22.Patriotisch, 23.Religiös, 24.Schule, 25.Science-Fiction, 26.Sport, 27.Strand, 28.Vogel, 29.Weltraum
+Passform: 1.Angepasst, 2.Athletisch, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Regulär, 9.Schlank, 10.Skinny, 11.Übergangspassung, 12.Übergroß, 13.Weit geschnitten
+Webart: 1.Dobby, 2.Gaze, 3.Glatt, 4.Jaal, 5.Jacquard, 6.Jamdani, 7.Köper, 8.Rips, 9.Satin, 10.Waffel, 11.Zopf
+Sitz: 1.Mittlere Taille, 2.Hohe Taille, 3.Niedrige Taille
+Verschlussart: 1.D-Ring, 2.Druckknopf, 3.Elastischer Bund, 4.Haken & Öse, 5.Haken & Stange, 6.Klettverschluss, 7.Knopfleiste, 8.Magnetische, 9.Pull On, 10.Reißverschluss, 11.Schnalle, 12.Tunnelzug
+Formtyp der Hose: 1.Cargo, 2.Chinohose, 3.Freizeithose, 4.Gaucho, 5.Harem, 6.Jeans, 7.Jogginghose, 8.Kompression, 9.Konvertibel, 10.Laufhose, 11.Leggings, 12.Palazzo, 13.Reiten, 14.Trainingshose, 15.Yoga-Hose
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Besondere Eigenschaften:
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Beschreibung der Artikellänge:
+Thema:
+Passform:
+Webart:
+Sitz:
+Verschlussart:
+Formtyp der Hose:
+1: <选项编号>
+2: <选项编号>
+...

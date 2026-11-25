@@ -1,0 +1,45 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士法兰绒连帽卫衣法兰绒质感 无抽绳兜帽 带口袋 落肩袖 连帽套头卫衣 男士 宽松版型 长袖 纯色 常规衣长
+2. 男装秋冬卫衣运动健身连帽卫衣外套男式休闲纯色拉链开衫带口袋 带口袋 兜帽抽绳 全拉链连帽开衫卫衣 男士 常规版型 长袖 纯色
+3. 男士春秋连帽衫纯色系带连帽 运动街头服饰烫金运动衫交叉系带门襟 弧形下摆 六边形贴标 连帽套头卫衣 男士 修身版型 长袖 抽绳连帽 纯色
+4. 新款连帽衫宽松休闲连帽卫衣欧美男士爆款印花卫衣上衣公牛头图案印花 撞色印花 落肩袖 兜帽抽绳 带口袋 连帽套头卫衣 男士 宽松版型 长袖 套头无拉链
+5. 新款百搭休闲卫衣潮流男式开衫卫衣连帽几何图案印花 做旧水洗效果 带口袋 全拉链连帽开衫卫衣 男士 常规版型 长袖 常规衣长
+6. 男士秋冬长袖连帽格子上衣卫衣带口袋 带口袋 撞色拉链头 抽绳连帽 全拉链连帽开衫卫衣 男士 常规版型 长袖 纯色
+7. 啤酒节男士卫衣左胸鹿头图案 带口袋 抽绳连帽 全拉链连帽开衫卫衣 男士 常规版型 长袖 纯色 啤酒节主题
+8. Y2K字母印花开衫卫衣美式街头潮流拉链卫衣秋冬外套正面大号字母印花 袖部贴标 帽体拉链结构 全拉链连帽开衫卫衣 男士 常规版型 长袖 带口袋 常规衣长
+9. 男装卫衣刺绣字母 毛毛长袖系绳连帽上衣毛绒材质 方格凸起纹理 刺绣字母 抽绳连帽 连帽套头卫衣 男士 常规版型 长袖 套头无拉链 带口袋
+10. 男士美国250周年印花连帽卫衣撞色拼接 十字架图案印花 做旧破边缝线 美国250周年印花 抽绳连帽 带口袋 连帽套头卫衣 男士 宽松版型 长袖
+
+【可选值组】（每组只能从该组编号中选择）：
+Lifestyle: 1.Abend, 2.Formell, 3.Komfort, 4.Lässig, 5.Legere Geschäftskleidung
+Stil: 1.Barock, 2.Böhmisch, 3.Casual, 4.Glam, 5.Grunge, 6.Klassisch, 7.Modern, 8.Preppy, 9.Punk, 10.Retro, 11.Streetwear, 12.viktorianisch, 13.Zeitgenössisch
+Artikeltyp – Name: 1.Kapuzenpullover, 2.Kurzer Pullover, 3.Polo-Pullover, 4.Pullover, 5.Pullover, 6.Pullunder, 7.Skate-Kapuzenpullover, 8.Sonnenanzug, 9.Strickjacke, 10.Sweatshirt
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Thema: 1.Abenteuer, 2.Alphabet, 3.Anatomie, 4.Anime, 5.Auto, 6.Aztekisch, 7.Bücher, 8.Charaktere, 9.Comic, 10.Dramaserien, 11.Essen, 12.Fantasie, 13.Feiertag, 14.Filme, 15.Flagge, 16.Geblümt, 17.Gothic, 18.Hippie, 19.Horror, 20.Insekten, 21.Liebe, 22.Meme, 23.Militär, 24.Musicals, 25.Musik, 26.Nautisch, 27.Patriotisch, 28.Religiös, 29.Schulstart, 30.Science-Fiction, 31.Sonnenschein, 32.Sport, 33.Strand, 34.Superheld, 35.Tiere, 36.Videospiele, 37.Vögel, 38.Weltall, 39.Zahl
+Passform: 1.Angepasst, 2.Athletisch, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Regulär, 9.Skinny, 10.Slim, 11.Übergangspassung, 12.Übergroß, 13.Weit geschnitten
+Webart: 1.Dobby, 2.Gaze, 3.Jaal, 4.Jacquard, 5.Jamdani, 6.Kabel, 7.Köper, 8.Leinwandbindung, 9.Rippung, 10.Satin, 11.Waffel
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Früchte, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentritt, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Halsausschnitt: 1.Asymmetrischer Ausschnitt, 2.Carmenausschnitt, 3.Choker-Ausschnitt, 4.Crew Neck, 5.Eckiger Ausschnitt, 6.Geteilter Hals, 7.Henley Ausschnitt, 8.Herzausschnitt, 9.Jakobsmuschel-Ausschnitt, 10.Juwel-Ausschnitt, 11.Mit Kapuze, 12.Mit Kragen, 13.Mock-Ausschnitt, 14.Notch-Ausschnitt, 15.One Shoulder, 16.Rollkragen, 17.Schluppenkragen, 18.Scoop-Ausschnitt, 19.Stehkragen, 20.Tiefer Ausschnitt, 21.Tropfen-Ausschnitt, 22.U-Boot-Ausschnitt, 23.V-Ausschnitt, 24.Wasserfall-Ausschnitt
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Beschreibung der Artikellänge:
+Thema:
+Passform:
+Webart:
+Muster:
+Halsausschnitt:
+Beschreibung der Ärmellänge:
+1: <选项编号>
+2: <选项编号>
+...

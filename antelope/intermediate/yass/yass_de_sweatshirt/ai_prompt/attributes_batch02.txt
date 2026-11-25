@@ -1,0 +1,45 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 女士圣诞无帽卫衣 圆领套头衫 宽松休闲长袖上衣 3D搞怪圣诞老人印花卫衣 趣味驯鹿图案套头衫 秋冬保暖休闲卫衣 节日派对圆领上衣 女士长袖套头衫 趣味图案打底衫
+2. 女士仿毛衣无帽卫衣 宽松圆领套头衫 休闲长袖保暖上衣 秋冬圣诞印花卫衣 十字绣风驯鹿图案套头衫 仿V领蝴蝶结设计休闲卫衣 仿针织纹理长袖上衣 带口袋节日派对套头衫 冬季保暖内搭打底衫 女士圣诞主题无帽卫衣
+3. 女士圣诞节宠物袋连帽卫衣 宽松套头衫 休闲长袖上衣 胸前宠物袋设计连帽衫 带拉链套头卫衣 带口袋连帽衫 秋冬保暖卫衣 冬季休闲打底衫 圣诞老人印花卫衣 驯鹿雪花图案上衣 女士宠物携带卫衣 猫咪袋鼠兜卫衣 节日派对连帽衫
+4. 女士圣诞毛绒卫衣 宽松套头连帽衫 宠物袋连帽卫衣 秋冬保暖加绒卫衣 大口袋毛绒拼接外套 纯色仿针织连帽上衣 冬季休闲保暖套头衫 宠物携带卫衣 女士保暖连帽外套 圣诞主题休闲上衣
+5. 女士万圣节宠物袋连帽卫衣 宽松套头衫 猫咪袋鼠兜外套 带口袋拉链卫衣 秋冬保暖长袖上衣 万圣节女巫印花休闲卫衣 宠物携带连帽衫 女士休闲套头外套
+6. 女士圣诞节印花卫衣 圆领套头针织衫 宽松休闲长袖上衣 无帽套头毛衣 秋冬保暖针织卫衣 冬季节日派对打底衫 雪人图案仿毛衣 树枝印花套头衫 女士休闲毛衣 圣诞主题针织上衣
+7. 女士圣诞节印花连帽卫衣 宽松休闲套头衫 带口袋长袖针织上衣 秋冬保暖仿毛衣卫衣 腊肠狗圣诞灯串图案套头衫 可爱小狗印花连帽衫 冬季休闲针织外套 节日派对保暖上衣
+8. 女士圣诞节印花卫衣 宽松圆领套头毛衣 长袖休闲针织上衣 仿毛衣无帽卫衣 秋冬保暖打底衫 猫咪圣诞帽印花套头衫 趣味动物图案休闲衫 圣诞主题针织卫衣 女士冬季保暖内搭 套头针织长袖衫
+9. 女士圣诞节印花卫衣 宽松休闲套头衫 圆领长袖保暖上衣 秋冬套头卫衣 仿毛衣圣诞老人图案套头衫 带腰带印花休闲卫衣 冬季节日派对打底衫 仿针织纹理套头卫衣 女士休闲保暖上衣
+10. 女士圣诞无帽卫衣 圆领套头衫 仿毛衣印花上衣 宽松休闲长袖卫衣 秋冬保暖套头衫 3D立体圣诞老人印花 趣味搞怪图案休闲卫衣 仿针织纹理套头衫 节日派对丑毛衣 冬季内搭打底衫
+
+【可选值组】（每组只能从该组编号中选择）：
+Lifestyle: 1.Abend, 2.Formell, 3.Komfort, 4.Lässig, 5.Legere Geschäftskleidung
+Stil: 1.Barock, 2.Böhmisch, 3.Casual, 4.Glam, 5.Grunge, 6.Klassisch, 7.Modern, 8.Preppy, 9.Punk, 10.Retro, 11.Streetwear, 12.viktorianisch, 13.Zeitgenössisch
+Artikeltyp – Name: 1.Kapuzenpullover, 2.Kurzer Pullover, 3.Polo-Pullover, 4.Pullover, 5.Pullover, 6.Pullunder, 7.Skate-Kapuzenpullover, 8.Sonnenanzug, 9.Strickjacke, 10.Sweatshirt
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Thema: 1.Abenteuer, 2.Alphabet, 3.Anatomie, 4.Anime, 5.Auto, 6.Aztekisch, 7.Bücher, 8.Charaktere, 9.Comic, 10.Dramaserien, 11.Essen, 12.Fantasie, 13.Feiertag, 14.Filme, 15.Flagge, 16.Geblümt, 17.Gothic, 18.Hippie, 19.Horror, 20.Insekten, 21.Liebe, 22.Meme, 23.Militär, 24.Musicals, 25.Musik, 26.Nautisch, 27.Patriotisch, 28.Religiös, 29.Schulstart, 30.Science-Fiction, 31.Sonnenschein, 32.Sport, 33.Strand, 34.Superheld, 35.Tiere, 36.Videospiele, 37.Vögel, 38.Weltall, 39.Zahl
+Passform: 1.Angepasst, 2.Athletisch, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Regulär, 9.Skinny, 10.Slim, 11.Übergangspassung, 12.Übergroß, 13.Weit geschnitten
+Webart: 1.Dobby, 2.Gaze, 3.Jaal, 4.Jacquard, 5.Jamdani, 6.Kabel, 7.Köper, 8.Leinwandbindung, 9.Rippung, 10.Satin, 11.Waffel
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Früchte, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentritt, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Halsausschnitt: 1.Asymmetrischer Ausschnitt, 2.Carmenausschnitt, 3.Choker-Ausschnitt, 4.Crew Neck, 5.Eckiger Ausschnitt, 6.Geteilter Hals, 7.Henley Ausschnitt, 8.Herzausschnitt, 9.Jakobsmuschel-Ausschnitt, 10.Juwel-Ausschnitt, 11.Mit Kapuze, 12.Mit Kragen, 13.Mock-Ausschnitt, 14.Notch-Ausschnitt, 15.One Shoulder, 16.Rollkragen, 17.Schluppenkragen, 18.Scoop-Ausschnitt, 19.Stehkragen, 20.Tiefer Ausschnitt, 21.Tropfen-Ausschnitt, 22.U-Boot-Ausschnitt, 23.V-Ausschnitt, 24.Wasserfall-Ausschnitt
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Beschreibung der Artikellänge:
+Thema:
+Passform:
+Webart:
+Muster:
+Halsausschnitt:
+Beschreibung der Ärmellänge:
+1: <选项编号>
+2: <选项编号>
+...
