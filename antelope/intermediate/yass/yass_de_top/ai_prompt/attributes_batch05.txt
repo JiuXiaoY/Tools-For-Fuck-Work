@@ -1,0 +1,61 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士圣诞节长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 秋冬节日派对上衣 宗教文字十字架印花长袖衫 雪花星星图案长袖T恤 男士休闲打底衫 男士节日主题长袖上衣
+2. 男士圣诞圆领长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 十字架文字印花长袖衫 男士休闲打底衫 男士宗教主题长袖T恤 男士华夫格长袖上衣
+3. 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 雪人雪花图案缎面质感衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对衬衫
+4. 男士圣诞圆领长袖T恤 男士常规版型套头衫 圆领长袖上衣 秋冬节日派对打底衫 圣诞老人窗景图案印花长袖衫 男士华夫格长袖T恤 男士休闲套头T恤 男士节日主题长袖上衣
+5. 男士圣诞印花长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 秋冬节日派对衬衫 圣诞音符铃铛图案印花衬衫 男士休闲印花上衣 男士圣诞主题长袖衬衣 男士节日派对印花衬衫
+6. 男士亮片短袖衬衫 男士常规版型翻领衬衫 带纽扣短袖衬衣 夏季派对演出衬衫 亮片纯色衬衫 男士派对亮片上衣 男士舞台表演衬衫 男士短袖翻领衬衫
+7. 男士复古翻领长袖衬衫 男士常规版型翻领衬衫 带纽扣长袖衬衣 春秋季派对演出衬衫 复古几何胶囊印花上衣 男士休闲长袖衬衫 男士波普风印花衬衣 男士迪斯科派对上衣
+8. 男士插肩袖条纹上衣 男士常规版型圆领套头衫 男士长袖T恤 春秋季休闲打底衫 插肩袖长袖上衣 横条纹图案套头衫 男士休闲长袖T恤 男士条纹打底衫 男士日常套头衫
+9. 男士狂欢节长袖T恤 男士常规版型套头衫 圆领长袖T恤 秋冬节日派对上衣 华夫格长袖衫 狂欢节小丑啤酒印花上衣 字母印花长袖套头衫 男士休闲打底衫 男士节日主题长袖上衣
+10. 男士条纹休闲长袖T恤 男士常规版型圆领套头衫 长袖套头T恤 春秋季休闲打底衫 横条纹图案长袖衫 男士休闲长袖上衣 男士条纹打底T恤 男士套头长袖衫
+
+【可选值组】（每组只能从该组编号中选择）：
+Kragenform: 1.Button-Down-Kragen, 2.Camp-Kragen, 3.Club-Kragen, 4.Einteiliger Kragen, 5.Extrem-Haifischkragen, 6.Flachkragen, 7.Haifischkragen, 8.Halber Cutaway-Kragen, 9.Kerbkragen, 10.Kläppchenkragen, 11.Kragen mit Ösen, 12.Mandarinkragen, 13.Matrosenkragen, 14.Ohne Kragen, 15.Peter Pan Kragen, 16.Polokragen, 17.Portrait Kragen, 18.Punkt-Kragen, 19.Reverskragen, 20.Rundkragen, 21.Rüschenkragen, 22.Schalkragen, 23.Spearpoint-Kragen, 24.Spreizkragen, 25.stand_collar, 26.Stehkragen, 27.Tab-Kragen, 28.Umlegekragen, 29.Versteckter Button-Down-Kragen
+Besondere Eigenschaften: 1.Absorbierend, 2.Atmungsaktiv, 3.Dehnbar, 4.Dickerer Stoff (Heavyweight), 5.Durchsichtig, 6.Faltenfrei, 7.Farbecht, 8.Feuchtigkeitsableitend, 9.Fleckenresistent, 10.funkelnd, 11.Gepolstert, 12.Geruchsresistent, 13.Herausnehmbare Polsterung, 14.Hohe Sichtbarkeit (Warnschutz), 15.Hypoallergen, 16.Konvertierbar, 17.Leichtgewichtig, 18.Nahtlos, 19.Pillingresistent, 20.Reversibel, 21.Schnelltrocknend, 22.Schrumpffrei, 23.Sonnenschutz, 24.Thermisch, 25.Verstellbar, 26.Wasserdicht
+Lifestyle: 1.Abend, 2.Arbeit, 3.Fachkraft, 4.Formell, 5.Kleid, 6.Komfort, 7.Lässig, 8.Legere Geschäftskleidung, 9.Themenorientiert
+Stil: 1.Ballkleid, 2.Böhmisch, 3.Glam, 4.Guayabera, 5.hawaiianisch, 6.Jackenkleid, 7.Klassisch, 8.Militär, 9.Minimalistisch, 10.Modern, 11.Preppy-Stil, 12.Punk, 13.Retro, 14.Streetwear, 15.T-Shirt, 16.Vintage-Stil, 17.Westlich
+Artikeltyp – Name: 1.Arbeits-T-Shirt, 2.Arbeitsschutz-Schürze, 3.Bluse, 4.Bowlinghemd, 5.Button-Down-Arbeitshemd, 6.Golfhemd, 7.Hemd, 8.Hemd mit Button-Down-Kragen, 9.Henley-Hemd, 10.Klassisches Hemd, 11.Medizinische Berufskleidung, 12.Medizinisches Arbeitshemd, 13.Medizinisches Schlupfhemd, 14.Mode-Weste, 15.Polohemd, 16.Skate-Shirt, 17.T-Shirt, 18.Tennis-Shirt, 19.Trägershirt / Cami Shirt, 20.Tunika zum Stillen, 21.Tunika-Shirt, 22.Tuxedo-Hemd, 23.Unterhemd, 24.Wander-Shirt, 25.Weste, 26.Yoga-Shirt, 27.Baby- & Kleinkind T-Shirt-Satz, 28.Baby- & Kleinkind-Tank-Top, 29.Baby- & Kleinkind-Hemd mit fest geknöpftem Kragen
+Sondergröße: 1.Baby, 2.Babys (Jungen), 3.Babys (Mädchen), 4.Groß, 5.Groß, 6.Groß-Übergröße, 7.Große Jungs, 8.Große Mädels, 9.Klein, 10.Klein-Übergröße, 11.Kleine Jungs, 12.Kleine Mädels, 13.Kleinkinder (Jungen), 14.Kleinkinder (Mädchen), 15.Kräftig, 16.Schlanke Jungs, 17.Schlanke Mädels, 18.Stämmige Jungs, 19.Standard, 20.Übergröße, 21.Übergroße Mädels
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Thema: 1.2000er Jahre, 2.Alphabet, 3.Anime, 4.Auto, 5.Batik, 6.Baum, 7.Berg, 8.Blumig, 9.Cartoons, 10.Comic, 11.Essen, 12.Familie, 13.Fantasie, 14.Fernsehsendungen, 15.Filme, 16.Hippie, 17.Horror, 18.Lustig, 19.Marmor, 20.Maskottchen, 21.Medizin & Gesundheit, 22.Militär, 23.Musik, 24.Nautisch, 25.Patriotisch, 26.Politisch, 27.Psychische Gesundheit, 28.Regenbogen, 29.Religiös, 30.Schule, 31.Science-Fiction, 32.Spiel, 33.Sport, 34.Stolz, 35.Superhelden, 36.Tiere, 37.Totenkopf, 38.Urlaub, 39.Weltraum, 40.Worte & Zitate
+Passform: 1.Angepasst, 2.Athletic Fit, 3.Athletisch, 4.Classic, 5.Eng anliegend, 6.Entspannte Passform, 7.Fließend, 8.Gerade, 9.Maßgeschneidert, 10.Moderne Passform, 11.Regulär, 12.Relaxed, 13.Schlank, 14.Skinny, 15.Stretch, 16.Übergroß, 17.Übergroße Passform, 18.Weit geschnitten
+Webart: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Korb, 5.Oxford, 6.Perle, 7.Plain, 8.Satin, 9.Twill
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Früchte, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentritt, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Sportart: 1.Airsoft, 2.American Football, 3.Angeln, 4.Badminton, 5.Baseball, 6.Basketball, 7.Bergsteigen, 8.Billard, 9.Bodybuilding, 10.Bogenschießen, 11.Bootfahren, 12.Bowling, 13.Boxen, 14.Camping, 15.Camping & Wandern, 16.Cheerleading, 17.Discgolf, 18.Eishockey, 19.Eislaufen, 20.Feldhockey, 21.Fußball nach australischen Regeln, 22.Gewichtheben, 23.Golf, 24.Gymnastik, 25.Hockey, 26.Jagd, 27.Kajakfahren, 28.Kampfkünste, 29.Kanufahren, 30.Klettern, 31.Kricket, 32.Lacrosse, 33.Laufen, 34.Leichtathletik, 35.Mixed Martial Arts, 36.Motocross, 37.Motorsport, 38.Muay Thai, 39.Outdoor-Lifestyle, 40.Paddle Boarding, 41.Paintball, 42.Pferdesport, 43.Pickleball, 44.Pilates, 45.Polo, 46.Quidditch, 47.Racquetball, 48.Radfahren, 49.Rafting, 50.Rollhockey, 51.Rollschuhlaufen, 52.Rugby, 53.Schach, 54.Schneemobilfahren, 55.Schneeschuhwandern, 56.Schnorcheln, 57.Schwimmen, 58.Segeln, 59.Skateboarden, 60.Skifahren, 61.Snowboarden, 62.Soccer, 63.Softball, 64.Spazierengehen, 65.Sport & Fitness, 66.Squash, 67.Surfen, 68.T-Ball, 69.Tanz, 70.Tauchen, 71.Tennis, 72.Tischtennis, 73.Trekking, 74.Triathlon, 75.Völkerball, 76.Volleyball, 77.Wakeboarding, 78.Wandern, 79.Wasserball, 80.Wasserskilaufen, 81.Wassersport, 82.Wiffleball, 83.Windsurfen, 84.Workout & Training, 85.Wrestling, 86.Yachtsport, 87.Yoga
+Halsausschnitt: 1.Asymmetrischer Ausschnitt, 2.Carmenausschnitt, 3.Choker-Ausschnitt, 4.Chorhemd-Ausschnitt, 5.Crew Neck, 6.Eckiger Ausschnitt, 7.Henley Ausschnitt, 8.Herzausschnitt, 9.Juwel-Ausschnitt, 10.Mit Kapuze, 11.Mit Kragen, 12.Mock-Ausschnitt, 13.Muschelkragen, 14.Neckholder, 15.Notch-Ausschnitt, 16.One Shoulder, 17.Rollkragen, 18.Schluppenkragen, 19.Scoop-Ausschnitt, 20.Stehkragen, 21.Tiefer Ausschnitt, 22.Trichterhals, 23.Tropfen-Ausschnitt, 24.U-Boot-Ausschnitt, 25.Umschlag-Hals, 26.V-Ausschnitt, 27.Wasserfall-Ausschnitt
+Stil des Oberteils: 1.A-Line, 2.Asymmetrisch, 3.Bauer, 4.Blouson, 5.Boxy, 6.Bralette, 7.Bustier, 8.Crop Top, 9.Empire, 10.Geschichtet, 11.Kaftan, 12.Kapuze, 13.Leibchen, 14.Poncho, 15.Pullover, 16.Schößchen, 17.Tanktop, 18.Tube, 19.Tunika, 20.Umhang, 21.Wickel
+Formtyp des Hemds: 1.Bluse, 2.Polohemd, 3.Schnitt, 4.Sporttrikot, 5.T-Shirt, 6.Tanktop, 7.Tuxedo-Hemd, 8.Weitgeschnittene Bluse
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ballonärmel, 2.Bauschärmel, 3.Bischofsärmel, 4.Dolman-Ärmel, 5.Flatterärmel, 6.Fledermausärmel, 7.Flügelärmel, 8.Geraffte Ärmel, 9.Geteilter Ärmel, 10.Glockenärmel, 11.Kalte Schulter Ärmel, 12.Keulenärmel, 13.Kimono-Ärmel, 14.Laternenärmel, 15.Manschettenärmel, 16.Poet Ärmel, 17.Raglanärmel, 18.Rüschenärmel, 19.Schmetterlingärmel, 20.Tulpenärmel, 21.Umhang Ärmel
+Verschlussart: 1.Doppelring, 2.Druckknopf, 3.Haken & Öse, 4.Klettverschluss, 5.Knebelverschluss, 6.Knopf, 7.Kordelzug, 8.Magnetisch, 9.Pull-On, 10.Reißverschluss, 11.Schnalle
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Kragenform:
+Besondere Eigenschaften:
+Lifestyle:
+Stil:
+Artikeltyp – Name:
+Sondergröße:
+Beschreibung der Artikellänge:
+Thema:
+Passform:
+Webart:
+Muster:
+Sportart:
+Halsausschnitt:
+Stil des Oberteils:
+Formtyp des Hemds:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Verschlussart:
+1: <选项编号>
+2: <选项编号>
+...
