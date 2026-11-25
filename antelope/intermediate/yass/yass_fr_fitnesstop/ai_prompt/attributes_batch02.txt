@@ -1,0 +1,39 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 带亮片透气网纱弹性抹胸托束身衣 点状亮片装饰 透气网纱面料 心形抹胸领 抽褶下摆 收腰结构 女士抹胸束身衣 修身版型 无袖短款 托胸结构 弹性面料
+2. 女士欧美宫廷束身衣新娘礼服塑身衣裹胸 819款塑身衣 提花图案 心形抹胸领 正面金属排扣 女士宫廷束身衣 胸前丝带系带 荷叶边饰边 竖向拼接结构 修身版型 无袖短款 收腰塑形 819款
+3. 欧美宫廷简约束腰束身衣 塑身上衣 色丁胶骨腰夹 正面金属排扣 竖向拼接结构 缎面面料 无肩带抹胸式 平直下摆 女士宫廷束身衣 修身版型 无袖短款 收腰塑形 胶骨支撑
+4. 宫廷女士提花束身上衣 欧美性感收腹塑身衣 819款塑身衣 提花图案 心形抹胸领 正面金属排扣 胸前丝带系带 荷叶边下摆 竖向拼接结构 女士宫廷束身上衣 修身版型 无袖短款 收腹塑形 819款
+5. 欧美性感宫廷束身衣骨衣收腹托胸聚拢
+6. 新款多色花边束身上衣性感托胸聚拢束腰紧身胸衣收腹打底塑身衣 819款塑身衣 816款塑身衣 荷叶边饰边 心形抹胸领 正面金属排扣 顶部丝带系带 罩杯式结构 竖向拼接结构 女士宫廷束身上衣 修身版型 无袖短款 抹胸式 托胸聚拢 收腹塑形 819款
+7. 欧美性感宫廷束身衣骨衣收腹托胸聚拢 提花图案 心形抹胸领 正面金属排扣 竖向拼接结构 弧形下摆 包边饰边 女士宫廷束身衣 修身版型 无袖短款 托胸收腹 塑身
+8. 复古哥特朋克PU宫廷束身上衣 PU仿皮拼接 金属搭扣门襟 交叉系带 女士宫廷束身上衣 修身版型 金属D形环 短袖 心形领 提花面料 腰部皮带 复古哥特朋克风格
+9. 纯欲风蕾丝镂空时尚背心女紧身抹胸外搭 蕾丝花卉图案 不对称尖角下摆 透明网纱拼接 无肩带抹胸领 女士紧身抹胸背心 修身版型 无袖短款 外搭 蕾丝花边
+10. 一字肩鱼骨束腰抹胸上衣ins小众设计感时尚百搭背心 一字肩领 心形领口 尖角下摆 正面竖向拼接 短袖 纯色缎面 鱼骨结构 女士束腰上衣 修身版型 套头式 收腰设计
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée
+Style: 1.Bohémien, 2.Classique, 3.Contemporain, 4.Glamour, 5.Médiéval, 6.Sportif, 7.Victorien, 8.Vintage
+Occasion: 1.Anniversaire, 2.Anniversary, 3.Bal de Promo, 4.Baptême, 5.Douche Nuptiale, 6.Enterrement de Vie de Garçon, 7.Enterrement de Vie de Jeune Fille, 8.Fête des Mères, 9.Fête des Pères, 10.Fête des quinze ans, 11.Fête Prénatale, 12.Fiançailles, 13.Funérailles, 14.Jour de l'Indépendance, 15.Journée des Femmes, 16.Mariage, 17.Nouvel An, 18.Pâques, 19.Première communion, 20.Remise des Diplômes, 21.Retrouvailles, 22.Saint-Valentin
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Confortable, 5.Décontractée, 6.Droite, 7.Fluide, 8.Lâche, 9.Régulière, 10.Skinny, 11.Slim, 12.Surdimensionnée, 13.Tailored
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de fermeture: 1.Agrafe et porte, 2.Barre et crochet, 3.Boucle, 4.Bouton, 5.Bouton en bâtonnet, 6.Bouton-pression, 7.Braguette à boutons, 8.Ceinturé, 9.Ceinture coulissante, 10.Cravate, 11.Crochet et boucle, 12.Double anneau, 13.Enfiler, 14.Fermeture éclair
+Type de fête: 1.Action de Grâce, 2.Diwali, 3.Fête des Mères, 4.Fête des Pères, 5.Halloween, 6.Hanoukka, 7.Jour de l'Indépendance, 8.Kwanzaa, 9.Noël, 10.Nouvel An, 11.Pâques, 12.Pessa'h, 13.Saint-Patrick, 14.Saint-Valentin
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de vie:
+Style:
+Occasion:
+Type de coupe:
+Description de la longueur des manches:
+Type de fermeture:
+Type de fête:
+1: <选项编号>
+2: <选项编号>
+...

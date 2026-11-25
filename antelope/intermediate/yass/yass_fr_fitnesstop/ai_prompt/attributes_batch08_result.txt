@@ -1,0 +1,35 @@
+Style de vie:
+1: 5
+2: 3
+3: 3
+4: 5
+Style:
+1: 7
+2: 8
+3: 8
+4: 7
+Occasion:
+1: 16
+2: 3
+3: 3
+4: 22
+Type de coupe:
+1: 11
+2: 11
+3: 11
+4: 11
+Description de la longueur des manches:
+1: 1
+2: 1
+3: 1
+4: 1
+Type de fermeture:
+1: 4
+2: 4
+3: 3
+4: 4
+Type de fête:
+1: 14
+2: 5
+3: 5
+4: 14

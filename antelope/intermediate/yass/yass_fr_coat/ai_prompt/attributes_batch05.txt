@@ -1,0 +1,49 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士圣诞节套头毛衣针织衫 休闲圆领长袖针织上衣 雪花提花图案毛线衣 秋冬保暖打底针织衫 男士套头针织外套 圣诞主题休闲毛衫 几何图案保暖针织衫
+2. 男士节日搞怪仿毛衣无帽卫衣 休闲圆领套头针织衫 秋冬保暖长袖打底衫 趣味图案印花毛线衣 套头针织外套 男士休闲针织上衣 节日主题仿毛衣外套
+3. 男士冬季毛衣外套 男士休闲格纹针织开衫 V领带纽扣长袖针织上衣 秋冬季保暖针织外套 带口袋格纹毛线衣 男士针织开衫夹克 休闲打底针织衫
+4. 男士冬季毛衣外套 男士连帽拉链针织开衫 秋冬保暖提花图案毛线衣 休闲连帽针织夹克 带口袋拉链毛衣外套 几何图案针织上衣 男士保暖针织外套
+5. 男士V领竖纹针织背心 男士休闲套头无袖坎肩 针织马甲 麻花编织毛衣背心 秋冬季保暖打底针织衫 纯色修身内搭毛线背心 男士无袖针织坎肩外套 套头针织上衣
+6. 男士印花圆领长袖卫衣 休闲套头打底衫 秋冬保暖长袖上衣 字母圣诞雪花图案套头衫 男士休闲卫衣外套 节日主题圆领打底衫 宽松套头卫衣上衣
+7. 男士秋冬季保暖毛衣外套 休闲圆领套头针织衫 复古费尔岛提花毛线衣 几何图案长袖针织上衣 宽松套头针织外套 男士休闲打底毛衫
+8. 男士休闲针织开衫外套 V领带纽扣毛衣外套 秋冬保暖长袖针织衫 带口袋罗纹纯色上衣 男士休闲开襟针织夹克 秋冬打底毛线衣外套
+9. 男士复古费尔岛毛衣外套 男士宽松长款针织衫 大翻领带纽扣开衫 带口袋配腰带长款毛线衣 秋冬季保暖针织夹克 复古几何提花图案毛衫 加厚针织外套 男士长款针织开衫 休闲系带毛线外套
+10. 男士圣诞提花开衫毛衣 休闲翻领针织衫 带纽扣长袖针织外套 秋冬季保暖毛衣外套 雪花雪橇几何提花图案毛线衣 带口袋休闲针织开衫 男士保暖针织上衣
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à revers, 2.Col boutons pressions, 3.Col camp, 4.Col châle, 5.Col claudine, 6.Col club, 7.Col cranté, 8.Col cutaway, 9.Col enveloppe, 10.Col étalé, 11.Col mao, 12.Col marin, 13.Col montant, 14.Col officier, 15.Col plat, 16.Col point, 17.Col rabattu, 18.Col rond, 19.Col spearpoint, 20.Col tailleur, 21.Col volant, 22.Sans col
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Pour sortir le soir
+Style: 1.Caban, 2.Cape, 3.Duffle coat, 4.Manteau chesterfield, 5.Manteau cocon, 6.Manteau covert, 7.Manteau de voiture, 8.Manteau imperméable, 9.Manteau kimono, 10.Manteau loden, 11.Manteau maxi, 12.Manteau militaire, 13.Manteau paletot, 14.Manteau plumeau, 15.Manteau poncho, 16.Manteau portefeuille, 17.Manteau reefer, 18.Manteau trapèze, 19.Parka, 20.Trench
+Nom de la boutique: 1.Bébé fille, 2.Bébé garçon, 3.Femme, 4.Fille, 5.Garçon, 6.Homme, 7.Mixte, 8.Mixte bébé, 9.Mixte enfant
+Sexe ciblé: 1.Femme, 2.Homme, 3.Unisexe
+Description de la tranche d'âge: 1.Adulte, 2.Enfant, 3.Nourrisson, 4.Tout-petit
+Niveau de résistance à l'eau: 1.Étanche, 2.Hydrofuge, 3.Imperméable, 4.Non étanche, 5.Résistant à l’humidité
+Thème: 1.Amour, 2.Animal, 3.Animé, 4.Arc-en-ciel, 5.Caricature, 6.Conte de fée, 7.Émission de télévision, 8.Espace, 9.Extraterrestre, 10.Film, 11.Floral, 12.Forêt, 13.Fruit, 14.Graphique, 15.Halloween, 16.Horreur, 17.Jeu vidéo, 18.Marbre, 19.Marin, 20.Militaire, 21.Musique, 22.Plage, 23.Policier, 24.Science-fiction, 25.Sport, 26.Tie-dye, 27.Vacances
+Type de coupe: 1.Ajustée, 2.Carré, 3.Décontractée, 4.Droite, 5.Fluide, 6.Lâche, 7.Régulière, 8.Serrée, 9.Skinny, 10.Slim, 11.Surdimensionnée
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de fermeture: 1.À enfiler, 2.Agrafe, 3.Attacher, 4.Basculer, 5.Boucle, 6.Bouton, 7.Bouton-pression, 8.Cordon de serrage, 9.Crochet et barre, 10.Double anneau, 11.Fermeture éclair, 12.Magnétique, 13.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Style de vie:
+Style:
+Nom de la boutique:
+Sexe ciblé:
+Description de la tranche d'âge:
+Niveau de résistance à l'eau:
+Thème:
+Type de coupe:
+Type de tissage:
+Description de la longueur des manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...
