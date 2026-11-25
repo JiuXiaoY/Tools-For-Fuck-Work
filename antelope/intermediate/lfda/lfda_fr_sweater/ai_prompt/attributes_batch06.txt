@@ -1,0 +1,47 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. BP184男士开衫欧美纯色长袖针织毛衣外套
+2. 男士秋冬纯色高领保暖针织毛衣
+3. 秋冬男士毛衣加绒加厚休闲圆领保暖针织衫上衣
+4. 冬季男士长袖毛衣潮流针织衫半拉链男毛衣男装
+5. 貂绒条纹针织衫毛衣男软糯毛茸茸马海毛慵懒秋冬毛衫
+6. 亨利领针织衫毛衣男高级彩点慵懒秋冬半高领毛衫
+7. 纯色欧码毛衣男士立领毛衣秋冬百搭新款跨境休闲潮流半拉链男长袖
+8. POLO衫翻领针织衫毛衣男复古条纹老钱风英伦商务秋冬
+9. 貂绒条纹软糯慵懒针织衫毛衣男刺绣字母内搭秋冬毛衫
+10. 假两件V领针织衫毛衣男撞色穿搭学院风秋冬外穿线衣
+
+【可选值组】（每组只能从该组编号中选择）：
+Caractéristiques spéciales: 1.Absorbant de la transpiration, 2.Extensible, 3.Imperméable, 4.Légère, 5.Poids lourd, 6.Protection solaire, 7.Résistant à la décoloration, 8.Résistante à la bouloche, 9.Respectueux de la peau, 10.Respirable, 11.Rétention de chaleur, 12.Réversible, 13.Sans bretelle, 14.Sans couture, 15.Sans ride, 16.Séchage rapide
+Style: 1.Baroque, 2.Bohème, 3.Classique, 4.Contemporain, 5.Décontracté, 6.Glam, 7.Grunge, 8.Moderne, 9.Preppy, 10.Punk, 11.Rétro, 12.Streetwear, 13.Victorien
+Nom du type d'article: 1.Cardigan, 2.Chandail, 3.Combinaison de soleil, 4.Maillot de survêtement, 5.Pull-over, 6.Sweat à capuche de skateboard, 7.Pull, 8.Sweater cache-épaules, 9.Sweatshirt à capuche, 10.Gilet
+Thème: 1.Anatomie, 2.Animal, 3.Animé, 4.Arc-en-ciel, 5.Aventure, 6.Bande dessinée, 7.Botanique, 8.Caricature, 9.Espace, 10.Extraterrestre, 11.Fantaisie, 12.Film, 13.Gothique, 14.Graphique, 15.Horreur, 16.Insecte, 17.Jeu vidéo, 18.Livres, 19.Marbre, 20.Militaire, 21.Monstre, 22.Musique, 23.Nautique, 24.Nourriture, 25.Oiseau, 26.Patriotique, 27.Personnage, 28.Professionnel, 29.Religieux, 30.Romance, 31.Sport, 32.Steampunk, 33.Super-héro, 34.Tie-dye, 35.Tiki, 36.Vacances
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Décontractée, 5.Droite, 6.Fluide, 7.Lâche, 8.Maigre, 9.Régulière, 10.Serrée, 11.Slim, 12.Surdimensionnée, 13.Tailored
+Type de tissage: 1.Câble, 2.Côtelé, 3.Dobby, 4.Gaufré, 5.Gaze, 6.Jaal, 7.Jacquard, 8.Jamdani, 9.Satin, 10.Sergé, 11.Toile
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile de Jouy, 17.Uni
+Style de col: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col cranté, 12.Col festonné, 13.Col henley, 14.Col keyhole, 15.Col mock, 16.Col noué, 17.Col ras du cou, 18.Col roulé, 19.Col surplice, 20.Col U, 21.Col V, 22.Décolleté en cœur, 23.Encolure choker, 24.Encolure dégagée, 25.Encolure fendue, 26.Encolure plongeante
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche papillon, 16.Manche poète, 17.Manche raglan, 18.Manche tulipe, 19.Manche volantée, 20.Mancheron, 21.Manches retroussables, 22.Manchette
+Type de pull: 1.Cape de chandail, 2.Cardigan, 3.Chandail, 4.Haussement d'épaules, 5.Veste de survêtement
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Caractéristiques spéciales:
+Style:
+Nom du type d'article:
+Thème:
+Type de coupe:
+Type de tissage:
+Motif:
+Style de col:
+Description de la longueur des manches:
+Type de manches:
+Type de pull:
+1: <选项编号>
+2: <选项编号>
+...
