@@ -1,0 +1,30 @@
+Kragenform:
+1: 11
+Besondere Eigenschaften:
+1: 15
+Lifestyle:
+1: 1
+Stil:
+1: 17
+Beschreibung des Futters:
+1: 19
+Sondergröße:
+1: 19
+Beschreibung der Artikellänge:
+1: 4
+Passform:
+1: 7
+Beschreibung der Tasche:
+1: 1
+Webart:
+1: 8
+Muster:
+1: 4
+Sportart:
+1: 46
+Beschreibung der Ärmellänge:
+1: 5
+Ärmelart:
+1: 14
+Verschlussart:
+1: 8

@@ -1,0 +1,54 @@
+Kragenform:
+1: 9
+2: 9
+Lifestyle:
+1: 10
+2: 10
+Stil:
+1: 1
+2: 3
+Abteilungsname:
+1: 9
+2: 3
+Geschlecht:
+1: 3
+2: 1
+Altersgruppe (Beschreibung):
+1: 3
+2: 2
+Beschreibung des Futters:
+1: 8
+2: 8
+Artikeltyp – Name:
+1: 8
+2: 10
+Trägerart:
+1: 3
+2: 3
+Beschreibung der Artikellänge:
+1: 12
+2: 4
+Gelegenheit & Anlass:
+1: 12
+2: 12
+Webart:
+1: 7
+2: 2
+Verzierungsmerkmal:
+1: 8
+2: 4
+Halsausschnitt:
+1: 12
+2: 6
+Bekleidungs-Silhouette:
+1: 1
+2: 4
+Beschreibung der Ärmellänge:
+1: 5
+2: 5
+Ärmelart:
+1: 15
+2: 6
+Verschlussart:
+1: 10
+2: 8

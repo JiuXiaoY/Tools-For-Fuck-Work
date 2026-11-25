@@ -1,0 +1,55 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 冬季女式复古黑色民族风毛绒面饰边麂皮绒长款大衣|女士长款麂皮绒大衣外套 复古毛绒饰边夹克 收腰带口袋过膝风衣 冬季保暖防寒外套 纯色毛绒拼接长款大衣 女士冬季加厚长款夹克 复古民族风长外套
+2. 女装秋冬新款时尚宽松防羊绒个性休闲外套|女士仿羊羔毛外套 宽松立领夹克 拉链带口袋开衫 秋冬保暖毛绒外套 纯色颗粒绒夹克 女士加厚休闲外套
+3. 女款印花拼接螺纹拉链秋冬毛绒外套|女士迷彩印花毛绒外套 女式短款宽松棒球服夹克 拉链立领秋冬保暖外套 迷彩仿羊羔毛夹克 休闲短款毛绒夹克外套
+4. 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋|女士加绒连帽卫衣外套 圣诞印花拉链开衫夹克 冬季保暖毛绒连帽衫 休闲运动带口袋外套 拉链连帽夹克 加厚保暖卫衣外套
+5. 冬季休闲运动外套圣诞印花拉链毛绒连帽衫带口袋|女士毛绒连帽外套 加绒保暖连帽卫衣 圣诞印花拉链开衫夹克 女式休闲运动外套 冬季加厚保暖夹克 带口袋连帽夹克外套
+6. 跨境欧美风女款纯色连帽拉链开衫提花绒休闲女外套|女士毛绒连帽外套 宽松休闲夹克 拉链开衫带口袋 秋冬保暖加厚毛绒外套 纯色提花绒仿羊羔毛夹克 连帽卫衣外套 休闲抓绒开衫
+7. 女士连帽拉链针织开衫女式休闲宽松外搭纯色毛衣外套毛衣外套2|女士连帽拉链针织开衫 女式宽松休闲外搭 长袖抽绳连帽开衫 春秋季保暖针织外套 纯色麻花针织毛衣外套 拉链连帽夹克 休闲毛衣外搭
+8. 女士格子飞行员夹克外套 白色（供应商叫米色）|女士格纹飞行员夹克外套 女式宽松短款棒球服夹克 立领长袖拉链开衫外套 春秋休闲夹克 格纹印花带口袋外套 短款飞行员夹克
+9. 女士百搭毛衣拼色圆领条纹撞色针织开衫毛衣外套|女士针织开衫毛衣外套 女式宽松短款拼色条纹外搭 圆领带纽扣长袖开衫 春秋季保暖针织衫 撞色条纹休闲夹克 针织毛衣外套
+10. 复古女装外套秋冬新款麂皮修身翻领单扣长袖夹克上衣|女士麂皮夹克外套 修身短款翻领夹克 女式复古休闲西服 秋冬长袖带纽扣外套 纯色仿麂皮上衣 收腰短款西装外套 秋季休闲夹克
+
+【可选值组】（每组只能从该组编号中选择）：
+Kragenform: 1.Bandkragen, 2.Bubikragen, 3.Camp-Kragen, 4.Club-Kragen, 5.Flachkragen, 6.Haifischkragen, 7.Kerbkragen, 8.Klappkragen, 9.Mandarinkragen, 10.Matrosenkragen, 11.Ohne Kragen, 12.Portrait Kragen, 13.Punkt-Kragen, 14.Reverskragen, 15.Rundkragen, 16.Rüschenkragen, 17.Schalkragen, 18.Spearpoint-Kragen, 19.Spreizkragen, 20.Stehkragen, 21.Umlegekragen, 22.Umschlagkragen
+Besondere Eigenschaften: 1.Abriebfest, 2.Atmungsaktiv, 3.Beheizbar, 4.Belüftet, 5.Bleichbeständig, 6.Daumenlöcher, 7.Dehnbar, 8.Dehnungsbeständig, 9.Farbecht, 10.Feuchtigkeitsableitend, 11.Flammbeständig, 12.Herausnehmbare Polsterung, 13.Isoliert, 14.Knitterfest, 15.Leicht, 16.Mit Gürtel, 17.Mit Kapuze, 18.Mit Taschen, 19.Packbar, 20.Pillingresistent, 21.Reflektierend, 22.Reversibel, 23.Saum mit Kordel, 24.Schmutzabweisend, 25.Schnelltrocknend, 26.UV-Schutz, 27.Wasserabweisend, 28.Wasserdicht, 29.Winddicht
+Lifestyle: 1.Abend, 2.Club, 3.Formell, 4.Komfort, 5.Lässig, 6.Legere Geschäftskleidung
+Stil: 1.A-Linie Mantel, 2.Auto-Mantel, 3.Caban Mantel, 4.Chesterfield Mantel, 5.Crombie Mantel, 6.Düffelmantel, 7.Kimono Mantel, 8.Kittel Mantel, 9.Kokon-Mantel, 10.Lodenmantel, 11.Mackintosh Mantel, 12.Maxi Mantel, 13.Militärmantel, 14.Paletot Mantel, 15.Parka Mantel, 16.Poncho-Mantel, 17.Seemansjacke, 18.Trench Coat, 19.Umhang Mantel, 20.Wickelmantel
+Beschreibung des Futters: 1.Acryl, 2.Aramid, 3.Baumwolle, 4.Baumwollmischung, 5.Daune, 6.Elastan, 7.Flanell, 8.Fleece, 9.Jersey, 10.Kaschmir, 11.Kunstpelz, 12.Lammfell, 13.Leder, 14.Leinen, 15.Mikrofaser, 16.Nylon, 17.Nylon-Mischung, 18.Pelz, 19.Polyester, 20.Polyester-Mischung, 21.Polyurethan (PU), 22.Polyvinylchlorid (PVC), 23.Rayon, 24.Samt, 25.Seide, 26.Sherpa, 27.Ungefüttert, 28.Wolle, 29.Wollmischung
+Sondergröße: 1.Baby, 2.Babys (Jungen), 3.Babys (Mädchen), 4.Groß, 5.Groß, 6.Groß-Übergröße, 7.Große Jungs, 8.Große Mädels, 9.Klein, 10.Klein-Übergröße, 11.Kleine Jungs, 12.Kleine Mädels, 13.Kleinkinder (Jungen), 14.Kleinkinder (Mädchen), 15.Kräftig, 16.Schlanke Jungs, 17.Schlanke Mädels, 18.Stämmige Jungs, 19.Standard, 20.Übergröße, 21.Übergroße Mädels
+Beschreibung der Artikellänge: 1.Extra lange Länge, 2.Extra kurze Länge, 3.Lange Länge, 4.Kurze Länge, 5.Standardlänge
+Passform: 1.Angepasst, 2.Boxy, 3.Eng anliegend, 4.Entspannt, 5.Fließend, 6.Gerade, 7.Locker, 8.Regulär, 9.Skinny, 10.Slim, 11.Übergroß
+Beschreibung der Tasche: 1.Aufgesetzte Tasche, 2.Gerade Tasche, 3.Leistentasche, 4.Nahttasche, 5.Napoleontasche, 6.Pattentasche, 7.Schlitztasche, 8.Schrägtasche, 9.Utility-Tasche
+Webart: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Korb, 5.Oxford, 6.Perle, 7.Plain, 8.Satin, 9.Twill
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Früchte, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentritt, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Sportart: 1.Airsoft, 2.American Football, 3.Autorennsport, 4.Badminton, 5.Baseball, 6.Basketball, 7.Bergsteigen, 8.BMX, 9.Bogenschießen, 10.Bowling, 11.Boxen, 12.Cheerleading, 13.Cyclocross, 14.Eishockey, 15.Eislaufen, 16.Fischen, 17.Fußball, 18.Gewichtheben, 19.Golf, 20.Gymnastik, 21.Jagen, 22.Joggen, 23.Kajakfahren, 24.Kampfkünste, 25.Kitesurfen, 26.Kricket, 27.Lacrosse, 28.Laufen, 29.Mixed Martial Arts, 30.Motorschlittenfahren, 31.Mountain Biking, 32.Paintball, 33.Pferderennen, 34.Racquetball, 35.Radfahren, 36.Ringkampf, 37.Rugby, 38.Schwimmen, 39.Segeln, 40.Skateboarden, 41.Skifahren, 42.Snowboarden, 43.Softball, 44.Squash, 45.Surfen, 46.Tanz, 47.Tennis, 48.Tischtennis, 49.Volleyball, 50.Wakeboarding, 51.Wasserpolo, 52.Wasserski, 53.Yoga
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ballon Ärmel, 2.Bischofsärmel, 3.Dolman-Ärmel, 4.Flatterärmel, 5.Fledermausärmel, 6.Flügelärmel, 7.Geraffte Ärmel, 8.Geteilter Ärmel, 9.Glockenärmel, 10.Hammelblumen-Hülse, 11.Kalter Schulterärmel, 12.Kimono Ärmel, 13.Laterne Ärmel, 14.Manschettenärmel, 15.Puffärmel, 16.Raglanärmel, 17.Roll-Up-Ärmel, 18.Rüschenärmel, 19.Tulpenärmel, 20.Umhang Ärmel
+Verschlussart: 1.Bindegürtel, 2.Doppelring, 3.Druckknopf, 4.Haken & Öse, 5.Haken & Stange, 6.Klettverschluss, 7.Knebel, 8.Knopfleiste, 9.Kordelzug, 10.Magnetisch, 11.Pull-on, 12.Reißverschluss, 13.Schnalle
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Kragenform:
+Besondere Eigenschaften:
+Lifestyle:
+Stil:
+Beschreibung des Futters:
+Sondergröße:
+Beschreibung der Artikellänge:
+Passform:
+Beschreibung der Tasche:
+Webart:
+Muster:
+Sportart:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Verschlussart:
+1: <选项编号>
+2: <选项编号>
+...

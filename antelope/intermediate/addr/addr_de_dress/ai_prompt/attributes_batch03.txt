@@ -1,0 +1,61 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 儿童腰巾头巾两件套 长尾打结头巾 宽幅缠绕腰巾 缎面质感 儿童海盗腰巾头巾两件套 女童 常规版型 万圣节派对装扮 角色扮演配饰
+2. 女童海盗服连衣裙套装 一字肩喇叭袖 系带束腰设计 前短后长不规则下摆 荷叶边裙摆 配套三角海盗帽 海盗角色扮演连衣裙套装 女童 常规版型 长袖 中短裙 万圣节派对
+3. 女童海盗服连衣裙套装 一字肩褶皱领口 系带束腰 喇叭袖 伞状裙摆 海盗角色扮演连衣裙 女童 常规版型 长袖 短裙 万圣节派对装扮
+4. 女士文艺复兴海盗风不对称裙摆分层裤裙 一字肩领口 领口抽绳系带 分层荷叶边不对称下摆 女士文艺复兴风分层裤裙 修身版型 长袖 束腰交叉系带 万圣节派对 角色扮演
+5. 女士时尚纯色提花拼接褶皱荷叶边露肩多层荷叶边下摆A字雪纺迷你连衣裙 一字肩领口 抽褶设计 提花拼接 前襟排扣装饰 A字雪纺迷你连衣裙 女士 修身版型 泡泡短袖 多层荷叶边不对称下摆 收腰设计
+6. 女童时尚纯色长袖可爱裙子（5-13岁） 方领设计 泡泡长袖 袖口收束 分层裙摆 高腰拼接 收腰设计 套头式纯色短款连衣裙 女童 常规版型 短裙 日常穿着
+7. 女士纯色休闲舒适V领长袖连衣裙 V领 喇叭袖口 收腰褶皱 伞状短裙摆 纯色 女士 修身版型 长袖连衣裙 套头式 日常休闲
+8. 女士纯色一字肩休闲长袖连衣裙 露肩抽褶领口 前襟交叉系带束腰 不对称层叠下摆 喇叭袖 纯色 女士 修身版型 套头式 短款长袖连衣裙 休闲
+9. 女士万圣节裙子 抽褶露肩领口 宽大披风袖 束腰系带设计 不对称手帕下摆 拼接结构 万圣节角色扮演连衣裙 女士 修身版型 长袖 套头式 中短裙 派对装扮
+10. 女童海盗连衣裙 一字肩抽褶领口 多层喇叭袖 宽幅松紧收腰 不规则手帕下摆 海盗角色扮演连衣裙 女童 修身版型 长袖 套头式 短裙 派对装扮
+
+【可选值组】（每组只能从该组编号中选择）：
+Kragenform: 1.Bandkragen, 2.Button-Down-Kragen, 3.Camp-Kragen, 4.Flachkragen, 5.Kerbkragen, 6.Kläppchenkragen, 7.Mandarin, 8.Matrosenkragen, 9.Ohne Kragen, 10.Peter Pan Kragen, 11.Polokragen, 12.Portrait Kragen, 13.Punkt-Kragen, 14.Reverskragen, 15.Rundkragen, 16.Rüschenkragen, 17.Schalkragen, 18.Spreizkragen, 19.Stehkragen, 20.Tab-Kragen, 21.Umlegekragen, 22.Umschlagkragen
+Lifestyle: 1.Abend, 2.Abschlussball, 3.Club, 4.Cocktail, 5.Formell, 6.Hochzeit, 7.Komfort, 8.Lässig, 9.Legere Geschäftskleidung, 10.Party, 11.Strand, 12.Täglich
+Stil: 1.A-Linie, 2.Art-Deco, 3.Asymmetrisch, 4.Ballon, 5.Bandage, 6.Blazer, 7.Bleistift, 8.Blusen, 9.Böhmisch, 10.Empire-Taille, 11.Etui, 12.Figurbetont, 13.Fit & Flare, 14.Hängerkleid, 15.Kaftan, 16.Kimono, 17.Klassisch, 18.Land, 19.Meerjungfrau, 20.Mitte des Jahrhunderts modern, 21.Modern, 22.Qipao, 23.Retro, 24.Schlauch, 25.Schößchen, 26.Schürze, 27.Shift, 28.Skater, 29.Slip, 30.Strick, 31.Swing, 32.T-Shirt, 33.Tutu, 34.viktorianisch, 35.Wickel
+Abteilungsname: 1.Baby - Jungen, 2.Baby - Mädchen, 3.Damen, 4.Herren, 5.Jungen, 6.Mädchen, 7.Unisex, 8.Unisex Baby, 9.Unisex Kinder
+Geschlecht: 1.Weiblich, 2.Männlich, 3.Unisex
+Altersgruppe (Beschreibung): 1.Baby, 2.Erwachsener, 3.Kind, 4.Kleinkind
+Beschreibung des Futters: 1.Acryl, 2.Baumwolle, 3.Baumwollmischung, 4.Elastan, 5.Leinen, 6.Nylon, 7.Polyamid-Elastan-Mischung, 8.Polyester, 9.Polyester-Mischung, 10.Seide, 11.Viskose, 12.Wolle
+Artikeltyp – Name: 1.Brautjungfernkleid, 2.Brautmutterkleid, 3.Cocktailkleid, 4.Formales Abendkleid, 5.Formales Kleid, 6.Hochzeitskleid, 7.Homecoming-Kleid, 8.Kinderkleid, 9.Kleid, 10.Kleid für besondere Anlässe, 11.Lässiges Abendkleid, 12.Lässiges Business-Kleid, 13.Lässiges Kleid, 14.Prom-Kleid, 15.Taufkleid, 16.Tenniskleid
+Trägerart: 1.Schulterfrei, 2.Spaghetti, 3.Tank, 4.Trägerlos
+Beschreibung der Artikellänge: 1.Mittlere Oberschenkellang, 2.Oberhalb des Knies, 3.Knielang, 4.High-Low, 5.Teelang, 6.Knöchellang, 7.Unterhalb des Knies, 8.Wadenlang, 9.Bodenlang, 10.Maxi, 11.Halblang, 12.Midi, 13.Mini
+Gelegenheit & Anlass: 1.Abschluss, 2.Abschlussball Heimkehr, 3.Babyparty, 4.Beerdigung, 5.Brautparty, 6.Diwali, 7.Einweihungszeremonie, 8.Flitterwochen, 9.Frauentag, 10.Geburt, 11.Geburtstag, 12.Halloween, 13.Hochzeit, 14.Jahrestag, 15.Junggesellenabschied, 16.Junggesellinnenabschied, 17.Kommunion, 18.Muttertag, 19.Neues Jahr, 20.Ostern, 21.Quinceanera, 22.St. Patrick's Day, 23.Taufe, 24.Thanksgiving, 25.Unabhängigkeitstag, 26.Valentinstag, 27.Vatertag, 28.Verlobung, 29.Weihnachten
+Webart: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Korb, 5.Oxford, 6.Perle, 7.Plain, 8.Satin, 9.Twill
+Verzierungsmerkmal: 1.Bogen, 2.Feder, 3.Franse, 4.Gedrehter Knoten, 5.Glitzer, 6.Kristall, 7.Künstliche Perle, 8.Logo, 9.Paillette, 10.Paspel, 11.Perle, 12.Quaste, 13.Schnalle, 14.Spiegelarbeit, 15.Spitze, 16.Strassstein
+Halsausschnitt: 1.Asymmetrischer Ausschnitt, 2.Carmenausschnitt, 3.Choker-Ausschnitt, 4.Chorhemd-Ausschnitt, 5.Crew Neck, 6.Eckiger Ausschnitt, 7.Henley Ausschnitt, 8.Herzausschnitt, 9.Illusion-Ausschnitt, 10.Jakobsmuschel-Ausschnitt, 11.Juwel-Ausschnitt, 12.Kapuze, 13.Kragen, 14.Mock-Ausschnitt, 15.Neckholder, 16.Notch-Ausschnitt, 17.One Shoulder, 18.Rollkragen, 19.Rundhalsausschnitt, 20.Schluppenkragen, 21.Scoop-Ausschnitt, 22.Split-Ausschnitt, 23.Stehkragen, 24.Tiefer Ausschnitt, 25.Trichterhals, 26.Tropfen-Ausschnitt, 27.U-Ausschnitt, 28.U-Boot-Ausschnitt, 29.Umschlag-Hals, 30.V-Ausschnitt, 31.Wasserfall-Ausschnitt
+Bekleidungs-Silhouette: 1.A-Linie, 2.Blouson, 3.Hülle, 4.Körperbetont, 5.Meerjungfrau, 6.Passform & Lichtreflex, 7.Prinzessin, 8.Pullover, 9.Schößchen, 10.Schwingen, 11.Übergang, 12.Wickeln
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ballon Ärmel, 2.Bauschärmel, 3.Bischofsärmel, 4.Dolman Arm, 5.Flatterärmel, 6.Fledermausärmel, 7.Flügelärmel, 8.Geraffte Ärmel, 9.Geteilte Ärmel, 10.Glockenärmel, 11.Hammelkeule Ärmel, 12.Kalter Schulterärmel, 13.Kimono Ärmel, 14.Laterne Ärmel, 15.Manschettenärmel, 16.Poet Ärmel, 17.Raglan Ärmel, 18.Roll-Up-Ärmel, 19.Rüschenärmel, 20.Schmetterlingärmel, 21.Tulpenärmel, 22.Umhang Ärmel
+Verschlussart: 1.Doppelring, 2.Druckknopf, 3.Haken & Öse, 4.Haken & Stange, 5.Klettverschluss, 6.Knebelverschluss, 7.Knopfleiste, 8.Kordelzug, 9.Magnetisch, 10.Pull On, 11.Reißverschluss
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Kragenform:
+Lifestyle:
+Stil:
+Abteilungsname:
+Geschlecht:
+Altersgruppe (Beschreibung):
+Beschreibung des Futters:
+Artikeltyp – Name:
+Trägerart:
+Beschreibung der Artikellänge:
+Gelegenheit & Anlass:
+Webart:
+Verzierungsmerkmal:
+Halsausschnitt:
+Bekleidungs-Silhouette:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Verschlussart:
+1: <选项编号>
+2: <选项编号>
+...
