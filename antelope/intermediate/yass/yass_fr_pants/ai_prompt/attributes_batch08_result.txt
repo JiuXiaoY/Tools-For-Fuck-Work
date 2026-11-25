@@ -1,0 +1,78 @@
+Caractéristiques spéciales:
+1: 1
+2: 29
+3: 29
+4: 1
+5: 26
+Style de vie:
+1: 1
+2: 4
+3: 4
+4: 1
+5: 4
+Style:
+1: 18
+2: 18
+3: 18
+4: 18
+5: 4
+Nom du type d'article:
+1: 12
+2: 25
+3: 25
+4: 25
+5: 8
+Description de la longueur de l'article:
+1: 3
+2: 3
+3: 3
+4: 3
+5: 3
+Thème:
+1: 32
+2: 32
+3: 32
+4: 32
+5: 32
+Type de coupe:
+1: 7
+2: 7
+3: 7
+4: 7
+5: 7
+Style de jambes:
+1: 6
+2: 6
+3: 6
+4: 6
+5: 6
+Type de tissage:
+1: 7
+2: 2
+3: 2
+4: 11
+5: 10
+Style de taille:
+1: 2
+2: 3
+3: 2
+4: 2
+5: 2
+Type de sport:
+1: 32
+2: 32
+3: 32
+4: 32
+5: 32
+Type de fermeture:
+1: 7
+2: 1
+3: 7
+4: 10
+5: 7
+Type de forme de pantalon:
+1: 9
+2: 9
+3: 9
+4: 9
+5: 7

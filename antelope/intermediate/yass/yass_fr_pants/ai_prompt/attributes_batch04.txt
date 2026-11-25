@@ -1,0 +1,51 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 女士秋冬保暖裤松紧腰纯色毛绒打底裤加绒长裤休闲裤|高腰松紧腰 加绒保暖内里 纯色 女士 修身版型 加厚打底长裤 紧身裤腿 秋冬
+2. 女士秋冬印花万圣节居家出行休闲裤|万圣节主题印花 女巫图案 蝙蝠图案 左右不对称印花 抽绳松紧腰 女士 宽松版型 直筒阔腿休闲长裤 秋冬居家外穿
+3. 女式北极绒连袜包脚睡裤冬天保暖护脚腕护膝宽松家居裤|连袜包脚设计 加厚毛绒面料 松紧腰 宽松直筒 女士连袜睡裤 宽松版型 长裤 套穿式 保暖 冬季居家睡眠
+4. 女士万圣节印花休闲裤|万圣节主题印花 南瓜脸图案 高腰套穿 女士 修身版型 紧身打底长裤 秋冬季 日常休闲外穿
+5. 万圣节印花宽松休闲裤|字母标语印花 抽绳松紧腰 女士 宽松版型 束脚卫裤 带口袋 秋冬居家外穿
+6. 女士纯色加绒打底裤高腰保暖瑜伽裤喇叭阔腿保暖裤|加绒内里 高腰套穿 纯色 女士 修身版型 喇叭打底长裤 保暖 秋冬 外穿 瑜伽适用
+7. 女士纯色加绒保暖加厚外穿口袋高腰一体裤保暖棉裤|带口袋 加绒内里 高腰套穿 纯色 女士 修身版型 加厚保暖一体长裤 秋冬日常外穿
+8. 男女休闲舒适宽松加绒卫裤运动长裤宽松束腿裤|带口袋 抽绳松紧腰 加绒内里 中性 宽松版型 束脚卫裤 运动长裤 纯色 秋冬保暖
+9. 女士印花保暖加绒休闲宽松毛绒长裤睡裤|卡通恐龙印花 字母印花 毛绒面料 松紧腰 阔腿直筒 女士 宽松版型 休闲长裤 睡裤 加绒保暖 居家睡眠 秋冬
+10. 女士纯色加绒裤子|抽绳松紧腰 加绒内里 直筒 带口袋 纯色 女士 宽松版型 加绒保暖长裤 休闲外穿 秋冬
+
+【可选值组】（每组只能从该组编号中选择）：
+Caractéristiques spéciales: 1.Anti-boulochage, 2.Anti-décoloration, 3.Anti-insecte, 4.Anti-statique, 5.Antidérapante, 6.Antimicrobien, 7.Boucle pour marteau, 8.Compression, 9.Contrôle du ventre, 10.Convertible, 11.Coupe-vent, 12.Déchirée, 13.Déperlant, 14.Étanche, 15.Évacuation de la transpiration, 16.Expansible, 17.Extensible, 18.Galbe des fesses, 19.Genou double, 20.Inodore, 21.Légère, 22.Pince à chemise, 23.Protection solaire, 24.Réfléchissante, 25.Réglable, 26.Résistant à l'abrasion, 27.Résistant à l'arc électrique, 28.Résistant à la tache, 29.Résistant au plissement, 30.Résistant au produit chimique, 31.Résistant au squat, 32.Respirable, 33.Réversible, 34.Sans couture, 35.Scrunch pour les fesses, 36.Séchage rapide, 37.Soufflet, 38.Très résistant
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Utilité professionnelle
+Style: 1.Art déco, 2.Bohème, 3.Bouffant, 4.Boyfriend, 5.Capri, 6.Cargo, 7.Carotte, 8.Chino, 9.Classique, 10.Culotte, 11.Disco, 12.Entrejambe bas, 13.Gothique, 14.Jogging, 15.Marin, 16.Médiéval, 17.Moderne, 18.Palazzo, 19.Pantalon de survêtement, 20.Punk, 21.Renaissance, 22.Rétro, 23.Rustique, 24.Victorien
+Nom du type d'article: 1.Collant de corps, 2.Combinaisons d'utilités professionnelle, 3.Ensemble d'utilité professionnelle, 4.Ensemble de brosse médicale, 5.Ensemble de layettes pour bébés et bambins, 6.Ensemble de pantalon, 7.Footies pour bébés et bambins, 8.Jeans, 9.Kakis, 10.Leggings, 11.Mous, 12.Pantalon, 13.Pantalon d'affaires décontracté, 14.Pantalon d'utilité professionnelle, 15.Pantalon de brosse médicale, 16.Pantalon de chefs, 17.Pantalon de compression, 18.Pantalon de costume, 19.Pantalon de golf, 20.Pantalon de randonnée, 21.Pantalon de survêtement, 22.Pantalon de survêtement, 23.Pantalon de tennis, 24.Pantalon de yoga, 25.Pantalon décontracté, 26.Pantalons, 27.Salopette, 28.Salopette, 29.Survêtement, 30.Survêtement, 31.Velours côtelés
+Description de la longueur de l'article: 1.Longueur extra courte, 2.Longueur courte, 3.Longueur standard, 4.Grande longueur, 5.Longueur extra longue
+Thème: 1.Alimentation, 2.Alphabet, 3.Animé, 4.Bande dessinée, 5.Chat, 6.Cœur, 7.Dinosaure, 8.École, 9.Espace, 10.Extraterrestre, 11.Fantaisie, 12.Film, 13.Flamme, 14.Floral, 15.Hippie, 16.Horreur, 17.Insecte, 18.Mascottes, 19.Médical, 20.Militaire, 21.Monstre, 22.Motard, 23.Musique, 24.Oiseau, 25.Patriotique, 26.Pirate, 27.Plage, 28.Punk, 29.Religieux, 30.Science-fiction, 31.Sport, 32.Vacances
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Décontractée, 5.Droite, 6.Fluide, 7.Lâche, 8.Régulière, 9.Serrée, 10.Skinny, 11.Slim, 12.Surdimensionnée, 13.Tailored
+Style de jambes: 1.Cheville, 2.Droit, 3.Effilé, 4.Étrier, 5.Évasé, 6.Large, 7.Menotté, 8.Pantalon, 9.Recadré, 10.Semi-évasé, 11.Skinny
+Type de tissage: 1.Câble, 2.Côtes, 3.Dobby, 4.Gaufré, 5.Gaze, 6.Jaal, 7.Jacquard, 8.Jamdani, 9.Satin, 10.Sergé, 11.Uni
+Style de taille: 1.Taille basse, 2.Taille mi-haute, 3.Taille haute
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Badminton, 5.Baseball, 6.Basket-ball, 7.BMX, 8.Boxe, 9.Canoë, 10.Course, 11.Course à pied, 12.Course automobile, 13.Cricket, 14.Crosse, 15.Cyclisme, 16.Cyclo-cross, 17.Équitation, 18.Escalade, 19.Escalade de rocher, 20.Football américain, 21.Golf, 22.Gymnastique, 23.Haltérophilie, 24.Handball, 25.Hockey, 26.Hors-piste, 27.Jeu de quilles, 28.Kayak, 29.Kitesurf, 30.Lutte, 31.Motoneige, 32.Multi-sport, 33.Natation, 34.Navigation à voile, 35.Paddleboard, 36.Paintball, 37.Patin à glace, 38.Patinage à roulette, 39.Pêche, 40.Pilates, 41.Planche à roulette, 42.Planche à voile, 43.Plongeon, 44.Racquetball, 45.Rafting, 46.Randonnée, 47.Roller hockey, 48.Rugby, 49.Ski alpin, 50.Ski nautique, 51.Ski neige, 52.Snorkeling, 53.Snowboard, 54.Soccer, 55.Softball, 56.Squash, 57.Surf, 58.T-ball, 59.Tennis, 60.Tennis de table, 61.Tir à l'arc, 62.Triathlon, 63.Vélo de montagne, 64.Volley-ball, 65.Water-polo, 66.Yoga
+Type de fermeture: 1.À enfiler, 2.Agrafe, 3.Anneau boucle, 4.Boucle, 5.Bouton, 6.Bouton-pression, 7.Cordon de serrage, 8.Crochet et barre, 9.Fermeture éclair, 10.Fermeture élastique, 11.Magnétique, 12.Scratch
+Type de forme de pantalon: 1.Bouffant, 2.Cargo, 3.Comprimant, 4.Convertible, 5.Équitation, 6.Gaucho, 7.Jeans, 8.Leggings, 9.Mous, 10.Pantalon chino, 11.Pantalon d'entraînement, 12.Pantalon de jogging, 13.Pantalon de survêtement, 14.Pantalon de yoga, 15.Pantalon-jupe
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Caractéristiques spéciales:
+Style de vie:
+Style:
+Nom du type d'article:
+Description de la longueur de l'article:
+Thème:
+Type de coupe:
+Style de jambes:
+Type de tissage:
+Style de taille:
+Type de sport:
+Type de fermeture:
+Type de forme de pantalon:
+1: <选项编号>
+2: <选项编号>
+...

@@ -1,0 +1,43 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 女士圣诞趣味无帽卫衣 宽松圆领套头衫 长袖休闲卫衣 深V领毛绒拼接上衣 挂脖绑带套头衫 蕾丝边设计休闲卫衣 秋冬保暖套头衫 圣诞灯串印花上衣 彩色灯泡图案打底衫 节日派对保暖上衣 女士休闲长袖衫
+2. 女士圣诞节连帽卫衣 宽松长袖套头衫 带口袋休闲连帽卫衣 秋冬保暖套头衫 高地牛圣诞印花上衣 格纹拼接连帽衫 女士休闲外套 冬季长袖卫衣
+3. 女士无帽卫衣 圆领套头衫 宽松休闲长袖上衣 秋冬保暖套头衫 圣诞彩灯印花卫衣 3D立体圣诞球图案上衣 带口袋休闲卫衣 仿毛衣视觉打底衫 节日派对丑毛衣 趣味印花长袖套头衫 冬季内搭保暖上衣
+4. 女士圣诞节印花卫衣 圆领套头衫 宽松休闲长袖上衣 毛绒拼接领口套头衫 带口袋休闲卫衣 秋冬保暖内搭打底衫 亮片圣诞老人图案上衣 假腰带印花丑毛衣 节日派对套头毛衣 女士无帽保暖上衣
+5. 女士秋冬印花卫衣 宽松圆领套头衫 休闲长袖上衣 毛绒质感无帽卫衣 仿毛绒保暖打底衫 冬季加绒保暖卫衣 秋冬休闲套头衫 圣诞驯鹿雪景印花 雪花森林图案上衣 女士节日派对卫衣 圆领长袖休闲衫
+6. 圣诞节女趣味印花卫衣
+7. 圣诞男女同款宠物连帽卫衣 宽松套头衫 猫咪袋鼠兜卫衣 抽绳连帽衫 带口袋休闲外套 秋冬保暖长袖上衣 圣诞壁炉印花连帽卫衣 宠物携带套头衫 雪花彩灯图案休闲卫衣 长袖连帽外套 节日派对套头卫衣
+8. 女士圣诞节圆领卫衣 宽松长袖套头衫 霓虹灯圣诞树印花上衣 无帽休闲卫衣 秋冬保暖打底衫 发光雪花星星图案套头衫 节日派对长袖卫衣 冬季内搭休闲上衣
+9. 女士圣诞圆领卫衣 宽松休闲套头衫 长袖无帽上衣 秋冬保暖打底衫 涂鸦风圣诞树印花休闲卫衣 水彩风雪花星星图案上衣 节日派对无帽卫衣 女士保暖长袖衫 冬季内搭休闲上衣
+10. 女士圣诞节宠物袋连帽卫衣 宽松套头衫 休闲长袖上衣 宠物携带连帽衫 袋鼠兜卫衣 带拉链口袋连帽外套 抽绳连帽卫衣 秋冬保暖套头衫 冬季加绒保暖休闲卫衣 雪人印花上衣 趣味图案长袖套头衫 节日派对连帽外套 女士休闲保暖上衣
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée
+Style: 1.Baroque, 2.Bohème, 3.Classique, 4.Contemporain, 5.Décontracté, 6.Glam, 7.Grunge, 8.Moderne, 9.Preppy, 10.Punk, 11.Rétro, 12.Streetwear, 13.Victorien
+Nom du type d'article: 1.Cardigan, 2.Chandail, 3.Combinaison de soleil, 4.Maillot de survêtement, 5.Pull-over, 6.Sweat à capuche de skateboard, 7.Pull, 8.Sweater cache-épaules, 9.Sweatshirt à capuche, 10.Pull sans manches
+Description de la longueur de l'article: 1.Longueur extra courte, 2.Longueur courte, 3.Longueur standard, 4.Grande longueur, 5.Longueur extra longue
+Thème: 1.Alphabet, 2.Amour, 3.Anatomie, 4.Animal, 5.Animé, 6.Aventure, 7.Aztèque, 8.Bande dessinée, 9.Drapeau, 10.Espace, 11.Fantaisie, 12.Film, 13.Floral, 14.Gothique, 15.Hippie, 16.Horreur, 17.Insecte, 18.Jeu vidéo, 19.Livre, 20.Mème, 21.Militaire, 22.Musical, 23.Musique, 24.Nautique, 25.Nombre, 26.Nourriture, 27.Oiseau, 28.Patriotique, 29.Personnage, 30.Plage, 31.Religieux, 32.Rentrée scolaire, 33.Science-fiction, 34.Série dramatique, 35.Soleil, 36.Sport, 37.Super-héro, 38.Vacances, 39.Voiture
+Type de coupe: 1.Ajustée, 2.Athlétique, 3.Carré, 4.Décontractée, 5.Droite, 6.Fluide, 7.Lâche, 8.Régulière, 9.Serrée, 10.Skinny, 11.Slim, 12.Surdimensionnée, 13.Tailored
+Type de tissage: 1.Câble, 2.Côtelé, 3.Dobby, 4.Gaufré, 5.Gaze, 6.Jaal, 7.Jacquard, 8.Jamdani, 9.Satin, 10.Sergé, 11.Toile
+Style de col: 1.À capuche, 2.À col haut, 3.À une manche, 4.Avec col, 5.Col asymétrique, 6.Col bateau, 7.Col bénitier, 8.Col bijou, 9.Col carmen, 10.Col carré, 11.Col choker, 12.Col cranté, 13.Col fendu, 14.Col festonné, 15.Col keyhole, 16.Col mock, 17.Col noué, 18.Col plongeant, 19.Col ras du cou, 20.Col roulé, 21.Col V, 22.Décolleté en cœur, 23.Encolure dégagée, 24.Henley
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de vie:
+Style:
+Nom du type d'article:
+Description de la longueur de l'article:
+Thème:
+Type de coupe:
+Type de tissage:
+Style de col:
+Description de la longueur des manches:
+1: <选项编号>
+2: <选项编号>
+...
