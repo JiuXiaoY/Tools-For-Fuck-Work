@@ -1,0 +1,45 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 半拉链门襟 双侧工装口袋 立领 罗纹袖口下摆 套头衫长裤两件套 男士 宽松版型 长袖 直筒长裤 纯色
+2. 骷髅骨骼印花 全拉链门襟 连帽抽绳 袋鼠口袋 束脚裤脚 罗纹袖口下摆 连帽卫衣长裤两件套 男士 宽松版型 长袖
+3. 插肩袖 裤侧工装口袋 连帽抽绳 全拉链门襟 罗纹袖口下摆 纯色 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 直筒长裤
+4. 半拉链门襟 裤侧工装口袋 束脚裤脚 连帽卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 纯色
+5. 胸前字母印花 裤腿侧字母印花 裤侧工装口袋 袋鼠口袋 罗纹袖口下摆 束脚裤脚 连帽套头卫衣长裤两件套 男士 宽松版型 长袖 连帽抽绳 抽绳松紧裤腰
+6. 男士冬季卫衣套装
+7. 胸前双侧翻盖口袋带拉链装饰 连帽抽绳 罗纹袖口下摆 抽绳松紧裤腰 束脚裤脚 全拉链连帽卫衣长裤两件套 男士 宽松版型 长袖 纯色
+8. 双侧翻盖工装口袋 抽绳松紧裤腰 束脚裤脚 罗纹袖口下摆 圆领套头卫衣长裤两件套 男士 宽松版型 长袖 纯色
+9. 翻领 双侧带扣翻盖胸袋 裤侧翻盖工装口袋 按扣门襟 抽绳裤腰 直筒长裤 夹克外套长裤两件套 男士 宽松版型 长袖 纯色
+10. 半拉链门襟 左胸翻盖贴袋 双侧翻盖工装口袋 罗纹袖口下摆 半拉链卫衣长裤两件套 男士 宽松版型 长袖 抽绳松紧裤腰 束脚裤脚 纯色
+
+【可选值组】（每组只能从该组编号中选择）：
+Lifestyle: 1.Abend, 2.Formell, 3.Komfort, 4.Lässig, 5.Legere Geschäftskleidung
+Stil: 1.altmodisch, 2.böhmisch, 3.Glamour, 4.Klassisch, 5.Mittelalterlich, 6.Sportlich, 7.viktorianisch, 8.Zeitgemäß
+Thema: 1.Batik, 2.Cartoon, 3.Grafik, 4.Marmor, 5.Obst
+Passform: 1.Athletisch, 2.Eng anliegend, 3.Entspannt, 4.Fließend, 5.Gerade, 6.Locker, 7.Maßgeschneidert, 8.Regulär, 9.Skinny, 10.Slim, 11.Tailliert, 12.Übergroß, 13.Weit geschnitten
+Beschreibung der Tasche: 1.Kängurutasche, 2.Leistentasche, 3.Münztasche, 4.Nahttasche, 5.Pattentasche, 6.Schlitztasche, 7.Schrägtasche, 8.Utility-Tasche, 9.Winkeltasche
+Webart: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Korb, 5.Oxford, 6.Perle, 7.Plain, 8.Satin, 9.Twill
+Muster: 1.Argyle, 2.Camouflage, 3.Chevron, 4.Einfarbig, 5.Fischgrätmuster, 6.Frucht, 7.Geblümt, 8.Geometrisch, 9.Gepunktet, 10.Gestreift, 11.Hahnentrittmuster, 12.Kariert, 13.Moiré, 14.Paisley, 15.Schottenmuster, 16.Tierdruck, 17.Toile
+Beschreibung der Ärmellänge: 1.Ärmellos, 2.Kurzärmlig, 3.Halbarm, 4.3/4-Ärmel, 5.Langärmlig, 6.7/8-Ärmel
+Ärmelart: 1.Ärmelbündchen, 2.Ballonärmel, 3.Bischofsärmel, 4.Dolman-Ärmel, 5.Flatterärmel, 6.Fledermausärmel, 7.Flügelärmel, 8.Geraffte Ärmel, 9.Geteilte Ärmel, 10.Glockenärmel, 11.Kalte Schulter Ärmel, 12.Kimonoärmel, 13.Laternenhülle, 14.Puffärmel, 15.Raglan-Ärmel, 16.Roll-Up-Ärmel, 17.Rüschenärmel, 18.Tulpenärmel
+Materialgewicht des Bekleidungsstoffs: 1.Leicht, 2.Mittleres Gewicht (201-267 g/m²), 3.Schwer (336-403 g/m²)
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Lifestyle:
+Stil:
+Thema:
+Passform:
+Beschreibung der Tasche:
+Webart:
+Muster:
+Beschreibung der Ärmellänge:
+Ärmelart:
+Materialgewicht des Bekleidungsstoffs:
+1: <选项编号>
+2: <选项编号>
+...

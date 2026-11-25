@@ -1,0 +1,53 @@
+请为以下每个产品，从各组可选值中选出最合适的 1 个值，必须选。
+
+【规则】
+1. 每个值都必须是该组「可选值」列表中的原词；若没有完全匹配的值，请在**该组列表内**选择语义上最接近、最合适的一个或者选择通用的泛化的。必须在组内选一个
+2. 为方便你作答，可选值已编号；**输出时直接给出选项编号（数字）**，不要输出文字值，不要造词。
+
+【产品列表】（每组一个产品，编号 1~N）：
+1. 男士西装马甲 闪光星纹图案 纽扣 V领 西装马甲 男士 修身版型 无袖 常规衣长 派对演出 舞台表演
+2. 男士亮片印花西装马甲 密集亮片全覆盖装饰 V领 纽扣 西装马甲 男士 修身版型 无袖 常规衣长 多色可选 节日派对 舞台表演
+3. 男士麂皮绒印花西马甲 斑驳印花纹理 双排六粒纽扣门襟 带口袋 平驳领 西装马甲 男士 常规版型 无袖 麂皮绒质感
+4. 男士外贸马甲新款中世纪礼服马甲万圣节服装 提花图案 平驳领 纽扣 带口袋 西装马甲 男士 修身版型 无袖 中世纪风格 万圣节服装
+5. 男士单排扣马甲朋克1920S服装男士中世纪复古英伦马甲啤酒节背心 千鸟格图案 带口袋 西装马甲 男士 修身版型 纽扣 V领 无袖 啤酒节
+6. 德国啤酒节男士灯芯绒外套背心马甲 左胸矩形贴章 灯芯绒纹理 立领 纽扣 西装马甲 男士 常规版型 无袖 啤酒节
+7. 德国啤酒节男士斜纹布外套背心马甲 斜纹布纹理 左胸矩形嵌线装饰 双侧下方矩形嵌线装饰 立领 纽扣 传统马甲背心 男士 修身版型 无袖 啤酒节
+8. 男士哥特式蒸汽朋克系带复古马甲上衣背心 金属扣眼系带门襟 绒面质感 腰部横向拼接 V领 无袖 系带马甲背心 男士 常规版型 哥特式 蒸汽朋克 复古风格
+9. 休闲商务单排扣马甲 带口袋 纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外观 商务休闲
+10. 男士西装马甲韩版修身西服马夹背心秋冬款休闲英伦风婚礼小马甲男 带口袋 纽扣 V领 西装马甲 男士 修身版型 无袖 纯色外观 婚礼
+
+【可选值组】（每组只能从该组编号中选择）：
+Style de col: 1.Col à revers, 2.Col boutons pressions, 3.Col camp, 4.Col châle, 5.Col claudine, 6.Col club, 7.Col cranté, 8.Col cutaway, 9.Col enveloppe, 10.Col étalé, 11.Col mao, 12.Col marin, 13.Col montant, 14.Col officier, 15.Col plat, 16.Col point, 17.Col rabattu, 18.Col rond, 19.Col spearpoint, 20.Col tailleur, 21.Col volant, 22.Sans col
+Caractéristiques spéciales: 1.À capuche, 2.Avec poches, 3.Ceinturée, 4.Chauffée, 5.Cordon de serrage à l'ourlet, 6.Coupe-vent, 7.Étanche, 8.Évacuation de l'humidité, 9.Extensible, 10.Garage pour fermeture éclair, 11.Gonflable, 12.Isolé, 13.Légère, 14.Pliable, 15.Poids lourd, 16.Protection UV, 17.Réfléchissant, 18.Rembourrage amovible, 19.Résistant à l'abrasion, 20.Résistant à l'eau, 21.Résistant à l'étirement, 22.Résistant à la bouloche, 23.Résistant à la décoloration, 24.Résistant à la flamme, 25.Résistant à la ride, 26.Résistant à la tache, 27.Résistant au javel, 28.Résistant aux déchirures, 29.Résistant aux produits chimiques, 30.Respirant, 31.Réversible, 32.Sans couture, 33.Séchage rapide, 34.Trous pour les pouces, 35.Ventilée
+Style de vie: 1.Confort, 2.D'affaires décontractée, 3.De soirée, 4.Décontracté, 5.Habillée, 6.Pour sortir le soir
+Style: 1.Caban, 2.Cape, 3.Duffle coat, 4.Manteau chesterfield, 5.Manteau cocon, 6.Manteau covert, 7.Manteau de voiture, 8.Manteau imperméable, 9.Manteau kimono, 10.Manteau loden, 11.Manteau maxi, 12.Manteau militaire, 13.Manteau paletot, 14.Manteau plumeau, 15.Manteau poncho, 16.Manteau portefeuille, 17.Manteau reefer, 18.Manteau trapèze, 19.Parka, 20.Trench
+Niveau de résistance à l'eau: 1.Étanche, 2.Hydrofuge, 3.Imperméable, 4.Non étanche, 5.Résistant à l’humidité
+Format spécial: 1.Bébé, 2.Bébé – fille, 3.Bébé – garçon, 4.De grande taille, 5.Filles rondes, 6.Filles sveltes, 7.Garçons costauds, 8.Garçons sveltes, 9.Grand, 10.Grand, 11.Grandes filles, 12.Grands garçons, 13.Petite, 14.Petites filles, 15.Petits garçons, 16.Standard, 17.Taille plus, 18.Taille plus élancée, 19.Taille plus petite, 20.Tout-petit – fille, 21.Tout-petit – garçon
+Type de coupe: 1.Ajustée, 2.Carré, 3.Décontractée, 4.Droite, 5.Fluide, 6.Lâche, 7.Régulière, 8.Serrée, 9.Skinny, 10.Slim, 11.Surdimensionnée
+Description de la poche: 1.Poche à rabat, 2.Poche couture, 3.Poche droite, 4.Poche fendue, 5.Poche inclinée, 6.Poche Napoléon, 7.Poche passepoilée, 8.Poche plaquée, 9.Poche utilitaire
+Type de tissage: 1.Dobby, 2.Gaze, 3.Jacquard, 4.Oxford, 5.Panier, 6.Perle, 7.Plaine, 8.Satin, 9.Sergé
+Motif: 1.À carreau, 2.À chevron, 3.À fleur, 4.À rayure, 5.Argyle, 6.Cachemire, 7.Camouflage, 8.Fruit, 9.Géométrique, 10.Herringbone, 11.Imprimé animal, 12.Moiré, 13.Pied-de-poule, 14.Plaid, 15.Pois, 16.Toile, 17.Uni
+Type de sport: 1.Airsoft, 2.Alpinisme, 3.Art martial, 4.Art martial mixte, 5.Badminton, 6.Baseball, 7.Basket-ball, 8.BMX, 9.Boxe, 10.Chasse, 11.Cheerleading, 12.Course à pied, 13.Course automobile, 14.Course hippique, 15.Cricket, 16.Crosse, 17.Cyclisme, 18.Cyclocross, 19.Danse, 20.Football américain, 21.Golf, 22.Gymnastique, 23.Haltérophilie, 24.Hockey, 25.Jeu de quilles, 26.Jogging, 27.Kayak, 28.Kitesurf, 29.Lutte, 30.Motoneige, 31.Natation, 32.Navigation à voile, 33.Paintball, 34.Patinage sur glace, 35.Pêche, 36.Raquetball, 37.Rugby, 38.Skateboard, 39.Ski nautique, 40.Ski neige, 41.Snowboard, 42.Soccer, 43.Softball, 44.Squash, 45.Surf, 46.Tennis, 47.Tennis de table, 48.Tir à l'arc, 49.Vélo tout-terrain, 50.Volley-ball, 51.Wakeboard, 52.Water polo, 53.Yoga
+Description de la longueur des manches: 1.Sans manches, 2.Manches courtes, 3.Demi-manches, 4.Manches 3/4, 5.Manches longues, 6.Manches bracelet
+Type de manches: 1.Manche ballon, 2.Manche bouffante, 3.Manche cape, 4.Manche chauve-souris, 5.Manche cloche, 6.Manche dolman, 7.Manche épaule dénudée, 8.Manche évêque, 9.Manche fendue, 10.Manche flottante, 11.Manche froncée, 12.Manche gigot, 13.Manche kimono, 14.Manche lanterne, 15.Manche raglan, 16.Manche tulipe, 17.Manche volantée, 18.Mancheron, 19.Manches retroussables, 20.Manchette
+Type de fermeture: 1.À enfiler, 2.Agrafe, 3.Attacher, 4.Basculer, 5.Boucle, 6.Bouton, 7.Bouton-pression, 8.Cordon de serrage, 9.Crochet et barre, 10.Double anneau, 11.Fermeture éclair, 12.Magnétique, 13.Scratch
+
+【输出格式】严格按下面列出的块头顺序输出：每个块头占一行（以冒号结尾，**逐字照抄块头，不要改写、不要加序号**），
+块内每行一个产品（产品编号+冒号+选项编号），不要任何解释、不要增删块头：
+Style de col:
+Caractéristiques spéciales:
+Style de vie:
+Style:
+Niveau de résistance à l'eau:
+Format spécial:
+Type de coupe:
+Description de la poche:
+Type de tissage:
+Motif:
+Type de sport:
+Description de la longueur des manches:
+Type de manches:
+Type de fermeture:
+1: <选项编号>
+2: <选项编号>
+...
